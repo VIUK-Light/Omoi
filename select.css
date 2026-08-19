@@ -1,0 +1,49 @@
+.select-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.select-content {
+    width: min(90%, 420px);
+    padding: 48px 0;
+}
+
+.select-content h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.select-content h2 {
+    margin-top: 48px;
+    margin-bottom: 32px;
+    font-size: 24px;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.category-list button {
+    padding: 16px;
+
+    font-size: 16px;
+
+    background-color: #111;
+    color: white;
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 32px;
+
+    color: #666;
+    text-decoration: none;
+}

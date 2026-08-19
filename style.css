@@ -1,6 +1,16 @@
+:root {
+    --background: #ffffff;
+    --text: #111111;
+    --subtext: #666666;
+    --button: #111111;
+    --button-text: #ffffff;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 .home {
@@ -12,54 +22,82 @@ body {
     align-items: center;
 }
 
+.hero {
+    width: min(90%, 420px);
+    padding: 24px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 32px;
+    font-size: 48px;
+}
+
+.catchcopy {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.description {
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--subtext);
+}
+
+button {
+    margin-top: 40px;
+    padding: 14px 36px;
+
+    font-size: 16px;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: var(--button);
+    color: var(--button-text);
+
+    cursor: pointer;
+}
+
 .site-footer {
     position: absolute;
     bottom: 24px;
     left: 0;
     width: 100%;
-
     text-align: center;
 }
 
 .site-footer p {
     margin: 0;
     font-size: 12px;
+    color: #888888;
+}
+.brand-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    font-size: 12px;
     color: #888;
 }
+.start-button {
+    display: inline-block;
 
-.hero {
-    text-align: center;
-    padding: 24px;
-}
-
-h1 {
-    font-size: 48px;
-    margin-bottom: 32px;
-}
-
-.catchcopy {
-    font-size: 24px;
-    line-height: 1.6;
-}
-button {
     margin-top: 40px;
-    padding: 14px 40px;
+    padding: 14px 36px;
 
     font-size: 16px;
+    text-decoration: none;
 
-    background-color: #111;
-    color: white;
-
-    border: none;
+    background-color: #111111;
+    color: #ffffff;
     border-radius: 12px;
-
-    cursor: pointer;
-}
-.description {
-    margin-top: 24px;
-
-    font-size: 15px;
-    line-height: 1.8;
-
-    color: #555;
 }
