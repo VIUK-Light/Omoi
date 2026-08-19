@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 24px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.catchcopy {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.description {
+    margin-top: 24px;
+    line-height: 1.8;
+}
+
+button {
+    margin-top: 40px;
+    padding: 14px 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
