@@ -17,3 +17,11 @@ categoryButtons.forEach(function (button) {
         nextButton.disabled = false;
     });
 });
+nextButton.addEventListener("click", function () {
+    if (selectedCategory === null) {
+        return;
+    }
+
+    window.location.href =
+        "question.html?category=" + selectedCategory;
+});
