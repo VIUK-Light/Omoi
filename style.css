@@ -45,22 +45,6 @@ h1 {
     line-height: 1.8;
     color: var(--subtext);
 }
-
-button {
-    margin-top: 40px;
-    padding: 14px 36px;
-
-    font-size: 16px;
-
-    border: none;
-    border-radius: 12px;
-
-    background-color: var(--button);
-    color: var(--button-text);
-
-    cursor: pointer;
-}
-
 .site-footer {
     position: absolute;
     bottom: 24px;

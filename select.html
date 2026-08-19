@@ -9,21 +9,23 @@
 </head>
 <body>
     <main class="select-screen">
-        <div class="select-content">
-            <h2>今日はどんな話をする？</h2>
+       <div class="category-list">
+    <button type="button" data-category="life">暮らし</button>
+    <button type="button" data-category="relationship">人間関係</button>
+    <button type="button" data-category="society">社会</button>
+    <button type="button" data-category="technology">技術と未来</button>
+    <button type="button" data-category="ethics">倫理</button>
+</div>
 
-            <div class="category-list">
-                <button type="button">暮らし</button>
-                <button type="button">人間関係</button>
-                <button type="button">社会</button>
-                <button type="button">技術と未来</button>
-                <button type="button">倫理</button>
-            </div>
+<button type="button" id="nextButton" disabled>
+    次へ
+</button>
 
             <a href="index.html" class="back-link">
                 戻る
             </a>
         </div>
     </main>
+    <script src="select.js"></script>
 </body>
 </html>
