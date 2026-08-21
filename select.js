@@ -15,6 +15,11 @@ nextButton.addEventListener("click", function () {
         return;
     }
 
+    if (selectedLevel === "4") {
+        window.location.href = "warning.html";
+        return;
+    }
+
     window.location.href =
         "question.html?level=" + selectedLevel;
 });
