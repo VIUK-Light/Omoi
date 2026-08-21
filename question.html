@@ -11,7 +11,25 @@
     <main>
         <p id="levelDisplay"></p>
 
-        <h1>質問画面</h1>
+        <h1 id="questionText">
+    読み込み中...
+</h1>
+
+<button type="button" id="detailButton" hidden>
+    この問いを知る
+</button>
+
+<div id="detailPanel" hidden>
+    <p id="detailText"></p>
+
+    <button type="button" id="closeDetailButton">
+        閉じる
+    </button>
+</div>
+
+<button type="button" id="nextQuestionButton">
+    次の質問
+</button>
     </main>
 
     <script src="question.js"></script>
