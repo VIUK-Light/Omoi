@@ -9,27 +9,35 @@
 
 <body>
     <main>
+        <a href="select.html" class="back-link">
+            ← レベル選択へ戻る
+        </a>
+
         <p id="levelDisplay"></p>
 
         <h1 id="questionText">
-    読み込み中...
-</h1>
+            読み込み中...
+        </h1>
 
-<button type="button" id="detailButton" hidden>
-    この問いを知る
-</button>
+        <button type="button" id="detailButton" hidden>
+            この問いを知る
+        </button>
 
-<div id="detailPanel" hidden>
-    <p id="detailText"></p>
+        <div id="detailPanel" hidden>
+            <p id="detailText"></p>
 
-    <button type="button" id="closeDetailButton">
-        閉じる
-    </button>
-</div>
+            <button type="button" id="closeDetailButton">
+                閉じる
+            </button>
+        </div>
+        <button type="button" id="skipQuestionButton">
+            今回は話さない
+        </button>
 
-<button type="button" id="nextQuestionButton">
-    次の質問
-</button>
+        <button type="button" id="nextQuestionButton">
+            次の質問
+        </button>
+        
     </main>
 
     <script src="question.js"></script>

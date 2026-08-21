@@ -3,62 +3,116 @@ const level = Number(params.get("level"));
 
 const levelDisplay = document.getElementById("levelDisplay");
 const questionText = document.getElementById("questionText");
-const nextQuestionButton = document.getElementById("nextQuestionButton");
-const detailButton = document.getElementById("detailButton");
-const detailPanel = document.getElementById("detailPanel");
-const detailText = document.getElementById("detailText");
-const closeDetailButton = document.getElementById("closeDetailButton");
+
+const nextQuestionButton =
+    document.getElementById("nextQuestionButton");
+
+const skipQuestionButton =
+    document.getElementById("skipQuestionButton");
+
+const detailButton =
+    document.getElementById("detailButton");
+
+const detailPanel =
+    document.getElementById("detailPanel");
+
+const detailText =
+    document.getElementById("detailText");
+
+const closeDetailButton =
+    document.getElementById("closeDetailButton");
+
+
 let filteredQuestions = [];
 let currentQuestionIndex = 0;
 
+
 levelDisplay.textContent = "Level " + level;
+
 
 fetch("questions.json")
     .then(function (response) {
         return response.json();
     })
     .then(function (questions) {
+
         filteredQuestions = questions.filter(function (question) {
             return question.level === level;
         });
 
+        shuffle(filteredQuestions);
+
         if (filteredQuestions.length === 0) {
-            questionText.textContent = "このLevelの質問はまだありません。";
+            questionText.textContent =
+                "このLevelの質問はまだありません。";
+
             nextQuestionButton.disabled = true;
+            skipQuestionButton.disabled = true;
+
             return;
         }
 
         showQuestion();
     });
 
+
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+
+        const j =
+            Math.floor(Math.random() * (i + 1));
+
+        [array[i], array[j]] =
+            [array[j], array[i]];
+    }
+}
+
+
 function showQuestion() {
     const currentQuestion =
         filteredQuestions[currentQuestionIndex];
 
-    questionText.textContent = currentQuestion.question;
+    questionText.textContent =
+        currentQuestion.question;
 
     detailPanel.hidden = true;
 
     if (currentQuestion.detail) {
         detailButton.hidden = false;
-        detailText.textContent = currentQuestion.detail;
+        detailText.textContent =
+            currentQuestion.detail;
     } else {
         detailButton.hidden = true;
     }
 }
 
-nextQuestionButton.addEventListener("click", function () {
+
+function goToNextQuestion() {
     currentQuestionIndex++;
 
     if (currentQuestionIndex >= filteredQuestions.length) {
+        shuffle(filteredQuestions);
         currentQuestionIndex = 0;
     }
 
     showQuestion();
+}
+
+
+nextQuestionButton.addEventListener("click", function () {
+    goToNextQuestion();
 });
+
+
+skipQuestionButton.addEventListener("click", function () {
+    goToNextQuestion();
+});
+
+
 detailButton.addEventListener("click", function () {
     detailPanel.hidden = false;
 });
+
 
 closeDetailButton.addEventListener("click", function () {
     detailPanel.hidden = true;
