@@ -109,3 +109,28 @@ body {
     opacity: 0.2;
     cursor: not-allowed;
 }
+.count-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.count-list input {
+    position: absolute;
+    opacity: 0;
+}
+
+.count-card {
+    padding: 14px 8px;
+
+    border: 1.5px solid #111;
+    border-radius: 12px;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.count-list input:checked + .count-card {
+    background: #111;
+    color: #fff;
+}

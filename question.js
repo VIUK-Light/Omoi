@@ -1,5 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const level = Number(params.get("level"));
+const count = Number(params.get("count"));
 
 const levelDisplay = document.getElementById("levelDisplay");
 const questionText = document.getElementById("questionText");
@@ -45,6 +46,8 @@ fetch("questions.json")
         });
 
         shuffle(filteredQuestions);
+        filteredQuestions =
+        filteredQuestions.slice(0, count);
 
         if (filteredQuestions.length === 0) {
             questionText.textContent =
@@ -102,8 +105,10 @@ function goToNextQuestion() {
 
     if (currentQuestionIndex >= filteredQuestions.length) {
         window.location.href =
-            "finish.html?level=" + level;
-
+    "finish.html?level=" +
+    level +
+    "&count=" +
+    count;
         return;
     }
 
