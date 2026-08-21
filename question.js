@@ -91,8 +91,10 @@ function goToNextQuestion() {
     currentQuestionIndex++;
 
     if (currentQuestionIndex >= filteredQuestions.length) {
-        shuffle(filteredQuestions);
-        currentQuestionIndex = 0;
+        window.location.href =
+            "finish.html?level=" + level;
+
+        return;
     }
 
     showQuestion();
