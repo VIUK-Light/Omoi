@@ -3,7 +3,11 @@ const level = Number(params.get("level"));
 
 const levelDisplay = document.getElementById("levelDisplay");
 const questionText = document.getElementById("questionText");
+const sourceSection =
+    document.getElementById("sourceSection");
 
+const sourceList =
+    document.getElementById("sourceList");
 const nextQuestionButton =
     document.getElementById("nextQuestionButton");
 
@@ -77,13 +81,43 @@ function showQuestion() {
 
     detailPanel.hidden = true;
 
-    if (currentQuestion.detail) {
-        detailButton.hidden = false;
-        detailText.textContent =
-            currentQuestion.detail;
+   if (currentQuestion.detail) {
+    detailButton.hidden = false;
+
+    detailText.textContent =
+        currentQuestion.detail.text;
+
+    sourceList.innerHTML = "";
+
+    if (
+        currentQuestion.detail.sources &&
+        currentQuestion.detail.sources.length > 0
+    ) {
+        sourceSection.hidden = false;
+
+        currentQuestion.detail.sources.forEach(function (source) {
+            const listItem =
+                document.createElement("li");
+
+            const link =
+                document.createElement("a");
+
+            link.textContent = source.title;
+            link.href = source.url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+
+            listItem.appendChild(link);
+            sourceList.appendChild(listItem);
+        });
+
     } else {
-        detailButton.hidden = true;
+        sourceSection.hidden = true;
     }
+
+} else {
+    detailButton.hidden = true;
+}
 }
 
 

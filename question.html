@@ -26,10 +26,21 @@
         <div id="detailPanel" hidden>
             <p id="detailText"></p>
 
+            <div id="sourceSection">
+                <h2>出典</h2>
+                <ul id="sourceList"></ul>
+            </div>
+
+            <p>
+                この解説には、異なる見解や不確実性が
+                含まれる場合があります。
+            </p>
+
             <button type="button" id="closeDetailButton">
                 閉じる
             </button>
         </div>
+
         <button type="button" id="skipQuestionButton">
             今回は話さない
         </button>
@@ -37,7 +48,6 @@
         <button type="button" id="nextQuestionButton">
             次の質問
         </button>
-        
     </main>
 
     <script src="question.js"></script>
