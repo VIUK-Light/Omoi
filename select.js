@@ -1,23 +1,11 @@
-const levelButtons = document.querySelectorAll(".level-list button");
+const levelInputs = document.querySelectorAll('input[name="level"]');
 const nextButton = document.getElementById("nextButton");
 
 let selectedLevel = null;
 
-levelButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-
-        // いったん全ボタンの選択状態を解除
-        levelButtons.forEach(function (item) {
-            item.classList.remove("selected");
-        });
-
-        // 押したボタンだけ選択状態にする
-        button.classList.add("selected");
-
-        // data-level の数字を保存
-        selectedLevel = button.dataset.level;
-
-        // 「次へ」を押せるようにする
+levelInputs.forEach(function (input) {
+    input.addEventListener("change", function () {
+        selectedLevel = input.value;
         nextButton.disabled = false;
     });
 });
