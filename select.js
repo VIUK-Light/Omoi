@@ -1,27 +1,32 @@
-const categoryButtons = document.querySelectorAll(".category-list button");
+const levelButtons = document.querySelectorAll(".level-list button");
 const nextButton = document.getElementById("nextButton");
 
-let selectedCategory = null;
+let selectedLevel = null;
 
-categoryButtons.forEach(function (button) {
+levelButtons.forEach(function (button) {
     button.addEventListener("click", function () {
 
-        categoryButtons.forEach(function (item) {
+        // いったん全ボタンの選択状態を解除
+        levelButtons.forEach(function (item) {
             item.classList.remove("selected");
         });
 
+        // 押したボタンだけ選択状態にする
         button.classList.add("selected");
 
-        selectedCategory = button.dataset.category;
+        // data-level の数字を保存
+        selectedLevel = button.dataset.level;
 
+        // 「次へ」を押せるようにする
         nextButton.disabled = false;
     });
 });
+
 nextButton.addEventListener("click", function () {
-    if (selectedCategory === null) {
+    if (selectedLevel === null) {
         return;
     }
 
     window.location.href =
-        "question.html?category=" + selectedCategory;
+        "question.html?level=" + selectedLevel;
 });

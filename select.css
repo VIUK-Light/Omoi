@@ -1,49 +1,111 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #111;
+    background: #fff;
+}
+
+.select-screen {
+    min-height: 100vh;
+    padding: 48px 24px;
+    box-sizing: border-box;
+}
+
+.select-content {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
 .select-content h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .select-content h2 {
-    margin-top: 48px;
-    margin-bottom: 32px;
+    margin: 48px 0 28px;
     font-size: 24px;
 }
 
-.category-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+.level-list input {
+    position: absolute;
+    opacity: 0;
 }
 
-.category-list button {
-    padding: 16px;
+.level-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    font-size: 16px;
+    padding: 18px 20px;
 
-    background-color: #111;
-    color: white;
-
-    border: none;
-    border-radius: 12px;
+    border: 1.5px solid #111;
+    border-radius: 14px;
 
     cursor: pointer;
 }
 
-.back-link {
-    display: inline-block;
-    margin-top: 32px;
-
-    color: #666;
-    text-decoration: none;
+.level-card strong,
+.level-card span {
+    display: block;
 }
 
-.category-list button.selected {
-    background-color: #ffffff;
-    color: #111111;
-    outline: 2px solid #111111;
+.level-card div > span {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #666;
+}
+
+.radio-mark {
+    width: 18px;
+    height: 18px;
+
+    border: 2px solid #111;
+    border-radius: 50%;
+}
+
+.level-list input:checked + .level-card {
+    background: #111;
+    color: #fff;
+}
+
+.level-list input:checked + .level-card div > span {
+    color: #ccc;
+}
+
+.level-list input:checked + .level-card .radio-mark {
+    background: #fff;
+    border: 5px solid #111;
+    outline: 2px solid #fff;
+}
+.select-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 32px;
+}
+
+.back-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#nextButton {
+    padding: 12px 28px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #111;
+    color: #fff;
+
+    font-size: 15px;
+    cursor: pointer;
 }
 
 #nextButton:disabled {
-    opacity: 0.35;
+    opacity: 0.2;
     cursor: not-allowed;
 }

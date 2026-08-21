@@ -85,3 +85,7 @@ h1 {
     color: #ffffff;
     border-radius: 12px;
 }
+.level-list {
+    display: grid;
+    gap: 12px;
+}

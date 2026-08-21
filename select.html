@@ -4,28 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>話題を選ぶ - Omoi</title>
+    <title>話の深さを選ぶ - Omoi</title>
     <link rel="stylesheet" href="select.css">
 </head>
+
 <body>
     <main class="select-screen">
-       <div class="category-list">
-    <button type="button" data-category="life">暮らし</button>
-    <button type="button" data-category="relationship">人間関係</button>
-    <button type="button" data-category="society">社会</button>
-    <button type="button" data-category="technology">技術と未来</button>
-    <button type="button" data-category="ethics">倫理</button>
-</div>
+        <div class="select-content">
 
-<button type="button" id="nextButton" disabled>
-    次へ
-</button>
+            <h2>どのくらい深く話す？</h2>
 
-            <a href="index.html" class="back-link">
-                戻る
-            </a>
+            <div class="level-list">
+
+                <input type="radio" name="level" id="level1" value="1">
+                <label for="level1" class="level-card">
+                    <div>
+                        <strong>1　身近な話</strong>
+                        <span>日常や身近な価値観について</span>
+                    </div>
+                    <span class="radio-mark"></span>
+                </label>
+
+                <input type="radio" name="level" id="level2" value="2">
+                <label for="level2" class="level-card">
+                    <div>
+                        <strong>2　考える話</strong>
+                        <span>少し意見が分かれる話について</span>
+                    </div>
+                    <span class="radio-mark"></span>
+                </label>
+
+                <input type="radio" name="level" id="level3" value="3">
+                <label for="level3" class="level-card">
+                    <div>
+                        <strong>3　重い話</strong>
+                        <span>社会や倫理について</span>
+                    </div>
+                    <span class="radio-mark"></span>
+                </label>
+
+                <input type="radio" name="level" id="level4" value="4">
+                <label for="level4" class="level-card">
+                    <div>
+                        <strong>4　深い話</strong>
+                        <span>人生観や強い価値観について</span>
+                    </div>
+                    <span class="radio-mark"></span>
+                </label>
+
+            </div>
+
+            <div class="select-actions">
+                <a href="index.html" class="back-link">
+                    ← 戻る
+                </a>
+
+                <button type="button" id="nextButton" disabled>
+                    次へ
+                </button>
+            </div>
+
         </div>
     </main>
+
     <script src="select.js"></script>
 </body>
 </html>
