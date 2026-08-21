@@ -79,45 +79,21 @@ function showQuestion() {
     questionText.textContent =
         currentQuestion.question;
 
+    // 毎回いったん隠す
+    detailButton.hidden = true;
     detailPanel.hidden = true;
 
-   if (currentQuestion.detail) {
-    detailButton.hidden = false;
-
-    detailText.textContent =
-        currentQuestion.detail.text;
-
-    sourceList.innerHTML = "";
-
+    // detail があり、text に中身がある場合だけ表示
     if (
-        currentQuestion.detail.sources &&
-        currentQuestion.detail.sources.length > 0
+        currentQuestion.detail &&
+        currentQuestion.detail.text &&
+        currentQuestion.detail.text.trim() !== ""
     ) {
-        sourceSection.hidden = false;
+        detailButton.hidden = false;
 
-        currentQuestion.detail.sources.forEach(function (source) {
-            const listItem =
-                document.createElement("li");
-
-            const link =
-                document.createElement("a");
-
-            link.textContent = source.title;
-            link.href = source.url;
-            link.target = "_blank";
-            link.rel = "noopener noreferrer";
-
-            listItem.appendChild(link);
-            sourceList.appendChild(listItem);
-        });
-
-    } else {
-        sourceSection.hidden = true;
+        detailText.textContent =
+            currentQuestion.detail.text;
     }
-
-} else {
-    detailButton.hidden = true;
-}
 }
 
 
