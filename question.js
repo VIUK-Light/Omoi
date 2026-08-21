@@ -35,15 +35,13 @@ let currentQuestionIndex = 0;
 levelDisplay.textContent = "Level " + level;
 
 
-fetch("questions.json")
+fetch("questions/level" + level + ".json")
     .then(function (response) {
         return response.json();
     })
     .then(function (questions) {
 
-        filteredQuestions = questions.filter(function (question) {
-            return question.level === level;
-        });
+        filteredQuestions = questions;
 
         shuffle(filteredQuestions);
         filteredQuestions =

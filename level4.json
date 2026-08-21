@@ -1,20 +1,5 @@
 [
-    {
-        "id": "life-001",
-        "category": "life",
-        "question": "お金が多い人は、より多く税金を払うべき？",
-        "level": 1,
-        "sensitivity": 1
-    },
-    {
-        "id": "relationship-001",
-        "category": "relationship",
-        "question": "友達のためなら、嘘をついてもいい？",
-        "level": 1,
-        "sensitivity": 1
-
-    },
-    {
+     {
     "id": "relationship-002",
     "category": "relationship",
     "question": "托卵は許せる？",
