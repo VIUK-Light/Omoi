@@ -85,8 +85,6 @@ body {
 }
 
 .detail-button {
-    display: block;
-
     margin: 20px auto 0;
 
     background: none;
@@ -97,7 +95,6 @@ body {
 
     cursor: pointer;
 }
-
 .detail-panel {
     width: 100%;
     max-width: 680px;

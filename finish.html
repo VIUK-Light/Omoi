@@ -5,27 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>おわり - Omoi</title>
+    <link rel="stylesheet" href="finish.css">
 </head>
 
 <body>
-    <main>
-        <h1>今日はここまで。</h1>
+    <main class="finish-screen">
+        <div class="finish-content">
+            <p class="finish-label">OMOI</p>
 
-        <p>
-            このLevelの質問をすべて話しました。
-        </p>
+            <h1>今日はここまで。</h1>
 
-        <a href="#" id="retryLink">
-            もう一度
-        </a>
+            <p class="description">
+                このLevelの質問をすべて話しました。
+            </p>
 
-        <a href="select.html">
-            別のLevelを選ぶ
-        </a>
+            <div class="finish-actions">
+                <a href="#" id="retryLink" class="primary-button">
+                    もう一度
+                </a>
 
-        <a href="index.html">
-            終わる
-        </a>
+                <a href="select.html" class="secondary-button">
+                    別のLevelを選ぶ
+                </a>
+
+                <a href="index.html" class="end-link">
+                    終わる
+                </a>
+            </div>
+        </div>
     </main>
 
     <script src="finish.js"></script>
