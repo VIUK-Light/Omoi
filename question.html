@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>質問 - Omoi</title>
+    <link rel="stylesheet" href="question.css">
+</head>
+
+<body>
+    <main class="question-screen">
+
+        <!-- レベル選択に戻る -->
+        <a href="select.html" class="back-link">
+            ← レベルを変える
+        </a>
+
+        <!-- 質問 -->
+        <div class="question-content">
+            <p id="levelDisplay" class="level-label"></p>
+
+            <h1 id="questionText">
+                読み込み中...
+            </h1>
+        </div>
+
+        <!-- 質問の操作 -->
+        <div class="question-footer">
+
+            <div class="question-actions">
+                <button
+                    type="button"
+                    id="skipQuestionButton"
+                    class="skip-button"
+                >
+                    今回は話さない
+                </button>
+
+                <button
+                    type="button"
+                    id="nextQuestionButton"
+                    class="next-button"
+                >
+                    次の質問
+                </button>
+            </div>
+
+            <!-- 詳細がある質問だけ表示 -->
+            <button
+                type="button"
+                id="detailButton"
+                class="detail-button"
+                hidden
+            >
+                ⓘ この問いを知る
+            </button>
+
+        </div>
+
+        <!-- 質問の詳細 -->
+        <div
+            id="detailPanel"
+            class="detail-panel"
+            hidden
+        >
+            <p id="detailText"></p>
+
+            <!-- 出典がある場合だけ表示 -->
+            <div id="sourceSection" hidden>
+                <h2>出典</h2>
+                <ul id="sourceList"></ul>
+            </div>
+
+            <p class="detail-note">
+                この解説には、異なる見解や不確実性が
+                含まれる場合があります。
+            </p>
+
+            <button
+                type="button"
+                id="closeDetailButton"
+            >
+                閉じる
+            </button>
+        </div>
+
+    </main>
+
+    <script src="question.js"></script>
+</body>
+</html>

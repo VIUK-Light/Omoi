@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>話の深さを選ぶ - Omoi</title>
+    <link rel="stylesheet" href="select.css">
+</head>
+
+<body>
+    <main class="select-screen">
+        <div class="select-content">
+
+            <h2>どのくらい深く話す？</h2>
+
+            <div class="level-list">
+
+                <input type="radio" name="level" id="level1" value="1">
+                <label for="level1" class="level-card">
+                    <div>
+                        <strong>1　身近な話</strong>
+                        <span>日常や身近な価値観について</span>
+                    </div>
+                    <span class="radio-mark"></span>
+                </label>
+
+                <input type="radio" name="level" id="level2" value="2">
+                <label for="level2" class="level-card">
+                    <div>
+                        <strong>2　考える話</strong>
+                        <span>少し意見が分かれる話について</span>
+                    </div>
+                    <span class="radio-mark"></span>
+                </label>
+
+                <input type="radio" name="level" id="level3" value="3">
+                <label for="level3" class="level-card">
+                    <div>
+                        <strong>3　重い話</strong>
+                        <span>社会や倫理について</span>
+                    </div>
+                    <span class="radio-mark"></span>
+                </label>
+
+                <input type="radio" name="level" id="level4" value="4">
+                <label for="level4" class="level-card">
+                    <div>
+                        <strong>4　深い話</strong>
+                        <span>人生観や強い価値観について</span>
+                    </div>
+                    <span class="radio-mark"></span>
+                </label>
+
+            </div>
+                <h2>今回は何問話す？</h2>
+
+                <div class="count-list">
+
+                    <input type="radio" name="count" id="count3" value="3">
+                    <label for="count3" class="count-card">
+                        3問
+                    </label>
+
+                    <input type="radio" name="count" id="count5" value="5">
+                    <label for="count5" class="count-card">
+                        5問
+                    </label>
+
+                    <input type="radio" name="count" id="count10" value="10">
+                    <label for="count10" class="count-card">
+                        10問
+                    </label>
+
+                    <input type="radio" name="count" id="count15" value="15">
+                    <label for="count15" class="count-card">
+                        15問
+                    </label>
+
+                </div>
+            <div class="select-actions">
+                <a href="index.html" class="back-link">
+                    ← 戻る
+                </a>
+
+                <button type="button" id="nextButton" disabled>
+                    次へ
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="select.js"></script>
+</body>
+</html>
