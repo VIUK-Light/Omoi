@@ -45,6 +45,7 @@ h1 {
     line-height: 1.8;
     color: var(--subtext);
 }
+
 .site-footer {
     position: absolute;
     bottom: 24px;
@@ -58,11 +59,13 @@ h1 {
     font-size: 12px;
     color: #888888;
 }
+
 .brand-icon {
     width: 18px;
     height: 18px;
     object-fit: contain;
 }
+
 .brand {
     display: flex;
     align-items: center;
@@ -72,6 +75,7 @@ h1 {
     font-size: 12px;
     color: #888;
 }
+
 .start-button {
     display: inline-block;
 
@@ -85,6 +89,7 @@ h1 {
     color: #ffffff;
     border-radius: 12px;
 }
+
 .level-list {
     display: grid;
     gap: 12px;
@@ -102,4 +107,31 @@ h1 {
 
 .howto-link:hover {
     color: #111111;
+}
+
+.about-omoi {
+    width: min(100% - 48px, 680px);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 72px 0 96px;
+    border-top: 1px solid #eeeeee;
+}
+
+.about-omoi h2 {
+    margin: 0 0 24px;
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.about-omoi p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 2;
+    color: var(--subtext);
+}
+
+.about-omoi p + p {
+    margin-top: 20px;
+    color: var(--text);
+    font-weight: 600;
 }
