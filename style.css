@@ -89,3 +89,17 @@ h1 {
     display: grid;
     gap: 12px;
 }
+
+.howto-link {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+}
+
+.howto-link:hover {
+    color: #111111;
+}
