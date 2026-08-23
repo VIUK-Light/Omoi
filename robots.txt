@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://viuk-light.github.io/Omoi/sitemap.xml
+Sitemap: https://omoi.viuk-light.org/sitemap.xml
