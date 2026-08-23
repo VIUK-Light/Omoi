@@ -1,6 +1,10 @@
 # Omoi
 
-**重い話を、思いをこめて。**
+<img
+  src="https://github.com/user-attachments/assets/aa523935-5b32-48c8-8121-5021506581cc"
+  alt="Omoi home screen"
+  width="320"
+/>
 
 社会や価値観について話すための、オープンソースの質問カードです。
 
@@ -29,6 +33,17 @@ Omoiは、同じ考えになるためのものではありません。
 | 4 | 深い話 | 自分に置き換えて考える、非常に重く深い話 |
 
 Level 4では、家族、信頼、仕事、人生など、自分自身に置き換えると強く価値観が表れるテーマも扱います。
+
+**重い話題**
+
+<img
+  src="https://github.com/user-attachments/assets/9ebdc0a9-3d38-4a8e-87ae-edb80ff95eca"
+  alt="Omoi question screen"
+  width="320"
+/>
+
+社会問題や倫理観についての重い話題を扱います。
+被害者加害者目線どちらも質問に含まれています。
 
 ## 「この問いを知る」
 
