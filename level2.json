@@ -1,0 +1,408 @@
+[
+    {
+        "id": "relationship-001",
+        "category": "relationship",
+        "question": "友達のためなら、嘘をついてもいい？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "support-001",
+        "category": "support",
+        "question": "友達がルール違反していたら、注意する？黙る？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "support-002",
+        "category": "support",
+        "question": "先生に相談するのは弱いことだと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "support-003",
+        "category": "support",
+        "question": "友達同士で解決できることって何？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "support-004",
+        "category": "support",
+        "question": "注意してくれる友達は大切だと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "support-005",
+        "category": "support",
+        "question": "自分が間違っていた時、友達に止めてほしい？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "support-006",
+        "category": "support",
+        "question": "ルールを守ることは大事だと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bullying-001",
+        "category": "bullying",
+        "question": "いじりといじめの違いは？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-002",
+        "category": "bullying",
+        "question": "冗談でも言ってはいけないことはある？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-003",
+        "category": "bullying",
+        "question": "「ノリだから」は理由になると思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-004",
+        "category": "bullying",
+        "question": "相手が笑っていたら、本当に平気だと思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-005",
+        "category": "bullying",
+        "question": "みんなが笑っていても、本人が嫌そうならどう思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-006",
+        "category": "bullying",
+        "question": "友達同士なら多少きついことを言ってもいいと思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "boundaries-001",
+        "category": "boundaries",
+        "question": "下ネタは話しても平気？苦手？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "boundaries-002",
+        "category": "boundaries",
+        "question": "下ネタはどのくらいの軽さまでなら笑える？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "boundaries-003",
+        "category": "boundaries",
+        "question": "大人っぽい話は苦手？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "boundaries-004",
+        "category": "boundaries",
+        "question": "恋人でも聞かれたくないことはある？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "boundaries-006",
+        "category": "boundaries",
+        "question": "冗談でも苦手な話題はある？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "friendship-016",
+        "category": "friendship",
+        "question": "いじりと悪口の違いは何だと思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "friendship-017",
+        "category": "friendship",
+        "question": "冗談でも言われたくないことは？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "support-008",
+        "category": "support",
+        "question": "「先生に言う」と「チクる」の違いは？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "support-011",
+        "category": "support",
+        "question": "自分に関係ないトラブルでも先生に相談する？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "support-012",
+        "category": "support",
+        "question": "誰かが悪口を言われていたら止める？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "support-015",
+        "category": "support",
+        "question": "ルールを破った人より、先生に言った人が責められるのはどう思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "support-016",
+        "category": "support",
+        "question": "正しいことを言う人が空気を壊すと言われるのはどう思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-007",
+        "category": "bullying",
+        "question": "友達が誰かを悪く言っていたら、会話に入る？黙る？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-008",
+        "category": "bullying",
+        "question": "友達が誰かを仲間外れにしていたらどうする？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-009",
+        "category": "bullying",
+        "question": "本当は嫌そうだけど笑っている人を見たらどうする？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-011",
+        "category": "bullying",
+        "question": "グループで一人だけ無視されていたら声をかける？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-012",
+        "category": "bullying",
+        "question": "友達がSNSで誰かをバカにしていたら注意する？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-015",
+        "category": "bullying",
+        "question": "「それはやめた方がいいよ」と言える？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-016",
+        "category": "bullying",
+        "question": "本当の友達なら、悪いことを止めるべきだと思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-017",
+        "category": "bullying",
+        "question": "直接注意するのと、後で二人で言うのどっちがいい？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "jealousy-013",
+        "category": "jealousy",
+        "question": "異性の友達との距離感はどこまであり？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-014",
+        "category": "jealousy",
+        "question": "異性と二人で遊ぶのはあり？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-015",
+        "category": "jealousy",
+        "question": "過去の恋愛話はどこまで話していい？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-016",
+        "category": "jealousy",
+        "question": "嘘をつかれたらどこまで許せる？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-017",
+        "category": "jealousy",
+        "question": "隠し事はどこまであり？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-018",
+        "category": "jealousy",
+        "question": "恋人が異性の友達と仲良くしていたらどう思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "life-001",
+        "category": "life",
+        "question": "お金が多い人は、より多く税金を払うべき？",
+        "level": 3,
+        "sensitivity": 1
+    },
+    {
+        "id": "ethics-001",
+        "category": "ethics",
+        "question": "親しい友達と、あまり話したことがない人が同時に困っていたら、どちらを先に助ける？",
+        "level": 3,
+        "sensitivity": 1
+    },
+    {
+        "id": "ethics-002",
+        "category": "ethics",
+        "question": "ルールを守ることで誰かが傷つくなら、それでもルールを守るべき？",
+        "level": 3,
+        "sensitivity": 1
+    },
+    {
+        "id": "ethics-003",
+        "category": "ethics",
+        "question": "嘘をつくことで相手が救われるなら、その嘘は悪い？",
+        "level": 3,
+        "sensitivity": 1
+    },
+    {
+        "id": "ethics-004",
+        "category": "ethics",
+        "question": "本当のことを言うと相手が傷つく時、黙るのは優しさ？",
+        "level": 3,
+        "sensitivity": 1
+    },
+    {
+        "id": "ethics-005",
+        "category": "ethics",
+        "question": "自分は悪くないけど、自分が謝れば場が丸く収まるなら謝る？",
+        "level": 3,
+        "sensitivity": 1
+    },
+    {
+        "id": "ethics-006",
+        "category": "ethics",
+        "question": "努力した人と才能がある人、どちらが評価されるべき？",
+        "level": 3,
+        "sensitivity": 1
+    },
+    {
+        "id": "ethics-007",
+        "category": "ethics",
+        "question": "悪気がなかった行動で誰かを傷つけた時、どこまで責任を取るべき？",
+        "level": 3,
+        "sensitivity": 1
+    },
+    {
+        "id": "ethics-008",
+        "category": "ethics",
+        "question": "「みんなのため」と「一人のため」がぶつかったら、どちらを優先する？",
+        "level": 3,
+        "sensitivity": 1
+    },
+    {
+        "id": "support-007",
+        "category": "support",
+        "question": "友達が危ないことをしていたら先生に言う？",
+        "level": 3,
+        "sensitivity": 2
+    },
+    {
+        "id": "support-009",
+        "category": "support",
+        "question": "友達を守るために先生に言うのはあり？",
+        "level": 3,
+        "sensitivity": 2
+    },
+    {
+        "id": "support-010",
+        "category": "support",
+        "question": "友達から「先生には言わないで」と言われたら守る？",
+        "level": 3,
+        "sensitivity": 2
+    },
+    {
+        "id": "support-013",
+        "category": "support",
+        "question": "先生に言ったことで友達関係が悪くなるなら迷う？",
+        "level": 3,
+        "sensitivity": 2
+    },
+    {
+        "id": "support-014",
+        "category": "support",
+        "question": "先生に本当のことを言うのは裏切り？",
+        "level": 3,
+        "sensitivity": 2
+    },
+    {
+        "id": "support-017",
+        "category": "support",
+        "question": "友達を守ることと正しいことがぶつかったらどうする？",
+        "level": 3,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-010",
+        "category": "bullying",
+        "question": "自分に関係ないいじめでも関わる？",
+        "level": 3,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-013",
+        "category": "bullying",
+        "question": "仲のいい友達がいじめていたら注意できる？",
+        "level": 3,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-014",
+        "category": "bullying",
+        "question": "注意したら自分も嫌われそうならどうする？",
+        "level": 3,
+        "sensitivity": 2
+    },
+    {
+        "id": "bullying-018",
+        "category": "bullying",
+        "question": "注意してもやめなかったらどうする？",
+        "level": 3,
+        "sensitivity": 2
+    }
+]

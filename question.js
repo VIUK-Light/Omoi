@@ -35,15 +35,13 @@ let currentQuestionIndex = 0;
 levelDisplay.textContent = "Level " + level;
 
 
-fetch("questions.json")
+fetch("level" + level + ".json")
     .then(function (response) {
         return response.json();
     })
     .then(function (questions) {
 
-        filteredQuestions = questions.filter(function (question) {
-            return question.level === level;
-        });
+        filteredQuestions = questions;
 
         shuffle(filteredQuestions);
         filteredQuestions =
@@ -74,7 +72,6 @@ function shuffle(array) {
     }
 }
 
-
 function showQuestion() {
     const currentQuestion =
         filteredQuestions[currentQuestionIndex];
@@ -82,11 +79,15 @@ function showQuestion() {
     questionText.textContent =
         currentQuestion.question;
 
-    // 毎回いったん隠す
+    // 前の質問の状態をリセット
     detailButton.hidden = true;
     detailPanel.hidden = true;
+    sourceSection.hidden = true;
 
-    // detail があり、text に中身がある場合だけ表示
+    detailText.textContent = "";
+    sourceList.innerHTML = "";
+
+    // 詳細文がある場合だけボタンを表示
     if (
         currentQuestion.detail &&
         currentQuestion.detail.text &&
@@ -96,6 +97,40 @@ function showQuestion() {
 
         detailText.textContent =
             currentQuestion.detail.text;
+
+        // 出典がある場合だけ表示
+        const sources =
+            currentQuestion.detail.sources;
+
+        if (
+            sources &&
+            sources.length > 0
+        ) {
+            sourceSection.hidden = false;
+
+            sources.forEach(function (source) {
+                const listItem =
+                    document.createElement("li");
+
+                const link =
+                    document.createElement("a");
+
+                link.textContent =
+                    source.title;
+
+                link.href =
+                    source.url;
+
+                link.target =
+                    "_blank";
+
+                link.rel =
+                    "noopener noreferrer";
+
+                listItem.appendChild(link);
+                sourceList.appendChild(listItem);
+            });
+        }
     }
 }
 

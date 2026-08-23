@@ -1,0 +1,1164 @@
+[
+    {
+        "id": "values-004",
+        "category": "values",
+        "question": "予定はしっかり決めたい？その場で決めたい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-007",
+        "category": "values",
+        "question": "一緒にいるとき、話す時間とのんびりする時間どっちが好き？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-008",
+        "category": "values",
+        "question": "記念日はちゃんと祝いたい派？さりげなくでいい派？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-001",
+        "category": "self",
+        "question": "学校では明るい方？静かな方？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-002",
+        "category": "self",
+        "question": "家と学校で性格変わる？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-003",
+        "category": "self",
+        "question": "クラスでは目立ちたい？目立ちたくない？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-004",
+        "category": "self",
+        "question": "友達の前だとどんな感じ？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-005",
+        "category": "self",
+        "question": "先生の前だとどんな感じ？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-006",
+        "category": "self",
+        "question": "周りからどう見られていると思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-001",
+        "category": "friendship",
+        "question": "友達は多い方がいい？少ない方がいい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-002",
+        "category": "friendship",
+        "question": "広く浅くと狭く深く、どっちがいい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-003",
+        "category": "friendship",
+        "question": "グループ行動は好き？苦手？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-004",
+        "category": "friendship",
+        "question": "相談されるのは好き？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-005",
+        "category": "friendship",
+        "question": "一人でいる人に話しかけられる？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-006",
+        "category": "friendship",
+        "question": "親友は何人くらいほしい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "affection-001",
+        "category": "affection",
+        "question": "好きって言われるのは嬉しい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "affection-002",
+        "category": "affection",
+        "question": "ハグは好き？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "affection-003",
+        "category": "affection",
+        "question": "手をつなぐのは好き？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "affection-004",
+        "category": "affection",
+        "question": "頭をなでられるのは好き？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "affection-005",
+        "category": "affection",
+        "question": "甘えるのは得意？苦手？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "affection-006",
+        "category": "affection",
+        "question": "甘えられるのは好き？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-001",
+        "category": "contact",
+        "question": "電話とLINE、どっちが好き？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-002",
+        "category": "contact",
+        "question": "毎日連絡したいタイプ？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-003",
+        "category": "contact",
+        "question": "電話はどれくらいしたい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-004",
+        "category": "contact",
+        "question": "寝落ち電話は好き？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-005",
+        "category": "contact",
+        "question": "LINEで話すならどんな話題がいい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-006",
+        "category": "contact",
+        "question": "電話で話すならどんな話題がいい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-001",
+        "category": "jealousy",
+        "question": "嫉妬しやすい方？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-002",
+        "category": "jealousy",
+        "question": "嫉妬されたら嬉しい？困る？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-003",
+        "category": "jealousy",
+        "question": "好きだからこそ不安になることはある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-004",
+        "category": "jealousy",
+        "question": "心配されるのは嬉しい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-005",
+        "category": "jealousy",
+        "question": "恋人が異性と話していたら少し気になる？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-006",
+        "category": "jealousy",
+        "question": "嫉妬した時、態度に出る？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-001",
+        "category": "conflict",
+        "question": "喧嘩したらすぐ話したい？少し時間がほしい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-002",
+        "category": "conflict",
+        "question": "怒った時、黙るタイプ？言うタイプ？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-003",
+        "category": "conflict",
+        "question": "「ごめんね」はすぐ言える？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-004",
+        "category": "conflict",
+        "question": "仲直りで大事にしたいことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-005",
+        "category": "conflict",
+        "question": "悲しい時、気づいてほしい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-001",
+        "category": "future",
+        "question": "理想のカップル像は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-003",
+        "category": "future",
+        "question": "家族みたいな安心感は好き？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-009",
+        "category": "values",
+        "question": "恋人にされて嬉しい気づかいは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-010",
+        "category": "values",
+        "question": "自分が大切にされてるなって感じる瞬間は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-011",
+        "category": "values",
+        "question": "忙しいとき、恋人にどう接してほしい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-012",
+        "category": "values",
+        "question": "LINEの返信は早い方が安心する？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-013",
+        "category": "values",
+        "question": "一緒にいて落ち着く人ってどんな人？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-014",
+        "category": "values",
+        "question": "恋人に求める優しさってどんなもの？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-016",
+        "category": "values",
+        "question": "自分のことを理解してくれてるなって感じるのはどんなとき？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-017",
+        "category": "values",
+        "question": "長く続く関係に必要なことは何だと思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-018",
+        "category": "values",
+        "question": "「好き」と「安心する」はどっちが大事？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-019",
+        "category": "values",
+        "question": "恋人にはどこまで本音を言いたい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-020",
+        "category": "values",
+        "question": "相手に合わせることと我慢の違いって何だと思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-021",
+        "category": "values",
+        "question": "不安なとき、言葉で安心したい？行動で安心したい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-023",
+        "category": "values",
+        "question": "2人で大事にしたいルールはある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "values-024",
+        "category": "values",
+        "question": "恋人にだけは分かってほしい価値観はある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-013",
+        "category": "romance",
+        "question": "好きって言葉はたくさん言われたい？たまにがいい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-014",
+        "category": "romance",
+        "question": "甘えるのと甘えられるの、どっちが好き？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-015",
+        "category": "romance",
+        "question": "会う頻度はどれくらいが理想？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-016",
+        "category": "romance",
+        "question": "毎日LINEしたい？できるときでいい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-018",
+        "category": "romance",
+        "question": "落ち込んでるとき、恋人にどうしてほしい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-023",
+        "category": "romance",
+        "question": "「大切にされてる」って感じる行動は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-025",
+        "category": "romance",
+        "question": "付き合っていて一番大事にしたいことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-026",
+        "category": "romance",
+        "question": "不安になったとき、どうやって安心したい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-027",
+        "category": "romance",
+        "question": "喧嘩したら、どんなふうに仲直りしたい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-028",
+        "category": "romance",
+        "question": "恋人に直してほしいことがあったら言える？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-029",
+        "category": "romance",
+        "question": "相手のために変わってもいいと思う部分はある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-030",
+        "category": "romance",
+        "question": "逆に、自分らしさとして変えたくない部分は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-031",
+        "category": "romance",
+        "question": "「重い」と「愛情深い」の違いって何だと思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "romance-032",
+        "category": "romance",
+        "question": "好きな人にだけ見せる自分ってある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "daily-009",
+        "category": "daily",
+        "question": "最近ちょっと頑張ったことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "daily-010",
+        "category": "daily",
+        "question": "落ち着く場所は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "daily-012",
+        "category": "daily",
+        "question": "最近よく考えていることは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "daily-014",
+        "category": "daily",
+        "question": "最近疲れたことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "daily-015",
+        "category": "daily",
+        "question": "最近少し嬉しかったことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "daily-016",
+        "category": "daily",
+        "question": "最近不安になったことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "daily-017",
+        "category": "daily",
+        "question": "自分の中で大切にしている時間は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "daily-018",
+        "category": "daily",
+        "question": "最近「頑張ったな」と思ったことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "daily-019",
+        "category": "daily",
+        "question": "最近誰かに褒められて嬉しかったことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "school-007",
+        "category": "school",
+        "question": "放課後はすぐ帰りたい？残りたい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "school-008",
+        "category": "school",
+        "question": "学校で落ち着く場所は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "school-009",
+        "category": "school",
+        "question": "授業中に当てられるのは平気？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "school-010",
+        "category": "school",
+        "question": "発表は得意？苦手？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "school-011",
+        "category": "school",
+        "question": "学校で一番疲れる瞬間は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "school-012",
+        "category": "school",
+        "question": "学校で無理して明るくすることある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "school-013",
+        "category": "school",
+        "question": "学校で一人になりたい時ある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "school-014",
+        "category": "school",
+        "question": "学校で自分らしくいられる瞬間は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "school-015",
+        "category": "school",
+        "question": "学校で気を使いすぎることある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "school-016",
+        "category": "school",
+        "question": "学校で安心できる人はいる？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-007",
+        "category": "self",
+        "question": "本当はどう見られたい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-008",
+        "category": "self",
+        "question": "学校で褒められるなら何を褒められたい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-009",
+        "category": "self",
+        "question": "自分はクラスでどんな存在だと思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-011",
+        "category": "self",
+        "question": "友達からどんな人だと思われたい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-012",
+        "category": "self",
+        "question": "先生からどんな人だと思われたい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-013",
+        "category": "self",
+        "question": "学校で頑張っていると思うことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-014",
+        "category": "self",
+        "question": "本当は話したいけど話しかけられない時ある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-015",
+        "category": "self",
+        "question": "学校で強がることある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-016",
+        "category": "self",
+        "question": "高校デビュー・中学デビューって、前向きな変化だと思う？それとも少し無理してると思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-017",
+        "category": "self",
+        "question": "自分らしくいられない時は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "self-018",
+        "category": "self",
+        "question": "学校で本音を隠すことはある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "study-007",
+        "category": "study",
+        "question": "勉強は何のためにすると思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "study-008",
+        "category": "study",
+        "question": "テストの点数はどれくらい気にする？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "study-009",
+        "category": "study",
+        "question": "努力できる人をどう思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "study-010",
+        "category": "study",
+        "question": "勉強を頑張っている人を見るとどう感じる？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "study-011",
+        "category": "study",
+        "question": "頭がいい人ってどんな人だと思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "study-012",
+        "category": "study",
+        "question": "自分は努力できるタイプだと思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "study-013",
+        "category": "study",
+        "question": "勉強で落ち込んだ時、どう励まされたい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "study-014",
+        "category": "study",
+        "question": "「頑張れ」って言われるのは嬉しい？プレッシャー？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "study-015",
+        "category": "study",
+        "question": "恋人が勉強を頑張っていたらどう応援したい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "study-016",
+        "category": "study",
+        "question": "テスト期間中の連絡頻度はどうしたい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "study-017",
+        "category": "study",
+        "question": "勉強で失敗した時、そばにいてほしい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "study-018",
+        "category": "study",
+        "question": "教えてもらうのと一緒に考えるの、どっちがいい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-007",
+        "category": "friendship",
+        "question": "友達に求めることは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-008",
+        "category": "friendship",
+        "question": "友達にされたら嬉しいことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-009",
+        "category": "friendship",
+        "question": "友達にされたら嫌なことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-010",
+        "category": "friendship",
+        "question": "友達に本音を言える？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-011",
+        "category": "friendship",
+        "question": "友達に相談するのは得意？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-012",
+        "category": "friendship",
+        "question": "ネッ友とリア友って、どっちが話しやすいと思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-013",
+        "category": "friendship",
+        "question": "信頼できる友達ってどんな人？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-014",
+        "category": "friendship",
+        "question": "友達に合わせすぎることある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-015",
+        "category": "friendship",
+        "question": "クラスのノリについていけない時ある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-018",
+        "category": "friendship",
+        "question": "友達関係で一番難しいと思うことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "friendship-019",
+        "category": "friendship",
+        "question": "本当の友達って、どんな時に分かると思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-007",
+        "category": "contact",
+        "question": "返信が遅いと不安になる？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-008",
+        "category": "contact",
+        "question": "返信できない時、どんな一言があると安心？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-009",
+        "category": "contact",
+        "question": "会えない日が続いたらどうしたい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-010",
+        "category": "contact",
+        "question": "毎日話すならどんな話がいい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-011",
+        "category": "contact",
+        "question": "忙しい時はどう伝えてほしい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-012",
+        "category": "contact",
+        "question": "「会いたい」って言うのは得意？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-013",
+        "category": "contact",
+        "question": "一人の時間は必要？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-014",
+        "category": "contact",
+        "question": "距離が近すぎると疲れることある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-015",
+        "category": "contact",
+        "question": "逆に距離が遠いと不安になる？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-016",
+        "category": "contact",
+        "question": "理想の連絡頻度は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-017",
+        "category": "contact",
+        "question": "友達との時間と恋人との時間、どっちも大事にできる？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "contact-018",
+        "category": "contact",
+        "question": "連絡が少ないと気持ちが冷めたように感じる？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "affection-007",
+        "category": "affection",
+        "question": "言われて嬉しい言葉は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "affection-008",
+        "category": "affection",
+        "question": "されて嬉しいことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "affection-009",
+        "category": "affection",
+        "question": "どんな褒め方が一番嬉しい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "affection-012",
+        "category": "affection",
+        "question": "寂しい時はどうしてほしい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-007",
+        "category": "jealousy",
+        "question": "どんな時に嫉妬する？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-008",
+        "category": "jealousy",
+        "question": "嫉妬した時、言える？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-009",
+        "category": "jealousy",
+        "question": "不安になった時、どうしてほしい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-010",
+        "category": "jealousy",
+        "question": "放っておかれるのは平気？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-011",
+        "category": "jealousy",
+        "question": "心配されすぎるのは平気？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "jealousy-012",
+        "category": "jealousy",
+        "question": "不安を言う時、どんな言い方がいい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-006",
+        "category": "conflict",
+        "question": "言われたら傷つく言葉は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-007",
+        "category": "conflict",
+        "question": "落ち込んでいる時に言われたい言葉は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-008",
+        "category": "conflict",
+        "question": "逆に言われたくない言葉は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-009",
+        "category": "conflict",
+        "question": "泣いている時にしてほしいことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-010",
+        "category": "conflict",
+        "question": "相談した時にまずしてほしいことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-011",
+        "category": "conflict",
+        "question": "我慢してしまうことはある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-012",
+        "category": "conflict",
+        "question": "本音を言うのは得意？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-013",
+        "category": "conflict",
+        "question": "本音を言えない時はどうなる？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-014",
+        "category": "conflict",
+        "question": "相談したい時、アドバイスがほしい？聞いてほしい？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-015",
+        "category": "conflict",
+        "question": "恋人に察してほしいことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "conflict-016",
+        "category": "conflict",
+        "question": "でも察してほしくないことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-007",
+        "category": "future",
+        "question": "付き合う上で一番大事なことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-008",
+        "category": "future",
+        "question": "恋人に求める安心感って何？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-009",
+        "category": "future",
+        "question": "恋人に求める優しさって何？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-010",
+        "category": "future",
+        "question": "信頼ってどうやって作ると思う？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-011",
+        "category": "future",
+        "question": "恋人に一番守ってほしいことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-012",
+        "category": "future",
+        "question": "好きな人にしか見せない自分はある？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-013",
+        "category": "future",
+        "question": "好きだけでは足りないと思うことは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-014",
+        "category": "future",
+        "question": "長く付き合うために必要な努力は？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-015",
+        "category": "future",
+        "question": "自分らしくいられる恋愛ってどんな恋愛？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-016",
+        "category": "future",
+        "question": "相手に合わせることと我慢の違いは？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-017",
+        "category": "future",
+        "question": "恋人同士で成長するってどういうこと？",
+        "level": 1,
+        "sensitivity": 1
+    },
+    {
+        "id": "future-018",
+        "category": "future",
+        "question": "支え合う関係ってどんな関係？",
+        "level": 1,
+        "sensitivity": 1
+    }
+]

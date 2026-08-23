@@ -117,3 +117,7 @@ body {
     color: #777777;
     line-height: 1.7;
 }
+#detailText {
+    white-space: pre-line;
+    line-height: 1.8;
+}
