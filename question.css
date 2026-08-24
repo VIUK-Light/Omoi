@@ -121,3 +121,27 @@ body {
     white-space: pre-line;
     line-height: 1.8;
 }
+
+.safety-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+    margin: 16px auto 0;
+
+    border: 1px solid #bbbbbb;
+    border-radius: 50%;
+
+    color: #666666;
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.safety-link:hover,
+.safety-link:focus-visible {
+    border-color: #111111;
+    color: #111111;
+}
