@@ -5,7 +5,7 @@
   alt="Omoi home screen"
   width="320"
 />
-
+omoi.viuk-light.org
 社会や価値観について話すための、オープンソースの質問カードです。
 
 Omoiは、同じ考えになるためのものではありません。
