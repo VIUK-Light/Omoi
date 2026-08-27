@@ -10,7 +10,7 @@
     }
   },
   {
-    "id": "relationship-002",
+    "id": "l4-relationship-002",
     "topic": "misattributed_parentage",
     "category": "relationship",
     "perspective": "affected",
@@ -488,5 +488,1661 @@
     "detail": {
       "text": "恋人から、他に好きな人ができたことを理由に別れを告げられた場合を想定した問いです。\n\n相手が気持ちの変化を正直に伝えたことを誠実だと考える人もいれば、自分との関係にいる間に別の人を好きになったこと自体を裏切りだと感じる人もいます。\n\n自分が別れを告げる側と、告げられる側では、同じ基準で考えられるでしょうか。"
     }
+  },
+  {
+    "id": "youth-pregnancy-001",
+    "topic": "consent_under_pressure",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは中学生。好きな相手から性的な関係を求められたけど、まだ迷っている。断ったら嫌われそうでも、NOと言える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "相手を好きであることと、性的な関係に同意することは同じではありません。\n\n『嫌われたくない』『関係を壊したくない』という気持ちがあると、自分では選んだつもりでも、本当に自由に決められていたのか分かりにくくなることがあります。\n\n相手への気持ちと、自分が納得して決めることのどちらをどう考えるかを話す問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-002",
+    "topic": "peer_pressure",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは中学生。周りから『まだ異性との性的な経験ないの？』と言われ、自分だけ遅れている気がしてきた。それでも自分のペースを守れる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "友人関係や周囲の空気は、自分の判断に影響することがあります。\n\n本人が自分で決めたように見えても、『周りと違いたくない』『子ども扱いされたくない』という気持ちが判断に混ざる場合があります。\n\n周囲に合わせることと、自分が本当に望んでいることを分けて考えられるかを問います。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-003",
+    "topic": "contraception_communication",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。避妊について話したいけど、『信用してないの？』と思われそうで言い出せない。それでも話せる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠を防ぐ知識を持っていても、実際の人間関係の中でその話を切り出せるとは限りません。\n\n相手を信頼していることと、リスクについて確認することは両立できます。一方で、関係を壊したくない気持ちから言い出しにくくなる場合もあります。\n\n知識だけでは解決できない、関係性の中での意思表示について考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-004",
+    "topic": "power_difference",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは中学生。好きになった相手は年上で、自分より経験も立場も上に感じる。自分がYESと言ったなら、それだけで対等な同意だと思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "本人が好意を持っている場合でも、年齢や経験、立場の差によって断りにくさが生まれることがあります。\n\n『自分で選んだ』という感覚と、相手との力関係は同時に存在することがあります。\n\n本人の意思を尊重することと、関係の対等さをどう考えるかを問います。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-005",
+    "topic": "optimism_bias",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。妊娠の可能性について知識はある。でも『自分たちは大丈夫』と思っている。知っているだけで十分だと思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "リスクを知識として理解していても、自分自身には起こりにくいと感じることがあります。\n\nこれは若者だけに限らず、人がリスクを判断するときに起こりうる傾向です。\n\n知識を持つことと、その知識を自分の行動に当てはめることの違いについて考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-006",
+    "topic": "pregnancy_disclosure",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは中学生。妊娠したかもしれない。でも親に知られる方が怖い。誰にも言わずにいたくなると思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "重大な問題ほど、怒られることや失望されることへの恐怖から相談しにくくなる場合があります。\n\n早く支援につながる必要がある一方で、本人にとって『助けを求めること』自体が大きな心理的負担になることもあります。\n\n自分を守るために相談することと、身近な人に知られる怖さの衝突を考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-007",
+    "topic": "partner_responsibility",
+    "category": "youth",
+    "perspective": "partner",
+    "question": "あなたは高校生。交際相手から妊娠したと伝えられた。自分の身体には起きていないことでも、どこまで『自分の問題』として責任を持てる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠による身体的な影響は当事者間で同じではありません。一方、妊娠に至るまでの判断や、その後の生活への影響には双方が関わります。\n\n身体的な負担が非対称であることと、相手側にも責任があることをどのように両立して考えるかを問います。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-008",
+    "topic": "friend_confidentiality",
+    "category": "youth",
+    "perspective": "friend",
+    "question": "あなたは中学生。親友から『妊娠したかもしれない。誰にも言わないで』と相談された。どうする？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "友人から秘密を打ち明けられたとき、その信頼を守りたいと思うのは自然です。\n\n一方、自分一人では支えきれない問題では、信頼できる大人や支援につなぐ必要が生じることもあります。\n\n友人との信頼と、友人を守るために他者へ助けを求めることが衝突する状況を考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-009",
+    "topic": "partner_disappears",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。妊娠を伝えた直後、相手から連絡が来なくなった。それでも一人で抱えようとする？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "二人に関係する出来事でも、片方が関係から離れることで、もう一方に心理的・生活上の負担が集中することがあります。\n\n相手に頼りたい気持ち、裏切られた気持ち、周囲に知られたくない気持ちが同時に存在するかもしれません。\n\n自分だけで解決しようとすることと、他の人に助けを求めることについて考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-010",
+    "topic": "partner_denial",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。妊娠を伝えたら、相手から『自分には関係ない』と言われた。相手に責任を求め続ける？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠による身体的な負担は一方に生じますが、そこに至るまでの関係や、その後の責任を一人だけの問題として扱えるとは限りません。\n\n一方で、相手に責任を認めさせようとすること自体が、大きな負担になる場合もあります。\n\n責任を求めることと、自分自身を守ることのどちらをどう優先するかを考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-011",
+    "topic": "partner_fear",
+    "category": "youth",
+    "perspective": "partner",
+    "question": "あなたは高校生。交際相手から妊娠を伝えられた。怖くて逃げたくなったとき、それでも向き合える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "責任があると頭では理解していても、大きな出来事を前にすると、恐怖や混乱から距離を取りたくなることがあります。\n\n自分自身もまだ若く、将来への不安があることと、相手を一人にしない責任は同時に存在します。\n\n『責任を取るべき』という一般論を、自分が怖い立場になったときにも貫けるかを考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-012",
+    "topic": "friend_knows_partner_fled",
+    "category": "youth",
+    "perspective": "friend",
+    "question": "あなたは高校生。親友が妊娠し、相手は連絡を絶っている。親友から『誰にも言わないで』と言われたら、どこまで約束を守る？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "本人が孤立しているほど、友人との信頼は重要になります。\n\n一方で、友人一人だけで支えられる問題には限界があり、信頼できる大人や支援につなぐ必要が生じることもあります。\n\n秘密を守ることと、本人を孤立させないことの衝突を考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-013",
+    "topic": "partner_family_denial",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。相手本人は話し合いたいと言っているのに、相手の親から『もう会わないでほしい』と言われた。誰の意思を重く考える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "未成年同士の問題では、本人たちだけでなく双方の家庭も関わる場合があります。\n\n本人同士の意思を尊重したい考えと、保護者として介入する必要があるという考えは、簡単には両立しません。\n\n未成年者自身の意思と保護者の責任の境界を考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-014",
+    "topic": "pregnancy_test_fear",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは中学生。妊娠しているかもしれないと思っているけれど、結果を知るのが怖い。確かめることを先延ばしにしてしまうと思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "重大な結果が予想されるとき、人は『知らないままでいたい』と感じることがあります。\n\nしかし、知らないことによって不安が消えるわけではなく、必要な支援につながる時期にも影響します。\n\n事実を知る怖さと、早く状況を確認する必要性について考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-015",
+    "topic": "disclosure_to_parent",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは中学生。妊娠したことが分かった。でも親を失望させるくらいなら、できるだけ隠していたいと思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "家族に大切に思われているからこそ、『期待を裏切ったと思われたくない』という気持ちが相談を難しくすることがあります。\n\n叱られる怖さだけでなく、親から見た自分が変わってしまうことへの怖さもあります。\n\n助けを求めることと、自分が大切にしてきた家族との関係を守りたい気持ちの衝突を考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-016",
+    "topic": "telling_sibling_first",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは中学生。親には言えないけれど、きょうだいになら話せそうだと思った。『親には言わないで』と約束させる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "家族の中でも、相談しやすい相手と相談しにくい相手がいることがあります。\n\n自分の秘密を自分で管理したい気持ちと、支えてくれる人がさらに助けを求める必要性は衝突することがあります。\n\n自分の秘密を誰まで共有してよいかを決める権利について考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-017",
+    "topic": "parent_reaction",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。勇気を出して親に妊娠を伝えたら、最初に強く責められた。そのあと親が謝ってきても、もう一度頼れると思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "驚きや不安から、家族が最初に強い反応をしてしまうことがあります。\n\n一度傷ついた信頼が、その後の謝罪だけで元に戻るとは限りません。\n\n家族だから許せることと、家族だからこそ許しにくいことについて考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-018",
+    "topic": "parent_decision_pressure",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。妊娠について親から『あなたのためだから』と強く結論を求められている。親が本気で心配していると分かっていても、自分の意思を押し通せる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "保護者が本人の将来を真剣に考えていても、その考えが本人自身の希望と一致するとは限りません。\n\n親への信頼と、自分の人生について自分で決めたい気持ちがぶつかる状況を扱います。\n\n『本人のため』という言葉が、どこまで本人の意思より優先されるべきかを考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-019",
+    "topic": "different_partner_decision",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。妊娠について、自分と相手が望んでいることが全く違う。相手の人生にも影響すると分かっていて、自分の意思をどこまで優先する？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠は双方の人生に影響しますが、身体への影響は同じではありません。\n\nそのため、『二人の問題だから二人で同じように決める』だけでは整理できない場合があります。\n\n身体の自己決定と、もう一人の当事者の意見をどう位置づけるかを考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-020",
+    "topic": "partner_without_final_control",
+    "category": "youth",
+    "perspective": "partner",
+    "question": "あなたは高校生。交際相手の妊娠について強い希望があるけれど、最終的に自分だけでは決められない。自分の意見が通らなくても、その後の責任に向き合える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠について、身体に関する最終的な意思決定と、その出来事に関わった双方の責任は同じ問題ではありません。\n\n自分の希望が尊重されなかったと感じることと、それでも相手への責任を考えることは同時に存在します。\n\n決定権と責任が必ずしも同じ大きさではない状況について考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-021",
+    "topic": "school_disclosure",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。学校を続けるには先生に相談した方がよさそうだけど、学校中に知られるのが怖い。それでも相談する？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "支援を受けるためには、自分の状況を誰かに伝える必要が生じることがあります。\n\n一方で、非常に個人的な情報がどこまで共有されるのか分からないことは大きな不安になります。\n\n支援を受けるための情報共有と、自分のプライバシーを守ることについて考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-022",
+    "topic": "school_continuation",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。周囲から『今は学校より自分の生活を優先した方がいい』と言われても、卒業まで通い続けたいと思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "本人の負担を減らそうとする助言が、本人にとって大切な学校生活や将来の目標を諦めることにつながる場合があります。\n\n自分を守るために一度立ち止まることと、今まで続けてきた生活を守りたいことのどちらを重く見るかを考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-023",
+    "topic": "classmate_accommodation",
+    "category": "youth",
+    "perspective": "classmate",
+    "question": "あなたは高校生。妊娠した同級生だけ出席や課題で特別な配慮を受けている。自分の負担が増えても、それを公平だと思える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "公平とは全員を同じ条件で扱うことだという考え方があります。一方、それぞれの事情に応じて必要な支援を変えることも公平だという考え方があります。\n\n自分自身に追加の負担が生じたときにも、個別の配慮を支持できるかを考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-024",
+    "topic": "rumor",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。自分の妊娠について学校で噂が広がった。誤解されていても、自分の事情を説明する必要はないと言い切れる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "誤解や偏見を訂正するためには、自分の非常に個人的な事情を説明しなければならない場合があります。\n\n自分の評判を守ることと、他人に説明する義務はないというプライバシーの感覚がぶつかります。\n\n『誤解されたままでいる自由』についても考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-025",
+    "topic": "friend_distance",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。妊娠を打ち明けてから、仲の良かった友達が少しずつ距離を取るようになった。それでも理由を聞きたいと思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "友人がどう接すればよいか分からず距離を取っている可能性もあれば、偏見が理由の場合もあります。\n\n関係を取り戻すために理由を知りたい気持ちと、これ以上傷つきたくない気持ちが衝突することがあります。\n\n大切な人との関係が変化したとき、どこまで向き合うかを考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-026",
+    "topic": "friend_stays",
+    "category": "youth",
+    "perspective": "friend",
+    "question": "あなたは高校生。妊娠した親友を支えたいけれど、毎日のように相談され、自分まで苦しくなってきた。どこまで友達として支え続ける？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "大切な友人が苦しんでいるとき、できる限り支えたいと思うことがあります。\n\nしかし、友人一人がすべてを背負うことには限界があります。\n\n友情への責任と、自分自身の生活や心を守ることの境界を考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-027",
+    "topic": "future_plan",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。ずっと目指していた進路がある。妊娠によって周囲から『現実を見た方がいい』と言われても、その夢を変えたくない？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "大きな生活上の変化が起きても、それ以前から持っていた本人の目標が消えるわけではありません。\n\n一方で、現実的な負担や環境の変化を考え、目標を修正する必要があると感じる場合もあります。\n\n夢を守ることと、現在の状況に合わせて人生を組み替えることについて考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-028",
+    "topic": "partner_future_plan",
+    "category": "youth",
+    "perspective": "partner",
+    "question": "あなたは高校生。交際相手の妊娠によって、自分が目指していた進学や将来にも影響が出そうだ。それでも『自分の人生まで変える必要はない』と言える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠の身体的な影響は同じではありませんが、相手側にもその後の責任や生活上の変化が生じることがあります。\n\n自分の将来を守ることと、自分が関係した出来事への責任をどこまで引き受けるかを考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-029",
+    "topic": "resentment_toward_partner",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。自分の生活だけが大きく変わっていくのに、相手は今まで通り学校生活を送っている。それを見ても、相手を責めずにいられると思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "同じ出来事に関わった二人でも、身体的・社会的な影響が同じ形で現れるとは限りません。\n\n相手にも責任があると考えることと、すべての負担を完全に同じにすることは別の問題です。\n\n不均衡に見える負担を、当事者としてどう受け止めるかを考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-030",
+    "topic": "returning_partner",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。妊娠を伝えたあと逃げていた相手が、しばらくして『やっぱり向き合いたい』と戻ってきた。もう一度信頼できる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "一度責任から離れた人が後から向き合おうとすることと、その人をもう一度信頼できるかは別の問題です。\n\n反省や変化を認めることと、一度失われた信頼から自分を守ることの間で、どこまで関係を作り直せるかを考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-031",
+    "topic": "partner_friend_knows",
+    "category": "youth",
+    "perspective": "friend",
+    "question": "あなたは高校生。友達が交際相手の妊娠を知ったあと、連絡を無視して逃げようとしている。友達を裏切ることになっても、止める？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "友人を守りたい気持ちがあっても、その友人が誰かに大きな負担を残そうとしている場合があります。\n\n友情とは相手の味方をすることなのか、間違っていると思う行動を止めることなのか。\n\n身内への忠誠と、第三者への責任の衝突を考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-032",
+    "topic": "partner_parent",
+    "category": "youth",
+    "perspective": "parent",
+    "question": "あなたの高校生の子どもから『交際相手が妊娠した。でも自分は関わりたくない』と言われた。親として、子どもの将来を守ることをどこまで優先する？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "親としては、自分の子どもの将来を守りたいと考えるかもしれません。\n\nしかし、そのために子どもが負うべき責任まで遠ざけることが、本当に本人のためになるとは限りません。\n\n自分の子どもへの愛情と、他者への責任をどう両立するかを考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-033",
+    "topic": "affected_parent",
+    "category": "youth",
+    "perspective": "parent",
+    "question": "あなたの高校生の子どもが妊娠し、相手は連絡を絶っている。相手側への怒りより先に、自分の子どものこれからを考えられる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "大切な子どもが一方的に負担を背負っているように見えると、相手や相手の家庭への怒りが強くなることがあります。\n\n責任を追及する必要性と、まず本人の生活や心を支えることは、どちらも重要です。\n\n怒りと保護責任が同時に存在するときの優先順位を考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-034",
+    "topic": "teacher_confidentiality",
+    "category": "youth",
+    "perspective": "teacher",
+    "question": "あなたが信頼している先生だとして、生徒から妊娠について相談され『他の先生や親にはまだ言わないで』と頼まれたら、その信頼をどこまで守る？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "生徒が相談してくれたこと自体が、大きな信頼の表れである場合があります。\n\n一方で、先生一人だけでは対応できず、適切な支援につなぐ必要が生じることもあります。\n\n相談相手としての信頼と、支援する立場としての責任について考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-035",
+    "topic": "classmate_rumor",
+    "category": "youth",
+    "perspective": "classmate",
+    "question": "あなたは高校生。友達から『あの子、妊娠したらしいよ』と噂を聞いた。本人に確かめたくなっても、聞かずにいられる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "親しい人について重大な噂を聞けば、本当なのか知りたいと思うかもしれません。\n\nしかし、その人が自分から話していない情報を確認すること自体が、本人のプライバシーへ踏み込むことにもなります。\n\n心配することと、本人の秘密に立ち入らないことの境界を考える問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-036",
+    "topic": "self_blame",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。妊娠して『全部自分のせいだ』と思っている。自分の判断に責任があることと、自分自身を責め続けることは同じだと思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "自分の選択について責任を考えることは重要でも、その出来事によって自分全体の価値まで否定する必要があるとは限りません。\n\n責任を引き受けることと、自分自身への罰のように考えることの違いについて話す問いです。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-037",
+    "topic": "relationship_after_crisis",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。妊娠をめぐる出来事を二人で乗り越えたあとも、相手と以前と同じように付き合い続けたいと思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "大きな出来事を一緒に経験したことで関係が強くなる場合もあれば、それまで見えなかった価値観の違いに気づく場合もあります。\n\n一緒に困難を経験したことと、その後も恋愛関係を続けたいかは別の問題です。\n\n過去を共有した責任感と、自分が今後望む関係を分けて考えられるかを問います。"
+    }
+  },
+  {
+    "id": "youth-pregnancy-038",
+    "topic": "judging_others_after_experience",
+    "category": "youth",
+    "perspective": "affected",
+    "question": "あなたは高校生。以前は若くして妊娠した人を『無責任だ』と思っていた。でも今、自分が同じ立場になった。その考えをどこまで変えられる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "他人の状況を外から見ると、本人の判断や責任を単純に評価しやすいことがあります。\n\nしかし、自分自身が同じ立場になれば、感情、人間関係、恐怖、将来への不安など、それまで見えていなかった要素に気づくかもしれません。\n\n他人に適用していた原則を、自分自身にも同じように適用できるかを考える問いです。"
+    }
+  },
+  {
+  "id": "disability-001",
+  "topic": "sibling_future_care",
+  "category": "disability",
+  "perspective": "sibling",
+  "question": "あなたには、一人で生活するのが難しい障害のあるきょうだいがいる。親から『私たちがいなくなったら、この子をお願い』と言われた。自分の進学や仕事、結婚まで変わるかもしれなくても、その役割を引き受ける？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "きょうだいを大切に思うことと、その人の生活を将来にわたって背負うことは同じではありません。\n\n家族として支えたい気持ちと、自分自身の人生を自由に選ぶ権利が直接ぶつかる状況を考える問いです。"
   }
+},
+{
+  "id": "disability-002",
+  "topic": "disabled_child_independence",
+  "category": "disability",
+  "perspective": "parent",
+  "question": "障害のある自分の子どもが『一人暮らしをしたい』と言っている。失敗すれば生活そのものが成り立たなくなる可能性があっても、本人の挑戦を止めずにいられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "本人の自己決定を尊重したい気持ちと、親として重大な失敗を防ぎたい気持ちが衝突します。\n\n『失敗する自由』を、実際に大切な子どもへ認められるかを考える問いです。"
+  }
+},
+{
+  "id": "disability-003",
+  "topic": "reasonable_accommodation_burden",
+  "category": "disability",
+  "perspective": "affected",
+  "question": "あなたには障害があり、学校で必要な配慮を受ければ通い続けられる。でも、そのために友達や先生の負担がかなり増えると知った。それでも遠慮せずに配慮を求められる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "必要な配慮を受ける権利と、周囲へ負担をかけたくない気持ちは両立しにくい場合があります。\n\n理念として配慮を求めるだけでなく、自分が実際に周囲の負担の原因になると感じたときにも、その権利を使えるかを問います。"
+  }
+},
+{
+  "id": "disability-004",
+  "topic": "accommodation_peer_cost",
+  "category": "disability",
+  "perspective": "classmate",
+  "question": "障害のある同級生への配慮のため、あなたが楽しみにしていた学校行事の内容が大きく変更された。それでも『みんなが参加できる方が大切だ』と言える？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "誰も排除しないことを大切にする原則と、自分自身が楽しみにしていた機会を失うことが衝突します。\n\n自分が実際に不利益を受ける側でも、合理的配慮を公平だと考えられるかを問います。"
+  }
+},
+{
+  "id": "disability-005",
+  "topic": "disability_employment_family",
+  "category": "disability",
+  "perspective": "employer",
+  "question": "あなたが小さな会社を経営している。障害のある応募者はとても優秀だけど、必要な配慮を整えると会社の利益が大きく減り、自分の家族の生活にも影響する。それでも採用できる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "能力で公平に評価したいという考えと、経営者として会社や家族の生活を守る責任が衝突します。\n\n平等を支持する原則を、自分自身が大きなコストを負う場面でも維持できるかを考える問いです。"
+  }
+},
+{
+  "id": "disability-006",
+  "topic": "hidden_disability_disclosure",
+  "category": "disability",
+  "perspective": "affected",
+  "question": "あなたには外から分かりにくい障害がある。第一志望の進学先で配慮を受けるには、そのことを伝える必要がある。でも知られたことで周囲の見方が変わるのが怖い。それでも伝える？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "必要な支援を受けるために自分の情報を開示することと、障害を知られずに生活したい気持ちが衝突します。\n\n支援を受ける利益と、自分がどう見られるかを自分で決める権利について考える問いです。"
+  }
+},
+{
+  "id": "disability-007",
+  "topic": "parent_future_planning",
+  "category": "disability",
+  "perspective": "parent",
+  "question": "重い障害のある自分の子どもを、今は家族で支えられている。でも自分が亡くなった後まで考えると、施設など家族以外の支援に慣れてもらう必要があるかもしれない。本人が嫌がっていても、今から生活を変えられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "今の本人の安心を守ることと、家族がいなくなった後の生活に備えることが衝突します。\n\n将来のためという理由で、現在の本人の希望をどこまで変えてよいのかを考える問いです。"
+  }
+},
+{
+  "id": "disability-008",
+  "topic": "genetic_risk_parenthood",
+  "category": "disability",
+  "perspective": "affected",
+  "question": "あなたには遺伝する可能性の高い障害がある。自分の人生には十分価値があると思っている一方、将来の子どもが同じ苦労をする可能性も知っている。それでも子どもを持ちたいという気持ちは変わらない？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "自分自身の人生を肯定することと、将来の子どもに生じうる困難を心配することは両立します。\n\n自分の経験、子どもの将来、親になる自由を自分自身の問題として考える問いです。"
+  }
+},
+{
+  "id": "disability-009",
+  "topic": "prenatal_diagnosis",
+  "category": "disability",
+  "perspective": "parent",
+  "question": "生まれてくる自分の子どもに、将来大きな支援が必要になる可能性が高いと分かった。自分たちの仕事や生活、きょうだいの人生まで大きく変わると知っても、同じ気持ちで将来を考えられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "子どもの存在そのものへの価値判断と、家族全体に生じる現実的な負担は分けて考える必要があります。\n\n理念としてではなく、自分の家族の生活が大きく変わる状況で何を重視するかを考える問いです。"
+  }
+},
+{
+  "id": "disability-010",
+  "topic": "disability_identity_treatment",
+  "category": "disability",
+  "perspective": "affected",
+  "question": "あなたの障害を大きく軽減できる新しい治療ができた。でも、その障害と一緒に生きてきた経験を自分らしさの一部だとも感じている。周囲から『治せるなら治した方がいい』と言われたら、どう思う？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "生活上の困難を減らしたい気持ちと、自分の現在のあり方を否定されたくない気持ちが衝突する場合があります。\n\n『治せること』と『治すべきこと』は同じなのか、自分自身の立場から考える問いです。"
+  }
+},
+{
+  "id": "children-001",
+  "topic": "family_poverty_education",
+  "category": "children",
+  "perspective": "affected",
+  "question": "あなたは高校生。家計がかなり苦しく、自分が進学を諦めて働けば、家族は生活を立て直せる。でもあなたは大学に行きたい。家族より自分の将来を優先できる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "家族を助けたい気持ちと、自分の教育機会を守りたい気持ちが直接衝突します。\n\n『子どもは自分の将来を優先してよい』という考えを、自分の家族が実際に困っている状況でも貫けるかを問います。"
+  }
+},
+{
+  "id": "children-002",
+  "topic": "young_carer",
+  "category": "children",
+  "perspective": "affected",
+  "question": "あなたは中学生。自分が弟や妹の世話をしなければ、親は仕事を続けられない。でも友達と遊んだり部活にも行きたい。家族を手伝わずに自分の時間を選べる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "家族を助けることと、子ども自身の学校生活や友人関係を守ることが衝突します。\n\n自分が抜ければ家族が困ると分かっている状況で、自分の時間を優先することをどう考えるかという問いです。"
+  }
+},
+{
+  "id": "children-003",
+  "topic": "parental_expectation",
+  "category": "children",
+  "perspective": "affected",
+  "question": "あなたは高校生。親はあなたの進学のために何年も節約してきた。でも、本当に進みたい道は親が望んでいる進路とは全く違う。親を失望させても自分の道を選べる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "親への感謝と、自分自身の人生を決めることが直接ぶつかります。\n\n支えてもらった恩をどこまで進路選択で返す必要があるのかを、自分の立場から考える問いです。"
+  }
+},
+{
+  "id": "children-004",
+  "topic": "child_privacy_danger",
+  "category": "children",
+  "perspective": "parent",
+  "question": "自分の子どもが重大なトラブルに巻き込まれているかもしれない。でも本人はスマホを絶対に見ないでほしいと言っている。信頼を壊せば二度と相談してくれないかもしれなくても、確認する？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "子どもの安全を守る責任と、本人との信頼やプライバシーが衝突します。\n\n危険を防ぐためなら信頼を傷つけてもよいのかを、親として考える問いです。"
+  }
+},
+{
+  "id": "children-005",
+  "topic": "bullying_perpetrator_child",
+  "category": "children",
+  "perspective": "parent",
+  "question": "自分の子どもが、学校でいじめの加害側だったと分かった。子ども自身にも孤立や家庭での苦しさがあった。それでも被害を受けた側より先に、自分の子どもを守ろうとする？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "子どもの事情を理解して支えることと、被害を受けた側への責任を認めることが衝突します。\n\n身内が加害側になったときにも、普段の公平な判断を保てるかを考える問いです。"
+  }
+},
+{
+  "id": "children-006",
+  "topic": "bullying_friend_secret",
+  "category": "children",
+  "perspective": "friend",
+  "question": "あなたは中学生。親友から『いじめられている。でも先生に言ったらもっとひどくなるから絶対に言わないで』と頼まれた。親友に嫌われても、大人に相談できる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "友人との信頼を守ることと、本人を守るために別の人へ助けを求めることが衝突します。\n\n正しいと思う行動によって大切な友人との関係を失う可能性があっても実行できるかを問います。"
+  }
+},
+{
+  "id": "children-007",
+  "topic": "child_failure_parent",
+  "category": "children",
+  "perspective": "parent",
+  "question": "自分の子どもが、失敗する可能性がかなり高い進路を選んでいる。失敗すれば何年も立て直せないかもしれないと分かっていても、『あなたの人生だから』と任せられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "本人の自己決定を尊重したい気持ちと、重大な失敗を防ぎたい親としての責任が衝突します。\n\n失敗する自由を本当に自分の子どもにも認められるかを考える問いです。"
+  }
+},
+{
+  "id": "children-008",
+  "topic": "family_secret_child",
+  "category": "children",
+  "perspective": "affected",
+  "question": "あなたは中学生。家族から『このことを外で話したら家族が壊れる』と言われ、重大な秘密を預けられた。一人で抱えるのが苦しくても、家族を守るために黙っていられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "家族を守りたい気持ちと、自分自身が大人の問題を背負い続ける苦しさが衝突します。\n\n家族への忠誠と、自分を守るために誰かへ相談することをどう考えるかという問いです。"
+  }
+},
+{
+  "id": "children-009",
+  "topic": "parents_divorce_child",
+  "category": "children",
+  "perspective": "affected",
+  "question": "あなたは中学生。両親から『離婚するかどうか、あなたの気持ちも聞きたい』と言われた。本当は離婚してほしくない。でも両親が一緒にいると苦しそうだと分かっている。自分の希望を言える？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "自分が家族の形を守りたい気持ちと、親それぞれが苦しい関係から離れることを認める気持ちが衝突します。\n\n子どもの希望と親の人生をどこまで分けて考えられるかを問います。"
+  }
+},
+{
+  "id": "children-010",
+  "topic": "parent_location_surveillance",
+  "category": "children",
+  "perspective": "affected",
+  "question": "あなたは高校生。親が安全のために位置情報を常に確認している。解除すれば自由になれるけれど、親が本気で不安になることも分かっている。それでも監視をやめてほしいと言える？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "自分のプライバシーや自立と、親の安心や保護責任が衝突します。\n\n親の心配が善意だと分かっている状況でも、自分の自由をどこまで主張できるかを考える問いです。"
+  }
+},
+{
+  "id": "elderly-001",
+  "topic": "elderly_driving",
+  "category": "elderly",
+  "perspective": "affected",
+  "question": "あなたは高齢者。家族から運転をやめてほしいと言われた。でも免許を手放せば、買い物や通院だけでなく友人にもほとんど会えなくなる。それでも安全のために手放せる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "運転を続ける自由だけでなく、車が生活や人間関係そのものを支えている場合があります。\n\n周囲の安全と、自分の自立した生活を維持することが直接衝突する状況を考える問いです。"
+  }
+},
+{
+  "id": "elderly-002",
+  "topic": "elderly_driving_child",
+  "category": "elderly",
+  "perspective": "child",
+  "question": "高齢の親の運転が危ないと感じている。でも運転をやめさせれば、毎週あなたが買い物や通院を手伝う必要がある。それでも免許を返してほしいと言える？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "安全のために運転をやめるべきだという考えと、その結果生じる負担を自分自身が引き受けることが衝突します。\n\n他人には返納を求められても、自分が代わりの負担を負う側になったときにも同じ判断ができるかを問います。"
+  }
+},
+{
+  "id": "elderly-003",
+  "topic": "home_care_affected",
+  "category": "elderly",
+  "perspective": "affected",
+  "question": "あなたは高齢者。最期まで自宅で暮らしたい。でもそのためには、娘が仕事を辞めて介護する必要がある。娘が『大丈夫』と言っていても、自宅を望み続けられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "自分が望む場所で暮らすことと、大切な家族の人生を大きく変えてしまうことが衝突します。\n\n本人の自己決定を、支える人の犠牲とどこまで切り離せるかを考える問いです。"
+  }
+},
+{
+  "id": "elderly-004",
+  "topic": "home_care_child",
+  "category": "elderly",
+  "perspective": "child",
+  "question": "親は『家で暮らしたい』と言っている。でも介護を続けるには、あなたが仕事を辞めなければならない。親から昔たくさん支えてもらったとしても、自分の人生を優先できる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "親への感謝や恩と、自分自身の仕事や生活を守ることが直接衝突します。\n\n親に支えてもらった過去が、子どもの介護責任をどこまで生むのかを考える問いです。"
+  }
+},
+{
+  "id": "elderly-005",
+  "topic": "dementia_financial_control",
+  "category": "elderly",
+  "perspective": "child",
+  "question": "認知症の親が、大切に貯めてきたお金を次々に使うようになった。本人は楽しそうで『自分のお金だ』と言っている。将来の生活費を守るためなら、本人のお金を家族が管理する？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "本人が自分の財産を使う自由と、将来の生活を守るために財産を保護する必要性が衝突します。\n\n本人の現在の幸福と、未来の安全を誰が決めるべきかを考える問いです。"
+  }
+},
+{
+  "id": "elderly-006",
+  "topic": "dementia_relationship",
+  "category": "elderly",
+  "perspective": "child",
+  "question": "認知症の親があなたを家族だと分からなくなり、会うたびに強く拒絶するようになった。それでも『親だから』会い続けられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "これまで築いてきた親子関係と、現在の本人が望んでいる距離が一致しない場合があります。\n\n過去の関係を重視することと、現在の本人の意思を尊重することをどう考えるかという問いです。"
+  }
+},
+{
+  "id": "elderly-007",
+  "topic": "elderly_loneliness_family",
+  "category": "elderly",
+  "perspective": "affected",
+  "question": "あなたは高齢者。一人暮らしが寂しく、子どもにもっと会いに来てほしい。でも子どもが仕事と育児で限界なのも知っている。それでも『もっと来てほしい』と言える？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "孤独を我慢せず助けを求めることと、子どもの生活や限界を尊重することが衝突します。\n\n家族だからどこまで自分の寂しさを支えてもらってよいのかを、自分の立場から考える問いです。"
+  }
+},
+{
+  "id": "elderly-008",
+  "topic": "elderly_remarriage",
+  "category": "elderly",
+  "perspective": "child",
+  "question": "高齢の親が新しい相手と再婚したいと言っている。その結婚で将来の相続や家族関係が大きく変わると分かっていても、『親の人生だから』と心から応援できる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "高齢になっても本人には恋愛や結婚を選ぶ自由があります。一方、その決定が家族の財産や関係に実際の影響を与える場合もあります。\n\n親の幸福と、自分自身の利害をどこまで切り離せるかを考える問いです。"
+  }
+},
+{
+  "id": "elderly-009",
+  "topic": "elderly_money_gift",
+  "category": "elderly",
+  "perspective": "child",
+  "question": "高齢の親が、長年世話になった他人へ財産の多くを渡したいと言っている。自分の相続がほとんどなくなっても、『親のお金だから自由だ』と言える？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "本人の財産を本人が自由に使う権利と、家族として相続を期待する気持ちが衝突します。\n\n財産権についての原則を、自分が大きな利益を失う場面でも貫けるかを問います。"
+  }
+},
+{
+  "id": "elderly-010",
+  "topic": "elderly_independence_risk",
+  "category": "elderly",
+  "perspective": "affected",
+  "question": "あなたは高齢者。一人暮らしを続けたい。でも転倒などが起きたら、離れて暮らす子どもがすぐ駆けつけなければならない。自分の自由のために家族へその負担を求められる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "自分らしい生活を続ける自由と、緊急時に家族へ生じる現実的な負担が衝突します。\n\n『本人が望む生活』を、その結果を支える人の立場まで含めて考える問いです。"
+  }
+},
+{
+  "id": "relationship-101",
+  "topic": "marriage_family_opposition",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚したい相手を、あなたの家族が強く反対している。結婚すれば家族との関係が壊れるかもしれなくても、その相手を選べる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "結婚相手を自分で選ぶことと、自分を育ててきた家族との関係を守ることが直接衝突する状況です。\n\n『自分の人生だから自分で決める』という原則を、家族を失う可能性がある場面でも貫けるかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-102",
+  "topic": "marriage_financial_difference",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚したい相手には大きな借金がある。相手を愛していて、借金の理由にも納得している。でも結婚すれば自分の生活設計まで大きく変わる。それでも結婚を考えられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "相手への愛情と、結婚によって共有することになる現実的な生活上の負担が衝突します。\n\n『愛していれば乗り越えられる』という考えを、自分の将来やお金まで影響を受ける状況でどう考えるかを問います。"
+  }
+},
+{
+  "id": "relationship-103",
+  "topic": "marriage_children_disagreement",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "長く付き合ってきた相手と結婚したい。でもあなたは将来子どもがほしく、相手は絶対に望んでいない。どちらも考えを変えるつもりがないなら、愛情だけで結婚できる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "結婚したいほど相手を大切に思う気持ちと、自分が望む将来の家族像が両立しない状況です。\n\n相手との現在の関係と、まだ存在しない将来への希望のどちらをどこまで重く考えるかを問います。"
+  }
+},
+{
+  "id": "relationship-104",
+  "topic": "marriage_career",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚相手の夢を叶えるには遠くへ引っ越す必要があり、自分は今の仕事を辞めなければならない。相手の夢を応援したいと思っていても、自分のキャリアを手放せる？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "大切な相手の人生を支えたい気持ちと、自分自身が積み上げてきた仕事や将来を守りたい気持ちが衝突します。\n\nパートナーを支えることが、どこから自己犠牲になるのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-105",
+  "topic": "marriage_income_gap",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚後、あなたの収入が相手より大幅に高くなった。家事や生活費まで完全に半分ずつにすることを、今までと同じように公平だと思える？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "全員が同じ量を負担することと、収入や時間など実際の余裕に応じて負担を変えることでは、公平の考え方が異なります。\n\n自分が多く負担する側になったとき、平等と公平をどう区別するかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-106",
+  "topic": "marriage_parent_care",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚相手から『将来、自分の親の介護も一緒に支えてほしい』と言われた。結婚するということは、相手の家族まで背負うことだと思う？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "結婚によってパートナーとは家族になりますが、その責任が相手の親族にまでどこまで広がるかは人によって考え方が異なります。\n\n愛する相手への責任と、自分が選んでいない家族への責任の境界を考える問いです。"
+  }
+},
+{
+  "id": "relationship-107",
+  "topic": "marriage_name",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚相手から『どうしても自分の名字にしてほしい』と言われた。自分にとっても今の名字が大切なら、どこまで相手の希望を受け入れられる？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "名字は単なる手続きと感じる人もいれば、自分自身や家族とのつながりに関わる大切な要素と感じる人もいます。\n\n相手に譲ることと、自分のアイデンティティを守ることの境界を考える問いです。"
+  }
+},
+{
+  "id": "relationship-108",
+  "topic": "marriage_doubt",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚式や新生活の準備まで進んだあとで、『本当にこの人と結婚したいのか分からない』と思い始めた。周囲に大きな迷惑をかけても立ち止まれる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "一度約束したことへの責任や、家族・相手・周囲へ与える影響と、自分の人生に関わる違和感を無視しないことが衝突します。\n\n引き返すことで多くを失う状況でも、自分の迷いを尊重できるかを問います。"
+  }
+},
+{
+  "id": "relationship-109",
+  "topic": "divorce_children",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "夫婦としての愛情はほとんどなくなった。でも子どもは『離婚しないでほしい』と言っている。子どものためなら、夫婦関係を続けるべきだと思う？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "親自身が人生を選び直すことと、家族の形が変わることを望まない子どもの気持ちが衝突します。\n\n『子どものため』という理由で、親がどこまで自分自身の関係を続けるべきかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-110",
+  "topic": "divorce_financial_dependence",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚生活を終わらせたいと思っている。でも離婚すれば自分の生活水準が大きく下がり、今まで通りには暮らせなくなる。それでも離婚を選べる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "関係から離れたい気持ちと、結婚によって成り立っている経済的な安定が衝突します。\n\n自由な選択に見える離婚も、生活条件によって選びにくくなることについて考える問いです。"
+  }
+},
+{
+  "id": "relationship-111",
+  "topic": "divorce_regret",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "離婚したあと、元配偶者が以前とは大きく変わったと知った。『あのとき別れなければよかった』と思っても、自分の決断を後悔せずにいられる？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "決断した当時には見えなかった未来を、後から知ることがあります。\n\n現在の結果から過去の自分を責めることと、その時点での自分の判断を尊重することの違いを考える問いです。"
+  }
+},
+{
+  "id": "relationship-112",
+  "topic": "divorce_parent_pressure",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "あなたは離婚したいと思っている。でも自分の親から『もう少し我慢すればいい』と強く反対されている。親を失望させても、自分の結婚を自分で終わらせられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "結婚生活を実際に生きる本人の意思と、家族が望む安定や価値観が衝突します。\n\n家族の期待を尊重することと、自分の人生について最終的に決めることの境界を考える問いです。"
+  }
+},
+{
+  "id": "relationship-113",
+  "topic": "divorce_new_partner",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "離婚後に新しく大切な相手ができた。でも自分の子どもは『その人とは一緒に暮らしたくない』と言っている。自分の新しい幸せをどこまで優先できる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "離婚後も親には新しい人生や関係を築く自由があります。一方、その選択は同居する子どもの生活にも直接影響します。\n\n親個人の幸福と、子どもの安心できる生活のどちらをどこまで優先するかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-114",
+  "topic": "divorce_friendship",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "離婚したあとも、元配偶者とは人として大切な存在だと思っている。新しい恋人から『もう関わらないでほしい』と言われたら、どこまで受け入れる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "過去の家族との関係を大切にしたい気持ちと、現在のパートナーが安心できる関係を作りたい気持ちが衝突します。\n\n恋愛関係が変わったあと、過去の相手とのつながりをどこまで残せるかを問います。"
+  }
+},
+{
+  "id": "relationship-115",
+  "topic": "divorce_failure",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚を『一生続けるもの』だと思ってきた自分が離婚することになったら、関係を終えることを人生の失敗だと思わずにいられる？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "結婚を続けること自体に価値を置く考えと、関係を終えることも人生の選択の一つだと考える立場があります。\n\n自分自身が離婚する側になったとき、今まで持っていた結婚観をどう捉え直すかを問います。"
+  }
+},
+{
+  "id": "relationship-116",
+  "topic": "divorce_reconciliation",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "離婚を決めたあと、相手が本気で変わろうとしている姿を見た。それでも、一度終わらせると決めた関係から離れ続けられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "人が変わる可能性を信じることと、一度決めた自分の境界を守ることが衝突します。\n\n相手の変化を認めることが、必ず関係をやり直す義務になるのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-117",
+  "topic": "control_location",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人から『心配だから位置情報を共有してほしい』と言われた。自分には隠したいことがなくても、常に居場所を知られる関係を受け入れられる？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "相手を安心させたい気持ちと、自分の行動を常に把握されない自由が衝突します。\n\n『隠すことがないなら見せられる』という考えと、秘密がなくてもプライバシーは必要だという考えを比較する問いです。"
+  }
+},
+{
+  "id": "relationship-118",
+  "topic": "control_friends",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人が、あなたの親しい友人の一人をどうしても信用できず『もう会ってほしくない』と言っている。恋人の不安を減らすために、その友人との関係を変えられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "恋人を安心させたい気持ちと、恋愛とは別に自分が築いてきた友人関係を守りたい気持ちが衝突します。\n\n相手への配慮と束縛の境界がどこにあるのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-119",
+  "topic": "control_clothing",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人から『その服装だと他の人に見られるのが嫌だ』と言われた。相手が本気で不安になっていると分かっていても、自分の服装を変えずにいられる？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "相手の感情を大切にすることと、自分の身体や服装について自分で決めることが衝突します。\n\n相手が苦しんでいるという事実が、どこまで自分の自由を変える理由になるのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-120",
+  "topic": "control_password",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人から『本当に信頼しているならスマホのパスワードを教えられるよね』と言われた。断ることを、信頼不足だと思う？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "信頼している相手に秘密を作らないことと、恋人同士でも個人のプライバシーを残すことは別の考え方です。\n\n信頼を証明するために、自分の私的な領域をどこまで共有する必要があるのかを問います。"
+  }
+},
+{
+  "id": "relationship-121",
+  "topic": "control_reply_speed",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人が、返信が遅いと強く不安になる。安心させるために、友達や勉強の時間まで変えてすぐ返信する生活を続けられる？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "大切な相手を不安にさせたくない気持ちと、自分自身の時間や生活を守ることが衝突します。\n\n相手への思いやりが、どこから自分の生活を制限する義務になるのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-122",
+  "topic": "control_jealousy",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人の嫉妬が強いのは、それだけ自分を大切に思っているからだと感じる部分もある。でも自分の行動は少しずつ制限されている。それでも『愛されている証拠』だと思える？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "嫉妬を愛情の表れとして感じる人もいます。一方、嫉妬を理由に相手の行動が制限されると、本人の自由との衝突が生じます。\n\n愛情として受け止めたい気持ちと、自分の自由を守ることをどう区別するかを問います。"
+  }
+},
+{
+  "id": "relationship-123",
+  "topic": "control_boundaries",
+  "category": "relationship",
+  "perspective": "partner",
+  "question": "恋人が自分の嫌がることを続けている。『やめてほしい』と伝えることと、相手を束縛することの境界をどこに置く？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "恋人に自分の不安や嫌なことを伝えることは大切です。一方、相手の行動そのものを支配することとは区別する必要があります。\n\n自分の感情を尊重してもらう権利と、相手の自由を尊重する責任の境界を考える問いです。"
+  }
+},
+{
+  "id": "relationship-124",
+  "topic": "control_mutual",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "お互いが納得しているなら、位置情報の共有や異性の友人との交流制限など、かなり強いルールを恋人同士で決めても問題ないと思う？自分がその関係にいたら続けられる？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "双方が同意しているルールなら問題ないという考えがあります。一方、同意していても関係の中で自由が失われる可能性を考える立場もあります。\n\n同意があることと、健全な関係であることが常に同じなのかを自分事として考える問いです。"
+  }
+},
+{
+  "id": "relationship-125",
+  "topic": "past_infidelity",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚を考えている相手から、過去に一度だけ不倫したことがあると打ち明けられた。今の自分には誠実でも、その過去だけで将来の信頼は変わる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "過去の行動をその人の現在の人格まで判断する材料と考えるか、人は変わることができると考えるかで答えが変わります。\n\n相手の現在を信じたい気持ちと、過去から将来のリスクを考える気持ちの衝突を問います。"
+  }
+},
+{
+  "id": "relationship-126",
+  "topic": "past_relationships",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人の過去の恋愛について、知れば自分が傷つく可能性が高い。それでも『相手のことを全部知りたい』と思う？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "大切な人について知りたい気持ちと、自分には関係のない過去まで知ることで現在の関係が揺らぐ可能性が衝突します。\n\n親密さのためにどこまで過去を共有する必要があるのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-127",
+  "topic": "past_secret",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "長年付き合ってきた恋人に、今まで一度も話していない重大な過去がある。話せば関係が壊れる可能性があるとしても、結婚前には伝えるべきだと思う？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "自分の過去について秘密を持つ権利と、人生を共にする相手が重要な事実を知った上で判断することの間に衝突があります。\n\nすべてを話すことが誠実なのか、過去には本人だけの領域もあるのかを問います。"
+  }
+},
+{
+  "id": "relationship-128",
+  "topic": "past_crime",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚したい相手から、若い頃に犯罪を犯した過去があると打ち明けられた。十分に責任を果たし、今は別人のように生きていても、その人と家族になれる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "過去の行為への評価と、現在の人格をどこまで分けられるかという問題です。\n\n更生を信じるという原則を、自分がその人と人生を共にする立場でも貫けるかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-129",
+  "topic": "past_partner_friend",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "今の恋人が、過去にあなたの親しい友人と付き合っていたと分かった。その事実だけで、恋人や友人との今の関係は変わる？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "過去の恋愛は現在とは別の出来事だと考えることもできます。一方、自分に近い人同士の過去を知ることで、今までと同じようには見られなくなる場合もあります。\n\n過去と現在をどこまで切り離せるかを問います。"
+  }
+},
+{
+  "id": "relationship-130",
+  "topic": "past_lie",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人が過去について長い間嘘をついていた。でも『嫌われるのが怖かった』と打ち明け、本当のことを話してきた。嘘をついたことと、今正直になったことのどちらを重く見る？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "長期間嘘をつかれていたという信頼の問題と、関係を失う恐怖を乗り越えて真実を話したことをどう評価するかが衝突します。\n\n誠実さを、過去の行動と現在の行動のどちらで判断するかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-131",
+  "topic": "past_online_history",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人が昔SNSで、今の自分なら到底受け入れられない発言をしていたと分かった。本人は『考え方は完全に変わった』と言っている。それでも過去の言葉を気にする？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "過去の発言をその人の人格の記録として重視する考えと、人は価値観を変えることができるという考えがあります。\n\n他人には成長を認めるべきだと思っていても、自分のパートナーについて同じように考えられるかを問います。"
+  }
+},
+{
+  "id": "relationship-132",
+  "topic": "past_comparison",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人が過去の相手を『人生で一番好きだった人かもしれない』と正直に話した。それでも、今自分を選んでいるという事実だけで十分だと思える？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "人の過去の感情まで現在の恋人が独占することはできません。一方、自分が『一番ではない』と感じることが現在の関係に影響する場合があります。\n\n過去の感情と現在の選択のどちらを重く見るかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-133",
+  "topic": "values_politics",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "大好きな恋人と、社会や政治について根本的に違う価値観を持っていると分かった。日常生活では問題がなくても、その人と将来を築ける？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "恋愛関係では必ずしもすべての意見が一致する必要はありません。一方、社会や政治に対する考え方が、人への接し方や将来の家族にも影響する場合があります。\n\n価値観の違いを『違いのまま』受け入れられる範囲を考える問いです。"
+  }
+},
+{
+  "id": "relationship-134",
+  "topic": "values_money",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "あなたは将来のために貯金したい。でも恋人は『今しかできない経験にお金を使いたい』と考えている。結婚後も変わらないとしたら、その違いを受け入れられる？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "お金の使い方には、その人が将来と現在のどちらを重視するかという価値観が表れます。\n\n愛情があっても生活の基本的な考え方が違う場合、どこまで違いとして受け入れられるかを問います。"
+  }
+},
+{
+  "id": "relationship-135",
+  "topic": "values_family_role",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人は『結婚したら家族を最優先するのが当然』と考えている。でもあなたは結婚後も友人や仕事、自分の時間を大切にしたい。この違いを愛情だけで埋められると思う？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "結婚を人生の中心と考える人もいれば、人生を構成する複数の大切なものの一つと考える人もいます。\n\nどちらが正しいかではなく、異なる家族観を一緒に生きられるかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-136",
+  "topic": "values_gender_roles",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "大切な恋人が、男女の役割についてあなたとは大きく違う考えを持っている。その考えが結婚生活にも影響すると分かっても、『価値観の違い』として受け入れられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "異なる考えを尊重することと、その考えによって自分自身の生活や役割まで変わることは別の問題です。\n\n多様な価値観を認めるという原則を、自分の家庭にもどこまで適用できるかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-137",
+  "topic": "values_religion",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人の信仰そのものは尊重できる。でも結婚後の生活や子どもの育て方にもその信仰を取り入れたいと言われたら、どこまで受け入れられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "相手の信仰を尊重することと、その信仰が自分自身や将来の家族の生活にも影響することは異なります。\n\n相手の自由を尊重しながら、自分自身の信念をどこまで守るかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-138",
+  "topic": "values_parenting",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚相手とは仲が良い。でも子どもの叱り方や教育についてだけは根本的に考えが違う。まだ子どもがいなくても、その違いを結婚の判断材料にする？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "現在の二人の関係がうまくいっていても、将来家族が増えたときに表面化する価値観の違いがあります。\n\n今ある愛情と、まだ起きていない将来の対立をどこまで同じ重さで考えるかを問います。"
+  }
+},
+{
+  "id": "relationship-139",
+  "topic": "values_loyalty",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "あなたは『恋人でも間違っているときは味方をしない』と考えている。でも恋人から『自分の味方をしてくれないなら付き合っている意味がない』と言われたら、自分の考えを変える？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "恋人を支えることと、相手のすべての行動を肯定することは同じではありません。\n\n愛する人への忠誠と、自分自身の善悪の判断が衝突したとき、どちらを優先するかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-140",
+  "topic": "values_change",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "何年も付き合ってきた恋人の価値観が大きく変わり、今の自分とは合わなくなった。でも昔のその人を今でも大切に思っている。『昔好きだった人』への気持ちだけで関係を続けられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "長年積み重ねた思い出や愛情と、現在の二人が本当に合っているかは別の問題です。\n\n過去に築いた関係を大切にすることと、現在の自分たちを基準に関係を見直すことの衝突を考える問いです。"
+  }
+},
+{
+  "id": "relationship-141",
+  "topic": "jealousy_close_friend",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人には、あなたと付き合う前からずっと仲のいい異性の親友がいる。恋人を信じたいのに、その二人が会うたび苦しくなる。自分の嫉妬のために、相手の大切な友情を変えてほしいと言える？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "恋人との安心を守りたい気持ちと、恋人にも自分とは別の大切な人間関係があることを尊重したい気持ちが衝突します。\n\n嫉妬を感じること自体と、その感情を理由に相手の行動を変えてもらうことをどこまで分けて考えるかという問いです。"
+  }
+},
+{
+  "id": "relationship-142",
+  "topic": "jealousy_ex_partner",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人が元恋人と今も友人として連絡を取っている。『もう恋愛感情はない』という言葉を信じたいのに、自分はどうしても不安になる。その関係をやめてほしいと求める？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "過去の恋愛関係が終わった後も、人間関係そのものが残る場合があります。\n\n現在の恋人を信頼することと、自分が安心できる境界を求めることのどちらをどこまで重く見るかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-143",
+  "topic": "retroactive_jealousy",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人の過去の恋愛を詳しく知ったことで、今の自分と比べてしまうようになった。聞かなければ苦しまなかったと分かっても、それでも相手の過去をもっと知りたい？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "相手を深く知りたい気持ちと、知った情報によって自分自身が苦しくなる可能性が衝突します。\n\n親密さのために過去を共有することが、必ず現在の関係を良くするとは限らないという問いです。"
+  }
+},
+{
+  "id": "relationship-144",
+  "topic": "jealousy_success",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人が自分より先に夢を叶え、大きく成功した。本気で嬉しいのに、自分が置いていかれたようにも感じる。そんな嫉妬を恋人に正直に話せる？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "大切な人の成功を喜びたい気持ちと、自分自身の劣等感や焦りは同時に存在することがあります。\n\n『相手を愛しているなら嫉妬してはいけない』と考えるのではなく、好意と嫉妬が両立するときにどう向き合うかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-145",
+  "topic": "jealousy_attention",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人が誰にでも優しく、人から好かれやすい。その魅力を好きになったはずなのに、他の人にも同じように接する姿を見ると苦しくなる。恋人に態度を変えてほしいと思う？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "相手の魅力として好きになった性格が、自分にとって不安の原因にもなる場合があります。\n\n相手らしさを尊重することと、自分が恋人として特別でありたい気持ちの衝突を考える問いです。"
+  }
+},
+{
+  "id": "relationship-146",
+  "topic": "jealousy_social_media",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人がSNSで他の人から頻繁に好意的なコメントやDMを受け取っている。恋人自身は何も悪いことをしていなくても、その交流を減らしてほしいと思う？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "恋人自身に問題がなくても、第三者から向けられる好意によって嫉妬や不安が生まれることがあります。\n\n自分にはコントロールできない他人の行動を理由に、恋人の自由をどこまで制限してよいのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-147",
+  "topic": "jealousy_first_priority",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人にとって、自分より家族や長年の親友の方が優先される場面がある。『恋人なら一番でいてほしい』と思う気持ちを、どこまで相手に求める？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "恋人として特別な存在でありたい気持ちと、一人の人が複数の大切な関係を持つことを認める考えが衝突します。\n\n恋愛関係では相手の人生のどこまでを優先してもらう権利があるのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-148",
+  "topic": "jealousy_double_standard",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "自分には異性の親友がいるのに、恋人が異性の友人と親しくすると嫉妬してしまう。自分でも矛盾していると分かっていたら、その感情をどう扱う？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "自分に認めている自由を相手にも認めるべきだという公平性と、自分では制御しきれない嫉妬の感情が衝突します。\n\n原則としての公平と、自分自身の感情が一致しないときにどう向き合うかを問います。"
+  }
+},
+{
+  "id": "relationship-149",
+  "topic": "jealousy_confession",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人から『別の人に少し惹かれてしまった。でも何もするつもりはない』と正直に打ち明けられた。正直に話してくれたことを、信頼の証として受け止められる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "恋愛関係にあっても、他人への感情まで完全に制御できるとは限りません。\n\n相手が正直であることを評価したい気持ちと、自分以外に惹かれたという事実への嫉妬をどう両立するかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-150",
+  "topic": "jealousy_without_reason",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人を疑う理由は何もない。それでも嫉妬や不安が消えないとしたら、恋人に安心させてもらう責任はどこまであると思う？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "恋人同士で不安を支え合うことには意味があります。一方、自分の不安をすべて相手の行動によって解消しようとすると、相手の自由を狭める場合があります。\n\n自分の感情への責任と、パートナーから受ける安心の境界を考える問いです。"
+  }
+},
+{
+  "id": "relationship-151",
+  "topic": "jealousy_partner_history",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人が過去の相手との思い出を今でも大切にしている。『過去まで消してほしいとは言えない』と思いながらも苦しいとしたら、その思い出を受け入れられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "現在の関係を大切にすることと、過去の大切な経験を否定しないことは両立できます。\n\nしかし、自分が現在の恋人であるからこそ、過去の相手への特別な思いに嫉妬する場合もあります。\n\n過去を含めて相手を受け入れるとは何かを考える問いです。"
+  }
+},
+{
+  "id": "relationship-152",
+  "topic": "jealousy_trust_after_betrayal",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "一度裏切られたあと、恋人は本気で関係を立て直そうとしている。でも以前なら気にならなかった行動まで疑ってしまう。相手が変わっても、自分が信じられないなら関係を続けられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "相手が信頼を取り戻そうと努力することと、傷つけられた側がもう一度信じられることは別です。\n\n許すことと信頼が戻ることをどこまで分けて考えるかという問いです。"
+  }
+},
+{
+  "id": "relationship-153",
+  "topic": "secret_personal_space",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人から『付き合っているなら隠し事はなしにしよう』と言われた。悪いことを隠しているわけではなくても、自分だけの秘密を持ち続けたいと思う？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "親密な関係では多くを共有したいという考えがあります。一方、恋人がいても個人として誰にも話さない領域を持つ権利があるという考えもあります。\n\n秘密があることと、不誠実であることは同じなのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-154",
+  "topic": "secret_discovered_phone",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人のスマホを偶然見たことで、重大な秘密の存在に気づいた。勝手に見た自分にも問題があると分かっていても、恋人に説明を求める？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "知ってしまった重大な事実について説明を求めたい気持ちと、その情報を知った方法が相手のプライバシーを侵害していた可能性が衝突します。\n\n得られた情報が重要なら、知った手段の問題は小さくなるのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-155",
+  "topic": "secret_friend_confession",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "親友から、あなたの恋人に関する重大な秘密を打ち明けられ『絶対に本人には言わないで』と頼まれた。親友との約束と、恋人への誠実さをどう両立する？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "秘密を託してくれた友人との信頼と、人生を共有する恋人に重要な情報を隠し続けることへの葛藤が衝突します。\n\n誰かの秘密を守る義務が、別の大切な関係より優先されるのはどこまでなのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-156",
+  "topic": "secret_debt",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚直前になって、恋人が大きな借金を何年も隠していたと打ち明けた。借金そのものより『隠されていたこと』の方を重く感じる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "経済的な問題そのものと、重要な事実を長期間共有されなかったという信頼の問題は分けて考えることができます。\n\n秘密の内容と、秘密にしていた行為のどちらが関係に大きく影響するのかを問います。"
+  }
+},
+{
+  "id": "relationship-157",
+  "topic": "secret_family_debt",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚相手から『自分の家族に多額の援助を続けていることは黙っていてほしい』と言われた。そのお金が二人の将来にも影響するとして、相手の家族の事情として任せられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "相手が自分の家族を助ける自由と、共同生活に影響する大きなお金についてパートナーが知る必要性が衝突します。\n\n結婚してもどこまでを『自分だけのお金・自分だけの家族の問題』として持てるかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-158",
+  "topic": "secret_past_identity",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人には、今の生活からは想像できない重大な過去があり、それを何年も話していなかった。今の相手を十分知っているなら、過去を知らされなかったことを許せる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "現在の人格を重視する考えと、重要な過去を共有されなかったこと自体を信頼の問題と考える立場があります。\n\n相手の過去を知る権利が、恋人にはどこまであるのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-159",
+  "topic": "secret_previous_child",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚を考えている恋人から、以前の関係で子どもがいることを初めて打ち明けられた。相手が今まで言えなかった事情を理解できても、その秘密を抱えていたことを受け入れられる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "過去の家族関係は本人だけの過去でもありますが、結婚後の生活や責任に関わる場合があります。\n\n話しにくかった事情への理解と、人生に関わる情報を知らされていなかったことへの不信をどう考えるかという問いです。"
+  }
+},
+{
+  "id": "relationship-160",
+  "topic": "secret_medical_information",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人が、自分の将来や二人の生活にも関わる可能性のある健康上の情報を長く隠していた。本人のプライバシーだと分かっていても、『もっと早く知りたかった』と思う？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "健康情報は非常に個人的な情報です。一方、その情報が将来の共同生活に大きく関わる場合、パートナーにも知る利益があります。\n\n本人の医療上のプライバシーと、共同生活に関わる情報共有の境界を考える問いです。"
+  }
+},
+{
+  "id": "relationship-161",
+  "topic": "secret_genetic_information",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "結婚相手が、将来の子どもにも関係する可能性のある遺伝的な情報を知っていたのに黙っていたと分かった。その情報を伝える義務はあったと思う？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "遺伝情報は本人の個人的な情報である一方、将来の家族計画にも関係する場合があります。\n\n自分自身の情報を秘密にする権利と、パートナーが将来について判断するために知る利益をどう比較するかという問いです。"
+  }
+},
+{
+  "id": "relationship-162",
+  "topic": "secret_infidelity_knowledge",
+  "category": "relationship",
+  "perspective": "friend",
+  "question": "親友の恋人が裏切っていることを自分だけが知っている。伝えれば親友の幸せな関係は壊れるかもしれない。それでも『真実を知る方がいい』と言える？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "大切な友人を傷つけたくない気持ちと、本人が真実を知った上で自分の関係を決める権利が衝突します。\n\n相手を守るために真実を隠すことが、どこまで許されるかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-163",
+  "topic": "secret_one_time_betrayal",
+  "category": "relationship",
+  "perspective": "partner",
+  "question": "あなたは恋人を一度だけ裏切ってしまい、二度と繰り返さないと決めている。打ち明ければ相手を深く傷つけ、関係が終わるかもしれない。それでも真実を話す？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "自分が正直になることと、その正直さによって相手に苦痛を与えることが衝突します。\n\n黙っていることが相手を守る行為なのか、それとも相手が関係を選び直す機会を奪うことなのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-164",
+  "topic": "secret_without_consequence",
+  "category": "relationship",
+  "perspective": "partner",
+  "question": "過去にしたことを恋人に話しても、今の生活には何の実害もない。ただ、知れば相手は傷つく。それでも『恋人には全部正直であるべき』だと思う？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "誠実さのために真実を共有することと、相手に不要な苦痛を与えないことが衝突します。\n\n真実には、それを知ること自体に価値があるのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-165",
+  "topic": "secret_friend_feelings",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "親しい友人から『実はずっとあなたのことが好きだった』と打ち明けられた。あなたには恋人がいて、友人も関係を壊すつもりはないと言っている。この事実を恋人に伝える？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "自分自身は何も裏切っていなくても、第三者から向けられた感情について恋人へ共有するべきかは簡単ではありません。\n\n恋人への透明性と、友人から託された個人的な感情の秘密をどう扱うかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-166",
+  "topic": "secret_partner_reading_diary",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人があなたの日記を勝手に読み、あなたが誰にも話していなかった気持ちを知ってしまった。書いてあった内容が相手を傷つけたとして、謝るべきなのはどちらだと思う？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "日記に書いた本人の感情と、それを無断で読んだ側のプライバシー侵害が同時に問題になります。\n\n秘密の内容が相手を傷つけるものだった場合でも、知る権利が生まれるのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-167",
+  "topic": "secret_family_opinion",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "自分の家族が恋人を嫌っていることを、恋人本人には隠している。『言っても傷つくだけ』だと思っていても、隠し続けることは誠実だと思う？",
+  "level": 4,
+  "sensitivity": 3,
+  "detail": {
+    "text": "相手を不必要に傷つけたくない気持ちと、自分の家族との関係について恋人に正直でありたい気持ちが衝突します。\n\n相手のために伏せることと、都合の悪い事実を隠すことの境界を考える問いです。"
+  }
+},
+{
+  "id": "relationship-168",
+  "topic": "secret_future_plan",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人が、自分との将来とは両立しにくい大きな夢を何年も密かに準備していたと分かった。夢そのものより、相談されなかったことを裏切りだと感じる？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "本人には自分の将来を準備する自由があります。一方、長期的な関係では、一人の大きな決断がもう一人の人生にも影響します。\n\n個人の人生計画と、パートナーとの共同意思決定の境界を考える問いです。"
+  }
+},
+{
+  "id": "relationship-169",
+  "topic": "secret_saved_messages",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "恋人が、昔の恋人とのメッセージや写真を今も大切に残していると知った。現在あなたを愛していることに疑いがなくても、それを残してほしくないと思う？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "過去の記録を自分の人生の一部として残す自由と、現在の恋人がその記録に嫉妬や不安を感じることが衝突します。\n\n過去を保存することが、現在の相手への未練を意味するのかを考える問いです。"
+  }
+},
+{
+  "id": "relationship-170",
+  "topic": "secret_truth_vs_peace",
+  "category": "relationship",
+  "perspective": "affected",
+  "question": "今の関係が幸せでも、恋人が自分に一つ重大な秘密を隠していると確実に分かった。内容を知らないままなら今の幸せは続く。それでも真実を知りたい？",
+  "level": 4,
+  "sensitivity": 4,
+  "detail": {
+    "text": "真実を知ることと、知らないことで守られている現在の幸福が直接衝突します。\n\n『真実は常に知る方がよい』という原則を、自分の大切な関係が壊れる可能性のある場面でも貫けるかを考える問いです。"
+  }
+}
 ]
