@@ -41,7 +41,10 @@ fetch("level" + level + ".json")
     })
     .then(function (questions) {
 
-        filteredQuestions = questions;
+        filteredQuestions =
+            questions.filter(function (question) {
+                return Number(question.level) === level;
+            });
 
         shuffle(filteredQuestions);
         filteredQuestions =
