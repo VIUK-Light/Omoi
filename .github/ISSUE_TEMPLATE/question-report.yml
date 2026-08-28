@@ -1,0 +1,85 @@
+name: 質問の報告
+description: Omoiの質問文や解説に関する問題を報告します。
+title: "[質問報告] "
+labels:
+  - question-report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        このフォームから送信した内容は、公開GitHub Issueになります。
+        会話中の回答、氏名、連絡先などの個人情報は入力しないでください。
+        質問固有の問題以外は、通常のIssueで報告してください。
+
+  - type: dropdown
+    id: report_type
+    attributes:
+      label: 報告の種類
+      description: 最も近いものを選んでください。
+      options:
+        - 誤字・表現
+        - 意味が分かりにくい
+        - 偏り・不適切さ
+        - 事実関係・解説・出典
+        - 重複
+        - その他
+    validations:
+      required: true
+
+  - type: input
+    id: question_id
+    attributes:
+      label: 質問ID
+      description: Omoiのデータ上の質問IDです。自動入力された値を確認してください。
+    validations:
+      required: true
+
+  - type: input
+    id: level
+    attributes:
+      label: Level
+      description: 質問が表示されていたLevelです。
+    validations:
+      required: true
+
+  - type: textarea
+    id: question_text
+    attributes:
+      label: 質問文
+      description: 報告対象の質問文です。自動入力された内容を確認してください。
+    validations:
+      required: true
+
+  - type: input
+    id: source_file
+    attributes:
+      label: データファイル
+      description: 質問が読み込まれたJSONファイルです。
+    validations:
+      required: true
+
+  - type: input
+    id: source_url
+    attributes:
+      label: 表示元URL
+      description: 質問が表示されていたページのURLです。
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 問題の内容
+      description: 何が問題だと思うか、どのように改善できそうかを具体的に書いてください。
+      placeholder: 例：この表現は○○という意味にも読めるため、意図が伝わりにくいです。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: privacy_ack
+    attributes:
+      label: 公開内容の確認
+      description: 送信前に確認してください。
+      options:
+        - label: このIssueが公開されることを理解し、会話の回答や個人情報を入力していないことを確認しました。
+          required: true

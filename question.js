@@ -15,6 +15,9 @@ const nextQuestionButton =
 const skipQuestionButton =
     document.getElementById("skipQuestionButton");
 
+const reportQuestionLink =
+    document.getElementById("reportQuestionLink");
+
 const detailButton =
     document.getElementById("detailButton");
 
@@ -30,6 +33,9 @@ const closeDetailButton =
 
 let filteredQuestions = [];
 let currentQuestionIndex = 0;
+
+const reportIssueURL =
+    "https://github.com/VIUK-Light/Omoi/issues/new";
 
 
 levelDisplay.textContent = "Level " + level;
@@ -56,6 +62,7 @@ fetch("level" + level + ".json")
 
             nextQuestionButton.disabled = true;
             skipQuestionButton.disabled = true;
+            hideReportQuestionLink();
 
             return;
         }
@@ -81,6 +88,8 @@ function showQuestion() {
 
     questionText.textContent =
         currentQuestion.question;
+
+    updateReportQuestionLink(currentQuestion);
 
     // 前の質問の状態をリセット
     detailButton.hidden = true;
@@ -135,6 +144,69 @@ function showQuestion() {
             });
         }
     }
+}
+
+
+function updateReportQuestionLink(question) {
+    const rawQuestionID =
+        question.id === null ||
+        question.id === undefined
+            ? ""
+            : String(question.id).trim();
+
+    const questionID =
+        rawQuestionID !== ""
+            ? rawQuestionID
+            : "未設定";
+
+    const reportURL =
+        new URL(reportIssueURL);
+
+    reportURL.searchParams.set(
+        "template",
+        "question-report.yml"
+    );
+
+    reportURL.searchParams.set(
+        "title",
+        "[質問報告] " + questionID
+    );
+
+    reportURL.searchParams.set(
+        "question_id",
+        questionID
+    );
+
+    reportURL.searchParams.set(
+        "level",
+        "Level " + level
+    );
+
+    reportURL.searchParams.set(
+        "question_text",
+        question.question
+    );
+
+    reportURL.searchParams.set(
+        "source_file",
+        "level" + level + ".json"
+    );
+
+    reportURL.searchParams.set(
+        "source_url",
+        window.location.href
+    );
+
+    reportQuestionLink.href =
+        reportURL.toString();
+
+    reportQuestionLink.hidden = false;
+}
+
+
+function hideReportQuestionLink() {
+    reportQuestionLink.hidden = true;
+    reportQuestionLink.removeAttribute("href");
 }
 
 

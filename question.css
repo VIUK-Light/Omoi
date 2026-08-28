@@ -33,7 +33,7 @@ body {
     margin: 0 0 24px;
 
     font-size: 13px;
-    color: #777777;
+    color: #666666;
 
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -95,6 +95,32 @@ body {
 
     cursor: pointer;
 }
+
+.report-question-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+    margin: 12px auto 0;
+    padding: 8px 12px;
+
+    box-sizing: border-box;
+
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.4;
+    text-decoration: underline;
+    text-decoration-color: #cccccc;
+    text-underline-offset: 3px;
+}
+
+.report-question-link:hover,
+.report-question-link:focus-visible {
+    color: #111111;
+    text-decoration-color: #111111;
+}
+
 .detail-panel {
     width: 100%;
     max-width: 680px;
@@ -114,7 +140,7 @@ body {
 
 .detail-note {
     font-size: 13px;
-    color: #777777;
+    color: #666666;
     line-height: 1.7;
 }
 #detailText {
