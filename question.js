@@ -62,6 +62,7 @@ fetch("level" + level + ".json")
             questionText.textContent =
                 "このLevelの質問はまだありません。";
             questionContent.classList.remove("long-question");
+            questionContent.classList.remove("has-more-question-text");
 
             nextQuestionButton.disabled = true;
             skipQuestionButton.disabled = true;
@@ -165,7 +166,39 @@ function updateQuestionLayout(question) {
         "long-question",
         isLongQuestion
     );
+
+    questionContent.scrollTop = 0;
+    requestAnimationFrame(updateQuestionScrollState);
 }
+
+
+function updateQuestionScrollState() {
+    const hasOverflow =
+        questionContent.scrollHeight >
+        questionContent.clientHeight + 1;
+
+    const isAtBottom =
+        questionContent.scrollTop +
+        questionContent.clientHeight >=
+        questionContent.scrollHeight - 1;
+
+    questionContent.classList.toggle(
+        "has-more-question-text",
+        hasOverflow && !isAtBottom
+    );
+}
+
+
+questionContent.addEventListener(
+    "scroll",
+    updateQuestionScrollState,
+    { passive: true }
+);
+
+window.addEventListener(
+    "resize",
+    updateQuestionScrollState
+);
 
 
 function updateReportQuestionLink(question) {

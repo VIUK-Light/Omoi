@@ -73,14 +73,33 @@ body {
     line-height: 1.65;
 }
 
-.question-content.long-question + .question-footer {
-    margin-top: 24px;
+.question-content.long-question.has-more-question-text {
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        #000000 0,
+        #000000 calc(100% - 80px),
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        #000000 0,
+        #000000 calc(100% - 80px),
+        transparent 100%
+    );
 }
 
-.question-content.long-question + .question-footer::before {
-    content: "この質問は長文です。スクロールして全文を読む";
+.question-content.long-question + .question-footer {
+    margin-top: 20px;
+}
+
+.question-content.long-question.has-more-question-text + .question-footer::before {
+    content: "続きがあります ↓";
     display: block;
-    margin: 0 auto 12px;
+    width: fit-content;
+    margin: -36px auto 12px;
+    padding: 4px 12px;
+
+    background: #ffffff;
     color: #666666;
     font-size: 12px;
     line-height: 1.5;
