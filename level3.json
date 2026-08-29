@@ -53,14 +53,15 @@
   {
     "id": "family-law-001",
     "category": "family_and_care",
-    "question": "離婚後は共同親権を原則にするべきだと思う？",
+    "question": "あなたが離婚後の子どもの生活を決める制度を設計するなら、共同親権を基本にしつつ、強い対立や安全上の懸念がある家庭にはどんな例外を設ける？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "離婚後の親権や子育てへの関わり方は、子ども、母親、父親それぞれの立場から議論されます。共同親権では、離婚後も両方の親が子どもについて法的な責任や権限を持つことになります。\n\n両親が継続して子育てに関わることを重視する立場がある一方、家庭内の対立や安全上の問題がある場合には共同で判断することが難しいという懸念もあります。\n\n親の権利だけでなく、子どもの利益をどう考えるかが重要な争点です。"
     },
     "topic": "family_law",
-    "perspective": "observer",
+    "perspective": "decision_maker",
+    "role": "family_law_designer",
     "content_warning": [
       "family_conflict"
     ]
@@ -1122,14 +1123,15 @@
   {
     "id": "reproductive-health-004",
     "category": "gender_sexuality_and_identity",
-    "question": "妊娠した本人の意思と、胎児の生命がぶつかったとき、どちらを優先するべき？",
+    "question": "妊娠を続けるか迷う本人が、身体・生活・将来への影響を踏まえて決めるとき、周囲や制度は本人の意思をどこまで支え、どんな条件を整えるべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "妊娠を続けるかどうかをめぐっては、妊娠した本人の身体や人生についての自己決定と、胎児をどの段階からどのように生命として扱うかという考えがぶつかります。\n\n本人の意思を最も重視する立場もあれば、胎児の生命にも独立した価値を認めるべきだという立場もあります。\n\n自己決定と生命の扱いをどのように考えるかが、この問いの中心です。"
     },
     "topic": "reproductive_health",
-    "perspective": "observer",
+    "perspective": "affected",
+    "role": "pregnant_person",
     "content_warning": [
       "medical_and_end_of_life"
     ]
