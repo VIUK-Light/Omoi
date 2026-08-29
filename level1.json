@@ -1092,13 +1092,6 @@
         "sensitivity": 1
     },
     {
-        "id": "future-009",
-        "category": "future",
-        "question": "恋人に求める優しさって何？",
-        "level": 1,
-        "sensitivity": 1
-    },
-    {
         "id": "future-010",
         "category": "future",
         "question": "信頼ってどうやって作ると思う？",
@@ -1109,13 +1102,6 @@
         "id": "future-011",
         "category": "future",
         "question": "恋人に一番守ってほしいことは？",
-        "level": 1,
-        "sensitivity": 1
-    },
-    {
-        "id": "future-012",
-        "category": "future",
-        "question": "好きな人にしか見せない自分はある？",
         "level": 1,
         "sensitivity": 1
     },
@@ -1137,13 +1123,6 @@
         "id": "future-015",
         "category": "future",
         "question": "自分らしくいられる恋愛ってどんな恋愛？",
-        "level": 1,
-        "sensitivity": 1
-    },
-    {
-        "id": "future-016",
-        "category": "future",
-        "question": "相手に合わせることと我慢の違いは？",
         "level": 1,
         "sensitivity": 1
     },

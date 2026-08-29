@@ -89,18 +89,6 @@
     }
   },
   {
-    "id": "relationship-005",
-    "topic": "infidelity",
-    "category": "relationship",
-    "perspective": "actor",
-    "question": "自分が不倫したら、相手に自分から話す？",
-    "level": 4,
-    "sensitivity": 4,
-    "detail": {
-      "text": "自分が約束していた関係を破った側になった場合を想定した問いです。\n\n真実を話すことが誠実だという考えもあれば、告白が相手を傷つけるだけになる場合もあるという考えもあります。自分の罪悪感を軽くするための告白と、相手のための説明は同じなのかも論点になります。"
-    }
-  },
-  {
     "id": "caregiving-002",
     "topic": "unequal_housework",
     "category": "caregiving",
@@ -170,18 +158,6 @@
     "sensitivity": 4,
     "detail": {
       "text": "自分が既婚であることを隠したまま交際を始めてしまった場合を想定した問いです。\n\n時間がたつほど、相手の将来の選択への影響も大きくなる可能性があります。真実を伝える責任と、関係が壊れることへの恐れを自分に置き換えて考えます。"
-    }
-  },
-  {
-    "id": "caregiving-004",
-    "topic": "family_care",
-    "category": "caregiving",
-    "perspective": "affected",
-    "question": "親の介護のために仕事を辞めるしかなくなったら、辞める？",
-    "level": 4,
-    "sensitivity": 4,
-    "detail": {
-      "text": "家族の介護が必要になり、仕事との両立が難しくなった場合を想定した問いです。\n\n家族を支えたい気持ちがある一方、退職すれば自分の収入、キャリア、将来の生活にも影響します。家族への責任と自分の人生をどこまで両立させるかを考えます。"
     }
   },
   {
