@@ -172,65 +172,41 @@
   {
     "id": "life-001",
     "category": "life",
-    "question": "お金が多い人は、より多く税金を払うべき？",
+    "topic": "progressive_taxation_and_public_services",
+    "perspective": "decision_maker",
+    "role": "local_budget_planner",
+    "question": "あなたは自治体の予算を決める立場にある。福祉や教育を維持するには税収を増やす必要があるが、全員の負担を同じ割合で増やす方法と、収入の高い人の負担をより大きくする方法がある。あなたなら、どちらを選ぶ？ その理由は何？",
     "level": 3,
-    "sensitivity": 1
-  },
-  {
-    "id": "ethics-001",
-    "category": "ethics",
-    "question": "親しい友達と、あまり話したことがない人が同時に困っていたら、どちらを先に助ける？",
-    "level": 3,
-    "sensitivity": 1
+    "sensitivity": 1,
+    "detail": {
+      "text": "税収を増やす目的には、教育、福祉、災害対策などの公共サービスを維持することがあります。収入に応じて負担を大きくする方法は、負担能力の違いを考慮できるという見方があります。\n\n一方で、同じ割合で負担する方が分かりやすく公平だと考える人もいます。高い負担が働く意欲や事業活動にどう影響するか、税金を何に使うかによっても判断は変わります。\n\n負担の公平さと、必要なサービスを維持することをどう両立するかを考える問いです。"
+    }
   },
   {
     "id": "ethics-002",
     "category": "ethics",
-    "question": "ルールを守ることで誰かが傷つくなら、それでもルールを守るべき？",
+    "topic": "uniform_rules_and_accommodation",
+    "perspective": "decision_maker",
+    "role": "school_rule_reviewer",
+    "question": "あなたは学校のルールを見直す委員になった。全員に同じルールを適用すれば分かりやすいが、ある事情を持つ少数の生徒には大きな負担になる。例外を作れば公平でないと言う人もいる。あなたなら、全員に同じルールを守らせる？ それとも事情に応じた例外を認める？",
     "level": 3,
-    "sensitivity": 1
-  },
-  {
-    "id": "ethics-003",
-    "category": "ethics",
-    "question": "嘘をつくことで相手が救われるなら、その嘘は悪い？",
-    "level": 3,
-    "sensitivity": 1
-  },
-  {
-    "id": "ethics-004",
-    "category": "ethics",
-    "question": "本当のことを言うと相手が傷つく時、黙るのは優しさ？",
-    "level": 3,
-    "sensitivity": 1
-  },
-  {
-    "id": "ethics-005",
-    "category": "ethics",
-    "question": "自分は悪くないけど、自分が謝れば場が丸く収まるなら謝る？",
-    "level": 3,
-    "sensitivity": 1
-  },
-  {
-    "id": "ethics-006",
-    "category": "ethics",
-    "question": "努力した人と才能がある人、どちらが評価されるべき？",
-    "level": 3,
-    "sensitivity": 1
-  },
-  {
-    "id": "ethics-007",
-    "category": "ethics",
-    "question": "悪気がなかった行動で誰かを傷つけた時、どこまで責任を取るべき？",
-    "level": 3,
-    "sensitivity": 1
+    "sensitivity": 1,
+    "detail": {
+      "text": "全員に同じルールを適用すれば、判断の基準が分かりやすくなります。一方で、同じ扱いがすべての人に同じ負担になるとは限りません。\n\n事情に応じた例外は、必要な参加を支える方法になり得ます。しかし、例外の基準が曖昧なら、不公平やえこひいきだと受け取られる可能性もあります。\n\n同じ扱いをする公平さと、必要に応じて扱いを変える公平さをどう考えるかが争点です。"
+    }
   },
   {
     "id": "ethics-008",
     "category": "ethics",
-    "question": "「みんなのため」と「一人のため」がぶつかったら、どちらを優先する？",
+    "topic": "majority_and_minority_needs",
+    "perspective": "decision_maker",
+    "role": "local_budget_planner",
+    "question": "あなたは地域の予算を決める立場にある。多くの人が使う施設を直せば全体の満足度は高いが、その予算を使うと、少数の人にとって必要な支援を続けられなくなる。より多くの人に役立つことと、少数の人に必要な支援を守ることがぶつかったら、何を優先する？",
     "level": 3,
-    "sensitivity": 1
+    "sensitivity": 1,
+    "detail": {
+      "text": "多くの人に役立つ施策を優先すれば、限られた予算で広い効果を得られることがあります。一方で、利用者が少ない支援でも、その人たちにとっては生活を続けるために欠かせない場合があります。\n\n人数だけで決めると少数の必要が見えにくくなり、少数の必要だけを優先すると多くの人が使う仕組みを維持できないこともあります。\n\n多数への利益と少数にとっての必要性を、どの基準で比べるかを考える問いです。"
+    }
   },
   {
     "id": "support-007",
