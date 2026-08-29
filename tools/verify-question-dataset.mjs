@@ -12,13 +12,15 @@ const reportOnly = argumentsSet.has("--report-only");
 const outputJson = argumentsSet.has("--json");
 const summaryOnly = argumentsSet.has("--summary");
 const strictDetails = argumentsSet.has("--strict-details");
+const enforceQualityTargets = argumentsSet.has("--enforce-quality-targets");
 
 if (argumentsSet.has("--help")) {
     console.log(`Usage: node tools/verify-question-dataset.mjs [options]
 
 Options:
   --report-only     Report findings without a failing exit status.
-  --strict-details  Require detail.text for Level 3 and Level 4 cards.
+  --strict-details  Require detail.text for Level 3 and Level 4 cards (legacy alias; this is now the default).
+  --enforce-quality-targets  Fail unless Level 2 has 80+ cards and each primary Level 4 perspective is 20%+.
   --json            Print the full report as JSON.
   --summary         Print only aggregate counts and finding-code totals.
   --help            Show this help.`);
@@ -37,6 +39,33 @@ const acceptedSafetyKinds = new Set([
 
 const acceptedUrgencies = new Set(["normal", "high"]);
 const acceptedAudiences = new Set(["general", "adult", "minor_with_support"]);
+const acceptedCategories = new Set([
+    "self_and_values",
+    "relationships_and_communication",
+    "family_and_care",
+    "school_and_youth",
+    "work_and_economy",
+    "gender_sexuality_and_identity",
+    "health_and_disability",
+    "technology_media_and_privacy",
+    "justice_safety_and_crime",
+    "society_public_policy_and_environment",
+    "culture_religion_and_history",
+    "ethics_and_decision_making"
+]);
+const acceptedPerspectives = new Set(["affected", "actor", "decision_maker", "observer"]);
+const acceptedContentWarnings = new Set([
+    "sexual_violence",
+    "pregnancy_and_reproduction",
+    "infidelity",
+    "family_conflict",
+    "abuse_and_coercion",
+    "self_harm",
+    "medical_and_end_of_life",
+    "crime_and_punishment",
+    "discrimination_and_hate",
+    "privacy_and_surveillance"
+]);
 
 const findings = [];
 const records = [];
@@ -78,7 +107,7 @@ function isNonEmptyString(value) {
 
 function validateDetail(record) {
     if (record.detail === undefined) {
-        if (strictDetails && record.level >= 3) {
+        if (record.level >= 3) {
             addFinding("error", "missing_detail", "Level 3/4 card has no detail object.", record);
         }
         return;
@@ -94,7 +123,7 @@ function validateDetail(record) {
         addFinding("error", "invalid_detail_text", "detail.text must be a non-empty string when present.", record);
     }
 
-    if (strictDetails && record.level >= 3 && !isNonEmptyString(text)) {
+    if (record.level >= 3 && !isNonEmptyString(text)) {
         addFinding("error", "missing_detail_text", "Level 3/4 card is missing detail.text.", record);
     }
 
@@ -165,6 +194,28 @@ function validateSafety(record) {
     }
 }
 
+function validateContentWarnings(record) {
+    if (record.content_warning === undefined) {
+        return;
+    }
+
+    if (!Array.isArray(record.content_warning) || record.content_warning.length === 0) {
+        addFinding("error", "invalid_content_warning", "content_warning must be a non-empty array when present.", record);
+        return;
+    }
+
+    const seenWarnings = new Set();
+    for (const warning of record.content_warning) {
+        if (!acceptedContentWarnings.has(warning)) {
+            addFinding("error", "invalid_content_warning", "content_warning includes an unsupported value.", record);
+        }
+        if (seenWarnings.has(warning)) {
+            addFinding("error", "duplicate_content_warning", "content_warning must not contain duplicate values.", record);
+        }
+        seenWarnings.add(warning);
+    }
+}
+
 for (const fileName of questionFiles) {
     const filePath = path.join(repositoryRoot, fileName);
     const expectedLevel = Number(fileName.match(/\d+/)?.[0]);
@@ -197,6 +248,8 @@ for (const fileName of questionFiles) {
 
         if (!isNonEmptyString(entry.category)) {
             addFinding("error", "invalid_category", "category must be a non-empty string.", record);
+        } else if (!acceptedCategories.has(entry.category)) {
+            addFinding("error", "invalid_category", "category must be one of the 12 approved top-level categories.", record);
         }
 
         if (!isNonEmptyString(entry.question)) {
@@ -213,16 +266,23 @@ for (const fileName of questionFiles) {
             addFinding("error", "invalid_sensitivity", "sensitivity must be an integer from 1 to 4.", record);
         }
 
-        if (entry.topic !== undefined && !isNonEmptyString(entry.topic)) {
+        if (!isNonEmptyString(entry.topic)) {
+            addFinding("error", "missing_topic", "Every card must have a non-empty topic.", record);
+        } else if (entry.topic !== undefined && !isNonEmptyString(entry.topic)) {
             addFinding("error", "invalid_topic", "topic must be a non-empty string when present.", record);
         }
 
-        if (entry.perspective !== undefined && !isNonEmptyString(entry.perspective)) {
-            addFinding("error", "invalid_perspective", "perspective must be a non-empty string when present.", record);
+        if (entry.level >= 3 && !acceptedPerspectives.has(entry.perspective)) {
+            addFinding("error", "invalid_perspective", "Level 3/4 perspective must be affected, actor, decision_maker, or observer.", record);
+        }
+
+        if (entry.role !== undefined && !isNonEmptyString(entry.role)) {
+            addFinding("error", "invalid_role", "role must be a non-empty string when present.", record);
         }
 
         validateDetail(record);
         validateSafety(record);
+        validateContentWarnings(record);
     });
 }
 
@@ -272,6 +332,28 @@ const internalLevelCounts = Object.fromEntries([1, 2, 3, 4].map((level) => [
     records.filter((record) => record.level === level).length
 ]));
 
+const level4PerspectiveCounts = Object.fromEntries([...acceptedPerspectives].map((perspective) => [
+    perspective,
+    records.filter((record) => record.level === 4 && record.perspective === perspective).length
+]));
+
+if (enforceQualityTargets) {
+    if ((internalLevelCounts.level2 ?? 0) < 80) {
+        addFinding("error", "level2_target_not_met", "Level 2 must contain at least 80 cards.", { level2Count: internalLevelCounts.level2 ?? 0 });
+    }
+
+    const level4Count = internalLevelCounts.level4 ?? 0;
+    for (const perspective of ["affected", "actor", "decision_maker"]) {
+        if (level4Count > 0 && (level4PerspectiveCounts[perspective] / level4Count) < 0.2) {
+            addFinding("error", "level4_perspective_target_not_met", `Level 4 ${perspective} cards must be at least 20% of Level 4.`, {
+                perspective,
+                count: level4PerspectiveCounts[perspective],
+                level4Count
+            });
+        }
+    }
+}
+
 const categoryCounts = Object.entries(records.reduce((counts, record) => {
     if (isNonEmptyString(record.category)) {
         counts[record.category] = (counts[record.category] ?? 0) + 1;
@@ -288,6 +370,7 @@ const report = {
     repositoryRoot,
     files: levelCounts,
     internalLevels: internalLevelCounts,
+    level4Perspectives: level4PerspectiveCounts,
     totalRecords: records.length,
     errors,
     warnings,

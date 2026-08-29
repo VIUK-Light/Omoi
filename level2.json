@@ -1,274 +1,641 @@
 [
     {
         "id": "relationship-001",
-        "category": "relationship",
+        "category": "relationships_and_communication",
         "question": "友達のためなら、嘘をついてもいい？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "topic": "relationship"
     },
     {
         "id": "support-001",
-        "category": "support",
+        "category": "school_and_youth",
         "question": "友達がルール違反していたら、注意する？黙る？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "topic": "support"
     },
     {
         "id": "support-002",
-        "category": "support",
+        "category": "school_and_youth",
         "question": "先生に相談するのは弱いことだと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "topic": "support"
     },
     {
         "id": "support-003",
-        "category": "support",
+        "category": "school_and_youth",
         "question": "友達同士で解決できることって何？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "topic": "support"
     },
     {
         "id": "support-004",
-        "category": "support",
+        "category": "school_and_youth",
         "question": "注意してくれる友達は大切だと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "topic": "support"
     },
     {
         "id": "support-005",
-        "category": "support",
+        "category": "school_and_youth",
         "question": "自分が間違っていた時、友達に止めてほしい？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "topic": "support"
     },
     {
         "id": "support-006",
-        "category": "support",
+        "category": "school_and_youth",
         "question": "ルールを守ることは大事だと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "topic": "support"
     },
     {
         "id": "bullying-001",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "いじりといじめの違いは？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "bullying-002",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "冗談でも言ってはいけないことはある？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "bullying-003",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "「ノリだから」は理由になると思う？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "bullying-004",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "相手が笑っていたら、本当に平気だと思う？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "bullying-005",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "みんなが笑っていても、本人が嫌そうならどう思う？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "bullying-006",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "友達同士なら多少きついことを言ってもいいと思う？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "boundaries-001",
-        "category": "boundaries",
+        "category": "relationships_and_communication",
         "question": "下ネタは話しても平気？苦手？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "boundaries"
     },
     {
         "id": "boundaries-002",
-        "category": "boundaries",
+        "category": "relationships_and_communication",
         "question": "下ネタはどのくらいの軽さまでなら笑える？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "boundaries"
     },
     {
         "id": "boundaries-003",
-        "category": "boundaries",
+        "category": "relationships_and_communication",
         "question": "大人っぽい話は苦手？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "boundaries"
     },
     {
         "id": "boundaries-004",
-        "category": "boundaries",
+        "category": "relationships_and_communication",
         "question": "恋人でも聞かれたくないことはある？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "boundaries"
     },
     {
         "id": "boundaries-006",
-        "category": "boundaries",
+        "category": "relationships_and_communication",
         "question": "冗談でも苦手な話題はある？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "boundaries"
     },
     {
         "id": "friendship-016",
-        "category": "friendship",
+        "category": "relationships_and_communication",
         "question": "いじりと悪口の違いは何だと思う？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "friendship"
     },
     {
         "id": "friendship-017",
-        "category": "friendship",
+        "category": "relationships_and_communication",
         "question": "冗談でも言われたくないことは？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "friendship"
     },
     {
         "id": "support-008",
-        "category": "support",
+        "category": "school_and_youth",
         "question": "「先生に言う」と「チクる」の違いは？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "support"
     },
     {
         "id": "support-011",
-        "category": "support",
+        "category": "school_and_youth",
         "question": "自分に関係ないトラブルでも先生に相談する？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "support"
     },
     {
         "id": "support-012",
-        "category": "support",
+        "category": "school_and_youth",
         "question": "誰かが悪口を言われていたら止める？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "support"
     },
     {
         "id": "support-015",
-        "category": "support",
+        "category": "school_and_youth",
         "question": "ルールを破った人より、先生に言った人が責められるのはどう思う？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "support"
     },
     {
         "id": "support-016",
-        "category": "support",
+        "category": "school_and_youth",
         "question": "正しいことを言う人が空気を壊すと言われるのはどう思う？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "support"
     },
     {
         "id": "bullying-007",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "友達が誰かを悪く言っていたら、会話に入る？黙る？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "bullying-008",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "友達が誰かを仲間外れにしていたらどうする？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "bullying-009",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "本当は嫌そうだけど笑っている人を見たらどうする？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "bullying-011",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "グループで一人だけ無視されていたら声をかける？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "bullying-012",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "友達がSNSで誰かをバカにしていたら注意する？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "bullying-015",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "「それはやめた方がいいよ」と言える？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "bullying-016",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "本当の友達なら、悪いことを止めるべきだと思う？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "topic": "bullying"
     },
     {
         "id": "bullying-017",
-        "category": "bullying",
+        "category": "school_and_youth",
         "question": "直接注意するのと、後で二人で言うのどっちがいい？",
+        "level": 2,
+        "sensitivity": 2,
+        "topic": "bullying"
+    },
+    {
+        "id": "jealousy-013",
+        "category": "relationships_and_communication",
+        "question": "異性の友達との距離感はどこまであり？",
+        "level": 2,
+        "sensitivity": 1,
+        "topic": "jealousy"
+    },
+    {
+        "id": "jealousy-014",
+        "category": "relationships_and_communication",
+        "question": "異性と二人で遊ぶのはあり？",
+        "level": 2,
+        "sensitivity": 1,
+        "topic": "jealousy"
+    },
+    {
+        "id": "jealousy-015",
+        "category": "relationships_and_communication",
+        "question": "過去の恋愛話はどこまで話していい？",
+        "level": 2,
+        "sensitivity": 1,
+        "topic": "jealousy"
+    },
+    {
+        "id": "jealousy-016",
+        "category": "relationships_and_communication",
+        "question": "嘘をつかれたらどこまで許せる？",
+        "level": 2,
+        "sensitivity": 1,
+        "topic": "jealousy"
+    },
+    {
+        "id": "jealousy-017",
+        "category": "relationships_and_communication",
+        "question": "隠し事はどこまであり？",
+        "level": 2,
+        "sensitivity": 1,
+        "topic": "jealousy"
+    },
+    {
+        "id": "jealousy-018",
+        "category": "relationships_and_communication",
+        "question": "恋人が異性の友達と仲良くしていたらどう思う？",
+        "level": 2,
+        "sensitivity": 1,
+        "topic": "jealousy"
+    },
+    {
+        "id": "ethics-001",
+        "category": "ethics_and_decision_making",
+        "question": "友達グループで、親しい友達とあまり話したことがない人が同時に困っている。二人ともすぐには助けられないなら、あなたはまず誰に声をかける？ 親しい友達を優先するのは自然？ それとも困り方を見て決める？",
+        "level": 2,
+        "sensitivity": 1,
+        "topic": "ethics"
+    },
+    {
+        "id": "ethics-003",
+        "category": "ethics_and_decision_making",
+        "question": "友達が明日の発表をすごく不安がっている。あなたは「絶対うまくいくよ」と言えば少し安心すると思うけれど、本当は失敗する可能性もあると思っている。安心させるために、本心より明るく言うのはあり？",
+        "level": 2,
+        "sensitivity": 1,
+        "topic": "ethics"
+    },
+    {
+        "id": "ethics-004",
+        "category": "ethics_and_decision_making",
+        "question": "友達がクラス発表で使う資料を見せてくれた。あなたは少し分かりにくいと思ったが、本人は完成したと満足している。頼まれていないのに伝える？ それとも、自信をなくさせないために言わない？",
+        "level": 2,
+        "sensitivity": 1,
+        "topic": "ethics"
+    },
+    {
+        "id": "ethics-005",
+        "category": "ethics_and_decision_making",
+        "question": "グループで意見がぶつかり、あなたは自分が悪かったとは思っていない。でも自分が一言謝れば、その場は早く終わりそうだ。自分が納得していなくても、場を収めるために謝る？",
+        "level": 2,
+        "sensitivity": 1,
+        "topic": "ethics"
+    },
+    {
+        "id": "ethics-006",
+        "category": "ethics_and_decision_making",
+        "question": "同じ結果を出した二人がいる。一人はもともと得意で短い時間でできた。もう一人は苦手でも長く練習してできるようになった。クラスや部活で一人だけを評価するなら、どちらをより高く評価する？",
+        "level": 2,
+        "sensitivity": 1,
+        "topic": "ethics"
+    },
+    {
+        "id": "ethics-007",
+        "category": "ethics_and_decision_making",
+        "question": "冗談のつもりで言ったことに、友達が後から傷ついていたと分かった。悪気はなかったとしても、あなたはどこまで謝ったり、行動を変えたりするべきだと思う？",
+        "level": 2,
+        "sensitivity": 1,
+        "topic": "ethics"
+    },
+    {
+        "id": "bridge-001",
+        "category": "relationships_and_communication",
+        "topic": "group_decision_making",
+        "question": "みんなで決める予定で、一人だけ希望が通らなかったら、どこまで合わせてもらうのが公平だと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-002",
+        "category": "relationships_and_communication",
+        "topic": "reply_expectations",
+        "question": "返事が遅い友達に、心配していることを伝えるのと催促することの境界はどこだと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-003",
+        "category": "relationships_and_communication",
+        "topic": "cancelling_plans",
+        "question": "約束の直前に『今日は一人でいたい』と断られたら、理由を聞く？ それとも待つ？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-004",
+        "category": "relationships_and_communication",
+        "topic": "value_differences",
+        "question": "友達と大事にしていることが違うと分かったとき、分かり合おうとするのはどこまで必要だと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-005",
+        "category": "technology_media_and_privacy",
+        "topic": "sharing_screenshots",
+        "question": "友達との個人的なやり取りを、相談のために別の人へスクリーンショットで見せるのはあり？",
         "level": 2,
         "sensitivity": 2
     },
     {
-        "id": "jealousy-013",
-        "category": "jealousy",
-        "question": "異性の友達との距離感はどこまであり？",
+        "id": "bridge-006",
+        "category": "relationships_and_communication",
+        "topic": "borrowing_and_returning",
+        "question": "借りた物をなかなか返してくれない友達に、関係を悪くせず返してほしいと伝えるにはどうする？",
         "level": 2,
         "sensitivity": 1
     },
     {
-        "id": "jealousy-014",
-        "category": "jealousy",
-        "question": "異性と二人で遊ぶのはあり？",
+        "id": "bridge-007",
+        "category": "relationships_and_communication",
+        "topic": "helping_limits",
+        "question": "相談に乗りたい友達がいるけれど、自分も余裕がないとき、どこまで手伝うと伝える？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bridge-008",
+        "category": "relationships_and_communication",
+        "topic": "declining_requests",
+        "question": "頼み事を断ったあとに相手が残念そうだったら、断った自分が悪いと思う？",
         "level": 2,
         "sensitivity": 1
     },
     {
-        "id": "jealousy-015",
-        "category": "jealousy",
-        "question": "過去の恋愛話はどこまで話していい？",
+        "id": "bridge-009",
+        "category": "relationships_and_communication",
+        "topic": "conflicting_confidences",
+        "question": "別々の友達から、同じ出来事について違う秘密を聞いたら、どこまで中立でいられると思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bridge-010",
+        "category": "relationships_and_communication",
+        "topic": "constructive_feedback",
+        "question": "友達の投稿や作品が気になったとき、頼まれていなくても感想を伝える？",
         "level": 2,
         "sensitivity": 1
     },
     {
-        "id": "jealousy-016",
-        "category": "jealousy",
-        "question": "嘘をつかれたらどこまで許せる？",
+        "id": "bridge-011",
+        "category": "school_and_youth",
+        "topic": "group_work_fairness",
+        "question": "グループ作業で役割が偏っていると感じたら、終わる前に言う？ 終わってから言う？",
         "level": 2,
         "sensitivity": 1
     },
     {
-        "id": "jealousy-017",
-        "category": "jealousy",
-        "question": "隠し事はどこまであり？",
+        "id": "bridge-012",
+        "category": "relationships_and_communication",
+        "topic": "correcting_in_public",
+        "question": "友達の間違いに気づいたとき、みんなの前で直すのと後で伝えるのは、どう使い分ける？",
         "level": 2,
         "sensitivity": 1
     },
     {
-        "id": "jealousy-018",
-        "category": "jealousy",
-        "question": "恋人が異性の友達と仲良くしていたらどう思う？",
+        "id": "bridge-013",
+        "category": "work_and_economy",
+        "topic": "shared_expenses",
+        "question": "みんなで使ったお金を割り勘にするとき、使った量が違うならどう分けるのが納得できる？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-014",
+        "category": "relationships_and_communication",
+        "topic": "starting_an_apology",
+        "question": "けんかでどちらにも言い分があるとき、先に謝る人だけが損をすると思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-015",
+        "category": "technology_media_and_privacy",
+        "topic": "rumor_sharing",
+        "question": "本当か分からない話を『聞いただけだけど』と広めることに責任はあると思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bridge-016",
+        "category": "relationships_and_communication",
+        "topic": "chronic_lateness",
+        "question": "いつも遅れてくる友達を待つことと、時間を守ってほしいと伝えることは両立できる？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-017",
+        "category": "school_and_youth",
+        "topic": "credit_for_group_work",
+        "question": "グループの成果を先生が一人ずつ評価するとき、役割の違いをどこまで説明するべきだと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-018",
+        "category": "school_and_youth",
+        "topic": "welcoming_newcomers",
+        "question": "新しく入った人がグループになじめていないとき、最初に声をかけるのは誰の役目だと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-019",
+        "category": "technology_media_and_privacy",
+        "topic": "photo_consent",
+        "question": "集合写真をSNSに載せる前に、写っている人全員へ確認するのはどこまで必要だと思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bridge-020",
+        "category": "technology_media_and_privacy",
+        "topic": "account_privacy",
+        "question": "親しい友達でも、スマホやアカウントを見せたくないと思うことは信頼不足だと思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bridge-021",
+        "category": "relationships_and_communication",
+        "topic": "personal_boundaries",
+        "question": "苦手だと伝えたことを相手が冗談で続けたら、何度目で距離を置きたいと思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bridge-022",
+        "category": "school_and_youth",
+        "topic": "game_rules",
+        "question": "遊びやゲームで、一部の人だけが有利なルールになっていたら、楽しければそのままでいいと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-023",
+        "category": "society_public_policy_and_environment",
+        "topic": "everyday_environmental_choices",
+        "question": "少し不便でも環境のために選び方を変えることを、周りに求めていいと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-024",
+        "category": "work_and_economy",
+        "topic": "lending_money_to_friends",
+        "question": "友達がお金を貸してほしいと困っていたら、返ってこないかもしれなくても貸す？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bridge-025",
+        "category": "relationships_and_communication",
+        "topic": "gift_expectations",
+        "question": "贈り物をもらったら、同じくらいのお返しをするのが礼儀だと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-026",
+        "category": "relationships_and_communication",
+        "topic": "gossip_exclusion",
+        "question": "悪口のグループに誘われたとき、参加しないことをどう伝えたらいいと思う？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bridge-027",
+        "category": "relationships_and_communication",
+        "topic": "inclusive_language",
+        "question": "『みんなそう思っている』と言われたとき、本当にそうか確かめるのは空気を読めないことだと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-028",
+        "category": "school_and_youth",
+        "topic": "informal_leadership",
+        "question": "グループで一番声が大きい人が決める流れになったら、ほかの人が意見を言えるように何ができる？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-029",
+        "category": "relationships_and_communication",
+        "topic": "social_energy",
+        "question": "誘いを断る理由を詳しく説明したくないとき、『今は行けない』だけで十分だと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-030",
+        "category": "school_and_youth",
+        "topic": "speaking_up_in_meetings",
+        "question": "話し合いで意見がまとまりそうなときに違和感があったら、最後でも言う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-031",
+        "category": "relationships_and_communication",
+        "topic": "unintended_harm",
+        "question": "自分の言葉で誰かが傷ついたと知ったら、意図がなかったことを最初に説明する？",
+        "level": 2,
+        "sensitivity": 2
+    },
+    {
+        "id": "bridge-032",
+        "category": "relationships_and_communication",
+        "topic": "checking_in",
+        "question": "いつもより元気がない友達に、理由を聞かずにそばにいることは助けになると思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-033",
+        "category": "justice_safety_and_crime",
+        "topic": "everyday_safety_rules",
+        "question": "危ないと思う行動を友達がしていたら、嫌がられても止めるべきだと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-034",
+        "category": "ethics_and_decision_making",
+        "topic": "queue_fairness",
+        "question": "急いでいる人が列の前に入りたいと言ったら、事情を聞いて譲るのは公平だと思う？",
+        "level": 2,
+        "sensitivity": 1
+    },
+    {
+        "id": "bridge-035",
+        "category": "self_and_values",
+        "topic": "changing_your_mind",
+        "question": "前に強く言った意見を変えることは、ぶれていることだと思う？",
         "level": 2,
         "sensitivity": 1
     }

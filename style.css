@@ -54,6 +54,26 @@ h1 {
     text-align: center;
 }
 
+.home-nav {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    display: flex;
+    gap: 16px;
+}
+
+.home-nav a {
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+}
+
+.home-nav a:hover,
+.home-nav a:focus-visible {
+    color: #111111;
+}
+
 .site-footer p {
     margin: 0;
     font-size: 12px;
@@ -77,6 +97,11 @@ h1 {
     text-decoration: none;
 }
 
+.brand:hover,
+.brand:focus-visible {
+    color: #111111;
+}
+
 .start-button {
     display: inline-block;
 
@@ -94,20 +119,6 @@ h1 {
 .level-list {
     display: grid;
     gap: 12px;
-}
-
-.howto-link {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-
-    font-size: 14px;
-    color: #666666;
-    text-decoration: none;
-}
-
-.howto-link:hover {
-    color: #111111;
 }
 
 .about-omoi {
@@ -133,6 +144,37 @@ h1 {
 
 .about-omoi p + p {
     margin-top: 20px;
+}
+
+.about-omoi p:nth-of-type(2) {
+    margin-top: 20px;
     color: var(--text);
     font-weight: 600;
+}
+
+.about-omoi p:nth-of-type(3) {
+    margin-top: 20px;
+}
+
+.home-resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin-top: 32px;
+}
+
+.home-resource-links a {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 560px) {
+    .home-nav {
+        left: 24px;
+        right: 24px;
+        justify-content: flex-end;
+        gap: 12px;
+    }
 }
