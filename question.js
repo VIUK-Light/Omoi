@@ -160,7 +160,7 @@ function updateQuestionLayout(question) {
             : "";
 
     const isLongQuestion =
-        [...questionValue].length >= 120;
+        [...questionValue].length >= 60;
 
     questionContent.classList.toggle(
         "long-question",
