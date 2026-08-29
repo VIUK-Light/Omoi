@@ -2312,7 +2312,7 @@
   },
   
   {
-    "id": "education-001",
+    "id": "education-l4-001",
     "topic": "ai_schoolwork",
     "category": "education",
     "perspective": "affected",
@@ -2444,7 +2444,7 @@
     }
   },
   {
-    "id": "media-001",
+    "id": "media-l4-001",
     "topic": "viral_public_shaming",
     "category": "media",
     "perspective": "observer",
@@ -2564,7 +2564,7 @@
     }
   },
   {
-    "id": "ethics-001",
+    "id": "ethics-l4-001",
     "topic": "whistleblowing_confidential_information",
     "category": "ethics",
     "perspective": "actor",
@@ -2576,7 +2576,7 @@
     }
   },
   {
-    "id": "ethics-002",
+    "id": "ethics-l4-002",
     "topic": "fair_lottery_or_expected_benefit",
     "category": "ethics",
     "perspective": "decision_maker",
@@ -2588,7 +2588,7 @@
     }
   },
   {
-    "id": "ethics-003",
+    "id": "ethics-l4-003",
     "topic": "punishment_after_rehabilitation",
     "category": "ethics",
     "perspective": "decision_maker",
@@ -2816,11 +2816,12 @@
     }
   },
   {
+  "id": "ethics-l4-004",
   "topic": "instinct_and_moral_responsibility",
   "category": "ethics",
   "perspective": "general",
   "question": "もし浮気や托卵のような行動に、人間の進化や生殖に由来する傾向があると科学的に分かったとしても、それによって本人の倫理的な責任は少しでも軽くなると思う？ それとも、「なぜそうしたくなるか」と「してよいか」は完全に別の問題？",
-  "level": 3,
+  "level": 4,
   "sensitivity": 4,
   "detail": {
     "text": "人間の行動には、本能、進化、環境、感情など、自分の意思だけでは決まらない要因が影響していると考えられています。\n\nしかし、ある行動が自然に生じやすいことは、その行動が倫理的に許されることを意味するのでしょうか。\n\n行動の原因を科学的に説明できることと、その行動について本人に責任を求めることが両立するのかを考える問いです。"
