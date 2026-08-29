@@ -1192,7 +1192,7 @@
     "topic": "reasonable_accommodation_burden",
     "category": "health_and_disability",
     "perspective": "affected",
-    "question": "必要な配慮を学校で続けるために、本人・学校・周囲がそれぞれ何を調整すれば、一人に負担や遠慮を集中させずに済むと思う？",
+    "question": "あなたには障害があり、必要な配慮がなければ学校を続けにくい。でも先生や友達から『負担が大きい』と言われた。それでも配慮を求める？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1204,7 +1204,7 @@
     "topic": "accommodation_peer_cost",
     "category": "health_and_disability",
     "perspective": "observer",
-    "question": "行事を誰もが参加しやすい形に変えるとき、参加の機会と、すでに楽しみにしていた人の思いをどう両立させる？",
+    "question": "障害のある同級生も参加できるよう、あなたが楽しみにしていた学校行事の内容が大きく変わった。それでも、その変更は必要だったと思える？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1217,7 +1217,7 @@
     "topic": "disability_employment_family",
     "category": "health_and_disability",
     "perspective": "decision_maker",
-    "question": "小規模事業者が必要な配慮を検討するとき、応募者の能力、業務の調整、公的支援、事業への影響をどの順で確かめて判断する？",
+    "question": "あなたが小さな会社を経営している。障害のある応募者はとても優秀だが、必要な配慮を整えると会社が赤字になる可能性がある。それでも採用する？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
