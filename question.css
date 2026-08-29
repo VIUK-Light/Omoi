@@ -30,9 +30,20 @@ body {
     max-height: min(56svh, 560px);
     overflow-y: auto;
     overscroll-behavior: contain;
+    scrollbar-color: #bbbbbb transparent;
+    scrollbar-width: thin;
 
     margin: auto;
     text-align: center;
+}
+
+.question-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.question-content::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+    border-radius: 8px;
 }
 
 .level-label {
@@ -60,6 +71,20 @@ body {
 .question-content.long-question #questionText {
     font-size: clamp(24px, 4.5vw, 40px);
     line-height: 1.65;
+}
+
+.question-content.long-question + .question-footer {
+    margin-top: 24px;
+}
+
+.question-content.long-question + .question-footer::before {
+    content: "この質問は長文です。スクロールして全文を読む";
+    display: block;
+    margin: 0 auto 12px;
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .question-footer {
