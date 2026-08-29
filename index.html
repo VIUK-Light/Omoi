@@ -4,54 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Omoi - 重い話までできる質問カード</title>
+    <title>Omoi｜重い話までできる質問カード</title>
 
     <meta
         name="description"
-        content="Omoiは、気軽な質問から社会問題・倫理・価値観・人生の深い問いまで話せる無料の質問カードです。同じ考えになるためではなく、違う考えを知るために。"
+        content="Omoiは、気軽な会話から社会問題・倫理・価値観・人生の深い問いまで話せる無料の質問カードです。話す深さを選び、違う考えを知るための対話を始められます。"
     >
 
     <link rel="canonical" href="https://omoi.viuk-light.org/">
+    <link rel="icon" href="viuk-light.jpg" type="image/jpeg">
+    <meta name="theme-color" content="#111111">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Omoi">
-    <meta property="og:title" content="Omoi - 重い話までできる質問カード">
+    <meta property="og:title" content="Omoi｜重い話までできる質問カード">
     <meta
         property="og:description"
-        content="気軽な質問から、普段は避けがちな重い話まで。社会・倫理・価値観について話すための質問カード。"
+        content="気軽な会話から、普段は避けがちな重い話まで。社会・倫理・価値観について話す無料の質問カード。"
     >
     <meta property="og:url" content="https://omoi.viuk-light.org/">
     <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://omoi.viuk-light.org/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Omoi｜重い話までできる質問カード">
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Omoi - 重い話までできる質問カード">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Omoi｜重い話までできる質問カード">
     <meta
         name="twitter:description"
-        content="気軽な質問から、普段は避けがちな重い話まで。社会・倫理・価値観について話すための質問カード。"
+        content="気軽な会話から、普段は避けがちな重い話まで。社会・倫理・価値観について話す無料の質問カード。"
     >
+    <meta name="twitter:image" content="https://omoi.viuk-light.org/og-image.png">
+    <meta name="twitter:image:alt" content="Omoi｜重い話までできる質問カード">
 
     <link rel="stylesheet" href="style.css">
 
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Omoi",
-        "url": "https://omoi.viuk-light.org/",
-        "description": "気軽な質問から社会問題・倫理・価値観・人生の深い問いまで話せる無料の質問カード。",
-        "applicationCategory": "LifestyleApplication",
-        "operatingSystem": "Any",
-        "inLanguage": "ja",
-        "isAccessibleForFree": true
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://omoi.viuk-light.org/#website",
+                "url": "https://omoi.viuk-light.org/",
+                "name": "Omoi",
+                "alternateName": "Omoi 質問カード",
+                "inLanguage": "ja"
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://omoi.viuk-light.org/#application",
+                "name": "Omoi",
+                "url": "https://omoi.viuk-light.org/",
+                "description": "気軽な会話から社会問題・倫理・価値観・人生の深い問いまで話せる無料の質問カード。",
+                "applicationCategory": "LifestyleApplication",
+                "operatingSystem": "Web browser",
+                "inLanguage": "ja",
+                "isAccessibleForFree": true,
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "JPY"
+                }
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://omoi.viuk-light.org/#webpage",
+                "url": "https://omoi.viuk-light.org/",
+                "name": "Omoi｜重い話までできる質問カード",
+                "description": "Omoiは、気軽な会話から社会問題・倫理・価値観・人生の深い問いまで話せる無料の質問カードです。",
+                "isPartOf": {
+                    "@id": "https://omoi.viuk-light.org/#website"
+                },
+                "about": {
+                    "@id": "https://omoi.viuk-light.org/#application"
+                },
+                "inLanguage": "ja"
+            }
+        ]
     }
     </script>
 </head>
 
 <body>
     <main class="home">
-        <a href="howto.html" class="howto-link">
-            使い方
-        </a>
+        <nav class="home-nav" aria-label="主要メニュー">
+            <a href="howto.html" class="howto-link">
+                使い方
+            </a>
+            <a href="guide.html" class="guide-link">
+                質問カードとは
+            </a>
+        </nav>
 
         <section class="hero">
             <h1>Omoi</h1>
@@ -62,7 +107,7 @@
             </p>
 
             <p class="description">
-                社会や価値観について話す質問カード
+                無料の質問カードで、社会や価値観について話す
             </p>
 
             <a href="select.html" class="start-button">
@@ -71,14 +116,20 @@
         </section>
 
         <footer class="site-footer">
-            <div class="brand">
+            <a
+                href="https://viuk-light.org/omoi.html"
+                class="brand"
+                aria-label="VIUK-LightのOmoi公式ページ"
+            >
                 <img
                     src="viuk-light.jpg"
                     alt=""
                     class="brand-icon"
+                    width="18"
+                    height="18"
                 >
                 <span>VIUK-Light</span>
-            </div>
+            </a>
         </footer>
     </main>
 
@@ -94,6 +145,17 @@
         <p>
             同じ考えになるためではなく、違う考えを知るために。
         </p>
+
+        <p>
+            質問をきっかけに、普段は話しにくいテーマも、相手の考えを聞きながら少しずつ話せます。
+            答えたくない問いは、いつでも飛ばせます。
+        </p>
+
+        <div class="home-resource-links">
+            <a href="guide.html">質問カードの使い方・選び方を読む</a>
+            <a href="howto.html">Omoiの使い方を見る</a>
+            <a href="https://viuk-light.org/omoi-safety.html">安全設計を確認する</a>
+        </div>
     </section>
 </body>
 </html>

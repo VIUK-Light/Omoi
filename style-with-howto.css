@@ -28,6 +28,14 @@
     font-size: 40px;
 }
 
+.howto-intro {
+    max-width: 560px;
+    margin: -20px 0 48px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #666666;
+}
+
 .howto-list {
     display: grid;
     gap: 32px;
@@ -77,4 +85,33 @@
 
 .howto-content > .start-button {
     margin-top: 40px;
+}
+
+.howto-links {
+    display: grid;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.howto-links > a:first-child {
+    color: #111111;
+    font-size: 14px;
+    font-weight: 600;
+    text-underline-offset: 4px;
+}
+
+.howto-links .start-button {
+    display: inline-block;
+    width: fit-content;
+    padding: 14px 28px;
+    border-radius: 12px;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.howto-links .start-button:hover,
+.howto-links .start-button:focus-visible {
+    background-color: #333333;
 }
