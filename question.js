@@ -4,6 +4,8 @@ const count = Number(params.get("count"));
 
 const levelDisplay = document.getElementById("levelDisplay");
 const questionText = document.getElementById("questionText");
+const questionContent =
+    document.querySelector(".question-content");
 const sourceSection =
     document.getElementById("sourceSection");
 
@@ -59,6 +61,7 @@ fetch("level" + level + ".json")
         if (filteredQuestions.length === 0) {
             questionText.textContent =
                 "このLevelの質問はまだありません。";
+            questionContent.classList.remove("long-question");
 
             nextQuestionButton.disabled = true;
             skipQuestionButton.disabled = true;
@@ -88,6 +91,8 @@ function showQuestion() {
 
     questionText.textContent =
         currentQuestion.question;
+
+    updateQuestionLayout(currentQuestion);
 
     updateReportQuestionLink(currentQuestion);
 
@@ -144,6 +149,22 @@ function showQuestion() {
             });
         }
     }
+}
+
+
+function updateQuestionLayout(question) {
+    const questionValue =
+        typeof question.question === "string"
+            ? question.question
+            : "";
+
+    const isLongQuestion =
+        [...questionValue].length >= 120;
+
+    questionContent.classList.toggle(
+        "long-question",
+        isLongQuestion
+    );
 }
 
 

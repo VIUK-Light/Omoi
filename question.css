@@ -7,6 +7,7 @@ body {
 
 .question-screen {
     min-height: 100vh;
+    min-height: 100svh;
     box-sizing: border-box;
 
     padding: 32px 24px;
@@ -24,6 +25,11 @@ body {
 .question-content {
     width: 100%;
     max-width: 680px;
+    min-height: 0;
+    max-height: 60vh;
+    max-height: min(56svh, 560px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
 
     margin: auto;
     text-align: center;
@@ -44,6 +50,16 @@ body {
 
     font-size: clamp(30px, 5vw, 52px);
     line-height: 1.45;
+    white-space: pre-line;
+}
+
+.question-content.long-question {
+    text-align: left;
+}
+
+.question-content.long-question #questionText {
+    font-size: clamp(24px, 4.5vw, 40px);
+    line-height: 1.65;
 }
 
 .question-footer {
