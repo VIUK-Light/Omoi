@@ -1,157 +1,208 @@
 [
   {
     "id": "gender-relations-001",
-    "category": "gender_relations",
+    "category": "gender_sexuality_and_identity",
     "question": "ハラスメントを恐れて異性に近づかないのは、行き過ぎだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "相手を不快にさせたり、ハラスメントだと受け取られたりすることを避けるため、異性への声かけや個人的な誘いを控える人がいると言われます。\n\n慎重に行動することは相手への配慮だという考えがある一方、過度な警戒が人間関係や出会いそのものを減らし、互いの萎縮につながるという見方もあります。\n\nどこまでが必要な配慮で、どこからが過度なリスク回避なのかを考える問いです。"
-    }
+    },
+    "topic": "gender_relations",
+    "perspective": "observer"
   },
   {
     "id": "gender-identity-001",
-    "category": "gender_identity",
+    "category": "gender_sexuality_and_identity",
     "question": "トランス女性は女性専用スペースを利用できるべき？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "トイレ、更衣室、入浴施設、宿泊施設など、性別によって利用を分ける空間では、トランスジェンダーの人をどのように扱うかが議論になります。\n\nトランス女性を女性として扱い、排除しないことを重視する立場があります。一方で、プライバシーや安全、身体的な性差を理由に、利用条件を分ける必要があると考える立場もあります。\n\n誰も不当に排除しないことと、利用者の安全やプライバシーをどう両立させるかが争点です。"
-    }
+    },
+    "topic": "gender_identity",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
   },
   {
     "id": "relationships-001",
-    "category": "relationship",
+    "category": "relationships_and_communication",
     "question": "恋愛や結婚の機会に大きな格差があることは、社会問題だと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "収入、雇用、地域、年齢、外見、人間関係などによって、恋愛や結婚の機会には差が生まれます。少子化や孤独の問題と関連づけて議論されることもあります。\n\n恋愛や結婚は個人の自由な選択なので、結果に格差があっても社会が介入するべきではないという考えがあります。一方で、経済状況や社会構造が選択肢そのものを狭めているなら、社会問題として考える必要があるという見方もあります。\n\n個人の自由と、社会が扱うべき格差の境界を考える問いです。"
-    }
+    },
+    "topic": "relationship",
+    "perspective": "observer"
   },
   {
     "id": "feminism-001",
-    "category": "feminism",
+    "category": "gender_sexuality_and_identity",
     "question": "男女平等のための女性優遇策は、どこまで認められると思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "女性向けの採用枠、クオータ制、支援制度などは、過去や現在の格差を是正するための政策として導入されることがあります。\n\n格差が残っている以上、同じ扱いをするだけでは平等にならないという考えがあります。一方で、性別を理由に一方を優遇すれば、新たな不公平や逆差別につながるという批判もあります。\n\n平等とは『同じように扱うこと』なのか、それとも『不利を補うこと』まで含むのかが、この問いの中心です。"
-    }
+    },
+    "topic": "feminism",
+    "perspective": "observer"
   },
   {
     "id": "family-law-001",
-    "category": "family_law",
+    "category": "family_and_care",
     "question": "離婚後は共同親権を原則にするべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "離婚後の親権や子育てへの関わり方は、子ども、母親、父親それぞれの立場から議論されます。共同親権では、離婚後も両方の親が子どもについて法的な責任や権限を持つことになります。\n\n両親が継続して子育てに関わることを重視する立場がある一方、家庭内の対立や安全上の問題がある場合には共同で判断することが難しいという懸念もあります。\n\n親の権利だけでなく、子どもの利益をどう考えるかが重要な争点です。"
-    }
+    },
+    "topic": "family_law",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
   },
   {
     "id": "family-law-002",
-    "category": "family_law",
+    "category": "family_and_care",
     "question": "養育費は、どこまで強制してでも払わせるべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "離婚や別居の後、子どもと暮らしていない親が養育費を負担することがあります。しかし、実際には支払いが続かないケースや、金額・負担能力をめぐる争いもあります。\n\n子どもの生活を守るため、強い徴収制度が必要だという考えがあります。一方で、収入状況や親子関係、個別事情を十分に考慮せず一律に強制することへの懸念もあります。\n\n子どもの権利と、支払う側の事情をどこまで両立させるべきかを考える問いです。"
-    }
+    },
+    "topic": "family_law",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
   },
   {
     "id": "caregiving-001",
-    "category": "caregiving",
+    "category": "family_and_care",
     "question": "家事や育児は、収入が多い側が少なく負担しても公平だと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "共働き家庭でも、労働時間、収入、家事、育児、精神的な負担は同じとは限りません。そのため、単純に家事を半分ずつにすることが必ずしも公平とは限らないという考えがあります。\n\n収入や仕事時間に応じて分担を変えるべきだという立場と、家庭の仕事も同じように生活を支える労働なので、収入だけで負担を決めるべきではないという立場があります。\n\n公平な分担を何を基準に決めるかを考える問いです。"
-    }
+    },
+    "topic": "caregiving",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
   },
   {
     "id": "criminal-justice-001",
-    "category": "criminal_justice",
+    "category": "justice_safety_and_crime",
     "question": "性被害者の保護と、冤罪を防ぐことは、どちらをより重視するべき？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "性犯罪をめぐっては、被害を訴える人が十分に保護されないという問題と、誤った疑いによって無実の人が重大な不利益を受ける可能性の両方が議論されます。\n\n被害申告を疑いすぎると被害者が声を上げにくくなる一方、疑いだけで有罪視することも適正な手続きの観点から問題になります。\n\n被害者を守ることと、無実の人を守ることを制度の中でどう両立させるかを考える問いです。"
-    }
+    },
+    "topic": "criminal_justice",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment"
+    ]
   },
   {
     "id": "public-space-001",
-    "category": "public_space",
+    "category": "society_public_policy_and_environment",
     "question": "女性専用車両は男女平等に反すると思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "女性専用車両は、混雑した公共交通機関での痴漢被害などへの対策として導入されています。\n\n被害を減らし、安心して移動できる環境を作るために必要だという考えがあります。一方で、性別によって利用できる車両を分けること自体が不平等であり、別の方法で安全を確保するべきだという意見もあります。\n\n安全のための区別を、どこまで認めるかを考える問いです。"
-    }
+    },
+    "topic": "public_space",
+    "perspective": "observer"
   },
   {
     "id": "family-law-003",
-    "category": "family_law",
+    "category": "family_and_care",
     "question": "選択的夫婦別姓を認めるべきだと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
       "text": "結婚後の姓をめぐっては、同じ姓を名乗る現在の仕組みと、希望する夫婦が別々の姓を使えるようにする選択的夫婦別姓が議論されています。\n\n個人の名前や仕事上の継続性、選択の自由を重視する立場があります。一方で、家族として同じ姓を持つことの意味や、戸籍制度との関係を重視する立場もあります。\n\n個人の選択と、家族制度のあり方をどう考えるかが争点です。"
-    }
+    },
+    "topic": "family_law",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
   },
   {
     "id": "mental-health-001",
-    "category": "mental_health",
+    "category": "health_and_disability",
     "question": "男性の孤独や自殺の問題は、もっと男性に特化して支援するべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "男性は悩みを周囲に相談しにくい、支援につながりにくいという指摘があります。また、孤独、失業、離婚、人間関係などが生活上の深刻な問題につながることもあります。\n\n男性向けの相談や支援を増やすことで、利用しやすくなるという考えがあります。一方で、性別で支援を分けるより、必要な人が誰でも利用しやすい仕組みを整えるべきだという考えもあります。\n\n性別に特化した支援をどこまで行うべきかを考える問いです。"
-    }
+    },
+    "topic": "mental_health",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
   },
   {
     "id": "public-support-001",
-    "category": "public_support",
+    "category": "society_public_policy_and_environment",
     "question": "生理用品を税金で無料配布するべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "学校や公共施設で生理用品を無料で提供する取り組みがあります。生理用品は定期的に必要となるため、経済的な負担や入手のしにくさが問題になることがあります。\n\n生活に必要な衛生用品として公費で支援するべきだという考えがあります。一方で、個人が使用する日用品をどこまで税金で負担するべきか、他の必需品との公平性をどう考えるかという意見もあります。\n\n必要不可欠な支援と個人負担の境界を考える問いです。"
-    }
+    },
+    "topic": "public_support",
+    "perspective": "observer"
   },
   {
     "id": "relationship-002",
-    "category": "relationship",
+    "category": "relationships_and_communication",
     "question": "既婚者が独身だと偽って恋愛することは、どこまで責任を負うべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "既婚であることや家族がいることを隠し、独身だと相手に信じさせたまま交際するケースがあります。相手が重要な事実を知らないまま、将来の選択をしてしまうこともあります。\n\n嘘をついた側に強い責任があるという考えがある一方、交際相手がどこまで確認するべきだったのか、関係が長期化した場合の責任をどう考えるかなど、さまざまな論点があります。\n\n恋愛関係において、相手の意思決定に関わる事実をどこまで伝える義務があるのかを考える問いです。"
-    }
+    },
+    "topic": "relationship",
+    "perspective": "observer"
   },
   {
     "id": "relationship-003",
-    "category": "relationship",
+    "category": "relationships_and_communication",
     "question": "一方がもう一方に経済的に依存する恋愛関係は、不健全だと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "恋愛や結婚では、一方が主に収入を得て、もう一方の生活費を多く負担する関係もあります。本人同士が納得していれば問題ないという考えもあります。\n\n一方で、経済的に依存することで関係を終わらせにくくなったり、力関係が偏ったりする可能性も指摘されます。また、家事や育児など金銭に表れない貢献もあります。\n\n経済的な依存と、合意された役割分担の境界をどこに置くかを考える問いです。"
-    }
+    },
+    "topic": "relationship",
+    "perspective": "observer"
   },
   {
     "id": "society-001",
-    "category": "society",
+    "category": "society_public_policy_and_environment",
     "question": "女性天皇・女系天皇を認めるべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "皇位継承をめぐっては、女性天皇や女系天皇を認めるかどうかが議論されています。『女性天皇』と『女系天皇』は同じ意味ではなく、継承の系統に違いがあります。\n\n皇位継承の安定や男女にかかわらない継承を重視する立場がある一方、歴史的に続いてきた男系継承を維持することを重視する立場もあります。\n\n伝統をどこまで維持し、現代の価値観や制度上の課題にどう対応するかを考える問いです。"
-    }
+    },
+    "topic": "society",
+    "perspective": "observer"
   },
   {
     "id": "life-001",
-    "category": "life",
+    "category": "ethics_and_decision_making",
     "topic": "progressive_taxation_and_public_services",
     "perspective": "decision_maker",
     "role": "local_budget_planner",
@@ -164,7 +215,7 @@
   },
   {
     "id": "ethics-002",
-    "category": "ethics",
+    "category": "ethics_and_decision_making",
     "topic": "uniform_rules_and_accommodation",
     "perspective": "decision_maker",
     "role": "school_rule_reviewer",
@@ -177,7 +228,7 @@
   },
   {
     "id": "ethics-008",
-    "category": "ethics",
+    "category": "ethics_and_decision_making",
     "topic": "majority_and_minority_needs",
     "perspective": "decision_maker",
     "role": "local_budget_planner",
@@ -190,1624 +241,1957 @@
   },
   {
     "id": "support-007",
-    "category": "support",
-    "question": "友達が危ないことをしていたら先生に言う？",
+    "category": "school_and_youth",
+    "question": "友達が、自分や周りの人がけがをするおそれのあることをしていた。止めてもやめないなら、本人に秘密にして先生へ相談する？",
     "level": 3,
-    "sensitivity": 2
+    "sensitivity": 2,
+    "topic": "support",
+    "perspective": "actor",
+    "role": "friend",
+    "detail": {
+      "text": "友達との約束や信頼を守りたい気持ちと、けがや重大な問題を防ぎたい気持ちは、同時に生まれることがあります。本人に伝えてから相談する方法もあれば、急ぐ危険があるときは大人へ先に相談する考えもあります。\n\n何を『危ないこと』と考えるか、今すぐ危険があるか、本人と一緒に相談できるかで選び方は変わります。相手を責めるためではなく、安全を守るために誰へどうつなぐかを考える問いです。"
+    }
   },
   {
     "id": "support-009",
-    "category": "support",
-    "question": "友達を守るために先生に言うのはあり？",
+    "category": "school_and_youth",
+    "question": "友達が困っているのに、自分だけでは支えきれない。本人が嫌がるかもしれなくても、先生に相談することは友達を守る行動だと言える？",
     "level": 3,
-    "sensitivity": 2
+    "sensitivity": 2,
+    "topic": "support",
+    "perspective": "actor",
+    "role": "friend",
+    "detail": {
+      "text": "相談することを『約束を破ること』と感じる人もいます。一方で、二人だけで抱え込むことで状況が悪くなったり、支える側も疲れ切ったりすることがあります。\n\n本人の意思を尊重しながら一緒に相談先を探す方法と、危険や緊急性のために先に大人へつなぐ方法は同じではありません。誰のための相談か、相談後に本人へどう説明するかを考える問いです。"
+    }
   },
   {
     "id": "support-010",
-    "category": "support",
-    "question": "友達から「先生には言わないで」と言われたら守る？",
+    "category": "school_and_youth",
+    "question": "友達から『先生には言わないで』と頼まれた。約束を守ることと、必要なら大人につなぐことの境界を、あなたはどこに置く？",
     "level": 3,
-    "sensitivity": 2
+    "sensitivity": 2,
+    "topic": "support",
+    "perspective": "actor",
+    "role": "friend",
+    "detail": {
+      "text": "打ち明けた人にとっては、秘密が守られることが相談の前提になる場合があります。しかし、健康や安全、継続的な被害に関わることでは、友達だけで責任を負い続けるのが難しいこともあります。\n\n最初から『絶対に誰にも言わない』と約束しない、本人と相談先を選ぶ、緊急の場合だけは例外を説明するなど、信頼を保つ方法には複数あります。"
+    }
   },
   {
     "id": "support-013",
-    "category": "support",
-    "question": "先生に言ったことで友達関係が悪くなるなら迷う？",
+    "category": "school_and_youth",
+    "question": "先生に相談すれば状況は変わるかもしれないが、友達から『裏切られた』と思われるかもしれない。それでも相談するかを、何で決める？",
     "level": 3,
-    "sensitivity": 2
+    "sensitivity": 2,
+    "topic": "support",
+    "perspective": "actor",
+    "role": "friend",
+    "detail": {
+      "text": "相談した結果として関係がぎくしゃくする可能性はあります。その不安のために何もしないことが、本人や周りの人にとってより大きな負担になる場合もあります。\n\n相談の目的、本人にどう伝えるか、先生がどこまで共有するかによって、関係への影響は変わります。友情を守ることと問題を放置しないことを、どちらか一方だけにしない方法を考える問いです。"
+    }
   },
   {
     "id": "support-014",
-    "category": "support",
-    "question": "先生に本当のことを言うのは裏切り？",
+    "category": "school_and_youth",
+    "question": "友達が隠したいと思っている事実を先生に伝えることは、どんな場合に『裏切り』ではなく必要な助けになると思う？",
     "level": 3,
-    "sensitivity": 2
+    "sensitivity": 2,
+    "topic": "support",
+    "perspective": "actor",
+    "role": "friend",
+    "detail": {
+      "text": "本人の同意なく話すことは、信頼を損ねることがあります。一方で、本人だけでは解決できない問題や安全に関わる問題では、知っている人が助けを求めることに意味がある場合もあります。\n\n本人が望んでいたかだけでなく、緊急性、共有する範囲、相談後に本人を孤立させない準備をどう考えるかが重要になります。"
+    }
   },
   {
     "id": "support-017",
-    "category": "support",
-    "question": "友達を守ることと正しいことがぶつかったらどうする？",
+    "category": "school_and_youth",
+    "question": "友達の味方でいたい気持ちと、他の人への影響を止めたい気持ちがぶつかったとき、あなたは誰に何を相談する？",
     "level": 3,
-    "sensitivity": 2
+    "sensitivity": 2,
+    "topic": "support",
+    "perspective": "actor",
+    "role": "friend",
+    "detail": {
+      "text": "友達を守ることは、いつも友達の望みをそのまま叶えることとは限りません。ほかの人への被害や、自分一人で抱えられる範囲も考える必要があります。\n\n直接本人と話す、大人へ相談する、複数の友達で支えるなど、選択肢は一つではありません。正しさを押しつける前に、誰がどの負担を負っているのかを整理する問いです。"
+    }
   },
   {
     "id": "bullying-010",
-    "category": "bullying",
-    "question": "自分に関係ないいじめでも関わる？",
+    "category": "school_and_youth",
+    "question": "自分は直接の被害を受けていないが、いじめのような場面を見かけた。安全を損なわずに関わるため、最初に何ができると思う？",
     "level": 3,
-    "sensitivity": 2
+    "sensitivity": 2,
+    "topic": "bullying",
+    "perspective": "observer",
+    "role": "bystander",
+    "detail": {
+      "text": "止めようとして自分が標的になる不安や、事情を知らずに介入してよいのかという迷いがあります。一方で、見て見ぬふりが続くと、被害を受ける人が孤立したと感じることもあります。\n\nその場で止めるだけでなく、記録を残す、信頼できる大人へ相談する、被害を受けた人に後から声をかけるなど、関わり方には段階があります。"
+    }
   },
   {
     "id": "bullying-013",
-    "category": "bullying",
-    "question": "仲のいい友達がいじめていたら注意できる？",
+    "category": "school_and_youth",
+    "question": "仲のいい友達が、誰かを傷つける行動をしていると気づいた。関係が壊れるかもしれなくても、どう伝える？",
     "level": 3,
-    "sensitivity": 2
+    "sensitivity": 2,
+    "topic": "bullying",
+    "perspective": "actor",
+    "role": "friend",
+    "detail": {
+      "text": "親しい相手ほど、注意すると自分が仲間から外される不安や、『自分だけが責めるのか』という迷いがあります。行動を止めることと、相手の人格を決めつけることは分けて考えられます。\n\n一人で抱えず、信頼できる大人や周囲の人と相談することも選択肢です。友達をかばうことが、行動を見過ごすことになっていないかを考える問いです。"
+    }
   },
   {
     "id": "bullying-014",
-    "category": "bullying",
-    "question": "注意したら自分も嫌われそうならどうする？",
+    "category": "school_and_youth",
+    "question": "誰かを傷つける行動を止めたいが、自分も嫌われたり標的になったりしそうだ。一人で直接言う以外に、どんな方法を選べる？",
     "level": 3,
-    "sensitivity": 2
+    "sensitivity": 2,
+    "topic": "bullying",
+    "perspective": "observer",
+    "role": "bystander",
+    "detail": {
+      "text": "危険を感じる場面で、一人で前に出ることだけが正しい対応ではありません。大人へ相談する、複数人で声をかける、被害を受けた人を孤立させないなど、負担を分ける方法があります。\n\n自分の安全を守ることと、問題を放置しないことを両立させるには何が必要かを考える問いです。"
+    }
   },
   {
     "id": "bullying-018",
-    "category": "bullying",
-    "question": "注意してもやめなかったらどうする？",
+    "category": "school_and_youth",
+    "question": "傷つける行動をやめてほしいと伝えても変わらなかった。次に相談するとしたら、何を伝え、どうすれば当事者の安全を守れる？",
     "level": 3,
-    "sensitivity": 2
+    "sensitivity": 2,
+    "topic": "bullying",
+    "perspective": "actor",
+    "role": "friend",
+    "detail": {
+      "text": "注意しても状況が変わらないとき、同じ人が一人で対応を続けるほど負担や危険が増えることがあります。起きたこと、いつから続いているか、誰が困っているかを整理して相談することで、周囲が動きやすくなる場合があります。\n\n報復やさらなる孤立を避けるため、相談先と情報共有の範囲をどう決めるかも重要です。"
+    }
   },
   {
     "id": "justice-001",
-    "category": "criminal_justice",
+    "category": "justice_safety_and_crime",
     "question": "死刑制度は必要だと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "重大な犯罪に対して死刑を認めるべきかは、刑罰の目的をどう考えるかで意見が分かれます。\n\n被害の重大さや社会の安全、責任の重さを重視する立場があります。一方で、国家が人の命を奪うことへの疑問や、誤判が起きた場合に取り返せないことを重視する立場もあります。\n\n処罰、抑止、更生、人権のどれを重く見るかを考える問いです。"
-    }
+    },
+    "topic": "criminal_justice",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment"
+    ]
   },
   {
     "id": "justice-002",
-    "category": "criminal_justice",
+    "category": "justice_safety_and_crime",
     "question": "少年犯罪は、大人より軽く扱うべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "未成年による犯罪では、年齢や成長途中であることをどこまで考慮するかが問題になります。\n\n更生の可能性を重視して大人とは異なる扱いをするべきだという考えがあります。一方で、被害の大きさが同じなら年齢だけで責任を軽くするべきではないという考えもあります。\n\n成長可能性と責任をどう両立させるかを考えます。"
-    }
+    },
+    "topic": "criminal_justice",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment"
+    ]
   },
   {
     "id": "justice-003",
-    "category": "criminal_justice",
+    "category": "justice_safety_and_crime",
     "question": "前科がある人を、採用で不利にしてもいいと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "犯罪歴のある人を採用するかどうかでは、再犯への不安や職場の安全と、社会復帰の機会の両方が問題になります。\n\n雇う側が過去を判断材料にする自由を重視する立場があります。一方で、刑を終えた後まで不利益が続けば、再出発そのものが難しくなるという考えもあります。\n\n過去の責任をどこまで将来に持ち越すべきかを考える問いです。"
-    }
+    },
+    "topic": "criminal_justice",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment"
+    ]
   },
   {
     "id": "justice-004",
-    "category": "criminal_justice",
+    "category": "justice_safety_and_crime",
     "question": "犯罪者の更生と被害者感情、どちらを優先するべき？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "刑罰には、責任を取らせることだけでなく、再び犯罪を起こさないよう社会復帰を支える役割もあります。\n\n更生を重視することが将来の被害を減らすという考えがある一方、被害を受けた側から見れば、加害者への支援が手厚すぎると感じる場合もあります。\n\n社会の安全、被害者の納得、加害者の再出発をどう考えるかが争点です。"
-    }
+    },
+    "topic": "criminal_justice",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment"
+    ]
   },
   {
     "id": "life-002",
-    "category": "life",
+    "category": "ethics_and_decision_making",
     "question": "本人が強く望むなら、安楽死を認めるべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "重い病気などで苦痛を抱える人が、自分の意思で人生の終わり方を選ぶことをどこまで認めるかという問題です。\n\n本人の自己決定を重視する立場がある一方、本人の意思が一時的な状況や周囲の圧力に影響される可能性、制度が弱い立場の人に与える影響を心配する立場もあります。\n\n自己決定と生命を守る責任をどう両立させるかを考えます。"
-    }
+    },
+    "topic": "life",
+    "perspective": "observer"
   },
   {
     "id": "medicine-001",
-    "category": "medicine",
+    "category": "health_and_disability",
     "question": "臓器提供は、本人が拒否していなければ提供する仕組みにしてもいいと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "臓器提供の意思表示を、希望者だけが登録する方式にするか、拒否しない限り提供意思があるとみなす方式にするかで考え方が分かれます。\n\n提供できる臓器を増やせる可能性を重視する立場がある一方、本人の明確な同意なしに扱いを決めることへの懸念もあります。\n\n命を救う利益と本人の自己決定をどう考えるかが争点です。"
-    }
+    },
+    "topic": "medicine",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
   },
   {
     "id": "medicine-002",
-    "category": "medicine",
+    "category": "health_and_disability",
     "question": "出生前診断で重い病気の可能性が分かったら、出産するかどうかの判断材料にしていいと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "出生前診断では、妊娠中に胎児の一部の病気や特徴について情報を得られる場合があります。\n\n将来の生活や医療への準備、家族の事情を考えるために必要な情報だという考えがあります。一方で、障害や病気のある人の価値を選別する考えにつながらないかという懸念もあります。\n\n親の選択と、命や障害をどう捉えるかが関わる問いです。"
-    }
+    },
+    "topic": "medicine",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
   },
   {
     "id": "medicine-003",
-    "category": "medicine",
+    "category": "health_and_disability",
     "question": "遺伝子編集で、生まれる子どもの病気を防げるなら使うべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "遺伝子編集技術によって、将来は一部の遺伝性疾患を防げる可能性が議論されています。\n\n病気を防ぎ本人や家族の負担を減らせるという期待があります。一方で、将来世代に影響する変更を本人の同意なしに行うことや、能力・外見の選択へ広がることへの懸念もあります。\n\n治療と人間の設計の境界をどこに置くかを考えます。"
-    }
+    },
+    "topic": "medicine",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
   },
   {
     "id": "family-policy-001",
-    "category": "family_policy",
+    "category": "family_and_care",
     "question": "代理出産を認めるべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "代理出産では、子どもを望む人のために別の人が妊娠・出産を担います。\n\n子どもを持つ選択肢を広げるという考えがある一方、妊娠する人の身体的負担、経済格差による圧力、親子関係をどう定めるかなどの問題もあります。\n\n生殖の自由と、身体や家族関係をめぐる倫理を考える問いです。"
-    }
+    },
+    "topic": "family_policy",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
   },
   {
     "id": "family-policy-002",
-    "category": "family_policy",
+    "category": "family_and_care",
     "question": "精子や卵子の提供で生まれた子どもは、提供者を知る権利があると思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "第三者から精子や卵子の提供を受けて子どもを持つ場合、提供者の情報をどこまで子どもに伝えるかが問題になります。\n\n自分の生物学的なルーツを知る権利を重視する立場があります。一方で、提供者のプライバシーや、匿名性が失われることで提供者が減る可能性を重視する立場もあります。\n\n出生に関する情報を誰のものと考えるかが争点です。"
-    }
+    },
+    "topic": "family_policy",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
   },
   {
     "id": "family-policy-003",
-    "category": "family_policy",
+    "category": "family_and_care",
     "question": "同性同士の結婚を、異性同士の結婚と同じ制度にするべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "同性カップルの関係を、婚姻として異性カップルと同じように扱うかは、家族制度のあり方に関わる問題です。\n\n性別にかかわらず同じ法的保障を受けられるべきだという考えがあります。一方で、婚姻制度には男女の組み合わせに特有の役割があると考える立場もあります。\n\n個人の平等と、婚姻制度をどう定義するかを考える問いです。"
-    }
+    },
+    "topic": "family_policy",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
   },
   {
     "id": "education-001",
-    "category": "education",
+    "category": "school_and_youth",
     "question": "大学の学費は、税金で無償にするべきだと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
       "text": "大学教育の費用を本人や家庭が負担するのか、社会全体で負担するのかという問題です。\n\n家庭の経済状況に左右されず進学できるようにするべきだという考えがあります。一方で、大学に進学しない人も含めて税金で負担することが公平なのかという疑問もあります。\n\n教育を個人への投資と見るか、社会全体への投資と見るかを考えます。"
-    }
+    },
+    "topic": "education",
+    "perspective": "observer"
   },
   {
     "id": "education-002",
-    "category": "education",
+    "category": "school_and_youth",
     "question": "奨学金は、卒業後に返すのが当たり前だと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
       "text": "学費を借りて進学する制度では、卒業後の返済負担が生活や進路に影響することがあります。\n\n借りたお金を返すのは当然だという考えがある一方、教育を受けるための負担が若い時期に集中しすぎるという考えもあります。\n\n自己負担と教育機会の公平をどう考えるかが争点です。"
-    }
+    },
+    "topic": "education",
+    "perspective": "observer"
   },
   {
     "id": "education-003",
-    "category": "education",
+    "category": "school_and_youth",
     "question": "学校は、生徒のスマホを校内で禁止してもいいと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
       "text": "学校でのスマートフォン利用には、連絡や学習に使える利点がある一方、授業への集中やSNSトラブルへの懸念もあります。\n\n学校が学習環境を守るために利用を制限することを認める立場と、私物の利用まで一律に禁止するのは強すぎると考える立場があります。\n\n学校の管理と生徒の自由の境界を考えます。"
-    }
+    },
+    "topic": "education",
+    "perspective": "observer"
   },
   {
     "id": "education-004",
-    "category": "education",
+    "category": "school_and_youth",
     "question": "学校の制服は必要だと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
       "text": "制服には、学校への所属意識や服装による格差を小さくするという考えがあります。一方で、費用や着心地、個人の表現を制限するという問題もあります。\n\n学校生活の統一感と個人の自由をどこまで両立させるかを考える問いです。"
-    }
+    },
+    "topic": "education",
+    "perspective": "observer"
   },
   {
     "id": "education-005",
-    "category": "education",
+    "category": "school_and_youth",
     "question": "親が子どもの位置情報をいつでも確認できるようにするのは、ありだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "スマートフォンなどを使えば、保護者が子どもの位置情報を継続的に確認できます。\n\n安全確認や緊急時に役立つという考えがある一方、常に監視されることで子どものプライバシーや自立が損なわれるという考えもあります。\n\n保護する責任と、成長に応じた自由をどう考えるかが争点です。"
-    }
+    },
+    "topic": "education",
+    "perspective": "observer"
   },
   {
     "id": "technology-001",
-    "category": "technology",
+    "category": "technology_media_and_privacy",
     "question": "街中の監視カメラは、もっと増やすべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "監視カメラは犯罪や事故の記録、防犯に役立つ一方、人の行動を継続的に記録する仕組みでもあります。\n\n安全のために公共空間の記録を増やすことを支持する立場と、日常的な監視が広がることを問題視する立場があります。\n\n安全とプライバシーのどちらをどこまで優先するかを考えます。"
-    }
+    },
+    "topic": "technology",
+    "perspective": "observer"
   },
   {
     "id": "technology-002",
-    "category": "technology",
+    "category": "technology_media_and_privacy",
     "question": "SNSは実名制にするべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "SNSの匿名性は、立場を気にせず意見を言える利点がある一方、誹謗中傷や無責任な発言をしやすくするという批判もあります。\n\n実名制で責任を持たせるべきだという考えと、匿名だからこそ話せる人や守られる人もいるという考えがあります。\n\n発言の責任と匿名性の価値をどう考えるかが争点です。"
-    }
+    },
+    "topic": "technology",
+    "perspective": "observer"
   },
   {
     "id": "technology-003",
-    "category": "technology",
+    "category": "technology_media_and_privacy",
     "question": "SNS運営会社は、差別的な投稿を削除してもいいと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "SNSでは、他者を攻撃したり差別したりする表現をどこまで削除するかが問題になります。\n\n利用者を守るために運営会社が一定のルールで削除するべきだという考えがあります。一方で、民間企業が何を許される意見か決めることへの懸念もあります。\n\n安全な場づくりと表現の自由をどう両立させるかを考えます。"
-    }
+    },
+    "topic": "technology",
+    "perspective": "observer"
   },
   {
     "id": "technology-004",
-    "category": "technology",
+    "category": "technology_media_and_privacy",
     "question": "AIの学習に、公開されている作品を許可なく使ってもいいと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "生成AIの開発では、大量の文章や画像などを学習に利用することがあります。\n\n公開情報を使った学習は技術発展に必要だという考えがある一方、作者の許可や対価なしに作品を利用することを問題視する立場もあります。\n\n技術革新と創作者の権利をどう両立させるかが争点です。"
-    }
+    },
+    "topic": "technology",
+    "perspective": "observer"
   },
   {
     "id": "technology-005",
-    "category": "technology",
+    "category": "technology_media_and_privacy",
     "question": "AIが人間の仕事を奪っても、社会全体が豊かになるなら受け入れるべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "AIや自動化によって、一部の仕事が減る一方、新しい仕事や生産性の向上が生まれる可能性があります。\n\n社会全体の効率や豊かさを重視する立場があります。一方で、利益を得る人と仕事を失う人が同じではないなら、単純に社会全体の利益だけでは判断できないという考えもあります。\n\n技術の利益と失業などの負担を誰が引き受けるべきかを考えます。"
-    }
+    },
+    "topic": "technology",
+    "perspective": "observer"
   },
   {
     "id": "technology-006",
-    "category": "technology",
+    "category": "technology_media_and_privacy",
     "question": "採用や入試の合否を、AIに判断させてもいいと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "AIを使えば大量の応募者を同じ基準で評価しやすくなる可能性があります。一方で、学習データや評価方法に偏りがあれば、その偏りも判断に反映されます。\n\n人間より公平になり得るという考えと、人生に大きく関わる判断を機械に任せるべきではないという考えがあります。\n\n効率、公平性、説明責任をどう考えるかが争点です。"
-    }
+    },
+    "topic": "technology",
+    "perspective": "observer"
   },
   {
     "id": "technology-007",
-    "category": "technology",
+    "category": "technology_media_and_privacy",
     "question": "顔認証で人を追跡する仕組みを、防犯のためなら認めてもいいと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "顔認証技術を使えば、映像から特定の人物を見つけたり追跡したりできます。\n\n犯罪捜査や行方不明者の捜索に役立つという考えがあります。一方で、本人が知らないまま行動を追跡されることへの懸念もあります。\n\n防犯の利益と、監視されない自由をどう両立させるかを考えます。"
-    }
+    },
+    "topic": "technology",
+    "perspective": "observer"
   },
   {
     "id": "economy-001",
-    "category": "economy",
+    "category": "work_and_economy",
     "question": "生活保護は、もっと受けやすくするべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "生活に困った人への公的支援では、本当に必要な人が利用しやすいことと、制度の不正利用を防ぐことの両方が求められます。\n\n申請のハードルを下げるべきだという考えと、税金を使う以上は厳しい確認が必要だという考えがあります。\n\n支援の届きやすさと制度への信頼をどう両立させるかが争点です。"
-    }
+    },
+    "topic": "economy",
+    "perspective": "observer"
   },
   {
     "id": "economy-002",
-    "category": "economy",
+    "category": "work_and_economy",
     "question": "働いていなくても、全員に一定のお金を配る制度はありだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "すべての人に条件なしで一定額を支給するベーシックインカムの考え方があります。\n\n最低限の生活を保障し、複雑な支援制度を簡単にできるという期待があります。一方で、巨額の財源が必要になることや、働く意欲への影響を心配する考えもあります。\n\n生活保障をどこまで社会全体で担うかを考えます。"
-    }
+    },
+    "topic": "economy",
+    "perspective": "observer"
   },
   {
     "id": "economy-003",
-    "category": "economy",
+    "category": "work_and_economy",
     "question": "お金持ちへの税金は、もっと高くしてもいいと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
       "text": "所得や資産が多い人に、より高い割合の負担を求めるかは、税の公平をどう考えるかに関わります。\n\n負担能力が高い人がより多く支えるべきだという考えがあります。一方で、努力や投資の成果に高い税をかけすぎれば、経済活動を弱めるという考えもあります。\n\n平等な負担と経済への影響をどう考えるかが争点です。"
-    }
+    },
+    "topic": "economy",
+    "perspective": "observer"
   },
   {
     "id": "economy-004",
-    "category": "economy",
+    "category": "work_and_economy",
     "question": "親から多くの財産を相続する人には、高い税金をかけるべきだと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
       "text": "相続税には、世代を超えて資産格差が固定されることを抑える役割があるという考えがあります。\n\n一方で、親が築いた財産を家族に残す自由を重視し、すでに課税された財産にさらに税をかけることへの疑問もあります。\n\n家族の財産権と社会的な機会の公平をどう考えるかを問います。"
-    }
+    },
+    "topic": "economy",
+    "perspective": "observer"
   },
   {
     "id": "economy-005",
-    "category": "economy",
+    "category": "work_and_economy",
     "question": "高齢者への社会保障を減らして、若い世代への支援を増やすべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "社会保障の財源には限りがあり、高齢者向けの医療・年金と、子育て・教育・若者支援の配分が議論になります。\n\n将来世代への投資を増やすべきだという考えがある一方、長年社会を支えてきた高齢者の生活保障を弱めるべきではないという考えもあります。\n\n世代間の公平をどう考えるかが争点です。"
-    }
+    },
+    "topic": "economy",
+    "perspective": "observer"
   },
   {
     "id": "immigration-001",
-    "category": "immigration",
+    "category": "society_public_policy_and_environment",
     "question": "人手不足を補うために、外国人労働者をもっと受け入れるべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "人手不足への対応として、外国から働く人を受け入れる方法があります。\n\n労働力を確保し経済を支えられるという考えがあります。一方で、賃金、労働環境、地域社会への影響、言語や制度への対応などを心配する立場もあります。\n\n経済上の必要性と社会の受け入れ体制をどう考えるかを問います。"
-    }
+    },
+    "topic": "immigration",
+    "perspective": "observer"
   },
   {
     "id": "immigration-002",
-    "category": "immigration",
+    "category": "society_public_policy_and_environment",
     "question": "難民を受け入れるためなら、税金や社会保障の負担が増えてもいいと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "迫害や紛争などから逃れてきた人を受け入れる場合、住居、教育、医療、言語支援などが必要になります。\n\n人道的な責任を重視する立場がある一方、受け入れる国の財政や地域社会への負担をどこまで引き受けるかを重視する立場もあります。\n\n人道支援と国内の負担をどう両立させるかを考えます。"
-    }
+    },
+    "topic": "immigration",
+    "perspective": "observer"
   },
   {
     "id": "immigration-003",
-    "category": "immigration",
+    "category": "society_public_policy_and_environment",
     "question": "外国から来た人は、その国の文化や習慣に合わせるべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "異なる文化的背景を持つ人が暮らす社会では、どこまで受け入れ先の文化に合わせるべきかが問題になります。\n\n共通のルールや習慣を共有することが社会のまとまりに必要だという考えがあります。一方で、法律を守る限り文化や宗教の違いは尊重されるべきだという考えもあります。\n\n社会への適応と文化的多様性をどう考えるかを問います。"
-    }
+    },
+    "topic": "immigration",
+    "perspective": "observer"
   },
   {
     "id": "environment-001",
-    "category": "environment",
+    "category": "society_public_policy_and_environment",
     "question": "環境を守るためなら、生活が不便になっても受け入れるべきだと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
       "text": "環境対策には、エネルギー利用、移動、製品価格など日常生活への影響が伴う場合があります。\n\n将来の環境を守るため現在の負担を受け入れるべきだという考えがあります。一方で、生活への負担が大きすぎれば、特に余裕のない人ほど影響を受けるという考えもあります。\n\n長期的な利益と現在の負担をどう分けるかを考えます。"
-    }
+    },
+    "topic": "environment",
+    "perspective": "observer"
   },
   {
     "id": "environment-002",
-    "category": "environment",
+    "category": "society_public_policy_and_environment",
     "question": "原子力発電は、今後も使い続けるべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "原子力発電は大量の電力を供給でき、発電時の温室効果ガス排出が比較的少ない一方、重大事故や放射性廃棄物への懸念があります。\n\n安定供給や気候対策を重視する立場と、事故時の影響や長期的な廃棄物管理を重視する立場があります。\n\nエネルギーの安定性、環境、安全性をどう比較するかが争点です。"
-    }
+    },
+    "topic": "environment",
+    "perspective": "observer"
   },
   {
     "id": "environment-003",
-    "category": "environment",
+    "category": "society_public_policy_and_environment",
     "question": "環境保護のためなら、経済成長を遅らせてもいいと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
       "text": "経済活動を増やすことと、資源利用や環境負荷を減らすことが衝突する場合があります。\n\n将来の環境を守るため成長の一部を抑えるべきだという考えがあります。一方で、経済成長によって生活や技術が改善し、環境対策の余力も生まれるという考えもあります。\n\n現在の豊かさと将来の持続可能性をどう比較するかを考えます。"
-    }
+    },
+    "topic": "environment",
+    "perspective": "observer"
   },
   {
     "id": "animals-001",
-    "category": "animals",
+    "category": "society_public_policy_and_environment",
     "question": "人間の医療のためなら、動物実験は認められると思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "医薬品や治療法の研究では、動物を使った実験が行われることがあります。\n\n人間の安全や医学の進歩のために一定の動物実験は必要だという考えがあります。一方で、動物にも苦痛を避ける利益があり、人間のためならどこまで利用してよいのかという疑問もあります。\n\n人間の利益と動物福祉の境界を考える問いです。"
-    }
+    },
+    "topic": "animals",
+    "perspective": "observer"
   },
   {
     "id": "animals-002",
-    "category": "animals",
+    "category": "society_public_policy_and_environment",
     "question": "肉を食べるために動物を飼育することは、悪いことだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "肉食は多くの社会で一般的ですが、動物を食料として飼育すること自体を倫理的に問題視する考えもあります。\n\n食文化や栄養、産業としての現実を重視する立場と、動物の苦痛や生命を重視する立場があります。\n\n人間が動物を利用することをどこまで認めるかを考えます。"
-    }
+    },
+    "topic": "animals",
+    "perspective": "observer"
   },
   {
     "id": "politics-001",
-    "category": "politics",
+    "category": "society_public_policy_and_environment",
     "question": "選挙の投票を義務にするのはありだと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
       "text": "投票率を高めるため、投票を市民の義務として扱う考え方があります。\n\n多くの人が政治に参加することで民主主義の代表性が高まるという考えがあります。一方で、投票しない自由も政治的な自由の一部だという考えもあります。\n\n民主主義への参加を権利と見るか、義務とも見るかを考えます。"
-    }
+    },
+    "topic": "politics",
+    "perspective": "observer"
   },
   {
     "id": "politics-002",
-    "category": "politics",
+    "category": "society_public_policy_and_environment",
     "question": "国を守るためなら、徴兵制を導入してもいいと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "国防に必要な人員を確保する方法として、一定の条件で市民に兵役を求める制度があります。\n\n安全保障を国民全体で担うべきだという考えがあります。一方で、本人の意思に反して兵役を課すことは自由を大きく制限するという考えもあります。\n\n国家の安全と個人の自由をどう比較するかを考えます。"
-    }
+    },
+    "topic": "politics",
+    "perspective": "observer"
   },
   {
     "id": "politics-003",
-    "category": "politics",
+    "category": "society_public_policy_and_environment",
     "question": "防衛費を増やすためなら、他の公共サービスを減らしてもいいと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "国の予算には限りがあり、防衛、教育、医療、福祉などの間で配分を決める必要があります。\n\n安全保障を優先する立場がある一方、日常生活を支える公共サービスへの支出を優先する立場もあります。\n\n将来のリスクへの備えと現在の生活をどう比較するかを考えます。"
-    }
+    },
+    "topic": "politics",
+    "perspective": "observer"
   },
   {
     "id": "media-001",
-    "category": "media",
+    "category": "technology_media_and_privacy",
     "question": "逮捕された人の実名は、判決前でも報道していいと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "事件の容疑者について実名を報道することは、社会の知る権利や事件の透明性に関わります。\n\n一方で、逮捕された時点では有罪が確定しておらず、実名報道による不利益が後から取り戻せない場合もあります。\n\n報道の自由、公共性、無罪推定、個人の名誉をどう両立させるかを考えます。"
-    }
+    },
+    "topic": "media",
+    "perspective": "observer"
   },
   {
     "id": "media-002",
-    "category": "media",
+    "category": "technology_media_and_privacy",
     "question": "有名人の私生活は、社会的な関心が高ければ報道してもいいと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
       "text": "著名人は社会的な影響力を持つ一方、私生活まで常に公共のものになるわけではありません。\n\n公的な立場や発言との矛盾を検証するため報道が必要な場合があるという考えがあります。一方で、単なる好奇心のために私生活へ踏み込むべきではないという考えもあります。\n\n知る権利とプライバシーの境界を考えます。"
-    }
+    },
+    "topic": "media",
+    "perspective": "observer"
   },
   {
     "id": "religion-001",
-    "category": "religion",
+    "category": "culture_religion_and_history",
     "question": "宗教上の理由なら、学校や職場のルールに例外を認めるべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "服装、食事、休日などで、宗教上の理由と学校や職場の共通ルールが衝突する場合があります。\n\n信仰の自由を守るため合理的な範囲で例外を認めるべきだという考えがあります。一方で、共通ルールは宗教にかかわらず同じであるべきだという考えもあります。\n\n個人の信仰と組織の公平なルールをどう両立させるかを考えます。"
-    }
+    },
+    "topic": "religion",
+    "perspective": "observer"
   },
   {
     "id": "sports-001",
-    "category": "sports",
+    "category": "school_and_youth",
     "question": "トランス女性は女子スポーツに参加できるべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "競技スポーツでは、トランスジェンダー選手をどのカテゴリーで扱うかが議論になります。\n\n性自認に沿って競技できることを重視する立場があります。一方で、身体的な条件による競技上の公平性を重視し、一定の区分や条件が必要だと考える立場もあります。\n\n参加の包摂性と競技の公平性をどう両立させるかが争点です。"
-    }
+    },
+    "topic": "sports",
+    "perspective": "observer"
   },
   {
     "id": "work-policy-001",
-    "category": "work_policy",
+    "category": "work_and_economy",
     "question": "企業は、男女比をそろえるために採用結果を調整してもいいと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "組織の男女比を改善するため、採用や昇進で性別を考慮する施策があります。\n\n長く続いた偏りを変えるには意図的な是正が必要だという考えがあります。一方で、個人の評価より性別が優先されるのは不公平だという考えもあります。\n\n集団としての格差是正と個人としての公平をどう考えるかを問います。"
-    }
+    },
+    "topic": "work_policy",
+    "perspective": "observer"
   },
   {
     "id": "work-policy-002",
-    "category": "work_policy",
+    "category": "work_and_economy",
     "question": "育児休業を取る人が多い職場では、取らない人の負担が増えても仕方ないと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "育児休業は子育てと仕事を両立するために重要ですが、休業中の仕事を残った人が担う場合があります。\n\n休業を安心して取れる職場にするべきだという考えがあります。一方で、負担が特定の同僚に集中すれば、その人たちの公平も問題になります。\n\n制度を利用する権利と、周囲の負担をどう両立させるかを考えます。"
-    }
+    },
+    "topic": "work_policy",
+    "perspective": "observer"
   },
   {
     "id": "family-policy-004",
-    "category": "family_policy",
+    "category": "family_and_care",
     "question": "子どもを持たない人も、少子化対策のために多く税金を負担するべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "少子化対策には、子育て支援や教育費など社会全体の財源が使われます。\n\n将来の社会を支える子どもへの支援は、子どもの有無にかかわらず全員の利益になるという考えがあります。一方で、個人の家族選択によって負担に差をつけることへの反発もあります。\n\n社会全体で子育てをどこまで支えるかを考えます。"
-    }
+    },
+    "topic": "family_policy",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
   },
   {
     "id": "sex-education-001",
-    "category": "sex_education",
+    "category": "gender_sexuality_and_identity",
     "question": "学校の性教育で、避妊具の具体的な使い方まで教えるべき？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "性教育では、体の仕組みや妊娠について学ぶだけでなく、避妊についてどこまで具体的に扱うかが議論になります。\n\n実際の場面で役立つ知識まで学校で教えるべきだという考えがあります。一方で、具体的な方法まで学校が扱うことに抵抗を感じたり、家庭で教えるべきだと考えたりする人もいます。\n\n知識を与えることと、学校がどこまで踏み込むかの境界を考える問いです。"
-    }
+    },
+    "topic": "sex_education",
+    "perspective": "observer"
   },
   {
     "id": "sex-education-002",
-    "category": "sex_education",
+    "category": "gender_sexuality_and_identity",
     "question": "保護者が拒否しても、学校の性教育を受けさせるべき？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "性教育の内容について、学校と家庭で考え方が異なることがあります。\n\nすべての子どもが共通の知識を得られるよう、一定の内容は必修にするべきだという考えがあります。一方で、性や家族に関する教育には家庭の価値観も関わるため、保護者が選べる余地を残すべきだという考えもあります。\n\n子どもの学ぶ権利と、家庭の教育方針をどう両立させるかが争点です。"
-    }
+    },
+    "topic": "sex_education",
+    "perspective": "observer"
   },
   {
     "id": "sex-education-003",
-    "category": "sex_education",
+    "category": "gender_sexuality_and_identity",
     "question": "性教育は、男女で同じ内容を一緒に受けるべき？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "性教育を男女一緒に行うか、一部を分けて行うかにはそれぞれ考え方があります。\n\n互いの身体や健康について同じ知識を持つため、一緒に学ぶべきだという考えがあります。一方で、話しにくさや質問のしにくさを減らすため、内容によって分ける方が学びやすいという考えもあります。\n\n共通理解と学びやすさのどちらを重視するかを考えます。"
-    }
+    },
+    "topic": "sex_education",
+    "perspective": "observer"
   },
   {
     "id": "sex-education-004",
-    "category": "sex_education",
+    "category": "gender_sexuality_and_identity",
     "question": "恋人同士の同意の取り方まで、学校が教えるべき？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "性教育では、身体の知識だけでなく、人間関係や同意について扱うことがあります。\n\n相手の意思を確認する考え方を早くから学ぶことは大切だという立場があります。一方で、恋人関係での具体的な振る舞いまで学校が教えるのは踏み込みすぎだと考える立場もあります。\n\n学校が教える知識と、個人の関係性や価値観の境界を考える問いです。"
-    }
+    },
+    "topic": "sex_education",
+    "perspective": "observer"
   },
   {
     "id": "sex-education-005",
-    "category": "sex_education",
+    "category": "gender_sexuality_and_identity",
     "question": "性教育の教材を、保護者が事前に確認できるようにするべき？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "学校で扱う性教育の内容を、保護者にどこまで公開するかという問題があります。\n\n家庭でも内容を把握できるよう、教材を事前に確認できる方がよいという考えがあります。一方で、保護者の反対によって必要な教育が制限される可能性を心配する考えもあります。\n\n学校の説明責任と、教育内容の独立性をどう考えるかが争点です。"
-    }
+    },
+    "topic": "sex_education",
+    "perspective": "observer"
   },
   {
     "id": "menstruation-001",
-    "category": "menstruation",
+    "category": "gender_sexuality_and_identity",
     "question": "男子に生理痛体験を義務で受けさせるのはあり？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "生理痛への理解を深める目的で、電気刺激などを使った疑似体験が行われることがあります。\n\n実際に近い感覚を体験することで、言葉だけより理解しやすくなるという考えがあります。一方で、痛みを伴う体験を特定の性別に義務づけることや、疑似体験で本当の経験を理解したことになるのかを疑問視する考えもあります。\n\n理解を深める目的なら、どこまで体験を求めてよいかを考えます。"
-    }
+    },
+    "topic": "menstruation",
+    "perspective": "observer"
   },
   {
     "id": "menstruation-002",
-    "category": "menstruation",
+    "category": "gender_sexuality_and_identity",
     "question": "生理休暇を女性だけに認めるのは公平だと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "生理による体調不良で仕事や学校生活に大きな影響が出る人がいます。\n\n身体的な負担がある人に専用の制度を設けるのは合理的だという考えがあります。一方で、他の体調不良には同じ制度がない場合、性別による特別扱いに見えるという考えもあります。\n\n同じ扱いをすることと、異なる必要に合わせて扱いを変えることのどちらを公平と考えるかが争点です。"
-    }
+    },
+    "topic": "menstruation",
+    "perspective": "observer"
   },
   {
     "id": "menstruation-003",
-    "category": "menstruation",
+    "category": "gender_sexuality_and_identity",
     "question": "生理休暇を有給にする費用は、会社が負担するべき？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "生理による体調不良で休む場合、その時間の給与を誰が負担するかという問題があります。\n\n安心して休めるよう会社が有給で保障するべきだという考えがあります。一方で、企業だけに費用を負わせると採用や人員配置への影響が出るのではないかという懸念もあります。\n\n健康への配慮と、企業側の負担をどう分けるかを考えます。"
-    }
+    },
+    "topic": "menstruation",
+    "perspective": "observer"
   },
   {
     "id": "menstruation-004",
-    "category": "menstruation",
+    "category": "gender_sexuality_and_identity",
     "question": "学校で生理用品を無料にするなら、他の衛生用品も無料にするべき？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "学校で生理用品を無料提供する取り組みがあります。\n\n急に必要になったときに欠かせない用品なので、学校が用意する意味があるという考えがあります。一方で、歯ブラシやマスクなど他の衛生用品との違いをどこに置くのかという疑問もあります。\n\n公費や学校の費用で提供する必需品の範囲をどう決めるかを考えます。"
-    }
+    },
+    "topic": "menstruation",
+    "perspective": "observer"
   },
   {
     "id": "menstruation-005",
-    "category": "menstruation",
+    "category": "gender_sexuality_and_identity",
     "question": "生理を理由に体育を休むとき、先生に詳しい理由まで説明する必要はある？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "体調を理由に授業を休むとき、学校側には状況を確認する必要があります。一方で、生理や身体の状態について詳しく話すことに抵抗を感じる人もいます。\n\n不正な欠席を防ぐため一定の説明が必要だという考えと、健康に関する個人的な情報は最小限でよいという考えがあります。\n\n学校の管理と本人のプライバシーをどう両立させるかを考えます。"
-    }
+    },
+    "topic": "menstruation",
+    "perspective": "observer"
   },
   {
     "id": "reproductive-health-001",
-    "category": "reproductive_health",
+    "category": "gender_sexuality_and_identity",
     "question": "未成年が保護者に知られず、性に関する医療を受けられるべき？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "未成年が性や妊娠などに関する医療を必要とするとき、保護者への相談を避けたい場合があります。\n\n保護者に知られず相談できる方が、必要な医療につながりやすいという考えがあります。一方で、未成年の重要な医療判断には保護者が関わるべきだという考えもあります。\n\n本人のプライバシーと、保護者の責任をどう考えるかが争点です。"
-    }
+    },
+    "topic": "reproductive_health",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
   },
   {
     "id": "reproductive-health-002",
-    "category": "reproductive_health",
+    "category": "gender_sexuality_and_identity",
     "question": "緊急避妊薬は、年齢や保護者の同意に関係なく入手できるようにするべき？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "緊急避妊薬へのアクセスをどこまで簡単にするかは、医療へのアクセスと安全管理の両方に関わります。\n\n必要なときに早く利用できることを重視する考えがあります。一方で、未成年を含めて医療者や保護者の関与をどこまで必要とするかを重視する考えもあります。\n\n本人の自己決定と、医療上の確認や支援をどう両立させるかを考えます。"
-    }
+    },
+    "topic": "reproductive_health",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
   },
   {
     "id": "reproductive-health-003",
-    "category": "reproductive_health",
+    "category": "gender_sexuality_and_identity",
     "question": "不妊治療に、税金をどこまで使うべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "不妊治療には身体的・経済的な負担がかかる場合があります。\n\n子どもを望む人が経済状況に左右されず治療を受けられるよう、公的に支えるべきだという考えがあります。一方で、医療費には限りがあり、どこまでを社会全体で負担するべきかという考えもあります。\n\n個人の希望と、公費で支える医療の範囲をどう考えるかが争点です。"
-    }
+    },
+    "topic": "reproductive_health",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
   },
   {
     "id": "reproductive-health-004",
-    "category": "reproductive_health",
+    "category": "gender_sexuality_and_identity",
     "question": "妊娠した本人の意思と、胎児の生命がぶつかったとき、どちらを優先するべき？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
       "text": "妊娠を続けるかどうかをめぐっては、妊娠した本人の身体や人生についての自己決定と、胎児をどの段階からどのように生命として扱うかという考えがぶつかります。\n\n本人の意思を最も重視する立場もあれば、胎児の生命にも独立した価値を認めるべきだという立場もあります。\n\n自己決定と生命の扱いをどのように考えるかが、この問いの中心です。"
-    }
+    },
+    "topic": "reproductive_health",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
   },
   {
     "id": "health-policy-001",
-    "category": "health_policy",
+    "category": "health_and_disability",
     "question": "学校が特定のワクチン接種を強く勧めるのは、どこまで許される？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "学校は多くの生徒に健康情報を届けられるため、感染症予防などについて接種を勧めることがあります。\n\n正しい情報を広く伝え、予防につなげる役割を重視する考えがあります。一方で、学校から強く勧められると、本人や家庭が自由に判断しにくくなるという考えもあります。\n\n公衆衛生上の利益と、医療を選ぶ自由の境界を考えます。"
-    }
+    },
+    "topic": "health_policy",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
   },
   {
     "id": "body-policy-001",
-    "category": "body_policy",
+    "category": "gender_sexuality_and_identity",
     "question": "男女で身体的な負担が違うなら、制度上の扱いも変えていいと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "妊娠、出産、生理など、身体的な負担には性別による違いが生じる場合があります。\n\n異なる負担があるなら、休暇や支援などの制度も違ってよいという考えがあります。一方で、性別を基準に制度を分けることが固定観念や不公平につながるという考えもあります。\n\n同じ扱いと、必要に応じた違う扱いのどちらを公平と考えるかを問います。"
-    }
+    },
+    "topic": "body_policy",
+    "perspective": "observer"
   },
   {
     "id": "sex-education-006",
-    "category": "sex_education",
+    "category": "gender_sexuality_and_identity",
     "question": "学校の性教育は、家庭の価値観と違っていてもそのまま教えるべき？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "性や恋愛、家族については、家庭ごとに異なる価値観があります。一方で、学校にはすべての生徒に共通の知識を教える役割があります。\n\n科学的・社会的な知識は家庭の考え方にかかわらず教えるべきだという立場があります。一方で、価値観に深く関わる内容については家庭の考えも尊重するべきだという立場もあります。\n\n共通知識と家庭の価値観の境界を考える問いです。"
-    }
+    },
+    "topic": "sex_education",
+    "perspective": "observer"
   },
   {
     "id": "menstruation-006",
-    "category": "menstruation",
+    "category": "gender_sexuality_and_identity",
     "question": "生理痛を理解してもらうためなら、痛みを疑似体験させるのは有効だと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
       "text": "言葉だけでは伝わりにくい身体的な苦痛を、疑似体験によって理解してもらおうとする方法があります。\n\n体験することで想像しやすくなるという考えがあります。一方で、短時間の疑似体験では実際の経験を再現できず、かえって『理解したつもり』になる可能性もあります。\n\n他人の身体的な経験を理解する方法として、体験をどこまで重視するかを考えます。"
+    },
+    "topic": "menstruation",
+    "perspective": "observer"
+  },
+  {
+    "id": "youth-pregnancy-l3-001",
+    "topic": "consent_under_pressure",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "『断ったら嫌われるかも』と思ってYESと言った場合、それは本当に自由な同意だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "相手を好きであることと、性的な関係に同意することは同じではありません。\n\n拒否すると関係が悪くなるかもしれないという不安があると、本人がYESと言っていても、どこまで自由に選べていたのか考える余地があります。\n\n本人の言葉だけでなく、その関係の中で断れる状況だったかをどう考えるかという問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction",
+      "abuse_and_coercion"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-002",
+    "topic": "peer_pressure",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "周りから『まだ経験ないの？』と言われて決断した場合、それは本人だけの選択だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "友人関係や集団の空気は、自分の判断に影響することがあります。\n\n本人が最終的に決めたことであっても、『周りと違いたくない』『遅れていると思われたくない』という圧力があった場合、それを完全に個人だけの判断として扱えるかを考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-003",
+    "topic": "contraception_communication",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "避妊について話し合えない関係は、そもそも対等な関係だと言える？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "知識として避妊の必要性を知っていても、相手に言い出せなければ実際の判断にはつながりません。\n\n『信用していないと思われそう』『雰囲気を壊したくない』という理由で話せない場合、知識だけでなく関係性そのものにも問題があるのかを考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-004",
+    "topic": "risk_perception",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "妊娠の可能性を学校で習っていても『自分は大丈夫』と思ってしまうのは、知識不足だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "リスクについて正しい知識を持っていても、自分自身には起こりにくいと感じることがあります。\n\nそのため、知識を教えることだけで十分なのか、実際の判断につなげる教育まで必要なのかを考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-005",
+    "topic": "age_power_difference",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "本人が『好きだから自分で決めた』と言っていても、相手との年齢や立場の差は考慮するべき？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "本人の好意や意思を尊重することは重要です。一方、年齢、経験、先輩後輩などの立場の差によって、断りやすさが変わる場合があります。\n\n本人の意思と関係の中にある力の差を、どこまで別々に考えるべきかを問います。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-006",
+    "topic": "pregnancy_disclosure",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "妊娠したかもしれない生徒が親に相談できないとき、それは本人の問題だけだと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "重大な問題ほど、叱られることや失望されることへの不安から相談が遅れる場合があります。\n\n本人が相談しなかった責任だけでなく、家庭が普段から相談できる関係だったかという視点もあります。\n\n相談できない状況を個人と家庭のどちらの問題として捉えるかを考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-007",
+    "topic": "school_disclosure",
+    "category": "school_and_youth",
+    "perspective": "affected",
+    "question": "妊娠した生徒が学校に知られたくないと言った場合、学校はどこまでその秘密を守るべき？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "学校が支援するためには、一定の情報共有が必要になる場合があります。一方、妊娠に関する情報は非常に個人的なものです。\n\n支援に必要な情報共有と、本人のプライバシーを守ることの境界を考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ],
+    "role": "student"
+  },
+  {
+    "id": "youth-pregnancy-l3-008",
+    "topic": "education_continuity",
+    "category": "school_and_youth",
+    "perspective": "affected",
+    "question": "妊娠した生徒が学校を続けたいなら、学校はどこまで特別な配慮をするべき？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠によって学校生活にさまざまな影響が生じても、それまで持っていた学習や進学への希望がなくなるわけではありません。\n\n一方で、他の生徒との公平性や学校側の対応可能性もあります。\n\n学ぶ機会を保障するための個別配慮をどこまで行うべきかを考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ],
+    "role": "student"
+  },
+  {
+    "id": "youth-pregnancy-l3-009",
+    "topic": "equal_treatment",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "妊娠した生徒だけ出席や課題の条件を変えることは、『不公平』だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "全員を同じ条件で扱うことを公平と考える立場があります。一方、それぞれの事情に応じて条件を調整することを公平と考える立場もあります。\n\n同じ扱いと公平な扱いが必ずしも同じではないことについて考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ],
+    "role": "classmate"
+  },
+  {
+    "id": "youth-pregnancy-l3-010",
+    "topic": "partner_responsibility",
+    "category": "school_and_youth",
+    "perspective": "actor",
+    "question": "妊娠による身体的な負担が片方に集中するとき、相手側にはどこまで責任があると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠による身体への影響は当事者間で同じではありません。一方、妊娠に至るまでの関係や、その後の生活への影響には双方が関わります。\n\n身体的な非対称性がある中で、責任をどのように考えるべきかを問います。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ],
+    "role": "partner"
+  },
+  {
+    "id": "youth-pregnancy-l3-011",
+    "topic": "partner_disappears",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "妊娠を伝えたあと相手が連絡を絶った場合、『怖くて逃げた』ことはどこまで理解できる？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "若い当事者にとって妊娠は非常に大きな出来事であり、恐怖や混乱から逃げたいと感じる可能性があります。\n\nしかし、恐怖を感じることと、相手に負担を残したまま関係から離れることは同じではありません。\n\n事情への理解と責任を求めることをどこまで両立できるかを考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-012",
+    "topic": "partner_parent_responsibility",
+    "category": "school_and_youth",
+    "perspective": "decision_maker",
+    "question": "未成年同士の妊娠では、相手側の親にも責任があると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "未成年者本人の問題として考える立場がある一方、経済面や生活面では保護者の関与が必要になる場合があります。\n\n本人が負うべき責任と、親が子どもを支える責任をどこまで分けて考えるべきかを問います。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ],
+    "role": "parent"
+  },
+  {
+    "id": "youth-pregnancy-l3-013",
+    "topic": "decision_asymmetry",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "妊娠について、身体への影響が違う二人に『同じ決定権』を求めることは公平だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠は双方の人生に影響しますが、身体への直接的な影響は同じではありません。\n\n『二人の問題だから同じように決めるべき』という考えと、身体についての自己決定を重く見る考えが衝突します。\n\n平等な意思決定と身体的な非対称性をどう考えるかという問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-014",
+    "topic": "friend_confidentiality",
+    "category": "school_and_youth",
+    "perspective": "actor",
+    "question": "友達から妊娠について『誰にも言わないで』と相談されたら、秘密を守ることが本当に友達のためだと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "秘密を守ることは、相談してくれた友人への信頼に応える行為です。\n\n一方、友人だけでは支えきれない状況では、信頼できる大人や支援につなぐことが必要になる場合もあります。\n\n秘密を守ることと、助けを求めることのどちらが友情なのかを考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ],
+    "role": "friend"
+  },
+  {
+    "id": "youth-pregnancy-l3-015",
+    "topic": "rumor_privacy",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "同級生が妊娠したという噂を聞いても、本人に聞かないことが『無関心』になると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "友人として心配する気持ちがあれば、本人に確認したいと思うことがあります。\n\n一方、本人から話していない非常に個人的な情報について尋ねることは、プライバシーに踏み込むことにもなります。\n\n心配して関わることと、本人の秘密に立ち入らないことの境界を考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction",
+      "privacy_and_surveillance"
+    ],
+    "role": "classmate"
+  },
+  {
+    "id": "youth-pregnancy-l3-016",
+    "topic": "social_judgment",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "中高生の妊娠を『無責任だった結果』だけで説明するのは公平だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "本人の判断や責任を考えることは必要です。一方で、知識、相手との関係、断りにくさ、家庭環境、周囲への相談のしやすさなど、個人だけでは説明できない要因が関わる場合もあります。\n\n自己責任と周囲の環境をどのように分けて考えるかを問います。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-017",
+    "topic": "gendered_judgment",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "同じ妊娠でも、女子生徒と男子生徒で周囲から責められ方が違うとしたら、それはなぜだと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠による身体的な影響は男女で同じではありませんが、社会的な評価や責任の求められ方まで同じように非対称であるべきかは別の問題です。\n\n身体的な違いと、社会が男女に期待する役割を区別して考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-018",
+    "topic": "male_responsibility_visibility",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "妊娠した側は学校生活の変化が周囲に見えやすいのに、相手側の責任は見えにくい。この差をどう考える？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠による身体的・生活上の変化は、当事者間で同じ形では現れません。\n\nそのため、一方だけが周囲から評価や批判を受けやすく、もう一方の責任が社会から見えにくくなる可能性があります。\n\n身体的な違いと社会的な責任の見え方について考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-019",
+    "topic": "education_vs_parenthood",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "妊娠した生徒が進学を諦めることを『現実的な判断』と考えるのは、本人の選択を狭めていない？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "大きな生活上の変化に合わせて進路を変更することを現実的と考える立場があります。\n\n一方、周囲が最初から『もう以前の進路は無理だ』と判断することが、本人の可能性を狭める場合もあります。\n\n現実への配慮と、本人の将来の選択肢を守ることの境界を考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-020",
+    "topic": "school_role",
+    "category": "school_and_youth",
+    "perspective": "affected",
+    "question": "中高生の妊娠が分かったとき、学校は『教育の場』を超えてどこまで支援に関わるべき？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "学校の中心的な役割は教育ですが、生徒が長い時間を過ごす場所であり、問題を最初に把握する場所になることもあります。\n\n学校が家庭や医療・福祉の領域にどこまで関わるべきなのか、教育機関としての役割の境界を考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ],
+    "role": "student"
+  },
+  {
+    "id": "youth-pregnancy-l3-021",
+    "topic": "sex_education_scope",
+    "category": "school_and_youth",
+    "perspective": "affected",
+    "question": "性教育は知識を教えるだけでなく、『断り方』『相談の仕方』『相手との話し合い方』まで扱うべき？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠や避妊について知識を持っていても、人間関係の中で意思を伝えたり、助けを求めたりすることは別の能力です。\n\n学校教育が医学的な知識だけを扱うべきなのか、実際のコミュニケーションまで扱うべきなのかを考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ],
+    "role": "student"
+  },
+  {
+    "id": "youth-pregnancy-l3-022",
+    "topic": "parental_sex_education",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "家庭で性の話を避けることは、子どもの価値観を尊重していることになる？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "性について家庭で深く立ち入らないことを、本人のプライバシーを尊重する態度と考えることがあります。\n\n一方、何も話せない家庭では、問題が起きたときにも相談しにくくなる可能性があります。\n\nプライバシーを尊重することと、相談できる関係を作ることをどう両立するかという問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-023",
+    "topic": "stigma",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "若くして妊娠した人への『将来が終わった』という見方は、本人を守る言葉だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "若年での妊娠には生活や教育への大きな影響が生じる可能性があります。\n\nしかし、将来への困難を伝えることと、『もう人生は決まった』と可能性を狭めることは同じではありません。\n\n現実的なリスクを伝えることと、本人の将来を決めつけないことについて考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-024",
+    "topic": "support_without_endorsement",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "本人の過去の判断には賛成できなくても、その後の支援には賛成できる？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "ある判断を批判することと、その結果困難な状況にある人を支援することは別の問題として考えることができます。\n\n『支援すると、その行動を肯定したことになる』と感じる場合もあります。\n\n行動への評価と、その後の人への支援をどこまで分けられるかを考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "youth-pregnancy-l3-025",
+    "topic": "responsibility_and_support",
+    "category": "school_and_youth",
+    "perspective": "observer",
+    "question": "『本人にも責任がある』と考えることと、『だから支援を減らす』ことは同じだと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "本人が行った判断について責任を考えることと、その人が必要とする教育・医療・福祉などの支援をどうするかは別の判断です。\n\n自己責任を認めることが、どこまで社会的支援の範囲に影響するべきかを考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "relationship-l3-141",
+    "topic": "jealousy_close_friend",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "恋人に異性の親友がいることを不安に感じるのは、束縛につながる嫉妬だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "恋人に自分以外の大切な人間関係があることは自然です。一方、その関係によって強い不安を感じる人もいます。\n\n嫉妬という感情そのものと、相手の交友関係を制限することをどこまで分けて考えるかという問いです。"
     }
   },
   {
-  "id": "youth-pregnancy-l3-001",
-  "topic": "consent_under_pressure",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "『断ったら嫌われるかも』と思ってYESと言った場合、それは本当に自由な同意だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "相手を好きであることと、性的な関係に同意することは同じではありません。\n\n拒否すると関係が悪くなるかもしれないという不安があると、本人がYESと言っていても、どこまで自由に選べていたのか考える余地があります。\n\n本人の言葉だけでなく、その関係の中で断れる状況だったかをどう考えるかという問いです。"
+    "id": "relationship-l3-142",
+    "topic": "jealousy_ex_partner",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "恋人が元恋人と友人として関わり続けることを、今の恋人は受け入れるべきだと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "恋愛関係が終わっても、人間関係まで必ず終わらせる必要はないという考えがあります。\n\n一方、現在の恋人が不安になるなら一定の距離を取るべきだという考え方もあります。\n\n過去の関係と現在の恋愛をどこまで切り分けるかを考える問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-143",
+    "topic": "retroactive_jealousy",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "恋人の過去の恋愛について嫉妬することは、今の関係に必要のない感情だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "過去は変えられず、現在の関係とは別だと考えることができます。\n\n一方、過去について知ることで比較や不安が生まれることもあります。\n\n過去への嫉妬をどこまで現在の関係の問題として扱うかを考える問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-144",
+    "topic": "jealousy_attention",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "恋人が他の人から好かれやすいことに嫉妬したとき、相手に行動を変えてもらうのはどこまで許されると思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "自分が安心できるよう相手に配慮を求めることには意味があります。\n\n一方、第三者から向けられる好意まで理由にして相手の行動を制限すると、相手の自由との衝突が生じます。\n\n配慮と束縛の境界を考える問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-145",
+    "topic": "jealousy_priority",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "恋人なら、友人や家族より自分を優先してほしいと思うのは自然だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "恋人を特別な存在として優先する考え方があります。一方、人には家族や友人など複数の大切な関係があります。\n\n恋愛関係で『一番であること』をどこまで求めるかを考える問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-146",
+    "topic": "jealousy_double_standard",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "自分には異性の友人がいても、恋人の異性の友人には嫉妬する。この感情は不公平だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "自分と相手に同じ自由を認めることは、公平という観点では自然です。\n\n一方、感情そのものは必ずしも公平な原則に従って生じるわけではありません。\n\n感情と行動の公平性をどう分けて考えるかという問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-147",
+    "topic": "jealousy_confession",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "恋人が別の人に一時的に惹かれたとしても、何も行動していないなら問題ではないと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "人が誰かに魅力を感じることと、その感情に基づいて行動することは別です。\n\n恋愛関係では感情そのものにも忠実さを求めるのか、それとも行動だけを基準にするのかを考える問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-148",
+    "topic": "jealousy_reassurance",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "理由のない嫉妬でも、恋人には安心させる責任があると思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "恋人同士で不安を支え合うことは、関係を維持するうえで大切です。\n\n一方、自分自身の不安をすべて相手の行動によって解消しようとすることには限界があります。\n\n自分の感情への責任と、相手から受ける安心の境界を考える問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-149",
+    "topic": "jealousy_social_media",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "恋人のSNS上の交流まで、交際相手が口を出していいと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "SNS上のやり取りも人間関係の一部であり、恋人が不安を感じることがあります。\n\n一方、オンライン上の交友関係まで恋人が管理することは、本人の自由やプライバシーに関わります。\n\n恋愛関係がどこまでSNS上の行動に影響してよいかを問います。"
+    }
+  },
+  {
+    "id": "relationship-l3-150",
+    "topic": "jealousy_boundaries",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "嫉妬したことを相手に伝えるのは、束縛とは違うと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "自分の感情を伝えること自体は、相手の行動を制限することとは異なります。\n\n一方、伝え方によっては相手に事実上の圧力を与える場合もあります。\n\n感情の共有と、行動への要求の境界を考える問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-151",
+    "topic": "secret_personal_space",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "恋人同士でも、相手には言わない秘密があっていいと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "親密な関係では多くを共有することが信頼につながるという考えがあります。\n\n一方、恋人がいても自分だけの記憶や感情、考えを持つ自由があります。\n\n秘密を持つことと、不誠実であることをどこまで分けて考えるかという問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-152",
+    "topic": "secret_password",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "恋人同士なら、スマホのパスワードを共有できる方が信頼関係は強いと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "パスワードを共有することを信頼の証と感じる人もいます。\n\n一方、信頼しているからこそ相手のプライバシーへ踏み込まないという考え方もあります。\n\n透明性とプライバシーのどちらを信頼の基準にするかを考える問いです。"
+    },
+    "content_warning": [
+      "privacy_and_surveillance"
+    ]
+  },
+  {
+    "id": "relationship-l3-153",
+    "topic": "secret_past",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "結婚する相手には、自分の重大な過去をすべて話すべきだと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "人生を共にする相手には重要な事実を伝えるべきだという考えがあります。\n\n一方、過去のすべてが現在の相手に関係するとは限らず、本人だけの領域として残してよいという考え方もあります。\n\n親密さとプライバシーの境界を考える問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-154",
+    "topic": "secret_debt",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "結婚前の借金は、金額に関係なく相手に伝えるべきだと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "個人の過去の経済事情は本人の問題だという考えがあります。\n\n一方、結婚後の生活や将来設計に影響する可能性があるなら、パートナーにも知る利益があります。\n\n個人のお金と共同生活に関わる情報の境界を考える問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-155",
+    "topic": "secret_health",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "健康上の情報は、結婚相手にもどこまで伝える必要があると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "健康情報は非常に個人的なものです。一方、将来の生活や家族計画に大きく関わる情報もあります。\n\n医療上のプライバシーと、パートナーが将来について判断するために知る利益をどう考えるかという問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-156",
+    "topic": "secret_infidelity",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "一度だけの裏切りで、その後二度と繰り返していないとしても、恋人には必ず伝えるべきだと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "真実を伝えることを誠実さと考える立場があります。\n\n一方、話すことで相手を傷つけるだけなら、黙って今後の行動で責任を示す方がよいという考え方もあります。\n\n正直さと、相手に与える影響のどちらを重く考えるかを問います。"
+    }
+  },
+  {
+    "id": "relationship-l3-157",
+    "topic": "secret_friend_knowledge",
+    "category": "relationships_and_communication",
+    "perspective": "actor",
+    "question": "親友の恋人について重大な秘密を知ったら、親友に伝えることが友情だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "友人を傷つけたくないという気持ちと、本人が真実を知った上で関係を判断する権利があります。\n\n友人を守ることが、真実を伝えることなのか、知らないままにすることなのかを考える問いです。"
+    },
+    "role": "friend"
+  },
+  {
+    "id": "relationship-l3-158",
+    "topic": "secret_diary",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "恋人の日記やメモには、交際相手にも絶対に見せない領域があっていいと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "恋人に考えていることを共有することは親密さにつながります。\n\n一方、頭の中の感情や、自分だけの記録まで共有する義務があるとは限りません。\n\n恋人同士でも守られるべき内面的なプライバシーについて考える問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-159",
+    "topic": "secret_family_opinion",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "自分の家族が恋人を嫌っていることは、恋人本人にも伝えるべきだと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "家族の本音を伝えることが誠実だという考えがあります。一方、本人には変えられない評価を伝えても傷つけるだけだという考え方もあります。\n\n正直であることと、伝えない配慮をどう分けるかという問いです。"
+    }
+  },
+  {
+    "id": "relationship-l3-160",
+    "topic": "secret_truth_vs_peace",
+    "category": "relationships_and_communication",
+    "perspective": "observer",
+    "question": "知らなければ幸せでいられる秘密でも、真実は知る方がいいと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "本人が真実を知った上で自分の人生を選ぶことには価値があります。\n\n一方、すべての真実を知ることが本人の幸福につながるとは限りません。\n\n真実を知ることそのものの価値と、現在の幸福を守ることのどちらを重く見るかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-001",
+    "topic": "gender_role_provider",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "『男性の方が多く稼いでほしい』という期待は、個人の好みなら問題ないと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "恋愛や結婚で相手に求める条件は個人の自由だという考えがあります。\n\n一方、男性に経済的な責任を強く求めることが、性別による役割期待につながるという見方もあります。\n\n個人の好みと、性別に基づく期待の境界を考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-002",
+    "topic": "gender_role_care",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "『女性の方が子育てに向いている』という考えは、経験則と性別による決めつけのどこで分かれると思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "育児への関わり方には個人差があります。\n\n平均的な傾向が存在すると仮定したとしても、それを個人の能力や役割の判断にそのまま使ってよいとは限りません。\n\n集団の傾向と、一人ひとりを評価することの違いを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-003",
+    "topic": "gender_dating_payment",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "デート代を男性が多く払うことを期待するのは、昔ながらの男女差別と同じ問題だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "男性が多く支払うことを気遣いや文化として肯定する人もいます。一方、性別だけを理由に負担を決めることへの違和感もあります。\n\n伝統的な役割を本人たちが望んで選ぶ場合と、社会から当然のように期待される場合をどう区別するかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-004",
+    "topic": "gender_dating_initiation",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "告白やデートの誘いを『男性からするもの』と考えるのは、ただの恋愛文化だと思う？",
+    "level": 3,
+    "sensitivity": 2,
+    "detail": {
+      "text": "恋愛には長く続いてきた慣習があります。\n\n一方、特定の性別に断られるリスクや積極性を求め続けることで、恋愛上の負担が偏る可能性もあります。\n\n文化的な慣習と性別役割の境界を考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-005",
+    "topic": "gender_emotional_expression",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "男性が弱音を吐いたときと、女性が弱音を吐いたときで、周囲の受け止め方が違っても仕方ないと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "性別によって『強くあるべき』『感情を表してよい』といった異なる期待が向けられることがあります。\n\n本人の性格ではなく性別によって、弱さの見せ方を評価する基準が変わることをどう考えるかという問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-006",
+    "topic": "gender_physical_tasks",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "affected",
+    "question": "学校で重い荷物を男子に頼むことは、体格差への合理的な配慮？それとも性別による役割分担？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "平均的な身体差を考慮して役割を決める方が効率的だという考えがあります。\n\n一方、個人の体格や能力を見ずに性別だけで役割を割り当てることへの問題もあります。\n\n集団平均を実際の個人への扱いに使うことの限界を考える問いです。"
+    },
+    "role": "student"
+  },
+  {
+    "id": "gender-l3-007",
+    "topic": "gender_safety_expectations",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "危険な仕事や役割を男性が多く引き受けることを『仕方ない』と考えるのは公平だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "身体能力や本人の職業選択によって危険な仕事の男女比が変わる場合があります。\n\n一方、男性だから危険を引き受けるべきだという期待まで正当化されるとは限りません。\n\n本人の選択と社会的な性別期待を分けて考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-008",
+    "topic": "gender_protection",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "災害などで『女性や子どもを先に』とする考え方に、男性が後回しになることへの問題はないと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "身体的な脆弱性や子どもの保護などを理由に優先順位を設ける考えがあります。\n\n一方、成人男性というだけで一律に優先度を下げることへの疑問もあります。\n\n保護が必要な人を優先することと、性別そのものを基準にすることの違いを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-009",
+    "topic": "gender_victim_recognition",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "同じように傷つけられた人でも、男性と女性で『被害者らしさ』を違って感じることはあると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "社会には、性別によって強さや弱さへの異なるイメージがあります。\n\nそのため、同じ出来事でも被害の深刻さや本人への共感が異なって受け取られる可能性があります。\n\n被害を判断するときに性別のイメージが影響していないかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-010",
+    "topic": "gender_perpetrator_recognition",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "同じ行為でも、加害者が男性か女性かで『怖さ』や『悪質さ』の感じ方が変わるとしたら、それは公平？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "身体的な危険性など実際に状況が異なる場合もあります。\n\n一方、性別への先入観によって、行為そのものとは別に評価が変わる可能性もあります。\n\n現実的なリスクの違いと、性別によるステレオタイプをどう区別するかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-011",
+    "topic": "gender_parenting_father",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "父親が一人で小さな子どもの世話をしているとき、母親より警戒されることがあるなら、それは子どもの安全のために仕方ないと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "子どもの安全に慎重になることは重要です。\n\n一方、男性であること自体を理由に保護者として疑われやすくなるなら、父親への偏見になる可能性があります。\n\n安全への警戒と、性別だけで人を疑わないことの境界を考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-012",
+    "topic": "gender_parenting_mother",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "母親が仕事を優先すると『子どもがかわいそう』と言われやすいのに、父親なら同じように言われないとしたら公平？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "親には子どもを支える責任がありますが、その責任を父母のどちらにより強く求めるかには社会的な期待が影響する場合があります。\n\n親としての責任と、母親・父親への異なる役割期待を分けて考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-013",
+    "topic": "gender_custody_expectation",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "離婚後の子育てで『母親と暮らす方が自然』と最初から考えるのは、子どもの利益を考えた判断だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "子どもにとって安定した養育環境を重視する必要があります。\n\n一方、親としての能力を性別から推測することには問題があります。\n\n実際の養育状況を見ることと、母親・父親という役割への先入観をどう区別するかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-014",
+    "topic": "gender_education_support",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "affected",
+    "question": "男女の進学格差を減らすために、片方の性別だけを対象にした入試枠や支援を作ることは公平だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "過去や現在の格差を縮めるために、特定の集団へ追加支援を行う考えがあります。\n\n一方、個人としては自分の性別だけを理由に機会が変わることへの不公平感も生じます。\n\n集団間の格差是正と、個人への公平をどう両立するかを考える問いです。"
+    },
+    "role": "student"
+  },
+  {
+    "id": "gender-l3-015",
+    "topic": "gender_education_gap_boys",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "affected",
+    "question": "ある教育分野で男子の成績や進学率が低い場合、女子向け支援と同じように男子だけを対象にした支援も必要だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "男女格差への支援は、歴史的に不利益を受けてきた側を重視する考えがあります。\n\n一方、現在の具体的な指標で別の側が不利なら、その問題にも同じ基準で対応するべきだという考え方があります。\n\n歴史的背景と現在の不利益のどちらを支援基準として重視するかを問います。"
+    },
+    "role": "student"
+  },
+  {
+    "id": "gender-l3-016",
+    "topic": "gender_workplace_quota",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "男女比を改善するために、採用や昇進で性別を考慮することは、差別を減らすための差別にならないと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "代表性の偏りを改善するために性別を考慮する政策があります。\n\n一方、個人の能力ではなく性別が判断材料になること自体への問題意識もあります。\n\n結果の格差を縮めることと、個人を同じ基準で扱うことの衝突を考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-017",
+    "topic": "gender_salary_expectation",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "結婚相手を選ぶとき、男性の年収を重視することと、女性の若さや見た目を重視することは同じ種類の価値判断だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "恋愛相手に何を求めるかは個人によって異なります。\n\n一方、男性には経済力、女性には外見や年齢など、性別ごとに違う価値を強く求める文化があるという見方もあります。\n\n個人の好みと、性別による評価基準をどう区別するかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-018",
+    "topic": "gender_height_preference",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "恋愛で『男性は自分より背が高い方がいい』という好みは、見た目による偏見とは別物だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "恋愛上の好みは本人が自由に持てるという考えがあります。\n\n一方、特定の身体的特徴を性別と結びつけて価値づけることが、社会的なプレッシャーにつながる場合もあります。\n\n個人の魅力の感じ方と、身体的な規範をどう分けて考えるかという問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-019",
+    "topic": "gender_appearance_pressure",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "男性と女性では『見た目を整えるべき』というプレッシャーの種類が違うと思う？どちらか一方だけを問題として扱うのは公平？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "外見への期待は男女で同じ形では現れない場合があります。\n\n一方の負担が大きい領域があるからといって、もう一方の負担が存在しないとは限りません。\n\n異なる種類の不利益を単純な大小だけで比較することの難しさを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-020",
+    "topic": "gender_false_accusation",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "被害を訴えた人をまず信じることと、疑われた人を最初から加害者扱いしないことは両立できると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "被害を訴えることには大きな心理的負担があり、訴えを軽視しないことが重要です。\n\n一方、事実確認の前から特定の人を加害者と決めつければ、別の深刻な不利益が生じる可能性があります。\n\n被害申告への尊重と、適正な事実確認をどう両立するかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-021",
+    "topic": "gender_sexual_harassment_standard",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "同じ言葉や接触でも、男性から女性の場合と女性から男性の場合で『セクハラらしさ』の感じ方が変わるとしたら、それはなぜ？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "身体的な力関係や社会的な背景によって、同じ行動でも現実的な脅威が異なる場合があります。\n\n一方、性別だけを理由に被害の深刻さを軽く見ることにも問題があります。\n\n状況上の非対称性と、被害者の性別による先入観を分けて考える問いです。"
+    },
+    "content_warning": [
+      "sexual_violence",
+      "crime_and_punishment"
+    ]
+  },
+  {
+    "id": "gender-l3-022",
+    "topic": "gender_domestic_violence_recognition",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "恋人や配偶者から暴力的な扱いを受けた男性が相談したとき、女性の場合と同じ深刻さで受け止められると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "被害の形や危険性には個々の状況による違いがあります。\n\n一方、『男性なら耐えられる』『男性は被害者になりにくい』というイメージが相談や周囲の反応に影響する可能性があります。\n\n被害の評価に性別をどこまで持ち込むべきかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-023",
+    "topic": "gender_emotional_labor",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "恋愛では、相手の気持ちを察したり関係を整えたりする役割を女性に多く求めることと、男性に『相手を安心させる強さ』を求めることは、同じ性別役割の問題だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "男女には異なる形で対人関係上の役割が期待される場合があります。\n\n片方の負担だけを見るのではなく、それぞれに何を当然として求めているかを比較する問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-024",
+    "topic": "gender_reproductive_responsibility",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "妊娠では身体的な負担が男女で大きく違う。その非対称性がある中でも、妊娠に至るまでの責任は同じだと言える？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠による身体的な影響は当事者間で同じではありません。\n\n一方、そこに至るまでの意思決定や責任については、別の基準で考える必要があります。\n\n身体上の非対称性と、行動上の責任をどのように分けるかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-025",
+    "topic": "gender_reproductive_decision",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "妊娠について、身体に直接影響を受けない側には、どこまで意見を言う権利があると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "身体に関する自己決定は本人に強く属します。\n\n一方、妊娠によってもう一方の人生にも大きな影響が及ぶ場合があります。\n\n最終的な決定権と、当事者として意見を持つことをどこまで分けて考えるかという問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-026",
+    "topic": "gender_child_support_expectations",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "別れた後の子育てで、父親にはお金、母親には日常的な育児をより強く求める考え方は公平だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "家庭によって実際の役割分担は異なります。\n\nしかし、父親には経済的責任、母親には日常的な養育責任という性別役割が前提になる場合があります。\n\n親としての責任を性別から切り離して考えられるかを問います。"
+    }
+  },
+  {
+    "id": "gender-l3-027",
+    "topic": "gender_work_family_choice",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "夫婦のどちらかが仕事を減らして家庭を優先する必要があるとき、収入が高い方を残す決め方は公平だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "家計全体を考えれば、収入の高い側が仕事を続ける方が合理的な場合があります。\n\n一方、その判断が既存の男女の収入差や役割分担をさらに固定する可能性もあります。\n\n家庭内の合理性と、社会全体の格差がどうつながるかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-028",
+    "topic": "gender_chivalry",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "『女性を守る』『男性が荷物を持つ』ような好意的な男女差も、性差別に含まれると思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "相手への気遣いや親切として行われる性別役割があります。\n\n一方、善意であっても『男性は強い』『女性は守られる側』という前提を強める可能性があります。\n\n好意的な扱いと固定的な性別役割をどう区別するかという問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-029",
+    "topic": "gender_equality_symmetry",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "男女平等とは、男性と女性をできるだけ同じように扱うこと？それとも違いがある部分では扱いを変えること？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "性別によらず同じ基準で扱うことを平等とする考えがあります。\n\n一方、身体的・社会的な条件が異なる部分では、同じ扱いがかえって不公平になる場合もあります。\n\n形式的な平等と実質的な公平の境界を考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-030",
+    "topic": "gender_competing_disadvantages",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "男女それぞれに違う不利益があるとき、『どちらの方が差別されているか』を決めることに意味はあると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "男女が経験する不利益は、同じ分野や同じ形で現れるとは限りません。\n\n一方の問題を指摘することが、もう一方の問題を否定する理由になる必要もありません。\n\n不利益を競わせることと、それぞれの問題を個別に検討することの違いを考える問いです。"
+    }
+  },
+  {
+    "id": "ethics-009",
+    "topic": "unpaid_work_and_fairness",
+    "category": "ethics_and_decision_making",
+    "perspective": "observer",
+    "question": "報酬のない共同活動で、よく働く人とほとんど何もしない人がいても、無償なのだからサボる人を責めるべきではないと思う？ それとも、参加すると決めた以上は、お金をもらっていなくても同じように責任を負うべき？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "仕事であれば、働いた対価として給料を受け取るため、『任された仕事をする責任がある』という考えは比較的分かりやすいものです。しかし、ボランティア、地域活動、学校行事、オープンソース開発、サークルなど、報酬のない活動では事情が変わります。\n\n無償で参加している人に対して、『もっと働くべきだ』『他の人と同じだけ貢献するべきだ』と要求することはできるのでしょうか。本人からすれば、時間や労力を提供するだけでもすでに負担しており、嫌ならいつでも活動をやめる自由があるとも考えられます。\n\n一方で、誰かがほとんど何もしなければ、その分の仕事は別の人が引き受けることになります。全員が『無償だから最低限だけでいい』と考えれば、活動そのものが成立しなくなるかもしれません。特に、活動によって得られる成果や評価だけは全員が共有できる場合、働かない人が働く人の貢献から利益だけを受け取る『フリーライダー』の問題が生まれます。\n\nしかし、同じ時間参加していても、全員が同じだけ貢献できるとは限りません。能力、経験、体力、時間の余裕、家庭環境などは違います。たくさん働いた人が『自分の方が貢献したのだから、自分の意見をより重く扱うべきだ』と考え始めれば、今度は活動が一部の人だけのものになる可能性もあります。\n\nさらに、無償の活動では『好きでやっている人が多く働けばいい』という考えもあります。しかし、それを続けると、責任感の強い人ほど仕事を引き受け、断るのが得意な人ほど負担を避けられる構造になることがあります。結果として、最も善意のある人が最も疲弊するという逆転も起こり得ます。\n\nここには、『報酬がなければ義務もない』という自由の考えと、『共同体に参加した以上は他人へ負担を押し付けない責任がある』という公平の考えがあります。\n\n無償であることは、責任をどこまで軽くするのでしょうか。参加する自由があるなら、参加した後には責任も生まれるのでしょうか。そして、よく働く人が損をしない共同活動を作るには、全員に同じ量の貢献を求めるべきなのか、それとも貢献量の違いそのものを受け入れるべきなのかを考える問いです。"
+    }
   }
-},
-{
-  "id": "youth-pregnancy-l3-002",
-  "topic": "peer_pressure",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "周りから『まだ経験ないの？』と言われて決断した場合、それは本人だけの選択だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "友人関係や集団の空気は、自分の判断に影響することがあります。\n\n本人が最終的に決めたことであっても、『周りと違いたくない』『遅れていると思われたくない』という圧力があった場合、それを完全に個人だけの判断として扱えるかを考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-003",
-  "topic": "contraception_communication",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "避妊について話し合えない関係は、そもそも対等な関係だと言える？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "知識として避妊の必要性を知っていても、相手に言い出せなければ実際の判断にはつながりません。\n\n『信用していないと思われそう』『雰囲気を壊したくない』という理由で話せない場合、知識だけでなく関係性そのものにも問題があるのかを考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-004",
-  "topic": "risk_perception",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "妊娠の可能性を学校で習っていても『自分は大丈夫』と思ってしまうのは、知識不足だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "リスクについて正しい知識を持っていても、自分自身には起こりにくいと感じることがあります。\n\nそのため、知識を教えることだけで十分なのか、実際の判断につなげる教育まで必要なのかを考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-005",
-  "topic": "age_power_difference",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "本人が『好きだから自分で決めた』と言っていても、相手との年齢や立場の差は考慮するべき？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "本人の好意や意思を尊重することは重要です。一方、年齢、経験、先輩後輩などの立場の差によって、断りやすさが変わる場合があります。\n\n本人の意思と関係の中にある力の差を、どこまで別々に考えるべきかを問います。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-006",
-  "topic": "pregnancy_disclosure",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "妊娠したかもしれない生徒が親に相談できないとき、それは本人の問題だけだと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "重大な問題ほど、叱られることや失望されることへの不安から相談が遅れる場合があります。\n\n本人が相談しなかった責任だけでなく、家庭が普段から相談できる関係だったかという視点もあります。\n\n相談できない状況を個人と家庭のどちらの問題として捉えるかを考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-007",
-  "topic": "school_disclosure",
-  "category": "youth",
-  "perspective": "student",
-  "question": "妊娠した生徒が学校に知られたくないと言った場合、学校はどこまでその秘密を守るべき？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "学校が支援するためには、一定の情報共有が必要になる場合があります。一方、妊娠に関する情報は非常に個人的なものです。\n\n支援に必要な情報共有と、本人のプライバシーを守ることの境界を考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-008",
-  "topic": "education_continuity",
-  "category": "youth",
-  "perspective": "student",
-  "question": "妊娠した生徒が学校を続けたいなら、学校はどこまで特別な配慮をするべき？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "妊娠によって学校生活にさまざまな影響が生じても、それまで持っていた学習や進学への希望がなくなるわけではありません。\n\n一方で、他の生徒との公平性や学校側の対応可能性もあります。\n\n学ぶ機会を保障するための個別配慮をどこまで行うべきかを考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-009",
-  "topic": "equal_treatment",
-  "category": "youth",
-  "perspective": "classmate",
-  "question": "妊娠した生徒だけ出席や課題の条件を変えることは、『不公平』だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "全員を同じ条件で扱うことを公平と考える立場があります。一方、それぞれの事情に応じて条件を調整することを公平と考える立場もあります。\n\n同じ扱いと公平な扱いが必ずしも同じではないことについて考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-010",
-  "topic": "partner_responsibility",
-  "category": "youth",
-  "perspective": "partner",
-  "question": "妊娠による身体的な負担が片方に集中するとき、相手側にはどこまで責任があると思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "妊娠による身体への影響は当事者間で同じではありません。一方、妊娠に至るまでの関係や、その後の生活への影響には双方が関わります。\n\n身体的な非対称性がある中で、責任をどのように考えるべきかを問います。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-011",
-  "topic": "partner_disappears",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "妊娠を伝えたあと相手が連絡を絶った場合、『怖くて逃げた』ことはどこまで理解できる？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "若い当事者にとって妊娠は非常に大きな出来事であり、恐怖や混乱から逃げたいと感じる可能性があります。\n\nしかし、恐怖を感じることと、相手に負担を残したまま関係から離れることは同じではありません。\n\n事情への理解と責任を求めることをどこまで両立できるかを考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-012",
-  "topic": "partner_parent_responsibility",
-  "category": "youth",
-  "perspective": "parent",
-  "question": "未成年同士の妊娠では、相手側の親にも責任があると思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "未成年者本人の問題として考える立場がある一方、経済面や生活面では保護者の関与が必要になる場合があります。\n\n本人が負うべき責任と、親が子どもを支える責任をどこまで分けて考えるべきかを問います。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-013",
-  "topic": "decision_asymmetry",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "妊娠について、身体への影響が違う二人に『同じ決定権』を求めることは公平だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "妊娠は双方の人生に影響しますが、身体への直接的な影響は同じではありません。\n\n『二人の問題だから同じように決めるべき』という考えと、身体についての自己決定を重く見る考えが衝突します。\n\n平等な意思決定と身体的な非対称性をどう考えるかという問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-014",
-  "topic": "friend_confidentiality",
-  "category": "youth",
-  "perspective": "friend",
-  "question": "友達から妊娠について『誰にも言わないで』と相談されたら、秘密を守ることが本当に友達のためだと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "秘密を守ることは、相談してくれた友人への信頼に応える行為です。\n\n一方、友人だけでは支えきれない状況では、信頼できる大人や支援につなぐことが必要になる場合もあります。\n\n秘密を守ることと、助けを求めることのどちらが友情なのかを考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-015",
-  "topic": "rumor_privacy",
-  "category": "youth",
-  "perspective": "classmate",
-  "question": "同級生が妊娠したという噂を聞いても、本人に聞かないことが『無関心』になると思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "友人として心配する気持ちがあれば、本人に確認したいと思うことがあります。\n\n一方、本人から話していない非常に個人的な情報について尋ねることは、プライバシーに踏み込むことにもなります。\n\n心配して関わることと、本人の秘密に立ち入らないことの境界を考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-016",
-  "topic": "social_judgment",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "中高生の妊娠を『無責任だった結果』だけで説明するのは公平だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "本人の判断や責任を考えることは必要です。一方で、知識、相手との関係、断りにくさ、家庭環境、周囲への相談のしやすさなど、個人だけでは説明できない要因が関わる場合もあります。\n\n自己責任と周囲の環境をどのように分けて考えるかを問います。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-017",
-  "topic": "gendered_judgment",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "同じ妊娠でも、女子生徒と男子生徒で周囲から責められ方が違うとしたら、それはなぜだと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "妊娠による身体的な影響は男女で同じではありませんが、社会的な評価や責任の求められ方まで同じように非対称であるべきかは別の問題です。\n\n身体的な違いと、社会が男女に期待する役割を区別して考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-018",
-  "topic": "male_responsibility_visibility",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "妊娠した側は学校生活の変化が周囲に見えやすいのに、相手側の責任は見えにくい。この差をどう考える？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "妊娠による身体的・生活上の変化は、当事者間で同じ形では現れません。\n\nそのため、一方だけが周囲から評価や批判を受けやすく、もう一方の責任が社会から見えにくくなる可能性があります。\n\n身体的な違いと社会的な責任の見え方について考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-019",
-  "topic": "education_vs_parenthood",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "妊娠した生徒が進学を諦めることを『現実的な判断』と考えるのは、本人の選択を狭めていない？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "大きな生活上の変化に合わせて進路を変更することを現実的と考える立場があります。\n\n一方、周囲が最初から『もう以前の進路は無理だ』と判断することが、本人の可能性を狭める場合もあります。\n\n現実への配慮と、本人の将来の選択肢を守ることの境界を考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-020",
-  "topic": "school_role",
-  "category": "youth",
-  "perspective": "student",
-  "question": "中高生の妊娠が分かったとき、学校は『教育の場』を超えてどこまで支援に関わるべき？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "学校の中心的な役割は教育ですが、生徒が長い時間を過ごす場所であり、問題を最初に把握する場所になることもあります。\n\n学校が家庭や医療・福祉の領域にどこまで関わるべきなのか、教育機関としての役割の境界を考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-021",
-  "topic": "sex_education_scope",
-  "category": "youth",
-  "perspective": "student",
-  "question": "性教育は知識を教えるだけでなく、『断り方』『相談の仕方』『相手との話し合い方』まで扱うべき？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "妊娠や避妊について知識を持っていても、人間関係の中で意思を伝えたり、助けを求めたりすることは別の能力です。\n\n学校教育が医学的な知識だけを扱うべきなのか、実際のコミュニケーションまで扱うべきなのかを考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-022",
-  "topic": "parental_sex_education",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "家庭で性の話を避けることは、子どもの価値観を尊重していることになる？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "性について家庭で深く立ち入らないことを、本人のプライバシーを尊重する態度と考えることがあります。\n\n一方、何も話せない家庭では、問題が起きたときにも相談しにくくなる可能性があります。\n\nプライバシーを尊重することと、相談できる関係を作ることをどう両立するかという問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-023",
-  "topic": "stigma",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "若くして妊娠した人への『将来が終わった』という見方は、本人を守る言葉だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "若年での妊娠には生活や教育への大きな影響が生じる可能性があります。\n\nしかし、将来への困難を伝えることと、『もう人生は決まった』と可能性を狭めることは同じではありません。\n\n現実的なリスクを伝えることと、本人の将来を決めつけないことについて考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-024",
-  "topic": "support_without_endorsement",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "本人の過去の判断には賛成できなくても、その後の支援には賛成できる？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "ある判断を批判することと、その結果困難な状況にある人を支援することは別の問題として考えることができます。\n\n『支援すると、その行動を肯定したことになる』と感じる場合もあります。\n\n行動への評価と、その後の人への支援をどこまで分けられるかを考える問いです。"
-  }
-},
-{
-  "id": "youth-pregnancy-l3-025",
-  "topic": "responsibility_and_support",
-  "category": "youth",
-  "perspective": "observer",
-  "question": "『本人にも責任がある』と考えることと、『だから支援を減らす』ことは同じだと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "本人が行った判断について責任を考えることと、その人が必要とする教育・医療・福祉などの支援をどうするかは別の判断です。\n\n自己責任を認めることが、どこまで社会的支援の範囲に影響するべきかを考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-141",
-  "topic": "jealousy_close_friend",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "恋人に異性の親友がいることを不安に感じるのは、束縛につながる嫉妬だと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "恋人に自分以外の大切な人間関係があることは自然です。一方、その関係によって強い不安を感じる人もいます。\n\n嫉妬という感情そのものと、相手の交友関係を制限することをどこまで分けて考えるかという問いです。"
-  }
-},
-{
-  "id": "relationship-l3-142",
-  "topic": "jealousy_ex_partner",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "恋人が元恋人と友人として関わり続けることを、今の恋人は受け入れるべきだと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "恋愛関係が終わっても、人間関係まで必ず終わらせる必要はないという考えがあります。\n\n一方、現在の恋人が不安になるなら一定の距離を取るべきだという考え方もあります。\n\n過去の関係と現在の恋愛をどこまで切り分けるかを考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-143",
-  "topic": "retroactive_jealousy",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "恋人の過去の恋愛について嫉妬することは、今の関係に必要のない感情だと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "過去は変えられず、現在の関係とは別だと考えることができます。\n\n一方、過去について知ることで比較や不安が生まれることもあります。\n\n過去への嫉妬をどこまで現在の関係の問題として扱うかを考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-144",
-  "topic": "jealousy_attention",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "恋人が他の人から好かれやすいことに嫉妬したとき、相手に行動を変えてもらうのはどこまで許されると思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "自分が安心できるよう相手に配慮を求めることには意味があります。\n\n一方、第三者から向けられる好意まで理由にして相手の行動を制限すると、相手の自由との衝突が生じます。\n\n配慮と束縛の境界を考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-145",
-  "topic": "jealousy_priority",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "恋人なら、友人や家族より自分を優先してほしいと思うのは自然だと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "恋人を特別な存在として優先する考え方があります。一方、人には家族や友人など複数の大切な関係があります。\n\n恋愛関係で『一番であること』をどこまで求めるかを考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-146",
-  "topic": "jealousy_double_standard",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "自分には異性の友人がいても、恋人の異性の友人には嫉妬する。この感情は不公平だと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "自分と相手に同じ自由を認めることは、公平という観点では自然です。\n\n一方、感情そのものは必ずしも公平な原則に従って生じるわけではありません。\n\n感情と行動の公平性をどう分けて考えるかという問いです。"
-  }
-},
-{
-  "id": "relationship-l3-147",
-  "topic": "jealousy_confession",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "恋人が別の人に一時的に惹かれたとしても、何も行動していないなら問題ではないと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "人が誰かに魅力を感じることと、その感情に基づいて行動することは別です。\n\n恋愛関係では感情そのものにも忠実さを求めるのか、それとも行動だけを基準にするのかを考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-148",
-  "topic": "jealousy_reassurance",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "理由のない嫉妬でも、恋人には安心させる責任があると思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "恋人同士で不安を支え合うことは、関係を維持するうえで大切です。\n\n一方、自分自身の不安をすべて相手の行動によって解消しようとすることには限界があります。\n\n自分の感情への責任と、相手から受ける安心の境界を考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-149",
-  "topic": "jealousy_social_media",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "恋人のSNS上の交流まで、交際相手が口を出していいと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "SNS上のやり取りも人間関係の一部であり、恋人が不安を感じることがあります。\n\n一方、オンライン上の交友関係まで恋人が管理することは、本人の自由やプライバシーに関わります。\n\n恋愛関係がどこまでSNS上の行動に影響してよいかを問います。"
-  }
-},
-{
-  "id": "relationship-l3-150",
-  "topic": "jealousy_boundaries",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "嫉妬したことを相手に伝えるのは、束縛とは違うと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "自分の感情を伝えること自体は、相手の行動を制限することとは異なります。\n\n一方、伝え方によっては相手に事実上の圧力を与える場合もあります。\n\n感情の共有と、行動への要求の境界を考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-151",
-  "topic": "secret_personal_space",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "恋人同士でも、相手には言わない秘密があっていいと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "親密な関係では多くを共有することが信頼につながるという考えがあります。\n\n一方、恋人がいても自分だけの記憶や感情、考えを持つ自由があります。\n\n秘密を持つことと、不誠実であることをどこまで分けて考えるかという問いです。"
-  }
-},
-{
-  "id": "relationship-l3-152",
-  "topic": "secret_password",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "恋人同士なら、スマホのパスワードを共有できる方が信頼関係は強いと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "パスワードを共有することを信頼の証と感じる人もいます。\n\n一方、信頼しているからこそ相手のプライバシーへ踏み込まないという考え方もあります。\n\n透明性とプライバシーのどちらを信頼の基準にするかを考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-153",
-  "topic": "secret_past",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "結婚する相手には、自分の重大な過去をすべて話すべきだと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "人生を共にする相手には重要な事実を伝えるべきだという考えがあります。\n\n一方、過去のすべてが現在の相手に関係するとは限らず、本人だけの領域として残してよいという考え方もあります。\n\n親密さとプライバシーの境界を考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-154",
-  "topic": "secret_debt",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "結婚前の借金は、金額に関係なく相手に伝えるべきだと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "個人の過去の経済事情は本人の問題だという考えがあります。\n\n一方、結婚後の生活や将来設計に影響する可能性があるなら、パートナーにも知る利益があります。\n\n個人のお金と共同生活に関わる情報の境界を考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-155",
-  "topic": "secret_health",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "健康上の情報は、結婚相手にもどこまで伝える必要があると思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "健康情報は非常に個人的なものです。一方、将来の生活や家族計画に大きく関わる情報もあります。\n\n医療上のプライバシーと、パートナーが将来について判断するために知る利益をどう考えるかという問いです。"
-  }
-},
-{
-  "id": "relationship-l3-156",
-  "topic": "secret_infidelity",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "一度だけの裏切りで、その後二度と繰り返していないとしても、恋人には必ず伝えるべきだと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "真実を伝えることを誠実さと考える立場があります。\n\n一方、話すことで相手を傷つけるだけなら、黙って今後の行動で責任を示す方がよいという考え方もあります。\n\n正直さと、相手に与える影響のどちらを重く考えるかを問います。"
-  }
-},
-{
-  "id": "relationship-l3-157",
-  "topic": "secret_friend_knowledge",
-  "category": "relationship",
-  "perspective": "friend",
-  "question": "親友の恋人について重大な秘密を知ったら、親友に伝えることが友情だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "友人を傷つけたくないという気持ちと、本人が真実を知った上で関係を判断する権利があります。\n\n友人を守ることが、真実を伝えることなのか、知らないままにすることなのかを考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-158",
-  "topic": "secret_diary",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "恋人の日記やメモには、交際相手にも絶対に見せない領域があっていいと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "恋人に考えていることを共有することは親密さにつながります。\n\n一方、頭の中の感情や、自分だけの記録まで共有する義務があるとは限りません。\n\n恋人同士でも守られるべき内面的なプライバシーについて考える問いです。"
-  }
-},
-{
-  "id": "relationship-l3-159",
-  "topic": "secret_family_opinion",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "自分の家族が恋人を嫌っていることは、恋人本人にも伝えるべきだと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "家族の本音を伝えることが誠実だという考えがあります。一方、本人には変えられない評価を伝えても傷つけるだけだという考え方もあります。\n\n正直であることと、伝えない配慮をどう分けるかという問いです。"
-  }
-},
-{
-  "id": "relationship-l3-160",
-  "topic": "secret_truth_vs_peace",
-  "category": "relationship",
-  "perspective": "observer",
-  "question": "知らなければ幸せでいられる秘密でも、真実は知る方がいいと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "本人が真実を知った上で自分の人生を選ぶことには価値があります。\n\n一方、すべての真実を知ることが本人の幸福につながるとは限りません。\n\n真実を知ることそのものの価値と、現在の幸福を守ることのどちらを重く見るかを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-001",
-  "topic": "gender_role_provider",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "『男性の方が多く稼いでほしい』という期待は、個人の好みなら問題ないと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "恋愛や結婚で相手に求める条件は個人の自由だという考えがあります。\n\n一方、男性に経済的な責任を強く求めることが、性別による役割期待につながるという見方もあります。\n\n個人の好みと、性別に基づく期待の境界を考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-002",
-  "topic": "gender_role_care",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "『女性の方が子育てに向いている』という考えは、経験則と性別による決めつけのどこで分かれると思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "育児への関わり方には個人差があります。\n\n平均的な傾向が存在すると仮定したとしても、それを個人の能力や役割の判断にそのまま使ってよいとは限りません。\n\n集団の傾向と、一人ひとりを評価することの違いを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-003",
-  "topic": "gender_dating_payment",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "デート代を男性が多く払うことを期待するのは、昔ながらの男女差別と同じ問題だと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "男性が多く支払うことを気遣いや文化として肯定する人もいます。一方、性別だけを理由に負担を決めることへの違和感もあります。\n\n伝統的な役割を本人たちが望んで選ぶ場合と、社会から当然のように期待される場合をどう区別するかを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-004",
-  "topic": "gender_dating_initiation",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "告白やデートの誘いを『男性からするもの』と考えるのは、ただの恋愛文化だと思う？",
-  "level": 3,
-  "sensitivity": 2,
-  "detail": {
-    "text": "恋愛には長く続いてきた慣習があります。\n\n一方、特定の性別に断られるリスクや積極性を求め続けることで、恋愛上の負担が偏る可能性もあります。\n\n文化的な慣習と性別役割の境界を考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-005",
-  "topic": "gender_emotional_expression",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "男性が弱音を吐いたときと、女性が弱音を吐いたときで、周囲の受け止め方が違っても仕方ないと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "性別によって『強くあるべき』『感情を表してよい』といった異なる期待が向けられることがあります。\n\n本人の性格ではなく性別によって、弱さの見せ方を評価する基準が変わることをどう考えるかという問いです。"
-  }
-},
-{
-  "id": "gender-l3-006",
-  "topic": "gender_physical_tasks",
-  "category": "gender",
-  "perspective": "student",
-  "question": "学校で重い荷物を男子に頼むことは、体格差への合理的な配慮？それとも性別による役割分担？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "平均的な身体差を考慮して役割を決める方が効率的だという考えがあります。\n\n一方、個人の体格や能力を見ずに性別だけで役割を割り当てることへの問題もあります。\n\n集団平均を実際の個人への扱いに使うことの限界を考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-007",
-  "topic": "gender_safety_expectations",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "危険な仕事や役割を男性が多く引き受けることを『仕方ない』と考えるのは公平だと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "身体能力や本人の職業選択によって危険な仕事の男女比が変わる場合があります。\n\n一方、男性だから危険を引き受けるべきだという期待まで正当化されるとは限りません。\n\n本人の選択と社会的な性別期待を分けて考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-008",
-  "topic": "gender_protection",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "災害などで『女性や子どもを先に』とする考え方に、男性が後回しになることへの問題はないと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "身体的な脆弱性や子どもの保護などを理由に優先順位を設ける考えがあります。\n\n一方、成人男性というだけで一律に優先度を下げることへの疑問もあります。\n\n保護が必要な人を優先することと、性別そのものを基準にすることの違いを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-009",
-  "topic": "gender_victim_recognition",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "同じように傷つけられた人でも、男性と女性で『被害者らしさ』を違って感じることはあると思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "社会には、性別によって強さや弱さへの異なるイメージがあります。\n\nそのため、同じ出来事でも被害の深刻さや本人への共感が異なって受け取られる可能性があります。\n\n被害を判断するときに性別のイメージが影響していないかを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-010",
-  "topic": "gender_perpetrator_recognition",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "同じ行為でも、加害者が男性か女性かで『怖さ』や『悪質さ』の感じ方が変わるとしたら、それは公平？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "身体的な危険性など実際に状況が異なる場合もあります。\n\n一方、性別への先入観によって、行為そのものとは別に評価が変わる可能性もあります。\n\n現実的なリスクの違いと、性別によるステレオタイプをどう区別するかを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-011",
-  "topic": "gender_parenting_father",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "父親が一人で小さな子どもの世話をしているとき、母親より警戒されることがあるなら、それは子どもの安全のために仕方ないと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "子どもの安全に慎重になることは重要です。\n\n一方、男性であること自体を理由に保護者として疑われやすくなるなら、父親への偏見になる可能性があります。\n\n安全への警戒と、性別だけで人を疑わないことの境界を考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-012",
-  "topic": "gender_parenting_mother",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "母親が仕事を優先すると『子どもがかわいそう』と言われやすいのに、父親なら同じように言われないとしたら公平？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "親には子どもを支える責任がありますが、その責任を父母のどちらにより強く求めるかには社会的な期待が影響する場合があります。\n\n親としての責任と、母親・父親への異なる役割期待を分けて考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-013",
-  "topic": "gender_custody_expectation",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "離婚後の子育てで『母親と暮らす方が自然』と最初から考えるのは、子どもの利益を考えた判断だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "子どもにとって安定した養育環境を重視する必要があります。\n\n一方、親としての能力を性別から推測することには問題があります。\n\n実際の養育状況を見ることと、母親・父親という役割への先入観をどう区別するかを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-014",
-  "topic": "gender_education_support",
-  "category": "gender",
-  "perspective": "student",
-  "question": "男女の進学格差を減らすために、片方の性別だけを対象にした入試枠や支援を作ることは公平だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "過去や現在の格差を縮めるために、特定の集団へ追加支援を行う考えがあります。\n\n一方、個人としては自分の性別だけを理由に機会が変わることへの不公平感も生じます。\n\n集団間の格差是正と、個人への公平をどう両立するかを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-015",
-  "topic": "gender_education_gap_boys",
-  "category": "gender",
-  "perspective": "student",
-  "question": "ある教育分野で男子の成績や進学率が低い場合、女子向け支援と同じように男子だけを対象にした支援も必要だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "男女格差への支援は、歴史的に不利益を受けてきた側を重視する考えがあります。\n\n一方、現在の具体的な指標で別の側が不利なら、その問題にも同じ基準で対応するべきだという考え方があります。\n\n歴史的背景と現在の不利益のどちらを支援基準として重視するかを問います。"
-  }
-},
-{
-  "id": "gender-l3-016",
-  "topic": "gender_workplace_quota",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "男女比を改善するために、採用や昇進で性別を考慮することは、差別を減らすための差別にならないと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "代表性の偏りを改善するために性別を考慮する政策があります。\n\n一方、個人の能力ではなく性別が判断材料になること自体への問題意識もあります。\n\n結果の格差を縮めることと、個人を同じ基準で扱うことの衝突を考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-017",
-  "topic": "gender_salary_expectation",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "結婚相手を選ぶとき、男性の年収を重視することと、女性の若さや見た目を重視することは同じ種類の価値判断だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "恋愛相手に何を求めるかは個人によって異なります。\n\n一方、男性には経済力、女性には外見や年齢など、性別ごとに違う価値を強く求める文化があるという見方もあります。\n\n個人の好みと、性別による評価基準をどう区別するかを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-018",
-  "topic": "gender_height_preference",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "恋愛で『男性は自分より背が高い方がいい』という好みは、見た目による偏見とは別物だと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "恋愛上の好みは本人が自由に持てるという考えがあります。\n\n一方、特定の身体的特徴を性別と結びつけて価値づけることが、社会的なプレッシャーにつながる場合もあります。\n\n個人の魅力の感じ方と、身体的な規範をどう分けて考えるかという問いです。"
-  }
-},
-{
-  "id": "gender-l3-019",
-  "topic": "gender_appearance_pressure",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "男性と女性では『見た目を整えるべき』というプレッシャーの種類が違うと思う？どちらか一方だけを問題として扱うのは公平？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "外見への期待は男女で同じ形では現れない場合があります。\n\n一方の負担が大きい領域があるからといって、もう一方の負担が存在しないとは限りません。\n\n異なる種類の不利益を単純な大小だけで比較することの難しさを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-020",
-  "topic": "gender_false_accusation",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "被害を訴えた人をまず信じることと、疑われた人を最初から加害者扱いしないことは両立できると思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "被害を訴えることには大きな心理的負担があり、訴えを軽視しないことが重要です。\n\n一方、事実確認の前から特定の人を加害者と決めつければ、別の深刻な不利益が生じる可能性があります。\n\n被害申告への尊重と、適正な事実確認をどう両立するかを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-021",
-  "topic": "gender_sexual_harassment_standard",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "同じ言葉や接触でも、男性から女性の場合と女性から男性の場合で『セクハラらしさ』の感じ方が変わるとしたら、それはなぜ？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "身体的な力関係や社会的な背景によって、同じ行動でも現実的な脅威が異なる場合があります。\n\n一方、性別だけを理由に被害の深刻さを軽く見ることにも問題があります。\n\n状況上の非対称性と、被害者の性別による先入観を分けて考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-022",
-  "topic": "gender_domestic_violence_recognition",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "恋人や配偶者から暴力的な扱いを受けた男性が相談したとき、女性の場合と同じ深刻さで受け止められると思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "被害の形や危険性には個々の状況による違いがあります。\n\n一方、『男性なら耐えられる』『男性は被害者になりにくい』というイメージが相談や周囲の反応に影響する可能性があります。\n\n被害の評価に性別をどこまで持ち込むべきかを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-023",
-  "topic": "gender_emotional_labor",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "恋愛では、相手の気持ちを察したり関係を整えたりする役割を女性に多く求めることと、男性に『相手を安心させる強さ』を求めることは、同じ性別役割の問題だと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "男女には異なる形で対人関係上の役割が期待される場合があります。\n\n片方の負担だけを見るのではなく、それぞれに何を当然として求めているかを比較する問いです。"
-  }
-},
-{
-  "id": "gender-l3-024",
-  "topic": "gender_reproductive_responsibility",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "妊娠では身体的な負担が男女で大きく違う。その非対称性がある中でも、妊娠に至るまでの責任は同じだと言える？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "妊娠による身体的な影響は当事者間で同じではありません。\n\n一方、そこに至るまでの意思決定や責任については、別の基準で考える必要があります。\n\n身体上の非対称性と、行動上の責任をどのように分けるかを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-025",
-  "topic": "gender_reproductive_decision",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "妊娠について、身体に直接影響を受けない側には、どこまで意見を言う権利があると思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "身体に関する自己決定は本人に強く属します。\n\n一方、妊娠によってもう一方の人生にも大きな影響が及ぶ場合があります。\n\n最終的な決定権と、当事者として意見を持つことをどこまで分けて考えるかという問いです。"
-  }
-},
-{
-  "id": "gender-l3-026",
-  "topic": "gender_child_support_expectations",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "別れた後の子育てで、父親にはお金、母親には日常的な育児をより強く求める考え方は公平だと思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "家庭によって実際の役割分担は異なります。\n\nしかし、父親には経済的責任、母親には日常的な養育責任という性別役割が前提になる場合があります。\n\n親としての責任を性別から切り離して考えられるかを問います。"
-  }
-},
-{
-  "id": "gender-l3-027",
-  "topic": "gender_work_family_choice",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "夫婦のどちらかが仕事を減らして家庭を優先する必要があるとき、収入が高い方を残す決め方は公平だと思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "家計全体を考えれば、収入の高い側が仕事を続ける方が合理的な場合があります。\n\n一方、その判断が既存の男女の収入差や役割分担をさらに固定する可能性もあります。\n\n家庭内の合理性と、社会全体の格差がどうつながるかを考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-028",
-  "topic": "gender_chivalry",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "『女性を守る』『男性が荷物を持つ』ような好意的な男女差も、性差別に含まれると思う？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "相手への気遣いや親切として行われる性別役割があります。\n\n一方、善意であっても『男性は強い』『女性は守られる側』という前提を強める可能性があります。\n\n好意的な扱いと固定的な性別役割をどう区別するかという問いです。"
-  }
-},
-{
-  "id": "gender-l3-029",
-  "topic": "gender_equality_symmetry",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "男女平等とは、男性と女性をできるだけ同じように扱うこと？それとも違いがある部分では扱いを変えること？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "性別によらず同じ基準で扱うことを平等とする考えがあります。\n\n一方、身体的・社会的な条件が異なる部分では、同じ扱いがかえって不公平になる場合もあります。\n\n形式的な平等と実質的な公平の境界を考える問いです。"
-  }
-},
-{
-  "id": "gender-l3-030",
-  "topic": "gender_competing_disadvantages",
-  "category": "gender",
-  "perspective": "observer",
-  "question": "男女それぞれに違う不利益があるとき、『どちらの方が差別されているか』を決めることに意味はあると思う？",
-  "level": 3,
-  "sensitivity": 4,
-  "detail": {
-    "text": "男女が経験する不利益は、同じ分野や同じ形で現れるとは限りません。\n\n一方の問題を指摘することが、もう一方の問題を否定する理由になる必要もありません。\n\n不利益を競わせることと、それぞれの問題を個別に検討することの違いを考える問いです。"
-  }
-},
-{
-  "id": "ethics-009",
-  "topic": "unpaid_work_and_fairness",
-  "category": "ethics",
-  "perspective": "general",
-  "question": "報酬のない共同活動で、よく働く人とほとんど何もしない人がいても、無償なのだからサボる人を責めるべきではないと思う？ それとも、参加すると決めた以上は、お金をもらっていなくても同じように責任を負うべき？",
-  "level": 3,
-  "sensitivity": 3,
-  "detail": {
-    "text": "仕事であれば、働いた対価として給料を受け取るため、『任された仕事をする責任がある』という考えは比較的分かりやすいものです。しかし、ボランティア、地域活動、学校行事、オープンソース開発、サークルなど、報酬のない活動では事情が変わります。\n\n無償で参加している人に対して、『もっと働くべきだ』『他の人と同じだけ貢献するべきだ』と要求することはできるのでしょうか。本人からすれば、時間や労力を提供するだけでもすでに負担しており、嫌ならいつでも活動をやめる自由があるとも考えられます。\n\n一方で、誰かがほとんど何もしなければ、その分の仕事は別の人が引き受けることになります。全員が『無償だから最低限だけでいい』と考えれば、活動そのものが成立しなくなるかもしれません。特に、活動によって得られる成果や評価だけは全員が共有できる場合、働かない人が働く人の貢献から利益だけを受け取る『フリーライダー』の問題が生まれます。\n\nしかし、同じ時間参加していても、全員が同じだけ貢献できるとは限りません。能力、経験、体力、時間の余裕、家庭環境などは違います。たくさん働いた人が『自分の方が貢献したのだから、自分の意見をより重く扱うべきだ』と考え始めれば、今度は活動が一部の人だけのものになる可能性もあります。\n\nさらに、無償の活動では『好きでやっている人が多く働けばいい』という考えもあります。しかし、それを続けると、責任感の強い人ほど仕事を引き受け、断るのが得意な人ほど負担を避けられる構造になることがあります。結果として、最も善意のある人が最も疲弊するという逆転も起こり得ます。\n\nここには、『報酬がなければ義務もない』という自由の考えと、『共同体に参加した以上は他人へ負担を押し付けない責任がある』という公平の考えがあります。\n\n無償であることは、責任をどこまで軽くするのでしょうか。参加する自由があるなら、参加した後には責任も生まれるのでしょうか。そして、よく働く人が損をしない共同活動を作るには、全員に同じ量の貢献を求めるべきなのか、それとも貢献量の違いそのものを受け入れるべきなのかを考える問いです。"
-  }
-}
 ]
