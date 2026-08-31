@@ -44,14 +44,14 @@ nextButton.addEventListener("click", function () {
 
     if (selectedLevel === "4") {
         window.location.href =
-            "warning.html?count=" + selectedCount;
+            "warning.html?count=" + encodeURIComponent(selectedCount);
 
         return;
     }
 
     window.location.href =
         "question.html?level=" +
-        selectedLevel +
+        encodeURIComponent(selectedLevel) +
         "&count=" +
-        selectedCount;
+        encodeURIComponent(selectedCount);
 });
