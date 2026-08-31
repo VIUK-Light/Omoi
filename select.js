@@ -43,15 +43,15 @@ nextButton.addEventListener("click", function () {
     }
 
     if (selectedLevel === "4") {
-        window.location.href =
-            "warning.html?count=" + selectedCount;
+        const warningUrl = new URL("warning.html", window.location.href);
+        warningUrl.searchParams.set("count", selectedCount);
+        window.location.href = warningUrl.toString();
 
         return;
     }
 
-    window.location.href =
-        "question.html?level=" +
-        selectedLevel +
-        "&count=" +
-        selectedCount;
+    const questionUrl = new URL("question.html", window.location.href);
+    questionUrl.searchParams.set("level", selectedLevel);
+    questionUrl.searchParams.set("count", selectedCount);
+    window.location.href = questionUrl.toString();
 });
