@@ -231,3 +231,19 @@ body {
     border-color: #111111;
     color: #111111;
 }
+
+.report-question-link[hidden] {
+    display: none;
+}
+
+.question-actions button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#retryLoadButton {
+    margin-bottom: 16px;
+    padding: 12px 20px;
+    font: inherit;
+    cursor: pointer;
+}

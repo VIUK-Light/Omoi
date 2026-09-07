@@ -8,16 +8,19 @@ const origin = "https://omoi.viuk-light.org";
 const publicPages = [
     {
         file: "index.html",
+        favicon: "omoi-icon.svg",
         url: `${origin}/`,
         requiredTypes: ["WebSite", "SoftwareApplication", "WebPage"]
     },
     {
         file: "howto.html",
+        favicon: "viuk-light.jpg",
         url: `${origin}/howto.html`,
         requiredTypes: ["WebSite", "WebPage", "BreadcrumbList"]
     },
     {
         file: "guide.html",
+        favicon: "viuk-light.jpg",
         url: `${origin}/guide.html`,
         requiredTypes: ["WebSite", "WebPage", "BreadcrumbList"]
     }
@@ -270,8 +273,8 @@ for (const page of publicPages) {
         errors.push(`${page.file}: twitter:card must be summary_large_image`);
     }
 
-    if (linkValue(html, "icon") !== "viuk-light.jpg") {
-        errors.push(`${page.file}: favicon must be viuk-light.jpg`);
+    if (linkValue(html, "icon") !== page.favicon) {
+        errors.push(`${page.file}: favicon must be ${page.favicon}`);
     }
 
     for (const type of page.requiredTypes) {
@@ -310,7 +313,7 @@ if (!read("robots.txt").includes(`Sitemap: ${origin}/sitemap.xml`)) {
     errors.push("robots.txt: sitemap directive is missing or incorrect");
 }
 
-for (const asset of ["og-image.png", "viuk-light.jpg"]) {
+for (const asset of new Set(["og-image.png", "viuk-light.jpg", ...publicPages.map((page) => page.favicon)])) {
     if (!fs.existsSync(path.join(root, asset))) {
         errors.push(`${asset}: referenced asset does not exist`);
     }

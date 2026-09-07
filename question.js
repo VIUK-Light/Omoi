@@ -40,39 +40,97 @@ const reportIssueURL =
     "https://github.com/VIUK-Light/Omoi/issues/new";
 
 
-levelDisplay.textContent = "Level " + level;
+const retryLoadButton = document.getElementById("retryLoadButton");
+let state = "idle";
 
+function setState(nextState) {
+    state = nextState;
+    nextQuestionButton.disabled = state !== "ready";
+    skipQuestionButton.disabled = state !== "ready";
+    questionContent.setAttribute("aria-busy", String(state === "loading"));
+    retryLoadButton.hidden = state !== "error";
+}
 
-fetch("level" + level + ".json")
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (questions) {
+function showMessage(message) {
+    questionText.textContent = message;
+    updateQuestionLayout({ question: message });
+    hideReportQuestionLink();
+    detailButton.hidden = true;
+    detailPanel.hidden = true;
+    detailButton.setAttribute("aria-expanded", "false");
+}
 
-        filteredQuestions =
-            questions.filter(function (question) {
-                return Number(question.level) === level;
-            });
+function validateQuestions(questions) {
+    if (!Array.isArray(questions)) {
+        throw new Error("Question data must be an array.");
+    }
+    for (const question of questions) {
+        if (!question || question.level !== level ||
+            typeof question.question !== "string" || !question.question.trim()) {
+            throw new Error("Invalid question or mismatched level in question data.");
+        }
+        if (question.detail !== undefined) {
+            const detail = question.detail;
+            if (!detail || typeof detail !== "object" || Array.isArray(detail) ||
+                (detail.text !== undefined && typeof detail.text !== "string") ||
+                (detail.sources !== undefined && !Array.isArray(detail.sources))) {
+                throw new Error("Invalid question detail.");
+            }
+            for (const source of detail.sources ?? []) {
+                if (!source || typeof source.title !== "string" || !source.title.trim() ||
+                    typeof source.url !== "string" || !/^https?:$/.test(new URL(source.url).protocol)) {
+                    throw new Error("Invalid question source.");
+                }
+            }
+        }
+    }
+}
 
-        shuffle(filteredQuestions);
-        filteredQuestions =
-        filteredQuestions.slice(0, count);
-
+async function loadQuestions() {
+    if (state === "loading") return;
+    setState("loading");
+    showMessage("読み込み中...");
+    filteredQuestions = [];
+    currentQuestionIndex = 0;
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
+    try {
+        const response = await fetch("level" + level + ".json", { signal: controller.signal });
+        if (!response.ok) {
+            throw new Error("Question request failed: HTTP " + response.status);
+        }
+        const questions = await response.json();
+        validateQuestions(questions);
+        shuffle(questions);
+        filteredQuestions = questions.slice(0, count);
         if (filteredQuestions.length === 0) {
-            questionText.textContent =
-                "このLevelの質問はまだありません。";
-            questionContent.classList.remove("long-question");
-            questionContent.classList.remove("has-more-question-text");
-
-            nextQuestionButton.disabled = true;
-            skipQuestionButton.disabled = true;
-            hideReportQuestionLink();
-
+            showMessage("このLevelの質問はまだありません。レベルを選び直してください。");
+            setState("empty");
             return;
         }
-
         showQuestion();
-    });
+        setState("ready");
+    } catch (error) {
+        console.error("Omoi: 質問の読み込みに失敗しました。", error);
+        showMessage(controller.signal.aborted
+            ? "読み込みに時間がかかっています。接続を確認して再試行してください。"
+            : "質問を読み込めませんでした。接続を確認して再試行してください。");
+        setState("error");
+    } finally {
+        clearTimeout(timeout);
+    }
+}
+
+retryLoadButton.addEventListener("click", loadQuestions);
+if (!["1", "2", "3", "4"].includes(params.get("level")) ||
+    !["5", "10", "30", "60"].includes(params.get("count")) ||
+    params.getAll("level").length !== 1 || params.getAll("count").length !== 1) {
+    setState("invalid");
+    showMessage("質問の条件が正しくありません。「レベルを変える」から選び直してください。");
+} else {
+    levelDisplay.textContent = "Level " + level;
+    loadQuestions();
+}
 
 
 function shuffle(array) {
@@ -100,6 +158,7 @@ function showQuestion() {
     // 前の質問の状態をリセット
     detailButton.hidden = true;
     detailPanel.hidden = true;
+    detailButton.setAttribute("aria-expanded", "false");
     sourceSection.hidden = true;
 
     detailText.textContent = "";
@@ -265,9 +324,11 @@ function hideReportQuestionLink() {
 
 
 function goToNextQuestion() {
+    if (state !== "ready") return;
     currentQuestionIndex++;
 
     if (currentQuestionIndex >= filteredQuestions.length) {
+        setState("finished");
         window.location.href =
     "finish.html?level=" +
     level +
@@ -292,9 +353,12 @@ skipQuestionButton.addEventListener("click", function () {
 
 detailButton.addEventListener("click", function () {
     detailPanel.hidden = false;
+    detailButton.setAttribute("aria-expanded", "true");
 });
 
 
 closeDetailButton.addEventListener("click", function () {
     detailPanel.hidden = true;
+    detailButton.setAttribute("aria-expanded", "false");
+    detailButton.focus();
 });

@@ -112,6 +112,16 @@ Omoiでは、特に次のような貢献を歓迎します。
 
 ビルドツールやバックエンドを必要とせず、静的サイトとして動作します。
 
+検証は次のコマンドで実行できます。GitHub Actionsでもpush・Pull Request時に同じ検証を実行します。
+
+```sh
+node --test tools/question-flow.test.mjs
+node tools/verify-question-dataset.mjs --enforce-quality-targets --summary
+node tools/verify-seo.mjs
+```
+
+画面ロジックの回帰テストはDOMと通信を模擬します。レイアウトや実ブラウザの操作確認は別途行ってください。
+
 ## License
 
 - ソースコード: [MIT License](LICENSE)
