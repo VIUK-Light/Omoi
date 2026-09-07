@@ -23,8 +23,18 @@ body {
 }
 
 .select-content h2 {
-    margin: 48px 0 28px;
-    font-size: 24px;
+    margin: 32px 0 20px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.select-content h2:first-child {
+    margin-top: 16px;
+}
+
+.level-list {
+    display: grid;
+    gap: 10px;
 }
 
 .level-list input {
@@ -36,8 +46,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 16px;
 
-    padding: 18px 20px;
+    padding: 14px 16px;
 
     border: 1.5px solid #111;
     border-radius: 14px;
@@ -51,14 +62,17 @@ body {
 }
 
 .level-card div > span {
-    margin-top: 6px;
+    margin-top: 4px;
     font-size: 13px;
+    line-height: 1.5;
     color: #666;
 }
 
 .radio-mark {
-    width: 18px;
-    height: 18px;
+    box-sizing: border-box;
+    flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
 
     border: 2px solid #111;
     border-radius: 50%;

@@ -247,3 +247,27 @@ body {
     font: inherit;
     cursor: pointer;
 }
+
+#closeDetailButton {
+    appearance: none;
+    min-height: 44px;
+    padding: 10px 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #111111;
+    font: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+#closeDetailButton:hover {
+    background: #f5f5f5;
+    border-color: #999999;
+}
+
+#closeDetailButton:focus-visible {
+    outline: 2px solid #111111;
+    outline-offset: 3px;
+}
