@@ -17,7 +17,7 @@
         </a>
 
         <!-- 質問 -->
-        <div class="question-content">
+        <div class="question-content" aria-live="polite" aria-atomic="true" aria-busy="true">
             <p id="levelDisplay" class="level-label"></p>
 
             <h1 id="questionText">
@@ -28,11 +28,14 @@
         <!-- 質問の操作 -->
         <div class="question-footer">
 
+            <button type="button" id="retryLoadButton" hidden>再試行する</button>
+
             <div class="question-actions">
                 <button
                     type="button"
                     id="skipQuestionButton"
                     class="skip-button"
+                    disabled
                 >
                     今回は話さない
                 </button>
@@ -41,6 +44,7 @@
                     type="button"
                     id="nextQuestionButton"
                     class="next-button"
+                    disabled
                 >
                     次の質問
                 </button>
@@ -63,6 +67,8 @@
             <button
                 type="button"
                 id="detailButton"
+                aria-expanded="false"
+                aria-controls="detailPanel"
                 class="detail-button"
                 hidden
             >
