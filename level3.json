@@ -2,7 +2,7 @@
   {
     "id": "gender-relations-001",
     "category": "gender_sexuality_and_identity",
-    "question": "ハラスメントを恐れて異性に近づかないのは、行き過ぎだと思う？",
+    "question": "ハラスメントだと受け取られることを恐れ、異性の同僚とは仕事以外の会話をしない人がいる。その距離の取り方をどう思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -14,7 +14,7 @@
   {
     "id": "gender-identity-001",
     "category": "gender_sexuality_and_identity",
-    "question": "トランス女性は女性専用スペースを利用できるべき？",
+    "question": "女性用更衣室をトランス女性が利用することについて、利用機会と、着替える際のプライバシーを踏まえ、どのような条件や設備なら認められると思う？ 認められないと考える場合、その理由は？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -41,7 +41,7 @@
   {
     "id": "feminism-001",
     "category": "gender_sexuality_and_identity",
-    "question": "男女平等のための女性優遇策は、どこまで認められると思う？",
+    "question": "女性が少ない分野への進学を支援するため、女性だけが応募できる奨学金を設けることは公平だと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -68,7 +68,7 @@
   {
     "id": "family-law-002",
     "category": "family_and_care",
-    "question": "養育費は、どこまで強制してでも払わせるべきだと思う？",
+    "question": "支払う能力があるのに養育費を払わない人に対し、給与などから強制的に支払いを確保する仕組みは、どこまで認めるべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -179,7 +179,7 @@
   {
     "id": "relationship-003",
     "category": "relationships_and_communication",
-    "question": "一方がもう一方に経済的に依存する恋愛関係は、不健全だと思う？",
+    "question": "恋人同士で、一方がもう一方の生活費を支えている。二人が納得している場合でも、経済的な依存が関係の問題になるとしたら、どんなときだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -191,7 +191,7 @@
   {
     "id": "society-001",
     "category": "society_public_policy_and_environment",
-    "question": "女性天皇・女系天皇を認めるべきだと思う？",
+    "question": "天皇本人が女性であることと、母方を通じて皇統につながる人が天皇になることについて、それぞれどう考える？ 二つで判断が違うなら、その理由は？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -387,7 +387,7 @@
   {
     "id": "justice-002",
     "category": "justice_safety_and_crime",
-    "question": "少年犯罪は、大人より軽く扱うべきだと思う？",
+    "question": "同じ重大な犯罪をした場合でも、未成年者への処遇は、大人への処罰より更生を重視するべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -417,7 +417,7 @@
   {
     "id": "justice-004",
     "category": "justice_safety_and_crime",
-    "question": "犯罪者の更生と被害者感情、どちらを優先するべき？",
+    "question": "更生が進んだと判断された受刑者の仮釈放を、被害を受けた人が強く望んでいない。その意向を、仮釈放の判断でどこまで重く見るべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -432,7 +432,7 @@
   {
     "id": "life-002",
     "category": "ethics_and_decision_making",
-    "question": "本人が強く望むなら、安楽死を認めるべきだと思う？",
+    "question": "回復の見込みがない病気で耐え難い苦痛がある人が、十分な説明を受けた上で繰り返し望んでいる場合、医師が死をもたらす薬を投与することを認めるべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -546,7 +546,7 @@
   {
     "id": "education-002",
     "category": "school_and_youth",
-    "question": "奨学金は、卒業後に返すのが当たり前だと思う？",
+    "question": "学費を貸し付けるタイプの奨学金は、卒業後の収入にかかわらず、借りた額を返す仕組みでよいと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -762,7 +762,7 @@
   {
     "id": "immigration-003",
     "category": "society_public_policy_and_environment",
-    "question": "外国から来た人は、その国の文化や習慣に合わせるべきだと思う？",
+    "question": "別の国から移り住んだ人が、法律には反しない自分の国の生活習慣を続けたいと言っている。地域になじむためには、どこまで周囲の習慣に合わせるべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -906,7 +906,7 @@
   {
     "id": "sports-001",
     "category": "school_and_youth",
-    "question": "トランス女性は女子スポーツに参加できるべきだと思う？",
+    "question": "成人の競泳大会で、トランス女性の女子部門への参加条件を決めるなら、参加の機会と公平な競争をどのように両立させるべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -981,7 +981,7 @@
   {
     "id": "sex-education-003",
     "category": "gender_sexuality_and_identity",
-    "question": "性教育は、男女で同じ内容を一緒に受けるべき？",
+    "question": "学校の性教育を全員同じ教室で行う場合と、一部を少人数のグループで行う場合では、どんな学びやすさ・話しにくさがあると思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1017,7 +1017,7 @@
   {
     "id": "menstruation-001",
     "category": "gender_sexuality_and_identity",
-    "question": "男子に生理痛体験を義務で受けさせるのはあり？",
+    "question": "生理痛への理解を目的に、機器で腹部に痛みの刺激を与える模擬体験を学校で行うとする。実際の生理の症状すべてを再現するものではないが、男子に参加を義務付けることをどう思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1029,7 +1029,7 @@
   {
     "id": "menstruation-002",
     "category": "gender_sexuality_and_identity",
-    "question": "生理休暇を女性だけに認めるのは公平だと思う？",
+    "question": "生理で働くことが難しいときの休暇と、他の体調不良で働くことが難しいときの休暇は、同じ仕組みにする方が公平だと思う？ 別の仕組みが必要だと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1077,7 +1077,7 @@
   {
     "id": "reproductive-health-001",
     "category": "gender_sexuality_and_identity",
-    "question": "未成年が保護者に知られず、性に関する医療を受けられるべき？",
+    "question": "高校生が性感染症の検査を受けたいとき、保護者に知らせず受けられる仕組みを認めるべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1122,7 +1122,7 @@
   {
     "id": "reproductive-health-004",
     "category": "gender_sexuality_and_identity",
-    "question": "妊娠した本人の意思と、胎児の生命がぶつかったとき、どちらを優先するべき？",
+    "question": "妊娠した本人が妊娠の継続を望まない場合、本人の意思と胎児の生命への配慮を、制度としてどう扱うべきだと思う？ 妊娠の時期や本人の健康状態によって判断は変わる？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1190,7 +1190,7 @@
     "topic": "consent_under_pressure",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "『断ったら嫌われるかも』と思ってYESと言った場合、それは本当に自由な同意だと思う？",
+    "question": "性的な行為を求められ、「断ったら嫌われるかも」と思ってYESと言った人がいる。自由に選べたかを考えるには、どんな状況を確認する必要があると思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1206,7 +1206,7 @@
     "topic": "peer_pressure",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "周りから『まだ経験ないの？』と言われて決断した場合、それは本人だけの選択だと思う？",
+    "question": "周りから「まだ性的な経験がないの？」と言われたことをきっかけに、性的な関係を持つと決めた人がいる。その選択に、周囲の圧力はどの程度影響していると思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1221,7 +1221,7 @@
     "topic": "contraception_communication",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "避妊について話し合えない関係は、そもそも対等な関係だと言える？",
+    "question": "避妊について話し合えない恋人同士がいる。そのことから二人の関係について何が分かり、何はまだ分からないと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1251,7 +1251,7 @@
     "topic": "age_power_difference",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "本人が『好きだから自分で決めた』と言っていても、相手との年齢や立場の差は考慮するべき？",
+    "question": "年齢や立場に差がある相手との性的な行為について、本人が「好きだから自分で決めた」と話している。自由な同意だったかを考えるとき、その差をどう扱うべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1266,7 +1266,7 @@
     "topic": "pregnancy_disclosure",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "妊娠したかもしれない生徒が親に相談できないとき、それは本人の問題だけだと思う？",
+    "question": "妊娠したかもしれない生徒が親に相談できないとき、本人の気持ち、家庭の関係、相談先の選びやすさは、それぞれどう影響していると思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1313,7 +1313,7 @@
     "topic": "equal_treatment",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "妊娠した生徒だけ出席や課題の条件を変えることは、『不公平』だと思う？",
+    "question": "妊娠した生徒が通院のため授業を欠席する場合、同じ学習目標に沿った別の課題で出席を補うことを認めるのは、公平だと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1391,7 +1391,7 @@
     "topic": "friend_confidentiality",
     "category": "school_and_youth",
     "perspective": "actor",
-    "question": "友達から妊娠について『誰にも言わないで』と相談されたら、秘密を守ることが本当に友達のためだと思う？",
+    "question": "友達から「妊娠したかもしれない。誰にも言わないで」と相談された。本人の希望を尊重しながら必要な支援につなぐには、誰に何を相談するかをどう決めたい？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1454,7 +1454,7 @@
     "topic": "male_responsibility_visibility",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "妊娠した側は学校生活の変化が周囲に見えやすいのに、相手側の責任は見えにくい。この差をどう考える？",
+    "question": "妊娠した生徒は通院で欠席が増え、相手の生徒は普段どおり登校している。周囲には妊娠した側の変化ばかりが見えるとしたら、二人の責任や必要な支援をどう考える？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1469,7 +1469,7 @@
     "topic": "education_vs_parenthood",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "妊娠した生徒が進学を諦めることを『現実的な判断』と考えるのは、本人の選択を狭めていない？",
+    "question": "妊娠した生徒が進学を諦めるか迷っている。「現実的な判断」を一緒に考えるなら、本人の希望と、利用できる支援をどう確かめるべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1531,7 +1531,7 @@
     "topic": "stigma",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "若くして妊娠した人への『将来が終わった』という見方は、本人を守る言葉だと思う？",
+    "question": "若くして妊娠した人に「将来が終わった」と言うことは、その人の将来の選択にどんな影響を与えると思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1546,7 +1546,7 @@
     "topic": "support_without_endorsement",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "本人の過去の判断には賛成できなくても、その後の支援には賛成できる？",
+    "question": "妊娠した生徒が過去に避妊をしなかった判断には賛成できなくても、その生徒が学び続けるための支援には賛成できる？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1561,7 +1561,7 @@
     "topic": "responsibility_and_support",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "『本人にも責任がある』と考えることと、『だから支援を減らす』ことは同じだと思う？",
+    "question": "若い人の妊娠について、本人の判断にも責任があると考える場合、その考えは、学業や生活への支援をどこまで行うかという判断に影響する？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1576,7 +1576,7 @@
     "topic": "jealousy_close_friend",
     "category": "relationships_and_communication",
     "perspective": "observer",
-    "question": "恋人に異性の親友がいることを不安に感じるのは、束縛につながる嫉妬だと思う？",
+    "question": "恋人に異性の親友がいて不安を感じたとき、気持ちを伝えることと、相手の交友関係を制限することの境界はどこだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1636,7 +1636,7 @@
     "topic": "jealousy_double_standard",
     "category": "relationships_and_communication",
     "perspective": "observer",
-    "question": "自分には異性の友人がいても、恋人の異性の友人には嫉妬する。この感情は不公平だと思う？",
+    "question": "自分は異性の友人と付き合いを続けたいのに、恋人には異性の友人との交流を控えてほしいと求めるのは公平だと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1880,7 +1880,7 @@
     "topic": "gender_physical_tasks",
     "category": "gender_sexuality_and_identity",
     "perspective": "affected",
-    "question": "学校で重い荷物を男子に頼むことは、体格差への合理的な配慮？それとも性別による役割分担？",
+    "question": "学校で重い荷物を運ぶ人を決めるとき、性別、個人の体力、本人の希望をそれぞれどのように考慮するべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -2003,7 +2003,7 @@
     "topic": "gender_workplace_quota",
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
-    "question": "男女比を改善するために、採用や昇進で性別を考慮することは、差別を減らすための差別にならないと思う？",
+    "question": "昇進する人の男女比を改善するため、同程度の実績の候補者なら人数の少ない性別を優先することは、公平だと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -2039,7 +2039,7 @@
     "topic": "gender_appearance_pressure",
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
-    "question": "男性と女性では『見た目を整えるべき』というプレッシャーの種類が違うと思う？どちらか一方だけを問題として扱うのは公平？",
+    "question": "男性と女性では、見た目を整えるよう求められる場面や内容に、どんな共通点と違いがあると思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -2187,7 +2187,7 @@
     "topic": "unpaid_work_and_fairness",
     "category": "ethics_and_decision_making",
     "perspective": "observer",
-    "question": "報酬のない共同活動で、よく働く人とほとんど何もしない人がいても、無償なのだからサボる人を責めるべきではないと思う？ それとも、参加すると決めた以上は、お金をもらっていなくても同じように責任を負うべき？",
+    "question": "報酬のない共同活動で、引き受けた役割を果たさない人がいる。その人の事情も確認した上で、無償の活動ではどこまで責任を求めるべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {

@@ -21,7 +21,7 @@
     "topic": "misattributed_parentage",
     "category": "relationships_and_communication",
     "perspective": "decision_maker",
-    "question": "托卵されたと分かったら、子どもを育て続ける？",
+    "question": "自分と血のつながった子どもだと信じて育ててきたが、実際には配偶者と別の人との子どもで、配偶者はそれを知りながら隠していたと分かった。あなたは、その子を育て続けたいと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -99,7 +99,7 @@
     "topic": "post_divorce_parenting",
     "category": "family_and_care",
     "perspective": "decision_maker",
-    "question": "自分が子どもと暮らす側なら、嫌いになった元配偶者にも子どもを会わせる？",
+    "question": "離婚後、子どもはあなたと暮らしている。元配偶者への気持ちは冷めているが、安全上の懸念はなく、子どもは会いたがっている。親子の交流に、あなたはどう関わる？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -114,7 +114,7 @@
     "topic": "unequal_housework",
     "category": "family_and_care",
     "perspective": "actor",
-    "question": "家事や育児のほとんどを自分だけがやることになったら、どこまで耐えられる？",
+    "question": "家事や育児のほとんどを自分だけが担うようになった。どの段階で分担を変えてほしいと伝える？ 相手が応じない場合はどうする？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -145,7 +145,7 @@
     "topic": "maternity_career",
     "category": "work_and_economy",
     "perspective": "affected",
-    "question": "出産を理由に、やりたかった仕事や昇進を失ったら納得できる？",
+    "question": "出産後も同じ仕事を続けたいと伝えていたのに、会社から本人との相談なく担当や昇進の候補を外された。あなたなら会社に何を求める？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -342,7 +342,7 @@
     "topic": "child_support",
     "category": "family_and_care",
     "perspective": "actor",
-    "question": "子どもに会わせてもらえなくても、養育費を払い続ける？",
+    "question": "離婚後、子どもに会えない状態が続いているが、養育費を支払う義務はある。その義務と、会えないことへの気持ちを、あなたはどう分けて考える？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -357,7 +357,7 @@
     "topic": "family_care",
     "category": "family_and_care",
     "perspective": "affected",
-    "question": "親の介護で自分の仕事を続けられなくなったら、仕事を辞める？",
+    "question": "親の介護で、今の働き方を続けるのが難しくなった。仕事を辞めるか、働き方や介護の分担を変えるかを、何を基準に決める？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -559,7 +559,7 @@
     "topic": "consent_under_pressure",
     "category": "school_and_youth",
     "perspective": "actor",
-    "question": "あなたは中学生。好きな相手から性的な関係を求められたけど、まだ迷っている。断ったら嫌われそうでも、NOと言える？",
+    "question": "あなたは中学生。好きな相手から性的な関係を求められたけれど、まだ迷っている。断ったら嫌われそうで怖いとき、自分の気持ちを伝えるためにどんな支えがほしい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -576,7 +576,7 @@
     "topic": "peer_pressure",
     "category": "school_and_youth",
     "perspective": "actor",
-    "question": "あなたは中学生。周りから『まだ異性との性的な経験ないの？』と言われ、自分だけ遅れている気がしてきた。それでも自分のペースを守れる？",
+    "question": "あなたは中学生。周りから「まだ性的な経験がないの？」と言われ、自分だけ遅れている気がしてきた。周りの意見と自分の気持ちが違うとき、何を基準に決めたい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -592,7 +592,7 @@
     "topic": "contraception_communication",
     "category": "school_and_youth",
     "perspective": "actor",
-    "question": "あなたは高校生。避妊について話したいけど、『信用してないの？』と思われそうで言い出せない。それでも話せる？",
+    "question": "あなたは高校生。避妊について話したいが、相手から「信用していないの？」と思われそうで言い出せない。どんな伝え方や状況なら話しやすいと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -624,7 +624,7 @@
     "topic": "optimism_bias",
     "category": "school_and_youth",
     "perspective": "actor",
-    "question": "あなたは高校生。妊娠の可能性について知識はある。でも『自分たちは大丈夫』と思っている。知っているだけで十分だと思う？",
+    "question": "あなたは高校生。妊娠の可能性は知っているのに、「自分たちは大丈夫」と感じている。その感覚と知識が食い違うとき、どう判断する？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -688,7 +688,7 @@
     "topic": "partner_disappears",
     "category": "school_and_youth",
     "perspective": "actor",
-    "question": "あなたは高校生。妊娠を伝えた直後、相手から連絡が来なくなった。それでも一人で抱えようとする？",
+    "question": "あなたは高校生。妊娠を伝えた直後、相手から連絡が来なくなった。一人で抱えたい気持ちと、誰かに頼りたい気持ちがあるとしたら、次にどうしたい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -720,7 +720,7 @@
     "topic": "partner_fear",
     "category": "school_and_youth",
     "perspective": "actor",
-    "question": "あなたは高校生。交際相手から妊娠を伝えられた。怖くて逃げたくなったとき、それでも向き合える？",
+    "question": "あなたは高校生。交際相手から妊娠を伝えられ、怖くて逃げたくなった。その気持ちがある中で、まずどんな行動を取る？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -752,7 +752,7 @@
     "topic": "partner_family_denial",
     "category": "school_and_youth",
     "perspective": "decision_maker",
-    "question": "あなたは高校生。相手本人は話し合いたいと言っているのに、相手の親から『もう会わないでほしい』と言われた。誰の意思を重く考える？",
+    "question": "あなたは高校生で、交際相手の妊娠について二人で話し合いたいと思っている。相手本人も望んでいるが、相手の親は「もう会わないでほしい」と言う。あなたなら、話し合いをどう進める？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -831,7 +831,7 @@
     "topic": "parent_decision_pressure",
     "category": "school_and_youth",
     "perspective": "decision_maker",
-    "question": "あなたは高校生。妊娠について親から『あなたのためだから』と強く結論を求められている。親が本気で心配していると分かっていても、自分の意思を押し通せる？",
+    "question": "あなたは妊娠した高校生。妊娠を続けるかについて親から「あなたのためだから」と強く結論を求められている。親の心配と自分の意思が違うとき、どう伝えたい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -847,7 +847,7 @@
     "topic": "different_partner_decision",
     "category": "school_and_youth",
     "perspective": "decision_maker",
-    "question": "あなたは高校生。妊娠について、自分と相手が望んでいることが全く違う。相手の人生にも影響すると分かっていて、自分の意思をどこまで優先する？",
+    "question": "あなたは妊娠した高校生。妊娠を続けるかについて、自分と交際相手の希望が違っている。自分の身体と人生に関わる決定に、相手の希望をどこまで取り入れる？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -911,7 +911,7 @@
     "topic": "classmate_accommodation",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "あなたは高校生。妊娠した同級生だけ出席や課題で特別な配慮を受けている。自分の負担が増えても、それを公平だと思える？",
+    "question": "あなたは高校生。妊娠した同級生が通院で共同課題を休み、他のメンバーの作業が増えている。同級生が学び続けることと、他の人の負担をどう両立させたい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -991,7 +991,7 @@
     "topic": "partner_future_plan",
     "category": "school_and_youth",
     "perspective": "actor",
-    "question": "あなたは高校生。交際相手の妊娠によって、自分が目指していた進学や将来にも影響が出そうだ。それでも『自分の人生まで変える必要はない』と言える？",
+    "question": "あなたは高校生。交際相手の妊娠によって、自分の進学や将来の計画にも影響が出そうだ。相手と担う責任と、自分が守りたい将来をどう考える？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1039,7 +1039,7 @@
     "topic": "partner_friend_knows",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "あなたは高校生。友達が交際相手の妊娠を知ったあと、連絡を無視して逃げようとしている。友達を裏切ることになっても、止める？",
+    "question": "あなたは高校生。友達が交際相手の妊娠を知った後、連絡を無視している。関われば「裏切られた」と受け取られるかもしれない。それでも友達に働きかける？ どんな方法を選ぶ？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1071,7 +1071,7 @@
     "topic": "affected_parent",
     "category": "school_and_youth",
     "perspective": "decision_maker",
-    "question": "あなたの高校生の子どもが妊娠し、相手は連絡を絶っている。相手側への怒りより先に、自分の子どものこれからを考えられる？",
+    "question": "あなたの高校生の子どもが妊娠し、相手は連絡を絶っている。相手への怒りを感じる中で、子どものこれからのために何を優先して行動する？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1087,7 +1087,7 @@
     "topic": "teacher_confidentiality",
     "category": "school_and_youth",
     "perspective": "decision_maker",
-    "question": "あなたが信頼している先生だとして、生徒から妊娠について相談され『他の先生や親にはまだ言わないで』と頼まれたら、その信頼をどこまで守る？",
+    "question": "あなたは、生徒から信頼されている先生。妊娠について相談した生徒から「他の先生や親にはまだ言わないで」と頼まれた。本人の希望と必要な支援を踏まえ、誰に何を共有するかをどう決める？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1119,7 +1119,7 @@
     "topic": "self_blame",
     "category": "school_and_youth",
     "perspective": "actor",
-    "question": "あなたは高校生。妊娠して『全部自分のせいだ』と思っている。自分の判断に責任があることと、自分自身を責め続けることは同じだと思う？",
+    "question": "あなたは妊娠した高校生で、「全部自分のせいだ」と感じている。出来事にどう向き合うかを考えることと、自分を責め続けることは、どう違うと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1179,7 +1179,7 @@
     "topic": "disabled_child_independence",
     "category": "health_and_disability",
     "perspective": "decision_maker",
-    "question": "障害のある自分の子どもが『一人暮らしをしたい』と言っている。失敗すれば生活そのものが成り立たなくなる可能性があっても、本人の挑戦を止めずにいられる？",
+    "question": "障害のある自分の子どもが一人暮らしを望んでいるが、必要な支援が足りず、生活が立ち行かなくなる心配がある。本人の希望を尊重しながら、何が整えば一人暮らしを始められると考える？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1204,7 +1204,7 @@
     "topic": "accommodation_peer_cost",
     "category": "health_and_disability",
     "perspective": "observer",
-    "question": "障害のある同級生も参加できるよう、あなたが楽しみにしていた学校行事の内容が大きく変わった。それでも、その変更は必要だったと思える？",
+    "question": "障害のある同級生も参加できるよう、楽しみにしていた学校行事の内容を変更する案が出た。全員が参加できることと、行事で楽しみにしていたことを、どう両立させたい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1255,7 +1255,7 @@
     "topic": "genetic_risk_parenthood",
     "category": "health_and_disability",
     "perspective": "affected",
-    "question": "あなたには遺伝する可能性の高い障害がある。自分の人生には十分価値があると思っている一方、将来の子どもが同じ苦労をする可能性も知っている。それでも子どもを持ちたいという気持ちは変わらない？",
+    "question": "あなたには、子どもにも遺伝する可能性の高い障害がある。子どもを持ちたい気持ちがある一方、将来その子に必要になる支援が気になっている。どんな情報や支えを踏まえて、自分の希望を考えたい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1270,7 +1270,7 @@
     "topic": "prenatal_diagnosis",
     "category": "health_and_disability",
     "perspective": "decision_maker",
-    "question": "生まれてくる自分の子どもに、将来大きな支援が必要になる可能性が高いと分かった。自分たちの仕事や生活、きょうだいの人生まで大きく変わると知っても、同じ気持ちで将来を考えられる？",
+    "question": "生まれてくる自分の子どもに、大きな支援が必要になる可能性が高いと分かった。今後の仕事や暮らしを考えるとき、その子への支援と、家族それぞれの希望をどう調整したい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1298,7 +1298,7 @@
     "topic": "family_poverty_education",
     "category": "family_and_care",
     "perspective": "affected",
-    "question": "あなたは高校生。家計がかなり苦しく、自分が進学を諦めて働けば、家族は生活を立て直せる。でもあなたは大学に行きたい。家族より自分の将来を優先できる？",
+    "question": "あなたは高校生。家計が苦しく、自分が働けば家族の助けになるが、大学にも進みたい。家族の生活と進学の希望について、どんな選択肢を調べ、何を優先して決めたい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1310,7 +1310,7 @@
     "topic": "young_carer",
     "category": "family_and_care",
     "perspective": "affected",
-    "question": "あなたは中学生。自分が弟や妹の世話をしなければ、親は仕事を続けられない。でも友達と遊んだり部活にも行きたい。家族を手伝わずに自分の時間を選べる？",
+    "question": "あなたは中学生。弟や妹の世話を担っていて、部活や友達との時間が取れない。親の仕事にも関わる中で、自分が担う世話の範囲について、どんな希望を伝えたい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1350,7 +1350,7 @@
     "topic": "bullying_perpetrator_child",
     "category": "family_and_care",
     "perspective": "decision_maker",
-    "question": "自分の子どもが、学校でいじめの加害側だったと分かった。子ども自身にも孤立や家庭での苦しさがあった。それでも被害を受けた側より先に、自分の子どもを守ろうとする？",
+    "question": "自分の子どもが学校でいじめの加害側だったと分かった。子ども自身も孤立して苦しんでいる。被害を止める対応と、自分の子どもへの支援を、親としてどう進める？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1389,7 +1389,7 @@
     "topic": "family_secret_child",
     "category": "family_and_care",
     "perspective": "affected",
-    "question": "あなたは中学生。家族から『このことを外で話したら家族が壊れる』と言われ、重大な秘密を預けられた。一人で抱えるのが苦しくても、家族を守るために黙っていられる？",
+    "question": "あなたは中学生。家族から「外で話したら家族が壊れる」と言われ、重大な秘密を抱えて苦しくなった。家族への思いと自分のつらさの間で、誰かに相談するかをどう考える？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1459,7 +1459,7 @@
     "topic": "home_care_affected",
     "category": "family_and_care",
     "perspective": "affected",
-    "question": "あなたは高齢者。最期まで自宅で暮らしたい。でもそのためには、娘が仕事を辞めて介護する必要がある。娘が『大丈夫』と言っていても、自宅を望み続けられる？",
+    "question": "あなたは高齢者。最期まで自宅で暮らしたいが、利用できる支援だけでは足りず、子どもが仕事を辞めて介護する必要がある。子どもが「大丈夫」と言う場合、あなたの希望と子どもの負担をどう考える？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1569,7 +1569,7 @@
     "topic": "elderly_independence_risk",
     "category": "family_and_care",
     "perspective": "affected",
-    "question": "あなたは高齢者。一人暮らしを続けたい。でも転倒などが起きたら、離れて暮らす子どもがすぐ駆けつけなければならない。自分の自由のために家族へその負担を求められる？",
+    "question": "あなたは高齢者。一人暮らしを続けたいが、転倒した際などに使える近隣の支援がなく、離れて暮らす子どもに駆けつけてもらう必要がある。この条件なら、一人暮らしの希望と子どもの負担をどう考える？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -1710,7 +1710,7 @@
     "topic": "divorce_regret",
     "category": "relationships_and_communication",
     "perspective": "affected",
-    "question": "離婚したあと、元配偶者が以前とは大きく変わったと知った。『あのとき別れなければよかった』と思っても、自分の決断を後悔せずにいられる？",
+    "question": "離婚した後、元配偶者が以前とは大きく変わったと知り、「別れなければよかった」と感じた。その気持ちと、当時の自分が別れを選んだ理由を、どう受け止める？",
     "level": 4,
     "sensitivity": 3,
     "detail": {
@@ -1950,7 +1950,7 @@
     "topic": "past_secret",
     "category": "relationships_and_communication",
     "perspective": "affected",
-    "question": "長年付き合ってきた恋人に、今まで一度も話していない重大な過去がある。話せば関係が壊れる可能性があるとしても、結婚前には伝えるべきだと思う？",
+    "question": "長年付き合ってきた恋人に、過去の交際で相手を裏切ったことを話していない。今は同じことを繰り返さないと決めていても、結婚前には伝えるべきだと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2085,7 +2085,7 @@
     "topic": "values_parenting",
     "category": "relationships_and_communication",
     "perspective": "affected",
-    "question": "結婚相手とは仲が良い。でも子どもの叱り方や教育についてだけは根本的に考えが違う。まだ子どもがいなくても、その違いを結婚の判断材料にする？",
+    "question": "結婚を考えている相手とは仲が良いが、子どもの叱り方や教育については根本的に考えが違う。まだ子どもがいなくても、その違いを結婚の判断材料にする？",
     "level": 4,
     "sensitivity": 3,
     "detail": {
@@ -2229,7 +2229,7 @@
     "topic": "jealousy_without_reason",
     "category": "relationships_and_communication",
     "perspective": "affected",
-    "question": "恋人を疑う理由は何もない。それでも嫉妬や不安が消えないとしたら、恋人に安心させてもらう責任はどこまであると思う？",
+    "question": "恋人を疑う理由はないのに、嫉妬や不安が消えない。恋人には、あなたを安心させる責任がどこまであると思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2277,7 +2277,7 @@
     "topic": "secret_discovered_phone",
     "category": "relationships_and_communication",
     "perspective": "affected",
-    "question": "恋人のスマホを偶然見たことで、重大な秘密の存在に気づいた。勝手に見た自分にも問題があると分かっていても、恋人に説明を求める？",
+    "question": "恋人のスマホを無断で開き、重大な秘密を知ってしまった。無断で見たことへの責任と、知った秘密について説明を求めることを、どう分けて考える？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2313,7 +2313,7 @@
     "topic": "secret_family_debt",
     "category": "relationships_and_communication",
     "perspective": "affected",
-    "question": "結婚相手から『自分の家族に多額の援助を続けていることは黙っていてほしい』と言われた。そのお金が二人の将来にも影響するとして、相手の家族の事情として任せられる？",
+    "question": "結婚相手が、自分の家族へ多額の援助を続けていると打ち明け、「あなたの家族には話さないでほしい」と頼んできた。二人の生活設計にも影響する中で、あなたの家族には知らせないという希望を受け入れる？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2325,7 +2325,7 @@
     "topic": "secret_past_identity",
     "category": "relationships_and_communication",
     "perspective": "affected",
-    "question": "恋人には、今の生活からは想像できない重大な過去があり、それを何年も話していなかった。今の相手を十分知っているなら、過去を知らされなかったことを許せる？",
+    "question": "恋人が、過去の交際で相手を裏切ったことを何年も話していなかったと分かった。今のあなたには誠実に接しているとして、その過去と、伝えなかったことをどう受け止める？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2405,7 +2405,7 @@
     "topic": "secret_without_consequence",
     "category": "relationships_and_communication",
     "perspective": "actor",
-    "question": "過去にしたことを恋人に話しても、今の生活には何の実害もない。ただ、知れば相手は傷つく。それでも『恋人には全部正直であるべき』だと思う？",
+    "question": "過去にしたことを恋人に話しても、二人の健康や家計、今後の生活計画には影響しないとする。ただ、知れば相手は傷つくかもしれない。それでも、恋人にはすべて正直に話すべきだと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2478,7 +2478,7 @@
     "topic": "secret_truth_vs_peace",
     "category": "relationships_and_communication",
     "perspective": "affected",
-    "question": "今の関係が幸せでも、恋人が自分に一つ重大な秘密を隠していると確実に分かった。内容を知らないままなら今の幸せは続く。それでも真実を知りたい？",
+    "question": "恋人が重大な秘密を隠していると分かった。仮に、知らなければ今の幸せな暮らしは変わらず続くとしたら、それでも内容を確かめたい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2490,7 +2490,7 @@
     "topic": "dating_without_love_aftermath",
     "category": "relationships_and_communication",
     "perspective": "affected",
-    "question": "半年間付き合っていた恋人から、突然別れを告げられた。理由を聞くと、「告白されたとき、実はまだ好きではなかった。でも嫌いではなかったし、断って傷つけるのも嫌だった。一人でいるのも寂しかったし、付き合っていればそのうち好きになれると思った」と言われた。\n\nさらに、「一緒にいて楽しかったし、大切には思っていた。でも結局、恋人として好きだと言える気持ちにはならなかった」と打ち明けられた。\n\nあなたはその人のことを本気で好きだった。付き合っている間に言われた「好き」という言葉も、二人で過ごした時間も、本物だと思っていた。\n\nでも別れたあとになって、関係の始まりから二人の気持ちは同じではなかったと知った。\n\nもし最初から「まだ好きではない」と知っていたら、自分は付き合わなかったかもしれない。それでも相手が本当に「いつか好きになれるかもしれない」と思っていたなら、好きではないまま半年間付き合っていたことを許せる？",
+    "question": "半年間付き合った恋人から、別れ際に「最初は好きではなかったけれど、いつか好きになれると思っていた。大切には思っていたが、恋愛感情は育たなかった」と言われた。あなたは本気で好きで、交際中の「好き」という言葉も信じていた。相手に好きになろうとする気持ちがあったとしても、恋愛感情がないことを伝えず付き合い続けたことを許せる？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2508,7 +2508,7 @@
     "topic": "derogatory_label_double_standard",
     "category": "technology_media_and_privacy",
     "perspective": "observer",
-    "question": "「みいちゃん」は差別だと批判される一方、「チー牛」はネットミームとして流されることも多い。この違いは公平だと思う？",
+    "question": "一部の女性のことを「みいちゃん」と呼ぶことは差別だと批判される一方、一部の男性のことを「チー牛」と呼ぶことはネットミームとして流されることも多い。この違いは公平だと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2549,7 +2549,7 @@
     "topic": "parents_entitlement_label",
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
-    "question": "職場で、子どもの体調不良によって急に休む人がいる。そのたびに周囲の人が仕事を引き受けることになり、「また子持ち様か」「子どもがいる人だけ優遇されるのはおかしい」という不満が出始めた。実際に負担が増えている人が不満を持つのは当然かもしれない。一方で、子どもがいるというだけで「子持ち様」とまとめて呼べば、事情の違う親まで同じように扱うことになる。子育てへの配慮によって周囲に負担が生じているとき、「子持ち様」という言葉で批判するのは正当だと思う？",
+    "question": "子どもの体調不良で同僚が休み、あなたが仕事を引き受けることが続いている。その人を「子持ち様」と呼んで批判する人もいる。負担への不満を伝えるとき、本人への批判と職場の体制への批判をどう分けたい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2579,7 +2579,7 @@
     "topic": "elderly_label",
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
-    "question": "店で店員に強く怒鳴っている高齢者を見た人が、その様子をSNSに投稿し「こういう老害、本当に迷惑」と書いた。確かにその人の行動には問題があるかもしれない。でも、同じことを20代の人がしていたら「若害」とはあまり呼ばれない。問題のある高齢者を「老害」と呼ぶことは、その人の迷惑な行動への批判だから問題ないと思う？ それとも、年齢まで批判の理由に含めている時点で偏見だと思う？",
+    "question": "店員に怒鳴る高齢者を「老害」と呼ぶ投稿と、同じ行動の若者を「迷惑な客」と呼ぶ投稿を見た。行動への批判に年齢を表す言葉を加えることを、どう考える？",
     "level": 4,
     "sensitivity": 3,
     "detail": {
@@ -2594,7 +2594,7 @@
     "topic": "generation_stereotyping",
     "category": "gender_sexuality_and_identity",
     "perspective": "decision_maker",
-    "question": "あなたは会社の採用担当者。以前採用した若い社員が何人も短期間で辞めた経験から、上司から「最近のZ世代はすぐ辞める。多少能力が低くても30代以上を優先した方が安全だ」と言われた。採用には会社のお金も時間もかかるので、過去の経験からリスクを避けたい気持ちは理解できる。しかし、目の前の応募者が辞めるかどうかはまだ分からない。「Z世代はすぐ辞める」という傾向を理由に若い応募者を不利に扱うことは、合理的な採用判断だと思う？",
+    "question": "あなたは採用担当者。若い社員が何人か続けて辞めたため、上司が「Z世代はすぐ辞める」と考え、若い応募者を避けようとしている。その経験を今の応募者の評価に使うことは、どこまで妥当だと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2624,7 +2624,7 @@
     "topic": "parent_lottery",
     "category": "gender_sexuality_and_identity",
     "perspective": "affected",
-    "question": "ある人が「自分は親ガチャに外れた」と話している。家庭に十分なお金がなく、塾にも行けず、進学の選択肢も限られていたという。一方で別の人は、「親のせいにしても人生は変わらない」「同じような環境から成功した人もいる」と言う。生まれる家庭を選べない以上、人生の結果に家庭環境が大きく影響するのは事実かもしれない。それでも、うまくいかなかった理由を「親ガチャ」と表現するのは責任逃れだと思う？",
+    "question": "家庭の経済的な事情で進学先が限られた人が、「親ガチャに外れた」と話している。その表現は、自分では選べなかった条件を伝えるのに役立つと思う？ 今後の選択を考えるときには、どう影響すると思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2639,7 +2639,7 @@
     "topic": "introvert_extrovert_hierarchy",
     "category": "gender_sexuality_and_identity",
     "perspective": "affected",
-    "question": "あなたは学校で静かに過ごすことが多く、休み時間も数人の友達と話すか、一人でいることが多い。それを見たクラスメートから「陰キャだから人付き合い苦手そう」「こういう人って社会に出たら困りそう」と言われた。自分自身は今の生活に特に困っていない。それでも、友達が多く社交的な「陽キャ」の方が、学校や社会では評価されやすいと感じる。人と積極的に関わらない性格を、社会性が低いと評価するのは妥当だと思う？",
+    "question": "あなたは少人数の友達と過ごすことを好み、今の生活に困っていない。それだけで周囲から「社会に出て人と協力するのが苦手そう」と言われた。人付き合いの広さを、協力して働く力の判断に使ってよいと思う？",
     "level": 4,
     "sensitivity": 3,
     "detail": {
@@ -2685,7 +2685,7 @@
     "topic": "ai_schoolwork",
     "category": "school_and_youth",
     "perspective": "affected",
-    "question": "あなたは学校のレポートをほぼ自分で書いたが、文章を読みやすくするために生成AIで表現を直した。提出後、先生から「AIを使った課題は自分の実力とは言えない」と評価を下げられた。しかし、辞書や検索、文章校正ツールを使うことは認められている。生成AIを使ったというだけで評価を下げられるのは納得できる？",
+    "question": "学校のレポートで、自分で書いた文章の表現を生成AIで整えた。辞書や校正ツールは許可されていたが、生成AIのルールは示されていなかった。内容の理解を評価する課題で、提出後にAI利用を理由に減点されたら納得できる？",
     "level": 4,
     "sensitivity": 3,
     "detail": {
@@ -2724,7 +2724,7 @@
     "topic": "minimum_wage_business_closure",
     "category": "work_and_economy",
     "perspective": "decision_maker",
-    "question": "最低賃金を大きく上げれば、低い賃金で働く人の生活は改善する。しかし、あなたの町にある小さな飲食店の店主は「これ以上人件費が上がれば閉店するしかない」と話している。実際に店が減ったり、雇われる人数が少なくなったりしても、最低賃金はさらに上げるべきだと思う？",
+    "question": "最低賃金の引上げで収入が増える人がいる一方、あなたの町の店主は「人件費が増えると閉店せざるを得ない」と話している。仮に収入増と一部の雇用減の両方が起こるなら、引上げの幅や時期をどう決めるべきだと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2764,7 +2764,7 @@
     "topic": "pets_in_evacuation",
     "category": "society_public_policy_and_environment",
     "perspective": "affected",
-    "question": "大きな災害が起き、あなたはペットと一緒に避難所へ向かった。しかし、動物が苦手な人やアレルギーのある人もいるため「ペットは建物の中に入れない」と言われた。外は危険で、ペットを置いていくこともできない。避難所は、人間の安全や快適さを優先してペットの受け入れを断っても仕方ないと思う？",
+    "question": "災害でペットと避難したが、避難所には動物と人を分ける安全な場所がなく、同じ室内にはアレルギーのある人もいる。別の受入れ先へすぐ移動することも難しい。この間、避難所はペットをどこでどう受け入れるべきだと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2788,7 +2788,7 @@
     "topic": "accommodation_burden",
     "category": "health_and_disability",
     "perspective": "observer",
-    "question": "学校で、障害のある生徒だけテスト時間を長くしたり、課題の提出方法を変えたりする配慮が行われている。あなたは同じテストを短い時間で受けなければならず、「同じ点数として評価するのは不公平では」と感じた。必要な配慮だと分かっていても、自分より条件が有利に見える場合、それでも公平だと思える？",
+    "question": "同じ学習内容を評価するテストで、障害のある生徒には時間の延長や提出方法の変更が認められている。全員の結果を公平に評価できているかを考えるには、どんな条件を確かめたい？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2896,7 +2896,7 @@
     "topic": "medical_ai_override",
     "category": "health_and_disability",
     "perspective": "decision_maker",
-    "question": "あなたは医師で、患者の検査結果について自分では重大な病気の可能性は低いと考えている。しかし、病院が導入したAIは『高リスク』と判定した。AIは過去の成績では人間の医師よりわずかに高い精度を出しているが、なぜこの患者を高リスクと判断したのか詳しく説明できない。追加検査をすれば患者には負担と費用が生じ、何もしなければ病気を見逃す可能性が残る。自分の専門判断と説明できないAIの判断が食い違ったら、AIを優先する？",
+    "question": "あなたは医師。自分は重大な病気の可能性が低いと判断したが、AIは追加検査を勧めた。同様の患者を対象とした評価では、AIは見逃しが少ない一方、不要な追加検査も多かった。この患者への判断理由は説明できない。あなたなら何を確認して検査を決める？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2941,7 +2941,7 @@
     "topic": "facial_recognition_false_positive",
     "category": "technology_media_and_privacy",
     "perspective": "decision_maker",
-    "question": "重大事件の直後、街中の顔認証システムが一人の人物を容疑者と高い確率で一致すると判定した。本人は『自分ではない』と否定している。他の決定的な証拠はまだないが、警察がすぐ行動しなければ本人が移動してしまう可能性もある。システムは非常に高精度だが、過去に少数の誤認も起こしている。被害を広げないためなら、AIの一致判定だけでも一時的に強く行動を制限していいと思う？",
+    "question": "重大事件の直後、顔認証システムが一人を容疑者の候補として示した。本人は否定し、他の証拠はまだない。顔が似ている別人を候補にすることもあると分かっている。この段階で警察が取れる措置は、どこまでだと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -2971,7 +2971,7 @@
     "topic": "whistleblowing_confidential_information",
     "category": "ethics_and_decision_making",
     "perspective": "actor",
-    "question": "あなたは組織の内部で、法律には触れないものの、多くの人に大きな不利益を与えている重大な事実を知った。上司に報告しても改善されなかった。証拠を外部へ公開すれば問題を止められる可能性があるが、資料には関係のない社員や利用者の個人情報も含まれており、会社が大きな損害を受ければ何も知らなかった社員まで仕事を失う可能性がある。正式な手続きを破ってでも公開する？",
+    "question": "組織の中で、違法ではないが多くの人に不利益を与える事実を知った。上司に報告しても改善されない。資料には無関係な人の個人情報も含まれている。匿名化や限定した情報提供も検討できるなら、誰にどこまで知らせる方法を選ぶ？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -3007,7 +3007,7 @@
     "topic": "delayed_reporting",
     "category": "justice_safety_and_crime",
     "perspective": "observer",
-    "question": "ある人が「数年前に性暴力の被害を受けた」と訴えた。しかし、当時は警察にも周囲にも相談しておらず、相手とその後も普通に連絡を取っていた時期があったという。それを理由に「本当に被害ならもっと早く訴えるはず」「その後も関わっていたのはおかしい」と疑う人もいる。一方、被害を受けた人がすぐに説明したり関係を完全に断ったりするとは限らないという意見もある。被害申告が遅かったことを、証言の信用を下げる理由としてどこまで考えていいと思う？",
+    "question": "数年前の性暴力について申告した人が、当時は相談できず、相手と連絡を続けていた時期もあったと話している。相談の遅れや関係の継続だけでは被害の有無は決められない。この経緯を検討するとき、どんな事情を確かめる必要があると思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -3039,7 +3039,7 @@
     "topic": "acquaintance_assault_bias",
     "category": "justice_safety_and_crime",
     "perspective": "observer",
-    "question": "性暴力を訴えた人と、訴えられた相手は以前から親しく、二人で出かけたり好意を示したりしていたことが分かった。それを見て「そんな関係なら性犯罪とは考えにくい」という人もいる。しかし、以前の親密さが、その後のすべての行為への同意を意味するわけではないという考えもある。二人が以前どれほど親しかったかを、犯罪があったか判断する材料としてどこまで重く見る？",
+    "question": "性暴力の申告をした人と相手は、以前から親しい関係だった。過去の親密さは、問題となった行為への同意そのものではない。二人の関係を背景として考慮することと、同意があったと推測することは、どう区別するべきだと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -3071,7 +3071,7 @@
     "topic": "institutional_reputation",
     "category": "justice_safety_and_crime",
     "perspective": "decision_maker",
-    "question": "あなたは学校や会社の責任者で、所属する有力な人物について性犯罪の可能性を訴える相談を受けた。まだ事実は確認できていないが、公表すれば組織全体の信用が大きく落ち、多くの無関係な人にも影響が出る。一方、内部だけで調査している間に別の被害が起きれば、組織が問題を隠したことになる。十分な証拠が揃う前でも外部機関へ報告する？",
+    "question": "あなたは組織の責任者で、有力な所属者による性暴力の相談を受けた。まだ事実確認は終わっていない。広く公表することと、守秘に配慮して外部の専門機関へ相談することを分けるなら、外部への相談はどの段階で始める？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -3103,7 +3103,7 @@
     "topic": "false_accusation_vs_underreporting",
     "category": "justice_safety_and_crime",
     "perspective": "observer",
-    "question": "性犯罪について、『被害を訴える人をまず信じるべきだ』という考えと、『重大な告発だからこそ証拠が確認されるまでは判断すべきではない』という考えが衝突している。疑われることを恐れて被害を訴えられない人を減らす必要がある一方、誤った告発によって無実の人が重大な不利益を受ける可能性もゼロにはできない。社会として最初に置くべき基準は「信じること」と「疑いを残すこと」のどちらだと思う？",
+    "question": "性被害の相談を受けたとき、訴えを軽視せずに支援することと、訴えられた人を事実確認前に有罪扱いしないことを、どんな対応で両立できると思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -3135,7 +3135,7 @@
     "topic": "weak_evidence_and_reasonable_doubt",
     "category": "justice_safety_and_crime",
     "perspective": "decision_maker",
-    "question": "不同意性交の事件で、被害を訴える人と被告の説明が真っ向から食い違っている。二人がその場にいたこと自体は確認できるが、決定的な映像や第三者の証言はない。被害を訴える側の説明には大きな不自然さはなく、被告側の説明にも明確な矛盾はない。どちらかが嘘をついている可能性は高いが、外部から確実に判断する材料が足りない。あなたが判断する立場なら、重大な被害を見逃す危険と、無実の人を処罰する危険のどちらをより避けるべきだと思う？",
+    "question": "不同意性交の事件で、当事者の説明が食い違っている。どちらにも明確な矛盾はなく、食い違いの理由も分からない。あなたが刑事裁判で証拠を評価する立場なら、有罪の認定には合理的な疑いを残さない証明が必要な中で、何を確かめ、どんな推測を避けるべきだと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -3232,7 +3232,7 @@
     "topic": "school_interim_measures",
     "category": "justice_safety_and_crime",
     "perspective": "decision_maker",
-    "question": "学校で、一人の生徒が別の生徒から性犯罪の被害を受けたと訴えた。学校だけではすぐに事実を確認できない。二人を同じ教室に置けば、被害を訴えた生徒が学校へ来られなくなる可能性がある。しかし、告発された生徒だけを別室や自宅学習にすれば、事実確認前に実質的な処分を受けることになる。あなたが学校側なら、どちらか一人に大きな負担が集中することになっても、暫定的に二人を分離する？ その場合、どちらに環境を変えてもらう？",
+    "question": "学校で生徒同士の性被害の申告があり、事実確認中は同じ教室で過ごすことが難しい。双方の学習機会を保ちながら一時的に別の場所で学ぶとしたら、場所、期間、本人の希望をどう決めるべきだと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -3248,7 +3248,7 @@
     "topic": "multiple_accusations_without_independent_evidence",
     "category": "justice_safety_and_crime",
     "perspective": "observer",
-    "question": "一人の人物について、互いに面識がないとされる複数の人が似た性犯罪被害を訴えた。しかし、それぞれの訴えには決定的な客観的証拠がなく、個別に見れば事実を確定するのが難しい。『同じような訴えが何件も出るなら偶然とは考えにくい』という意見と、『証拠の弱い話を何件足しても、一件一件の証明にはならない』という意見がある。複数の独立した告発があるという事実そのものを、どこまで強い証拠として扱うべきだと思う？",
+    "question": "互いに面識がないとされる複数の人が、同じ人物から似た性被害を受けたと申告した。それぞれの申告だけでは事実を確定できず、申告同士が影響し合っていないかも未確認だ。複数の申告があることを判断材料にするには、何を確かめる必要があると思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -3280,7 +3280,7 @@
     "topic": "truth_justice_and_procedure",
     "category": "ethics_and_decision_making",
     "perspective": "observer",
-    "question": "ある性犯罪について、『実際には起きた可能性がかなり高い。しかし、適正な手続きで有罪と判断できるほどの証拠はない』という状況になった。被害を訴えた人にとっては、事実があったのに誰も責任を取らない結果になるかもしれない。一方、確信だけで処罰できる社会にすれば、無実の人を守る仕組みが弱くなる。真実らしさと、処罰するために必要な証明の水準が一致しないとき、社会はどちらを優先するべきだと思う？",
+    "question": "性犯罪が起きた可能性は高いと思われても、刑事裁判で有罪と認めるための証明には足りないとする。このような場合に処罰できないことを理由として、刑事裁判の証明の基準を緩めるべきだと思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
@@ -3292,7 +3292,7 @@
     "topic": "instinct_and_moral_responsibility",
     "category": "ethics_and_decision_making",
     "perspective": "observer",
-    "question": "もし浮気や托卵のような行動に、人間の進化や生殖に由来する傾向があると科学的に分かったとしても、それによって本人の倫理的な責任は少しでも軽くなると思う？ それとも、「なぜそうしたくなるか」と「してよいか」は完全に別の問題？",
+    "question": "仮に、浮気や、配偶者に別の人との子どもであることを隠す行動に、生物学的な傾向が関わると分かったとする。その原因が分かることで、本人に求める倫理的な責任は変わると思う？",
     "level": 4,
     "sensitivity": 4,
     "detail": {
