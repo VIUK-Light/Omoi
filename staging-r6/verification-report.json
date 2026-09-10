@@ -1,0 +1,171 @@
+{
+  "total": 246,
+  "byOrigLevel": {
+    "L3": 123,
+    "L4": 123
+  },
+  "byFinalLevel": {
+    "L3": 125,
+    "L4": 121
+  },
+  "byDecision": {
+    "allow": 239,
+    "conditional": 7,
+    "unknown": 0
+  },
+  "levelChanged": [
+    {
+      "reviewId": "13.03-L3",
+      "from": 3,
+      "to": 4
+    },
+    {
+      "reviewId": "20.01-L4",
+      "from": 4,
+      "to": 3
+    },
+    {
+      "reviewId": "20.02-L4",
+      "from": 4,
+      "to": 3
+    },
+    {
+      "reviewId": "20.03-L4",
+      "from": 4,
+      "to": 3
+    }
+  ],
+  "fixed": [
+    "01.02-L4",
+    "11.05-L3",
+    "13.03-L3",
+    "20.01-L4",
+    "20.02-L4",
+    "20.03-L4",
+    "20.05-L4"
+  ],
+  "dupIds": [],
+  "dupQuestionsExisting": [],
+  "stagingDupQ": [],
+  "l4perspProposed": {
+    "affected": 58,
+    "actor": 37,
+    "decision_maker": 26
+  },
+  "l4perspExisting": {
+    "decision_maker": 47,
+    "actor": 47,
+    "affected": 110,
+    "observer": 28
+  },
+  "l4perspCombined": {
+    "affected": 168,
+    "actor": 84,
+    "decision_maker": 73,
+    "observer": 28
+  },
+  "l4perspCombinedTotal": 353,
+  "l4perspCombinedRatio": {
+    "affected": 0.4759,
+    "actor": 0.238,
+    "decision_maker": 0.2068,
+    "observer": 0.0793
+  },
+  "categoryProposed": {
+    "society_public_policy_and_environment": 56,
+    "justice_safety_and_crime": 14,
+    "culture_religion_and_history": 26,
+    "work_and_economy": 18,
+    "health_and_disability": 14,
+    "technology_media_and_privacy": 38,
+    "family_and_care": 8,
+    "school_and_youth": 8,
+    "gender_sexuality_and_identity": 36,
+    "relationships_and_communication": 28
+  },
+  "perspectiveFix": {
+    "changed": [
+      {
+        "reviewId": "01.05-L4",
+        "from": "affected",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "02.01-L4",
+        "from": "actor",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "02.04-L4",
+        "from": "actor",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "05.02-L4",
+        "from": "actor",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "06.02-L4",
+        "from": "affected",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "06.04-L4",
+        "from": "affected",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "07.03-L4",
+        "from": "affected",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "08.02-L4",
+        "from": "affected",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "09.01-L4",
+        "from": "actor",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "09.02-L4",
+        "from": "affected",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "11.02-L4",
+        "from": "actor",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "11.05-L4",
+        "from": "actor",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "13.05-L4",
+        "from": "affected",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "16.01-L4",
+        "from": "affected",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "20.09-L4",
+        "from": "affected",
+        "to": "decision_maker"
+      },
+      {
+        "reviewId": "20.10-L4",
+        "from": "affected",
+        "to": "decision_maker"
+      }
+    ],
+    "reason": "decision_maker 20%割れ(16.1%)を解消するため、運営・予算・編集など他者への決定を伴うL4 16件をdecision_makerへ補正"
+  }
+}
