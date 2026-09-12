@@ -1236,7 +1236,7 @@
     "topic": "risk_perception",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "妊娠の可能性を学校で習っていても『自分は大丈夫』と思ってしまうのは、知識不足だと思う？",
+    "question": "妊娠の可能性を学校で習っていても「自分は大丈夫」と思ってしまうことを、知識不足だけで説明できると思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -3939,7 +3939,7 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "oshi_attachment_and_control",
-    "question": "気持ちが恋に近いとしても、そのことを理由に推しの交際や引退を止めてよいか。",
+    "question": "気持ちが恋に近いとしても、そのことを理由にファンが推しの交際や引退を止めてよいと思う？",
     "perspective": "observer",
     "detail": {
       "text": "恋に近い感情を持つことと、相手の交際や活動の継続について要求することは、別の行為です。感情の強さと、相手との間に合意された約束や責任も分けて考えられます。\n\n希望を伝えること、活動への対価を支払わないこと、相手の選択を拘束することの違いを検討します。感情をどう呼ぶかによって、どの範囲の要求まで正当化できると考えるかが論点です。"

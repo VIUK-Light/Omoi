@@ -186,7 +186,7 @@
     {
         "id": "contact-003",
         "category": "relationships_and_communication",
-        "question": "電話はどれくらいしたい？",
+        "question": "親しい人と電話するなら、どれくらいの頻度や、一回の長さが心地よい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "contact"
@@ -250,7 +250,7 @@
     {
         "id": "jealousy-005",
         "category": "relationships_and_communication",
-        "question": "恋人が、恋愛の相手になり得る人と親しく話していたら気になる？",
+        "question": "恋人が、あなたから見て恋人の恋愛対象になりそうな人と親しく話していたら気になる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "jealousy"
