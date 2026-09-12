@@ -30,7 +30,8 @@ const noindexPages = [
     "select.html",
     "question.html",
     "finish.html",
-    "warning.html"
+    "warning.html",
+    "warning3.html"
 ];
 
 const errors = [];

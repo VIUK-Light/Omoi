@@ -49,6 +49,13 @@ nextButton.addEventListener("click", function () {
         return;
     }
 
+    if (selectedLevel === "3") {
+        window.location.href =
+            "warning3.html?count=" + selectedCount;
+
+        return;
+    }
+
     window.location.href =
         "question.html?level=" +
         selectedLevel +
