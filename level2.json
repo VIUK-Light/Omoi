@@ -10,7 +10,7 @@
     {
         "id": "support-001",
         "category": "school_and_youth",
-        "question": "友達がルール違反していたら、注意する？黙る？",
+        "question": "友達がルールを破っているのを見たら、どう対応する？ その場で注意するか、別の方法を選ぶかは何で決める？",
         "level": 2,
         "sensitivity": 1,
         "topic": "support"
@@ -18,7 +18,7 @@
     {
         "id": "support-002",
         "category": "school_and_youth",
-        "question": "先生に相談するのは弱いことだと思う？",
+        "question": "友達との問題を先生に相談することに、ためらいを感じる？ 感じるなら、何が気になる？",
         "level": 2,
         "sensitivity": 1,
         "topic": "support"
@@ -34,7 +34,7 @@
     {
         "id": "support-004",
         "category": "school_and_youth",
-        "question": "注意してくれる友達は大切だと思う？",
+        "question": "友達からの注意をありがたいと思うのは、どんなとき？ 負担に感じるのはどんなとき？",
         "level": 2,
         "sensitivity": 1,
         "topic": "support"
@@ -50,7 +50,7 @@
     {
         "id": "support-006",
         "category": "school_and_youth",
-        "question": "ルールを守ることは大事だと思う？",
+        "question": "理由に納得できない学校のルールでも、守るべきだと思う？",
         "level": 2,
         "sensitivity": 1,
         "topic": "support"
@@ -74,7 +74,7 @@
     {
         "id": "bullying-003",
         "category": "school_and_youth",
-        "question": "「ノリだから」は理由になると思う？",
+        "question": "友達を傷つけることを言った人が「ノリだった」と説明したら、その説明をどこまで受け入れられる？",
         "level": 2,
         "sensitivity": 2,
         "topic": "bullying"
@@ -82,7 +82,7 @@
     {
         "id": "bullying-004",
         "category": "school_and_youth",
-        "question": "相手が笑っていたら、本当に平気だと思う？",
+        "question": "冗談を言われた相手が笑っていたら、嫌ではなかったと判断していいと思う？",
         "level": 2,
         "sensitivity": 2,
         "topic": "bullying"
@@ -90,7 +90,7 @@
     {
         "id": "bullying-005",
         "category": "school_and_youth",
-        "question": "みんなが笑っていても、本人が嫌そうならどう思う？",
+        "question": "一人をからかってみんなが笑っているけれど、からかわれた本人は嫌そうに見える。その場でどうする？",
         "level": 2,
         "sensitivity": 2,
         "topic": "bullying"
@@ -114,7 +114,7 @@
     {
         "id": "boundaries-002",
         "category": "relationships_and_communication",
-        "question": "下ネタはどのくらいの軽さまでなら笑える？",
+        "question": "性的な冗談について、笑える話題と避けたい話題はある？ 全般に話したくないという答えでもいい。",
         "level": 2,
         "sensitivity": 2,
         "topic": "boundaries"
@@ -122,7 +122,7 @@
     {
         "id": "boundaries-003",
         "category": "relationships_and_communication",
-        "question": "大人っぽい話は苦手？",
+        "question": "性に関する話題を友達と話すことに、抵抗はある？",
         "level": 2,
         "sensitivity": 2,
         "topic": "boundaries"
@@ -194,7 +194,7 @@
     {
         "id": "support-016",
         "category": "school_and_youth",
-        "question": "正しいことを言う人が空気を壊すと言われるのはどう思う？",
+        "question": "自分では正しいと思う意見を伝えた人が「空気を壊した」と言われたら、意見の内容と伝え方をどう分けて考える？",
         "level": 2,
         "sensitivity": 2,
         "topic": "support"
@@ -202,7 +202,7 @@
     {
         "id": "bullying-007",
         "category": "school_and_youth",
-        "question": "友達が誰かを悪く言っていたら、会話に入る？黙る？",
+        "question": "友達が誰かの悪口を言い始めたら、あなたはその場でどうする？",
         "level": 2,
         "sensitivity": 2,
         "topic": "bullying"
@@ -242,7 +242,7 @@
     {
         "id": "bullying-015",
         "category": "school_and_youth",
-        "question": "「それはやめた方がいいよ」と言える？",
+        "question": "友達が別の人をからかい、その人が嫌がっているように見える。「やめた方がいい」と伝えるとしたら、何が言いやすさや言いにくさにつながる？",
         "level": 2,
         "sensitivity": 2,
         "topic": "bullying"
@@ -250,7 +250,7 @@
     {
         "id": "bullying-016",
         "category": "school_and_youth",
-        "question": "本当の友達なら、悪いことを止めるべきだと思う？",
+        "question": "友達が誰かを傷つけているとき、友達としてどこまで関わるべきだと思う？",
         "level": 2,
         "sensitivity": 2,
         "topic": "bullying"
@@ -258,7 +258,7 @@
     {
         "id": "bullying-017",
         "category": "school_and_youth",
-        "question": "直接注意するのと、後で二人で言うのどっちがいい？",
+        "question": "友達のからかい方がきついと感じたら、その場で伝える？ 後で二人きりのときに伝える？ どう使い分ける？",
         "level": 2,
         "sensitivity": 2,
         "topic": "bullying"
@@ -266,7 +266,7 @@
     {
         "id": "jealousy-013",
         "category": "relationships_and_communication",
-        "question": "異性の友達との距離感はどこまであり？",
+        "question": "交際中、異性の友達との距離感について、恋人とどんなルールを決めたい？ ルールを設けないという選び方もありだと思う？",
         "level": 2,
         "sensitivity": 1,
         "topic": "jealousy"
@@ -274,7 +274,7 @@
     {
         "id": "jealousy-014",
         "category": "relationships_and_communication",
-        "question": "異性と二人で遊ぶのはあり？",
+        "question": "恋人がいる人が、異性の友達と二人で遊ぶことをどう思う？ 判断が変わる条件はある？",
         "level": 2,
         "sensitivity": 1,
         "topic": "jealousy"
@@ -403,7 +403,7 @@
         "id": "bridge-006",
         "category": "relationships_and_communication",
         "topic": "borrowing_and_returning",
-        "question": "借りた物をなかなか返してくれない友達に、関係を悪くせず返してほしいと伝えるにはどうする？",
+        "question": "友達に貸した物をなかなか返してもらえない。関係を悪くせず返してほしいと伝えるには、どうする？",
         "level": 2,
         "sensitivity": 1
     },
@@ -443,7 +443,7 @@
         "id": "bridge-011",
         "category": "school_and_youth",
         "topic": "group_work_fairness",
-        "question": "グループ作業で役割が偏っていると感じたら、終わる前に言う？ 終わってから言う？",
+        "question": "グループ作業の途中で役割の偏りに気づいたら、その場で分担の見直しを提案する？ 今回は続けて、終わった後に話す？",
         "level": 2,
         "sensitivity": 1
     },
@@ -523,7 +523,7 @@
         "id": "bridge-021",
         "category": "relationships_and_communication",
         "topic": "personal_boundaries",
-        "question": "苦手だと伝えたことを相手が冗談で続けたら、何度目で距離を置きたいと思う？",
+        "question": "苦手だと伝えたことを相手が冗談で続けたら、何を基準に距離を置くか決める？",
         "level": 2,
         "sensitivity": 2
     },

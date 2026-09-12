@@ -1,0 +1,1657 @@
+[
+  {
+    "id": "r6-01-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "immigration_01-01-l3",
+    "question": "外国人労働者の受入れを減らせば、賃金の上昇が期待できる一方、介護や物流のサービスが縮小する可能性もあるとする。国は、生活の不便を国民に求めてでも受入れを減らす方針を選んでよいと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "受入れを減らす利益と、労働力に依存するサービスを維持する利益が衝突する設定。政策の費用を誰が引き受けるかが中心。\n\n問いの狙い: 受入れへの賛否を、住民が負う具体的な不便まで含む制度選択にする。"
+    }
+  },
+  {
+    "id": "r6-01-02-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "justice_safety_and_crime",
+    "topic": "immigration_01-02-l3",
+    "question": "国籍別の犯罪件数に違いがあっても、人口構成や在留資格などの条件が違えば単純には比較できない。それでも住民の不安に早く応えるため、特定の国籍への取締りを強めてよいと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment",
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "集団の統計と個人への疑いは異なる。治安への不安に応える速さと、根拠なく属性で取り締まられない利益が衝突する。\n\n問いの狙い: 統計の条件がそろわない段階で政策を動かす是非を扱う。"
+    }
+  },
+  {
+    "id": "r6-01-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "immigration_01-03-l3",
+    "question": "外国人労働者の育成費を負担した企業を守るため、一定期間は本人の希望による転職を制限する制度をどう思う？ 費用を企業や公費で回収する仕組みに変えるべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "企業は採用・育成に投資し、労働者は賃金や働く場所を選びたい。投資の回収を個人の移動制限で担保してよいかが争点。\n\n問いの狙い: 企業への補償と転職制限を別の政策手段として比較できる。"
+    }
+  },
+  {
+    "id": "r6-01-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "immigration_01-04-l3",
+    "question": "同じ地域で長く暮らし、同程度の税を負担してきた二人が生活に困った。一人は日本国籍、もう一人は外国籍だ。生活を支える公的給付に差を設けるなら、国籍、居住期間、過去の負担のどれを根拠にする？",
+    "perspective": "observer",
+    "detail": {
+      "text": "福祉の範囲を国籍、居住、過去の負担で決めると、それぞれ対象者が変わる。制度への貢献と国民としての資格を比較する。\n\n問いの狙い: 国籍だけの賛否を避け、給付資格を決める根拠を選ばせる。"
+    }
+  },
+  {
+    "id": "r6-01-05-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "society_public_policy_and_environment",
+    "topic": "immigration_01-05-l3",
+    "question": "政策を検討するため、帰化した人と出生時から日本国籍を持つ人を行政統計で分ける案がある。差を把握する意義があっても、同じ国民を出自で区別し続ける不利益を、どこまで認める？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "出自に関する集計は状況を把握する手掛かりになる一方、帰化後も人を分け続ける扱いにつながり得る。出生統計も対象と期間で意味が異なる。\n\n問いの狙い: 情報を得る便益と、同じ国民として扱われる利益の衝突を問う。"
+    }
+  },
+  {
+    "id": "r6-01-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "immigration_01-06-l3",
+    "question": "衛生や環境の基準を満たす土葬墓地でも、周辺住民が地域の慣習に合わないとして反対している。行政は、具体的な危険以外の理由でも許可を拒めるべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "施設の安全基準と住民の文化的な不安は別の判断材料。宗教上の実践、土地利用、多数決の権限が重なる。\n\n問いの狙い: 具体的な危険がない場合にも慣習を許可基準にできるか問う。"
+    }
+  },
+  {
+    "id": "r6-01-07-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "immigration_01-07-l3",
+    "question": "耕す人が減っている地域で、外国法人による農地の取得を制限すれば、土地が使われなくなる可能性がある。食料や土地の管理を国内に保つためなら、その損失を受け入れるべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "耕作の継続や売却利益と、土地の管理を国内に保ちたい考えが衝突する仮定。外国法人一般の危険性を断定するものではない。\n\n問いの狙い: 取得制限の目的だけでなく、制限によって失う利用価値も扱う。"
+    }
+  },
+  {
+    "id": "r6-02-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "tourism_housing_transport_02-01-l3",
+    "question": "宗教施設が観光収入を得ている場合でも、祈りの場を守るために撮影や観光目的の入場を大きく制限してよいと思う？ 観光施設として期待されるサービスに応える責任はどこまである？",
+    "perspective": "observer",
+    "detail": {
+      "text": "宗教施設は信仰の場である一方、観光収入が維持を支える場合もある。観光客の期待と祈りの環境をどこまで両立できるかを問う。\n\n問いの狙い: 観光収入を得ることが、観光客を受け入れる責任を生むかを考える。"
+    }
+  },
+  {
+    "id": "r6-02-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "tourism_housing_transport_02-02-l3",
+    "question": "住宅地で一部の民泊が迷惑行為を防げない場合、問題を起こしていない施設も含めて営業を禁止してよいと思う？ 個別に取り締まる費用は住民全体が負担することになる。",
+    "perspective": "observer",
+    "detail": {
+      "text": "住宅地の規制は迷惑や住宅不足への対応となる一方、既存の合法的な投資にも影響する。個別対応の費用も住民が負う。\n\n問いの狙い: 問題を起こしていない事業者まで一括規制する正当性を扱う。"
+    }
+  },
+  {
+    "id": "r6-02-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "tourism_housing_transport_02-03-l3",
+    "question": "住民の税で維持する公共交通が観光客で混雑している。混雑対策の財源として、国籍ではなく居住地を基準に観光客の運賃を高くすることは、公平だと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "観光客がもたらす収益と、交通や住宅に生じる負担は同じ人に分配されるとは限らない。受益者と負担者の違いが論点。\n\n問いの狙い: 居住地を根拠とした価格差を、国籍による区別と分けて考える。"
+    }
+  },
+  {
+    "id": "r6-02-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "tourism_housing_transport_02-04-l3",
+    "question": "交通が不足する地域で、自家用車による有償送迎を広げる案がある。移動は便利になる一方、働く人の収入や事故時の補償を安定させにくい。既存の交通事業と同じ条件が整うまで参入を制限するべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "交通不足を補う参入と、運転者の条件・補償・既存事業の維持が衝突する設定。規制の強さによって利用可能性も変わる。\n\n問いの狙い: 便利さだけでなく、サービスを支える人の条件も比較する。"
+    }
+  },
+  {
+    "id": "r6-02-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "tourism_housing_transport_02-05-l3",
+    "question": "住宅不足を減らすため、空室のまま保有する家に高い税をかける案がある。将来自分で住むために確保している人も負担することになる。住まいを必要とする人のためなら、所有者に貸すか売るかを迫る制度を認める？",
+    "perspective": "observer",
+    "detail": {
+      "text": "土地や住宅は財産であると同時に、周囲の生活にも影響する。利用を促す課税と危険な空き家への介入では、権利制限の根拠が異なる。\n\n問いの狙い: 所有する自由に対し、居住の必要性からどこまで圧力をかけるか問う。"
+    }
+  },
+  {
+    "id": "r6-03-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "work_and_economy",
+    "topic": "economy_prices_03-01-l3",
+    "question": "輸入品の値上がりを抑える政策が輸出産業の雇用を減らすとしたら、政府は物価の安定と仕事の維持を何で比べるべき？ 両方を同じように守れないとき、どちらを優先する？",
+    "perspective": "observer",
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ],
+    "detail": {
+      "text": "物価や通貨の変化では、消費者としての利益と働き手としての利益が食い違う場合がある。設問は政策効果を仮定している。\n\n問いの狙い: 雇用と生活費を同時に守れない場合の政策基準を扱う。"
+    }
+  },
+  {
+    "id": "r6-03-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "work_and_economy",
+    "topic": "economy_prices_03-02-l3",
+    "question": "物価高への給付で、所得基準を少し超えた世帯だけが対象から外れると不公平感が生じる。一方、段階的な給付には事務費がかかる。支援を速く配るためなら、境界で大きな差が出てもよい？",
+    "perspective": "observer",
+    "detail": {
+      "text": "給付の境界は事務を簡単にする一方、わずかな所得差で大きな受益差を生み得る。制度への対応として行動を変える人もいる。\n\n問いの狙い: 給付の速さと境界付近の公平を比較できる。"
+    }
+  },
+  {
+    "id": "r6-03-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "work_and_economy",
+    "topic": "economy_prices_03-03-l3",
+    "question": "物価高への対策として、借金を増やして消費税を下げる案がある。今困っている人は助かるが、将来の増税や支出削減が必要になる可能性がある。今の生活を守るために、まだ投票できない世代へ負担を回してよいと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "減税は今の負担を軽くするが、財源や移行費用は別の時点や主体に移る。将来の効果が確実だという設定ではない。\n\n問いの狙い: まだ政治参加できない世代への負担を含めて減税を評価する。"
+    }
+  },
+  {
+    "id": "r6-03-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "work_and_economy",
+    "topic": "economy_prices_03-04-l3",
+    "question": "同じ仕事でも雇用形態によって賃金や保障が違う場合、非正規の待遇を上げる費用を正規の待遇引下げで賄うことを認める？ 全体の費用を増やせない会社なら、何を基準に配るべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "格差を縮める方法には、新たな財源の投入と既存の取り分の変更がある。後者では以前の期待や努力との対立が生じる。\n\n問いの狙い: 待遇改善を他の労働者の引下げで賄うことの是非を問う。"
+    }
+  },
+  {
+    "id": "r6-04-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "social_security_04-01-l3",
+    "question": "平均的には豊かな世代でも、その中には貧しい人がいる。世代間の負担を見直すなら、年齢による一括調整と、年齢を問わない資産・所得による調整のどちらを原則にする？",
+    "perspective": "observer",
+    "detail": {
+      "text": "世代の平均的な状況と世代内部の差は一致しない。過去の負担を守ることと、今の支払能力で配分することが衝突する。\n\n問いの狙い: 年齢と所得・資産のどちらを再配分の軸にするかを明確にする。"
+    }
+  },
+  {
+    "id": "r6-04-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "health_and_disability",
+    "topic": "social_security_04-02-l3",
+    "question": "高額な治療を受ける人の自己負担上限を維持するには、保険料を増やす必要があるとする。保険料を抑えるために、治療が必要な人の負担上限を引き上げることを、どこまで認める？",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ],
+    "detail": {
+      "text": "医療費の自己負担を抑える費用は保険料などで分担する。病気のときの保護と、広く日常的に負う費用の調整を問う仮定。\n\n問いの狙い: 治療費と保険料のどちらに追加負担を置くかを扱う。"
+    }
+  },
+  {
+    "id": "r6-04-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "social_security_04-03-l3",
+    "question": "ある地域で、同じ家族構成なら、低賃金で働く世帯より生活保護を受ける世帯の方が、住居費などを差し引いた後に使えるお金が多いとする。その差をなくすために保護費を下げることは、働く世帯への支援を増やすことと同じ意味で公平だと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "保護費の水準、低賃金、過去の給付削減の回復は別の問題。差をどちら向きに埋め、費用を誰に配るかが重要になる。\n\n問いの狙い: 働く人への公平を、保護費引下げだけで実現してよいかを比較する。"
+    }
+  },
+  {
+    "id": "r6-04-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "social_security_04-04-l3",
+    "question": "同じ困窮状態でも、浪費や危険な選択が関わった人への支援を減らすべきだと思う？ 原因を調べるために、支援を求める人の私生活を詳しく確認することも認める？",
+    "perspective": "observer",
+    "detail": {
+      "text": "困窮の程度を重視する配分と、困窮に至る選択や備えを評価する配分は一致しない。原因の確認には私生活の調査も伴う。\n\n問いの狙い: 自己責任を給付基準にすると必要になる調査まで考えさせる。"
+    }
+  },
+  {
+    "id": "r6-04-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "social_security_04-05-l3",
+    "question": "不正利用を減らすため申請の確認を厳しくすると、本当に困っている人も利用しにくくなる。不正を一定数見逃してでも利用しやすさを優先することを、行政の責任として認める？",
+    "perspective": "observer",
+    "detail": {
+      "text": "不正防止や事業の効率化は、利用を必要とする人のアクセスを狭める場合がある。件数が少ない支援にも代替がないことがある。\n\n問いの狙い: 取りこぼしと不正の双方を、行政の選択として表に出す。"
+    }
+  },
+  {
+    "id": "r6-04-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "health_and_disability",
+    "topic": "social_security_04-06-l3",
+    "question": "本人や家族が望む医療・介護でも、改善や生活維持への効果が小さいと判断されれば公費の対象から外してよいと思う？ 誰がどの程度の効果を基準に決めるべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "医療・介護への希望には限りがなくても、公費や家族の資産には限りがある。効果の判断と本人の希望をどこまで切り離すかを問う。\n\n問いの狙い: 公費の対象を効果で線引きする主体と基準を検討する。"
+    }
+  },
+  {
+    "id": "r6-04-07-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "social_security_04-07-l3",
+    "question": "配偶者の扶養を前提にした制度が働く時間の選択に影響している場合、制度を個人単位に変えるべきだと思う？ これまでの制度を前提に家事や育児を担ってきた人の負担が増えても？",
+    "perspective": "observer",
+    "detail": {
+      "text": "世帯を前提にした制度の変更は、個人の自立を促す一方、旧制度のもとで行った仕事やケアの選択に影響する。\n\n問いの狙い: 改革の利益と移行期の損失を分けて評価する。"
+    }
+  },
+  {
+    "id": "r6-05-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "depopulation_05-01-l3",
+    "question": "子育て支援の予算を、最も困っている家庭ではなく、支援によって次の子を持つ可能性が高まる家庭に重点配分する案がある。出生数を増やす目的なら、その配り方を認める？",
+    "perspective": "observer",
+    "detail": {
+      "text": "出生数を増やす目的と、最も困っている家庭を支える目的では配分先が変わる。効果が不確かな支出を全員で担う問題もある。\n\n問いの狙い: 子育て政策の目的同士が衝突する点を可視化する。"
+    }
+  },
+  {
+    "id": "r6-05-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "depopulation_05-02-l3",
+    "question": "人口減少に合わせて産業を縮小することと、公費で仕事を維持することでは、どちらを基本方針にするべき？ 維持する場合、利益が出ない仕事に何年間まで費用を使える？",
+    "perspective": "observer",
+    "detail": {
+      "text": "人口が減る地域では、今の仕事を守る支出と新しい産業へ移る支出が競合する。将来の成功はどちらも確約されていない。\n\n問いの狙い: 公的支援で雇用を維持する期間と限界を問う。"
+    }
+  },
+  {
+    "id": "r6-05-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "depopulation_05-03-l3",
+    "question": "人口が減る地域で、全ての集落への上下水道や道路を同じ水準で維持することが難しくなった。行政は、住み続ける自由を認めつつ、一定の地域ではサービスを縮小すると決めてよいと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "住み続ける自由と、少人数の地域までサービスを維持する費用が衝突する。移転費を補えば失う暮らしを全て補えるとは限らない。\n\n問いの狙い: 居住の自由とサービス保障の範囲を分ける。"
+    }
+  },
+  {
+    "id": "r6-06-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "climate_disaster_06-01-l3",
+    "question": "生活に余裕のない人ほど、安い車や燃料への依存から抜けにくい場合がある。排出量に応じた負担を一律に増やすことは、気候対策として公平だと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "環境対策の負担は、収入や移動手段、働く産業によって違う。同じ排出への同じ負担でも、生活への影響はそろわない。\n\n問いの狙い: 排出量に比例する負担がそのまま公平なのかを検討する。"
+    }
+  },
+  {
+    "id": "r6-06-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "climate_disaster_06-02-l3",
+    "question": "避難を強く求められても残った人が救助を必要とした場合、その選択を救助の順番や費用負担に反映してよいと思う？ 残った事情をすぐ確認できない場合でも？",
+    "perspective": "observer",
+    "detail": {
+      "text": "危機時には、避難しなかった事情や救助の必要性を短時間で判断する必要がある。受入れにも資源の限界がある。\n\n問いの狙い: 本人の過去の選択を救助の扱いに反映する是非を問う。"
+    }
+  },
+  {
+    "id": "r6-06-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "climate_disaster_06-03-l3",
+    "question": "大災害に備えた補強工事は、被害が起きなければ効果を実感しにくい。限られた予算で、将来の被害を減らす工事と、今利用されている医療・福祉を同時には維持できないとしたら、何を基準に決めるべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "予防保全の便益は災害が起きなければ見えにくい。危険情報が不確かな段階で止めることも、止めないことも損失を生む。\n\n問いの狙い: 現在のサービスと将来の危険への投資を比較する。"
+    }
+  },
+  {
+    "id": "r6-06-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "climate_disaster_06-04-l3",
+    "question": "危険な暑さや火災リスクがある日のイベントを、参加者が承知していても行政が中止できるべきだと思う？ 救急や消火の負担が他の住民にも及ぶことを、どこまで理由にできる？",
+    "perspective": "observer",
+    "detail": {
+      "text": "イベントの参加は個人の選択でも、救急・消火への負担は周囲にも及ぶ。危険を承知する同意だけで判断できるかを問う。\n\n問いの狙い: 参加者の自由と公共の緊急対応資源を結び付ける。"
+    }
+  },
+  {
+    "id": "r6-06-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "climate_disaster_06-05-l3",
+    "question": "気候の変化で従来の漁業や農業が難しくなった地域を支える予算は、今までの生産を維持するために使うべき？ 新しい適地への移転や転業に使うべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "生産環境の変化への対応には、従来の産業を守る道と転換を進める道がある。収入だけでなく技術や地域の継承も関わる。\n\n問いの狙い: 維持と移転・転業のどちらに公費を使うか問う。"
+    }
+  },
+  {
+    "id": "r6-06-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "climate_disaster_06-06-l3",
+    "question": "複雑な環境問題を一つの危機指標にまとめると、関心を集めやすい一方、違う種類の危険が同じものに見える。注意を促す効果のために、その単純化をどこまで認める？",
+    "perspective": "observer",
+    "detail": {
+      "text": "複雑な危機を一つの指標や強い見出しで示すと伝わりやすい一方、前提や不確実性が抜ける。危機を伝える目的と方法の緊張がある。\n\n問いの狙い: 指標による単純化をどこまで認めるかを問う。"
+    }
+  },
+  {
+    "id": "r6-07-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "misinformation_media_07-01-l3",
+    "question": "災害時の未確認情報は、正しければ救助に役立ち、誤っていれば現場を混乱させる。発信者は確認できるまで待つべき？ 未確認だと明記すれば広めてよい？",
+    "perspective": "observer",
+    "detail": {
+      "text": "未確認情報は救助の手掛かりにも混乱の原因にもなる。待つことで失う機会と、間違いを広める損失の両方がある。\n\n問いの狙い: 発信の確かさと速さの境界を考える。"
+    }
+  },
+  {
+    "id": "r6-07-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "misinformation_media_07-02-l3",
+    "question": "選挙中に、外国政府の関与が疑われる大量の投稿が見つかった。投票日までに関与を確定できない場合、国内の正当な発言を巻き込む危険があっても、拡散を一時的に制限してよいと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "影響工作への対処は選挙の公正を守る一方、正当な国内の発言を制限する危険もある。関与の確定には時間がかかる設定。\n\n問いの狙い: 不確かな段階での規制の権限を問う。"
+    }
+  },
+  {
+    "id": "r6-07-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "misinformation_media_07-03-l3",
+    "question": "同じ意見を大量に投稿する行為を制限する場合、自動投稿と、人が協力して一斉に投稿する運動を同じ基準で扱うべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "自動投稿と人による協調した発信は、どちらも可視性を高める。支持の多さの見え方と、弱い発信者の機会が衝突する。\n\n問いの狙い: 自動化だけを規制基準にしてよいか考える。"
+    }
+  },
+  {
+    "id": "r6-07-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "misinformation_media_07-04-l3",
+    "question": "選挙で広まる事実の誤りを訂正する公的機関を作るなら、その機関が与党の主張を正しいと判定する場合も信用できる仕組みは作れると思う？ 作れなければ設置しない方がよい？",
+    "perspective": "observer",
+    "detail": {
+      "text": "偽情報の訂正は必要でも、何を正しいと認めるかを決める機関にも権力が集中する。政治的な利益と検証が対立し得る。\n\n問いの狙い: 公的な事実認定機関を作る条件と限界を問う。"
+    }
+  },
+  {
+    "id": "r6-07-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "misinformation_media_07-05-l3",
+    "question": "同じ統計から複数の正確な見出しを作れても、一つを選ぶことで社会の印象は変わる。報道は、反対の印象を与える読み方まで併記する責任があると思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "数字が正確でも切り口の選択によって印象は変わる。全ての解釈を示せない報道で、編集上の責任が生じる。\n\n問いの狙い: 反対の印象を与える読み方まで示す義務があるか問う。"
+    }
+  },
+  {
+    "id": "r6-07-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "misinformation_media_07-06-l3",
+    "question": "同じ種類の事件なら、加害者や被害者の性別を見出しに出す基準も同じにするべきだと思う？ 特定の性別の被害が見落とされてきた場合は、その性別をあえて強調してよい？",
+    "perspective": "observer",
+    "detail": {
+      "text": "性別を明示することは被害の可視化にも、集団への一般化にもつながり得る。同じ表記基準と異なる背景への配慮が衝突する。\n\n問いの狙い: 性別による扱いの差を報道ルールとして検討する。"
+    }
+  },
+  {
+    "id": "r6-07-07-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "misinformation_media_07-07-l3",
+    "question": "食品の検査基準を満たしていても、産地への不安から購入を避ける自由はある。一方、その不安を公に呼び掛けることには、個人の選択以上の根拠を求めるべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ],
+    "detail": {
+      "text": "食品を選ぶ自由と、その不安を他の人へ広める行為では影響の範囲が違う。基準への適合と個人の不安も同じではない。\n\n問いの狙い: 消費の選択と公の主張に求める根拠を分ける。"
+    }
+  },
+  {
+    "id": "r6-08-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "ai_privacy_08-01-l3",
+    "question": "実在の人に似せた映像に偽物だと表示していても、本人の同意なしに性的・侮辱的な場面を作ることを禁止するべきだと思う？ 風刺や創作との境界はどこに置く？",
+    "perspective": "observer",
+    "content_warning": [
+      "privacy_and_surveillance"
+    ],
+    "detail": {
+      "text": "本人に似せた映像の利用では、創作の自由と人格・私生活への影響がぶつかる。偽物と表示しても影響が消えるとは限らない。\n\n問いの狙い: 偽物という表示が許容の十分条件になるかを問う。"
+    }
+  },
+  {
+    "id": "r6-08-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "ai_privacy_08-02-l3",
+    "question": "成人が望んで使う会話AIでも、強い依存を生む可能性があるなら、利用時間や親密さを演出する機能を規制してよいと思う？ 孤立している人の支えを減らす可能性があっても？",
+    "perspective": "observer",
+    "detail": {
+      "text": "親密なAIは孤立への支えにも、利用を強める商品設計にもなり得る。成人の同意と長期の影響をどう扱うかが争点。\n\n問いの狙い: 本人の希望だけで規制を不要とできるか考える。"
+    }
+  },
+  {
+    "id": "r6-08-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "ai_privacy_08-03-l3",
+    "question": "利用者が買い物を任せたAIが、設定された上限内で高額な契約を結んだが、利用者の本当の希望とは違っていた。販売者もAIの提供者も明確な違反をしていないとしたら、その損失は誰が負うべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "AIへの権限委譲では、設定上の許可と本人の実際の意図がずれる可能性がある。取引相手の信頼も損失配分に関わる。\n\n問いの狙い: 明確な違反者がいない契約の損失を誰に配るか問う。"
+    }
+  },
+  {
+    "id": "r6-08-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "ai_privacy_08-04-l3",
+    "question": "病院が過去の診療記録をAIの研究に使いたい。一人ずつ同意を取り直すと、連絡できない人の記録が抜けて研究に偏りが出る可能性がある。個人を特定しにくくする措置を取れば、改めて同意を得ずに利用することを認める？",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ],
+    "detail": {
+      "text": "医療研究のデータ利用には、同意を取り直す難しさと患者情報を守る必要がある。匿名化も全ての再識別リスクをなくすとは限らない。\n\n問いの狙い: 研究の偏りと同意の尊重の衝突を扱う。"
+    }
+  },
+  {
+    "id": "r6-08-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "ai_privacy_08-05-l3",
+    "question": "作品のAI学習への利用を認める代わりに、作者へ一括で対価を配る制度があるとする。個々の作者が利用自体を拒む権利より、広い利用と対価の分配を優先してよいと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "AI利用の対価を配る制度と、利用自体を拒む権利は同じではない。対価を受けても本人の仕事が減る可能性がある設定。\n\n問いの狙い: 補償があれば利用拒否を制限してよいか考える。"
+    }
+  },
+  {
+    "id": "r6-09-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "net_harm_privacy_09-01-l3",
+    "question": "誹謗中傷の申告を受けた投稿をすぐ非公開にすると、被害の拡大を抑えられる一方、正当な批判を黙らせるための申告にも使われる。確認前に隠す運用と、確認まで公開を続ける運用のどちらを原則にする？",
+    "perspective": "observer",
+    "content_warning": [
+      "privacy_and_surveillance",
+      "abuse_and_coercion"
+    ],
+    "detail": {
+      "text": "投稿の削除や履歴の保存は被害対策になる一方、誤削除や情報漏えいの費用も生む。規模の大きいサービスほど影響が広い。\n\n問いの狙い: 確認前の保護と正当な表現の継続を比較する。"
+    }
+  },
+  {
+    "id": "r6-09-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "net_harm_privacy_09-02-l3",
+    "question": "無断転載で得た広告収入は、投稿者だけでなく、収益を分け合った運営会社からも回収するべきだと思う？ 運営会社が侵害を知らなかった場合でも？",
+    "perspective": "observer",
+    "detail": {
+      "text": "転載で利益を得る主体は投稿者だけとは限らない。権利の確認を強めると、証明の難しい正当な投稿も排除され得る。\n\n問いの狙い: 利益の分配と侵害の責任を結び付けて問う。"
+    }
+  },
+  {
+    "id": "r6-09-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "net_harm_privacy_09-03-l3",
+    "question": "重大な問題を起こした人でも、謝罪や処分の後に批判を続けることに限界を設けるべきだと思う？ 批判を止める基準を、本人や運営会社が決めてよい？",
+    "perspective": "observer",
+    "content_warning": [
+      "abuse_and_coercion"
+    ],
+    "detail": {
+      "text": "事実に基づく批判でも、長く拡散されることで処分後の再出発に影響する。被害者の語る権利と批判対象の生活が衝突する。\n\n問いの狙い: 批判の内容だけでなく期間と規模の限界を問う。"
+    }
+  },
+  {
+    "id": "r6-09-04-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "technology_media_and_privacy",
+    "topic": "net_harm_privacy_09-04-l3",
+    "question": "未成年を有害な投稿から守るため、SNSの利用時に身分証で年齢を確認する制度を設ける案がある。匿名の表示は保てても、運営会社には本人を特定できる情報が集まる。この条件なら義務化を支持する？",
+    "perspective": "observer",
+    "content_warning": [
+      "sexual_violence"
+    ],
+    "detail": {
+      "text": "子どものオンライン利用を制限すると危険への接触を減らせる一方、学校以外のつながりも失わせる。本人確認には情報集積も伴う。\n\n問いの狙い: 年齢確認のために成人も負うプライバシー上の費用を扱う。"
+    }
+  },
+  {
+    "id": "r6-09-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "net_harm_privacy_09-05-l3",
+    "question": "漏えいが疑われる段階で公表すれば利用者は備えられるが、誤報なら組織と利用者に混乱を起こす。どの程度の確かさで公表を義務付けるべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "privacy_and_surveillance"
+    ],
+    "detail": {
+      "text": "漏えいの疑いを早く知らせる責任と、未確定情報による混乱を避ける責任がある。資料の公開では無関係な人の情報も問題になる。\n\n問いの狙い: 公表に必要な確かさの水準を問う。"
+    }
+  },
+  {
+    "id": "r6-09-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "net_harm_privacy_09-06-l3",
+    "question": "無料だと思って素材を使った公的機関にも、営利目的の無断利用と同じ賠償を求めるべきだと思う？ 担当者の知識不足による損失を税金で負担することは妥当？",
+    "perspective": "observer",
+    "detail": {
+      "text": "無料の表示を信じた利用でも権利侵害が生じる場合がある。故意、確認の注意、公共機関の費用負担は分けて考える必要がある。\n\n問いの狙い: 悪意のない侵害と賠償責任の関係を問う。"
+    }
+  },
+  {
+    "id": "r6-09-07-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "technology_media_and_privacy",
+    "topic": "net_harm_privacy_09-07-l3",
+    "question": "動物虐待の映像は、告発や捜査の手掛かりになる一方、拡散が注目や収益のための虐待を誘発するおそれもある。記録として残すことと公開を制限することをどう分ける？",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment",
+      "abuse_and_coercion"
+    ],
+    "detail": {
+      "text": "虐待の映像は証拠や告発にも、注目や収益にもなり得る。記録を残すことと誰にでも見せることは別の判断。\n\n問いの狙い: 映像の公益的利用と公開制限を分けて考える。"
+    }
+  },
+  {
+    "id": "r6-10-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "justice_safety_and_crime",
+    "topic": "fraud_crime_10-01-l3",
+    "question": "詐欺被害を金融機関が広く補償する制度では、繰り返し警告を受けても送金した人も救われる一方、費用は利用者全体の手数料に反映される。警告を無視したことを理由に、補償を減らしてよいと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment"
+    ],
+    "detail": {
+      "text": "詐欺の補償には被害救済と利用者全体の費用がある。被害者の行動を評価に入れるかで救済範囲が変わる。\n\n問いの狙い: 警告を無視したことを補償減額の理由にできるか問う。"
+    }
+  },
+  {
+    "id": "r6-10-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "justice_safety_and_crime",
+    "topic": "fraud_crime_10-02-l3",
+    "question": "広告を載せて利益を得るサービスは、その広告が詐欺だったとき、事前に見抜けなかったとしても被害の一部を補償するべきだと思う？ 補償を避けるために、無名の事業者の広告が出せなくなっても？",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment"
+    ],
+    "detail": {
+      "text": "広告を通じて利益を得る側には、内容を確かめる責任と取引機会を提供する役割がある。報酬の表示も受け手の判断に影響する。\n\n問いの狙い: 詐欺を見抜けなかった運営会社にも補償を求めるか問う。"
+    }
+  },
+  {
+    "id": "r6-10-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "justice_safety_and_crime",
+    "topic": "fraud_crime_10-03-l3",
+    "question": "乗っ取られたアカウントから被害が広がった場合、持ち主が推奨された安全対策を取っていなかったことを、補償責任に反映するべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment"
+    ],
+    "detail": {
+      "text": "乗っ取りの持ち主も被害者だが、その管理が二次被害に影響する場合がある。推奨対策を怠ることの責任を考える。\n\n問いの狙い: 安全対策を取らないことと補償責任の結び付きの強さを問う。"
+    }
+  },
+  {
+    "id": "r6-10-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "justice_safety_and_crime",
+    "topic": "fraud_crime_10-04-l3",
+    "question": "犯罪組織の実行役から情報を得るため、捜査への協力を条件に処分を軽くする仕組みを広げるべきだと思う？ 被害者が実行役への厳罰を求めていても？",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment"
+    ],
+    "detail": {
+      "text": "組織犯罪の実行役は、利益を求める参加者と脅される被害者の両面を持つ場合がある。協力による処分軽減は被害者の意向と衝突する。\n\n問いの狙い: 上位の組織への捜査と実行役の処罰を比較する。"
+    }
+  },
+  {
+    "id": "r6-10-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "justice_safety_and_crime",
+    "topic": "fraud_crime_10-05-l3",
+    "question": "不正送金を防ぐため海外送金の確認を厳しくすると、必要な書類をそろえにくい人が家族へ送金できなくなる。犯罪防止のため、その利用しにくさをどこまで認める？",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment"
+    ],
+    "detail": {
+      "text": "送金の確認を厳しくすると不正を防ぐ一方、正当な送金にも時間や書類の壁ができる。規制の負担は送金を必要とする家族にも及ぶ。\n\n問いの狙い: 犯罪防止に伴う正当な利用者の排除をどこまで認めるか問う。"
+    }
+  },
+  {
+    "id": "r6-10-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "justice_safety_and_crime",
+    "topic": "fraud_crime_10-06-l3",
+    "question": "売買の専門業者が、価値を知らない個人から安く買うことは、商売の知識による正当な利益だと思う？ 高価だと分かっている品には、その情報を売り手に伝える義務を設けるべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "専門業者と個人の間には価値についての情報差がある。安く買うことが知識の正当な利益か、説明すべき不均衡かが争点。\n\n問いの狙い: 価格への合意だけで取引を公平と判断できるか問う。"
+    }
+  },
+  {
+    "id": "r6-11-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "work_and_economy",
+    "topic": "labor_11-01-l3",
+    "question": "管理職がハラスメントを避けるため、異性の部下との個別面談や出張を控えると、育成機会に差が出る。本人が接触を避けたいという希望より、部下の機会を優先させるべき？",
+    "perspective": "observer",
+    "content_warning": [
+      "abuse_and_coercion"
+    ],
+    "detail": {
+      "text": "ハラスメントへの警戒から接触を減らすと、指導や育成機会にも差が出る。管理職のリスク回避と部下の機会の保障が衝突する。\n\n問いの狙い: 関わらない自由が職務上の機会に影響する場合を問う。"
+    }
+  },
+  {
+    "id": "r6-11-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "work_and_economy",
+    "topic": "labor_11-02-l3",
+    "question": "発注元に依存する企業が代金の減額に同意していても、その同意を自由な交渉と扱ってよいと思う？ 合意内容を規制すれば、取引自体がなくなる場合でも？",
+    "perspective": "observer",
+    "detail": {
+      "text": "取引への依存があると、形式的な同意と自由な交渉は一致しない場合がある。規制すれば取引そのものを失う可能性もある。\n\n問いの狙い: 減額への合意だけで公平とみなせるかを問う。"
+    }
+  },
+  {
+    "id": "r6-11-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "work_and_economy",
+    "topic": "labor_11-03-l3",
+    "question": "収入を増やしたい労働者が、自分の意思で長時間働くことを求めている。健康を損なう危険を説明されても希望が変わらない場合、国は本人の選択を制限するべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "働く時間には個人の収入希望と健康への保護が関わる。未払賃金の回復では、会社の存続との衝突が起きる設定も考えられる。\n\n問いの狙い: 本人の同意があっても労働時間を制限すべきか問う。"
+    }
+  },
+  {
+    "id": "r6-11-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "work_and_economy",
+    "topic": "labor_11-04-l3",
+    "question": "不況期に就職できなかった世代を支援するため、正規採用でその世代を優先する案がある。別の世代の応募者が同じ程度に困っていても、過去の採用環境の違いを理由に優先してよいと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "不況期の機会不足への是正と、現在の能力や事業の必要性による採用は同じ基準ではない。別世代にも困っている人がいる。\n\n問いの狙い: 世代別の優先措置を他の是正措置と比較できる。"
+    }
+  },
+  {
+    "id": "r6-11-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "work_and_economy",
+    "topic": "labor_11-05-l3",
+    "question": "組織が不正を行った上で自ら公表した場合、その組織への処分を軽くすると、隠蔽を減らせる可能性がある。一方、発覚直前に駆け込みで公表して責任を軽くする行動も起こり得る。自発的な公表をどこまで評価する？",
+    "perspective": "decision_maker",
+    "content_warning": [
+      "crime_and_punishment"
+    ],
+    "detail": {
+      "text": "自発的な公表への評価は隠蔽を減らす動機にも、責任を軽くする手段にもなる。説明責任と相談者の情報保護も衝突する。\n\n問いの狙い: 組織が自ら問題を明らかにすることへの制度的な報酬を問う。"
+    }
+  },
+  {
+    "id": "r6-12-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "family_and_care",
+    "topic": "poverty_education_12-01-l3",
+    "question": "子どもへの給付を親の婚姻状況で変えると、婚姻届を出すかどうかで受取額が違う場合が生じる。実際の収入や同居関係を調べる負担が大きくても、婚姻状況による区分をやめるべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ],
+    "detail": {
+      "text": "子どもの支援を親の婚姻状況で決めると、形式的な状態と実際の生活が食い違うことがある。実態調査にも負担がある。\n\n問いの狙い: 婚姻による区分と収入実態による区分を比較する。"
+    }
+  },
+  {
+    "id": "r6-12-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "school_and_youth",
+    "topic": "poverty_education_12-02-l3",
+    "question": "重大ないじめをした生徒の記録を進学先へ引き継げば、新たな被害を防ぐ手掛かりになる一方、立ち直った後も先入観で見られる可能性がある。本人が反対しても、どこまで引き継ぐべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict",
+      "abuse_and_coercion"
+    ],
+    "detail": {
+      "text": "いじめの記録は再発防止にも、長い先入観にもつながり得る。不登校の回復では責任追及と環境を変える行動が並行しにくい場合がある。\n\n問いの狙い: 学校間の情報共有と生徒の再出発を対比する。"
+    }
+  },
+  {
+    "id": "r6-12-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "school_and_youth",
+    "topic": "poverty_education_12-03-l3",
+    "question": "教育格差を減らすため、入試で家庭の経済状況を考慮する案がある。高得点でも家庭に余裕がある人が不合格になる場合、この調整を認める？",
+    "perspective": "observer",
+    "detail": {
+      "text": "経済的な教育格差への調整は、得点での評価と衝突する場合がある。所得区分も、境界付近の実際の余裕を完全には示さない。\n\n問いの狙い: 機会の是正に試験結果の調整を用いてよいか問う。"
+    }
+  },
+  {
+    "id": "r6-12-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "school_and_youth",
+    "topic": "poverty_education_12-04-l3",
+    "question": "自転車の違反への罰金や反則金を重くすると、低所得の人や通学に自転車が必要な人ほど生活への影響が大きい。危険な行動を止めるためなら、所得に関係なく同額を求めるべき？",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment"
+    ],
+    "detail": {
+      "text": "交通違反の金銭的な制裁は、同額でも生活への影響が違う。移動手段を制限すると安全は高まっても通学等に費用がかかる。\n\n問いの狙い: 違反行為への同じ扱いと支払能力の違いを比べる。"
+    }
+  },
+  {
+    "id": "r6-12-05-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "school_and_youth",
+    "topic": "poverty_education_12-05-l3",
+    "question": "学校の盗撮対策として職員の私物端末を確認する仕組みを設けるなら、無関係な教職員の私生活を調べる危険をどこまで認める？",
+    "perspective": "decision_maker",
+    "content_warning": [
+      "sexual_violence",
+      "privacy_and_surveillance"
+    ],
+    "detail": {
+      "text": "学校の安全確認には職員の私物や情報への介入が伴い得る。不祥事の公表も在校生や被害者の情報に影響する。\n\n問いの狙い: 被害を防ぐために職員全体へ求める確認の限界を問う。"
+    }
+  },
+  {
+    "id": "r6-13-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-01-l3",
+    "question": "出産後の孤立を減らすため、望まない家庭にも行政が訪問する制度を強める案がある。支援からこぼれる人を減らすためなら、家庭の拒否をどこまで越えてよい？",
+    "perspective": "observer",
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ],
+    "detail": {
+      "text": "出産後の家庭への支援は孤立を減らす目的を持つが、家庭が介入を望むとは限らない。親の意思と子どもの安全も関わる。\n\n問いの狙い: 支援の取りこぼしを減らすための訪問と家庭の拒否権を比較する。"
+    }
+  },
+  {
+    "id": "r6-13-02-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-02-l3",
+    "question": "自殺の危険が高いと専門家が判断した成人が、家族への連絡を拒んでいる。本人の信頼を失う可能性があっても、重大で差し迫った危険を避けるための情報共有を、どこまで認めるべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "self_harm"
+    ],
+    "detail": {
+      "text": "差し迫った生命の危険がある設定では、本人の意思や信頼と、周囲が保護のため動く責任が衝突する。これは医療判断の手順の案内ではない。\n\n問いの狙い: 緊急の情報共有に認める範囲を制度的に考える。"
+    }
+  },
+  {
+    "id": "r6-13-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-04-l3",
+    "question": "支援窓口の予算を相談件数に応じて配ると、相談しにくい人が多い集団への支援は増えにくい。需要があるか確かめきれていなくても、相談件数の少ない集団に専用の窓口を設けるべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "相談件数は困難の量だけでなく相談のしやすさにも影響され得る。構造的な困難という説明を持つかどうかも支援の評価に関わる。\n\n問いの狙い: 見える需要の数字だけで予算を配る限界を問う。"
+    }
+  },
+  {
+    "id": "r6-13-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-05-l3",
+    "question": "依存的な支出が続いている人への住居支援を、支出管理に同意することと引き換えにしてよいと思う？ 管理を拒む人を支援から外すことも認める？",
+    "perspective": "observer",
+    "detail": {
+      "text": "住居などへの支援に支出管理を求めると、生活を立て直す助けにも本人の自由の制限にもなる。困窮の理由による配分も問題になる。\n\n問いの狙い: 支援を条件付きにし、拒否した人を外す是非を問う。"
+    }
+  },
+  {
+    "id": "r6-14-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "politics_culture_14-01-l3",
+    "question": "皇位継承のルールを見直すとき、安定した継承、伝統、皇族個人の人生が衝突する場合、どれを優先するべきだと思う？ 国民の支持が多ければ個人に大きな役割を求めてよい？",
+    "perspective": "observer",
+    "detail": {
+      "text": "継承制度の安定や伝統には、役割を負う個人の人生が関わる。制度への支持と、個人に役割を求める正当性は別に考えられる。\n\n問いの狙い: 国民の希望と個人の選択をどこまで関連させるか問う。"
+    }
+  },
+  {
+    "id": "r6-14-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "politics_culture_14-02-l3",
+    "question": "政治への抗議として、自分で所有する国旗を傷つける行為を処罰する案がある。誰かの財産を壊したわけではなくても、国の象徴を傷つけたこと自体を犯罪にするべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "crime_and_punishment"
+    ],
+    "detail": {
+      "text": "国の象徴への敬意と政治的な表現の自由が衝突する。自分の所有物を使う表現は、他人の財産への損害とは異なる。\n\n問いの狙い: 侮辱された感情を刑罰の根拠にできるか問う。"
+    }
+  },
+  {
+    "id": "r6-14-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "politics_culture_14-03-l3",
+    "question": "政党への公的助成をなくすと、税金で支持しない主張を支える必要はなくなる一方、大口の寄付者が政治に及ぼす影響が強まる可能性がある。あなたは公的助成を残すべきだと思う？",
+    "perspective": "decision_maker",
+    "detail": {
+      "text": "政治の公費支援は支持しない主張にも及ぶ。一方、私的な資金への依存も問題となり、政策の利益と資金上の責任が衝突する。\n\n問いの狙い: 公的助成と大口寄付への依存を比較する。"
+    }
+  },
+  {
+    "id": "r6-14-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "politics_culture_14-04-l3",
+    "question": "選挙後に政党が別の政党と合流して主要政策を変える場合、議員は改めて有権者の判断を受けるべきだと思う？ 政治を動かすための妥協として任期中の変更を認める？",
+    "perspective": "observer",
+    "detail": {
+      "text": "政党は選挙後の交渉で政策を変えることがある。実現可能な妥協と、有権者から受けた委任の範囲が衝突する。\n\n問いの狙い: 政策変更に再選挙を求める基準を扱う。"
+    }
+  },
+  {
+    "id": "r6-14-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "politics_culture_14-05-l3",
+    "question": "他の地域を守るための軍事的な関与が、自国への攻撃の危険も高めるとしたら、国はどの段階で関与を決めるべき？ 被害が出る前の抑止と、戦争に入る危険をどう比べる？",
+    "perspective": "observer",
+    "detail": {
+      "text": "軍事的な関与は防衛や抑止につながる可能性がある一方、攻撃される危険も伴う。効果は仮定で、特定の軍事情勢の予測ではない。\n\n問いの狙い: 他地域の防衛に関与する時点と危険の配分を問う。"
+    }
+  },
+  {
+    "id": "r6-14-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "society_public_policy_and_environment",
+    "topic": "politics_culture_14-06-l3",
+    "question": "自治体が外国政府と協力の覚書を結ぶ場合、地域の経済的利益のためなら国の外交方針と異なる関係を築いてよいと思う？",
+    "perspective": "decision_maker",
+    "detail": {
+      "text": "自治体の経済的な関係と国の外交方針が一致しない場合がある。雇用への利益と相手政府への姿勢も衝突し得る。\n\n問いの狙い: 地方が独自に外国との関係を築く権限を問う。"
+    }
+  },
+  {
+    "id": "r6-15-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-01-l3",
+    "question": "男女平等を測るとき、同じ機会があることと、実際の人数や収入の差が小さいことのどちらを重く見る？ 本人の選択が結果の差を生む場合も、制度で差を縮めるべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "機会の形式的な平等と結果の比率の一致は別の目標。自発的な選択も結果に影響する場合、是正の対象と範囲が争点になる。\n\n問いの狙い: 機会と結果のどちらを制度の目標とするか明確にする。"
+    }
+  },
+  {
+    "id": "r6-15-02-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-02-l3",
+    "question": "女性向けの奨学金に、経済的に余裕のある女性は応募でき、生活に困っている男性は応募できない場合がある。目的が女性の少ない分野への進学を増やすことなら、この条件を維持してよいと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "性別の構成を変える支援と、経済的な困窮を支える給付は目的が異なる。両者を同じ窓口で扱うと対象者が食い違う。\n\n問いの狙い: 性別と家計のどちらを優先基準にするか問う。"
+    }
+  },
+  {
+    "id": "r6-15-03-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-03-l3",
+    "question": "安全や安心のための性別限定の場所を設けると、利用できない人の混雑や負担が増える。効果が一定程度あれば、負担する側の同意がなくても設けてよいと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "性別で分けた空間は、利用者の安心と利用できない側の混雑・負担を同時に生む設定。目的と手段の釣合いが論点。\n\n問いの狙い: 安全対策の費用を別の利用者に負わせる範囲を問う。"
+    }
+  },
+  {
+    "id": "r6-15-04-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-04-l3",
+    "question": "店が客層を調整するために性別で料金を変えることは、民間の販売戦略として認めるべきだと思う？ 同じサービスを受ける人の公平さを優先するべき？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "料金差は客層の調整や事業維持に使われる一方、同じサービスへの同じ対価という考えと衝突する。\n\n問いの狙い: 民間の営業の自由と性別による価格差を比較する。"
+    }
+  },
+  {
+    "id": "r6-15-05-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-05-l3",
+    "question": "ある分野で女性の採用を優先した結果、新規採用の男女比は同程度になったが、管理職にはまだ大きな差がある。採用時の優先措置は、入口の差がなくなった時点で終えるべき？ 管理職の差がなくなるまで続けるべき？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "入口の人数と管理職の構成は違う時点の結果を表す。採用時の是正措置をいつ終え、その後どう評価するかが問題になる。\n\n問いの狙い: 優先措置の終了条件を明確にする。"
+    }
+  },
+  {
+    "id": "r6-15-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-06-l3",
+    "question": "長時間働く人を高く評価する職場と、家事育児を多く担う人がいる家庭は互いに影響する。会社は本人が希望していても、家庭の負担を偏らせる働き方を制限するべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "長時間労働と家庭内のケアの分担は影響し合う。本人の仕事の希望を尊重すると、別の家族の選択が狭まることがある。\n\n問いの狙い: 会社が家庭の負担を理由に働き方へ介入してよいか考える。"
+    }
+  },
+  {
+    "id": "r6-15-07-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-07-l3",
+    "question": "同じ制度を、ある人は是正が足りないと感じ、別の人は優遇が行き過ぎたと感じている。政策を見直すとき、不公平だという実感をどこまで根拠にしてよいと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "不公平の実感は重要だが、制度全体の効果と必ずしも一致しない。受益した人と機会を失ったと感じる人の経験が衝突する。\n\n問いの狙い: 実感を制度改正の根拠に使う範囲を問う。"
+    }
+  },
+  {
+    "id": "r6-16-01-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-01-l3",
+    "question": "接客の売上に外見が影響するとして、企業が容姿を採用や配置の基準にすることを認める？ 顧客の好みへの対応と、その好みを固定することは分けられると思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "外見への顧客の好みは企業の利益に影響し得るが、企業の選別がその好みを固定する面も考えられる。\n\n問いの狙い: 顧客需要への対応を採用・配置の根拠にしてよいか問う。"
+    }
+  },
+  {
+    "id": "r6-16-02-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-02-l3",
+    "question": "性別によって利用者を分ける施設で、本人の申告だけではなく医療情報などの確認を求めることを認める？ 利用の可否を決めるためでも、どこまで私的な情報を求めてよい？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "施設の利用資格を確認するために、性別に関わる私的な情報を求める場合がある。確認の必要性と情報を開示しない利益が衝突する。\n\n問いの狙い: 利用ルールの是非に加え、その確認手段への介入を問う。"
+    }
+  },
+  {
+    "id": "r6-16-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-03-l3",
+    "question": "犯罪を不安に感じる人への配慮として、特定の性別の人だけに同行者や追加確認を求める運用を認める？ その人自身を疑う事情がなくても？",
+    "perspective": "observer",
+    "detail": {
+      "text": "安心のための確認が、属性による個人への疑いに変わる場合がある。危険の防止と疑う事情のない人の扱いを区別する。\n\n問いの狙い: 性別を追加確認の基準にしてよいか問う。"
+    }
+  },
+  {
+    "id": "r6-16-04-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-04-l3",
+    "question": "同じ行為でも、相手への恐怖や身体的な影響が違うことがある。性被害やDVへの支援を決める際、行為を共通の基準で見ることと、個別の影響を見ることをどう分ける？",
+    "perspective": "observer",
+    "content_warning": [
+      "sexual_violence"
+    ],
+    "detail": {
+      "text": "同じ行為でも影響は人や状況で異なり得る。被害を共通の基準で認めることと、必要な支援を個別に決めることが関わる。\n\n問いの狙い: 行為の共通性と影響の違いを制度判断で分ける。"
+    }
+  },
+  {
+    "id": "r6-16-05-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-05-l3",
+    "question": "平等政策への批判が差別的な言葉を含む場合、政策への異論と表現の問題を分けて扱うべきだと思う？ 表現が不適切でも、異論を公の議論に残す必要はある？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "政策への批判と、その表現に含まれる侮蔑は別の評価になり得る。正当な目的を持つ活動内にも問題のある発言は起こり得る。\n\n問いの狙い: 不適切な表現を理由に政策上の異論まで退けてよいか問う。"
+    }
+  },
+  {
+    "id": "r6-16-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-06-l3",
+    "question": "ある性別全体への侮蔑を、社会的に優位な側への批判として許す考えがある。個々の読者が置かれた立場を問わず、批判される性別によって投稿の削除基準を変えてよいと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "支配的な側への批判という説明が、性別全体への侮蔑を許す根拠になるかが争点。個人への良い影響と発信の問題も分かれる。\n\n問いの狙い: 侮蔑への規制を性別の社会的位置で変える是非を問う。"
+    }
+  },
+  {
+    "id": "r6-16-07-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-07-l3",
+    "question": "困難を抱える男性の支援を進めるため、男性という共通点で運動を作ることは有効だと思う？ 男性同士の所得や経験の差を見えにくくする危険をどう扱う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "男性の共通する困難を示す運動には、内部の多様性を隠す危険もある。支援を必要とする人の排他的な言動への対応も問題になる。\n\n問いの狙い: 集団としての連帯と個々の条件差を比較する。"
+    }
+  },
+  {
+    "id": "r6-16-08-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-08-l3",
+    "question": "不快に感じたことを差別と訴える権利と、差別だと認定する基準は分けるべきだと思う？ 訴えた人の経験を否定せずに、認定しない判断はできる？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "被害を訴える機会と、制度上の差別認定は別の判断。本人の経験を受け止めることが、そのまま認定を意味するとは限らない。\n\n問いの狙い: 不認定と経験の否定を分けられるか考える。"
+    }
+  },
+  {
+    "id": "r6-17-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "family_and_care",
+    "topic": "marriage_sexwork_17-01-l3",
+    "question": "夫婦が別々の名字を選べる制度に変わったとする。過去に名字を変えて負担を受けた人への補償も必要だと思う？ 制度を改善することと、以前の制度で生じた損失を補うことはどこで分ける？",
+    "perspective": "observer",
+    "detail": {
+      "text": "婚姻制度を変えると、以前の制度で負担を受けた人との関係が生じる。法律で選べることと相手が受け入れることも異なる。\n\n問いの狙い: 制度の改善に過去の損失の補填まで必要か問う。"
+    }
+  },
+  {
+    "id": "r6-17-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "family_and_care",
+    "topic": "marriage_sexwork_17-02-l3",
+    "question": "親の一方が危険を訴えて子どもを連れ出したが、もう一方は不当な親子分離だと訴えている。すぐに事実を確定できない場合、現状維持と元の生活への復帰のどちらを暫定的な原則にする？",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ],
+    "detail": {
+      "text": "安全を訴える親と不当な分離を訴える親の説明が食い違う場合、待つことにも戻すことにも影響がある。子どもの意思の解釈も難しい設定。\n\n問いの狙い: 確定できない間の生活を何を原則に決めるか問う。"
+    }
+  },
+  {
+    "id": "r6-17-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "family_and_care",
+    "topic": "marriage_sexwork_17-03-l3",
+    "question": "養育費と親子交流は別の問題として扱うとしても、一方の約束が守られない状態が続けば、もう一方にも履行を求めにくくなる。制度は、どちらかの不履行を理由に他方を止めることを認めるべき？",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ],
+    "detail": {
+      "text": "養育費と親子交流はそれぞれ子どもの生活に関わる。片方の不履行を他方の交渉材料にすることには、子どもへの別の影響がある。\n\n問いの狙い: 現行の扱いの案内ではなく、制度を連動させる是非として考える。"
+    }
+  },
+  {
+    "id": "r6-17-04-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "marriage_sexwork_17-04-l3",
+    "question": "性的サービスを買う側への処罰を強める政策について、働く人の一部が収入を失うとして反対している。別の仕事や生活支援が十分でない段階でも、搾取を減らす目的で進めるべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "sexual_violence",
+      "crime_and_punishment"
+    ],
+    "detail": {
+      "text": "性産業の規制で、搾取を減らす目的と現在の従事者の生活が衝突する場合がある。代替の所得や支援の整備状況も関わる。\n\n問いの狙い: 規制と生活支援の実施順序を問う。"
+    }
+  },
+  {
+    "id": "r6-17-05-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "marriage_sexwork_17-05-l3",
+    "question": "過去に性産業で働いた人を、子どもに関わる仕事から一律に排除することを認める？ 具体的な危険や業務上の問題がなくても、利用者の不安を理由にできる？",
+    "perspective": "observer",
+    "detail": {
+      "text": "過去の職業経験と現在の能力・危険性は同じではない。雇用や婚姻の相手選びで、その経験を条件にする範囲が争点になる。\n\n問いの狙い: 具体的な危険がなくても職歴で一律排除してよいか問う。"
+    },
+    "content_warning": [
+      "sexual_violence"
+    ]
+  },
+  {
+    "id": "r6-17-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "marriage_sexwork_17-06-l3",
+    "question": "成人同士が金銭を伴う交際に同意していても、生活に困っている側の選択肢が少ない場合、その合意をどこまで自由なものと考える？ 所得差だけで取引を制限してよい？",
+    "perspective": "observer",
+    "detail": {
+      "text": "成人の同意があっても経済的な選択肢に大きな差があると、自由な関係かどうかの評価が分かれる。所得差だけで決めることにも限界がある。\n\n問いの狙い: 合意と経済的な圧力を区別する基準を問う。"
+    }
+  },
+  {
+    "id": "r6-18-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "romance_18-01-l3",
+    "question": "孤立や出会いの少なさを社会問題として、公費で交際の機会を作る案がある。交際を望まない人も費用を負担することになる。恋愛の機会は、行政が支える対象にするべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "出会いを個人の領域とみるか、公的な支援対象とみるかで費用負担の範囲が変わる。相手を選ぶ自由の不利益は選ばれない人が負う。\n\n問いの狙い: 交際を望まない人も負担する公費の用途を問う。"
+    }
+  },
+  {
+    "id": "r6-18-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "romance_18-02-l3",
+    "question": "交際を期待して食事代や贈り物を負担した人が、断られた後に不公平だと訴えている。相手が好意に気づいて受け取っていた場合でも、返礼や好意への配慮をどこまで求めてよいと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "好意による贈り物には、明示した約束と暗黙の期待が混在する。受け取ることをどこまで相手の期待への応答とみなすかが争点。\n\n問いの狙い: 贈与への同意と交際への配慮を分けて考える。"
+    }
+  },
+  {
+    "id": "r6-18-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "romance_18-03-l3",
+    "question": "交際では、別れたくない気持ちが強い側ほど譲歩しやすい。双方が同意した約束でも、この気持ちの差によって一方に負担が偏るなら不公平だと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "別れたくない気持ちに差があると、一方が多く譲歩する合意になり得る。断れることだけで対等とみなせるかを考える。\n\n問いの狙い: 形式的な同意と気持ちの力関係を比較する。"
+    }
+  },
+  {
+    "id": "r6-18-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "romance_18-04-l3",
+    "question": "独身で子どもがいない人は、残業や転勤を引き受けやすいとみなされることがある。家族の世話と本人の趣味や休息を、仕事の配分で同じように扱うべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "婚姻や子どもの有無によって、本人の時間に余裕があると期待される場合がある。ケアと趣味や休息の扱いの差が論点。\n\n問いの狙い: 家族事情以外の時間にも同じ配慮を認めるか問う。"
+    }
+  },
+  {
+    "id": "r6-19-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "infidelity_19-01-l3",
+    "question": "不倫が確認された著名人について、仕事の能力や業務上の問題とは別に、広告や出演の契約を終える企業がある。私生活の約束違反を、社会的な仕事の機会にどこまで反映してよいと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "infidelity"
+    ],
+    "detail": {
+      "text": "不倫への道徳的評価と仕事上の制裁の範囲は別の判断。好きな人物と嫌いな人物で評価が変わる可能性もある。\n\n問いの狙い: 私生活の約束違反を仕事の機会に反映する限界を問う。"
+    }
+  },
+  {
+    "id": "r6-19-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "infidelity_19-02-l3",
+    "question": "配偶者を傷つけないよう生活を維持しながら他の相手を愛することと、離婚して新しい関係を選ぶことでは、どちらが誠実だと思う？ 経済的に離婚が難しい事情は評価を変える？",
+    "perspective": "observer",
+    "content_warning": [
+      "infidelity"
+    ],
+    "detail": {
+      "text": "別の人への愛情と家族の生活維持が衝突する場面。離婚の難しさが秘密の関係を正当化するかを考える。\n\n問いの狙い: 誠実さを生活の維持と情報の開示のどちらで評価するか問う。"
+    }
+  },
+  {
+    "id": "r6-19-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "infidelity_19-03-l3",
+    "question": "不倫がある夫婦でも、子どもの生活が安定しているなら、事実を伏せて家庭を続ける方がよいと思う？ 子どもの利益を理由に、配偶者が判断するための情報を隠してよい？",
+    "perspective": "observer",
+    "content_warning": [
+      "infidelity",
+      "family_conflict"
+    ],
+    "detail": {
+      "text": "不倫の情報は配偶者の判断に必要でも、公表すると子どもにも長く影響し得る。家庭の維持と知る機会も別の利益。\n\n問いの狙い: 子どもの安定を理由に配偶者への情報を隠せるか問う。"
+    }
+  },
+  {
+    "id": "r6-19-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "infidelity_19-04-l3",
+    "question": "不倫を疑う人が証拠を得るためでも、配偶者の私的な通信を無断で確認することを認める？ 確認しなければ裏切りを知る方法がない場合は？",
+    "perspective": "observer",
+    "content_warning": [
+      "infidelity"
+    ],
+    "detail": {
+      "text": "裏切りを確かめる利益と、相手の通信や家族の資産を守る利益がぶつかる。疑いが外れた場合にも負担は残る。\n\n問いの狙い: 証拠を得る必要性を無断確認の根拠にできるか問う。"
+    }
+  },
+  {
+    "id": "r6-19-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "infidelity_19-05-l3",
+    "question": "家族への約束した支出を満たしていれば、残りを誰との付き合いに使うかは本人の自由だと思う？ 金銭上の合意と、関係への誠実さは別に評価するべき？",
+    "perspective": "observer",
+    "content_warning": [
+      "infidelity"
+    ],
+    "detail": {
+      "text": "家計の合意を守ることと関係への誠実さの評価は一致しない場合がある。支出の相手や配分に感情的な意味が加わる。\n\n問いの狙い: 金銭上の義務を果たせば残りは自由といえるか問う。"
+    }
+  },
+  {
+    "id": "r6-19-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "infidelity_19-06-l3",
+    "question": "肉体関係はなくても、配偶者に隠して別の人と恋愛的な気持ちを共有している場合、それを不倫と同じ裏切りとして扱うべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "infidelity"
+    ],
+    "detail": {
+      "text": "身体的な接触を境界にするか、秘密にしている感情の共有を境界にするかで裏切りの範囲が変わる。疑似的な関係も含まれる。\n\n問いの狙い: 不倫の境界を身体と親密さで比較する。"
+    }
+  },
+  {
+    "id": "r6-19-07-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "infidelity_19-07-l3",
+    "question": "夫婦は長く別居し、一方は関係を終えたと考えているが、もう一方は離婚に応じていない。この間の新しい交際を、同居して関係を続けている夫婦の不倫と同じように評価するべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "infidelity"
+    ],
+    "detail": {
+      "text": "関係の合意や婚姻の形式と、実際の感情や生活の状態はずれ得る。合意を変えたときには第三者の関係も影響を受ける。\n\n問いの狙い: 別居中と同居中の交際を同じに評価すべきか問う。"
+    }
+  },
+  {
+    "id": "r6-19-08-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "relationships_and_communication",
+    "topic": "infidelity_19-08-l3",
+    "question": "過去の性産業経験を結婚条件として知りたい人の希望と、その経験を私的な情報として守りたい人の希望は、どちらを優先するべき？ 隠すことと嘘をつくことは分けて考える？",
+    "perspective": "observer",
+    "content_warning": [
+      "infidelity",
+      "sexual_violence"
+    ],
+    "detail": {
+      "text": "過去を知って相手を選ぶ利益と私的な経験を守る利益が衝突する。伝えないことと尋ねられて嘘をつくことも区別できる。\n\n問いの狙い: 開示しない権利と結婚相手の条件を比較する。"
+    }
+  },
+  {
+    "id": "r6-19-09-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "infidelity_19-09-l3",
+    "question": "不倫で傷ついた人が、公表しないことを条件に高い金銭的補償を求めることを、どこまで認める？ 損害の回復と相手を苦しめる目的をどう区別する？",
+    "perspective": "observer",
+    "content_warning": [
+      "infidelity"
+    ],
+    "detail": {
+      "text": "損失の回復、謝罪、公表、相手への制裁は異なる目的を持つ。補償後にも怒りが続く場合に、どこまで行動を認めるかが争点。\n\n問いの狙い: 損害回復と相手を苦しめる目的の境界を問う。"
+    }
+  },
+  {
+    "id": "r6-19-10-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "relationships_and_communication",
+    "topic": "infidelity_19-10-l3",
+    "question": "成人同士が恋愛関係に同意していても、一方が成績や昇進を決める立場なら、組織は関係を禁止するべきだと思う？ 評価担当を変える方法だけでは不十分？",
+    "perspective": "observer",
+    "content_warning": [
+      "infidelity"
+    ],
+    "detail": {
+      "text": "恋愛への同意と評価・雇用などの権限が重なると、本人の認識だけでは周囲の疑いが消えない。職務上の公平も関わる。\n\n問いの狙い: 関係そのものの禁止と評価担当の変更を比較する。"
+    }
+  },
+  {
+    "id": "r6-20-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-01-l3",
+    "question": "家計への負担が同じなら、推し活への支出と、家族旅行や習い事への支出を同じように評価するべきだと思う？ 家族で共有する楽しみを優先する理由はどこにある？",
+    "perspective": "observer",
+    "detail": {
+      "text": "支出の額が同じでも、本人の趣味と家族の共有利益では評価が分かれる。家庭の状況が変われば以前の合意も揺らぐ。\n\n問いの狙い: 家族で使う楽しみを優先する根拠を問う。"
+    }
+  },
+  {
+    "id": "r6-20-01-l3-conv",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-01-l4",
+    "question": "夫婦で合意した自由な支出の範囲でも、家族の介護費が急に増えたら見直すべきだと思う？ 合意した自由と今の必要をどう比べる？",
+    "perspective": "observer",
+    "detail": {
+      "text": "支出の額が同じでも、本人の趣味と家族の共有利益では評価が分かれる。家庭の状況が変われば以前の合意も揺らぐ。\n\n問いの狙い: 合意済みの自由な支出を、急な介護費のために変えるか扱う。"
+    }
+  },
+  {
+    "id": "r6-20-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-02-l3",
+    "question": "本人が充実していると感じていても、睡眠や仕事が継続して損なわれる推し活は、周囲が止める対象だと思う？ 生きがいと依存を誰が判断するべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "本人の充実と、睡眠・仕事などへの持続的な影響が同時に存在する場合がある。生きがいを守ることと介入の必要性が衝突する。\n\n問いの狙い: 依存の判断を本人と周囲のどちらに委ねるか問う。"
+    }
+  },
+  {
+    "id": "r6-20-02-l3-conv",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-02-l4",
+    "question": "生活の支えになる趣味でも、仕事に継続的な支障が出る場合、周囲や職場はどこまで制限できるべきだと思う？ 本人の支えと労働への影響をどう比べる？",
+    "perspective": "observer",
+    "detail": {
+      "text": "本人の充実と、睡眠・仕事などへの持続的な影響が同時に存在する場合がある。生きがいを守ることと介入の必要性が衝突する。\n\n問いの狙い: 生活の支えを減らすことが難しい本人の労働との選択を扱う。"
+    }
+  },
+  {
+    "id": "r6-20-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-03-l3",
+    "question": "支出額が大きいほど推しと接する機会が増える仕組みは、公平な対価だと思う？ 経済的に無理をする人が出ても、成人の自由な消費として認めるべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "支出額で機会を配る仕組みは、対価の公平にも経済力による格差にも見える。今の機会のために将来の余裕を使う選択もある。\n\n問いの狙い: ファンとの接点を支出額に連動させる仕組みを評価する。"
+    }
+  },
+  {
+    "id": "r6-20-03-l3-conv",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-03-l4",
+    "question": "将来の余裕を減らしてまで今しかない機会に借金して課金することは、成人の自由として認めるべきだと思う？ 支出額で機会を配る仕組みをどう評価する？",
+    "perspective": "observer",
+    "detail": {
+      "text": "支出額で機会を配る仕組みは、対価の公平にも経済力による格差にも見える。今の機会のために将来の余裕を使う選択もある。\n\n問いの狙い: 借金で今しかない機会を買う当事者の判断を置く。"
+    }
+  },
+  {
+    "id": "r6-20-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-04-l3",
+    "question": "推しの成功を自分の成功のように感じることが、生活を支える場合もある。一方、本人を自分の期待どおりに動かしたい思いにつながるなら、応援の何が変わったと考える？",
+    "perspective": "observer",
+    "detail": {
+      "text": "応援への貢献が、推しの方針への発言権や所有感へ変わることがある。愛着と相手の独立した人生の関係が中心。\n\n問いの狙い: 成功への一体感と相手を動かしたい思いの境界を問う。"
+    }
+  },
+  {
+    "id": "r6-20-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-05-l3",
+    "question": "アイドルが恋愛しないことを契約で約束し、そのイメージで利益を得ている場合、約束に反したことを理由に仕事や報酬を失わせてもよいと思う？ 本人が契約に同意していれば、私生活への制限はどこまで認められる？",
+    "perspective": "observer",
+    "detail": {
+      "text": "恋愛しないイメージや疑似的な親密さが収益に関わる場合、契約への同意と私生活の自由が衝突する。情報を伏せることも期待を左右する。\n\n問いの狙い: 恋愛禁止への同意でどこまで私生活を制限できるか問う。"
+    }
+  },
+  {
+    "id": "r6-20-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-06-l3",
+    "question": "実在の相手との恋愛を望まず、キャラクターや推しとの関わりに満足している人に、社会は交際や結婚を勧めるべきだと思う？ 将来の孤立への懸念を理由にできる？",
+    "perspective": "observer",
+    "detail": {
+      "text": "今満たされている関係の形と、将来の孤立を心配する周囲の期待が一致しない場合がある。特定の生き方を未熟と決め付けない。\n\n問いの狙い: 将来への懸念を理由に恋愛や婚姻を勧める範囲を問う。"
+    }
+  },
+  {
+    "id": "r6-20-07-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-07-l3",
+    "question": "政治家への愛着が政治参加を増やす一方、政策や不祥事への批判を受け入れにくくする場合がある。人物への熱狂を、民主主義にとって利益が大きいものと考える？",
+    "perspective": "observer",
+    "detail": {
+      "text": "人物への愛着は参加の動機になる一方、政策評価や批判への態度に影響し得る。過去に使った時間や費用も判断を縛る。\n\n問いの狙い: 政治への参加と批判的な判断の緊張を扱う。"
+    }
+  },
+  {
+    "id": "r6-20-08-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-08-l3",
+    "question": "長く活動して多く支出したファンを、イベントや交流の場で優先することを認める？ 活動を支えた貢献と、新しく参加する人の機会を何で比べる？",
+    "perspective": "observer",
+    "detail": {
+      "text": "長年の貢献への報酬と新しい参加者の機会は競合する。序列の意味は運営側と古参・新規で変わる。\n\n問いの狙い: 貢献の差を交流機会の優先順位に反映する是非を問う。"
+    }
+  },
+  {
+    "id": "r6-20-09-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-09-l3",
+    "question": "迷惑行為を繰り返したファンの情報を、別の運営会社とも共有する制度を認める？ 安全対策になる一方、誤認や過去の行動によって広く参加できなくなる危険がある。",
+    "perspective": "observer",
+    "detail": {
+      "text": "安全対策には早期対応が必要でも、誤認や不確かな不安で参加を排除する危険がある。多額の支援も判断を複雑にする。\n\n問いの狙い: 運営会社を越えた情報共有と排除の範囲を問う。"
+    }
+  },
+  {
+    "id": "r6-20-10-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "culture_religion_and_history",
+    "topic": "oshi_culture_20-10-l3",
+    "question": "配信者が、ファン一人ひとりを特別な存在だと感じさせることで投げ銭を増やしている。実際の交際を約束しておらず、成人が自分で払っている場合でも、売り方を規制するべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "親密さを使う商売には収益と相手の期待が結び付く。応援される側も、返信や相談を続ける負担を負う。\n\n問いの狙い: 成人の自由な課金であっても売り方への規制が必要か問う。"
+    }
+  }
+]

@@ -10,7 +10,7 @@
     {
         "id": "values-007",
         "category": "self_and_values",
-        "question": "一緒にいるとき、話す時間とのんびりする時間どっちが好き？",
+        "question": "恋人や友達と一緒にいるとき、会話を楽しむ時間と、静かにのんびり過ごす時間は、どんなバランスが好き？",
         "level": 1,
         "sensitivity": 1,
         "topic": "values"
@@ -18,7 +18,7 @@
     {
         "id": "values-008",
         "category": "self_and_values",
-        "question": "記念日はちゃんと祝いたい派？さりげなくでいい派？",
+        "question": "記念日は盛大に祝いたい？ さりげなく祝いたい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "values"
@@ -82,7 +82,7 @@
     {
         "id": "friendship-002",
         "category": "relationships_and_communication",
-        "question": "広く浅くと狭く深く、どっちがいい？",
+        "question": "友人関係は、いろいろな人と広く付き合うのと、少人数と深く付き合うのでは、どちらが自分に合っていると思う？",
         "level": 1,
         "sensitivity": 1,
         "topic": "friendship"
@@ -250,7 +250,7 @@
     {
         "id": "jealousy-005",
         "category": "relationships_and_communication",
-        "question": "恋人が異性と話していたら少し気になる？",
+        "question": "恋人が、恋愛の相手になり得る人と親しく話していたら気になる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "jealousy"
@@ -418,7 +418,7 @@
     {
         "id": "values-023",
         "category": "self_and_values",
-        "question": "2人で大事にしたいルールはある？",
+        "question": "恋人との間で、大事にしたいルールはある？",
         "level": 1,
         "sensitivity": 1,
         "topic": "values"
@@ -450,7 +450,7 @@
     {
         "id": "romance-015",
         "category": "relationships_and_communication",
-        "question": "会う頻度はどれくらいが理想？",
+        "question": "恋人と会う頻度は、どれくらいが理想？",
         "level": 1,
         "sensitivity": 1,
         "topic": "romance"
@@ -522,7 +522,7 @@
     {
         "id": "romance-030",
         "category": "relationships_and_communication",
-        "question": "逆に、自分らしさとして変えたくない部分は？",
+        "question": "恋人と付き合う中でも、自分らしさとして変えたくない部分は？",
         "level": 1,
         "sensitivity": 1,
         "topic": "romance"
@@ -762,7 +762,7 @@
     {
         "id": "self-016",
         "category": "self_and_values",
-        "question": "高校デビュー・中学デビューって、前向きな変化だと思う？それとも少し無理してると思う？",
+        "question": "進学をきっかけに自分の振る舞いや見た目を変えることについて、楽しみだと思うことと、無理をしそうだと思うことはある？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -1034,7 +1034,7 @@
     {
         "id": "contact-015",
         "category": "relationships_and_communication",
-        "question": "逆に距離が遠いと不安になる？",
+        "question": "親しい人と気持ちの距離が開いたと感じたら、不安になる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "contact"
@@ -1162,7 +1162,7 @@
     {
         "id": "conflict-008",
         "category": "relationships_and_communication",
-        "question": "逆に言われたくない言葉は？",
+        "question": "落ち込んでいるときに、言われたくない言葉は？",
         "level": 1,
         "sensitivity": 1,
         "topic": "conflict"
@@ -1226,7 +1226,7 @@
     {
         "id": "conflict-016",
         "category": "relationships_and_communication",
-        "question": "でも察してほしくないことは？",
+        "question": "恋人にも、言葉にしていない気持ちを察してほしくないことはある？",
         "level": 1,
         "sensitivity": 1,
         "topic": "conflict"
