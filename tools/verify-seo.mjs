@@ -13,12 +13,6 @@ const publicPages = [
         requiredTypes: ["WebSite", "SoftwareApplication", "WebPage"]
     },
     {
-        file: "howto.html",
-        favicon: "viuk-light.jpg",
-        url: `${origin}/howto.html`,
-        requiredTypes: ["WebSite", "WebPage", "BreadcrumbList"]
-    },
-    {
         file: "guide.html",
         favicon: "viuk-light.jpg",
         url: `${origin}/guide.html`,
@@ -32,6 +26,13 @@ const noindexPages = [
     "finish.html",
     "warning.html",
     "warning3.html"
+];
+
+const redirectPages = [
+    {
+        file: "howto.html",
+        target: `${origin}/guide.html`
+    }
 ];
 
 const errors = [];
@@ -297,6 +298,23 @@ for (const page of noindexPages) {
     }
 
     checkInternalLinks({ file: page, url: `${origin}/${page}` }, html);
+}
+
+for (const page of redirectPages) {
+    const html = read(page.file);
+    const canonical = linkValue(html, "canonical");
+    const refresh = metaValue(html, "http-equiv", "refresh").toLowerCase();
+    const targetPath = new URL(page.target).pathname.replace(/^\//, "");
+
+    if (canonical !== page.target) {
+        errors.push(`${page.file}: redirect canonical must be ${page.target}`);
+    }
+
+    if (!refresh.includes(`url=${targetPath}`)) {
+        errors.push(`${page.file}: meta refresh must point to ${targetPath}`);
+    }
+
+    checkInternalLinks({ file: page.file, url: `${origin}/${page.file}` }, html);
 }
 
 const sitemap = read("sitemap.xml");
