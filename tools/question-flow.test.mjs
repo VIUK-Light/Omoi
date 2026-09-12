@@ -26,11 +26,17 @@ function setup(search = '?level=1&count=5') {
     const requests = [], errors = [];
     let onTimeout;
     const location = { search, href: `https://example.test/question.html${search}` };
+    const documentStub = {
+        getElementById: element,
+        querySelector: element,
+        createElement: element,
+        addEventListener(event, handler) { this[event] = handler; }
+    };
     vm.runInNewContext(code, {
         URL, URLSearchParams, AbortController,
         setTimeout(fn) { onTimeout = fn; return 1; }, clearTimeout() {},
         console: { error(...args) { errors.push(args); } },
-        document: { getElementById: element, querySelector: element, createElement: element },
+        document: documentStub,
         window: { location, addEventListener() {} }, requestAnimationFrame(fn) { fn(); },
         fetch(url, options) {
             return new Promise((resolve, reject) => {
@@ -39,7 +45,7 @@ function setup(search = '?level=1&count=5') {
             });
         }
     });
-    return { element, requests, location, errors, timeout: () => onTimeout(),
+    return { element, requests, location, errors, document: documentStub, timeout: () => onTimeout(),
         respond(data = cards, ok = true) {
             requests.at(-1).resolve({ ok, status: ok ? 200 : 404, json: async () => structuredClone(data) });
         }
@@ -110,4 +116,15 @@ test('detail state and focus reset correctly', async () => {
     app.element('nextQuestionButton').click();
     assert.equal(app.element('detailPanel').hidden, true);
     assert.equal(app.element('detailButton').attrs['aria-expanded'], 'false');
+});
+
+
+test('escape closes the detail panel and restores focus', async () => {
+    const app = setup(); app.respond(); await flush();
+    app.element('detailButton').click();
+    assert.equal(app.element('detailPanel').hidden, false);
+    app.document.keydown({ key: 'Escape' });
+    assert.equal(app.element('detailPanel').hidden, true);
+    assert.equal(app.element('detailButton').attrs['aria-expanded'], 'false');
+    assert.equal(app.element('detailButton').focused, true);
 });

@@ -24,7 +24,7 @@ body {
 .finish-label {
     margin: 0 0 24px;
 
-    color: #777;
+    color: #666;
     font-size: 13px;
     letter-spacing: 0.08em;
 }
@@ -67,5 +67,15 @@ h1 {
 }
 
 .end-link {
-    color: #777;
+    color: #666;
+}
+
+.end-link:hover,
+.end-link:focus-visible {
+    color: #111;
+}
+
+.finish-actions a:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 3px;
 }

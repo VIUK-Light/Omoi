@@ -23,7 +23,7 @@ body {
 .level-label {
     margin: 0 0 20px;
     font-size: 13px;
-    color: #777;
+    color: #666;
     letter-spacing: 0.08em;
 }
 
@@ -62,4 +62,19 @@ h1 {
 
     border-radius: 11px;
     text-decoration: none;
+}
+
+.back-button:hover,
+.back-button:focus-visible {
+    color: #111;
+}
+
+.back-button:focus-visible,
+.continue-button:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 3px;
+}
+
+.continue-button:hover {
+    background: #333;
 }

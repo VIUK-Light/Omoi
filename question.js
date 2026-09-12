@@ -354,11 +354,24 @@ skipQuestionButton.addEventListener("click", function () {
 detailButton.addEventListener("click", function () {
     detailPanel.hidden = false;
     detailButton.setAttribute("aria-expanded", "true");
+    detailPanel.focus();
 });
 
 
-closeDetailButton.addEventListener("click", function () {
+function closeDetailPanel() {
     detailPanel.hidden = true;
     detailButton.setAttribute("aria-expanded", "false");
     detailButton.focus();
+}
+
+
+closeDetailButton.addEventListener("click", function () {
+    closeDetailPanel();
+});
+
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && !detailPanel.hidden) {
+        closeDetailPanel();
+    }
 });

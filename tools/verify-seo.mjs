@@ -295,6 +295,8 @@ for (const page of noindexPages) {
     if (!robots.includes("noindex")) {
         errors.push(`${page}: expected noindex robots metadata`);
     }
+
+    checkInternalLinks({ file: page, url: `${origin}/${page}` }, html);
 }
 
 const sitemap = read("sitemap.xml");
