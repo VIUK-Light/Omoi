@@ -17,17 +17,14 @@ body {
     margin: 0 auto;
 }
 
-.select-content h1 {
-    margin: 0;
-    font-size: 28px;
-}
-
+.select-content h1,
 .select-content h2 {
     margin: 32px 0 20px;
     font-size: 22px;
     line-height: 1.5;
 }
 
+.select-content h1:first-child,
 .select-content h2:first-child {
     margin-top: 16px;
 }
@@ -106,6 +103,11 @@ body {
     font-size: 14px;
 }
 
+.back-link:hover,
+.back-link:focus-visible {
+    color: #111;
+}
+
 #nextButton {
     padding: 12px 28px;
 
@@ -117,6 +119,15 @@ body {
 
     font-size: 15px;
     cursor: pointer;
+}
+
+#nextButton:hover:not(:disabled) {
+    background: #333;
+}
+
+#nextButton:focus-visible {
+    outline: 2px solid #111;
+    outline-offset: 3px;
 }
 
 #nextButton:disabled {
@@ -134,6 +145,17 @@ body {
     opacity: 0;
 }
 
+.level-list input:focus-visible + .level-card,
+.count-list input:focus-visible + .count-card {
+    outline: 2px solid #111;
+    outline-offset: 3px;
+}
+
+.level-list input:not(:checked) + .level-card:hover,
+.count-list input:not(:checked) + .count-card:hover {
+    background: #f5f5f5;
+}
+
 .count-card {
     padding: 14px 8px;
 
@@ -147,4 +169,10 @@ body {
 .count-list input:checked + .count-card {
     background: #111;
     color: #fff;
+}
+
+@media (max-width: 360px) {
+    .count-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

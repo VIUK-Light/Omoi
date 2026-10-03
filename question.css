@@ -271,3 +271,19 @@ body {
     outline: 2px solid #111111;
     outline-offset: 3px;
 }
+
+.question-actions button:focus-visible,
+#retryLoadButton:focus-visible,
+.detail-button:focus-visible {
+    outline: 2px solid #111111;
+    outline-offset: 3px;
+}
+
+.detail-panel:focus {
+    outline: none;
+}
+
+.detail-panel:focus-visible {
+    outline: 2px solid #111111;
+    outline-offset: 3px;
+}

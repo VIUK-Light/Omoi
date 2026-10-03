@@ -13,9 +13,9 @@
     <main class="select-screen">
         <div class="select-content">
 
-            <h2>どのくらい深く話す？</h2>
+            <h1 id="levelHeading">どのくらい深く話す？</h1>
 
-            <div class="level-list">
+            <div class="level-list" role="radiogroup" aria-labelledby="levelHeading">
 
                 <input type="radio" name="level" id="level1" value="1">
                 <label for="level1" class="level-card">
@@ -54,9 +54,9 @@
                 </label>
 
             </div>
-                <h2>今回は何問話す？</h2>
+                <h2 id="countHeading">今回は何問話す？</h2>
 
-                <div class="count-list">
+                <div class="count-list" role="radiogroup" aria-labelledby="countHeading">
 
                     <input type="radio" name="count" id="count5" value="5">
                     <label for="count5" class="count-card">

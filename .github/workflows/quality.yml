@@ -21,7 +21,7 @@ jobs:
             node --check "$file"
           done
       - name: Question flow regression tests
-        run: node --test tools/question-flow.test.mjs
+        run: node --test tools/*.test.mjs
       - name: Question dataset
         run: node tools/verify-question-dataset.mjs --enforce-quality-targets --summary
       - name: SEO

@@ -77,7 +77,7 @@ h1 {
 .site-footer p {
     margin: 0;
     font-size: 12px;
-    color: #888888;
+    color: #666666;
 }
 
 .brand-icon {
@@ -93,7 +93,7 @@ h1 {
     gap: 6px;
 
     font-size: 12px;
-    color: #888;
+    color: #666;
     text-decoration: none;
 }
 
@@ -116,9 +116,14 @@ h1 {
     border-radius: 12px;
 }
 
-.level-list {
-    display: grid;
-    gap: 12px;
+.start-button:hover,
+.start-button:focus-visible {
+    background-color: #333333;
+}
+
+.start-button:focus-visible {
+    outline: 2px solid #111111;
+    outline-offset: 3px;
 }
 
 .about-omoi {
