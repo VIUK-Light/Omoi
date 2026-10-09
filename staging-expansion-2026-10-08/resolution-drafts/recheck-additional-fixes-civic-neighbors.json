@@ -1,0 +1,206 @@
+{
+  "source_draft": "recheck-additional-fixes-civic.json",
+  "source_sha256": "fae23d1777ab9ed8ed632aaf61ce1d8d343e0973855c92311741ee69a5019632",
+  "corpus_count": 4710,
+  "source_file_hashes": {
+    "shards/civic/additions.json": "fae23d1777ab9ed8ed632aaf61ce1d8d343e0973855c92311741ee69a5019632",
+    "shards/world/additions.json": "7df10201253f1f21b932b92e828d5e23506213a52e999f27eb495af540a0eced",
+    "shards/personal/additions.json": "f3e8e7b8618deedf2a0e1d75258dd7401cbfe198e8bcab9e34c1d09686dcb8c5",
+    "shards/learning/additions.json": "728f41d590fe6fd36e759bfee94a4cdfe011671259fbf2817cda5c562d8b3a62",
+    "shards/care/additions.json": "8a998402d5544ebd6420e26d383949be7104c67f8e3b8d1b3b0a79beb0691ad1",
+    "shards/livelihood/additions.json": "6843a8d883b349e6d73f57965c3077b6b7d374c8337744f2a55e4fe62240eb36",
+    "level1.json": "9461b394173379dc507a72234e1e3909decf6637c67af1c2747d9d8214a0a487",
+    "level2.json": "66ec755c88419271054070d5a61787f0306fd3daaa406b16414c25590b06a179",
+    "level3.json": "49f7ef9236ddaf94f0246dd7b3f79134c1c468921a389ce8ae2d1510d3fa9ee5",
+    "level4.json": "e07c845c5c82155fc0ab565f9cc9212c9f715f86d3e926f36526b5a8f60c15d7"
+  },
+  "method": "char 2–4 gram TFIDF; candidate discovery only, no semantic assertion",
+  "comparisons": [
+    {
+      "id": "exp26-civic-0021",
+      "after": {
+        "card": {
+          "id": "exp26-civic-0021",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "justice_safety_and_crime",
+          "topic": "safety_and_dignity",
+          "question": "店の防犯で自分だけ呼び止められ、誤解だと分かった。謝罪を受けても、なぜ自分が選ばれたのかを知りたい？ それはなぜ？"
+        },
+        "reason": "店へ戻る条件や周囲へ訂正を届ける範囲ではなく、誤解が解けた後にも自分が確認の対象に選ばれた理由を知りたいかという、説明への期待と尊厳を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "justice_safety_and_crime__l2.txt:16",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "candidates": [
+        {
+          "similarity": 0.14883944626643794,
+          "id": "exp26-civic-0072",
+          "source_path": "shards/civic/additions.json",
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0072",
+              "level": 3,
+              "sensitivity": 3,
+              "category": "justice_safety_and_crime",
+              "topic": "safety_and_authority",
+              "question": "店の防犯で誤って呼び止めた回数も、安全対策の評価に入れたい？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の評価制度。盗難防止の成果と、疑われる側に生じる負担を比べる。"
+              }
+            },
+            "reason": "予防の成功と誤警戒の費用。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "justice_safety_and_crime__l3.txt:43",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          "question": "店の防犯で誤って呼び止めた回数も、安全対策の評価に入れたい？"
+        },
+        {
+          "similarity": 0.08274939845337395,
+          "id": "exp26-civic-0389",
+          "source_path": "shards/civic/additions.json",
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0389",
+              "level": 1,
+              "sensitivity": 1,
+              "category": "democracy_rights_and_participation",
+              "topic": "minority_and_majority",
+              "question": "自分だけ違う意見だと分かった時、まずどんな気持ちになる？"
+            },
+            "reason": "少数になる自分の感覚。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l1.txt:18",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          "question": "自分だけ違う意見だと分かった時、まずどんな気持ちになる？"
+        },
+        {
+          "similarity": 0.08017964467904687,
+          "id": "youth-pregnancy-l3-017",
+          "source_path": "level3.json",
+          "card": {
+            "id": "youth-pregnancy-l3-017",
+            "topic": "gendered_judgment",
+            "category": "school_and_youth",
+            "perspective": "observer",
+            "question": "同じ妊娠でも、女子生徒と男子生徒で周囲から責められ方が違うとしたら、それはなぜだと思う？",
+            "level": 3,
+            "sensitivity": 4,
+            "detail": {
+              "text": "妊娠による身体的な影響は男女で同じではありませんが、社会的な評価や責任の求められ方まで同じように非対称であるべきかは別の問題です。\n\n身体的な違いと、社会が男女に期待する役割を区別して考える問いです。"
+            },
+            "content_warning": [
+              "pregnancy_and_reproduction"
+            ]
+          },
+          "question": "同じ妊娠でも、女子生徒と男子生徒で周囲から責められ方が違うとしたら、それはなぜだと思う？"
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0284",
+      "after": {
+        "card": {
+          "id": "exp26-civic-0284",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "society_public_policy_and_environment",
+          "topic": "receiving_public_help",
+          "question": "今の相談員にようやくつらい過去を話せたあなたは、別の相談先を紹介された。「あの人なら大丈夫」と勧められても、同じように話せるかはまだ分からない。今の担当を信じることと、その人が勧める相手を信じることは、自分にとってどう違う？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の紹介です。つらい経験を今の担当へ安心して語れるようになるまで時間がかかった条件です。まだ会っていない紹介先について、今の担当は信頼できると勧めています。担当の推薦を信じることと、自分が新しい相手との関係で安心を得ることは、重なっても異なってもかまいません。推薦を受ければ信じるべきだとは決めません。"
+          }
+        },
+        "reason": "0089の再説明の負担と新しい視点から分け、ようやく得た支援者への信頼を、その人が推薦する未面識の相手にも渡せるかという本人の信頼の意味を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:19",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "candidates": [
+        {
+          "similarity": 0.07603073042281655,
+          "id": "exp26-civic-0546",
+          "source_path": "shards/civic/additions.json",
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0546",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "democracy_rights_and_participation",
+              "topic": "public_trust",
+              "question": "信頼する代表を、親しい人にも「この人に任せよう」と勧めてきた。約束が守られず、自分の選択まで信じられなくなった。事情は理解できても、代表を信じ直すことと、自分の判断を信じ直すことは同じ？",
+              "perspective": "affected",
+              "detail": {
+                "text": "架空の委任と推薦の後です。本人は代表を選び、周囲へ勧める判断もしてきました。代表の事情に納得すること、代表の次の約束を信じること、自分が人を選ぶ判断を信じることを分けます。推薦者が代表の全ての行動の責任を負うとは決めません。"
+              }
+            },
+            "reason": "0488の代表への信頼回復と分け、自分が周囲へ推薦した代表の失約から揺れる、本人の判断への信頼を聞く。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l4.txt:60",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          "question": "信頼する代表を、親しい人にも「この人に任せよう」と勧めてきた。約束が守られず、自分の選択まで信じられなくなった。事情は理解できても、代表を信じ直すことと、自分の判断を信じ直すことは同じ？"
+        },
+        {
+          "similarity": 0.07312764000900242,
+          "id": "gender-l3-020",
+          "source_path": "level3.json",
+          "card": {
+            "id": "gender-l3-020",
+            "topic": "gender_false_accusation",
+            "category": "gender_sexuality_and_identity",
+            "perspective": "observer",
+            "question": "被害を訴えた人をまず信じることと、疑われた人を最初から加害者扱いしないことは両立できると思う？",
+            "level": 3,
+            "sensitivity": 4,
+            "detail": {
+              "text": "被害を訴えることには大きな心理的負担があり、訴えを軽視しないことが重要です。\n\n一方、事実確認の前から特定の人を加害者と決めつければ、別の深刻な不利益が生じる可能性があります。\n\n被害申告への尊重と、適正な事実確認をどう両立するかを考える問いです。"
+            }
+          },
+          "question": "被害を訴えた人をまず信じることと、疑われた人を最初から加害者扱いしないことは両立できると思う？"
+        },
+        {
+          "similarity": 0.07243421718440189,
+          "id": "exp26-personal-0137",
+          "source_path": "shards/personal/additions.json",
+          "addition": {
+            "card": {
+              "id": "exp26-personal-0137",
+              "level": 2,
+              "sensitivity": 1,
+              "category": "self_and_values",
+              "topic": "personal_change",
+              "question": "以前の自分なら断った誘いを、今は受けたくなった。理由がまだ分からなくても、その変化を信じられる？"
+            },
+            "reason": "理由の言語化前の自己変化を聞く。",
+            "editorial": {
+              "author_group": "personal",
+              "fact_status": "hypothetical",
+              "source_row": "self_and_values__l2.txt:6"
+            }
+          },
+          "question": "以前の自分なら断った誘いを、今は受けたくなった。理由がまだ分からなくても、その変化を信じられる？"
+        }
+      ]
+    }
+  ]
+}

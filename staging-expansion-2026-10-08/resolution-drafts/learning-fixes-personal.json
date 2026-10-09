@@ -1,0 +1,1449 @@
+{
+  "status": "resolution_draft_unapplied_not_approved",
+  "author_group": "personal",
+  "prepared_by": "learning",
+  "source_path": "shards/personal/additions.json",
+  "source_sha256": "859fdbd5cf219a4084a7647bc3e4b6300d711780a329b90b12a1ebcc1ce3bac8",
+  "review_path": "peer-reviews/learning-reviews-personal.json",
+  "review_sha256": "8bf8956833cbeea51c5576c7204545b4210a538e3fc9e758f54c64c7dfbadf36",
+  "changes": [
+    {
+      "id": "exp26-personal-0141",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0141",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "self_and_values",
+          "topic": "completion_meaning",
+          "question": "簡単にできるようになって、以前ほど楽しめなくなったことがあるとする。上達と楽しさが別なら、どちらを続けたい？"
+        },
+        "reason": "熟達後の動機の変化を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "self_and_values__l2.txt:10"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0141",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "self_and_values",
+          "topic": "completion_meaning",
+          "question": "簡単にできるようになって、以前ほど楽しめなくなったことがあるとする。さらに上達するために今の活動を続けたい？楽しめる別のことを試したい？何で選ぶ？"
+        },
+        "reason": "上達しても楽しさが増えない時、続ける理由と別の活動を選ぶ理由の違いを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "self_and_values__l2.txt:10"
+        }
+      },
+      "reason": "比較する二つの行動を明示し、「楽しさを続ける」という曖昧な対応を解消する。",
+      "addresses": [
+        "learning-review-finding-1"
+      ],
+      "comparison_ids": []
+    },
+    {
+      "id": "exp26-personal-0196",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0196",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "self_and_values",
+          "topic": "past_and_acceptance",
+          "question": "人生の選択を紹介する冊子が、その後の結果を知らずに選んだ当時の理由も載せたいという。読者として、結果と当時の理由をどの順で知りたい？",
+          "perspective": "observer",
+          "detail": {
+            "text": "仮の冊子の構成です。結果から過去を見る読み方と、その時の情報の範囲から選択を見る読み方で、同じ人生の理解が変わり得ます。"
+          }
+        },
+        "reason": "人生判断を理解する情報の順序を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "self_and_values__l3.txt:16"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0196",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "self_and_values",
+          "topic": "past_and_acceptance",
+          "question": "人生の変化を紹介する企画で、紹介者は本人の性格を理由に説明したいが、本人は出会った人や環境から理解してほしいという。紹介をまとめる役なら、その人が変わった理由をどう伝えたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の人生紹介です。性格が選択へ及ぼす影響と、環境や関係が変わる中で生き方を選ぶことを比べます。本人と紹介者のどちらかだけが正しいとは決めません。"
+          }
+        },
+        "reason": "人生の変化を性格から説明することと、環境や関係から説明することの違いを、紹介する立場から聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "self_and_values__l3.txt:16"
+        }
+      },
+      "reason": "読む順番の好みから、自己の変化を何に帰属させて伝えるかという紹介の責任へ変更する。0489の判断材料の提示順序とも分ける。",
+      "addresses": [
+        "learning-review-finding-2"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0181",
+        "exp26-personal-0183",
+        "exp26-personal-0489"
+      ]
+    },
+    {
+      "id": "exp26-personal-0205",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0205",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "self_and_values",
+          "topic": "ordinary_meaning",
+          "question": "日常を紹介する展覧会で、特別な一日を出してほしいと頼まれた。選ぶ役なら、何も起きなかった日も展示の中心にできると思う？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の展示で、事件性や成果のある日だけが人を知る材料とは置いていません。普通の日にある意味を、他者へどう伝えるかを考えます。"
+          }
+        },
+        "reason": "非劇的な人生の時間を紹介する価値を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "self_and_values__l3.txt:25"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0205",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "self_and_values",
+          "topic": "ordinary_meaning",
+          "question": "暮らしを紹介する会で、本人は「私は幸せ」と語るが、観客はその生活をつらそうだと受け取った。進行役なら、本人の実感と観客の受け止め方を、どのように問い返したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の対話の場です。生活条件から分かることと、本人がその暮らしに感じる意味は、同じ評価になるとは限りません。本人に幸福を説明しきる義務を負わせず、観客の疑問にも目を向けます。"
+          }
+        },
+        "reason": "生活条件からの評価と暮らす本人の幸福の実感が違う時、何を聞けばその人を知れるかを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "self_and_values__l3.txt:25"
+        }
+      },
+      "reason": "非劇的な人生の掲載価値を問う0184/0201と分け、本人と外から見る人の幸福の評価が違う場へ置く。",
+      "addresses": [
+        "learning-review-finding-3"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0184",
+        "exp26-personal-0201",
+        "exp26-personal-0236"
+      ]
+    },
+    {
+      "id": "exp26-personal-0227",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0227",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "self_and_values",
+          "topic": "hope_and_future",
+          "question": "人生の大きな転機を待つうち、今の日々を仮の時間と思うようになった。転機が来るか分からなくても、今を自分の人生と感じるために何が必要？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の待つ暮らしを置いています。将来への期待を失うことと、現在の時間に意味を持たせることは同じではありません。"
+          }
+        },
+        "reason": "期待のために保留した現在の意味を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "self_and_values__l4.txt:22"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0227",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "self_and_values",
+          "topic": "hope_and_future",
+          "question": "長く待った人生の機会がいつ訪れるか分からないまま、別の道へ進むと決めた。かなう可能性を残して離れる自分に、その希望へ使った年月は何として残る？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の人生の分岐です。もとの望みは今も大切で、実現が不可能になったわけではありません。望みを追う生き方から離れても、希望に支えられた年月をどう自分の歩みに置くかを考えます。"
+          }
+        },
+        "reason": "まだ実現するかもしれない希望を追う道から離れる本人が、待った年月をどう持つかを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "self_and_values__l4.txt:22"
+        }
+      },
+      "reason": "今を仮の暮らしと感じる0219と分け、実現の可能性を残して離れる選択へ置く。望まなくなった0226、見通しを失っても持ちたい0230とも条件を分ける。",
+      "addresses": [
+        "learning-review-finding-5"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0206",
+        "exp26-personal-0219",
+        "exp26-personal-0226",
+        "exp26-personal-0230"
+      ]
+    },
+    {
+      "id": "exp26-personal-0230",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0230",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "self_and_values",
+          "topic": "hope_and_future",
+          "question": "かなわないかもしれない望みを、手放さずに持ちたいとする。現実を受け止めることと希望を持つことは、自分の中でどう並べられる？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の望みで、根拠のない治療効果などを期待する設定ではありません。行動計画と、心を支える可能性の扱いを分けます。"
+          }
+        },
+        "reason": "不確かな希望と現実認識の共存を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "self_and_values__l4.txt:25"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0230",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "self_and_values",
+          "topic": "hope_and_future",
+          "question": "人生を組み立ててきた望みが、かなう見通しはほとんどないと分かった。手放すと生き方の軸も失いそうな自分は、現実を受け止めながら何を望みとして持ちたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の人生の見通しで、治療効果の予測を扱う場面ではありません。実現を目指して行動することと、かなわなくても心の支えとして持つことを分けて考えます。"
+          }
+        },
+        "reason": "人生の軸だった望みの実現が難しくなった本人が、現実認識と希望をどう結び付けるかを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "self_and_values__l4.txt:25"
+        }
+      },
+      "reason": "望みの一般論から、本人が生き方の支えを失い得る条件へ。0226の欲求自体の変化、0227の別の道を選ぶ行為と分ける。",
+      "addresses": [
+        "learning-review-finding-6"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0226",
+        "exp26-personal-0227"
+      ]
+    },
+    {
+      "id": "exp26-personal-0234",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0234",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "self_and_values",
+          "topic": "personal_legacy",
+          "question": "自分が大切にした経験を、残す場所が一つしかない。人に伝わりやすい代表的な話と、自分だけには決定的だった普通の日のどちらを置く？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の保存機会で、どちらも記録できない制約を置いています。他者が読み取る価値と、本人にとっての人生の中心を比べます。"
+          }
+        },
+        "reason": "人生を代表する記録を自分で選ぶ基準を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "self_and_values__l4.txt:29"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0234",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "self_and_values",
+          "topic": "personal_legacy",
+          "question": "自分が大切にした経験を、残す場所が一つしかない。人に伝わりやすい代表的な話と、自分だけには決定的だった普通の日のどちらを置く？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の保存機会で、両方の話を残すことはできないという制約です。他者が読み取る価値と、本人にとっての人生の中心を比べます。"
+          }
+        },
+        "reason": "人生を代表する記録を自分で選ぶ基準を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "self_and_values__l4.txt:29"
+        }
+      },
+      "reason": "保存できる話は一つであることを明示する。問いと追加理由は保ち、背景の「どちらも記録できない」だけを補正する。",
+      "addresses": [
+        "learning-review-finding-7"
+      ],
+      "comparison_ids": []
+    },
+    {
+      "id": "exp26-personal-0315",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0315",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "relationships_and_communication",
+          "topic": "relational_time",
+          "question": "昔の友達に、知らないうちに共通の思い出が増えていた。自分の知らない時間を、どんなふうに聞きたい？"
+        },
+        "reason": "共有しなかった時間への関わりを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l2.txt:27"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0315",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "relationships_and_communication",
+          "topic": "relational_time",
+          "question": "昔の友達には、自分の知らない人たちとの思い出が増えていた。自分が一緒にいなかった時間を、どんなふうに聞きたい？"
+        },
+        "reason": "共有しなかった相手の時間へ、どんな関心を向けて聞きたいかを知る。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l2.txt:27"
+        }
+      },
+      "reason": "誰と誰の思い出かを明示し、自分との共通体験を自分が知らないという読みを解消する。",
+      "addresses": [
+        "learning-review-finding-8"
+      ],
+      "comparison_ids": []
+    },
+    {
+      "id": "exp26-personal-0318",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0318",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "relationships_and_communication",
+          "topic": "relational_time",
+          "question": "長く知る相手の新しい友達として、今から付き合い始めるつもりで会えたら、何を聞き直したい？"
+        },
+        "reason": "親しさによって省略した関心を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l2.txt:30"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0318",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "relationships_and_communication",
+          "topic": "relational_time",
+          "question": "長く知る相手に、今初めて出会ったつもりで会えたら、何を聞き直したい？"
+        },
+        "reason": "親しさの中で聞かずにいたことへ、改めてどんな関心を持つかを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l2.txt:30"
+        }
+      },
+      "reason": "別の人物に変身するようにも読める比喩を、初めて出会ったつもりという会話の条件へ整える。",
+      "addresses": [
+        "learning-review-finding-9"
+      ],
+      "comparison_ids": []
+    },
+    {
+      "id": "exp26-personal-0386",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0386",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "relationships_and_communication",
+          "topic": "relational_time",
+          "question": "期間の決まった交流活動で、最後に永く続く友情を約束する案がある。終わる時間として大切にする言葉も、同じくらい価値があると思う？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の活動の終了時点です。関係の将来を保証することと、その期間にあった親しさを認めることを分けます。"
+          }
+        },
+        "reason": "終わりを否定しない関係の価値を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l3.txt:31"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0386",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "relationships_and_communication",
+          "topic": "relational_time",
+          "question": "交流団体が関係の節目を祝う企画で、知り合った日を二人は違って覚えている。一つの日を正式な始まりと決めることと、それぞれの始まりを残すことをどう考える？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の企画で、記憶の正誤を判定する場ではありません。共同の区切りを作ることと、それぞれが関係の始まりに置く意味を比べます。違う日を大切にすることが、親しさの不足とは決めません。"
+          }
+        },
+        "reason": "関係の始まりを共同で一つに決めることと、二人の違う意味を残すことの違いを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l3.txt:31"
+        }
+      },
+      "reason": "期間限定の親しさを価値付ける0359と分け、関係の節目を共同で作る時の時間の意味へ置く。",
+      "addresses": [
+        "learning-review-finding-10"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0359",
+        "exp26-personal-0387",
+        "exp26-personal-0423"
+      ]
+    },
+    {
+      "id": "exp26-personal-0410",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0410",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "relationships_and_communication",
+          "topic": "understanding_and_words",
+          "question": "自分にとって言葉にならない大切なものを、親しい人がうまく説明してくれた。でもその説明では何かが残る。理解されたことと、分からないまま大切にされることは何が違う？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の会話です。きれいな説明を唯一の理解にせず、本人がまだ確定していない感覚を持てるかを考えます。"
+          }
+        },
+        "reason": "説明しきれない自己を受け取ってもらう意味を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l4.txt:18"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0410",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "relationships_and_communication",
+          "topic": "understanding_and_words",
+          "question": "親しい人に、これからどんな自分として生きたいかまだ言葉にできないとする。相手の説明は的確でも、その言葉で未来を決めたくない。説明しきれない自分を、どう大切にしてもらいたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の親密な会話です。相手の説明が役立つことと、その説明をこれからの自己像として引き受けることを分けます。言葉を拒むかだけでなく、まだ定まらない自分の未来を相手とどう共有するかを考えます。"
+          }
+        },
+        "reason": "親しい相手に理解されながらも、言葉で将来の自分を固定されたくない本人の望みを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l4.txt:18"
+        }
+      },
+      "reason": "抽象的な「大切なもの」を、これから生きたい自己像へ置く。単なる言語化の好みでなく親密な相手との将来に残る葛藤を持たせる。",
+      "addresses": [
+        "learning-review-finding-11"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0183",
+        "exp26-personal-0413"
+      ]
+    },
+    {
+      "id": "exp26-personal-0413",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0413",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "relationships_and_communication",
+          "topic": "understanding_and_words",
+          "question": "二人で深く話した後、相手は以前と同じように接している。自分は何かが変わったと感じていた。理解し合ったことは、行動の変化で確かめたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の会話の後です。相手が話を忘れたと確定せず、内面の理解と外に表れる関係の変化の違いを考えます。"
+          }
+        },
+        "reason": "深い会話の後に望む関係の可視的変化を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l4.txt:21"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0413",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "relationships_and_communication",
+          "topic": "understanding_and_words",
+          "question": "親しい人へ、これからは以前の役割で生きられないと話し、理解してもらえたと思った。でも相手は前と同じ役を頼る。自分を知ってもらうことを、何が変われば確かめられる？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の長い関係で、本人はこれから別の生き方を選びたいと伝えています。相手が話を忘れたとは決めません。考えを理解することと、慣れた役割を頼る行動が変わることの違いを考えます。"
+          }
+        },
+        "reason": "長く担った関係の役割から離れたい本人が、理解と実際の関わりの変化に何を求めるかを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l4.txt:21"
+        }
+      },
+      "reason": "深く話したという一般条件から、人生の役割を変えたい本人と変わらない関わりへ。日常の会話後の感覚より踏み込む。",
+      "addresses": [
+        "learning-review-finding-12"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0220",
+        "exp26-personal-0410"
+      ]
+    },
+    {
+      "id": "exp26-personal-0417",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0417",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "relationships_and_communication",
+          "topic": "equal_exchange",
+          "question": "親しい相手は、あなたに何でも選んでほしいという。自分も決めるのは好きだが、相手の望みが見えなくなる。決める役を続けるなら、何を相手に聞きたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の合意された役割分担です。権力の乱用を前提にせず、決定の便利さと相手の主体性を知る価値を比べます。"
+          }
+        },
+        "reason": "合意された決定役が持つ相手理解の責任を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l4.txt:25"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0417",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "relationships_and_communication",
+          "topic": "equal_exchange",
+          "question": "二人の暮らしを変える大きな選択を、親しい相手はいつもあなたに任せる。自分の望みで未来を決めることが、相手の人生まで選ぶことに感じられたら、どんな責任を持ちたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の合意された決定役です。相手は任せたいと伝えており、支配や脅しは置いていません。自分が決める便利さと、相手の将来の望みを知らないまま暮らしを選ぶ責任を比べます。"
+          }
+        },
+        "reason": "自分の望みで親しい相手との未来を選ぶ時、合意された委任でも残る相手理解の責任を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l4.txt:25"
+        }
+      },
+      "reason": "日常の選択分担から、二人の暮らしを変える選択と人生への責任へ置く。",
+      "addresses": [
+        "learning-review-finding-13"
+      ],
+      "comparison_ids": [
+        "relationship-104"
+      ]
+    },
+    {
+      "id": "exp26-personal-0423",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0423",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "relationships_and_communication",
+          "topic": "relational_time",
+          "question": "長い関係の節目を一緒に祝いたいが、相手は年月より今の関係が大切だという。自分が祝いたいのは、続いたことか、何かを一緒に越えたことか？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の節目の違いです。祝う形式の正解を決めるのでなく、長さに本人が置く意味を考えます。"
+          }
+        },
+        "reason": "継続を祝う関係の個人的な意味を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l4.txt:31"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0423",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "relationships_and_communication",
+          "topic": "relational_time",
+          "question": "長く共にした相手とは関係を終えることを二人で決めたが、自分は最後の節目を祝い、相手はこれからの暮らしへ進みたい。自分が一緒に確かめたいのは、その時間のどんな意味だろう？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の関係の区切りです。別々に生きる選択は二人とも変えるつもりがありません。祝いを関係の継続を求めるための手段にせず、共にした年月を確かめたい望みと、区切りを終えたい望みを考えます。"
+          }
+        },
+        "reason": "関係を終える本人が、共に生きた時間を相手と認め合うことに何を求めるかを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l4.txt:31"
+        }
+      },
+      "reason": "祝い方の好みから、終えると決めた関係で共有した人生をどう区切るかへ置く。続いた年数の価値を紹介する0388とは分ける。",
+      "addresses": [
+        "learning-review-finding-14"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0379",
+        "exp26-personal-0388"
+      ]
+    },
+    {
+      "id": "exp26-personal-0424",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0424",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "relationships_and_communication",
+          "topic": "relational_time",
+          "question": "久しぶりに会う大切な人に、これまでの時間を全部分かってほしい。でも二人で持てるのは短い今の時間だけだ。何を話し、何をただ一緒に過ごしたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の再会で、死期を指定する設定ではありません。情報を更新することと、今から共に経験する時間を比べます。"
+          }
+        },
+        "reason": "限られた再会時間で自分が選ぶ関係の意味を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l4.txt:32"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0424",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "relationships_and_communication",
+          "topic": "relational_time",
+          "question": "人生の別の道へ進んだ大切な人と、次の再会の約束ができない短い時間を持つとする。これまでを理解してほしい自分と、今だけ共に過ごしたい自分は、何を相手と分かち合いたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の再会で、死期を指定する設定ではありません。別々の暮らしへ進むため、次に会う機会を決められない場面です。自分が生きた時間を知ってもらうことと、新しい思い出を一緒に持つことを比べます。"
+          }
+        },
+        "reason": "次の再会を約束できない人生の分岐で、相手に伝える歩みと共に経験する時間のどちらに関係を残すかを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "relationships_and_communication__l4.txt:32"
+        }
+      },
+      "reason": "通常の短い再会の配分を問う0316と分け、人生の道が分かれて次を約束できない関係へ置く。",
+      "addresses": [
+        "learning-review-finding-15"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0316",
+        "exp26-personal-0423"
+      ]
+    },
+    {
+      "id": "exp26-personal-0530",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0530",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "motives_and_results",
+          "question": "自分の選んだことは良い結果になったが、同じ理由で選び続けると次は人を困らせるかもしれない。今回の成功を根拠に、自分の選び方を残したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の成功は判断の正しさを確定しません。誇れる結果を手放さずに、決める原則だけを見直せるかを考えます。"
+          }
+        },
+        "reason": "自分の成功を判断基準から切り離す責任を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:7"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0530",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "motives_and_results",
+          "question": "人を大切にすれば自分の人生も報われると信じ、長くその通りに生きてきた。でも、自分を後回しにしてきた時間だけが残ったと感じる。その望みを失った今、これからの人生を何を基準に選びたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の人生の振り返りです。周囲へ実際に役立ったことは否定しません。善行の価値と、それに自分の幸福が返ると期待してきた理由を分けて考えます。人を大切にする理由が一つだけとは置きません。"
+          }
+        },
+        "reason": "自分の幸福と結び付けて選んだ倫理を、報われる見通しがなくなった後も判断の基準にする意味を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:7"
+        }
+      },
+      "reason": "成功の結果から選び方を一般化する0545と分け、自分の幸福への望みに支えられた倫理を今後の人生の基準にするかへ変更する。",
+      "addresses": [
+        "learning-review-finding-16"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0524",
+        "exp26-personal-0545",
+        "exp26-personal-0230"
+      ]
+    },
+    {
+      "id": "exp26-personal-0542",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0542",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "knowledge_and_duty",
+          "question": "判断を任されたあなたは、誰より条件に詳しい。だからこそ他の人には見えない不安もある。安心を求める人たちに、どこまでその不安を見せて決めたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の判断で、情報を隠す義務はありません。知識による権限と、相手が選択を確かめるための説明を考えます。"
+          }
+        },
+        "reason": "詳しい決定者が自分の不確実さを見せる責任を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:19"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0542",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "knowledge_and_duty",
+          "question": "あなたが進む道を決める役になり、共に暮らした人たちはそれを信頼して今の仕事や居場所を手放そうとしている。自分はその道に詳しいが、うまくいくとは確信していない。その人たちの未来を選ぶ時、不安をどこまで共有したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の共同の選択です。相手も任せると決めていますが、不確実さをどこまで理解しているかはまだ確かめられていません。自分の知識への信頼を保つことと、相手が将来の暮らしを決める材料を持つことを比べます。"
+          }
+        },
+        "reason": "自分への信頼が相手のこれからの暮らしを左右する時に、不確実さを共有する責任を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:19"
+        }
+      },
+      "reason": "通常の判断説明0518から、親しい人の将来を決める自分への信頼と重大な情報責任へ。0551は将来の考え直しを閉じる約束へ分ける。",
+      "addresses": [
+        "learning-review-finding-17"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0518",
+        "exp26-personal-0551",
+        "exp26-personal-0583"
+      ]
+    },
+    {
+      "id": "exp26-personal-0543",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0543",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "knowledge_and_duty",
+          "question": "自分が確かめた範囲では問題がないが、確かめていない部分も大きい。決定を急ぐ必要がある時、知らない範囲を理由にどこまで待ちたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の期限付き判断です。確認できた安全と、全体が安全だという結論を同じにしません。待つことにも負担があります。"
+          }
+        },
+        "reason": "決める本人が未知の範囲へ持つ責任を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:20"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0543",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "knowledge_and_duty",
+          "question": "まだ確かめきれないやり方で、自分が一生取り組みたい仕事を始める機会が来た。今決めなければ機会を失うが、決めれば共に進む人の暮らしも変わる。自分の夢のために、どんな不確かさなら残して決められる？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の人生の機会で、具体的な治療や救助の方法ではありません。自分の将来の機会と、共に進む人の暮らしへの影響がある設定です。未知を完全になくせない中で、何を確かめる責任として持つかを考えます。"
+          }
+        },
+        "reason": "自分が生きたい道と他者の暮らしを背負って、未確認を残す決定の責任を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:20"
+        }
+      },
+      "reason": "期限付き確認という一般の役割判断から、自分の将来の機会を失うことと他者の暮らしへ未知を残すことを選ぶ場へ。0585の既に使った準備への愛着とは分ける。",
+      "addresses": [
+        "learning-review-finding-18"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0585",
+        "exp26-personal-0584"
+      ]
+    },
+    {
+      "id": "exp26-personal-0550",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0550",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "judgment_conditions",
+          "question": "最終判断をする役で、どちらにも重要な理由が残っている。決めれば片方の理由を軽く扱ったと言われるかもしれない。完全に納得できなくても決める責任をどう持つ？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の判断には期限があります。理由を理解することと、優先順位を自分で引き受けることの違いを考えます。"
+          }
+        },
+        "reason": "不完全な納得のまま最終責任を持つ意味を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:27"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0550",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "judgment_conditions",
+          "question": "長く支えてくれた人への約束を守ることと、自分がこれから生きたい道へ進むことが両立しなくなった。どちらも大切で、今はどちらかを選ぶ必要がある。選ばなかった理由を消さずに、その後の自分の人生をどう引き受けたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の人生の分岐です。約束を守る側も新しい道へ進む側も、完全に誤りとは置きません。決めた後も残る相手への責任と、自分の望みを持つことをどう考えるかが論点です。"
+          }
+        },
+        "reason": "一方を選んでも消えない倫理上の理由を、その後の自分の人生として持つ意味を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:27"
+        }
+      },
+      "reason": "最終判断の役割だけの条件から、支えた人への約束と自分が生きたい道へ置く。relationship-104のキャリアを手放せるかという選択に対し、選択後も消えない理由を引き受ける意味を聞く。",
+      "addresses": [
+        "learning-review-finding-19"
+      ],
+      "comparison_ids": [
+        "relationship-104",
+        "exp26-personal-0224",
+        "exp26-personal-0566"
+      ]
+    },
+    {
+      "id": "exp26-personal-0551",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0551",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "judgment_conditions",
+          "question": "あなたが選ぶ案には反対もあり、自分でも小さな迷いがある。迷いを隠せば進みやすいが、人は自分の確信を信じる。どんな言葉で決めたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の決定の説明です。迷いを示すことが責任の放棄なのか、判断の根拠を共有することなのかを考えます。"
+          }
+        },
+        "reason": "自分の確信への期待を受ける決定者の誠実さを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:28"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0551",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "judgment_conditions",
+          "question": "迷いのある案について、「今後もこの方向は変えない」と約束すれば、仲間は人生の時間をかけて協力すると言う。約束できずに機会を失うことと、将来の自分が選び直す余地を失うことを、どう引き受けたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の協力の約束です。不確実さを話すかだけでなく、将来に方向を変える自由まで約束で閉じることを比べます。協力者の時間も、本人が理念を実現する機会も大切なものとして置きます。"
+          }
+        },
+        "reason": "他者の人生の時間を託されるために、将来も自分の選ぶ方向を変えないと約束する意味を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:28"
+        }
+      },
+      "reason": "迷いを見せて説明する0542と分け、将来の自己の判断を拘束する約束と実現の機会へ変更する。0566は既に引き受けた約束の撤回であり、本案はその約束を今するかを問う。",
+      "addresses": [
+        "learning-review-finding-20"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0542",
+        "exp26-personal-0518",
+        "exp26-personal-0566",
+        "exp26-personal-0570"
+      ]
+    },
+    {
+      "id": "exp26-personal-0556",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0556",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "fairness_and_exceptions",
+          "question": "あなたが例外を認める側で、事情を詳しく説明できる人の方が納得しやすい。説明が苦手な人には同じ事情があるかもしれない。何を自分の判断の限界として扱う？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の審査で、説明の不足が事情の不存在とは決まっていません。自分が理解しやすい人を選ぶ可能性を考えます。"
+          }
+        },
+        "reason": "決定者の理解しやすさが作る例外の偏りを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:33"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0556",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "fairness_and_exceptions",
+          "question": "かつて自分は、事情を詳しく説明して例外を認められ、人生を立て直せた。今、同じ判断を担う自分の前に、事情を話せない人がいる。確かめきれないまま認める責任と、認めずにその人の道を閉ざす責任をどう持ちたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の例外の判断です。本人の説明だけを根拠に認めると、共通の基準への信頼も揺らぐ設定です。説明できないことが事情の不存在とは決めません。自分も救われた仕組みを守ることと、理解しきれない人の機会を守ることを比べます。"
+          }
+        },
+        "reason": "例外で人生を立て直した本人が、確かめられない事情を前に、認めることと退けることの責任をどう持つかを聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:33"
+        }
+      },
+      "reason": "説明の得手不得手に左右される一般の審査から、自分の人生を支えた仕組みと他者の将来を判断する責任へ置く。",
+      "addresses": [
+        "learning-review-finding-21"
+      ],
+      "comparison_ids": [
+        "ethics-002",
+        "exp26-personal-0558"
+      ]
+    },
+    {
+      "id": "exp26-personal-0565",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0565",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "recognition_and_credit",
+          "question": "功績を紹介する役になり、自分が親しい人ほど具体的に貢献を知っている。知らない人を同じように紹介できないなら、その限界を表に出して選びたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の紹介ではあなたの判断が評価にもつながります。よく知ることによる正確さと、知る機会の偏りを考えます。"
+          }
+        },
+        "reason": "自分の関係網が作る功績評価の責任を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:42"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0565",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "recognition_and_credit",
+          "question": "共同の仕事に人生の大半を費やした人たちを、次の活動へ推薦する役になった。親しい人の貢献は語れるが、知らない人の支えは語れない。自分の知る範囲で、その人たちのこれからを左右する推薦を決めてよいと思う？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の推薦が、その後の役割や機会を左右する設定です。親しい人の実際の功績は否定しません。自分が知る機会の偏りを認めた上で、知らない貢献を評価から落とす責任を考えます。"
+          }
+        },
+        "reason": "自分の関係網の外にいる人のこれからを左右する推薦を、自分の知る貢献だけで決める責任を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:42"
+        }
+      },
+      "reason": "紹介の公平だけを問う役割から、長く担った人たちの次の人生の機会を、自分の知る範囲で選ぶ責任へ置く。0556の申請を確かめられない判断と違い、知る機会の偏りによる功績の選択を問う。",
+      "addresses": [
+        "learning-review-finding-22"
+      ],
+      "comparison_ids": [
+        "exp26-personal-0553",
+        "exp26-personal-0556"
+      ]
+    }
+  ],
+  "finding_resolutions": [
+    {
+      "finding_number": 1,
+      "finding_id": "learning-review-finding-1",
+      "id": "exp26-personal-0141",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0141",
+      "resolution": "比較する二つの行動を明示し、「楽しさを続ける」という曖昧な対応を解消する。"
+    },
+    {
+      "finding_number": 2,
+      "finding_id": "learning-review-finding-2",
+      "id": "exp26-personal-0196",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0196",
+      "resolution": "読む順番の好みから、自己の変化を何に帰属させて伝えるかという紹介の責任へ変更する。0489の判断材料の提示順序とも分ける。"
+    },
+    {
+      "finding_number": 3,
+      "finding_id": "learning-review-finding-3",
+      "id": "exp26-personal-0205",
+      "priority": "required",
+      "field": "novelty",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0205",
+      "resolution": "非劇的な人生の掲載価値を問う0184/0201と分け、本人と外から見る人の幸福の評価が違う場へ置く。"
+    },
+    {
+      "finding_number": 4,
+      "finding_id": "learning-review-finding-4",
+      "id": "exp26-personal-0206",
+      "priority": "required",
+      "field": "novelty",
+      "status": "resolved_in_staging_by_learning0093_rewrite_personal_preserved",
+      "change_id": null,
+      "related_change_id": "exp26-learning-0093",
+      "resolution": "TP-06の0206は全additionを維持する。適用されたlearning0093は、生涯深めたい問いと卒業に必要な別分野の資格を人生の中でつなぐ学びを問う。達成後の充足と費やした時間を問う0206とは判断対象が異なる。",
+      "related_draft": "shards/learning/peer-fix-draft.json",
+      "application_status": "主担当がlearning0093をstagingへ適用済み。最終原文を読んで0206との判断対象の違いを確認した。",
+      "resolved_related_addition": {
+        "card": {
+          "id": "exp26-learning-0093",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "school_and_youth",
+          "topic": "learning_aspiration",
+          "question": "憧れた学校で、生涯深めたい問いが見つかった。けれど学校が卒業の研究として認めるのは別の分野で、その資格も今後の自分には必要だ。資格を得る学びと、自分の問いを続ける学びを、人生の中でどうつなげたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の卒業条件です。本人の問いは研究の対象として認められない一方、同じ学校で得る資格も将来に必要とする設定です。学校を離れるかだけに限定せず、資格のための学びと生涯続けたい問いの関係を考えます。"
+          }
+        },
+        "reason": "目標を達成した後の充足を聞くpersonal0206から、同じ学校で必要な資格と生涯の問いが一致しない時の学ぶ自律へ移す。0100の学びの中断・退出とも、両方を続ける目的が異なる。",
+        "editorial": {
+          "author_group": "learning",
+          "fact_status": "hypothetical",
+          "source_row": "school_and_youth__l4.txt:1"
+        }
+      },
+      "related_shard_sha256": "9cb5443988fd25bc64040774a438cb5f324ec23f5066290d130c99c8cfa3f718"
+    },
+    {
+      "finding_number": 5,
+      "finding_id": "learning-review-finding-5",
+      "id": "exp26-personal-0227",
+      "priority": "optional",
+      "field": "novelty",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0227",
+      "resolution": "今を仮の暮らしと感じる0219と分け、実現の可能性を残して離れる選択へ置く。望まなくなった0226、見通しを失っても持ちたい0230とも条件を分ける。"
+    },
+    {
+      "finding_number": 6,
+      "finding_id": "learning-review-finding-6",
+      "id": "exp26-personal-0230",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0230",
+      "resolution": "望みの一般論から、本人が生き方の支えを失い得る条件へ。0226の欲求自体の変化、0227の別の道を選ぶ行為と分ける。"
+    },
+    {
+      "finding_number": 7,
+      "finding_id": "learning-review-finding-7",
+      "id": "exp26-personal-0234",
+      "priority": "required",
+      "field": "detail",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0234",
+      "resolution": "保存できる話は一つであることを明示する。問いと追加理由は保ち、背景の「どちらも記録できない」だけを補正する。"
+    },
+    {
+      "finding_number": 8,
+      "finding_id": "learning-review-finding-8",
+      "id": "exp26-personal-0315",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0315",
+      "resolution": "誰と誰の思い出かを明示し、自分との共通体験を自分が知らないという読みを解消する。"
+    },
+    {
+      "finding_number": 9,
+      "finding_id": "learning-review-finding-9",
+      "id": "exp26-personal-0318",
+      "priority": "optional",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0318",
+      "resolution": "別の人物に変身するようにも読める比喩を、初めて出会ったつもりという会話の条件へ整える。"
+    },
+    {
+      "finding_number": 10,
+      "finding_id": "learning-review-finding-10",
+      "id": "exp26-personal-0386",
+      "priority": "required",
+      "field": "novelty",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0386",
+      "resolution": "期間限定の親しさを価値付ける0359と分け、関係の節目を共同で作る時の時間の意味へ置く。"
+    },
+    {
+      "finding_number": 11,
+      "finding_id": "learning-review-finding-11",
+      "id": "exp26-personal-0410",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0410",
+      "resolution": "抽象的な「大切なもの」を、これから生きたい自己像へ置く。単なる言語化の好みでなく親密な相手との将来に残る葛藤を持たせる。"
+    },
+    {
+      "finding_number": 12,
+      "finding_id": "learning-review-finding-12",
+      "id": "exp26-personal-0413",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0413",
+      "resolution": "深く話したという一般条件から、人生の役割を変えたい本人と変わらない関わりへ。日常の会話後の感覚より踏み込む。"
+    },
+    {
+      "finding_number": 13,
+      "finding_id": "learning-review-finding-13",
+      "id": "exp26-personal-0417",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0417",
+      "resolution": "日常の選択分担から、二人の暮らしを変える選択と人生への責任へ置く。"
+    },
+    {
+      "finding_number": 14,
+      "finding_id": "learning-review-finding-14",
+      "id": "exp26-personal-0423",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0423",
+      "resolution": "祝い方の好みから、終えると決めた関係で共有した人生をどう区切るかへ置く。続いた年数の価値を紹介する0388とは分ける。"
+    },
+    {
+      "finding_number": 15,
+      "finding_id": "learning-review-finding-15",
+      "id": "exp26-personal-0424",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0424",
+      "resolution": "通常の短い再会の配分を問う0316と分け、人生の道が分かれて次を約束できない関係へ置く。"
+    },
+    {
+      "finding_number": 16,
+      "finding_id": "learning-review-finding-16",
+      "id": "exp26-personal-0530",
+      "priority": "required",
+      "field": "novelty",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0530",
+      "resolution": "成功の結果から選び方を一般化する0545と分け、自分の幸福への望みに支えられた倫理を今後の人生の基準にするかへ変更する。"
+    },
+    {
+      "finding_number": 17,
+      "finding_id": "learning-review-finding-17",
+      "id": "exp26-personal-0542",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0542",
+      "resolution": "通常の判断説明0518から、親しい人の将来を決める自分への信頼と重大な情報責任へ。0551は将来の考え直しを閉じる約束へ分ける。"
+    },
+    {
+      "finding_number": 18,
+      "finding_id": "learning-review-finding-18",
+      "id": "exp26-personal-0543",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0543",
+      "resolution": "期限付き確認という一般の役割判断から、自分の将来の機会を失うことと他者の暮らしへ未知を残すことを選ぶ場へ。0585の既に使った準備への愛着とは分ける。"
+    },
+    {
+      "finding_number": 19,
+      "finding_id": "learning-review-finding-19",
+      "id": "exp26-personal-0550",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0550",
+      "resolution": "最終判断の役割だけの条件から、支えた人への約束と自分が生きたい道へ置く。relationship-104のキャリアを手放せるかという選択に対し、選択後も消えない理由を引き受ける意味を聞く。"
+    },
+    {
+      "finding_number": 20,
+      "finding_id": "learning-review-finding-20",
+      "id": "exp26-personal-0551",
+      "priority": "required",
+      "field": "novelty",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0551",
+      "resolution": "迷いを見せて説明する0542と分け、将来の自己の判断を拘束する約束と実現の機会へ変更する。0566は既に引き受けた約束の撤回であり、本案はその約束を今するかを問う。"
+    },
+    {
+      "finding_number": 21,
+      "finding_id": "learning-review-finding-21",
+      "id": "exp26-personal-0556",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0556",
+      "resolution": "説明の得手不得手に左右される一般の審査から、自分の人生を支えた仕組みと他者の将来を判断する責任へ置く。"
+    },
+    {
+      "finding_number": 22,
+      "finding_id": "learning-review-finding-22",
+      "id": "exp26-personal-0565",
+      "priority": "required",
+      "field": "question",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-personal-0565",
+      "resolution": "紹介の公平だけを問う役割から、長く担った人たちの次の人生の機会を、自分の知る範囲で選ぶ責任へ置く。0556の申請を確かめられない判断と違い、知る機会の偏りによる功績の選択を問う。"
+    }
+  ],
+  "scope": "全593件レビューから必須20件と任意2件の処理を具体化。personal0206を維持し、他19必須と任意0227/0318の計21件を個別改稿する未適用案。正本と安定shardは編集しない。",
+  "approval_required_before_canonical_apply": true,
+  "self_review": {
+    "status": "completed_all_21_after_read",
+    "reviewed_change_ids": [
+      "exp26-personal-0141",
+      "exp26-personal-0196",
+      "exp26-personal-0205",
+      "exp26-personal-0227",
+      "exp26-personal-0230",
+      "exp26-personal-0234",
+      "exp26-personal-0315",
+      "exp26-personal-0318",
+      "exp26-personal-0386",
+      "exp26-personal-0410",
+      "exp26-personal-0413",
+      "exp26-personal-0417",
+      "exp26-personal-0423",
+      "exp26-personal-0424",
+      "exp26-personal-0530",
+      "exp26-personal-0542",
+      "exp26-personal-0543",
+      "exp26-personal-0550",
+      "exp26-personal-0551",
+      "exp26-personal-0556",
+      "exp26-personal-0565"
+    ],
+    "reviewed_change_count": 21,
+    "scope": "21件の全afterの問い・背景・追加理由・metadata・変更理由を2区間で読み直し、0542/0543/0551/0565の表現を個別に補正して改めて全文を読んだ。全4710の文字2–4gram近似を新規に計算し、各変更の上位3件の問い（63比較）を読んだ。意味が近い領域では候補54件の問い・存在する背景・追加理由も選択して照合した。全件の背景を網羅的に二問比較したという意味ではない。",
+    "comparison_notes": [
+      "0196は性格と環境・関係への変化の帰属。0181の成功物語、0489の判断材料の順番とは分ける。world0581は説明を単純化された本人の残る複雑さで、紹介側の帰属の選択とは主立場も判断も異なる。",
+      "0205は本人の幸福の実感と外から見える生活条件の違い。0184/0201の掲載価値、0185の達成経験の励みになる結末とは分ける。",
+      "0227はまだ実現し得る望みを持ちながら別の道を選んだ年月。0226は望み自体が変わり、0230は見通しが乏しくても希望を持つことを問う。",
+      "0318は知り直す日常の入口、0429は相手が理解されていないと伝えた後に長年の確信を改める責任で、単純な語尾替えとは扱わない。",
+      "0386は二人が関係の始まりに置く意味。learning0482の社会的な記念日の数・頻度、0359の期間の親しさを認める企画とは分ける。",
+      "0410は的確に説明されても未来の自己像を確定したくない望み。learning0428は受け継いだ習慣を言葉以外で伝える日常、civic0311は過去を説明せず再参加する所属で判断対象が異なる。",
+      "0413は理解があっても以前の関係役割が続く時の新しい生き方。0412は同じ会話の理解の違いから親しさを疑う意味。",
+      "0417は委任された相手の未来を知る責任。civic0268は相談者が自分の勧めを選ばない時の責任で、合意による決定役と助言者の自己評価が異なる。",
+      "0423は終えると二人で決めた関係を共有の時間として区切る望み。0404は関係回復を願う謝罪が相手の終了の意思に届かない本人の意味。",
+      "0424は次の再会を約束できない人生の分岐で過去を伝えるか共に経験するか。0316の日常の再会配分、learning0144の学ぶ集団の解散を代表する語りと分ける。",
+      "0530は自分への幸福の見返りを期待した倫理を今後の生き方の基準にするか。0545は成功から方法を一般化するか、0206は達成後の空白と使った人生で、幸福の条件付き倫理とは分ける。",
+      "0542は共に暮らした人が今の生活を手放す将来に、不安を共有する責任。0565は知らない人の功績を自分の関係網で落とす推薦の責任で、知識の不確実さと知る機会の偏りを分ける。",
+      "0543は一生取り組みたい仕事の機会と共に進む人への未確認を残す責任。0585の既に使った準備を手放す判断、civic0500の結論を求められても保留する自由とは分ける。",
+      "0550は人生を変える選択後も消えない倫理上の理由を持つ意味。relationship104のキャリアを手放せるか、0458の現在の余力が減った約束との違いを残す。",
+      "0551は協力を得るため将来の選び直しを今拘束する約束。0566は既に引き受けた約束の撤回、0570は価値観が変わった本人の同意の連続性で、現在の約束の締結とは分ける。",
+      "0556は自分も例外で人生を立て直した決定者が、確かめられない人の機会を退ける責任。0497の知る人だけへ例外を認めた過去の判定、0495の理由の透明性とは分ける。",
+      "0565は自分の知らない貢献を落とす推薦が人生の次の道を左右する条件。world0372の聞けた現地の声を代弁する限界とは、功績を選ぶ権限と意味が異なる。"
+    ],
+    "l4_depth": "改稿は希望に支えられた年月、生き方の軸、親密な相手との自己像・役割・終結、共有生活を手放す人への判断、将来の自己を拘束する約束、人生を立て直した倫理と他者の将来などを本文に置く。通常の役割へ自分を加えるだけ、金銭損失を機械的に足すだけにはしない。",
+    "sources": "全改稿は架空の条件。出典URL・fact_status・実在する既存IDは保持し、治療効果・制度・調査の新しい事実は断定していない。外部資料を新たに全文確認したという意味ではない。",
+    "remaining_limits": "全ての可能な二問の意味比較・現実の会話テストは未実施。rootによるafter全文確認・stagingへの適用後、別担当が再確認する。候補のユーザー最終承認とは別。"
+  },
+  "verification": {
+    "source_unchanged": true,
+    "all_before_records_match_source": true,
+    "change_count": 21,
+    "finding_resolutions_count": 22,
+    "required_findings_addressed": 20,
+    "optional_findings_addressed": 2,
+    "candidate_count_after_draft_apply": 593,
+    "category_level_cells_unchanged": true,
+    "category_level_counts": [
+      {
+        "category": "ethics_and_decision_making",
+        "level": 1,
+        "count": 20
+      },
+      {
+        "category": "ethics_and_decision_making",
+        "level": 2,
+        "count": 23
+      },
+      {
+        "category": "ethics_and_decision_making",
+        "level": 3,
+        "count": 50
+      },
+      {
+        "category": "ethics_and_decision_making",
+        "level": 4,
+        "count": 70
+      },
+      {
+        "category": "relationships_and_communication",
+        "level": 1,
+        "count": 43
+      },
+      {
+        "category": "relationships_and_communication",
+        "level": 2,
+        "count": 67
+      },
+      {
+        "category": "relationships_and_communication",
+        "level": 3,
+        "count": 37
+      },
+      {
+        "category": "relationships_and_communication",
+        "level": 4,
+        "count": 38
+      },
+      {
+        "category": "self_and_values",
+        "level": 1,
+        "count": 131
+      },
+      {
+        "category": "self_and_values",
+        "level": 2,
+        "count": 49
+      },
+      {
+        "category": "self_and_values",
+        "level": 3,
+        "count": 25
+      },
+      {
+        "category": "self_and_values",
+        "level": 4,
+        "count": 40
+      }
+    ],
+    "exact_normalized_duplicate_questions_in_personal": 0,
+    "changed_questions_exact_duplicates_against_existing_942_and_other_shards": 0,
+    "l4_perspective_counts_after_draft_apply": {
+      "affected": 66,
+      "actor": 48,
+      "decision_maker": 31,
+      "observer": 3
+    },
+    "metadata_changes": [
+      {
+        "id": "exp26-personal-0196",
+        "field": "perspective",
+        "before": "observer",
+        "after": "actor"
+      }
+    ],
+    "editorial_metadata_unchanged": true,
+    "detail_sources_unchanged": true,
+    "l4_major_three_perspectives_each_at_least_20_percent": true,
+    "allowed_warning_values_only": true,
+    "source_sha256_at_completion": "859fdbd5cf219a4084a7647bc3e4b6300d711780a329b90b12a1ebcc1ce3bac8",
+    "canonical_level_files_touched_by_preparation": false,
+    "personal0206_unchanged": true,
+    "learning0093_staging_resolution_read": true
+  }
+}

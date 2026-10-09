@@ -1,0 +1,40 @@
+{
+  "status": "completed_full_reviews_and_correction_rechecks_not_approval",
+  "date": "2026-10-08",
+  "scope": "Review each stable author shard in full after author self-review. Reviews do not approve individual question changes.",
+  "assignments": [
+    {
+      "reviewer": "learning",
+      "author_group": "personal",
+      "expected_count": 593
+    },
+    {
+      "reviewer": "personal",
+      "author_group": "care",
+      "expected_count": 670
+    },
+    {
+      "reviewer": "care",
+      "author_group": "livelihood",
+      "expected_count": 710
+    },
+    {
+      "reviewer": "livelihood",
+      "author_group": "world",
+      "expected_count": 663
+    },
+    {
+      "reviewer": "world",
+      "author_group": "civic",
+      "expected_count": 558
+    },
+    {
+      "reviewer": "civic",
+      "author_group": "learning",
+      "expected_count": 574
+    }
+  ],
+  "initial_independent_full_review_count": 3768,
+  "changed_cards_rechecked": 230,
+  "resolution": "review-resolution.json"
+}

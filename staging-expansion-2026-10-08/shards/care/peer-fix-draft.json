@@ -1,0 +1,893 @@
+{
+  "status": "peer_fix_draft_unapplied",
+  "author_group": "care",
+  "snapshot_sha256": "fa51215b0a166ed30f0b0d61d9553214086769b7940a51a829e167fa2b28d49e",
+  "fix_count": 21,
+  "fixes": [
+    {
+      "id": "exp26-care-0023",
+      "priority": "required",
+      "issue": "0021の実作業と段取りの評価を洗濯へ置き換えた重複に見える。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0023",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "family_and_care",
+          "topic": "household_planning_and_ownership",
+          "question": "洗濯物をたたむ人と、洗う日を忘れず決める人の仕事を、どう数えたい？"
+        },
+        "reason": "時間以外の家事責任を聞く。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0023",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "family_and_care",
+          "topic": "household_planning_and_ownership",
+          "question": "家事の回数は同じでも、一方はいつ来るか分からない用事が多い。担当を決める時、回数と自由な時間の見通しをどう考える？"
+        },
+        "reason": "実作業と段取りの評価ではなく、同じ回数でも時間を中断する頻度が違う時の公平を聞く。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0155",
+      "priority": "required",
+      "issue": "通常のケア予定の調整だけではL4の本人の利害が弱い。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0155",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "receiving_family_care",
+          "question": "あなたは家庭のケア予定を組んでいる。本人が前日に希望を変えると他の家族が疲れる。変更できる余地をどう残したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。希望を固定する便利さと、その日の本人の感覚が並ぶ場面です。"
+          }
+        },
+        "reason": "ケア計画の柔軟さを聞く。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0155",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "receiving_family_care",
+          "question": "あなたは家族のケア予定を組み直すたび自分の休みを削っている。本人はその日になって希望を決めたいと言う。自分が支え続けることと本人の自由を、どんな形で守りたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。本人の生活の裁量と、調整を担う自分が休める条件が競合します。今の方法を続けられるとは決まっていません。"
+          }
+        },
+        "reason": "希望変更の手順一般から、自分が支え続ける時間と本人の裁量の葛藤へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0182",
+      "priority": "required",
+      "issue": "集まりの企画を選ぶだけでは本人の喪失や関係の意味が弱い。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0182",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "care_relationships_after_end",
+          "question": "介護が終わった家族の集まりをあなたが企画する。「お疲れさま」と「思い出を話そう」のどちらを中心に置きたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。ねぎらいと追悼の望みが家族ごとに違う場面です。"
+          },
+          "content_warning": [
+            "medical_and_end_of_life"
+          ]
+        },
+        "reason": "ケアの終了を区切る目的。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0182",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "care_relationships_after_end",
+          "question": "あなたは家族を見送り、長い介護の終わりにほっとしている。別の家族は楽しげな話をすることに抵抗がある。皆を集めるなら、安堵と喪失をどんな時間として扱いたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。介護を終えた安堵と家族を失った悲しみが同時にあります。家族の感じ方を一つにそろえる必要はありません。"
+          },
+          "content_warning": [
+            "medical_and_end_of_life"
+          ]
+        },
+        "reason": "企画の形式を選ぶ問から、同じ喪失に異なる感情を持つ自分と家族の時間へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0189",
+      "priority": "required",
+      "issue": "主催者の通常の招待の調整だけではL4の関係の意味が弱い。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0189",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "family_forms_and_belonging",
+          "question": "あなたが家族の集まりを主催する。誰かが離婚後も以前の配偶者を呼びたいと言う時、何で招く範囲を決める？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。安全や深刻な対立の懸念はない仮定です。形式と続いた関係が違います。"
+          }
+        },
+        "reason": "家族の集まりの範囲。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0189",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "family_forms_and_belonging",
+          "question": "あなたは離婚後も、家族が元配偶者を大切な一員と感じていると知る。次の家族の集まりを任された時、自分の居場所と続く相手の関係をどう考える？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。安全の懸念や深刻な対立はなくても、別れた関係の終わり方は家族で異なる設定です。自分の所属の安心も含めます。"
+          }
+        },
+        "reason": "招待範囲の一般論から、自分の離婚後の所属と他の家族の関係の継続へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0197",
+      "priority": "required",
+      "issue": "子抜きの予定を組む手順では本人の人生の意味が不足する。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0197",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "parental_expectations_and_growth",
+          "question": "家族の将来の話合いで、成人した子が別に暮らしたいと言う。あなたはどの段階から予定を子抜きで組みたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。別居が関係の終了を意味しない設定です。世話の実務も見直せます。"
+          }
+        },
+        "reason": "親の未来計画と子の独立。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0197",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "parental_expectations_and_growth",
+          "question": "あなたは老後も成人した子の近くで暮らすつもりだったが、子は遠くで暮らすと決めた。家族がそばにいる未来を失う気持ちと、自分の暮らしを選び直すことをどう受け止める？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の場面です。子の独立が家族関係の終了とは限りません。思い描いた未来を失う本人の感情と、自分の生活を作り直す選択が並びます。"
+          }
+        },
+        "reason": "予定を組む段階から、老後の家族像を失う本人の意味と選び直しへ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0246",
+      "priority": "required",
+      "issue": "希望の記録に迷いを残す編集だけではL4の責任が弱い。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0246",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "future_family_conversations",
+          "question": "家族の希望を書き残すあなたは、決められない部分も残すか迷う。後で読む人に何を伝えたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。迷いを欠陥とせず、断定した約束との違いを扱います。"
+          }
+        },
+        "reason": "将来に残す迷いの意味。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0246",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "future_family_conversations",
+          "question": "あなたは将来の世話を家族へ託すため自分の希望を残す。まだ決められない部分があり、残さないと家族が判断を背負う。何を今の約束にし、何を迷いとして残したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。自分の将来を固定しない望みと、家族に判断を託す責任が並びます。記録の法律上の効力は扱いません。"
+          }
+        },
+        "reason": "記録の編集一般から、自分の将来と家族へ託す判断の責任へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0253",
+      "priority": "required",
+      "issue": "眺める立場だけではL4の本人への深い置換が弱い。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0253",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "family_solidarity_and_individuality",
+          "question": "あなたは家族の中で違う価値観を持つ一人を見ている。皆が気を遣って話題を避ける時、どんな理解を望む？",
+          "perspective": "observer",
+          "detail": {
+            "text": "仮の場面です。一致を求めず、話すことと話さないことの意味を考えます。"
+          }
+        },
+        "reason": "家族の違いへの第三者の望み。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0253",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "family_solidarity_and_individuality",
+          "question": "あなたは家族の一人が違う価値観を語らなくなるのを見た。自分も昔、居場所を失う怖さから考えを隠していた。今の家族の穏やかさを何として受け止める？",
+          "perspective": "observer",
+          "detail": {
+            "text": "仮の場面です。表面の一致と安心して違いを語れることが同じとは限りません。自分の過去を重ねて見る第三者の立場です。"
+          },
+          "content_warning": [
+            "family_conflict"
+          ]
+        },
+        "reason": "一般的な第三者の希望から、自分も所属のため沈黙した過去と今の家族の意味へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0257",
+      "priority": "required",
+      "issue": "呼称一般だけでは性別の主題が本文にない。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0257",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_words_and_expression",
+          "question": "名前を呼ばれる時、呼び捨てと「さん」では気持ちが変わる？"
+        },
+        "reason": "呼称に求める自己像。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0257",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_words_and_expression",
+          "question": "「さん」「くん」「ちゃん」の使い分けに性別の印象を感じる？自分はどう呼ばれたい？"
+        },
+        "reason": "呼称一般から、性別を伝える呼び方と本人の望む呼ばれ方へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0258",
+      "priority": "required",
+      "issue": "声一般だけでは性別の主題が本文にない。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0258",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_words_and_expression",
+          "question": "自分らしい声は、話す時と歌う時で同じだと感じる？"
+        },
+        "reason": "身体の声と自分の感じ方。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0258",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_words_and_expression",
+          "question": "自分の声を「男性的」「女性的」と表されると、どんな感じがする？"
+        },
+        "reason": "声の好み一般から、声に性別の印象を重ねられる受け止めへ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0262",
+      "priority": "required",
+      "issue": "名前一般だけでは性別の主題が本文にない。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0262",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_roles_and_appearance",
+          "question": "人に呼ばれたい名前は、昔からの名前と今好きな名前のどちらに近い？"
+        },
+        "reason": "選ぶ名前の親しさ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0262",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_roles_and_appearance",
+          "question": "名前を聞いただけで性別を予想されることを、どう感じる？"
+        },
+        "reason": "名前の選び方一般から、名前で性別を推測される感覚へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0263",
+      "priority": "required",
+      "issue": "仕草一般だけでは性別の主題が本文にない。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0263",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_roles_and_appearance",
+          "question": "「自分らしい仕草」と感じるのは、どんな動き？"
+        },
+        "reason": "身体表現からの入口。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0263",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_roles_and_appearance",
+          "question": "子どもの頃に遊ぶ物を選ぶ時、性別の区分をどれくらい意識していた？"
+        },
+        "reason": "仕草一般から、遊びを選ぶ時の性別の区分の経験へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0264",
+      "priority": "required",
+      "issue": "見た目と性格一般だけでは性別の主題が本文にない。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0264",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_visibility_and_privacy",
+          "question": "初対面の人に、見た目から自分の性格を予想されることをどう感じる？"
+        },
+        "reason": "外見と自己像のずれ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0264",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_visibility_and_privacy",
+          "question": "身近な人の性別が分からなくても、普段の呼び方に困ると思う？"
+        },
+        "reason": "外見からの性格の推測から、性別を知らない関係での呼び方へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0265",
+      "priority": "required",
+      "issue": "自己紹介一般だけでは性別や性の自己認識の主題が本文にない。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0265",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_visibility_and_privacy",
+          "question": "自分を表す言葉は、一つに決めたい？いくつか使い分けたい？"
+        },
+        "reason": "自己認識の言葉の幅。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0265",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_visibility_and_privacy",
+          "question": "性のあり方を自分で名づけるなら、周りに伝わる言葉と自分に合う言葉、どちらを大事にしたい？"
+        },
+        "reason": "自己紹介一般から、性の自己認識の言葉を選ぶ基準へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0267",
+      "priority": "required",
+      "issue": "服の好み一般だけでは性別の主題が本文にない。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0267",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_visibility_and_privacy",
+          "question": "自分の服の好みが変わったら、昔の写真を見る気持ちも変わる？"
+        },
+        "reason": "表現の変化と記憶。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0267",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_visibility_and_privacy",
+          "question": "昔の写真に写る性別の表現は、今の自分に近いと感じる？"
+        },
+        "reason": "服の好みの変化から、過去と今の性別表現の自己像の距離へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0268",
+      "priority": "required",
+      "issue": "自分らしさ一般だけでは性別の主題が本文にない。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0268",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_visibility_and_privacy",
+          "question": "「らしくないね」と言われた時、何についてなら気にならない？"
+        },
+        "reason": "周囲の自己像への入口。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0268",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_visibility_and_privacy",
+          "question": "「男らしくない」「女らしくない」という言葉には、自由と不安のどちらを感じる？"
+        },
+        "reason": "自分らしさ一般から、性別の期待から離れる言葉の感覚へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0322",
+      "priority": "required",
+      "issue": "当事者紹介の編集だけではL4の本人の意味が不足する。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0322",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "naming_identity_and_uncertainty",
+          "question": "あなたの団体が当事者紹介の名称を決める。本人は一般的な言葉に収まらないと言う時、読者への説明をどう作る？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。伝わる分類と本人の表現がずれる設定です。"
+          }
+        },
+        "reason": "他者の自己認識を編集する役。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0322",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "naming_identity_and_uncertainty",
+          "question": "あなたは同じ性の仲間と活動し、共通の名前で理解されることを支えにしてきた。仲間の一人はその名前では紹介されたくない。自分たちを知ってもらう紹介で、何を共通の言葉にする？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。自分を支えた集団の言葉と、一人が自分に合う言葉で紹介される望みがずれる設定です。読者の理解も考える役を担います。"
+          }
+        },
+        "reason": "紹介の編集一般から、自分を支えた共同体の言葉と仲間の自己理解を両方背負う責任へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0326",
+      "priority": "required",
+      "issue": "友人の呼び名を覚える関わりだけではL4の深さが不足する。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0326",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "names_and_continuity",
+          "question": "友人の新しい名前にまだ慣れないあなたは、理由を聞けば覚えやすいと感じる。本人が説明を望まない時、どう関わる？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の場面です。呼ぶことへの尊重と自分の理解の必要を分けます。"
+          }
+        },
+        "reason": "他者の名前を学ぶ姿勢。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0326",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "names_and_continuity",
+          "question": "あなたは古い名前で呼び合う友人との時間を、自分の居場所と感じてきた。友人は性の自己理解に合う新しい名前だけで呼んでほしいと言う。二人の歴史を何に残したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の場面です。相手の現在の自己像と、自分が親密さを感じた過去の呼び方が異なる場面です。過去の関係を消すとは決まっていません。"
+          }
+        },
+        "reason": "名前を覚える方法から、自分の居場所だった関係と友人の現在を共に受け止める意味へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0331",
+      "priority": "required",
+      "issue": "服装の褒め方を直すだけではL4の本人の意味が不足する。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0331",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "appearance_and_self_recognition",
+          "question": "あなたは人の服装を褒める時、性別の期待を超えた勇気を褒めたい。本人がただ好きで着たと言うなら、何を改めたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の場面です。自分の評価が相手の意図と異なる場面です。"
+          }
+        },
+        "reason": "表現を勇気と解釈する境界。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0331",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "appearance_and_self_recognition",
+          "question": "あなたは性別の期待を超える表現に勇気をもらい、同じ思いを発信してきた。紹介した人は、自分の服は勇気の象徴ではなく日常だと言う。自分を支えた物語をどう見直したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の場面です。他の人の表現に励まされた自分の意味と、本人が特別な象徴にされず暮らす意味が違う設定です。"
+          }
+        },
+        "reason": "褒め方を直す日常課題から、自分を支えた性別表現の物語と他者の普通の日を扱う責任へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0255",
+      "priority": "required",
+      "issue": "服の好み一般の本文のままでは性別の主題が不可欠でない。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0255",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_words_and_expression",
+          "question": "自分に似合う服は、自分が落ち着く服と人に褒められる服、どちら？"
+        },
+        "reason": "身体の表現と自己感覚。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0255",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_words_and_expression",
+          "question": "服を着た時、どんな性別の印象を持たれると自分に近いと感じる？"
+        },
+        "reason": "服の好み一般ではなく、本人の自己像と周囲に伝わる性別表現の近さを聞く。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0259",
+      "priority": "required",
+      "issue": "髪型の変化一般だけでは性別の主題が本文にない。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0259",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_roles_and_appearance",
+          "question": "髪型を変える時、新しい自分になる気持ちと元の自分に近づく気持ち、どちらがある？"
+        },
+        "reason": "外見と自己像の変化。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0259",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_roles_and_appearance",
+          "question": "髪型を選ぶ時、性別の印象を変えたい気持ちはどれくらいある？"
+        },
+        "reason": "変身の好み一般から、髪型で性別の見え方を自分で選ぶ望みへ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    },
+    {
+      "id": "exp26-care-0256",
+      "priority": "optional",
+      "issue": "褒め言葉の好み一般にも読めるため、性別をまたぐ評価の意味を明示する案。",
+      "before": {
+        "card": {
+          "id": "exp26-care-0256",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_words_and_expression",
+          "question": "「かっこいい」と「かわいい」では、どちらを言われるとうれしい？どちらでもない？"
+        },
+        "reason": "性別と結びつく評価の受け方。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0256",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_words_and_expression",
+          "question": "「かっこいい」「かわいい」を、性別に関係なく使えると感じる？"
+        },
+        "reason": "自分が褒められる好みから、性別をまたいで同じ評価を使う日常の感覚へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "status": "draft_unapplied"
+    }
+  ],
+  "notes": [
+    "Stable additions.json and source manuscripts have not been edited.",
+    "0021 is retained; 0023 changes the conversation axis from cognitive planning to interruption and predictability.",
+    "No category or Level counts change; 0197 changes perspective to affected because the revised question asks the parent receiving the change.",
+    "L1 0255/0259 and optional 0256 are proactive author proposals for the same category-boundary concern; final peer report may refine them."
+  ]
+}

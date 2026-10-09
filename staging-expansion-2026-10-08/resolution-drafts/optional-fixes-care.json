@@ -1,0 +1,1576 @@
+{
+  "status": "optional_resolution_draft_unapplied_not_approved",
+  "author_group": "care",
+  "prepared_by": "personal",
+  "source_sha256": "96164d2a6fe7f6566f7927e29f504edb03e8768c8c5675a8627bf76308099f44",
+  "changes": [
+    {
+      "id": "exp26-care-0031",
+      "before": {
+        "card": {
+          "id": "exp26-care-0031",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "family_and_care",
+          "topic": "care_receiving_and_reciprocity",
+          "question": "家族が先回りして身の回りを整えてくれるなら、何は頼み、何は残しておいてほしい？"
+        },
+        "reason": "親密なケアの受け方を聞く。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0031",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "family_and_care",
+          "topic": "care_receiving_and_reciprocity",
+          "question": "家族は頼む前に気づいて世話をしてくれる。自分の望みを言葉にして聞いてもらう時と比べて、家族に「分かってもらえた」感じはどう違う？"
+        },
+        "reason": "0424/0428の身体の支援の裁量から分け、先回りして気づかれることと、望みを話して聞かれることが家族の親密さへ持つ意味を聞く。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "原文は0424/0428と任せる範囲を問う軸が近い。気づいた世話をどこまで許すかではなく、頼み合う言葉と先回りの双方で伝わる関係の近さへ改稿する。0037の断る理由の説明負担は扱わない。",
+      "addresses": [
+        "XDR-07"
+      ],
+      "comparison_ids": [
+        "exp26-care-0037",
+        "exp26-care-0424",
+        "exp26-care-0428"
+      ]
+    },
+    {
+      "id": "exp26-care-0207",
+      "before": {
+        "card": {
+          "id": "exp26-care-0207",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "siblings_and_different_positions",
+          "question": "家族の集まりであなたは話を聞く側にいつもなる。家族に自分のことも知ってほしい時、どんな役割を変えたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の場面です。親しさがあっても話す順序が固定する場面です。"
+          }
+        },
+        "reason": "家族の聞かれる側の望み。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0207",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "siblings_and_different_positions",
+          "question": "家族の悩みを聞くことが居場所だったあなたは、自分の結婚を終えると決めた。頼れる人として家族を支えてきた分、自分の迷いを話すのが怖い。家族に知られることを、どんなつながりとして望みたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の家族関係です。自分は家族の相談を受け止める役に、親密さと頼られる価値を感じてきました。結婚を終える選択には本人の理由があり、迷いも残っています。家族が反対するとは決めず、支える役だけではない人生を知られることの意味を考えます。"
+          }
+        },
+        "reason": "家族の集まりの話す順番から、頼れる聞き役に居場所を置いた本人が、自分の結婚の終わりと迷いを知られる関係を望む意味へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "役を長く担ったという語だけでなく、自分の人生の大きな選択と弱さを知られる怖さを本文へ置いた。0205の頼られる喜び/重さ、0250のつらい日に支えを頼み返す行為とは分け、聞かれる本人の自己像と帰属を考える。",
+      "addresses": [
+        "personal-reviews-care:findings[54]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0205",
+        "exp26-care-0206",
+        "exp26-care-0250"
+      ]
+    },
+    {
+      "id": "exp26-care-0248",
+      "before": {
+        "card": {
+          "id": "exp26-care-0248",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "family_solidarity_and_individuality",
+          "question": "あなたは家族の祝いに参加したいが、楽しく振る舞う余裕がない。どんな参加なら自分も家族も大切にできそう？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の場面です。欠席か全力の参加だけには限定しない場面です。"
+          }
+        },
+        "reason": "家族時間での感情の自由。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0248",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "family_solidarity_and_individuality",
+          "question": "あなたは家族の祝いで皆を明るくする役に、居場所を感じてきた。大切な相手との関係が終わった今、別の家族の結婚を喜びたいが明るく振る舞えない。その役なしで集まることを、家族とのつながりとしてどう望みたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の祝いです。自分には大切な関係が終わった悲しみがあり、同時に他の家族の結婚を大切にしたい気持ちもあります。家族に明るさを求められると決め付けず、皆を明るくする役がない自分にも居場所を感じられる条件を考えます。"
+          }
+        },
+        "reason": "祝いへの参加の段取りから、自分の関係を失った時に、明るくする役を果たさないまま家族の場に居る意味へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "疲れた日の参加調整ではなく、本人の大切な関係の終わりと、家族の中で居場所を感じていた役の喪失を重ねる。0250の援助を頼み返す場面とは分け、悲しさを持ったまま家族に属する意味を聞く。",
+      "addresses": [
+        "personal-reviews-care:findings[55]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0177",
+        "exp26-care-0182",
+        "exp26-care-0247",
+        "exp26-care-0250"
+      ]
+    },
+    {
+      "id": "exp26-care-0249",
+      "before": {
+        "card": {
+          "id": "exp26-care-0249",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "family_solidarity_and_individuality",
+          "question": "自分の家ではない場所で家族と過ごすあなたは、いつも家の役目を忘れられる。役割から離れた家族との時間をどう感じる？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の場面です。関係は続いても世話や家事の役目が一時的に減る設定です。"
+          }
+        },
+        "reason": "家族と役割を分ける感覚。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0249",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "family_and_care",
+          "topic": "family_solidarity_and_individuality",
+          "question": "家事や世話をしない旅で、家族それぞれの夢を初めて聞いたあなた。家族を支えることに人生を置いてきたのに、その望みは知らなかった。世話をすることで近いと思ってきた関係を、これからどう知り直したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の家族旅行です。日常の世話の役を離れると、家族がそれぞれの計画や夢を話し、自分には知らなかった面があると分かりました。世話をしてきた時間の価値が消えるとは決めず、生活を支えることで得た親密さと、一人ずつの望みを知る親密さを考えます。"
+          }
+        },
+        "reason": "家を離れて家事を忘れる感想から、家族の生活を支えることに人生を置いた本人が、世話では知れなかった望みに出会う関係の意味へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "単に役が減って自分の必要性を失う0234には近づけず、本人が築いてきた近さの理解が、家族の別の人生の望みを聞いて揺らぐ条件へ改稿した。",
+      "addresses": [
+        "personal-reviews-care:findings[56]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0196",
+        "exp26-care-0234",
+        "exp26-care-0247"
+      ]
+    },
+    {
+      "id": "exp26-care-0273",
+      "before": {
+        "card": {
+          "id": "exp26-care-0273",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "choosing_identity_language",
+          "question": "「自分は普通」と説明することは、安心する？自分の違いを言いにくくする？"
+        },
+        "reason": "標準という自己説明の感覚。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0273",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "choosing_identity_language",
+          "question": "同性の相手との交際を「普通の恋愛と同じ」と説明すると、何が伝わり、何が話しにくくなると思う？"
+        },
+        "reason": "自己を普通と呼ぶ一般論から、同性の相手との交際を周りへ伝える時、共通性を示す言葉が何を伝え何を見えにくくするかへ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "原文の「普通」は性の主題を欠いていた。交際する相手の性別と周りへ説明する条件を不可欠にし、分類語を足すだけでなく比較の意味を明示した。",
+      "addresses": [
+        "personal-reviews-care:findings[43]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0270",
+        "exp26-care-0274"
+      ]
+    },
+    {
+      "id": "exp26-care-0275",
+      "before": {
+        "card": {
+          "id": "exp26-care-0275",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "choosing_identity_language",
+          "question": "ある自己認識の言葉に出会ってほっとした人は、何を見つけたのだと思う？"
+        },
+        "reason": "名づけによる安心を聞く。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0275",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "choosing_identity_language",
+          "question": "自分だけ恋愛感情を持たないのだと思っていた人が、それを表す言葉に出会ってほっとした。何が変わったのだと思う？"
+        },
+        "reason": "自己認識の言葉一般から、恋愛感情を持たない自分を一人だけの例外と思っていた人が言葉を得る意味へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "性のあり方に関わる感情と、自分だけだと感じていた条件を本文へ置く。0265の伝わる名前の選択や0269の名付けない希望とは分け、名付けを得る前後の孤立感を聞く。",
+      "addresses": [
+        "personal-reviews-care:findings[44]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0265",
+        "exp26-care-0269",
+        "exp26-care-0272",
+        "exp26-care-0283"
+      ]
+    },
+    {
+      "id": "exp26-care-0278",
+      "before": {
+        "card": {
+          "id": "exp26-care-0278",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "expression_and_recognition",
+          "question": "自分の声を好みの響きにしたい人へ、「今のままでいい」はどんな意味で届くと思う？"
+        },
+        "reason": "受容と変化の望みのずれ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0278",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "expression_and_recognition",
+          "question": "性別についての自分の感覚に近づくため、声の響きを変えたい人へ「今のままでいい」と伝える。励ましは、その人の変えたい気持ちにどう届くと思う？"
+        },
+        "reason": "好みの声への変化一般から、性別の自己感覚へ近づく望みと、現在のままを認める励ましがずれる意味へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "原文では声の好み一般だった。望む声が自己の性別感覚に関わる条件を明示し、変更の効能や医学的な方法を断定せず、受容の言葉が変化の望みにどう届くかを聞く。",
+      "addresses": [
+        "personal-reviews-care:findings[45]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0258",
+        "exp26-care-0277",
+        "exp26-care-0280"
+      ]
+    },
+    {
+      "id": "exp26-care-0282",
+      "before": {
+        "card": {
+          "id": "exp26-care-0282",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "expression_and_recognition",
+          "question": "写真に写った自分の身体が実感と違う時、写真と自分の感覚のどちらを説明したい？"
+        },
+        "reason": "身体像と外からの像。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0282",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "expression_and_recognition",
+          "question": "写真では、自分が伝えたい性別の印象と違って見える。思い出の一枚を残すなら、当日の姿をそのまま残したい？自分の感覚に近く整えたい？"
+        },
+        "reason": "写真と身体の実感一般から、思い出を当日の姿として残す意味と、自分の性別表現に近い姿で残す意味を比べる。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "原文の身体像は分類の主題が見えにくい。写真を相手へ説明するだけでは0280と近づくため、記念として残す像の選択へ軸を分けた。0267の過去の写真の自己感覚の確認ではなく、今残す一枚の表し方を聞く。",
+      "addresses": [
+        "personal-reviews-care:findings[46]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0267",
+        "exp26-care-0280",
+        "exp26-care-0281"
+      ]
+    },
+    {
+      "id": "exp26-care-0287",
+      "before": {
+        "card": {
+          "id": "exp26-care-0287",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "intimacy_without_fixed_roles",
+          "question": "交際の始まりに、恋人らしい振る舞いを話し合うことは自然に感じる？"
+        },
+        "reason": "性別役割を決めない親密さ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0287",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "intimacy_without_fixed_roles",
+          "question": "交際の始まりに、誘う側や頼る側を性別で決めたいと言われた。自分が望む役割との違いを、二人でどう話したい？"
+        },
+        "reason": "恋人らしい振る舞い一般から、交際で性別に応じて分けたい役と、自分が望む役をどう話すかへ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "原文の恋人らしさでは関係一般に留まるため、誘う・頼る役を性別へ割り当てる具体条件を置いた。0293の結婚の役割への外からの評価ではなく、二人で交際の役を決める会話を聞く。",
+      "addresses": [
+        "personal-reviews-care:findings[47]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0291",
+        "exp26-care-0293",
+        "exp26-care-0357"
+      ]
+    },
+    {
+      "id": "exp26-care-0289",
+      "before": {
+        "card": {
+          "id": "exp26-care-0289",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "intimacy_without_fixed_roles",
+          "question": "恋人という呼び名を使わず親しい関係を続けることに、どんな安心や不安を感じる？"
+        },
+        "reason": "親密さの名称への感覚。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0289",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "intimacy_without_fixed_roles",
+          "question": "恋愛感情はないが、互いを特別な相手と思っている二人がいる。恋人と呼ばずにその近さを伝えることへ、どんな安心や不安を感じる？"
+        },
+        "reason": "恋人と名付けない関係一般から、恋愛感情を前提としない特別な親密さを周りへ伝える呼び名の意味へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "原文でも親密さの分類の主題はあるが、曖昧な交際として読める余地がある。恋愛感情を前提としない二人の固有条件を加え、0283の性的な関わりと親密さ、0284のまだ分からない気持ちと分けた。",
+      "addresses": [
+        "personal-reviews-care:findings[48]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0283",
+        "exp26-care-0284",
+        "exp26-care-0344",
+        "exp26-care-0347"
+      ]
+    },
+    {
+      "id": "exp26-care-0295",
+      "before": {
+        "card": {
+          "id": "exp26-care-0295",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "expectations_in_daily_life",
+          "question": "自分の身体の変化を、人に分かりやすく言い表すことはどれくらい大事？"
+        },
+        "reason": "身体変化の語りの望み。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0295",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "expectations_in_daily_life",
+          "question": "身体が変わって自分に近づいたと感じるのに、「男らしい」「女らしい」と褒められると違うと感じる。その二つの気持ちを、人にどこまで説明したい？"
+        },
+        "reason": "身体の変化の説明一般から、変化を喜ぶ自分の感覚と、性別の印象で褒められる違和感が同時にある時に説明する範囲へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "原文の身体の変化は健康や自己像一般でも成立する。変化そのものを否定しない実感と、周りが重ねる性別の言葉への距離を分け、0290の褒める意図の理解一般や0270の全員への説明義務とは別の混ざった感情を聞く。身体が変わる方法や原因は決めない。",
+      "addresses": [
+        "personal-reviews-care:findings[49]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0270",
+        "exp26-care-0290",
+        "exp26-care-0296",
+        "exp26-care-0330"
+      ]
+    },
+    {
+      "id": "exp26-care-0302",
+      "before": {
+        "card": {
+          "id": "exp26-care-0302",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_shared_spaces",
+          "question": "自分の呼ばれ方を一つの場だけ変えたいと言う人を、どう理解したい？"
+        },
+        "reason": "場所ごとの自己表現。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0302",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_shared_spaces",
+          "question": "性別についての自分の感覚に合う新しい名前を、ある集まりでだけ試したい人がいる。場ごとに名前が違うことに、どんな自由や負担があると思う？"
+        },
+        "reason": "一つの場だけ呼び名を変える一般論から、性別の自己感覚に合う名前を限られた場で試す自由と負担へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "性別の自己感覚と試している段階を明示した。0279の呼称を直す伝え方、0296の誤認の訂正時期、0303の自己説明を話す時期とは分け、複数の場で名乗りが異なることの意味を聞く。",
+      "addresses": [
+        "personal-reviews-care:findings[50]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0279",
+        "exp26-care-0296",
+        "exp26-care-0301",
+        "exp26-care-0303",
+        "exp26-care-0339"
+      ]
+    },
+    {
+      "id": "exp26-care-0303",
+      "before": {
+        "card": {
+          "id": "exp26-care-0303",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_shared_spaces",
+          "question": "長く使った自己紹介の言葉が今は合わない時、何をきっかけに変えたい？"
+        },
+        "reason": "自己認識を更新する時期。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0303",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "gender_sexuality_and_identity",
+          "topic": "identity_shared_spaces",
+          "question": "性のあり方の説明が今の自分に合わなくなった時、気持ちが定まる前に周りへ話すことと、言葉が見つかるまで待つことをどう考える？"
+        },
+        "reason": "自己紹介の更新一般から、以前の性の説明が合わない時、まだ名付けきれない変化を周りへ話す時期へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "性の自己認識を更新する不確定な段階を具体化した。0271の過去の説明を訂正/変化と呼ぶ区別や0302の限られた場所での名前の試行と分け、今語れる未確定さをいつ共有するかを聞く。",
+      "addresses": [
+        "personal-reviews-care:findings[51]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0269",
+        "exp26-care-0271",
+        "exp26-care-0302",
+        "exp26-care-0387"
+      ]
+    },
+    {
+      "id": "exp26-care-0368",
+      "before": {
+        "card": {
+          "id": "exp26-care-0368",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "belonging_among_similar_people",
+          "question": "あなたは仲間の活動で自分たちは皆こうだと語る場を見た。同じ分類の自分が違う時、何を代表してほしい？",
+          "perspective": "observer",
+          "detail": {
+            "text": "仮の場面です。代表の便利さと個人の実感が並ぶ設定です。"
+          }
+        },
+        "reason": "属性の一枚岩な語りへの距離。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0368",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "belonging_among_similar_people",
+          "question": "性のあり方を同じ呼び名で語る仲間に居場所を得たあなたは、集団の要望が「皆が結婚して家族を作りたい」と紹介されるのを見た。自分は結婚を望まない時、その声をどこまで自分の願いとして感じる？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の活動です。同じ性のあり方を表す言葉でつながる仲間が、自分には孤立から抜け出す居場所でした。集団の公の要望には自分が望まない結婚や家族形成も含まれています。他の仲間の願いを否定せず、その声に自分も代表されることの意味を考えます。"
+          }
+        },
+        "reason": "代表の語りを外から眺める立場ではなく、自分の居場所を作った集団の願いに自分の人生の望みが含まれない当人の感覚へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "主題は観察の方法より自分の声が代表される影響なのでaffectedへ。本文にも所属が支えだった意味と結婚を望まない人生の違いを示す。0365の仲間との考え方の変化一般ではなく、集団の公の要望をどこまで自分の声と感じるかへ置く。",
+      "addresses": [
+        "personal-reviews-care:findings[52]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0298",
+        "exp26-care-0309",
+        "exp26-care-0364",
+        "exp26-care-0365",
+        "exp26-care-0367",
+        "exp26-care-0392"
+      ]
+    },
+    {
+      "id": "exp26-care-0398",
+      "before": {
+        "card": {
+          "id": "exp26-care-0398",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "self_expression_in_collective_projects",
+          "question": "あなたは性別の固定観念を変える企画を見たが、自分の日常はそこにないと感じる。どんな違いを知ってほしい？",
+          "perspective": "observer",
+          "detail": {
+            "text": "仮の場面です。企画への賛同と個人の経験の一致を分ける設定です。"
+          }
+        },
+        "reason": "啓発の語りからこぼれる自己。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0398",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "self_expression_in_collective_projects",
+          "question": "あなたは性別の固定観念を変える企画へ、自分の人生を語って参加した。性別の役割を自分で選んで満たされた時期は省かれ、ずっと定型に抗った人として紹介される。自分の自由を、どんな歩みとして知ってほしい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の企画です。自分は性別の役割から離れた時期も、好きでその役を選んだ時期も人生の一部として語りました。企画では前者を中心に紹介され、選んで満たされた過去が見えなくなっています。企画の目的への賛同を保つことと、自分が自由として生きた歩みを知られることを考えます。"
+          }
+        },
+        "reason": "企画の観察一般から、自分が語った人生のうち性別役割を選んだ時期が省かれ、自由の意味を別の歩みとして紹介される影響へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "元の問いは自分の日常が紹介されない当人の望みが中心なのでaffectedへ。本人が託した人生の複数の時期を残し、0394の今の服装を変える期待、0388の自分で過去を評価する内省とは分けた。",
+      "addresses": [
+        "personal-reviews-care:findings[53]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0354",
+        "exp26-care-0373",
+        "exp26-care-0388",
+        "exp26-care-0394"
+      ]
+    },
+    {
+      "id": "exp26-care-0508",
+      "before": {
+        "card": {
+          "id": "exp26-care-0508",
+          "level": 3,
+          "sensitivity": 2,
+          "category": "health_and_disability",
+          "topic": "disability_identity_and_agency",
+          "question": "支援者が本人の代わりに答えることが増えた時、本人の発言の機会をどう作るべき？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の場面です。伝える時間や方法を変えられる余地がある場面です。"
+          }
+        },
+        "reason": "支援と本人の語る立場。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0508",
+          "level": 3,
+          "sensitivity": 2,
+          "category": "health_and_disability",
+          "topic": "disability_identity_and_agency",
+          "question": "支援を受ける本人が「自分で話せる時も、説明はこの人に任せたい」と望んでいる。代弁を本人の選択として扱うことと、直接話す機会を残すことをどう考える？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の場面です。本人は自分で伝えることもできますが、説明を任せる相手を自分で選んでいます。代理を使うことと、意思を他人に決めてもらうことが同じとは限りません。希望を変えたり直接話したりできる余地も含めて考えます。"
+          }
+        },
+        "reason": "0082の発話時間と代弁への同意から分け、本人があえて代理を選ぶ時、自己決定を発話の形で測れるかを聞く。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "原文は0082と代弁による発話機会で近い。自分で話せる時にも他者へ説明を任せる本人の選択を不可欠な条件にし、自己決定を直接の発話と同一視するかという別の軸へ。子エージェントも周辺原文と独立比較済み。",
+      "addresses": [
+        "personal-reviews-care:findings[60]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0082",
+        "exp26-care-0208",
+        "exp26-care-0509",
+        "exp26-care-0551"
+      ]
+    },
+    {
+      "id": "exp26-care-0537",
+      "before": {
+        "card": {
+          "id": "exp26-care-0537",
+          "level": 3,
+          "sensitivity": 2,
+          "category": "health_and_disability",
+          "topic": "health_support_without_moral_judgment",
+          "question": "健康支援の目標を選ぶ時、本人がまず生活の楽さを求める希望をどう受け止めたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。数値の改善と本人の実感の優先が異なる架空の計画です。"
+          }
+        },
+        "reason": "健康支援の目標の本人性。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0537",
+          "level": 3,
+          "sensitivity": 2,
+          "category": "health_and_disability",
+          "topic": "health_support_without_moral_judgment",
+          "question": "健康支援で高い目標を望む本人に、支援者は失敗して落胆しないよう小さな目標を勧めている。目標を決める側は、挑戦したい希望と失敗から守ることをどう考える？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の健康支援です。目標に挑むことで身体に重大な危険が生じるとは設定せず、支援者は達成できなかった時の落胆を心配しています。本人は達成だけでなく挑戦することにも意味を感じています。失敗への備えと、本人の希望の大きさを支援者が決めることの違いを考えます。"
+          }
+        },
+        "reason": "0482/0483の数値と生活実感の比較から分け、失敗から守るために本人の挑戦する希望を制限してよいかを聞く。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "原文の背景は数値と本人の実感で0482/0483と近い。単なる目標の変更や未達の評価にはせず、落胆から守ろうとする支援者が希望の大きさへ介入する条件へ。子エージェントも周辺の目標・助言の原文と比較済み。",
+      "addresses": [
+        "personal-reviews-care:findings[61]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0145",
+        "exp26-care-0482",
+        "exp26-care-0483",
+        "exp26-care-0484",
+        "exp26-care-0485",
+        "exp26-care-0489",
+        "exp26-care-0535",
+        "exp26-care-0541"
+      ]
+    },
+    {
+      "id": "exp26-care-0556",
+      "before": {
+        "card": {
+          "id": "exp26-care-0556",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "health_and_disability",
+          "topic": "prognosis_information_and_meaning",
+          "question": "あなたは医療者として見通しを説明する。患者は希望を保ちたい、家族は準備したいと話す時、何を断定せず伝えたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の場面です。見通しには不確実さがある架空の場面です。希望と準備は必ずしも対立しません。"
+          },
+          "content_warning": [
+            "medical_and_end_of_life"
+          ]
+        },
+        "reason": "見通しを語る人の倫理的責任。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0556",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "health_and_disability",
+          "topic": "prognosis_information_and_meaning",
+          "question": "医療者として、希望を保ちたい患者と準備をしたい家族に見通しを伝えるあなた。自分の家族の病気では、明るい説明に支えられつつ別れの準備を逃したと感じている。その経験を、今の本人の人生にどこまで重ねて話したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の場面です。自分の家族の病気の時、見通しの説明には不確実さがあり、明るい言葉を支えにも、準備を逃した原因にも感じていました。その解釈が今の患者や家族にも当てはまるとは決めません。希望と準備は両立する余地があり、実際の予後や説明の法的・医学的な正しさを断定せず、経験を持つ自分が語る責任を考えます。"
+          },
+          "content_warning": [
+            "medical_and_end_of_life"
+          ]
+        },
+        "reason": "見通しを断定せず伝える方法から、自分の家族の病気で支えと喪失を感じた経験を、今の患者の人生へどこまで重ねて説明するかへ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "通常の説明手順だけではL3に近いため、自分が希望に支えられ、同時に別れの準備を逃したと感じる個別の人生の意味を置く。0580の説明後に希望がなくなったと言われる責任とは分け、今の説明へ過去の自分の経験を投影する葛藤を聞く。",
+      "addresses": [
+        "personal-reviews-care:findings[57]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0553",
+        "exp26-care-0554",
+        "exp26-care-0558",
+        "exp26-care-0580",
+        "exp26-care-0581"
+      ]
+    },
+    {
+      "id": "exp26-care-0587",
+      "before": {
+        "card": {
+          "id": "exp26-care-0587",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "health_and_disability",
+          "topic": "chronic_condition_and_ongoing_life",
+          "question": "あなたは生活の予定を立てる役を担う。不調のある同居人が今日はできないと言う時、過去の約束をどう扱いたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。怠慢を確定せず、今の能力と共同生活の必要を考えます。"
+          }
+        },
+        "reason": "変動と共同の責任。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0587",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "health_and_disability",
+          "topic": "chronic_condition_and_ongoing_life",
+          "question": "病気で予定が変わる相手と、仕事や家事を分けて暮らすと約束したあなた。支える役が自分に続き、二人で決めた自分の学び直しを何度も見送っている。今後の分担を決め直すなら、過去の約束と自分の将来をどう大事にしたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の共同生活です。相手の不調には変動があり、本人の怠慢とは決めません。自分にも学び直す計画があり、今の分担を続けるとその未来が見通せなくなっています。約束した時には予想できなかった生活を、誰かが希望を諦めるだけの形にせず選び直す意味を考えます。"
+          }
+        },
+        "reason": "当日の不調による予定変更から、共同生活を選んだ本人が、繰り返し見送った自分の未来と二人の約束を持って分担を決め直す責任へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "日程の調整ではなく、本人の将来の学びを後回しにした時間と、病気が変動する相手と生活する約束を置く。0155の受ける人が希望を当日選ぶ自由や0586の友人への余裕の伝え方から分け、共同生活の約束を更新する決定へ。",
+      "addresses": [
+        "personal-reviews-care:findings[58]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0153",
+        "exp26-care-0155",
+        "exp26-care-0169",
+        "exp26-care-0586"
+      ]
+    },
+    {
+      "id": "exp26-care-0660",
+      "before": {
+        "card": {
+          "id": "exp26-care-0660",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "health_and_disability",
+          "topic": "ethical_weight_of_medical_roles",
+          "question": "あなたは看取りの面会を決める役を担い、本人の望みに沿うと家族の一人が最後に会えない。自分の決定をどう受け止める？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。全員の希望が同時に満たせない架空の面会です。本人の余力を尊重します。"
+          },
+          "content_warning": [
+            "medical_and_end_of_life"
+          ]
+        },
+        "reason": "看取りの調整で背負う関係。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0660",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "health_and_disability",
+          "topic": "ethical_weight_of_medical_roles",
+          "question": "看取りの面会を調整したあなたは、本人から内密に頼まれ、ある家族との面会を断った。亡くなった後、その家族から「あなたの判断で会えなかった」と責められる。本人との約束と、自分を守るために事情を説明したい気持ちをどう扱う？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の場面です。本人はその家族と会わない希望を持ち、その希望を他の人には伝えないでほしいとあなたに頼んでいました。あなたが本人の希望だったと説明すれば、自分への誤解を解ける可能性がありますが、約束した内容も知らせることになります。説明する範囲を変える余地も含め、本人が亡くなった後も残る約束と、自分が負う責任を考えます。法律上の義務を断定する問いではありません。"
+          },
+          "content_warning": [
+            "medical_and_end_of_life",
+            "privacy_and_surveillance"
+          ]
+        },
+        "reason": "0563の面会前の相談基準から分け、看取り後に故人との約束を守ることが自分への非難を引き受けることにもなる時、何を守りたいかを聞く。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "原文は0563/0517の面会配分と近い。決定後の時間に加えて、亡くなった本人の秘密を守る約束と自分への非難の関係を置く。単に決めた役を自分へ移すのではなく、人生に残る責任と自己弁護の葛藤へ。内密の希望を扱うためprivacyタグを追加する。",
+      "addresses": [
+        "personal-reviews-care:findings[62]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0517",
+        "exp26-care-0563",
+        "exp26-care-0658"
+      ]
+    },
+    {
+      "id": "exp26-care-0669",
+      "before": {
+        "card": {
+          "id": "exp26-care-0669",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "health_and_disability",
+          "topic": "choosing_support_and_farewell",
+          "question": "あなたは本人の生活の支援を他の人へ渡す。長く知った自分の希望より新しい担当の工夫を任せる時、何を残したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の場面です。本人の生活の継続と支援者の役割からの退出が並びます。"
+          }
+        },
+        "reason": "支援の引継ぎで手放す役割。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0669",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "health_and_disability",
+          "topic": "choosing_support_and_farewell",
+          "question": "あなたは、本人が自分に何でも話せることに支援者としての価値を感じてきた。新しい担当へ任せた後、本人が自分には語らなかった望みをその人とかなえたと聞く。積み重ねた関係を、引継ぎの最後にどう語って手放したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の支援の引継ぎです。自分は本人が望みを率直に話せる関係を作れたことに、支援する仕事の意味を感じてきました。新しい担当とは別の望みが語られ、本人はそれがかなったと感じています。以前の支援を失敗と決めず、分かっていたと思う自己像と、支援を離れた後も続く本人の人生を考えます。"
+          }
+        },
+        "reason": "支援のやり方を新担当へ任せる一般論から、何でも話せる関係を仕事の価値とした本人が、自分には語られなかった望みを知り関係を手放す意味へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "単に長く担ったことではなく、自分が誇りにしてきた関係の理解が、本人の新しい支援との経験で変わる条件を置く。0611の体力の限界で未完のケアを離れる決定、0234の必要とされない感覚とは分け、引継ぎの最後に自分の関係をどう語るかを聞く。",
+      "addresses": [
+        "personal-reviews-care:findings[59]"
+      ],
+      "comparison_ids": [
+        "exp26-care-0234",
+        "exp26-care-0611",
+        "exp26-care-0667",
+        "exp26-care-0670"
+      ]
+    }
+  ],
+  "finding_resolutions": [
+    {
+      "id": "exp26-care-0273",
+      "finding_index_zero_based": 43,
+      "finding_number_one_based": 44,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/category",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "原文の「普通」は性の主題を欠いていた。交際する相手の性別と周りへ説明する条件を不可欠にし、分類語を足すだけでなく比較の意味を明示した。",
+      "change_id": "exp26-care-0273"
+    },
+    {
+      "id": "exp26-care-0275",
+      "finding_index_zero_based": 44,
+      "finding_number_one_based": 45,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/category",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "性のあり方に関わる感情と、自分だけだと感じていた条件を本文へ置く。0265の伝わる名前の選択や0269の名付けない希望とは分け、名付けを得る前後の孤立感を聞く。",
+      "change_id": "exp26-care-0275"
+    },
+    {
+      "id": "exp26-care-0278",
+      "finding_index_zero_based": 45,
+      "finding_number_one_based": 46,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/category",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "原文では声の好み一般だった。望む声が自己の性別感覚に関わる条件を明示し、変更の効能や医学的な方法を断定せず、受容の言葉が変化の望みにどう届くかを聞く。",
+      "change_id": "exp26-care-0278"
+    },
+    {
+      "id": "exp26-care-0282",
+      "finding_index_zero_based": 46,
+      "finding_number_one_based": 47,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/category",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "原文の身体像は分類の主題が見えにくい。写真を相手へ説明するだけでは0280と近づくため、記念として残す像の選択へ軸を分けた。0267の過去の写真の自己感覚の確認ではなく、今残す一枚の表し方を聞く。",
+      "change_id": "exp26-care-0282"
+    },
+    {
+      "id": "exp26-care-0287",
+      "finding_index_zero_based": 47,
+      "finding_number_one_based": 48,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/category",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "原文の恋人らしさでは関係一般に留まるため、誘う・頼る役を性別へ割り当てる具体条件を置いた。0293の結婚の役割への外からの評価ではなく、二人で交際の役を決める会話を聞く。",
+      "change_id": "exp26-care-0287"
+    },
+    {
+      "id": "exp26-care-0289",
+      "finding_index_zero_based": 48,
+      "finding_number_one_based": 49,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/category",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "原文でも親密さの分類の主題はあるが、曖昧な交際として読める余地がある。恋愛感情を前提としない二人の固有条件を加え、0283の性的な関わりと親密さ、0284のまだ分からない気持ちと分けた。",
+      "change_id": "exp26-care-0289"
+    },
+    {
+      "id": "exp26-care-0295",
+      "finding_index_zero_based": 49,
+      "finding_number_one_based": 50,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/category",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "原文の身体の変化は健康や自己像一般でも成立する。変化そのものを否定しない実感と、周りが重ねる性別の言葉への距離を分け、0290の褒める意図の理解一般や0270の全員への説明義務とは別の混ざった感情を聞く。身体が変わる方法や原因は決めない。",
+      "change_id": "exp26-care-0295"
+    },
+    {
+      "id": "exp26-care-0302",
+      "finding_index_zero_based": 50,
+      "finding_number_one_based": 51,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/category",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "性別の自己感覚と試している段階を明示した。0279の呼称を直す伝え方、0296の誤認の訂正時期、0303の自己説明を話す時期とは分け、複数の場で名乗りが異なることの意味を聞く。",
+      "change_id": "exp26-care-0302"
+    },
+    {
+      "id": "exp26-care-0303",
+      "finding_index_zero_based": 51,
+      "finding_number_one_based": 52,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/category",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "性の自己認識を更新する不確定な段階を具体化した。0271の過去の説明を訂正/変化と呼ぶ区別や0302の限られた場所での名前の試行と分け、今語れる未確定さをいつ共有するかを聞く。",
+      "change_id": "exp26-care-0303"
+    },
+    {
+      "id": "exp26-care-0368",
+      "finding_index_zero_based": 52,
+      "finding_number_one_based": 53,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "perspective",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "主題は観察の方法より自分の声が代表される影響なのでaffectedへ。本文にも所属が支えだった意味と結婚を望まない人生の違いを示す。0365の仲間との考え方の変化一般ではなく、集団の公の要望をどこまで自分の声と感じるかへ置く。",
+      "change_id": "exp26-care-0368"
+    },
+    {
+      "id": "exp26-care-0398",
+      "finding_index_zero_based": 53,
+      "finding_number_one_based": 54,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "perspective",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "元の問いは自分の日常が紹介されない当人の望みが中心なのでaffectedへ。本人が託した人生の複数の時期を残し、0394の今の服装を変える期待、0388の自分で過去を評価する内省とは分けた。",
+      "change_id": "exp26-care-0398"
+    },
+    {
+      "id": "exp26-care-0207",
+      "finding_index_zero_based": 54,
+      "finding_number_one_based": 55,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/detail",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "役を長く担ったという語だけでなく、自分の人生の大きな選択と弱さを知られる怖さを本文へ置いた。0205の頼られる喜び/重さ、0250のつらい日に支えを頼み返す行為とは分け、聞かれる本人の自己像と帰属を考える。",
+      "change_id": "exp26-care-0207"
+    },
+    {
+      "id": "exp26-care-0248",
+      "finding_index_zero_based": 55,
+      "finding_number_one_based": 56,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/detail",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "疲れた日の参加調整ではなく、本人の大切な関係の終わりと、家族の中で居場所を感じていた役の喪失を重ねる。0250の援助を頼み返す場面とは分け、悲しさを持ったまま家族に属する意味を聞く。",
+      "change_id": "exp26-care-0248"
+    },
+    {
+      "id": "exp26-care-0249",
+      "finding_index_zero_based": 56,
+      "finding_number_one_based": 57,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/detail",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "単に役が減って自分の必要性を失う0234には近づけず、本人が築いてきた近さの理解が、家族の別の人生の望みを聞いて揺らぐ条件へ改稿した。",
+      "change_id": "exp26-care-0249"
+    },
+    {
+      "id": "exp26-care-0556",
+      "finding_index_zero_based": 57,
+      "finding_number_one_based": 58,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/detail",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "通常の説明手順だけではL3に近いため、自分が希望に支えられ、同時に別れの準備を逃したと感じる個別の人生の意味を置く。0580の説明後に希望がなくなったと言われる責任とは分け、今の説明へ過去の自分の経験を投影する葛藤を聞く。",
+      "change_id": "exp26-care-0556"
+    },
+    {
+      "id": "exp26-care-0587",
+      "finding_index_zero_based": 58,
+      "finding_number_one_based": 59,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/detail",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "日程の調整ではなく、本人の将来の学びを後回しにした時間と、病気が変動する相手と生活する約束を置く。0155の受ける人が希望を当日選ぶ自由や0586の友人への余裕の伝え方から分け、共同生活の約束を更新する決定へ。",
+      "change_id": "exp26-care-0587"
+    },
+    {
+      "id": "exp26-care-0669",
+      "finding_index_zero_based": 59,
+      "finding_number_one_based": 60,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "question/detail",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "単に長く担ったことではなく、自分が誇りにしてきた関係の理解が、本人の新しい支援との経験で変わる条件を置く。0611の体力の限界で未完のケアを離れる決定、0234の必要とされない感覚とは分け、引継ぎの最後に自分の関係をどう語るかを聞く。",
+      "change_id": "exp26-care-0669"
+    },
+    {
+      "id": "exp26-care-0508",
+      "finding_index_zero_based": 60,
+      "finding_number_one_based": 61,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "novelty",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "原文は0082と代弁による発話機会で近い。自分で話せる時にも他者へ説明を任せる本人の選択を不可欠な条件にし、自己決定を直接の発話と同一視するかという別の軸へ。子エージェントも周辺原文と独立比較済み。",
+      "change_id": "exp26-care-0508"
+    },
+    {
+      "id": "exp26-care-0537",
+      "finding_index_zero_based": 61,
+      "finding_number_one_based": 62,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "novelty",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "原文の背景は数値と本人の実感で0482/0483と近い。単なる目標の変更や未達の評価にはせず、落胆から守ろうとする支援者が希望の大きさへ介入する条件へ。子エージェントも周辺の目標・助言の原文と比較済み。",
+      "change_id": "exp26-care-0537"
+    },
+    {
+      "id": "exp26-care-0660",
+      "finding_index_zero_based": 62,
+      "finding_number_one_based": 63,
+      "finding_source": "peer-reviews/personal-reviews-care.json",
+      "field": "novelty",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "原文は0563/0517の面会配分と近い。決定後の時間に加えて、亡くなった本人の秘密を守る約束と自分への非難の関係を置く。単に決めた役を自分へ移すのではなく、人生に残る責任と自己弁護の葛藤へ。内密の希望を扱うためprivacyタグを追加する。",
+      "change_id": "exp26-care-0660"
+    },
+    {
+      "id": "exp26-care-0031",
+      "finding_id": "XDR-07",
+      "finding_source": "peer-reviews/cross-domain-review.json",
+      "field": "novelty",
+      "decision": "adopt_revision",
+      "status": "resolved_in_unapplied_draft",
+      "reason": "原文は0424/0428と任せる範囲を問う軸が近い。気づいた世話をどこまで許すかではなく、頼み合う言葉と先回りの双方で伝わる関係の近さへ改稿する。0037の断る理由の説明負担は扱わない。",
+      "change_id": "exp26-care-0031"
+    }
+  ],
+  "reviewed_target_ids": [
+    "exp26-care-0031",
+    "exp26-care-0207",
+    "exp26-care-0248",
+    "exp26-care-0249",
+    "exp26-care-0273",
+    "exp26-care-0275",
+    "exp26-care-0278",
+    "exp26-care-0282",
+    "exp26-care-0287",
+    "exp26-care-0289",
+    "exp26-care-0295",
+    "exp26-care-0302",
+    "exp26-care-0303",
+    "exp26-care-0368",
+    "exp26-care-0398",
+    "exp26-care-0508",
+    "exp26-care-0537",
+    "exp26-care-0556",
+    "exp26-care-0587",
+    "exp26-care-0660",
+    "exp26-care-0669"
+  ],
+  "reviewed_target_count": 21,
+  "subagent_review": {
+    "task": "care_near_axes",
+    "targets": [
+      "exp26-care-0508",
+      "exp26-care-0537",
+      "exp26-care-0660"
+    ],
+    "scope": "子エージェントが3対象の全文/背景/理由/metadataと周辺原文を独立に読み、既存elderly-003/elderly-006/healthcare-012の全文・背景・metadataも比較。構造やキーワードだけの検査ではない。提案は本draftで採否とメタデータを主担当が判断した。"
+  },
+  "approval_required_before_canonical_apply": true,
+  "scope": "残る任意20指摘と横断XDR-07を現在の原文・背景・理由・metadataで再評価した。既採用46件と追加0326/0376は本draftに含めず、正本・安定shardを編集しない。全対象の現行文には表示上のカテゴリーの曖昧さ、Levelの深さ、近似または主視点の不一致が残るため、原文ごとの理由で21件の改稿を採用案にした。任意という理由で同じ修正を適用せず、主題ごとに異なる判断を残した。",
+  "verification": {
+    "source_sha256_matches": true,
+    "all_before_records_match_current_source": true,
+    "change_count": 21,
+    "finding_resolution_count": 21,
+    "reviewed_target_ids_match_changes": true,
+    "required_46_and_follow_up_0326_0376_untouched": true,
+    "care_records": 670,
+    "care_category_level_allocation_12_cells_unchanged": true,
+    "care_level_counts": {
+      "1": 55,
+      "2": 145,
+      "3": 162,
+      "4": 308
+    },
+    "level_category_sensitivity_topic_and_editorial_unchanged": true,
+    "perspective_changes": [
+      {
+        "id": "exp26-care-0368",
+        "before": "observer",
+        "after": "affected"
+      },
+      {
+        "id": "exp26-care-0398",
+        "before": "observer",
+        "after": "affected"
+      }
+    ],
+    "content_warning_changes": [
+      {
+        "id": "exp26-care-0660",
+        "before": [
+          "medical_and_end_of_life"
+        ],
+        "after": [
+          "medical_and_end_of_life",
+          "privacy_and_surveillance"
+        ]
+      }
+    ],
+    "care_level4_perspectives_if_applied": {
+      "affected": 141,
+      "actor": 79,
+      "decision_maker": 84,
+      "observer": 4
+    },
+    "comparison_shard_sha256": {
+      "personal": "f3e8e7b8618deedf2a0e1d75258dd7401cbfe198e8bcab9e34c1d09686dcb8c5",
+      "care": "96164d2a6fe7f6566f7927e29f504edb03e8768c8c5675a8627bf76308099f44",
+      "livelihood": "480f79bda46a2d8f96de87e46a832739bc7ca1992377679dcf2da8fae19e0444",
+      "learning": "728f41d590fe6fd36e759bfee94a4cdfe011671259fbf2817cda5c562d8b3a62",
+      "civic": "95d729dee6b0ae74df591115222ddb87e319ad3770475fc9d86d06f8471a6593",
+      "world": "7df10201253f1f21b932b92e828d5e23506213a52e999f27eb495af540a0eced"
+    },
+    "baseline_sha256": {
+      "level1.json": "9461b394173379dc507a72234e1e3909decf6637c67af1c2747d9d8214a0a487",
+      "level2.json": "66ec755c88419271054070d5a61787f0306fd3daaa406b16414c25590b06a179",
+      "level3.json": "49f7ef9236ddaf94f0246dd7b3f79134c1c468921a389ce8ae2d1510d3fa9ee5",
+      "level4.json": "e07c845c5c82155fc0ab565f9cc9212c9f715f86d3e926f36526b5a8f60c15d7"
+    },
+    "all_pending_cards_with_draft": 4710,
+    "normalized_question_duplicates": 0,
+    "canonical_files_written": 0,
+    "stable_shards_written": 0,
+    "supplemental_check_note": "文字列の正規化検査は意味の独立性を証明しない。対象本文の実読と具体的な周辺原文比較を別途実施。",
+    "repository_dataset_validator": {
+      "command": "node tools/verify-question-dataset.mjs --proposal /tmp/omoi-care-optional-overlay-proposal.json --enforce-quality-targets --summary --json",
+      "exit_code": 0,
+      "totalRecords": 4710,
+      "errors": 0,
+      "warnings": 3196,
+      "findingCodeCounts": {
+        "detail_without_sources": 3196
+      },
+      "interpretation": "追加案をメモリ上のproposalへ載せて検証。架空背景にも出典なし警告が出る既存検証仕様。構造の成功だけで意味の独立性を判定しない。",
+      "productionFilesWritten": 0
+    }
+  },
+  "self_review": {
+    "status": "completed_all_21_after_full_read",
+    "read_fields": [
+      "card.question",
+      "card.detail.text when present",
+      "reason",
+      "editorial",
+      "card metadata",
+      "individual resolution reason"
+    ],
+    "reviewed_ids": [
+      "exp26-care-0031",
+      "exp26-care-0207",
+      "exp26-care-0248",
+      "exp26-care-0249",
+      "exp26-care-0273",
+      "exp26-care-0275",
+      "exp26-care-0278",
+      "exp26-care-0282",
+      "exp26-care-0287",
+      "exp26-care-0289",
+      "exp26-care-0295",
+      "exp26-care-0302",
+      "exp26-care-0303",
+      "exp26-care-0368",
+      "exp26-care-0398",
+      "exp26-care-0508",
+      "exp26-care-0537",
+      "exp26-care-0556",
+      "exp26-care-0587",
+      "exp26-care-0660",
+      "exp26-care-0669"
+    ],
+    "reviewed_count": 21,
+    "read_batches": [
+      {
+        "count": 11,
+        "scope": "changes[0:11] の全after、理由、addresses、comparison_idsを実読"
+      },
+      {
+        "count": 10,
+        "scope": "changes[11:21] の全after、理由、addresses、comparison_idsとfinding_resolutions全21件を実読"
+      },
+      {
+        "id": "exp26-care-0249",
+        "scope": "家族が自分の夢を話す、の自分の指示対象を家族それぞれの夢へ明確化し、最終after全体を再読"
+      }
+    ],
+    "per_id": [
+      {
+        "id": "exp26-care-0031",
+        "status": "passed_unapplied_draft",
+        "assessment": "原文は0424/0428と任せる範囲を問う軸が近い。気づいた世話をどこまで許すかではなく、頼み合う言葉と先回りの双方で伝わる関係の近さへ改稿する。0037の断る理由の説明負担は扱わない。"
+      },
+      {
+        "id": "exp26-care-0207",
+        "status": "passed_unapplied_draft",
+        "assessment": "役を長く担ったという語だけでなく、自分の人生の大きな選択と弱さを知られる怖さを本文へ置いた。0205の頼られる喜び/重さ、0250のつらい日に支えを頼み返す行為とは分け、聞かれる本人の自己像と帰属を考える。"
+      },
+      {
+        "id": "exp26-care-0248",
+        "status": "passed_unapplied_draft",
+        "assessment": "疲れた日の参加調整ではなく、本人の大切な関係の終わりと、家族の中で居場所を感じていた役の喪失を重ねる。0250の援助を頼み返す場面とは分け、悲しさを持ったまま家族に属する意味を聞く。"
+      },
+      {
+        "id": "exp26-care-0249",
+        "status": "passed_unapplied_draft",
+        "assessment": "単に役が減って自分の必要性を失う0234には近づけず、本人が築いてきた近さの理解が、家族の別の人生の望みを聞いて揺らぐ条件へ改稿した。"
+      },
+      {
+        "id": "exp26-care-0273",
+        "status": "passed_unapplied_draft",
+        "assessment": "原文の「普通」は性の主題を欠いていた。交際する相手の性別と周りへ説明する条件を不可欠にし、分類語を足すだけでなく比較の意味を明示した。"
+      },
+      {
+        "id": "exp26-care-0275",
+        "status": "passed_unapplied_draft",
+        "assessment": "性のあり方に関わる感情と、自分だけだと感じていた条件を本文へ置く。0265の伝わる名前の選択や0269の名付けない希望とは分け、名付けを得る前後の孤立感を聞く。"
+      },
+      {
+        "id": "exp26-care-0278",
+        "status": "passed_unapplied_draft",
+        "assessment": "原文では声の好み一般だった。望む声が自己の性別感覚に関わる条件を明示し、変更の効能や医学的な方法を断定せず、受容の言葉が変化の望みにどう届くかを聞く。"
+      },
+      {
+        "id": "exp26-care-0282",
+        "status": "passed_unapplied_draft",
+        "assessment": "原文の身体像は分類の主題が見えにくい。写真を相手へ説明するだけでは0280と近づくため、記念として残す像の選択へ軸を分けた。0267の過去の写真の自己感覚の確認ではなく、今残す一枚の表し方を聞く。"
+      },
+      {
+        "id": "exp26-care-0287",
+        "status": "passed_unapplied_draft",
+        "assessment": "原文の恋人らしさでは関係一般に留まるため、誘う・頼る役を性別へ割り当てる具体条件を置いた。0293の結婚の役割への外からの評価ではなく、二人で交際の役を決める会話を聞く。"
+      },
+      {
+        "id": "exp26-care-0289",
+        "status": "passed_unapplied_draft",
+        "assessment": "原文でも親密さの分類の主題はあるが、曖昧な交際として読める余地がある。恋愛感情を前提としない二人の固有条件を加え、0283の性的な関わりと親密さ、0284のまだ分からない気持ちと分けた。"
+      },
+      {
+        "id": "exp26-care-0295",
+        "status": "passed_unapplied_draft",
+        "assessment": "原文の身体の変化は健康や自己像一般でも成立する。変化そのものを否定しない実感と、周りが重ねる性別の言葉への距離を分け、0290の褒める意図の理解一般や0270の全員への説明義務とは別の混ざった感情を聞く。身体が変わる方法や原因は決めない。"
+      },
+      {
+        "id": "exp26-care-0302",
+        "status": "passed_unapplied_draft",
+        "assessment": "性別の自己感覚と試している段階を明示した。0279の呼称を直す伝え方、0296の誤認の訂正時期、0303の自己説明を話す時期とは分け、複数の場で名乗りが異なることの意味を聞く。"
+      },
+      {
+        "id": "exp26-care-0303",
+        "status": "passed_unapplied_draft",
+        "assessment": "性の自己認識を更新する不確定な段階を具体化した。0271の過去の説明を訂正/変化と呼ぶ区別や0302の限られた場所での名前の試行と分け、今語れる未確定さをいつ共有するかを聞く。"
+      },
+      {
+        "id": "exp26-care-0368",
+        "status": "passed_unapplied_draft",
+        "assessment": "主題は観察の方法より自分の声が代表される影響なのでaffectedへ。本文にも所属が支えだった意味と結婚を望まない人生の違いを示す。0365の仲間との考え方の変化一般ではなく、集団の公の要望をどこまで自分の声と感じるかへ置く。"
+      },
+      {
+        "id": "exp26-care-0398",
+        "status": "passed_unapplied_draft",
+        "assessment": "元の問いは自分の日常が紹介されない当人の望みが中心なのでaffectedへ。本人が託した人生の複数の時期を残し、0394の今の服装を変える期待、0388の自分で過去を評価する内省とは分けた。"
+      },
+      {
+        "id": "exp26-care-0508",
+        "status": "passed_unapplied_draft",
+        "assessment": "原文は0082と代弁による発話機会で近い。自分で話せる時にも他者へ説明を任せる本人の選択を不可欠な条件にし、自己決定を直接の発話と同一視するかという別の軸へ。子エージェントも周辺原文と独立比較済み。"
+      },
+      {
+        "id": "exp26-care-0537",
+        "status": "passed_unapplied_draft",
+        "assessment": "原文の背景は数値と本人の実感で0482/0483と近い。単なる目標の変更や未達の評価にはせず、落胆から守ろうとする支援者が希望の大きさへ介入する条件へ。子エージェントも周辺の目標・助言の原文と比較済み。"
+      },
+      {
+        "id": "exp26-care-0556",
+        "status": "passed_unapplied_draft",
+        "assessment": "通常の説明手順だけではL3に近いため、自分が希望に支えられ、同時に別れの準備を逃したと感じる個別の人生の意味を置く。0580の説明後に希望がなくなったと言われる責任とは分け、今の説明へ過去の自分の経験を投影する葛藤を聞く。"
+      },
+      {
+        "id": "exp26-care-0587",
+        "status": "passed_unapplied_draft",
+        "assessment": "日程の調整ではなく、本人の将来の学びを後回しにした時間と、病気が変動する相手と生活する約束を置く。0155の受ける人が希望を当日選ぶ自由や0586の友人への余裕の伝え方から分け、共同生活の約束を更新する決定へ。"
+      },
+      {
+        "id": "exp26-care-0660",
+        "status": "passed_unapplied_draft",
+        "assessment": "原文は0563/0517の面会配分と近い。決定後の時間に加えて、亡くなった本人の秘密を守る約束と自分への非難の関係を置く。単に決めた役を自分へ移すのではなく、人生に残る責任と自己弁護の葛藤へ。内密の希望を扱うためprivacyタグを追加する。"
+      },
+      {
+        "id": "exp26-care-0669",
+        "status": "passed_unapplied_draft",
+        "assessment": "単に長く担ったことではなく、自分が誇りにしてきた関係の理解が、本人の新しい支援との経験で変わる条件を置く。0611の体力の限界で未完のケアを離れる決定、0234の必要とされない感覚とは分け、引継ぎの最後に自分の関係をどう語るかを聞く。"
+      }
+    ],
+    "original_optional_judgment": "指摘が任意であることを維持し、採用は自動決定しない。現行の対象原文には各指摘の残る条件があるため21件それぞれに改稿理由を示した。0031は身体の裁量から関係の理解へ、9件の分類具体性は固有の性/親密さの条件へ、2視点は本文に応じたaffectedへ、6件のL4深さは個別の人生/関係/役割の意味へ、3近似は異なる判断対象へ分けた。",
+    "remaining_required_findings": [],
+    "comparison_limits": "この作業では対象21件と明示した周辺原文を比較した。全3,768件間の全組合せの意味の独立性や、実際の会話での使用結果まで検証したとは扱わない。",
+    "fact_scope": "対象は架空条件。新たな医療・法的事実や治療効果を断定しない。外部資料の新規網羅調査は実施していない。",
+    "staging_apply_and_independent_recheck_next": true,
+    "canonical_apply_requires_final_user_confirmation": true
+  },
+  "subagent_depth_review": {
+    "reviewer": "/root/author_personal/care_near_axes",
+    "scope": "追加8件のL4最終案をbefore/after全文・背景・理由・metadataおよび指定周辺の原文で独立確認。編集なし。",
+    "reviewed_ids": [
+      "exp26-care-0207",
+      "exp26-care-0248",
+      "exp26-care-0249",
+      "exp26-care-0368",
+      "exp26-care-0398",
+      "exp26-care-0556",
+      "exp26-care-0587",
+      "exp26-care-0669"
+    ],
+    "required_findings": [],
+    "assessment": "各8件に本人の人生/喪失/関係/仕事の自己理解を示す差分がある。0249と0669は未知の望みを知る近さを共有するが、前者は続く家族の親密さ、後者は終わる支援の職業上の自己像を扱い、役の置換のみではない。0249の最後の指示対象の明確化は執筆者が追記して再読。"
+  }
+}

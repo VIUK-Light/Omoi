@@ -1,0 +1,1330 @@
+{
+  "status": "corrected_staging_pending_user_approval",
+  "group": "world",
+  "source_sha256": "c1b10b94608e8ce0e79ae52a04482877a36f644826aa942ef949fe0e66113732",
+  "final_sha256": "7df10201253f1f21b932b92e828d5e23506213a52e999f27eb495af540a0eced",
+  "draft": "resolution-drafts/livelihood-fixes-world.json",
+  "root_review": "The root agent read the original and revised text before applying this draft to staging.",
+  "changes": [
+    {
+      "id": "exp26-world-0076",
+      "priority": "optional",
+      "before": {
+        "card": {
+          "id": "exp26-world-0076",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "ecosystem_individual",
+          "question": "自然公園で人に慣れた動物を遠ざけるため、観光客の楽しみを制限してよいと思う？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の公園。親しみと野生の行動を保つことが食い違う条件。"
+          }
+        },
+        "reason": "親しみの制限と野生性。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l3.txt:12"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0076",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "ecosystem_individual",
+          "question": "自然公園で人と野生動物の距離を保つため、近づいたり餌を与えたりする観光客の楽しみを制限してよいと思う？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の公園。親しみと野生の行動を保つことが食い違う条件。"
+          }
+        },
+        "reason": "人と野生動物の距離を保つ責任と観光の楽しみを比べる。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l3.txt:12"
+        }
+      },
+      "rationale": "『人に慣れた動物を遠ざける』は誰からどこへ遠ざけるのか曖昧で、動物を公園から追い出す政策とも読める。背景の核は人との距離を保つこと。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0084",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0084",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "resource_cycles",
+          "question": "修理できる製品でも部品の保管には費用がかかる。何年分を誰が負担すると納得できる？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の部品供給。長寿命の利益と使われない在庫の費用が関わる。"
+          }
+        },
+        "reason": "修理可能性の維持責任。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l3.txt:20"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0084",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "resource_cycles",
+          "question": "修理用の部品を長く保管する案と、別の製品にも使える部品へ設計を変える案がある。資源を使い続けるため、修理の確実さと作り替える余地をどう比べたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の製品計画。どちらが実際に資源を減らすかは未確定。現在の製品を確実に直せることと、将来ほかの使い道へ回せることを別の価値として比較する。"
+          }
+        },
+        "reason": "修理を確実にする保管と、別の使い道へ資源を回す設計を比べる。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l3.txt:20"
+        }
+      },
+      "rationale": "livelihood-0367の修理部品供給の責任と主な判断が近い。『何年分を誰が負担』は長く使うための販売後の部品責任を別の文型で聞いている。環境分類の独立した会話軸を明示したい。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0143",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0143",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "energy_responsibility",
+          "question": "自分の家の近くに、他地域へ電気を送る設備ができる。建設に同意するなら、自分は何への責任を引き受けたと思う？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の立地。受益する場所と長く設備と暮らす場所が異なる。"
+          }
+        },
+        "reason": "受益の遠い環境負担の引受け。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l4.txt:9"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0143",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "energy_responsibility",
+          "question": "他地域へ電気を送る設備のため、自分が人生の節目に眺めてきた景色が変わる。同意すれば地域も利益を受ける時、守りたかった場所と他の人の暮らしをどう持ちたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の立地案。景色の変化と地域の利益は問いの仮定。近隣の負担を代表して答えるのではなく、本人が長く暮らした環境の意味を考える。"
+          }
+        },
+        "reason": "長く人生の節目を見てきた景色を変える本人の同意の意味。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l4.txt:9"
+        }
+      },
+      "rationale": "『自分の家の近く』『自分は何への責任』以外に本人の利害・意味が特定されず、L3-0126の立地地域と受益地域の一般判断へ寄る。どんな自然や暮らしを本人が長く失うのかを明示したい。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0168",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0168",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "conservation_access",
+          "question": "保護された場所を遠くからしか見られない。近づけないことで、自然への愛着は深まると思う？ 薄れると思う？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の利用制限。触れる経験と想像して大切にする関係は異なる。"
+          }
+        },
+        "reason": "接触を失った後の自然との関係。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l4.txt:34"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0168",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "conservation_access",
+          "question": "保全のため入らないよう人へ伝えてきた場所に、自分はどうしても戻りたいと思う。特別な許可を望む自分をどう受け止める？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の保護区域。本人に例外を認める権利があるとは置かず、他者へ求めたルールと私的な愛着が食い違う場面を考える。"
+          }
+        },
+        "reason": "他者へ求めた保全のルールと、自分の愛着が求める例外の葛藤。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l4.txt:34"
+        }
+      },
+      "rationale": "同じL4-0135の『保全で接触できなくなる自然を残ったと感じるか』と近く、愛着が強く/薄くなるという言い換えだけでは独立した判断軸が弱い。遠くから眺める好みに留まりL2寄りにも読める。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0173",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0173",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "conservation_knowledge",
+          "question": "珍しい生き物を見つけた。知らせれば保護につながるが人も集まる。発見者として誰に伝えたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の発見。保護の機会と公開による変化を本人が選ぶ。"
+          }
+        },
+        "reason": "発見を伝える本人の責任。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l4.txt:39"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0173",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "conservation_knowledge",
+          "question": "珍しい生き物の生息地を発見し、皆に保護を呼びかけたが、それで人が集まり環境が悪くなったとする。自分の善意と、もう戻せない変化をどう引き受けたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の発見とその後の変化。生息地の公表が常に害を起こすという主張ではない。保護したかった本人の思いと、呼びかけが残した結果を分けて考える。"
+          }
+        },
+        "reason": "自然を守りたかった本人が、呼びかけの残した戻せない変化を受ける。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l4.txt:39"
+        }
+      },
+      "rationale": "L3-0069も保護と人の集中を理由に生息場所の共有範囲を判断している。発見者を自分にしているが、本人の人生・重大な行為の責任が文面にない。承認を加えるだけではL4-0194の自然写真の公開と近くなる。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0188",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0188",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "nature_relationship",
+          "question": "自然との時間を取り戻すため保全活動を始めたが、会議ばかりになった。自分は何のために続けたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の活動。組織を支える仕事と自然への個人的なつながりがある。"
+          }
+        },
+        "reason": "環境活動の目的と実感のずれ。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l4.txt:54"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0188",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "nature_relationship",
+          "question": "自然を守る活動の仲間とは親しいが、望む自然の姿が違うと分かった。長く共に過ごした関係と、自分が守りたい場所をどう選びたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の保全団体。仕事の時間不足ではなく、同じ活動で得た帰属と、本人が自然に持つ信念が離れる場面を考える。"
+          }
+        },
+        "reason": "保全で得た仲間への帰属と、自分が守りたい自然の姿の別れ。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l4.txt:54"
+        }
+      },
+      "rationale": "L4-0176は保全活動で自然を見る時間が失われる本人の退出。0188も会議ばかりで同じ自然の時間を失う本人に継続理由を聞き、主な葛藤がほぼ同じ。会議という作業名の差に留まる。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0203",
+      "priority": "optional",
+      "before": {
+        "card": {
+          "id": "exp26-world-0203",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "future_responsibility",
+          "question": "自分が町へ残す最後の仕事として木を植える計画を選べる。育った姿を見られなくても、何を残した人生だと思いたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の長期計画。本人の達成感と後の人が触れる緑を分ける。"
+          }
+        },
+        "reason": "見られない緑を人生の仕事にする。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l4.txt:69"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0203",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "future_responsibility",
+          "question": "自分が町へ残す最後の仕事として、すぐ皆が使える緑と、後の世代まで人を入れずに育てる森のどちらを託したい？ 何を残した人生だと思いたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の最後の仕事。すぐ地域の人が使える緑と、人を入れず後の世代へ育てる森を同時には整えられないとする。どちらが実際の保全に優れるかを断定せず、本人が人生の仕事に残したい時間と使い方を考える。"
+          }
+        },
+        "reason": "今使われる緑と後の世代へ託す森のどちらに人生の仕事を残すか。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l4.txt:69"
+        }
+      },
+      "rationale": "L4-0182も完成を見られない長期保全を本人の行為の意味として聞く。最後の仕事・植樹という差に加え、決定者が何を選ぶのかを明示すると独立する。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0223",
+      "priority": "optional",
+      "before": {
+        "card": {
+          "id": "exp26-world-0223",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "future_responsibility",
+          "question": "先代の保全で残った森に、まだ手入れの仕事がある。自分は別の人生を望む時、受け継いだ責任をどう持ちたい？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の継承。利益を受けたことと本人が選ぶ人生を比べる。"
+          }
+        },
+        "reason": "自然を受け継ぐ自己と人生の自由。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l4.txt:89"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0223",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "climate_environment_energy_and_disaster",
+          "topic": "future_responsibility",
+          "question": "先代の保全で残った森に、まだ手入れの仕事がある。自分は別の人生を望む時、受け継いだ責任をどう持ちたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の継承。利益を受けたことと本人が選ぶ人生を比べる。"
+          }
+        },
+        "reason": "先代から受け継いだ森の手入れと、自分が望む別の人生。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "climate_environment_energy_and_disaster__l4.txt:89"
+        }
+      },
+      "rationale": "先代の森の手入れを引き受ける本人の継承責任と人生の選択なので、外から見るobserverより、受け継いだ影響を受けるaffectedが自然。observerとして誰を見ているかは設定されていない。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0354",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0354",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "international_peace_and_cooperation",
+          "topic": "mutual_dependence",
+          "question": "海外の危機で普段の生活用品が届かなくなった。遠い場所への依存を知って、自分の安心をどう捉え直す？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の物流停止。具体的な危機予測ではなく生活の関係を考える。"
+          }
+        },
+        "reason": "国際的な依存にある安心。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "international_peace_and_cooperation__l4.txt:15"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0354",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "international_peace_and_cooperation",
+          "topic": "mutual_dependence",
+          "question": "海外からの品が届かなくなり、自分が育ててきた地元の店を続けられないとする。他国と距離を置きたい自分の信念と、店に人生を託した思いをどう持つ？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の供給停止。現実の物流の原因や予測を示さない。国際関係への本人の信念が、自分の仕事と暮らしの継続にぶつかる場面を考える。"
+          }
+        },
+        "reason": "他国と距離を置きたい信念が、自分の人生の店を支える依存とぶつかる。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "international_peace_and_cooperation__l4.txt:15"
+        }
+      },
+      "rationale": "物流停止が自分の安心に与える一般的な影響を聞いており、L4の人生・重大な責任・倫理的葛藤が特定されていない。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0360",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0360",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "international_peace_and_cooperation",
+          "topic": "peace_dialogue",
+          "question": "国同士の関係が悪くなり、友達と会う予定が取り消された。自分たちの関係を守るとは何をすること？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の交流停止。安全や法的な実行方法を指示せず関係の意味を考える。"
+          }
+        },
+        "reason": "国家の緊張で変わる個人の関係。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "international_peace_and_cooperation__l4.txt:21"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0360",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "international_peace_and_cooperation",
+          "topic": "peace_dialogue",
+          "question": "国同士の関係が悪くなり、他国の親友と長年準備した共同の仕事を始められないとする。自分の人生にその人と選んだ未来を、どう残したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の共同事業と制約。特定の国や現在の渡航条件は説明しない。一度会う予定の調整ではなく、二人が人生に置いた未来を考える。"
+          }
+        },
+        "reason": "国同士の関係で失われた親友との長年の未来を、自分の人生へ持ち直す。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "international_peace_and_cooperation__l4.txt:21"
+        }
+      },
+      "rationale": "国の関係悪化で友達との交流を守りたいというL2-0254と近く、会う予定の中止だけではL4の利害・意味が十分に増えていない。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0377",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0377",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "international_peace_and_cooperation",
+          "topic": "cross_border_language",
+          "question": "自分の国を紹介する文章を訳したら、友達は自分と違う意味に読んだ。誤解と新しい見方をどう区別する？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の翻訳。表現を直すことと他者の受け止めを知ることがある。"
+          }
+        },
+        "reason": "越境で変わる自分の表現。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "international_peace_and_cooperation__l4.txt:38"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0377",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "international_peace_and_cooperation",
+          "topic": "cross_border_language",
+          "question": "国を離れた家族が長く語れなかった体験を、自分が訳して海外へ伝える。読者が別の意味に受け止めた時、家族の思いを守ることと新しい理解をどう両立したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の家族の語り。特定の被害体験を説明させる問いではない。語ることを託された本人の責任と、他の言葉で生まれる受け止めを考える。"
+          }
+        },
+        "reason": "家族から語りを託された本人が、翻訳で変わる受け止めを担う。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "international_peace_and_cooperation__l4.txt:38"
+        }
+      },
+      "rationale": "国の紹介文の解釈が異なることを聞くだけでは、普通の翻訳や表現の調整にとどまる。本人が引き受ける重大な意味や責任を明示したい。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0392",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0392",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "international_peace_and_cooperation",
+          "topic": "local_aid_voice",
+          "question": "人生の仕事として支援を始め、約束した成果が現地で望まれないと知った。自分が果たしたかった約束を誰へどう語り直す？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の支援。寄付者への説明と生活者への応答を別の責任にする。"
+          }
+        },
+        "reason": "支援に注いだ人生の約束を問い直す。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "international_peace_and_cooperation__l4.txt:53"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0392",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "international_peace_and_cooperation",
+          "topic": "local_aid_voice",
+          "question": "長く率いた海外支援の団体が、現地ではもう必要とされなくなった。職員の暮らしを守るため続けたい声もある。自分は人生の仕事を終えることと仲間への責任をどう持つ？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の団体。現地の自立で支援が不要になることは仮定で、どの団体にも当てはまるという主張ではない。本人の使命が果たされたことと、その仕事で生まれた仲間への責任を別々に考える。"
+          }
+        },
+        "reason": "支援の役目を果たした団体の終わりと、人生の仕事で生まれた仲間への責任。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "international_peace_and_cooperation__l4.txt:53"
+        }
+      },
+      "rationale": "L4-0369も担当者の約束した事業が現地の望みとずれる条件で計画を変える。人生の仕事という前置きと説明相手の聞き方はあるが、主な責任の衝突が同じ。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0398",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0398",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "international_peace_and_cooperation",
+          "topic": "cross_border_language",
+          "question": "自分が外国語を話せなかったころの記憶を持ち、今は国際会議を進める。通訳を待つと終えられない時、誰の時間を守りたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の会議。自分の経験と進行役の期限の責任が重なる。"
+          }
+        },
+        "reason": "国際会議の進行者の越境の記憶。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "international_peace_and_cooperation__l4.txt:59"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0398",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "international_peace_and_cooperation",
+          "topic": "cross_border_language",
+          "question": "移住した家族の声が言葉の違いで届かなかった経験から、国際会議の進行を引き受けた。通訳を待たず重要な方針を決めるよう迫られた時、自分は何を守る責任を感じる？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の会議と家族の経験。決まった方針は、参加できなかった人々の暮らしにも長く関わると置く。終了時刻だけでなく、本人が役を引き受けた理由と決定の責任を考える。"
+          }
+        },
+        "reason": "言葉で声が届かなかった家族の経験を持つ本人が、暮らしを変える決定を進める責任。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "international_peace_and_cooperation__l4.txt:59"
+        }
+      },
+      "rationale": "外国語を話せなかった記憶を加えても、通訳を待つ時間と会議終了の一般的な調整が中心。L4で誰の人生や取り返しにくい責任を本人が背負うのかが弱い。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0587",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0587",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "science_research_and_uncertainty",
+          "topic": "research_self_image",
+          "question": "他の人の説明では自分は困難を乗り越えた人だが、自分は運に助けられたと感じる。どんな人生の語りを選ぶ？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の分析。努力と偶然のどちらかを唯一の原因にしない。"
+          }
+        },
+        "reason": "科学の人物像と自己の人生観。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:38"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0587",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "science_research_and_uncertainty",
+          "topic": "research_self_image",
+          "question": "人生の選択を予測する研究で、自分が大切に決めた進路も予測通りだったとする。自分で選んだという感覚をどう持ちたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の予測結果。現実の研究に個人の決定を確実に予測する能力があるとは主張しない。予測の的中と、本人が理由を考えて選んだ経験を別々に扱う。"
+          }
+        },
+        "reason": "予測通りだった進路と、自分で理由を考えて選んだという人生の感覚。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:38"
+        }
+      },
+      "rationale": "L4-0566と同じく人生の努力と偶然・運の影響を科学の説明と自分の見方から聞く。困難を乗り越えたという呼称はあるが、主な判断軸が重なる。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0590",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0590",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "science_research_and_uncertainty",
+          "topic": "knowledge_burden",
+          "question": "自分の好きな自然現象を知り尽くしたら、以前の驚きが薄れた。分かることと驚くことをどう一緒に持ちたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の理解。知識が楽しさを必ず奪うという事実主張ではない。"
+          }
+        },
+        "reason": "理解で変わる世界への驚き。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:41"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0590",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "science_research_and_uncertainty",
+          "topic": "knowledge_burden",
+          "question": "自然の不思議に救われて研究者になったが、仕組みを説明できた今は同じ驚きを感じない。自分の人生を支えた不思議を、知った後は何として持ちたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の研究者の人生。仕組みを知ることが必ず驚きを奪うとは主張しない。問い始める支えだった経験と、理解できた現在の自分の仕事の意味を考える。"
+          }
+        },
+        "reason": "人生の支えから探究へ向かった本人が、理解した後の驚きの意味を持つ。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:41"
+        }
+      },
+      "rationale": "仕組みを知ると驚きが薄れるというL1-0414やL2-0448に近い好みで、L4として何が本人の人生を支えていたのかが弱い。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0626",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0626",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "research_collaboration",
+          "question": "自分の名前を外せば研究が続けられるという提案を受けた。残したい知識と残したい自分をどう比べる？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の継承条件。知の存続と本人の承認を分ける。"
+          }
+        },
+        "reason": "探究の継続で手放す自己の名。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:77"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0626",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "research_collaboration",
+          "question": "自分の研究は、自分を傷つけた人の仕事にも役立つ。知識を公開する信念と、その人へ力を渡したくない気持ちをどう持ちたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の研究と関係。資料に私的な情報や危険な方法は含まず、公開すると特定の人の利用だけを区別できない設定。本人の信念と、傷ついた関係を考える。"
+          }
+        },
+        "reason": "知を開く信念が、傷ついた相手の力にもなることへの本人の葛藤。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:77"
+        }
+      },
+      "rationale": "L4-0604とともに研究に残る知識と自分の名前・承認を比べる。名前を外す提案は強い条件だが、主要な葛藤の差が小さい。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0633",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0633",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "consent_over_time",
+          "question": "自分が始めた長期研究で、参加者から昔の語りを残したくないと言われた。成果を失う不安と、その人への約束をどう持つ？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の相談。法的な処理を決めるカードでなく説明と希望の責任。"
+          },
+          "content_warning": [
+            "privacy_and_surveillance"
+          ]
+        },
+        "reason": "自らの成果と協力者への約束。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:84"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0633",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "consent_over_time",
+          "question": "自分が始めた長期研究で、亡くなった参加者の記録を当初と違う目的に使う案が出た。本人へ聞けない時、託された言葉と今の人の利益をどう持つ？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の相談。生前には新しい目的への希望を聞いていないとする。利用の可否を一律の法律として答えるのではなく、再確認できない本人の意思と今の研究へ期待する人への責任を考える。"
+          },
+          "content_warning": [
+            "privacy_and_surveillance"
+          ]
+        },
+        "reason": "本人へ再確認できない記録の新しい用途と、託された意思を読む責任。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:84"
+        }
+      },
+      "rationale": "L4-0617も長期協力者が昔の記録を残したくないと話し、成果と相手の希望・関係の責任を研究者自身が持つ。actorからdecision_makerへの違いだけでは独立しない。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0636",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0636",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "research_independence",
+          "question": "大切な家族の経験を確かめる研究を任された。期待した結果にならなくても、何を自分の責任として伝える？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の調査。家族を支えたい願いと確認できる範囲を分ける。"
+          },
+          "content_warning": [
+            "family_conflict"
+          ]
+        },
+        "reason": "家族の希望を託された探究。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:87"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0636",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "research_independence",
+          "question": "家族に利益がある研究と、家族以外の人に利益がある研究のどちらかへ研究所の時間を向ける役になった。家族も自分たちのために研究してほしいと言う時、自分は誰への責任をどう比べたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の研究計画。どちらの効果も確定したとは置かず、限られた時間は同時に配れないとする。家族への思いと、研究所を任された本人の社会への責任を分けて考える。"
+          },
+          "content_warning": [
+            "family_conflict"
+          ]
+        },
+        "reason": "家族に利益を向けたい思いと、研究所を担う本人の社会への責任。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:87"
+        }
+      },
+      "rationale": "L4-0608とともに家族の経験から出発した研究が家族の思いと異なる結果になる。研究担当と責任者という役割の差はあるが、問い始めた目的と家族への責任の中心が近い。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0641",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0641",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "evidence_responsibility",
+          "question": "自分が決めた研究方法で、一部の人の経験が見えなくなった。成果を出した後、何をやり直す責任を感じる？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の分析。一般化の限界と本人が選んだ方法を分ける。"
+          }
+        },
+        "reason": "知識から外した人への自己の責任。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:92"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0641",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "evidence_responsibility",
+          "question": "聞かれなかった人の人生を伝えるため研究してきた。一人を深く紹介すると、他の協力者はまた自分の声が届かないと感じる。自分が守りたかった全員の尊厳と、一人を知る責任をどう持ちたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の聞き取り。誰かの記録を除外する場面ではなく、全員の記録は残るが限られた発表で均等な広さと一人を深く知ることを両立しにくい条件。語りを託された本人の責任を考える。"
+          }
+        },
+        "reason": "全員の声を託された研究者が、一人を深く知る発表の責任を持つ。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:92"
+        }
+      },
+      "rationale": "L4-0618とともに自分が作った単純な説明・方法が一部の声を消したと知り、発表後に仕事を見直す責任を聞く。選んだ方法の決定者という表現だけでは差が弱い。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0650",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0650",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "science_research_and_uncertainty",
+          "topic": "research_legacy",
+          "question": "自分の発見を確かめる最後の資料を手放すと、今の仲間の研究を助けられる。自分は何を未来へ残したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の資源配分。過去の検証可能性と現在の探究の材料が競合する。"
+          }
+        },
+        "reason": "科学の過去と未来を選ぶ自己。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:101"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0650",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "science_research_and_uncertainty",
+          "topic": "research_legacy",
+          "question": "自分の発見を確かめる最後の試料を、仲間の新しい研究で使い切れば前に進めるとする。後から同じ試料で再確認できなくなる時、自分は何を未来へ残したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の試料配分。新しい実験で試料を消費し、記録を残しても同じ試料そのものは再び調べられない設定。既に発表した知識の検証手段と、新しい問いの機会を比べる。"
+          }
+        },
+        "reason": "自分の発見を確かめる最後の試料を失う責任と、新しい研究へ託す機会。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:101"
+        }
+      },
+      "rationale": "最後の資料を「手放す」だけでは今の仲間も資料を保存・利用でき、過去の検証可能性を失うという背景の競合が成立しない場合がある。何を失うかの比較条件を明示する必要がある。",
+      "resolution_status": "drafted_not_applied",
+      "followup_reason": "再確認できなくなる範囲を同じ試料に限定し、背景と本文を一致させる。"
+    },
+    {
+      "id": "exp26-world-0653",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0653",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "science_research_and_uncertainty",
+          "topic": "research_self_image",
+          "question": "自分の研究組織の昔の失敗を展示する責任を任された。誇りを損ねても何を伝える組織でいたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の展示。過去を否定することと検証の過程を残すことを分ける。"
+          }
+        },
+        "reason": "科学の居場所の誇りと失敗。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:104"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0653",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "science_research_and_uncertainty",
+          "topic": "research_self_image",
+          "question": "自分が誇る研究所の創設者は重要な仕事を残したが、研究に参加した人の功績を消していたと知った。創設者の名を掲げる責任を任された時、知への感謝と受け継ぐ組織の姿をどう持つ？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の研究所と人物。創設者の発見の価値と、功績を認められなかった協力者への責任は別の論点。具体的な実在人物の事実は示さず、本人が誇ってきた科学の居場所をどう受け継ぐかを考える。"
+          }
+        },
+        "reason": "誇ってきた科学の居場所で、創設者への感謝と消された協力者の功績を受け継ぐ。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:104"
+        }
+      },
+      "rationale": "L4-0640とともに研究組織の成功・誇りに対し失敗を組織の歩みとして残す責任を聞く。展示という媒体だけでは独立した主な価値の衝突になりにくい。",
+      "resolution_status": "drafted_not_applied"
+    },
+    {
+      "id": "exp26-world-0662",
+      "priority": "required",
+      "before": {
+        "card": {
+          "id": "exp26-world-0662",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "science_research_and_uncertainty",
+          "topic": "knowledge_burden",
+          "question": "大切な人は知らずに楽しみたいが、自分は仕組みを伝えたい。相手と同じ世界を見ていると思える条件は？",
+          "perspective": "observer",
+          "detail": {
+            "text": "仮の会話。理解の共有と未知を残す希望は異なる。"
+          }
+        },
+        "reason": "知る違いと大切な相手との世界。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:113"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0662",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "knowledge_burden",
+          "question": "大切な人と共に生きる支えにしてきた、人や自然についての考え方が、研究を読んで変わった。もう同じ意味で世界を見られない自分を、相手へどう伝えたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の知識の変化。相手の信じ方を誤りと決めるのではなく、同じ世界観で人生を過ごした関係と、知った後の本人の意味の違いを考える。"
+          }
+        },
+        "reason": "長く共有した世界観が変わる本人が、大切な相手との意味の違いを伝える。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:113"
+        }
+      },
+      "rationale": "仕組みを伝えたい自分と知らずに楽しみたい相手というL2-0438/0448やL4-0607との違いが弱く、L4として重大な関係・人生の意味を明示したい。",
+      "resolution_status": "drafted_not_applied",
+      "followup_reason": "抽象的な「世界の説明」を、人や自然についての考え方と研究を読んだ経験へ具体化する。"
+    }
+  ],
+  "finding_resolutions": [
+    {
+      "id": "exp26-world-0076",
+      "priority": "optional",
+      "field": "question",
+      "change_id": "exp26-world-0076",
+      "status": "drafted_not_applied",
+      "rationale": "『人に慣れた動物を遠ざける』は誰からどこへ遠ざけるのか曖昧で、動物を公園から追い出す政策とも読める。背景の核は人との距離を保つこと。"
+    },
+    {
+      "id": "exp26-world-0084",
+      "priority": "required",
+      "field": "novelty",
+      "change_id": "exp26-world-0084",
+      "status": "drafted_not_applied",
+      "rationale": "livelihood-0367の修理部品供給の責任と主な判断が近い。『何年分を誰が負担』は長く使うための販売後の部品責任を別の文型で聞いている。環境分類の独立した会話軸を明示したい。"
+    },
+    {
+      "id": "exp26-world-0143",
+      "priority": "required",
+      "field": "question/detail",
+      "change_id": "exp26-world-0143",
+      "status": "drafted_not_applied",
+      "rationale": "『自分の家の近く』『自分は何への責任』以外に本人の利害・意味が特定されず、L3-0126の立地地域と受益地域の一般判断へ寄る。どんな自然や暮らしを本人が長く失うのかを明示したい。"
+    },
+    {
+      "id": "exp26-world-0168",
+      "priority": "required",
+      "field": "novelty/level",
+      "change_id": "exp26-world-0168",
+      "status": "drafted_not_applied",
+      "rationale": "同じL4-0135の『保全で接触できなくなる自然を残ったと感じるか』と近く、愛着が強く/薄くなるという言い換えだけでは独立した判断軸が弱い。遠くから眺める好みに留まりL2寄りにも読める。"
+    },
+    {
+      "id": "exp26-world-0173",
+      "priority": "required",
+      "field": "question/detail",
+      "change_id": "exp26-world-0173",
+      "status": "drafted_not_applied",
+      "rationale": "L3-0069も保護と人の集中を理由に生息場所の共有範囲を判断している。発見者を自分にしているが、本人の人生・重大な行為の責任が文面にない。承認を加えるだけではL4-0194の自然写真の公開と近くなる。"
+    },
+    {
+      "id": "exp26-world-0188",
+      "priority": "required",
+      "field": "novelty",
+      "change_id": "exp26-world-0188",
+      "status": "drafted_not_applied",
+      "rationale": "L4-0176は保全活動で自然を見る時間が失われる本人の退出。0188も会議ばかりで同じ自然の時間を失う本人に継続理由を聞き、主な葛藤がほぼ同じ。会議という作業名の差に留まる。"
+    },
+    {
+      "id": "exp26-world-0203",
+      "priority": "optional",
+      "field": "novelty",
+      "change_id": "exp26-world-0203",
+      "status": "drafted_not_applied",
+      "rationale": "L4-0182も完成を見られない長期保全を本人の行為の意味として聞く。最後の仕事・植樹という差に加え、決定者が何を選ぶのかを明示すると独立する。"
+    },
+    {
+      "id": "exp26-world-0223",
+      "priority": "optional",
+      "field": "perspective",
+      "change_id": "exp26-world-0223",
+      "status": "drafted_not_applied",
+      "rationale": "先代の森の手入れを引き受ける本人の継承責任と人生の選択なので、外から見るobserverより、受け継いだ影響を受けるaffectedが自然。observerとして誰を見ているかは設定されていない。"
+    },
+    {
+      "id": "exp26-world-0354",
+      "priority": "required",
+      "field": "question/detail",
+      "change_id": "exp26-world-0354",
+      "status": "drafted_not_applied",
+      "rationale": "物流停止が自分の安心に与える一般的な影響を聞いており、L4の人生・重大な責任・倫理的葛藤が特定されていない。"
+    },
+    {
+      "id": "exp26-world-0360",
+      "priority": "required",
+      "field": "question/detail",
+      "change_id": "exp26-world-0360",
+      "status": "drafted_not_applied",
+      "rationale": "国の関係悪化で友達との交流を守りたいというL2-0254と近く、会う予定の中止だけではL4の利害・意味が十分に増えていない。"
+    },
+    {
+      "id": "exp26-world-0377",
+      "priority": "required",
+      "field": "question/detail",
+      "change_id": "exp26-world-0377",
+      "status": "drafted_not_applied",
+      "rationale": "国の紹介文の解釈が異なることを聞くだけでは、普通の翻訳や表現の調整にとどまる。本人が引き受ける重大な意味や責任を明示したい。"
+    },
+    {
+      "id": "exp26-world-0392",
+      "priority": "required",
+      "field": "novelty",
+      "change_id": "exp26-world-0392",
+      "status": "drafted_not_applied",
+      "rationale": "L4-0369も担当者の約束した事業が現地の望みとずれる条件で計画を変える。人生の仕事という前置きと説明相手の聞き方はあるが、主な責任の衝突が同じ。"
+    },
+    {
+      "id": "exp26-world-0398",
+      "priority": "required",
+      "field": "question/detail",
+      "change_id": "exp26-world-0398",
+      "status": "drafted_not_applied",
+      "rationale": "外国語を話せなかった記憶を加えても、通訳を待つ時間と会議終了の一般的な調整が中心。L4で誰の人生や取り返しにくい責任を本人が背負うのかが弱い。"
+    },
+    {
+      "id": "exp26-world-0587",
+      "priority": "required",
+      "field": "novelty",
+      "change_id": "exp26-world-0587",
+      "status": "drafted_not_applied",
+      "rationale": "L4-0566と同じく人生の努力と偶然・運の影響を科学の説明と自分の見方から聞く。困難を乗り越えたという呼称はあるが、主な判断軸が重なる。"
+    },
+    {
+      "id": "exp26-world-0590",
+      "priority": "required",
+      "field": "question/detail",
+      "change_id": "exp26-world-0590",
+      "status": "drafted_not_applied",
+      "rationale": "仕組みを知ると驚きが薄れるというL1-0414やL2-0448に近い好みで、L4として何が本人の人生を支えていたのかが弱い。"
+    },
+    {
+      "id": "exp26-world-0626",
+      "priority": "required",
+      "field": "novelty",
+      "change_id": "exp26-world-0626",
+      "status": "drafted_not_applied",
+      "rationale": "L4-0604とともに研究に残る知識と自分の名前・承認を比べる。名前を外す提案は強い条件だが、主要な葛藤の差が小さい。"
+    },
+    {
+      "id": "exp26-world-0633",
+      "priority": "required",
+      "field": "novelty",
+      "change_id": "exp26-world-0633",
+      "status": "drafted_not_applied",
+      "rationale": "L4-0617も長期協力者が昔の記録を残したくないと話し、成果と相手の希望・関係の責任を研究者自身が持つ。actorからdecision_makerへの違いだけでは独立しない。"
+    },
+    {
+      "id": "exp26-world-0636",
+      "priority": "required",
+      "field": "novelty",
+      "change_id": "exp26-world-0636",
+      "status": "drafted_not_applied",
+      "rationale": "L4-0608とともに家族の経験から出発した研究が家族の思いと異なる結果になる。研究担当と責任者という役割の差はあるが、問い始めた目的と家族への責任の中心が近い。"
+    },
+    {
+      "id": "exp26-world-0641",
+      "priority": "required",
+      "field": "novelty",
+      "change_id": "exp26-world-0641",
+      "status": "drafted_not_applied",
+      "rationale": "L4-0618とともに自分が作った単純な説明・方法が一部の声を消したと知り、発表後に仕事を見直す責任を聞く。選んだ方法の決定者という表現だけでは差が弱い。"
+    },
+    {
+      "id": "exp26-world-0650",
+      "priority": "required",
+      "field": "question/detail",
+      "change_id": "exp26-world-0650",
+      "status": "drafted_not_applied",
+      "rationale": "最後の資料を「手放す」だけでは今の仲間も資料を保存・利用でき、過去の検証可能性を失うという背景の競合が成立しない場合がある。何を失うかの比較条件を明示する必要がある。"
+    },
+    {
+      "id": "exp26-world-0653",
+      "priority": "required",
+      "field": "novelty",
+      "change_id": "exp26-world-0653",
+      "status": "drafted_not_applied",
+      "rationale": "L4-0640とともに研究組織の成功・誇りに対し失敗を組織の歩みとして残す責任を聞く。展示という媒体だけでは独立した主な価値の衝突になりにくい。"
+    },
+    {
+      "id": "exp26-world-0662",
+      "priority": "required",
+      "field": "question/detail",
+      "change_id": "exp26-world-0662",
+      "status": "drafted_not_applied",
+      "rationale": "仕組みを伝えたい自分と知らずに楽しみたい相手というL2-0438/0448やL4-0607との違いが弱く、L4として重大な関係・人生の意味を明示したい。"
+    }
+  ],
+  "production_files_written": 0,
+  "followup_drafts": [
+    {
+      "draft": "resolution-drafts/root-clarifies-world.json",
+      "source_sha256": "bd6af834095fcd5c1fe5f4f0e75900e368a0aaa54f86d1186bbb46a037d8c5b1",
+      "final_sha256": "7df10201253f1f21b932b92e828d5e23506213a52e999f27eb495af540a0eced",
+      "changes": [
+        {
+          "id": "exp26-world-0650",
+          "before": {
+            "card": {
+              "id": "exp26-world-0650",
+              "level": 4,
+              "sensitivity": 2,
+              "category": "science_research_and_uncertainty",
+              "topic": "research_legacy",
+              "question": "自分の発見を確かめる最後の試料を、仲間の新しい研究で使い切れば前に進めるとする。後から自分の結果を確かめられなくなる時、自分は何を未来へ残したい？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "架空の試料配分。新しい実験で試料を消費し、記録を残しても同じ試料そのものは再び調べられない設定。既に発表した知識の検証手段と、新しい問いの機会を比べる。"
+              }
+            },
+            "reason": "自分の発見を確かめる最後の試料を失う責任と、新しい研究へ託す機会。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "science_research_and_uncertainty__l4.txt:101"
+            }
+          },
+          "after": {
+            "card": {
+              "id": "exp26-world-0650",
+              "level": 4,
+              "sensitivity": 2,
+              "category": "science_research_and_uncertainty",
+              "topic": "research_legacy",
+              "question": "自分の発見を確かめる最後の試料を、仲間の新しい研究で使い切れば前に進めるとする。後から同じ試料で再確認できなくなる時、自分は何を未来へ残したい？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "架空の試料配分。新しい実験で試料を消費し、記録を残しても同じ試料そのものは再び調べられない設定。既に発表した知識の検証手段と、新しい問いの機会を比べる。"
+              }
+            },
+            "reason": "自分の発見を確かめる最後の試料を失う責任と、新しい研究へ託す機会。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "science_research_and_uncertainty__l4.txt:101"
+            }
+          },
+          "reason": "再確認できなくなる範囲を同じ試料に限定し、背景と本文を一致させる。",
+          "addresses": [
+            "recheck-world-optional-exp26-world-0650"
+          ]
+        },
+        {
+          "id": "exp26-world-0662",
+          "before": {
+            "card": {
+              "id": "exp26-world-0662",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "science_research_and_uncertainty",
+              "topic": "knowledge_burden",
+              "question": "大切な人と生きてきた世界の説明を研究が変え、自分だけは以前のように信じられなくなった。もう同じ意味では見られない自分を、相手へどう伝えたい？",
+              "perspective": "affected",
+              "detail": {
+                "text": "架空の知識の変化。相手の信じ方を誤りと決めるのではなく、同じ世界観で人生を過ごした関係と、知った後の本人の意味の違いを考える。"
+              }
+            },
+            "reason": "長く共有した世界観が変わる本人が、大切な相手との意味の違いを伝える。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "science_research_and_uncertainty__l4.txt:113"
+            }
+          },
+          "after": {
+            "card": {
+              "id": "exp26-world-0662",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "science_research_and_uncertainty",
+              "topic": "knowledge_burden",
+              "question": "大切な人と共に生きる支えにしてきた、人や自然についての考え方が、研究を読んで変わった。もう同じ意味で世界を見られない自分を、相手へどう伝えたい？",
+              "perspective": "affected",
+              "detail": {
+                "text": "架空の知識の変化。相手の信じ方を誤りと決めるのではなく、同じ世界観で人生を過ごした関係と、知った後の本人の意味の違いを考える。"
+              }
+            },
+            "reason": "長く共有した世界観が変わる本人が、大切な相手との意味の違いを伝える。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "science_research_and_uncertainty__l4.txt:113"
+            }
+          },
+          "reason": "抽象的な「世界の説明」を、人や自然についての考え方と研究を読んだ経験へ具体化する。",
+          "addresses": [
+            "recheck-world-optional-exp26-world-0662"
+          ]
+        }
+      ],
+      "finding_resolutions": [
+        {
+          "id": "exp26-world-0650",
+          "status": "recheck_optional_adopted",
+          "rationale": "再確認できなくなる範囲を同じ試料に限定し、背景と本文を一致させる。"
+        },
+        {
+          "id": "exp26-world-0662",
+          "status": "recheck_optional_adopted",
+          "rationale": "抽象的な「世界の説明」を、人や自然についての考え方と研究を読んだ経験へ具体化する。"
+        }
+      ]
+    }
+  ]
+}

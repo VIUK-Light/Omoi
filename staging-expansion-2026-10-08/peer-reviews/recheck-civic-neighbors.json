@@ -1,0 +1,1799 @@
+{
+  "method": "Char 2–4gram TF-IDF cosine, candidates not semantic verdict",
+  "corpus_count": 4710,
+  "source_snapshots": [
+    {
+      "path": "shards/care/additions.json",
+      "sha256": "96164d2a6fe7f6566f7927e29f504edb03e8768c8c5675a8627bf76308099f44"
+    },
+    {
+      "path": "shards/civic/additions.json",
+      "sha256": "bb5a269c392177e368208f9f318f933bc93816499cc37ee270b9376b99e7123f"
+    },
+    {
+      "path": "shards/learning/additions.json",
+      "sha256": "728f41d590fe6fd36e759bfee94a4cdfe011671259fbf2817cda5c562d8b3a62"
+    },
+    {
+      "path": "shards/livelihood/additions.json",
+      "sha256": "480f79bda46a2d8f96de87e46a832739bc7ca1992377679dcf2da8fae19e0444"
+    },
+    {
+      "path": "shards/personal/additions.json",
+      "sha256": "b3159c5649456a6579eab12f0f95d0e6e06687443419fa927790b9fbe5d35ccd"
+    },
+    {
+      "path": "shards/world/additions.json",
+      "sha256": "7df10201253f1f21b932b92e828d5e23506213a52e999f27eb495af540a0eced"
+    },
+    {
+      "path": "level1.json",
+      "sha256": "9461b394173379dc507a72234e1e3909decf6637c67af1c2747d9d8214a0a487"
+    },
+    {
+      "path": "level2.json",
+      "sha256": "66ec755c88419271054070d5a61787f0306fd3daaa406b16414c25590b06a179"
+    },
+    {
+      "path": "level3.json",
+      "sha256": "49f7ef9236ddaf94f0246dd7b3f79134c1c468921a389ce8ae2d1510d3fa9ee5"
+    },
+    {
+      "path": "level4.json",
+      "sha256": "e07c845c5c82155fc0ab565f9cc9212c9f715f86d3e926f36526b5a8f60c15d7"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "exp26-civic-0032",
+      "neighbors": [
+        {
+          "id": "clarity-climate_environment_energy_and_disaster-03-l2",
+          "similarity": 0.10026613622903824,
+          "current": true,
+          "addition": {
+            "card": {
+              "id": "clarity-climate_environment_energy_and_disaster-03-l2",
+              "level": 2,
+              "sensitivity": 1,
+              "category": "climate_environment_energy_and_disaster",
+              "topic": "shared_disaster_supplies",
+              "question": "みんなで使う防災用品の置き場所が限られている。たくさんの人が使う物と、少数の人に欠かせない物を、どう選んで置く？"
+            }
+          }
+        },
+        {
+          "id": "exp26-livelihood-0128",
+          "similarity": 0.09415408968925476,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-livelihood-0128",
+              "level": 3,
+              "sensitivity": 1,
+              "category": "work_and_economy",
+              "topic": "work_meaning",
+              "question": "生活に欠かせないが希望者の少ない仕事を、待遇以外に何で支えるべきだと思う？",
+              "perspective": "observer",
+              "detail": {
+                "text": "仮の労働市場。使命感を求めるだけでよいか、働く環境や選べる道も考える。"
+              }
+            },
+            "reason": "必要労働を支える条件を問う。",
+            "editorial": {
+              "author_group": "livelihood",
+              "fact_status": "hypothetical",
+              "source_row": "work_and_economy__l3.txt:48",
+              "related_existing_ids": [
+                "r6-05-02-l3"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0101",
+      "neighbors": [
+        {
+          "id": "exp26-care-0317",
+          "similarity": 0.10492516309022903,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-care-0317",
+              "level": 3,
+              "sensitivity": 2,
+              "category": "gender_sexuality_and_identity",
+              "topic": "gender_body_and_intimacy_contexts",
+              "question": "身体の見え方を変える選択について、家族へ説明する責任をどこまで本人に求めたい？",
+              "perspective": "observer",
+              "detail": {
+                "text": "仮の場面です。緊急の医療判断ではなく、成人の表現の選択を想定します。"
+              }
+            },
+            "reason": "身体の自己決定と家族の理解。",
+            "editorial": {
+              "author_group": "care",
+              "fact_status": "hypothetical",
+              "related_existing_ids": []
+            }
+          }
+        },
+        {
+          "id": "exp26-learning-0111",
+          "similarity": 0.09872395545244217,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-learning-0111",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "school_and_youth",
+              "topic": "learning_ending",
+              "question": "学校で得た肩書きを卒業後は使いたくない。それまでの努力と、今の自分をどう結び付けたい？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の場面です。学歴を隠す法的義務などは置かず、本人の自己表現を考える。"
+              }
+            },
+            "reason": "学歴を手放す感覚を聞く。",
+            "editorial": {
+              "author_group": "learning",
+              "fact_status": "hypothetical",
+              "source_row": "school_and_youth__l4.txt:19"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0132",
+      "neighbors": [
+        {
+          "id": "exp26-care-0393",
+          "similarity": 0.12023103982210159,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-care-0393",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "gender_sexuality_and_identity",
+              "topic": "visible_identity_and_everyday_life",
+              "question": "仲間を歓迎したくて、あなたはその人が語った性のあり方を紹介文に入れ、外にも届けた。本人はその場だけで話したつもりだったと知った。善意で広げた自分の紹介を、何への責任として引き受けて関わりたい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の場面です。自分は本人の言葉を尊重して紹介したつもりでしたが、本人が話した範囲と紹介を届けた範囲が違いました。どんな影響が出たかはまだ分からず、説明の意図と公開した行為の両方を考えます。法的責任を断定する問いではありません。"
+              },
+              "content_warning": [
+                "privacy_and_surveillance"
+              ]
+            },
+            "reason": "紹介前に本人へ確認する手順から、善意による公開を既に行った本人が、意図と異なる範囲へ届いた結果を引き受ける責任へ。",
+            "editorial": {
+              "author_group": "care",
+              "fact_status": "hypothetical",
+              "related_existing_ids": []
+            }
+          }
+        },
+        {
+          "id": "exp26-civic-0501",
+          "similarity": 0.100457102060318,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0501",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "democracy_rights_and_participation",
+              "topic": "participation_as_learning",
+              "question": "あなたは会議の期限を決める担当。合意できなければ自分の事業は失敗と見られるが、違いがよく分かるようになった。何を価値のある時間だったと引き受けたい？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の評価。合意を約束した自分と、その過程で得た理解の責任を考える。"
+              }
+            },
+            "reason": "成果を求められる自分が認める対話の価値。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l4.txt:15",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0137",
+      "neighbors": [
+        {
+          "id": "exp26-care-0151",
+          "similarity": 0.11022277921438217,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-care-0151",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "family_and_care",
+              "topic": "receiving_family_care",
+              "question": "自分の世話を家族以外へ頼むと気楽になるが、家族が頼られなくなったと寂しがる。あなたはどんな関係を残したい？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の場面です。世話の担い手と家族の親密さが同じである必要はない場面です。"
+              }
+            },
+            "reason": "ケア方法と家族の近さ。",
+            "editorial": {
+              "author_group": "care",
+              "fact_status": "hypothetical",
+              "related_existing_ids": []
+            }
+          }
+        },
+        {
+          "id": "exp26-care-0613",
+          "similarity": 0.08049805462360382,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-care-0613",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "health_and_disability",
+              "topic": "trust_in_medical_relationships",
+              "question": "あなたは長く頼った医療者と今の生活の目標が合わない。信頼した人から離れることと、自分の望みを守ることをどう考える？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の場面です。専門的な問題は確定しておらず、話す価値の違いを扱う設定です。"
+              },
+              "content_warning": [
+                "medical_and_end_of_life"
+              ]
+            },
+            "reason": "医療の信頼と自分の目標。",
+            "editorial": {
+              "author_group": "care",
+              "fact_status": "hypothetical",
+              "related_existing_ids": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0155",
+      "neighbors": [
+        {
+          "id": "exp26-civic-0309",
+          "similarity": 0.09515506029129028,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0309",
+              "level": 4,
+              "sensitivity": 2,
+              "category": "society_public_policy_and_environment",
+              "topic": "belonging_and_isolation",
+              "question": "あなたは欠席者に声をかける担当で、昔はその一言に救われた。今の相手は理由を聞かれたくないと言う。自分を救った関わり方をどこまで手放したい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "架空の連絡。自分が受け取った支えと相手が望む距離は異なる。"
+              }
+            },
+            "reason": "自分を救った一言を相手へ渡さない支援。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l4.txt:44",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        },
+        {
+          "id": "exp26-civic-0540",
+          "similarity": 0.0875079557299614,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0540",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "democracy_rights_and_participation",
+              "topic": "protest_and_expression",
+              "question": "あなたは意見を表明したいが、仕事への影響が怖い。顔や名前を出さずに参加する自分を、どんな関わり方だと感じる？",
+              "perspective": "affected",
+              "detail": {
+                "text": "架空の参加。意思表示の責任と生活を守る必要を考える。"
+              },
+              "content_warning": [
+                "privacy_and_surveillance"
+              ]
+            },
+            "reason": "匿名で公共に関わる自分の意味。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l4.txt:54",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0202",
+      "neighbors": [
+        {
+          "id": "exp26-world-0501",
+          "similarity": 0.10866284370422363,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0501",
+              "level": 3,
+              "sensitivity": 1,
+              "category": "science_research_and_uncertainty",
+              "topic": "research_governance",
+              "question": "支援者が研究の結論を望んでいる時、研究者の独立を何で確かめたい？",
+              "perspective": "observer",
+              "detail": {
+                "text": "架空の委託。資金を出す目的と結果の判断を分ける。"
+              }
+            },
+            "reason": "研究の独立の見える条件。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "science_research_and_uncertainty__l3.txt:39"
+            }
+          }
+        },
+        {
+          "id": "exp26-personal-0174",
+          "similarity": 0.09165531396865845,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-personal-0174",
+              "level": 2,
+              "sensitivity": 1,
+              "category": "self_and_values",
+              "topic": "private_standards",
+              "question": "自分なりには十分できたが、もっとできたはずと言われた。自分の十分さを何で確かめたい？"
+            },
+            "reason": "外部の向上期待と十分さを聞く。",
+            "editorial": {
+              "author_group": "personal",
+              "fact_status": "hypothetical",
+              "source_row": "self_and_values__l2.txt:43"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0207",
+      "neighbors": [
+        {
+          "id": "exp26-civic-0050",
+          "similarity": 0.09720848500728607,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0050",
+              "level": 3,
+              "sensitivity": 3,
+              "category": "justice_safety_and_crime",
+              "topic": "reintegration_conditions",
+              "question": "刑を終えた人が被害の現場の近くで暮らすことを望む時、転居の相談では誰の事情を聞きたい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の帰住相談。本人の家族や仕事と、被害者の安心を確認する。"
+              },
+              "content_warning": [
+                "crime_and_punishment"
+              ]
+            },
+            "reason": "帰る場所と被害者の生活圏。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "justice_safety_and_crime__l3.txt:21",
+              "related_existing_ids": [
+                "sexual-crime-012"
+              ],
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        },
+        {
+          "id": "exp26-civic-0230",
+          "similarity": 0.09509878605604172,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0230",
+              "level": 3,
+              "sensitivity": 2,
+              "category": "society_public_policy_and_environment",
+              "topic": "belonging_and_isolation",
+              "question": "人との交流が苦手な人向けの場を別に作ることと、既存の場を変えることをどう比べたい？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の設置案。選べる安心と人を分ける影響を考える。"
+              }
+            },
+            "reason": "居場所の別設と共通の場。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l3.txt:32",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0283",
+      "neighbors": [
+        {
+          "id": "exp26-personal-0530",
+          "similarity": 0.10394980758428574,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-personal-0530",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "ethics_and_decision_making",
+              "topic": "motives_and_results",
+              "question": "人を大切にすれば自分の人生も報われると信じ、長くその通りに生きてきた。でも、自分を後回しにしてきた時間だけが残ったと感じる。その望みを失った今、これからの人生を何を基準に選びたい？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の人生の振り返りです。周囲へ実際に役立ったことは否定しません。善行の価値と、それに自分の幸福が返ると期待してきた理由を分けて考えます。人を大切にする理由が一つだけとは置きません。"
+              }
+            },
+            "reason": "自分の幸福と結び付けて選んだ倫理を、報われる見通しがなくなった後も判断の基準にする意味を聞く。",
+            "editorial": {
+              "author_group": "personal",
+              "fact_status": "hypothetical",
+              "source_row": "ethics_and_decision_making__l4.txt:7"
+            }
+          }
+        },
+        {
+          "id": "exp26-personal-0413",
+          "similarity": 0.09983988106250763,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-personal-0413",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "relationships_and_communication",
+              "topic": "understanding_and_words",
+              "question": "親しい人へ、これからは以前の役割で生きられないと話し、理解してもらえたと思った。でも相手は前と同じ役を頼る。自分を知ってもらうことを、何が変われば確かめられる？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の長い関係で、本人はこれから別の生き方を選びたいと伝えています。相手が話を忘れたとは決めません。考えを理解することと、慣れた役割を頼る行動が変わることの違いを考えます。"
+              }
+            },
+            "reason": "長く担った関係の役割から離れたい本人が、理解と実際の関わりの変化に何を求めるかを聞く。",
+            "editorial": {
+              "author_group": "personal",
+              "fact_status": "hypothetical",
+              "source_row": "relationships_and_communication__l4.txt:21"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0290",
+      "neighbors": [
+        {
+          "id": "exp26-care-0234",
+          "similarity": 0.09832683205604553,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-care-0234",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "family_and_care",
+              "topic": "caregiving_identity_and_recognition",
+              "question": "家族の世話を別の人へ渡したあなたは、必要とされなくなった気がする。家族とどんな形でつながりたい？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の場面です。実務の役目と親密さは別々に続きうる設定です。"
+              }
+            },
+            "reason": "ケアを離れた役割感。",
+            "editorial": {
+              "author_group": "care",
+              "fact_status": "hypothetical",
+              "related_existing_ids": []
+            }
+          }
+        },
+        {
+          "id": "exp26-care-0594",
+          "similarity": 0.09528524428606033,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-care-0594",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "health_and_disability",
+              "topic": "assistance_and_self_agency",
+              "question": "あなたは自分の支援を引き継ぐ準備をする。細かな希望を書くと負担を増やす気がする時、何を自分の生活の条件として残す？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の場面です。希望を話すことと支援者への命令を同一にしない場面です。"
+              }
+            },
+            "reason": "本人の望みを記録する遠慮。",
+            "editorial": {
+              "author_group": "care",
+              "fact_status": "hypothetical",
+              "related_existing_ids": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0293",
+      "neighbors": [
+        {
+          "id": "exp26-care-0019",
+          "similarity": 0.0886286124587059,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-care-0019",
+              "level": 1,
+              "sensitivity": 1,
+              "category": "family_and_care",
+              "topic": "family_shared_time",
+              "question": "家族と暮らす部屋で、一人になれる場所はどれくらい大事？"
+            },
+            "reason": "近さと自分の場所の入口。",
+            "editorial": {
+              "author_group": "care",
+              "fact_status": "hypothetical",
+              "related_existing_ids": []
+            }
+          }
+        },
+        {
+          "id": "exp26-livelihood-0710",
+          "similarity": 0.08762319386005402,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-livelihood-0710",
+              "level": 4,
+              "sensitivity": 2,
+              "category": "housing_community_and_transport",
+              "topic": "transport_autonomy",
+              "question": "離れて暮らす大切な人との再会が、人生の支えだった。互いに今の町の仕事や住まいを離れられず、会いに行ける交通もなくなった時、何を関係の支えとして残したい？",
+              "perspective": "affected",
+              "detail": {
+                "text": "架空の居住と移動の制約。本人も相手も今の地域に仕事や住まいの支えがあり、会えるために転居する見通しはない。通信などでやり取りできても、会えない期間の終わりは分からない条件で、人生を支えた再会から変わる関係の意味を考える。"
+              }
+            },
+            "reason": "会う頻度の予想ではなく、互いの居住と移動の制約で人生を支えた再会を失う本人の関係の意味を聞く。",
+            "editorial": {
+              "author_group": "livelihood",
+              "fact_status": "hypothetical",
+              "source_row": "housing_community_and_transport__l4.txt:87",
+              "related_existing_ids": [],
+              "peer_review_revision": {
+                "reviewer": "care",
+                "finding_id": "care-livelihood-033",
+                "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0312",
+      "neighbors": [
+        {
+          "id": "exp26-personal-0550",
+          "similarity": 0.13085094094276428,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-personal-0550",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "ethics_and_decision_making",
+              "topic": "judgment_conditions",
+              "question": "長く支えてくれた人への約束を守ることと、自分がこれから生きたい道へ進むことが両立しなくなった。どちらも大切で、今はどちらかを選ぶ必要がある。選ばなかった理由を消さずに、その後の自分の人生をどう引き受けたい？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の人生の分岐です。約束を守る側も新しい道へ進む側も、完全に誤りとは置きません。決めた後も残る相手への責任と、自分の望みを持つことをどう考えるかが論点です。"
+              }
+            },
+            "reason": "一方を選んでも消えない倫理上の理由を、その後の自分の人生として持つ意味を聞く。",
+            "editorial": {
+              "author_group": "personal",
+              "fact_status": "hypothetical",
+              "source_row": "ethics_and_decision_making__l4.txt:27"
+            }
+          }
+        },
+        {
+          "id": "exp26-personal-0214",
+          "similarity": 0.0845162570476532,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-personal-0214",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "self_and_values",
+              "topic": "personal_change",
+              "question": "自分が変わるきっかけになった人との関係が終わった。今の自分の好きな部分にも、その人の影響がある。関係の終わりと、自分に残るものをどう受け止める？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の関係の終わりは裏切りを前提にしていません。人と離れることが、その人と育った自己まで失うことになるかを考えます。"
+              }
+            },
+            "reason": "人との別れの後に残る自己の形成を聞く。",
+            "editorial": {
+              "author_group": "personal",
+              "fact_status": "hypothetical",
+              "source_row": "self_and_values__l4.txt:9"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0319",
+      "neighbors": [
+        {
+          "id": "exp26-world-0617",
+          "similarity": 0.08637412637472153,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0617",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "science_research_and_uncertainty",
+              "topic": "consent_over_time",
+              "question": "自分の調査に長く協力した人が、記録を残したくないと言った。研究の穴だけでなく、その人との関係をどう考える？",
+              "perspective": "actor",
+              "detail": {
+                "text": "架空の撤回相談。利用条件は研究ごとに異なるとして希望を聞く場面。"
+              },
+              "content_warning": [
+                "privacy_and_surveillance"
+              ]
+            },
+            "reason": "研究者が協力者の変化を受ける。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "science_research_and_uncertainty__l4.txt:68"
+            }
+          }
+        },
+        {
+          "id": "exp26-care-0181",
+          "similarity": 0.07811632752418518,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-care-0181",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "family_and_care",
+              "topic": "care_relationships_after_end",
+              "question": "あなたは長く介護する友人を支え、終わったら以前の時間を取り戻せると期待してきた。友人はまだ誘いに応じない。今の二人の関係に何を望む？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の場面です。介護が終わることと、昔の関係に戻ることが同時とは限らない設定です。"
+              }
+            },
+            "reason": "支えた友人との時間への期待。",
+            "editorial": {
+              "author_group": "care",
+              "fact_status": "hypothetical",
+              "related_existing_ids": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0325",
+      "neighbors": [
+        {
+          "id": "exp26-care-0341",
+          "similarity": 0.1078733503818512,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-care-0341",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "gender_sexuality_and_identity",
+              "topic": "sharing_identity_selectively",
+              "question": "大切な友人が性のあり方を語った時、あなたは「何も変えず、ずっと同じ友人でいる」と約束した。友人は、これまでの恋愛の話し方も変えてほしいと言う。変わらないことが受容だと信じてきた自分の約束を、どう守り直したい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の場面です。自分は以前と同じ関係を保つことで友人を安心させたいと考えています。相手は大切な自己理解を知った後も同じ話題や接し方が続くと、変化を聞いてもらえていないと感じています。二人が友情に期待する連続性と変化を考えます。"
+              }
+            },
+            "reason": "開示後の関わり方の確認から、変わらない友情を自分の受容の証しとして約束した本人が、約束の意味を改める問いへ。",
+            "editorial": {
+              "author_group": "care",
+              "fact_status": "hypothetical",
+              "related_existing_ids": []
+            }
+          }
+        },
+        {
+          "id": "exp26-livelihood-0657",
+          "similarity": 0.08932920545339584,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-livelihood-0657",
+              "level": 4,
+              "sensitivity": 2,
+              "category": "housing_community_and_transport",
+              "topic": "local_belonging",
+              "question": "町を離れた後、もう住人ではないと言われた。住所以外に残っているつながりを、どう説明したい？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の転居後。行政の権利の範囲ではなく、本人が持つ帰属を考える。"
+              }
+            },
+            "reason": "転居後も残る地域の自己像を聞く。",
+            "editorial": {
+              "author_group": "livelihood",
+              "fact_status": "hypothetical",
+              "source_row": "housing_community_and_transport__l4.txt:31",
+              "related_existing_ids": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0333",
+      "neighbors": [
+        {
+          "id": "exp26-world-0250",
+          "similarity": 0.2950335144996643,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0250",
+              "level": 2,
+              "sensitivity": 2,
+              "category": "international_peace_and_cooperation",
+              "topic": "cross_border_belonging",
+              "question": "海外から来た人に「自分の国の代表として話して」と頼むことを、どう感じる？",
+              "content_warning": [
+                "discrimination_and_hate"
+              ]
+            },
+            "reason": "個人を国の代表にする距離。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "international_peace_and_cooperation__l2.txt:3"
+            }
+          }
+        },
+        {
+          "id": "exp26-civic-0326",
+          "similarity": 0.1499173790216446,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0326",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "society_public_policy_and_environment",
+              "topic": "migration_and_belonging",
+              "question": "あなたは長く地域で暮らす移住者。今も新しい人として紹介されたら、何を自分の居場所の証として伝えたい？",
+              "perspective": "affected",
+              "detail": {
+                "text": "架空の紹介。出身と今ここで続ける生活を分けて考える。"
+              },
+              "content_warning": [
+                "discrimination_and_hate"
+              ]
+            },
+            "reason": "長く住んでも外から来た扱いの感覚。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l4.txt:61",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0348",
+      "neighbors": [
+        {
+          "id": "exp26-personal-0542",
+          "similarity": 0.13775315880775452,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-personal-0542",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "ethics_and_decision_making",
+              "topic": "knowledge_and_duty",
+              "question": "あなたが進む道を決める役になり、共に暮らした人たちはそれを信頼して今の仕事や居場所を手放そうとしている。自分はその道に詳しいが、うまくいくとは確信していない。その人たちの未来を選ぶ時、不安をどこまで共有したい？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の共同の選択です。相手も任せると決めていますが、不確実さをどこまで理解しているかはまだ確かめられていません。自分の知識への信頼を保つことと、相手が将来の暮らしを決める材料を持つことを比べます。"
+              }
+            },
+            "reason": "自分への信頼が相手のこれからの暮らしを左右する時に、不確実さを共有する責任を聞く。",
+            "editorial": {
+              "author_group": "personal",
+              "fact_status": "hypothetical",
+              "source_row": "ethics_and_decision_making__l4.txt:19"
+            }
+          }
+        },
+        {
+          "id": "exp26-livelihood-0688",
+          "similarity": 0.11380936205387115,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-livelihood-0688",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "housing_community_and_transport",
+              "topic": "home_memory",
+              "question": "家族が育った家を売る判断を自分が担う。維持する余力はあるが別の暮らしを望む時、何を基準にする？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "架空の売却。困窮に迫られない条件で、自分の未来と家族の場所を比べる。"
+              },
+              "content_warning": [
+                "family_conflict"
+              ]
+            },
+            "reason": "選べる余力のある家の売却を聞く。",
+            "editorial": {
+              "author_group": "livelihood",
+              "fact_status": "hypothetical",
+              "source_row": "housing_community_and_transport__l4.txt:64",
+              "related_existing_ids": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0349",
+      "neighbors": [
+        {
+          "id": "exp26-personal-0566",
+          "similarity": 0.10617169737815857,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-personal-0566",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "ethics_and_decision_making",
+              "topic": "consent_over_time",
+              "question": "前は納得して引き受けたことを、今は続けたくない。自分の約束を頼りに他の人が準備している。気持ちが変わったことを、どんな責任と一緒に伝えたい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の任意の約束で、法的な契約の解除ではありません。現在の意思を選ぶことと、他者の準備への対応を分けます。"
+              }
+            },
+            "reason": "撤回する本人が持つ期待への責任を聞く。",
+            "editorial": {
+              "author_group": "personal",
+              "fact_status": "hypothetical",
+              "source_row": "ethics_and_decision_making__l4.txt:43"
+            }
+          }
+        },
+        {
+          "id": "exp26-world-0278",
+          "similarity": 0.09611357748508453,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0278",
+              "level": 3,
+              "sensitivity": 1,
+              "category": "international_peace_and_cooperation",
+              "topic": "local_aid_voice",
+              "question": "支援が終わった後の維持費も、開始時に実施団体が引き受ける必要があると思う？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "架空の設備支援。建設と長く使う運営は別の負担がある。"
+              }
+            },
+            "reason": "国際支援の終わりの責任。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "international_peace_and_cooperation__l3.txt:4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0354",
+      "neighbors": [
+        {
+          "id": "exp26-care-0633",
+          "similarity": 0.11402898281812668,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-care-0633",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "health_and_disability",
+              "topic": "health_identity_and_other_roles",
+              "question": "あなたは病気を経験したことで他の人を支えられると言われるが、今は自分の人生を過ごしたい。何を役割として引き受ける？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の場面です。経験を社会へ返すことを義務としない設定です。"
+              }
+            },
+            "reason": "病気の経験を返す期待。",
+            "editorial": {
+              "author_group": "care",
+              "fact_status": "hypothetical",
+              "related_existing_ids": []
+            }
+          }
+        },
+        {
+          "id": "exp26-personal-0269",
+          "similarity": 0.11347226798534393,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-personal-0269",
+              "level": 1,
+              "sensitivity": 1,
+              "category": "relationships_and_communication",
+              "topic": "relational_time",
+              "question": "もう会わないかもしれない人にも、別れの言葉を残しておきたい？"
+            },
+            "reason": "継続しない関係の区切りを聞く。",
+            "editorial": {
+              "author_group": "personal",
+              "fact_status": "hypothetical",
+              "source_row": "relationships_and_communication__l1.txt:24"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0356",
+      "neighbors": [
+        {
+          "id": "relationship-158",
+          "similarity": 0.09429506957530975,
+          "current": true,
+          "addition": {
+            "card": {
+              "id": "relationship-158",
+              "topic": "secret_past_identity",
+              "category": "relationships_and_communication",
+              "perspective": "affected",
+              "question": "恋人が、過去の交際で相手を裏切ったことを何年も話していなかったと分かった。今のあなたには誠実に接しているとして、その過去と、伝えなかったことをどう受け止める？",
+              "level": 4,
+              "sensitivity": 4,
+              "detail": {
+                "text": "現在の人格を重視する考えと、重要な過去を共有されなかったこと自体を信頼の問題と考える立場があります。\n\n相手の過去を知る権利が、恋人にはどこまであるのかを考える問いです。"
+              }
+            }
+          }
+        },
+        {
+          "id": "r6-01-03-l4",
+          "similarity": 0.07721184939146042,
+          "current": true,
+          "addition": {
+            "card": {
+              "id": "r6-01-03-l4",
+              "level": 4,
+              "sensitivity": 4,
+              "category": "society_public_policy_and_environment",
+              "topic": "immigration_01-03-l4",
+              "question": "あなたは費用をかけて海外から人を採用し、育成している。その人が、もっと高い賃金の会社へ移りたいと言った。引き留めなければ事業が続かなくなるかもしれない。本人の転職を制限する仕組みを、あなたは求める？",
+              "perspective": "actor",
+              "detail": {
+                "text": "企業は採用・育成に投資し、労働者は賃金や働く場所を選びたい。投資の回収を個人の移動制限で担保してよいかが争点。\n\n問いの狙い: 労働者の自由を尊重すると自社が存続しにくい雇用主の立場を置く。"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0371",
+      "neighbors": [
+        {
+          "id": "r6-17-06-l4",
+          "similarity": 0.10053537040948868,
+          "current": true,
+          "addition": {
+            "card": {
+              "id": "r6-17-06-l4",
+              "level": 4,
+              "sensitivity": 4,
+              "category": "gender_sexuality_and_identity",
+              "topic": "marriage_sexwork_17-06-l4",
+              "question": "あなたは経済的に余裕があり、生活に困る成人に金銭を渡して交際している。相手が続けたいと言っていても、お金がなければ自分を選ばないと感じたとき、その関係を続ける？",
+              "perspective": "actor",
+              "detail": {
+                "text": "成人の同意があっても経済的な選択肢に大きな差があると、自由な関係かどうかの評価が分かれる。所得差だけで決めることにも限界がある。\n\n問いの狙い: 金銭を提供する側が、相手の希望をどう評価するか考える。"
+              }
+            }
+          }
+        },
+        {
+          "id": "exp26-care-0070",
+          "similarity": 0.09739664942026138,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-care-0070",
+              "level": 2,
+              "sensitivity": 2,
+              "category": "family_and_care",
+              "topic": "memory_and_family_narratives",
+              "question": "家族の記念日を続けるなら、日付を守ることと集まれること、どちらに意味を感じる？"
+            },
+            "reason": "記念の形式と共同時間。",
+            "editorial": {
+              "author_group": "care",
+              "fact_status": "hypothetical",
+              "related_existing_ids": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0430",
+      "neighbors": [
+        {
+          "id": "exp26-world-0628",
+          "similarity": 0.11657201498746872,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0628",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "science_research_and_uncertainty",
+              "topic": "knowledge_burden",
+              "question": "自分が大切にしてきた物語を、研究では確かめられないと分かった。信じる自分と調べる自分をどう持ちたい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "架空の検証。根拠がないことと本人の意味を同一にはしない。"
+              }
+            },
+            "reason": "科学の限界と自己の信念。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "science_research_and_uncertainty__l4.txt:79"
+            }
+          }
+        },
+        {
+          "id": "exp26-world-0434",
+          "similarity": 0.0897127166390419,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0434",
+              "level": 2,
+              "sensitivity": 1,
+              "category": "science_research_and_uncertainty",
+              "topic": "research_participation",
+              "question": "研究の質問に答えると謝礼が出る。興味と謝礼、自分はどちらを参加の理由として話したい？"
+            },
+            "reason": "調査に参加する身近な動機。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "science_research_and_uncertainty__l2.txt:4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0469",
+      "neighbors": [
+        {
+          "id": "exp26-learning-0479",
+          "similarity": 0.07912960648536682,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-learning-0479",
+              "level": 3,
+              "sensitivity": 2,
+              "category": "culture_religion_and_history",
+              "topic": "cultural_exchange",
+              "question": "文化の使い手が紹介の仕方に異議を出した時、主催者は何を確認して見直すべき？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の場面です。一つの意見だけが全員の希望とは限らない。"
+              }
+            },
+            "reason": "文化紹介への異議を聞く。",
+            "editorial": {
+              "author_group": "learning",
+              "fact_status": "hypothetical",
+              "source_row": "culture_religion_and_history__l3.txt:48"
+            }
+          }
+        },
+        {
+          "id": "exp26-personal-0356",
+          "similarity": 0.07516717910766602,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-personal-0356",
+              "level": 3,
+              "sensitivity": 1,
+              "category": "relationships_and_communication",
+              "topic": "relationship_names",
+              "question": "交流の場で、友達になった人数を活動の成果として数える案が出た。顔なじみや、名前を付けない大切な関係もあるなら、どんなつながりを成果と呼びたい？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "架空の場の振り返りです。友達という呼び名を付けることと、日々の親しみを感じることが一致するとは置いていません。"
+              }
+            },
+            "reason": "関係名を成果にする評価基準を聞く。",
+            "editorial": {
+              "author_group": "personal",
+              "fact_status": "hypothetical",
+              "source_row": "relationships_and_communication__l3.txt:1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0491",
+      "neighbors": [
+        {
+          "id": "exp26-civic-0462",
+          "similarity": 0.11831514537334442,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0462",
+              "level": 3,
+              "sensitivity": 3,
+              "category": "democracy_rights_and_participation",
+              "topic": "process_and_outcome",
+              "question": "会議の全記録を公開することと、安心して迷いを話せることをどう両立したい？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "架空の公開方針。透明さと未完成な発言が長く残る負担を考える。"
+              },
+              "content_warning": [
+                "privacy_and_surveillance"
+              ]
+            },
+            "reason": "公開の中で考えを試す自由。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l3.txt:41",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        },
+        {
+          "id": "exp26-civic-0076",
+          "similarity": 0.09874902665615082,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0076",
+              "level": 3,
+              "sensitivity": 3,
+              "category": "justice_safety_and_crime",
+              "topic": "safety_and_authority",
+              "question": "公共施設で入館を断る時、理由を詳しく伝えることと職員を守ることをどう両立したい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の危険対応。暴力が切迫していない場面で、説明を省く範囲を考える。"
+              }
+            },
+            "reason": "安全対応の説明責任。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "justice_safety_and_crime__l3.txt:47",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0494",
+      "neighbors": [
+        {
+          "id": "exp26-learning-0342",
+          "similarity": 0.08854556828737259,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-learning-0342",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "technology_media_and_privacy",
+              "topic": "media_choices",
+              "question": "親しい人の人生を対談にして、自分が編集する。結論を整えると本人の迷いが消える。何をその人の人生の声として残したい？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の場面です。内容の事実は同じでも、経験の印象が変わる設定。"
+              }
+            },
+            "reason": "大切な人の語りを預かる責任を聞く。",
+            "editorial": {
+              "author_group": "learning",
+              "fact_status": "hypothetical",
+              "source_row": "technology_media_and_privacy__l4.txt:80"
+            }
+          }
+        },
+        {
+          "id": "exp26-world-0454",
+          "similarity": 0.07818126678466797,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0454",
+              "level": 2,
+              "sensitivity": 1,
+              "category": "science_research_and_uncertainty",
+              "topic": "research_participation",
+              "question": "調査に自由回答を書いたら短く要約された。自分の言葉の何が残ると、伝わったと思える？"
+            },
+            "reason": "研究の中で代弁される感覚。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "science_research_and_uncertainty__l2.txt:24"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0496",
+      "neighbors": [
+        {
+          "id": "exp26-livelihood-0457",
+          "similarity": 0.09904955327510834,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-livelihood-0457",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "money_consumption_and_tax",
+              "topic": "credit_restart",
+              "question": "家族から返済計画を一緒に決めてほしいと言われた。自分の暮らしにも影響する中、何を本人に任せる？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "架空の再建相談。借金を肩代わりする判断とは分け、共同の計画の権限を問う。"
+              },
+              "content_warning": [
+                "family_conflict"
+              ]
+            },
+            "reason": "家族の債務計画に関わる境界を聞く。",
+            "editorial": {
+              "author_group": "livelihood",
+              "fact_status": "hypothetical",
+              "source_row": "money_consumption_and_tax__l4.txt:60",
+              "related_existing_ids": []
+            }
+          }
+        },
+        {
+          "id": "exp26-learning-0337",
+          "similarity": 0.07539962232112885,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-learning-0337",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "technology_media_and_privacy",
+              "topic": "technology_stewardship",
+              "question": "自分が長く自動化を支えた組織を離れる。後の人が仕組みを理解できないままでも、引き継げたと言える条件は何？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の場面です。全ての知識を渡せるとは置かず、退出と頼られる責任を比べる。"
+              }
+            },
+            "reason": "技術を預けて離れる判断を聞く。",
+            "editorial": {
+              "author_group": "learning",
+              "fact_status": "hypothetical",
+              "source_row": "technology_media_and_privacy__l4.txt:75"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0500",
+      "neighbors": [
+        {
+          "id": "exp26-civic-0342",
+          "similarity": 0.09328922629356384,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0342",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "society_public_policy_and_environment",
+              "topic": "intergenerational_responsibility",
+              "question": "あなたは支援を受けた世代として返礼を求められた。今の自分にも余裕がない時、次の世代への責任をどう感じる？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の世代間支援。恩義と実際に担える負担を分ける。"
+              }
+            },
+            "reason": "受けた支えを返す本人の限界。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l4.txt:77",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        },
+        {
+          "id": "exp26-personal-0543",
+          "similarity": 0.08289019763469696,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-personal-0543",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "ethics_and_decision_making",
+              "topic": "knowledge_and_duty",
+              "question": "まだ確かめきれないやり方で、自分が一生取り組みたい仕事を始める機会が来た。今決めなければ機会を失うが、決めれば共に進む人の暮らしも変わる。自分の夢のために、どんな不確かさなら残して決められる？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の人生の機会で、具体的な治療や救助の方法ではありません。自分の将来の機会と、共に進む人の暮らしへの影響がある設定です。未知を完全になくせない中で、何を確かめる責任として持つかを考えます。"
+              }
+            },
+            "reason": "自分が生きたい道と他者の暮らしを背負って、未確認を残す決定の責任を聞く。",
+            "editorial": {
+              "author_group": "personal",
+              "fact_status": "hypothetical",
+              "source_row": "ethics_and_decision_making__l4.txt:20"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0506",
+      "neighbors": [
+        {
+          "id": "exp26-livelihood-0406",
+          "similarity": 0.12207668274641037,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-livelihood-0406",
+              "level": 4,
+              "sensitivity": 2,
+              "category": "money_consumption_and_tax",
+              "topic": "credit_restart",
+              "question": "完済した後も、借金のあった頃のように出費を怖がる。今の暮らしに何を戻したい？",
+              "perspective": "affected",
+              "detail": {
+                "text": "架空の返済後。金融の助言ではなく、負担が終わっても残る家計の感覚を問う。"
+              }
+            },
+            "reason": "完済後の生活の意味を聞く。",
+            "editorial": {
+              "author_group": "livelihood",
+              "fact_status": "hypothetical",
+              "source_row": "money_consumption_and_tax__l4.txt:7",
+              "related_existing_ids": []
+            }
+          }
+        },
+        {
+          "id": "exp26-world-0184",
+          "similarity": 0.07440991699695587,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0184",
+              "level": 4,
+              "sensitivity": 2,
+              "category": "climate_environment_energy_and_disaster",
+              "topic": "resource_cycles",
+              "question": "ごみを減らす活動で人の暮らしを責めていたと気づいた。よいことをする人だと思ってきた自分を、どう捉え直す？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の振り返り。削減の成果と相手に向けた自分の態度を別に見る。"
+              }
+            },
+            "reason": "環境の善意で揺らぐ自己像。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "climate_environment_energy_and_disaster__l4.txt:50"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0520",
+      "neighbors": [
+        {
+          "id": "support-013",
+          "similarity": 0.08510249108076096,
+          "current": true,
+          "addition": {
+            "card": {
+              "id": "support-013",
+              "category": "school_and_youth",
+              "question": "先生に相談すれば状況は変わるかもしれないが、友達から『裏切られた』と思われるかもしれない。それでも相談するかを、何で決める？",
+              "level": 3,
+              "sensitivity": 2,
+              "topic": "support",
+              "perspective": "actor",
+              "role": "friend",
+              "detail": {
+                "text": "相談した結果として関係がぎくしゃくする可能性はあります。その不安のために何もしないことが、本人や周りの人にとってより大きな負担になる場合もあります。\n\n相談の目的、本人にどう伝えるか、先生がどこまで共有するかによって、関係への影響は変わります。友情を守ることと問題を放置しないことを、どちらか一方だけにしない方法を考える問いです。"
+              }
+            }
+          }
+        },
+        {
+          "id": "exp26-care-0271",
+          "similarity": 0.07978050410747528,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-care-0271",
+              "level": 2,
+              "sensitivity": 2,
+              "category": "gender_sexuality_and_identity",
+              "topic": "choosing_identity_language",
+              "question": "性別について自分の説明が変わった時、前の説明を訂正と呼びたい？変化と呼びたい？"
+            },
+            "reason": "自己理解の時間の受け止め。",
+            "editorial": {
+              "author_group": "care",
+              "fact_status": "hypothetical",
+              "related_existing_ids": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0534",
+      "neighbors": [
+        {
+          "id": "exp26-civic-0478",
+          "similarity": 0.09152685850858688,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0478",
+              "level": 3,
+              "sensitivity": 2,
+              "category": "democracy_rights_and_participation",
+              "topic": "public_trust",
+              "question": "約束を守れなかった代表が、できた成果だけを報告することをどう考える？",
+              "perspective": "observer",
+              "detail": {
+                "text": "仮の報告。達成した利益と果たせなかった委任を両方見る。"
+              }
+            },
+            "reason": "公共の約束の未達を伝える意味。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l3.txt:57",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        },
+        {
+          "id": "exp26-civic-0539",
+          "similarity": 0.08123905956745148,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0539",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "democracy_rights_and_participation",
+              "topic": "protest_and_expression",
+              "question": "あなたは集会の代表。親しい仲間の強い発言が全体の主張として広まった。自分も内容の一部には共感する時、仲間との関係を揺らして何を訂正したい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の活動。個人的な共感と託された全体の声明を区別する。"
+              }
+            },
+            "reason": "仲間への忠実さと代表の声の責任。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l4.txt:53",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0536",
+      "neighbors": [
+        {
+          "id": "exp26-personal-0575",
+          "similarity": 0.09967668354511261,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-personal-0575",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "ethics_and_decision_making",
+              "topic": "loyalty_and_principles",
+              "question": "自分たちを守る説明をしたら、無関係な人への疑いが強まった。説明し直すと仲間の評価は下がるかもしれない。誰への忠実さを自分は守りたい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の説明の影響です。事実を正す責任と、所属する人の不利益を引き受けることを比べます。"
+              }
+            },
+            "reason": "自分の集団防衛の説明を直す責任を聞く。",
+            "editorial": {
+              "author_group": "personal",
+              "fact_status": "hypothetical",
+              "source_row": "ethics_and_decision_making__l4.txt:52"
+            }
+          }
+        },
+        {
+          "id": "exp26-world-0096",
+          "similarity": 0.09133841842412949,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0096",
+              "level": 3,
+              "sensitivity": 1,
+              "category": "climate_environment_energy_and_disaster",
+              "topic": "future_responsibility",
+              "question": "自然の回復が自分たちの代では見えない事業を、何で成果として判断したい？",
+              "perspective": "observer",
+              "detail": {
+                "text": "仮の長期事業。完成した景色だけでは途中の変化を評価しにくい。"
+              }
+            },
+            "reason": "世代を超える環境成果。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "climate_environment_energy_and_disaster__l3.txt:32"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0545",
+      "neighbors": [
+        {
+          "id": "exp26-world-0247",
+          "similarity": 0.08116017282009125,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0247",
+              "level": 1,
+              "sensitivity": 1,
+              "category": "international_peace_and_cooperation",
+              "topic": "distant_attention",
+              "question": "他国の天気を見て、その場所の人を思い出すことはある？"
+            },
+            "reason": "遠い暮らしを日常に含める。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "international_peace_and_cooperation__l1.txt:23"
+            }
+          }
+        },
+        {
+          "id": "exp26-world-0623",
+          "similarity": 0.07852126657962799,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0623",
+              "level": 4,
+              "sensitivity": 2,
+              "category": "science_research_and_uncertainty",
+              "topic": "research_ending",
+              "question": "研究を辞めても、その問いが頭から離れない。研究者でなくなった自分に、知る時間をどう残したい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の転身。職の役割と探究が支えた自己を分ける。"
+              }
+            },
+            "reason": "役割を離れた後の探究の自己。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "science_research_and_uncertainty__l4.txt:74"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0551",
+      "neighbors": [
+        {
+          "id": "exp26-civic-0099",
+          "similarity": 0.08045068383216858,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0099",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "justice_safety_and_crime",
+              "topic": "apology_and_restoration",
+              "question": "あなたは被害を受けた人へ謝罪したいが、相手は連絡を望まない。会えないまま責任を果たすとは、自分にとって何を意味する？",
+              "perspective": "actor",
+              "detail": {
+                "text": "架空の修復。自分の区切りを得ることと、相手の境界を守ることを分ける。"
+              },
+              "content_warning": [
+                "crime_and_punishment"
+              ]
+            },
+            "reason": "許しを得られない責任の持ち方。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "justice_safety_and_crime__l4.txt:12",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        },
+        {
+          "id": "exp26-civic-0213",
+          "similarity": 0.07786072790622711,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0213",
+              "level": 3,
+              "sensitivity": 3,
+              "category": "society_public_policy_and_environment",
+              "topic": "minimum_living_conditions",
+              "question": "必需品の公的支援で、安い品を指定することと本人に合う品を認めることをどう考える？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "架空の調達。費用の節約と身体や暮らしによる違いを比較する。"
+              }
+            },
+            "reason": "同じ品で満たせない必要。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l3.txt:15",
+              "related_existing_ids": [
+                "public-support-001"
+              ],
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0554",
+      "neighbors": [
+        {
+          "id": "relationship-l3-148",
+          "similarity": 0.07791547477245331,
+          "current": true,
+          "addition": {
+            "card": {
+              "id": "relationship-l3-148",
+              "topic": "jealousy_reassurance",
+              "category": "relationships_and_communication",
+              "perspective": "observer",
+              "question": "理由のない嫉妬でも、恋人には安心させる責任があると思う？",
+              "level": 3,
+              "sensitivity": 3,
+              "detail": {
+                "text": "恋人同士で不安を支え合うことは、関係を維持するうえで大切です。\n\n一方、自分自身の不安をすべて相手の行動によって解消しようとすることには限界があります。\n\n自分の感情への責任と、相手から受ける安心の境界を考える問いです。"
+              }
+            }
+          }
+        },
+        {
+          "id": "exp26-civic-0523",
+          "similarity": 0.0743146538734436,
+          "current": false,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0523",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "democracy_rights_and_participation",
+              "topic": "process_and_outcome",
+              "question": "あなたは当事者の希望と違う決定をした責任者。自分を信じて体験を話した人に、利用されたと言われた。結論を変えられない時、どんな責任が自分に残る？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "架空の政策判断。声を聞く約束、結論への同意、実際の影響を分けて考える。"
+              }
+            },
+            "reason": "自分を信じて話した人への決定責任。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l4.txt:37",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

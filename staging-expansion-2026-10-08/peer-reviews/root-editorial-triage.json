@@ -1,0 +1,106 @@
+{
+  "status": "selected_editorial_candidates_reviewed_not_approval",
+  "date": "2026-10-08",
+  "reviewer": "root",
+  "scope": "原文・背景の特定候補を確認した記録。全件の意味レビューは別の6担当の記録を参照する。",
+  "decisions": [
+    {
+      "ids": [
+        "exp26-personal-0126",
+        "exp26-personal-0280"
+      ],
+      "signal": "文字2〜4gramの類似度0.43以上",
+      "action": "retain_distinct_questions",
+      "rationale": "0126は一人の時間の笑いを自分の記憶に残す好み、0280は相手への関心を覚えていると伝える好み。記憶という語は共通するが、私的な注意と関係への伝え方は別の会話の入口。"
+    },
+    {
+      "ids": [
+        "exp26-personal-0230",
+        "exp26-personal-0367",
+        "exp26-care-0610",
+        "exp26-learning-0279",
+        "exp26-learning-0508",
+        "exp26-world-0470"
+      ],
+      "signal": "出典のない事実に見える語を含む",
+      "action": "keyword_false_positives_on_review_inputs",
+      "rationale": "0230は根拠のない治療効果を期待しない設定、0367は虚偽の調査ではない設定、0610は実際の治療効果を示さない架空の診療、0279はAIの理解や治療効果を事実としない、0508は実際の言語統計ではない仮定、0470は仮の生活調査。いずれも実際の効果・統計・制度を断定する箇所ではない。改稿箇所は最終案で再確認する。"
+    },
+    {
+      "ids": [
+        "exp26-livelihood-0299",
+        "exp26-learning-0365"
+      ],
+      "signal": "同じ追加理由の文",
+      "action": "clarify_learning_reason_in_resolution_draft",
+      "rationale": "問いは所有する品の来歴と歴史の時代への関心で異なる。追加理由もそれぞれの対象を示すよう0365を修正担当へ依頼した。"
+    }
+  ],
+  "length_flag_policy": "短い背景や短いL4は候補抽出のための文字数条件。短さを品質エラーとはせず、全件の担当外レビューで本文・背景・固有の葛藤を読む。文字数を埋めるための一律な補強は行わない。",
+  "limitations": [
+    "文字の近さも長さも意味の重複・非重複を証明しない。",
+    "この記録は医療・法制度の全資料確認や実際の会話テストを意味しない。"
+  ],
+  "final_candidate_check": {
+    "status": "selected_final_candidates_read_not_user_approval",
+    "proposal_sha256": "ee78bde10a1dd39c320274f99ff31f7031bd01e4258310f934c664d06c609a42",
+    "scope": "最終生成で抽出された近似1組と事実らしい語の候補6件をrootが問い・背景・理由で実読。短い背景695/短いL4 159は全件の担当外全文レビューの対象で、文字数をエラーとはしない。",
+    "wording_pair": {
+      "ids": [
+        "exp26-personal-0126",
+        "exp26-personal-0280"
+      ],
+      "similarity": 0.4484,
+      "decision": "retain_distinct_questions",
+      "rationale": "0126は一人の時間の笑いを自分の記憶に残す好み、0280は相手への関心を覚えていると伝える好み。記憶という語は共通するが、私的な注意と関係への伝え方は別の会話の入口。"
+    },
+    "factual_candidates": [
+      {
+        "id": "exp26-personal-0230",
+        "question": "人生を組み立ててきた望みが、かなう見通しはほとんどないと分かった。手放すと生き方の軸も失いそうな自分は、現実を受け止めながら何を望みとして持ちたい？",
+        "background": "仮の人生の見通しで、治療効果の予測を扱う場面ではありません。実現を目指して行動することと、かなわなくても心の支えとして持つことを分けて考えます。",
+        "decision": "retain_hypothetical_or_explicitly_excluded_claim",
+        "rationale": "背景は治療効果の予測を扱わないと明示し、望みを持つ人生の意味を架空条件で問う。"
+      },
+      {
+        "id": "exp26-personal-0367",
+        "question": "話の途中で考えが変わった人に、最初の発言への説明を求める参加者がいる。進行するなら、どの時点の言葉を本人の立場として扱いたい？",
+        "background": "仮の対話で、偽証や虚偽の調査ではありません。考えを試しながら話す余地と、発言が他者に残す意味を考えます。",
+        "decision": "retain_hypothetical_or_explicitly_excluded_claim",
+        "rationale": "背景は偽証・虚偽調査とは分けた仮の対話で、考えが変わった発言の扱いを問う。"
+      },
+      {
+        "id": "exp26-care-0611",
+        "question": "患者の痛みを楽にする仕事が自分の生きがいだったあなたは、長く診た人の苦痛を支えきれないまま、体力の限界から担当を離れる時期を決める必要がある。自分の人生を守る決定を、患者への責任とどう結び付けたい？",
+        "background": "仮の場面です。本人の苦痛は続いており、自分は支え続けたい意味を仕事に感じていますが、今の体力で同じ担当を続けることにも限界があります。他の支援へ引き継ぐ余地はある一方、同じ関係が続くとは限りません。治療効果や引継ぎの医療上の手順を一般化せず、自分の人生と責任の終え方を考えます。",
+        "decision": "retain_hypothetical_or_explicitly_excluded_claim",
+        "rationale": "苦痛が続く架空条件で、自分の職務の終わりと人生への責任を聞く。背景は治療効果や引継ぎの医学手順を一般化しないと明記。"
+      },
+      {
+        "id": "exp26-learning-0279",
+        "question": "親しい人との関係が変わるのが怖くて、悩みを会話AIにだけ話しているとする。AIに理解されたと感じることと、人に知られることは自分にどう違う？",
+        "background": "仮の場面です。AIの理解や治療効果を事実とせず、話す相手への期待と怖さを分ける。",
+        "decision": "retain_hypothetical_or_explicitly_excluded_claim",
+        "rationale": "AIの理解・治療効果を事実としていない架空場面。話す相手への期待と怖さを問う。"
+      },
+      {
+        "id": "exp26-learning-0508",
+        "question": "自分が使う言葉が最後に近い世代だとしたら、残す責任をどれくらい感じる？",
+        "background": "仮の場面です。実際の言語の統計ではなく、担い手が少ない仮定。",
+        "decision": "retain_hypothetical_or_explicitly_excluded_claim",
+        "rationale": "実際の言語統計ではなく、担い手が少ない条件を仮定して本人の責任を問う。"
+      },
+      {
+        "id": "exp26-world-0470",
+        "question": "観察することで行動が変わる調査では、その変化も結果として残すべき？",
+        "background": "仮の生活調査。観察前と観察中の条件の違いを考える。",
+        "decision": "retain_hypothetical_or_explicitly_excluded_claim",
+        "rationale": "架空の生活調査で観察中に行動が変わるという条件を置く。全調査に共通する効果や統計値の断定ではない。"
+      }
+    ],
+    "identical_addition_reason_candidates": 0,
+    "new_required_findings": 0,
+    "previous_proposal_sha256": "45b15482798d8ba9a7d828c1d530e0bce070d83f218be9da798cf9caac59f212",
+    "followup_scope": "最後2件の改稿後も候補の原文が同じであることを照合。新しい候補はなく、同じ原文の判断を維持。"
+  }
+}

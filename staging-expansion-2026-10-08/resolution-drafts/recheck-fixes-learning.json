@@ -1,0 +1,111 @@
+{
+  "reviewer": "care",
+  "author_group": "learning",
+  "source_path": "/workspace/Omoi/staging-expansion-2026-10-08/shards/learning/additions.json",
+  "source_sha256": "9cb5443988fd25bc64040774a438cb5f324ec23f5066290d130c99c8cfa3f718",
+  "status": "draft_not_applied_not_approved",
+  "changes": [
+    {
+      "id": "exp26-learning-0310",
+      "before": {
+        "card": {
+          "id": "exp26-learning-0310",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "technology_media_and_privacy",
+          "topic": "technology_use",
+          "question": "生涯を共にしたい相手へ、翻訳を外すと大切な約束の言葉がうまく伝わらない。相手は自分の声で聞きたいと言う。不完全でも自分の言葉で伝えることと、翻訳に託して正確に伝えることを、どう大切にしたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の言葉と関係です。二人は翻訳の助けで互いを知ってきたとし、翻訳を使う関係が偽物とはしません。共に生きる約束で、不完全な自分の声を聞いてもらう意味と、意思を伝える確かさを考えます。"
+          }
+        },
+        "reason": "最初に伝えたい言葉という日常の入口から、共に生きる約束で技術に託す意思と自分の不完全な声をどう分けるかへ深める。",
+        "editorial": {
+          "author_group": "learning",
+          "fact_status": "hypothetical",
+          "source_row": "technology_media_and_privacy__l4.txt:48"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-learning-0310",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "technology_media_and_privacy",
+          "topic": "technology_use",
+          "question": "生涯を共にしたい相手へ、翻訳を外すと大切な約束の言葉がうまく伝わらない。相手はあなたの声で聞きたいと言う。不完全でも自分の言葉で伝えることと、翻訳に託して正確に伝えることを、どう大切にしたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の言葉と関係です。二人は翻訳の助けで互いを知ってきたとし、翻訳を使う関係が偽物とはしません。共に生きる約束で、不完全な自分の声を聞いてもらう意味と、意思を伝える確かさを考えます。"
+          }
+        },
+        "reason": "最初に伝えたい言葉という日常の入口から、共に生きる約束で技術に託す意思と自分の不完全な声をどう分けるかへ深める。",
+        "editorial": {
+          "author_group": "learning",
+          "fact_status": "hypothetical",
+          "source_row": "technology_media_and_privacy__l4.txt:48"
+        }
+      },
+      "reason": "「相手は自分の声で聞きたい」の自分が、語る本人か相手か一読で確定しにくい。",
+      "addresses": [
+        "RLC-01"
+      ]
+    },
+    {
+      "id": "exp26-learning-0380",
+      "before": {
+        "card": {
+          "id": "exp26-learning-0380",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "culture_religion_and_history",
+          "topic": "prayer_and_space",
+          "question": "離れて暮らす大切な人と、同じ季節の行事の飾りを見ると、近くに感じる？"
+        },
+        "reason": "行事の象徴が離れた人とのつながりに持つ感覚を聞く。同じ物を見る一般の好みから文化的に共有する季節へ絞る。",
+        "editorial": {
+          "author_group": "learning",
+          "fact_status": "hypothetical",
+          "source_row": "culture_religion_and_history__l1.txt:29"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-learning-0380",
+          "level": 1,
+          "sensitivity": 1,
+          "category": "culture_religion_and_history",
+          "topic": "seasonal_symbols_and_connection",
+          "question": "離れて暮らす大切な人と、同じ季節の行事の飾りを見ると、近くに感じる？"
+        },
+        "reason": "行事の象徴が離れた人とのつながりに持つ感覚を聞く。同じ物を見る一般の好みから文化的に共有する季節へ絞る。",
+        "editorial": {
+          "author_group": "learning",
+          "fact_status": "hypothetical",
+          "source_row": "culture_religion_and_history__l1.txt:29"
+        }
+      },
+      "reason": "修正後の本文は離れた人と季節の行事の飾りを共有する感覚。祈りや場所そのものは置かず、元topic prayer_and_spaceとの対応が薄い。",
+      "addresses": [
+        "RLC-02"
+      ]
+    }
+  ],
+  "finding_resolutions": [
+    {
+      "finding_id": "RLC-01",
+      "id": "exp26-learning-0310",
+      "priority": "optional",
+      "status": "drafted_pending_root_apply",
+      "reason": "主担当が採用する2件の明瞭化だけを保存。その他の本文・背景・理由・metadataは保持。"
+    },
+    {
+      "finding_id": "RLC-02",
+      "id": "exp26-learning-0380",
+      "priority": "optional",
+      "status": "drafted_pending_root_apply",
+      "reason": "主担当が採用する2件の明瞭化だけを保存。その他の本文・背景・理由・metadataは保持。"
+    }
+  ]
+}

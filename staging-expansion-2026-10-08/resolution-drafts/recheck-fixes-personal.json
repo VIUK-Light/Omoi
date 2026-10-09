@@ -1,0 +1,80 @@
+{
+  "reviewer": "world",
+  "author_group": "personal",
+  "source_path": "shards/personal/additions.json",
+  "source_sha256": "b3159c5649456a6579eab12f0f95d0e6e06687443419fa927790b9fbe5d35ccd",
+  "status": "root_applied_to_staging_pending_user_approval",
+  "scope": "独立再確認で見つけた任意の主語/共同性の明確化1件。rootが採用すると指示した具体文をbefore/after全additionで記録。shardは編集しない。",
+  "changes": [
+    {
+      "id": "exp26-personal-0542",
+      "priority": "optional",
+      "before": {
+        "card": {
+          "id": "exp26-personal-0542",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "knowledge_and_duty",
+          "question": "あなたが進む道を決める役になり、共に暮らした人たちはそれを信頼して今の仕事や居場所を手放そうとしている。自分はその道に詳しいが、うまくいくとは確信していない。その人たちの未来を選ぶ時、不安をどこまで共有したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の共同の選択です。相手も任せると決めていますが、不確実さをどこまで理解しているかはまだ確かめられていません。自分の知識への信頼を保つことと、相手が将来の暮らしを決める材料を持つことを比べます。"
+          }
+        },
+        "reason": "自分への信頼が相手のこれからの暮らしを左右する時に、不確実さを共有する責任を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:19"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-personal-0542",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "ethics_and_decision_making",
+          "topic": "knowledge_and_duty",
+          "question": "共に暮らした人たちと進む道を決める役になり、その人たちはあなたを信頼して今の仕事や居場所を手放そうとしている。自分はその道に詳しいが、うまくいくとは確信していない。その人たちの未来を選ぶ時、不安をどこまで共有したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の共同の選択です。相手も任せると決めていますが、不確実さをどこまで理解しているかはまだ確かめられていません。自分の知識への信頼を保つことと、相手が将来の暮らしを決める材料を持つことを比べます。"
+          }
+        },
+        "reason": "自分への信頼が相手のこれからの暮らしを左右する時に、不確実さを共有する責任を聞く。",
+        "editorial": {
+          "author_group": "personal",
+          "fact_status": "hypothetical",
+          "source_row": "ethics_and_decision_making__l4.txt:19"
+        }
+      },
+      "reason": "「あなたが進む道」は本人だけの道とも読めるため、共に暮らした人たちと進む共同の道であることと、その人たちが自分を信頼して暮らしを変える責任を明示する。後の2文と背景・理由・metadataは維持する。",
+      "rationale": "「あなたが進む道」は本人だけの道とも読めるため、共に暮らした人たちと進む共同の道であることと、その人たちが自分を信頼して暮らしを変える責任を明示する。後の2文と背景・理由・metadataは維持する。",
+      "resolution_status": "applied_by_root_to_staging_not_user_approved"
+    }
+  ],
+  "finding_resolutions": [
+    {
+      "id": "exp26-personal-0542",
+      "priority": "optional",
+      "field": "question",
+      "status": "resolved_by_root_staging_clarification",
+      "change_id": "exp26-personal-0542",
+      "reason": "「あなたが進む道」は本人だけの道とも読めるため、共に暮らした人たちと進む共同の道であることと、その人たちが自分を信頼して暮らしを変える責任を明示する。後の2文と背景・理由・metadataは維持する。"
+    }
+  ],
+  "validation": {
+    "source_sha256_confirmed": true,
+    "id_level_category_sensitivity_perspective_topic_unchanged": true,
+    "detail_reason_editorial_unchanged": true,
+    "quantity_unchanged": true,
+    "production_files_written": 0
+  },
+  "staging_application": {
+    "applied_by": "root",
+    "final_shard_sha256": "f3e8e7b8618deedf2a0e1d75258dd7401cbfe198e8bcab9e34c1d09686dcb8c5",
+    "independent_final_0542_reread": "completed",
+    "production_files_written": 0
+  }
+}

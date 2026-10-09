@@ -1,0 +1,258 @@
+{
+  "status": "recheck_resolution_draft_unapplied_not_approved",
+  "author_group": "civic",
+  "prepared_by": "learning",
+  "source_path": "shards/civic/additions.json",
+  "source_sha256": "bb5a269c392177e368208f9f318f933bc93816499cc37ee270b9376b99e7123f",
+  "changes": [
+    {
+      "id": "exp26-civic-0333",
+      "before": {
+        "card": {
+          "id": "exp26-civic-0333",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "society_public_policy_and_environment",
+          "topic": "migration_and_belonging",
+          "question": "移り住んだ地域で、ようやく一人の住民として暮らせると感じていた。交流会で自分の国の代表として話してほしいと言われ、また外から来た人に戻った気がする。何を自分の居場所として伝えたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の移住後の関係です。依頼した側の歓迎の意図を悪いものと決めず、個人として馴染んできた感覚が出身の役割で変わる条件を置きます。その人の経験は国全体の代表ではありません。何を紹介するかの好みより、今ここで暮らす本人の帰属を考えます。"
+          },
+          "content_warning": [
+            "discrimination_and_hate"
+          ]
+        },
+        "reason": "0235/world-0250の代表を頼む一般的判断から分け、既に自分の居場所を得た本人が出身の代表へ戻される意味を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:68",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-civic-0333",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "society_public_policy_and_environment",
+          "topic": "migration_and_belonging",
+          "question": "地域の移住者支援で、自分の経験が「努力すれば馴染める」という成功例になり、後から来た人にも同じ行動が求められた。自分には周囲に助けられた時間も、失った関係もある。自分の歩みが支援を受ける人の基準になる時、どんな責任を感じる？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の移住者支援です。本人の紹介が励みになるという期待から、他の利用者にも同じ努力を求める運用へつながった条件を置きます。成功の紹介を止めるかだけでなく、自分の歩みを異なる条件で暮らす人の支援の基準にしてよいかを考えます。実際の制度にこの条件があるとは述べません。"
+          },
+          "content_warning": [
+            "discrimination_and_hate"
+          ]
+        },
+        "reason": "新しい人と呼ばれた時の帰属を聞く0326、成功例に収まらない自己像を伝える0269から分け、自分の移住の歩みが他の人の支援の基準になった時の責任を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:68",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "reason": "0326との帰属回復の新近似を、本人の成功経験が他の移住者へ求められる支援の基準になる軸へ変更する。0269の本人の迷いを成功例へ収める語りとも、他者に求める基準の責任を本文で分ける。",
+      "addresses": [
+        "learning-recheck-civic-02"
+      ],
+      "comparison_additions": [
+        {
+          "card": {
+            "id": "exp26-civic-0326",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "migration_and_belonging",
+            "question": "あなたは長く地域で暮らす移住者。今も新しい人として紹介されたら、何を自分の居場所の証として伝えたい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の紹介。出身と今ここで続ける生活を分けて考える。"
+            },
+            "content_warning": [
+              "discrimination_and_hate"
+            ]
+          },
+          "reason": "長く住んでも外から来た扱いの感覚。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:61",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0494",
+      "before": {
+        "card": {
+          "id": "exp26-civic-0494",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "democracy_rights_and_participation",
+          "topic": "representation_and_mandate",
+          "question": "長く暮らした地域を離れる支援に賛成か、代表に自分の迷いを託した。会議では賛成の声として要約され、近所の人には地域を見捨てたと思われた。結論を撤回したいわけではない時、何を自分の言葉として取り戻したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の地域の将来の話合いです。移ることへの賛成に、残る人への思いや馴染みの場所を失う迷いも重なっていた条件を置きます。要約の正確さだけではなく、自分の人生や関係に意味を持つ声が一つの結論へ縮められたことを考えます。"
+          }
+        },
+        "reason": "0403/0426の代弁の要約から、故郷を離れる自分の迷いと関係が消えた時に本人の声を取り戻す意味へ深める。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "democracy_rights_and_participation__l4.txt:8",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-civic-0494",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "democracy_rights_and_participation",
+          "topic": "representation_and_mandate",
+          "question": "長く暮らした地域を離れる支援には賛成だが、迷いもあると代表へ伝えた。会議では賛成の声だけに要約され、近所の人には地域を見捨てたと思われた。結論を撤回したいわけではない時、何を自分の言葉として取り戻したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の地域の将来の話合いです。移ることへの賛成に、残る人への思いや馴染みの場所を失う迷いも重なっていた条件を置きます。要約の正確さだけではなく、自分の人生や関係に意味を持つ声が一つの結論へ縮められたことを考えます。"
+          }
+        },
+        "reason": "長く暮らした地域を離れることに賛成する本人が、迷いと関係まで自分の声として残す意味を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "democracy_rights_and_participation__l4.txt:8",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "reason": "賛否が未決なのか、賛成に迷いを伴うのかという本文の曖昧さを、背景と同じ既に賛成した条件へ補正する。",
+      "addresses": [
+        "learning-recheck-civic-01"
+      ],
+      "comparison_additions": []
+    },
+    {
+      "id": "exp26-civic-0371",
+      "before": {
+        "card": {
+          "id": "exp26-civic-0371",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "society_public_policy_and_environment",
+          "topic": "volunteering_and_reciprocity",
+          "question": "あなたは寄付を続けてきたが、生活に余裕がなくなった。受け手を知らないまま支えることを続けるなら、自分の何を削っても価値があると感じる？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の寄付。支援の手応え、匿名性、寄付者自身の生活の限界を考える。"
+          },
+          "content_warning": [
+            "privacy_and_surveillance"
+          ]
+        },
+        "reason": "知らない人への支えを自分の生活に置く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:106",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-civic-0371",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "society_public_policy_and_environment",
+          "topic": "volunteering_and_reciprocity",
+          "question": "あなたは寄付を続けてきたが、生活に余裕がなくなった。受け手を知らないまま支えることを続けるなら、自分の何を削っても価値があると感じる？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の寄付。支援の手応え、匿名性、寄付者自身の生活の限界を考える。"
+          }
+        },
+        "reason": "知らない人への支えを自分の生活に置く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:106",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "reason": "本文は匿名の受け手を支える寄付者自身の生活の限界を聞き、個人情報の公開・取得・監視を判断する条件がない。privacy_and_surveillanceのみ削除し、空になるためcontent_warning属性を省く。本文・背景・追加理由・actorを維持する。",
+      "addresses": [
+        "learning-recheck-civic-03"
+      ]
+    }
+  ],
+  "finding_resolutions": [
+    {
+      "finding_id": "learning-recheck-civic-01",
+      "id": "exp26-civic-0494",
+      "priority": "required",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-civic-0494",
+      "resolution": "冒頭を「支援には賛成だが、迷いもあると代表へ伝えた」にし、要約で迷いだけが消えた条件を明示する。背景は整合しているため保持。理由は本文の本人の賛成を明記する。"
+    },
+    {
+      "finding_id": "learning-recheck-civic-02",
+      "id": "exp26-civic-0333",
+      "priority": "required",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-civic-0333",
+      "resolution": "0326との帰属回復の新近似を、本人の成功経験が他の移住者へ求められる支援の基準になる軸へ変更する。0269の本人の迷いを成功例へ収める語りとも、他者に求める基準の責任を本文で分ける。"
+    },
+    {
+      "finding_id": "learning-recheck-civic-03",
+      "id": "exp26-civic-0371",
+      "priority": "optional",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-civic-0371",
+      "resolution": "本文は匿名の受け手を支える寄付者自身の生活の限界を聞き、個人情報の公開・取得・監視を判断する条件がない。privacy_and_surveillanceのみ削除し、空になるためcontent_warning属性を省く。本文・背景・追加理由・actorを維持する。"
+    }
+  ],
+  "self_review": {
+    "reviewed_change_ids": [
+      "exp26-civic-0333",
+      "exp26-civic-0494",
+      "exp26-civic-0371"
+    ],
+    "reviewed_change_count": 3,
+    "scope": "0333/0494のafter全文・背景・理由・metadataを再読。改稿後2件を含めた4710件で近似を再計算し、上位3件の問い・存在する背景・理由を読み、意味から差を判定。0333の近い0269を実際に読んだため、成功例に収まらない自己像を伝える問いへ再び寄らないよう、他の利用者へ同じ努力を求める支援の基準を本文に明示してさらに改稿・再読した。移住L4の0326〜0341も問い/背景/理由を全文で読んだ。 0371の問い・背景・理由・全metadataも再読し、寄付者の生活の限界と匿名の受け手への支えが判断対象であり、公開/取得/監視の条件がないことを確認。本文を維持してprivacy_and_surveillanceを削除し、空のcontent_warning属性も削除した。",
+    "status": "completed_all_3_after_read_and_similarity_followup",
+    "comparison_notes": [
+      "0333は0326の帰属の証明と違い、自分の人生の歩みが他者へ要求される支援の基準になる責任を問う。0269の成功物語へ残る自己の迷いとも、本人の紹介の正確さより他者への制度上の影響で分ける。",
+      "0333と0327は、自分が欲しかった歓迎を他の人にも望む境界／自分の経験が支援基準として他の人へ適用される責任を分ける。",
+      "0494は賛成という結論を変えず、迷いと故郷の関係を声に残す本人の意味。learning0342は他の人の対談を編集する責任、youth-pregnancy-l3-024は行動評価とその人への支援を分けるので判断対象が違う。",
+      "新たな上位近似はworld0145の廃棄の負担、civic0342の世代間返礼など語尾の責任感も拾っており、文字の近さだけで重複とはしない。",
+      "0371は文字の変更がなく、新たな意味近似は生じない。actorは寄付を続ける本人の行為と合い、匿名性だけでprivacyタグを付ける根拠にはしない。"
+    ],
+    "comparison_candidate_file": "resolution-drafts/recheck-fixes-civic-neighbors.json",
+    "remaining_limits": "全ての可能な二問の意味比較・現実の会話テストは未実施。正本反映はユーザー最終確認後。"
+  },
+  "verification": {
+    "source_unchanged": true,
+    "all_before_records_match_source": true,
+    "change_count": 3,
+    "candidate_count_before": 558,
+    "candidate_count_after_draft_apply": 558,
+    "category_level_cells_unchanged": true,
+    "exact_normalized_duplicate_questions_after_draft": 0,
+    "changed_questions_exact_duplicates_against_other_shards_and_existing942": 0,
+    "all_after_questions_detail_reason_read": true,
+    "source_sha256_at_completion": "bb5a269c392177e368208f9f318f933bc93816499cc37ee270b9376b99e7123f",
+    "id_level_category_topic_sensitivity_perspective_editorial_unchanged": true,
+    "warning_change_only_0371_privacy_removed": true
+  },
+  "approval_required_before_canonical_apply": true
+}

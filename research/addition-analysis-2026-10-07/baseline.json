@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-07",
+  "status": "analysis_only_pending_user_confirmation",
+  "total": 942,
+  "levels": {
+    "1": 175,
+    "2": 98,
+    "3": 307,
+    "4": 362
+  },
+  "category_level_counts": {
+    "self_and_values": [
+      54,
+      1,
+      0,
+      0
+    ],
+    "relationships_and_communication": [
+      87,
+      33,
+      43,
+      102
+    ],
+    "school_and_youth": [
+      22,
+      31,
+      45,
+      44
+    ],
+    "money_consumption_and_tax": [
+      2,
+      5,
+      4,
+      2
+    ],
+    "housing_community_and_transport": [
+      2,
+      3,
+      6,
+      6
+    ],
+    "climate_environment_energy_and_disaster": [
+      2,
+      4,
+      10,
+      10
+    ],
+    "democracy_rights_and_participation": [
+      2,
+      3,
+      5,
+      3
+    ],
+    "international_peace_and_cooperation": [
+      2,
+      3,
+      5,
+      2
+    ],
+    "science_research_and_uncertainty": [
+      2,
+      3,
+      3,
+      1
+    ],
+    "ethics_and_decision_making": [
+      0,
+      7,
+      5,
+      5
+    ],
+    "technology_media_and_privacy": [
+      0,
+      4,
+      27,
+      26
+    ],
+    "justice_safety_and_crime": [
+      0,
+      1,
+      12,
+      29
+    ],
+    "gender_sexuality_and_identity": [
+      0,
+      0,
+      70,
+      30
+    ],
+    "family_and_care": [
+      0,
+      0,
+      12,
+      35
+    ],
+    "society_public_policy_and_environment": [
+      0,
+      0,
+      23,
+      14
+    ],
+    "health_and_disability": [
+      0,
+      0,
+      11,
+      22
+    ],
+    "culture_religion_and_history": [
+      0,
+      0,
+      17,
+      10
+    ],
+    "work_and_economy": [
+      0,
+      0,
+      9,
+      21
+    ]
+  },
+  "dataset_sha256": {
+    "level1.json": "9461b394173379dc507a72234e1e3909decf6637c67af1c2747d9d8214a0a487",
+    "level2.json": "66ec755c88419271054070d5a61787f0306fd3daaa406b16414c25590b06a179",
+    "level3.json": "49f7ef9236ddaf94f0246dd7b3f79134c1c468921a389ce8ae2d1510d3fa9ee5",
+    "level4.json": "e07c845c5c82155fc0ab565f9cc9212c9f715f86d3e926f36526b5a8f60c15d7"
+  },
+  "scope": "Question texts and backgrounds read for editorial gap analysis; counts do not measure semantic uniqueness."
+}

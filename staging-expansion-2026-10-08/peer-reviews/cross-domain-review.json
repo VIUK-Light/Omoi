@@ -1,0 +1,795 @@
+{
+  "reviewer": "addition_gap_review",
+  "author_group": "cross-domain",
+  "date": "2026-10-08",
+  "status": "reviewed_not_approved",
+  "reviewed_ids": [
+    "exp26-care-0024",
+    "exp26-care-0025",
+    "exp26-care-0031",
+    "exp26-care-0037",
+    "exp26-care-0038",
+    "exp26-care-0083",
+    "exp26-care-0149",
+    "exp26-care-0150",
+    "exp26-care-0152",
+    "exp26-care-0171",
+    "exp26-care-0172",
+    "exp26-care-0173",
+    "exp26-care-0174",
+    "exp26-care-0424",
+    "exp26-care-0428",
+    "exp26-care-0430",
+    "exp26-care-0432",
+    "exp26-care-0548",
+    "exp26-care-0551",
+    "exp26-care-0589",
+    "exp26-care-0591",
+    "exp26-care-0592",
+    "exp26-care-0593",
+    "exp26-civic-0098",
+    "exp26-civic-0099",
+    "exp26-civic-0100",
+    "exp26-civic-0101",
+    "exp26-civic-0104",
+    "exp26-civic-0107",
+    "exp26-civic-0110",
+    "exp26-civic-0120",
+    "exp26-civic-0140",
+    "exp26-civic-0147",
+    "exp26-civic-0155",
+    "exp26-civic-0200",
+    "exp26-civic-0201",
+    "exp26-civic-0206",
+    "exp26-civic-0207",
+    "exp26-civic-0217",
+    "exp26-civic-0219",
+    "exp26-civic-0220",
+    "exp26-civic-0268",
+    "exp26-civic-0269",
+    "exp26-civic-0276",
+    "exp26-civic-0280",
+    "exp26-civic-0283",
+    "exp26-civic-0287",
+    "exp26-civic-0323",
+    "exp26-civic-0367",
+    "exp26-learning-0061",
+    "exp26-learning-0093",
+    "exp26-learning-0097",
+    "exp26-learning-0100",
+    "exp26-learning-0101",
+    "exp26-learning-0104",
+    "exp26-learning-0106",
+    "exp26-learning-0107",
+    "exp26-learning-0111",
+    "exp26-learning-0133",
+    "exp26-learning-0153",
+    "exp26-learning-0200",
+    "exp26-learning-0201",
+    "exp26-learning-0202",
+    "exp26-learning-0203",
+    "exp26-learning-0238",
+    "exp26-learning-0263",
+    "exp26-learning-0269",
+    "exp26-learning-0293",
+    "exp26-learning-0294",
+    "exp26-learning-0303",
+    "exp26-learning-0326",
+    "exp26-learning-0499",
+    "exp26-learning-0543",
+    "exp26-learning-0567",
+    "exp26-livelihood-0042",
+    "exp26-livelihood-0162",
+    "exp26-livelihood-0163",
+    "exp26-livelihood-0181",
+    "exp26-livelihood-0188",
+    "exp26-livelihood-0193",
+    "exp26-livelihood-0194",
+    "exp26-livelihood-0223",
+    "exp26-livelihood-0266",
+    "exp26-livelihood-0517",
+    "exp26-livelihood-0559",
+    "exp26-livelihood-0627",
+    "exp26-livelihood-0628",
+    "exp26-livelihood-0630",
+    "exp26-livelihood-0632",
+    "exp26-livelihood-0641",
+    "exp26-livelihood-0693",
+    "exp26-livelihood-0705",
+    "exp26-personal-0206",
+    "exp26-personal-0209",
+    "exp26-personal-0212",
+    "exp26-personal-0244",
+    "exp26-personal-0245",
+    "exp26-personal-0377",
+    "exp26-personal-0380",
+    "exp26-personal-0404",
+    "exp26-personal-0408",
+    "exp26-personal-0504",
+    "exp26-personal-0505",
+    "exp26-personal-0506",
+    "exp26-personal-0507",
+    "exp26-personal-0508",
+    "exp26-personal-0546",
+    "exp26-personal-0566",
+    "exp26-personal-0567",
+    "exp26-personal-0568",
+    "exp26-personal-0569",
+    "exp26-personal-0570",
+    "exp26-personal-0571",
+    "exp26-personal-0572",
+    "exp26-world-0446",
+    "exp26-world-0475",
+    "exp26-world-0506",
+    "exp26-world-0507",
+    "exp26-world-0508",
+    "exp26-world-0515",
+    "exp26-world-0550",
+    "exp26-world-0551",
+    "exp26-world-0555",
+    "exp26-world-0557",
+    "exp26-world-0560",
+    "exp26-world-0568",
+    "exp26-world-0573",
+    "exp26-world-0578",
+    "exp26-world-0588",
+    "exp26-world-0617",
+    "exp26-world-0633",
+    "exp26-world-0641",
+    "exp26-world-0644",
+    "exp26-world-0657",
+    "exp26-world-0663",
+    "bridge-035",
+    "caregiving-005",
+    "disability-003",
+    "disability-006",
+    "elderly-006",
+    "ethics-007",
+    "ethics-l4-003",
+    "healthcare-012",
+    "privacy-001",
+    "r6-05-03-l4",
+    "r6-08-04-l4",
+    "r6-13-05-l3",
+    "relationship-144",
+    "relationship-151",
+    "relationship-158",
+    "relationship-166"
+  ],
+  "reviewed_count": 151,
+  "reviewed_addition_ids": [
+    "exp26-care-0024",
+    "exp26-care-0025",
+    "exp26-care-0031",
+    "exp26-care-0037",
+    "exp26-care-0038",
+    "exp26-care-0083",
+    "exp26-care-0149",
+    "exp26-care-0150",
+    "exp26-care-0152",
+    "exp26-care-0171",
+    "exp26-care-0172",
+    "exp26-care-0173",
+    "exp26-care-0174",
+    "exp26-care-0424",
+    "exp26-care-0428",
+    "exp26-care-0430",
+    "exp26-care-0432",
+    "exp26-care-0548",
+    "exp26-care-0551",
+    "exp26-care-0589",
+    "exp26-care-0591",
+    "exp26-care-0592",
+    "exp26-care-0593",
+    "exp26-civic-0098",
+    "exp26-civic-0099",
+    "exp26-civic-0100",
+    "exp26-civic-0101",
+    "exp26-civic-0104",
+    "exp26-civic-0107",
+    "exp26-civic-0110",
+    "exp26-civic-0120",
+    "exp26-civic-0140",
+    "exp26-civic-0147",
+    "exp26-civic-0155",
+    "exp26-civic-0200",
+    "exp26-civic-0201",
+    "exp26-civic-0206",
+    "exp26-civic-0207",
+    "exp26-civic-0217",
+    "exp26-civic-0219",
+    "exp26-civic-0220",
+    "exp26-civic-0268",
+    "exp26-civic-0269",
+    "exp26-civic-0276",
+    "exp26-civic-0280",
+    "exp26-civic-0283",
+    "exp26-civic-0287",
+    "exp26-civic-0323",
+    "exp26-civic-0367",
+    "exp26-learning-0061",
+    "exp26-learning-0093",
+    "exp26-learning-0097",
+    "exp26-learning-0100",
+    "exp26-learning-0101",
+    "exp26-learning-0104",
+    "exp26-learning-0106",
+    "exp26-learning-0107",
+    "exp26-learning-0111",
+    "exp26-learning-0133",
+    "exp26-learning-0153",
+    "exp26-learning-0200",
+    "exp26-learning-0201",
+    "exp26-learning-0202",
+    "exp26-learning-0203",
+    "exp26-learning-0238",
+    "exp26-learning-0263",
+    "exp26-learning-0269",
+    "exp26-learning-0293",
+    "exp26-learning-0294",
+    "exp26-learning-0303",
+    "exp26-learning-0326",
+    "exp26-learning-0499",
+    "exp26-learning-0543",
+    "exp26-learning-0567",
+    "exp26-livelihood-0042",
+    "exp26-livelihood-0162",
+    "exp26-livelihood-0163",
+    "exp26-livelihood-0181",
+    "exp26-livelihood-0188",
+    "exp26-livelihood-0193",
+    "exp26-livelihood-0194",
+    "exp26-livelihood-0223",
+    "exp26-livelihood-0266",
+    "exp26-livelihood-0517",
+    "exp26-livelihood-0559",
+    "exp26-livelihood-0627",
+    "exp26-livelihood-0628",
+    "exp26-livelihood-0630",
+    "exp26-livelihood-0632",
+    "exp26-livelihood-0641",
+    "exp26-livelihood-0693",
+    "exp26-livelihood-0705",
+    "exp26-personal-0206",
+    "exp26-personal-0209",
+    "exp26-personal-0212",
+    "exp26-personal-0244",
+    "exp26-personal-0245",
+    "exp26-personal-0377",
+    "exp26-personal-0380",
+    "exp26-personal-0404",
+    "exp26-personal-0408",
+    "exp26-personal-0504",
+    "exp26-personal-0505",
+    "exp26-personal-0506",
+    "exp26-personal-0507",
+    "exp26-personal-0508",
+    "exp26-personal-0546",
+    "exp26-personal-0566",
+    "exp26-personal-0567",
+    "exp26-personal-0568",
+    "exp26-personal-0569",
+    "exp26-personal-0570",
+    "exp26-personal-0571",
+    "exp26-personal-0572",
+    "exp26-world-0446",
+    "exp26-world-0475",
+    "exp26-world-0506",
+    "exp26-world-0507",
+    "exp26-world-0508",
+    "exp26-world-0515",
+    "exp26-world-0550",
+    "exp26-world-0551",
+    "exp26-world-0555",
+    "exp26-world-0557",
+    "exp26-world-0560",
+    "exp26-world-0568",
+    "exp26-world-0573",
+    "exp26-world-0578",
+    "exp26-world-0588",
+    "exp26-world-0617",
+    "exp26-world-0633",
+    "exp26-world-0641",
+    "exp26-world-0644",
+    "exp26-world-0657",
+    "exp26-world-0663"
+  ],
+  "reviewed_addition_count": 135,
+  "reviewed_existing_ids": [
+    "bridge-035",
+    "caregiving-005",
+    "disability-003",
+    "disability-006",
+    "elderly-006",
+    "ethics-007",
+    "ethics-l4-003",
+    "healthcare-012",
+    "privacy-001",
+    "r6-05-03-l4",
+    "r6-08-04-l4",
+    "r6-13-05-l3",
+    "relationship-144",
+    "relationship-151",
+    "relationship-158",
+    "relationship-166"
+  ],
+  "reviewed_existing_count": 16,
+  "scope": "全3768追加案と既存942のtopic/原文を機械比較と重点軸の検索に使い、候補を絞った。上記IDの問い・存在する背景・追加理由（既存に追加理由はない）を実際に読んで比較した。6著者の別担当全文レビューを補う横断の重点レビューであり、全3768の全文読み切りや全4710同士の意味比較ではない。",
+  "source_snapshots": {
+    "staging-expansion-2026-10-08/shards/civic/additions.json": "b07f76f14e82446aa5066e6944190df4b4ee2ba2991d93b129da3dd44c0f27df",
+    "staging-expansion-2026-10-08/shards/world/additions.json": "c1b10b94608e8ce0e79ae52a04482877a36f644826aa942ef949fe0e66113732",
+    "staging-expansion-2026-10-08/shards/personal/additions.json": "859fdbd5cf219a4084a7647bc3e4b6300d711780a329b90b12a1ebcc1ce3bac8",
+    "staging-expansion-2026-10-08/shards/learning/additions.json": "19ce08f2190733645109a7bcf6c1df29a61c3e8df60df084f7a04944f039e7a9",
+    "staging-expansion-2026-10-08/shards/care/additions.json": "fa51215b0a166ed30f0b0d61d9553214086769b7940a51a829e167fa2b28d49e",
+    "staging-expansion-2026-10-08/shards/livelihood/additions.json": "09ef66a877da160e703a8b209b256abb96973de88ce7ccd37cbc47139abdb41c"
+  },
+  "source_snapshot_note": "担当原稿はレビューと並行している。ハッシュはこの文書と修正draftを生成した時点の原稿。実読の問・背景・理由は初期インデックスから変更がないことをカード単位で照合済み。原稿全体の同一ハッシュを読了の証拠とはしない。",
+  "candidate_search": {
+    "corpus_addition_count": 3768,
+    "corpus_existing_count": 942,
+    "automatic_method": "原文の文字2〜4gram TF-IDFで異なる担当間/既存との近い表現を候補にし、topic・キーワードの重点軸検索も併用。",
+    "automatic_result_is_semantic_proof": false,
+    "question_only_scan_note": "検索結果の問いだけの確認と、reviewed_idsの問・背景・理由の確認を分ける。文字列類似度だけでfindingは付けていない。"
+  },
+  "findings": [
+    {
+      "finding_id": "XDR-01",
+      "id": "exp26-learning-0093",
+      "priority": "required",
+      "field": "novelty",
+      "compared_ids": [
+        "exp26-personal-0206"
+      ],
+      "issue": "何年も目指した目標を達成した後の満たされなさと、そのため後回しにした友人との時間を受け止める構造が同じ。学校名への対象置換だけで、当初の問いの独立した増分にはならない。主担当が既に差替え予定としている既知の指摘を具体案へまとめる。",
+      "evidence": [
+        {
+          "id": "exp26-learning-0093",
+          "level": 4,
+          "category": "school_and_youth",
+          "perspective": "affected",
+          "question": "何年も憧れた学校へ入り、そのため友達との時間も後回しにした。学ぶ内容には心が動かない今、進んできた人生をどう受け止める？",
+          "detail_text": "仮の場面です。合格自体は達成している。達成後の自己像と、学ぶ目的のずれを考える。",
+          "reason": "学校へ進むために使った人生を聞く。"
+        },
+        {
+          "id": "exp26-personal-0206",
+          "level": 4,
+          "category": "self_and_values",
+          "perspective": "affected",
+          "question": "何年も目指した目標を達成したが、思っていたほど満たされなかったとする。そのために、自分の時間や人との付き合いも後回しにしてきた。手に入れたものと、費やした時間を、今の自分ならどう受け止める？",
+          "detail_text": "これは達成した本人を置く仮の場面です。誇り、空白、惜しさは同時にあってもよく、費やした時間を無駄か成功かの一言で決める必要はありません。",
+          "reason": "他者への嫉妬ではなく自分の達成後の意味を聞く。"
+        }
+      ],
+      "suggested_resolution": "憧れた学校で、生涯深めたい問いが見つかった。けれど学校が卒業の研究として認めるのは別の分野で、その資格も今後の自分には必要だ。資格を得る学びと、自分の問いを続ける学びを、人生の中でどうつなげたい？",
+      "preserve_difference": "personal-0206 は達成後の空白を保持。learning-0100 は別の学習環境へ離れる判断、新案は同じ学校に必要な資格も学びたい内容もある条件。learning-0061 の必修内容の制度配分からも、本人が学んで生きる意味を分ける。",
+      "overlapping_peer_findings": [],
+      "resolution_status": "proposed_not_applied"
+    },
+    {
+      "finding_id": "XDR-02",
+      "id": "exp26-learning-0202",
+      "priority": "required",
+      "field": "novelty",
+      "compared_ids": [
+        "exp26-world-0446"
+      ],
+      "issue": "双方の本文と理由は「まだ分からない」と答える人への印象を聞く。同じLevel 2で、専門家と好きな発信者という人物以外に判断対象・比較条件の違いが書かれていない。",
+      "evidence": [
+        {
+          "id": "exp26-learning-0202",
+          "level": 2,
+          "category": "technology_media_and_privacy",
+          "perspective": null,
+          "question": "好きな発信者が「まだ分からない」と答えた時、どんな印象を持つ？",
+          "detail_text": null,
+          "reason": "発信者の不確実さを聞く。"
+        },
+        {
+          "id": "exp26-world-0446",
+          "level": 2,
+          "category": "science_research_and_uncertainty",
+          "perspective": null,
+          "question": "専門家が「まだ分からない」と答えた。正直さと物足りなさ、どんな印象になる？",
+          "detail_text": null,
+          "reason": "不確かさを言う専門家への感覚。"
+        }
+      ],
+      "suggested_resolution": "同じ人の話を、言い直しまで残った動画と、要点だけに編集した動画で見た。分かりやすさと「その人を知った感じ」は、どう違いそう？",
+      "preserve_difference": "world-0446 は専門家の不確実さへの印象を保持。learning-0201 は記事に調査過程が長く書かれる時の読む意欲、新案は言い直し/編集を通して話す人を理解した感覚。learning-0303 の趣旨を変えられた言葉への対処は扱わない。",
+      "overlapping_peer_findings": [],
+      "resolution_status": "proposed_not_applied"
+    },
+    {
+      "finding_id": "XDR-03",
+      "id": "exp26-civic-0207",
+      "priority": "required",
+      "field": "novelty",
+      "compared_ids": [
+        "exp26-care-0083"
+      ],
+      "issue": "本文は相性を理由に支援担当者を替える希望を提供側がどこまで認めるかで一致し、双方Level 3/decision_maker。背景も信頼・安心できる相手と限られた人員で同じ。公的相談と介護の名称以外の判断差分がない。",
+      "evidence": [
+        {
+          "id": "exp26-civic-0207",
+          "level": 3,
+          "category": "society_public_policy_and_environment",
+          "perspective": "decision_maker",
+          "question": "利用者が相談員との相性で担当変更を望む時、事業としてどこまで選べるようにしたい？",
+          "detail_text": "仮の配置。信頼の形成と限られた人員を考える。",
+          "reason": "支援関係を選び直す自由。"
+        },
+        {
+          "id": "exp26-care-0083",
+          "level": 3,
+          "category": "family_and_care",
+          "perspective": "decision_maker",
+          "question": "世話を受ける人が担当者との相性を理由に交代を求めたら、提供側はどこまで応じるべき？",
+          "detail_text": "仮の場面です。仕事上の問題はなく、安心できる相手の希望と人員の制約が並ぶ場面です。",
+          "reason": "ケアの相性を制度で扱う範囲。"
+        }
+      ],
+      "suggested_resolution": "公的支援の利用を終えた人が、また申し込みに来た。前の審査記録を使って早く支えることと、新しい申請として今の事情を聞くことを、どう比べたい？",
+      "preserve_difference": "care-0083 は相性で担当者を選ぶ希望を保持。civic-0201 は不支給判断の別担当による再検討、新案は利用終了後の新しい申請の審査。civic-0217 の審査待ち期間の生活保障、0283 の本人が更新で語る負担とは分ける。",
+      "overlapping_peer_findings": [],
+      "resolution_status": "proposed_not_applied"
+    },
+    {
+      "finding_id": "XDR-04",
+      "id": "exp26-civic-0101",
+      "priority": "required",
+      "field": "question/detail/category_boundary",
+      "compared_ids": [
+        "exp26-personal-0404",
+        "exp26-civic-0140",
+        "exp26-civic-0100"
+      ],
+      "issue": "友人を傷つけた後の謝罪で、動機を説明すると言い訳に見えるかという原文と背景には、司法・犯罪・安全に固有の対象がない。主題は友人への伝え方であり、L4の本人の利害・関係の深さも薄い。友人の失った居場所を足すだけの修正では深さは増えても分類境界は残る。",
+      "evidence": [
+        {
+          "id": "exp26-civic-0101",
+          "level": 4,
+          "category": "justice_safety_and_crime",
+          "perspective": "actor",
+          "question": "あなたは友人を傷つけた。謝る言葉は考えたが、説明すると言い訳に見えるかもしれない。何を相手に知ってほしい？",
+          "detail_text": "仮の修復場面。動機の説明と、自分に都合よく理解してもらう期待を分ける。",
+          "reason": "謝罪で自分を説明する望み。"
+        },
+        {
+          "id": "exp26-personal-0404",
+          "level": 4,
+          "category": "relationships_and_communication",
+          "perspective": "actor",
+          "question": "友達に謝った後、相手は関係を続けないと決めた。謝ることは関係を戻すためでもあった自分を、どう受け止める？",
+          "detail_text": "架空の謝罪では、受け取った側が復帰を約束していません。責任を認めることと、望む結果を得ることを分けて考えます。",
+          "reason": "関係回復を得られない謝罪の本人の意味を聞く。"
+        },
+        {
+          "id": "exp26-civic-0140",
+          "level": 4,
+          "category": "justice_safety_and_crime",
+          "perspective": "affected",
+          "question": "あなたは刑を終えた。友人から「これで全部終わった」と言われた時、まだ引き受ける責任と終えてよい責任をどう分ける？",
+          "detail_text": "架空の刑終了。正式な処罰、賠償、自分の罪悪感は別の時間を持つ。",
+          "reason": "責任を終える本人の意味。"
+        },
+        {
+          "id": "exp26-civic-0100",
+          "level": 4,
+          "category": "justice_safety_and_crime",
+          "perspective": "affected",
+          "question": "大切な物を盗まれたあなたに加害者が全額を返した。相手を許さずに受け取ることに、どんな気持ちがある？",
+          "detail_text": "仮の賠償。受領、感情、関係を戻す判断は同じではない。",
+          "reason": "賠償を和解と感じるかの差。"
+        }
+      ],
+      "suggested_resolution": "あなたは盗んだ物を返し、金銭の補償にも応じた。被害を受けた人は、それでも何が起きたかを公の場で確かめたいと言う。手続きが続けば自分の再出発は遅れそうな時、返した後にも残る相手の知りたいことを、何として受け止める？",
+      "preserve_difference": "civic-0140 は刑終了後の正式な処罰・賠償・罪悪感の時間の区別。新案は返還/補償後にも相手が公に確かめたい事実を持つこと。civic-0100 の補償を受け取りつつ許さない被害者の感情とは、確認を求める具体的な希望を加えて分ける。",
+      "overlapping_peer_findings": [
+        {
+          "file": "world-reviews-civic.json",
+          "id": "exp26-civic-0101",
+          "relation": "同じIDのL4深さ不足を指摘済み。こちらは分類境界も扱う。友人の居場所を失わせた原案の拡張とは併用せず、主担当が一つのafterへ統合する。"
+        }
+      ],
+      "resolution_status": "proposed_not_applied"
+    },
+    {
+      "finding_id": "XDR-05",
+      "id": "exp26-civic-0155",
+      "priority": "required",
+      "field": "question/detail/category_boundary",
+      "compared_ids": [
+        "exp26-civic-0120",
+        "exp26-learning-0238"
+      ],
+      "issue": "同僚を誤って疑った後に自分の評判を負担して説明する原文と背景は、人間関係や職場の一般的な名誉回復でも成立する。司法分類を支える手続き・安全・犯罪の判断対象が明示されていない。犯罪の語だけを足すと、既にあるcivic-0120の証言訂正にも近くなる。",
+      "evidence": [
+        {
+          "id": "exp26-civic-0155",
+          "level": 4,
+          "category": "justice_safety_and_crime",
+          "perspective": "actor",
+          "question": "あなたは同僚を誤って疑い、本人へ謝った。周囲への説明は自分の評価も下げる。相手が頼まなくても訂正したい？",
+          "detail_text": "仮の誤認。私的な謝罪と広まった評判を戻す責任を考える。",
+          "reason": "自分の評判を負担する名誉回復。"
+        },
+        {
+          "id": "exp26-civic-0120",
+          "level": 4,
+          "category": "justice_safety_and_crime",
+          "perspective": "actor",
+          "question": "あなたは目撃証言をした後、一部を勘違いしたと気付いた。疑われた人が既に評判を失った時、訂正する責任をどう感じる？",
+          "detail_text": "架空の誤認。情報の修正と既に起きた不利益の回復は別の仕事となる。",
+          "reason": "訂正後も残る証言の責任。"
+        },
+        {
+          "id": "exp26-learning-0238",
+          "level": 3,
+          "category": "technology_media_and_privacy",
+          "perspective": "actor",
+          "question": "訂正記事が元の記事ほど読まれない時、運営にはどこまで届け直す責任がある？",
+          "detail_text": "仮の場面です。訂正の掲載と、誤情報を受けた人への到達は違う。",
+          "reason": "訂正の配信責任を聞く。"
+        }
+      ],
+      "suggested_resolution": "あなたは捜査機関の広報担当で、自分の発表から無実の人への疑いが広まった。名誉回復を大きく伝えたいが、本人は顔や名前をもう出したくないと言う。自分の誤りを訂正することと、本人の望む終わり方を、どう考える？",
+      "preserve_difference": "civic-0120 は目撃証言の内容の誤りを訂正する責任。新案は無実の確認後に、名誉回復の広報で本人を再度特定してよいか。learning-0238 の訂正の到達の責任へ、捜査機関の自分が誤って疑わせた本人の再露出への意思を加える。",
+      "overlapping_peer_findings": [],
+      "resolution_status": "proposed_not_applied"
+    },
+    {
+      "finding_id": "XDR-06",
+      "id": "exp26-world-0633",
+      "priority": "required",
+      "field": "novelty",
+      "compared_ids": [
+        "exp26-world-0617"
+      ],
+      "issue": "双方は長期調査への協力者が過去の記録/語りを残したくないと言った後、研究の穴/成果喪失と、その人との関係/約束を受け止める問い。本文・背景にactorとdecision_makerの別の決定対象がなく、役割ラベルだけで意味が分かれていない。",
+      "evidence": [
+        {
+          "id": "exp26-world-0633",
+          "level": 4,
+          "category": "science_research_and_uncertainty",
+          "perspective": "decision_maker",
+          "question": "自分が始めた長期研究で、参加者から昔の語りを残したくないと言われた。成果を失う不安と、その人への約束をどう持つ？",
+          "detail_text": "仮の相談。法的な処理を決めるカードでなく説明と希望の責任。",
+          "reason": "自らの成果と協力者への約束。"
+        },
+        {
+          "id": "exp26-world-0617",
+          "level": 4,
+          "category": "science_research_and_uncertainty",
+          "perspective": "actor",
+          "question": "自分の調査に長く協力した人が、記録を残したくないと言った。研究の穴だけでなく、その人との関係をどう考える？",
+          "detail_text": "架空の撤回相談。利用条件は研究ごとに異なるとして希望を聞く場面。",
+          "reason": "研究者が協力者の変化を受ける。"
+        }
+      ],
+      "suggested_resolution": "自分が続けた長期調査では、生活が大きく変わった人ほど途中で参加をやめていた。残った人の記録には価値があるが、最初の問い全体には答えきれない。長年の研究を、どんな意味のある成果として残したい？",
+      "preserve_difference": "world-0617 は協力者の撤回希望と研究者の関係を保持。world-0475 は初期不参加を研究材料にする範囲、world-0641 は自分が選んだ方法で外れた人へのやり直し責任。新案は継続の途中で生じた偏りを受けた既存成果の意味。author_worldが差分とL4視点を妥当と返答したが、ユーザー承認ではない。",
+      "overlapping_peer_findings": [],
+      "resolution_status": "proposed_not_applied"
+    },
+    {
+      "finding_id": "XDR-07",
+      "id": "exp26-care-0031",
+      "priority": "optional",
+      "field": "novelty",
+      "compared_ids": [
+        "exp26-care-0424",
+        "exp26-care-0428"
+      ],
+      "issue": "家族が先回りして身の回りを整える時、何を任せ何を残すかという原文は、体調が悪い時にどこを任せるかのCS-H1と同じ支援の裁量へ近い。家族内の相互理解に固有の追加理由が弱い。",
+      "evidence": [
+        {
+          "id": "exp26-care-0031",
+          "level": 2,
+          "category": "family_and_care",
+          "perspective": null,
+          "question": "家族が先回りして身の回りを整えてくれるなら、何は頼み、何は残しておいてほしい？",
+          "detail_text": null,
+          "reason": "親密なケアの受け方を聞く。"
+        },
+        {
+          "id": "exp26-care-0424",
+          "level": 2,
+          "category": "health_and_disability",
+          "perspective": null,
+          "question": "体調が悪く、身近な人が手伝うと楽になるが、自分でできることまで代わられると落ち着かない。どこを任せたい？",
+          "detail_text": null,
+          "reason": "CS-H1、受け取る支援の境界。"
+        },
+        {
+          "id": "exp26-care-0428",
+          "level": 2,
+          "category": "health_and_disability",
+          "perspective": null,
+          "question": "身体の不便を人が先に補ってくれる時、頼む機会も残してほしいと思う？",
+          "detail_text": null,
+          "reason": "先回りと希望を話す余地。"
+        }
+      ],
+      "suggested_resolution": "単に家族から身近な人へ置換しない。家族の問いを残すなら、先回りで伝わる親密さと、言葉にして頼み合って知る関係を明示する。例：「家族が頼む前に気づいて世話をしてくれる。助かる一方、自分の希望を言葉にする機会は減る。気づいてもらうことと、頼み合うことでは、家族との近さはどう違う？」",
+      "preserve_difference": "健康側は身体の不便と自分で行う裁量、家族側は言葉を交わす関係の意味へ分ける。0037の断る説明負担とは、希望を言う機会と親密さの意味で分ける必要がある。",
+      "resolution_status": "optional_not_drafted"
+    },
+    {
+      "finding_id": "XDR-08",
+      "id": "exp26-livelihood-0181",
+      "priority": "optional",
+      "field": "question/novelty",
+      "compared_ids": [
+        "exp26-livelihood-0042"
+      ],
+      "issue": "L2の転職後の肩書きのない自己紹介から、L4の長年の職場を離れた自己紹介へ、本文で増えた条件は主に継続年数である。退職後の職業的自己像は深い軸になり得るが、何を紹介するかだけではL2との差が弱い。",
+      "evidence": [
+        {
+          "id": "exp26-livelihood-0181",
+          "level": 4,
+          "category": "work_and_economy",
+          "perspective": "affected",
+          "question": "長年の職場を離れた後、初対面で何の仕事か聞かれる。肩書きのない今の自分を、どう紹介したい？",
+          "detail_text": "架空の退職後。収入の有無を評価せず、職業が担っていた自己説明を考える。",
+          "reason": "退職後の職業的自己紹介を聞く。"
+        },
+        {
+          "id": "exp26-livelihood-0042",
+          "level": 2,
+          "category": "work_and_economy",
+          "perspective": null,
+          "question": "転職して前の肩書きがなくなった。初対面の人に、何を仕事の紹介として話したい？",
+          "detail_text": null,
+          "reason": "肩書きと働く自己像を聞く。"
+        }
+      ],
+      "suggested_resolution": "例：「長年の職場を離れ、もう働く予定はない。仕事を聞かれるたび、何もしていない人になった気がする。仕事から離れた自分を、何で大切にしたい？」。背景は職業の紹介方法でなく、職業で支えられていた自己価値の意味を残す。",
+      "preserve_difference": "L2は今の職業の説明、L4は職業から離れた自己価値。単に「自分」「長年」だけを足したことで区別しない。",
+      "resolution_status": "optional_not_drafted"
+    }
+  ],
+  "retained_distinctions": [
+    {
+      "axis": "故人の記録・悲嘆・公的な歴史",
+      "ids": [
+        "exp26-learning-0263",
+        "exp26-care-0174",
+        "exp26-learning-0567",
+        "exp26-world-0663",
+        "exp26-livelihood-0630"
+      ],
+      "difference": "記録を読んで故人を知る境界／遺品の片づけと残す基準／確認された歴史資料を展示する公的責任と家族への愛情／研究資料の寄託と科学的な利用／同居した家への帰属は、読む・手放す・展示する・継承する・住み続けるという異なる対象。",
+      "condition": "故人・記憶という語だけでまとめない。科学のカードは資料の利用/継承、住宅のカードは住居そのものの意味を主題として保持する。"
+    },
+    {
+      "axis": "追悼の時期と祈りの形式",
+      "ids": [
+        "exp26-care-0172",
+        "exp26-learning-0499"
+      ],
+      "difference": "今年は記念日も普段通りに過ごしたい家族間の悲嘆の時期と、共同の追悼で選ばれた祈りの形式が本人に合わない感覚は別。",
+      "condition": "日常の過ごし方を選ぶ自由と、信仰/儀式への距離を消して一般的な追悼参加の二択へまとめない。"
+    },
+    {
+      "axis": "故人の希望が不明な記録と明示された消去の約束",
+      "ids": [
+        "exp26-learning-0263",
+        "exp26-learning-0294",
+        "exp26-learning-0326"
+      ],
+      "difference": "再確認できず未知の私的領域を読める場合、生前に一時の言葉として消してほしいと頼まれた場合、共有アルバムを預かり家族と友人が相反する希望を持つ場合は、本人の意思の分かり方と決定権が異なる。",
+      "condition": "読むこと、保管、共有、消去の判断を一つの「故人を知る権利」に置換しない。"
+    },
+    {
+      "axis": "家の共同決定と本人の日常の自律",
+      "ids": [
+        "exp26-care-0150",
+        "exp26-care-0589",
+        "disability-003"
+      ],
+      "difference": "世話を受けながら家の共同決定へ参加し続けたい立場と、身体的な実施を助けてもらいながら本人の判断を残したい生活主体、必要な学校配慮を他者の負担が大きくても求める立場は異なる。",
+      "condition": "家族カードは家庭の共同決定への参加、健康カードは実施と意思の分離、既存は学校継続に必要な配慮への権利を保持する。"
+    },
+    {
+      "axis": "支援の範囲・屋根への依存・見守り住宅・家族監視",
+      "ids": [
+        "exp26-care-0591",
+        "exp26-livelihood-0641",
+        "exp26-livelihood-0627",
+        "privacy-001"
+      ],
+      "difference": "頼んだ手助けが私生活全体へ広がる境界／住居援助を失う不安の中で情報開示を断る自由／住宅確保と定期訪問の受け止め／本人の許可のない位置情報の継続把握は、依存条件・媒体・住宅確保の条件が違う。",
+      "condition": "住宅確保の困難、援助を失う不安、相談可能な定期訪問、本人許可のない位置把握を具体的に保持する。全て「善意の監視は許せる？」へ縮めない。"
+    },
+    {
+      "axis": "達成後の空白と独学で得た力・共同の経験",
+      "ids": [
+        "exp26-personal-0206",
+        "exp26-learning-0153"
+      ],
+      "difference": "目標達成しても満たされない自己と、独学で得た力と共に学んだ仲間のいない時間の意味は分けられる。",
+      "condition": "learning-0153を残す場合、学びで得た力そのものへの満足と、互いの学びを見届ける共同経験がないことを聞く軸を保つ。満たされなさ全般を問うとTP-06へ戻る。"
+    },
+    {
+      "axis": "認められた自己像と才能への支援",
+      "ids": [
+        "exp26-personal-0212",
+        "exp26-learning-0101"
+      ],
+      "difference": "憧れられてきた特徴を手放して何者になるかの未知と、才能を見込んで教育的な支援を受けた分野を離れる時の感謝/継続義務は分けられる。",
+      "condition": "学ぶ分野への支援が本人の人生を拘束するかという条件を失い、単に得意を手放す自己像の問いへ縮めない。"
+    },
+    {
+      "axis": "昔の同意・研究記録の継続利用・新しい提供",
+      "ids": [
+        "exp26-personal-0570",
+        "exp26-world-0550",
+        "r6-08-04-l4"
+      ],
+      "difference": "事実条件は同じで内面の価値観が変わった同意の連続性／参加をやめても既提供記録が説明された目的で残る条件／これからの患者の利益のため新しい提供の情報リスクを引き受ける判断は異なる。",
+      "condition": "過去/未来、継続利用/新しい提供、条件の変更/自己の変化を保持する。研究制度の実在ルールが一律だと背景にしない。"
+    },
+    {
+      "axis": "実際の約束と研究参加の申し訳なさ",
+      "ids": [
+        "exp26-personal-0566",
+        "exp26-world-0568"
+      ],
+      "difference": "自分の約束を頼りに他者が既に準備した場合と、自由にやめられる研究で記録を途切れさせることへの本人の申し訳なさは、責任を発生させた合意の有無が異なる。",
+      "condition": "world-0568に参加継続の義務を作らず、personal-0566の他者が準備している約束を消さない。"
+    },
+    {
+      "axis": "謝罪を受け取られた後と、連絡を拒まれた償い",
+      "ids": [
+        "exp26-personal-0404",
+        "exp26-civic-0099"
+      ],
+      "difference": "友人への謝罪はできたが関係回復を得られなかった自分の動機と、被害を受けた人から連絡を望まれず会えないまま責任を果たす意味は、修復の進行段階が異なる。",
+      "condition": "司法側は加害後の責任と接触の不許可、関係側は謝罪の動機と関係終了を保持する。謝罪一般の期待へまとめない。"
+    },
+    {
+      "axis": "意見を変える責任と過去の処分",
+      "ids": [
+        "exp26-personal-0546",
+        "exp26-civic-0147",
+        "bridge-035"
+      ],
+      "difference": "自分の言葉を信じて動いた人への説明の順／自分の処分で失われた時間への責任／考えを変えること自体をぶれと感じるかの入口は、判断権と影響の不可逆性が異なる。",
+      "condition": "本人が実際に決めた処分、他者の依存、単純な自分の感覚の入口を、それぞれ残す。"
+    }
+  ],
+  "draft_file": "cross-domain-fixes.json",
+  "required_finding_count": 6,
+  "optional_finding_count": 2,
+  "resolution_notes": [
+    "learning-0093は主担当が既に把握していた差替え予定を具体化した。別作者の同じIDのdraftへ同時に機械適用しない。",
+    "civic-0101のL4深さの指摘はworld-reviews-civic.jsonと重複する。分類境界を含めて一つの最終afterに統合する。",
+    "author_worldはworld-0633の新案と0475/0641との違いを妥当と返答した。著者の賛成は採用済み/ユーザー承認を意味しない。",
+    "world-0617は比較対象として保持を推奨し、変更draftは作らない。",
+    "カテゴリー/Level/視点の枠を保つ差替えが目的であり、件数を満たすための人物・物・媒体の置換を推奨しない。"
+  ],
+  "limitations": [
+    "全3768追加案をこの横断担当が全文読了したとは主張しない。全件の担当外レビューは別担当の記録を参照。",
+    "全4710同士の可能な意味の組合せや言い換えを完全比較していない。指摘がないカードの意味独立性を保証しない。",
+    "新しいafterも未承認候補であり、実際の会話テストをしていない。周辺カードとの重点比較を超える独立性は未検証。",
+    "今回ネット出典を再検索/再検証していない。代表28案の資料確認は2026-10-07の分野別分析に依拠し、全新規仮定を現実の制度の説明にしない。",
+    "数量、完全一致の不存在、JSON構造検証の成功は、意味・Omoi適合・事実関係の独立した証拠ではない。",
+    "正本level1〜4.jsonと担当shardsを編集していない。問題変更の最終ユーザー確認は未了。"
+  ],
+  "artifact_validation": {
+    "status": "passed",
+    "checks": [
+      "JSON読取と実読IDの一意性/135追加+16既存の件数整合",
+      "全指摘と保持条件の引用IDが実読範囲に含まれる",
+      "6差替えのsource_sha256とbeforeが現在の原稿に一致",
+      "id/level/category/sensitivity/perspectiveとeditorialが全afterで維持される",
+      "Markdown末尾空白なし、git diff --check対象で問題なし"
+    ],
+    "excluded": [
+      "統合proposalのスキーマ検証",
+      "全追加案の意味独立性の証明",
+      "実際の会話テスト"
+    ]
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "reviewer": "addition_gap_review",
+  "date": "2026-10-08",
+  "status": "draft_not_applied_not_approved",
+  "format_note": "source_sha256はsource_fileのファイル全体。before/afterはcard/reason/editorialを含む全addition。適用前にsourceのhashとbeforeを照合し、各担当draftへ一度だけ統合する。",
+  "changes": [
+    {
+      "id": "exp26-learning-0093",
+      "priority": "required",
+      "source_file": "staging-expansion-2026-10-08/shards/learning/additions.json",
+      "source_sha256": "19ce08f2190733645109a7bcf6c1df29a61c3e8df60df084f7a04944f039e7a9",
+      "before": {
+        "card": {
+          "id": "exp26-learning-0093",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "school_and_youth",
+          "topic": "learning_aspiration",
+          "question": "何年も憧れた学校へ入り、そのため友達との時間も後回しにした。学ぶ内容には心が動かない今、進んできた人生をどう受け止める？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の場面です。合格自体は達成している。達成後の自己像と、学ぶ目的のずれを考える。"
+          }
+        },
+        "reason": "学校へ進むために使った人生を聞く。",
+        "editorial": {
+          "author_group": "learning",
+          "fact_status": "hypothetical",
+          "source_row": "school_and_youth__l4.txt:1"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-learning-0093",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "school_and_youth",
+          "topic": "qualification_and_lifelong_inquiry",
+          "question": "憧れた学校で、生涯深めたい問いが見つかった。けれど学校が卒業の研究として認めるのは別の分野で、その資格も今後の自分には必要だ。資格を得る学びと、自分の問いを続ける学びを、人生の中でどうつなげたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の学校と卒業条件です。この学校では学びたい内容も必要な資格も得られるが、本人が生涯深めたい問いは卒業研究として認められる分野の外にある設定です。資格を得る価値を否定せず、学校に認められる成果と本人の学びの意味をどうつなぐか考えます。実在の学校に共通する卒業条件とはしません。"
+          }
+        },
+        "reason": "達成後の空白から、必要な資格と生涯深めたい問いが同じ学習評価に収まらない本人の学びへ分ける。",
+        "editorial": {
+          "author_group": "learning",
+          "fact_status": "hypothetical",
+          "source_row": "school_and_youth__l4.txt:1"
+        }
+      },
+      "reason": "何年も目指した目標を達成した後の満たされなさと、そのため後回しにした友人との時間を受け止める構造が同じ。学校名への対象置換だけで、当初の問いの独立した増分にはならない。主担当が既に差替え予定としている既知の指摘を具体案へまとめる。 達成後の空白から、必要な資格と生涯深めたい問いが同じ学習評価に収まらない本人の学びへ分ける。",
+      "addresses": [
+        "XDR-01"
+      ],
+      "compared_ids": [
+        "exp26-personal-0206"
+      ],
+      "preserved_fields": [
+        "id",
+        "level",
+        "category",
+        "sensitivity",
+        "perspective"
+      ],
+      "status": "draft_not_applied"
+    },
+    {
+      "id": "exp26-learning-0202",
+      "priority": "required",
+      "source_file": "staging-expansion-2026-10-08/shards/learning/additions.json",
+      "source_sha256": "19ce08f2190733645109a7bcf6c1df29a61c3e8df60df084f7a04944f039e7a9",
+      "before": {
+        "card": {
+          "id": "exp26-learning-0202",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "technology_media_and_privacy",
+          "topic": "digital_trust",
+          "question": "好きな発信者が「まだ分からない」と答えた時、どんな印象を持つ？"
+        },
+        "reason": "発信者の不確実さを聞く。",
+        "editorial": {
+          "author_group": "learning",
+          "fact_status": "hypothetical",
+          "source_row": "technology_media_and_privacy__l2.txt:29"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-learning-0202",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "technology_media_and_privacy",
+          "topic": "media_editing_and_personal_understanding",
+          "question": "同じ人の話を、言い直しまで残った動画と、要点だけに編集した動画で見た。分かりやすさと「その人を知った感じ」は、どう違いそう？"
+        },
+        "reason": "不確実さを述べる人への印象から、動画編集による情報の理解と人柄を知った感覚の違いへ分ける。",
+        "editorial": {
+          "author_group": "learning",
+          "fact_status": "hypothetical",
+          "source_row": "technology_media_and_privacy__l2.txt:29"
+        }
+      },
+      "reason": "双方の本文と理由は「まだ分からない」と答える人への印象を聞く。同じLevel 2で、専門家と好きな発信者という人物以外に判断対象・比較条件の違いが書かれていない。 不確実さを述べる人への印象から、動画編集による情報の理解と人柄を知った感覚の違いへ分ける。",
+      "addresses": [
+        "XDR-02"
+      ],
+      "compared_ids": [
+        "exp26-world-0446"
+      ],
+      "preserved_fields": [
+        "id",
+        "level",
+        "category",
+        "sensitivity",
+        "perspective"
+      ],
+      "status": "draft_not_applied"
+    },
+    {
+      "id": "exp26-civic-0207",
+      "priority": "required",
+      "source_file": "staging-expansion-2026-10-08/shards/civic/additions.json",
+      "source_sha256": "b07f76f14e82446aa5066e6944190df4b4ee2ba2991d93b129da3dd44c0f27df",
+      "before": {
+        "card": {
+          "id": "exp26-civic-0207",
+          "level": 3,
+          "sensitivity": 2,
+          "category": "society_public_policy_and_environment",
+          "topic": "receiving_public_help",
+          "question": "利用者が相談員との相性で担当変更を望む時、事業としてどこまで選べるようにしたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の配置。信頼の形成と限られた人員を考える。"
+          }
+        },
+        "reason": "支援関係を選び直す自由。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l3.txt:9",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-civic-0207",
+          "level": 3,
+          "sensitivity": 2,
+          "category": "society_public_policy_and_environment",
+          "topic": "reapplication_and_assessment_records",
+          "question": "公的支援の利用を終えた人が、また申し込みに来た。前の審査記録を使って早く支えることと、新しい申請として今の事情を聞くことを、どう比べたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の制度です。利用を終えた後の再申請は認められており、以前の記録にも現在の説明にも確認が必要な場面です。過去の審査記録で手続きを短くする価値と、以前とは変わった暮らしを把握する価値を比べます。実在の制度で審査記録の扱いが一律であるとはしません。"
+          }
+        },
+        "reason": "担当者との相性による交代から、公的支援の再申請で過去の審査記録を引き継ぐ判断へ分ける。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l3.txt:9",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "reason": "本文は相性を理由に支援担当者を替える希望を提供側がどこまで認めるかで一致し、双方Level 3/decision_maker。背景も信頼・安心できる相手と限られた人員で同じ。公的相談と介護の名称以外の判断差分がない。 担当者との相性による交代から、公的支援の再申請で過去の審査記録を引き継ぐ判断へ分ける。",
+      "addresses": [
+        "XDR-03"
+      ],
+      "compared_ids": [
+        "exp26-care-0083"
+      ],
+      "preserved_fields": [
+        "id",
+        "level",
+        "category",
+        "sensitivity",
+        "perspective"
+      ],
+      "status": "draft_not_applied"
+    },
+    {
+      "id": "exp26-civic-0101",
+      "priority": "required",
+      "source_file": "staging-expansion-2026-10-08/shards/civic/additions.json",
+      "source_sha256": "b07f76f14e82446aa5066e6944190df4b4ee2ba2991d93b129da3dd44c0f27df",
+      "before": {
+        "card": {
+          "id": "exp26-civic-0101",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "justice_safety_and_crime",
+          "topic": "apology_and_restoration",
+          "question": "あなたは友人を傷つけた。謝る言葉は考えたが、説明すると言い訳に見えるかもしれない。何を相手に知ってほしい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の修復場面。動機の説明と、自分に都合よく理解してもらう期待を分ける。"
+          }
+        },
+        "reason": "謝罪で自分を説明する望み。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "justice_safety_and_crime__l4.txt:14",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-civic-0101",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "justice_safety_and_crime",
+          "topic": "restitution_and_public_truth",
+          "question": "あなたは盗んだ物を返し、金銭の補償にも応じた。被害を受けた人は、それでも何が起きたかを公の場で確かめたいと言う。手続きが続けば自分の再出発は遅れそうな時、返した後にも残る相手の知りたいことを、何として受け止める？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の被害回復の場面です。返還や補償に応じたことと、相手が出来事を確かめたい望みは別です。本人が感じる再出発への影響を仮定し、実在の裁判の進行や法的権利を一律に説明するものではありません。"
+          },
+          "content_warning": [
+            "crime_and_punishment"
+          ]
+        },
+        "reason": "私的な謝罪の伝え方から、物を返した後の被害の事実確認と自分の再出発を受け止める加害者の立場へ分ける。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "justice_safety_and_crime__l4.txt:14",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "reason": "友人を傷つけた後の謝罪で、動機を説明すると言い訳に見えるかという原文と背景には、司法・犯罪・安全に固有の対象がない。主題は友人への伝え方であり、L4の本人の利害・関係の深さも薄い。友人の失った居場所を足すだけの修正では深さは増えても分類境界は残る。 私的な謝罪の伝え方から、物を返した後の被害の事実確認と自分の再出発を受け止める加害者の立場へ分ける。",
+      "addresses": [
+        "XDR-04"
+      ],
+      "compared_ids": [
+        "exp26-personal-0404",
+        "exp26-civic-0140",
+        "exp26-civic-0100"
+      ],
+      "preserved_fields": [
+        "id",
+        "level",
+        "category",
+        "sensitivity",
+        "perspective"
+      ],
+      "status": "draft_not_applied"
+    },
+    {
+      "id": "exp26-civic-0155",
+      "priority": "required",
+      "source_file": "staging-expansion-2026-10-08/shards/civic/additions.json",
+      "source_sha256": "b07f76f14e82446aa5066e6944190df4b4ee2ba2991d93b129da3dd44c0f27df",
+      "before": {
+        "card": {
+          "id": "exp26-civic-0155",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "justice_safety_and_crime",
+          "topic": "apology_and_restoration",
+          "question": "あなたは同僚を誤って疑い、本人へ謝った。周囲への説明は自分の評価も下げる。相手が頼まなくても訂正したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の誤認。私的な謝罪と広まった評判を戻す責任を考える。"
+          }
+        },
+        "reason": "自分の評判を負担する名誉回復。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "justice_safety_and_crime__l4.txt:68",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-civic-0155",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "justice_safety_and_crime",
+          "topic": "exoneration_and_publicity",
+          "question": "あなたは捜査機関の広報担当で、自分の発表から無実の人への疑いが広まった。名誉回復を大きく伝えたいが、本人は顔や名前をもう出したくないと言う。自分の誤りを訂正することと、本人の望む終わり方を、どう考える？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の誤った発表の後です。本人の無実は確認され、誤情報の訂正は必要だと分かった場面にします。訂正を大きく届ける価値と、再度特定されずに暮らしたい本人の希望を比べます。実在機関の広報義務を定めるものではありません。"
+          },
+          "content_warning": [
+            "crime_and_punishment",
+            "privacy_and_surveillance"
+          ]
+        },
+        "reason": "同僚への私的な誤解の説明から、公の捜査発表で疑いを広めた自分が、名誉回復と本人の再露出しない希望を受け止める責任へ分ける。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "justice_safety_and_crime__l4.txt:68",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "reason": "同僚を誤って疑った後に自分の評判を負担して説明する原文と背景は、人間関係や職場の一般的な名誉回復でも成立する。司法分類を支える手続き・安全・犯罪の判断対象が明示されていない。犯罪の語だけを足すと、既にあるcivic-0120の証言訂正にも近くなる。 同僚への私的な誤解の説明から、公の捜査発表で疑いを広めた自分が、名誉回復と本人の再露出しない希望を受け止める責任へ分ける。",
+      "addresses": [
+        "XDR-05"
+      ],
+      "compared_ids": [
+        "exp26-civic-0120",
+        "exp26-learning-0238"
+      ],
+      "preserved_fields": [
+        "id",
+        "level",
+        "category",
+        "sensitivity",
+        "perspective"
+      ],
+      "status": "draft_not_applied"
+    },
+    {
+      "id": "exp26-world-0633",
+      "priority": "required",
+      "source_file": "staging-expansion-2026-10-08/shards/world/additions.json",
+      "source_sha256": "c1b10b94608e8ce0e79ae52a04482877a36f644826aa942ef949fe0e66113732",
+      "before": {
+        "card": {
+          "id": "exp26-world-0633",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "consent_over_time",
+          "question": "自分が始めた長期研究で、参加者から昔の語りを残したくないと言われた。成果を失う不安と、その人への約束をどう持つ？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の相談。法的な処理を決めるカードでなく説明と希望の責任。"
+          },
+          "content_warning": [
+            "privacy_and_surveillance"
+          ]
+        },
+        "reason": "自らの成果と協力者への約束。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:84"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0633",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "longitudinal_attrition_and_achievement",
+          "question": "自分が続けた長期調査では、生活が大きく変わった人ほど途中で参加をやめていた。残った人の記録には価値があるが、最初の問い全体には答えきれない。長年の研究を、どんな意味のある成果として残したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の調査で、途中で参加をやめた人と継続した人に違いがあると分かった場面です。ここで分かったことと分からなかったことを分けた上で、自分が長年築いた研究をどう位置付けるか考えます。全ての長期研究が同じ偏りを持つとはしません。"
+          },
+          "content_warning": [
+            "privacy_and_surveillance"
+          ]
+        },
+        "reason": "撤回希望への責任の0617から分け、長期の参加脱落によって当初の問いに答えきれない自分の研究の意味を聞く。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:84"
+        }
+      },
+      "reason": "双方は長期調査への協力者が過去の記録/語りを残したくないと言った後、研究の穴/成果喪失と、その人との関係/約束を受け止める問い。本文・背景にactorとdecision_makerの別の決定対象がなく、役割ラベルだけで意味が分かれていない。 撤回希望への責任の0617から分け、長期の参加脱落によって当初の問いに答えきれない自分の研究の意味を聞く。",
+      "addresses": [
+        "XDR-06"
+      ],
+      "compared_ids": [
+        "exp26-world-0617"
+      ],
+      "preserved_fields": [
+        "id",
+        "level",
+        "category",
+        "sensitivity",
+        "perspective"
+      ],
+      "status": "draft_not_applied"
+    }
+  ],
+  "retained_without_change": [
+    "exp26-world-0617"
+  ],
+  "review_reference": "cross-domain-review.json",
+  "validation_note": "このファイル自体のJSONとID/参照/保全フィールド整合性のみ確認。proposalの構造検証と統合後検証は主担当へ渡す。"
+}

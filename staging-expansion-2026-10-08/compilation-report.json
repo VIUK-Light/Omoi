@@ -1,0 +1,71 @@
+{
+  "status": "compiled_for_review",
+  "current_count": 942,
+  "additions_count": 3768,
+  "proposed_total": 4710,
+  "author_groups": [
+    {
+      "group": "personal",
+      "additions": 593,
+      "levels": {
+        "1": 194,
+        "2": 139,
+        "3": 112,
+        "4": 148
+      }
+    },
+    {
+      "group": "care",
+      "additions": 670,
+      "levels": {
+        "1": 55,
+        "2": 145,
+        "3": 162,
+        "4": 308
+      }
+    },
+    {
+      "group": "livelihood",
+      "additions": 710,
+      "levels": {
+        "1": 91,
+        "2": 137,
+        "3": 211,
+        "4": 271
+      }
+    },
+    {
+      "group": "learning",
+      "additions": 574,
+      "levels": {
+        "1": 73,
+        "2": 110,
+        "3": 156,
+        "4": 235
+      }
+    },
+    {
+      "group": "civic",
+      "additions": 558,
+      "levels": {
+        "1": 38,
+        "2": 81,
+        "3": 190,
+        "4": 249
+      }
+    },
+    {
+      "group": "world",
+      "additions": 663,
+      "levels": {
+        "1": 74,
+        "2": 90,
+        "3": 222,
+        "4": 277
+      }
+    }
+  ],
+  "exact_normalized_duplicates": [],
+  "baseline_unchanged": true,
+  "production_files_written": 0
+}

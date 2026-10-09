@@ -1,0 +1,112 @@
+{
+  "status": "root_reviewed_staging_amendment_pending_user_approval",
+  "source_sha256": "bd6af834095fcd5c1fe5f4f0e75900e368a0aaa54f86d1186bbb46a037d8c5b1",
+  "changes": [
+    {
+      "id": "exp26-world-0650",
+      "before": {
+        "card": {
+          "id": "exp26-world-0650",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "science_research_and_uncertainty",
+          "topic": "research_legacy",
+          "question": "自分の発見を確かめる最後の試料を、仲間の新しい研究で使い切れば前に進めるとする。後から自分の結果を確かめられなくなる時、自分は何を未来へ残したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の試料配分。新しい実験で試料を消費し、記録を残しても同じ試料そのものは再び調べられない設定。既に発表した知識の検証手段と、新しい問いの機会を比べる。"
+          }
+        },
+        "reason": "自分の発見を確かめる最後の試料を失う責任と、新しい研究へ託す機会。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:101"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0650",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "science_research_and_uncertainty",
+          "topic": "research_legacy",
+          "question": "自分の発見を確かめる最後の試料を、仲間の新しい研究で使い切れば前に進めるとする。後から同じ試料で再確認できなくなる時、自分は何を未来へ残したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の試料配分。新しい実験で試料を消費し、記録を残しても同じ試料そのものは再び調べられない設定。既に発表した知識の検証手段と、新しい問いの機会を比べる。"
+          }
+        },
+        "reason": "自分の発見を確かめる最後の試料を失う責任と、新しい研究へ託す機会。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:101"
+        }
+      },
+      "reason": "再確認できなくなる範囲を同じ試料に限定し、背景と本文を一致させる。",
+      "addresses": [
+        "recheck-world-optional-exp26-world-0650"
+      ]
+    },
+    {
+      "id": "exp26-world-0662",
+      "before": {
+        "card": {
+          "id": "exp26-world-0662",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "knowledge_burden",
+          "question": "大切な人と生きてきた世界の説明を研究が変え、自分だけは以前のように信じられなくなった。もう同じ意味では見られない自分を、相手へどう伝えたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の知識の変化。相手の信じ方を誤りと決めるのではなく、同じ世界観で人生を過ごした関係と、知った後の本人の意味の違いを考える。"
+          }
+        },
+        "reason": "長く共有した世界観が変わる本人が、大切な相手との意味の違いを伝える。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:113"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-world-0662",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "science_research_and_uncertainty",
+          "topic": "knowledge_burden",
+          "question": "大切な人と共に生きる支えにしてきた、人や自然についての考え方が、研究を読んで変わった。もう同じ意味で世界を見られない自分を、相手へどう伝えたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の知識の変化。相手の信じ方を誤りと決めるのではなく、同じ世界観で人生を過ごした関係と、知った後の本人の意味の違いを考える。"
+          }
+        },
+        "reason": "長く共有した世界観が変わる本人が、大切な相手との意味の違いを伝える。",
+        "editorial": {
+          "author_group": "world",
+          "fact_status": "hypothetical",
+          "source_row": "science_research_and_uncertainty__l4.txt:113"
+        }
+      },
+      "reason": "抽象的な「世界の説明」を、人や自然についての考え方と研究を読んだ経験へ具体化する。",
+      "addresses": [
+        "recheck-world-optional-exp26-world-0662"
+      ]
+    }
+  ],
+  "finding_resolutions": [
+    {
+      "id": "exp26-world-0650",
+      "status": "recheck_optional_adopted",
+      "rationale": "再確認できなくなる範囲を同じ試料に限定し、背景と本文を一致させる。"
+    },
+    {
+      "id": "exp26-world-0662",
+      "status": "recheck_optional_adopted",
+      "rationale": "抽象的な「世界の説明」を、人や自然についての考え方と研究を読んだ経験へ具体化する。"
+    }
+  ]
+}

@@ -1,0 +1,599 @@
+{
+  "status": "passed_preparation_pending_user_approval",
+  "prepared_date": "2026-10-08",
+  "timezone": "Asia/Tokyo",
+  "production_files_written": 0,
+  "baseline_sha256": {
+    "level1.json": "9461b394173379dc507a72234e1e3909decf6637c67af1c2747d9d8214a0a487",
+    "level2.json": "66ec755c88419271054070d5a61787f0306fd3daaa406b16414c25590b06a179",
+    "level3.json": "49f7ef9236ddaf94f0246dd7b3f79134c1c468921a389ce8ae2d1510d3fa9ee5",
+    "level4.json": "e07c845c5c82155fc0ab565f9cc9212c9f715f86d3e926f36526b5a8f60c15d7"
+  },
+  "proposal_sha256": "ee78bde10a1dd39c320274f99ff31f7031bd01e4258310f934c664d06c609a42",
+  "checks": [
+    {
+      "check": "proposal_requires_final_approval",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "addition_only_scope",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "live_942_cards_unchanged",
+      "status": "passed",
+      "evidence": {
+        "level1.json": "9461b394173379dc507a72234e1e3909decf6637c67af1c2747d9d8214a0a487",
+        "level2.json": "66ec755c88419271054070d5a61787f0306fd3daaa406b16414c25590b06a179",
+        "level3.json": "49f7ef9236ddaf94f0246dd7b3f79134c1c468921a389ce8ae2d1510d3fa9ee5",
+        "level4.json": "e07c845c5c82155fc0ab565f9cc9212c9f715f86d3e926f36526b5a8f60c15d7"
+      }
+    },
+    {
+      "check": "exact_total",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "unique_ids",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "no_exact_normalized_question_duplicates",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "all_individual_reasons_present",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "authored_existing_references_resolve",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "factual_status_and_source_scope_explicit",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "shard_matches_proposal_personal",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_self_and_values",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_relationships_and_communication",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_ethics_and_decision_making",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "shard_matches_proposal_care",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_family_and_care",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_gender_sexuality_and_identity",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_health_and_disability",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "shard_matches_proposal_livelihood",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_work_and_economy",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_money_consumption_and_tax",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_housing_community_and_transport",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "shard_matches_proposal_learning",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_school_and_youth",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_technology_media_and_privacy",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_culture_religion_and_history",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "shard_matches_proposal_civic",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_justice_safety_and_crime",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_society_public_policy_and_environment",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_democracy_rights_and_participation",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "shard_matches_proposal_world",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_climate_environment_energy_and_disaster",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_international_peace_and_cooperation",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_level_allocation_science_research_and_uncertainty",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "level_targets",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "csv_exact_full_text_round_trip",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_self_and_values",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_relationships_and_communication",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_ethics_and_decision_making",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_family_and_care",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_gender_sexuality_and_identity",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_health_and_disability",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_work_and_economy",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_money_consumption_and_tax",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_housing_community_and_transport",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_school_and_youth",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_technology_media_and_privacy",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_culture_religion_and_history",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_justice_safety_and_crime",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_society_public_policy_and_environment",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_democracy_rights_and_participation",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_climate_environment_energy_and_disaster",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_international_peace_and_cooperation",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "category_document_science_research_and_uncertainty",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "offline_review_exact_final_content",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "comparison_candidates_cover_all_additions",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "comparison_candidate_original_questions_match",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "independent_full_review_personal",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "independent_full_review_care",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "independent_full_review_livelihood",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "independent_full_review_world",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "independent_full_review_civic",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "independent_full_review_learning",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "initial_independent_review_covers_every_addition_once",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "no_unresolved_required_findings",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "resolution_matches_final_shards",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "changed_cards_recorded_and_rechecked",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "dataset_validator_matches_final_input",
+      "status": "passed",
+      "evidence": null
+    },
+    {
+      "check": "existing_dataset_validator",
+      "status": "passed",
+      "evidence": {
+        "errors": 0,
+        "warnings": 3196,
+        "finding_codes": {
+          "detail_without_sources": 3196
+        }
+      }
+    },
+    {
+      "check": "review_browser_check_passed_on_final_artifact",
+      "status": "passed",
+      "evidence": null
+    }
+  ],
+  "counts": {
+    "current": 942,
+    "additional": 3768,
+    "proposed_total": 4710,
+    "categories": 18,
+    "levels": {
+      "1": {
+        "current": 175,
+        "additional": 525,
+        "total": 700
+      },
+      "2": {
+        "current": 98,
+        "additional": 702,
+        "total": 800
+      },
+      "3": {
+        "current": 307,
+        "additional": 1053,
+        "total": 1360
+      },
+      "4": {
+        "current": 362,
+        "additional": 1488,
+        "total": 1850
+      }
+    }
+  },
+  "category_table": [
+    {
+      "id": "self_and_values",
+      "name": "自分・価値観",
+      "current": 55,
+      "additional": 245,
+      "total": 300
+    },
+    {
+      "id": "relationships_and_communication",
+      "name": "人間関係・コミュニケーション",
+      "current": 265,
+      "additional": 185,
+      "total": 450
+    },
+    {
+      "id": "ethics_and_decision_making",
+      "name": "倫理・意思決定",
+      "current": 17,
+      "additional": 163,
+      "total": 180
+    },
+    {
+      "id": "family_and_care",
+      "name": "家族・ケア",
+      "current": 47,
+      "additional": 253,
+      "total": 300
+    },
+    {
+      "id": "gender_sexuality_and_identity",
+      "name": "ジェンダー・性・アイデンティティ",
+      "current": 100,
+      "additional": 150,
+      "total": 250
+    },
+    {
+      "id": "health_and_disability",
+      "name": "健康・障害",
+      "current": 33,
+      "additional": 267,
+      "total": 300
+    },
+    {
+      "id": "work_and_economy",
+      "name": "仕事・経済",
+      "current": 30,
+      "additional": 270,
+      "total": 300
+    },
+    {
+      "id": "money_consumption_and_tax",
+      "name": "お金・買い物・税",
+      "current": 13,
+      "additional": 207,
+      "total": 220
+    },
+    {
+      "id": "housing_community_and_transport",
+      "name": "住まい・地域・交通",
+      "current": 17,
+      "additional": 233,
+      "total": 250
+    },
+    {
+      "id": "school_and_youth",
+      "name": "学校・若者",
+      "current": 142,
+      "additional": 158,
+      "total": 300
+    },
+    {
+      "id": "technology_media_and_privacy",
+      "name": "技術・メディア・プライバシー",
+      "current": 57,
+      "additional": 193,
+      "total": 250
+    },
+    {
+      "id": "culture_religion_and_history",
+      "name": "文化・宗教・歴史",
+      "current": 27,
+      "additional": 223,
+      "total": 250
+    },
+    {
+      "id": "justice_safety_and_crime",
+      "name": "司法・安全・犯罪",
+      "current": 42,
+      "additional": 158,
+      "total": 200
+    },
+    {
+      "id": "society_public_policy_and_environment",
+      "name": "社会・公共政策・環境",
+      "current": 37,
+      "additional": 213,
+      "total": 250
+    },
+    {
+      "id": "democracy_rights_and_participation",
+      "name": "民主主義・市民参加",
+      "current": 13,
+      "additional": 187,
+      "total": 200
+    },
+    {
+      "id": "climate_environment_energy_and_disaster",
+      "name": "環境・エネルギー・防災",
+      "current": 26,
+      "additional": 224,
+      "total": 250
+    },
+    {
+      "id": "international_peace_and_cooperation",
+      "name": "国際・平和・協力",
+      "current": 12,
+      "additional": 188,
+      "total": 200
+    },
+    {
+      "id": "science_research_and_uncertainty",
+      "name": "科学・研究",
+      "current": 9,
+      "additional": 251,
+      "total": 260
+    }
+  ],
+  "review_table": [
+    {
+      "reviewer": "learning",
+      "author_group": "personal",
+      "reviewed_count": 593,
+      "required_findings": 20,
+      "optional_findings": 2,
+      "input_sha256": "859fdbd5cf219a4084a7647bc3e4b6300d711780a329b90b12a1ebcc1ce3bac8"
+    },
+    {
+      "reviewer": "personal",
+      "author_group": "care",
+      "reviewed_count": 670,
+      "required_findings": 35,
+      "optional_findings": 28,
+      "input_sha256": "fa51215b0a166ed30f0b0d61d9553214086769b7940a51a829e167fa2b28d49e"
+    },
+    {
+      "reviewer": "care",
+      "author_group": "livelihood",
+      "reviewed_count": 710,
+      "required_findings": 26,
+      "optional_findings": 7,
+      "input_sha256": "09ef66a877da160e703a8b209b256abb96973de88ce7ccd37cbc47139abdb41c"
+    },
+    {
+      "reviewer": "livelihood",
+      "author_group": "world",
+      "reviewed_count": 663,
+      "required_findings": 19,
+      "optional_findings": 3,
+      "input_sha256": "c1b10b94608e8ce0e79ae52a04482877a36f644826aa942ef949fe0e66113732"
+    },
+    {
+      "reviewer": "world",
+      "author_group": "civic",
+      "reviewed_count": 558,
+      "required_findings": 32,
+      "optional_findings": 16,
+      "input_sha256": "b07f76f14e82446aa5066e6944190df4b4ee2ba2991d93b129da3dd44c0f27df"
+    },
+    {
+      "reviewer": "civic",
+      "author_group": "learning",
+      "reviewed_count": 574,
+      "required_findings": 31,
+      "optional_findings": 11,
+      "input_sha256": "19ce08f2190733645109a7bcf6c1df29a61c3e8df60df084f7a04944f039e7a9"
+    }
+  ],
+  "changed_after_initial_peer_review": 230,
+  "level4_perspectives_new": {
+    "affected": 604,
+    "actor": 454,
+    "decision_maker": 388,
+    "observer": 42
+  },
+  "background_source_records_new": 12,
+  "warnings": {
+    "count": 3196,
+    "codes": {
+      "detail_without_sources": 3196
+    },
+    "interpretation": "Most new backgrounds explicitly describe fictional scenarios. The existing validator warns about backgrounds without sources regardless of this distinction. See source and editorial reviews for their factual scope."
+  },
+  "limitations": [
+    "String and character comparisons do not prove semantic uniqueness.",
+    "All 3,768 additions had independent full reading; this does not imply every possible pair or all 942 baseline cards had full semantic review.",
+    "Changed cards were rechecked against the stated findings; no real conversation usability trial was performed.",
+    "Source checks cover the specific factual statements cited, not all related medical, legal or social literature.",
+    "The live application and random selection UI have not changed. The target size is a pending proposal."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "status": "root_reviewed_rebased_staging_draft_not_approved",
+  "author_group": "livelihood",
+  "source_sha256": "480f79bda46a2d8f96de87e46a832739bc7ca1992377679dcf2da8fae19e0444",
+  "reviewed_source_sha256": "480f79bda46a2d8f96de87e46a832739bc7ca1992377679dcf2da8fae19e0444",
+  "original_draft": "resolution-drafts/remaining-optional-fixes.json",
+  "original_draft_sha256": "1b0ad8805d5af11349782a27c97e06f339f56bcff75b84379d1237ea07ab92af",
+  "rebase_reason": "全対象before additionの完全一致を確認。並行した対象外IDの修正を含む最新shardのハッシュへrebasingした。変更前後の問い・背景・理由はrootが原文で確認した。",
+  "changes": [
+    {
+      "id": "exp26-livelihood-0269",
+      "author_group": "livelihood",
+      "priority": "optional",
+      "source_file": "staging-expansion-2026-10-08/shards/livelihood/additions.json",
+      "source_sha256": "480f79bda46a2d8f96de87e46a832739bc7ca1992377679dcf2da8fae19e0444",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0269",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_exit",
+          "question": "家業を終える決断をした友人に、町の人が残念だと言う。自分はどんな意味で「惜しい」と感じる？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の終了。本人に継続を求めることと、失う商いを悼むことを分ける。"
+          }
+        },
+        "reason": "仕事の終了を惜しむ自分を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:111",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0269",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_exit",
+          "question": "友人の家業には、幼い頃から家族で通い、つらい時も顔を見て話せる時間があった。友人が、自分の残る時間を仕事以外に使いたいと店を閉じる。本人を応援したいのに「惜しい」とも感じる時、自分の暮らしから何がなくなることを惜しんでいると思う？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の商いの終了です。自分の家族は長く利用してきて、品物やサービスだけでなく、人と話せる時間にも支えられてきた設定です。自分がその仕事を惜しむ理由と、友人が今後の人生を選び直すことを分けます。店や仕事の継続を本人へ求める答えを要求しません。"
+          }
+        },
+        "reason": "一般の家業終了への感想から、自分の生活も支えてきた商いを惜しむ理由と、その仕事を終える友人の人生を応援する見方へ深める。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:111",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "現行の「友人の家業」「町の人の残念」「惜しい」は本人の感情を聞けるが、友人の選択を自分に引き寄せる具体的な生活や記憶は本文・背景にない。最終原稿の0266は親の職業像で自分の道も決めてきた条件、0267は自分が生きてきた安定の基準を明示しており、それと並べても0269は一般の事業終了の感想に寄る。幼い頃からその商いに支えられてきた関係を置く。 0266は職業の肩書きから離れた親への見方、0267は好きな低収入の仕事への選択が自分の安定の基準へ及ぼす意味。新案は生活を支えてきた商いを惜しむ自分と、友人が仕事以外の人生を選ぶことへの応援。第三者として友人の終了を見つめるobserverを保持する。 rootが質問末尾の「どんな仕事が終わること」という曖昧な係り方を、自分の暮らしから失われるものへ明確化し、最終問い・背景・理由を再読した。",
+      "addresses": [
+        "ROA-18",
+        "care-reviews-livelihood.json:exp26-livelihood-0269:optional"
+      ],
+      "source_finding_id": "care-livelihood-015",
+      "status": "draft_not_applied_not_approved"
+    }
+  ],
+  "finding_resolutions": [
+    {
+      "id": "exp26-livelihood-0269",
+      "source_review": "care-reviews-livelihood.json",
+      "source_finding_id": "care-livelihood-015",
+      "original_priority": "optional",
+      "priority": "optional",
+      "decision": "recommend_fix",
+      "reason": "現行の「友人の家業」「町の人の残念」「惜しい」は本人の感情を聞けるが、友人の選択を自分に引き寄せる具体的な生活や記憶は本文・背景にない。最終原稿の0266は親の職業像で自分の道も決めてきた条件、0267は自分が生きてきた安定の基準を明示しており、それと並べても0269は一般の事業終了の感想に寄る。幼い頃からその商いに支えられてきた関係を置く。",
+      "preserved_difference": "0266は職業の肩書きから離れた親への見方、0267は好きな低収入の仕事への選択が自分の安定の基準へ及ぼす意味。新案は生活を支えてきた商いを惜しむ自分と、友人が仕事以外の人生を選ぶことへの応援。第三者として友人の終了を見つめるobserverを保持する。",
+      "addresses": [
+        "ROA-18"
+      ],
+      "status": "not_applied_not_approved"
+    }
+  ],
+  "production_files_written": 0
+}

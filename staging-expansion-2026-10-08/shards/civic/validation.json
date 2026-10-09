@@ -1,0 +1,103 @@
+{
+  "status": "author_self_reviewed_unapproved",
+  "total": 558,
+  "levels": {
+    "1": 38,
+    "2": 81,
+    "3": 190,
+    "4": 249
+  },
+  "l4_views": {
+    "affected": 96,
+    "actor": 83,
+    "decision_maker": 61,
+    "observer": 9
+  },
+  "topics": 28,
+  "reviewed_current_comparison_ids": [
+    "bridge-035",
+    "clarity-democracy_rights_and_participation-01-l3",
+    "clarity-democracy_rights_and_participation-03-l2",
+    "economy-001",
+    "ethics-008",
+    "immigration-003",
+    "justice-003",
+    "justice-004",
+    "public-support-001",
+    "r6-01-02-l3",
+    "r6-04-04-l4",
+    "r6-04-05-l4",
+    "r6-04-07-l4",
+    "r6-14-04-l4",
+    "sexual-crime-008",
+    "sexual-crime-009",
+    "sexual-crime-012",
+    "sexual-crime-014"
+  ],
+  "sourced_cards": 2,
+  "hypothetical_cards": 556,
+  "exact_duplicates": 0,
+  "category_level_counts": [
+    {
+      "category": "justice_safety_and_crime",
+      "level": 1,
+      "count": 5
+    },
+    {
+      "category": "justice_safety_and_crime",
+      "level": 2,
+      "count": 24
+    },
+    {
+      "category": "justice_safety_and_crime",
+      "level": 3,
+      "count": 58
+    },
+    {
+      "category": "justice_safety_and_crime",
+      "level": 4,
+      "count": 71
+    },
+    {
+      "category": "society_public_policy_and_environment",
+      "level": 1,
+      "count": 10
+    },
+    {
+      "category": "society_public_policy_and_environment",
+      "level": 2,
+      "count": 30
+    },
+    {
+      "category": "society_public_policy_and_environment",
+      "level": 3,
+      "count": 67
+    },
+    {
+      "category": "society_public_policy_and_environment",
+      "level": 4,
+      "count": 106
+    },
+    {
+      "category": "democracy_rights_and_participation",
+      "level": 1,
+      "count": 23
+    },
+    {
+      "category": "democracy_rights_and_participation",
+      "level": 2,
+      "count": 27
+    },
+    {
+      "category": "democracy_rights_and_participation",
+      "level": 3,
+      "count": 65
+    },
+    {
+      "category": "democracy_rights_and_participation",
+      "level": 4,
+      "count": 72
+    }
+  ],
+  "scope_note": "構造と完全一致確認は全件。語彙の近さは意味の重複を証明しない。全558件の自己レビューに担当外レビューはまだ含まれない。"
+}

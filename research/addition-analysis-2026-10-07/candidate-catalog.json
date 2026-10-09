@@ -1,0 +1,617 @@
+{
+  "compiled_date": "2026-10-08",
+  "source_checked_date": "2026-10-07",
+  "status": "analysis_only_unapproved",
+  "target_total": 4710,
+  "target_additional": 3768,
+  "representative_question_draft_count": 28,
+  "scope": "28 representative question drafts, not 3768 completed cards. Level/category and individual questions remain unapproved. Analysis IDs are not permanent card IDs.",
+  "candidates": [
+    {
+      "analysis_id": "CS-F2",
+      "source_local_id": "F2",
+      "source_file": "care-science.md",
+      "priority": "高",
+      "source_priority": "F2・高",
+      "level": 4,
+      "level_category_proposal": "L4・家族・ケア family_and_care",
+      "question_draft": "あなたは大切な家族を亡くしたとする。残された物を見ると、その人を近くに感じる一方、見るたびにつらくもなる。同居する家族は、暮らしを立て直すために片づけたいと言う。残す物や片づける時期を、何を大切にして決めたい？",
+      "additional_conversation_axis": "前者は親との関係を続ける責任、後者は恋人の過去の記憶が中心で、死別後の悲しみ・遺品整理そのものを尋ねる既存問は確認できなかった。本案は記憶との距離、悲しむ速度、同じ喪失を経験した家族間の違いを聞く。物を残す側だけを愛情深いとせず、片づけたい側にも暮らしの意味がある。詳細な死因や実際の喪失を語らず、仮定で話せる。AIによる故人の再現や死後データとは別の、普通の悲嘆・追悼の軸。",
+      "related_existing_ids": [
+        "elderly-006",
+        "relationship-151"
+      ],
+      "primary_source_urls": [
+        "https://www.ncc.go.jp/jp/ncch/clinic/psycho-oncology/consultation/tokushu_gairai/040/index.html",
+        "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/grief-bereavement-loss/"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "CS-H1",
+      "source_local_id": "H1",
+      "source_file": "care-science.md",
+      "priority": "高",
+      "source_priority": "H1・高",
+      "level": 2,
+      "level_category_proposal": "L2・健康・障害 health_and_disability",
+      "question_draft": "体調が悪く、身近な人がいろいろ手伝ってくれるとする。任せると楽になるが、自分でできることまで代わってもらうと落ち着かない気持ちもある。どこまでは任せ、どこからは自分でやりたい？",
+      "additional_conversation_axis": "支える側の良い関わり方や、必要な配慮を要求する判断から、受け取る本人にとって楽になること・落ち着かないことの境界へ移す。援助を断ることを理想にせず、全部任せたい答えも話せる。病名や体験の開示を求めず、日常的な支援から本人の自律・安心・頼ることの意味を聞けるL2の入口。",
+      "related_existing_ids": [
+        "bridge-032",
+        "disability-003"
+      ],
+      "primary_source_urls": [
+        "https://www.mhlw.go.jp/acp-jinseikaigi/about/"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "CS-H2",
+      "source_local_id": "H2",
+      "source_file": "care-science.md",
+      "priority": "高",
+      "source_priority": "H2・高",
+      "level": 4,
+      "level_category_proposal": "L4・健康・障害 health_and_disability",
+      "question_draft": "あなたは、重い病気で過ごせる時間に限りがあると説明されたとする。より詳しい見通しを聞けば、やりたいことを決めやすいが、毎日をその情報に縛られそうで怖い。家族は一緒に準備したいと言う。何をどこまで知りたい？ 今は聞きたくないことはある？",
+      "additional_conversation_axis": "医療者が本人の秘密と第三者の健康を比較する問いから、本人がどれだけ・いつ情報を受け取りたいかへ移す。準備、希望、怖さ、家族と向き合う速度の違いを聞く。全部聞く・一部だけ聞く・今は聞かないなど、理由が異なる答えが成立する。治療の正解や情報不足の是非を採点しない。本人と家族の双方に理由があり、L4の自分事を保つ。",
+      "related_existing_ids": [
+        "healthcare-012"
+      ],
+      "primary_source_urls": [
+        "https://www.cancer.gov/about-cancer/diagnosis-staging/prognosis"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "CS-H3",
+      "source_local_id": "H3",
+      "source_file": "care-science.md",
+      "priority": "高",
+      "source_priority": "H3・高",
+      "level": 4,
+      "level_category_proposal": "L4・健康・障害 health_and_disability",
+      "question_draft": "あなたは、人生の終わりが近いと説明されたとする。会っておきたい人もいるが、残る時間を静かにいつものように過ごしたい気持ちもある。家族は『会いたい人には今のうちに声をかけよう』と言う。誰と、どんな時間を過ごすことを大切にしたい？",
+      "additional_conversation_axis": "最期の希望に近い既存問はあるが、介護を担う子どもの犠牲との比較が中心。本案は、残る時間をどう感じ、誰とどう過ごすことに意味を持つかを聞く。人に多く会うことも、静かに普段どおり過ごすことも、途中で望みが変わることも話せる。治療の賛否や家族の負担へ集約せず、Omoiの重さと感覚の違いを両立する。",
+      "related_existing_ids": [
+        "elderly-003"
+      ],
+      "primary_source_urls": [
+        "https://www.mhlw.go.jp/acp-jinseikaigi/about/"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "CUL-01",
+      "source_local_id": "CUL-01",
+      "source_file": "civic-culture.md",
+      "priority": "高",
+      "source_priority": "A",
+      "level": 2,
+      "level_category_proposal": "L2・文化・宗教・歴史",
+      "question_draft": "家族が大切にしている祈りの行事に誘われた。自分はその信仰を持っていないが、家族と過ごす時間は好き。祈りに加わる、そばで見守る、別の時間に会うなど、どんな関わり方がしっくりくる？",
+      "additional_conversation_axis": "信仰を持つことと儀礼に関わることの距離。家族への愛着、誠実さ、心地よさの違い。",
+      "related_existing_ids": [
+        "religion-001",
+        "relationship-137"
+      ],
+      "primary_source_urls": [
+        "https://docstore.ohchr.org/SelfServices/FilesHandler.ashx?enc=NDHbUvPo0H0e6ReM%2BeoASfvbY3aH6JttLpsRvkmL87wD80W4xnAiRpmKA6ZLwTp9xzCLNUYwTBP35uH1Fw6yqQ%3D%3D"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "EH-M2",
+      "source_local_id": "EH-M2",
+      "source_file": "economy-housing.md",
+      "priority": "高",
+      "source_priority": "P1",
+      "level": 4,
+      "level_category_proposal": "L4・お金・消費・税",
+      "question_draft": "あなたは借金を返し切れず、返済のために家族の生活費も切り詰めている。法的な手続きで借金の一部を返さずに生活を立て直せるとしたら、貸した人への責任と、自分や家族の生活をどう考える？",
+      "additional_conversation_axis": "法的な返済責任と、自分が感じる責任・負い目・再出発の違い。借りるかではなく、返せなくなった後の自分の判断。",
+      "related_existing_ids": [
+        "finance-002",
+        "finance-001",
+        "r6-13-05-l4"
+      ],
+      "primary_source_urls": [
+        "https://www.courts.go.jp/osaka/saiban/minjibu6/index.html"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "EH-W1",
+      "source_local_id": "EH-W1",
+      "source_file": "economy-housing.md",
+      "priority": "高",
+      "source_priority": "P1",
+      "level": 2,
+      "level_category_proposal": "L2・仕事・経済",
+      "question_draft": "職場のグループに、休みの日に「返事は次の出勤日でいい」と仕事の連絡を送る人がいる。すぐに共有したい気持ちと、休み中は仕事から離れたい気持ちを、どう考える？",
+      "additional_conversation_axis": "返事を求められていなくても仕事が頭に入ることをどう感じるか。送る側の共有のしやすさと、受け取る側の休息の境界。",
+      "related_existing_ids": [
+        "bridge-002",
+        "r6-11-03-l3"
+      ],
+      "primary_source_urls": [
+        "https://www.mhlw.go.jp/web/t_doc?dataId=00tc6069&dataType=1&pageNo=1"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "EH-W2",
+      "source_local_id": "EH-W2",
+      "source_file": "economy-housing.md",
+      "priority": "高",
+      "source_priority": "P1",
+      "level": 2,
+      "level_category_proposal": "L2・仕事・経済",
+      "question_draft": "担当する仕事を選べるとする。収入と働く時間が同じなら、興味は薄いけれど人に頼られる仕事と、好きだけれどまだうまくできない仕事のどちらにひかれる？",
+      "additional_conversation_axis": "自分が仕事に求める興味、役立つ実感、得意さ、これからの成長。生活費の差をそろえて、相手の理由を聞く。",
+      "related_existing_ids": [
+        "ethics-006",
+        "work-003",
+        "study-007"
+      ],
+      "primary_source_urls": [
+        "https://shigoto.mhlw.go.jp/User/personaluse",
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000188827.html",
+        "https://www.jil.go.jp/institute/research/2025/261.html"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "INT-01",
+      "source_local_id": "INT-01",
+      "source_file": "civic-culture.md",
+      "priority": "高",
+      "source_priority": "A",
+      "level": 4,
+      "level_category_proposal": "L4・国際・平和・協力",
+      "question_draft": "あなたは海外支援の担当者。寄付者には学校を建てると約束し、学校が必要な家庭も待っている。一方、現地の住民会議は水道の修理を優先したいと言う。計画を変えると次の寄付が集まらないかもしれない。約束した計画を変える？ 何を大切にして決める？",
+      "additional_conversation_axis": "誰が支援の優先順位を決めるか。受ける側の主体性、待っている人への責任、寄付者との約束をどう重く見るか。",
+      "related_existing_ids": [
+        "clarity-international_peace_and_cooperation-03-l2",
+        "clarity-international_peace_and_cooperation-01-l3"
+      ],
+      "primary_source_urls": [
+        "https://www.oecd.org/en/publications/practical-guidelines-for-supporting-locally-led-development_eaecf72b-en/full-report/action-area-meaningful-co-creation-of-development-solutions_a388258e.html"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "INT-02",
+      "source_local_id": "INT-02",
+      "source_file": "civic-culture.md",
+      "priority": "高",
+      "source_priority": "A",
+      "level": 4,
+      "level_category_proposal": "L4・国際・平和・協力",
+      "question_draft": "あなたは紛争から逃れ、別の国で仕事や友人を得て暮らしている。故郷では戦闘が止まり、残った家族は帰ってきてほしいと言うが、安全が続くかは分からない。戻るか、とどまるか、何を大切にして決めたい？",
+      "additional_conversation_axis": "逃れた本人の自由な選択、家族への思いと今の居場所、安全の不確かさをどう受け止めるか。",
+      "related_existing_ids": [
+        "immigration-002",
+        "r6-05-03-l4"
+      ],
+      "primary_source_urls": [
+        "https://www.refworld.org/sites/default/files/legacy-pdf/en/1996-1/3ae6b3510.pdf",
+        "https://www.refworld.org/policy/opguidance/unhcr/1996/19472"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "TP-05",
+      "source_local_id": "TP-05",
+      "source_file": "technology-personal.md",
+      "priority": "高",
+      "source_priority": "TP-05 / 高",
+      "level": 4,
+      "level_category_proposal": "L4 / 技術・メディア・プライバシー technology_media_and_privacy",
+      "question_draft": "亡くなった大切な人の写真やメッセージを、あなたが整理することになった。その人のことをもっと知りたい気持ちがあるが、本人が誰に何を見せたかったかは分からない。思い出を分かち合うことと、その人だけの領域を残すことを、どう考える？",
+      "additional_conversation_axis": "生きている恋人の無断閲覧への責任ではなく、本人に確認し直せない死後の記録と、残された自分の知りたい思いを扱う。アクセスできること、読みたいこと、家族へ共有することを分ける。",
+      "related_existing_ids": [
+        "relationship-l3-158",
+        "relationship-166"
+      ],
+      "primary_source_urls": [
+        "https://support.apple.com/ja-jp/102631"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "TP-06",
+      "source_local_id": "TP-06",
+      "source_file": "technology-personal.md",
+      "priority": "高",
+      "source_priority": "TP-06 / 高",
+      "level": 4,
+      "level_category_proposal": "L4 / 自分・価値観 self_and_values",
+      "question_draft": "何年も目指した目標を達成したが、思っていたほど満たされなかったとする。そのために、自分の時間や人との付き合いも後回しにしてきた。手に入れたものと、費やした時間を、今の自分ならどう受け止める？",
+      "additional_conversation_axis": "他人の成功への嫉妬、意見変更への評価とは別に、自分が達成した後の満足・人生の意味・失った機会を聞く。失業や目標未達成のカードを足す案ではない。",
+      "related_existing_ids": [
+        "relationship-144",
+        "bridge-035"
+      ],
+      "primary_source_urls": [
+        "https://selfdeterminationtheory.org/wp-content/uploads/2014/04/2009_Niemiec-RyanDeci_JRP.pdf"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "CUL-02",
+      "source_local_id": "CUL-02",
+      "source_file": "civic-culture.md",
+      "priority": "高〜中",
+      "source_priority": "A",
+      "level": 4,
+      "level_category_proposal": "L4・文化・宗教・歴史",
+      "question_draft": "あなたは博物館の館長。長年展示してきた海外の文化財を、元の地域の人々が『祈りの場に戻してほしい』と求めている。返せば一般公開は終わるとする。自分も大切にしてきた展示を手放すか、何を重く見て決めたい？",
+      "additional_conversation_axis": "文化財を守ってきた愛着、広く見せる価値、その文化を使い続ける人々の権限や意味。",
+      "related_existing_ids": [
+        "r6-02-01-l3",
+        "r6-02-01-l4"
+      ],
+      "primary_source_urls": [
+        "https://www.unesco.org/en/fight-illicit-trafficking/return-and-restitution"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [
+        "分野担当は高、独立レビューは高〜中。返還後に公開が終わるのは架空条件。取得の違法性や保存能力を片側へ固定しない。"
+      ],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "EH-H1",
+      "source_local_id": "EH-H1",
+      "source_file": "economy-housing.md",
+      "priority": "高〜中",
+      "source_priority": "P1",
+      "level": 4,
+      "level_category_proposal": "L4・住まい・地域・交通",
+      "question_draft": "あなたは一人暮らしで、次の住まいがなかなか見つからない。定期的な安否確認や訪問による見守りを受ける住宅なら入居できるとする。住み続けられる安心と、自宅での暮らしを支援者に見られる抵抗感を、どう考えて住まいを選ぶ？",
+      "additional_conversation_axis": "住まいの確保と、私的な暮らしに継続して人が関わることへの感覚。支援を受ける本人の自律と安心。",
+      "related_existing_ids": [
+        "r6-13-05-l3",
+        "disability-006"
+      ],
+      "primary_source_urls": [
+        "https://www.mlit.go.jp/report/press/house07_hh_000306.html"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [
+        "分野担当は高、独立レビューは高〜中。自宅への訪問・私的空間・住居の確保を主題に保つ。"
+      ],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "CIV-01",
+      "source_local_id": "CIV-01",
+      "source_file": "civic-culture.md",
+      "priority": "中",
+      "source_priority": "B",
+      "level": 4,
+      "level_category_proposal": "L4・民主主義・市民参加",
+      "question_draft": "あなたは地域施設の見直しを市に提言する住民会議の参加者。近所の人からは施設を残す意見を託されたが、ほかの地域の事情を聞いて統合がよいと思い始めた。近所との関係が悪くなるかもしれなくても、統合に賛成する？",
+      "additional_conversation_axis": "普通の参加者が意見を託されたときの責任と、話を聞いて自分の考えが変わること。",
+      "related_existing_ids": [
+        "bridge-035",
+        "r6-14-04-l4"
+      ],
+      "primary_source_urls": [
+        "https://www.oecd.org/en/publications/innovative-citizen-participation-and-new-democratic-institutions_339306da-en/full-report/component-9.html"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "CIV-02",
+      "source_local_id": "CIV-02",
+      "source_file": "civic-culture.md",
+      "priority": "中",
+      "source_priority": "B",
+      "level": 4,
+      "level_category_proposal": "L4・民主主義・市民参加",
+      "question_draft": "あなたは障害に関わる福祉サービスの利用者代表として、見直しの会議に参加した。反対理由は記録されたが、ほかの支援にも予算を回すため、利用条件を厳しくする案が選ばれ、自分の暮らしは苦しくなる。自分たちも決定に関われたと感じるには、何が必要？",
+      "additional_conversation_axis": "参加の権利がある当事者として、望まない結果でも参加に意味を感じる条件、結果が覆らなければ納得できない理由。",
+      "related_existing_ids": [
+        "clarity-democracy_rights_and_participation-01-l3",
+        "ethics-008"
+      ],
+      "primary_source_urls": [
+        "https://docstore.ohchr.org/SelfServices/FilesHandler.ashx?enc=j3guiQd0Hp2byJvITGx2HcxeXZdrqM4IeLGjasXGdMDUF4hnY9iaCr5CAsA7mWka21pAHThmMFo8I%2B59OiVpQQ%3D%3D"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "CS-F1",
+      "source_local_id": "F1",
+      "source_file": "care-science.md",
+      "priority": "中",
+      "source_priority": "F1・中",
+      "level": 2,
+      "level_category_proposal": "L2・家族・ケア family_and_care",
+      "question_draft": "家の用事で、買い物や掃除をする人と、必要な物や予定を確認して段取りする人がいる。分担の公平さを考えるなら、実際の作業と段取りの負担を、どう比べたい？",
+      "additional_conversation_axis": "家事の公平と分担の見直しは既にあるため、新しいテーマ全体の追加とは扱わない。差分は、実行した作業と、予測・確認・段取りなど見えにくい仕事を何で比べるか。収入比や提案の時期ではなく、時間・気の張り方・裁量など、各人が負担と認める基準を話せる。実作業と段取りの区別が消える言い換えでは採用価値が弱まる。",
+      "related_existing_ids": [
+        "caregiving-001",
+        "caregiving-002",
+        "bridge-011"
+      ],
+      "primary_source_urls": [
+        "https://inequality.hks.harvard.edu/publications/cognitive-dimension-household-labor"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [
+        "論文の確認範囲は原論文の公開概要。全文確認や日本の家庭全体への一般化を意味しない。"
+      ],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "CS-S1",
+      "source_local_id": "S1",
+      "source_file": "care-science.md",
+      "priority": "中",
+      "source_priority": "S1・中",
+      "level": 4,
+      "level_category_proposal": "L4・科学・研究 science_research_and_uncertainty",
+      "question_draft": "あなたは長期の研究に参加し、参加をやめても、それまでに渡した記録は説明された目的の研究で使われるという条件に同意したとする。今は情報を残し続けることが不安になった。一度同意した条件を、今の自分はどこまで受け入れたい？",
+      "additional_conversation_axis": "記録の提供・同意とプライバシーは既にあるため中優先。初めて提供するか、病院が一括利用してよいかから、以前の自分の同意を、気持ちが変わった今の自分がどう受け止めるかへ移す。研究に役立ちたい気持ち、一度の約束、今の不安、相談したい条件を語れる。撤回権の知識問題にはしない。",
+      "related_existing_ids": [
+        "r6-08-04-l4",
+        "r6-08-04-l3"
+      ],
+      "primary_source_urls": [
+        "https://www.hhs.gov/ohrp/regulations-and-policy/guidance/guidance-on-withdrawal-of-subject/index.html"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "CS-S2",
+      "source_local_id": "S2",
+      "source_file": "care-science.md",
+      "priority": "中",
+      "source_priority": "S2・中",
+      "level": 4,
+      "level_category_proposal": "L4・科学・研究 science_research_and_uncertainty",
+      "question_draft": "あなたは研究者。自分の以前の結果を別の条件でも確かめる研究と、別の重要な疑問を調べる新しい研究に、どちらも意味を感じている。今の予算と時間では片方しか進められず、選択は自分の次の研究機会にも関わるとする。自分が発表した結果への責任と、新しく知りたいことを、どう比べて選ぶ？",
+      "additional_conversation_axis": "既存の公表・紹介判断から、研究者自身が限られた資源と次の機会をどう使うかへ移す。自分の結果への責任と、新たな疑問への好奇心・価値を両立したまま迷いの理由を聞く。新規研究だけを利己的、確認研究だけを正しいとしない。「試すか調べるか」の単純な言い換えではなく、既に発表した本人の利害を置く。ただし再現確認に近い論点があるため中優先。",
+      "related_existing_ids": [
+        "clarity-science_research_and_uncertainty-01-l3",
+        "clarity-science_research_and_uncertainty-03-l2"
+      ],
+      "primary_source_urls": [
+        "https://www.nationalacademies.org/read/25303/chapter/9"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "CUL-03",
+      "source_local_id": "CUL-03",
+      "source_file": "civic-culture.md",
+      "priority": "中",
+      "source_priority": "B",
+      "level": 4,
+      "level_category_proposal": "L4・文化・宗教・歴史",
+      "question_draft": "あなたは町の戦争史の展示を任されている。確認された資料に、亡くなった祖父が他の地域の人を傷つけた記録がある。被害を受けた人の遺族は名前を残してほしいと求め、家族は公開に反対している。祖父の名前を出して展示する？ 何を大切にして判断する？",
+      "additional_conversation_axis": "自分が受け継いだ愛情と、被害の記憶を公的に残す責任。子孫の立場で歴史を扱う迷い。",
+      "related_existing_ids": [
+        "r6-09-05-l4",
+        "r6-12-02-l3"
+      ],
+      "primary_source_urls": [
+        "https://www.unesco.org/en/legal-affairs/recommendation-concerning-preservation-and-access-documentary-heritage-including-digital-form"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "EH-H2",
+      "source_local_id": "EH-H2",
+      "source_file": "economy-housing.md",
+      "priority": "中",
+      "source_priority": "P2",
+      "level": 2,
+      "level_category_proposal": "L2・住まい・地域・交通",
+      "question_draft": "友達と家賃を同じだけ払って住んでいる。客を個室に泊めることは契約上問題がないが、あなたは知らない人が家にいると落ち着かない。音や共有スペースの使い方に問題がなくても、相手は泊める前にあなたの同意を得るべきだと思う？",
+      "additional_conversation_axis": "具体的な迷惑がなくても、家で落ち着ける感覚をどこまで共同生活の同意に含めるか。個室の自由と同居人の居場所。",
+      "related_existing_ids": [
+        "clarity-housing_community_and_transport-01-l2",
+        "clarity-international_peace_and_cooperation-02-l2"
+      ],
+      "primary_source_urls": [
+        "https://www.mlit.go.jp/jutakukentiku/house/jutakukentiku_house_tk3_000056.html",
+        "https://www.mlit.go.jp/common/001207549.pdf"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "EH-M1",
+      "source_local_id": "EH-M1",
+      "source_file": "economy-housing.md",
+      "priority": "中",
+      "source_priority": "P2",
+      "level": 2,
+      "level_category_proposal": "L2・お金・消費・税",
+      "question_draft": "同じ通販で、過去の閲覧履歴を使って人ごとに値段を変える仕組みが説明されているとする。同じ時刻に同じ商品をあなたは友達より安く買える。この売り方をどう感じる？ 高くなる側なら考えは変わる？",
+      "additional_conversation_axis": "説明されていて自分は得をしている価格差への納得。立場が逆になると公平さの感覚が変わるか。",
+      "related_existing_ids": [
+        "r6-15-04-l3",
+        "r6-15-04-l4"
+      ],
+      "primary_source_urls": [
+        "https://www.oecd.org/en/publications/the-effects-of-online-disclosure-about-personalised-pricing-on-consumers_1ce1de63-en.html",
+        "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/01/the-effects-of-online-disclosure-about-personalised-pricing-on-consumers_f1d29bbf/1ce1de63-en.pdf"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "ENV-01",
+      "source_local_id": "ENV-01",
+      "source_file": "environment-animals.md",
+      "priority": "中",
+      "source_priority": "中",
+      "level": 2,
+      "level_category_proposal": "L2 / お金・買い物・税",
+      "question_draft": "食費に余裕がないとする。動物の飼育環境に配慮した食品が、いつもの食品より高い。どんな条件ならそちらを選びたい？",
+      "additional_conversation_axis": "自分が納得する買い物の条件、動物への関心と生活の余裕の関係。選ばない理由も話せる。",
+      "related_existing_ids": [
+        "animals-002",
+        "bridge-023"
+      ],
+      "primary_source_urls": [
+        "https://www.maff.go.jp/j/chikusan/sinko/animal_welfare.html"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "ENV-02",
+      "source_local_id": "ENV-02",
+      "source_file": "environment-animals.md",
+      "priority": "中",
+      "source_priority": "中",
+      "level": 4,
+      "level_category_proposal": "L4 / 環境・エネルギー・防災、actor",
+      "question_draft": "身近な湿地で、外から持ち込まれた動物が増え、もともといた生き物を減らしているとする。専門家の計画に沿った捕獲活動に誘われたが、捕獲した動物を生かして引き取る先はない。あなたは参加するかどうか、何で決める？",
+      "additional_conversation_axis": "生態系を守りたい気持ちと、個々の動物の命を失わせる行為を自分で担うことへの抵抗。制度への賛否だけでは聞けない迷い。",
+      "related_existing_ids": [
+        "animals-001",
+        "animals-002"
+      ],
+      "primary_source_urls": [
+        "https://www.env.go.jp/nature/intro/3control/bojooutline.html",
+        "https://www.env.go.jp/nature/intro/2outline/actionplan2.html"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "TP-02",
+      "source_local_id": "TP-02",
+      "source_file": "technology-personal.md",
+      "priority": "中",
+      "source_priority": "TP-02 / 中",
+      "level": 2,
+      "level_category_proposal": "L2 / 技術・メディア・プライバシー technology_media_and_privacy",
+      "question_draft": "親しい友達から、心に残るメッセージをもらった。あとで、友達が自分の気持ちを書いたうえで、AIに言葉を整えてもらったと知った。同じ言葉でも、受け取り方は変わる？ 気になるとしたら、どんなところ？",
+      "additional_conversation_axis": "評価課題の本人の能力・ルールの公平ではなく、私的な言葉の出所を知った後の感覚、表現への手間と気持ちの受け取り方。AIを自分の気持ちの代わりにしたのか、表現だけを助けてもらったのかも明確に分ける。",
+      "related_existing_ids": [
+        "education-l4-001"
+      ],
+      "primary_source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10073210/"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "TP-03",
+      "source_local_id": "TP-03",
+      "source_file": "technology-personal.md",
+      "priority": "中",
+      "source_priority": "TP-03 / 中",
+      "level": 4,
+      "level_category_proposal": "L4 / 技術・メディア・プライバシー technology_media_and_privacy",
+      "question_draft": "人生の大きな悩みを、会話AIにだけ打ち明け、支えられているとする。親しい人にも話すか迷っている。自分にとって、AIに理解されたと感じることと、人に理解されることは何が違う？",
+      "additional_conversation_axis": "規制者・開発者の責任ではなく、心を支えられた利用者本人が何を理解と感じ、誰に自分を知られたいかを扱う。r6-19-06-l4の配信者への親密さ・配偶者による制限とも違い、恋愛や裏切りを前提にしない。",
+      "related_existing_ids": [
+        "r6-08-02-l3",
+        "r6-08-02-l4"
+      ],
+      "primary_source_urls": [
+        "https://www.media.mit.edu/publications/how-ai-and-human-behaviors-shape-psychosocial-effects-of-chatbot-use-a-longitudinal-controlled-study/",
+        "https://arxiv.org/pdf/2503.17473"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [
+        "最終カード化で大きな悩みを具体化し、L4の本人の利害を確認する。"
+      ],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "TP-04",
+      "source_local_id": "TP-04",
+      "source_file": "technology-personal.md",
+      "priority": "中",
+      "source_priority": "TP-04 / 中・普通の悲嘆の問いを先に",
+      "level": 4,
+      "level_category_proposal": "L4 / 技術・メディア・プライバシー technology_media_and_privacy",
+      "question_draft": "亡くなった大切な人が、生前、自分の記録から会話AIを作ることに同意していたとする。AIはその人らしく話すが、その人が実際には言わなかったことも返す。そのやり取りを、大切な人との関係の続きとして感じられる？ どうしてだろう？",
+      "additional_conversation_axis": "一般の親密さ規制や本人の同意のない侮辱的模倣ではなく、本人が同意した模倣でも、返答の新しさを故人との関係として感じるかという喪失・記憶・存在の感覚。TP-05は既存記録を読む範囲で、こちらは新しい返答を作る再現。",
+      "related_existing_ids": [
+        "r6-08-02-l3",
+        "r6-08-01-l3"
+      ],
+      "primary_source_urls": [
+        "https://link.springer.com/article/10.1007/s13347-024-00744-w"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [
+        "技術を介さない悲嘆・追悼の問いを先に検討する。"
+      ],
+      "status": "analysis_only_unapproved"
+    },
+    {
+      "analysis_id": "TP-01",
+      "source_local_id": "TP-01",
+      "source_file": "technology-personal.md",
+      "priority": "低",
+      "source_priority": "TP-01 / 低・L2の補完として後で",
+      "level": 2,
+      "level_category_proposal": "L2 / 技術・メディア・プライバシー technology_media_and_privacy",
+      "question_draft": "動画の「おすすめ」が好みに合うようになり、楽しく見られる一方、知らなかった話題に出会うことは減ったと感じる。好みに合うものを選んでもらうことと、自分で探して意外なものに出会うことを、どう考える？",
+      "additional_conversation_axis": "同じ趣味の評判を証拠としてどこまで信用するか、AIに人生の合否を任せるかとは違い、選ぶ楽しさ・好みに寄り添われる安心・偶然の出会いへの感覚を聞く。",
+      "related_existing_ids": [
+        "clarity-science_research_and_uncertainty-02-l2",
+        "technology-006"
+      ],
+      "primary_source_urls": [
+        "https://support.google.com/youtube/answer/6342839?hl=ja"
+      ],
+      "source_checked_date": "2026-10-07",
+      "review_notes": [],
+      "status": "analysis_only_unapproved"
+    }
+  ]
+}

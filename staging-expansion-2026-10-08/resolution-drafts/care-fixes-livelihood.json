@@ -1,0 +1,2053 @@
+{
+  "reviewer": "care",
+  "author_group": "livelihood",
+  "source_sha256": "09ef66a877da160e703a8b209b256abb96973de88ce7ccd37cbc47139abdb41c",
+  "source_path": "/workspace/Omoi/staging-expansion-2026-10-08/shards/livelihood/additions.json",
+  "review_path": "/workspace/Omoi/staging-expansion-2026-10-08/peer-reviews/care-reviews-livelihood.json",
+  "external_review_paths": [
+    "/workspace/Omoi/staging-expansion-2026-10-08/peer-reviews/cross-domain-review.json"
+  ],
+  "status": "draft_not_applied_not_approved",
+  "changes": [
+    {
+      "id": "exp26-livelihood-0025",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0025",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "work_and_economy",
+          "topic": "work_feedback",
+          "question": "ほめられた後に改善点を聞くのと、改善点だけを詳しく聞くのでは、受け止め方が変わる？"
+        },
+        "reason": "評価を受け取る順序を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l2.txt:5",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0025",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "work_and_economy",
+          "topic": "work_feedback",
+          "question": "職場で仕事の成果を褒められた後に改善点を聞くのと、改善点だけを詳しく聞くのでは、受け止め方が変わる？"
+        },
+        "reason": "仕事の成果の評価について、肯定と改善点を受け取る順序の違いを聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l2.txt:5",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-001",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "仕事・職場の条件が本文にないため、一般の関係や作業の問いとして読める。",
+      "addresses": [
+        "care-livelihood-001"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0039",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0039",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "work_and_economy",
+          "topic": "work_feedback",
+          "question": "失敗をすぐ指摘される方が助かる？ 人前を避けて後で伝えてほしい？"
+        },
+        "reason": "失敗の伝え方の感覚を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l2.txt:19",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0039",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "work_and_economy",
+          "topic": "work_feedback",
+          "question": "職場で仕事の失敗をすぐ指摘される方が助かる？ 人前を避けて後で伝えてほしい？"
+        },
+        "reason": "仕事の失敗を伝える時期と周囲の目の違いを聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l2.txt:19",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-002",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "仕事・職場の条件が本文にないため、一般の関係や作業の問いとして読める。",
+      "addresses": [
+        "care-livelihood-002"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0060",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0060",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "work_and_economy",
+          "topic": "work_feedback",
+          "question": "仕事を頼む時に「好きにしていい」と言われる。安心する？ 期待が読めず困る？"
+        },
+        "reason": "裁量を受け取る感覚を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l2.txt:40",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0060",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "work_and_economy",
+          "topic": "work_feedback",
+          "question": "仕事を頼まれる時に「好きにしていい」と言われる。安心する？ 期待が読めず困る？"
+        },
+        "reason": "仕事を頼まれた時の裁量と期待の読みにくさを聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l2.txt:40",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-003",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "仕事・職場の条件が本文にないため、一般の関係や作業の問いとして読める。",
+      "addresses": [
+        "care-livelihood-003"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0062",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0062",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "work_and_economy",
+          "topic": "work_rhythm",
+          "question": "集中が切れてきたのに、予定より早く進んでいる。休む時に何が気になる？"
+        },
+        "reason": "余裕がある勤務の休息を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l2.txt:42",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0062",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "work_and_economy",
+          "topic": "work_rhythm",
+          "question": "勤務中に集中が切れてきたのに、予定より早く進んでいる。休む時に何が気になる？"
+        },
+        "reason": "勤務中の進み具合と自分が休む感覚の違いを聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l2.txt:42",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-004",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "仕事・職場の条件が本文にないため、一般の関係や作業の問いとして読める。",
+      "addresses": [
+        "care-livelihood-004"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0171",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0171",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_identity",
+          "question": "生活のため選んだ仕事を人に説明すると、好きで選んだと思われる。働く理由をどこまで知ってほしい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の職業紹介。仕事の誇りがないとは限らず、選択の事情を話す範囲も選べる。"
+          }
+        },
+        "reason": "働く動機を誤解される感覚を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:10",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0171",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_identity",
+          "question": "長年生活のために続けた仕事が、自分の人物像そのものとして語られる。別の夢も持つ今、働く自分と仕事以外の自分をどう知ってほしい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の職業人生。暮らしを支えた仕事には積み重ねた価値がある一方、仕事だけで本人の望み全体が表せるとは限らない。収入の理由を紹介する範囲ではなく、長く担った職業と自分の人物像の関係を問う。"
+          }
+        },
+        "reason": "生活を支えた職業で固定される自己像と、別の夢を持つ自分の意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:10",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-005",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "生活のため選んだと紹介する範囲だけでは、通常の職業紹介に近くL4の人生の意味が本文で弱い。",
+      "addresses": [
+        "care-livelihood-005"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0181",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0181",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_identity",
+          "question": "長年の職場を離れた後、初対面で何の仕事か聞かれる。肩書きのない今の自分を、どう紹介したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の退職後。収入の有無を評価せず、職業が担っていた自己説明を考える。"
+          }
+        },
+        "reason": "退職後の職業的自己紹介を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:20",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0181",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_identity",
+          "question": "生涯をかけた仕事を終えた。今の自分を紹介すると何も残っていないように感じ、昔の肩書きに戻りたくなる。働かないこれからの自分に、何を受け継いで生きたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の退職後。仕事を終えることは本人が選んだが、働くことに託した自分の価値は同時には区切れない条件を置く。紹介する職名を選ぶより、仕事で生きた時間をこれからの自分へどう受け継ぐかを考える。"
+          }
+        },
+        "reason": "転職後の職業紹介ではなく、生涯の仕事を終えた本人が、過去の肩書きからこれからの自分へ何を受け継ぐかを聞く。働き続ける自己像を問う0171と、退職した親を見る0266とも区別する。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:20",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "XDR-08",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "L2の転職後の肩書きのない自己紹介から、L4の長年の職場を離れた自己紹介へ、本文で増えた条件は主に継続年数である。退職後の職業的自己像は深い軸になり得るが、何を紹介するかだけではL2との差が弱い。",
+      "addresses": [
+        "XDR-08"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0183",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0183",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_recognition",
+          "question": "会社から高い評価を受ける仕事ほど、客のためにならないと感じる。何を確かめるまで評価を受け取りたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の評価のずれ。本人の感覚を事実と決めず、成功の基準を確かめる余地がある。"
+          }
+        },
+        "reason": "成功の基準への不信を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:22",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0183",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_recognition",
+          "question": "会社から高い評価を受ける仕事ほど、客のためにならないと感じる。何を確かめれば、その評価を自分の成果として受け取れると思う？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の評価のずれ。本人の感覚を事実と決めず、成功の基準を確かめる余地がある。"
+          }
+        },
+        "reason": "成功の基準への不信を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:22",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-006",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "「何を確かめるまで評価を受け取りたい」は、確認の時期と評価を受け取る条件のどちらを聞くか分かりにくい。",
+      "addresses": [
+        "care-livelihood-006"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0196",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0196",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_boundaries",
+          "question": "複数の仕事を持ち、一つだけを本業と呼ぶよう求められた。自分の働き方を、何で説明したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の職業生活。収入、時間、責任の中心が同じ仕事とは限らない。"
+          }
+        },
+        "reason": "複業の自己像を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:35",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0196",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_boundaries",
+          "question": "複数の仕事を続けて自分の居場所を作ってきたが、暮らしのため一つに絞る必要が出た。収入・時間・責任がそれぞれ別の仕事にある時、何を自分の仕事として残したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の働き方の選び直し。仕事を紹介する時の名称だけでなく、生活を支える稼ぎ・積み重ねた時間・他者への責任が別々の仕事にある条件を置く。いずれかが自動的に本業とは決めない。"
+          }
+        },
+        "reason": "一つの仕事を残す必要のある本人の、複数の仕事への帰属と責任を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:35",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-007",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "複数の仕事のどれを本業と呼ぶかという紹介の問いだけではL2の自己紹介に近い。",
+      "addresses": [
+        "care-livelihood-007"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0215",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0215",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_identity",
+          "question": "職業の経験をもとに意見を話したら、会社の意見だと受け取られた。個人として何を話し続けたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の発言。秘密の開示はない設定で、所属と専門の声を分ける。"
+          }
+        },
+        "reason": "所属を伴う個人の発言を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:55",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0215",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_identity",
+          "question": "専門家として長く発信した意見が会社の見解と受け取られた。会社と異なると明言すると、築いた信頼を失うかもしれない。何を自分の声として話し続けたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の専門家。個人と会社の見解を区別するだけではなく、会社への信頼と自分の専門性が重なって評価されてきた条件を置く。信頼を失う結果は確定しておらず、発言の法的制限を判断する問いでもない。"
+          }
+        },
+        "reason": "会社に支えられた専門家としての信頼と、自分の声を保つ意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:55",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-008",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "会社の意見と誤解された時に個人として話す内容は通常の発言の境界に近く、L4の本人の職業人生への影響が弱い。",
+      "addresses": [
+        "care-livelihood-008"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0226",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0226",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_learning",
+          "question": "長年育てた相手が自分を越え、もう教える役は必要ないと言う。関係は続くなら、自分は相手の何でありたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の育成後。手順の変更ではなく、教える人生で築いた関係の意味を考える。"
+          }
+        },
+        "reason": "育成の役を失う自分の関係を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:66",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0226",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_learning",
+          "question": "自分が育てた相手が独立し、自分の仕事と競うようになった。育成の成果を喜ぶことと、自分の商いを守ることをどう受け止める？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の育成後。教えた相手が、自分が大切にしてきた客を得る可能性がある。相手が力をつけることを望んで教えた時間と、今の自分の生業を続ける必要が重なる。独立や競争の法的な可否を決める設定ではない。"
+          }
+        },
+        "reason": "育成後の役割喪失ではなく、相手の独立を育てた本人が自分の生業との競争を受け止める倫理を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:66",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-009",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "0190も育てた後輩の成長で教える役を失い自分の役割を考える。0226の越えた/必要ないという条件では同じ会話軸が強い。",
+      "addresses": [
+        "care-livelihood-009"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0231",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0231",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_identity",
+          "question": "同僚が会社への不満を話す中、自分はその仕事が好きだ。仲間への共感と好きな理由を、どう話したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の職場。会社のすべてを支持することと、仕事に喜びがあることを分ける。"
+          }
+        },
+        "reason": "不満の中の職業への愛着を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:71",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0231",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_identity",
+          "question": "同僚が職場の改善を求めて一定期間仕事を止めようとしている。自分には客と働く時間が暮らしの支えだ。仲間と同じ行動を取るか、何を大切にして決めたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の職場の共同行動。行動の法的な可否や改善への効果は置かない。本人は同僚の問題を軽く見たいわけではないが、客と仕事を続けることにも人生の支えがある。好きだと雑談で伝えることより、仲間と同じ選択をするかという本人の関係と意味を問う。"
+          }
+        },
+        "reason": "仕事を止める共同行動の中で、仕事の好きな本人が仲間との関係と働く意味を選ぶ葛藤を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:71",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-010",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "不満を話す同僚へ好きな仕事をどう話すかでは、日常の雑談・自己表明に近くL4の利害/関係への葛藤が薄い。",
+      "addresses": [
+        "care-livelihood-010"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0266",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0266",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_identity",
+          "question": "親しい人が肩書きを失い、会話のたび昔の仕事を話す。自分はその人の何を覚えていたい？",
+          "perspective": "observer",
+          "detail": {
+            "text": "仮の離職後の関係。話を止めさせる助言ではなく、職業が作った相手の像を考える。"
+          }
+        },
+        "reason": "離職者を見る自分の視点を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:108",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0266",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_identity",
+          "question": "親の職業を誇りにし、それを頼りに自分の道も決めてきた。退職した親が今も昔の仕事を語る時、肩書きのない親の何を覚えていたい？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の親子。親が昔の仕事を語ることを未練とは決めない。自分の人生もその職業像に支えられてきた条件で、親の仕事への敬意と、働かない親との関係を考える。"
+          }
+        },
+        "reason": "親の職業像に支えられた本人が、肩書きから離れた親をどう覚えるかを聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:108",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-012",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "親しい離職者をどう見るかという普通の対人理解に近く、本人の人生/関係の意味への置換が薄い。",
+      "addresses": [
+        "care-livelihood-012"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0267",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0267",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_meaning",
+          "question": "大切な人が収入の低い好きな仕事を選んだ。生活は別々でも、応援にどんな不安が混じりそう？",
+          "perspective": "observer",
+          "detail": {
+            "text": "仮の進路。自分の家計の責任ではなく、相手に望む人生の条件を問う。"
+          }
+        },
+        "reason": "他者の職業選択への期待を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:109",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0267",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_meaning",
+          "question": "自分は、安定した職業を選ぶことを支えに生きてきた。大切な人が収入の低い好きな仕事を選ぶ時、自分を支えた人生の基準をどう受け止め直す？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の関係。相手の家計を自分が背負う条件ではない。単に相手の収入を心配するのでなく、自分が信じて選んだ安定の基準に違う人生を重ねて見る感覚を問う。どちらの選び方も成功とは確定しない。"
+          }
+        },
+        "reason": "近い人の職業選択によって、自分の人生を支えた安定の基準が揺れる意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:109",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-013",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "別々に生活する大切な人の低収入の進路を応援する不安だけではL2の一般的な気遣いに近い。",
+      "addresses": [
+        "care-livelihood-013"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0268",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0268",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_recognition",
+          "question": "仲間の一人だけが仕事で有名になった。自分の仕事は変わらないのに、関係で何が変わりそう？",
+          "perspective": "observer",
+          "detail": {
+            "text": "仮の成功。嫉妬だけと決めず、距離や比較、喜びの感覚を考える。"
+          }
+        },
+        "reason": "近い人の職業的成功を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:110",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0268",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_recognition",
+          "question": "仕事を一緒に学び、互いに認め合うことで自信を保った仲間の一人が有名になった。自分の仕事は変わらない時、対等だった関係と自分の働く意味をどう受け止める？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の職業の仲間。成功した相手が冷たくなるとは置かない。互いに認め合うことを自分の働く支えにしてきた条件で、相手への見方と自分の価値を支える根拠を考える。"
+          }
+        },
+        "reason": "互いの承認で自信を保った本人が、仲間の成功で変わる対等さと自分の職業の意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:110",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-014",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "仲間の成功で関係が変わる一般的な予想に留まり、自分が失う/守る職業上の居場所が薄い。",
+      "addresses": [
+        "care-livelihood-014"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0270",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0270",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_feedback",
+          "question": "自分が信頼する職人の仕事を、別の人が強く批判した。相手を守りたい気持ちと評価の話をどう分ける？",
+          "perspective": "observer",
+          "detail": {
+            "text": "仮の批評。仕事の質は未確定で、個人への信頼と作品の受け止めが異なる。"
+          }
+        },
+        "reason": "仕事への批評と私的な信頼を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:112",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0270",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "work_and_economy",
+          "topic": "work_feedback",
+          "question": "自分の職業の基準を学んだ職人の仕事が強く批判された。批評の正しさはまだ分からない時、相手への信頼と自分が受け継いだ基準をどう見つめたい？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の職業の師。批判の正しさは未確定で、支持や擁護を模範回答にはしない。信頼する人への一般的な応援より、自分もその仕事から価値の基準を受け継いだ条件を置く。"
+          }
+        },
+        "reason": "職業の師への批判を受ける本人が、信頼だけでなく自分の専門性の基準を見つめる意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l4.txt:112",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-016",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "信頼する職人が批判された時の対人支持の一般的な区別で、本人の専門/人生の意味への条件が薄い。",
+      "addresses": [
+        "care-livelihood-016"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0349",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0349",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "money_consumption_and_tax",
+          "topic": "tax_design",
+          "question": "税の使い道への意見を聞く場で、払う額の多い人の発言を重く扱うことをどう思う？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の相談。共同の費用への負担と、暮らす人の意思の扱いを比べる。"
+          }
+        },
+        "reason": "納税額と発言の関係を問う。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l3.txt:11",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0349",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "money_consumption_and_tax",
+          "topic": "tax_design",
+          "question": "売った商品の代金がまだ入らない人にも、売上を基に税を納めてもらう制度だとする。未回収の代金を、どの時点から負担できる収入と扱いたい？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の課税制度。現行の税法の説明ではない。代金を受け取る権利があっても、回収の時期や全額を受け取れるかは未確定という条件を置く。売上を収入として数える一貫性と、実際に税を支払えるかを比べる。"
+          }
+        },
+        "reason": "発言の重みではなく、未回収の売上を税の負担能力に算入する時点を問う。現物資産の支払い方や納付の分割とは区別する。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l3.txt:11",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-017",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "「使い道への意見を聞く場で、納税額が多い人の発言を重く」は税額や支払い負担より意思決定への参加の扱いが主題。民主主義・市民参加との分類境界を再確認したい。",
+      "addresses": [
+        "care-livelihood-017"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0410",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0410",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "consumer_contract",
+          "question": "将来の暮らしのため大きな買い物をしたが、人生の望みが変わり使えない。費やした時間と財産を、何が失敗だと思う？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の購入後。品物に欠点はなく、金額の損失と、自分の将来を描いて備えた意味を分ける。"
+          }
+        },
+        "reason": "未来を備えた消費を選び直す本人を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:11",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0410",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "consumer_contract",
+          "question": "将来の暮らしのため大きな買い物をしたが、人生の望みが変わり使えない。費やした時間と財産を、今の自分は何として受け止めたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の大きな購入。選んだ当時と今では人生の望みが異なる条件で、失敗と決めずに、戻らない時間と財産をどう意味づけるかを問う。契約上の取消しや金銭の回収を助言するものではない。"
+          }
+        },
+        "reason": "人生の望みが変わった後、使えない大きな購入へ費やした時間と財産の意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:11",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-018",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "「費やした時間と財産を、何が失敗だと思う？」は助詞と疑問語が接続せず、何を評価する問いか取りにくい。失敗と捉えることも先取りしている。",
+      "addresses": [
+        "care-livelihood-018"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0414",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0414",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "credit_restart",
+          "question": "返済を待ってもらえたが、貸し手と会うたび気まずい。お金の約束が終わるまで、何を話していたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の私的貸借。返す計画があっても、相手と会うたび債務者としての位置を感じることがある。金銭の約束だけで関係を表すかを考える。"
+          }
+        },
+        "reason": "猶予中の債務者の関係を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:15",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0414",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "credit_restart",
+          "question": "暮らしを立て直すため長年の友人から借り、まだ返せない。会うたび借金の話だけになり、対等だった自分を見失う時、お金の約束と友情をどう続けたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の私的な貸借。相手が友人を見下しているとは固定しない。長く対等に話せた関係が返済の約束で変わると本人が感じる条件で、話題を選ぶ方法より、借りる自分の尊厳と約束を続ける意味を考える。"
+          }
+        },
+        "reason": "返済を待ってもらう間の話題ではなく、暮らしを立て直す貸借で変わる対等な友情と本人の尊厳を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:15",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-019",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "「返済を待ってもらう間、何を話していたい？」では日常の話題選びに寄り、L4で失う対等さや関係の意味が本文に薄い。",
+      "addresses": [
+        "care-livelihood-019"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0415",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0415",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "consumption_pressure",
+          "question": "高い物を買うと自信が持てるが、その感覚は長く続かない。自分の買い方に何を求めたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "仮の消費。依存の診断ではなく、買う瞬間とその後の満足を考える。"
+          }
+        },
+        "reason": "繰返す購入の満足の意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:16",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0415",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "consumption_pressure",
+          "question": "長く高い物を買うことで自分の価値を確かめてきたが、満足は続かず生活の備えも減った。買わない自分の何を大切にしたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の消費の選び直し。病気や依存を診断する条件ではない。高価な所有を自己評価の支えにしてきた本人に、財産を増やす方法ではなく、買うことから離れた自分の価値を問う。"
+          }
+        },
+        "reason": "短い満足の見直しではなく、高価な所有で確かめてきた自己評価から離れる意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:16",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-020",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "高い物の満足が短い時の買い方の見直しだけではL2の消費習慣に近い。自信を得るという一回の効用以上の自己像や生活上の意味が弱い。",
+      "addresses": [
+        "care-livelihood-020"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0427",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0427",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "price_fairness",
+          "question": "自分が安く買った物を、困っている人は欲しくても買えない。持つ喜びに、相手の事情は関わる？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の消費。譲る義務を前提にせず、所有を楽しむ自分の感覚を問う。"
+          }
+        },
+        "reason": "購買力の差を知る満足を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:28",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0427",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "price_fairness",
+          "question": "自分が暮らしの支えにしてきた品物が、作り手の生活を守るため値上がりする。楽しみを続けにくくなる時、「よい値段」の意味をどう受け止める？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の販売と本人の暮らし。値上げが作り手の暮らしを支えるという仮の条件を置く。安い値段が本人の楽しみを支えた時間と、その品物を作る人が暮らせる対価を比べる。特定の事業者の収益や原価の事実ではない。"
+          }
+        },
+        "reason": "買い手同士の優遇差ではなく、作り手の生活を支える価格が自分の暮らしの支えを失わせる意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:28",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-021",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "0408も、自分は有利な値段で買えるが同じように必要な他者は買えない場面で、自分の所有・利益を受け止める。0427の安く買えた/欲しい人という差では聞ける軸が近い。",
+      "addresses": [
+        "care-livelihood-021"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0441",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0441",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "credit_restart",
+          "question": "貸した相手は返済しないが、楽しい買い物をしている。事情を知らないまま、何を確かめたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の貸借。支出の一場面だけで返せるとは断定せず、約束への気持ちを問う。"
+          }
+        },
+        "reason": "債権者の支出への不満を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:43",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0441",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "credit_restart",
+          "question": "友人を信じて貸したお金が返らず、自分の暮らしの備えも足りなくなった。相手が楽しそうに買い物する姿だけを見た時、信頼した自分と返してほしい気持ちをどう扱いたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の貸借。買い物の一場面から相手に返せる余裕があるとは決めない。自分も備えを失う条件で、事情を確認する方法だけでなく、貸した自分の信頼と生活を守りたい気持ちを問う。"
+          }
+        },
+        "reason": "支出を見た時の確認方法ではなく、暮らしの備えを失った貸し手が自分の信頼と返済の必要をどう扱うかを聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:43",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-022",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "貸した相手の買い物を見て事情を確かめる通常の貸借調整で、L4の貸し手本人の人生・利害の条件が薄い。",
+      "addresses": [
+        "care-livelihood-022"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0450",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0450",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "saving_meaning",
+          "question": "望むことのために貯金を使うが、後から困るかもしれない。選んだ自分を何で納得させたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の出費。将来の損失は確定とせず、備えを残さない理由を考える。"
+          }
+        },
+        "reason": "備えを使う自分の不確実さを聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:52",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0450",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "saving_meaning",
+          "question": "生涯をかけて貯めたお金を望んだ経験に使うと、働けなくなった時の備えがほとんど残らない。今の願いと将来の自分に、どんな約束をして選びたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の人生の出費。長く備えた本人が、今実現したい経験のために蓄えを大きく使う条件を置く。働けなくなる時期や困窮は確定させず、今の自分の願いと将来の自分の生活を同時に考える。"
+          }
+        },
+        "reason": "一般的な予算の不安ではなく、生涯の備えを使う本人が今と将来の自分へする約束を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:52",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-023",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "望む支出と将来の不安だけでは一般的な家計の選び方に近い。何を失う/何の人生の意味を選ぶ場面かが本文にない。",
+      "addresses": [
+        "care-livelihood-023"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0454",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0454",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "budget_relations",
+          "question": "共同の家計を管理する自分は、皆の将来が不安だ。楽しみを減らす案を、どんな根拠で出したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の予算。管理者の恐れと、共に暮らす人が今求める時間を比べる。"
+          }
+        },
+        "reason": "家計管理者の不安の扱いを聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:57",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0454",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "budget_relations",
+          "question": "家計を守ることを自分の役目にしてきた。自分の節約案で、家族が二度とない機会を諦めたと知った。将来を守る責任と、今の時間を狭めた責任をどう受け止めたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の共同家計。家族は案に同意したが、失われた機会の重さを本人は後から知った条件を置く。節約が将来の生活を守る価値も残っている中、家計を決める自分が他者の時間へ与えた影響を考える。"
+          }
+        },
+        "reason": "予算案の出し方ではなく、家計を守る役で他者の機会を狭めた本人の責任と意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:57",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-024",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "共同家計の不安にどんな根拠で節約案を出すかでは、通常の管理の方法・L3の役割の判断に近い。管理した本人が背負う意味や失われる機会が薄い。",
+      "addresses": [
+        "care-livelihood-024"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0456",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0456",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "price_fairness",
+          "question": "自分の店を続けるには、長く支えてくれた客が通えなくなる値上げが必要だとする。商いの誰を残すために続けたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の価格。単なる料金設定でなく、自分が築いた商いの目的と関係を考える。"
+          }
+        },
+        "reason": "値上げで変わる自分の商いの意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:59",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0456",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "price_fairness",
+          "question": "自分の店を続けるには、長く支えてくれた客が通えなくなる値上げが必要だとする。値上げして続ける店を、誰のための場所にしたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の価格。単なる料金設定でなく、自分が築いた商いの目的と関係を考える。"
+          }
+        },
+        "reason": "値上げで変わる自分の商いの意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:59",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-025",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "「商いの誰を残すために続けたい」は、誰の雇用・誰との関係・誰の買い物の機会のどれを残すか取りにくい。",
+      "addresses": [
+        "care-livelihood-025"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0472",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0472",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "money_consumption_and_tax",
+          "topic": "budget_relations",
+          "question": "家族の支出を管理する役になったが、見たい範囲を自分でも決められない。どこから本人に任せたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の家計。管理への依頼があっても、すべての生活を決める権限とは限らない。"
+          },
+          "content_warning": [
+            "family_conflict",
+            "privacy_and_surveillance"
+          ]
+        },
+        "reason": "家族の家計を預かる本人の境界を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:75",
+          "related_existing_ids": [
+            "elderly-005"
+          ]
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0472",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "money_consumption_and_tax",
+          "topic": "budget_relations",
+          "question": "家族の家計を長く引き受け、支出の内訳を知ることで安心してきた。本人が今は自分で管理したいと言う時、失敗する不安があっても、どこまで管理する役を手放したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "架空の家計の引継ぎ。本人は管理を再開できる条件だが、失敗しないとは確定しない。長く担った人には、生活を守ってきた役への思いと不安がある。本人が自分で選ぶ範囲と、預かった人の安心を比べる。"
+          },
+          "content_warning": [
+            "family_conflict",
+            "privacy_and_surveillance"
+          ]
+        },
+        "reason": "管理の確認範囲ではなく、家族が管理を再開する時に、長く預かった本人が安心を支えた役を手放す意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:75",
+          "related_existing_ids": [
+            "elderly-005"
+          ],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-026",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "管理者が見たい範囲を決め本人へ任せる通常の境界の設定に留まり、L4の本人が担ってきた役と手放す意味が弱い。",
+      "addresses": [
+        "care-livelihood-026"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0475",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0475",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "credit_restart",
+          "question": "友人が借金から再出発したと話した。詳しい理由を知らなくても、自分は何を祝えると思う？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の再建後。返済の成否を評価せず、相手の生活が変わる意味を問う。"
+          }
+        },
+        "reason": "再出発を受け止める身近な人を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:79",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0475",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "credit_restart",
+          "question": "借金で困った友人への援助を、かつて自分の生活を守るために断った。今、友人が再出発したと聞いた時、過去の自分の選択と相手の喜びをどう受け止めたい？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の友人の再出発。友人は今の暮らしを喜んでいるが、本人に罪悪感や称賛を求めない。援助を断った事情にも生活の必要があった条件で、通常の祝い方より、過去の自分の境界と関係の意味を考える。"
+          }
+        },
+        "reason": "祝い方ではなく、援助を断った過去を持つ本人が、相手の再出発を見て自分の境界と関係を受け止める倫理を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:79",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-027",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "再出発した友人の何を祝えるかは普通の受け止めや労いに近く、L4の観察する本人の重大な意味・倫理の条件が不足。",
+      "addresses": [
+        "care-livelihood-027"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0476",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0476",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "property_inheritance",
+          "question": "仲間が相続したお金で自由に暮らし始めた。応援と自分との比較が混じる時、何を相手に知ってほしい？",
+          "perspective": "observer",
+          "detail": {
+            "text": "仮の生活変化。相手の権利への賛否ではなく、財産差が作る関係の感覚を問う。"
+          }
+        },
+        "reason": "近い人の財産差への感覚を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:80",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0476",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "property_inheritance",
+          "question": "老後を一緒に楽しむ予定を、同じように貯めながら支え合う仲間と描いてきた。相手は相続したお金で先に仕事を離れ、自分は働き続ける時、二人の未来をどう描き直したい？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の財産の差。資金は別々で、同じ時期に仕事を離れることは拘束する約束ではなく共有した望みだった。相手の相続を不正や裏切りとは置かず、今後使えるお金と時間が異なる中で、共に描いた人生の予定を考える。"
+          }
+        },
+        "reason": "近い人の違う職業選択で自分の基準を見直す0267とは分ける。相続によって仲間との老後の時期がずれる本人が、共有した人生の予定と財産差を受け止める意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:80",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-028",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "近い人との財産差に応援と比較が混じる時どう話すかでは、日常の感情共有に近い。自分が生きてきた基準や関係の意味を条件にする。",
+      "addresses": [
+        "care-livelihood-028"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0562",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0562",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "housing_community_and_transport",
+          "topic": "housing_access",
+          "question": "家賃を払うため長く働く家と、狭いが時間に余裕ができる家。住まいの豊かさを何で比べる？",
+          "perspective": "observer",
+          "detail": {
+            "text": "仮の生活条件。広さの数字だけでなく、家で過ごせる時間を含める。"
+          }
+        },
+        "reason": "住宅の豊かさの測り方を問う。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "housing_community_and_transport__l3.txt:5",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0562",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "housing_community_and_transport",
+          "topic": "housing_access",
+          "question": "自治体が「住みやすい住宅」を評価する時、広さを確保するため長く働く暮らしと、狭くても家で過ごす時間が長い暮らしを何で比べるべき？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の住宅支援の評価。選んだ基準を今後の住宅支援の目標に用いる設定で、広さの数字と住居で過ごせる時間のどちらを成果へ含めるかを考える。広さや家賃による働く時間の差は、この二つの暮らしの仮の条件である。"
+          }
+        },
+        "reason": "個人が家を選ぶ好みではなく、住宅支援の評価で居住の豊かさを何で測るかを問う。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "housing_community_and_transport__l3.txt:5",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-029",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "高い家のため長く働くか狭い家で時間を得るかという個人の生活条件の比較で、背景にも社会・制度・役割の判断がないためL2に近い。",
+      "addresses": [
+        "care-livelihood-029"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0614",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0614",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "housing_community_and_transport",
+          "topic": "transport_information",
+          "question": "駅員に尋ねる窓口を減らし案内板を増やすなら、何が確認できるまで変更したい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の予算。文字で自分で探す人と、会話で確かめる人の条件を比較する。"
+          }
+        },
+        "reason": "交通案内の対人の役割を問う。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "housing_community_and_transport__l3.txt:57",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0614",
+          "level": 3,
+          "sensitivity": 1,
+          "category": "housing_community_and_transport",
+          "topic": "transport_information",
+          "question": "駅員に尋ねる窓口を減らし案内板を増やすなら、変更する前に何を確かめたい？",
+          "perspective": "decision_maker",
+          "detail": {
+            "text": "仮の予算。文字で自分で探す人と、会話で確かめる人の条件を比較する。"
+          }
+        },
+        "reason": "交通案内の対人の役割を問う。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "housing_community_and_transport__l3.txt:57",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-030",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "「何が確認できるまで変更したい？」では確認を待つのか変更を続けるのか分かりにくい。",
+      "addresses": [
+        "care-livelihood-030"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0654",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0654",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "housing_community_and_transport",
+          "topic": "home_memory",
+          "question": "古い家を直すと、親しい人といた部屋の形が消える。快適に生きる自分と記憶をどうつなぎたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の改修。復旧や文化財の保存ではなく、本人が住む空間の記憶を扱う。"
+          }
+        },
+        "reason": "住み直すための記憶の変化を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "housing_community_and_transport__l4.txt:28",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0654",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "housing_community_and_transport",
+          "topic": "home_memory",
+          "question": "長く暮らした家の改修で、家族が大切にする部屋は残るが、自分の記憶のある場所はなくなる。住みやすくなっても、何を自分が生きた場所の証として残したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の共有した住居の改修。残す部屋には家族の生活上の理由もあり、本人を軽く扱う意図とは決めない。住みやすさの改善を望んでいても、自分が過ごした時間だけが見えなくなる感覚がある。共同の家で誰の記憶が形を持って残るかを考える。"
+          },
+          "content_warning": [
+            "family_conflict"
+          ]
+        },
+        "reason": "快適さと記憶の一般的比較ではなく、改修で自分の生きた場所だけが失われる本人の帰属と記憶の選ばれ方を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "housing_community_and_transport__l4.txt:28",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-031",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "0525も古い家の思い出がある部分を直して快適にする受け止めを問う。0654の親しい人の部屋・記憶をつなぐという語尾だけでは、新しい判断対象とL4の重さが不足。",
+      "addresses": [
+        "care-livelihood-031"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0676",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0676",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "housing_community_and_transport",
+          "topic": "transport_autonomy",
+          "question": "自分の外出を減らしてまで地域の移動を支えてきた。町に必要な役でも、続ける理由を選び直したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の送迎。報酬額の問題とは分け、担う本人の時間と意味を考える。"
+          }
+        },
+        "reason": "移動を支えた人生の時間を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "housing_community_and_transport__l4.txt:51",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0676",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "housing_community_and_transport",
+          "topic": "transport_supply",
+          "question": "人の移動を長く支えることが、生きがいになった。自分が頼られるほど別の移動手段が育たないと感じる時、支える役が不要になる未来をどう受け止めたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "架空の地域の移動。別の手段が育たない理由は未確定で、本人だけを原因とは決めない。頼られることが人生の支えでもある本人にとって、住人の移動を助けることと、自分が必要なくなる未来を望むことは同じ感覚とは限らない。"
+          }
+        },
+        "reason": "自分の時間不足による終了ではなく、送迎を生きがいにした本人が、住人の移動に自分が不要になる未来を受け止める意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "housing_community_and_transport__l4.txt:51",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-032",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "0669も送迎で自分の外出ができず、支える役を続けるか/終える意味を問う。0676は外出を減らす条件と継続理由の語尾へ言い換えた近似に見える。",
+      "addresses": [
+        "care-livelihood-032"
+      ]
+    },
+    {
+      "id": "exp26-livelihood-0710",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0710",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "housing_community_and_transport",
+          "topic": "transport_autonomy",
+          "question": "大切な人が会いに来にくくなり、自分も頻繁には行けない。会えない距離が関係に何を変えそう？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の移動の制約。通信手段の優劣ではなく、互いの生活の場所を問う。"
+          }
+        },
+        "reason": "移動の制約で変わる自分の関係を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "housing_community_and_transport__l4.txt:87",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0710",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "housing_community_and_transport",
+          "topic": "transport_autonomy",
+          "question": "離れて暮らす大切な人との再会が、人生の支えだった。互いに今の町の仕事や住まいを離れられず、会いに行ける交通もなくなった時、何を関係の支えとして残したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の居住と移動の制約。本人も相手も今の地域に仕事や住まいの支えがあり、会えるために転居する見通しはない。通信などでやり取りできても、会えない期間の終わりは分からない条件で、人生を支えた再会から変わる関係の意味を考える。"
+          }
+        },
+        "reason": "会う頻度の予想ではなく、互いの居住と移動の制約で人生を支えた再会を失う本人の関係の意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "housing_community_and_transport__l4.txt:87",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-033",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "会う頻度が減って関係がどう変わるかだけではL2の付き合い方に近い。本人の人生の支えと、互いの住む場所を変えられない条件を明示したい。",
+      "addresses": [
+        "care-livelihood-033"
+      ]
+    }
+  ],
+  "finding_resolutions": [
+    {
+      "finding_id": "care-livelihood-001",
+      "id": "exp26-livelihood-0025",
+      "priority": "optional",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-002",
+      "id": "exp26-livelihood-0039",
+      "priority": "optional",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-003",
+      "id": "exp26-livelihood-0060",
+      "priority": "optional",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-004",
+      "id": "exp26-livelihood-0062",
+      "priority": "optional",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-005",
+      "id": "exp26-livelihood-0171",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-006",
+      "id": "exp26-livelihood-0183",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-007",
+      "id": "exp26-livelihood-0196",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-008",
+      "id": "exp26-livelihood-0215",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-009",
+      "id": "exp26-livelihood-0226",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-010",
+      "id": "exp26-livelihood-0231",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-011",
+      "id": "exp26-livelihood-0244",
+      "priority": "optional",
+      "status": "optional_deferred",
+      "reason": "任意の深さ・近似の補強。本文の明瞭さの必須修正ではなく、主担当の原文判断へ残す。"
+    },
+    {
+      "finding_id": "care-livelihood-012",
+      "id": "exp26-livelihood-0266",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-013",
+      "id": "exp26-livelihood-0267",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-014",
+      "id": "exp26-livelihood-0268",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-015",
+      "id": "exp26-livelihood-0269",
+      "priority": "optional",
+      "status": "optional_deferred",
+      "reason": "任意の深さ・近似の補強。本文の明瞭さの必須修正ではなく、主担当の原文判断へ残す。"
+    },
+    {
+      "finding_id": "care-livelihood-016",
+      "id": "exp26-livelihood-0270",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-017",
+      "id": "exp26-livelihood-0349",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-018",
+      "id": "exp26-livelihood-0410",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-019",
+      "id": "exp26-livelihood-0414",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-020",
+      "id": "exp26-livelihood-0415",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-021",
+      "id": "exp26-livelihood-0427",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-022",
+      "id": "exp26-livelihood-0441",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-023",
+      "id": "exp26-livelihood-0450",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-024",
+      "id": "exp26-livelihood-0454",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-025",
+      "id": "exp26-livelihood-0456",
+      "priority": "optional",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-026",
+      "id": "exp26-livelihood-0472",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-027",
+      "id": "exp26-livelihood-0475",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-028",
+      "id": "exp26-livelihood-0476",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "自己再読で0267との新たな意味近似を避け、相続でずれる共有の老後の予定に改稿。0267・0428の問いと背景を比較した。"
+    },
+    {
+      "finding_id": "care-livelihood-029",
+      "id": "exp26-livelihood-0562",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-030",
+      "id": "exp26-livelihood-0614",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-031",
+      "id": "exp26-livelihood-0654",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-032",
+      "id": "exp26-livelihood-0676",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "care-livelihood-033",
+      "id": "exp26-livelihood-0710",
+      "priority": "required",
+      "status": "drafted_not_applied",
+      "reason": "本文と必要な背景・理由・metadataを個別に整えた未承認案。"
+    },
+    {
+      "finding_id": "XDR-08",
+      "id": "exp26-livelihood-0181",
+      "priority": "optional",
+      "status": "drafted_not_applied",
+      "reason": "主担当の横断任意指摘を具体化。0042の紹介方法、0171の働き続ける自己像、0266の親を見る視点と比較し、仕事を終えた自分が生きた価値を未来へ受け継ぐ軸へ。"
+    }
+  ],
+  "self_review": {
+    "status": "all_32_changes_read_and_revised",
+    "reviewed_change_ids": [
+      "exp26-livelihood-0025",
+      "exp26-livelihood-0039",
+      "exp26-livelihood-0060",
+      "exp26-livelihood-0062",
+      "exp26-livelihood-0171",
+      "exp26-livelihood-0181",
+      "exp26-livelihood-0183",
+      "exp26-livelihood-0196",
+      "exp26-livelihood-0215",
+      "exp26-livelihood-0226",
+      "exp26-livelihood-0231",
+      "exp26-livelihood-0266",
+      "exp26-livelihood-0267",
+      "exp26-livelihood-0268",
+      "exp26-livelihood-0270",
+      "exp26-livelihood-0349",
+      "exp26-livelihood-0410",
+      "exp26-livelihood-0414",
+      "exp26-livelihood-0415",
+      "exp26-livelihood-0427",
+      "exp26-livelihood-0441",
+      "exp26-livelihood-0450",
+      "exp26-livelihood-0454",
+      "exp26-livelihood-0456",
+      "exp26-livelihood-0472",
+      "exp26-livelihood-0475",
+      "exp26-livelihood-0476",
+      "exp26-livelihood-0562",
+      "exp26-livelihood-0614",
+      "exp26-livelihood-0654",
+      "exp26-livelihood-0676",
+      "exp26-livelihood-0710"
+    ],
+    "scope": "全32案の本文・背景・理由・metadataを実読。自己再読で0267の主語と0231の判断対象を明瞭にし、背景から編集用の比較IDを除いた。0267/0476の新たな意味近似を避け0476を改稿。0181は0042/0171/0266と比較。文字n-gram近似の上位候補と原文で比較したが、全可能組合せの意味比較や会話テストを完了したとは扱わない。",
+    "retained_distinctions": {
+      "0190/0226": "教える役を失う意味／育てた相手との生業上の競争",
+      "0408/0427": "買い手同士の優遇差／自分の消費と作り手の暮らしを両立する価格",
+      "0525/0654": "改修の快適さと思い出／共同の家で自分の記憶が残らない帰属",
+      "0669/0676": "時間を失うため支援を終える／生きがいの支援が不要になる未来",
+      "0267/0476": "他者の職業選択で自分の基準を見直す／相続でずれる共有した老後の予定",
+      "0171/0181/0266": "働き続ける自己像／生涯の仕事を終えた自分が受け継ぐ価値／親の退職を見る本人の職業像"
+    },
+    "source_snapshot_unchanged": true,
+    "draft_count": 32,
+    "mandatory_resolutions": 26,
+    "optional_drafted": 6,
+    "optional_deferred": 2,
+    "category_level_counts": {
+      "housing_community_and_transport:L1": 38,
+      "housing_community_and_transport:L2": 42,
+      "housing_community_and_transport:L3": 69,
+      "housing_community_and_transport:L4": 84,
+      "money_consumption_and_tax:L1": 33,
+      "money_consumption_and_tax:L2": 35,
+      "money_consumption_and_tax:L3": 61,
+      "money_consumption_and_tax:L4": 78,
+      "work_and_economy:L1": 20,
+      "work_and_economy:L2": 60,
+      "work_and_economy:L3": 81,
+      "work_and_economy:L4": 109
+    },
+    "exact_duplicate_questions_in_merged_942_plus_710": 0,
+    "l4_perspectives": {
+      "affected": 103,
+      "actor": 84,
+      "decision_maker": 72,
+      "observer": 12
+    },
+    "all_primary_l4_perspectives_at_least_20_percent": true,
+    "source_fact_consistency": "変更32件は全て架空。出典のある0400/0627は未変更。",
+    "requires_root_review_after_last_revision": [
+      "exp26-livelihood-0181",
+      "exp26-livelihood-0226",
+      "exp26-livelihood-0231",
+      "exp26-livelihood-0267",
+      "exp26-livelihood-0349",
+      "exp26-livelihood-0427",
+      "exp26-livelihood-0450",
+      "exp26-livelihood-0454",
+      "exp26-livelihood-0472",
+      "exp26-livelihood-0476",
+      "exp26-livelihood-0654",
+      "exp26-livelihood-0676",
+      "exp26-livelihood-0710"
+    ]
+  }
+}

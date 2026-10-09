@@ -1,0 +1,30 @@
+[
+  {
+    "ids": [
+      "exp26-personal-0126",
+      "exp26-personal-0280"
+    ],
+    "similarity": 0.4484,
+    "cards": [
+      {
+        "id": "exp26-personal-0126",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "self_and_values",
+        "topic": "ordinary_meaning",
+        "question": "一人で笑った小さなことを、覚えていたいと思う？"
+      },
+      {
+        "id": "exp26-personal-0280",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "relationships_and_communication",
+        "topic": "equal_exchange",
+        "question": "相手のために覚えた小さなことを、覚えていると伝えたい？"
+      }
+    ],
+    "author_groups": [
+      "personal"
+    ]
+  }
+]

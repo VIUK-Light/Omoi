@@ -1,0 +1,36 @@
+{
+  "scope": "Immutable complete inputs to the initial full independent reviews. These are historical drafts and must never be applied directly.",
+  "status": "review_input_history_not_for_application",
+  "groups": {
+    "personal": {
+      "file": "review-inputs/personal.json",
+      "sha256": "859fdbd5cf219a4084a7647bc3e4b6300d711780a329b90b12a1ebcc1ce3bac8",
+      "count": 593
+    },
+    "care": {
+      "file": "review-inputs/care.json",
+      "sha256": "fa51215b0a166ed30f0b0d61d9553214086769b7940a51a829e167fa2b28d49e",
+      "count": 670
+    },
+    "livelihood": {
+      "file": "review-inputs/livelihood.json",
+      "sha256": "09ef66a877da160e703a8b209b256abb96973de88ce7ccd37cbc47139abdb41c",
+      "count": 710
+    },
+    "learning": {
+      "file": "review-inputs/learning.json",
+      "sha256": "19ce08f2190733645109a7bcf6c1df29a61c3e8df60df084f7a04944f039e7a9",
+      "count": 574
+    },
+    "civic": {
+      "file": "review-inputs/civic.json",
+      "sha256": "b07f76f14e82446aa5066e6944190df4b4ee2ba2991d93b129da3dd44c0f27df",
+      "count": 558
+    },
+    "world": {
+      "file": "review-inputs/world.json",
+      "sha256": "c1b10b94608e8ce0e79ae52a04482877a36f644826aa942ef949fe0e66113732",
+      "count": 663
+    }
+  }
+}

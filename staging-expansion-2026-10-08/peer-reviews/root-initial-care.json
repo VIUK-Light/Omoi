@@ -1,0 +1,60 @@
+{
+  "reviewer": "root",
+  "author_group": "care",
+  "reviewed_ids": [
+    "exp26-care-0101",
+    "exp26-care-0121",
+    "exp26-care-0161",
+    "exp26-care-0201",
+    "exp26-care-0231",
+    "exp26-care-0253"
+  ],
+  "reviewed_count": 6,
+  "scope": "保存途中の家族カード6件の文面・背景・metadataを抜粋確認。担当全件のレビューではない。独立した担当外の全文レビューは別途行う。",
+  "findings": [
+    {
+      "id": "exp26-care-0161",
+      "priority": "required",
+      "field": "question/detail/novelty",
+      "issue": "元の分担・練習時間だけではL4の本人の利害や葛藤が弱い。",
+      "before": {
+        "question": "家庭の分担を決めるあなたは、得意な人に任せると負担が偏ると気づいた。練習の時間をどう分けたい？",
+        "detail_text": "仮の場面です。不得意な人が覚える間は家全体の手間が増える設定です。"
+      },
+      "resolution": "学ぶ時間を失う長期のケアと、引継ぎの一時的な負担を具体化した。",
+      "status": "resolved",
+      "after": {
+        "question": "あなたは家族の世話と家事を一人で回し、学ぶ時間を失っている。相手へ任せると、慣れるまでは手間が増える。長く続けられる分担へ何を変えたい？",
+        "detail_text": "仮の場面です。今すぐの効率と、自分の時間を取り戻すための引継ぎが競合する設定です。",
+        "reason": "自分の時間と家事の引継ぎ。",
+        "content_warning": []
+      }
+    },
+    {
+      "id": "exp26-care-0231",
+      "priority": "required",
+      "field": "question/detail/content_warning/novelty",
+      "issue": "家の写真を編集する日常の調整だけではL4の重さが弱い。",
+      "before": {
+        "question": "あなたが家の記録を編集する。家族の一人が自分の写真を入れたくないと言う時、全体の記憶をどう残したい？",
+        "detail_text": "仮の場面です。一つの記録が全員の希望を満たすとは限らない場面です。",
+        "content_warning": [
+          "privacy_and_surveillance"
+        ]
+      },
+      "resolution": "離れても家族をつなぐ記録と、つらい過去から距離を置く本人の願いを具体化した。",
+      "status": "resolved",
+      "after": {
+        "question": "あなたは家族が離れてもつながりを保てるよう、育った家の記録を残したい。一人はつらかった過去の写真を載せたくない。どんな家族史を残す？",
+        "detail_text": "仮の場面です。共同の記憶を支えにする願いと、その記憶から距離を置く本人の願いが並びます。",
+        "reason": "家族をつなぐ記録と個人の過去。",
+        "content_warning": [
+          "privacy_and_surveillance",
+          "family_conflict"
+        ]
+      }
+    }
+  ],
+  "status": "reviewed_not_approved",
+  "date": "2026-10-08"
+}

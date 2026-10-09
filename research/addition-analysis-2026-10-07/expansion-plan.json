@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "date": "2026-10-07",
+  "status": "analysis_only",
+  "approved_scope": {
+    "total_question_target": 4710,
+    "user_statement": "現行942問を、合計4,710問にする",
+    "individual_questions_approved": false,
+    "category_and_level_allocations_approved": false
+  },
+  "baseline_file": "baseline.json",
+  "additional_questions_target": 3768,
+  "target_level_counts": [700, 800, 1360, 1850],
+  "target_level4_perspective_counts": {
+    "affected": 740,
+    "actor": 555,
+    "decision_maker": 463,
+    "observer": 92
+  },
+  "allocation_basis": "現在の原文・背景の比較と不足領域レビューに基づく編集配分案。各分野でこの数の独立した問いを供給できることを検証した値ではない。話題の新しさやカテゴリーの均等化を目標にせず、重い話への特化とL2の入口を両立する。",
+  "categories": [
+    {"id":"self_and_values","name":"自分・価値観","target_levels":[185,50,25,40],"axes":["達成後の意味","自分らしさと変化","居場所","後悔と納得","希望の持ち方","何を残したいか"]},
+    {"id":"relationships_and_communication","name":"人間関係・コミュニケーション","target_levels":[130,100,80,140],"axes":["関係の変化","対等さ","距離を置く感覚","修復と許し","理解されること","一緒にいる意味"]},
+    {"id":"family_and_care","name":"家族・ケア","target_levels":[20,60,80,140],"axes":["ケアを受ける自律","家事の段取り","ケアと人生の時間","家族の形","悲嘆と記憶","責任を分かち合う"]},
+    {"id":"school_and_youth","name":"学校・若者","target_levels":[40,65,85,110],"axes":["学ぶ意味","進路の迷い","失敗と評価","所属と退出","大人に頼る","学校を変える参加"]},
+    {"id":"work_and_economy","name":"仕事・経済","target_levels":[20,60,90,130],"axes":["働く意味","得意と挑戦","時間外の境界","学び直し","協働と責任","仕事を手放す意味"]},
+    {"id":"gender_sexuality_and_identity","name":"ジェンダー・性・アイデンティティ","target_levels":[15,35,85,115],"axes":["自分を表す言葉","期待される役割","身体と自己像","話す相手の選択","親密さの望み","尊重された感覚"]},
+    {"id":"health_and_disability","name":"健康・障害","target_levels":[20,50,90,140],"axes":["体調の変動","知らないでいる選択","本人が望む看取り","治療と生活の意味","配慮を受ける感覚","身体の変化と自己像"]},
+    {"id":"technology_media_and_privacy","name":"技術・メディア・プライバシー","target_levels":[15,40,80,115],"axes":["言葉の出所と気持ち","故人の私的記録","理解された感覚","情報を手放す","記憶と記録","見せる自分と見せない自分"]},
+    {"id":"justice_safety_and_crime","name":"司法・安全・犯罪","target_levels":[5,25,70,100],"axes":["回復と処罰","更生後の関係","責任と許し","証言する本人の迷い","安全と尊厳","被害をどう語るか"]},
+    {"id":"society_public_policy_and_environment","name":"社会・公共政策・環境","target_levels":[10,30,90,120],"axes":["支援を受ける尊厳","公的支援への距離","生活の最低限","孤立とつながり","移住者の帰属","世代間の責任"]},
+    {"id":"culture_religion_and_history","name":"文化・宗教・歴史","target_levels":[40,40,80,90],"axes":["祈りと自分の距離","受け継ぐ習慣","歴史資料と家族の記憶","文化財の帰属","言語と居場所","創作を受け取る意味"]},
+    {"id":"ethics_and_decision_making","name":"倫理・意思決定","target_levels":[20,30,55,75],"axes":["結果と動機","引き受ける責任","後悔との関係","判断を変える条件","許しの意味","自分の例外"]},
+    {"id":"money_consumption_and_tax","name":"お金・買い物・税","target_levels":[35,40,65,80],"axes":["価格の納得","返済と再出発","財産を残す意味","欲しいものと安心","動物福祉と買い物","所有と共有"]},
+    {"id":"housing_community_and_transport","name":"住まい・地域・交通","target_levels":[40,45,75,90],"axes":["同居の境界","見守りと自律","住まいへの帰属","住民参加","移動の維持","移る自由と住み続ける意味"]},
+    {"id":"climate_environment_energy_and_disaster","name":"環境・エネルギー・防災","target_levels":[35,35,80,100],"axes":["生態系と個体の命","変わる景色への感覚","備えと普段の暮らし","回復したい地域","資源を使う責任","自然との距離"]},
+    {"id":"democracy_rights_and_participation","name":"民主主義・市民参加","target_levels":[25,30,70,75],"axes":["考えを変える参加","話を聞かれる側の決定参加","代表すること","参加しない自由","対話への期待","異なる人への信頼"]},
+    {"id":"international_peace_and_cooperation","name":"国際・平和・協力","target_levels":[25,30,70,75],"axes":["帰還と新しい暮らし","支援の目的を決める人","国を越えた帰属","相互の依存","平和を支える負担","遠くの他者への関心"]},
+    {"id":"science_research_and_uncertainty","name":"科学・研究","target_levels":[20,35,90,115],"axes":["同意を考え直す","新規性と確かめ直し","確信が変わる条件","専門家への信頼","研究する理由","知る利益と知る負担"]}
+  ]
+}

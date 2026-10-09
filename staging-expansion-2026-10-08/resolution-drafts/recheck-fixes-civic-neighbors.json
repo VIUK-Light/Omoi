@@ -1,0 +1,149 @@
+{
+  "corpus_count": 4710,
+  "method": "char2–4gram TF-IDF, candidates not semantic verdict",
+  "comparisons": [
+    {
+      "id": "exp26-civic-0333",
+      "neighbors": [
+        {
+          "similarity": 0.08658432215452194,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0145",
+              "level": 4,
+              "sensitivity": 2,
+              "category": "climate_environment_energy_and_disaster",
+              "topic": "resource_cycles",
+              "question": "使った物の廃棄が、訪ねたことのない地域へ負担を残すと知った。自分の暮らしにどんな責任を感じる？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の処理経路。処理の合法性とは別に離れた場所への関係を考える。"
+              }
+            },
+            "reason": "捨てた後も残る自分の関係。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "climate_environment_energy_and_disaster__l4.txt:11"
+            }
+          }
+        },
+        {
+          "similarity": 0.08109551668167114,
+          "addition": {
+            "card": {
+              "id": "exp26-civic-0342",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "society_public_policy_and_environment",
+              "topic": "intergenerational_responsibility",
+              "question": "あなたは支援を受けた世代として返礼を求められた。今の自分にも余裕がない時、次の世代への責任をどう感じる？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の世代間支援。恩義と実際に担える負担を分ける。"
+              }
+            },
+            "reason": "受けた支えを返す本人の限界。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l4.txt:77",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        },
+        {
+          "similarity": 0.08024360239505768,
+          "addition": {
+            "card": {
+              "id": "exp26-world-0250",
+              "level": 2,
+              "sensitivity": 2,
+              "category": "international_peace_and_cooperation",
+              "topic": "cross_border_belonging",
+              "question": "海外から来た人に「自分の国の代表として話して」と頼むことを、どう感じる？",
+              "content_warning": [
+                "discrimination_and_hate"
+              ]
+            },
+            "reason": "個人を国の代表にする距離。",
+            "editorial": {
+              "author_group": "world",
+              "fact_status": "hypothetical",
+              "source_row": "international_peace_and_cooperation__l2.txt:3"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0494",
+      "neighbors": [
+        {
+          "similarity": 0.10212821513414383,
+          "addition": {
+            "card": {
+              "id": "youth-pregnancy-l3-024",
+              "topic": "support_without_endorsement",
+              "category": "school_and_youth",
+              "perspective": "observer",
+              "question": "妊娠した生徒が過去に避妊をしなかった判断には賛成できなくても、その生徒が学び続けるための支援には賛成できる？",
+              "level": 3,
+              "sensitivity": 4,
+              "detail": {
+                "text": "ある判断を批判することと、その結果困難な状況にある人を支援することは別の問題として考えることができます。\n\n『支援すると、その行動を肯定したことになる』と感じる場合もあります。\n\n行動への評価と、その後の人への支援をどこまで分けられるかを考える問いです。"
+              },
+              "content_warning": [
+                "pregnancy_and_reproduction"
+              ]
+            }
+          }
+        },
+        {
+          "similarity": 0.07294569909572601,
+          "addition": {
+            "card": {
+              "id": "exp26-livelihood-0529",
+              "level": 2,
+              "sensitivity": 1,
+              "category": "housing_community_and_transport",
+              "topic": "home_privacy",
+              "question": "家でくつろぐ格好を、近所の人に見られることをどう感じる？"
+            },
+            "reason": "住宅の外へにじむ私生活を聞く。",
+            "editorial": {
+              "author_group": "livelihood",
+              "fact_status": "hypothetical",
+              "source_row": "housing_community_and_transport__l2.txt:14",
+              "related_existing_ids": []
+            }
+          }
+        },
+        {
+          "similarity": 0.0729164406657219,
+          "addition": {
+            "card": {
+              "id": "exp26-learning-0452",
+              "level": 3,
+              "sensitivity": 2,
+              "category": "culture_religion_and_history",
+              "topic": "language_preservation",
+              "question": "地域を離れた人が言葉を教える場合、今も暮らす人との違いをどう伝えるべき？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の場面です。語る経験の時点や生活環境が異なる。"
+              }
+            },
+            "reason": "地域語を教える立場を聞く。",
+            "editorial": {
+              "author_group": "learning",
+              "fact_status": "hypothetical",
+              "source_row": "culture_religion_and_history__l3.txt:21"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "final_draft_sha256": "00d83a2cae6a5a0a416246da143b4f6c8eba97bc98a79b575c55675b761bb0c5"
+}

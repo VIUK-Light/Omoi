@@ -1,0 +1,211 @@
+{
+  "reviewer": "world",
+  "author_group": "personal",
+  "reviewed_ids": [
+    "exp26-personal-0141",
+    "exp26-personal-0196",
+    "exp26-personal-0205",
+    "exp26-personal-0227",
+    "exp26-personal-0230",
+    "exp26-personal-0234",
+    "exp26-personal-0315",
+    "exp26-personal-0318",
+    "exp26-personal-0386",
+    "exp26-personal-0410",
+    "exp26-personal-0413",
+    "exp26-personal-0417",
+    "exp26-personal-0423",
+    "exp26-personal-0424",
+    "exp26-personal-0530",
+    "exp26-personal-0542",
+    "exp26-personal-0543",
+    "exp26-personal-0550",
+    "exp26-personal-0551",
+    "exp26-personal-0556",
+    "exp26-personal-0565"
+  ],
+  "reviewed_count": 21,
+  "final_shard_sha256": "f3e8e7b8618deedf2a0e1d75258dd7401cbfe198e8bcab9e34c1d09686dcb8c5",
+  "final_shard_path": "shards/personal/additions.json",
+  "scope": "applied-review-drafts/personal.jsonで指定された修正21件（personal内の必須19件と任意2件）について、実際の最終shardの全本文・全背景・理由・metadataと適用before/afterを読んだ。指定の近いpersonal26件と現行2件の全本文・存在する背景、横断6件、保持されたpersonal0206と差替え後learning0093/0100を選択して原文で比較。personal0206は26件の中に含む。21件以外の全593件の全文レビュー、4710件の意味の全組合せ比較、会話の実地検証は行っていない。",
+  "findings": [
+    {
+      "id": "exp26-personal-0542",
+      "priority": "optional",
+      "field": "question",
+      "issue": "冒頭の「あなたが進む道」は本人だけの道か、共に暮らした人たちと進む道かが少し読み分かれる。後半/背景で共同性は伝わるため必須ではない。",
+      "reviewed_question": "あなたが進む道を決める役になり、共に暮らした人たちはそれを信頼して今の仕事や居場所を手放そうとしている。自分はその道に詳しいが、うまくいくとは確信していない。その人たちの未来を選ぶ時、不安をどこまで共有したい？",
+      "suggested_resolution": "共に暮らした人たちと進む道を決める役になり、その人たちはあなたを信頼して今の仕事や居場所を手放そうとしている。自分はその道に詳しいが、うまくいくとは確信していない。その人たちの未来を選ぶ時、不安をどこまで共有したい？",
+      "status": "resolved_by_root_staging_clarification",
+      "resolution_draft": "resolution-drafts/recheck-fixes-personal.json"
+    }
+  ],
+  "status": "rechecked_not_approved",
+  "required_unresolved_count": 0,
+  "optional_unresolved_count": 0,
+  "comparison_reviewed_ids": [
+    "exp26-personal-0181",
+    "exp26-personal-0183",
+    "exp26-personal-0184",
+    "exp26-personal-0201",
+    "exp26-personal-0206",
+    "exp26-personal-0219",
+    "exp26-personal-0220",
+    "exp26-personal-0224",
+    "exp26-personal-0226",
+    "exp26-personal-0236",
+    "exp26-personal-0316",
+    "exp26-personal-0359",
+    "exp26-personal-0379",
+    "exp26-personal-0387",
+    "exp26-personal-0388",
+    "exp26-personal-0489",
+    "exp26-personal-0518",
+    "exp26-personal-0524",
+    "exp26-personal-0545",
+    "exp26-personal-0553",
+    "exp26-personal-0558",
+    "exp26-personal-0566",
+    "exp26-personal-0570",
+    "exp26-personal-0583",
+    "exp26-personal-0584",
+    "exp26-personal-0585",
+    "ethics-002",
+    "relationship-104",
+    "exp26-world-0581",
+    "exp26-learning-0144",
+    "exp26-learning-0428",
+    "exp26-learning-0482",
+    "exp26-civic-0268",
+    "exp26-civic-0311",
+    "exp26-learning-0093",
+    "exp26-learning-0100"
+  ],
+  "comparison_count": 36,
+  "card_checks": [
+    {
+      "id": "exp26-personal-0141",
+      "finding_resolved": true,
+      "note": "上達のために今の活動を続ける/楽しめる別を試すという二つの行動が明示され、曖昧な「どちらを続ける」が解消。"
+    },
+    {
+      "id": "exp26-personal-0196",
+      "finding_resolved": true,
+      "note": "人物の変化を性格と環境/関係のどちらから説明するかという紹介者の責任へ。0181の成功物語、0183の自己分類、0489の情報順序とは比較するものが異なる。"
+    },
+    {
+      "id": "exp26-personal-0205",
+      "finding_resolved": true,
+      "note": "本人の幸福と観客の生活条件への受け止めが異なる対話へ。0184/0201の掲載価値と分離し、0236の本人の充足とは立場と問い返す責任が違う。"
+    },
+    {
+      "id": "exp26-personal-0227",
+      "finding_resolved": true,
+      "note": "望みは今も大切で実現可能性もあるが、追う道を離れた本人の年月。0219は場所への帰属、0226は欲求の消失、0230は実現の見通しが乏しくても望みを持つ意味で分かれる。"
+    },
+    {
+      "id": "exp26-personal-0230",
+      "finding_resolved": true,
+      "note": "人生の軸を失うかもしれない自己の望みが置かれ、単なる希望と現実の一般論からL4の意味へ。医学的効果を期待する設定と混ぜていない。"
+    },
+    {
+      "id": "exp26-personal-0234",
+      "finding_resolved": true,
+      "note": "両方の話を残せないという制約へ揃い、どちらも保存不能とも読めた背景の曖昧さが解消。"
+    },
+    {
+      "id": "exp26-personal-0315",
+      "finding_resolved": true,
+      "note": "思い出を持つのは昔の友人と自分の知らない人たちと明示。自分との共有記憶を知らないという読みは消えた。"
+    },
+    {
+      "id": "exp26-personal-0318",
+      "finding_resolved": true,
+      "note": "「初めて出会ったつもり」として知り直す比喩が明確。別人へ変身する設定とは読まれにくい。"
+    },
+    {
+      "id": "exp26-personal-0386",
+      "finding_resolved": true,
+      "note": "共同の始まりを一つの日へ決めるか、二人が置く意味を残すかへ。0359の期間限定の友情の価値と、learning0482の記念日の頻度とは異なる。"
+    },
+    {
+      "id": "exp26-personal-0410",
+      "finding_resolved": true,
+      "note": "今後の自己像を確定したくない本人の未来へ深まった。0183の紹介上の分類、learning0428の習慣の説明、civic0311の過去を語らない所属とは対象が異なる。"
+    },
+    {
+      "id": "exp26-personal-0413",
+      "finding_resolved": true,
+      "note": "長い関係で別の生き方を選びたいと話した後も役目を頼られる条件。0220の役に立たない自分にも居る意味とは、理解を行動で確かめる関係の問題で分かれる。"
+    },
+    {
+      "id": "exp26-personal-0417",
+      "finding_resolved": true,
+      "note": "共に生きる相手の未来を委ねられた自分の責任が明示。relationship-104の自分のキャリアの犠牲、civic0268の助言を選ばない利用者とは異なる。"
+    },
+    {
+      "id": "exp26-personal-0423",
+      "finding_resolved": true,
+      "note": "二人とも終えると決めた関係で共有年月を確かめる望み。0379の修復結果の定義、0388の継続年数の価値とは本人が今何を終えるかが違う。"
+    },
+    {
+      "id": "exp26-personal-0424",
+      "finding_resolved": true,
+      "note": "人生の道が分かれ次の再会を決められない場の意味。0316の通常の再会の情報更新、0423の関係終了、learning0144の学習集団を代表する区切りとは異なる。"
+    },
+    {
+      "id": "exp26-personal-0530",
+      "finding_resolved": true,
+      "note": "幸福への見返りを望んで続けた倫理を、生き方の基準として見直す本人の時間へ。0545の正しい結果から決め方を一般化する判断、0524の承認動機を誇ることとは異なる。"
+    },
+    {
+      "id": "exp26-personal-0542",
+      "finding_resolved": true,
+      "note": "共に暮らした人が仕事/居場所を手放す将来への重大な説明責任。0518の通常の判断説明、0551の将来の選び直しを閉じる約束とは異なる。共同の道の主語は任意指摘でrootが明確化を選択。"
+    },
+    {
+      "id": "exp26-personal-0543",
+      "finding_resolved": true,
+      "note": "生涯取り組みたい道へ進む機会と、共に進む人の生活に未知を残す本人の責任。0585の既に使った準備、0584の利益/損失の非対称とは異なる。"
+    },
+    {
+      "id": "exp26-personal-0550",
+      "finding_resolved": true,
+      "note": "一方を選んでも失われない倫理の理由をその後の人生へ持つこと。0224の結論を出さない過去、relationship-104の現在の犠牲、0566の約束の撤回とは異なる。"
+    },
+    {
+      "id": "exp26-personal-0551",
+      "finding_resolved": true,
+      "note": "今後方向を変えない約束をこれからするかという人生の自由と協力者の時間。0542の不安の共有、0566の既にした約束を撤回、0570の価値観が変わった後の同意とは異なる。"
+    },
+    {
+      "id": "exp26-personal-0556",
+      "finding_resolved": true,
+      "note": "例外で人生を立て直した人が今は判断を担う。ethics-002の共通ルール、0558の共感できない事情、0565の関係網による功績評価とは異なる。"
+    },
+    {
+      "id": "exp26-personal-0565",
+      "finding_resolved": true,
+      "note": "人生の大半を共同の仕事へ費やした人の今後を、自分の知る関係網で推薦する重大な責任。0553の例外の情報収集への偏り、0556の確かめられない申請の責任とは異なる。"
+    }
+  ],
+  "retained_0206_and_rewritten_0093": {
+    "personal_0206_full_addition_preserved_by_source_reconstruction": true,
+    "reconstructed_pre_apply_source_sha256": "859fdbd5cf219a4084a7647bc3e4b6300d711780a329b90b12a1ebcc1ce3bac8",
+    "expected_pre_apply_source_sha256": "859fdbd5cf219a4084a7647bc3e4b6300d711780a329b90b12a1ebcc1ce3bac8",
+    "personal_0206_judgment": "長年の目標を達成した後の充足と費やした時間の受け止め。",
+    "learning_0093_judgment": "学校で必要な資格のための学びと、生涯深めたい本人の問いが違う時の学ぶ自律。",
+    "learning_0093_matches_applied_resolution_full_addition": true,
+    "learning_shard_sha256_at_read": "728f41d590fe6fd36e759bfee94a4cdfe011671259fbf2817cda5c562d8b3a62",
+    "learning_0100_difference": "0093は資格も生涯の問いも大切な二つの学びをつなぐ。0100は卒業目前で別の場所が合うと感じ、残る意味を問う。"
+  },
+  "verification": {
+    "all_21_read": true,
+    "all_final_objects_match_applied_draft_except_root_clarification": true,
+    "root_clarification_applied": true,
+    "allowed_warning_values_valid": true,
+    "changed_21_normalized_exact_duplicates_against_4710": 0,
+    "personal_quantity_and_cells_preserved": true,
+    "production_files_written": 0
+  }
+}

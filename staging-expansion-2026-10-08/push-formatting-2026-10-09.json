@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-09",
+  "timezone": "Asia/Tokyo",
+  "scope": "byte formatting only before requested push; no approved question data changes",
+  "approved_proposal_sha256": "ee78bde10a1dd39c320274f99ff31f7031bd01e4258310f934c664d06c609a42",
+  "files": [
+    {
+      "file": "research/addition-analysis-2026-10-07/candidate-catalog.csv",
+      "before_sha256": "639dd901702429bb8432a602e058da3d0f1e25d2e597866378925a281585d5c3",
+      "after_sha256": "bdb801bc746984c1716255618d8d4606969366f6b7d2f3e06d701d695cc0dd19",
+      "proof": "parsed CSV rows and every field unchanged; record line endings CRLF to LF"
+    },
+    {
+      "file": "research/addition-analysis-2026-10-07/expansion-plan.csv",
+      "before_sha256": "d46aa11e22f1b5065cea6c516eca4adb0e8ecf82a39d0b3f9ab7c714f2abdca8",
+      "after_sha256": "ce686e1eaea218386a45c9a3d251cee924faefb58764133e28b14070bdaf0e7e",
+      "proof": "parsed CSV rows and every field unchanged; record line endings CRLF to LF"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/all-additions.csv",
+      "before_sha256": "ca3a7d0382071005ee5f8cbabb9cf36e16e678b66f86842bdd0fdec8fe3da63f",
+      "after_sha256": "c597e268ca64c520e9037303c69cb0514ab4b2b587d765e7f5d19a46b5d6b51c",
+      "proof": "parsed CSV rows and every field unchanged; record line endings CRLF to LF"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/category-summary.csv",
+      "before_sha256": "1b0fffc7b9e55ee29932b4840b607be7148da72837ffce399cd185411ed435c8",
+      "after_sha256": "448cb434c156bfc9193c2c486f4be905ff4e79058c41fe2b8f283f5646edf373",
+      "proof": "parsed CSV rows and every field unchanged; record line endings CRLF to LF"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/peer-reviews/recheck-civic.md",
+      "before_sha256": "4b30df333662846c3e183bc73a90db1762bed6b13e759dd3c5cd74ead3fb86cd",
+      "after_sha256": "038b36cf0c31543454a7ddec79d92ff85f776093536d6939cdb4826dd32d3275",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/family_and_care.md",
+      "before_sha256": "3916b9aa2c6e68e5cdfb64fa9e22984b66e26bf5b38cd10646d1b431711963aa",
+      "after_sha256": "8ec81909acd7039ff9bbcba00403118a69db6d45f0255c6ccd63d1beba187346",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/culture_religion_and_history.md",
+      "before_sha256": "07f3ecb62a964f6142964d15ca5bdb6bd66e5e7a2459ec077d94f7a14d8eb3da",
+      "after_sha256": "ae57e2736b468855a87796206602deb0701ed5d9ad9c50052a29197777997f4e",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/climate_environment_energy_and_disaster.md",
+      "before_sha256": "f02ed8e0ebfdf69d2dc4cc063a499cb9f6594e9ad9964b46f103f39623a85765",
+      "after_sha256": "1b4b18f15f84c6e8e75854144dc035fd73899684837aedaa0ad0f0c782f0385d",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/democracy_rights_and_participation.md",
+      "before_sha256": "ed7ec2fd04144c3da554cf440655f10032dc608b8199b0734da14064c091f01e",
+      "after_sha256": "a829b0c4157c1cbd56ab70ad48f337e35eaba2060e61c8b89014046a22630385",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/ethics_and_decision_making.md",
+      "before_sha256": "9d6131ccae02565bd8e8c3278872b07b491227a8f3ad7ea90948d4467eb3ccac",
+      "after_sha256": "48427ad39f86b9872bc929556a4ce551184d8d98a40b948f253cc2c5e2303b28",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/health_and_disability.md",
+      "before_sha256": "c349c8db9eb4942085b9a211e3fd191a068dca794aac026bedf135588ead401b",
+      "after_sha256": "46b1e9b5378fd62fe07abc23a54131f7f9a5bf4778dffe98cad26e9af33f1bca",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/gender_sexuality_and_identity.md",
+      "before_sha256": "58333fa0eea0f3176b42328e995b653ef07088ae1a14255fa117a75724a06908",
+      "after_sha256": "7382cb0fa7468828f7ec6949f65f178645d88a91b5c4a088e6821371bd0efc2d",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/money_consumption_and_tax.md",
+      "before_sha256": "2bcf038698617a0c382dfdeb6845901b5cd7ec06ab85b6b6da2b4ab62c6fa8e9",
+      "after_sha256": "77e8abb8bcfe85f960d2012c1b874aae2196bf4c06ae3402cb2b55b104b8b7be",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/society_public_policy_and_environment.md",
+      "before_sha256": "b227eb7a8bca6c435e0c6cd0785d9dbfe13607a48989b61b2b74b03046b852ce",
+      "after_sha256": "374ea5ef9abbec620c267ba5ae3fde5996daa7456cc966757b698c2a540efbe3",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/self_and_values.md",
+      "before_sha256": "c151879f9aa7c0fd4c9eb9bc1a89a14b6284b27dca9ff659878d63f3803f8965",
+      "after_sha256": "7701b22fa8811cf4bdd14ed68eef99004f39947a3793526325b03c8f704f1577",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/housing_community_and_transport.md",
+      "before_sha256": "62e50923b36adacfac2894fc35a6d166619bf619e2443d31c7642b6b93333fc4",
+      "after_sha256": "dfbecbfe7273ba2fc320925f9f6d61b121d76f8b5c1cbcf22beba1d049eed568",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/relationships_and_communication.md",
+      "before_sha256": "4f316b5344cd646ed12b856f2f4526a63c8303eef430618d2fb6013dc6b212f4",
+      "after_sha256": "6583ec9226042086dd7b5a471652fcaa9472a8fca72f5e65118a24babd628712",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/science_research_and_uncertainty.md",
+      "before_sha256": "aca91838efbaaa54308f62cc31b3142cd9bcd665c7215a9d686d47894250d8e1",
+      "after_sha256": "7f730d3692b8f4e6d2de12e0306e320bd247f77cf6bf3ae7b2946400c0ed2023",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/work_and_economy.md",
+      "before_sha256": "b9f82c371acad6187ba475acce45bf55c90ed5effe98385967731b9892b3a3bf",
+      "after_sha256": "d921b86d5e349345cb2620a5df232c0c5cfb63d20a6e7f18c5a3d50d8cd1c6b9",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/technology_media_and_privacy.md",
+      "before_sha256": "863b305d0a1c0d568e6605590a95208a8a5ecaa64dc262497f96a6f8adf72cfe",
+      "after_sha256": "f6ccec1e45f0e536880bd10765f66faaf31097ee73e859da150891e7268cf897",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/justice_safety_and_crime.md",
+      "before_sha256": "b6dc1cc5ec3d61da6aaf1a3ae8a820d6ba7ff913ab94a9d1ea5db87ad75e5587",
+      "after_sha256": "f434b46c90a91efb79057845a0bb2f59f14842c2f0fff4bf9841ed897ba9fa40",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/school_and_youth.md",
+      "before_sha256": "d028dc87cea955cf8b0c02cb740834b669131a20f7f8a078992c1036d6c4db70",
+      "after_sha256": "d48be92c055e995f0bad14ce10be2db2c4c36d2f71e831bc986b3523e7880bd6",
+      "proof": "only extra empty lines at EOF removed"
+    },
+    {
+      "file": "staging-expansion-2026-10-08/questions/international_peace_and_cooperation.md",
+      "before_sha256": "069227205b4b581ef1ad1e7d4be1314156a93f8d755a68280abc343ad331d687",
+      "after_sha256": "0b3bff7c0e03bc968fef37a7e8628d5f4947a5cae42ecb3e536057d16f3eef38",
+      "proof": "only extra empty lines at EOF removed"
+    }
+  ],
+  "generator_changes": [
+    "compile.py CSV line terminator and Markdown ending",
+    "write_summary.py CSV line terminator"
+  ],
+  "production_files_written": 0
+}

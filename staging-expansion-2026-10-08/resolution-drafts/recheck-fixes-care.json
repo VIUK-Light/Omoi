@@ -1,0 +1,143 @@
+{
+  "status": "recheck_resolution_drafts_not_applied_not_approved",
+  "group": "care",
+  "reviewer": "livelihood",
+  "source_sha256": "891bed0fa908fdb9b0fa13f443af50bac2d3952724c503873b8f3bb130ee9cd4",
+  "source_path": "shards/care/additions.json",
+  "changes": [
+    {
+      "id": "exp26-care-0326",
+      "before": {
+        "card": {
+          "id": "exp26-care-0326",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "names_and_continuity",
+          "question": "あなたは古い名前で呼び合う友人との時間を、自分の居場所と感じてきた。友人は性の自己理解に合う新しい名前だけで呼んでほしいと言う。今の名前で関わりながら、二人の歴史を何に残したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の場面です。古い呼び名には、自分が友人との間で安心していた年月の意味があります。相手は今の自己像に合う名前を望んでおり、思い出を残すことと古い名前を使い続けることを同じとは決めません。二人の歴史を今の関わりへどう渡すかを考えます。"
+          }
+        },
+        "reason": "0276の新しい名前を使う順序から、呼び方を変えて関わる本人が、居場所だった二人の歴史を何に残すかへ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0326",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "names_and_continuity",
+          "question": "長い友情を人に読んでもらう回想として書くあなたは、相手の昔の名前を自分の人生の記録にも残したい。相手は性の自己理解に合う新しい名前で暮らし、昔の名を残さないでほしいと言う。自分の人生の語りと相手の知られ方を、どう選んで残したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の回想の公開相談です。日常の呼び方ではなく、自分が後の人にも読んでもらう人生の記録を決める場面です。昔の名前には自分が覚える関係の意味があり、相手には今の名前で知られることと過去の名前を残さないことの意味があります。名前の書き方や公開の範囲を変える余地も含め、二人にまたがる記憶を考えます。法的な権利を一律に決める問いではありません。"
+          },
+          "content_warning": [
+            "privacy_and_surveillance"
+          ]
+        },
+        "reason": "0325の現在の呼び名と友情の連続性から、自分の回想を残す権限と相手の旧名を公開しない希望の境界へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "0325は新しい名前を使う本人が、懐かしい昔の名前で呼ぶ友人との過去のつながりをどう残すか。0326も今の呼ばれ方と二人の歴史をどう残すかを友人側から聞く。長く居場所だったという意味は増したが、同じL4内では主な判断対象の差が役の反転に寄っている。",
+      "comparison_ids": [
+        "exp26-care-0325"
+      ],
+      "status": "drafted_not_applied_not_approved"
+    },
+    {
+      "id": "exp26-care-0376",
+      "before": {
+        "card": {
+          "id": "exp26-care-0376",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "family_recognition_of_identity",
+          "question": "あなたは子の名前に大切な願いを込め、その名で呼びながら育ててきた。成人した子は性の自己理解に合う別の名前を選び、家族にも使ってほしいと言う。自分が渡した名前の意味を、子の今の呼ばれ方とどう分けて伝えたい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の場面です。名付けた自分には、名前に込めた願いと育てた年月への思いがあります。成人した子は今の自己像に合う名前で呼ばれることを望んでいます。子の名前を決めた過去が、現在の呼ばれ方も自分が決める理由になるかを考えます。戸籍や改名の制度は扱いません。"
+          }
+        },
+        "reason": "家族の呼び名を訂正する方法から、名付けた親がその願いを手放さずに、成人した子の現在の名乗りと区別して語る責任へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-care-0376",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "gender_sexuality_and_identity",
+          "topic": "family_recognition_of_identity",
+          "question": "子の性別に沿った願いを込めて名前を付けたあなたは、成人した子から、その名で呼ばれるたび期待に合わせて生きなければと感じていたと聞く。よい贈り物だと思ってきた親としての年月を、どう受け止めて関わり直したい？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の家族の会話です。名付けた親には子の幸せを願った意味があり、子には性別に沿う期待を受けて過ごした重さがありました。名付けが必ず子を縛るという一般的な事実は示しません。同じ年月を異なる意味で経験した二人について、名付けた親の善意と子が生きてきた時間を考えます。"
+          },
+          "content_warning": [
+            "family_conflict"
+          ]
+        },
+        "reason": "0324の現在の呼ばれ方と親の願いから、性別の願いを名に込めた本人が、子の長年の受け止めを後で知る責任へ。",
+        "editorial": {
+          "author_group": "care",
+          "fact_status": "hypothetical",
+          "related_existing_ids": []
+        }
+      },
+      "reason": "0324は現在の自己に合う名前を望む本人と、名付けた思いを大切にする家族の意味を扱う。0376も名付けた親の願いと成人した子の現在の名乗りを分ける。語り手を親へ替えるだけでは主な価値の衝突が近い。",
+      "comparison_ids": [
+        "exp26-care-0324"
+      ],
+      "status": "drafted_not_applied_not_approved"
+    }
+  ],
+  "finding_resolutions": [
+    {
+      "id": "exp26-care-0326",
+      "priority": "required",
+      "field": "novelty",
+      "change_id": "exp26-care-0326",
+      "status": "drafted_not_applied",
+      "resolution": "現在の呼び方の調整から、自分の人生の回想を公開して残す権限と相手の旧名を残さない希望へ判断対象を変える。全文before/afterはresolution-drafts/recheck-fixes-care.jsonに保存。"
+    },
+    {
+      "id": "exp26-care-0376",
+      "priority": "required",
+      "field": "novelty",
+      "change_id": "exp26-care-0376",
+      "status": "drafted_not_applied",
+      "resolution": "今の名前の選択から、性別に沿う願いを込めて名付けた親が、子は長年それを期待として受け取っていたと後から知る責任と年月の意味へ変える。全文before/afterはresolution-drafts/recheck-fixes-care.jsonに保存。"
+    }
+  ],
+  "validation": {
+    "quantity_cells_unchanged": true,
+    "ids_levels_categories_unchanged": true,
+    "self_reread_status": "completed",
+    "production_files_written": 0,
+    "self_reread_ids": [
+      "exp26-care-0326",
+      "exp26-care-0376"
+    ],
+    "all_before_match_current_shard": true,
+    "source_hash_matches_current_shard": true,
+    "normalized_exact_duplicates_after": 0,
+    "no_legal_or_medical_rules_added": true
+  }
+}

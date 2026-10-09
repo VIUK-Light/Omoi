@@ -1,0 +1,42 @@
+{
+  "count": 670,
+  "existing_candidates": [
+    {
+      "score": 0.222,
+      "draft_id": "exp26-care-0407",
+      "existing_id": "friendship-019",
+      "draft": "自分に合う一日の速さは、どんな時に分かる？",
+      "existing": "本当の友達って、どんな時に分かると思う？"
+    },
+    {
+      "score": 0.2,
+      "draft_id": "exp26-care-0011",
+      "existing_id": "conflict-010",
+      "draft": "疲れて帰った時、家族にまずしてほしいのはどんなこと？",
+      "existing": "相談した時にまずしてほしいことは？"
+    },
+    {
+      "score": 0.188,
+      "draft_id": "exp26-care-0422",
+      "existing_id": "daily-017",
+      "draft": "自分の身体を大切にしていると思えるのは、どんな小さな習慣？",
+      "existing": "自分の中で大切にしている時間は？"
+    },
+    {
+      "score": 0.18,
+      "draft_id": "exp26-care-0438",
+      "existing_id": "relationship-l3-155",
+      "draft": "予定を断った後に別の小さな外出をすることは、相手へ伝える必要があると思う？",
+      "existing": "健康上の情報は、結婚相手にもどこまで伝える必要があると思う？"
+    },
+    {
+      "score": 0.171,
+      "draft_id": "exp26-care-0263",
+      "existing_id": "values-016",
+      "draft": "「自分らしい仕草」と感じるのは、どんな動き？",
+      "existing": "自分のことを理解してくれてるなって感じるのはどんなとき？"
+    }
+  ],
+  "internal_candidates": [],
+  "metric": "normalized character trigram Jaccard; editorial leads, not semantic proof"
+}

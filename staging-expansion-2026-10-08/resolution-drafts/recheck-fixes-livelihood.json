@@ -1,0 +1,142 @@
+{
+  "status": "draft_not_applied_not_approved",
+  "author_group": "livelihood",
+  "reviewer": "civic",
+  "source_sha256": "4c48f2b3b1ba1537b3541afc390b77963c6f26bfe7e8723514da27e55f1fdc21",
+  "source_path": "/workspace/Omoi/staging-expansion-2026-10-08/shards/livelihood/additions.json",
+  "changes": [
+    {
+      "id": "exp26-livelihood-0025",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0025",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "work_and_economy",
+          "topic": "work_feedback",
+          "question": "職場で仕事の成果を褒められた後に改善点を聞くのと、改善点だけを詳しく聞くのでは、受け止め方が変わる？"
+        },
+        "reason": "仕事の成果の評価について、肯定と改善点を受け取る順序の違いを聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l2.txt:5",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-001",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0025",
+          "level": 2,
+          "sensitivity": 1,
+          "category": "work_and_economy",
+          "topic": "work_feedback",
+          "question": "職場で仕事の成果を褒められた後に改善点を聞くのと、改善点だけを詳しく聞くのでは、受け止め方が変わる？"
+        },
+        "reason": "仕事の成果の評価について、肯定を添えることと改善点だけを受け取ることの違いを聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "work_and_economy__l2.txt:5",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-001",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "二つの条件は肯定を添えてから改善点を聞くことと改善点だけを聞くことで、順序だけの違いではない。追加理由だけを比較の条件へ合わせる。"
+    },
+    {
+      "id": "exp26-livelihood-0476",
+      "before": {
+        "card": {
+          "id": "exp26-livelihood-0476",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "property_inheritance",
+          "question": "老後を一緒に楽しむ予定を、同じように貯めながら支え合う仲間と描いてきた。相手は相続したお金で先に仕事を離れ、自分は働き続ける時、二人の未来をどう描き直したい？",
+          "perspective": "observer",
+          "detail": {
+            "text": "架空の財産の差。資金は別々で、同じ時期に仕事を離れることは拘束する約束ではなく共有した望みだった。相手の相続を不正や裏切りとは置かず、今後使えるお金と時間が異なる中で、共に描いた人生の予定を考える。"
+          }
+        },
+        "reason": "近い人の違う職業選択で自分の基準を見直す0267とは分ける。相続によって仲間との老後の時期がずれる本人が、共有した人生の予定と財産差を受け止める意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:80",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-028",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-livelihood-0476",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "money_consumption_and_tax",
+          "topic": "property_inheritance",
+          "question": "老後を一緒に楽しむ予定を、同じように貯めながら支え合う仲間と描いてきた。相手は相続したお金で先に仕事を離れ、自分は働き続ける時、二人の未来をどう描き直したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の財産の差。資金は別々で、同じ時期に仕事を離れることは拘束する約束ではなく共有した望みだった。相手の相続を不正や裏切りとは置かず、今後使えるお金と時間が異なる中で、共に描いた人生の予定を考える。"
+          }
+        },
+        "reason": "近い人の違う職業選択で自分の基準を見直す0267とは分ける。相続によって仲間との老後の時期がずれる本人が、共有した人生の予定と財産差を受け止める意味を聞く。",
+        "editorial": {
+          "author_group": "livelihood",
+          "fact_status": "hypothetical",
+          "source_row": "money_consumption_and_tax__l4.txt:80",
+          "related_existing_ids": [],
+          "peer_review_revision": {
+            "reviewer": "care",
+            "finding_id": "care-livelihood-028",
+            "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+          }
+        }
+      },
+      "reason": "共有した老後の予定が相手の相続によって変化し、本人も二人の未来を描き直す当事者なのでaffectedへ。問い・背景・理由・他metadataは保持。"
+    }
+  ],
+  "finding_resolutions": [
+    {
+      "id": "exp26-livelihood-0025",
+      "field": "reason",
+      "priority": "optional",
+      "status": "proposed_not_applied",
+      "reason": "二つの条件は肯定を添えてから改善点を聞くことと改善点だけを聞くことで、順序だけの違いではない。追加理由だけを比較の条件へ合わせる。"
+    },
+    {
+      "id": "exp26-livelihood-0476",
+      "field": "perspective",
+      "priority": "required",
+      "status": "proposed_not_applied",
+      "reason": "共有した老後の予定が相手の相続によって変化し、本人も二人の未来を描き直す当事者なのでaffectedへ。問い・背景・理由・他metadataは保持。"
+    }
+  ],
+  "validation": {
+    "change_count": 2,
+    "level_and_category_preserved": true,
+    "perspective_only_change_0476": true,
+    "reason_only_change_0025": true,
+    "after_level4_perspective_counts": {
+      "affected": 104,
+      "actor": 84,
+      "decision_maker": 72,
+      "observer": 11
+    },
+    "all_major_perspectives_at_least_twenty_percent": true
+  }
+}

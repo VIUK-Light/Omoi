@@ -1,0 +1,1146 @@
+[
+  {
+    "id": "exp26-learning-0056",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "発表の上手さと調べた内容を別々に評価するなら、どちらを重く見たい？",
+    "detail": "仮の場面です。表現の練習と知識の理解は同じ成果ではない。"
+  },
+  {
+    "id": "exp26-learning-0058",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "遅れて出した優れた課題と、期限内の不十分な課題をどう評価したい？",
+    "detail": "仮の場面です。期限の教育的意味と、内容の理解を混同しない。"
+  },
+  {
+    "id": "exp26-learning-0072",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "進路情報を多く配ることと、一緒に絞り込む相談を増やすことでは、何を優先したい？",
+    "detail": "仮の場面です。情報量と、本人が選べる感覚は同じではない。"
+  },
+  {
+    "id": "exp26-learning-0073",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "年齢に関係なく基礎から学び直せる教室は、どんな人が通いやすい形であるべき？",
+    "detail": "仮の場面です。年齢を公表しない参加もできる場を想定する。"
+  },
+  {
+    "id": "exp26-learning-0076",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "若者向けの講座に「将来の仕事に役立つ」と説明する以外に、何を伝えたい？",
+    "detail": "仮の場面です。参加を促す理由を、就業以外にも開く。"
+  },
+  {
+    "id": "exp26-learning-0079",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "進路指導で本人の希望がまだ曖昧な時、大人が候補を示すことをどこまで認めたい？",
+    "detail": "仮の場面です。候補が入口にも、早い固定にもなる場面。"
+  },
+  {
+    "id": "exp26-learning-0081",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "学習につまずく理由を本人が説明できない時、支援を始める条件をどう決める？",
+    "detail": "仮の場面です。診断や明確な原因がまだない架空の学習場面。"
+  },
+  {
+    "id": "exp26-learning-0082",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "保護者が学校の課題に強く手を貸した時、教師は誰と何を話すべき？",
+    "detail": "仮の場面です。完成品だけでは本人の理解が確かめにくい設定。"
+  },
+  {
+    "id": "exp26-learning-0083",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "学校生活の満足度を生徒に聞くなら、結果をどう返すと参加した意味を感じられる？",
+    "detail": "仮の場面です。声を集めることと、学校を変える責任を分ける。"
+  },
+  {
+    "id": "exp26-learning-0087",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "人気の選択授業に希望者が集中した時、抽選と未経験者の優先をどう比べる？",
+    "detail": "仮の場面です。同じ授業を再び深めたい人もいる設定。"
+  },
+  {
+    "id": "exp26-learning-0089",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "課外活動に参加しない生徒の声を、学校の行事作りへどう届けたい？",
+    "detail": "仮の場面です。不参加を関心の欠如だけで説明しない。"
+  },
+  {
+    "id": "exp26-learning-0095",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "進路を決めた後に別の夢が生まれた。応援してくれた人へ、どこまで迷いを話したい？",
+    "detail": "仮の場面です。感謝と、新しい関心を自分のものにすることを分ける。"
+  },
+  {
+    "id": "exp26-learning-0096",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "家族が喜ぶ進学先を選んだが、自分は別の学びが忘れられない。その選択を自分の選択と呼べる？",
+    "detail": "仮の場面です。強制はなく、喜ばせたい気持ちが選択に関わった設定。"
+  },
+  {
+    "id": "exp26-learning-0098",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "試験に落ちた道をもう一度目指すと、別の学びの機会を逃す。何を考えて決めたい？",
+    "detail": "仮の場面です。再挑戦と方向転換の双方に時間が必要な設定。"
+  },
+  {
+    "id": "exp26-learning-0098",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "試験に落ちた道をもう一度目指すと、別の学びの機会を逃す。何を考えて決めたい？",
+    "detail": "仮の場面です。再挑戦と方向転換の双方に時間が必要な設定。"
+  },
+  {
+    "id": "exp26-learning-0100",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "卒業資格を得る直前に、自分には別の場所で学ぶ方が合うと感じた。残る意味を何に置く？",
+    "detail": "仮の場面です。修了までの短い時間と、現在の学習環境への違和感を比べる。"
+  },
+  {
+    "id": "exp26-learning-0108",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "学校に行かない選択で落ち着いたが、卒業の思い出は欲しかった。その両方をどう受け止めたい？",
+    "detail": "仮の場面です。欠席理由の告白を求めず、安心と失った経験の並存を考える。"
+  },
+  {
+    "id": "exp26-learning-0110",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "転校先で落ち着けたが、前の学校の友達には「逃げた」と思われた気がする。説明したい？",
+    "detail": "仮の場面です。実際の評価は未確認で、本人の想像と安心が重なる設定。"
+  },
+  {
+    "id": "exp26-learning-0111",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "学校で得た肩書きを卒業後は使いたくない。それまでの努力と、今の自分をどう結び付けたい？",
+    "detail": "仮の場面です。学歴を隠す法的義務などは置かず、本人の自己表現を考える。"
+  },
+  {
+    "id": "exp26-learning-0125",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "学習仲間が自分の夢を支えるため別の希望を諦めたと知った。何を話し合いたい？",
+    "detail": "仮の場面です。本人の意思で支えた場合でも、相互の人生の意味を考える。"
+  },
+  {
+    "id": "exp26-learning-0127",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "自分は保護者。子が選んだ学びを応援したが、今はやめたいと言う。応援した時間をどう受け止める？",
+    "detail": "仮の場面です。継続の理由に大人の投資だけを使わない。"
+  },
+  {
+    "id": "exp26-learning-0149",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "自分の子が、かつて自分を傷つけた学校で楽しく学んでいる。その学校をどんな気持ちで見守る？",
+    "detail": "仮の場面です。過去の経験と、今の子の経験が一致しない設定。"
+  },
+  {
+    "id": "exp26-learning-0149",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "自分の子が、かつて自分を傷つけた学校で楽しく学んでいる。その学校をどんな気持ちで見守る？",
+    "detail": "仮の場面です。過去の経験と、今の子の経験が一致しない設定。"
+  },
+  {
+    "id": "exp26-learning-0158",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "教師として採点を励みに生きてきた生徒に、点数のない学びを提案する。自分が支えてきた成功の形をどう変えたい？",
+    "detail": "仮の場面です。評価を外すと自己の支えが変わる人がいる設定。"
+  },
+  {
+    "id": "exp26-learning-0213",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "動画を最後まで見たことを「好き」の判断に使うなら、どんな限界を説明してほしい？",
+    "detail": "仮の場面です。批判や確認のため最後まで見る場合もあり得る。"
+  },
+  {
+    "id": "exp26-learning-0215",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "自分と違う意見を勧める機能は、任意で選ぶものにするべき？",
+    "detail": "仮の場面です。視野を広げる目的と、読む負担の選択を分ける。"
+  },
+  {
+    "id": "exp26-learning-0216",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "自動要約の短さを利用者が選べるなら、何を必ず残してほしい？",
+    "detail": "仮の場面です。条件や反例が省かれると意味が変わる設定。"
+  },
+  {
+    "id": "exp26-learning-0217",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "情報の新しさと、時間をかけて検証された記事を、検索結果でどう並べたい？",
+    "detail": "仮の場面です。速報の価値と、確認に要する時間を比較する。"
+  },
+  {
+    "id": "exp26-learning-0222",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "地域の写真記録を公開する時、写った人に再確認できない古い写真はどう扱いたい？",
+    "detail": "仮の場面です。歴史展示ではなく、生活情報の公開範囲が主題。"
+  },
+  {
+    "id": "exp26-learning-0227",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "学校や地域の連絡に新しいアプリを使う時、利用しない人の負担を誰が引き受けるべき？",
+    "detail": "仮の場面です。二つの連絡手段を維持する時間が必要な設定。"
+  },
+  {
+    "id": "exp26-learning-0228",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "人が窓口に相談する選択を残すなら、自動応答と同じ待ち時間を保証すべき？",
+    "detail": "仮の場面です。人的対応の資源に限りがある架空の窓口。"
+  },
+  {
+    "id": "exp26-learning-0229",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "機器の操作が不得意な人へ、教えることと簡単な道具を用意することをどう比べる？",
+    "detail": "仮の場面です。学べば必ず同じ使い方ができるとは置かない。"
+  },
+  {
+    "id": "exp26-learning-0230",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "「便利になった」と評価する時、覚え直しに使う時間をどう数えるべき？",
+    "detail": "仮の場面です。新機能の利益と、切替時の学習負担を分ける。"
+  },
+  {
+    "id": "exp26-learning-0231",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "端末を持たない人の行動は記録に少ない。サービス改善では、その声をどう確かめたい？",
+    "detail": "仮の場面です。利用ログだけで全員の暮らしを代表しない。"
+  },
+  {
+    "id": "exp26-learning-0232",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "地域の情報板を廃止してネットへ移すなら、偶然知る機会をどう考える？",
+    "detail": "仮の場面です。探した人に届く情報と、通りかかる情報は違う。"
+  },
+  {
+    "id": "exp26-learning-0233",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "自動化で手順が見えなくなる時、利用者に仕組みを知る機会をどれだけ残すべき？",
+    "detail": "仮の場面です。簡便さと、判断の過程への理解を比較する。"
+  },
+  {
+    "id": "exp26-learning-0241",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "記事を読めない人のため音声版を作るなら、声の調子による解釈をどう扱いたい？",
+    "detail": "仮の場面です。文字の内容と、読み上げの表現が別に影響する。"
+  },
+  {
+    "id": "exp26-learning-0242",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "複数の場で別名を使う人に、同じ本人だと示す必要はどんな時にある？",
+    "detail": "仮の場面です。信頼の確認と、文脈を分ける自己表現を比べる。"
+  },
+  {
+    "id": "exp26-learning-0245",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "職場向けと私生活向けのサービスを統合する時、情報の境界を誰が決めるべき？",
+    "detail": "仮の場面です。利便性が増えても、相手へ見せたい範囲は違う。"
+  },
+  {
+    "id": "exp26-learning-0247",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "推薦された相手と出会うサービスで、「合う理由」をどこまで見せてほしい？",
+    "detail": "仮の場面です。情報の説明が安心にも、先入観にもなる設定。"
+  },
+  {
+    "id": "exp26-learning-0248",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "長く使ったアカウントほど信頼される仕組みは、新しく始める人をどう扱うべき？",
+    "detail": "仮の場面です。履歴の長さと、現在の発言の信頼性は別の材料。"
+  },
+  {
+    "id": "exp26-learning-0255",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "機械からの励ましを本物らしく感じる人がいる時、設計者は何を説明しておくべき？",
+    "detail": "仮の場面です。感じた支えを否定せず、提供者の役割を考える。"
+  },
+  {
+    "id": "exp26-learning-0257",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "便利な機能を止める判断を利用者へ伝える時、代わりの道具以外に何を説明したい？",
+    "detail": "仮の場面です。中止で失われる習慣や記録も含める。"
+  },
+  {
+    "id": "exp26-learning-0258",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "機器の更新で古い操作が使えなくなる時、開発者はいつまで支援を続けるべき？",
+    "detail": "仮の場面です。複数方式の維持に負担がある架空の製品。"
+  },
+  {
+    "id": "exp26-learning-0265",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "家族の写真に残る楽しそうな自分と、当時つらかった記憶が違う。その写真をどう残したい？",
+    "detail": "仮の場面です。写真は一場面で、経験全体を確定しない。"
+  },
+  {
+    "id": "exp26-learning-0265",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "家族の写真に残る楽しそうな自分と、当時つらかった記憶が違う。その写真をどう残したい？",
+    "detail": "仮の場面です。写真は一場面で、経験全体を確定しない。"
+  },
+  {
+    "id": "exp26-learning-0267",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "端末の故障で大切な記録を失ったとする。覚えていることだけで、その時をどう残せそう？",
+    "detail": "仮の場面です。復元できないという架空条件で、思い出の語りを考える。"
+  },
+  {
+    "id": "exp26-learning-0268",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "別れた人との会話を消せば日々は楽になるが、当時の自分も見えなくなる気がする。何を残す？",
+    "detail": "仮の場面です。復縁や実際の体験の告白を求めず、記録への感覚を考える。"
+  },
+  {
+    "id": "exp26-learning-0271",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "別名で築いた関係を実名の自分へつなげると、話しやすさが変わる。何を守って紹介したい？",
+    "detail": "仮の場面です。正当な関係を隠す悪意は置かず、文脈の境界を考える。"
+  },
+  {
+    "id": "exp26-learning-0274",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "長く使ったアカウントを失い、誰も履歴を知らない場で始める。解放感と寂しさの何が大きい？",
+    "detail": "仮の場面です。同じ本人でも、以前の関係や信用を持ち込めない設定。"
+  },
+  {
+    "id": "exp26-learning-0277",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "昔の名前で呼ばれる投稿が今も広まる。訂正するために新しい名前を広く知らせたい？",
+    "detail": "仮の場面です。名前の変更理由の告白を求めず、情報の連結を考える。"
+  },
+  {
+    "id": "exp26-learning-0279",
+    "author_group": "learning",
+    "code": "possible_unsourced_fact",
+    "note": "制度・医療・調査の事実断定に見える語句。仮の条件か、確認済み資料が必要かを読む。",
+    "question": "親しい人との関係が変わるのが怖くて、悩みを会話AIにだけ話しているとする。AIに理解されたと感じることと、人に知られることは自分にどう違う？",
+    "detail": "仮の場面です。AIの理解や治療効果を事実とせず、話す相手への期待と怖さを分ける。"
+  },
+  {
+    "id": "exp26-learning-0281",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "心を支えたAIとの会話をサービス終了で読めなくなる。何を失うと感じる？",
+    "detail": "仮の場面です。実際の終了方針を断定せず、相談記録への愛着を考える。"
+  },
+  {
+    "id": "exp26-learning-0284",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "大切な相手がAIで整えた謝罪をくれた。本人は気持ちは変えていないと言う。何があれば受け取れる？",
+    "detail": "仮の場面です。表現の補助と、謝る意思そのものを分ける。"
+  },
+  {
+    "id": "exp26-learning-0290",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "読まなければ取り残されると感じる話題が、自分には苦しい。誰とのつながりを守りたい？",
+    "detail": "仮の場面です。実際の話題や体験を告白せず、情報参加の圧力を考える。"
+  },
+  {
+    "id": "exp26-learning-0298",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "自分の体験を公に語ると、大切な人の情報も伝わる。何を自分だけの話として話せる？",
+    "detail": "仮の場面です。情報の公開範囲が主題で、内容の告白は求めない。"
+  },
+  {
+    "id": "exp26-learning-0312",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "長年仲間と過ごした作業を自分が自動化した。仕事は続くが「ここで一緒に生きた感じがなくなった」と言われたら何を受け止める？",
+    "detail": "仮の場面です。効率の向上と、共同の過程への帰属は別の価値。"
+  },
+  {
+    "id": "exp26-learning-0329",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "自分が作った思い出機能は人を喜ばせる一方、家族を失った利用者には突然の痛みになった。支えるための技術をどう見直す？",
+    "detail": "仮の場面です。感情を機械で確実に判定できるとは置かない。"
+  },
+  {
+    "id": "exp26-learning-0339",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "自分の技術を一緒に育てた利用者の名前を残したいが、利用した事実を知られたくない人もいる。功績を認めるとは何をすること？",
+    "detail": "仮の場面です。承認の希望と、生活情報を守る希望が異なる。"
+  },
+  {
+    "id": "exp26-learning-0345",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "親しい人が自分よりAIに相談するようになった。自分に話してほしい気持ちをどう受け止める？",
+    "detail": "仮の場面です。AI利用を病的と決めず、本人の選択と自分の感情を分ける。"
+  },
+  {
+    "id": "exp26-learning-0346",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "家族が故人の会話AIを使って落ち着いている。自分は違和感がある時、何を話したい？",
+    "detail": "仮の場面です。双方が仕組みを知り、効果の一般化は置かない。"
+  },
+  {
+    "id": "exp26-learning-0346",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "家族が故人の会話AIを使って落ち着いている。自分は違和感がある時、何を話したい？",
+    "detail": "仮の場面です。双方が仕組みを知り、効果の一般化は置かない。"
+  },
+  {
+    "id": "exp26-learning-0432",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "文化財を保存するだけで使わない時、何を残せて何を失うと考える？",
+    "detail": "仮の場面です。傷みを避ける保存と、使う文化の継続は異なる。"
+  },
+  {
+    "id": "exp26-learning-0433",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "地域の伝統行事を短くするなら、どの部分を残すか誰が決めるべき？",
+    "detail": "仮の場面です。準備を担う人と参加する人の期待が違う設定。"
+  },
+  {
+    "id": "exp26-learning-0434",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "伝統の技を学ぶ人が減った時、教える条件を広げることをどう考える？",
+    "detail": "仮の場面です。技の質と、担い手の入口を広げることを比べる。"
+  },
+  {
+    "id": "exp26-learning-0435",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "古い建物の修復で新しい材料を使うなら、何を同じ姿として保ちたい？",
+    "detail": "仮の場面です。完全な再現が難しい架空の修復を考える。"
+  },
+  {
+    "id": "exp26-learning-0437",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "誰でも見られる展示と、元の地域だけで使う文化財の居場所をどう考える？",
+    "detail": "仮の場面です。取得の合法性や保存能力を片側に固定しない。"
+  },
+  {
+    "id": "exp26-learning-0438",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "使われなくなった道具を、今の生活向けに変えて販売することをどう受け止める？",
+    "detail": "仮の場面です。元の用途と、制作技術を残す意味を区別する。"
+  },
+  {
+    "id": "exp26-learning-0439",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "文化を守る人の生活を支えるため、行事に料金を設けることをどう思う？",
+    "detail": "仮の場面です。架空の運営費で、商業化と継続を比較する。"
+  },
+  {
+    "id": "exp26-learning-0441",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "歴史資料の説明に、まだ解釈が分かれる部分をどれだけ載せたい？",
+    "detail": "仮の場面です。確認した出来事と、意味の解釈を分ける。"
+  },
+  {
+    "id": "exp26-learning-0446",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "地名の由来に不確かな説が複数あるなら、案内板ではどう伝えるべき？",
+    "detail": "仮の場面です。どれか一つが確認されたとは置かない。"
+  },
+  {
+    "id": "exp26-learning-0447",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "展示に使った家族の記録を、公開後に家族が返してほしいと言う。何を確認したい？",
+    "detail": "仮の場面です。貸した記録と、公的な歴史の利用を分ける。"
+  },
+  {
+    "id": "exp26-learning-0448",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "話す人が少ない言葉を記録する時、語彙と話す場面のどちらを重く残したい？",
+    "detail": "仮の場面です。言葉の一覧と、人が使う文脈は別の資料。"
+  },
+  {
+    "id": "exp26-learning-0451",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "昔の語りを保存する人が、話し手の言い間違いを直すことをどう思う？",
+    "detail": "仮の場面です。読みやすい文章と、実際の語りの形を分ける。"
+  },
+  {
+    "id": "exp26-learning-0452",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "地域を離れた人が言葉を教える場合、今も暮らす人との違いをどう伝えるべき？",
+    "detail": "仮の場面です。語る経験の時点や生活環境が異なる。"
+  },
+  {
+    "id": "exp26-learning-0453",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "同じ意味でも世代ごとに違う言い方を、教科書でどう並べたい？",
+    "detail": "仮の場面です。古い言い方だけを正しいとしない。"
+  },
+  {
+    "id": "exp26-learning-0455",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "話す人が記録の公開を望まない時、言葉を残す目的をどう見直す？",
+    "detail": "仮の場面です。保存の価値と、話し手の希望を同一視しない。"
+  },
+  {
+    "id": "exp26-learning-0456",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "複数の信仰の人が静かに過ごせる部屋に、どんな象徴を置くべき？",
+    "detail": "仮の場面です。一つの場に同じ意味を求めない架空の共同施設。"
+  },
+  {
+    "id": "exp26-learning-0457",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "祈りの行事を文化体験として紹介する時、信仰との違いをどう伝えたい？",
+    "detail": "仮の場面です。参加して楽しむことと、信念を持つことは別。"
+  },
+  {
+    "id": "exp26-learning-0458",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "宗教の習慣を知らない来訪者へ、まず何を説明するべき？",
+    "detail": "仮の場面です。規則だけでなく、場を大切にする理由も考える。"
+  },
+  {
+    "id": "exp26-learning-0459",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "宗教を学ぶ授業で、信じる人と信じない人の経験をどう扱いたい？",
+    "detail": "仮の場面です。特定の信仰へ導く授業ではない設定。"
+  },
+  {
+    "id": "exp26-learning-0460",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "同じ行事を信仰と感じる人と家族の習慣と感じる人がいる。名称をどう紹介したい？",
+    "detail": "仮の場面です。同じ実践でも、関わる意味が異なる。"
+  },
+  {
+    "id": "exp26-learning-0461",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "共同の追悼で、一つの祈りの形を使うなら、参加しない人の居場所をどう作りたい？",
+    "detail": "仮の場面です。追悼と信仰への参加を分けて考える。"
+  },
+  {
+    "id": "exp26-learning-0463",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "信仰の場で昔からの習慣を見直す時、変わらない部分を誰が語るべき？",
+    "detail": "仮の場面です。立場や世代によって大切な要素が違う設定。"
+  },
+  {
+    "id": "exp26-learning-0464",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "作者が作品の正しい読み方を示すことは、鑑賞する人に何を与えると思う？",
+    "detail": "仮の場面です。作者の意図と、受け手の意味づけを別に考える。"
+  },
+  {
+    "id": "exp26-learning-0466",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "古い作品を今の価値観で読み直す説明は、元の時代の説明とどう並べたい？",
+    "detail": "仮の場面です。現在の評価と、制作された条件を区別する。"
+  },
+  {
+    "id": "exp26-learning-0467",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "分かりにくい作品に説明を多く付けると、受け手の想像はどう変わると思う？",
+    "detail": "仮の場面です。解説が助けにも、読み方の固定にもなる設定。"
+  },
+  {
+    "id": "exp26-learning-0468",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "途中で終わった作品を完成させて公開するなら、誰の判断と示すべき？",
+    "detail": "仮の場面です。元の作者の構想が全て確認できるとは置かない。"
+  },
+  {
+    "id": "exp26-learning-0470",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "一人の経験から作った作品を、地域の代表として紹介することをどう思う？",
+    "detail": "仮の場面です。一つの語りが全員の経験を代表しない。"
+  },
+  {
+    "id": "exp26-learning-0471",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "技術の上手さと心を動かす力を、作品の評価でどう扱いたい？",
+    "detail": "仮の場面です。二つの価値が一致しない架空の作品を考える。"
+  },
+  {
+    "id": "exp26-learning-0472",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "他の文化の衣装を使う催しで、元の意味を説明するだけで十分だと思う？",
+    "detail": "仮の場面です。借りる人と使い続ける人の関係を考える。"
+  },
+  {
+    "id": "exp26-learning-0473",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "伝統の料理を別の地域へ紹介する時、材料を変えたことをどう伝えたい？",
+    "detail": "仮の場面です。作りやすさと、元の地域の味の説明を分ける。"
+  },
+  {
+    "id": "exp26-learning-0475",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "遠くの人にも参加できる文化講座で、地域の参加者の希望をどれだけ優先したい？",
+    "detail": "仮の場面です。文化の共有と、使い続ける人の学びを比べる。"
+  },
+  {
+    "id": "exp26-learning-0477",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "文化の紹介で珍しさを強調すると、普段の暮らしはどう見えそう？",
+    "detail": "仮の場面です。注目される特徴と、生活全体を区別する。"
+  },
+  {
+    "id": "exp26-learning-0478",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "行事に参加しない住民も地域の一員と感じるために、何を共有できると思う？",
+    "detail": "仮の場面です。不参加を文化への拒絶と同一視しない。"
+  },
+  {
+    "id": "exp26-learning-0479",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "文化の使い手が紹介の仕方に異議を出した時、主催者は何を確認して見直すべき？",
+    "detail": "仮の場面です。一つの意見だけが全員の希望とは限らない。"
+  },
+  {
+    "id": "exp26-learning-0481",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "現在の暮らしを未来へ残す資料に、何を選ぶべき？",
+    "detail": "仮の場面です。特別な出来事だけで日常全体を代表しない。"
+  },
+  {
+    "id": "exp26-learning-0482",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "記念日を増やすことと、一つの日を深く考えることをどう比べる？",
+    "detail": "仮の場面です。社会的な記憶に使える時間を考える。"
+  },
+  {
+    "id": "exp26-learning-0485",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "新しく作った習慣を伝統と呼べるようになるのは、何が共有された時だと思う？",
+    "detail": "仮の場面です。年数だけで文化の意味を定めない。"
+  },
+  {
+    "id": "exp26-learning-0486",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "過去の祭りを映像で見る世代と、体験した世代は何を話し合えると思う？",
+    "detail": "仮の場面です。記録と経験のどちらかが常に優れるとはしない。"
+  },
+  {
+    "id": "exp26-learning-0487",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "地域の美術館が来館者数以外の成果を示すなら、何を見たい？",
+    "detail": "仮の場面です。数に表れにくい対話や継続的な鑑賞も考える。"
+  },
+  {
+    "id": "exp26-learning-0488",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "寄付者が自分の好きな作品の展示を希望する時、館の判断をどこまで独立させたい？",
+    "detail": "仮の場面です。架空の寄付条件で、支援と選定の関係を考える。"
+  },
+  {
+    "id": "exp26-learning-0489",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "初心者向けの説明を増やす展示で、詳しい人の楽しみをどう残したい？",
+    "detail": "仮の場面です。経験によって欲しい情報が違う設定。"
+  },
+  {
+    "id": "exp26-learning-0491",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "作品の展示を観客の感想で変えることを、どんな場合に望ましいと感じる？",
+    "detail": "仮の場面です。多数の好みに合わせることだけが目的ではない。"
+  },
+  {
+    "id": "exp26-learning-0494",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "展示を見た後に語り合う時間は、作品を理解するため以外に何の意味があると思う？",
+    "detail": "仮の場面です。同じ解釈へそろえることを目標にしない。"
+  },
+  {
+    "id": "exp26-learning-0495",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "家族の祈りが自分の支えでも、信じる気持ちは持てない。自分はその時間の何を大切にしている？",
+    "detail": "仮の場面です。参加の感情と、信念を持つことを同じにしない。"
+  },
+  {
+    "id": "exp26-learning-0495",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "家族の祈りが自分の支えでも、信じる気持ちは持てない。自分はその時間の何を大切にしている？",
+    "detail": "仮の場面です。参加の感情と、信念を持つことを同じにしない。"
+  },
+  {
+    "id": "exp26-learning-0496",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "昔信じていた言葉を今は信じられないが、唱えると落ち着く。自分にとって何が残っている？",
+    "detail": "仮の場面です。信念の変化と、身体に残る習慣が並ぶ場面。"
+  },
+  {
+    "id": "exp26-learning-0496",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "昔信じていた言葉を今は信じられないが、唱えると落ち着く。自分にとって何が残っている？",
+    "detail": "仮の場面です。信念の変化と、身体に残る習慣が並ぶ場面。"
+  },
+  {
+    "id": "exp26-learning-0498",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "別の信仰を持つ家族が、人生の大事な決断で自分のために祈っている。家族の希望とは違う道を選ぶ時、その祈りをどう受け取る？",
+    "detail": "仮の場面です。信仰への同意と、相手の思いへの感謝を分ける。"
+  },
+  {
+    "id": "exp26-learning-0499",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "共同の追悼で、選ばれた祈りが自分には合わない。亡くなった人を思う時間をどう持ちたい？",
+    "detail": "仮の場面です。不参加が追悼への拒否ではないという場面を考える。"
+  },
+  {
+    "id": "exp26-learning-0500",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "信仰の場を離れると大切な仲間とも会いにくくなる。信じることと所属をどう分けたい？",
+    "detail": "仮の場面です。離れる理由の開示は求めず、関係の継続を考える。"
+  },
+  {
+    "id": "exp26-learning-0503",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "故郷の言葉が出にくくなった自分を、地域の一員ではないように感じる？",
+    "detail": "仮の場面です。話す頻度が減った設定で、帰属を能力だけで決めない。"
+  },
+  {
+    "id": "exp26-learning-0504",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "家族の言語を学び直しても、子どもの頃の感覚は戻らない。何を取り戻したいと思う？",
+    "detail": "仮の場面です。学習の達成と、過去の関係の感覚は別。"
+  },
+  {
+    "id": "exp26-learning-0504",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "家族の言語を学び直しても、子どもの頃の感覚は戻らない。何を取り戻したいと思う？",
+    "detail": "仮の場面です。学習の達成と、過去の関係の感覚は別。"
+  },
+  {
+    "id": "exp26-learning-0506",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "故郷で自分の話し方をよそ者らしいと言われた。何を知ってもらえれば落ち着ける？",
+    "detail": "仮の場面です。帰属を一つの話し方で確定しない。"
+  },
+  {
+    "id": "exp26-learning-0506",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "故郷で自分の話し方をよそ者らしいと言われた。何を知ってもらえれば落ち着ける？",
+    "detail": "仮の場面です。帰属を一つの話し方で確定しない。"
+  },
+  {
+    "id": "exp26-learning-0507",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "親が付けた名前を別の呼び方に変えたい。由来への愛着と今の自分をどう結び付ける？",
+    "detail": "仮の場面です。改名制度ではなく、呼ばれたい名の意味が主題。"
+  },
+  {
+    "id": "exp26-learning-0507",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "親が付けた名前を別の呼び方に変えたい。由来への愛着と今の自分をどう結び付ける？",
+    "detail": "仮の場面です。改名制度ではなく、呼ばれたい名の意味が主題。"
+  },
+  {
+    "id": "exp26-learning-0508",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "自分が使う言葉が最後に近い世代だとしたら、残す責任をどれくらい感じる？",
+    "detail": "仮の場面です。実際の言語の統計ではなく、担い手が少ない仮定。"
+  },
+  {
+    "id": "exp26-learning-0508",
+    "author_group": "learning",
+    "code": "possible_unsourced_fact",
+    "note": "制度・医療・調査の事実断定に見える語句。仮の条件か、確認済み資料が必要かを読む。",
+    "question": "自分が使う言葉が最後に近い世代だとしたら、残す責任をどれくらい感じる？",
+    "detail": "仮の場面です。実際の言語の統計ではなく、担い手が少ない仮定。"
+  },
+  {
+    "id": "exp26-learning-0509",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "大切な人が話していた言葉を理解できなかった。今学ぶことに、何の意味を置きたい？",
+    "detail": "仮の場面です。本人へ聞き直せない設定で、知る望みを考える。"
+  },
+  {
+    "id": "exp26-learning-0509",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "大切な人が話していた言葉を理解できなかった。今学ぶことに、何の意味を置きたい？",
+    "detail": "仮の場面です。本人へ聞き直せない設定で、知る望みを考える。"
+  },
+  {
+    "id": "exp26-learning-0510",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "暮らす地域の言葉で話せても、心の中では別の言葉を使う。どこに居場所を感じる？",
+    "detail": "仮の場面です。一つの言語だけが本当の自己とはしない。"
+  },
+  {
+    "id": "exp26-learning-0510",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "暮らす地域の言葉で話せても、心の中では別の言葉を使う。どこに居場所を感じる？",
+    "detail": "仮の場面です。一つの言語だけが本当の自己とはしない。"
+  },
+  {
+    "id": "exp26-learning-0511",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "人生を支えた作品を今は好きになれない。当時の自分を支えた意味はどう残る？",
+    "detail": "仮の場面です。現在の好みが過去の経験を無効にするとはしない。"
+  },
+  {
+    "id": "exp26-learning-0513",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "家族と共有した歌を一人で聴くとつらい。作品から離れることをどう受け止めたい？",
+    "detail": "仮の場面です。悲しみの進み方を一つにせず、触れる時期を考える。"
+  },
+  {
+    "id": "exp26-learning-0520",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "地元の歴史を知るほど誇りと重さの両方を感じる。故郷への愛着をどう持ちたい？",
+    "detail": "仮の場面です。特定の加害の告白を求めず、複数の歴史的意味を考える。"
+  },
+  {
+    "id": "exp26-learning-0526",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "別の地域での暮らしが長くなり、故郷の祝い方が自分には遠い。どう関わり続けたい？",
+    "detail": "仮の場面です。文化への距離の変化を拒絶だけと考えない。"
+  },
+  {
+    "id": "exp26-learning-0526",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "別の地域での暮らしが長くなり、故郷の祝い方が自分には遠い。どう関わり続けたい？",
+    "detail": "仮の場面です。文化への距離の変化を拒絶だけと考えない。"
+  },
+  {
+    "id": "exp26-learning-0535",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "家族の行事を自分が担う番になったが、同じ形では続けられない。何を変えて何を話したい？",
+    "detail": "仮の場面です。担う人の暮らしと、これまでの意味を考える。"
+  },
+  {
+    "id": "exp26-learning-0535",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "家族の行事を自分が担う番になったが、同じ形では続けられない。何を変えて何を話したい？",
+    "detail": "仮の場面です。担う人の暮らしと、これまでの意味を考える。"
+  },
+  {
+    "id": "exp26-learning-0537",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "地域の言葉を子へ教えたいが、子は別の言葉で暮らしたい。自分は何を渡したい？",
+    "detail": "仮の場面です。言葉の維持を子の義務に固定しない。"
+  },
+  {
+    "id": "exp26-learning-0537",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "地域の言葉を子へ教えたいが、子は別の言葉で暮らしたい。自分は何を渡したい？",
+    "detail": "仮の場面です。言葉の維持を子の義務に固定しない。"
+  },
+  {
+    "id": "exp26-learning-0538",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "古い行事の役を自分だけが覚えている。やめたい気持ちを誰にどう話したい？",
+    "detail": "仮の場面です。担い手が少ないことと、本人の継続義務を分ける。"
+  },
+  {
+    "id": "exp26-learning-0545",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "先祖への愛着から地元の歴史を調べたが、誇りだけでは語れないと知った。調べ続けたい？",
+    "detail": "仮の場面です。自分に先祖の行為の責任を負わせる設定ではない。"
+  },
+  {
+    "id": "exp26-learning-0547",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "地元の歴史を書く自分は、家族の人生が見えなくなるのを怖く感じる。地域の物語に何を入れたいという願いなのだろう？",
+    "detail": "仮の場面です。資料を持つ人の関心だけで全体を代表しない。"
+  },
+  {
+    "id": "exp26-learning-0548",
+    "author_group": "learning",
+    "code": "short_level4",
+    "note": "45字未満。本人の利害・倫理・意味の深さが文面にあるか確認。長さだけでは不合格にしない。",
+    "question": "子どもへ家族の歴史を話す自分が、つらい部分を避けてきた。今はどこまで伝えたい？",
+    "detail": "仮の場面です。年齢に応じた説明と、語らないことで残る理解を考える。"
+  },
+  {
+    "id": "exp26-learning-0549",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "自分が育った暮らしを「昔の生活」として案内する役になった。まだその文化で生きる自分は、何を過去にしたくない？",
+    "detail": "仮の場面です。懐かしい展示と、現在も続く実践を分ける。"
+  },
+  {
+    "id": "exp26-learning-0551",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "自分は博物館の館長。大切に展示してきた文化財を、元の地域が祈りの場へ戻したいと言う。一般公開が終わるとしたら、何を重く見て手放すか決めたい？",
+    "detail": "仮の場面です。取得の違法性は置かず、公開終了は架空の条件。"
+  },
+  {
+    "id": "exp26-learning-0558",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "人生をかけて集めた文化の記録を後継者へ渡す。自分とは違う分類で語り直されても、何を受け継いだと感じたい？",
+    "detail": "仮の場面です。資料の保存と、解釈の固定を分けて考える。"
+  },
+  {
+    "id": "exp26-learning-0563",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "故郷の文化の紹介を任された自分は、そこでは苦しい経験もあった。誇りだけを期待される場で、どんな自分として語りたい？",
+    "detail": "仮の場面です。出自と、本人が持つ文化への感情を区別する。"
+  },
+  {
+    "id": "exp26-learning-0571",
+    "author_group": "learning",
+    "code": "short_background",
+    "note": "背景30字未満。問い固有の価値や不確実性を補助できるか確認。",
+    "question": "自分が誇りとして育った記念碑を管理する。説明の一部が資料と違うと確認された時、何を変え、何を愛着として残したい？",
+    "detail": "仮の場面です。物の来歴と現在の歴史理解が異なる架空の設定。"
+  }
+]

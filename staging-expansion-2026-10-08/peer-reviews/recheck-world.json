@@ -1,0 +1,439 @@
+{
+  "reviewer": "personal",
+  "author_group": "world",
+  "reviewed_ids": [
+    "exp26-world-0076",
+    "exp26-world-0084",
+    "exp26-world-0143",
+    "exp26-world-0168",
+    "exp26-world-0173",
+    "exp26-world-0188",
+    "exp26-world-0203",
+    "exp26-world-0223",
+    "exp26-world-0354",
+    "exp26-world-0360",
+    "exp26-world-0377",
+    "exp26-world-0392",
+    "exp26-world-0398",
+    "exp26-world-0587",
+    "exp26-world-0590",
+    "exp26-world-0626",
+    "exp26-world-0633",
+    "exp26-world-0636",
+    "exp26-world-0641",
+    "exp26-world-0650",
+    "exp26-world-0653",
+    "exp26-world-0662"
+  ],
+  "reviewed_count": 22,
+  "final_shard_sha256": "7df10201253f1f21b932b92e828d5e23506213a52e999f27eb495af540a0eced",
+  "applied_review_draft_sha256": "2a60a184f3d72d445f2fbfd7bb69c9d07fc5ddccba12da650818932168e27e72",
+  "scope": "適用済みworld修正22件を、実際の最終shardの本文・背景・追加理由・Level/category/topic/perspective/sensitivity/content_warning/editorialまで全件読み、変更前全文と元レビュー22指摘を照合した。元レビューの比較対象19件の原文・背景・理由・metadataも実際に読んだ。world全663件の再読や、追加3768件・既存942件の全ての二問の意味比較は実施していない。今回の22件は全て架空条件であり、外部資料の再取得・現実の会話テストは行っていない。 その後のroot明確化0650/0662について、変更前後の全additionと実際の最終本文・背景・理由・metadataを再読。変更は本文のみで、先に読んだ残り20件が同じadditionのままであることも照合した。初回の22件読了記録はreview_historyに全体を保存した。",
+  "comparison_reviewed_ids": [
+    "exp26-livelihood-0367",
+    "exp26-world-0126",
+    "exp26-world-0135",
+    "exp26-world-0069",
+    "exp26-world-0194",
+    "exp26-world-0176",
+    "exp26-world-0182",
+    "exp26-world-0254",
+    "exp26-world-0369",
+    "exp26-world-0566",
+    "exp26-world-0414",
+    "exp26-world-0448",
+    "exp26-world-0604",
+    "exp26-world-0617",
+    "exp26-world-0608",
+    "exp26-world-0618",
+    "exp26-world-0640",
+    "exp26-world-0438",
+    "exp26-world-0607"
+  ],
+  "resolution_assessments": [
+    {
+      "id": "exp26-world-0076",
+      "status": "resolved",
+      "assessment": "動物をどこへ追いやるのかという曖昧さを除き、人の接近や給餌という行為を制限する判断へ明確化している。L3の運営者の視点と感度1は整合する。"
+    },
+    {
+      "id": "exp26-world-0084",
+      "status": "resolved",
+      "assessment": "販売後の供給責任の割当てではなく、修理の確実さと資源の別用途への転用を比べる設計判断になった。livelihood-0367の販売数・価格による責任の違いと区別でき、資源削減の効果は未確定としている。"
+    },
+    {
+      "id": "exp26-world-0143",
+      "status": "resolved",
+      "assessment": "他地域への電力供給の一般論から、人生の節目を支えた景色を失う本人の同意の意味へ深まった。0126の受益者の説明会への参加と判断対象が異なる。"
+    },
+    {
+      "id": "exp26-world-0168",
+      "status": "resolved",
+      "assessment": "0135の自然が残ったと感じる条件から、自ら他者へ求めた保全規則への例外を望む自己の葛藤へ変わった。希望を受け止める本人なのでaffectedが成立する。"
+    },
+    {
+      "id": "exp26-world-0173",
+      "status": "resolved",
+      "assessment": "0069の公表範囲、0194の公開による承認から、既にした呼びかけの取り戻せない結果を引き受ける行為の責任へ変わった。架空の因果条件を現実の公表一般へ広げていない。"
+    },
+    {
+      "id": "exp26-world-0188",
+      "status": "resolved",
+      "assessment": "0176の活動時間の不足による退出から、保全で得た長い帰属と自然への信念が離れる時の選択へ変わった。仲間の保全観を誤りと決めない。"
+    },
+    {
+      "id": "exp26-world-0203",
+      "status": "resolved",
+      "assessment": "0182の完成を見られなくても続ける行為の理由から、現在使われる緑と将来へ託す森を人生の最後の仕事として選ぶ責任へ分かれた。同時には整えられない架空の条件が背景にある。"
+    },
+    {
+      "id": "exp26-world-0223",
+      "status": "resolved",
+      "assessment": "継承によって手入れの責任を受け、自分の別の人生を望む本人なのでaffectedへの訂正が自然。既存の問いの人生の葛藤を保っている。"
+    },
+    {
+      "id": "exp26-world-0354",
+      "status": "resolved",
+      "assessment": "生活用品の物流停止を感じる一般論から、育ててきた店という人生の継続と他国への距離を望む信念の衝突へ深まった。架空の供給停止であり実在国の危機予測をしていない。"
+    },
+    {
+      "id": "exp26-world-0360",
+      "status": "resolved",
+      "assessment": "0254の友人と以前どおり話したい気持ちから、長年共に準備した仕事と人生の未来を失う本人の意味へ深まった。特定の渡航や制裁の実行条件を断定していない。"
+    },
+    {
+      "id": "exp26-world-0377",
+      "status": "resolved",
+      "assessment": "普通の紹介文の解釈の調整から、家族が長く語れなかった体験を託され翻訳する本人の関係と責任へ深まった。新しい読まれ方を必ず誤解としない。"
+    },
+    {
+      "id": "exp26-world-0392",
+      "status": "resolved",
+      "assessment": "0369の現地の希望に合わせる計画変更から、役目が済んだ団体を終える使命の意味と職員の生活への責任へ変わった。現地で必要ないことは明示的な仮定である。"
+    },
+    {
+      "id": "exp26-world-0398",
+      "status": "resolved",
+      "assessment": "会議時間の段取りから、家族の声が届かなかった経験を持つ本人が、参加者の暮らしを長く変える重要な決定を進める責任へ深まった。単に過去の記憶を添えた問いではない。"
+    },
+    {
+      "id": "exp26-world-0587",
+      "status": "resolved",
+      "assessment": "0566の努力と偶然の自己像から、予測が当たったことと自分で理由を考えて選んだ感覚を分ける問いへ変わった。現実の研究の予測能力の断定を背景で避けている。"
+    },
+    {
+      "id": "exp26-world-0590",
+      "status": "resolved",
+      "assessment": "0414/0448の知った後の好みから、自分を救い研究者の人生へ導いた不思議と現在の仕事の意味へ深まった。知ると必ず驚きが薄れるとは断定していない。"
+    },
+    {
+      "id": "exp26-world-0626",
+      "status": "resolved",
+      "assessment": "0604の自分の功績の認知から、知識公開の信念が自分を傷つけた人の利益にもなる時の行為の葛藤へ変わった。個人情報や危険な方法の公開へ誘導する条件は除いている。"
+    },
+    {
+      "id": "exp26-world-0633",
+      "status": "resolved",
+      "assessment": "0617の生存する協力者からの撤回相談から、亡くなって確認できない参加者の未確認の新用途への利用を決める責任へ変わった。架空の相談として法的な利用可否を一律に示していない。"
+    },
+    {
+      "id": "exp26-world-0636",
+      "status": "resolved",
+      "assessment": "0608の家族の経験と研究結果の違いから、家族とそれ以外の人へ限られた研究所の時間をどう配るかという本人の利益相反へ変わった。効果の未確定さを残し、家族の希望を悪と固定しない。"
+    },
+    {
+      "id": "exp26-world-0641",
+      "status": "resolved",
+      "assessment": "0618の発表後に消した声を振り返る責任から、全員の記録がある時の均等な広さと一人を深く知る発表の選択へ変わった。語りを託された本人の研究の目的が揺らぐ意味がある。"
+    },
+    {
+      "id": "exp26-world-0650",
+      "status": "resolved",
+      "assessment": "資料を他者へ渡すだけの曖昧な条件から、最後の試料を新研究で消費し同じ試料を再び調べられなくなる競合へ修正されている。新たな検証機会と既にした発見への責任を本人に置ける。表現の範囲を背景へ厳密にそろえる任意案を残す。"
+    },
+    {
+      "id": "exp26-world-0653",
+      "status": "resolved",
+      "assessment": "0640の失敗を組織史に残す選択から、研究の功績を消した創設者の名と協力者の功績をどう継承するかへ変わった。知への感謝と功績の認知を分け、自分が誇る居場所を受け継ぐ本人の責任を明示した。"
+    },
+    {
+      "id": "exp26-world-0662",
+      "status": "resolved",
+      "assessment": "0438/0448/0607の知る楽しさや説明の配慮から、人生を支えた共有の世界観が変わり大切な関係へ伝える本人の意味へ深まった。影響を受けるaffectedと感度3が整合する。本文の抽象語の任意の明確化を残す。"
+    }
+  ],
+  "findings": [
+    {
+      "id": "exp26-world-0650",
+      "priority": "optional",
+      "field": "question/detail",
+      "issue": "背景が明示する喪失は「同じ試料そのものを再び調べられない」こと。本文の「自分の結果を確かめられなくなる」は結果の全ての検証方法まで失うとも読める。仮定としては成立し必須の修正条件は満たすが、範囲をそろえるとより明確。",
+      "question_reviewed": "自分の発見を確かめる最後の試料を、仲間の新しい研究で使い切れば前に進めるとする。後から自分の結果を確かめられなくなる時、自分は何を未来へ残したい？",
+      "suggested_resolution": "本文の「後から自分の結果を確かめられなくなる時」を「後から同じ試料で自分の結果を確かめられなくなる時」へ。最後の試料を消費する条件、背景、Level・視点・感度は維持できる。",
+      "status": "resolved",
+      "resolution_source": "resolution-drafts/root-clarifies-world.json",
+      "question_after": "自分の発見を確かめる最後の試料を、仲間の新しい研究で使い切れば前に進めるとする。後から同じ試料で再確認できなくなる時、自分は何を未来へ残したい？",
+      "resolution_assessment": "再確認できなくなる範囲が「同じ試料」に限定され、試料を消費する背景と一致した。結果の全ての検証方法が失われるという読みを避け、知識の検証と新しい研究の機会という葛藤を維持している。"
+    },
+    {
+      "id": "exp26-world-0662",
+      "priority": "optional",
+      "field": "question",
+      "issue": "「大切な人と生きてきた世界の説明」は何を一緒に信じていたのかを読者が組み立てる必要がある。背景を読むと人生を支える共有の世界観であり、修正の深さは成立している。本文だけでもその意味をほどけると入口が読みやすい。",
+      "question_reviewed": "大切な人と生きてきた世界の説明を研究が変え、自分だけは以前のように信じられなくなった。もう同じ意味では見られない自分を、相手へどう伝えたい？",
+      "suggested_resolution": "冒頭を「大切な人と人生の支えにしてきた世界の捉え方が、研究を知ったことで揺らぎ、自分だけは以前のように信じられなくなった。」とする任意案。後半・背景・metadataを保ち、相手の信じ方を誤りと決めない。",
+      "status": "resolved",
+      "resolution_source": "resolution-drafts/root-clarifies-world.json",
+      "question_after": "大切な人と共に生きる支えにしてきた、人や自然についての考え方が、研究を読んで変わった。もう同じ意味で世界を見られない自分を、相手へどう伝えたい？",
+      "resolution_assessment": "人生の支えだった共有の考え方が「人や自然についての考え方」として示され、変化のきっかけも「研究を読んで」と分かる。相手へどう伝えるかという関係の深さを保ち、背景でも相手の信じ方を誤りとしない。"
+    }
+  ],
+  "finding_counts": {
+    "required": 0,
+    "optional": 2,
+    "resolved_optional": 2,
+    "unresolved_required": 0,
+    "unresolved_optional": 0
+  },
+  "status": "passed_staging_not_approved",
+  "verification": {
+    "all_22_final_records_match_applied_after": true,
+    "reviewed_ids_unique": true,
+    "final_shard_hash_unchanged_during_read": true,
+    "required_metadata_present": true,
+    "warning_values_allowed": true,
+    "questions_sources_and_shard_not_edited": true,
+    "all_22_final_records_match_applied_and_root_amendment": true,
+    "all_two_root_amendments_match_final_shard": true,
+    "remaining_20_reviewed_records_unchanged": true,
+    "root_amendments_change_question_only": true
+  },
+  "approval_note": "担当外再確認の合格はユーザーによる問題変更の承認ではない。正本への反映は主担当が具体案を示した最終確認後。",
+  "review_history": [
+    {
+      "stage": "initial_22_card_recheck_before_root_clarifications",
+      "record": {
+        "reviewer": "personal",
+        "author_group": "world",
+        "reviewed_ids": [
+          "exp26-world-0076",
+          "exp26-world-0084",
+          "exp26-world-0143",
+          "exp26-world-0168",
+          "exp26-world-0173",
+          "exp26-world-0188",
+          "exp26-world-0203",
+          "exp26-world-0223",
+          "exp26-world-0354",
+          "exp26-world-0360",
+          "exp26-world-0377",
+          "exp26-world-0392",
+          "exp26-world-0398",
+          "exp26-world-0587",
+          "exp26-world-0590",
+          "exp26-world-0626",
+          "exp26-world-0633",
+          "exp26-world-0636",
+          "exp26-world-0641",
+          "exp26-world-0650",
+          "exp26-world-0653",
+          "exp26-world-0662"
+        ],
+        "reviewed_count": 22,
+        "final_shard_sha256": "bd6af834095fcd5c1fe5f4f0e75900e368a0aaa54f86d1186bbb46a037d8c5b1",
+        "applied_review_draft_sha256": "9c3566b8fa965b53cb6d592a76a9f3c3ffe632671e14411c7c6a8c7a52966a1a",
+        "scope": "適用済みworld修正22件を、実際の最終shardの本文・背景・追加理由・Level/category/topic/perspective/sensitivity/content_warning/editorialまで全件読み、変更前全文と元レビュー22指摘を照合した。元レビューの比較対象19件の原文・背景・理由・metadataも実際に読んだ。world全663件の再読や、追加3768件・既存942件の全ての二問の意味比較は実施していない。今回の22件は全て架空条件であり、外部資料の再取得・現実の会話テストは行っていない。",
+        "comparison_reviewed_ids": [
+          "exp26-livelihood-0367",
+          "exp26-world-0126",
+          "exp26-world-0135",
+          "exp26-world-0069",
+          "exp26-world-0194",
+          "exp26-world-0176",
+          "exp26-world-0182",
+          "exp26-world-0254",
+          "exp26-world-0369",
+          "exp26-world-0566",
+          "exp26-world-0414",
+          "exp26-world-0448",
+          "exp26-world-0604",
+          "exp26-world-0617",
+          "exp26-world-0608",
+          "exp26-world-0618",
+          "exp26-world-0640",
+          "exp26-world-0438",
+          "exp26-world-0607"
+        ],
+        "resolution_assessments": [
+          {
+            "id": "exp26-world-0076",
+            "status": "resolved",
+            "assessment": "動物をどこへ追いやるのかという曖昧さを除き、人の接近や給餌という行為を制限する判断へ明確化している。L3の運営者の視点と感度1は整合する。"
+          },
+          {
+            "id": "exp26-world-0084",
+            "status": "resolved",
+            "assessment": "販売後の供給責任の割当てではなく、修理の確実さと資源の別用途への転用を比べる設計判断になった。livelihood-0367の販売数・価格による責任の違いと区別でき、資源削減の効果は未確定としている。"
+          },
+          {
+            "id": "exp26-world-0143",
+            "status": "resolved",
+            "assessment": "他地域への電力供給の一般論から、人生の節目を支えた景色を失う本人の同意の意味へ深まった。0126の受益者の説明会への参加と判断対象が異なる。"
+          },
+          {
+            "id": "exp26-world-0168",
+            "status": "resolved",
+            "assessment": "0135の自然が残ったと感じる条件から、自ら他者へ求めた保全規則への例外を望む自己の葛藤へ変わった。希望を受け止める本人なのでaffectedが成立する。"
+          },
+          {
+            "id": "exp26-world-0173",
+            "status": "resolved",
+            "assessment": "0069の公表範囲、0194の公開による承認から、既にした呼びかけの取り戻せない結果を引き受ける行為の責任へ変わった。架空の因果条件を現実の公表一般へ広げていない。"
+          },
+          {
+            "id": "exp26-world-0188",
+            "status": "resolved",
+            "assessment": "0176の活動時間の不足による退出から、保全で得た長い帰属と自然への信念が離れる時の選択へ変わった。仲間の保全観を誤りと決めない。"
+          },
+          {
+            "id": "exp26-world-0203",
+            "status": "resolved",
+            "assessment": "0182の完成を見られなくても続ける行為の理由から、現在使われる緑と将来へ託す森を人生の最後の仕事として選ぶ責任へ分かれた。同時には整えられない架空の条件が背景にある。"
+          },
+          {
+            "id": "exp26-world-0223",
+            "status": "resolved",
+            "assessment": "継承によって手入れの責任を受け、自分の別の人生を望む本人なのでaffectedへの訂正が自然。既存の問いの人生の葛藤を保っている。"
+          },
+          {
+            "id": "exp26-world-0354",
+            "status": "resolved",
+            "assessment": "生活用品の物流停止を感じる一般論から、育ててきた店という人生の継続と他国への距離を望む信念の衝突へ深まった。架空の供給停止であり実在国の危機予測をしていない。"
+          },
+          {
+            "id": "exp26-world-0360",
+            "status": "resolved",
+            "assessment": "0254の友人と以前どおり話したい気持ちから、長年共に準備した仕事と人生の未来を失う本人の意味へ深まった。特定の渡航や制裁の実行条件を断定していない。"
+          },
+          {
+            "id": "exp26-world-0377",
+            "status": "resolved",
+            "assessment": "普通の紹介文の解釈の調整から、家族が長く語れなかった体験を託され翻訳する本人の関係と責任へ深まった。新しい読まれ方を必ず誤解としない。"
+          },
+          {
+            "id": "exp26-world-0392",
+            "status": "resolved",
+            "assessment": "0369の現地の希望に合わせる計画変更から、役目が済んだ団体を終える使命の意味と職員の生活への責任へ変わった。現地で必要ないことは明示的な仮定である。"
+          },
+          {
+            "id": "exp26-world-0398",
+            "status": "resolved",
+            "assessment": "会議時間の段取りから、家族の声が届かなかった経験を持つ本人が、参加者の暮らしを長く変える重要な決定を進める責任へ深まった。単に過去の記憶を添えた問いではない。"
+          },
+          {
+            "id": "exp26-world-0587",
+            "status": "resolved",
+            "assessment": "0566の努力と偶然の自己像から、予測が当たったことと自分で理由を考えて選んだ感覚を分ける問いへ変わった。現実の研究の予測能力の断定を背景で避けている。"
+          },
+          {
+            "id": "exp26-world-0590",
+            "status": "resolved",
+            "assessment": "0414/0448の知った後の好みから、自分を救い研究者の人生へ導いた不思議と現在の仕事の意味へ深まった。知ると必ず驚きが薄れるとは断定していない。"
+          },
+          {
+            "id": "exp26-world-0626",
+            "status": "resolved",
+            "assessment": "0604の自分の功績の認知から、知識公開の信念が自分を傷つけた人の利益にもなる時の行為の葛藤へ変わった。個人情報や危険な方法の公開へ誘導する条件は除いている。"
+          },
+          {
+            "id": "exp26-world-0633",
+            "status": "resolved",
+            "assessment": "0617の生存する協力者からの撤回相談から、亡くなって確認できない参加者の未確認の新用途への利用を決める責任へ変わった。架空の相談として法的な利用可否を一律に示していない。"
+          },
+          {
+            "id": "exp26-world-0636",
+            "status": "resolved",
+            "assessment": "0608の家族の経験と研究結果の違いから、家族とそれ以外の人へ限られた研究所の時間をどう配るかという本人の利益相反へ変わった。効果の未確定さを残し、家族の希望を悪と固定しない。"
+          },
+          {
+            "id": "exp26-world-0641",
+            "status": "resolved",
+            "assessment": "0618の発表後に消した声を振り返る責任から、全員の記録がある時の均等な広さと一人を深く知る発表の選択へ変わった。語りを託された本人の研究の目的が揺らぐ意味がある。"
+          },
+          {
+            "id": "exp26-world-0650",
+            "status": "resolved",
+            "assessment": "資料を他者へ渡すだけの曖昧な条件から、最後の試料を新研究で消費し同じ試料を再び調べられなくなる競合へ修正されている。新たな検証機会と既にした発見への責任を本人に置ける。表現の範囲を背景へ厳密にそろえる任意案を残す。"
+          },
+          {
+            "id": "exp26-world-0653",
+            "status": "resolved",
+            "assessment": "0640の失敗を組織史に残す選択から、研究の功績を消した創設者の名と協力者の功績をどう継承するかへ変わった。知への感謝と功績の認知を分け、自分が誇る居場所を受け継ぐ本人の責任を明示した。"
+          },
+          {
+            "id": "exp26-world-0662",
+            "status": "resolved",
+            "assessment": "0438/0448/0607の知る楽しさや説明の配慮から、人生を支えた共有の世界観が変わり大切な関係へ伝える本人の意味へ深まった。影響を受けるaffectedと感度3が整合する。本文の抽象語の任意の明確化を残す。"
+          }
+        ],
+        "findings": [
+          {
+            "id": "exp26-world-0650",
+            "priority": "optional",
+            "field": "question/detail",
+            "issue": "背景が明示する喪失は「同じ試料そのものを再び調べられない」こと。本文の「自分の結果を確かめられなくなる」は結果の全ての検証方法まで失うとも読める。仮定としては成立し必須の修正条件は満たすが、範囲をそろえるとより明確。",
+            "question_reviewed": "自分の発見を確かめる最後の試料を、仲間の新しい研究で使い切れば前に進めるとする。後から自分の結果を確かめられなくなる時、自分は何を未来へ残したい？",
+            "suggested_resolution": "本文の「後から自分の結果を確かめられなくなる時」を「後から同じ試料で自分の結果を確かめられなくなる時」へ。最後の試料を消費する条件、背景、Level・視点・感度は維持できる。"
+          },
+          {
+            "id": "exp26-world-0662",
+            "priority": "optional",
+            "field": "question",
+            "issue": "「大切な人と生きてきた世界の説明」は何を一緒に信じていたのかを読者が組み立てる必要がある。背景を読むと人生を支える共有の世界観であり、修正の深さは成立している。本文だけでもその意味をほどけると入口が読みやすい。",
+            "question_reviewed": "大切な人と生きてきた世界の説明を研究が変え、自分だけは以前のように信じられなくなった。もう同じ意味では見られない自分を、相手へどう伝えたい？",
+            "suggested_resolution": "冒頭を「大切な人と人生の支えにしてきた世界の捉え方が、研究を知ったことで揺らぎ、自分だけは以前のように信じられなくなった。」とする任意案。後半・背景・metadataを保ち、相手の信じ方を誤りと決めない。"
+          }
+        ],
+        "finding_counts": {
+          "required": 0,
+          "optional": 2
+        },
+        "status": "passed_staging_not_approved",
+        "verification": {
+          "all_22_final_records_match_applied_after": true,
+          "reviewed_ids_unique": true,
+          "final_shard_hash_unchanged_during_read": true,
+          "required_metadata_present": true,
+          "warning_values_allowed": true,
+          "questions_sources_and_shard_not_edited": true
+        },
+        "approval_note": "担当外再確認の合格はユーザーによる問題変更の承認ではない。正本への反映は主担当が具体案を示した最終確認後。"
+      }
+    }
+  ],
+  "amendment_recheck": {
+    "reviewed_ids": [
+      "exp26-world-0650",
+      "exp26-world-0662"
+    ],
+    "reviewed_count": 2,
+    "source_sha256": "bd6af834095fcd5c1fe5f4f0e75900e368a0aaa54f86d1186bbb46a037d8c5b1",
+    "final_shard_sha256": "7df10201253f1f21b932b92e828d5e23506213a52e999f27eb495af540a0eced",
+    "resolution_draft_sha256": "17afe63429085fe87cd00e10f90767c2669a60715ceb046404088149787852b7",
+    "scope": "2件の変更前後と最終additionの全フィールドを実読。変更はquestionだけで、背景・理由・タグ・視点・感度・editorialを維持。",
+    "assessments": [
+      {
+        "id": "exp26-world-0650",
+        "status": "resolved",
+        "assessment": "再確認できなくなる範囲が「同じ試料」に限定され、試料を消費する背景と一致した。結果の全ての検証方法が失われるという読みを避け、知識の検証と新しい研究の機会という葛藤を維持している。"
+      },
+      {
+        "id": "exp26-world-0662",
+        "status": "resolved",
+        "assessment": "人生の支えだった共有の考え方が「人や自然についての考え方」として示され、変化のきっかけも「研究を読んで」と分かる。相手へどう伝えるかという関係の深さを保ち、背景でも相手の信じ方を誤りとしない。"
+      }
+    ],
+    "remaining_20_records_unchanged": true,
+    "status": "passed_staging_not_approved"
+  }
+}

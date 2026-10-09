@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "scope": "Final pending proposal and its exact review.html in headless Chromium. Prior UI behavior checks are preserved separately.",
+  "proposal_sha256": "ee78bde10a1dd39c320274f99ff31f7031bd01e4258310f934c664d06c609a42",
+  "review_html_sha256": "3e795c2403bcb65f4245a4545f30f36785ef90ec791a7d5ef13e4b8792dd08d5",
+  "checks": [
+    "final_counts_and_initial_rows",
+    "final_category_level_counts_and_pagination",
+    "seven_final_revised_questions_backgrounds_and_reasons",
+    "final_source_anchor",
+    "final_empty_search",
+    "final_mobile_render_and_search",
+    "no_page_errors"
+  ],
+  "prior_interim_check": {
+    "status": "passed",
+    "checks": [
+      "initial_count_and_60_rows",
+      "category_filter",
+      "level_filter",
+      "pagination",
+      "ID_search",
+      "background_expand_and_source_link",
+      "empty_search",
+      "warning_filter",
+      "desktop_and_mobile_render",
+      "no_page_errors"
+    ],
+    "scope": "Review document UI on interim proposal; final content is separately revalidated."
+  },
+  "production_files_written": 0
+}

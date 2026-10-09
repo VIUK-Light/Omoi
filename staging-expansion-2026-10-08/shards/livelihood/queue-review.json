@@ -1,0 +1,1330 @@
+[
+  {
+    "id": "exp26-livelihood-0115",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "チームで案を一つに決めた後も、反対した人に代案の試作を認めるべき？",
+    "assessment_axis": "決定後の探索の余地を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0117",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "急な依頼を引き受ける人だけが頼られる会社で、断る人にも同じ成長機会を用意すべき？",
+    "assessment_axis": "柔軟対応と成長の条件を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0136",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "地域の唯一の店が、店主の休みを確保するため営業日を減らす。利用者は何を引き受けたい？",
+    "assessment_axis": "便利さを支える休息を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0142",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "部署が求める人と会社が育てたい人が違う時、採用の最終判断をどこに置くべき？",
+    "assessment_axis": "採用権限の位置を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0145",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "一度辞退した人が再応募した時、会社への熱意を疑うことをどう思う？",
+    "assessment_axis": "選考での忠誠の期待を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0164",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "自分が支えた企画で別の人だけが有名になった。十分な報酬は得たが、仕事への気持ちはどう変わる？",
+    "assessment_axis": "報酬と職業人生に残る承認を分ける。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0169",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "長年の調整役を外れたら、職場は問題なく回った。肩の荷は下りても、どんな気持ちが残りそう？",
+    "assessment_axis": "支える役割の終了を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0173",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "後輩があなたより早く昇進した。相手を認めていても、自分のこれまでをどう受け止めたい？",
+    "assessment_axis": "序列と積み重ねの感覚を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0177",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "技能で選ばれたと思っていた採用が、知人の強い推薦もあったと知った。仕事への自信は変わる？",
+    "assessment_axis": "採用の来歴と自信を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0180",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "仕事の依頼を待つ暮らしが長く続き、人生の予定を自分で選びにくい。作業のない時間を自由だと言われたら何を伝える？",
+    "assessment_axis": "仕事待ちに使う人生の時間を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0180",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "仕事の依頼を待つ暮らしが長く続き、人生の予定を自分で選びにくい。作業のない時間を自由だと言われたら何を伝える？",
+    "assessment_axis": "仕事待ちに使う人生の時間を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0184",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "辞めた仕事の成果が後から高く評価された。そこにいない自分は、何を報われたと感じそう？",
+    "assessment_axis": "時間差の承認の意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0185",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "家が仕事の場所になり、何年も暮らしから仕事が離れない。収入も仕事も好きでも、自分が生きる場所に何を取り戻したい？",
+    "assessment_axis": "好きな労働が占める生活の意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0187",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "何度も仕事を断られ、条件を変えれば注文が来そうだ。自分の専門をどこまで変えたい？",
+    "assessment_axis": "需要で変わる専門の境界を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0189",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "忙しい時期が終わり、何をしても物足りない。仕事を増やす前に、どんな時間を試したい？",
+    "assessment_axis": "繁忙後の時間の意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0190",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "育てた後輩にもう教えることが少ない。相手の成長がうれしくても、自分の役割をどう見つけたい？",
+    "assessment_axis": "教える役割を失う意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0193",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "職場では明るい役を長く務め、自分の弱さを出せない。仲間との関係はよくても、その働く自分をどこまで続けたい？",
+    "assessment_axis": "仕事で演じ続ける自己を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0194",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "家計に余裕ができ、働かなくても暮らせるとする。今の仕事を続ける理由を、何と呼びたい？",
+    "assessment_axis": "必要のなくなった労働を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0195",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "経験から自信がある方法を、若い同僚の新しい方法が上回った。何を認めるのが難しそう？",
+    "assessment_axis": "熟練が更新される感覚を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0196",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "複数の仕事を持ち、一つだけを本業と呼ぶよう求められた。自分の働き方を、何で説明したい？",
+    "assessment_axis": "複業の自己像を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0197",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "仕事の批判を読むたび、自分そのものを否定された気がする。どこを自分と仕事の境にしたい？",
+    "assessment_axis": "仕事の評価と自己の境界を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0198",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "職場がなくなっても仲間は残った。仕事を失う寂しさのうち、関係だけでは埋まらないものは何？",
+    "assessment_axis": "組織終了で失う労働の場を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0201",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "昔の自分が憧れた仕事を、今の自分は選ばない。変わったことを、成長と断念のどちらに感じる？",
+    "assessment_axis": "過去の職業願望との距離を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0202",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "同僚が直した自分のミスを誰も知らず、大きな役割を任されそうだ。知らせれば同僚の助けも知られる時、何を伝える？",
+    "assessment_axis": "黙って得る信頼と責任を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0203",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分の工夫を公開すれば、競争相手も使えて仕事が減るかもしれない。誰にどこまで渡したい？",
+    "assessment_axis": "競争下の技能公開を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0204",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "後任が決まらないまま退職日が近づいた。次の仕事も待っている。自分が最後まで担う範囲は？",
+    "assessment_axis": "退出時の自分の責任の境界を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0206",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "自分の案が不採用でも、失敗すると仲間の仕事がなくなる。納得できない計画に、どこまで力を出す？",
+    "assessment_axis": "不採用後の自分の関与を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0209",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "覚えた技能を無償で教えると、他の人の有料講座と競合する。知識を広げることをどう考える？",
+    "assessment_axis": "技能を無償化する自分を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0210",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "代表として表彰され、その成果が自分の代表作として残る。名を出せない仲間もいる時、何を自分の功績と呼べる？",
+    "assessment_axis": "共同成果を自分の代表作にする意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0211",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "安く請ければ次の仕事につながりそうだが、今の生活は苦しい。何を条件に仕事を引き受ける？",
+    "assessment_axis": "未来の期待で値付けする自分を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0214",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "事業を終えたいが、いつも来る客が「ここしかない」と言う。自分の暮らしを変える理由を何と伝える？",
+    "assessment_axis": "店を閉める本人の理由を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0216",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "長く育てた相手を助けたら、もう自分で担いたいと拒まれた。相手を支えるために続けた仕事の関係を、何に変えたい？",
+    "assessment_axis": "支える職業の関係を更新する本人を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0216",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "長く育てた相手を助けたら、もう自分で担いたいと拒まれた。相手を支えるために続けた仕事の関係を、何に変えたい？",
+    "assessment_axis": "支える職業の関係を更新する本人を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0217",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "人生の途中で新しい仕事へ移りたいが、学ぶ間は仲間の支えが必要になる。昔の熟練を離れてまで、どんな自分になりたい？",
+    "assessment_axis": "職業を変える自分と支えの意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0219",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "急な仕事を待つ役を長く務め、自分の人生が人の予定のためになっている。断れば別の人が担う時、自分は何を終えたい？",
+    "assessment_axis": "人の予定に使った人生を選び直す。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0220",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "仕事の実績を紹介したいが、共同相手は名前を出したくない。自分の経歴を何で示したい？",
+    "assessment_axis": "実績紹介と共同者の非公開を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0221",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "最後の作品として自分の名が残る仕事に、納得できない部分がある。客は今の形を望む時、完成の何を引き受けたい？",
+    "assessment_axis": "職業の最後の成果を完成とする意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0222",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "次の担当に任せた後も、客は自分に連絡してくる。応える安心と後任の裁量を、どう両立したい？",
+    "assessment_axis": "引継ぎ後の自分の関与を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0226",
+    "hint": "short_background",
+    "status": "author_reviewed_keep",
+    "current_question": "長年育てた相手が自分を越え、もう教える役は必要ないと言う。関係は続くなら、自分は相手の何でありたい？",
+    "assessment_axis": "育成の役を失う自分の関係を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0226",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "長年育てた相手が自分を越え、もう教える役は必要ないと言う。関係は続くなら、自分は相手の何でありたい？",
+    "assessment_axis": "育成の役を失う自分の関係を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0228",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "客が自分の仕事だけを信頼し、共同相手を外してほしいと言う。相手の技能は信じているなら、注文を失っても何を守る？",
+    "assessment_axis": "注文と共に働く信念の衝突を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0229",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "失敗から学んだ方法を人に話すと、自分の過去の失敗も知られる。誰にまで伝えたい？",
+    "assessment_axis": "失敗を開く職業的自己を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0230",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "長く付き合う客から別の仕事も頼まれたが、今は専門を深めたい。関係を変えても断りたいと思う？",
+    "assessment_axis": "顧客関係と専門の選択を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0232",
+    "hint": "short_background",
+    "status": "author_reviewed_keep",
+    "current_question": "自分が頼られるため続けてきた調整役を、もう次の人へ渡せる。必要とされる場が減っても、何を手放したい？",
+    "assessment_axis": "頼られる役を自分から渡す意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0232",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分が頼られるため続けてきた調整役を、もう次の人へ渡せる。必要とされる場が減っても、何を手放したい？",
+    "assessment_axis": "頼られる役を自分から渡す意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0234",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分が作る品物を必要ないと言う人が増えた。売り方より、仕事の目的から考え直したいと思う？",
+    "assessment_axis": "需要が変わる職業の目的を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0235",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "閉じた仕事場の道具を、自分の記念に残すか次の働き手へ渡すか迷う。何を残したい？",
+    "assessment_axis": "労働の記念物を手放す意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0235",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "閉じた仕事場の道具を、自分の記念に残すか次の働き手へ渡すか迷う。何を残したい？",
+    "assessment_axis": "労働の記念物を手放す意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0238",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "自分の店を大きくする誘いがあるが、今の客と話す時間が減る。利益が増えても何を残したい？",
+    "assessment_axis": "商いの規模と本人の喜びを聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0238",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "自分の店を大きくする誘いがあるが、今の客と話す時間が減る。利益が増えても何を残したい？",
+    "assessment_axis": "商いの規模と本人の喜びを聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0239",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "管理する店で営業日を減らせば全員が休めるが、自分の収入も減る。どこまで引き受けたい？",
+    "assessment_axis": "休息の方針を自分の損に置く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0240",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "人が学べる会社を作りたいと思い、育てた人が次々去った。残る人の生活もある中、自分の信じた育成をどう続けたい？",
+    "assessment_axis": "人を育てる経営の信念の持続を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0245",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "自分が人生をかけた会社へ、人を招きたい。自分にも薦めにくい面がある時、誇りと率直さの何を伝える？",
+    "assessment_axis": "築いた会社へ人を招く自分の率直さを聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0246",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分が始めた事業は利益が出るが、続ける意欲が薄れた。従業員に何を約束してから区切りたい？",
+    "assessment_axis": "成立する事業を終える創業者を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0247",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "長年一緒に会社を作った仲間の担当を、自分が変える必要がある。友情が戻らないかもしれない時、何を仕事の責任とする？",
+    "assessment_axis": "共同創業の関係を変える責任を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0248",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "人生の多くを使って覚えた技能を、新しい人は道具で簡単に学べる。自分の苦労を繰り返させず、何を価値として渡したい？",
+    "assessment_axis": "自分の職業の苦労を継ぐ意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0249",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分がいつも働くため部下も帰りにくいと言う。仕事が好きでも、どんな姿を職場で変えたい？",
+    "assessment_axis": "上司の労働習慣の影響を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0250",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "新しい客に合わせて商品を変えると、長い常連が離れそう。自分の商いの誰を大切にしたい？",
+    "assessment_axis": "経営者が選ぶ客との未来を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0252",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "会社の未来を託すつもりで育てた人が、別の会社を望む。送り出せば自分の引退も難しい時、何を本人の自由と思う？",
+    "assessment_axis": "自分の引退が変わる後継者の退出を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0254",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分にしかできない仕事を人へ教える時間がない。今の売上を減らしてでも、代わりを育てたい？",
+    "assessment_axis": "代わりを育てる経営の負担を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0255",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "会社を一緒に支えた仲間へ約束した評価が、他の人の貢献を知って揺らいだ。信じてもらった自分は何を約束し直せる？",
+    "assessment_axis": "共同者への評価の約束を変える責任を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0256",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "生涯の友人と一緒に会社を続けたいが、採れば自分がその人を評価する立場になる。技能は十分な時、関係の何を変えられる？",
+    "assessment_axis": "友人を雇う自分の関係の変化を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0257",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分が守ってきた部署を閉じる案がある。人は他へ移れるが、何を残せれば終了を選べる？",
+    "assessment_axis": "担当部署の終了の納得を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0259",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "自分が人生の機会だと任せた仕事で、部下が失敗し自信を失った。引き受けるよう促した自分は、何を今から担える？",
+    "assessment_axis": "挑戦を促した本人の残る責任を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0259",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "自分が人生の機会だと任せた仕事で、部下が失敗し自信を失った。引き受けるよう促した自分は、何を今から担える？",
+    "assessment_axis": "挑戦を促した本人の残る責任を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0261",
+    "hint": "short_background",
+    "status": "author_reviewed_keep",
+    "current_question": "家族のように働く会社を自分が作ったが、部下は私生活を話したくないと言う。自分が望んだつながりをどこまで変えたい？",
+    "assessment_axis": "家族的な職場を作った人の期待を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0262",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分の店の手作業を外注すると、客は同じ品物を買える。作る場を失うことを何で判断したい？",
+    "assessment_axis": "工程を手放す経営の自己像を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0263",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "自分と違う働く理由を話す応募者が最も技能を持つ。共感を求める会社を、どこまで変えたい？",
+    "assessment_axis": "異なる動機を採る創業者を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0263",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "自分と違う働く理由を話す応募者が最も技能を持つ。共感を求める会社を、どこまで変えたい？",
+    "assessment_axis": "異なる動機を採る創業者を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0265",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "事業を継ぐ人がいない。自分はまだ続けられるが、終える準備をいつ始めたい？",
+    "assessment_axis": "経営の終わりを先に選ぶ基準を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0265",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "事業を継ぐ人がいない。自分はまだ続けられるが、終える準備をいつ始めたい？",
+    "assessment_axis": "経営の終わりを先に選ぶ基準を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0266",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "親しい人が肩書きを失い、会話のたび昔の仕事を話す。自分はその人の何を覚えていたい？",
+    "assessment_axis": "離職者を見る自分の視点を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0267",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "大切な人が収入の低い好きな仕事を選んだ。生活は別々でも、応援にどんな不安が混じりそう？",
+    "assessment_axis": "他者の職業選択への期待を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0268",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "仲間の一人だけが仕事で有名になった。自分の仕事は変わらないのに、関係で何が変わりそう？",
+    "assessment_axis": "近い人の職業的成功を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0354",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "品物が残ると値下げする店で、最初に買った客へ差額を返す仕組みを設けたい？",
+    "assessment_axis": "時期の価格差の扱いを問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0355",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "混む時間の料金を高くするサービスで、時間を選べない客へ何を考慮したい？",
+    "assessment_axis": "時間の選択差と価格を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0361",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "商品の説明を聞いて他店で買う客が増えた時、相談だけを有料にすることをどう思う？",
+    "assessment_axis": "販売相談の価格化を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0371",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "借金を返し終えた人を、次の取引でも以前の借金で判断してよいと思う？",
+    "assessment_axis": "完済後の信用の戻り方を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0381",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "管理の手間が大きい財産を受け継ぐ人に、その手間の分を先に渡すことをどう考える？",
+    "assessment_axis": "相続財産の管理負担を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0392",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "物を売る人が、自分なら買わない商品もすすめる。売り手の個人の好みをどこまで知りたい？",
+    "assessment_axis": "売り手の個人の納得を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0404",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "備えを使わないまま年を重ねた。安心を残すことと、元気な今に使うことを何で比べたい？",
+    "assessment_axis": "使わず残す財産の時間を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0405",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "欲しかった物が買えるようになったのに、心が動かない。お金を得た意味を、何で感じ直したい？",
+    "assessment_axis": "購買力と満足のずれを聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0406",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "完済した後も、借金のあった頃のように出費を怖がる。今の暮らしに何を戻したい？",
+    "assessment_axis": "完済後の生活の意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0408",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "自分は優遇されて買える物を、同じように必要な人は高くて買えない。説明はあるが、その優遇を受ける自分をどう考える？",
+    "assessment_axis": "必要が同じ他者より優遇される自己を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0412",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "自分が大切に生きるための支出を、援助する人はぜいたくだと言う。援助が変わるかもしれなくても、何を譲れない？",
+    "assessment_axis": "援助下の消費の尊厳を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0414",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "返済を待ってもらえたが、貸し手と会うたび気まずい。お金の約束が終わるまで、何を話していたい？",
+    "assessment_axis": "猶予中の債務者の関係を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0415",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "高い物を買うと自信が持てるが、その感覚は長く続かない。自分の買い方に何を求めたい？",
+    "assessment_axis": "繰返す購入の満足の意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0416",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "増税で自分の余裕は減るが、使い道には賛成している。負担を引き受ける納得に、何が必要？",
+    "assessment_axis": "賛成する税を自分で負う納得を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0416",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "増税で自分の余裕は減るが、使い道には賛成している。負担を引き受ける納得に、何が必要？",
+    "assessment_axis": "賛成する税を自分で負う納得を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0418",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "親が残したお金を使うと、親の努力まで減るように感じる。受け継いだ意味を何と考えたい？",
+    "assessment_axis": "相続金を使う感情を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0421",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "老後の暮らしに充てるつもりで契約したサービスが終了する。支払った額は戻るが、準備した人生の予定の何を失う？",
+    "assessment_axis": "返金で戻らない将来の備えを聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0424",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "お金の余裕ができて、人に贈る額が増えた。「変わったね」と言われた時、何を自分らしさと思う？",
+    "assessment_axis": "豊かさで変わる贈与の自己像を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0425",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "以前あなたを助けた人へ、今は返す余裕ができた。お金を返すだけで、助けられた関係は終わる？",
+    "assessment_axis": "援助を返せる自分の関係を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0426",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "将来のために備え続け、望んだことをしないまま年を重ねた。備えが役立つとしても、これからの財産を何に使いたい？",
+    "assessment_axis": "備え続けた人生の使い道を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0427",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分が安く買った物を、困っている人は欲しくても買えない。持つ喜びに、相手の事情は関わる？",
+    "assessment_axis": "購買力の差を知る満足を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0428",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "受け取った財産で暮らせるため、働き方を自由に選べる。人にどこまでその理由を知ってほしい？",
+    "assessment_axis": "相続に支えられた自律の説明を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0429",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "家計が苦しかった頃の大切な楽しみを、今は安すぎると感じる。昔の自分との距離をどう受け止める？",
+    "assessment_axis": "豊かさで変わる過去の消費を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0430",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "返せなくなった友人へ、もう返さなくてよいと伝えたい。関係も変わりそうなら、何を先に話す？",
+    "assessment_axis": "返済を免じる本人の期待を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0431",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "財産を残す相手へ用途を指定したい。相手の未来が読めない中、どこまで希望を付けたい？",
+    "assessment_axis": "財産に希望を残す自分を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0432",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分の買う物の作り方を調べたら、安さの理由に納得できない。代わりを買えない時、何を選ぶ？",
+    "assessment_axis": "消費の根拠を知った行動を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0433",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "共同の貯金を、自分だけが望む学びに使いたい。将来役立つとは言い切れない時、何を頼みたい？",
+    "assessment_axis": "共同資金で自分を学ばせる意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0434",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "家族のように信頼した店で、大切な買い物をした。条件の不利さを後から知り、親しさを利用された気がする時、何を確かめたい？",
+    "assessment_axis": "消費で傷つく長い信頼を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0435",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "人生をかけて集めた物を人へ譲りたいが、使い方を変えてほしくない。引き継ぐ人の自由が必要なら何を手放す？",
+    "assessment_axis": "生涯の収集財産を渡す意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0438",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "家族に残すはずだった記念の財産を、自分の生活のため売りたい。期待が戻らないとしても、何を受け継いだ責任と思う？",
+    "assessment_axis": "遺産を生活へ換える責任を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0439",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "節約の目標は守れたが、身近な人との機会も断ってきた。これからの家計で何を変える？",
+    "assessment_axis": "節約を達成した後の見直しを聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0440",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "人生の大きな資金を、自分が誤解した条件で使った。店の説明は十分だったと思う時、選んだ自分を何で責めずに振り返る？",
+    "assessment_axis": "大きな消費の誤解を引き受ける本人を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0441",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "貸した相手は返済しないが、楽しい買い物をしている。事情を知らないまま、何を確かめたい？",
+    "assessment_axis": "債権者の支出への不満を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0442",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "消費の価値観を共有してきた仲間から、家計のため選んだ食品を否定された。自分の生活を知ってもらうため何を話す？",
+    "assessment_axis": "消費の信念でつながる仲間との境界を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0444",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "自分の商いは親しい人だけの低い価格で続いたが、他の客には納得できないと言われた。大切な関係と公平を、何で変えたい？",
+    "assessment_axis": "価格で支えた商いの関係を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0445",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "使わない物を売って身軽になりたいが、集めた年月にも愛着がある。何から手放せそう？",
+    "assessment_axis": "収集した財産を減らす自己像を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0446",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "家計を助けた相手が自分で決めるようになった。お金を出した分、意見を言いたくなる気持ちをどう扱う？",
+    "assessment_axis": "援助者の意思決定への期待を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0447",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "自分の信念に合うと思って買った物が、暮らしには使いにくい。返せるとしても、選んだ価値をどこまで自分で担いたい？",
+    "assessment_axis": "消費の理念の不便さを引き受ける本人を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0448",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "大切な人との関係を保つため贈り物を続けてきた。相手は欲しくないと言う時、お金で示した自分の気持ちをどう手放す？",
+    "assessment_axis": "贈与に託した関係を選び直す本人を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0449",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "お金を貸した友人へ、自分も困っていると初めて伝える。返してほしい気持ちと友情をどう話す？",
+    "assessment_axis": "債権者の生活の必要を伝える。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0450",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "望むことのために貯金を使うが、後から困るかもしれない。選んだ自分を何で納得させたい？",
+    "assessment_axis": "備えを使う自分の不確実さを聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0451",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "自分が信頼してすすめた大きな買い物を、友人は後悔している。自分の利益はなくても、相手が託した信頼をどこまで担う？",
+    "assessment_axis": "生活を変える消費の推薦の責任を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0453",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "長い目標の貯金をやめて、今の暮らしを楽にしたい。昔の自分の約束をどう区切る？",
+    "assessment_axis": "家計の過去の目標を手放す本人を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0454",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "共同の家計を管理する自分は、皆の将来が不安だ。楽しみを減らす案を、どんな根拠で出したい？",
+    "assessment_axis": "家計管理者の不安の扱いを聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0456",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分の店を続けるには、長く支えてくれた客が通えなくなる値上げが必要だとする。商いの誰を残すために続けたい？",
+    "assessment_axis": "値上げで変わる自分の商いの意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0458",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "皆が大事にする一点物を、自分の決めた貸出で壊してしまった。原因は不明でも、戻せない物に自分は何を負う？",
+    "assessment_axis": "戻せない共有財産への責任を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0459",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "家族の遺産を公平に分ける役を頼まれたが、自分が生涯大切にしたい物が一つある。他の人も望むなら何を諦められる？",
+    "assessment_axis": "利害を持つ遺産の調整者の放棄を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0460",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "大切な人と老後のために貯めたお金で、自分が長く望んだ物を選びたい。生活は保てても、誰の人生の資金だと思う？",
+    "assessment_axis": "共有した人生の備えを使う判断を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0461",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "長く自分を支えた客には買えない値段でも、自分の作品が売れるようになった。商いが変わる時、何を成功と呼びたい？",
+    "assessment_axis": "成功が変える商いの本人を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0463",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "家族と持つ記念の財産を売る役になった。自分はこれからの生活に使いたいが、他の人は未来へ残したい。誰の時間を優先する？",
+    "assessment_axis": "自分の未来を望む財産整理者を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0465",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分の名が付くと品物が高く売れるが、今は他の人が作っている。自分の人生の仕事として何を引き受けて売る？",
+    "assessment_axis": "自分の名で売る財産の責任を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0466",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "家族と長く貯めた資金を、一人の人生を変える挑戦へ使いたい。失敗すれば皆の予定が戻らない時、何を自分の判断の責任にする？",
+    "assessment_axis": "人生の備えを集中する責任を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0468",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "財産を残すより今の家族の経験へ使いたい。将来を心配する家族へ、何を十分な備えと話したい？",
+    "assessment_axis": "遺産を減らす家計の意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0470",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "友人の暮らしを支えるため安く売ってきたが、自分の商いが続かない。友人が買えなくなっても、何を今の関係で終えたい？",
+    "assessment_axis": "友人の消費を支え続けた商いの限界を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0471",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "仲間と共同で買った設備を長く自分が守ってきた。維持する役を離れたいが、続けられる人がいない。所有の約束をどこまで担う？",
+    "assessment_axis": "共有財産を支える役を離れる責任を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0473",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分が譲る予定の財産を、相手がすぐ売りたいと言う。希望と違っても渡す意味は残る？",
+    "assessment_axis": "譲る人が用途を手放す意味を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0475",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "友人が借金から再出発したと話した。詳しい理由を知らなくても、自分は何を祝えると思う？",
+    "assessment_axis": "再出発を受け止める身近な人を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0477",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "大切な人が高い記念品を手放した。自分には大事な思い出なら、残してほしいと伝えたい？",
+    "assessment_axis": "他者の処分を惜しむ自分を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0477",
+    "hint": "short_level4",
+    "status": "author_revised",
+    "current_question": "大切な人が高い記念品を手放した。自分には大事な思い出なら、残してほしいと伝えたい？",
+    "assessment_axis": "他者の処分を惜しむ自分を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0577",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "公共の場所を使った人に片付けを任せると、利用できる人が限られる。管理の負担をどう分ける？",
+    "assessment_axis": "公共空間の片付け条件を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0586",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "乗り継ぎが必要な町で、遅い便を待つ接続をどこまで優先したい？",
+    "assessment_axis": "交通の接続の責任を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0617",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "交通の使いにくさを調べる時、乗っていない人の声をどう集めたい？",
+    "assessment_axis": "使わない交通の潜在的な負担を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0621",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "地域の顔として紹介する人を、住んだ年数より町への関わりで選ぶことをどう思う？",
+    "assessment_axis": "地域を代表する経験を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0623",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "送迎の希望をまとめる人に、乗る人が連絡の手間も返す仕組みをつくりたい？",
+    "assessment_axis": "地域移動の調整役の負担を問う。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0635",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "子どもの頃の家が取り壊されるが、今の暮らしに支障はない。失うものを、家族にどう話したい？",
+    "assessment_axis": "居住していない家の喪失を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0636",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "共同生活で孤独が減ったが、自分の都合で一日を選びにくい。住み続けるには何を守りたい？",
+    "assessment_axis": "孤独を減らす住居の自律を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0638",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "戻れると思っていた故郷の家が売られた。今の家はあるのに、何がなくなったと感じそう？",
+    "assessment_axis": "戻る場所を失う本人を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0639",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "ずっと守った家を、新しい住人が大きく変えると知った。譲った後も残ってほしいものは何？",
+    "assessment_axis": "渡した住居の変化への感覚を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0640",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "会いたい人へ行ける交通がなくなり、通話だけになる。便利な代替があっても何が埋まらない？",
+    "assessment_axis": "会いに行く移動の喪失を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0641",
+    "hint": "short_background",
+    "status": "author_revised",
+    "current_question": "住居を支えてもらう相手が、生活の予定まで知りたがる。断ると援助が変わる不安がある時、何を自分で決めたい？",
+    "assessment_axis": "援助に支えられた住居の自由を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0647",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "家を残すための手間が、思い出を大切にする時間を奪う。維持をやめても残るものは何？",
+    "assessment_axis": "住居を維持する意味の逆転を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0652",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "いつも送迎してくれた人に頼めなくなった。予定の不便さ以外に、どんな安心を失ったと感じる？",
+    "assessment_axis": "送迎を通じた関係の喪失を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0653",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "人が集まるため選んだ町で、自分は孤独なままだ。場所を変える前に何を知りたい？",
+    "assessment_axis": "交流を求めて住む本人の孤独を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0654",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "古い家を直すと、親しい人といた部屋の形が消える。快適に生きる自分と記憶をどうつなぎたい？",
+    "assessment_axis": "住み直すための記憶の変化を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0655",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "一緒に暮らす相手が家を離れ、自分だけ同じ場所に残る。部屋を変える時、関係の何を残したい？",
+    "assessment_axis": "一人で残る共住の場所を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0663",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "移動のため人に頼むのが怖く、会いたい人へ会いに行けない。何を頼ることとして受け入れたい？",
+    "assessment_axis": "移動の自律のため頼む自分を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0665",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "暮らしの支援を受ける住宅で、訪問の回数を減らしたい。支えへの感謝と自分の希望をどう話す？",
+    "assessment_axis": "住居の支援を変える本人の言葉を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0666",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "地元を離れた理由を、残った人が裏切りのように話す。自分が選んだ暮らしを何で肯定したい？",
+    "assessment_axis": "離郷を選ぶ自己の納得を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0667",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "大切な人と住むため、自分の長く暮らした家を手放す。新しい家へ何を残したい？",
+    "assessment_axis": "共住のため旧住居を手放す本人を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0669",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "長く人の送迎をしてきたが、続けると自分の外出ができない。頼る相手へ何を終えると伝える？",
+    "assessment_axis": "移動を支える役をやめる責任を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0671",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "地域を外に紹介する仕事を頼まれた。自分には苦い記憶もある町を、どんな言葉で引き受けたい？",
+    "assessment_axis": "苦い記憶のある町を語る本人を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0673",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "小さくても自分だけの家を選ぶと、家族は一緒に住む期待を失う。自分の独立を何と説明したい？",
+    "assessment_axis": "独立した家を選ぶ本人の言葉を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0675",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "長年の地域の仲間と違う暮らし方を選びたい。参加の場所を残すため、何を譲りたくない？",
+    "assessment_axis": "地域への帰属と生活の違いを聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0679",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "住んだ町の集まりへ今も通っているが、新しい町になじめない。どちらの場所に時間を残したい？",
+    "assessment_axis": "二つの町へ使う人生の時間を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0681",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "家を離れる最後の日に、人を招くか一人で過ごすか迷う。自分の暮らしの終わりに何が必要？",
+    "assessment_axis": "居住の最後の時間の選択を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0684",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分の家を人へ譲り、これからは身軽に暮らしたい。戻る場所を残さないことに、何を望む？",
+    "assessment_axis": "戻れない居住の選択を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0692",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "町の大事な集まりを終える判断を任された。自分にも長い思い出があるなら、何を終えたくない？",
+    "assessment_axis": "地域の場を閉じる当事者を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0697",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "自分の家に住む相手が、あなたの望まない人と暮らしたいと言う。家を貸す約束をどう選び直す？",
+    "assessment_axis": "提供した住居の相手の自律を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0703",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "町の役を次の世代へ任せたいが、自分のやり方が残らない。引継ぎの条件をどこまで付けたい？",
+    "assessment_axis": "地域を渡す本人の継承の期待を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0708",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "大切な人が町を離れ、もう戻らないと言う。自分は残る時、二人の地域の記憶をどう持ちたい？",
+    "assessment_axis": "残る自分の地域のつながりを聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0710",
+    "hint": "short_level4",
+    "status": "author_reviewed_keep",
+    "current_question": "大切な人が会いに来にくくなり、自分も頻繁には行けない。会えない距離が関係に何を変えそう？",
+    "assessment_axis": "移動の制約で変わる自分の関係を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  },
+  {
+    "id": "exp26-livelihood-0299",
+    "hint": "identical_addition_reason",
+    "status": "author_revised",
+    "current_question": "新品を初めて使う時と、中古品を引き継ぐ時。どんな違いを感じる？",
+    "assessment_axis": "初めて使う所有と来歴を引き継ぐ感覚を聞く。",
+    "note": "字数は判定基準とせず、本文と背景の本人の意味・判断対象を照合した。独立レビューで再確認できるよう元の指摘を残す。"
+  }
+]

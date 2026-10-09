@@ -1,0 +1,331 @@
+{
+  "status": "required_followup_draft_not_applied_not_approved",
+  "author_group": "civic",
+  "prepared_by": "learning",
+  "source_path": "shards/civic/additions.json",
+  "source_sha256": "fae23d1777ab9ed8ed632aaf61ce1d8d343e0973855c92311741ee69a5019632",
+  "triggering_draft": "resolution-drafts/remaining-optional-fixes-civic.json",
+  "changes": [
+    {
+      "id": "exp26-civic-0021",
+      "before": {
+        "card": {
+          "id": "exp26-civic-0021",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "justice_safety_and_crime",
+          "topic": "safety_and_dignity",
+          "question": "店の防犯で自分だけ呼び止められ、誤解だと分かった。説明と謝罪の後、また同じ店を使いたいと思えるのは、どんな時？"
+        },
+        "reason": "防犯で自分だけ疑われた後、その店を再び選べる信頼の条件を聞き、周囲への名誉回復の0016と分ける。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "justice_safety_and_crime__l2.txt:16",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-civic-0021",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "justice_safety_and_crime",
+          "topic": "safety_and_dignity",
+          "question": "店の防犯で自分だけ呼び止められ、誤解だと分かった。謝罪を受けても、なぜ自分が選ばれたのかを知りたい？ それはなぜ？"
+        },
+        "reason": "店へ戻る条件や周囲へ訂正を届ける範囲ではなく、誤解が解けた後にも自分が確認の対象に選ばれた理由を知りたいかという、説明への期待と尊厳を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "justice_safety_and_crime__l2.txt:16",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "reason": "改稿後は誤警戒後に同じ店を再び使いたいと思う条件を聞く。0129は同じ誤警戒後の本人が再びその店へ行くために何を変えてほしいかを聞き、背景にも謝罪・手順・同じ扱いを避ける見通しがある。L2/L4という配置だけでは判断対象の差がなく、0016との差分を作る改稿で0129と新たに重なった。 改稿後は店へ戻る条件や周囲へ訂正を届ける範囲ではなく、誤解が解けた後にも自分が確認の対象に選ばれた理由を知りたいかという、説明への期待と尊厳を聞く。",
+      "addresses": [
+        "learning-recheck-civic-04"
+      ],
+      "comparison_additions": [
+        {
+          "card": {
+            "id": "exp26-civic-0129",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "justice_safety_and_crime",
+            "topic": "safety_and_authority",
+            "question": "あなたは店で誤って盗難を疑われた。店は安全のためだと説明する。再びその店へ行けるとしたら、何が変わっていてほしい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の誤警戒。謝罪、手順、同じ扱いをされない見通しを考える。"
+            }
+          },
+          "reason": "誤警戒後に戻る利用の安心。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l4.txt:42",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        {
+          "card": {
+            "id": "exp26-civic-0016",
+            "level": 2,
+            "sensitivity": 2,
+            "category": "justice_safety_and_crime",
+            "topic": "reporting_and_testimony",
+            "question": "間違って疑われ、誤解は解けた。自分にだけ謝るのと周囲にも説明するのでは、何が違う？"
+          },
+          "reason": "疑いの後の名誉回復。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l2.txt:11",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        }
+      ]
+    },
+    {
+      "id": "exp26-civic-0284",
+      "before": {
+        "card": {
+          "id": "exp26-civic-0284",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "society_public_policy_and_environment",
+          "topic": "receiving_public_help",
+          "question": "今の相談員にようやくつらい過去を話せたあなたは、別の相談先を紹介された。新しい相手へ一から話す気力はないが、今の自分を分かってほしい。今の担当に、何を一緒に託してほしい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の紹介です。情報を紹介状へ書くことと、本人が信頼して話せる関係を新しい場へつなぐことは同じではありません。過去を全て伝える必要を決めず、話したくない部分と今の自分の望みをどのように託すか考えます。"
+          }
+        },
+        "reason": "紹介の段取りだけでなく、ようやく語れた本人が、再開示を抑えながら現在の信頼と望みを次へ託す意味を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:19",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "after": {
+        "card": {
+          "id": "exp26-civic-0284",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "society_public_policy_and_environment",
+          "topic": "receiving_public_help",
+          "question": "今の相談員にようやくつらい過去を話せたあなたは、別の相談先を紹介された。「あの人なら大丈夫」と勧められても、同じように話せるかはまだ分からない。今の担当を信じることと、その人が勧める相手を信じることは、自分にとってどう違う？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の紹介です。つらい経験を今の担当へ安心して語れるようになるまで時間がかかった条件です。まだ会っていない紹介先について、今の担当は信頼できると勧めています。担当の推薦を信じることと、自分が新しい相手との関係で安心を得ることは、重なっても異なってもかまいません。推薦を受ければ信じるべきだとは決めません。"
+          }
+        },
+        "reason": "0089の再説明の負担と新しい視点から分け、ようやく得た支援者への信頼を、その人が推薦する未面識の相手にも渡せるかという本人の信頼の意味を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:19",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "reason": "改稿後は新しい相談相手へ一から話す気力がない本人が今の担当へ何を託すかを聞く。0089は同じL4 affectedで担当変更後に話し直す気力がない本人の希望を聞き、背景も引継ぎの範囲と新しい相手に直接話す機会を置く。被害後の相談/公共支援という分野の違いだけでは、再説明負担を抑える引継ぎへの希望を聞く対象が重なる。 改稿後は0089の再説明の負担と新しい視点から分け、ようやく得た支援者への信頼を、その人が推薦する未面識の相手にも渡せるかという本人の信頼の意味を聞く。",
+      "addresses": [
+        "learning-recheck-civic-05"
+      ],
+      "comparison_additions": [
+        {
+          "card": {
+            "id": "exp26-civic-0089",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "justice_safety_and_crime",
+            "topic": "victim_recovery_services",
+            "question": "被害後の相談担当が代わる。もう一度説明すれば新しい視点も得られるが、話し直す気力がないあなたは何を望む？",
+            "perspective": "affected",
+            "detail": {
+              "text": "仮の担当変更。引継ぎの範囲と新しい相手に直接話す機会を考える。"
+            },
+            "content_warning": [
+              "crime_and_punishment"
+            ]
+          },
+          "reason": "再説明と関係を作り直す負担。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l4.txt:2",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        {
+          "card": {
+            "id": "exp26-civic-0275",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "receiving_public_help",
+            "question": "あなたは長年の相談員が代わると知った。新しい人に事情を伝える前に、どんな関係を残したいと思う？",
+            "perspective": "affected",
+            "detail": {
+              "text": "仮の担当変更。情報の引継ぎと人との別れを分ける。"
+            }
+          },
+          "reason": "支援者との関係を失う意味。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:10",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        {
+          "card": {
+            "id": "exp26-civic-0283",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "receiving_public_help",
+            "question": "支援の更新で、つらかった過去を何度も説明してきた。次は書類だけにすれば自分を守れるが、これからどんな暮らしを選びたいかは書き切れていない。再び話すことと、話さずに理解してもらうことに何を望みたい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の更新手続です。今の必要を確かめるための説明が、自分の過去を語り直す負担にもなってきた条件を置きます。書類で伝えられる情報と、本人が望むこれからの生活にはずれがある場合です。実経験の開示や、話すことを選ぶ答えを求めません。"
+            },
+            "content_warning": [
+              "privacy_and_surveillance"
+            ]
+          },
+          "reason": "書類の便利さだけでなく、過去を語り直さず自分を守ることと今後の人生を本人の意味で伝えることを聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:18",
+            "self_review_status": "peer_revision_pending_author_unapproved",
+            "peer_revision_status": "world_drafted_unapproved"
+          }
+        },
+        {
+          "card": {
+            "id": "exp26-civic-0282",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "receiving_public_help",
+            "question": "あなたは支援の選択肢を説明する担当。自分の家族を救った方法を勧めたいが、本人は望まない。信じている支えを渡さないことにも責任を持てる？",
+            "perspective": "actor",
+            "detail": {
+              "text": "仮の説明。自分に役立った経験を他人の人生へ重ねる限界を考える。"
+            }
+          },
+          "reason": "自分を救った方法を手放す支援。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:17",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        {
+          "card": {
+            "id": "exp26-civic-0546",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "public_trust",
+            "question": "信頼する代表を、親しい人にも「この人に任せよう」と勧めてきた。約束が守られず、自分の選択まで信じられなくなった。事情は理解できても、代表を信じ直すことと、自分の判断を信じ直すことは同じ？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の委任と推薦の後です。本人は代表を選び、周囲へ勧める判断もしてきました。代表の事情に納得すること、代表の次の約束を信じること、自分が人を選ぶ判断を信じることを分けます。推薦者が代表の全ての行動の責任を負うとは決めません。"
+            }
+          },
+          "reason": "0488の代表への信頼回復と分け、自分が周囲へ推薦した代表の失約から揺れる、本人の判断への信頼を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:60",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        }
+      ]
+    }
+  ],
+  "finding_resolutions": [
+    {
+      "finding_id": "learning-recheck-civic-04",
+      "id": "exp26-civic-0021",
+      "priority": "required",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-civic-0021",
+      "issue": "改稿後は誤警戒後に同じ店を再び使いたいと思う条件を聞く。0129は同じ誤警戒後の本人が再びその店へ行くために何を変えてほしいかを聞き、背景にも謝罪・手順・同じ扱いを避ける見通しがある。L2/L4という配置だけでは判断対象の差がなく、0016との差分を作る改稿で0129と新たに重なった。",
+      "resolution": "店へ戻る条件や周囲へ訂正を届ける範囲ではなく、誤解が解けた後にも自分が確認の対象に選ばれた理由を知りたいかという、説明への期待と尊厳を聞く。",
+      "compared_ids": [
+        "exp26-civic-0129",
+        "exp26-civic-0016"
+      ]
+    },
+    {
+      "finding_id": "learning-recheck-civic-05",
+      "id": "exp26-civic-0284",
+      "priority": "required",
+      "status": "resolved_in_unapplied_draft",
+      "change_id": "exp26-civic-0284",
+      "issue": "改稿後は新しい相談相手へ一から話す気力がない本人が今の担当へ何を託すかを聞く。0089は同じL4 affectedで担当変更後に話し直す気力がない本人の希望を聞き、背景も引継ぎの範囲と新しい相手に直接話す機会を置く。被害後の相談/公共支援という分野の違いだけでは、再説明負担を抑える引継ぎへの希望を聞く対象が重なる。",
+      "resolution": "0089の再説明の負担と新しい視点から分け、ようやく得た支援者への信頼を、その人が推薦する未面識の相手にも渡せるかという本人の信頼の意味を聞く。",
+      "compared_ids": [
+        "exp26-civic-0089",
+        "exp26-civic-0275",
+        "exp26-civic-0283",
+        "exp26-civic-0282",
+        "exp26-civic-0546"
+      ]
+    }
+  ],
+  "self_review": {
+    "status": "completed_all_2_after_read_and_targeted_comparisons",
+    "reviewed_change_ids": [
+      "exp26-civic-0021",
+      "exp26-civic-0284"
+    ],
+    "reviewed_change_count": 2,
+    "scope": "2件のafter問い・背景・理由・全metadataを再読。元の重複先0129/0089と、0016/0275/0283/0282/0546、近隣正本r6-16-03-l4の問い/背景/理由を実読して判断対象を比較。2件改稿を仮適用した4710件の文字近似上位3件も問い・存在する背景・理由・metadataを実読した。全組合せの意味比較ではない。",
+    "remaining_limits": "全ての意味の二問比較・実際の会話テストは未実施。問題の正本反映はユーザー最終確認後。",
+    "comparison_notes": [
+      "0021は誤解が解けた後の本人が選別理由を知りたいか/なぜかを聞く。0129は店の再利用条件、0016は周囲に訂正が届く範囲、r6-16-03-l4は父親だけに確認した安全運用を受け入れるか抗議するかで、判断対象が異なる。",
+      "0284はようやく得た相談員への信頼と、その人が勧める未面識の相手への信頼を比べる。0089は再説明負担と新たな視点の希望、0275は別れる旧関係を残す意味、0282/learning0141は助言する人の責任、0546は自分の推薦判断の信頼を回復する意味で、本人の未面識の相手への信頼とは異なる。",
+      "改稿後の上位近似6比較も内容を読み、0021/0072は選別された本人が理由を知る望み/防犯評価の設計、0284/gender-l3-020は支援者が勧める相手への信頼/性被害申告と加害者扱いの両立など、文字の近さを意味の重複としなかった。"
+    ],
+    "comparison_candidate_file": "resolution-drafts/recheck-additional-fixes-civic-neighbors.json",
+    "comparison_ids": [
+      "exp26-civic-0129",
+      "exp26-civic-0016",
+      "exp26-civic-0089",
+      "exp26-civic-0275",
+      "exp26-civic-0283",
+      "exp26-civic-0282",
+      "exp26-civic-0546",
+      "exp26-learning-0141",
+      "r6-16-03-l4",
+      "exp26-civic-0072",
+      "exp26-civic-0389",
+      "youth-pregnancy-l3-017",
+      "gender-l3-020",
+      "exp26-personal-0137"
+    ]
+  },
+  "verification": {
+    "all_before_records_match_source": true,
+    "source_unchanged": true,
+    "candidate_count_before": 558,
+    "candidate_count_after_draft_apply": 558,
+    "category_level_cells_unchanged": true,
+    "id_level_category_topic_sensitivity_perspective_warning_editorial_unchanged": true,
+    "exact_normalized_duplicate_questions_after_draft": 0,
+    "change_count": 2,
+    "changed_questions_exact_duplicates_against_other_shards_and_existing942": 0,
+    "all_after_questions_detail_reason_metadata_read": true
+  },
+  "approval_required_before_canonical_apply": true,
+  "production_files_written": 0
+}

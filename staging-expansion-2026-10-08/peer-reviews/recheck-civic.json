@@ -1,0 +1,2791 @@
+{
+  "reviewer": "learning",
+  "author_group": "civic",
+  "date": "2026-10-08",
+  "reviewed_ids": [
+    "exp26-civic-0032",
+    "exp26-civic-0101",
+    "exp26-civic-0132",
+    "exp26-civic-0137",
+    "exp26-civic-0155",
+    "exp26-civic-0202",
+    "exp26-civic-0207",
+    "exp26-civic-0283",
+    "exp26-civic-0290",
+    "exp26-civic-0293",
+    "exp26-civic-0312",
+    "exp26-civic-0319",
+    "exp26-civic-0325",
+    "exp26-civic-0333",
+    "exp26-civic-0348",
+    "exp26-civic-0349",
+    "exp26-civic-0354",
+    "exp26-civic-0356",
+    "exp26-civic-0371",
+    "exp26-civic-0430",
+    "exp26-civic-0469",
+    "exp26-civic-0491",
+    "exp26-civic-0494",
+    "exp26-civic-0496",
+    "exp26-civic-0500",
+    "exp26-civic-0506",
+    "exp26-civic-0520",
+    "exp26-civic-0534",
+    "exp26-civic-0536",
+    "exp26-civic-0545",
+    "exp26-civic-0551",
+    "exp26-civic-0554",
+    "exp26-civic-0021",
+    "exp26-civic-0107",
+    "exp26-civic-0141",
+    "exp26-civic-0284",
+    "exp26-civic-0304",
+    "exp26-civic-0332",
+    "exp26-civic-0336",
+    "exp26-civic-0344",
+    "exp26-civic-0497",
+    "exp26-civic-0509",
+    "exp26-civic-0541",
+    "exp26-civic-0546"
+  ],
+  "reviewed_count": 44,
+  "final_shard_sha256": "7d16d75c62047d44237f5e93a2576b5ef287270cd75a742e0fb9fa511098ed3b",
+  "applied_draft_path": "applied-review-drafts/civic.json",
+  "applied_draft_final_sha256": "7d16d75c62047d44237f5e93a2576b5ef287270cd75a742e0fb9fa511098ed3b",
+  "scope": "初回32件と0333/0494/0371の変更3件再読はcompleted_32_review_historyおよび従来のfinal_followup_recheckに保全。追加の12件を問い・背景全文・追加理由・全card metadata/editorialで実読し、改稿前と比較した。比較先24件、周辺10件の全additionも実読した。その後、新たに0021/0129と0284/0089の原文を比較し必須の意味重複2件を記録。具体after2件の自己再読と近隣正本・対象近似6比較を実施し、主担当が適用した最終shardの0021/0284全additionを再読した。既読の前32件と今回のうち再改稿していない10件は全addition一致を検証して読了記録を保全。unionは44件で、全civic558件の新しい全文レビューや全組合せの意味比較をした記録ではない。",
+  "comparison_ids": [
+    "exp26-civic-0006",
+    "exp26-civic-0012",
+    "exp26-civic-0128",
+    "exp26-civic-0223",
+    "exp26-civic-0225",
+    "exp26-civic-0232",
+    "exp26-civic-0235",
+    "exp26-civic-0250",
+    "exp26-civic-0253",
+    "exp26-civic-0259",
+    "exp26-civic-0277",
+    "exp26-civic-0304",
+    "exp26-civic-0316",
+    "exp26-civic-0344",
+    "exp26-civic-0403",
+    "exp26-civic-0404",
+    "exp26-civic-0407",
+    "exp26-civic-0420",
+    "exp26-civic-0426",
+    "exp26-civic-0429",
+    "exp26-civic-0432",
+    "exp26-civic-0439",
+    "exp26-civic-0441",
+    "exp26-civic-0473",
+    "exp26-civic-0483",
+    "exp26-civic-0485",
+    "exp26-civic-0511",
+    "exp26-civic-0100",
+    "exp26-civic-0120",
+    "exp26-civic-0140",
+    "exp26-civic-0201",
+    "exp26-civic-0217",
+    "exp26-civic-0326",
+    "exp26-civic-0523",
+    "exp26-civic-0539",
+    "exp26-care-0083",
+    "exp26-care-0611",
+    "exp26-world-0250",
+    "exp26-learning-0238",
+    "exp26-learning-0342",
+    "exp26-personal-0550",
+    "exp26-personal-0404",
+    "exp26-care-0393",
+    "exp26-care-0341",
+    "exp26-care-0594",
+    "exp26-world-0617",
+    "exp26-personal-0575",
+    "exp26-care-0151",
+    "exp26-care-0613",
+    "exp26-world-0278",
+    "exp26-livelihood-0688",
+    "exp26-livelihood-0710",
+    "exp26-civic-0016",
+    "exp26-civic-0105",
+    "exp26-care-0172",
+    "exp26-care-0173",
+    "exp26-civic-0275",
+    "exp26-civic-0283",
+    "exp26-civic-0287",
+    "exp26-civic-0219",
+    "exp26-civic-0186",
+    "exp26-civic-0285",
+    "exp26-civic-0238",
+    "exp26-civic-0254",
+    "exp26-civic-0342",
+    "exp26-civic-0498",
+    "exp26-civic-0502",
+    "exp26-civic-0416",
+    "exp26-civic-0449",
+    "exp26-civic-0510",
+    "exp26-civic-0472",
+    "exp26-civic-0538",
+    "exp26-civic-0488",
+    "exp26-civic-0319",
+    "exp26-civic-0334",
+    "exp26-civic-0335",
+    "exp26-civic-0337",
+    "exp26-civic-0338",
+    "exp26-civic-0343",
+    "exp26-civic-0345",
+    "exp26-civic-0346",
+    "exp26-civic-0347",
+    "exp26-civic-0129",
+    "exp26-civic-0089",
+    "exp26-civic-0282",
+    "exp26-civic-0546",
+    "exp26-learning-0141",
+    "r6-16-03-l4",
+    "exp26-civic-0072",
+    "exp26-civic-0389",
+    "youth-pregnancy-l3-017",
+    "gender-l3-020",
+    "exp26-personal-0137"
+  ],
+  "comparison_count": 93,
+  "comparison_candidate_file": "peer-reviews/recheck-civic-neighbors.json",
+  "required_original_findings_checked": 32,
+  "original_resolution_checks": [
+    {
+      "id": "exp26-civic-0032",
+      "assessment": "比較する二人を明示。損害額と不可欠性を分け、L3の配分判断を保持。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0101",
+      "assessment": "対話の発言が責任手続の資料にもなる架空条件が入り、自分の保護と被害への説明責任へ。分類境界も解消。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0132",
+      "assessment": "見回りの誇り0128から、誤った疑いで失われた相手の日常を戻す継続責任へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0137",
+      "assessment": "一般の夜道の失礼0006から、怖い経験と長い信頼が重なる自分の安心へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0155",
+      "assessment": "証言訂正0120/記事到達learning0238から、捜査広報の訂正で無実の本人を再露出させる責任へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0202",
+      "assessment": "拒否後の接触0223から、理解して利用しない人に役立った支援の成果評価へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0207",
+      "assessment": "care0083の相性交代から、利用終了後の再申請で以前の記録と今の暮らしを扱う審査へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0283",
+      "assessment": "更新方法の便利さから、つらい過去を語り直す負担と今後の暮らしの意味へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0290",
+      "assessment": "品物の好みを伝える日常から、空腹は満たせても自分の食卓を失う暮らしの尊厳へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0293",
+      "assessment": "待つ日数から、住まい・家族と暮らす人生を保留されても主体でいる意味へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0312",
+      "assessment": "拒否後の訪問0277/0304から、転居で自分が長い支えを終える際の引継ぎと人生の境界へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0319",
+      "assessment": "情報共有の規則0225から、望まれず知った後で元の隣人の関係に戻れない本人の見方へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0325",
+      "assessment": "出席記録の運用0232から、頼まれた気付く約束が今の拒否とずれた後の信頼へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0333",
+      "assessment": "自分の歩みが他の支援利用者にも要求される基準になる時の責任を聞く。0326の帰属の証明、0269の成功例に収まらない自己像から判断対象を分け、人生の関係・助けられた時間・継承する支援の責任を本文で維持。仮の制度運用として背景と理由も整合。",
+      "status": "original_issue_resolved_with_required_followup",
+      "initial_assessment": "world0250/0235への単なる本人置換は深まったが、同L4の0326と帰属の回復が新近似。追加改稿が必要。"
+    },
+    {
+      "id": "exp26-civic-0348",
+      "assessment": "他世代の代弁0250から、自分が選べなかった人生の回復を託す後悔へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0349",
+      "assessment": "維持費を説明する責任0253から、自分の功績の意味と将来へ託す負担へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0354",
+      "assessment": "未来への関心/0344の未利用支援から、自分の人生では見届けられない未来へ生き方を変える意味へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0356",
+      "assessment": "疲れた支え手を休ませる0259から、先送りした人生の道を選べる最後の時期と支え続ける意味へ。care0611は体力の限界、本案は自分の望む道の時期。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0371",
+      "assessment": "匿名の相手への寄付を続ける自身の生活の限界の問いで、情報の公開・取得・監視を判断する条件がない。privacy_and_surveillanceを削除し、空のcontent_warning属性も削除した。本文・背景・理由・actor・editorialは維持。",
+      "status": "original_required_issue_resolved",
+      "initial_assessment": "本文の寄付を続ける行為へactorを一致。元の視点の必須は解消。privacyタグは任意で再検討。"
+    },
+    {
+      "id": "exp26-civic-0430",
+      "assessment": "即答/誠実さ0404から、質問を持ち帰った後に誰が調べて返答するかというL3の責任分担へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0469",
+      "assessment": "表現の違和感0420から、主催側が参加と別の支持をどう数えるかへ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0491",
+      "assessment": "団体外の声を聞く0429から、代表された自分が支援を受けて暮らす場所を選ぶ意味へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0494",
+      "assessment": "本文冒頭で賛成だが迷いも伝えた条件を明示し、結論の撤回ではなく、故郷との関係を声として残す意味へ統一。背景は同じ条件で、理由も本人の賛成を明記している。",
+      "status": "original_issue_resolved_with_required_followup",
+      "initial_assessment": "地域を離れる自己の暮らしと近所の関係は深まった。賛成か未決かは本文だけで曖昧なため追加補正が必要。"
+    },
+    {
+      "id": "exp26-civic-0496",
+      "assessment": "利害規則0485から、家族が長年働く市場の移転を担う本人の生活と責任へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0500",
+      "assessment": "保留の自由0439から、帰る場所を変える判断と生活を立て直す他の住民を待たせる責任へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0506",
+      "assessment": "対話の成果0441/0432から、対立で挨拶しなくなり暮らしを諦めた本人の共存へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0520",
+      "assessment": "欠席者の代弁0511から、聞き直せない亡き家族の声を今の公共の選択へ運ぶ忠実さへ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0534",
+      "assessment": "強い表現の好み0420から、自分が声を出せなかった過去まで否定される連帯へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0536",
+      "assessment": "公共の会場を貸す規則0473から、自分が運動で守った居場所を批判へ開く責任と忠実さへ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0545",
+      "assessment": "見た目の不快さから、仲間を傷つけた運動を離れた過去を持つ本人が再び聞く意味へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0551",
+      "assessment": "反対でも過程を評価する0483/0407から、自分の人生を支えた文化活動の支援終了を受ける公的信頼へ。",
+      "status": "original_required_issue_resolved"
+    },
+    {
+      "id": "exp26-civic-0554",
+      "assessment": "利害の一般規則0485から、自分が支援で生き直した経験を公共の判断へ届ける責任へ。",
+      "status": "original_required_issue_resolved"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "learning-recheck-civic-01",
+      "id": "exp26-civic-0494",
+      "priority": "required",
+      "field": "question",
+      "issue": "冒頭の「支援に賛成か、代表に自分の迷いを託した」は、賛否がまだ未決とも読める。一方、末尾は「結論を撤回したいわけではない」、背景は「移ることへの賛成に…迷い」と、既に賛成した本人を置く。本文だけで比較条件をそろえる必要がある。",
+      "reviewed_addition": {
+        "card": {
+          "id": "exp26-civic-0494",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "democracy_rights_and_participation",
+          "topic": "representation_and_mandate",
+          "question": "長く暮らした地域を離れる支援に賛成か、代表に自分の迷いを託した。会議では賛成の声として要約され、近所の人には地域を見捨てたと思われた。結論を撤回したいわけではない時、何を自分の言葉として取り戻したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の地域の将来の話合いです。移ることへの賛成に、残る人への思いや馴染みの場所を失う迷いも重なっていた条件を置きます。要約の正確さだけではなく、自分の人生や関係に意味を持つ声が一つの結論へ縮められたことを考えます。"
+          }
+        },
+        "reason": "0403/0426の代弁の要約から、故郷を離れる自分の迷いと関係が消えた時に本人の声を取り戻す意味へ深める。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "democracy_rights_and_participation__l4.txt:8",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "suggested_after": {
+        "card": {
+          "id": "exp26-civic-0494",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "democracy_rights_and_participation",
+          "topic": "representation_and_mandate",
+          "question": "長く暮らした地域を離れる支援には賛成だが、迷いもあると代表へ伝えた。会議では賛成の声だけに要約され、近所の人には地域を見捨てたと思われた。結論を撤回したいわけではない時、何を自分の言葉として取り戻したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の地域の将来の話合いです。移ることへの賛成に、残る人への思いや馴染みの場所を失う迷いも重なっていた条件を置きます。要約の正確さだけではなく、自分の人生や関係に意味を持つ声が一つの結論へ縮められたことを考えます。"
+          }
+        },
+        "reason": "長く暮らした地域を離れることに賛成する本人が、迷いと関係まで自分の声として残す意味を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "democracy_rights_and_participation__l4.txt:8",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "suggested_resolution": "冒頭を「支援には賛成だが、迷いもあると代表へ伝えた」にし、要約で迷いだけが消えた条件を明示する。背景は整合しているため保持。理由は本文の本人の賛成を明記する。",
+      "compared_ids": [
+        "exp26-civic-0403",
+        "exp26-civic-0426",
+        "exp26-learning-0342"
+      ],
+      "status": "resolved_in_staging_and_rechecked",
+      "resolved_addition": {
+        "card": {
+          "id": "exp26-civic-0494",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "democracy_rights_and_participation",
+          "topic": "representation_and_mandate",
+          "question": "長く暮らした地域を離れる支援には賛成だが、迷いもあると代表へ伝えた。会議では賛成の声だけに要約され、近所の人には地域を見捨てたと思われた。結論を撤回したいわけではない時、何を自分の言葉として取り戻したい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の地域の将来の話合いです。移ることへの賛成に、残る人への思いや馴染みの場所を失う迷いも重なっていた条件を置きます。要約の正確さだけではなく、自分の人生や関係に意味を持つ声が一つの結論へ縮められたことを考えます。"
+          }
+        },
+        "reason": "長く暮らした地域を離れることに賛成する本人が、迷いと関係まで自分の声として残す意味を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "democracy_rights_and_participation__l4.txt:8",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "resolution": "本文冒頭で賛成だが迷いも伝えた条件を明示し、結論の撤回ではなく、故郷との関係を声として残す意味へ統一。背景は同じ条件で、理由も本人の賛成を明記している。",
+      "resolution_final_shard_sha256": "95d729dee6b0ae74df591115222ddb87e319ad3770475fc9d86d06f8471a6593"
+    },
+    {
+      "finding_id": "learning-recheck-civic-02",
+      "id": "exp26-civic-0333",
+      "priority": "required",
+      "field": "novelty/question/detail",
+      "issue": "改稿後は、馴染んだ移住者が出身の代表に戻され、失われた帰属を何で伝えるかを問う。同じL4 affected・同topicの0326は、長く住んだ移住者が新しい人として紹介され、居場所の証を伝える問い。国代表/新しい人という呼び方を変えただけでは、他者の紹介で外の人へ戻された時の帰属回復という判断差分が薄い。",
+      "reviewed_addition": {
+        "card": {
+          "id": "exp26-civic-0333",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "society_public_policy_and_environment",
+          "topic": "migration_and_belonging",
+          "question": "移り住んだ地域で、ようやく一人の住民として暮らせると感じていた。交流会で自分の国の代表として話してほしいと言われ、また外から来た人に戻った気がする。何を自分の居場所として伝えたい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の移住後の関係です。依頼した側の歓迎の意図を悪いものと決めず、個人として馴染んできた感覚が出身の役割で変わる条件を置きます。その人の経験は国全体の代表ではありません。何を紹介するかの好みより、今ここで暮らす本人の帰属を考えます。"
+          },
+          "content_warning": [
+            "discrimination_and_hate"
+          ]
+        },
+        "reason": "0235/world-0250の代表を頼む一般的判断から分け、既に自分の居場所を得た本人が出身の代表へ戻される意味を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:68",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "suggested_after": {
+        "card": {
+          "id": "exp26-civic-0333",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "society_public_policy_and_environment",
+          "topic": "migration_and_belonging",
+          "question": "地域の移住者支援で、自分の経験が「努力すれば馴染める」という成功例になり、後から来た人にも同じ行動が求められた。自分には周囲に助けられた時間も、失った関係もある。自分の歩みが支援を受ける人の基準になる時、どんな責任を感じる？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の移住者支援です。本人の紹介が励みになるという期待から、他の利用者にも同じ努力を求める運用へつながった条件を置きます。成功の紹介を止めるかだけでなく、自分の歩みを異なる条件で暮らす人の支援の基準にしてよいかを考えます。実際の制度にこの条件があるとは述べません。"
+          },
+          "content_warning": [
+            "discrimination_and_hate"
+          ]
+        },
+        "reason": "新しい人と呼ばれた時の帰属を聞く0326、成功例に収まらない自己像を伝える0269から分け、自分の移住の歩みが他の人の支援の基準になった時の責任を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:68",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "suggested_resolution": "0326との帰属回復の新近似を、本人の成功経験が他の移住者へ求められる支援の基準になる軸へ変更する。0269の本人の迷いを成功例へ収める語りとも、他者に求める基準の責任を本文で分ける。",
+      "compared_ids": [
+        "exp26-civic-0326",
+        "exp26-world-0250",
+        "exp26-civic-0235",
+        "exp26-civic-0269"
+      ],
+      "comparison_evidence": [
+        {
+          "card": {
+            "id": "exp26-civic-0326",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "migration_and_belonging",
+            "question": "あなたは長く地域で暮らす移住者。今も新しい人として紹介されたら、何を自分の居場所の証として伝えたい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の紹介。出身と今ここで続ける生活を分けて考える。"
+            },
+            "content_warning": [
+              "discrimination_and_hate"
+            ]
+          },
+          "reason": "長く住んでも外から来た扱いの感覚。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:61",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        }
+      ],
+      "status": "resolved_in_staging_and_rechecked",
+      "resolved_addition": {
+        "card": {
+          "id": "exp26-civic-0333",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "society_public_policy_and_environment",
+          "topic": "migration_and_belonging",
+          "question": "地域の移住者支援で、自分の経験が「努力すれば馴染める」という成功例になり、後から来た人にも同じ行動が求められた。自分には周囲に助けられた時間も、失った関係もある。自分の歩みが支援を受ける人の基準になる時、どんな責任を感じる？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の移住者支援です。本人の紹介が励みになるという期待から、他の利用者にも同じ努力を求める運用へつながった条件を置きます。成功の紹介を止めるかだけでなく、自分の歩みを異なる条件で暮らす人の支援の基準にしてよいかを考えます。実際の制度にこの条件があるとは述べません。"
+          },
+          "content_warning": [
+            "discrimination_and_hate"
+          ]
+        },
+        "reason": "新しい人と呼ばれた時の帰属を聞く0326、成功例に収まらない自己像を伝える0269から分け、自分の移住の歩みが他の人の支援の基準になった時の責任を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:68",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "resolution": "自分の歩みが他の支援利用者にも要求される基準になる時の責任を聞く。0326の帰属の証明、0269の成功例に収まらない自己像から判断対象を分け、人生の関係・助けられた時間・継承する支援の責任を本文で維持。仮の制度運用として背景と理由も整合。",
+      "resolution_final_shard_sha256": "95d729dee6b0ae74df591115222ddb87e319ad3770475fc9d86d06f8471a6593"
+    },
+    {
+      "finding_id": "learning-recheck-civic-03",
+      "id": "exp26-civic-0371",
+      "priority": "optional",
+      "field": "content_warning",
+      "issue": "observer→actorは原文の寄付行為に合い、元の必須は解消。ただし受け手を知らずに寄付を続ける負担の問いには、情報を公開・取得する選択や監視はないため、privacy_and_surveillanceタグの適用根拠は弱い。匿名性が背景にあることだけで高リスクタグにする必要はあるか再確認できる。",
+      "reviewed_addition": {
+        "card": {
+          "id": "exp26-civic-0371",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "society_public_policy_and_environment",
+          "topic": "volunteering_and_reciprocity",
+          "question": "あなたは寄付を続けてきたが、生活に余裕がなくなった。受け手を知らないまま支えることを続けるなら、自分の何を削っても価値があると感じる？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の寄付。支援の手応え、匿名性、寄付者自身の生活の限界を考える。"
+          },
+          "content_warning": [
+            "privacy_and_surveillance"
+          ]
+        },
+        "reason": "知らない人への支えを自分の生活に置く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:106",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "suggested_resolution": "本文は匿名の受け手を支える寄付者自身の生活の限界を聞き、個人情報の公開・取得・監視を判断する条件がない。privacy_and_surveillanceのみ削除し、空になるためcontent_warning属性を省く。本文・背景・追加理由・actorを維持する。",
+      "status": "resolved_in_staging_and_rechecked",
+      "suggested_after": {
+        "card": {
+          "id": "exp26-civic-0371",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "society_public_policy_and_environment",
+          "topic": "volunteering_and_reciprocity",
+          "question": "あなたは寄付を続けてきたが、生活に余裕がなくなった。受け手を知らないまま支えることを続けるなら、自分の何を削っても価値があると感じる？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の寄付。支援の手応え、匿名性、寄付者自身の生活の限界を考える。"
+          }
+        },
+        "reason": "知らない人への支えを自分の生活に置く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:106",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "resolved_addition": {
+        "card": {
+          "id": "exp26-civic-0371",
+          "level": 4,
+          "sensitivity": 2,
+          "category": "society_public_policy_and_environment",
+          "topic": "volunteering_and_reciprocity",
+          "question": "あなたは寄付を続けてきたが、生活に余裕がなくなった。受け手を知らないまま支えることを続けるなら、自分の何を削っても価値があると感じる？",
+          "perspective": "actor",
+          "detail": {
+            "text": "仮の寄付。支援の手応え、匿名性、寄付者自身の生活の限界を考える。"
+          }
+        },
+        "reason": "知らない人への支えを自分の生活に置く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:106",
+          "self_review_status": "peer_revision_pending_author_unapproved",
+          "peer_revision_status": "world_drafted_unapproved"
+        }
+      },
+      "resolution": "匿名の相手への寄付を続ける自身の生活の限界の問いで、情報の公開・取得・監視を判断する条件がない。privacy_and_surveillanceを削除し、空のcontent_warning属性も削除した。本文・背景・理由・actor・editorialは維持。",
+      "resolution_final_shard_sha256": "95d729dee6b0ae74df591115222ddb87e319ad3770475fc9d86d06f8471a6593"
+    },
+    {
+      "finding_id": "learning-recheck-civic-04",
+      "id": "exp26-civic-0021",
+      "priority": "required",
+      "field": "novelty/question/reason",
+      "issue": "改稿後は誤警戒後に同じ店を再び使いたいと思う条件を聞く。0129は同じ誤警戒後の本人が再びその店へ行くために何を変えてほしいかを聞き、背景にも謝罪・手順・同じ扱いを避ける見通しがある。L2/L4という配置だけでは判断対象の差がなく、0016との差分を作る改稿で0129と新たに重なった。",
+      "reviewed_addition": {
+        "card": {
+          "id": "exp26-civic-0021",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "justice_safety_and_crime",
+          "topic": "safety_and_dignity",
+          "question": "店の防犯で自分だけ呼び止められ、誤解だと分かった。説明と謝罪の後、また同じ店を使いたいと思えるのは、どんな時？"
+        },
+        "reason": "防犯で自分だけ疑われた後、その店を再び選べる信頼の条件を聞き、周囲への名誉回復の0016と分ける。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "justice_safety_and_crime__l2.txt:16",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "comparison_evidence": [
+        {
+          "card": {
+            "id": "exp26-civic-0129",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "justice_safety_and_crime",
+            "topic": "safety_and_authority",
+            "question": "あなたは店で誤って盗難を疑われた。店は安全のためだと説明する。再びその店へ行けるとしたら、何が変わっていてほしい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の誤警戒。謝罪、手順、同じ扱いをされない見通しを考える。"
+            }
+          },
+          "reason": "誤警戒後に戻る利用の安心。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l4.txt:42",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        {
+          "card": {
+            "id": "exp26-civic-0016",
+            "level": 2,
+            "sensitivity": 2,
+            "category": "justice_safety_and_crime",
+            "topic": "reporting_and_testimony",
+            "question": "間違って疑われ、誤解は解けた。自分にだけ謝るのと周囲にも説明するのでは、何が違う？"
+          },
+          "reason": "疑いの後の名誉回復。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l2.txt:11",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        }
+      ],
+      "compared_ids": [
+        "exp26-civic-0129",
+        "exp26-civic-0016"
+      ],
+      "suggested_after": {
+        "card": {
+          "id": "exp26-civic-0021",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "justice_safety_and_crime",
+          "topic": "safety_and_dignity",
+          "question": "店の防犯で自分だけ呼び止められ、誤解だと分かった。謝罪を受けても、なぜ自分が選ばれたのかを知りたい？ それはなぜ？"
+        },
+        "reason": "店へ戻る条件や周囲へ訂正を届ける範囲ではなく、誤解が解けた後にも自分が確認の対象に選ばれた理由を知りたいかという、説明への期待と尊厳を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "justice_safety_and_crime__l2.txt:16",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "suggested_resolution": "店へ戻る条件や周囲へ訂正を届ける範囲ではなく、誤解が解けた後にも自分が確認の対象に選ばれた理由を知りたいかという、説明への期待と尊厳を聞く。",
+      "resolved_addition": {
+        "card": {
+          "id": "exp26-civic-0021",
+          "level": 2,
+          "sensitivity": 2,
+          "category": "justice_safety_and_crime",
+          "topic": "safety_and_dignity",
+          "question": "店の防犯で自分だけ呼び止められ、誤解だと分かった。謝罪を受けても、なぜ自分が選ばれたのかを知りたい？ それはなぜ？"
+        },
+        "reason": "店へ戻る条件や周囲へ訂正を届ける範囲ではなく、誤解が解けた後にも自分が確認の対象に選ばれた理由を知りたいかという、説明への期待と尊厳を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "justice_safety_and_crime__l2.txt:16",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "resolution": "0016の周囲への訂正範囲を離す初回改稿は0129の店の再利用条件と重なったため再補正。最終は謝罪後も本人が選別理由を知りたいか/なぜかを聞き、再利用と説明の望みを分ける。",
+      "resolution_final_shard_sha256": "7d16d75c62047d44237f5e93a2576b5ef287270cd75a742e0fb9fa511098ed3b",
+      "status": "resolved_in_staging_and_rechecked"
+    },
+    {
+      "finding_id": "learning-recheck-civic-05",
+      "id": "exp26-civic-0284",
+      "priority": "required",
+      "field": "novelty/question/reason",
+      "issue": "改稿後は新しい相談相手へ一から話す気力がない本人が今の担当へ何を託すかを聞く。0089は同じL4 affectedで担当変更後に話し直す気力がない本人の希望を聞き、背景も引継ぎの範囲と新しい相手に直接話す機会を置く。被害後の相談/公共支援という分野の違いだけでは、再説明負担を抑える引継ぎへの希望を聞く対象が重なる。",
+      "reviewed_addition": {
+        "card": {
+          "id": "exp26-civic-0284",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "society_public_policy_and_environment",
+          "topic": "receiving_public_help",
+          "question": "今の相談員にようやくつらい過去を話せたあなたは、別の相談先を紹介された。新しい相手へ一から話す気力はないが、今の自分を分かってほしい。今の担当に、何を一緒に託してほしい？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の紹介です。情報を紹介状へ書くことと、本人が信頼して話せる関係を新しい場へつなぐことは同じではありません。過去を全て伝える必要を決めず、話したくない部分と今の自分の望みをどのように託すか考えます。"
+          }
+        },
+        "reason": "紹介の段取りだけでなく、ようやく語れた本人が、再開示を抑えながら現在の信頼と望みを次へ託す意味を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:19",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "comparison_evidence": [
+        {
+          "card": {
+            "id": "exp26-civic-0089",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "justice_safety_and_crime",
+            "topic": "victim_recovery_services",
+            "question": "被害後の相談担当が代わる。もう一度説明すれば新しい視点も得られるが、話し直す気力がないあなたは何を望む？",
+            "perspective": "affected",
+            "detail": {
+              "text": "仮の担当変更。引継ぎの範囲と新しい相手に直接話す機会を考える。"
+            },
+            "content_warning": [
+              "crime_and_punishment"
+            ]
+          },
+          "reason": "再説明と関係を作り直す負担。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l4.txt:2",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        {
+          "card": {
+            "id": "exp26-civic-0275",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "receiving_public_help",
+            "question": "あなたは長年の相談員が代わると知った。新しい人に事情を伝える前に、どんな関係を残したいと思う？",
+            "perspective": "affected",
+            "detail": {
+              "text": "仮の担当変更。情報の引継ぎと人との別れを分ける。"
+            }
+          },
+          "reason": "支援者との関係を失う意味。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:10",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        {
+          "card": {
+            "id": "exp26-civic-0283",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "receiving_public_help",
+            "question": "支援の更新で、つらかった過去を何度も説明してきた。次は書類だけにすれば自分を守れるが、これからどんな暮らしを選びたいかは書き切れていない。再び話すことと、話さずに理解してもらうことに何を望みたい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の更新手続です。今の必要を確かめるための説明が、自分の過去を語り直す負担にもなってきた条件を置きます。書類で伝えられる情報と、本人が望むこれからの生活にはずれがある場合です。実経験の開示や、話すことを選ぶ答えを求めません。"
+            },
+            "content_warning": [
+              "privacy_and_surveillance"
+            ]
+          },
+          "reason": "書類の便利さだけでなく、過去を語り直さず自分を守ることと今後の人生を本人の意味で伝えることを聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:18",
+            "self_review_status": "peer_revision_pending_author_unapproved",
+            "peer_revision_status": "world_drafted_unapproved"
+          }
+        },
+        {
+          "card": {
+            "id": "exp26-civic-0282",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "receiving_public_help",
+            "question": "あなたは支援の選択肢を説明する担当。自分の家族を救った方法を勧めたいが、本人は望まない。信じている支えを渡さないことにも責任を持てる？",
+            "perspective": "actor",
+            "detail": {
+              "text": "仮の説明。自分に役立った経験を他人の人生へ重ねる限界を考える。"
+            }
+          },
+          "reason": "自分を救った方法を手放す支援。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:17",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        {
+          "card": {
+            "id": "exp26-civic-0546",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "public_trust",
+            "question": "信頼する代表を、親しい人にも「この人に任せよう」と勧めてきた。約束が守られず、自分の選択まで信じられなくなった。事情は理解できても、代表を信じ直すことと、自分の判断を信じ直すことは同じ？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の委任と推薦の後です。本人は代表を選び、周囲へ勧める判断もしてきました。代表の事情に納得すること、代表の次の約束を信じること、自分が人を選ぶ判断を信じることを分けます。推薦者が代表の全ての行動の責任を負うとは決めません。"
+            }
+          },
+          "reason": "0488の代表への信頼回復と分け、自分が周囲へ推薦した代表の失約から揺れる、本人の判断への信頼を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:60",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        }
+      ],
+      "compared_ids": [
+        "exp26-civic-0089",
+        "exp26-civic-0275",
+        "exp26-civic-0283",
+        "exp26-civic-0282",
+        "exp26-civic-0546"
+      ],
+      "suggested_after": {
+        "card": {
+          "id": "exp26-civic-0284",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "society_public_policy_and_environment",
+          "topic": "receiving_public_help",
+          "question": "今の相談員にようやくつらい過去を話せたあなたは、別の相談先を紹介された。「あの人なら大丈夫」と勧められても、同じように話せるかはまだ分からない。今の担当を信じることと、その人が勧める相手を信じることは、自分にとってどう違う？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の紹介です。つらい経験を今の担当へ安心して語れるようになるまで時間がかかった条件です。まだ会っていない紹介先について、今の担当は信頼できると勧めています。担当の推薦を信じることと、自分が新しい相手との関係で安心を得ることは、重なっても異なってもかまいません。推薦を受ければ信じるべきだとは決めません。"
+          }
+        },
+        "reason": "0089の再説明の負担と新しい視点から分け、ようやく得た支援者への信頼を、その人が推薦する未面識の相手にも渡せるかという本人の信頼の意味を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:19",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "suggested_resolution": "0089の再説明の負担と新しい視点から分け、ようやく得た支援者への信頼を、その人が推薦する未面識の相手にも渡せるかという本人の信頼の意味を聞く。",
+      "resolved_addition": {
+        "card": {
+          "id": "exp26-civic-0284",
+          "level": 4,
+          "sensitivity": 3,
+          "category": "society_public_policy_and_environment",
+          "topic": "receiving_public_help",
+          "question": "今の相談員にようやくつらい過去を話せたあなたは、別の相談先を紹介された。「あの人なら大丈夫」と勧められても、同じように話せるかはまだ分からない。今の担当を信じることと、その人が勧める相手を信じることは、自分にとってどう違う？",
+          "perspective": "affected",
+          "detail": {
+            "text": "架空の紹介です。つらい経験を今の担当へ安心して語れるようになるまで時間がかかった条件です。まだ会っていない紹介先について、今の担当は信頼できると勧めています。担当の推薦を信じることと、自分が新しい相手との関係で安心を得ることは、重なっても異なってもかまいません。推薦を受ければ信じるべきだとは決めません。"
+          }
+        },
+        "reason": "0089の再説明の負担と新しい視点から分け、ようやく得た支援者への信頼を、その人が推薦する未面識の相手にも渡せるかという本人の信頼の意味を聞く。",
+        "editorial": {
+          "author_group": "civic",
+          "fact_status": "hypothetical",
+          "source_row": "society_public_policy_and_environment__l4.txt:19",
+          "self_review_status": "author_reviewed_unapproved"
+        }
+      },
+      "resolution": "初回改稿の再説明負担と引継ぎ希望は0089と重なるため再補正。最終はつらい過去をようやく語れた現在の担当への信頼と、その担当が勧める未面識の相手への信頼を比較し、信頼する人の推薦を新たな関係の根拠にする意味を聞く。",
+      "resolution_final_shard_sha256": "7d16d75c62047d44237f5e93a2576b5ef287270cd75a742e0fb9fa511098ed3b",
+      "status": "resolved_in_staging_and_rechecked"
+    }
+  ],
+  "finding_counts": {
+    "required": 4,
+    "optional": 1,
+    "resolved_required": 4,
+    "resolved_optional": 1,
+    "unresolved_required": 0,
+    "unresolved_optional": 0
+  },
+  "status": "passed_staging_not_approved",
+  "followup_draft": "resolution-drafts/recheck-fixes-civic.json",
+  "metadata_assessment": "主要立場は本文の役割に合う。0371はactorへ修正、0430は責任分担の仕組みを決めるdecision_makerへ。0101/0155は司法に固有の責任手続/捜査広報が入り、0155の再露出と0132の見回りに警告タグが追加された。支援配分の是非より代表・公共判断への信頼を問う0551は民主主義の分類に置く理由がある。単に亡き家族が登場する0520へ、医療や家族対立を自動で加える必要はない。0371のprivacyタグの任意指摘は採用・削除され、最終metadataで確認済み。",
+  "fact_assessment": "全対象のfact_statusはhypothetical。0101の対話発言を資料に使う条件、0207の審査記録の参照、公共施設・政策の費用や効果はいずれも架空と明示され、現実の一般則として断定していない。新しい外部資料の全文再確認はしていない。",
+  "verification": {
+    "all_44_final_additions_match_layered_applied_after": true,
+    "all_previous_32_additions_unchanged_through_additional12_and2": true,
+    "all_10_additional_additions_match_initial12_after": true,
+    "all_2_additional_followup_additions_match_followup_after": true,
+    "final_sha_matches_applied_draft": true,
+    "target_shard_edited_by_reviewer": false,
+    "production_files_edited_by_reviewer": false,
+    "initial_reviewed_count_preserved": 32,
+    "reviewed_union_count": 44,
+    "candidate_count": 558,
+    "id_level_category_sensitivity_perspective_preserved_through_additional12_and2": true,
+    "final_shard_sha256_at_recheck_completion": "7d16d75c62047d44237f5e93a2576b5ef287270cd75a742e0fb9fa511098ed3b"
+  },
+  "limitations": [
+    "全ての意味の重複がない証明ではない。",
+    "独立レビューを候補の承認とは扱わない。",
+    "正本反映と問題の変更の承認はユーザー最終確認後。",
+    "初回32件、変更3件、追加12件、再改稿2件を区別した読了記録。5維持裁定の再審査や全候補の意味比較ではない。",
+    "元レビュー全体163必須とcross6等の全体網羅検証は主担当の範囲。この記録はcivic44変更IDとその比較先の独立再確認。"
+  ],
+  "followup_draft_sha256": "811c5ee12b461754ee1338f6fcd5e92555a4ae17c4f1d82e6291be81eca277af",
+  "followup_draft_self_review_status": "completed_all_3_after_read_and_similarity_followup",
+  "followup_self_review": {
+    "reviewed_change_ids": [
+      "exp26-civic-0333",
+      "exp26-civic-0494",
+      "exp26-civic-0371"
+    ],
+    "reviewed_change_count": 3,
+    "scope": "0333/0494のafter全文・背景・理由・metadataを再読。改稿後2件を含めた4710件で近似を再計算し、上位3件の問い・存在する背景・理由を読み、意味から差を判定。0333の近い0269を実際に読んだため、成功例に収まらない自己像を伝える問いへ再び寄らないよう、他の利用者へ同じ努力を求める支援の基準を本文に明示してさらに改稿・再読した。移住L4の0326〜0341も問い/背景/理由を全文で読んだ。 0371の問い・背景・理由・全metadataも再読し、寄付者の生活の限界と匿名の受け手への支えが判断対象であり、公開/取得/監視の条件がないことを確認。本文を維持してprivacy_and_surveillanceを削除し、空のcontent_warning属性も削除した。",
+    "status": "completed_all_3_after_read_and_similarity_followup",
+    "comparison_notes": [
+      "0333は0326の帰属の証明と違い、自分の人生の歩みが他者へ要求される支援の基準になる責任を問う。0269の成功物語へ残る自己の迷いとも、本人の紹介の正確さより他者への制度上の影響で分ける。",
+      "0333と0327は、自分が欲しかった歓迎を他の人にも望む境界／自分の経験が支援基準として他の人へ適用される責任を分ける。",
+      "0494は賛成という結論を変えず、迷いと故郷の関係を声に残す本人の意味。learning0342は他の人の対談を編集する責任、youth-pregnancy-l3-024は行動評価とその人への支援を分けるので判断対象が違う。",
+      "新たな上位近似はworld0145の廃棄の負担、civic0342の世代間返礼など語尾の責任感も拾っており、文字の近さだけで重複とはしない。",
+      "0371は文字の変更がなく、新たな意味近似は生じない。actorは寄付を続ける本人の行為と合い、匿名性だけでprivacyタグを付ける根拠にはしない。"
+    ],
+    "comparison_candidate_file": "resolution-drafts/recheck-fixes-civic-neighbors.json",
+    "remaining_limits": "全ての可能な二問の意味比較・現実の会話テストは未実施。正本反映はユーザー最終確認後。"
+  },
+  "reviewed_snapshot_sha256": "bb5a269c392177e368208f9f318f933bc93816499cc37ee270b9376b99e7123f",
+  "initial_snapshot_verification": {
+    "all_32_final_additions_match_applied_after": true,
+    "final_sha_matches_applied_draft": true,
+    "target_shard_edited_by_reviewer": false,
+    "production_files_edited_by_reviewer": false,
+    "followup_before_records_match_final_shard": true,
+    "source_shard_sha256_at_recheck_completion": "bb5a269c392177e368208f9f318f933bc93816499cc37ee270b9376b99e7123f"
+  },
+  "unresolved_required_count": 0,
+  "unresolved_optional_count": 0,
+  "final_followup_recheck": {
+    "reviewed_ids": [
+      "exp26-civic-0333",
+      "exp26-civic-0494",
+      "exp26-civic-0371"
+    ],
+    "reviewed_count": 3,
+    "read_fields": [
+      "card.question",
+      "card.detail.text",
+      "reason",
+      "card_metadata",
+      "editorial"
+    ],
+    "compared_ids": [
+      "exp26-civic-0326",
+      "exp26-civic-0269"
+    ],
+    "status": "all_3_applied_after_read_resolved",
+    "source_sha256_before_followup": "bb5a269c392177e368208f9f318f933bc93816499cc37ee270b9376b99e7123f",
+    "final_shard_sha256": "95d729dee6b0ae74df591115222ddb87e319ad3770475fc9d86d06f8471a6593",
+    "unchanged_previously_reviewed_ids": [
+      "exp26-civic-0032",
+      "exp26-civic-0101",
+      "exp26-civic-0132",
+      "exp26-civic-0137",
+      "exp26-civic-0155",
+      "exp26-civic-0202",
+      "exp26-civic-0207",
+      "exp26-civic-0283",
+      "exp26-civic-0290",
+      "exp26-civic-0293",
+      "exp26-civic-0312",
+      "exp26-civic-0319",
+      "exp26-civic-0325",
+      "exp26-civic-0348",
+      "exp26-civic-0349",
+      "exp26-civic-0354",
+      "exp26-civic-0356",
+      "exp26-civic-0430",
+      "exp26-civic-0469",
+      "exp26-civic-0491",
+      "exp26-civic-0496",
+      "exp26-civic-0500",
+      "exp26-civic-0506",
+      "exp26-civic-0520",
+      "exp26-civic-0534",
+      "exp26-civic-0536",
+      "exp26-civic-0545",
+      "exp26-civic-0551",
+      "exp26-civic-0554"
+    ],
+    "unchanged_previously_reviewed_count": 29,
+    "all_3_match_followup_after": true,
+    "all_29_match_initial_applied_after": true,
+    "assessment_by_id": {
+      "exp26-civic-0333": "自分の歩みが他の支援利用者にも要求される基準になる時の責任を聞く。0326の帰属の証明、0269の成功例に収まらない自己像から判断対象を分け、人生の関係・助けられた時間・継承する支援の責任を本文で維持。仮の制度運用として背景と理由も整合。",
+      "exp26-civic-0494": "本文冒頭で賛成だが迷いも伝えた条件を明示し、結論の撤回ではなく、故郷との関係を声として残す意味へ統一。背景は同じ条件で、理由も本人の賛成を明記している。",
+      "exp26-civic-0371": "匿名の相手への寄付を続ける自身の生活の限界の問いで、情報の公開・取得・監視を判断する条件がない。privacy_and_surveillanceを削除し、空のcontent_warning属性も削除した。本文・背景・理由・actor・editorialは維持。"
+    }
+  },
+  "completed_32_review_history": {
+    "reviewed_ids": [
+      "exp26-civic-0032",
+      "exp26-civic-0101",
+      "exp26-civic-0132",
+      "exp26-civic-0137",
+      "exp26-civic-0155",
+      "exp26-civic-0202",
+      "exp26-civic-0207",
+      "exp26-civic-0283",
+      "exp26-civic-0290",
+      "exp26-civic-0293",
+      "exp26-civic-0312",
+      "exp26-civic-0319",
+      "exp26-civic-0325",
+      "exp26-civic-0333",
+      "exp26-civic-0348",
+      "exp26-civic-0349",
+      "exp26-civic-0354",
+      "exp26-civic-0356",
+      "exp26-civic-0371",
+      "exp26-civic-0430",
+      "exp26-civic-0469",
+      "exp26-civic-0491",
+      "exp26-civic-0494",
+      "exp26-civic-0496",
+      "exp26-civic-0500",
+      "exp26-civic-0506",
+      "exp26-civic-0520",
+      "exp26-civic-0534",
+      "exp26-civic-0536",
+      "exp26-civic-0545",
+      "exp26-civic-0551",
+      "exp26-civic-0554"
+    ],
+    "reviewed_count": 32,
+    "final_shard_sha256": "95d729dee6b0ae74df591115222ddb87e319ad3770475fc9d86d06f8471a6593",
+    "status": "passed_staging_not_approved",
+    "scope": "適用済み修正32件の最終shardにある問い・背景全文・追加理由・metadataと変更前の原文を分割して実際に読んだ。worldの必須32件およびcross XDR-03/04/05の原文根拠を照合。比較先52件の問い・背景・理由を選択して読み、4710件で新規に計算した上位2近似（64比較）の問いも読んだ。全civic558件の新しい全文レビューや全組合せの意味比較、現実の会話テストではない。 初回の全32件読了の後、主担当が0333/0494/0371をstagingへ適用したため、この3件のみ問い・背景・理由・全metadataを最終shardで再読した。比較先0326/0269も原文を再読。残る29件は初回読了版と全additionが一致することを確認して読了記録を保全した。別途のgap18件裁定はこの32件の再確認範囲に含めない。",
+    "finding_counts": {
+      "required": 2,
+      "optional": 1,
+      "resolved_required": 2,
+      "resolved_optional": 1,
+      "unresolved_required": 0,
+      "unresolved_optional": 0
+    },
+    "final_followup_recheck": {
+      "reviewed_ids": [
+        "exp26-civic-0333",
+        "exp26-civic-0494",
+        "exp26-civic-0371"
+      ],
+      "reviewed_count": 3,
+      "read_fields": [
+        "card.question",
+        "card.detail.text",
+        "reason",
+        "card_metadata",
+        "editorial"
+      ],
+      "compared_ids": [
+        "exp26-civic-0326",
+        "exp26-civic-0269"
+      ],
+      "status": "all_3_applied_after_read_resolved",
+      "source_sha256_before_followup": "bb5a269c392177e368208f9f318f933bc93816499cc37ee270b9376b99e7123f",
+      "final_shard_sha256": "95d729dee6b0ae74df591115222ddb87e319ad3770475fc9d86d06f8471a6593",
+      "unchanged_previously_reviewed_ids": [
+        "exp26-civic-0032",
+        "exp26-civic-0101",
+        "exp26-civic-0132",
+        "exp26-civic-0137",
+        "exp26-civic-0155",
+        "exp26-civic-0202",
+        "exp26-civic-0207",
+        "exp26-civic-0283",
+        "exp26-civic-0290",
+        "exp26-civic-0293",
+        "exp26-civic-0312",
+        "exp26-civic-0319",
+        "exp26-civic-0325",
+        "exp26-civic-0348",
+        "exp26-civic-0349",
+        "exp26-civic-0354",
+        "exp26-civic-0356",
+        "exp26-civic-0430",
+        "exp26-civic-0469",
+        "exp26-civic-0491",
+        "exp26-civic-0496",
+        "exp26-civic-0500",
+        "exp26-civic-0506",
+        "exp26-civic-0520",
+        "exp26-civic-0534",
+        "exp26-civic-0536",
+        "exp26-civic-0545",
+        "exp26-civic-0551",
+        "exp26-civic-0554"
+      ],
+      "unchanged_previously_reviewed_count": 29,
+      "all_3_match_followup_after": true,
+      "all_29_match_initial_applied_after": true,
+      "assessment_by_id": {
+        "exp26-civic-0333": "自分の歩みが他の支援利用者にも要求される基準になる時の責任を聞く。0326の帰属の証明、0269の成功例に収まらない自己像から判断対象を分け、人生の関係・助けられた時間・継承する支援の責任を本文で維持。仮の制度運用として背景と理由も整合。",
+        "exp26-civic-0494": "本文冒頭で賛成だが迷いも伝えた条件を明示し、結論の撤回ではなく、故郷との関係を声として残す意味へ統一。背景は同じ条件で、理由も本人の賛成を明記している。",
+        "exp26-civic-0371": "匿名の相手への寄付を続ける自身の生活の限界の問いで、情報の公開・取得・監視を判断する条件がない。privacy_and_surveillanceを削除し、空のcontent_warning属性も削除した。本文・背景・理由・actor・editorialは維持。"
+      }
+    },
+    "verification": {
+      "all_32_final_additions_match_layered_applied_after": true,
+      "all_29_unchanged_additions_match_initial_applied_after": true,
+      "all_3_followup_additions_match_followup_after": true,
+      "final_sha_matches_applied_draft": true,
+      "target_shard_edited_by_reviewer": false,
+      "production_files_edited_by_reviewer": false,
+      "reviewed_count_preserved": 32,
+      "candidate_count": 558,
+      "category_level_cells_unchanged_through_followup": true,
+      "final_shard_sha256_at_recheck_completion": "95d729dee6b0ae74df591115222ddb87e319ad3770475fc9d86d06f8471a6593"
+    }
+  },
+  "initial_reviewed_ids": [
+    "exp26-civic-0032",
+    "exp26-civic-0101",
+    "exp26-civic-0132",
+    "exp26-civic-0137",
+    "exp26-civic-0155",
+    "exp26-civic-0202",
+    "exp26-civic-0207",
+    "exp26-civic-0283",
+    "exp26-civic-0290",
+    "exp26-civic-0293",
+    "exp26-civic-0312",
+    "exp26-civic-0319",
+    "exp26-civic-0325",
+    "exp26-civic-0333",
+    "exp26-civic-0348",
+    "exp26-civic-0349",
+    "exp26-civic-0354",
+    "exp26-civic-0356",
+    "exp26-civic-0371",
+    "exp26-civic-0430",
+    "exp26-civic-0469",
+    "exp26-civic-0491",
+    "exp26-civic-0494",
+    "exp26-civic-0496",
+    "exp26-civic-0500",
+    "exp26-civic-0506",
+    "exp26-civic-0520",
+    "exp26-civic-0534",
+    "exp26-civic-0536",
+    "exp26-civic-0545",
+    "exp26-civic-0551",
+    "exp26-civic-0554"
+  ],
+  "initial_reviewed_count": 32,
+  "additional_12_recheck": {
+    "reviewed_ids": [
+      "exp26-civic-0021",
+      "exp26-civic-0107",
+      "exp26-civic-0141",
+      "exp26-civic-0284",
+      "exp26-civic-0304",
+      "exp26-civic-0332",
+      "exp26-civic-0336",
+      "exp26-civic-0344",
+      "exp26-civic-0497",
+      "exp26-civic-0509",
+      "exp26-civic-0541",
+      "exp26-civic-0546"
+    ],
+    "reviewed_count": 12,
+    "source_draft": "resolution-drafts/remaining-optional-fixes-civic.json",
+    "source_draft_sha256": "313aa5a31564c59f5b9aba84850f985edd994b27b69a90f4041014974fb454e6",
+    "source_sha256_before_12_apply": "95d729dee6b0ae74df591115222ddb87e319ad3770475fc9d86d06f8471a6593",
+    "reviewed_shard_sha256_initial_12": "fae23d1777ab9ed8ed632aaf61ce1d8d343e0973855c92311741ee69a5019632",
+    "comparison_ids": [
+      "exp26-civic-0016",
+      "exp26-civic-0100",
+      "exp26-civic-0105",
+      "exp26-care-0172",
+      "exp26-care-0173",
+      "exp26-civic-0275",
+      "exp26-civic-0283",
+      "exp26-civic-0287",
+      "exp26-civic-0277",
+      "exp26-civic-0219",
+      "exp26-civic-0186",
+      "exp26-civic-0285",
+      "exp26-civic-0238",
+      "exp26-civic-0254",
+      "exp26-civic-0342",
+      "exp26-civic-0432",
+      "exp26-civic-0498",
+      "exp26-civic-0502",
+      "exp26-civic-0416",
+      "exp26-civic-0449",
+      "exp26-civic-0510",
+      "exp26-civic-0472",
+      "exp26-civic-0538",
+      "exp26-civic-0488"
+    ],
+    "comparison_count": 24,
+    "additional_neighbor_ids": [
+      "exp26-civic-0319",
+      "exp26-civic-0326",
+      "exp26-civic-0334",
+      "exp26-civic-0335",
+      "exp26-civic-0337",
+      "exp26-civic-0338",
+      "exp26-civic-0343",
+      "exp26-civic-0345",
+      "exp26-civic-0346",
+      "exp26-civic-0347"
+    ],
+    "additional_neighbor_count": 10,
+    "scope": "12件のbefore/afterを実読し、最終additionの問い/背景/理由/card metadata/editorialを確認。24比較先と10周辺の現在原文を読み、追加された2必須を具体修正と再読で解消。5維持裁定の再審査をした記録ではない。",
+    "cases": [
+      {
+        "adjudication_id": "ROA-01",
+        "id": "exp26-civic-0021",
+        "source_review": "world-reviews-civic.json",
+        "priority": "optional",
+        "original_priority": "optional",
+        "status": "resolved_in_staging_and_rechecked",
+        "assessment": "0016の周囲への訂正範囲を離す初回改稿は0129の店の再利用条件と重なったため再補正。最終は謝罪後も本人が選別理由を知りたいか/なぜかを聞き、再利用と説明の望みを分ける。",
+        "reviewed_before": {
+          "card": {
+            "id": "exp26-civic-0021",
+            "level": 2,
+            "sensitivity": 2,
+            "category": "justice_safety_and_crime",
+            "topic": "safety_and_dignity",
+            "question": "店の防犯で自分だけ呼び止められ、誤解だと分かった。説明と謝罪に何を求めたい？"
+          },
+          "reason": "選別された後に戻る信頼。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l2.txt:16",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "reviewed_initial_after": {
+          "card": {
+            "id": "exp26-civic-0021",
+            "level": 2,
+            "sensitivity": 2,
+            "category": "justice_safety_and_crime",
+            "topic": "safety_and_dignity",
+            "question": "店の防犯で自分だけ呼び止められ、誤解だと分かった。説明と謝罪の後、また同じ店を使いたいと思えるのは、どんな時？"
+          },
+          "reason": "防犯で自分だけ疑われた後、その店を再び選べる信頼の条件を聞き、周囲への名誉回復の0016と分ける。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l2.txt:16",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "final_reviewed_addition": {
+          "card": {
+            "id": "exp26-civic-0021",
+            "level": 2,
+            "sensitivity": 2,
+            "category": "justice_safety_and_crime",
+            "topic": "safety_and_dignity",
+            "question": "店の防犯で自分だけ呼び止められ、誤解だと分かった。謝罪を受けても、なぜ自分が選ばれたのかを知りたい？ それはなぜ？"
+          },
+          "reason": "店へ戻る条件や周囲へ訂正を届ける範囲ではなく、誤解が解けた後にも自分が確認の対象に選ばれた理由を知りたいかという、説明への期待と尊厳を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l2.txt:16",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "compared_ids": [
+          "exp26-civic-0016"
+        ],
+        "comparison_evidence": [
+          {
+            "card": {
+              "id": "exp26-civic-0016",
+              "level": 2,
+              "sensitivity": 2,
+              "category": "justice_safety_and_crime",
+              "topic": "reporting_and_testimony",
+              "question": "間違って疑われ、誤解は解けた。自分にだけ謝るのと周囲にも説明するのでは、何が違う？"
+            },
+            "reason": "疑いの後の名誉回復。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "justice_safety_and_crime__l2.txt:11",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        ],
+        "additional_required_finding_ids": [
+          "learning-recheck-civic-04"
+        ]
+      },
+      {
+        "adjudication_id": "ROA-02",
+        "id": "exp26-civic-0107",
+        "source_review": "world-reviews-civic.json",
+        "priority": "optional",
+        "original_priority": "optional",
+        "status": "resolved_in_staging_and_rechecked",
+        "assessment": "盗難後も暮らしへ影響が残る本人を本文に置き、0100の賠償を受ける感情、0105の更生を喜べない自己評価から、今の善行と過去の被害を言葉で認めてほしい望みへ分ける。crimeタグも主題へ一致。",
+        "reviewed_before": {
+          "card": {
+            "id": "exp26-civic-0107",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "justice_safety_and_crime",
+            "topic": "apology_and_restoration",
+            "question": "あなたを傷つけた人が、謝らないまま長年よい行動を続けている。言葉の謝罪がなくても自分の受け止め方は変わる？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の再評価。行動の変化と出来事を認めてもらう必要を考える。"
+            }
+          },
+          "reason": "謝罪の言葉と現在の行動。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l4.txt:20",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "reviewed_initial_after": {
+          "card": {
+            "id": "exp26-civic-0107",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "justice_safety_and_crime",
+            "topic": "apology_and_restoration",
+            "question": "盗難の被害を受けたあなたには、今も暮らしへの影響が残る。相手は謝らないまま、長年地域のために働いてきたと知った。相手の今の行動と、自分が出来事を認めてほしい気持ちを、どう受け止めたい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の被害後の再評価です。地域のために働いてきたことと、過去の盗難を本人へ認める謝罪の言葉は別です。相手が変わったことを認めても、被害を受けた自分の暮らしへの影響や、言葉を求める気持ちが消えるとは限りません。許す、喜ぶ、謝罪を不要とする答えを要求しません。"
+            },
+            "content_warning": [
+              "crime_and_punishment"
+            ]
+          },
+          "reason": "被害後の暮らしに残る影響を置き、相手の現在の行動と過去の出来事を言葉で認めてほしい自分の望みを聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l4.txt:20",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "final_reviewed_addition": {
+          "card": {
+            "id": "exp26-civic-0107",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "justice_safety_and_crime",
+            "topic": "apology_and_restoration",
+            "question": "盗難の被害を受けたあなたには、今も暮らしへの影響が残る。相手は謝らないまま、長年地域のために働いてきたと知った。相手の今の行動と、自分が出来事を認めてほしい気持ちを、どう受け止めたい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の被害後の再評価です。地域のために働いてきたことと、過去の盗難を本人へ認める謝罪の言葉は別です。相手が変わったことを認めても、被害を受けた自分の暮らしへの影響や、言葉を求める気持ちが消えるとは限りません。許す、喜ぶ、謝罪を不要とする答えを要求しません。"
+            },
+            "content_warning": [
+              "crime_and_punishment"
+            ]
+          },
+          "reason": "被害後の暮らしに残る影響を置き、相手の現在の行動と過去の出来事を言葉で認めてほしい自分の望みを聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l4.txt:20",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "compared_ids": [
+          "exp26-civic-0100",
+          "exp26-civic-0105"
+        ],
+        "comparison_evidence": [
+          {
+            "card": {
+              "id": "exp26-civic-0100",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "justice_safety_and_crime",
+              "topic": "apology_and_restoration",
+              "question": "大切な物を盗まれたあなたに加害者が全額を返した。相手を許さずに受け取ることに、どんな気持ちがある？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の賠償。受領、感情、関係を戻す判断は同じではない。"
+              },
+              "content_warning": [
+                "crime_and_punishment"
+              ]
+            },
+            "reason": "賠償を和解と感じるかの差。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "justice_safety_and_crime__l4.txt:13",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          {
+            "card": {
+              "id": "exp26-civic-0105",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "justice_safety_and_crime",
+              "topic": "apology_and_restoration",
+              "question": "被害を受けたあなたは相手の更生を喜べず、そのことにも苦しさがある。どんな気持ちなら自分に許してよいと思う？",
+              "perspective": "affected",
+              "detail": {
+                "text": "架空の受け止め。相手の変化を認めることと喜ぶことは別に考える。"
+              },
+              "content_warning": [
+                "crime_and_punishment"
+              ]
+            },
+            "reason": "更生を歓迎できない本人の感情。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "justice_safety_and_crime__l4.txt:18",
+              "related_existing_ids": [
+                "justice-004"
+              ],
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        ],
+        "additional_required_finding_ids": []
+      },
+      {
+        "adjudication_id": "ROA-03",
+        "id": "exp26-civic-0141",
+        "source_review": "world-reviews-civic.json",
+        "priority": "optional",
+        "original_priority": "optional",
+        "status": "resolved_in_staging_and_rechecked",
+        "assessment": "親友を犯罪で失った企画者の悲しみと公に分かち合う望みを本文に置く。care0172の家族内の記念日、0173の家族内の語る場所とは、公の追悼を企画する役と親友の悲嘆の重なりを区別。追悼を主題とするため死のタグと新topicも整合。",
+        "reviewed_before": {
+          "card": {
+            "id": "exp26-civic-0141",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "justice_safety_and_crime",
+            "topic": "punishment_and_limits",
+            "question": "あなたは被害者のために追悼行事を企画した。家族がその日は静かに過ごしたいと言う時、予定をどう受け止め直したい？",
+            "perspective": "actor",
+            "detail": {
+              "text": "架空の式典。社会の記憶を作る目的と家族の当日の望みを考える。"
+            },
+            "content_warning": [
+              "crime_and_punishment"
+            ]
+          },
+          "reason": "追悼する自分の善意の境界。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l4.txt:54",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "reviewed_initial_after": {
+          "card": {
+            "id": "exp26-civic-0141",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "justice_safety_and_crime",
+            "topic": "public_mourning_and_personal_grief",
+            "question": "犯罪の被害で親友を失ったあなたは、追悼行事を企画し、思い出を皆と分かち合いたい。遺族はその日は静かに過ごしたいと言う。自分の悲しみと、遺族が望む時間を、どう持ちたい？",
+            "perspective": "actor",
+            "detail": {
+              "text": "架空の追悼です。親友を失った自分にも悲しみがあり、思い出を公の場で分かち合いたい望みがあります。遺族の当日の望みとは一致していない条件で、どちらかの悲しみを正しいと決めず、追悼を企画する役と自分の意味を考えます。"
+            },
+            "content_warning": [
+              "crime_and_punishment",
+              "medical_and_end_of_life"
+            ]
+          },
+          "reason": "一般の式典調整から、親友を失った本人が公に思い出を分かち合う望みと遺族の時間を持つ意味へ深める。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l4.txt:54",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "final_reviewed_addition": {
+          "card": {
+            "id": "exp26-civic-0141",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "justice_safety_and_crime",
+            "topic": "public_mourning_and_personal_grief",
+            "question": "犯罪の被害で親友を失ったあなたは、追悼行事を企画し、思い出を皆と分かち合いたい。遺族はその日は静かに過ごしたいと言う。自分の悲しみと、遺族が望む時間を、どう持ちたい？",
+            "perspective": "actor",
+            "detail": {
+              "text": "架空の追悼です。親友を失った自分にも悲しみがあり、思い出を公の場で分かち合いたい望みがあります。遺族の当日の望みとは一致していない条件で、どちらかの悲しみを正しいと決めず、追悼を企画する役と自分の意味を考えます。"
+            },
+            "content_warning": [
+              "crime_and_punishment",
+              "medical_and_end_of_life"
+            ]
+          },
+          "reason": "一般の式典調整から、親友を失った本人が公に思い出を分かち合う望みと遺族の時間を持つ意味へ深める。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "justice_safety_and_crime__l4.txt:54",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "compared_ids": [
+          "exp26-care-0172",
+          "exp26-care-0173"
+        ],
+        "comparison_evidence": [
+          {
+            "id": "exp26-care-0172",
+            "level": 4,
+            "perspective": "affected",
+            "category": "family_and_care",
+            "topic": "family_after_bereavement",
+            "question": "亡くなった家族の記念日を迎えたあなたは、今年は普段どおり過ごしたい。他の家族と違う望みをどう扱いたい？",
+            "detail": {
+              "text": "仮の場面です。追悼を続ける方法や年ごとの気持ちが異なる設定です。"
+            },
+            "reason": "悲嘆の時間の変化。"
+          },
+          {
+            "id": "exp26-care-0173",
+            "level": 4,
+            "perspective": "actor",
+            "category": "family_and_care",
+            "topic": "family_after_bereavement",
+            "question": "あなたは故人との楽しい思い出を話したいが、家族の一人はまだ聞けないと言う。自分の語る場所をどう考える？",
+            "detail": {
+              "text": "仮の場面です。語る側と聞く側の望みが違う場面です。沈黙だけを正解にしません。"
+            },
+            "reason": "追悼を共有する境界。"
+          }
+        ],
+        "additional_required_finding_ids": []
+      },
+      {
+        "adjudication_id": "ROA-04",
+        "id": "exp26-civic-0284",
+        "source_review": "world-reviews-civic.json",
+        "priority": "optional",
+        "original_priority": "optional",
+        "status": "resolved_in_staging_and_rechecked",
+        "assessment": "初回改稿の再説明負担と引継ぎ希望は0089と重なるため再補正。最終はつらい過去をようやく語れた現在の担当への信頼と、その担当が勧める未面識の相手への信頼を比較し、信頼する人の推薦を新たな関係の根拠にする意味を聞く。",
+        "reviewed_before": {
+          "card": {
+            "id": "exp26-civic-0284",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "receiving_public_help",
+            "question": "あなたは相談先の紹介を受けたが、初めから関係を作る気力がない。今の担当に何を一緒にしてほしい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の機関連携。紹介状の情報と新しい場へ行く支えは別となる。"
+            }
+          },
+          "reason": "つながるまでの支援を望む意味。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:19",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "reviewed_initial_after": {
+          "card": {
+            "id": "exp26-civic-0284",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "receiving_public_help",
+            "question": "今の相談員にようやくつらい過去を話せたあなたは、別の相談先を紹介された。新しい相手へ一から話す気力はないが、今の自分を分かってほしい。今の担当に、何を一緒に託してほしい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の紹介です。情報を紹介状へ書くことと、本人が信頼して話せる関係を新しい場へつなぐことは同じではありません。過去を全て伝える必要を決めず、話したくない部分と今の自分の望みをどのように託すか考えます。"
+            }
+          },
+          "reason": "紹介の段取りだけでなく、ようやく語れた本人が、再開示を抑えながら現在の信頼と望みを次へ託す意味を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:19",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "final_reviewed_addition": {
+          "card": {
+            "id": "exp26-civic-0284",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "receiving_public_help",
+            "question": "今の相談員にようやくつらい過去を話せたあなたは、別の相談先を紹介された。「あの人なら大丈夫」と勧められても、同じように話せるかはまだ分からない。今の担当を信じることと、その人が勧める相手を信じることは、自分にとってどう違う？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の紹介です。つらい経験を今の担当へ安心して語れるようになるまで時間がかかった条件です。まだ会っていない紹介先について、今の担当は信頼できると勧めています。担当の推薦を信じることと、自分が新しい相手との関係で安心を得ることは、重なっても異なってもかまいません。推薦を受ければ信じるべきだとは決めません。"
+            }
+          },
+          "reason": "0089の再説明の負担と新しい視点から分け、ようやく得た支援者への信頼を、その人が推薦する未面識の相手にも渡せるかという本人の信頼の意味を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:19",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "compared_ids": [
+          "exp26-civic-0275",
+          "exp26-civic-0283",
+          "exp26-civic-0287"
+        ],
+        "comparison_evidence": [
+          {
+            "card": {
+              "id": "exp26-civic-0275",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "society_public_policy_and_environment",
+              "topic": "receiving_public_help",
+              "question": "あなたは長年の相談員が代わると知った。新しい人に事情を伝える前に、どんな関係を残したいと思う？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の担当変更。情報の引継ぎと人との別れを分ける。"
+              }
+            },
+            "reason": "支援者との関係を失う意味。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l4.txt:10",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          {
+            "card": {
+              "id": "exp26-civic-0283",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "society_public_policy_and_environment",
+              "topic": "receiving_public_help",
+              "question": "支援の更新で、つらかった過去を何度も説明してきた。次は書類だけにすれば自分を守れるが、これからどんな暮らしを選びたいかは書き切れていない。再び話すことと、話さずに理解してもらうことに何を望みたい？",
+              "perspective": "affected",
+              "detail": {
+                "text": "架空の更新手続です。今の必要を確かめるための説明が、自分の過去を語り直す負担にもなってきた条件を置きます。書類で伝えられる情報と、本人が望むこれからの生活にはずれがある場合です。実経験の開示や、話すことを選ぶ答えを求めません。"
+              },
+              "content_warning": [
+                "privacy_and_surveillance"
+              ]
+            },
+            "reason": "書類の便利さだけでなく、過去を語り直さず自分を守ることと今後の人生を本人の意味で伝えることを聞く。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l4.txt:18",
+              "self_review_status": "peer_revision_pending_author_unapproved",
+              "peer_revision_status": "world_drafted_unapproved"
+            }
+          },
+          {
+            "card": {
+              "id": "exp26-civic-0287",
+              "level": 4,
+              "sensitivity": 2,
+              "category": "society_public_policy_and_environment",
+              "topic": "receiving_public_help",
+              "question": "あなたは同行支援員。申請を急がないと本人は支援を逃すが、任せるとまた自分でできなかったと感じると言う。助ける自分は何を本人に残したい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "架空の申請。給付の入口へ届くことと、自分の声を使う経験を考える。"
+              }
+            },
+            "reason": "助けた結果が本人の自信を奪う迷い。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l4.txt:22",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        ],
+        "additional_required_finding_ids": [
+          "learning-recheck-civic-05"
+        ]
+      },
+      {
+        "adjudication_id": "ROA-05",
+        "id": "exp26-civic-0304",
+        "source_review": "world-reviews-civic.json",
+        "priority": "optional",
+        "original_priority": "optional",
+        "status": "resolved_in_staging_and_rechecked",
+        "assessment": "近況確認の役目も終わった条件を明示。0277の現職の訪問支援、0219の追跡体制から、自分の職務を終えた後にも残る関係を責任と感じる本人の意味へ分ける。情報を個人の連絡へ使う勧めにしない。",
+        "reviewed_before": {
+          "card": {
+            "id": "exp26-civic-0304",
+            "level": 4,
+            "sensitivity": 2,
+            "category": "society_public_policy_and_environment",
+            "topic": "minimum_living_conditions",
+            "question": "あなたは相談を終えた人の近況確認を担当する。相手は連絡を望まないが、以前の急な孤立を知っている。自分の心配を相手への義務にしないには何を手放したい？",
+            "perspective": "actor",
+            "detail": {
+              "text": "仮の継続連絡。支えが途切れる心配と断る選択を分ける。"
+            },
+            "content_warning": [
+              "privacy_and_surveillance"
+            ]
+          },
+          "reason": "支援後の生活を見守り続けたい自分。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:39",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "reviewed_initial_after": {
+          "card": {
+            "id": "exp26-civic-0304",
+            "level": 4,
+            "sensitivity": 2,
+            "category": "society_public_policy_and_environment",
+            "topic": "support_after_formal_role",
+            "question": "あなたは長く担当した人の支援を終え、もう近況確認を行う役ではない。相手は連絡を望まないが、以前に急に孤立した姿を知り、仕事が終わっても気になる。役目を終えた後に残る自分の関係を、どこまで責任と感じる？",
+            "perspective": "actor",
+            "detail": {
+              "text": "架空の支援終了後です。近況確認をする正式な役目は既に終わり、相手は連絡を望んでいません。職務を離れた自分に残る気持ちと、相手が距離を選ぶことを分けます。元の職務で知った情報を個人の連絡に使うことを勧める場面ではありません。"
+            },
+            "content_warning": [
+              "privacy_and_surveillance"
+            ]
+          },
+          "reason": "継続する近況確認の担当者から、正式な支援役を終えても関係を気にかける本人の責任へ分ける。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:39",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "final_reviewed_addition": {
+          "card": {
+            "id": "exp26-civic-0304",
+            "level": 4,
+            "sensitivity": 2,
+            "category": "society_public_policy_and_environment",
+            "topic": "support_after_formal_role",
+            "question": "あなたは長く担当した人の支援を終え、もう近況確認を行う役ではない。相手は連絡を望まないが、以前に急に孤立した姿を知り、仕事が終わっても気になる。役目を終えた後に残る自分の関係を、どこまで責任と感じる？",
+            "perspective": "actor",
+            "detail": {
+              "text": "架空の支援終了後です。近況確認をする正式な役目は既に終わり、相手は連絡を望んでいません。職務を離れた自分に残る気持ちと、相手が距離を選ぶことを分けます。元の職務で知った情報を個人の連絡に使うことを勧める場面ではありません。"
+            },
+            "content_warning": [
+              "privacy_and_surveillance"
+            ]
+          },
+          "reason": "継続する近況確認の担当者から、正式な支援役を終えても関係を気にかける本人の責任へ分ける。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:39",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "compared_ids": [
+          "exp26-civic-0277",
+          "exp26-civic-0219"
+        ],
+        "comparison_evidence": [
+          {
+            "card": {
+              "id": "exp26-civic-0277",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "society_public_policy_and_environment",
+              "topic": "receiving_public_help",
+              "question": "あなたは訪問支援員。断られた相手を気にかけ、以前に訪問をやめた人が孤立した記憶もある。自分の後悔を相手に背負わせず、どう支えを残したい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "架空の継続支援。過去の後悔と今の相手が断る意思を分ける。"
+              }
+            },
+            "reason": "自分の後悔で接触を続ける境界。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l4.txt:12",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          {
+            "card": {
+              "id": "exp26-civic-0219",
+              "level": 3,
+              "sensitivity": 2,
+              "category": "society_public_policy_and_environment",
+              "topic": "minimum_living_conditions",
+              "question": "相談を終えた人に、後から困らなかったか尋ねる体制はどこまで必要だと思う？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の追跡連絡。継続の安心と利用後の私生活への干渉を分ける。"
+              },
+              "content_warning": [
+                "privacy_and_surveillance"
+              ]
+            },
+            "reason": "支援後の確認の境界。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l3.txt:21",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        ],
+        "additional_required_finding_ids": []
+      },
+      {
+        "adjudication_id": "ROA-06",
+        "id": "exp26-civic-0332",
+        "source_review": "world-reviews-civic.json",
+        "priority": "optional",
+        "original_priority": "optional",
+        "status": "resolved_in_staging_and_rechecked",
+        "assessment": "同じ地域で暮らし続ける知人の情報を知る前に通訳を引き受ける境界を問う。0186の窓口の手助け、0285の支援者自身の開示、0319の望まれず既に知った後の隣人の見方とは時点と判断対象が異なる。",
+        "reviewed_before": {
+          "card": {
+            "id": "exp26-civic-0332",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "migration_and_belonging",
+            "question": "あなたは通訳を頼まれた地域住民。知人の私生活が分かると予想される時、親切のために引き受ける？",
+            "perspective": "actor",
+            "detail": {
+              "text": "仮の依頼。同じ言語の安心と近い関係への情報開示を考える。"
+            },
+            "content_warning": [
+              "privacy_and_surveillance"
+            ]
+          },
+          "reason": "なじみの支援者が知る境界。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:67",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "reviewed_initial_after": {
+          "card": {
+            "id": "exp26-civic-0332",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "migration_and_belonging",
+            "question": "あなたは同じ地域で長く暮らす知人の、生活相談の通訳を頼まれた。本人はあなたなら安心だと言うが、家族の私的な話まで知ることになる。相談後も続く自分と相手の関係を考えると、何を引き受けたい？",
+            "perspective": "actor",
+            "detail": {
+              "text": "架空の通訳依頼です。同じ言語と既にある知人関係が安心につながる一方、相談後も同じ地域で暮らす相手の私生活を知ることになります。通訳を引き受けること、知った情報を扱うこと、本人が別の通訳を選ぶ余地は分けられます。"
+            },
+            "content_warning": [
+              "privacy_and_surveillance"
+            ]
+          },
+          "reason": "日常の通訳の親切だけでなく、相談後にも続く知人関係の中で私的な情報を知る立場を引き受ける意味を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:67",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "final_reviewed_addition": {
+          "card": {
+            "id": "exp26-civic-0332",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "migration_and_belonging",
+            "question": "あなたは同じ地域で長く暮らす知人の、生活相談の通訳を頼まれた。本人はあなたなら安心だと言うが、家族の私的な話まで知ることになる。相談後も続く自分と相手の関係を考えると、何を引き受けたい？",
+            "perspective": "actor",
+            "detail": {
+              "text": "架空の通訳依頼です。同じ言語と既にある知人関係が安心につながる一方、相談後も同じ地域で暮らす相手の私生活を知ることになります。通訳を引き受けること、知った情報を扱うこと、本人が別の通訳を選ぶ余地は分けられます。"
+            },
+            "content_warning": [
+              "privacy_and_surveillance"
+            ]
+          },
+          "reason": "日常の通訳の親切だけでなく、相談後にも続く知人関係の中で私的な情報を知る立場を引き受ける意味を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:67",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "compared_ids": [
+          "exp26-civic-0186",
+          "exp26-civic-0285"
+        ],
+        "comparison_evidence": [
+          {
+            "card": {
+              "id": "exp26-civic-0186",
+              "level": 2,
+              "sensitivity": 2,
+              "category": "society_public_policy_and_environment",
+              "topic": "migration_and_belonging",
+              "question": "使い慣れない言葉で窓口を利用する人を手伝うなら、まず何を本人に確かめたい？"
+            },
+            "reason": "親切と本人の選択の境界。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l2.txt:18",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          {
+            "card": {
+              "id": "exp26-civic-0285",
+              "level": 4,
+              "sensitivity": 2,
+              "category": "society_public_policy_and_environment",
+              "topic": "receiving_public_help",
+              "question": "あなたは相談員。相手の苦しさが自分の過去と重なり、経験を話せば近づける気がする。自分を分かってほしい気持ちもある時、どこまで話したい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "仮の面談。共感を届けることと、自分の経験を認めてもらうことを分ける。"
+              }
+            },
+            "reason": "支援者自身が理解を求める気持ち。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l4.txt:20",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        ],
+        "additional_required_finding_ids": []
+      },
+      {
+        "adjudication_id": "ROA-07",
+        "id": "exp26-civic-0336",
+        "source_review": "world-reviews-civic.json",
+        "priority": "optional",
+        "original_priority": "optional",
+        "status": "resolved_in_staging_and_rechecked",
+        "assessment": "情報確認の説明への理解と、長く暮らした住民の帰属を分ける。0238の説明範囲の一般判断から深め、0326の紹介に対し居場所の証を伝える問いとも、理由を理解しても所属感が一致しないという本人の感覚を区別。架空の確認で現実の一律運用を断定しない。",
+        "reviewed_before": {
+          "card": {
+            "id": "exp26-civic-0336",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "migration_and_belonging",
+            "question": "あなたは公共窓口で出身を何度も聞かれる。必要な確認だとしても、何を説明されると自分は納得しやすい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "仮の手続。情報が必要な理由と聞かれる側の帰属感を考える。"
+            },
+            "content_warning": [
+              "discrimination_and_hate",
+              "privacy_and_surveillance"
+            ]
+          },
+          "reason": "出自を確認される本人の尊厳。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:71",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "reviewed_initial_after": {
+          "card": {
+            "id": "exp26-civic-0336",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "migration_and_belonging",
+            "question": "長く今の町で暮らすあなたは、公共窓口で出身を何度も聞かれる。必要な確認だと説明されても、いつまで外から来た人なのだろうと感じる。理由を理解することと、ここに属する自分でいることは、どう違う？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の繰り返す手続です。出身を確認する制度上の理由はあるが、その説明だけで本人が住民として扱われたと感じるとは限らない設定です。必要な情報の確認と、本人の帰属の感覚を分けて考えます。実在の窓口が一律にこの確認をするとはしません。"
+            },
+            "content_warning": [
+              "discrimination_and_hate",
+              "privacy_and_surveillance"
+            ]
+          },
+          "reason": "出自を聞く理由への理解だけでなく、長く暮らした住民が繰り返し外から来た人として扱われる帰属感を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:71",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "final_reviewed_addition": {
+          "card": {
+            "id": "exp26-civic-0336",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "migration_and_belonging",
+            "question": "長く今の町で暮らすあなたは、公共窓口で出身を何度も聞かれる。必要な確認だと説明されても、いつまで外から来た人なのだろうと感じる。理由を理解することと、ここに属する自分でいることは、どう違う？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の繰り返す手続です。出身を確認する制度上の理由はあるが、その説明だけで本人が住民として扱われたと感じるとは限らない設定です。必要な情報の確認と、本人の帰属の感覚を分けて考えます。実在の窓口が一律にこの確認をするとはしません。"
+            },
+            "content_warning": [
+              "discrimination_and_hate",
+              "privacy_and_surveillance"
+            ]
+          },
+          "reason": "出自を聞く理由への理解だけでなく、長く暮らした住民が繰り返し外から来た人として扱われる帰属感を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:71",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "compared_ids": [
+          "exp26-civic-0238"
+        ],
+        "comparison_evidence": [
+          {
+            "card": {
+              "id": "exp26-civic-0238",
+              "level": 3,
+              "sensitivity": 3,
+              "category": "society_public_policy_and_environment",
+              "topic": "migration_and_belonging",
+              "question": "公共の窓口で出身を聞く時、何のために必要かをどこまで説明すべきだと思う？",
+              "perspective": "actor",
+              "detail": {
+                "text": "架空の聞き取り。制度上の必要な情報と好奇心による質問を区別する。"
+              },
+              "content_warning": [
+                "discrimination_and_hate",
+                "privacy_and_surveillance"
+              ]
+            },
+            "reason": "出自を尋ねる公共の理由。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l3.txt:40",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        ],
+        "additional_required_finding_ids": []
+      },
+      {
+        "adjudication_id": "ROA-08",
+        "id": "exp26-civic-0344",
+        "source_review": "world-reviews-civic.json",
+        "priority": "optional",
+        "original_priority": "optional",
+        "status": "resolved_in_staging_and_rechecked",
+        "assessment": "自分が必要とした頃には届かなかった支援が次世代へ広がる記憶を本文に置く。0254の広報の理由、0342の受けた支えへの返礼の限界から、支えられなかった過去を持つ本人の支持と残る思いへ分ける。",
+        "reviewed_before": {
+          "card": {
+            "id": "exp26-civic-0344",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "intergenerational_responsibility",
+            "question": "あなたは他世代のための支援を支持する。自分がその支援を使わないと分かっても、どんな理由なら負担したい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "仮の負担。将来の自分の利益とは別の支える理由を考える。"
+            }
+          },
+          "reason": "自分に返らない世代間の支え。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:79",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "reviewed_initial_after": {
+          "card": {
+            "id": "exp26-civic-0344",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "intergenerational_responsibility",
+            "question": "あなたが困っていた頃にはなかった支援が、今は別の世代向けに始まる。役立つ支援だと思い、費用を負担したいが、自分が受けられなかったことも心に残る。その二つの思いを、どう受け止めたい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の世代間の支援です。本人が困っていた頃にはその制度がなく、今の自分は対象外だが費用を負担する設定です。支援を広げる価値を認めることと、過去の自分には届かなかったことへの思いを分けます。実在制度の対象や世代の負担を一律に説明しません。"
+            }
+          },
+          "reason": "理念上の世代間負担から、自分には届かなかった支援を今の人へ広げる本人の人生の記憶と支持の意味へ深める。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:79",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "final_reviewed_addition": {
+          "card": {
+            "id": "exp26-civic-0344",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "society_public_policy_and_environment",
+            "topic": "intergenerational_responsibility",
+            "question": "あなたが困っていた頃にはなかった支援が、今は別の世代向けに始まる。役立つ支援だと思い、費用を負担したいが、自分が受けられなかったことも心に残る。その二つの思いを、どう受け止めたい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の世代間の支援です。本人が困っていた頃にはその制度がなく、今の自分は対象外だが費用を負担する設定です。支援を広げる価値を認めることと、過去の自分には届かなかったことへの思いを分けます。実在制度の対象や世代の負担を一律に説明しません。"
+            }
+          },
+          "reason": "理念上の世代間負担から、自分には届かなかった支援を今の人へ広げる本人の人生の記憶と支持の意味へ深める。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "society_public_policy_and_environment__l4.txt:79",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "compared_ids": [
+          "exp26-civic-0254",
+          "exp26-civic-0342"
+        ],
+        "comparison_evidence": [
+          {
+            "card": {
+              "id": "exp26-civic-0254",
+              "level": 3,
+              "sensitivity": 3,
+              "category": "society_public_policy_and_environment",
+              "topic": "intergenerational_responsibility",
+              "question": "高齢の人への支援を「若者の将来にも必要」と説明することは、どんな人を置き去りにすると思う？",
+              "perspective": "observer",
+              "detail": {
+                "text": "仮の広報。将来の自分の利益だけで今の人を支える理由になるか考える。"
+              }
+            },
+            "reason": "自分が受けない支援の理由。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l3.txt:56",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          {
+            "card": {
+              "id": "exp26-civic-0342",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "society_public_policy_and_environment",
+              "topic": "intergenerational_responsibility",
+              "question": "あなたは支援を受けた世代として返礼を求められた。今の自分にも余裕がない時、次の世代への責任をどう感じる？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の世代間支援。恩義と実際に担える負担を分ける。"
+              }
+            },
+            "reason": "受けた支えを返す本人の限界。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "society_public_policy_and_environment__l4.txt:77",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        ],
+        "additional_required_finding_ids": []
+      },
+      {
+        "adjudication_id": "ROA-11",
+        "id": "exp26-civic-0497",
+        "source_review": "world-reviews-civic.json",
+        "priority": "optional",
+        "original_priority": "optional",
+        "status": "resolved_in_staging_and_rechecked",
+        "assessment": "家族の暮らしに関わる長い反対を置き、相手の事情を知っても結論や見方が変わらないことを許す。0432の対話評価、0498の司会、0502の広報の成果判断から、反対する本人に残る理由へ分ける。",
+        "reviewed_before": {
+          "card": {
+            "id": "exp26-civic-0497",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "participation_as_learning",
+            "question": "あなたは強く反対していた政策の会議で、支持する人の事情を知った。結論は変わらなくても、その人をどう見直したい？",
+            "perspective": "affected",
+            "detail": {
+              "text": "仮の対話。理解が賛成や親しさにつながるとは限らない。"
+            }
+          },
+          "reason": "考えを保ちながら相手を知る変化。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:11",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "reviewed_initial_after": {
+          "card": {
+            "id": "exp26-civic-0497",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "participation_as_learning",
+            "question": "自分の家族の暮らしに関わる政策へ、長く反対してきたとする。会議で、支持する人も別の大切なものを守ろうとしていると知った。結論が変わらなくても、その人への見方や、自分が反対し続ける理由は変わりそう？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の政策の対話です。本人の家族の暮らしに関わる反対があり、支持する相手にも別の大切な理由があると知った場面です。結論、相手への親しさ、自分の反対理由はそれぞれ変わっても変わらなくてもかまいません。実経験の披露や合意を求めません。"
+            }
+          },
+          "reason": "一般の対話の学びから、自分の暮らしに関わる反対を持つ本人が、相手の事情を知っても結論を保つ時の見え方を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:11",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "final_reviewed_addition": {
+          "card": {
+            "id": "exp26-civic-0497",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "participation_as_learning",
+            "question": "自分の家族の暮らしに関わる政策へ、長く反対してきたとする。会議で、支持する人も別の大切なものを守ろうとしていると知った。結論が変わらなくても、その人への見方や、自分が反対し続ける理由は変わりそう？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の政策の対話です。本人の家族の暮らしに関わる反対があり、支持する相手にも別の大切な理由があると知った場面です。結論、相手への親しさ、自分の反対理由はそれぞれ変わっても変わらなくてもかまいません。実経験の披露や合意を求めません。"
+            }
+          },
+          "reason": "一般の対話の学びから、自分の暮らしに関わる反対を持つ本人が、相手の事情を知っても結論を保つ時の見え方を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:11",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "compared_ids": [
+          "exp26-civic-0432",
+          "exp26-civic-0498",
+          "exp26-civic-0502"
+        ],
+        "comparison_evidence": [
+          {
+            "card": {
+              "id": "exp26-civic-0432",
+              "level": 3,
+              "sensitivity": 2,
+              "category": "democracy_rights_and_participation",
+              "topic": "participation_as_learning",
+              "question": "市民会議の成果を、合意した数ではなく参加者が理解した違いで評価することをどう考える？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の評価設計。結論を出す役割と互いの事情を知る価値を分ける。"
+              }
+            },
+            "reason": "合意以外の熟議の成果。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l3.txt:11",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          {
+            "card": {
+              "id": "exp26-civic-0498",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "democracy_rights_and_participation",
+              "topic": "participation_as_learning",
+              "question": "あなたは市民会議の司会。自分が長く反対してきた政策に、参加者は理解を示し始めた。自分の信念と、結論を誘導しない役目をどう両立したい？",
+              "perspective": "actor",
+              "detail": {
+                "text": "架空の進行。自分が信じる価値と他の人が学んで決める機会を分ける。"
+              }
+            },
+            "reason": "司会者が自分の信念と違う学びを支える。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l4.txt:12",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          {
+            "card": {
+              "id": "exp26-civic-0502",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "democracy_rights_and_participation",
+              "topic": "participation_as_learning",
+              "question": "あなたは参加者の変化を紹介する広報担当。自分も対話で考えが変わったのでそれを良い成果だと信じてきた。変わらなかった人の学びを同じように伝えられる？",
+              "perspective": "actor",
+              "detail": {
+                "text": "架空の広報。自分に起きた変化を他人の学びの基準にしない。"
+              }
+            },
+            "reason": "自分を変えた対話を他人へ重ねる限界。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l4.txt:16",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        ],
+        "additional_required_finding_ids": []
+      },
+      {
+        "adjudication_id": "ROA-12",
+        "id": "exp26-civic-0509",
+        "source_review": "world-reviews-civic.json",
+        "priority": "optional",
+        "original_priority": "optional",
+        "status": "resolved_in_staging_and_rechecked",
+        "assessment": "公共での自分の居場所となった役を離れ、親しい人との時間と退出後の市民としての自己を聞く。0416の周囲の期待、0449の交代制、0510の初参加者の声の根拠と区別。役を離れると法的発言権を失う設定にしない。",
+        "reviewed_before": {
+          "card": {
+            "id": "exp26-civic-0509",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "participation_and_daily_life",
+            "question": "あなたはいつも会議に出る役を担い、休みたくなった。皆の期待がある時、関心を失わず離れるには何を伝えたい？",
+            "perspective": "actor",
+            "detail": {
+              "text": "仮の活動。継続参加と個人の暮らしの限界を考える。"
+            }
+          },
+          "reason": "公共を担う自分が休む責任。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:23",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "reviewed_initial_after": {
+          "card": {
+            "id": "exp26-civic-0509",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "participation_and_daily_life",
+            "question": "あなたは会議で地域の声を伝える役を長く担い、そこを自分の居場所にもしてきた。続ければ大切な人と過ごす時間をさらに失うが、任せると自分の声まで届かなくなる気がする。役目を離れた後、どんな市民として関わりたい？",
+            "perspective": "actor",
+            "detail": {
+              "text": "架空の継続参加です。会議の役が本人の公共での居場所を支えてきた一方、私的な時間を使い続けてきた設定です。役を任せることで声も届かなくなるという本人の感じ方と、市民として関わることを分けます。役目を離れると発言の権利を失う制度を仮定していません。"
+            }
+          },
+          "reason": "交代や休息の伝え方だけでなく、役に支えられた公共での居場所と私的な人生の時間を比べ、退出後の市民としての自己を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:23",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "final_reviewed_addition": {
+          "card": {
+            "id": "exp26-civic-0509",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "participation_and_daily_life",
+            "question": "あなたは会議で地域の声を伝える役を長く担い、そこを自分の居場所にもしてきた。続ければ大切な人と過ごす時間をさらに失うが、任せると自分の声まで届かなくなる気がする。役目を離れた後、どんな市民として関わりたい？",
+            "perspective": "actor",
+            "detail": {
+              "text": "架空の継続参加です。会議の役が本人の公共での居場所を支えてきた一方、私的な時間を使い続けてきた設定です。役を任せることで声も届かなくなるという本人の感じ方と、市民として関わることを分けます。役目を離れると発言の権利を失う制度を仮定していません。"
+            }
+          },
+          "reason": "交代や休息の伝え方だけでなく、役に支えられた公共での居場所と私的な人生の時間を比べ、退出後の市民としての自己を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:23",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "compared_ids": [
+          "exp26-civic-0416",
+          "exp26-civic-0449",
+          "exp26-civic-0510"
+        ],
+        "comparison_evidence": [
+          {
+            "card": {
+              "id": "exp26-civic-0416",
+              "level": 2,
+              "sensitivity": 2,
+              "category": "democracy_rights_and_participation",
+              "topic": "participation_and_daily_life",
+              "question": "皆のための活動をしている人が休むと言ったら、続けてほしい気持ちをどこまで伝える？"
+            },
+            "reason": "参加を担う人への期待の境界。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l2.txt:22",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          {
+            "card": {
+              "id": "exp26-civic-0449",
+              "level": 3,
+              "sensitivity": 2,
+              "category": "democracy_rights_and_participation",
+              "topic": "participation_and_daily_life",
+              "question": "長く参加する人が休める交代制に、どんな条件が必要だと思う？",
+              "perspective": "decision_maker",
+              "detail": {
+                "text": "仮の運営。経験の引継ぎと役割から離れる自由を考える。"
+              }
+            },
+            "reason": "参加を担い続ける人の休息。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l3.txt:28",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          {
+            "card": {
+              "id": "exp26-civic-0510",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "democracy_rights_and_participation",
+              "topic": "participation_and_daily_life",
+              "question": "あなたは一度だけ参加し、大事な意見を伝えた。常連から事情を知らないと言われたら、何を自分の声の根拠にしたい？",
+              "perspective": "affected",
+              "detail": {
+                "text": "架空の会議。参加歴と日々受ける影響の違いを考える。"
+              }
+            },
+            "reason": "継続して来られない本人の声。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l4.txt:24",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        ],
+        "additional_required_finding_ids": []
+      },
+      {
+        "adjudication_id": "ROA-14",
+        "id": "exp26-civic-0541",
+        "source_review": "world-reviews-civic.json",
+        "priority": "optional",
+        "original_priority": "optional",
+        "status": "resolved_in_staging_and_rechecked",
+        "assessment": "家族の生活に必要な支援への切実な抗議を置き、自分が他者へ負担を求める方法を選ぶ責任を聞く。0472の抗議への一般判断、0538の支持する表現を受ける側の負担と区別。現実の法的範囲の断定や危険な方法の推奨はない。",
+        "reviewed_before": {
+          "card": {
+            "id": "exp26-civic-0541",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "protest_and_expression",
+            "question": "あなたは抗議を企画し、人の移動を少し妨げれば注目されると考える。無関係な人に払ってもらう費用をどう説明したい？",
+            "perspective": "actor",
+            "detail": {
+              "text": "仮の活動。危険や違法性を肯定せず、届く表現と第三者の不便を考える。"
+            }
+          },
+          "reason": "自分の主張で他者へ求める負担。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:55",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "reviewed_initial_after": {
+          "card": {
+            "id": "exp26-civic-0541",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "protest_and_expression",
+            "question": "家族の生活に必要な支援を減らす案に反対するため、あなたは抗議を企画した。人の移動を少し妨げる方法なら注目されるが、無関係な人の予定も崩れる。切実な声を届けたい自分は、他人に求める負担を何の責任として引き受けたい？",
+            "perspective": "actor",
+            "detail": {
+              "text": "架空の政策への抗議です。本人の家族の暮らしに関わる支援が変わる案に対し、自分の声を届けたい理由がある条件を置きます。注目を集める方法で第三者が負う不便を、誰が決め誰が引き受けるか考えます。危険な行動や違法行為を勧めず、実在の抗議の法的な許容範囲を説明するものではありません。"
+            }
+          },
+          "reason": "一般の抗議企画から、本人の家族の暮らしに関わる声を届けるため第三者へ不便を求める自分の選択と責任へ深める。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:55",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "final_reviewed_addition": {
+          "card": {
+            "id": "exp26-civic-0541",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "protest_and_expression",
+            "question": "家族の生活に必要な支援を減らす案に反対するため、あなたは抗議を企画した。人の移動を少し妨げる方法なら注目されるが、無関係な人の予定も崩れる。切実な声を届けたい自分は、他人に求める負担を何の責任として引き受けたい？",
+            "perspective": "actor",
+            "detail": {
+              "text": "架空の政策への抗議です。本人の家族の暮らしに関わる支援が変わる案に対し、自分の声を届けたい理由がある条件を置きます。注目を集める方法で第三者が負う不便を、誰が決め誰が引き受けるか考えます。危険な行動や違法行為を勧めず、実在の抗議の法的な許容範囲を説明するものではありません。"
+            }
+          },
+          "reason": "一般の抗議企画から、本人の家族の暮らしに関わる声を届けるため第三者へ不便を求める自分の選択と責任へ深める。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:55",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "compared_ids": [
+          "exp26-civic-0472",
+          "exp26-civic-0538"
+        ],
+        "comparison_evidence": [
+          {
+            "card": {
+              "id": "exp26-civic-0472",
+              "level": 3,
+              "sensitivity": 3,
+              "category": "democracy_rights_and_participation",
+              "topic": "protest_and_expression",
+              "question": "意見を伝えるために不便を生む抗議は、どんな条件なら受け止めたい？",
+              "perspective": "observer",
+              "detail": {
+                "text": "仮の公共活動。届きにくい声と無関係な人が負う費用を考える。"
+              }
+            },
+            "reason": "抗議に伴う他者の負担。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l3.txt:51",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          },
+          {
+            "card": {
+              "id": "exp26-civic-0538",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "democracy_rights_and_participation",
+              "topic": "protest_and_expression",
+              "question": "あなたは抗議の音で生活が妨げられたが、訴えには賛成している。声を届けるために自分は何を負担できる？",
+              "perspective": "affected",
+              "detail": {
+                "text": "架空の活動。主張を支持することと日々の負担の限界を分ける。"
+              }
+            },
+            "reason": "支持する表現が自分へ及ぼす不便。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l4.txt:52",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        ],
+        "additional_required_finding_ids": []
+      },
+      {
+        "adjudication_id": "ROA-15",
+        "id": "exp26-civic-0546",
+        "source_review": "world-reviews-civic.json",
+        "priority": "required",
+        "original_priority": "optional",
+        "status": "resolved_in_staging_and_rechecked",
+        "assessment": "ROA-15の必須を解消。0488は代表への対人信頼の回復、最終0546は本人が周囲にも推薦した選択により揺れる自分の判断への信頼を聞く。事情を理解すること、代表を信じ直すこと、自分を信じ直すことを本文と背景で分ける。",
+        "reviewed_before": {
+          "card": {
+            "id": "exp26-civic-0546",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "public_trust",
+            "question": "あなたは信頼した代表が約束を守らなかったと知った。事情は理解できても、何があれば次の約束を信じられる？",
+            "perspective": "affected",
+            "detail": {
+              "text": "仮の委任後。理由の理解と将来への信頼が戻る条件は別となる。"
+            }
+          },
+          "reason": "守られない約束の後の信頼。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:60",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "reviewed_initial_after": {
+          "card": {
+            "id": "exp26-civic-0546",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "public_trust",
+            "question": "信頼する代表を、親しい人にも「この人に任せよう」と勧めてきた。約束が守られず、自分の選択まで信じられなくなった。事情は理解できても、代表を信じ直すことと、自分の判断を信じ直すことは同じ？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の委任と推薦の後です。本人は代表を選び、周囲へ勧める判断もしてきました。代表の事情に納得すること、代表の次の約束を信じること、自分が人を選ぶ判断を信じることを分けます。推薦者が代表の全ての行動の責任を負うとは決めません。"
+            }
+          },
+          "reason": "0488の代表への信頼回復と分け、自分が周囲へ推薦した代表の失約から揺れる、本人の判断への信頼を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:60",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "final_reviewed_addition": {
+          "card": {
+            "id": "exp26-civic-0546",
+            "level": 4,
+            "sensitivity": 3,
+            "category": "democracy_rights_and_participation",
+            "topic": "public_trust",
+            "question": "信頼する代表を、親しい人にも「この人に任せよう」と勧めてきた。約束が守られず、自分の選択まで信じられなくなった。事情は理解できても、代表を信じ直すことと、自分の判断を信じ直すことは同じ？",
+            "perspective": "affected",
+            "detail": {
+              "text": "架空の委任と推薦の後です。本人は代表を選び、周囲へ勧める判断もしてきました。代表の事情に納得すること、代表の次の約束を信じること、自分が人を選ぶ判断を信じることを分けます。推薦者が代表の全ての行動の責任を負うとは決めません。"
+            }
+          },
+          "reason": "0488の代表への信頼回復と分け、自分が周囲へ推薦した代表の失約から揺れる、本人の判断への信頼を聞く。",
+          "editorial": {
+            "author_group": "civic",
+            "fact_status": "hypothetical",
+            "source_row": "democracy_rights_and_participation__l4.txt:60",
+            "self_review_status": "author_reviewed_unapproved"
+          }
+        },
+        "compared_ids": [
+          "exp26-civic-0488"
+        ],
+        "comparison_evidence": [
+          {
+            "card": {
+              "id": "exp26-civic-0488",
+              "level": 4,
+              "sensitivity": 3,
+              "category": "democracy_rights_and_participation",
+              "topic": "representation_and_mandate",
+              "question": "あなたの意見を代表者に託したが、会議では別の案に賛成した。理由を聞いて理解できた時、信頼も戻ると思う？",
+              "perspective": "affected",
+              "detail": {
+                "text": "仮の委任後。納得する理由と約束が変わった感情を分ける。"
+              }
+            },
+            "reason": "託した声が変わる本人の信頼。",
+            "editorial": {
+              "author_group": "civic",
+              "fact_status": "hypothetical",
+              "source_row": "democracy_rights_and_participation__l4.txt:2",
+              "self_review_status": "author_reviewed_unapproved"
+            }
+          }
+        ],
+        "additional_required_finding_ids": []
+      }
+    ],
+    "adjudication_resolution_counts": {
+      "required": 1,
+      "optional": 11,
+      "resolved_required": 1,
+      "resolved_optional": 11,
+      "unresolved_required": 0,
+      "unresolved_optional": 0
+    },
+    "required_resolution_ids": [
+      "ROA-15"
+    ],
+    "status": "passed_staging_not_approved"
+  },
+  "additional_2_followup_recheck": {
+    "reviewed_ids": [
+      "exp26-civic-0021",
+      "exp26-civic-0284"
+    ],
+    "reviewed_count": 2,
+    "source_draft": "resolution-drafts/recheck-additional-fixes-civic.json",
+    "source_draft_sha256": "fac346d670c460e4d8f40d5eac15b9f9490be8627c8753731a752aebb7a127f8",
+    "source_sha256_before_2_apply": "fae23d1777ab9ed8ed632aaf61ce1d8d343e0973855c92311741ee69a5019632",
+    "final_shard_sha256": "7d16d75c62047d44237f5e93a2576b5ef287270cd75a742e0fb9fa511098ed3b",
+    "read_fields": [
+      "card.question",
+      "card.detail.text_if_present",
+      "reason",
+      "all_card_metadata",
+      "editorial"
+    ],
+    "all_2_match_applied_after": true,
+    "status": "all_2_applied_after_read_resolved",
+    "self_review_comparison_ids": [
+      "exp26-civic-0129",
+      "exp26-civic-0016",
+      "exp26-civic-0089",
+      "exp26-civic-0275",
+      "exp26-civic-0283",
+      "exp26-civic-0282",
+      "exp26-civic-0546",
+      "exp26-learning-0141",
+      "r6-16-03-l4",
+      "exp26-civic-0072",
+      "exp26-civic-0389",
+      "youth-pregnancy-l3-017",
+      "gender-l3-020",
+      "exp26-personal-0137"
+    ],
+    "supporting_review": "peer-reviews/civic12-supporting-near-review.json",
+    "supporting_review_sha256": "0bc471d191e87ab00418bbe7398ed04655c49af6b6c655d3019410315e67dc34",
+    "additional_external_final_review": "parent_will_add_addition_gap_review_artifact_when_available"
+  },
+  "supplemental_independent_recheck": {
+    "file": "peer-reviews/recheck-civic-last-two.json",
+    "reviewer": "/root/addition_gap_review",
+    "reviewed_ids": [
+      "exp26-civic-0021",
+      "exp26-civic-0284"
+    ],
+    "final_shard_sha256": "7d16d75c62047d44237f5e93a2576b5ef287270cd75a742e0fb9fa511098ed3b",
+    "reference_added_by": "root",
+    "scope": "最後2改稿の別担当確認。元の44読了の内容と対象を変更しない参照追記。"
+  }
+}

@@ -1,0 +1,1765 @@
+{
+  "reviewer": "author_world",
+  "audit_date_utc": "2026-10-08T09:12:39.693619+00:00",
+  "status": "passed_formatting_audit_user_approved_before_dataset_apply",
+  "scope": "最終化helperとreview snapshot・原文修正log・再確認の範囲・集計文の文書監査。全3768問の新たな内容再審査は行っていない。初回レビュー6報告のscope/count/IDs/hash、各logの全before/afterの構造一致、各recheckのhash/ID範囲、横断重点レビューの範囲と指摘、残任意18の個別分析/採否を照合した。",
+  "production_files_written": 0,
+  "shards_written": 0,
+  "helpers_written": 0,
+  "audit_file_sha256": {
+    "assemble_resolution.py": "2581cf2cc2960b15394d763fb51970cb9f3c997f5c6c9cddb5ee9de2c6195abc",
+    "validate_artifacts.py": "2113c809bbbc7296d1c22827e0cd608d14eab8194d3bda8c27333c6e0482fa2d",
+    "write_summary.py": "c50af77e34a754d8bac887306c809adec5eefd87e44e6d4f89af4834ba2d160b",
+    "run_dataset_validation.py": "4557933f7074a55846fc0615287d4d03c8ab48c8111c38be5f19489546dd71d2",
+    "check_review_ui.py": "eb5603a4c64b754ff0032ad58e3227dbfc5833cbe4207bddf6edeb4b1bc39225",
+    "compile.py": "d0cf7fb45495a2f0d38caef32e016655b280fc528bc091204d7f577154b05882",
+    "AUTHORING.md": "f4f43a87d5b49164ec03a3483b37e7825e2d996fa3826355d6e614caea6dd244",
+    "assignments.json": "a0eb08bc1ddaf93b76d413ee46ecd2b351c02705959932a30b9c3d161e24b8e7",
+    "peer-review-assignments.json": "1634a15381cec48fce1e40fafbf571176c15d25db65b366d24cee5ecaa7f882f",
+    "README.md": "4113dce7863bed743f9ca02e985be10f96e6984827a14a9112405ed2bff2c5cb",
+    "category-summary.csv": "448cb434c156bfc9193c2c486f4be905ff4e79058c41fe2b8f283f5646edf373",
+    "drafting-progress.json": "a21b9db0bbf75ee761b223575c68354af86483573ecb931eb750aa493516ec72",
+    "proposal.json": "ee78bde10a1dd39c320274f99ff31f7031bd01e4258310f934c664d06c609a42",
+    "all-additions.csv": "c597e268ca64c520e9037303c69cb0514ab4b2b587d765e7f5d19a46b5d6b51c",
+    "review.html": "3e795c2403bcb65f4245a4545f30f36785ef90ec791a7d5ef13e4b8792dd08d5",
+    "review-resolution.json": "14c7ab2e1811535cafbae67bae9084bfdb149adc81bd3d6170d5523f2a379a98",
+    "validation-report.json": "fa1016b95e979a8a509fdb545b8c00568d23e757c6ac64c5a31428160593c5ad",
+    "dataset-validation.json": "9a206c778fc46bf2f2cddcf53830b51e2f3374e6f08d77c5e5fa64baf66a2ff4",
+    "dataset-validation-run.json": "5f5f13c0613898483d8eee6eff6ea0135727a84b99db050498bdbf770753a1c9",
+    "review-ui-check.json": "69792d0592a82aa19632c1665a7574edf6025c4afb2f3d1380b0b789fe98eb10",
+    "comparison-candidates.json": "67d1cd660083da0a823058d5a422e7525486b7f4c61bfeb75570010cdbff8a5c",
+    "peer-reviews/recheck-civic-last-two.json": "cb23fd56b88680966b1df6e28048ec403bd18e5ac18c616820ec6c2530bec531",
+    "resolution-drafts/recheck-additional-fixes-civic.json": "fac346d670c460e4d8f40d5eac15b9f9490be8627c8753731a752aebb7a127f8",
+    "peer-reviews/root-editorial-triage.json": "65d3063d3a71cc6ca709895ffb422423a2517509a28680607fd43de24aedf2a1",
+    "review-inputs/manifest.json": "837afd91bc3ab1199e1a0a019a7a5e574d7c1bc415ff6c0651ebfb649cd1352e",
+    "peer-reviews/learning-reviews-personal.json": "8bf8956833cbeea51c5576c7204545b4210a538e3fc9e758f54c64c7dfbadf36",
+    "peer-reviews/personal-reviews-care.json": "dd73768b81bbeeb78e88908f5760c0ebf4e1a37458a5eaeee7fbcdb6225307ac",
+    "peer-reviews/care-reviews-livelihood.json": "f30beea72cae1789e52f2c178ac95cb7a90bb3a5efa853e761a3157ca3abbae4",
+    "peer-reviews/livelihood-reviews-world.json": "62961199a68f5f2e6bd3335fbb6184a0be8dd62c65940f218b57682ac0cf35da",
+    "peer-reviews/world-reviews-civic.json": "5de7bcc8d121db09d4996d399092e9d0b28404954a47886bea7fd5302015b477",
+    "peer-reviews/civic-reviews-learning.json": "8b19164e183b038d2e95f9bff9ce07e9e6153547b17be942aca6ea2d44bfd6f8",
+    "applied-review-drafts/personal.json": "c8bd03a6459e27e793558c1b160b168cb5594f7934603f2d418c11cf682f1db6",
+    "applied-review-drafts/care.json": "995b137346e7cf64f20730081d7609836eb102a6e212a598baea6cf0568007d3",
+    "applied-review-drafts/livelihood.json": "a84d1b3fdb9f062f5017a44c2a67d00cb292609157a10a1c2f0cb850aafa88ee",
+    "applied-review-drafts/learning.json": "fbc0cfdfe5ed69812dd83ab6da2edb9b45368a15b8adbfbae9ec60f0518254d9",
+    "applied-review-drafts/civic.json": "4d51fa0f9393d83eff34a9a7fd02961f2a7390f63983b4224eb4bb3fe72d71e4",
+    "applied-review-drafts/world.json": "2a60a184f3d72d445f2fbfd7bb69c9d07fc5ddccba12da650818932168e27e72",
+    "peer-reviews/recheck-personal.json": "43672ef6a4cb6a089f2027b52c7c1ee671dbb09ecd700ba299fff95d70155fde",
+    "peer-reviews/recheck-care.json": "8f8be6430e1647d0902b605efc3f33b46a2f0717d15ceed21ab8613bd6728d8a",
+    "peer-reviews/recheck-livelihood.json": "36783b55f0746c0a04ce3cc51e82ff402130edf6d4d6fcb82d61fd1287dfe375",
+    "peer-reviews/recheck-learning.json": "e8243d521df7eb2cf983cafdcebcb3c7001f5ea72879e6f4fffda86fbf3d5715",
+    "peer-reviews/recheck-civic.json": "b749812f06816d50bd02c53c6cc92a204cb76811d794249f9b52746b6cea3b0b",
+    "peer-reviews/recheck-world.json": "acf7ca468cbb71c65bcc5cf7daf494efd7396561a777a7a067fe2f06b116bebe",
+    "questions/self_and_values.md": "7701b22fa8811cf4bdd14ed68eef99004f39947a3793526325b03c8f704f1577",
+    "questions/relationships_and_communication.md": "6583ec9226042086dd7b5a471652fcaa9472a8fca72f5e65118a24babd628712",
+    "questions/ethics_and_decision_making.md": "48427ad39f86b9872bc929556a4ce551184d8d98a40b948f253cc2c5e2303b28",
+    "questions/family_and_care.md": "8ec81909acd7039ff9bbcba00403118a69db6d45f0255c6ccd63d1beba187346",
+    "questions/gender_sexuality_and_identity.md": "7382cb0fa7468828f7ec6949f65f178645d88a91b5c4a088e6821371bd0efc2d",
+    "questions/health_and_disability.md": "46b1e9b5378fd62fe07abc23a54131f7f9a5bf4778dffe98cad26e9af33f1bca",
+    "questions/work_and_economy.md": "d921b86d5e349345cb2620a5df232c0c5cfb63d20a6e7f18c5a3d50d8cd1c6b9",
+    "questions/money_consumption_and_tax.md": "77e8abb8bcfe85f960d2012c1b874aae2196bf4c06ae3402cb2b55b104b8b7be",
+    "questions/housing_community_and_transport.md": "dfbecbfe7273ba2fc320925f9f6d61b121d76f8b5c1cbcf22beba1d049eed568",
+    "questions/school_and_youth.md": "d48be92c055e995f0bad14ce10be2db2c4c36d2f71e831bc986b3523e7880bd6",
+    "questions/technology_media_and_privacy.md": "f6ccec1e45f0e536880bd10765f66faaf31097ee73e859da150891e7268cf897",
+    "questions/culture_religion_and_history.md": "ae57e2736b468855a87796206602deb0701ed5d9ad9c50052a29197777997f4e",
+    "questions/justice_safety_and_crime.md": "f434b46c90a91efb79057845a0bb2f59f14842c2f0fff4bf9841ed897ba9fa40",
+    "questions/society_public_policy_and_environment.md": "374ea5ef9abbec620c267ba5ae3fde5996daa7456cc966757b698c2a540efbe3",
+    "questions/democracy_rights_and_participation.md": "a829b0c4157c1cbd56ab70ad48f337e35eaba2060e61c8b89014046a22630385",
+    "questions/climate_environment_energy_and_disaster.md": "1b4b18f15f84c6e8e75854144dc035fd73899684837aedaa0ad0f0c782f0385d",
+    "questions/international_peace_and_cooperation.md": "0b3bff7c0e03bc968fef37a7e8628d5f4947a5cae42ecb3e536057d16f3eef38",
+    "questions/science_research_and_uncertainty.md": "7f730d3692b8f4e6d2de12e0306e320bd247f77cf6bf3ae7b2946400c0ed2023"
+  },
+  "repository_helper_sha256": {
+    "tools/verify-question-dataset.mjs": "f5814a44a796d96f077cda83aee85444a7cdd7d07c9fe3aec908d7259a188891",
+    "tools/question-proposal.mjs": "e47a8d2045c2d2925843dae27089367247b51c788865684532d33118dd72188c"
+  },
+  "review_counts": {
+    "initial_independent_full_review_cards": 3768,
+    "initial_required_findings": 163,
+    "initial_optional_findings": 67,
+    "cross_domain_required_findings": 6,
+    "cross_domain_optional_findings": 2,
+    "initial_plus_cross_required_findings": 169,
+    "initial_plus_cross_required_unique_card_ids": 164,
+    "cross_domain_full_read_ids": 151,
+    "later_optional_adjudication_targets": 18,
+    "later_optional_recommend_fix": 13,
+    "later_optional_retain": 5,
+    "later_optional_required_escalation": 1,
+    "later_required_id": "exp26-civic-0546",
+    "changed_card_count_at_audit": 230,
+    "count_note": "指摘件数と修正カード件数を混同しない。元163+横断6の169指摘は164個のID。後発ROA-15と他の再確認必須指摘は元集計とは別の解決記録にする。",
+    "changed_card_count_final": 230,
+    "independently_rechecked_changed_ids_final": 230,
+    "later_recheck_required_findings_recorded": 7,
+    "later_recheck_new_two_ids": [
+      "exp26-civic-0021",
+      "exp26-civic-0284"
+    ]
+  },
+  "group_checks": [
+    {
+      "group": "personal",
+      "reviewer": "learning",
+      "initial_card_count": 593,
+      "initial_findings": {
+        "required": 20,
+        "optional": 2
+      },
+      "initial_ids_exact": true,
+      "initial_snapshot_sha256": "859fdbd5cf219a4084a7647bc3e4b6300d711780a329b90b12a1ebcc1ce3bac8",
+      "initial_review_hash_matches_snapshot_and_manifest": true,
+      "final_shard_sha256": "f3e8e7b8618deedf2a0e1d75258dd7401cbfe198e8bcab9e34c1d09686dcb8c5",
+      "changed_card_count": 21,
+      "id_level_category_fixed": true,
+      "final_proposal_exact_shard": true,
+      "log_before_after_matches_original_and_final": true,
+      "recheck_file": "peer-reviews/recheck-personal.json",
+      "recheck_status": "rechecked_not_approved",
+      "recheck_count": 21,
+      "recheck_exact_final": true,
+      "recheck_no_open_required": true,
+      "followup_draft_files": [
+        "resolution-drafts/recheck-fixes-personal.json"
+      ]
+    },
+    {
+      "group": "care",
+      "reviewer": "personal",
+      "initial_card_count": 670,
+      "initial_findings": {
+        "required": 35,
+        "optional": 28
+      },
+      "initial_ids_exact": true,
+      "initial_snapshot_sha256": "fa51215b0a166ed30f0b0d61d9553214086769b7940a51a829e167fa2b28d49e",
+      "initial_review_hash_matches_snapshot_and_manifest": true,
+      "final_shard_sha256": "8a998402d5544ebd6420e26d383949be7104c67f8e3b8d1b3b0a79beb0691ad1",
+      "changed_card_count": 67,
+      "id_level_category_fixed": true,
+      "final_proposal_exact_shard": true,
+      "log_before_after_matches_original_and_final": true,
+      "recheck_file": "peer-reviews/recheck-care.json",
+      "recheck_status": "passed_staging_not_approved",
+      "recheck_count": 67,
+      "recheck_exact_final": true,
+      "recheck_no_open_required": true,
+      "followup_draft_files": [
+        "resolution-drafts/recheck-fixes-care.json",
+        "resolution-drafts/optional-fixes-care.json"
+      ]
+    },
+    {
+      "group": "livelihood",
+      "reviewer": "care",
+      "initial_card_count": 710,
+      "initial_findings": {
+        "optional": 7,
+        "required": 26
+      },
+      "initial_ids_exact": true,
+      "initial_snapshot_sha256": "09ef66a877da160e703a8b209b256abb96973de88ce7ccd37cbc47139abdb41c",
+      "initial_review_hash_matches_snapshot_and_manifest": true,
+      "final_shard_sha256": "6843a8d883b349e6d73f57965c3077b6b7d374c8337744f2a55e4fe62240eb36",
+      "changed_card_count": 33,
+      "id_level_category_fixed": true,
+      "final_proposal_exact_shard": true,
+      "log_before_after_matches_original_and_final": true,
+      "recheck_file": "peer-reviews/recheck-livelihood.json",
+      "recheck_status": "rechecked_required_findings_resolved_not_approved",
+      "recheck_count": 33,
+      "recheck_exact_final": true,
+      "recheck_no_open_required": true,
+      "followup_draft_files": [
+        "resolution-drafts/recheck-fixes-livelihood.json",
+        "resolution-drafts/remaining-optional-fixes-livelihood.json"
+      ]
+    },
+    {
+      "group": "world",
+      "reviewer": "livelihood",
+      "initial_card_count": 663,
+      "initial_findings": {
+        "optional": 3,
+        "required": 19
+      },
+      "initial_ids_exact": true,
+      "initial_snapshot_sha256": "c1b10b94608e8ce0e79ae52a04482877a36f644826aa942ef949fe0e66113732",
+      "initial_review_hash_matches_snapshot_and_manifest": true,
+      "final_shard_sha256": "7df10201253f1f21b932b92e828d5e23506213a52e999f27eb495af540a0eced",
+      "changed_card_count": 22,
+      "id_level_category_fixed": true,
+      "final_proposal_exact_shard": true,
+      "log_before_after_matches_original_and_final": true,
+      "recheck_file": "peer-reviews/recheck-world.json",
+      "recheck_status": "passed_staging_not_approved",
+      "recheck_count": 22,
+      "recheck_exact_final": true,
+      "recheck_no_open_required": true,
+      "followup_draft_files": [
+        "resolution-drafts/root-clarifies-world.json"
+      ]
+    },
+    {
+      "group": "civic",
+      "reviewer": "world",
+      "initial_card_count": 558,
+      "initial_findings": {
+        "required": 32,
+        "optional": 16
+      },
+      "initial_ids_exact": true,
+      "initial_snapshot_sha256": "b07f76f14e82446aa5066e6944190df4b4ee2ba2991d93b129da3dd44c0f27df",
+      "initial_review_hash_matches_snapshot_and_manifest": true,
+      "final_shard_sha256": "7d16d75c62047d44237f5e93a2576b5ef287270cd75a742e0fb9fa511098ed3b",
+      "changed_card_count": 44,
+      "id_level_category_fixed": true,
+      "final_proposal_exact_shard": true,
+      "log_before_after_matches_original_and_final": true,
+      "recheck_file": "peer-reviews/recheck-civic.json",
+      "recheck_status": "passed_staging_not_approved",
+      "recheck_count": 44,
+      "recheck_exact_final": true,
+      "recheck_no_open_required": true,
+      "followup_draft_files": [
+        "resolution-drafts/recheck-fixes-civic.json",
+        "resolution-drafts/remaining-optional-fixes-civic.json",
+        "resolution-drafts/recheck-additional-fixes-civic.json"
+      ]
+    },
+    {
+      "group": "learning",
+      "reviewer": "civic",
+      "initial_card_count": 574,
+      "initial_findings": {
+        "required": 31,
+        "optional": 11
+      },
+      "initial_ids_exact": true,
+      "initial_snapshot_sha256": "19ce08f2190733645109a7bcf6c1df29a61c3e8df60df084f7a04944f039e7a9",
+      "initial_review_hash_matches_snapshot_and_manifest": true,
+      "final_shard_sha256": "728f41d590fe6fd36e759bfee94a4cdfe011671259fbf2817cda5c562d8b3a62",
+      "changed_card_count": 43,
+      "id_level_category_fixed": true,
+      "final_proposal_exact_shard": true,
+      "log_before_after_matches_original_and_final": true,
+      "recheck_file": "peer-reviews/recheck-learning.json",
+      "recheck_status": "reviewed_not_approved",
+      "recheck_count": 43,
+      "recheck_exact_final": true,
+      "recheck_no_open_required": true,
+      "followup_draft_files": [
+        "resolution-drafts/recheck-fixes-learning.json"
+      ]
+    }
+  ],
+  "baseline_unchanged_at_audit": {
+    "level1.json": true,
+    "level2.json": true,
+    "level3.json": true,
+    "level4.json": true
+  },
+  "findings": [
+    {
+      "finding_id": "FAA-01",
+      "priority": "required",
+      "status": "resolved_in_final_artifacts",
+      "file": "validate_artifacts.py",
+      "issue": "world元レビューはsnapshot_sha256を用いるが、初読helperがこのキーを受理せず有効な初回全文レビューを失敗にする。",
+      "evidence": "livelihood-reviews-world.json snapshot_sha256はreview-inputs/world.jsonとmanifestに一致。",
+      "resolution": "rootがhash候補へsnapshot_sha256を追加。現helperを再読して確認。",
+      "resolved_guard_present": true,
+      "final_verification": "最終helperと同じ最終proposalの報告/ハッシュを照合済み。",
+      "final_execution_verified": true
+    },
+    {
+      "finding_id": "FAA-02",
+      "priority": "required",
+      "status": "resolved_in_final_artifacts",
+      "file": "validate_artifacts.py / run_dataset_validation.py / write_summary.py",
+      "issue": "件数4710/error0だけでは既存validator報告を最終proposalに結び付けられず、summaryもstatusだけで古い検証結果を完了文へ使えた。",
+      "resolution": "rootが実行run recordにproposal/baseline/reportSHAとexit code/コマンドを記録し、最終validationにSHA照合を追加。summaryも現在proposalSHAの一致を要求。実行結果は最終生成時に確認する。",
+      "resolved_guards_present": true,
+      "final_verification": "最終helperと同じ最終proposalの報告/ハッシュを照合済み。",
+      "final_execution_verified": true
+    },
+    {
+      "finding_id": "FAA-03",
+      "priority": "optional",
+      "status": "resolved_in_final_artifacts",
+      "file": "write_summary.py",
+      "issue": "sources付き件数から「現実の事実を扱う新案はN件」と全新案の事実範囲を言い切るのは強い。",
+      "resolution": "rootが「背景に資料を添えた新案はN件」「引用に対応する主張の範囲」へ変更。無出典警告を意味/事実の成功と扱わない限界も明記。",
+      "resolved_wording_present": true,
+      "final_verification": "最終helperと同じ最終proposalの報告/ハッシュを照合済み。",
+      "final_execution_verified": true
+    },
+    {
+      "finding_id": "FAA-04",
+      "priority": "optional",
+      "status": "resolved_in_final_artifacts",
+      "file": "assemble_resolution.py",
+      "issue": "'resolved' in status は文字列'unresolved'も受理する。現在読んだ再確認報告に未解決を見つけたという意味ではない。",
+      "suggested_resolution": "実際に使われる解決状態への完全一致、またはresolvedで始まることを確認する。",
+      "current_substring_guard_present": false,
+      "resolution": "rootがstartswith(resolved)へ変更。更新assemble_resolution.py全文を再読して確認。",
+      "resolved_guard_present": true,
+      "final_verification": "最終helperと同じ最終proposalの報告/ハッシュを照合済み。",
+      "final_execution_verified": true
+    }
+  ],
+  "verified_document_limits": [
+    "原文レビュー6担当と横断151ID重点読了を区別している。",
+    "全4710問の意味の全組合せ、全既存942問の意味再審査、実際の会話の利用試験を完了と主張していない。",
+    "全件数や完全一致非重複・文字n-gram比較を意味の独立性の証明としていない。",
+    "出典確認は引用に対応する主張の範囲。今回の横断担当は新たなネット再検索をしていないと明記。",
+    "最終ユーザー確認とreviewを区別し、pending_approval、正本適用0を維持している。",
+    "CSV/HTML/カテゴリー文書が最終proposalへ一致する検査がある。実行結果は最終生成時に確認する。"
+  ],
+  "pending_final_checkpoints": [],
+  "limitations": [
+    "以前の意味/全文レビューの範囲と限界は2026-10-08監査・各担当レビューの記録を参照。本追記は表・Markdown・改行とハッシュの整形後照合。",
+    "追加本文への最終ユーザー承認は受領済み。監査時点では正本942問、反映前pushという順序に従っている。",
+    "新たな全二問意味比較・全既存942問意味再審査・実会話試験・ネット再検証は行っていない。",
+    "この監査はpushまたは4,710問の正本反映の完了証拠ではない。"
+  ],
+  "interim_verified_export_snapshot": {
+    "verified_date_utc": "2026-10-08T09:15:45.544111+00:00",
+    "status": "verified_intermediate_snapshot_superseded_by_pending_two_civic_fixes",
+    "proposal_sha256": "45b15482798d8ba9a7d828c1d530e0bce070d83f218be9da798cf9caac59f212",
+    "review_html_sha256": "79e15780eabaa6912eb05c8655c63db0c45c561c24aa2623ff8607c7e7c1796c",
+    "file_sha256": {
+      "proposal.json": "45b15482798d8ba9a7d828c1d530e0bce070d83f218be9da798cf9caac59f212",
+      "review.html": "79e15780eabaa6912eb05c8655c63db0c45c561c24aa2623ff8607c7e7c1796c",
+      "all-additions.csv": "04e9feca586765ebcb714f8aeebe53552bff8da0ba2b2722fbbdbfea9fe96ff5",
+      "comparison-candidates.json": "560595da72752aba0d04c47cea486c9e4daa9a8452d7830727a6a7203dc2fcac",
+      "dataset-validation.json": "ab0d6833dcc0b58feb32b1bf7428b751225d54cc9fa9d00a3ee06170486c5cdb",
+      "dataset-validation-run.json": "da98dcb1515d073890153a08c0d210c80825354434e4962c64fac2cf590c7280",
+      "review-ui-check.json": "11cfe4d87c9abfb78392b907a7de2b28f0df62c8284ec12e8c8cdb73a83d29a2",
+      "peer-reviews/root-editorial-triage.json": "3a0e3306a8a8f1eb491a1dba6a16b50d8c2b506494015f954c8ee45dd07be84d",
+      "assemble_resolution.py": "a100d58a758c3e274536696b8594308c47f97e69d01aa45646068479a01998fb",
+      "run_dataset_validation.py": "4557933f7074a55846fc0615287d4d03c8ab48c8111c38be5f19489546dd71d2",
+      "check_review_ui.py": "5d5dd226bcb829eaaaa173cc2dc8c2b10f931e3223394b5cd48a10407f8832b0",
+      "validate_artifacts.py": "b84daebd68ce7014d775f0e6611ea7f5829bda6ac72cfc95857ed71a593d6d9d",
+      "write_summary.py": "0eaa6faba75619fd89fdcbc3eda9f0aad8a7300ee0c9adcb6a3e9a8f931034d7"
+    },
+    "checked_read_only": [
+      "proposal matches every final shard at this snapshot",
+      "all 18 category by 4 Level allocations",
+      "all CSV 14 columns exactly match additions and comparison neighbor references",
+      "all category Markdown card sections contain their own question/background/reason/metadata/warnings/source URLs",
+      "review.html payload exactly matches the pending additions",
+      "dataset run proposal/baseline/report hashes match snapshot",
+      "browser final proposal/html hashes match snapshot",
+      "dataset 4710 records and 0 errors"
+    ],
+    "validator_total": 4710,
+    "validator_errors": 0,
+    "validator_warning_count": 3196,
+    "validator_warning_codes": {
+      "detail_without_sources": 3196
+    },
+    "source_linked_new_records": 12,
+    "browser_final_checks": 7,
+    "browser_prior_interim_checks": 10,
+    "root_final_candidate_check_read": {
+      "proposal_sha256": "45b15482798d8ba9a7d828c1d530e0bce070d83f218be9da798cf9caac59f212",
+      "wording_pair_count": 1,
+      "factual_candidates_count": 6,
+      "new_required": 0,
+      "scope": "最終生成で抽出された近似1組と事実らしい語の候補6件をrootが問い・背景・理由で実読。短い背景695/短いL4 159は全件の担当外全文レビューの対象で、文字数をエラーとはしない。"
+    },
+    "note": "This evidence applies only to proposal45b154… before newly found civic0021/0284 fixes. It is not final approval or final semantic uniqueness proof."
+  },
+  "audit_history": [
+    {
+      "phase": "interim_pre_final_generation",
+      "record": {
+        "audit_date_utc": "2026-10-08T09:12:39.693619+00:00",
+        "status": "interim_document_audit_pending_final_generation_not_approved",
+        "audit_file_sha256": {
+          "assemble_resolution.py": "a100d58a758c3e274536696b8594308c47f97e69d01aa45646068479a01998fb",
+          "validate_artifacts.py": "b84daebd68ce7014d775f0e6611ea7f5829bda6ac72cfc95857ed71a593d6d9d",
+          "write_summary.py": "0eaa6faba75619fd89fdcbc3eda9f0aad8a7300ee0c9adcb6a3e9a8f931034d7",
+          "compile.py": "c3d94c33ef1851ef3415555a637b3c18382e4336aaeeec522ec279ee282998c8",
+          "run_dataset_validation.py": "4557933f7074a55846fc0615287d4d03c8ab48c8111c38be5f19489546dd71d2",
+          "check_review_ui.py": "b3064c6b82c443e064199daba487705d418165c238005256dc2264146061e35d",
+          "review-inputs/manifest.json": "837afd91bc3ab1199e1a0a019a7a5e574d7c1bc415ff6c0651ebfb649cd1352e",
+          "peer-review-assignments.json": "fc9420d29476bd2146a8b513747629e4906b7fc8cdb2358e5f38be351b27e386",
+          "peer-reviews/cross-domain-review.json": "73e9ee6b86a45930d7ef4436bc478ed2b433b93434e5b270cc9ac0f96694f0c7",
+          "peer-reviews/remaining-optional-adjudication.json": "12c0e15dcacd74c9b8397e7aa587db65f32b758f0c17f9883028d63a39fc9afe",
+          "review-ui-check.json": "11cfe4d87c9abfb78392b907a7de2b28f0df62c8284ec12e8c8cdb73a83d29a2",
+          "peer-reviews/learning-reviews-personal.json": "8bf8956833cbeea51c5576c7204545b4210a538e3fc9e758f54c64c7dfbadf36",
+          "peer-reviews/personal-reviews-care.json": "dd73768b81bbeeb78e88908f5760c0ebf4e1a37458a5eaeee7fbcdb6225307ac",
+          "peer-reviews/care-reviews-livelihood.json": "f30beea72cae1789e52f2c178ac95cb7a90bb3a5efa853e761a3157ca3abbae4",
+          "peer-reviews/livelihood-reviews-world.json": "62961199a68f5f2e6bd3335fbb6184a0be8dd62c65940f218b57682ac0cf35da",
+          "peer-reviews/world-reviews-civic.json": "5de7bcc8d121db09d4996d399092e9d0b28404954a47886bea7fd5302015b477",
+          "peer-reviews/civic-reviews-learning.json": "8b19164e183b038d2e95f9bff9ce07e9e6153547b17be942aca6ea2d44bfd6f8",
+          "applied-review-drafts/personal.json": "c8bd03a6459e27e793558c1b160b168cb5594f7934603f2d418c11cf682f1db6",
+          "applied-review-drafts/care.json": "995b137346e7cf64f20730081d7609836eb102a6e212a598baea6cf0568007d3",
+          "applied-review-drafts/livelihood.json": "a84d1b3fdb9f062f5017a44c2a67d00cb292609157a10a1c2f0cb850aafa88ee",
+          "applied-review-drafts/learning.json": "fbc0cfdfe5ed69812dd83ab6da2edb9b45368a15b8adbfbae9ec60f0518254d9",
+          "applied-review-drafts/civic.json": "5851d8df61d2b51f9b2658cc3c44231ea759fc83cf46089aaec597d2d5c636c2",
+          "applied-review-drafts/world.json": "2a60a184f3d72d445f2fbfd7bb69c9d07fc5ddccba12da650818932168e27e72",
+          "peer-reviews/recheck-personal.json": "43672ef6a4cb6a089f2027b52c7c1ee671dbb09ecd700ba299fff95d70155fde",
+          "peer-reviews/recheck-care.json": "8f8be6430e1647d0902b605efc3f33b46a2f0717d15ceed21ab8613bd6728d8a",
+          "peer-reviews/recheck-livelihood.json": "36783b55f0746c0a04ce3cc51e82ff402130edf6d4d6fcb82d61fd1287dfe375",
+          "peer-reviews/recheck-learning.json": "e8243d521df7eb2cf983cafdcebcb3c7001f5ea72879e6f4fffda86fbf3d5715",
+          "peer-reviews/recheck-civic.json": "06d5b7d2353d70f3ce783bbae83fce6fc0d126b8102b63cccf2d62b35cf449a1",
+          "peer-reviews/recheck-world.json": "acf7ca468cbb71c65bcc5cf7daf494efd7396561a777a7a067fe2f06b116bebe"
+        },
+        "repository_helper_sha256": {
+          "tools/verify-question-dataset.mjs": "f5814a44a796d96f077cda83aee85444a7cdd7d07c9fe3aec908d7259a188891",
+          "tools/question-proposal.mjs": "e47a8d2045c2d2925843dae27089367247b51c788865684532d33118dd72188c"
+        },
+        "review_counts": {
+          "initial_independent_full_review_cards": 3768,
+          "initial_required_findings": 163,
+          "initial_optional_findings": 67,
+          "cross_domain_required_findings": 6,
+          "cross_domain_optional_findings": 2,
+          "initial_plus_cross_required_findings": 169,
+          "initial_plus_cross_required_unique_card_ids": 164,
+          "cross_domain_full_read_ids": 151,
+          "later_optional_adjudication_targets": 18,
+          "later_optional_recommend_fix": 13,
+          "later_optional_retain": 5,
+          "later_optional_required_escalation": 1,
+          "later_required_id": "exp26-civic-0546",
+          "changed_card_count_at_audit": 230,
+          "count_note": "指摘件数と修正カード件数を混同しない。元163+横断6の169指摘は164個のID。後発ROA-15と他の再確認必須指摘は元集計とは別の解決記録にする。",
+          "changed_card_count_final": 230,
+          "independently_rechecked_changed_ids_final": 230,
+          "later_recheck_required_findings_recorded": 7,
+          "later_recheck_new_two_ids": [
+            "exp26-civic-0021",
+            "exp26-civic-0284"
+          ]
+        },
+        "group_checks": [
+          {
+            "group": "personal",
+            "review_file": "peer-reviews/learning-reviews-personal.json",
+            "initial_card_count": 593,
+            "initial_findings": {
+              "required": 20,
+              "optional": 2
+            },
+            "initial_ids_exact": true,
+            "initial_snapshot_sha256": "859fdbd5cf219a4084a7647bc3e4b6300d711780a329b90b12a1ebcc1ce3bac8",
+            "initial_review_hash_matches_snapshot_and_manifest": true,
+            "final_shard_sha256_at_audit": "f3e8e7b8618deedf2a0e1d75258dd7401cbfe198e8bcab9e34c1d09686dcb8c5",
+            "changed_card_count_at_audit": 21,
+            "id_level_category_fixed": true,
+            "log_before_after_matches_original_and_current": true,
+            "recheck_file": "peer-reviews/recheck-personal.json",
+            "recheck_status_at_audit": "rechecked_not_approved",
+            "recheck_count_at_audit": 21,
+            "recheck_exact_final_at_audit": true,
+            "followup_draft_files": [
+              "resolution-drafts/recheck-fixes-personal.json"
+            ]
+          },
+          {
+            "group": "care",
+            "review_file": "peer-reviews/personal-reviews-care.json",
+            "initial_card_count": 670,
+            "initial_findings": {
+              "required": 35,
+              "optional": 28
+            },
+            "initial_ids_exact": true,
+            "initial_snapshot_sha256": "fa51215b0a166ed30f0b0d61d9553214086769b7940a51a829e167fa2b28d49e",
+            "initial_review_hash_matches_snapshot_and_manifest": true,
+            "final_shard_sha256_at_audit": "8a998402d5544ebd6420e26d383949be7104c67f8e3b8d1b3b0a79beb0691ad1",
+            "changed_card_count_at_audit": 67,
+            "id_level_category_fixed": true,
+            "log_before_after_matches_original_and_current": true,
+            "recheck_file": "peer-reviews/recheck-care.json",
+            "recheck_status_at_audit": "passed_staging_not_approved",
+            "recheck_count_at_audit": 67,
+            "recheck_exact_final_at_audit": true,
+            "followup_draft_files": [
+              "resolution-drafts/recheck-fixes-care.json",
+              "resolution-drafts/optional-fixes-care.json"
+            ]
+          },
+          {
+            "group": "livelihood",
+            "review_file": "peer-reviews/care-reviews-livelihood.json",
+            "initial_card_count": 710,
+            "initial_findings": {
+              "optional": 7,
+              "required": 26
+            },
+            "initial_ids_exact": true,
+            "initial_snapshot_sha256": "09ef66a877da160e703a8b209b256abb96973de88ce7ccd37cbc47139abdb41c",
+            "initial_review_hash_matches_snapshot_and_manifest": true,
+            "final_shard_sha256_at_audit": "6843a8d883b349e6d73f57965c3077b6b7d374c8337744f2a55e4fe62240eb36",
+            "changed_card_count_at_audit": 33,
+            "id_level_category_fixed": true,
+            "log_before_after_matches_original_and_current": true,
+            "recheck_file": "peer-reviews/recheck-livelihood.json",
+            "recheck_status_at_audit": "rechecked_required_findings_resolved_not_approved",
+            "recheck_count_at_audit": 33,
+            "recheck_exact_final_at_audit": true,
+            "followup_draft_files": [
+              "resolution-drafts/recheck-fixes-livelihood.json",
+              "resolution-drafts/remaining-optional-fixes-livelihood.json"
+            ]
+          },
+          {
+            "group": "world",
+            "review_file": "peer-reviews/livelihood-reviews-world.json",
+            "initial_card_count": 663,
+            "initial_findings": {
+              "optional": 3,
+              "required": 19
+            },
+            "initial_ids_exact": true,
+            "initial_snapshot_sha256": "c1b10b94608e8ce0e79ae52a04482877a36f644826aa942ef949fe0e66113732",
+            "initial_review_hash_matches_snapshot_and_manifest": true,
+            "final_shard_sha256_at_audit": "7df10201253f1f21b932b92e828d5e23506213a52e999f27eb495af540a0eced",
+            "changed_card_count_at_audit": 22,
+            "id_level_category_fixed": true,
+            "log_before_after_matches_original_and_current": true,
+            "recheck_file": "peer-reviews/recheck-world.json",
+            "recheck_status_at_audit": "passed_staging_not_approved",
+            "recheck_count_at_audit": 22,
+            "recheck_exact_final_at_audit": true,
+            "followup_draft_files": [
+              "resolution-drafts/root-clarifies-world.json"
+            ]
+          },
+          {
+            "group": "civic",
+            "review_file": "peer-reviews/world-reviews-civic.json",
+            "initial_card_count": 558,
+            "initial_findings": {
+              "required": 32,
+              "optional": 16
+            },
+            "initial_ids_exact": true,
+            "initial_snapshot_sha256": "b07f76f14e82446aa5066e6944190df4b4ee2ba2991d93b129da3dd44c0f27df",
+            "initial_review_hash_matches_snapshot_and_manifest": true,
+            "final_shard_sha256_at_audit": "fae23d1777ab9ed8ed632aaf61ce1d8d343e0973855c92311741ee69a5019632",
+            "changed_card_count_at_audit": 44,
+            "id_level_category_fixed": true,
+            "log_before_after_matches_original_and_current": true,
+            "recheck_file": "peer-reviews/recheck-civic.json",
+            "recheck_status_at_audit": "passed_staging_not_approved",
+            "recheck_count_at_audit": 32,
+            "recheck_exact_final_at_audit": false,
+            "followup_draft_files": [
+              "resolution-drafts/recheck-fixes-civic.json",
+              "resolution-drafts/remaining-optional-fixes-civic.json"
+            ]
+          },
+          {
+            "group": "learning",
+            "review_file": "peer-reviews/civic-reviews-learning.json",
+            "initial_card_count": 574,
+            "initial_findings": {
+              "required": 31,
+              "optional": 11
+            },
+            "initial_ids_exact": true,
+            "initial_snapshot_sha256": "19ce08f2190733645109a7bcf6c1df29a61c3e8df60df084f7a04944f039e7a9",
+            "initial_review_hash_matches_snapshot_and_manifest": true,
+            "final_shard_sha256_at_audit": "728f41d590fe6fd36e759bfee94a4cdfe011671259fbf2817cda5c562d8b3a62",
+            "changed_card_count_at_audit": 43,
+            "id_level_category_fixed": true,
+            "log_before_after_matches_original_and_current": true,
+            "recheck_file": "peer-reviews/recheck-learning.json",
+            "recheck_status_at_audit": "reviewed_not_approved",
+            "recheck_count_at_audit": 43,
+            "recheck_exact_final_at_audit": true,
+            "followup_draft_files": [
+              "resolution-drafts/recheck-fixes-learning.json"
+            ]
+          }
+        ],
+        "baseline_unchanged_at_audit": {
+          "level1.json": true,
+          "level2.json": true,
+          "level3.json": true,
+          "level4.json": true
+        },
+        "findings": [
+          {
+            "finding_id": "FAA-01",
+            "priority": "required",
+            "status": "resolved_in_final_artifacts",
+            "file": "validate_artifacts.py",
+            "issue": "world元レビューはsnapshot_sha256を用いるが、初読helperがこのキーを受理せず有効な初回全文レビューを失敗にする。",
+            "evidence": "livelihood-reviews-world.json snapshot_sha256はreview-inputs/world.jsonとmanifestに一致。",
+            "resolution": "rootがhash候補へsnapshot_sha256を追加。現helperを再読して確認。",
+            "resolved_guard_present": true,
+            "final_verification": "最終helperと同じ最終proposalの報告/ハッシュを照合済み。"
+          },
+          {
+            "finding_id": "FAA-02",
+            "priority": "required",
+            "status": "resolved_in_final_artifacts",
+            "file": "validate_artifacts.py / run_dataset_validation.py / write_summary.py",
+            "issue": "件数4710/error0だけでは既存validator報告を最終proposalに結び付けられず、summaryもstatusだけで古い検証結果を完了文へ使えた。",
+            "resolution": "rootが実行run recordにproposal/baseline/reportSHAとexit code/コマンドを記録し、最終validationにSHA照合を追加。summaryも現在proposalSHAの一致を要求。実行結果は最終生成時に確認する。",
+            "resolved_guards_present": true,
+            "final_verification": "最終helperと同じ最終proposalの報告/ハッシュを照合済み。"
+          },
+          {
+            "finding_id": "FAA-03",
+            "priority": "optional",
+            "status": "resolved_in_final_artifacts",
+            "file": "write_summary.py",
+            "issue": "sources付き件数から「現実の事実を扱う新案はN件」と全新案の事実範囲を言い切るのは強い。",
+            "resolution": "rootが「背景に資料を添えた新案はN件」「引用に対応する主張の範囲」へ変更。無出典警告を意味/事実の成功と扱わない限界も明記。",
+            "resolved_wording_present": true,
+            "final_verification": "最終helperと同じ最終proposalの報告/ハッシュを照合済み。"
+          },
+          {
+            "finding_id": "FAA-04",
+            "priority": "optional",
+            "status": "resolved_in_final_artifacts",
+            "file": "assemble_resolution.py",
+            "issue": "'resolved' in status は文字列'unresolved'も受理する。現在読んだ再確認報告に未解決を見つけたという意味ではない。",
+            "suggested_resolution": "実際に使われる解決状態への完全一致、またはresolvedで始まることを確認する。",
+            "current_substring_guard_present": false,
+            "resolution": "rootがstartswith(resolved)へ変更。更新assemble_resolution.py全文を再読して確認。",
+            "resolved_guard_present": true,
+            "final_verification": "最終helperと同じ最終proposalの報告/ハッシュを照合済み。"
+          }
+        ],
+        "pending_final_checkpoints": [
+          {
+            "checkpoint": "remaining_optional_individual_dispositions",
+            "status": "root_update_in_progress_known",
+            "requirement": "optional全69指摘の採否を原文log/個別裁定へ結び付け、維持5件も個別理由を残す。変更しただけで全optional採用とは言わない。ROA-15必須化は169初期指摘と分け解決/再確認を明記する。",
+            "current_generic_optional_rationale_present": false
+          },
+          {
+            "checkpoint": "all_changed_cards_independent_rechecks",
+            "status": "in_progress_known",
+            "requirement": "civic追加12件とlivelihood追加1件を含む現在変更230件以上が、最終hashに一致した担当外再確認のID集合で網羅される。care追加21件は現audit時67件再確認へ更新済み。"
+          },
+          {
+            "checkpoint": "final_validator_and_browser_generation",
+            "status": "not_yet_executed_known",
+            "requirement": "最終proposal/CSV/MD/HTMLを生成し、既存validator run SHA、最終browser proposal/htmlSHA、review-resolution final hashes、validation/summaryを再照合する。interim UI報告や旧READMEの一時staleは欠陥と数えない。"
+          },
+          {
+            "checkpoint": "final_optional_dispositions_root_adoption_vs_draft_status",
+            "status": "in_progress_known",
+            "requirement": "individual adjudicationのstatusはnot_applied、followup historyにはdraft当時のstatusが含まれる。履歴を保全しつつ、最終採否・staging適用・再確認は外側の最終記録に示す。"
+          },
+          {
+            "checkpoint": "new_civic_required_two_after_optional_recheck",
+            "status": "root_notified_fix_and_independent_recheck_in_progress",
+            "ids": [
+              "exp26-civic-0021",
+              "exp26-civic-0284"
+            ],
+            "comparison_ids": [
+              "exp26-civic-0129",
+              "exp26-civic-0089"
+            ],
+            "requirement": "2件の具体修正をrootが変更前後で確認し、別担当が独立全文確認。変更230 ID数は変わらない。適用後にproposal/CSV/MD/HTML/comparison/validator/UIの再生成とhash照合を行う。",
+            "note": "Rootからの指摘通知を記録したもので、本監査が2組の原文内容を独自に読んだとの主張ではない。"
+          }
+        ],
+        "limitations": [
+          "この監査は最終成果物の文書と追跡記録の監査であり、3768問を今回新たに全文実読したとの主張ではない。",
+          "並行作業中のhash/countはaudit時点のsnapshot。最終生成後に再確認する必要がある。",
+          "実際の会話・全二問の意味比較・全現実事実の再検索は行っていない。",
+          "ユーザーによる問題変更の最終確認は未了。"
+        ]
+      }
+    },
+    {
+      "phase": "final_approved_content_pre_formatting_2026-10-08",
+      "record": {
+        "status": "passed_final_artifact_audit_pending_user_approval",
+        "final_audited_at_utc": "2026-10-08T09:32:29.133481+00:00",
+        "final_artifact_sha256": {
+          "assemble_resolution.py": "2581cf2cc2960b15394d763fb51970cb9f3c997f5c6c9cddb5ee9de2c6195abc",
+          "validate_artifacts.py": "2113c809bbbc7296d1c22827e0cd608d14eab8194d3bda8c27333c6e0482fa2d",
+          "write_summary.py": "3d2dab91b3efdd74c80f34d678b9daff9b3258b69aa5467b99cd464bd142b189",
+          "run_dataset_validation.py": "4557933f7074a55846fc0615287d4d03c8ab48c8111c38be5f19489546dd71d2",
+          "check_review_ui.py": "eb5603a4c64b754ff0032ad58e3227dbfc5833cbe4207bddf6edeb4b1bc39225",
+          "compile.py": "c3d94c33ef1851ef3415555a637b3c18382e4336aaeeec522ec279ee282998c8",
+          "AUTHORING.md": "f4f43a87d5b49164ec03a3483b37e7825e2d996fa3826355d6e614caea6dd244",
+          "assignments.json": "a0eb08bc1ddaf93b76d413ee46ecd2b351c02705959932a30b9c3d161e24b8e7",
+          "peer-review-assignments.json": "1634a15381cec48fce1e40fafbf571176c15d25db65b366d24cee5ecaa7f882f",
+          "README.md": "4113dce7863bed743f9ca02e985be10f96e6984827a14a9112405ed2bff2c5cb",
+          "category-summary.csv": "1b0fffc7b9e55ee29932b4840b607be7148da72837ffce399cd185411ed435c8",
+          "drafting-progress.json": "a21b9db0bbf75ee761b223575c68354af86483573ecb931eb750aa493516ec72",
+          "proposal.json": "ee78bde10a1dd39c320274f99ff31f7031bd01e4258310f934c664d06c609a42",
+          "all-additions.csv": "ca3a7d0382071005ee5f8cbabb9cf36e16e678b66f86842bdd0fdec8fe3da63f",
+          "review.html": "3e795c2403bcb65f4245a4545f30f36785ef90ec791a7d5ef13e4b8792dd08d5",
+          "review-resolution.json": "14c7ab2e1811535cafbae67bae9084bfdb149adc81bd3d6170d5523f2a379a98",
+          "validation-report.json": "fa1016b95e979a8a509fdb545b8c00568d23e757c6ac64c5a31428160593c5ad",
+          "dataset-validation.json": "9a206c778fc46bf2f2cddcf53830b51e2f3374e6f08d77c5e5fa64baf66a2ff4",
+          "dataset-validation-run.json": "5f5f13c0613898483d8eee6eff6ea0135727a84b99db050498bdbf770753a1c9",
+          "review-ui-check.json": "69792d0592a82aa19632c1665a7574edf6025c4afb2f3d1380b0b789fe98eb10",
+          "comparison-candidates.json": "67d1cd660083da0a823058d5a422e7525486b7f4c61bfeb75570010cdbff8a5c",
+          "peer-reviews/recheck-civic-last-two.json": "cb23fd56b88680966b1df6e28048ec403bd18e5ac18c616820ec6c2530bec531",
+          "resolution-drafts/recheck-additional-fixes-civic.json": "fac346d670c460e4d8f40d5eac15b9f9490be8627c8753731a752aebb7a127f8",
+          "peer-reviews/root-editorial-triage.json": "65d3063d3a71cc6ca709895ffb422423a2517509a28680607fd43de24aedf2a1",
+          "review-inputs/manifest.json": "837afd91bc3ab1199e1a0a019a7a5e574d7c1bc415ff6c0651ebfb649cd1352e",
+          "peer-reviews/learning-reviews-personal.json": "8bf8956833cbeea51c5576c7204545b4210a538e3fc9e758f54c64c7dfbadf36",
+          "peer-reviews/personal-reviews-care.json": "dd73768b81bbeeb78e88908f5760c0ebf4e1a37458a5eaeee7fbcdb6225307ac",
+          "peer-reviews/care-reviews-livelihood.json": "f30beea72cae1789e52f2c178ac95cb7a90bb3a5efa853e761a3157ca3abbae4",
+          "peer-reviews/livelihood-reviews-world.json": "62961199a68f5f2e6bd3335fbb6184a0be8dd62c65940f218b57682ac0cf35da",
+          "peer-reviews/world-reviews-civic.json": "5de7bcc8d121db09d4996d399092e9d0b28404954a47886bea7fd5302015b477",
+          "peer-reviews/civic-reviews-learning.json": "8b19164e183b038d2e95f9bff9ce07e9e6153547b17be942aca6ea2d44bfd6f8",
+          "applied-review-drafts/personal.json": "c8bd03a6459e27e793558c1b160b168cb5594f7934603f2d418c11cf682f1db6",
+          "applied-review-drafts/care.json": "995b137346e7cf64f20730081d7609836eb102a6e212a598baea6cf0568007d3",
+          "applied-review-drafts/livelihood.json": "a84d1b3fdb9f062f5017a44c2a67d00cb292609157a10a1c2f0cb850aafa88ee",
+          "applied-review-drafts/learning.json": "fbc0cfdfe5ed69812dd83ab6da2edb9b45368a15b8adbfbae9ec60f0518254d9",
+          "applied-review-drafts/civic.json": "4d51fa0f9393d83eff34a9a7fd02961f2a7390f63983b4224eb4bb3fe72d71e4",
+          "applied-review-drafts/world.json": "2a60a184f3d72d445f2fbfd7bb69c9d07fc5ddccba12da650818932168e27e72",
+          "peer-reviews/recheck-personal.json": "43672ef6a4cb6a089f2027b52c7c1ee671dbb09ecd700ba299fff95d70155fde",
+          "peer-reviews/recheck-care.json": "8f8be6430e1647d0902b605efc3f33b46a2f0717d15ceed21ab8613bd6728d8a",
+          "peer-reviews/recheck-livelihood.json": "36783b55f0746c0a04ce3cc51e82ff402130edf6d4d6fcb82d61fd1287dfe375",
+          "peer-reviews/recheck-learning.json": "e8243d521df7eb2cf983cafdcebcb3c7001f5ea72879e6f4fffda86fbf3d5715",
+          "peer-reviews/recheck-civic.json": "b749812f06816d50bd02c53c6cc92a204cb76811d794249f9b52746b6cea3b0b",
+          "peer-reviews/recheck-world.json": "acf7ca468cbb71c65bcc5cf7daf494efd7396561a777a7a067fe2f06b116bebe",
+          "questions/self_and_values.md": "c151879f9aa7c0fd4c9eb9bc1a89a14b6284b27dca9ff659878d63f3803f8965",
+          "questions/relationships_and_communication.md": "4f316b5344cd646ed12b856f2f4526a63c8303eef430618d2fb6013dc6b212f4",
+          "questions/ethics_and_decision_making.md": "9d6131ccae02565bd8e8c3278872b07b491227a8f3ad7ea90948d4467eb3ccac",
+          "questions/family_and_care.md": "3916b9aa2c6e68e5cdfb64fa9e22984b66e26bf5b38cd10646d1b431711963aa",
+          "questions/gender_sexuality_and_identity.md": "58333fa0eea0f3176b42328e995b653ef07088ae1a14255fa117a75724a06908",
+          "questions/health_and_disability.md": "c349c8db9eb4942085b9a211e3fd191a068dca794aac026bedf135588ead401b",
+          "questions/work_and_economy.md": "b9f82c371acad6187ba475acce45bf55c90ed5effe98385967731b9892b3a3bf",
+          "questions/money_consumption_and_tax.md": "2bcf038698617a0c382dfdeb6845901b5cd7ec06ab85b6b6da2b4ab62c6fa8e9",
+          "questions/housing_community_and_transport.md": "62e50923b36adacfac2894fc35a6d166619bf619e2443d31c7642b6b93333fc4",
+          "questions/school_and_youth.md": "d028dc87cea955cf8b0c02cb740834b669131a20f7f8a078992c1036d6c4db70",
+          "questions/technology_media_and_privacy.md": "863b305d0a1c0d568e6605590a95208a8a5ecaa64dc262497f96a6f8adf72cfe",
+          "questions/culture_religion_and_history.md": "07f3ecb62a964f6142964d15ca5bdb6bd66e5e7a2459ec077d94f7a14d8eb3da",
+          "questions/justice_safety_and_crime.md": "b6dc1cc5ec3d61da6aaf1a3ae8a820d6ba7ff913ab94a9d1ea5db87ad75e5587",
+          "questions/society_public_policy_and_environment.md": "b227eb7a8bca6c435e0c6cd0785d9dbfe13607a48989b61b2b74b03046b852ce",
+          "questions/democracy_rights_and_participation.md": "ed7ec2fd04144c3da554cf440655f10032dc608b8199b0734da14064c091f01e",
+          "questions/climate_environment_energy_and_disaster.md": "f02ed8e0ebfdf69d2dc4cc063a499cb9f6594e9ad9964b46f103f39623a85765",
+          "questions/international_peace_and_cooperation.md": "069227205b4b581ef1ad1e7d4be1314156a93f8d755a68280abc343ad331d687",
+          "questions/science_research_and_uncertainty.md": "aca91838efbaaa54308f62cc31b3142cd9bcd665c7215a9d686d47894250d8e1"
+        },
+        "audit_file_sha256": {
+          "assemble_resolution.py": "2581cf2cc2960b15394d763fb51970cb9f3c997f5c6c9cddb5ee9de2c6195abc",
+          "validate_artifacts.py": "2113c809bbbc7296d1c22827e0cd608d14eab8194d3bda8c27333c6e0482fa2d",
+          "write_summary.py": "3d2dab91b3efdd74c80f34d678b9daff9b3258b69aa5467b99cd464bd142b189",
+          "run_dataset_validation.py": "4557933f7074a55846fc0615287d4d03c8ab48c8111c38be5f19489546dd71d2",
+          "check_review_ui.py": "eb5603a4c64b754ff0032ad58e3227dbfc5833cbe4207bddf6edeb4b1bc39225",
+          "compile.py": "c3d94c33ef1851ef3415555a637b3c18382e4336aaeeec522ec279ee282998c8",
+          "AUTHORING.md": "f4f43a87d5b49164ec03a3483b37e7825e2d996fa3826355d6e614caea6dd244",
+          "assignments.json": "a0eb08bc1ddaf93b76d413ee46ecd2b351c02705959932a30b9c3d161e24b8e7",
+          "peer-review-assignments.json": "1634a15381cec48fce1e40fafbf571176c15d25db65b366d24cee5ecaa7f882f",
+          "README.md": "4113dce7863bed743f9ca02e985be10f96e6984827a14a9112405ed2bff2c5cb",
+          "category-summary.csv": "1b0fffc7b9e55ee29932b4840b607be7148da72837ffce399cd185411ed435c8",
+          "drafting-progress.json": "a21b9db0bbf75ee761b223575c68354af86483573ecb931eb750aa493516ec72",
+          "proposal.json": "ee78bde10a1dd39c320274f99ff31f7031bd01e4258310f934c664d06c609a42",
+          "all-additions.csv": "ca3a7d0382071005ee5f8cbabb9cf36e16e678b66f86842bdd0fdec8fe3da63f",
+          "review.html": "3e795c2403bcb65f4245a4545f30f36785ef90ec791a7d5ef13e4b8792dd08d5",
+          "review-resolution.json": "14c7ab2e1811535cafbae67bae9084bfdb149adc81bd3d6170d5523f2a379a98",
+          "validation-report.json": "fa1016b95e979a8a509fdb545b8c00568d23e757c6ac64c5a31428160593c5ad",
+          "dataset-validation.json": "9a206c778fc46bf2f2cddcf53830b51e2f3374e6f08d77c5e5fa64baf66a2ff4",
+          "dataset-validation-run.json": "5f5f13c0613898483d8eee6eff6ea0135727a84b99db050498bdbf770753a1c9",
+          "review-ui-check.json": "69792d0592a82aa19632c1665a7574edf6025c4afb2f3d1380b0b789fe98eb10",
+          "comparison-candidates.json": "67d1cd660083da0a823058d5a422e7525486b7f4c61bfeb75570010cdbff8a5c",
+          "peer-reviews/recheck-civic-last-two.json": "cb23fd56b88680966b1df6e28048ec403bd18e5ac18c616820ec6c2530bec531",
+          "resolution-drafts/recheck-additional-fixes-civic.json": "fac346d670c460e4d8f40d5eac15b9f9490be8627c8753731a752aebb7a127f8",
+          "peer-reviews/root-editorial-triage.json": "65d3063d3a71cc6ca709895ffb422423a2517509a28680607fd43de24aedf2a1",
+          "review-inputs/manifest.json": "837afd91bc3ab1199e1a0a019a7a5e574d7c1bc415ff6c0651ebfb649cd1352e",
+          "peer-reviews/learning-reviews-personal.json": "8bf8956833cbeea51c5576c7204545b4210a538e3fc9e758f54c64c7dfbadf36",
+          "peer-reviews/personal-reviews-care.json": "dd73768b81bbeeb78e88908f5760c0ebf4e1a37458a5eaeee7fbcdb6225307ac",
+          "peer-reviews/care-reviews-livelihood.json": "f30beea72cae1789e52f2c178ac95cb7a90bb3a5efa853e761a3157ca3abbae4",
+          "peer-reviews/livelihood-reviews-world.json": "62961199a68f5f2e6bd3335fbb6184a0be8dd62c65940f218b57682ac0cf35da",
+          "peer-reviews/world-reviews-civic.json": "5de7bcc8d121db09d4996d399092e9d0b28404954a47886bea7fd5302015b477",
+          "peer-reviews/civic-reviews-learning.json": "8b19164e183b038d2e95f9bff9ce07e9e6153547b17be942aca6ea2d44bfd6f8",
+          "applied-review-drafts/personal.json": "c8bd03a6459e27e793558c1b160b168cb5594f7934603f2d418c11cf682f1db6",
+          "applied-review-drafts/care.json": "995b137346e7cf64f20730081d7609836eb102a6e212a598baea6cf0568007d3",
+          "applied-review-drafts/livelihood.json": "a84d1b3fdb9f062f5017a44c2a67d00cb292609157a10a1c2f0cb850aafa88ee",
+          "applied-review-drafts/learning.json": "fbc0cfdfe5ed69812dd83ab6da2edb9b45368a15b8adbfbae9ec60f0518254d9",
+          "applied-review-drafts/civic.json": "4d51fa0f9393d83eff34a9a7fd02961f2a7390f63983b4224eb4bb3fe72d71e4",
+          "applied-review-drafts/world.json": "2a60a184f3d72d445f2fbfd7bb69c9d07fc5ddccba12da650818932168e27e72",
+          "peer-reviews/recheck-personal.json": "43672ef6a4cb6a089f2027b52c7c1ee671dbb09ecd700ba299fff95d70155fde",
+          "peer-reviews/recheck-care.json": "8f8be6430e1647d0902b605efc3f33b46a2f0717d15ceed21ab8613bd6728d8a",
+          "peer-reviews/recheck-livelihood.json": "36783b55f0746c0a04ce3cc51e82ff402130edf6d4d6fcb82d61fd1287dfe375",
+          "peer-reviews/recheck-learning.json": "e8243d521df7eb2cf983cafdcebcb3c7001f5ea72879e6f4fffda86fbf3d5715",
+          "peer-reviews/recheck-civic.json": "b749812f06816d50bd02c53c6cc92a204cb76811d794249f9b52746b6cea3b0b",
+          "peer-reviews/recheck-world.json": "acf7ca468cbb71c65bcc5cf7daf494efd7396561a777a7a067fe2f06b116bebe",
+          "questions/self_and_values.md": "c151879f9aa7c0fd4c9eb9bc1a89a14b6284b27dca9ff659878d63f3803f8965",
+          "questions/relationships_and_communication.md": "4f316b5344cd646ed12b856f2f4526a63c8303eef430618d2fb6013dc6b212f4",
+          "questions/ethics_and_decision_making.md": "9d6131ccae02565bd8e8c3278872b07b491227a8f3ad7ea90948d4467eb3ccac",
+          "questions/family_and_care.md": "3916b9aa2c6e68e5cdfb64fa9e22984b66e26bf5b38cd10646d1b431711963aa",
+          "questions/gender_sexuality_and_identity.md": "58333fa0eea0f3176b42328e995b653ef07088ae1a14255fa117a75724a06908",
+          "questions/health_and_disability.md": "c349c8db9eb4942085b9a211e3fd191a068dca794aac026bedf135588ead401b",
+          "questions/work_and_economy.md": "b9f82c371acad6187ba475acce45bf55c90ed5effe98385967731b9892b3a3bf",
+          "questions/money_consumption_and_tax.md": "2bcf038698617a0c382dfdeb6845901b5cd7ec06ab85b6b6da2b4ab62c6fa8e9",
+          "questions/housing_community_and_transport.md": "62e50923b36adacfac2894fc35a6d166619bf619e2443d31c7642b6b93333fc4",
+          "questions/school_and_youth.md": "d028dc87cea955cf8b0c02cb740834b669131a20f7f8a078992c1036d6c4db70",
+          "questions/technology_media_and_privacy.md": "863b305d0a1c0d568e6605590a95208a8a5ecaa64dc262497f96a6f8adf72cfe",
+          "questions/culture_religion_and_history.md": "07f3ecb62a964f6142964d15ca5bdb6bd66e5e7a2459ec077d94f7a14d8eb3da",
+          "questions/justice_safety_and_crime.md": "b6dc1cc5ec3d61da6aaf1a3ae8a820d6ba7ff913ab94a9d1ea5db87ad75e5587",
+          "questions/society_public_policy_and_environment.md": "b227eb7a8bca6c435e0c6cd0785d9dbfe13607a48989b61b2b74b03046b852ce",
+          "questions/democracy_rights_and_participation.md": "ed7ec2fd04144c3da554cf440655f10032dc608b8199b0734da14064c091f01e",
+          "questions/climate_environment_energy_and_disaster.md": "f02ed8e0ebfdf69d2dc4cc063a499cb9f6594e9ad9964b46f103f39623a85765",
+          "questions/international_peace_and_cooperation.md": "069227205b4b581ef1ad1e7d4be1314156a93f8d755a68280abc343ad331d687",
+          "questions/science_research_and_uncertainty.md": "aca91838efbaaa54308f62cc31b3142cd9bcd665c7215a9d686d47894250d8e1"
+        },
+        "final_verification_results": {
+          "existing_validator_records": 4710,
+          "existing_validator_errors": 0,
+          "existing_validator_warnings": 3196,
+          "warning_codes": {
+            "detail_without_sources": 3196
+          },
+          "artifact_validation_checks": 69,
+          "independent_document_audit_checks": 72,
+          "final_browser_behavior_checks": 7,
+          "prior_interim_browser_checks_preserved": 10,
+          "csv_all_columns_matched": 14,
+          "category_markdown_own_id_sections_matched": 18,
+          "source_linked_new_backgrounds": 12,
+          "user_final_approval_received": false,
+          "production_files_written_by_audit": 0,
+          "shards_written_by_audit": 0,
+          "helpers_written_by_audit": 0
+        },
+        "completion_scope": "最終提示資料の文書・原文追跡・構造・ハッシュ監査を完了。問題変更の最終ユーザー確認は未了。全件の新たな意味再審査、全組合せ比較、実会話試験、参考資料の新たなネット再検証を完了と主張しない。",
+        "limitations": [
+          "この監査は最終成果物の文書と追跡記録の監査であり、3768問を今回新たに全文実読したとの主張ではない。",
+          "最終監査はfinal_proposal_sha256とfinal_artifact_sha256に示す不変の入力に対して行った。今後の変更には新しい照合が必要。",
+          "実際の会話・全二問の意味比較・全既存942問の意味再審査・資料の新たなネット再検索は行っていない。",
+          "ユーザーによる問題変更の最終確認は未了。"
+        ]
+      }
+    }
+  ],
+  "final_audited_at_utc": "2026-10-08T09:32:29.133481+00:00",
+  "final_proposal_sha256": "ee78bde10a1dd39c320274f99ff31f7031bd01e4258310f934c664d06c609a42",
+  "final_review_html_sha256": "3e795c2403bcb65f4245a4545f30f36785ef90ec791a7d5ef13e4b8792dd08d5",
+  "structural_and_traceability_checks": [
+    {
+      "check": "personal.initial_ids_exact",
+      "status": "passed"
+    },
+    {
+      "check": "personal.initial_review_hash_matches_snapshot_and_manifest",
+      "status": "passed"
+    },
+    {
+      "check": "personal.id_level_category_fixed",
+      "status": "passed"
+    },
+    {
+      "check": "personal.final_proposal_exact_shard",
+      "status": "passed"
+    },
+    {
+      "check": "personal.log_before_after_matches_original_and_final",
+      "status": "passed"
+    },
+    {
+      "check": "personal.recheck_exact_final",
+      "status": "passed"
+    },
+    {
+      "check": "personal.recheck_no_open_required",
+      "status": "passed"
+    },
+    {
+      "check": "care.initial_ids_exact",
+      "status": "passed"
+    },
+    {
+      "check": "care.initial_review_hash_matches_snapshot_and_manifest",
+      "status": "passed"
+    },
+    {
+      "check": "care.id_level_category_fixed",
+      "status": "passed"
+    },
+    {
+      "check": "care.final_proposal_exact_shard",
+      "status": "passed"
+    },
+    {
+      "check": "care.log_before_after_matches_original_and_final",
+      "status": "passed"
+    },
+    {
+      "check": "care.recheck_exact_final",
+      "status": "passed"
+    },
+    {
+      "check": "care.recheck_no_open_required",
+      "status": "passed"
+    },
+    {
+      "check": "livelihood.initial_ids_exact",
+      "status": "passed"
+    },
+    {
+      "check": "livelihood.initial_review_hash_matches_snapshot_and_manifest",
+      "status": "passed"
+    },
+    {
+      "check": "livelihood.id_level_category_fixed",
+      "status": "passed"
+    },
+    {
+      "check": "livelihood.final_proposal_exact_shard",
+      "status": "passed"
+    },
+    {
+      "check": "livelihood.log_before_after_matches_original_and_final",
+      "status": "passed"
+    },
+    {
+      "check": "livelihood.recheck_exact_final",
+      "status": "passed"
+    },
+    {
+      "check": "livelihood.recheck_no_open_required",
+      "status": "passed"
+    },
+    {
+      "check": "world.initial_ids_exact",
+      "status": "passed"
+    },
+    {
+      "check": "world.initial_review_hash_matches_snapshot_and_manifest",
+      "status": "passed"
+    },
+    {
+      "check": "world.id_level_category_fixed",
+      "status": "passed"
+    },
+    {
+      "check": "world.final_proposal_exact_shard",
+      "status": "passed"
+    },
+    {
+      "check": "world.log_before_after_matches_original_and_final",
+      "status": "passed"
+    },
+    {
+      "check": "world.recheck_exact_final",
+      "status": "passed"
+    },
+    {
+      "check": "world.recheck_no_open_required",
+      "status": "passed"
+    },
+    {
+      "check": "civic.initial_ids_exact",
+      "status": "passed"
+    },
+    {
+      "check": "civic.initial_review_hash_matches_snapshot_and_manifest",
+      "status": "passed"
+    },
+    {
+      "check": "civic.id_level_category_fixed",
+      "status": "passed"
+    },
+    {
+      "check": "civic.final_proposal_exact_shard",
+      "status": "passed"
+    },
+    {
+      "check": "civic.log_before_after_matches_original_and_final",
+      "status": "passed"
+    },
+    {
+      "check": "civic.recheck_exact_final",
+      "status": "passed"
+    },
+    {
+      "check": "civic.recheck_no_open_required",
+      "status": "passed"
+    },
+    {
+      "check": "learning.initial_ids_exact",
+      "status": "passed"
+    },
+    {
+      "check": "learning.initial_review_hash_matches_snapshot_and_manifest",
+      "status": "passed"
+    },
+    {
+      "check": "learning.id_level_category_fixed",
+      "status": "passed"
+    },
+    {
+      "check": "learning.final_proposal_exact_shard",
+      "status": "passed"
+    },
+    {
+      "check": "learning.log_before_after_matches_original_and_final",
+      "status": "passed"
+    },
+    {
+      "check": "learning.recheck_exact_final",
+      "status": "passed"
+    },
+    {
+      "check": "learning.recheck_no_open_required",
+      "status": "passed"
+    },
+    {
+      "check": "exact_942_plus_3768_total_4710",
+      "status": "passed"
+    },
+    {
+      "check": "baseline_hashes_unchanged",
+      "status": "passed"
+    },
+    {
+      "check": "all_unique_ids",
+      "status": "passed"
+    },
+    {
+      "check": "no_exact_normalized_questions",
+      "status": "passed"
+    },
+    {
+      "check": "pending_addition_only_scope",
+      "status": "passed"
+    },
+    {
+      "check": "all_18_by_4_fixed_allocations",
+      "status": "passed"
+    },
+    {
+      "check": "comparison_full_id_coverage",
+      "status": "passed"
+    },
+    {
+      "check": "comparison_neighbor_questions_final",
+      "status": "passed"
+    },
+    {
+      "check": "csv_all_14_columns_exact",
+      "status": "passed"
+    },
+    {
+      "check": "markdown_each_card_complete_in_own_section",
+      "status": "passed"
+    },
+    {
+      "check": "html_exact_final_payload",
+      "status": "passed"
+    },
+    {
+      "check": "resolution_final_shards_and_230_ids",
+      "status": "passed"
+    },
+    {
+      "check": "original_required_and_optional_records_exact",
+      "status": "passed"
+    },
+    {
+      "check": "required_corrections_present_rechecked",
+      "status": "passed"
+    },
+    {
+      "check": "personal0206_preserved_learning0093_changed",
+      "status": "passed"
+    },
+    {
+      "check": "optional18_individual_adoption_retention_exact",
+      "status": "passed"
+    },
+    {
+      "check": "roa15_later_required_resolved",
+      "status": "passed"
+    },
+    {
+      "check": "all_recheck_required_resolved",
+      "status": "passed"
+    },
+    {
+      "check": "last_two_independent_target_hash_and_full_additions",
+      "status": "passed"
+    },
+    {
+      "check": "last_two_draft_after_is_final",
+      "status": "passed"
+    },
+    {
+      "check": "last_two_independent_25_comparator_evidence_exact",
+      "status": "passed"
+    },
+    {
+      "check": "final_proposal_only_two_cards_changed_from_preserved_interim",
+      "status": "passed"
+    },
+    {
+      "check": "validator_run_matches_final_proposal_baseline_and_report",
+      "status": "passed"
+    },
+    {
+      "check": "validator_4710_zero_errors_warning3196",
+      "status": "passed"
+    },
+    {
+      "check": "final_browser_matches_final_proposal_html",
+      "status": "passed"
+    },
+    {
+      "check": "validation_69_passed_on_final_proposal",
+      "status": "passed"
+    },
+    {
+      "check": "fact_status_definitions_and_reference_scope",
+      "status": "passed"
+    },
+    {
+      "check": "category_summary_csv_exact",
+      "status": "passed"
+    },
+    {
+      "check": "final_assignment_progress_statuses",
+      "status": "passed"
+    },
+    {
+      "check": "readme_final_counts_limits_and_approval",
+      "status": "passed"
+    }
+  ],
+  "unresolved_audit_findings": [],
+  "final_required_resolution_scope": {
+    "initial_required": 163,
+    "cross_required": 6,
+    "initial_and_cross_resolution_records": 169,
+    "later_roa15_required": 1,
+    "all_recheck_required_records": 7,
+    "recheck_required_ids": [
+      "exp26-care-0326",
+      "exp26-care-0376",
+      "exp26-livelihood-0476",
+      "exp26-civic-0494",
+      "exp26-civic-0333",
+      "exp26-civic-0021",
+      "exp26-civic-0284"
+    ],
+    "note": "再確認の必須7件には最後の新2件を含む。段階ごとに別記し、総数を新しいカード数や意味の独立性の保証としない。"
+  },
+  "source_fact_status_rule_review": {
+    "status": "appropriate_definition_alignment_not_semantic_waiver",
+    "read_in_full_reference_ids": [
+      "exp26-world-0171",
+      "exp26-world-0340",
+      "exp26-world-0369",
+      "exp26-world-0550",
+      "exp26-world-0594"
+    ],
+    "counts": {
+      "sourced": 7,
+      "hypothetical_with_reference_sources": 5,
+      "all_source_linked_backgrounds": 12
+    },
+    "documents_read": [
+      "AUTHORING.md",
+      "validate_artifacts.py"
+    ],
+    "assessment": "参考資料があることと場面が実在することは異なる。5件の問い・背景・sources・source_review_scopeを実読し、架空条件と参照資料の支える範囲が区別されていると確認。sourcedには出典が必要、hypothetical参照資料にはscopeと架空明記を要求する新条件は実際の定義に合う。sourcesや仮/架空の文字の存在だけを意味・事実の自動判定としていない。",
+    "source_verification_limit": "本監査では5資料のウェブページを改めて取得していない。2026-10-07の分野別分析と担当/原文レビューの記録への結び付きを確認した。"
+  },
+  "last_two_followup_audit": {
+    "status": "resolved_and_bound_to_final_artifacts",
+    "ids": [
+      "exp26-civic-0021",
+      "exp26-civic-0284"
+    ],
+    "independent_reviewer": "/root/addition_gap_review",
+    "prepared_by": "learning",
+    "main_recheck_ids": 44,
+    "supplemental_target_count": 2,
+    "supplemental_comparison_count": 25,
+    "main_and_supplemental_scope_read": true,
+    "final_draft_after_matches_final_entire_additions": true,
+    "comparison_evidence_matches_current_cards": true,
+    "reconstructed_previous_proposal_sha256": "45b15482798d8ba9a7d828c1d530e0bce070d83f218be9da798cf9caac59f212",
+    "final_proposal_sha256": "ee78bde10a1dd39c320274f99ff31f7031bd01e4258310f934c664d06c609a42",
+    "scope_note": "新2件の最終問い・背景・理由と解決根拠・metadata、main44の追記範囲、独立2対象+25比較先のscopeを読んだ。25比較先引用は全addition/card一致を機械照合し、全25問を本監査が独立意味審査したとは主張しない。"
+  },
+  "final_verification_results": {
+    "existing_validator_records": 4710,
+    "existing_validator_errors": 0,
+    "existing_validator_warnings": 3196,
+    "warning_codes": {
+      "detail_without_sources": 3196
+    },
+    "artifact_validation_checks": 69,
+    "independent_document_audit_checks": 72,
+    "final_browser_behavior_checks": 7,
+    "prior_interim_browser_checks_preserved": 10,
+    "csv_all_columns_matched": 14,
+    "category_markdown_own_id_sections_matched": 18,
+    "source_linked_new_backgrounds": 12,
+    "user_final_approval_received": true,
+    "production_files_written_by_audit": 0,
+    "shards_written_by_audit": 0,
+    "helpers_written_by_audit": 0,
+    "approval_source": "親/rootから、最終追加案の確認へのユーザー返信「おけ」と続く「その前にpush」の通知を受領。"
+  },
+  "final_artifact_sha256": {
+    "assemble_resolution.py": "2581cf2cc2960b15394d763fb51970cb9f3c997f5c6c9cddb5ee9de2c6195abc",
+    "validate_artifacts.py": "2113c809bbbc7296d1c22827e0cd608d14eab8194d3bda8c27333c6e0482fa2d",
+    "write_summary.py": "c50af77e34a754d8bac887306c809adec5eefd87e44e6d4f89af4834ba2d160b",
+    "run_dataset_validation.py": "4557933f7074a55846fc0615287d4d03c8ab48c8111c38be5f19489546dd71d2",
+    "check_review_ui.py": "eb5603a4c64b754ff0032ad58e3227dbfc5833cbe4207bddf6edeb4b1bc39225",
+    "compile.py": "d0cf7fb45495a2f0d38caef32e016655b280fc528bc091204d7f577154b05882",
+    "AUTHORING.md": "f4f43a87d5b49164ec03a3483b37e7825e2d996fa3826355d6e614caea6dd244",
+    "assignments.json": "a0eb08bc1ddaf93b76d413ee46ecd2b351c02705959932a30b9c3d161e24b8e7",
+    "peer-review-assignments.json": "1634a15381cec48fce1e40fafbf571176c15d25db65b366d24cee5ecaa7f882f",
+    "README.md": "4113dce7863bed743f9ca02e985be10f96e6984827a14a9112405ed2bff2c5cb",
+    "category-summary.csv": "448cb434c156bfc9193c2c486f4be905ff4e79058c41fe2b8f283f5646edf373",
+    "drafting-progress.json": "a21b9db0bbf75ee761b223575c68354af86483573ecb931eb750aa493516ec72",
+    "proposal.json": "ee78bde10a1dd39c320274f99ff31f7031bd01e4258310f934c664d06c609a42",
+    "all-additions.csv": "c597e268ca64c520e9037303c69cb0514ab4b2b587d765e7f5d19a46b5d6b51c",
+    "review.html": "3e795c2403bcb65f4245a4545f30f36785ef90ec791a7d5ef13e4b8792dd08d5",
+    "review-resolution.json": "14c7ab2e1811535cafbae67bae9084bfdb149adc81bd3d6170d5523f2a379a98",
+    "validation-report.json": "fa1016b95e979a8a509fdb545b8c00568d23e757c6ac64c5a31428160593c5ad",
+    "dataset-validation.json": "9a206c778fc46bf2f2cddcf53830b51e2f3374e6f08d77c5e5fa64baf66a2ff4",
+    "dataset-validation-run.json": "5f5f13c0613898483d8eee6eff6ea0135727a84b99db050498bdbf770753a1c9",
+    "review-ui-check.json": "69792d0592a82aa19632c1665a7574edf6025c4afb2f3d1380b0b789fe98eb10",
+    "comparison-candidates.json": "67d1cd660083da0a823058d5a422e7525486b7f4c61bfeb75570010cdbff8a5c",
+    "peer-reviews/recheck-civic-last-two.json": "cb23fd56b88680966b1df6e28048ec403bd18e5ac18c616820ec6c2530bec531",
+    "resolution-drafts/recheck-additional-fixes-civic.json": "fac346d670c460e4d8f40d5eac15b9f9490be8627c8753731a752aebb7a127f8",
+    "peer-reviews/root-editorial-triage.json": "65d3063d3a71cc6ca709895ffb422423a2517509a28680607fd43de24aedf2a1",
+    "review-inputs/manifest.json": "837afd91bc3ab1199e1a0a019a7a5e574d7c1bc415ff6c0651ebfb649cd1352e",
+    "peer-reviews/learning-reviews-personal.json": "8bf8956833cbeea51c5576c7204545b4210a538e3fc9e758f54c64c7dfbadf36",
+    "peer-reviews/personal-reviews-care.json": "dd73768b81bbeeb78e88908f5760c0ebf4e1a37458a5eaeee7fbcdb6225307ac",
+    "peer-reviews/care-reviews-livelihood.json": "f30beea72cae1789e52f2c178ac95cb7a90bb3a5efa853e761a3157ca3abbae4",
+    "peer-reviews/livelihood-reviews-world.json": "62961199a68f5f2e6bd3335fbb6184a0be8dd62c65940f218b57682ac0cf35da",
+    "peer-reviews/world-reviews-civic.json": "5de7bcc8d121db09d4996d399092e9d0b28404954a47886bea7fd5302015b477",
+    "peer-reviews/civic-reviews-learning.json": "8b19164e183b038d2e95f9bff9ce07e9e6153547b17be942aca6ea2d44bfd6f8",
+    "applied-review-drafts/personal.json": "c8bd03a6459e27e793558c1b160b168cb5594f7934603f2d418c11cf682f1db6",
+    "applied-review-drafts/care.json": "995b137346e7cf64f20730081d7609836eb102a6e212a598baea6cf0568007d3",
+    "applied-review-drafts/livelihood.json": "a84d1b3fdb9f062f5017a44c2a67d00cb292609157a10a1c2f0cb850aafa88ee",
+    "applied-review-drafts/learning.json": "fbc0cfdfe5ed69812dd83ab6da2edb9b45368a15b8adbfbae9ec60f0518254d9",
+    "applied-review-drafts/civic.json": "4d51fa0f9393d83eff34a9a7fd02961f2a7390f63983b4224eb4bb3fe72d71e4",
+    "applied-review-drafts/world.json": "2a60a184f3d72d445f2fbfd7bb69c9d07fc5ddccba12da650818932168e27e72",
+    "peer-reviews/recheck-personal.json": "43672ef6a4cb6a089f2027b52c7c1ee671dbb09ecd700ba299fff95d70155fde",
+    "peer-reviews/recheck-care.json": "8f8be6430e1647d0902b605efc3f33b46a2f0717d15ceed21ab8613bd6728d8a",
+    "peer-reviews/recheck-livelihood.json": "36783b55f0746c0a04ce3cc51e82ff402130edf6d4d6fcb82d61fd1287dfe375",
+    "peer-reviews/recheck-learning.json": "e8243d521df7eb2cf983cafdcebcb3c7001f5ea72879e6f4fffda86fbf3d5715",
+    "peer-reviews/recheck-civic.json": "b749812f06816d50bd02c53c6cc92a204cb76811d794249f9b52746b6cea3b0b",
+    "peer-reviews/recheck-world.json": "acf7ca468cbb71c65bcc5cf7daf494efd7396561a777a7a067fe2f06b116bebe",
+    "questions/self_and_values.md": "7701b22fa8811cf4bdd14ed68eef99004f39947a3793526325b03c8f704f1577",
+    "questions/relationships_and_communication.md": "6583ec9226042086dd7b5a471652fcaa9472a8fca72f5e65118a24babd628712",
+    "questions/ethics_and_decision_making.md": "48427ad39f86b9872bc929556a4ce551184d8d98a40b948f253cc2c5e2303b28",
+    "questions/family_and_care.md": "8ec81909acd7039ff9bbcba00403118a69db6d45f0255c6ccd63d1beba187346",
+    "questions/gender_sexuality_and_identity.md": "7382cb0fa7468828f7ec6949f65f178645d88a91b5c4a088e6821371bd0efc2d",
+    "questions/health_and_disability.md": "46b1e9b5378fd62fe07abc23a54131f7f9a5bf4778dffe98cad26e9af33f1bca",
+    "questions/work_and_economy.md": "d921b86d5e349345cb2620a5df232c0c5cfb63d20a6e7f18c5a3d50d8cd1c6b9",
+    "questions/money_consumption_and_tax.md": "77e8abb8bcfe85f960d2012c1b874aae2196bf4c06ae3402cb2b55b104b8b7be",
+    "questions/housing_community_and_transport.md": "dfbecbfe7273ba2fc320925f9f6d61b121d76f8b5c1cbcf22beba1d049eed568",
+    "questions/school_and_youth.md": "d48be92c055e995f0bad14ce10be2db2c4c36d2f71e831bc986b3523e7880bd6",
+    "questions/technology_media_and_privacy.md": "f6ccec1e45f0e536880bd10765f66faaf31097ee73e859da150891e7268cf897",
+    "questions/culture_religion_and_history.md": "ae57e2736b468855a87796206602deb0701ed5d9ad9c50052a29197777997f4e",
+    "questions/justice_safety_and_crime.md": "f434b46c90a91efb79057845a0bb2f59f14842c2f0fff4bf9841ed897ba9fa40",
+    "questions/society_public_policy_and_environment.md": "374ea5ef9abbec620c267ba5ae3fde5996daa7456cc966757b698c2a540efbe3",
+    "questions/democracy_rights_and_participation.md": "a829b0c4157c1cbd56ab70ad48f337e35eaba2060e61c8b89014046a22630385",
+    "questions/climate_environment_energy_and_disaster.md": "1b4b18f15f84c6e8e75854144dc035fd73899684837aedaa0ad0f0c782f0385d",
+    "questions/international_peace_and_cooperation.md": "0b3bff7c0e03bc968fef37a7e8628d5f4947a5cae42ecb3e536057d16f3eef38",
+    "questions/science_research_and_uncertainty.md": "7f730d3692b8f4e6d2de12e0306e320bd247f77cf6bf3ae7b2946400c0ed2023"
+  },
+  "baseline_unchanged_final": true,
+  "completion_scope": "追加3,768問の最終文面はユーザーの「おけ」で承認済み。続く「その前にpush」に従う反映前の改行整形の監査を完了。承認proposalと6shardの全カード、正本942問はbyte不変。本記録はpush完了や正本4,710問化を表すものではない。",
+  "latest_audited_at_utc": "2026-10-09T04:54:27.177243+00:00",
+  "formatting_followup_2026_10_09": {
+    "status": "passed_byte_formatting_only_approved_content_unchanged",
+    "audited_at_utc": "2026-10-09T04:54:27.177243+00:00",
+    "record_date": "2026-10-09",
+    "reviewer": "author_world",
+    "approved_proposal_sha256": "ee78bde10a1dd39c320274f99ff31f7031bd01e4258310f934c664d06c609a42",
+    "formatting_record": {
+      "file": "push-formatting-2026-10-09.json",
+      "sha256": "04ed49cbb8e359972dd90fe9f0a5c4bec027b351620643fce4be7a4a4a6e3080"
+    },
+    "before_hash_evidence_method": "before indexは照合時には既にafter版。CSV全fieldsを維持してCRLFで再serialize、MDに削除されたLF1個を復元、helperの限定改行変更を逆適用し、旧record/audit SHAへ完全一致することを独立確認。古いindex byteと照合したとの主張ではない。",
+    "file_byte_proofs": [
+      {
+        "file": "research/addition-analysis-2026-10-07/candidate-catalog.csv",
+        "before_sha256": "639dd901702429bb8432a602e058da3d0f1e25d2e597866378925a281585d5c3",
+        "after_sha256": "bdb801bc746984c1716255618d8d4606969366f6b7d2f3e06d701d695cc0dd19",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "CSV_record_terminator_only",
+        "rows_excluding_header": 28,
+        "same_fields_CRLF_reconstruction_matches_before_sha256": true,
+        "same_fields_LF_serialization_matches_after_bytes": true
+      },
+      {
+        "file": "research/addition-analysis-2026-10-07/expansion-plan.csv",
+        "before_sha256": "d46aa11e22f1b5065cea6c516eca4adb0e8ecf82a39d0b3f9ab7c714f2abdca8",
+        "after_sha256": "ce686e1eaea218386a45c9a3d251cee924faefb58764133e28b14070bdaf0e7e",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "CSV_record_terminator_only",
+        "rows_excluding_header": 18,
+        "same_fields_CRLF_reconstruction_matches_before_sha256": true,
+        "same_fields_LF_serialization_matches_after_bytes": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/all-additions.csv",
+        "before_sha256": "ca3a7d0382071005ee5f8cbabb9cf36e16e678b66f86842bdd0fdec8fe3da63f",
+        "after_sha256": "c597e268ca64c520e9037303c69cb0514ab4b2b587d765e7f5d19a46b5d6b51c",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "CSV_record_terminator_only",
+        "rows_excluding_header": 3768,
+        "same_fields_CRLF_reconstruction_matches_before_sha256": true,
+        "same_fields_LF_serialization_matches_after_bytes": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/category-summary.csv",
+        "before_sha256": "1b0fffc7b9e55ee29932b4840b607be7148da72837ffce399cd185411ed435c8",
+        "after_sha256": "448cb434c156bfc9193c2c486f4be905ff4e79058c41fe2b8f283f5646edf373",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "CSV_record_terminator_only",
+        "rows_excluding_header": 18,
+        "same_fields_CRLF_reconstruction_matches_before_sha256": true,
+        "same_fields_LF_serialization_matches_after_bytes": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/peer-reviews/recheck-civic.md",
+        "before_sha256": "4b30df333662846c3e183bc73a90db1762bed6b13e759dd3c5cd74ead3fb86cd",
+        "after_sha256": "038b36cf0c31543454a7ddec79d92ff85f776093536d6939cdb4826dd32d3275",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/family_and_care.md",
+        "before_sha256": "3916b9aa2c6e68e5cdfb64fa9e22984b66e26bf5b38cd10646d1b431711963aa",
+        "after_sha256": "8ec81909acd7039ff9bbcba00403118a69db6d45f0255c6ccd63d1beba187346",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/culture_religion_and_history.md",
+        "before_sha256": "07f3ecb62a964f6142964d15ca5bdb6bd66e5e7a2459ec077d94f7a14d8eb3da",
+        "after_sha256": "ae57e2736b468855a87796206602deb0701ed5d9ad9c50052a29197777997f4e",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/climate_environment_energy_and_disaster.md",
+        "before_sha256": "f02ed8e0ebfdf69d2dc4cc063a499cb9f6594e9ad9964b46f103f39623a85765",
+        "after_sha256": "1b4b18f15f84c6e8e75854144dc035fd73899684837aedaa0ad0f0c782f0385d",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/democracy_rights_and_participation.md",
+        "before_sha256": "ed7ec2fd04144c3da554cf440655f10032dc608b8199b0734da14064c091f01e",
+        "after_sha256": "a829b0c4157c1cbd56ab70ad48f337e35eaba2060e61c8b89014046a22630385",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/ethics_and_decision_making.md",
+        "before_sha256": "9d6131ccae02565bd8e8c3278872b07b491227a8f3ad7ea90948d4467eb3ccac",
+        "after_sha256": "48427ad39f86b9872bc929556a4ce551184d8d98a40b948f253cc2c5e2303b28",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/health_and_disability.md",
+        "before_sha256": "c349c8db9eb4942085b9a211e3fd191a068dca794aac026bedf135588ead401b",
+        "after_sha256": "46b1e9b5378fd62fe07abc23a54131f7f9a5bf4778dffe98cad26e9af33f1bca",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/gender_sexuality_and_identity.md",
+        "before_sha256": "58333fa0eea0f3176b42328e995b653ef07088ae1a14255fa117a75724a06908",
+        "after_sha256": "7382cb0fa7468828f7ec6949f65f178645d88a91b5c4a088e6821371bd0efc2d",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/money_consumption_and_tax.md",
+        "before_sha256": "2bcf038698617a0c382dfdeb6845901b5cd7ec06ab85b6b6da2b4ab62c6fa8e9",
+        "after_sha256": "77e8abb8bcfe85f960d2012c1b874aae2196bf4c06ae3402cb2b55b104b8b7be",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/society_public_policy_and_environment.md",
+        "before_sha256": "b227eb7a8bca6c435e0c6cd0785d9dbfe13607a48989b61b2b74b03046b852ce",
+        "after_sha256": "374ea5ef9abbec620c267ba5ae3fde5996daa7456cc966757b698c2a540efbe3",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/self_and_values.md",
+        "before_sha256": "c151879f9aa7c0fd4c9eb9bc1a89a14b6284b27dca9ff659878d63f3803f8965",
+        "after_sha256": "7701b22fa8811cf4bdd14ed68eef99004f39947a3793526325b03c8f704f1577",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/housing_community_and_transport.md",
+        "before_sha256": "62e50923b36adacfac2894fc35a6d166619bf619e2443d31c7642b6b93333fc4",
+        "after_sha256": "dfbecbfe7273ba2fc320925f9f6d61b121d76f8b5c1cbcf22beba1d049eed568",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/relationships_and_communication.md",
+        "before_sha256": "4f316b5344cd646ed12b856f2f4526a63c8303eef430618d2fb6013dc6b212f4",
+        "after_sha256": "6583ec9226042086dd7b5a471652fcaa9472a8fca72f5e65118a24babd628712",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/science_research_and_uncertainty.md",
+        "before_sha256": "aca91838efbaaa54308f62cc31b3142cd9bcd665c7215a9d686d47894250d8e1",
+        "after_sha256": "7f730d3692b8f4e6d2de12e0306e320bd247f77cf6bf3ae7b2946400c0ed2023",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/work_and_economy.md",
+        "before_sha256": "b9f82c371acad6187ba475acce45bf55c90ed5effe98385967731b9892b3a3bf",
+        "after_sha256": "d921b86d5e349345cb2620a5df232c0c5cfb63d20a6e7f18c5a3d50d8cd1c6b9",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/technology_media_and_privacy.md",
+        "before_sha256": "863b305d0a1c0d568e6605590a95208a8a5ecaa64dc262497f96a6f8adf72cfe",
+        "after_sha256": "f6ccec1e45f0e536880bd10765f66faaf31097ee73e859da150891e7268cf897",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/justice_safety_and_crime.md",
+        "before_sha256": "b6dc1cc5ec3d61da6aaf1a3ae8a820d6ba7ff913ab94a9d1ea5db87ad75e5587",
+        "after_sha256": "f434b46c90a91efb79057845a0bb2f59f14842c2f0fff4bf9841ed897ba9fa40",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/school_and_youth.md",
+        "before_sha256": "d028dc87cea955cf8b0c02cb740834b669131a20f7f8a078992c1036d6c4db70",
+        "after_sha256": "d48be92c055e995f0bad14ce10be2db2c4c36d2f71e831bc986b3523e7880bd6",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      },
+      {
+        "file": "staging-expansion-2026-10-08/questions/international_peace_and_cooperation.md",
+        "before_sha256": "069227205b4b581ef1ad1e7d4be1314156a93f8d755a68280abc343ad331d687",
+        "after_sha256": "0b3bff7c0e03bc968fef37a7e8628d5f4947a5cae42ecb3e536057d16f3eef38",
+        "after_sha256_matches_formatting_record": true,
+        "kind": "MD_EOF_blank_line_only",
+        "same_content_plus_one_EOF_LF_matches_before_sha256": true,
+        "exactly_one_final_LF": true
+      }
+    ],
+    "generator_byte_proofs": [
+      {
+        "file": "compile.py",
+        "before_sha256": "c3d94c33ef1851ef3415555a637b3c18382e4336aaeeec522ec279ee282998c8",
+        "after_sha256": "d0cf7fb45495a2f0d38caef32e016655b280fc528bc091204d7f577154b05882",
+        "reversing_only_CSV_LF_and_MD_EOF_changes_matches_old_audit_sha256": true
+      },
+      {
+        "file": "write_summary.py",
+        "before_sha256": "3d2dab91b3efdd74c80f34d678b9daff9b3258b69aa5467b99cd464bd142b189",
+        "after_sha256": "c50af77e34a754d8bac887306c809adec5eefd87e44e6d4f89af4834ba2d160b",
+        "reversing_only_CSV_LF_and_MD_EOF_changes_matches_old_audit_sha256": true
+      }
+    ],
+    "MD_per_card_section_checks": [
+      {
+        "category": "self_and_values",
+        "card_count": 245,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "relationships_and_communication",
+        "card_count": 185,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "ethics_and_decision_making",
+        "card_count": 163,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "family_and_care",
+        "card_count": 253,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "gender_sexuality_and_identity",
+        "card_count": 150,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "health_and_disability",
+        "card_count": 267,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "work_and_economy",
+        "card_count": 270,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "money_consumption_and_tax",
+        "card_count": 207,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "housing_community_and_transport",
+        "card_count": 233,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "school_and_youth",
+        "card_count": 158,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "technology_media_and_privacy",
+        "card_count": 193,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "culture_religion_and_history",
+        "card_count": 223,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "justice_safety_and_crime",
+        "card_count": 158,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "society_public_policy_and_environment",
+        "card_count": 213,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "democracy_rights_and_participation",
+        "card_count": 187,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "climate_environment_energy_and_disaster",
+        "card_count": 224,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "international_peace_and_cooperation",
+        "card_count": 188,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      },
+      {
+        "category": "science_research_and_uncertainty",
+        "card_count": 251,
+        "ID_order_exact": true,
+        "own_ID_question_background_reason_metadata_sources_exact": true,
+        "bad_ids": []
+      }
+    ],
+    "checks": [
+      {
+        "check": "approved_proposal_byte_unchanged",
+        "status": "passed"
+      },
+      {
+        "check": "baseline942_byte_unchanged",
+        "status": "passed"
+      },
+      {
+        "check": "all_six_approved_shards_byte_unchanged",
+        "status": "passed"
+      },
+      {
+        "check": "old_61_hash_changes_exactly_expected_22_format_artifact_helpers",
+        "status": "passed"
+      },
+      {
+        "check": "all_4_CSVs_before_and_after_reconstructed",
+        "status": "passed"
+      },
+      {
+        "check": "all_19_MDs_only_one_EOF_LF_removed",
+        "status": "passed"
+      },
+      {
+        "check": "all_18_MD_ID_sections_and_card_fields_exact",
+        "status": "passed"
+      },
+      {
+        "check": "only_expected_two_generator_code_changes",
+        "status": "passed"
+      },
+      {
+        "check": "root_artifact_validation69_passed_on_approved_proposal",
+        "status": "passed"
+      },
+      {
+        "check": "unchanged_existing_validator_and_UI_hash_binding",
+        "status": "passed"
+      }
+    ],
+    "secondary_read_only_csv_review": {
+      "reviewer": "/root/author_world/verify_csv_format",
+      "status": "passed",
+      "all_additions": {
+        "rows": 3768,
+        "columns": 14,
+        "fields_compared": 52752,
+        "header_exact": true,
+        "order_exact": true,
+        "source": "proposal/assignments/comparison-candidatesから独立算出",
+        "before_sha256": "ca3a7d0382071005ee5f8cbabb9cf36e16e678b66f86842bdd0fdec8fe3da63f",
+        "after_sha256": "c597e268ca64c520e9037303c69cb0514ab4b2b587d765e7f5d19a46b5d6b51c"
+      },
+      "category_summary": {
+        "rows": 18,
+        "columns": 6,
+        "fields_compared": 108,
+        "header_exact": true,
+        "source": "assignments/proposal/validation category_tableから独立算出",
+        "sum_current_additional_total": [
+          942,
+          3768,
+          4710
+        ],
+        "before_sha256": "1b0fffc7b9e55ee29932b4840b607be7148da72837ffce399cd185411ed435c8",
+        "after_sha256": "448cb434c156bfc9193c2c486f4be905ff4e79058c41fe2b8f283f5646edf373"
+      },
+      "quoted_field_real_newlines_in_two_CSVs": 0,
+      "fields_changed": 0,
+      "record_line_endings": "LF",
+      "files_edited": 0
+    },
+    "new_affected_artifact_helper_sha256": {
+      "research/addition-analysis-2026-10-07/candidate-catalog.csv": "bdb801bc746984c1716255618d8d4606969366f6b7d2f3e06d701d695cc0dd19",
+      "research/addition-analysis-2026-10-07/expansion-plan.csv": "ce686e1eaea218386a45c9a3d251cee924faefb58764133e28b14070bdaf0e7e",
+      "staging-expansion-2026-10-08/all-additions.csv": "c597e268ca64c520e9037303c69cb0514ab4b2b587d765e7f5d19a46b5d6b51c",
+      "staging-expansion-2026-10-08/category-summary.csv": "448cb434c156bfc9193c2c486f4be905ff4e79058c41fe2b8f283f5646edf373",
+      "staging-expansion-2026-10-08/peer-reviews/recheck-civic.md": "038b36cf0c31543454a7ddec79d92ff85f776093536d6939cdb4826dd32d3275",
+      "staging-expansion-2026-10-08/questions/family_and_care.md": "8ec81909acd7039ff9bbcba00403118a69db6d45f0255c6ccd63d1beba187346",
+      "staging-expansion-2026-10-08/questions/culture_religion_and_history.md": "ae57e2736b468855a87796206602deb0701ed5d9ad9c50052a29197777997f4e",
+      "staging-expansion-2026-10-08/questions/climate_environment_energy_and_disaster.md": "1b4b18f15f84c6e8e75854144dc035fd73899684837aedaa0ad0f0c782f0385d",
+      "staging-expansion-2026-10-08/questions/democracy_rights_and_participation.md": "a829b0c4157c1cbd56ab70ad48f337e35eaba2060e61c8b89014046a22630385",
+      "staging-expansion-2026-10-08/questions/ethics_and_decision_making.md": "48427ad39f86b9872bc929556a4ce551184d8d98a40b948f253cc2c5e2303b28",
+      "staging-expansion-2026-10-08/questions/health_and_disability.md": "46b1e9b5378fd62fe07abc23a54131f7f9a5bf4778dffe98cad26e9af33f1bca",
+      "staging-expansion-2026-10-08/questions/gender_sexuality_and_identity.md": "7382cb0fa7468828f7ec6949f65f178645d88a91b5c4a088e6821371bd0efc2d",
+      "staging-expansion-2026-10-08/questions/money_consumption_and_tax.md": "77e8abb8bcfe85f960d2012c1b874aae2196bf4c06ae3402cb2b55b104b8b7be",
+      "staging-expansion-2026-10-08/questions/society_public_policy_and_environment.md": "374ea5ef9abbec620c267ba5ae3fde5996daa7456cc966757b698c2a540efbe3",
+      "staging-expansion-2026-10-08/questions/self_and_values.md": "7701b22fa8811cf4bdd14ed68eef99004f39947a3793526325b03c8f704f1577",
+      "staging-expansion-2026-10-08/questions/housing_community_and_transport.md": "dfbecbfe7273ba2fc320925f9f6d61b121d76f8b5c1cbcf22beba1d049eed568",
+      "staging-expansion-2026-10-08/questions/relationships_and_communication.md": "6583ec9226042086dd7b5a471652fcaa9472a8fca72f5e65118a24babd628712",
+      "staging-expansion-2026-10-08/questions/science_research_and_uncertainty.md": "7f730d3692b8f4e6d2de12e0306e320bd247f77cf6bf3ae7b2946400c0ed2023",
+      "staging-expansion-2026-10-08/questions/work_and_economy.md": "d921b86d5e349345cb2620a5df232c0c5cfb63d20a6e7f18c5a3d50d8cd1c6b9",
+      "staging-expansion-2026-10-08/questions/technology_media_and_privacy.md": "f6ccec1e45f0e536880bd10765f66faaf31097ee73e859da150891e7268cf897",
+      "staging-expansion-2026-10-08/questions/justice_safety_and_crime.md": "f434b46c90a91efb79057845a0bb2f59f14842c2f0fff4bf9841ed897ba9fa40",
+      "staging-expansion-2026-10-08/questions/school_and_youth.md": "d48be92c055e995f0bad14ce10be2db2c4c36d2f71e831bc986b3523e7880bd6",
+      "staging-expansion-2026-10-08/questions/international_peace_and_cooperation.md": "0b3bff7c0e03bc968fef37a7e8628d5f4947a5cae42ecb3e536057d16f3eef38",
+      "staging-expansion-2026-10-08/compile.py": "d0cf7fb45495a2f0d38caef32e016655b280fc528bc091204d7f577154b05882",
+      "staging-expansion-2026-10-08/write_summary.py": "c50af77e34a754d8bac887306c809adec5eefd87e44e6d4f89af4834ba2d160b"
+    },
+    "old_61_artifact_hashes_preserved_history_phase": "final_approved_content_pre_formatting_2026-10-08",
+    "old_61_artifact_change_count": 22,
+    "validation_scope": "CSV14列と18MDの個別ID区間・全原文field一致、4CSV/19MDの改行のみのbyte証拠、2helperの限定出力変更を監査。元の意味/全文レビューを改変せず、UI/既存dataset validatorを同じ入力で再実行していない。rootのartifact validation69項目の再実行結果を照合した。",
+    "authorization_and_apply_state": {
+      "user_approved_final_additions": true,
+      "user_requested_push_before_apply": true,
+      "approved_reply": "おけ",
+      "push_order_reply": "その前にpush",
+      "canonical_card_count_at_audit": 942,
+      "dataset_apply_done_at_audit": false,
+      "push_completion_verified_by_this_audit": false,
+      "branch_push_scope_as_notified": "work branch only; no main push or PR creation"
+    },
+    "files_written_by_audit": [
+      "peer-reviews/final-artifact-audit.json",
+      "peer-reviews/final-artifact-audit.md"
+    ],
+    "shard_helper_live_files_written_by_audit": 0,
+    "limitations": [
+      "byte/表の内容照合であり、新たな全問意味レビュー・全組合せ比較・実会話検証ではない。",
+      "2026-10-08の旧監査での「承認未了」は当時の状態として履歴に保全。現在は具体案の最終ユーザー承認を受領している。",
+      "pushまたは正本への適用の完了は主担当が別途記録する。"
+    ]
+  }
+}

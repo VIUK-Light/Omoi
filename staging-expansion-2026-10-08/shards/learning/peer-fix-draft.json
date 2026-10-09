@@ -1,0 +1,33 @@
+{
+  "status": "draft_not_applied",
+  "id": "exp26-learning-0093",
+  "related_ids": [
+    "exp26-personal-0206"
+  ],
+  "before": {
+    "id": "exp26-learning-0093",
+    "level": 4,
+    "sensitivity": 3,
+    "category": "school_and_youth",
+    "topic": "learning_aspiration",
+    "question": "何年も憧れた学校へ入り、そのため友達との時間も後回しにした。学ぶ内容には心が動かない今、進んできた人生をどう受け止める？",
+    "perspective": "affected",
+    "detail": {
+      "text": "仮の場面です。合格自体は達成している。達成後の自己像と、学ぶ目的のずれを考える。"
+    }
+  },
+  "proposed_card": {
+    "id": "exp26-learning-0093",
+    "level": 4,
+    "sensitivity": 3,
+    "category": "school_and_youth",
+    "topic": "learning_aspiration",
+    "question": "憧れた学校では、自分が深く理解できたと思う学び方が評価されない。学校の基準へ合わせれば望む進路は開けるが、自分の「分かった」という実感は薄れる。学ぶ自分を何に置いて生きたい？",
+    "perspective": "affected",
+    "detail": {
+      "text": "仮の学習環境です。課題の評価基準と、本人が理解に到達する方法が一致しない設定で、どちらかを無意味と決めません。進路の機会と、自分の理解を信じて学ぶことを比べます。"
+    }
+  },
+  "reason": "personal0206は目標達成後の充足と費やした人生を聞く。0093は進学の達成そのものではなく、学んで分かった実感と評価される方法のずれが、本人の進路と学ぶ自律に及ぶ意味を聞く。学校名・達成対象の差替えを避ける。",
+  "stable_shard_sha256": "19ce08f2190733645109a7bcf6c1df29a61c3e8df60df084f7a04944f039e7a9"
+}

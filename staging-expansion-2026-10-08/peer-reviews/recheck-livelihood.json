@@ -1,0 +1,553 @@
+{
+  "reviewer": "civic",
+  "author_group": "livelihood",
+  "date": "2026-10-08",
+  "initial_final_shard_sha256": "4c48f2b3b1ba1537b3541afc390b77963c6f26bfe7e8723514da27e55f1fdc21",
+  "final_shard_sha256": "6843a8d883b349e6d73f57965c3077b6b7d374c8337744f2a55e4fe62240eb36",
+  "initial_reviewed_ids": [
+    "exp26-livelihood-0025",
+    "exp26-livelihood-0039",
+    "exp26-livelihood-0060",
+    "exp26-livelihood-0062",
+    "exp26-livelihood-0171",
+    "exp26-livelihood-0181",
+    "exp26-livelihood-0183",
+    "exp26-livelihood-0196",
+    "exp26-livelihood-0215",
+    "exp26-livelihood-0226",
+    "exp26-livelihood-0231",
+    "exp26-livelihood-0266",
+    "exp26-livelihood-0267",
+    "exp26-livelihood-0268",
+    "exp26-livelihood-0270",
+    "exp26-livelihood-0349",
+    "exp26-livelihood-0410",
+    "exp26-livelihood-0414",
+    "exp26-livelihood-0415",
+    "exp26-livelihood-0427",
+    "exp26-livelihood-0441",
+    "exp26-livelihood-0450",
+    "exp26-livelihood-0454",
+    "exp26-livelihood-0456",
+    "exp26-livelihood-0472",
+    "exp26-livelihood-0475",
+    "exp26-livelihood-0476",
+    "exp26-livelihood-0562",
+    "exp26-livelihood-0614",
+    "exp26-livelihood-0654",
+    "exp26-livelihood-0676",
+    "exp26-livelihood-0710"
+  ],
+  "reviewed_ids": [
+    "exp26-livelihood-0025",
+    "exp26-livelihood-0039",
+    "exp26-livelihood-0060",
+    "exp26-livelihood-0062",
+    "exp26-livelihood-0171",
+    "exp26-livelihood-0181",
+    "exp26-livelihood-0183",
+    "exp26-livelihood-0196",
+    "exp26-livelihood-0215",
+    "exp26-livelihood-0226",
+    "exp26-livelihood-0231",
+    "exp26-livelihood-0266",
+    "exp26-livelihood-0267",
+    "exp26-livelihood-0268",
+    "exp26-livelihood-0270",
+    "exp26-livelihood-0349",
+    "exp26-livelihood-0410",
+    "exp26-livelihood-0414",
+    "exp26-livelihood-0415",
+    "exp26-livelihood-0427",
+    "exp26-livelihood-0441",
+    "exp26-livelihood-0450",
+    "exp26-livelihood-0454",
+    "exp26-livelihood-0456",
+    "exp26-livelihood-0472",
+    "exp26-livelihood-0475",
+    "exp26-livelihood-0476",
+    "exp26-livelihood-0562",
+    "exp26-livelihood-0614",
+    "exp26-livelihood-0654",
+    "exp26-livelihood-0676",
+    "exp26-livelihood-0710",
+    "exp26-livelihood-0269"
+  ],
+  "reviewed_count": 33,
+  "input_snapshot": "/workspace/Omoi/staging-expansion-2026-10-08/peer-reviews/civic-livelihood-recheck-input.json",
+  "scope": "適用記録の修正32件についてbefore全additionと、適用後shardの問い・L3/4背景・追加理由・Level/視点/感度/警告/topic/editorialを16件ずつ全文確認。元careレビュー33指摘と横断XDR-08（0181）の原文・根拠も確認。近い担当内28件の全文と、既存24件の原文・背景を追加比較した。担当全710件を再度全文読んだレビューではなく、修正32件の独立再確認。全二問の組合せ比較・新規外部検索・現実の会話テストはしていない。全32修正はhypotheticalで、新たな現実の制度事実の断定はない。",
+  "compared_addition_ids": [
+    "exp26-livelihood-0042",
+    "exp26-livelihood-0172",
+    "exp26-livelihood-0180",
+    "exp26-livelihood-0190",
+    "exp26-livelihood-0191",
+    "exp26-livelihood-0225",
+    "exp26-livelihood-0242",
+    "exp26-livelihood-0244",
+    "exp26-livelihood-0269",
+    "exp26-livelihood-0299",
+    "exp26-livelihood-0408",
+    "exp26-livelihood-0428",
+    "exp26-livelihood-0525",
+    "exp26-livelihood-0630",
+    "exp26-livelihood-0653",
+    "exp26-livelihood-0669",
+    "exp26-livelihood-0675",
+    "exp26-livelihood-0709",
+    "exp26-livelihood-0346",
+    "exp26-livelihood-0348",
+    "exp26-livelihood-0350",
+    "exp26-livelihood-0368",
+    "exp26-livelihood-0374",
+    "exp26-livelihood-0460",
+    "exp26-livelihood-0339",
+    "exp26-livelihood-0341",
+    "exp26-livelihood-0344",
+    "exp26-livelihood-0347"
+  ],
+  "compared_existing_ids": [
+    "work-001",
+    "work-002",
+    "work-003",
+    "work-004",
+    "work-005",
+    "workplace-001",
+    "workplace-002",
+    "workplace-003",
+    "workplace-004",
+    "finance-001",
+    "finance-002",
+    "elderly-005",
+    "r6-03-04-l3",
+    "r6-03-04-l4",
+    "r6-11-03-l3",
+    "r6-11-03-l4",
+    "r6-02-02-l4",
+    "clarity-housing_community_and_transport-01-l3",
+    "bridge-023",
+    "bridge-024",
+    "r6-20-10-l4",
+    "transport-001",
+    "consumer-001",
+    "community-001"
+  ],
+  "per_card_assessments": [
+    {
+      "id": "exp26-livelihood-0025",
+      "assessment": "職場の成果の評価を明示し、仕事の入口になった。理由の「順序」についてだけ任意補正を記録。"
+    },
+    {
+      "id": "exp26-livelihood-0039",
+      "assessment": "職場の失敗と周囲の目を明示。日常一般の指摘から仕事の関係へ。"
+    },
+    {
+      "id": "exp26-livelihood-0060",
+      "assessment": "頼む側から頼まれる側へ主語を修正し、裁量を受け取る比較が成立。"
+    },
+    {
+      "id": "exp26-livelihood-0062",
+      "assessment": "勤務中の進捗と休息の感覚を明示。"
+    },
+    {
+      "id": "exp26-livelihood-0171",
+      "assessment": "生活を支えた職業で人物像を固定されることと、別の夢を持つ自分の意味。紹介する動機だけの問いから変わった。"
+    },
+    {
+      "id": "exp26-livelihood-0181",
+      "assessment": "0042の転職後の肩書き紹介から、職業を終えた自分の価値の継承へ。働き続ける0171と親を見てきた0266とも区別。"
+    },
+    {
+      "id": "exp26-livelihood-0183",
+      "assessment": "確認の時期と条件の曖昧さを解消し、自分の成果として評価を受け取れる条件を聞く。"
+    },
+    {
+      "id": "exp26-livelihood-0196",
+      "assessment": "本業という名称だけでなく、居場所を作った複数の仕事の一つを残す人生の選択へ。"
+    },
+    {
+      "id": "exp26-livelihood-0215",
+      "assessment": "会社への信頼と本人の専門性が重なる自己の発信へ。失われる可能性は仮定で法的断定もない。"
+    },
+    {
+      "id": "exp26-livelihood-0226",
+      "assessment": "0190の教える役割の喪失から、育てた相手の独立が自分の生業と競う責任へ独立。"
+    },
+    {
+      "id": "exp26-livelihood-0231",
+      "assessment": "好きだと話す雑談から、職場の共同行動と本人を支える仕事の関係へ。実在の争議行為の法的断定を避けている。"
+    },
+    {
+      "id": "exp26-livelihood-0266",
+      "assessment": "親の職業像で自分の道も決めてきた条件を置き、退職した親を見る本人の人生との関係を聞ける。"
+    },
+    {
+      "id": "exp26-livelihood-0267",
+      "assessment": "別家計の相手の職業選択を見て、自分が信じて生きた安定の基準を問い直すobserverの意味がある。"
+    },
+    {
+      "id": "exp26-livelihood-0268",
+      "assessment": "互いに認め合うことで保ってきた職業の自信と対等さを置き、一般の成功の予想から深めた。"
+    },
+    {
+      "id": "exp26-livelihood-0270",
+      "assessment": "信頼する人を守る一般論から、自分の専門性の基準を学んだ師の仕事への批評に変わった。批評の正否は未確定。"
+    },
+    {
+      "id": "exp26-livelihood-0349",
+      "assessment": "納税額による発言の重みを外し、未回収売上を収入へ算入する時点へ。0341の分割納付、0344の現物の支払い方、0347の現物の価値とは判断対象が違う。"
+    },
+    {
+      "id": "exp26-livelihood-0410",
+      "assessment": "「何が失敗」の助詞と先取りを修正。人生の望みが変わった後の購入の意味として比較できる。"
+    },
+    {
+      "id": "exp26-livelihood-0414",
+      "assessment": "通常の話題選びから、生活を立て直す貸借で対等な友情をどう受け止めるかへ。"
+    },
+    {
+      "id": "exp26-livelihood-0415",
+      "assessment": "高い物の短い満足の見直しから、所有が長く自分の価値を支えてきた本人の自己評価へ。依存の診断はしていない。"
+    },
+    {
+      "id": "exp26-livelihood-0427",
+      "assessment": "0408の買い手同士の有利な価格から、作り手の生活と買い手の生活を支える楽しみへ独立。0456は店側の商いの関係をどう残すか。"
+    },
+    {
+      "id": "exp26-livelihood-0441",
+      "assessment": "返済の事情確認の段取りから、生活の備えを失った貸し手の信頼と暮らしの意味へ。借りる側の0414と異なる責任を聞く。"
+    },
+    {
+      "id": "exp26-livelihood-0450",
+      "assessment": "人生の備えを使う本人の現在の願いと将来の自分への約束を置く。0460の共同資金の権限と区別。"
+    },
+    {
+      "id": "exp26-livelihood-0454",
+      "assessment": "予算案の根拠の調整から、自分の節約判断で家族の一回の機会を狭めた責任へ。家族の同意という条件も背景へ。"
+    },
+    {
+      "id": "exp26-livelihood-0456",
+      "assessment": "誰を残すのかの曖昧さを、店を誰の場所として続けるかへ直した。長い顧客との関係も保持。"
+    },
+    {
+      "id": "exp26-livelihood-0472",
+      "assessment": "管理を再開できる家族が望む自律と、長く預かってきた本人の安心の役の引継ぎへ。elderly-005の能力低下への保護と区別。"
+    },
+    {
+      "id": "exp26-livelihood-0475",
+      "assessment": "一般の祝い方から、援助を断って守った自分の暮らしと、友人の再出発を見る過去の意味へ。"
+    },
+    {
+      "id": "exp26-livelihood-0476",
+      "assessment": "0267の安定した職業基準の見直しから、財産差で共有した老後の予定がずれる本人へ深めた。本文に合う視点の再修正を記録。"
+    },
+    {
+      "id": "exp26-livelihood-0562",
+      "assessment": "個人の広さと時間の好みから、住宅支援の成果へ用いる自治体の評価基準へ。L3の制度的な判断対象がある。"
+    },
+    {
+      "id": "exp26-livelihood-0614",
+      "assessment": "変更を続けたいか、確認まで保留したいかの曖昧さを、変更前の確認へ解消。"
+    },
+    {
+      "id": "exp26-livelihood-0654",
+      "assessment": "0525の快適さと記憶から、共有の家で家族の部屋は残り自分の場所が失われる記憶の選ばれ方へ。本人の帰属が明確。"
+    },
+    {
+      "id": "exp26-livelihood-0676",
+      "assessment": "0669の自分の外出のため終了する場面から、送迎が生きがいの本人が自分の役目が不要な未来を望む意味へ。代替が育たない理由は断定しない。"
+    },
+    {
+      "id": "exp26-livelihood-0710",
+      "assessment": "交流の頻度の予想から、人生を支える再会と互いの住居・仕事を変えられない条件へ。直接影響を受けるaffectedへ整えた。"
+    }
+  ],
+  "findings": [
+    {
+      "id": "exp26-livelihood-0476",
+      "priority": "required",
+      "field": "perspective",
+      "issue": "改稿後は「老後を一緒に楽しむ予定を…描いてきた」「相手は…先に仕事を離れ、自分は働き続ける」「二人の未来をどう描き直す」と、本人も共有の人生の予定の変化を受ける。別家計の相手を見て自分の安定の基準を見直す0267のobserverとは違い、affectedが主な立場に合う。",
+      "suggested_resolution": "本文・背景・理由を保持し、perspectiveのみobserverからaffectedへ変更。",
+      "status": "resolved_in_staging_not_user_approved",
+      "resolution_evidence": "0025の追加理由は肯定の有無の比較へ修正され、0476は共有の人生の予定の変化を受けるaffectedへ。提案afterと最終全文が一致。"
+    },
+    {
+      "id": "exp26-livelihood-0025",
+      "priority": "optional",
+      "field": "reason",
+      "issue": "二つの条件は「褒めてから改善」と「改善だけ」で、肯定の有無も違う。「受け取る順序の違い」という理由だけでは純粋な順序比較と誤読する。問いの仕事の条件は解消済み。",
+      "suggested_resolution": "理由を「仕事の成果の評価について、肯定も受けてから改善点を聞くことと、改善点だけを受け取ることの感覚の違いを聞く。」へ。本文は保持。",
+      "status": "resolved_in_staging_not_user_approved",
+      "resolution_evidence": "0025の追加理由は肯定の有無の比較へ修正され、0476は共有の人生の予定の変化を受けるaffectedへ。提案afterと最終全文が一致。"
+    }
+  ],
+  "structural_checks": {
+    "applied_after_matches_final_all_32": true,
+    "normalized_exact_existing_collisions": [],
+    "all_32_warning_tags_allowed": true,
+    "total_shard_count": 710,
+    "followup_after_matches_final_both_2": true,
+    "only_followup_2_additions_changed": true,
+    "final_category_level_counts_preserved": true,
+    "additional_0269_after_matches_rebased_draft": true,
+    "only_0269_changed_since_previous_final": true,
+    "reviewed_changed_id_union_count": 33,
+    "latest_category_level_counts_preserved": true
+  },
+  "deferred_prior_optional_ids": [],
+  "deferred_note": "当初保留の0269は具体案の適用後に独立再確認し、0244は新方法が優位でも生涯の仕事の意味を残す問いとして原文と比較先で維持を確認した。保留を機械的に合格へ変えたものではない。",
+  "status": "rechecked_required_findings_resolved_not_approved",
+  "followup_rechecked_ids": [
+    "exp26-livelihood-0025",
+    "exp26-livelihood-0476"
+  ],
+  "followup_rechecked_count": 2,
+  "followup_final_additions": [
+    {
+      "card": {
+        "id": "exp26-livelihood-0025",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "work_and_economy",
+        "topic": "work_feedback",
+        "question": "職場で仕事の成果を褒められた後に改善点を聞くのと、改善点だけを詳しく聞くのでは、受け止め方が変わる？"
+      },
+      "reason": "仕事の成果の評価について、肯定を添えることと改善点だけを受け取ることの違いを聞く。",
+      "editorial": {
+        "author_group": "livelihood",
+        "fact_status": "hypothetical",
+        "source_row": "work_and_economy__l2.txt:5",
+        "related_existing_ids": [],
+        "peer_review_revision": {
+          "reviewer": "care",
+          "finding_id": "care-livelihood-001",
+          "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+        }
+      }
+    },
+    {
+      "card": {
+        "id": "exp26-livelihood-0476",
+        "level": 4,
+        "sensitivity": 2,
+        "category": "money_consumption_and_tax",
+        "topic": "property_inheritance",
+        "question": "老後を一緒に楽しむ予定を、同じように貯めながら支え合う仲間と描いてきた。相手は相続したお金で先に仕事を離れ、自分は働き続ける時、二人の未来をどう描き直したい？",
+        "perspective": "affected",
+        "detail": {
+          "text": "架空の財産の差。資金は別々で、同じ時期に仕事を離れることは拘束する約束ではなく共有した望みだった。相手の相続を不正や裏切りとは置かず、今後使えるお金と時間が異なる中で、共に描いた人生の予定を考える。"
+        }
+      },
+      "reason": "近い人の違う職業選択で自分の基準を見直す0267とは分ける。相続によって仲間との老後の時期がずれる本人が、共有した人生の予定と財産差を受け止める意味を聞く。",
+      "editorial": {
+        "author_group": "livelihood",
+        "fact_status": "hypothetical",
+        "source_row": "money_consumption_and_tax__l4.txt:80",
+        "related_existing_ids": [],
+        "peer_review_revision": {
+          "reviewer": "care",
+          "finding_id": "care-livelihood-028",
+          "note": "未承認の修正案。正本および作成担当snapshotには未適用。"
+        }
+      }
+    }
+  ],
+  "followup_scope": "rootがstagingへ追記した0025理由/0476視点の2件を、最終shardの全additionとして再読。提案afterに一致し、初回入力から他708件は変わっていないことを構造比較。初回32件の全文確認と比較範囲を保持し、他708件の新たな全文再読とはしない。",
+  "finding_counts": {
+    "required_resolved": 1,
+    "optional_resolved": 1,
+    "required_open_in_this_scope": 0,
+    "optional_open_in_this_scope": 0,
+    "additional_prior_optional_0269_resolved": 1,
+    "prior_optional_0244_retained_by_text_adjudication": 1
+  },
+  "initial_per_card_assessments": [
+    {
+      "id": "exp26-livelihood-0025",
+      "assessment": "職場の成果の評価を明示し、仕事の入口になった。理由の「順序」についてだけ任意補正を記録。"
+    },
+    {
+      "id": "exp26-livelihood-0039",
+      "assessment": "職場の失敗と周囲の目を明示。日常一般の指摘から仕事の関係へ。"
+    },
+    {
+      "id": "exp26-livelihood-0060",
+      "assessment": "頼む側から頼まれる側へ主語を修正し、裁量を受け取る比較が成立。"
+    },
+    {
+      "id": "exp26-livelihood-0062",
+      "assessment": "勤務中の進捗と休息の感覚を明示。"
+    },
+    {
+      "id": "exp26-livelihood-0171",
+      "assessment": "生活を支えた職業で人物像を固定されることと、別の夢を持つ自分の意味。紹介する動機だけの問いから変わった。"
+    },
+    {
+      "id": "exp26-livelihood-0181",
+      "assessment": "0042の転職後の肩書き紹介から、職業を終えた自分の価値の継承へ。働き続ける0171と親を見てきた0266とも区別。"
+    },
+    {
+      "id": "exp26-livelihood-0183",
+      "assessment": "確認の時期と条件の曖昧さを解消し、自分の成果として評価を受け取れる条件を聞く。"
+    },
+    {
+      "id": "exp26-livelihood-0196",
+      "assessment": "本業という名称だけでなく、居場所を作った複数の仕事の一つを残す人生の選択へ。"
+    },
+    {
+      "id": "exp26-livelihood-0215",
+      "assessment": "会社への信頼と本人の専門性が重なる自己の発信へ。失われる可能性は仮定で法的断定もない。"
+    },
+    {
+      "id": "exp26-livelihood-0226",
+      "assessment": "0190の教える役割の喪失から、育てた相手の独立が自分の生業と競う責任へ独立。"
+    },
+    {
+      "id": "exp26-livelihood-0231",
+      "assessment": "好きだと話す雑談から、職場の共同行動と本人を支える仕事の関係へ。実在の争議行為の法的断定を避けている。"
+    },
+    {
+      "id": "exp26-livelihood-0266",
+      "assessment": "親の職業像で自分の道も決めてきた条件を置き、退職した親を見る本人の人生との関係を聞ける。"
+    },
+    {
+      "id": "exp26-livelihood-0267",
+      "assessment": "別家計の相手の職業選択を見て、自分が信じて生きた安定の基準を問い直すobserverの意味がある。"
+    },
+    {
+      "id": "exp26-livelihood-0268",
+      "assessment": "互いに認め合うことで保ってきた職業の自信と対等さを置き、一般の成功の予想から深めた。"
+    },
+    {
+      "id": "exp26-livelihood-0270",
+      "assessment": "信頼する人を守る一般論から、自分の専門性の基準を学んだ師の仕事への批評に変わった。批評の正否は未確定。"
+    },
+    {
+      "id": "exp26-livelihood-0349",
+      "assessment": "納税額による発言の重みを外し、未回収売上を収入へ算入する時点へ。0341の分割納付、0344の現物の支払い方、0347の現物の価値とは判断対象が違う。"
+    },
+    {
+      "id": "exp26-livelihood-0410",
+      "assessment": "「何が失敗」の助詞と先取りを修正。人生の望みが変わった後の購入の意味として比較できる。"
+    },
+    {
+      "id": "exp26-livelihood-0414",
+      "assessment": "通常の話題選びから、生活を立て直す貸借で対等な友情をどう受け止めるかへ。"
+    },
+    {
+      "id": "exp26-livelihood-0415",
+      "assessment": "高い物の短い満足の見直しから、所有が長く自分の価値を支えてきた本人の自己評価へ。依存の診断はしていない。"
+    },
+    {
+      "id": "exp26-livelihood-0427",
+      "assessment": "0408の買い手同士の有利な価格から、作り手の生活と買い手の生活を支える楽しみへ独立。0456は店側の商いの関係をどう残すか。"
+    },
+    {
+      "id": "exp26-livelihood-0441",
+      "assessment": "返済の事情確認の段取りから、生活の備えを失った貸し手の信頼と暮らしの意味へ。借りる側の0414と異なる責任を聞く。"
+    },
+    {
+      "id": "exp26-livelihood-0450",
+      "assessment": "人生の備えを使う本人の現在の願いと将来の自分への約束を置く。0460の共同資金の権限と区別。"
+    },
+    {
+      "id": "exp26-livelihood-0454",
+      "assessment": "予算案の根拠の調整から、自分の節約判断で家族の一回の機会を狭めた責任へ。家族の同意という条件も背景へ。"
+    },
+    {
+      "id": "exp26-livelihood-0456",
+      "assessment": "誰を残すのかの曖昧さを、店を誰の場所として続けるかへ直した。長い顧客との関係も保持。"
+    },
+    {
+      "id": "exp26-livelihood-0472",
+      "assessment": "管理を再開できる家族が望む自律と、長く預かってきた本人の安心の役の引継ぎへ。elderly-005の能力低下への保護と区別。"
+    },
+    {
+      "id": "exp26-livelihood-0475",
+      "assessment": "一般の祝い方から、援助を断って守った自分の暮らしと、友人の再出発を見る過去の意味へ。"
+    },
+    {
+      "id": "exp26-livelihood-0476",
+      "assessment": "0267の安定した職業基準の見直しから、財産差で共有した老後の予定がずれる本人へ深めた。本文に合う視点の再修正を記録。"
+    },
+    {
+      "id": "exp26-livelihood-0562",
+      "assessment": "個人の広さと時間の好みから、住宅支援の成果へ用いる自治体の評価基準へ。L3の制度的な判断対象がある。"
+    },
+    {
+      "id": "exp26-livelihood-0614",
+      "assessment": "変更を続けたいか、確認まで保留したいかの曖昧さを、変更前の確認へ解消。"
+    },
+    {
+      "id": "exp26-livelihood-0654",
+      "assessment": "0525の快適さと記憶から、共有の家で家族の部屋は残り自分の場所が失われる記憶の選ばれ方へ。本人の帰属が明確。"
+    },
+    {
+      "id": "exp26-livelihood-0676",
+      "assessment": "0669の自分の外出のため終了する場面から、送迎が生きがいの本人が自分の役目が不要な未来を望む意味へ。代替が育たない理由は断定しない。"
+    },
+    {
+      "id": "exp26-livelihood-0710",
+      "assessment": "交流の頻度の予想から、人生を支える再会と互いの住居・仕事を変えられない条件へ。直接影響を受けるaffectedへ整えた。"
+    }
+  ],
+  "final_followup_assessments": [
+    {
+      "id": "exp26-livelihood-0025",
+      "assessment": "本文を保ち、肯定を添える/改善点だけの比較という追加理由に一致。仕事の入口と明瞭さを保持。"
+    },
+    {
+      "id": "exp26-livelihood-0476",
+      "assessment": "本文・背景・理由を保ち、共有した老後の予定を描き直す当事者のaffectedに一致。0267の別家計の相手の職業選択を見て自分の基準を見直すobserverとは違う。"
+    }
+  ],
+  "previous_final_shard_sha256": "480f79bda46a2d8f96de87e46a832739bc7ca1992377679dcf2da8fae19e0444",
+  "additional_followup_rechecked_ids": [
+    "exp26-livelihood-0269"
+  ],
+  "additional_followup_rechecked_count": 1,
+  "additional_followup_final_additions": [
+    {
+      "card": {
+        "id": "exp26-livelihood-0269",
+        "level": 4,
+        "sensitivity": 2,
+        "category": "work_and_economy",
+        "topic": "work_exit",
+        "question": "友人の家業には、幼い頃から家族で通い、つらい時も顔を見て話せる時間があった。友人が、自分の残る時間を仕事以外に使いたいと店を閉じる。本人を応援したいのに「惜しい」とも感じる時、自分の暮らしから何がなくなることを惜しんでいると思う？",
+        "perspective": "observer",
+        "detail": {
+          "text": "架空の商いの終了です。自分の家族は長く利用してきて、品物やサービスだけでなく、人と話せる時間にも支えられてきた設定です。自分がその仕事を惜しむ理由と、友人が今後の人生を選び直すことを分けます。店や仕事の継続を本人へ求める答えを要求しません。"
+        }
+      },
+      "reason": "一般の家業終了への感想から、自分の生活も支えてきた商いを惜しむ理由と、その仕事を終える友人の人生を応援する見方へ深める。",
+      "editorial": {
+        "author_group": "livelihood",
+        "fact_status": "hypothetical",
+        "source_row": "work_and_economy__l4.txt:111",
+        "related_existing_ids": []
+      }
+    }
+  ],
+  "additional_followup_scope": "追加任意0269のbefore全addition、rootが末尾の係り方を明確化したrebased draft、適用後の問い・背景・理由・metadataを独立実読。0266/0267、civic0369の最終全文と比較。0244と0242の原文・背景・理由も再読し、任意指摘の維持裁定の根拠を確認。最終710件のうち前回から変わったのは0269だけ。初回32件と0025/0476の追記2件の読了履歴を保全し、変更IDの和集合33件とする。全710件や全組合せの新たな全文レビューではない。",
+  "initial_deferred_prior_optional_ids": [
+    "exp26-livelihood-0244",
+    "exp26-livelihood-0269"
+  ],
+  "additional_followup_assessment": {
+    "id": "exp26-livelihood-0269",
+    "assessment": "友人の商いが幼い頃から自分の暮らしを支えた関係を置き、一般の終了の感想から自分に失われるものを知るL4の問いへ。末尾は「自分の暮らしから何がなくなることを惜しむ」となり、仕事の種類を問う係り方を解消。仕事以外の人生へ進む友人の選択を見るobserverの問いとして、終了を止める模範行動を求めない。0266は自分の職業像を支えた親を見る意味、0267は自分の安定の人生基準。civic0369は支援事業の外から見える成果と担い手の生き方で、0269は利用者として商いに支えられた自分の生活の喪失と区別。",
+    "status": "resolved_in_staging_not_user_approved"
+  },
+  "retained_without_change": [
+    {
+      "id": "exp26-livelihood-0244",
+      "compared_ids": [
+        "exp26-livelihood-0242"
+      ],
+      "reason": "0242は経営を渡す前任者が、後継者の裁量へ最後まで関わる範囲を聞く。0244は本人が人生をかけた方法を広め、新しい方がよいと既に認めても何を残したいかを聞く。背景も方法の正しさと職業人生の意味を区別しており、運営への関与の境界と同一ではない。新方法の優位を認めた条件を落とさず維持する。",
+      "status": "retained_after_text_comparison_not_user_approved"
+    }
+  ]
+}

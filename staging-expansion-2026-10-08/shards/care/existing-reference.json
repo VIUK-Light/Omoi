@@ -1,0 +1,2470 @@
+[
+  {
+    "id": "gender-relations-001",
+    "category": "gender_sexuality_and_identity",
+    "question": "ハラスメントだと受け取られることを恐れ、異性の同僚とは仕事以外の会話をしない人がいる。その距離の取り方をどう思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "相手を不快にさせたり、ハラスメントだと受け取られたりすることを避けるため、異性への声かけや個人的な誘いを控える人がいると言われます。\n\n慎重に行動することは相手への配慮だという考えがある一方、過度な警戒が人間関係や出会いそのものを減らし、互いの萎縮につながるという見方もあります。\n\nどこまでが必要な配慮で、どこからが過度なリスク回避なのかを考える問いです。"
+    },
+    "topic": "gender_relations",
+    "perspective": "observer"
+  },
+  {
+    "id": "gender-identity-001",
+    "category": "gender_sexuality_and_identity",
+    "question": "女性用更衣室をトランス女性が利用することについて、利用機会と、着替える際のプライバシーを踏まえ、どのような条件や設備なら認められると思う？ 認められないと考える場合、その理由は？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "トイレ、更衣室、入浴施設、宿泊施設など、性別によって利用を分ける空間では、トランスジェンダーの人をどのように扱うかが議論になります。\n\nトランス女性を女性として扱い、排除しないことを重視する立場があります。一方で、プライバシーや安全、身体的な性差を理由に、利用条件を分ける必要があると考える立場もあります。\n\n誰も不当に排除しないことと、利用者の安全やプライバシーをどう両立させるかが争点です。"
+    },
+    "topic": "gender_identity",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
+  },
+  {
+    "id": "feminism-001",
+    "category": "gender_sexuality_and_identity",
+    "question": "女性が少ない分野への進学を支援するため、女性だけが応募できる奨学金を設けることは公平だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "女性向けの採用枠、クオータ制、支援制度などは、過去や現在の格差を是正するための政策として導入されることがあります。\n\n格差が残っている以上、同じ扱いをするだけでは平等にならないという考えがあります。一方で、性別を理由に一方を優遇すれば、新たな不公平や逆差別につながるという批判もあります。\n\n平等とは『同じように扱うこと』なのか、それとも『不利を補うこと』まで含むのかが、この問いの中心です。"
+    },
+    "topic": "feminism",
+    "perspective": "observer"
+  },
+  {
+    "id": "family-law-001",
+    "category": "family_and_care",
+    "question": "離婚後も、両方の親が子どもの養育について法的な責任と権限を持つ「共同親権」。\nこの形を基本にするべきだと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "離婚後の親権や子育てへの関わり方は、子ども、母親、父親それぞれの立場から議論されます。共同親権では、離婚後も両方の親が子どもについて法的な責任や権限を持つことになります。\n\n両親が継続して子育てに関わることを重視する立場がある一方、家庭内の対立や安全上の問題がある場合には共同で判断することが難しいという懸念もあります。\n\n親の権利だけでなく、子どもの利益をどう考えるかが重要な争点です。"
+    },
+    "topic": "family_law",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "family-law-002",
+    "category": "family_and_care",
+    "question": "支払う能力があるのに養育費を払わない人に対し、給与などから強制的に支払いを確保する仕組みは、どこまで認めるべきだと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "離婚や別居の後、子どもと暮らしていない親が養育費を負担することがあります。しかし、実際には支払いが続かないケースや、金額・負担能力をめぐる争いもあります。\n\n子どもの生活を守るため、強い徴収制度が必要だという考えがあります。一方で、収入状況や親子関係、個別事情を十分に考慮せず一律に強制することへの懸念もあります。\n\n子どもの権利と、支払う側の事情をどこまで両立させるべきかを考える問いです。"
+    },
+    "topic": "family_law",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "caregiving-001",
+    "category": "family_and_care",
+    "question": "家事や育児は、収入が多い側が少なく負担しても公平だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "共働き家庭でも、労働時間、収入、家事、育児、精神的な負担は同じとは限りません。そのため、単純に家事を半分ずつにすることが必ずしも公平とは限らないという考えがあります。\n\n収入や仕事時間に応じて分担を変えるべきだという立場と、家庭の仕事も同じように生活を支える労働なので、収入だけで負担を決めるべきではないという立場があります。\n\n公平な分担を何を基準に決めるかを考える問いです。"
+    },
+    "topic": "caregiving",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "family-law-003",
+    "category": "family_and_care",
+    "question": "結婚後も、希望する夫婦はそれぞれの名字を使えるようにする「選択的夫婦別姓」を認めるべきだと思う？",
+    "level": 3,
+    "sensitivity": 2,
+    "detail": {
+      "text": "結婚後の姓をめぐっては、同じ姓を名乗る現在の仕組みと、希望する夫婦が別々の姓を使えるようにする選択的夫婦別姓が議論されています。\n\n個人の名前や仕事上の継続性、選択の自由を重視する立場があります。一方で、家族として同じ姓を持つことの意味や、戸籍制度との関係を重視する立場もあります。\n\n個人の選択と、家族制度のあり方をどう考えるかが争点です。"
+    },
+    "topic": "family_law",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "mental-health-001",
+    "category": "health_and_disability",
+    "question": "男性の孤独や自殺の問題は、もっと男性に特化して支援するべきだと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "男性は悩みを周囲に相談しにくい、支援につながりにくいという指摘があります。また、孤独、失業、離婚、人間関係などが生活上の深刻な問題につながることもあります。\n\n男性向けの相談や支援を増やすことで、利用しやすくなるという考えがあります。一方で、性別で支援を分けるより、必要な人が誰でも利用しやすい仕組みを整えるべきだという考えもあります。\n\n性別に特化した支援をどこまで行うべきかを考える問いです。"
+    },
+    "topic": "mental_health",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
+  },
+  {
+    "id": "medicine-001",
+    "category": "health_and_disability",
+    "question": "亡くなった後の臓器提供について、本人が拒否の意思を示していなければ、提供に同意したとみなす仕組みをどう思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "臓器提供の意思表示を、希望者だけが登録する方式にするか、拒否しない限り提供意思があるとみなす方式にするかで考え方が分かれます。\n\n提供できる臓器を増やせる可能性を重視する立場がある一方、本人の明確な同意なしに扱いを決めることへの懸念もあります。\n\n命を救う利益と本人の自己決定をどう考えるかが争点です。"
+    },
+    "topic": "medicine",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
+  },
+  {
+    "id": "medicine-002",
+    "category": "health_and_disability",
+    "question": "出生前診断で重い病気の可能性が分かったら、出産するかどうかの判断材料にしていいと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "出生前診断では、妊娠中に胎児の一部の病気や特徴について情報を得られる場合があります。\n\n将来の生活や医療への準備、家族の事情を考えるために必要な情報だという考えがあります。一方で、障害や病気のある人の価値を選別する考えにつながらないかという懸念もあります。\n\n親の選択と、命や障害をどう捉えるかが関わる問いです。"
+    },
+    "topic": "medicine",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
+  },
+  {
+    "id": "medicine-003",
+    "category": "health_and_disability",
+    "question": "遺伝子編集で、生まれる子どもの病気を防げるなら使うべきだと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "遺伝子編集技術によって、将来は一部の遺伝性疾患を防げる可能性が議論されています。\n\n病気を防ぎ本人や家族の負担を減らせるという期待があります。一方で、将来世代に影響する変更を本人の同意なしに行うことや、能力・外見の選択へ広がることへの懸念もあります。\n\n治療と人間の設計の境界をどこに置くかを考えます。"
+    },
+    "topic": "medicine",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
+  },
+  {
+    "id": "family-policy-001",
+    "category": "family_and_care",
+    "question": "子どもを望む人に代わって、別の人が妊娠・出産を担う「代理出産」を認めるべきだと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "代理出産では、子どもを望む人のために別の人が妊娠・出産を担います。\n\n子どもを持つ選択肢を広げるという考えがある一方、妊娠する人の身体的負担、経済格差による圧力、親子関係をどう定めるかなどの問題もあります。\n\n生殖の自由と、身体や家族関係をめぐる倫理を考える問いです。"
+    },
+    "topic": "family_policy",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "family-policy-002",
+    "category": "family_and_care",
+    "question": "精子や卵子の提供で生まれた子どもは、提供者を知る権利があると思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "第三者から精子や卵子の提供を受けて子どもを持つ場合、提供者の情報をどこまで子どもに伝えるかが問題になります。\n\n自分の生物学的なルーツを知る権利を重視する立場があります。一方で、提供者のプライバシーや、匿名性が失われることで提供者が減る可能性を重視する立場もあります。\n\n出生に関する情報を誰のものと考えるかが争点です。"
+    },
+    "topic": "family_policy",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "family-policy-003",
+    "category": "family_and_care",
+    "question": "同性同士の結婚を、異性同士の結婚と同じ制度にするべきだと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "同性カップルの関係を、婚姻として異性カップルと同じように扱うかは、家族制度のあり方に関わる問題です。\n\n性別にかかわらず同じ法的保障を受けられるべきだという考えがあります。一方で、婚姻制度には男女の組み合わせに特有の役割があると考える立場もあります。\n\n個人の平等と、婚姻制度をどう定義するかを考える問いです。"
+    },
+    "topic": "family_policy",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "family-policy-004",
+    "category": "family_and_care",
+    "question": "子どもを持たない人も、少子化対策のために多く税金を負担するべきだと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "少子化対策には、子育て支援や教育費など社会全体の財源が使われます。\n\n将来の社会を支える子どもへの支援は、子どもの有無にかかわらず全員の利益になるという考えがあります。一方で、個人の家族選択によって負担に差をつけることへの反発もあります。\n\n社会全体で子育てをどこまで支えるかを考えます。"
+    },
+    "topic": "family_policy",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "sex-education-001",
+    "category": "gender_sexuality_and_identity",
+    "question": "学校の性教育で、避妊具の具体的な使い方まで教えるべき？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "性教育では、体の仕組みや妊娠について学ぶだけでなく、避妊についてどこまで具体的に扱うかが議論になります。\n\n実際の場面で役立つ知識まで学校で教えるべきだという考えがあります。一方で、具体的な方法まで学校が扱うことに抵抗を感じたり、家庭で教えるべきだと考えたりする人もいます。\n\n知識を与えることと、学校がどこまで踏み込むかの境界を考える問いです。"
+    },
+    "topic": "sex_education",
+    "perspective": "observer"
+  },
+  {
+    "id": "sex-education-002",
+    "category": "gender_sexuality_and_identity",
+    "question": "保護者が拒否しても、学校の性教育を受けさせるべき？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "性教育の内容について、学校と家庭で考え方が異なることがあります。\n\nすべての子どもが共通の知識を得られるよう、一定の内容は必修にするべきだという考えがあります。一方で、性や家族に関する教育には家庭の価値観も関わるため、保護者が選べる余地を残すべきだという考えもあります。\n\n子どもの学ぶ権利と、家庭の教育方針をどう両立させるかが争点です。"
+    },
+    "topic": "sex_education",
+    "perspective": "observer"
+  },
+  {
+    "id": "sex-education-003",
+    "category": "gender_sexuality_and_identity",
+    "question": "学校の性教育を全員同じ教室で行う場合と、一部を少人数のグループで行う場合では、どんな学びやすさ・話しにくさがあると思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "性教育を男女一緒に行うか、一部を分けて行うかにはそれぞれ考え方があります。\n\n互いの身体や健康について同じ知識を持つため、一緒に学ぶべきだという考えがあります。一方で、話しにくさや質問のしにくさを減らすため、内容によって分ける方が学びやすいという考えもあります。\n\n共通理解と学びやすさのどちらを重視するかを考えます。"
+    },
+    "topic": "sex_education",
+    "perspective": "observer"
+  },
+  {
+    "id": "sex-education-004",
+    "category": "gender_sexuality_and_identity",
+    "question": "恋人同士の同意の取り方まで、学校が教えるべき？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "性教育では、身体の知識だけでなく、人間関係や同意について扱うことがあります。\n\n相手の意思を確認する考え方を早くから学ぶことは大切だという立場があります。一方で、恋人関係での具体的な振る舞いまで学校が教えるのは踏み込みすぎだと考える立場もあります。\n\n学校が教える知識と、個人の関係性や価値観の境界を考える問いです。"
+    },
+    "topic": "sex_education",
+    "perspective": "observer"
+  },
+  {
+    "id": "sex-education-005",
+    "category": "gender_sexuality_and_identity",
+    "question": "性教育の教材を、保護者が事前に確認できるようにするべき？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "学校で扱う性教育の内容を、保護者にどこまで公開するかという問題があります。\n\n家庭でも内容を把握できるよう、教材を事前に確認できる方がよいという考えがあります。一方で、保護者の反対によって必要な教育が制限される可能性を心配する考えもあります。\n\n学校の説明責任と、教育内容の独立性をどう考えるかが争点です。"
+    },
+    "topic": "sex_education",
+    "perspective": "observer"
+  },
+  {
+    "id": "menstruation-001",
+    "category": "gender_sexuality_and_identity",
+    "question": "生理痛への理解を目的に、機器で腹部に痛みの刺激を与える模擬体験を学校で行うとする。実際の生理の症状すべてを再現するものではないが、男子に参加を義務付けることをどう思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "生理痛への理解を深める目的で、電気刺激などを使った疑似体験が行われることがあります。\n\n実際に近い感覚を体験することで、言葉だけより理解しやすくなるという考えがあります。一方で、痛みを伴う体験を特定の性別に義務づけることや、疑似体験で本当の経験を理解したことになるのかを疑問視する考えもあります。\n\n理解を深める目的なら、どこまで体験を求めてよいかを考えます。"
+    },
+    "topic": "menstruation",
+    "perspective": "observer"
+  },
+  {
+    "id": "menstruation-002",
+    "category": "gender_sexuality_and_identity",
+    "question": "生理で働くことが難しいときの休暇と、他の体調不良で働くことが難しいときの休暇は、同じ仕組みにする方が公平だと思う？ 別の仕組みが必要だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "生理による体調不良で仕事や学校生活に大きな影響が出る人がいます。\n\n身体的な負担がある人に専用の制度を設けるのは合理的だという考えがあります。一方で、他の体調不良には同じ制度がない場合、性別による特別扱いに見えるという考えもあります。\n\n同じ扱いをすることと、異なる必要に合わせて扱いを変えることのどちらを公平と考えるかが争点です。"
+    },
+    "topic": "menstruation",
+    "perspective": "observer"
+  },
+  {
+    "id": "menstruation-003",
+    "category": "gender_sexuality_and_identity",
+    "question": "生理休暇を有給にする費用は、会社が負担するべき？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "生理による体調不良で休む場合、その時間の給与を誰が負担するかという問題があります。\n\n安心して休めるよう会社が有給で保障するべきだという考えがあります。一方で、企業だけに費用を負わせると採用や人員配置への影響が出るのではないかという懸念もあります。\n\n健康への配慮と、企業側の負担をどう分けるかを考えます。"
+    },
+    "topic": "menstruation",
+    "perspective": "observer"
+  },
+  {
+    "id": "menstruation-004",
+    "category": "gender_sexuality_and_identity",
+    "question": "学校で生理用品を無料にするなら、他の衛生用品も無料にするべき？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "学校で生理用品を無料提供する取り組みがあります。\n\n急に必要になったときに欠かせない用品なので、学校が用意する意味があるという考えがあります。一方で、歯ブラシやマスクなど他の衛生用品との違いをどこに置くのかという疑問もあります。\n\n公費や学校の費用で提供する必需品の範囲をどう決めるかを考えます。"
+    },
+    "topic": "menstruation",
+    "perspective": "observer"
+  },
+  {
+    "id": "menstruation-005",
+    "category": "gender_sexuality_and_identity",
+    "question": "生理を理由に体育を休むとき、先生に詳しい理由まで説明する必要はある？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "体調を理由に授業を休むとき、学校側には状況を確認する必要があります。一方で、生理や身体の状態について詳しく話すことに抵抗を感じる人もいます。\n\n不正な欠席を防ぐため一定の説明が必要だという考えと、健康に関する個人的な情報は最小限でよいという考えがあります。\n\n学校の管理と本人のプライバシーをどう両立させるかを考えます。"
+    },
+    "topic": "menstruation",
+    "perspective": "observer"
+  },
+  {
+    "id": "reproductive-health-001",
+    "category": "gender_sexuality_and_identity",
+    "question": "高校生が性感染症の検査を受けたいとき、保護者に知らせず受けられる仕組みを認めるべきだと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "未成年が性や妊娠などに関する医療を必要とするとき、保護者への相談を避けたい場合があります。\n\n保護者に知られず相談できる方が、必要な医療につながりやすいという考えがあります。一方で、未成年の重要な医療判断には保護者が関わるべきだという考えもあります。\n\n本人のプライバシーと、保護者の責任をどう考えるかが争点です。"
+    },
+    "topic": "reproductive_health",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
+  },
+  {
+    "id": "reproductive-health-002",
+    "category": "gender_sexuality_and_identity",
+    "question": "緊急避妊薬は、年齢や保護者の同意に関係なく入手できるようにするべき？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "緊急避妊薬へのアクセスをどこまで簡単にするかは、医療へのアクセスと安全管理の両方に関わります。\n\n必要なときに早く利用できることを重視する考えがあります。一方で、未成年を含めて医療者や保護者の関与をどこまで必要とするかを重視する考えもあります。\n\n本人の自己決定と、医療上の確認や支援をどう両立させるかを考えます。"
+    },
+    "topic": "reproductive_health",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
+  },
+  {
+    "id": "reproductive-health-003",
+    "category": "gender_sexuality_and_identity",
+    "question": "不妊治療に、税金をどこまで使うべきだと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "不妊治療には身体的・経済的な負担がかかる場合があります。\n\n子どもを望む人が経済状況に左右されず治療を受けられるよう、公的に支えるべきだという考えがあります。一方で、医療費には限りがあり、どこまでを社会全体で負担するべきかという考えもあります。\n\n個人の希望と、公費で支える医療の範囲をどう考えるかが争点です。"
+    },
+    "topic": "reproductive_health",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
+  },
+  {
+    "id": "reproductive-health-004",
+    "category": "gender_sexuality_and_identity",
+    "question": "妊娠した本人が妊娠の継続を望まない場合、本人の意思と胎児の生命への配慮を、制度としてどう扱うべきだと思う？ 妊娠の時期や本人の健康状態によって判断は変わる？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠を続けるかどうかをめぐっては、妊娠した本人の身体や人生についての自己決定と、胎児をどの段階からどのように生命として扱うかという考えがぶつかります。\n\n本人の意思を最も重視する立場もあれば、胎児の生命にも独立した価値を認めるべきだという立場もあります。\n\n自己決定と生命の扱いをどのように考えるかが、この問いの中心です。"
+    },
+    "topic": "reproductive_health",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
+  },
+  {
+    "id": "health-policy-001",
+    "category": "health_and_disability",
+    "question": "学校が特定のワクチン接種を強く勧めるのは、どこまで許される？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "学校は多くの生徒に健康情報を届けられるため、感染症予防などについて接種を勧めることがあります。\n\n正しい情報を広く伝え、予防につなげる役割を重視する考えがあります。一方で、学校から強く勧められると、本人や家庭が自由に判断しにくくなるという考えもあります。\n\n公衆衛生上の利益と、医療を選ぶ自由の境界を考えます。"
+    },
+    "topic": "health_policy",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
+  },
+  {
+    "id": "body-policy-001",
+    "category": "gender_sexuality_and_identity",
+    "question": "男女で身体的な負担が違うなら、制度上の扱いも変えていいと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "妊娠、出産、生理など、身体的な負担には性別による違いが生じる場合があります。\n\n異なる負担があるなら、休暇や支援などの制度も違ってよいという考えがあります。一方で、性別を基準に制度を分けることが固定観念や不公平につながるという考えもあります。\n\n同じ扱いと、必要に応じた違う扱いのどちらを公平と考えるかを問います。"
+    },
+    "topic": "body_policy",
+    "perspective": "observer"
+  },
+  {
+    "id": "sex-education-006",
+    "category": "gender_sexuality_and_identity",
+    "question": "学校の性教育は、家庭の価値観と違っていてもそのまま教えるべき？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "性や恋愛、家族については、家庭ごとに異なる価値観があります。一方で、学校にはすべての生徒に共通の知識を教える役割があります。\n\n科学的・社会的な知識は家庭の考え方にかかわらず教えるべきだという立場があります。一方で、価値観に深く関わる内容については家庭の考えも尊重するべきだという立場もあります。\n\n共通知識と家庭の価値観の境界を考える問いです。"
+    },
+    "topic": "sex_education",
+    "perspective": "observer"
+  },
+  {
+    "id": "menstruation-006",
+    "category": "gender_sexuality_and_identity",
+    "question": "生理痛を理解してもらうためなら、痛みを疑似体験させるのは有効だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "言葉だけでは伝わりにくい身体的な苦痛を、疑似体験によって理解してもらおうとする方法があります。\n\n体験することで想像しやすくなるという考えがあります。一方で、短時間の疑似体験では実際の経験を再現できず、かえって『理解したつもり』になる可能性もあります。\n\n他人の身体的な経験を理解する方法として、体験をどこまで重視するかを考えます。"
+    },
+    "topic": "menstruation",
+    "perspective": "observer"
+  },
+  {
+    "id": "gender-l3-001",
+    "topic": "gender_role_provider",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "『男性の方が多く稼いでほしい』という期待は、個人の好みなら問題ないと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "恋愛や結婚で相手に求める条件は個人の自由だという考えがあります。\n\n一方、男性に経済的な責任を強く求めることが、性別による役割期待につながるという見方もあります。\n\n個人の好みと、性別に基づく期待の境界を考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-002",
+    "topic": "gender_role_care",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "『女性の方が子育てに向いている』という考えは、経験則と性別による決めつけのどこで分かれると思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "育児への関わり方には個人差があります。\n\n平均的な傾向が存在すると仮定したとしても、それを個人の能力や役割の判断にそのまま使ってよいとは限りません。\n\n集団の傾向と、一人ひとりを評価することの違いを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-003",
+    "topic": "gender_dating_payment",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "デート代を男性が多く払うことを期待するのは、昔ながらの男女差別と同じ問題だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "男性が多く支払うことを気遣いや文化として肯定する人もいます。一方、性別だけを理由に負担を決めることへの違和感もあります。\n\n伝統的な役割を本人たちが望んで選ぶ場合と、社会から当然のように期待される場合をどう区別するかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-004",
+    "topic": "gender_dating_initiation",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "告白やデートの誘いを『男性からするもの』と考えるのは、ただの恋愛文化だと思う？",
+    "level": 3,
+    "sensitivity": 2,
+    "detail": {
+      "text": "恋愛には長く続いてきた慣習があります。\n\n一方、特定の性別に断られるリスクや積極性を求め続けることで、恋愛上の負担が偏る可能性もあります。\n\n文化的な慣習と性別役割の境界を考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-005",
+    "topic": "gender_emotional_expression",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "男性が弱音を吐いたときと、女性が弱音を吐いたときで、周囲の受け止め方が違っても仕方ないと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "性別によって『強くあるべき』『感情を表してよい』といった異なる期待が向けられることがあります。\n\n本人の性格ではなく性別によって、弱さの見せ方を評価する基準が変わることをどう考えるかという問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-006",
+    "topic": "gender_physical_tasks",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "affected",
+    "question": "学校で重い荷物を運ぶ人を決めるとき、性別、個人の体力、本人の希望をそれぞれどのように考慮するべきだと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "平均的な身体差を考慮して役割を決める方が効率的だという考えがあります。\n\n一方、個人の体格や能力を見ずに性別だけで役割を割り当てることへの問題もあります。\n\n集団平均を実際の個人への扱いに使うことの限界を考える問いです。"
+    },
+    "role": "student"
+  },
+  {
+    "id": "gender-l3-007",
+    "topic": "gender_safety_expectations",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "危険な仕事や役割を男性が多く引き受けることを『仕方ない』と考えるのは公平だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "身体能力や本人の職業選択によって危険な仕事の男女比が変わる場合があります。\n\n一方、男性だから危険を引き受けるべきだという期待まで正当化されるとは限りません。\n\n本人の選択と社会的な性別期待を分けて考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-008",
+    "topic": "gender_protection",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "災害などで『女性や子どもを先に』とする考え方に、男性が後回しになることへの問題はないと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "身体的な脆弱性や子どもの保護などを理由に優先順位を設ける考えがあります。\n\n一方、成人男性というだけで一律に優先度を下げることへの疑問もあります。\n\n保護が必要な人を優先することと、性別そのものを基準にすることの違いを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-009",
+    "topic": "gender_victim_recognition",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "同じように傷つけられた人でも、男性と女性で『被害者らしさ』を違って感じることはあると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "社会には、性別によって強さや弱さへの異なるイメージがあります。\n\nそのため、同じ出来事でも被害の深刻さや本人への共感が異なって受け取られる可能性があります。\n\n被害を判断するときに性別のイメージが影響していないかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-010",
+    "topic": "gender_perpetrator_recognition",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "同じ行為でも、加害者が男性か女性かで『怖さ』や『悪質さ』の感じ方が変わるとしたら、それは公平？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "身体的な危険性など実際に状況が異なる場合もあります。\n\n一方、性別への先入観によって、行為そのものとは別に評価が変わる可能性もあります。\n\n現実的なリスクの違いと、性別によるステレオタイプをどう区別するかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-011",
+    "topic": "gender_parenting_father",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "父親が一人で小さな子どもの世話をしているとき、母親より警戒されることがあるなら、それは子どもの安全のために仕方ないと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "子どもの安全に慎重になることは重要です。\n\n一方、男性であること自体を理由に保護者として疑われやすくなるなら、父親への偏見になる可能性があります。\n\n安全への警戒と、性別だけで人を疑わないことの境界を考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-012",
+    "topic": "gender_parenting_mother",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "母親が仕事を優先すると『子どもがかわいそう』と言われやすいのに、父親なら同じように言われないとしたら公平？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "親には子どもを支える責任がありますが、その責任を父母のどちらにより強く求めるかには社会的な期待が影響する場合があります。\n\n親としての責任と、母親・父親への異なる役割期待を分けて考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-013",
+    "topic": "gender_custody_expectation",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "離婚後の子育てで『母親と暮らす方が自然』と最初から考えるのは、子どもの利益を考えた判断だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "子どもにとって安定した養育環境を重視する必要があります。\n\n一方、親としての能力を性別から推測することには問題があります。\n\n実際の養育状況を見ることと、母親・父親という役割への先入観をどう区別するかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-014",
+    "topic": "gender_education_support",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "affected",
+    "question": "男女の進学格差を減らすために、片方の性別だけを対象にした入試枠や支援を作ることは公平だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "過去や現在の格差を縮めるために、特定の集団へ追加支援を行う考えがあります。\n\n一方、個人としては自分の性別だけを理由に機会が変わることへの不公平感も生じます。\n\n集団間の格差是正と、個人への公平をどう両立するかを考える問いです。"
+    },
+    "role": "student"
+  },
+  {
+    "id": "gender-l3-015",
+    "topic": "gender_education_gap_boys",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "affected",
+    "question": "ある教育分野で男子の成績や進学率が低い場合、女子向け支援と同じように男子だけを対象にした支援も必要だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "男女格差への支援は、歴史的に不利益を受けてきた側を重視する考えがあります。\n\n一方、現在の具体的な指標で別の側が不利なら、その問題にも同じ基準で対応するべきだという考え方があります。\n\n歴史的背景と現在の不利益のどちらを支援基準として重視するかを問います。"
+    },
+    "role": "student"
+  },
+  {
+    "id": "gender-l3-016",
+    "topic": "gender_workplace_quota",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "昇進する人の男女比を改善するため、同程度の実績の候補者なら人数の少ない性別を優先することは、公平だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "代表性の偏りを改善するために性別を考慮する政策があります。\n\n一方、個人の能力ではなく性別が判断材料になること自体への問題意識もあります。\n\n結果の格差を縮めることと、個人を同じ基準で扱うことの衝突を考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-017",
+    "topic": "gender_salary_expectation",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "結婚相手を選ぶとき、男性の年収を重視することと、女性の若さや見た目を重視することは同じ種類の価値判断だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "恋愛相手に何を求めるかは個人によって異なります。\n\n一方、男性には経済力、女性には外見や年齢など、性別ごとに違う価値を強く求める文化があるという見方もあります。\n\n個人の好みと、性別による評価基準をどう区別するかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-018",
+    "topic": "gender_height_preference",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "恋愛で『男性は自分より背が高い方がいい』という好みは、見た目による偏見とは別物だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "恋愛上の好みは本人が自由に持てるという考えがあります。\n\n一方、特定の身体的特徴を性別と結びつけて価値づけることが、社会的なプレッシャーにつながる場合もあります。\n\n個人の魅力の感じ方と、身体的な規範をどう分けて考えるかという問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-019",
+    "topic": "gender_appearance_pressure",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "男性と女性では、見た目を整えるよう求められる場面や内容に、どんな共通点と違いがあると思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "外見への期待は男女で同じ形では現れない場合があります。\n\n一方の負担が大きい領域があるからといって、もう一方の負担が存在しないとは限りません。\n\n異なる種類の不利益を単純な大小だけで比較することの難しさを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-020",
+    "topic": "gender_false_accusation",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "被害を訴えた人をまず信じることと、疑われた人を最初から加害者扱いしないことは両立できると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "被害を訴えることには大きな心理的負担があり、訴えを軽視しないことが重要です。\n\n一方、事実確認の前から特定の人を加害者と決めつければ、別の深刻な不利益が生じる可能性があります。\n\n被害申告への尊重と、適正な事実確認をどう両立するかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-021",
+    "topic": "gender_sexual_harassment_standard",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "同じ言葉や接触でも、男性から女性の場合と女性から男性の場合で『セクハラらしさ』の感じ方が変わるとしたら、それはなぜ？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "身体的な力関係や社会的な背景によって、同じ行動でも現実的な脅威が異なる場合があります。\n\n一方、性別だけを理由に被害の深刻さを軽く見ることにも問題があります。\n\n状況上の非対称性と、被害者の性別による先入観を分けて考える問いです。"
+    },
+    "content_warning": [
+      "sexual_violence",
+      "crime_and_punishment"
+    ]
+  },
+  {
+    "id": "gender-l3-022",
+    "topic": "gender_domestic_violence_recognition",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "恋人や配偶者から暴力的な扱いを受けた男性が相談したとき、女性の場合と同じ深刻さで受け止められると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "被害の形や危険性には個々の状況による違いがあります。\n\n一方、『男性なら耐えられる』『男性は被害者になりにくい』というイメージが相談や周囲の反応に影響する可能性があります。\n\n被害の評価に性別をどこまで持ち込むべきかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-023",
+    "topic": "gender_emotional_labor",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "恋愛では、相手の気持ちを察したり関係を整えたりする役割を女性に多く求めることと、男性に『相手を安心させる強さ』を求めることは、同じ性別役割の問題だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "男女には異なる形で対人関係上の役割が期待される場合があります。\n\n片方の負担だけを見るのではなく、それぞれに何を当然として求めているかを比較する問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-024",
+    "topic": "gender_reproductive_responsibility",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "妊娠では身体的な負担が男女で大きく違う。その非対称性がある中でも、妊娠に至るまでの責任は同じだと言える？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "妊娠による身体的な影響は当事者間で同じではありません。\n\n一方、そこに至るまでの意思決定や責任については、別の基準で考える必要があります。\n\n身体上の非対称性と、行動上の責任をどのように分けるかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-025",
+    "topic": "gender_reproductive_decision",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "妊娠について、身体に直接影響を受けない側には、どこまで意見を言う権利があると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "身体に関する自己決定は本人に強く属します。\n\n一方、妊娠によってもう一方の人生にも大きな影響が及ぶ場合があります。\n\n最終的な決定権と、当事者として意見を持つことをどこまで分けて考えるかという問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-026",
+    "topic": "gender_child_support_expectations",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "別れた後の子育てで、父親にはお金、母親には日常的な育児をより強く求める考え方は公平だと思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "家庭によって実際の役割分担は異なります。\n\nしかし、父親には経済的責任、母親には日常的な養育責任という性別役割が前提になる場合があります。\n\n親としての責任を性別から切り離して考えられるかを問います。"
+    }
+  },
+  {
+    "id": "gender-l3-027",
+    "topic": "gender_work_family_choice",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "夫婦のどちらかが仕事を減らして家庭を優先する必要があるとき、収入が高い方を残す決め方は公平だと思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "家計全体を考えれば、収入の高い側が仕事を続ける方が合理的な場合があります。\n\n一方、その判断が既存の男女の収入差や役割分担をさらに固定する可能性もあります。\n\n家庭内の合理性と、社会全体の格差がどうつながるかを考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-028",
+    "topic": "gender_chivalry",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "『女性を守る』『男性が荷物を持つ』ような好意的な男女差も、性差別に含まれると思う？",
+    "level": 3,
+    "sensitivity": 3,
+    "detail": {
+      "text": "相手への気遣いや親切として行われる性別役割があります。\n\n一方、善意であっても『男性は強い』『女性は守られる側』という前提を強める可能性があります。\n\n好意的な扱いと固定的な性別役割をどう区別するかという問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-029",
+    "topic": "gender_equality_symmetry",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "男女平等とは、男性と女性をできるだけ同じように扱うこと？それとも違いがある部分では扱いを変えること？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "性別によらず同じ基準で扱うことを平等とする考えがあります。\n\n一方、身体的・社会的な条件が異なる部分では、同じ扱いがかえって不公平になる場合もあります。\n\n形式的な平等と実質的な公平の境界を考える問いです。"
+    }
+  },
+  {
+    "id": "gender-l3-030",
+    "topic": "gender_competing_disadvantages",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "男女それぞれに違う不利益があるとき、『どちらの方が差別されているか』を決めることに意味はあると思う？",
+    "level": 3,
+    "sensitivity": 4,
+    "detail": {
+      "text": "男女が経験する不利益は、同じ分野や同じ形で現れるとは限りません。\n\n一方の問題を指摘することが、もう一方の問題を否定する理由になる必要もありません。\n\n不利益を競わせることと、それぞれの問題を個別に検討することの違いを考える問いです。"
+    }
+  },
+  {
+    "id": "r6-04-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "health_and_disability",
+    "topic": "social_security_04-02-l3",
+    "question": "高額な治療を受ける人の自己負担上限を維持するには、保険料を増やす必要があるとする。保険料を抑えるために、治療が必要な人の負担上限を引き上げることを、どこまで認める？",
+    "perspective": "observer",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ],
+    "detail": {
+      "text": "医療費の自己負担を抑える費用は保険料などで分担する。病気のときの保護と、広く日常的に負う費用の調整を問う仮定。\n\n問いの狙い: 治療費と保険料のどちらに追加負担を置くかを扱う。"
+    }
+  },
+  {
+    "id": "r6-04-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "health_and_disability",
+    "topic": "social_security_04-06-l3",
+    "question": "本人や家族が望む医療・介護でも、改善や生活維持への効果が小さいと判断されれば公費の対象から外してよいと思う？ 誰がどの程度の効果を基準に決めるべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "医療・介護への希望には限りがなくても、公費や家族の資産には限りがある。効果の判断と本人の希望をどこまで切り離すかを問う。\n\n問いの狙い: 公費の対象を効果で線引きする主体と基準を検討する。"
+    }
+  },
+  {
+    "id": "r6-12-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "family_and_care",
+    "topic": "poverty_education_12-01-l3",
+    "question": "子どもへの給付を親の婚姻状況で変えると、婚姻届を出すかどうかで受取額が違う場合が生じる。実際の収入や同居関係を調べる負担が大きくても、婚姻状況による区分をやめるべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ],
+    "detail": {
+      "text": "子どもの支援を親の婚姻状況で決めると、形式的な状態と実際の生活が食い違うことがある。実態調査にも負担がある。\n\n問いの狙い: 婚姻による区分と収入実態による区分を比較する。"
+    }
+  },
+  {
+    "id": "r6-13-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-01-l3",
+    "question": "出産後の孤立を減らすため、望まない家庭にも行政が訪問する制度を強める案がある。支援からこぼれる人を減らすためなら、家庭の拒否をどこまで越えてよい？",
+    "perspective": "observer",
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ],
+    "detail": {
+      "text": "出産後の家庭への支援は孤立を減らす目的を持つが、家庭が介入を望むとは限らない。親の意思と子どもの安全も関わる。\n\n問いの狙い: 支援の取りこぼしを減らすための訪問と家庭の拒否権を比較する。"
+    }
+  },
+  {
+    "id": "r6-13-02-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-02-l3",
+    "question": "自殺の危険が高いと専門家が判断した成人が、家族への連絡を拒んでいる。本人の信頼を失う可能性があっても、重大で差し迫った危険を避けるための情報共有を、どこまで認めるべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "self_harm"
+    ],
+    "detail": {
+      "text": "差し迫った生命の危険がある設定では、本人の意思や信頼と、周囲が保護のため動く責任が衝突する。これは医療判断の手順の案内ではない。\n\n問いの狙い: 緊急の情報共有に認める範囲を制度的に考える。"
+    }
+  },
+  {
+    "id": "r6-13-04-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-04-l3",
+    "question": "支援窓口の予算を相談件数に応じて配ると、相談しにくい人が多い集団への支援は増えにくい。需要があるか確かめきれていなくても、相談件数の少ない集団に専用の窓口を設けるべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "相談件数は困難の量だけでなく相談のしやすさにも影響され得る。構造的な困難という説明を持つかどうかも支援の評価に関わる。\n\n問いの狙い: 見える需要の数字だけで予算を配る限界を問う。"
+    }
+  },
+  {
+    "id": "r6-13-05-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-05-l3",
+    "question": "依存的な支出が続いている人への住居支援を、支出管理に同意することと引き換えにしてよいと思う？ 管理を拒む人を支援から外すことも認める？",
+    "perspective": "observer",
+    "detail": {
+      "text": "住居などへの支援に支出管理を求めると、生活を立て直す助けにも本人の自由の制限にもなる。困窮の理由による配分も問題になる。\n\n問いの狙い: 支援を条件付きにし、拒否した人を外す是非を問う。"
+    }
+  },
+  {
+    "id": "r6-15-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-01-l3",
+    "question": "男女平等を測るとき、同じ機会があることと、実際の人数や収入の差が小さいことのどちらを重く見る？ 本人の選択が結果の差を生む場合も、制度で差を縮めるべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "機会の形式的な平等と結果の比率の一致は別の目標。自発的な選択も結果に影響する場合、是正の対象と範囲が争点になる。\n\n問いの狙い: 機会と結果のどちらを制度の目標とするか明確にする。"
+    }
+  },
+  {
+    "id": "r6-15-02-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-02-l3",
+    "question": "女性向けの奨学金に、経済的に余裕のある女性は応募でき、生活に困っている男性は応募できない場合がある。目的が女性の少ない分野への進学を増やすことなら、この条件を維持してよいと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "性別の構成を変える支援と、経済的な困窮を支える給付は目的が異なる。両者を同じ窓口で扱うと対象者が食い違う。\n\n問いの狙い: 性別と家計のどちらを優先基準にするか問う。"
+    }
+  },
+  {
+    "id": "r6-15-03-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-03-l3",
+    "question": "安全や安心のための性別限定の場所を設けると、利用できない人の混雑や負担が増える。効果が一定程度あれば、負担する側の同意がなくても設けてよいと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "性別で分けた空間は、利用者の安心と利用できない側の混雑・負担を同時に生む設定。目的と手段の釣合いが論点。\n\n問いの狙い: 安全対策の費用を別の利用者に負わせる範囲を問う。"
+    }
+  },
+  {
+    "id": "r6-15-04-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-04-l3",
+    "question": "店が客層を調整するために性別で料金を変えることは、民間の販売戦略として認めるべきだと思う？ 同じサービスを受ける人の公平さを優先するべき？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "料金差は客層の調整や事業維持に使われる一方、同じサービスへの同じ対価という考えと衝突する。\n\n問いの狙い: 民間の営業の自由と性別による価格差を比較する。"
+    }
+  },
+  {
+    "id": "r6-15-05-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-05-l3",
+    "question": "ある分野で女性の採用を優先した結果、新規採用の男女比は同程度になったが、管理職にはまだ大きな差がある。採用時の優先措置は、入口の差がなくなった時点で終えるべき？ 管理職の差がなくなるまで続けるべき？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "入口の人数と管理職の構成は違う時点の結果を表す。採用時の是正措置をいつ終え、その後どう評価するかが問題になる。\n\n問いの狙い: 優先措置の終了条件を明確にする。"
+    }
+  },
+  {
+    "id": "r6-15-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-06-l3",
+    "question": "長時間働く人を高く評価する職場と、家事育児を多く担う人がいる家庭は互いに影響する。会社は本人が希望していても、家庭の負担を偏らせる働き方を制限するべき？",
+    "perspective": "observer",
+    "detail": {
+      "text": "長時間労働と家庭内のケアの分担は影響し合う。本人の仕事の希望を尊重すると、別の家族の選択が狭まることがある。\n\n問いの狙い: 会社が家庭の負担を理由に働き方へ介入してよいか考える。"
+    }
+  },
+  {
+    "id": "r6-15-07-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-07-l3",
+    "question": "同じ制度を、ある人は是正が足りないと感じ、別の人は優遇が行き過ぎたと感じている。政策を見直すとき、不公平だという実感をどこまで根拠にしてよいと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "不公平の実感は重要だが、制度全体の効果と必ずしも一致しない。受益した人と機会を失ったと感じる人の経験が衝突する。\n\n問いの狙い: 実感を制度改正の根拠に使う範囲を問う。"
+    }
+  },
+  {
+    "id": "r6-16-01-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-01-l3",
+    "question": "接客の売上に外見が影響するとして、企業が容姿を採用や配置の基準にすることを認める？ 顧客の好みへの対応と、その好みを固定することは分けられると思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "外見への顧客の好みは企業の利益に影響し得るが、企業の選別がその好みを固定する面も考えられる。\n\n問いの狙い: 顧客需要への対応を採用・配置の根拠にしてよいか問う。"
+    }
+  },
+  {
+    "id": "r6-16-02-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-02-l3",
+    "question": "性別によって利用者を分ける施設で、本人の申告だけではなく医療情報などの確認を求めることを認める？ 利用の可否を決めるためでも、どこまで私的な情報を求めてよい？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "施設の利用資格を確認するために、性別に関わる私的な情報を求める場合がある。確認の必要性と情報を開示しない利益が衝突する。\n\n問いの狙い: 利用ルールの是非に加え、その確認手段への介入を問う。"
+    }
+  },
+  {
+    "id": "r6-16-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-03-l3",
+    "question": "犯罪を不安に感じる人への配慮として、特定の性別の人だけに同行者や追加確認を求める運用を認める？ その人自身を疑う事情がなくても？",
+    "perspective": "observer",
+    "detail": {
+      "text": "安心のための確認が、属性による個人への疑いに変わる場合がある。危険の防止と疑う事情のない人の扱いを区別する。\n\n問いの狙い: 性別を追加確認の基準にしてよいか問う。"
+    }
+  },
+  {
+    "id": "r6-16-04-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-04-l3",
+    "question": "同じ行為でも、相手への恐怖や身体的な影響が違うことがある。性被害やDVへの支援を決める際、行為を共通の基準で見ることと、個別の影響を見ることをどう分ける？",
+    "perspective": "observer",
+    "content_warning": [
+      "sexual_violence"
+    ],
+    "detail": {
+      "text": "同じ行為でも影響は人や状況で異なり得る。被害を共通の基準で認めることと、必要な支援を個別に決めることが関わる。\n\n問いの狙い: 行為の共通性と影響の違いを制度判断で分ける。"
+    }
+  },
+  {
+    "id": "r6-16-05-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-05-l3",
+    "question": "平等政策への批判が差別的な言葉を含む場合、政策への異論と表現の問題を分けて扱うべきだと思う？ 表現が不適切でも、異論を公の議論に残す必要はある？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "政策への批判と、その表現に含まれる侮蔑は別の評価になり得る。正当な目的を持つ活動内にも問題のある発言は起こり得る。\n\n問いの狙い: 不適切な表現を理由に政策上の異論まで退けてよいか問う。"
+    }
+  },
+  {
+    "id": "r6-16-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-06-l3",
+    "question": "ある性別全体への侮蔑を、社会的に優位な側への批判として許す考えがある。個々の読者が置かれた立場を問わず、批判される性別によって投稿の削除基準を変えてよいと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "支配的な側への批判という説明が、性別全体への侮蔑を許す根拠になるかが争点。個人への良い影響と発信の問題も分かれる。\n\n問いの狙い: 侮蔑への規制を性別の社会的位置で変える是非を問う。"
+    }
+  },
+  {
+    "id": "r6-16-07-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-07-l3",
+    "question": "困難を抱える男性の支援を進めるため、男性という共通点で運動を作ることは有効だと思う？ 男性同士の所得や経験の差を見えにくくする危険をどう扱う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "男性の共通する困難を示す運動には、内部の多様性を隠す危険もある。支援を必要とする人の排他的な言動への対応も問題になる。\n\n問いの狙い: 集団としての連帯と個々の条件差を比較する。"
+    }
+  },
+  {
+    "id": "r6-16-08-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-08-l3",
+    "question": "不快に感じたことを差別と訴える権利と、差別だと認定する基準は分けるべきだと思う？ 訴えた人の経験を否定せずに、認定しない判断はできる？",
+    "perspective": "observer",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "被害を訴える機会と、制度上の差別認定は別の判断。本人の経験を受け止めることが、そのまま認定を意味するとは限らない。\n\n問いの狙い: 不認定と経験の否定を分けられるか考える。"
+    }
+  },
+  {
+    "id": "r6-17-01-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "family_and_care",
+    "topic": "marriage_sexwork_17-01-l3",
+    "question": "夫婦が別々の名字を選べる制度に変わったとする。過去に名字を変えて負担を受けた人への補償も必要だと思う？ 制度を改善することと、以前の制度で生じた損失を補うことはどこで分ける？",
+    "perspective": "observer",
+    "detail": {
+      "text": "婚姻制度を変えると、以前の制度で負担を受けた人との関係が生じる。法律で選べることと相手が受け入れることも異なる。\n\n問いの狙い: 制度の改善に過去の損失の補填まで必要か問う。"
+    }
+  },
+  {
+    "id": "r6-17-02-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "family_and_care",
+    "topic": "marriage_sexwork_17-02-l3",
+    "question": "親の一方が危険を訴えて子どもを連れ出したが、もう一方は不当な親子分離だと訴えている。すぐに事実を確定できない場合、現状維持と元の生活への復帰のどちらを暫定的な原則にする？",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ],
+    "detail": {
+      "text": "安全を訴える親と不当な分離を訴える親の説明が食い違う場合、待つことにも戻すことにも影響がある。子どもの意思の解釈も難しい設定。\n\n問いの狙い: 確定できない間の生活を何を原則に決めるか問う。"
+    }
+  },
+  {
+    "id": "r6-17-03-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "family_and_care",
+    "topic": "marriage_sexwork_17-03-l3",
+    "question": "養育費と親子交流は別の問題として扱うとしても、一方の約束が守られない状態が続けば、もう一方にも履行を求めにくくなる。制度は、どちらかの不履行を理由に他方を止めることを認めるべき？",
+    "perspective": "observer",
+    "content_warning": [
+      "family_conflict"
+    ],
+    "detail": {
+      "text": "養育費と親子交流はそれぞれ子どもの生活に関わる。片方の不履行を他方の交渉材料にすることには、子どもへの別の影響がある。\n\n問いの狙い: 現行の扱いの案内ではなく、制度を連動させる是非として考える。"
+    }
+  },
+  {
+    "id": "r6-17-04-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "marriage_sexwork_17-04-l3",
+    "question": "性的サービスを買う側への処罰を強める政策について、働く人の一部が収入を失うとして反対している。別の仕事や生活支援が十分でない段階でも、搾取を減らす目的で進めるべきだと思う？",
+    "perspective": "observer",
+    "content_warning": [
+      "sexual_violence",
+      "crime_and_punishment"
+    ],
+    "detail": {
+      "text": "性産業の規制で、搾取を減らす目的と現在の従事者の生活が衝突する場合がある。代替の所得や支援の整備状況も関わる。\n\n問いの狙い: 規制と生活支援の実施順序を問う。"
+    }
+  },
+  {
+    "id": "r6-17-05-l3",
+    "level": 3,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "marriage_sexwork_17-05-l3",
+    "question": "過去に性産業で働いた人を、子どもに関わる仕事から一律に排除することを認める？ 具体的な危険や業務上の問題がなくても、利用者の不安を理由にできる？",
+    "perspective": "observer",
+    "detail": {
+      "text": "過去の職業経験と現在の能力・危険性は同じではない。雇用や婚姻の相手選びで、その経験を条件にする範囲が争点になる。\n\n問いの狙い: 具体的な危険がなくても職歴で一律排除してよいか問う。"
+    },
+    "content_warning": [
+      "sexual_violence"
+    ]
+  },
+  {
+    "id": "r6-17-06-l3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "marriage_sexwork_17-06-l3",
+    "question": "成人同士が金銭を伴う交際に同意していても、生活に困っている側の選択肢が少ない場合、その合意をどこまで自由なものと考える？ 所得差だけで取引を制限してよい？",
+    "perspective": "observer",
+    "detail": {
+      "text": "成人の同意があっても経済的な選択肢に大きな差があると、自由な関係かどうかの評価が分かれる。所得差だけで決めることにも限界がある。\n\n問いの狙い: 合意と経済的な圧力を区別する基準を問う。"
+    }
+  },
+  {
+    "id": "FAN-B01-L3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "oshi_gendered_comparison_judgment",
+    "question": "「彼氏より推しの方がかっこいい」と「彼女より推しの方が可愛い」を、あなたは同じ程度に許容する？ 伝え方や場面が同じなら、発言する人の性別で判断は変わる？",
+    "perspective": "observer",
+    "detail": {
+      "text": "ここでは、二つの発言に対する社会全体の反応の差を前提にしていません。伝え方や場面をそろえたとき、自分の評価が性別によって変わるかを考えます。\n\n評価が異なる場合は、発言そのものの意味と、発言者や相手について想定した事情を分けて確認します。同じ基準で見るという答えも、条件によって変えるという答えも、その根拠を明らかにすることが論点です。"
+    }
+  },
+  {
+    "id": "FAN-B02-L3",
+    "level": 3,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "oshi_gendered_fandom_judgment",
+    "question": "金額・頻度・対象への接し方が同じ遠征や課金なら、行う人の性別で評価は変わる？ 変える場合、何を根拠にする？",
+    "perspective": "observer",
+    "detail": {
+      "text": "遠征や課金の評価には、生活への影響、本人の負担能力、対象への接し方など、複数の条件が関わります。この問いでは行動の条件をそろえ、性別が判断の根拠になるかを考えます。\n\n特定の性別の行動が社会で肯定されやすい、危険視されやすいとは断定していません。性別に結び付けた印象と、実際に確認できる行動や影響を区別することが論点です。"
+    }
+  },
+  {
+    "id": "family-law-004",
+    "topic": "post_divorce_parenting",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "離婚後、自分の子どもとほとんど会えなくなったら受け入れられる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "離婚後、子どもと別に暮らす親が、子どもと会う機会を大きく失う場合を想定した問いです。\n\n親の希望だけでなく、子どもの生活、安全、意思、元配偶者との関係なども関わります。親としての関係をどこまで維持したいかを自分に置き換えて考えます。"
+    },
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "family-law-005",
+    "topic": "post_divorce_parenting",
+    "category": "family_and_care",
+    "perspective": "decision_maker",
+    "question": "離婚後、子どもはあなたと暮らしている。元配偶者への気持ちは冷めているが、安全上の懸念はなく、子どもは会いたがっている。親子の交流に、あなたはどう関わる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "離婚後、自分が子どもと暮らしていて、元配偶者との関係が悪い場合を想定した問いです。\n\n自分と元配偶者の感情と、子どもともう一方の親との関係を分けて考えられるかが論点になります。ただし、安全上の問題などがある場合は事情が大きく異なります。"
+    },
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "caregiving-002",
+    "topic": "unequal_housework",
+    "category": "family_and_care",
+    "perspective": "actor",
+    "question": "家事や育児のほとんどを自分だけが担うようになった。どの段階で分担を変えてほしいと伝える？ 相手が応じない場合はどうする？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "共働きなどで生活しているのに、家事や育児の大部分が自分に集中した場合を想定した問いです。\n\n負担には作業時間だけでなく、予定を覚えること、準備すること、判断することなど目に見えにくい部分もあります。どこまでなら役割分担として受け入れられ、どこから不公平だと感じるかを考えます。"
+    },
+    "role": "household_member",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "caregiving-003",
+    "topic": "unequal_housework",
+    "category": "family_and_care",
+    "perspective": "actor",
+    "question": "仕事がかなり忙しかったら、家事や育児を相手にほとんど任せても仕方ない？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "自分の仕事が忙しく、家庭に使える時間や体力が少ない場合を想定した問いです。\n\n収入や仕事時間を重視する考え方もあれば、家庭の負担を一方に集中させるべきではないという考え方もあります。自分が任せる側になったときにも同じ基準で公平だと思えるかを考えます。"
+    },
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "caregiving-005",
+    "topic": "family_care",
+    "category": "family_and_care",
+    "perspective": "decision_maker",
+    "question": "自分の介護のために子どもが仕事を辞めると言ったら、受け入れる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "自分が介護を必要とする側になり、子どもが仕事を辞めて介護すると言った場合を想定した問いです。\n\n助けてもらいたい気持ちと、子どもの仕事や人生を犠牲にしたくない気持ちがぶつかるかもしれません。支える側だけでなく、支えられる側の責任をどう考えるかという問いです。"
+    },
+    "role": "care_recipient",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "family-law-006",
+    "topic": "child_support",
+    "category": "family_and_care",
+    "perspective": "decision_maker",
+    "question": "離婚後、相手が養育費を払わなくなったらどうする？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "離婚後、子どもと暮らしている中で、相手からの養育費が止まった場合を想定した問いです。\n\n自分の生活や子どもの生活に直接影響する一方、相手にも失業や収入減などの事情があるかもしれません。\n\n相手の事情をどこまで考慮するのか、それでも支払いを求めるのか、自分ならどう考えるかを話してみてください。"
+    },
+    "role": "primary_caregiver",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "family-law-007",
+    "topic": "child_support",
+    "category": "family_and_care",
+    "perspective": "actor",
+    "question": "離婚後、子どもに会えない状態が続いているが、養育費を支払う義務はある。その義務と、会えないことへの気持ちを、あなたはどう分けて考える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "離婚後、子どもとほとんど会えない状態が続いている一方で、養育費の支払いは求められている場合を想定した問いです。\n\n子どもに会うことと、子どもの生活費を負担することを別の責任として考える立場があります。一方で、子どもとの関係を断たれたまま負担だけを求められることに強い不公平感を持つ人もいます。\n\n感情と親としての責任がぶつかったとき、自分ならどうするかを考えます。"
+    },
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "caregiving-006",
+    "topic": "family_care",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "親の介護で、今の働き方を続けるのが難しくなった。仕事を辞めるか、働き方や介護の分担を変えるかを、何を基準に決める？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "親の介護が必要になり、仕事との両立が難しくなった場合を想定した問いです。\n\n家族を支えたい気持ちがある一方、退職すれば収入やキャリア、自分自身の将来にも影響します。兄弟姉妹や公的な支援を頼れるかどうかでも状況は変わります。\n\n家族への責任と自分の人生をどこまで両立させるかを考える問いです。"
+    },
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "caregiving-007",
+    "topic": "family_care",
+    "category": "family_and_care",
+    "perspective": "actor",
+    "question": "兄弟が親の介護をしてくれているなら、自分は任せたままでもいい？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "親の介護を兄弟姉妹の一人が中心になって担っている場合を想定した問いです。\n\n距離、仕事、収入、家庭の事情などによって、同じ量の介護をすることが難しい場合もあります。一方で、一人に負担が集中すれば、その人の生活に大きな影響が出ます。\n\n自分が直接介護していない側だったら、どこまで責任を負うべきだと思うでしょうか。"
+    },
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "family-001",
+    "topic": "parent_child_estrangement",
+    "category": "family_and_care",
+    "perspective": "actor",
+    "question": "親から長い間ひどい扱いを受けていたら、大人になってから絶縁する？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "親との関係で長い間強い苦痛を感じてきた場合を想定した問いです。\n\n家族だから関係を続けるべきだという考えもあれば、自分を守るために距離を置いたり関係を断ったりすることも必要だという考えもあります。\n\n血縁があることを、関係を続ける理由としてどこまで重く見るかを考えます。"
+    },
+    "role": "adult_child",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "family-002",
+    "topic": "parent_child_estrangement",
+    "category": "family_and_care",
+    "perspective": "actor",
+    "question": "育児に追い詰められて、子どもに強く当たっていると気づいたらどうする？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "育児の負担や生活上の余裕のなさから、自分の言動が子どもに強く向いていると気づいた場合を想定した問いです。\n\n疲れていたことや余裕がなかったことには事情がありますが、子どもが受けた影響が消えるわけではありません。\n\n自分一人で抱え続けるのか、家族や周囲に頼るのか、生活そのものを変えるのか。自分が親の側だったときにどう向き合うかを考えます。"
+    },
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "disability-001",
+    "topic": "sibling_future_care",
+    "category": "health_and_disability",
+    "perspective": "actor",
+    "question": "あなたには、一人で生活するのが難しい障害のあるきょうだいがいる。親から『私たちがいなくなったら、この子をお願い』と言われた。自分の進学や仕事、結婚まで変わるかもしれなくても、その役割を引き受ける？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "きょうだいを大切に思うことと、その人の生活を将来にわたって背負うことは同じではありません。\n\n家族として支えたい気持ちと、自分自身の人生を自由に選ぶ権利が直接ぶつかる状況を考える問いです。"
+    },
+    "role": "sibling"
+  },
+  {
+    "id": "disability-002",
+    "topic": "disabled_child_independence",
+    "category": "health_and_disability",
+    "perspective": "decision_maker",
+    "question": "障害のある自分の子どもが一人暮らしを望んでいるが、必要な支援が足りず、生活が立ち行かなくなる心配がある。本人の希望を尊重しながら、何が整えば一人暮らしを始められると考える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "本人の自己決定を尊重したい気持ちと、親として重大な失敗を防ぎたい気持ちが衝突します。\n\n『失敗する自由』を、実際に大切な子どもへ認められるかを考える問いです。"
+    },
+    "role": "parent"
+  },
+  {
+    "id": "disability-003",
+    "topic": "reasonable_accommodation_burden",
+    "category": "health_and_disability",
+    "perspective": "affected",
+    "question": "あなたには障害があり、必要な配慮がなければ学校を続けにくい。でも先生や友達から『負担が大きい』と言われた。それでも配慮を求める？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "必要な配慮を受ける権利と、周囲へ負担をかけたくない気持ちは両立しにくい場合があります。\n\n理念として配慮を求めるだけでなく、自分が実際に周囲の負担の原因になると感じたときにも、その権利を使えるかを問います。"
+    }
+  },
+  {
+    "id": "disability-004",
+    "topic": "accommodation_peer_cost",
+    "category": "health_and_disability",
+    "perspective": "observer",
+    "question": "障害のある同級生も参加できるよう、楽しみにしていた学校行事の内容を変更する案が出た。全員が参加できることと、行事で楽しみにしていたことを、どう両立させたい？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "誰も排除しないことを大切にする原則と、自分自身が楽しみにしていた機会を失うことが衝突します。\n\n自分が実際に不利益を受ける側でも、合理的配慮を公平だと考えられるかを問います。"
+    },
+    "role": "classmate"
+  },
+  {
+    "id": "disability-005",
+    "topic": "disability_employment_family",
+    "category": "health_and_disability",
+    "perspective": "decision_maker",
+    "question": "あなたが小さな会社を経営している。障害のある応募者はとても優秀だが、必要な配慮を整えると会社が赤字になる可能性がある。それでも採用する？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "能力で公平に評価したいという考えと、経営者として会社や家族の生活を守る責任が衝突します。\n\n平等を支持する原則を、自分自身が大きなコストを負う場面でも維持できるかを考える問いです。"
+    },
+    "role": "employer"
+  },
+  {
+    "id": "disability-006",
+    "topic": "hidden_disability_disclosure",
+    "category": "health_and_disability",
+    "perspective": "affected",
+    "question": "あなたには外から分かりにくい障害がある。第一志望の進学先で配慮を受けるには、そのことを伝える必要がある。でも知られたことで周囲の見方が変わるのが怖い。それでも伝える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "必要な支援を受けるために自分の情報を開示することと、障害を知られずに生活したい気持ちが衝突します。\n\n支援を受ける利益と、自分がどう見られるかを自分で決める権利について考える問いです。"
+    }
+  },
+  {
+    "id": "disability-007",
+    "topic": "parent_future_planning",
+    "category": "health_and_disability",
+    "perspective": "decision_maker",
+    "question": "重い障害のある自分の子どもを、今は家族で支えられている。でも自分が亡くなった後まで考えると、施設など家族以外の支援に慣れてもらう必要があるかもしれない。本人が嫌がっていても、今から生活を変えられる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "今の本人の安心を守ることと、家族がいなくなった後の生活に備えることが衝突します。\n\n将来のためという理由で、現在の本人の希望をどこまで変えてよいのかを考える問いです。"
+    },
+    "role": "parent"
+  },
+  {
+    "id": "disability-008",
+    "topic": "genetic_risk_parenthood",
+    "category": "health_and_disability",
+    "perspective": "affected",
+    "question": "あなたには、子どもにも遺伝する可能性の高い障害がある。子どもを持ちたい気持ちがある一方、将来その子に必要になる支援が気になっている。どんな情報や支えを踏まえて、自分の希望を考えたい？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "自分自身の人生を肯定することと、将来の子どもに生じうる困難を心配することは両立します。\n\n自分の経験、子どもの将来、親になる自由を自分自身の問題として考える問いです。"
+    },
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "disability-009",
+    "topic": "prenatal_diagnosis",
+    "category": "health_and_disability",
+    "perspective": "decision_maker",
+    "question": "生まれてくる自分の子どもに、大きな支援が必要になる可能性が高いと分かった。今後の仕事や暮らしを考えるとき、その子への支援と、家族それぞれの希望をどう調整したい？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "子どもの存在そのものへの価値判断と、家族全体に生じる現実的な負担は分けて考える必要があります。\n\n理念としてではなく、自分の家族の生活が大きく変わる状況で何を重視するかを考える問いです。"
+    },
+    "role": "parent",
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ]
+  },
+  {
+    "id": "disability-010",
+    "topic": "disability_identity_treatment",
+    "category": "health_and_disability",
+    "perspective": "affected",
+    "question": "あなたの障害を大きく軽減できる新しい治療ができた。でも、その障害と一緒に生きてきた経験を自分らしさの一部だとも感じている。周囲から『治せるなら治した方がいい』と言われたら、どう思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "生活上の困難を減らしたい気持ちと、自分の現在のあり方を否定されたくない気持ちが衝突する場合があります。\n\n『治せること』と『治すべきこと』は同じなのか、自分自身の立場から考える問いです。"
+    }
+  },
+  {
+    "id": "children-001",
+    "topic": "family_poverty_education",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "あなたは高校生。家計が苦しく、自分が働けば家族の助けになるが、大学にも進みたい。家族の生活と進学の希望について、どんな選択肢を調べ、何を優先して決めたい？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "家族を助けたい気持ちと、自分の教育機会を守りたい気持ちが直接衝突します。\n\n『子どもは自分の将来を優先してよい』という考えを、自分の家族が実際に困っている状況でも貫けるかを問います。"
+    }
+  },
+  {
+    "id": "children-002",
+    "topic": "young_carer",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "あなたは中学生。弟や妹の世話を担っていて、部活や友達との時間が取れない。親の仕事にも関わる中で、自分が担う世話の範囲について、どんな希望を伝えたい？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "家族を助けることと、子ども自身の学校生活や友人関係を守ることが衝突します。\n\n自分が抜ければ家族が困ると分かっている状況で、自分の時間を優先することをどう考えるかという問いです。"
+    }
+  },
+  {
+    "id": "children-003",
+    "topic": "parental_expectation",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "あなたは高校生。親はあなたの進学のために何年も節約してきた。でも、本当に進みたい道は親が望んでいる進路とは全く違う。親を失望させても自分の道を選べる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "親への感謝と、自分自身の人生を決めることが直接ぶつかります。\n\n支えてもらった恩をどこまで進路選択で返す必要があるのかを、自分の立場から考える問いです。"
+    }
+  },
+  {
+    "id": "children-004",
+    "topic": "child_privacy_danger",
+    "category": "family_and_care",
+    "perspective": "decision_maker",
+    "question": "自分の子どもが重大なトラブルに巻き込まれているかもしれない。でも本人はスマホを絶対に見ないでほしいと言っている。信頼を壊せば二度と相談してくれないかもしれなくても、確認する？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "子どもの安全を守る責任と、本人との信頼やプライバシーが衝突します。\n\n危険を防ぐためなら信頼を傷つけてもよいのかを、親として考える問いです。"
+    },
+    "role": "parent",
+    "content_warning": [
+      "privacy_and_surveillance"
+    ]
+  },
+  {
+    "id": "children-005",
+    "topic": "bullying_perpetrator_child",
+    "category": "family_and_care",
+    "perspective": "decision_maker",
+    "question": "自分の子どもが学校でいじめの加害側だったと分かった。子ども自身も孤立して苦しんでいる。被害を止める対応と、自分の子どもへの支援を、親としてどう進める？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "子どもの事情を理解して支えることと、被害を受けた側への責任を認めることが衝突します。\n\n身内が加害側になったときにも、普段の公平な判断を保てるかを考える問いです。"
+    },
+    "role": "parent"
+  },
+  {
+    "id": "children-006",
+    "topic": "bullying_friend_secret",
+    "category": "family_and_care",
+    "perspective": "observer",
+    "question": "あなたは中学生。親友から『いじめられている。でも先生に言ったらもっとひどくなるから絶対に言わないで』と頼まれた。親友に嫌われても、大人に相談できる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "友人との信頼を守ることと、本人を守るために別の人へ助けを求めることが衝突します。\n\n正しいと思う行動によって大切な友人との関係を失う可能性があっても実行できるかを問います。"
+    },
+    "role": "friend"
+  },
+  {
+    "id": "children-007",
+    "topic": "child_failure_parent",
+    "category": "family_and_care",
+    "perspective": "decision_maker",
+    "question": "自分の子どもが、失敗する可能性がかなり高い進路を選んでいる。失敗すれば何年も立て直せないかもしれないと分かっていても、『あなたの人生だから』と任せられる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "本人の自己決定を尊重したい気持ちと、重大な失敗を防ぎたい親としての責任が衝突します。\n\n失敗する自由を本当に自分の子どもにも認められるかを考える問いです。"
+    },
+    "role": "parent"
+  },
+  {
+    "id": "children-008",
+    "topic": "family_secret_child",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "あなたは中学生。家族から「外で話したら家族が壊れる」と言われ、重大な秘密を抱えて苦しくなった。家族への思いと自分のつらさの間で、誰かに相談するかをどう考える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "家族を守りたい気持ちと、自分自身が大人の問題を背負い続ける苦しさが衝突します。\n\n家族への忠誠と、自分を守るために誰かへ相談することをどう考えるかという問いです。"
+    }
+  },
+  {
+    "id": "children-009",
+    "topic": "parents_divorce_child",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "あなたは中学生。両親から『離婚するかどうか、あなたの気持ちも聞きたい』と言われた。本当は離婚してほしくない。でも両親が一緒にいると苦しそうだと分かっている。自分の希望を言える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "自分が家族の形を守りたい気持ちと、親それぞれが苦しい関係から離れることを認める気持ちが衝突します。\n\n子どもの希望と親の人生をどこまで分けて考えられるかを問います。"
+    }
+  },
+  {
+    "id": "children-010",
+    "topic": "parent_location_surveillance",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "あなたは高校生。親が安全のために位置情報を常に確認している。解除すれば自由になれるけれど、親が本気で不安になることも分かっている。それでも監視をやめてほしいと言える？",
+    "level": 4,
+    "sensitivity": 3,
+    "detail": {
+      "text": "自分のプライバシーや自立と、親の安心や保護責任が衝突します。\n\n親の心配が善意だと分かっている状況でも、自分の自由をどこまで主張できるかを考える問いです。"
+    },
+    "content_warning": [
+      "privacy_and_surveillance"
+    ]
+  },
+  {
+    "id": "elderly-001",
+    "topic": "elderly_driving",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "あなたは高齢者。家族から運転をやめてほしいと言われた。でも免許を手放せば、買い物や通院だけでなく友人にもほとんど会えなくなる。それでも安全のために手放せる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "運転を続ける自由だけでなく、車が生活や人間関係そのものを支えている場合があります。\n\n周囲の安全と、自分の自立した生活を維持することが直接衝突する状況を考える問いです。"
+    },
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "elderly-002",
+    "topic": "elderly_driving_child",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "高齢の親の運転が危ないと感じている。でも運転をやめさせれば、毎週あなたが買い物や通院を手伝う必要がある。それでも免許を返してほしいと言える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "安全のために運転をやめるべきだという考えと、その結果生じる負担を自分自身が引き受けることが衝突します。\n\n他人には返納を求められても、自分が代わりの負担を負う側になったときにも同じ判断ができるかを問います。"
+    },
+    "role": "child",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "elderly-003",
+    "topic": "home_care_affected",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "あなたは高齢者。最期まで自宅で暮らしたいが、利用できる支援だけでは足りず、子どもが仕事を辞めて介護する必要がある。子どもが「大丈夫」と言う場合、あなたの希望と子どもの負担をどう考える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "自分が望む場所で暮らすことと、大切な家族の人生を大きく変えてしまうことが衝突します。\n\n本人の自己決定を、支える人の犠牲とどこまで切り離せるかを考える問いです。"
+    },
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "elderly-004",
+    "topic": "home_care_child",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "親は『家で暮らしたい』と言っている。でも介護を続けるには、あなたが仕事を辞めなければならない。親から昔たくさん支えてもらったとしても、自分の人生を優先できる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "親への感謝や恩と、自分自身の仕事や生活を守ることが直接衝突します。\n\n親に支えてもらった過去が、子どもの介護責任をどこまで生むのかを考える問いです。"
+    },
+    "role": "child",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "elderly-005",
+    "topic": "dementia_financial_control",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "認知症の親が、大切に貯めてきたお金を次々に使うようになった。本人は楽しそうで『自分のお金だ』と言っている。将来の生活費を守るためなら、本人のお金を家族が管理する？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "本人が自分の財産を使う自由と、将来の生活を守るために財産を保護する必要性が衝突します。\n\n本人の現在の幸福と、未来の安全を誰が決めるべきかを考える問いです。"
+    },
+    "role": "child",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "elderly-006",
+    "topic": "dementia_relationship",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "認知症の親があなたを家族だと分からなくなり、会うたびに強く拒絶するようになった。それでも『親だから』会い続けられる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "これまで築いてきた親子関係と、現在の本人が望んでいる距離が一致しない場合があります。\n\n過去の関係を重視することと、現在の本人の意思を尊重することをどう考えるかという問いです。"
+    },
+    "role": "child",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "elderly-007",
+    "topic": "elderly_loneliness_family",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "あなたは高齢者。一人暮らしが寂しく、子どもにもっと会いに来てほしい。でも子どもが仕事と育児で限界なのも知っている。それでも『もっと来てほしい』と言える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "孤独を我慢せず助けを求めることと、子どもの生活や限界を尊重することが衝突します。\n\n家族だからどこまで自分の寂しさを支えてもらってよいのかを、自分の立場から考える問いです。"
+    },
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "elderly-008",
+    "topic": "elderly_remarriage",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "高齢の親が新しい相手と再婚したいと言っている。その結婚で将来の相続や家族関係が大きく変わると分かっていても、『親の人生だから』と心から応援できる？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "高齢になっても本人には恋愛や結婚を選ぶ自由があります。一方、その決定が家族の財産や関係に実際の影響を与える場合もあります。\n\n親の幸福と、自分自身の利害をどこまで切り離せるかを考える問いです。"
+    },
+    "role": "child",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "elderly-009",
+    "topic": "elderly_money_gift",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "高齢の親が、長年世話になった他人へ財産の多くを渡したいと言っている。自分の相続がほとんどなくなっても、『親のお金だから自由だ』と言える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "本人の財産を本人が自由に使う権利と、家族として相続を期待する気持ちが衝突します。\n\n財産権についての原則を、自分が大きな利益を失う場面でも貫けるかを問います。"
+    },
+    "role": "child",
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "elderly-010",
+    "topic": "elderly_independence_risk",
+    "category": "family_and_care",
+    "perspective": "affected",
+    "question": "あなたは高齢者。一人暮らしを続けたいが、転倒した際などに使える近隣の支援がなく、離れて暮らす子どもに駆けつけてもらう必要がある。この条件なら、一人暮らしの希望と子どもの負担をどう考える？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "自分らしい生活を続ける自由と、緊急時に家族へ生じる現実的な負担が衝突します。\n\n『本人が望む生活』を、その結果を支える人の立場まで含めて考える問いです。"
+    },
+    "content_warning": [
+      "family_conflict"
+    ]
+  },
+  {
+    "id": "stigma-001",
+    "topic": "weak_men_label",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "affected",
+    "question": "あなたは、収入や人間関係で困っている男性だとする。その事情を「弱者男性への支援が必要」と紹介されると、支援につながるかもしれないが、笑ったり見下したりする人もいる。自分をこの言葉で説明されることを、どう受け止める？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "社会の中で困難を抱える集団に名前を付けることで、それまで見えにくかった問題を議論しやすくなる場合があります。一方、その言葉が本人の事情を説明するものではなく、能力や人格までまとめて評価する言葉として使われることもあります。\n\n特に「弱者」という言葉には、支援が必要な状態を表す意味だけでなく、人として劣っているという印象を与える可能性があります。\n\n問題を可視化するために集団を名付けることと、その集団に属するとされた個人を決めつけることは同じなのでしょうか。"
+    },
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
+  },
+  {
+    "id": "stigma-002",
+    "topic": "parents_entitlement_label",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "子どもの体調不良で同僚が休み、あなたが仕事を引き受けることが続いている。その人を「子持ち様」と呼んで批判する人もいる。負担への不満を伝えるとき、本人への批判と職場の体制への批判をどう分けたい？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "子育てと仕事を両立するための配慮が必要になる一方、その結果として別の人に仕事や時間の負担が集中することがあります。その負担への不満まで否定すれば、別の不公平を生む可能性があります。\n\nしかし、制度や特定の行動への批判と、子どもがいる人全体を一つの否定的な言葉で扱うことは分けて考えることもできます。\n\n正当な不満を表明することが、どの段階から属性そのものへの攻撃になるのかを考える問いです。"
+    },
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
+  },
+  {
+    "id": "stigma-003",
+    "topic": "borderline_intelligence_as_insult",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "SNSで、話をうまく理解できていない人に対して「こいつ境界知能だろ」と書かれているのを見た。書いた人は「バカと言っているのと同じ」「ただの悪口だから深い意味はない」と言っている。しかし、その言葉は本来、人の認知的な特徴や支援について考える文脈でも使われる言葉だ。人を馬鹿にするために「境界知能」という言葉を使うことは、単に「バカ」と悪口を言うことより問題が大きいと思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "医療、福祉、心理、教育などで使われる言葉が、ネット上で他人を馬鹿にするための表現として使われることがあります。\n\n専門的な言葉を悪口として広く使えば、その言葉に実際に関係する人まで「能力が低い人」「馬鹿にしてよい人」という印象と結び付けられる可能性があります。\n\n一方、侮辱として使われている時点で、どの言葉を使っても本質的には同じだという考えもあります。\n\n言葉の本来の意味や、その言葉に関係する人への影響まで、使う側に責任があるのかを考えます。"
+    },
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
+  },
+  {
+    "id": "stigma-004",
+    "topic": "elderly_label",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "店員に怒鳴る高齢者を「老害」と呼ぶ投稿と、同じ行動の若者を「迷惑な客」と呼ぶ投稿を見た。行動への批判に年齢を表す言葉を加えることを、どう考える？",
+    "level": 4,
+    "sensitivity": 3,
+    "detail": {
+      "text": "迷惑な行動そのものを批判することは、年齢に関係なくできます。一方、「老害」という言葉には、問題のある行動だけでなく、その人が高齢であることも含まれています。\n\n特定の世代に同じ傾向があると感じていても、その傾向を一人ひとりに当てはめられるとは限りません。\n\n行動への批判と、年齢という属性への評価をどこまで分けるべきかを考えます。"
+    },
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
+  },
+  {
+    "id": "stigma-005",
+    "topic": "generation_stereotyping",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "decision_maker",
+    "question": "あなたは採用担当者。若い社員が何人か続けて辞めたため、上司が「Z世代はすぐ辞める」と考え、若い応募者を避けようとしている。その経験を今の応募者の評価に使うことは、どこまで妥当だと思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "企業が過去の経験や統計から将来のリスクを予測すること自体は、多くの意思決定で行われています。\n\nしかし、集団全体に見られる傾向があったとしても、目の前の個人にその特徴が当てはまるとは限りません。\n\n企業が自分を守るために属性を判断材料として使うことと、一人ひとりを個人として評価することをどこで線引きするかを考えます。"
+    },
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
+  },
+  {
+    "id": "stigma-006",
+    "topic": "living_with_parents_label",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "affected",
+    "question": "あなたは社会人になってからも実家で暮らしている。家には生活費を入れ、家事もしているし、自分のお金も管理している。しかしそのことを知った人から「いい歳して実家暮らしとか、こどおじじゃん」「自立できてないんだね」と笑われた。家賃を節約したい、家族と暮らしたい、家族を支えたいなど、実家暮らしにもさまざまな理由がある。それでも、大人になって親と暮らしている人を「自立していない」と見るのはある程度仕方ないと思う？",
+    "level": 4,
+    "sensitivity": 3,
+    "detail": {
+      "text": "自立を「親元を離れて一人で生活すること」と考える人もいれば、経済的・精神的に自分の生活へ責任を持つことだと考える人もいます。\n\n同じ実家暮らしでも、生活費をすべて親に頼っている場合と、家族を経済的に支えている場合では状況が大きく異なります。\n\nそれでも住んでいる場所だけで人の自立度を評価できるのかを考える問いです。"
+    },
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
+  },
+  {
+    "id": "stigma-007",
+    "topic": "parent_lottery",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "affected",
+    "question": "家庭の経済的な事情で進学先が限られた人が、「親ガチャに外れた」と話している。その表現は、自分では選べなかった条件を伝えるのに役立つと思う？ 今後の選択を考えるときには、どう影響すると思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "家庭の収入、教育環境、地域、家庭内の関係など、生まれた本人が選べない条件はその後の人生に影響します。\n\n一方、人の人生が家庭環境だけで完全に決まるわけではなく、本人の選択や努力が影響する部分もあります。\n\n本人には変えられなかった条件を認めることと、その後の人生への本人の責任を認めることは両立するのでしょうか。\n\n「自己責任」と「環境による格差」の境界を考える問いです。"
+    },
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
+  },
+  {
+    "id": "stigma-008",
+    "topic": "introvert_extrovert_hierarchy",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "affected",
+    "question": "あなたは少人数の友達と過ごすことを好み、今の生活に困っていない。それだけで周囲から「社会に出て人と協力するのが苦手そう」と言われた。人付き合いの広さを、協力して働く力の判断に使ってよいと思う？",
+    "level": 4,
+    "sensitivity": 3,
+    "detail": {
+      "text": "社交的であることは、学校や仕事のさまざまな場面で役立つことがあります。一方、静かに過ごすことや少人数の関係を好むこと自体が、コミュニケーション能力の不足を意味するとは限りません。\n\n「陰キャ」「陽キャ」という言葉は、自分の性格や人間関係を気軽に説明する言葉としても使われますが、ときに人間関係の上下関係を示すように使われることもあります。\n\n社会で評価されやすい性格と、人としての価値を同じものとして扱ってよいかを考えます。"
+    },
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
+  },
+  {
+    "id": "stigma-009",
+    "topic": "self_label_vs_others",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "友達がいつも自分のことを「俺チー牛だからさ」と言って笑いを取っている。あなたも冗談のつもりで、その友達を「チー牛」と呼ぶようになった。ある日、二人きりになったときに友達から「自分で言うのはいいけど、人から言われるのは実は結構嫌だった」と言われた。本人が自分から何度も使っていた言葉なら、周りが同じように呼んでも仕方ないと思う？ それとも、自分で自分をどう呼ぶかと、他人からどう呼ばれるかは全く別の問題だと思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "自分の特徴について自虐的な言葉を使うことで、コンプレックスを笑いに変えたり、他人から言われる前に自分から言ったりする人もいます。\n\nしかし、本人が自分自身について使える言葉だからといって、第三者から同じ言葉を向けられたときにも同じ意味になるとは限りません。\n\n自分についてどう表現するかを決める自由と、他人がその表現を使う自由は同じなのかを考える問いです。"
+    },
+    "role": "friend",
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
+  },
+  {
+    "id": "stigma-010",
+    "topic": "selective_acceptance_of_insults",
+    "category": "gender_sexuality_and_identity",
+    "perspective": "observer",
+    "question": "SNSで、ある属性の人を侮辱する言葉が使われると「差別だからやめるべき」と強く批判される一方、別の属性の人を馬鹿にする言葉には「ネットの冗談」「そんなことで傷つく方がおかしい」という反応が集まっている。言葉には歴史や社会的背景の違いがあり、すべてを全く同じように扱えないという意見もある。しかし、言われた本人が傷つくことに変わりはないという意見もある。差別や侮辱を問題にする基準は、言われる相手がどんな属性かによって変わってもいいと思う？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "同じように人を傷つける言葉でも、社会では必ずしも同じ強さで問題視されるとは限りません。\n\n長い間差別を受けてきた集団への表現には、その歴史まで含めて考える必要があるという立場があります。一方、歴史や社会的立場によって侮辱への対応を変えれば、「この人たちへの悪口は比較的許される」という別の不公平を作る可能性もあります。\n\n全員を同じ基準で扱うことを公平と考えるのか、それぞれが置かれてきた状況の違いまで考慮することを公平と考えるのか。\n\n『平等に扱うこと』と『背景の違いを考慮すること』が衝突したとき、どちらを重く見るかを考える問いです。"
+    },
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
+  },
+  {
+    "id": "accessibility-001",
+    "topic": "accommodation_burden",
+    "category": "health_and_disability",
+    "perspective": "observer",
+    "question": "同じ学習内容を評価するテストで、障害のある生徒には時間の延長や提出方法の変更が認められている。全員の結果を公平に評価できているかを考えるには、どんな条件を確かめたい？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "公平を『全員を同じ条件にすること』と考える方法と、『それぞれが同じように参加できるよう条件を調整すること』と考える方法があります。\n\n自分が相対的に不利に感じる状況でも合理的配慮を支持できるかを考えます。"
+    },
+    "role": "classmate"
+  },
+  {
+    "id": "healthcare-010",
+    "topic": "icu_allocation",
+    "category": "health_and_disability",
+    "perspective": "decision_maker",
+    "question": "大きな感染症の流行で集中治療を受けられる場所が一つしか残っていない。候補の一人は若く、治療すれば回復する可能性がかなり高い。もう一人は高齢で回復の可能性は低いが、家族の介護を一人で担っており、その人がいなくなれば家族の生活も大きく崩れる。先に来たのは高齢の患者だった。あなたが治療の優先順位を決めるなら、回復可能性、先着順、年齢、家族への影響のどれを重視する？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "医療資源が不足すると、全員に同じ治療を提供できない場合があります。\n\n回復可能性を重視すれば医療資源の効果を最大化できますが、結果として高齢者や基礎疾患のある人が不利になりやすくなります。先着順なら形式的には平等ですが、受診しやすさの違いなどを無視する可能性があります。\n\n年齢バイアス、識別可能な被害者効果、そして『助かりやすい人に使うのが当然』という効率性への偏りが関わります。\n\n人を平等に扱うことと、限られた医療で最大限の効果を得ることが衝突する問いです。"
+    },
+    "content_warning": [
+      "medical_and_end_of_life",
+      "privacy_and_surveillance"
+    ]
+  },
+  {
+    "id": "healthcare-011",
+    "topic": "medical_ai_override",
+    "category": "health_and_disability",
+    "perspective": "decision_maker",
+    "question": "あなたは医師。自分は重大な病気の可能性が低いと判断したが、AIは追加検査を勧めた。同様の患者を対象とした評価では、AIは見逃しが少ない一方、不要な追加検査も多かった。この患者への判断理由は説明できない。あなたなら何を確認して検査を決める？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "精度の高い判断と、判断理由を説明できることは必ずしも同じではありません。\n\nAIを過信する自動化バイアスがある一方、『自分は専門家だからAIより分かっている』という過信も起こり得ます。また、問題が起きた後には結果を知った状態から『当然分かったはずだ』と評価する後知恵バイアスも生じます。\n\n平均的に正しい仕組みに従うことと、一人の患者について自分で責任を負って判断することのどちらを重視するかを考えます。"
+    },
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
+  },
+  {
+    "id": "healthcare-012",
+    "topic": "preventive_disclosure",
+    "category": "health_and_disability",
+    "perspective": "decision_maker",
+    "question": "患者から非常に重大な健康情報を打ち明けられた。その情報を本人の家族が知れば、家族自身の健康上の重大なリスクを早く調べられる可能性がある。しかし患者は『絶対に家族には知らせないでほしい』と強く希望している。医療者として守秘義務を守れば患者との信頼は守れるが、家族が予防できたかもしれない問題を見逃す可能性がある。本人の秘密と、知らされていない第三者を守ることが衝突したら、どちらを優先する？",
+    "level": 4,
+    "sensitivity": 4,
+    "detail": {
+      "text": "医療では本人のプライバシーと自己決定を尊重することが重要です。一方、一人の情報が血縁者など別の人の健康にも関係する場合があります。\n\n何もしなかった結果より、自分が情報を漏らした結果の方を重く感じる不作為バイアスの逆方向の働きや、身近な家族を守りたい感情による判断の偏りも生じます。\n\n秘密を守る義務は、第三者への重大な影響が予想されても絶対なのかを考えます。"
+    },
+    "content_warning": [
+      "medical_and_end_of_life"
+    ]
+  },
+  {
+    "id": "r6-04-02-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "health_and_disability",
+    "topic": "social_security_04-02-l4",
+    "question": "あなたは長期の治療を受けている。自己負担上限の引上げで生活費が足りなくなる一方、上限を据え置けば若い家族の保険料が増えるとする。自分の治療を守るために、据置きを求める？",
+    "perspective": "affected",
+    "content_warning": [
+      "medical_and_end_of_life"
+    ],
+    "detail": {
+      "text": "医療費の自己負担を抑える費用は保険料などで分担する。病気のときの保護と、広く日常的に負う費用の調整を問う仮定。\n\n問いの狙い: 自分の治療と若い家族の負担が同時に気になる患者の立場を置く。"
+    }
+  },
+  {
+    "id": "r6-04-06-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "health_and_disability",
+    "topic": "social_security_04-06-l4",
+    "question": "あなたは家族の介護を続けるため資産を使い切りそうだ。より安い施設へ移れば生活は立て直せるが、本人は今の環境を強く望んでいる。家族全体が困窮する前に移す？",
+    "perspective": "affected",
+    "detail": {
+      "text": "医療・介護への希望には限りがなくても、公費や家族の資産には限りがある。効果の判断と本人の希望をどこまで切り離すかを問う。\n\n問いの狙い: 家族全体の困窮を避けるため、本人の望む環境を変える判断を置く。"
+    }
+  },
+  {
+    "id": "r6-12-01-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "family_and_care",
+    "topic": "poverty_education_12-01-l4",
+    "question": "あなたはひとり親として支援を受けている。交際相手との同居で支援が減る制度だとする。相手に家計を支える余裕はないが、一緒に暮らしたい。制度上の世帯として生活を合わせる時期を遅らせる？",
+    "perspective": "affected",
+    "content_warning": [
+      "family_conflict"
+    ],
+    "detail": {
+      "text": "子どもの支援を親の婚姻状況で決めると、形式的な状態と実際の生活が食い違うことがある。実態調査にも負担がある。\n\n問いの狙い: 生活を合わせたい当事者が給付条件に合わせて選択を変えるか問う。"
+    }
+  },
+  {
+    "id": "r6-13-01-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-01-l4",
+    "question": "あなたは出産後の生活が苦しいが、家庭の事情を行政に知られたくない。支援者は子どもの安全も心配している。自分の意思に反して関係機関へ情報を共有されることを、どこまで受け入れる？",
+    "perspective": "affected",
+    "content_warning": [
+      "pregnancy_and_reproduction"
+    ],
+    "detail": {
+      "text": "出産後の家庭への支援は孤立を減らす目的を持つが、家庭が介入を望むとは限らない。親の意思と子どもの安全も関わる。\n\n問いの狙い: 支援を必要としながら私生活を守りたい本人の情報共有への判断を置く。"
+    }
+  },
+  {
+    "id": "r6-13-02-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-02-l4",
+    "question": "あなたは成人した家族の深刻な不調を知り、専門家から緊急の支援が必要だと説明された。本人は家族の介入を拒んでいる。関係が壊れる可能性があっても、本人の希望に反して支援を求める？",
+    "perspective": "actor",
+    "content_warning": [
+      "self_harm"
+    ],
+    "detail": {
+      "text": "差し迫った生命の危険がある設定では、本人の意思や信頼と、周囲が保護のため動く責任が衝突する。これは医療判断の手順の案内ではない。\n\n問いの狙い: 大切な家族との関係を失う危険があっても介入するか問う。"
+    }
+  },
+  {
+    "id": "r6-13-03-l4-conv",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-03-l3",
+    "question": "あなたは相談窓口の予算を決める担当者。男性向けの窓口を増やすには、利用実績のある女性向け窓口を一部減らす必要がある。相談につながっていない男性が、どれだけ窓口を必要としているかは確かめきれておらず、支援が途切れる女性も出るかもしれない。\nそれでも予算の配分を変える？",
+    "perspective": "decision_maker",
+    "content_warning": [
+      "self_harm"
+    ],
+    "detail": {
+      "text": "限られた支援予算を別の対象へ移すと、見えていなかった需要に対応する一方、既存の利用者への支援が減る。性別ごとの必要性の決め付けではない。\n\n問いの狙い: 男性への支援拡大を実際の予算再配分の問題として扱う。"
+    }
+  },
+  {
+    "id": "r6-13-03-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-03-l4",
+    "question": "あなたは支援予算を決める立場。男性向け事業を始めると、支援が途切れる女性が出る可能性がある。男性の困難も見過ごされていると考えるなら、新事業を優先する？",
+    "perspective": "decision_maker",
+    "content_warning": [
+      "self_harm"
+    ],
+    "detail": {
+      "text": "限られた支援予算を別の対象へ移すと、見えていなかった需要に対応する一方、既存の利用者への支援が減る。性別ごとの必要性の決め付けではない。\n\n問いの狙い: 理念への賛成だけでなく、支援が途切れる人への責任を引き受ける立場を置く。"
+    }
+  },
+  {
+    "id": "r6-13-04-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-04-l4",
+    "question": "同程度に困っている二人について、一方には構造的な不利益があると説明され、もう一方は個人の選択の結果だと言われている。あなたが支援先を一人選ぶなら、その説明によって判断を変える？",
+    "perspective": "affected",
+    "detail": {
+      "text": "相談件数は困難の量だけでなく相談のしやすさにも影響され得る。構造的な困難という説明を持つかどうかも支援の評価に関わる。\n\n問いの狙い: 同程度に困る人への判断が原因の説明で変わるかを考える。"
+    }
+  },
+  {
+    "id": "r6-13-05-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "health_and_disability",
+    "topic": "mental_health_13-05-l4",
+    "question": "あなたは生活相談の担当者。夜の店への支出で借金を重ねた人が、住まいを失いそうになっている。今の予算で助けられるのは一人で、別の人は病気による失業で困っている。困窮の程度が同じなら、借金に至った理由で順番を変える？",
+    "perspective": "decision_maker",
+    "detail": {
+      "text": "住居などへの支援に支出管理を求めると、生活を立て直す助けにも本人の自由の制限にもなる。困窮の理由による配分も問題になる。\n\n問いの狙い: 同じ困窮度で一人しか支援できないときに原因を評価する判断を置く。"
+    }
+  },
+  {
+    "id": "r6-15-01-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-01-l4",
+    "question": "あなたの職場では募集条件をそろえても、応募者の男女比が偏っている。結果の比率を変えるため、今採れそうな人を見送り募集を続けることに賛成する？",
+    "perspective": "actor",
+    "detail": {
+      "text": "機会の形式的な平等と結果の比率の一致は別の目標。自発的な選択も結果に影響する場合、是正の対象と範囲が争点になる。\n\n問いの狙い: 人手を確保したい現場で比率のために採用を待つ選択を置く。"
+    }
+  },
+  {
+    "id": "r6-15-02-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-02-l4",
+    "question": "あなたは男子受験生。同じ大学に一般枠と女子枠があり、自分は一般枠で不合格になった。女性の進学機会を増やす必要性には賛成してきたが、自分には応募できない枠があることがつらい。自分のように応募できない人の機会を増やすため、女子枠の廃止を求める？",
+    "perspective": "actor",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "性別の構成を変える支援と、経済的な困窮を支える給付は目的が異なる。両者を同じ窓口で扱うと対象者が食い違う。\n\n問いの狙い: 自分が応募できない制度を、抽象的な支持から実際の要求として考える。"
+    }
+  },
+  {
+    "id": "r6-15-03-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-03-l4",
+    "question": "あなたは混雑する通勤電車を使っている。自分が使えない専用車両を増やせば被害対策になるが、使える車両はさらに混む。自分の通勤負担が増えても、その拡大を支持する？",
+    "perspective": "actor",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "性別で分けた空間は、利用者の安心と利用できない側の混雑・負担を同時に生む設定。目的と手段の釣合いが論点。\n\n問いの狙い: 使える車両が減る通勤者の立場で拡大に賛成するか考える。"
+    }
+  },
+  {
+    "id": "r6-15-04-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-04-l4",
+    "question": "あなたは店を経営し、特定の性別への割引で客が増えている。差別だという批判を受けたが、割引をやめれば従業員を減らす必要があるかもしれない。それでも料金を統一する？",
+    "perspective": "decision_maker",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "料金差は客層の調整や事業維持に使われる一方、同じサービスへの同じ対価という考えと衝突する。\n\n問いの狙い: 収益や雇用がかかる経営者に料金統一の判断を置く。"
+    }
+  },
+  {
+    "id": "r6-15-05-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-05-l4",
+    "question": "あなたは女性向けの採用枠で入社し、今は高い成果を出している。同僚から、その枠で入った人には昇進時により厳しい評価が必要だと言われた。採用時の機会の違いを理由に、入社後の評価基準も変えてよいと思う？",
+    "perspective": "affected",
+    "detail": {
+      "text": "入口の人数と管理職の構成は違う時点の結果を表す。採用時の是正措置をいつ終え、その後どう評価するかが問題になる。\n\n問いの狙い: 制度を利用して入った人に、入社後も別の基準を課してよいか問う。"
+    },
+    "content_warning": [
+      "discrimination_and_hate"
+    ]
+  },
+  {
+    "id": "r6-15-06-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-06-l4",
+    "question": "あなたは家計のために長時間働き、相手は家事育児を担っている。相手から、自分も働きたいので収入が下がっても労働時間を減らしてほしいと言われた。どこまで応じる？",
+    "perspective": "affected",
+    "detail": {
+      "text": "長時間労働と家庭内のケアの分担は影響し合う。本人の仕事の希望を尊重すると、別の家族の選択が狭まることがある。\n\n問いの狙い: 自分の収入を減らすことで相手の仕事の機会を作る判断を問う。"
+    }
+  },
+  {
+    "id": "r6-15-07-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_equality_15-07-l4",
+    "question": "あなたは是正措置で機会を得たが、親しい人は同じ措置で機会を失ったと感じている。自分の経験と相手の経験だけでは効果を判断できない中で、制度の継続を支持する？",
+    "perspective": "actor",
+    "detail": {
+      "text": "不公平の実感は重要だが、制度全体の効果と必ずしも一致しない。受益した人と機会を失ったと感じる人の経験が衝突する。\n\n問いの狙い: 自分が得た利益と親しい人の不利益の双方を抱える判断にする。"
+    }
+  },
+  {
+    "id": "r6-16-01-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-01-l4",
+    "question": "あなたは接客業の責任者。能力は同じでも、外見によって客の反応が大きく違うと分かった。店を維持するために、人気のある人を表に出す配置を選ぶ？",
+    "perspective": "decision_maker",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "外見への顧客の好みは企業の利益に影響し得るが、企業の選別がその好みを固定する面も考えられる。\n\n問いの狙い: 同程度の能力でも売上のために見た目で配置する責任者を置く。"
+    }
+  },
+  {
+    "id": "r6-16-02-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-02-l4",
+    "question": "あなたは施設の利用を申し込んだところ、性別に関する詳しい私的情報を求められた。同じ基準を全員に適用していると説明されても、利用するために提出する？",
+    "perspective": "affected",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "施設の利用資格を確認するために、性別に関わる私的な情報を求める場合がある。確認の必要性と情報を開示しない利益が衝突する。\n\n問いの狙い: サービスを使うために自分の情報を差し出す本人の立場にする。"
+    }
+  },
+  {
+    "id": "r6-16-03-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-03-l4",
+    "question": "あなたは子どもを連れた父親で、安全確認のためだとして自分だけ関係を詳しく聞かれた。子どもを守る仕組みなら受け入れる？ 性別で対応を変えないよう抗議する？",
+    "perspective": "affected",
+    "detail": {
+      "text": "安心のための確認が、属性による個人への疑いに変わる場合がある。危険の防止と疑う事情のない人の扱いを区別する。\n\n問いの狙い: 子どもを守る目的でも、自分だけ疑われる父親の判断を置く。"
+    }
+  },
+  {
+    "id": "r6-16-04-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-04-l4",
+    "question": "あなたは女性の交際相手から暴力を受けた男性の友人。本人は、周囲に軽く見られることを恐れて誰にも知られたくないと言っている。社会に問題を知らせる意味があるとしても、本人が望まない間は発信を控える？",
+    "perspective": "affected",
+    "content_warning": [
+      "sexual_violence"
+    ],
+    "detail": {
+      "text": "同じ行為でも影響は人や状況で異なり得る。被害を共通の基準で認めることと、必要な支援を個別に決めることが関わる。\n\n問いの狙い: 男性被害を可視化する意義と被害を受けた本人の希望を対立させる。"
+    }
+  },
+  {
+    "id": "r6-16-05-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-05-l4",
+    "question": "あなたは、性差別に反対する活動を支えている。その仲間が別の性別全体を侮辱する投稿をし、支持者から称賛されている。公に批判すれば活動全体の勢いを弱めるかもしれない。それでも仲間の発言を公に批判する？",
+    "perspective": "affected",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "政策への批判と、その表現に含まれる侮蔑は別の評価になり得る。正当な目的を持つ活動内にも問題のある発言は起こり得る。\n\n問いの狙い: 活動の勢いを弱めても仲間を批判するかを扱う。"
+    }
+  },
+  {
+    "id": "r6-16-06-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-06-l4",
+    "question": "あなたは、自信を持つ助けになった発信者を支持している。その人が別の性別を侮辱していると分かった。自分への良い影響が大きくても、支持をやめる？",
+    "perspective": "actor",
+    "detail": {
+      "text": "支配的な側への批判という説明が、性別全体への侮蔑を許す根拠になるかが争点。個人への良い影響と発信の問題も分かれる。\n\n問いの狙い: 自分を救った発信者の別の言動を理由に支持をやめるか考える。"
+    }
+  },
+  {
+    "id": "r6-16-07-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-07-l4",
+    "question": "あなたは男性の孤立を支援する活動に参加している。活動が女性への敵意を持つ人も集め始めた。支援を必要とする人でも、その言動を理由に参加を断る？",
+    "perspective": "affected",
+    "detail": {
+      "text": "男性の共通する困難を示す運動には、内部の多様性を隠す危険もある。支援を必要とする人の排他的な言動への対応も問題になる。\n\n問いの狙い: 支援対象であっても敵意ある言動を理由に活動から外すか問う。"
+    }
+  },
+  {
+    "id": "r6-16-08-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "gender_identity_16-08-l4",
+    "question": "あなたは職場で差別を受けたと感じ、調査を求めた。しかし同僚の多くは公平な扱いだと言っている。差別の認定には至らなくても、運用を変えるよう求める？",
+    "perspective": "actor",
+    "content_warning": [
+      "discrimination_and_hate"
+    ],
+    "detail": {
+      "text": "被害を訴える機会と、制度上の差別認定は別の判断。本人の経験を受け止めることが、そのまま認定を意味するとは限らない。\n\n問いの狙い: 認定されなくても運用改善を求める当事者の立場を置く。"
+    }
+  },
+  {
+    "id": "r6-17-01-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "family_and_care",
+    "topic": "marriage_sexwork_17-01-l4",
+    "question": "あなたは結婚するとき自分の名字を残したいが、相手は家族が同じ名字になることを結婚の条件にしている。法律で選べるとしても、名字を守るために結婚をやめる？",
+    "perspective": "actor",
+    "detail": {
+      "text": "婚姻制度を変えると、以前の制度で負担を受けた人との関係が生じる。法律で選べることと相手が受け入れることも異なる。\n\n問いの狙い: 選択の自由があっても結婚相手の条件と衝突する場面にする。"
+    }
+  },
+  {
+    "id": "r6-17-02-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "family_and_care",
+    "topic": "marriage_sexwork_17-02-l4",
+    "question": "あなたは離婚後、子どもと離れて暮らしている。子どもは会いたくないと言うが、元配偶者の影響なのか本人の気持ちなのか確かめられない。会うことを求める手続きを続ける？ 子どもの今の言葉を受け入れて待つ？",
+    "perspective": "affected",
+    "content_warning": [
+      "family_conflict"
+    ],
+    "detail": {
+      "text": "安全を訴える親と不当な分離を訴える親の説明が食い違う場合、待つことにも戻すことにも影響がある。子どもの意思の解釈も難しい設定。\n\n問いの狙い: 子どもの拒否の理由が分からない別居親の対応を扱う。"
+    }
+  },
+  {
+    "id": "r6-17-03-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "family_and_care",
+    "topic": "marriage_sexwork_17-03-l4",
+    "question": "あなたは養育費を受け取っていないが、子どもは別居する親と会うことを楽しみにしている。相手に支払いを促すためでも、次の交流を断ることは避ける？",
+    "perspective": "affected",
+    "content_warning": [
+      "family_conflict"
+    ],
+    "detail": {
+      "text": "養育費と親子交流はそれぞれ子どもの生活に関わる。片方の不履行を他方の交渉材料にすることには、子どもへの別の影響がある。\n\n問いの狙い: 不払いがあっても子どもが楽しみにする交流を維持するか問う。"
+    }
+  },
+  {
+    "id": "r6-17-04-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "marriage_sexwork_17-04-l4",
+    "question": "あなたは性的サービスで生活している。買う側への処罰を強める政策で収入が減り、別の仕事では家賃を払えそうにない。搾取を減らす政策だと説明されても反対する？",
+    "perspective": "affected",
+    "content_warning": [
+      "sexual_violence",
+      "crime_and_punishment"
+    ],
+    "detail": {
+      "text": "性産業の規制で、搾取を減らす目的と現在の従事者の生活が衝突する場合がある。代替の所得や支援の整備状況も関わる。\n\n問いの狙い: 規制で今の家賃を払えなくなる従事者の視点を置く。"
+    }
+  },
+  {
+    "id": "r6-17-05-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "marriage_sexwork_17-05-l4",
+    "question": "あなたは過去に性産業で働いていた。今の健康や家計に影響はないが、結婚を考える相手は、その経験がある人とは結婚しないと話している。相手の条件に同意できなくても、自分から伝える必要があると思う？",
+    "perspective": "affected",
+    "detail": {
+      "text": "過去の職業経験と現在の能力・危険性は同じではない。雇用や婚姻の相手選びで、その経験を条件にする範囲が争点になる。\n\n問いの狙い: 相手の結婚条件に反対でも、過去を自ら伝えるかを扱う。"
+    },
+    "content_warning": [
+      "sexual_violence"
+    ]
+  },
+  {
+    "id": "r6-17-06-l4",
+    "level": 4,
+    "sensitivity": 4,
+    "category": "gender_sexuality_and_identity",
+    "topic": "marriage_sexwork_17-06-l4",
+    "question": "あなたは経済的に余裕があり、生活に困る成人に金銭を渡して交際している。相手が続けたいと言っていても、お金がなければ自分を選ばないと感じたとき、その関係を続ける？",
+    "perspective": "actor",
+    "detail": {
+      "text": "成人の同意があっても経済的な選択肢に大きな差があると、自由な関係かどうかの評価が分かれる。所得差だけで決めることにも限界がある。\n\n問いの狙い: 金銭を提供する側が、相手の希望をどう評価するか考える。"
+    }
+  },
+  {
+    "id": "FAN-B01-L4",
+    "level": 4,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "oshi_gendered_comparison_judgment",
+    "question": "彼女が彼氏に「推し（応援している人）の方がかっこいい」と言う場合と、彼氏が彼女に「推しの方が可愛い」と言う場合。\nほかの条件が同じなら、性別であなたの受け止め方は変わる？",
+    "perspective": "observer",
+    "detail": {
+      "text": "発言する人と受け取る人の性別を入れ替えたとき、自分が付け加えている印象や期待に気づけるかを考える場面です。性別だけから、二人の関係や被害の程度を確定することはできません。\n\n言い方、頻度、相手がどう受け取っているかなどを同じ条件で比較します。判断に差があるなら、それが実際の行為の違いによるのか、自分が想像した違いによるのかを検討します。"
+    }
+  },
+  {
+    "id": "FAN-B02-L4",
+    "level": 4,
+    "sensitivity": 3,
+    "category": "gender_sexuality_and_identity",
+    "topic": "oshi_gendered_fandom_judgment",
+    "question": "友人から二つの相談を受けた。一つは彼氏の推し（応援している人）への活動に彼女が嫉妬している話、もう一つは彼女の推しへの活動に彼氏が嫉妬している話。使うお金や時間、二人の約束など、性別以外の条件は同じとする。\nあなたは、両方に同じ助言をする？",
+    "perspective": "decision_maker",
+    "detail": {
+      "text": "比較するときは、性別以外の条件をそろえます。課金の額、遠征の頻度、二人の約束、生活への影響、嫉妬している人の訴えの内容が同じケースとして考えます。\n\nそのうえで助言が変わるなら、どの事情を根拠にしたのかを確認します。活動をやめるか我慢するかだけでなく、理由を聞くなど同じ対応を選ぶことも含め、自分の助言の基準を考える問いです。"
+    }
+  }
+]

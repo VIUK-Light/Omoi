@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-08",
+  "timezone": "Asia/Tokyo",
+  "status": "prepared_pending_user_approval",
+  "author_groups": [
+    {
+      "group": "personal",
+      "completed_cards": 593,
+      "target": 593,
+      "initial_full_independent_review_complete": true
+    },
+    {
+      "group": "care",
+      "completed_cards": 670,
+      "target": 670,
+      "initial_full_independent_review_complete": true
+    },
+    {
+      "group": "livelihood",
+      "completed_cards": 710,
+      "target": 710,
+      "initial_full_independent_review_complete": true
+    },
+    {
+      "group": "learning",
+      "completed_cards": 574,
+      "target": 574,
+      "initial_full_independent_review_complete": true
+    },
+    {
+      "group": "civic",
+      "completed_cards": 558,
+      "target": 558,
+      "initial_full_independent_review_complete": true
+    },
+    {
+      "group": "world",
+      "completed_cards": 663,
+      "target": 663,
+      "initial_full_independent_review_complete": true
+    }
+  ],
+  "total_additions": 3768,
+  "production_files_written": 0
+}
