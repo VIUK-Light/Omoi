@@ -194,7 +194,7 @@
     {
         "id": "contact-004",
         "category": "relationships_and_communication",
-        "question": "寝落ち電話は好き？",
+        "question": "電話をつないだまま眠る「寝落ち電話」は好き？",
         "level": 1,
         "sensitivity": 1,
         "topic": "contact"
@@ -530,7 +530,7 @@
     {
         "id": "romance-031",
         "category": "relationships_and_communication",
-        "question": "「重い」と「愛情深い」の違いって何だと思う？",
+        "question": "恋人からの愛情を、うれしいと感じるときと、負担に感じるとき。何が違うと思う？",
         "level": 1,
         "sensitivity": 1,
         "topic": "romance"
@@ -922,7 +922,7 @@
     {
         "id": "friendship-012",
         "category": "relationships_and_communication",
-        "question": "ネッ友とリア友って、どっちが話しやすいと思う？",
+        "question": "ネットで知り合った友達と、普段会っている友達では、どちらが話しやすい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "friendship"
@@ -1202,7 +1202,7 @@
     {
         "id": "conflict-013",
         "category": "relationships_and_communication",
-        "question": "本音を言えない時はどうなる？",
+        "question": "本音を言えないとき、気持ちや態度にどんな変化が出る？",
         "level": 1,
         "sensitivity": 1,
         "topic": "conflict"
@@ -1302,5 +1302,101 @@
         "level": 1,
         "sensitivity": 1,
         "topic": "future"
+    },
+    {
+        "id": "clarity-money_consumption_and_tax-01-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "money_consumption_and_tax",
+        "topic": "purchase_satisfaction",
+        "question": "最近買って、値段以上に満足したものは？"
+    },
+    {
+        "id": "clarity-money_consumption_and_tax-02-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "money_consumption_and_tax",
+        "topic": "spending_and_saving",
+        "question": "少し自由に使えるお金があったら、今の楽しみと貯金にどう分けたい？"
+    },
+    {
+        "id": "clarity-housing_community_and_transport-01-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "housing_community_and_transport",
+        "topic": "preferred_neighborhood",
+        "question": "住む場所を選べるなら、便利さ、静かさ、自然の近さのうち、何を大事にしたい？"
+    },
+    {
+        "id": "clarity-housing_community_and_transport-02-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "housing_community_and_transport",
+        "topic": "places_to_linger",
+        "question": "家の近くに、ゆっくり過ごせる場所が一つ増えるなら、どんな場所がいい？"
+    },
+    {
+        "id": "clarity-climate_environment_energy_and_disaster-01-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "climate_environment_energy_and_disaster",
+        "topic": "electricity_free_leisure",
+        "question": "電気を使わずに楽しめることで、好きなものはある？"
+    },
+    {
+        "id": "clarity-climate_environment_energy_and_disaster-02-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "climate_environment_energy_and_disaster",
+        "topic": "everyday_use_of_nature",
+        "question": "散歩や外遊びをするなら、海、山、公園のどんなところが好き？"
+    },
+    {
+        "id": "clarity-democracy_rights_and_participation-01-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "democracy_rights_and_participation",
+        "topic": "comfortable_participation",
+        "question": "みんなで何かを決めるとき、どんな場なら自分の意見を話しやすい？"
+    },
+    {
+        "id": "clarity-democracy_rights_and_participation-02-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "democracy_rights_and_participation",
+        "topic": "decision_role_preference",
+        "question": "グループで何かを決めるとき、案を出す、意見を聞く、最後にまとめるなら、どの役割が好き？"
+    },
+    {
+        "id": "clarity-international_peace_and_cooperation-01-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "international_peace_and_cooperation",
+        "topic": "curiosity_about_other_countries",
+        "question": "ほかの国の暮らしで、もっと知ってみたいことは？"
+    },
+    {
+        "id": "clarity-international_peace_and_cooperation-02-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "international_peace_and_cooperation",
+        "topic": "communication_across_languages",
+        "question": "言葉が通じない相手に、何かを伝えるなら、どんな方法を試してみたい？"
+    },
+    {
+        "id": "clarity-science_research_and_uncertainty-01-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "science_research_and_uncertainty",
+        "topic": "everyday_curiosity",
+        "question": "最近「どうしてだろう」と思って、調べてみたくなったことは？"
+    },
+    {
+        "id": "clarity-science_research_and_uncertainty-02-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "science_research_and_uncertainty",
+        "topic": "trying_or_reading",
+        "question": "新しい道具の使い方を知るなら、まず試したい？ 説明を読んでから試したい？"
     }
 ]

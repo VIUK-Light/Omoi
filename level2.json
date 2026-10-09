@@ -26,7 +26,7 @@
     {
         "id": "support-003",
         "category": "school_and_youth",
-        "question": "友達同士で解決できることって何？",
+        "question": "友達同士のトラブルで、自分たちだけで解決できそうなことと、誰かに相談したいことは何が違う？",
         "level": 2,
         "sensitivity": 1,
         "topic": "support"
@@ -162,7 +162,7 @@
     {
         "id": "support-008",
         "category": "school_and_youth",
-        "question": "「先生に言う」と「チクる」の違いは？",
+        "question": "友達の行動を先生に伝えた人が「チクった」と責められている。相談と告げ口の違いを、何で判断する？",
         "level": 2,
         "sensitivity": 2,
         "topic": "support"
@@ -371,7 +371,7 @@
         "id": "bridge-002",
         "category": "relationships_and_communication",
         "topic": "reply_expectations",
-        "question": "返事が遅い友達に、心配していることを伝えるのと催促することの境界はどこだと思う？",
+        "question": "返事が遅い友達を心配して、もう一度連絡したい。その連絡が、心配を伝えることになるか、返事の催促になるかは、何で決まると思う？",
         "level": 2,
         "sensitivity": 1
     },
@@ -427,7 +427,7 @@
         "id": "bridge-009",
         "category": "relationships_and_communication",
         "topic": "conflicting_confidences",
-        "question": "別々の友達から、同じ出来事について違う秘密を聞いたら、どこまで中立でいられると思う？",
+        "question": "同じ出来事について、二人の友達から食い違う説明を聞いた。二人とも「誰にも言わないで」と頼んでいる。どちらかの味方になるか、どう決める？",
         "level": 2,
         "sensitivity": 2
     },
@@ -457,7 +457,7 @@
     },
     {
         "id": "bridge-013",
-        "category": "work_and_economy",
+        "category": "money_consumption_and_tax",
         "topic": "shared_expenses",
         "question": "みんなで使ったお金を割り勘にするとき、使った量が違うならどう分けるのが納得できる？",
         "level": 2,
@@ -537,7 +537,7 @@
     },
     {
         "id": "bridge-023",
-        "category": "society_public_policy_and_environment",
+        "category": "climate_environment_energy_and_disaster",
         "topic": "everyday_environmental_choices",
         "question": "少し不便でも環境のために選び方を変えることを、周りに求めていいと思う？",
         "level": 2,
@@ -545,7 +545,7 @@
     },
     {
         "id": "bridge-024",
-        "category": "work_and_economy",
+        "category": "money_consumption_and_tax",
         "topic": "lending_money_to_friends",
         "question": "友達がお金を貸してほしいと困っていたら、返ってこないかもしれなくても貸す？",
         "level": 2,
@@ -638,5 +638,149 @@
         "question": "前に強く言った意見を変えることは、ぶれていることだと思う？",
         "level": 2,
         "sensitivity": 1
+    },
+    {
+        "id": "clarity-money_consumption_and_tax-01-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "money_consumption_and_tax",
+        "topic": "subscription_and_participation",
+        "question": "友達と遊ぶための月額サービスを、自分はほとんど使っていない。解約するとその遊びには参加できない。続けるか、何で決める？"
+    },
+    {
+        "id": "clarity-money_consumption_and_tax-02-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "money_consumption_and_tax",
+        "topic": "repair_or_repurchase",
+        "question": "少し高いが修理して長く使える物と、安いが壊れたら買い替える物。今の予算が限られていたら、何を基準に選ぶ？"
+    },
+    {
+        "id": "clarity-money_consumption_and_tax-03-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "money_consumption_and_tax",
+        "topic": "trip_budget_differences",
+        "question": "友達と旅行を計画しているが、使えるお金に差がある。みんなで同じ行程にするか、一部は別行動にするか、どう決めたい？"
+    },
+    {
+        "id": "clarity-housing_community_and_transport-01-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "housing_community_and_transport",
+        "topic": "shared_space_use",
+        "question": "共同で使う広場を、遊ぶ場所にしたい人と、静かに休む場所にしたい人がいる。使い方のルールをどう決めたい？"
+    },
+    {
+        "id": "clarity-housing_community_and_transport-02-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "housing_community_and_transport",
+        "topic": "travel_without_car",
+        "question": "友達との外出で、車を使える人と使えない人がいる。集まりやすい場所と、行きたい場所が違ったら、何を優先する？"
+    },
+    {
+        "id": "clarity-housing_community_and_transport-03-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "housing_community_and_transport",
+        "topic": "supporting_local_shops",
+        "question": "近所の店を応援したいが、少し離れた店の方が安い。同じ物を買うなら、値段と地域の店が続くことをどう考える？"
+    },
+    {
+        "id": "clarity-climate_environment_energy_and_disaster-01-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "climate_environment_energy_and_disaster",
+        "topic": "food_waste_and_discounts",
+        "question": "食べきれるか分からない量の食品が、少量で買うより割安になっている。安さと食べ残しを出さないことを、どう考えて選ぶ？"
+    },
+    {
+        "id": "clarity-climate_environment_energy_and_disaster-02-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "climate_environment_energy_and_disaster",
+        "topic": "travel_time_and_environment",
+        "question": "環境への負担が小さい移動方法は、今の方法より時間がかかるとする。どんな外出なら、時間をかけても選びたい？"
+    },
+    {
+        "id": "clarity-climate_environment_energy_and_disaster-03-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "climate_environment_energy_and_disaster",
+        "topic": "shared_disaster_supplies",
+        "question": "みんなで使う防災用品の置き場所が限られている。たくさんの人が使う物と、少数の人に欠かせない物を、どう選んで置く？"
+    },
+    {
+        "id": "clarity-democracy_rights_and_participation-01-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "democracy_rights_and_participation",
+        "topic": "anonymous_group_vote",
+        "question": "グループの方針を決める投票で、誰が何に投票したかを見せる方がいい？ 名前を出さずに投票する方がいい？"
+    },
+    {
+        "id": "clarity-democracy_rights_and_participation-02-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "democracy_rights_and_participation",
+        "topic": "choosing_representatives",
+        "question": "グループの代表を選ぶとき、みんなの話を聞く人と、早く決めて行動する人では、どんな場合にどちらを選びたい？"
+    },
+    {
+        "id": "clarity-democracy_rights_and_participation-03-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "democracy_rights_and_participation",
+        "topic": "users_and_rulemaking",
+        "question": "みんなで使う場所のルールを、次の活動までに決めたい。よく使う人にはすぐ相談できるが、あまり使わない人の意見を集めるには時間がかかる。誰の意見をどこまで聞いて決めたい？"
+    },
+    {
+        "id": "clarity-international_peace_and_cooperation-01-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "international_peace_and_cooperation",
+        "topic": "time_zone_fairness",
+        "question": "別の国に住む友達と話す時間が、いつも相手にとって深夜になる。お互いの生活を大切にするなら、どんな約束にしたい？"
+    },
+    {
+        "id": "clarity-international_peace_and_cooperation-02-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "international_peace_and_cooperation",
+        "topic": "cultural_customs_in_exchange",
+        "question": "別の国から来た友達を家に招いた。食事の習慣が違うと分かったら、自分の家のやり方と、相手の希望をどうすり合わせたい？"
+    },
+    {
+        "id": "clarity-international_peace_and_cooperation-03-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "international_peace_and_cooperation",
+        "topic": "local_and_overseas_donations",
+        "question": "少し寄付をしたいが、身近な地域と海外で、どちらにも困っている人がいる。場所の近さは、寄付先を決める理由になる？"
+    },
+    {
+        "id": "clarity-science_research_and_uncertainty-01-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "science_research_and_uncertainty",
+        "topic": "single_trial_and_confidence",
+        "question": "友達が一度試してうまくいった方法を勧めてくれた。自分でも試すか、ほかの例を調べてからにするか、どんなことで決める？"
+    },
+    {
+        "id": "clarity-science_research_and_uncertainty-02-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "science_research_and_uncertainty",
+        "topic": "survey_scope",
+        "question": "「みんなが気に入っている」と紹介されたアプリがある。聞いてみると、感想を集めたのは同じ趣味の友達だけだった。その評判をどこまで参考にする？"
+    },
+    {
+        "id": "clarity-science_research_and_uncertainty-03-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "science_research_and_uncertainty",
+        "topic": "reporting_failed_attempts",
+        "question": "自分たちが作った道具について、成功した試し方と、失敗した試し方がある。人に紹介するとき、失敗した条件をどこまで伝えたい？"
     }
 ]

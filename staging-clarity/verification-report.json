@@ -1,0 +1,358 @@
+{
+  "status": "pending_approval",
+  "baselineCommit": "da9ba6389a48cf0297c1a8f82b6590d08d4e7ea1",
+  "live": {
+    "files": {
+      "level1.json": 163,
+      "level2.json": 80,
+      "level3.json": 301,
+      "level4.json": 362
+    },
+    "internalLevels": {
+      "level1": 163,
+      "level2": 80,
+      "level3": 301,
+      "level4": 362
+    },
+    "totalRecords": 906,
+    "errors": 0,
+    "warnings": 661,
+    "findingCodeCounts": {
+      "detail_without_sources": 661
+    }
+  },
+  "proposed": {
+    "proposal": {
+      "status": "pending_approval",
+      "revisions": 30,
+      "categoryMoves": 63,
+      "newCategories": 6,
+      "additions": 36,
+      "productionFilesWritten": 0
+    },
+    "files": {
+      "level1.json": 175,
+      "level2.json": 98,
+      "level3.json": 307,
+      "level4.json": 362
+    },
+    "internalLevels": {
+      "level1": 175,
+      "level2": 98,
+      "level3": 307,
+      "level4": 362
+    },
+    "totalRecords": 942,
+    "errors": 0,
+    "warnings": 667,
+    "findingCodeCounts": {
+      "detail_without_sources": 667
+    }
+  },
+  "coverage": {
+    "before": [
+      3,
+      8,
+      11,
+      11
+    ],
+    "after": [
+      9,
+      12,
+      17,
+      17
+    ]
+  },
+  "categoryDistribution": {
+    "self_and_values": {
+      "label": "自分・価値観",
+      "before": [
+        54,
+        1,
+        0,
+        0
+      ],
+      "after": [
+        54,
+        1,
+        0,
+        0
+      ]
+    },
+    "relationships_and_communication": {
+      "label": "人間関係・コミュニケーション",
+      "before": [
+        87,
+        33,
+        43,
+        102
+      ],
+      "after": [
+        87,
+        33,
+        43,
+        102
+      ]
+    },
+    "family_and_care": {
+      "label": "家族・ケア",
+      "before": [
+        0,
+        0,
+        12,
+        35
+      ],
+      "after": [
+        0,
+        0,
+        12,
+        35
+      ]
+    },
+    "school_and_youth": {
+      "label": "学校・若者",
+      "before": [
+        22,
+        31,
+        45,
+        44
+      ],
+      "after": [
+        22,
+        31,
+        45,
+        44
+      ]
+    },
+    "work_and_economy": {
+      "label": "仕事・経済",
+      "before": [
+        0,
+        2,
+        16,
+        24
+      ],
+      "after": [
+        0,
+        0,
+        8,
+        20
+      ]
+    },
+    "gender_sexuality_and_identity": {
+      "label": "ジェンダー・性・アイデンティティ",
+      "before": [
+        0,
+        0,
+        70,
+        30
+      ],
+      "after": [
+        0,
+        0,
+        70,
+        30
+      ]
+    },
+    "health_and_disability": {
+      "label": "健康・障害",
+      "before": [
+        0,
+        0,
+        11,
+        22
+      ],
+      "after": [
+        0,
+        0,
+        11,
+        22
+      ]
+    },
+    "technology_media_and_privacy": {
+      "label": "技術・メディア・プライバシー",
+      "before": [
+        0,
+        4,
+        28,
+        27
+      ],
+      "after": [
+        0,
+        4,
+        27,
+        26
+      ]
+    },
+    "justice_safety_and_crime": {
+      "label": "司法・安全・犯罪",
+      "before": [
+        0,
+        1,
+        12,
+        29
+      ],
+      "after": [
+        0,
+        1,
+        12,
+        29
+      ]
+    },
+    "society_public_policy_and_environment": {
+      "label": "社会・公共政策・環境",
+      "before": [
+        0,
+        1,
+        42,
+        34
+      ],
+      "after": [
+        0,
+        0,
+        22,
+        13
+      ]
+    },
+    "culture_religion_and_history": {
+      "label": "文化・宗教・歴史",
+      "before": [
+        0,
+        0,
+        17,
+        10
+      ],
+      "after": [
+        0,
+        0,
+        17,
+        10
+      ]
+    },
+    "ethics_and_decision_making": {
+      "label": "倫理・意思決定",
+      "before": [
+        0,
+        7,
+        5,
+        5
+      ],
+      "after": [
+        0,
+        7,
+        5,
+        5
+      ]
+    },
+    "money_consumption_and_tax": {
+      "label": "お金・買い物・税",
+      "before": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        2,
+        5,
+        6,
+        4
+      ]
+    },
+    "housing_community_and_transport": {
+      "label": "住まい・地域・交通",
+      "before": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        2,
+        3,
+        6,
+        6
+      ]
+    },
+    "climate_environment_energy_and_disaster": {
+      "label": "環境・エネルギー・防災",
+      "before": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        2,
+        4,
+        10,
+        10
+      ]
+    },
+    "democracy_rights_and_participation": {
+      "label": "民主主義・市民参加",
+      "before": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        2,
+        3,
+        5,
+        3
+      ]
+    },
+    "international_peace_and_cooperation": {
+      "label": "国際・平和・協力",
+      "before": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        2,
+        3,
+        5,
+        2
+      ]
+    },
+    "science_research_and_uncertainty": {
+      "label": "科学・研究",
+      "before": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        2,
+        3,
+        3,
+        1
+      ]
+    }
+  },
+  "integrity": {
+    "productionDataUnchanged": true,
+    "existingCardsRetained": 906,
+    "existingMetadataAndSourcesRetained": true,
+    "levelMoves": 0,
+    "deletions": 0
+  },
+  "newDetailSourcePolicy": "新規L3の6件は仮の場面。新しい実在制度・統計・医療の事実主張は含めず、出典なし警告は隠さない。",
+  "manualReviewScope": "全906件は構造・分布を集計。文面は今回の優先修正30件と追加36件を確認。全906件の網羅的な内容審査ではない。",
+  "checks": {
+    "tests": {
+      "passed": 28,
+      "failed": 0
+    },
+    "javascriptSyntax": "passed",
+    "seo": "passed",
+    "reviewDocuments": "30件の変更前後・36件の追加質問・63件の分類変更のLevelを照合済み",
+    "liveFilesMatchGitHead": true
+  },
+  "testHarnessRepair": "変更前に既存テスト2件がURL未定義で失敗。模擬window.locationをブラウザと同じ絶対URL解決に修正し、URLをテスト環境に追加。画面コードは変更していない。"
+}

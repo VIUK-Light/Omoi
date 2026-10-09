@@ -1,0 +1,511 @@
+{
+  "status": "applied",
+  "recorded_date": "2026-10-07",
+  "authorization": {
+    "user_message": "じゃあ変更するか",
+    "recorded_date": "2026-10-07",
+    "scope": "元の質問改善・カテゴリー拡充案に、概念レビューの優先修正9件と分類4件を取り込んで反映する。任意改善は加えない。"
+  },
+  "baseline_commit": "da9ba6389a48cf0297c1a8f82b6590d08d4e7ea1",
+  "reviewed_proposal": {
+    "path": "proposal.json",
+    "sha256": "3cccc8564d494538107ef6083f1cff32b0844b48ecbeb07b13456405336028c6",
+    "unchanged": true,
+    "note": "レビュー前の提案を履歴として保持。本文のpending_approvalは当時の状態。"
+  },
+  "applied_proposal": {
+    "path": "application-proposal.json",
+    "sha256": "16d9b0c7c84ea27f57b7d4c3e5ef805fb07f09c4364da245186861595de3e3e1"
+  },
+  "changes": {
+    "existing_question_revisions": 30,
+    "existing_background_revisions": 3,
+    "existing_category_moves": 61,
+    "changed_existing_cards": 87,
+    "new_cards": 36,
+    "new_categories": 6,
+    "new_cards_by_level": {
+      "1": 12,
+      "2": 18,
+      "3": 6,
+      "4": 0
+    },
+    "question_revision_ids": [
+      "FAN-B01-L4",
+      "FAN-B02-L4",
+      "FAN-G01-L4",
+      "FAN-G02-L4",
+      "FAN-G04-L4",
+      "FAN-J02-L4",
+      "bridge-002",
+      "bridge-009",
+      "conflict-013",
+      "contact-004",
+      "criminal-justice-001",
+      "economy-001",
+      "economy-003",
+      "environment-002",
+      "family-law-001",
+      "family-law-003",
+      "family-policy-001",
+      "friendship-012",
+      "justice-004",
+      "medicine-001",
+      "politics-002",
+      "r6-07-05-l3",
+      "r6-13-03-l4-conv",
+      "r6-20-05-l4",
+      "relationship-290",
+      "romance-031",
+      "stigma-001",
+      "support-003",
+      "support-008",
+      "technology-004"
+    ],
+    "background_revision_ids": [
+      "criminal-justice-001",
+      "r6-07-05-l3",
+      "r6-20-05-l4"
+    ],
+    "category_move_ids": [
+      "animals-001",
+      "bridge-013",
+      "bridge-023",
+      "bridge-024",
+      "community-001",
+      "consumer-001",
+      "disaster-003",
+      "disaster-010",
+      "disaster-011",
+      "disaster-012",
+      "economy-001",
+      "economy-002",
+      "economy-003",
+      "economy-004",
+      "economy-005",
+      "environment-001",
+      "environment-002",
+      "environment-003",
+      "politics-001",
+      "politics-002",
+      "politics-003",
+      "r6-02-01-l3",
+      "r6-02-01-l4",
+      "r6-02-02-l3",
+      "r6-02-02-l4",
+      "r6-02-03-l3",
+      "r6-02-03-l4",
+      "r6-02-04-l3",
+      "r6-02-04-l4",
+      "r6-02-05-l3",
+      "r6-02-05-l4",
+      "r6-03-02-l3",
+      "r6-03-02-l4",
+      "r6-03-03-l3",
+      "r6-03-03-l4",
+      "r6-05-03-l3",
+      "r6-05-03-l4",
+      "r6-06-01-l3",
+      "r6-06-01-l4",
+      "r6-06-02-l3",
+      "r6-06-02-l4",
+      "r6-06-03-l3",
+      "r6-06-03-l4",
+      "r6-06-04-l3",
+      "r6-06-04-l4",
+      "r6-06-05-l3",
+      "r6-06-05-l4",
+      "r6-06-06-l3",
+      "r6-06-06-l4",
+      "r6-08-04-l3",
+      "r6-08-04-l4",
+      "r6-14-02-l3",
+      "r6-14-02-l4",
+      "r6-14-03-l3",
+      "r6-14-03-l4",
+      "r6-14-04-l3",
+      "r6-14-04-l4",
+      "r6-14-05-l3",
+      "r6-14-05-l4",
+      "r6-14-06-l3",
+      "r6-14-06-l4"
+    ],
+    "addition_ids": [
+      "clarity-climate_environment_energy_and_disaster-01-l1",
+      "clarity-climate_environment_energy_and_disaster-01-l2",
+      "clarity-climate_environment_energy_and_disaster-01-l3",
+      "clarity-climate_environment_energy_and_disaster-02-l1",
+      "clarity-climate_environment_energy_and_disaster-02-l2",
+      "clarity-climate_environment_energy_and_disaster-03-l2",
+      "clarity-democracy_rights_and_participation-01-l1",
+      "clarity-democracy_rights_and_participation-01-l2",
+      "clarity-democracy_rights_and_participation-01-l3",
+      "clarity-democracy_rights_and_participation-02-l1",
+      "clarity-democracy_rights_and_participation-02-l2",
+      "clarity-democracy_rights_and_participation-03-l2",
+      "clarity-housing_community_and_transport-01-l1",
+      "clarity-housing_community_and_transport-01-l2",
+      "clarity-housing_community_and_transport-01-l3",
+      "clarity-housing_community_and_transport-02-l1",
+      "clarity-housing_community_and_transport-02-l2",
+      "clarity-housing_community_and_transport-03-l2",
+      "clarity-international_peace_and_cooperation-01-l1",
+      "clarity-international_peace_and_cooperation-01-l2",
+      "clarity-international_peace_and_cooperation-01-l3",
+      "clarity-international_peace_and_cooperation-02-l1",
+      "clarity-international_peace_and_cooperation-02-l2",
+      "clarity-international_peace_and_cooperation-03-l2",
+      "clarity-money_consumption_and_tax-01-l1",
+      "clarity-money_consumption_and_tax-01-l2",
+      "clarity-money_consumption_and_tax-01-l3",
+      "clarity-money_consumption_and_tax-02-l1",
+      "clarity-money_consumption_and_tax-02-l2",
+      "clarity-money_consumption_and_tax-03-l2",
+      "clarity-science_research_and_uncertainty-01-l1",
+      "clarity-science_research_and_uncertainty-01-l2",
+      "clarity-science_research_and_uncertainty-01-l3",
+      "clarity-science_research_and_uncertainty-02-l1",
+      "clarity-science_research_and_uncertainty-02-l2",
+      "clarity-science_research_and_uncertainty-03-l2"
+    ]
+  },
+  "review_adjustments": {
+    "existing_questions": "application-question-adjustments.json",
+    "new_questions_and_background": "application-addition-adjustments.json",
+    "categories": "application-category-adjustments.json",
+    "cancelled_move_ids": [
+      "r6-03-01-l3",
+      "r6-03-01-l4"
+    ],
+    "redirected_to_public_policy_ids": [
+      "r6-03-02-l3",
+      "r6-03-02-l4"
+    ],
+    "optional_changes_applied": false,
+    "final_concept_review": "優先9件・分類4件・刑事司法の問いと背景・重さと深さの保持を独立確認。重大な問題なし。"
+  },
+  "before_validation": {
+    "files": {
+      "level1.json": 163,
+      "level2.json": 80,
+      "level3.json": 301,
+      "level4.json": 362
+    },
+    "internalLevels": {
+      "level1": 163,
+      "level2": 80,
+      "level3": 301,
+      "level4": 362
+    },
+    "totalRecords": 906,
+    "errors": 0,
+    "warnings": 661,
+    "findingCodeCounts": {
+      "detail_without_sources": 661
+    }
+  },
+  "after_validation": {
+    "files": {
+      "level1.json": 175,
+      "level2.json": 98,
+      "level3.json": 307,
+      "level4.json": 362
+    },
+    "internalLevels": {
+      "level1": 175,
+      "level2": 98,
+      "level3": 307,
+      "level4": 362
+    },
+    "totalRecords": 942,
+    "errors": 0,
+    "warnings": 667,
+    "findingCodeCounts": {
+      "detail_without_sources": 667
+    }
+  },
+  "category_coverage_before": [
+    3,
+    8,
+    11,
+    11
+  ],
+  "category_coverage_after": [
+    9,
+    12,
+    17,
+    17
+  ],
+  "category_distribution_before": {
+    "self_and_values": [
+      54,
+      1,
+      0,
+      0
+    ],
+    "relationships_and_communication": [
+      87,
+      33,
+      43,
+      102
+    ],
+    "family_and_care": [
+      0,
+      0,
+      12,
+      35
+    ],
+    "school_and_youth": [
+      22,
+      31,
+      45,
+      44
+    ],
+    "work_and_economy": [
+      0,
+      2,
+      16,
+      24
+    ],
+    "gender_sexuality_and_identity": [
+      0,
+      0,
+      70,
+      30
+    ],
+    "health_and_disability": [
+      0,
+      0,
+      11,
+      22
+    ],
+    "technology_media_and_privacy": [
+      0,
+      4,
+      28,
+      27
+    ],
+    "justice_safety_and_crime": [
+      0,
+      1,
+      12,
+      29
+    ],
+    "society_public_policy_and_environment": [
+      0,
+      1,
+      42,
+      34
+    ],
+    "culture_religion_and_history": [
+      0,
+      0,
+      17,
+      10
+    ],
+    "ethics_and_decision_making": [
+      0,
+      7,
+      5,
+      5
+    ],
+    "money_consumption_and_tax": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "housing_community_and_transport": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "climate_environment_energy_and_disaster": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "democracy_rights_and_participation": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "international_peace_and_cooperation": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "science_research_and_uncertainty": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "category_distribution_after": {
+    "self_and_values": [
+      54,
+      1,
+      0,
+      0
+    ],
+    "relationships_and_communication": [
+      87,
+      33,
+      43,
+      102
+    ],
+    "family_and_care": [
+      0,
+      0,
+      12,
+      35
+    ],
+    "school_and_youth": [
+      22,
+      31,
+      45,
+      44
+    ],
+    "work_and_economy": [
+      0,
+      0,
+      9,
+      21
+    ],
+    "gender_sexuality_and_identity": [
+      0,
+      0,
+      70,
+      30
+    ],
+    "health_and_disability": [
+      0,
+      0,
+      11,
+      22
+    ],
+    "technology_media_and_privacy": [
+      0,
+      4,
+      27,
+      26
+    ],
+    "justice_safety_and_crime": [
+      0,
+      1,
+      12,
+      29
+    ],
+    "society_public_policy_and_environment": [
+      0,
+      0,
+      23,
+      14
+    ],
+    "culture_religion_and_history": [
+      0,
+      0,
+      17,
+      10
+    ],
+    "ethics_and_decision_making": [
+      0,
+      7,
+      5,
+      5
+    ],
+    "money_consumption_and_tax": [
+      2,
+      5,
+      4,
+      2
+    ],
+    "housing_community_and_transport": [
+      2,
+      3,
+      6,
+      6
+    ],
+    "climate_environment_energy_and_disaster": [
+      2,
+      4,
+      10,
+      10
+    ],
+    "democracy_rights_and_participation": [
+      2,
+      3,
+      5,
+      3
+    ],
+    "international_peace_and_cooperation": [
+      2,
+      3,
+      5,
+      2
+    ],
+    "science_research_and_uncertainty": [
+      2,
+      3,
+      3,
+      1
+    ]
+  },
+  "existing_metadata_preserved": {
+    "ids": true,
+    "order": true,
+    "level": true,
+    "sensitivity": true,
+    "perspective": true,
+    "content_warning": true,
+    "topic": true,
+    "sources": true,
+    "all_other_fields": true,
+    "deleted_existing_cards": 0
+  },
+  "l2_relationship_and_school": {
+    "before": {
+      "count": 64,
+      "total": 80,
+      "percent": 80.0
+    },
+    "after": {
+      "count": 64,
+      "total": 98,
+      "percent": 65.3
+    }
+  },
+  "tests": {
+    "exit_code": 0,
+    "tests": 28,
+    "suites": 0,
+    "pass": 28,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "other_checks": {
+    "javascript_syntax": "passed",
+    "seo_exit_code": 0
+  },
+  "applied_dataset_sha256": {
+    "level1.json": "9461b394173379dc507a72234e1e3909decf6637c67af1c2747d9d8214a0a487",
+    "level2.json": "66ec755c88419271054070d5a61787f0306fd3daaa406b16414c25590b06a179",
+    "level3.json": "49f7ef9236ddaf94f0246dd7b3f79134c1c468921a389ce8ae2d1510d3fa9ee5",
+    "level4.json": "e07c845c5c82155fc0ab565f9cc9212c9f715f86d3e926f36526b5a8f60c15d7"
+  },
+  "schema_sha256": "cc5e2340bb7137aac2fff6b2dda62623fe2c1cdb3c9ca7516b1b80027049305d",
+  "limits": [
+    "実ブラウザの操作・レイアウトを新たに確認したものではない。画面回帰テストはDOMと通信を模擬する。",
+    "既存解説の法律・医療・統計等の事実と出典の全面検証は実施していない。",
+    "出典なし解説の警告667件は残る。追加6件の背景は仮の場面として明記している。",
+    "分類の追加は画面上のカテゴリー選択機能やカテゴリー別の抽選を追加するものではない。",
+    "公開サイトへの反映・デプロイは実施していない。"
+  ]
+}

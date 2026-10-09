@@ -19,9 +19,14 @@ function setupSelect() {
         disabled: true, click: null,
         addEventListener(event, handler) { this[event] = handler; }
     };
-    const location = { href: '' };
+    let currentHref = 'https://example.test/select.html';
+    const location = {
+        get href() { return currentHref; },
+        set href(value) { currentHref = new URL(value, currentHref).href; }
+    };
 
     vm.runInNewContext(selectCode, {
+        URL,
         document: {
             querySelectorAll(selector) {
                 return selector.includes('level') ? levelInputs : countInputs;
@@ -66,14 +71,14 @@ test('Level 3 routes through warning3.html and keeps the count', () => {
     const app = setupSelect();
     app.choose('3', '10');
     app.nextButton.click();
-    assert.equal(app.location.href, 'warning3.html?count=10');
+    assert.equal(app.location.href, 'https://example.test/warning3.html?count=10');
 });
 
 test('Level 4 keeps routing through warning.html', () => {
     const app = setupSelect();
     app.choose('4', '5');
     app.nextButton.click();
-    assert.equal(app.location.href, 'warning.html?count=5');
+    assert.equal(app.location.href, 'https://example.test/warning.html?count=5');
 });
 
 test('Level 1 and 2 go directly to question.html', () => {
@@ -81,7 +86,7 @@ test('Level 1 and 2 go directly to question.html', () => {
         const app = setupSelect();
         app.choose(level, count);
         app.nextButton.click();
-        assert.equal(app.location.href, `question.html?level=${level}&count=${count}`);
+        assert.equal(app.location.href, `https://example.test/question.html?level=${level}&count=${count}`);
     }
 });
 

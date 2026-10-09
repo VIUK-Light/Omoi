@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadQuestionProposal } from "./question-proposal.mjs";
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = path.resolve(scriptDirectory, "..");
@@ -23,6 +24,7 @@ Options:
   --enforce-quality-targets  Fail unless Level 2 has 80+ cards and each primary Level 4 perspective is 20%+.
   --json            Print the full report as JSON.
   --summary         Print only aggregate counts and finding-code totals.
+  --proposal <file>  Validate a pending proposal in memory; never modify the live JSON files.
   --help            Show this help.`);
     process.exit(0);
 }
@@ -51,7 +53,13 @@ const acceptedCategories = new Set([
     "justice_safety_and_crime",
     "society_public_policy_and_environment",
     "culture_religion_and_history",
-    "ethics_and_decision_making"
+    "ethics_and_decision_making",
+    "money_consumption_and_tax",
+    "housing_community_and_transport",
+    "climate_environment_energy_and_disaster",
+    "democracy_rights_and_participation",
+    "international_peace_and_cooperation",
+    "science_research_and_uncertainty"
 ]);
 const acceptedPerspectives = new Set(["affected", "actor", "decision_maker", "observer"]);
 const acceptedContentWarnings = new Set([
@@ -66,6 +74,21 @@ const acceptedContentWarnings = new Set([
     "discrimination_and_hate",
     "privacy_and_surveillance"
 ]);
+
+let pendingProposal;
+if (argumentsSet.has("--proposal")) {
+    const proposalPath = process.argv[process.argv.indexOf("--proposal") + 1];
+    try {
+        if (!proposalPath || proposalPath.startsWith("--")) {
+            throw new Error("--proposal requires a JSON file path.");
+        }
+        pendingProposal = loadQuestionProposal(path.resolve(proposalPath), repositoryRoot, acceptedCategories);
+        for (const category of pendingProposal.categories) acceptedCategories.add(category);
+    } catch (error) {
+        console.error(error.message);
+        process.exit(1);
+    }
+}
 
 const findings = [];
 const records = [];
@@ -222,7 +245,9 @@ for (const fileName of questionFiles) {
     let fileRecords;
 
     try {
-        fileRecords = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        fileRecords = pendingProposal
+            ? pendingProposal.recordsByFile.get(fileName)
+            : JSON.parse(fs.readFileSync(filePath, "utf8"));
     } catch (error) {
         addFinding("error", "invalid_json", `Could not parse ${fileName}: ${error.message}`, { file: fileName });
         continue;
@@ -249,7 +274,7 @@ for (const fileName of questionFiles) {
         if (!isNonEmptyString(entry.category)) {
             addFinding("error", "invalid_category", "category must be a non-empty string.", record);
         } else if (!acceptedCategories.has(entry.category)) {
-            addFinding("error", "invalid_category", "category must be one of the 12 approved top-level categories.", record);
+            addFinding("error", "invalid_category", "category must be in the selected dataset's category list.", record);
         }
 
         if (!isNonEmptyString(entry.question)) {
@@ -368,6 +393,7 @@ const findingCodeCounts = Object.fromEntries([...new Set(findings.map((finding) 
     .map((code) => [code, findings.filter((finding) => finding.code === code).length]));
 const report = {
     repositoryRoot,
+    ...(pendingProposal ? { proposal: pendingProposal.summary } : {}),
     files: levelCounts,
     internalLevels: internalLevelCounts,
     level4Perspectives: level4PerspectiveCounts,
@@ -380,6 +406,7 @@ const report = {
 
 if (summaryOnly) {
     console.log(JSON.stringify({
+        ...(pendingProposal ? { proposal: pendingProposal.summary } : {}),
         files: report.files,
         internalLevels: report.internalLevels,
         totalRecords: report.totalRecords,

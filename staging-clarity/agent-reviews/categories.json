@@ -1,0 +1,757 @@
+{
+  "reviewer": "categories",
+  "status": "review_only_awaiting_user_confirmation",
+  "scope": "追加6カテゴリー・既存63件のcategory変更を全件照合。正本と提案JSONは未変更。",
+  "concept_basis": [
+    {
+      "source": "README.md:14",
+      "principle": "Omoiは社会や価値観について話し、同じ考えになるためでなく違う考えを知るための質問カード。"
+    },
+    {
+      "source": "index.html:137",
+      "principle": "身近な人と、日常の価値観から社会問題・倫理・制度・人生の選択まで、話したい深さを選ぶ。"
+    },
+    {
+      "source": "guide.html:122",
+      "principle": "相手の考えを聞き、自分の考えも見つめる。一つの正解を決めず「なぜそう思う？」を話せることを評価する。"
+    },
+    {
+      "source": "QUESTION_DATA_SCHEMA.md:20",
+      "principle": "Levelは話の深さと判断の重さ。L1は経験から始める入口、L2は意見の違いの橋渡し、L3は制度・社会・役割、L4は本人の利害・トレードオフ。"
+    },
+    {
+      "source": "QUESTION_DATA_SCHEMA.md:12",
+      "principle": "categoryは上位分類、topicは具体的な論点や検索・編集の軸。カテゴリー数を増やすこと自体を対話の質の目標にしない。"
+    },
+    {
+      "source": "question.js:98",
+      "principle": "アプリはLevelの全質問をシャッフルして件数で切り出す。現行はcategoryによる表示・出し分け・抽選調整をしていない。"
+    }
+  ],
+  "overall_verdict": {
+    "verdict": "adjust",
+    "reason": "6テーマの追加とL1/L2を中心にした問いの拡充はOmoiの概念に適する。18分類という件数がそのまま体験の改善になるわけではなく、日常から異なる理由を話せる追加カードの方が直接の改善である。分類は不足や重複を発見する編集基盤として有用。63移動には範囲と合わない2件、移動を保留したい2件、分類境界を明記したい3件がある。これらと科学の入口を調整してから確認に進めたい。"
+  },
+  "categories": [
+    {
+      "id": "money_consumption_and_tax",
+      "label": "お金・買い物・税",
+      "verdict": "adjust",
+      "reason": "日常の買い物・支出から税負担まで、自分と社会の価値観をつなげられるので採用する価値がある。ただし物価と雇用の政策、公的給付の境界を一括して取り込む移動案を直す。旧work_and_economyの経済を主に雇用とする説明と、社会政策の給付優先を一貫させる。"
+    },
+    {
+      "id": "housing_community_and_transport",
+      "label": "住まい・地域・交通",
+      "verdict": "keep",
+      "reason": "住む場所・移動・公共空間から観光と住民生活まで、従来の社会政策では見えにくかった日常の利害を扱える。料金・税・雇用が登場しても、住宅利用や地域交通が判断対象ならこの分類を優先する説明は妥当。"
+    },
+    {
+      "id": "climate_environment_energy_and_disaster",
+      "label": "環境・エネルギー・防災",
+      "verdict": "keep",
+      "reason": "生活の不便、環境負担、地域の災害対応をつなぐ問いが増え、重い政策論だけに偏らない入口を作れる。防災を含む集合は広いが、資源と危険への備えとして編集に使える。研究・発信の方法や一般の道路安全まで環境という語で自動分類しない境界説明は補いたい。"
+    },
+    {
+      "id": "democracy_rights_and_participation",
+      "label": "民主主義・市民参加",
+      "verdict": "keep",
+      "reason": "参加しやすさ・代表・ルール決定から政治的表現や説明責任へ進めるため、異なる考えを知る対話に適する。L1/L2のグループ意思決定は市民参加への身近な橋渡しとして許容する。rightsというIDで全分野の権利問題を吸収せず、政治参加・代表・政治表現に限る。"
+    },
+    {
+      "id": "international_peace_and_cooperation",
+      "label": "国際・平和・協力",
+      "verdict": "keep",
+      "reason": "国際交流、距離による配慮、寄付、国防、外交は身近な経験から社会的選択まで対話を広げる。国内の移住者支援を社会政策に残す方針も、国籍という語だけの再分類を避ける。国外・国境が判断に必要であることを基準にし、国籍だけから習慣を決めつけない問いにする。"
+    },
+    {
+      "id": "science_research_and_uncertainty",
+      "label": "科学・研究",
+      "verdict": "adjust",
+      "reason": "研究倫理や不確かな結果を公表する責任は、Omoiに適した独立した話題であり追加の価値がある。低Levelの候補には単なる学び方の好みや、確認すべき正解を探す科学リテラシー問題に近いものがある。どこまで確かめる時間や手間をかけるか、どこまで不確実な情報を使うかという価値の違いが話せる入口へ調整する。医療研究への参加と治療選択、指標の妥当性とメディア発信の境界も記す。"
+    }
+  ],
+  "moves": [
+    {
+      "id": "bridge-013",
+      "level": 2,
+      "from": "work_and_economy",
+      "proposed_to": "money_consumption_and_tax",
+      "verdict": "keep",
+      "reason": "共用費用を利用量に応じて分ける金銭負担の公平が中心。対人場面だが家計・支払いの分類に一致する。",
+      "question": "みんなで使ったお金を割り勘にするとき、使った量が違うならどう分けるのが納得できる？"
+    },
+    {
+      "id": "bridge-023",
+      "level": 2,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "環境への負担を減らす選択を他人に求める境界が中心。環境の利益と日常の不便をつなぐL2の入口になる。",
+      "question": "少し不便でも環境のために選び方を変えることを、周りに求めていいと思う？"
+    },
+    {
+      "id": "bridge-024",
+      "level": 2,
+      "from": "work_and_economy",
+      "proposed_to": "money_consumption_and_tax",
+      "verdict": "keep",
+      "reason": "友人への貸付で返済リスクを引き受けるかが中心。信頼の論点もtopicで残せるため金銭分類でよい。",
+      "question": "友達がお金を貸してほしいと困っていたら、返ってこないかもしれなくても貸す？"
+    },
+    {
+      "id": "economy-001",
+      "level": 3,
+      "from": "work_and_economy",
+      "proposed_to": "society_public_policy_and_environment",
+      "verdict": "keep",
+      "reason": "公的支援を利用開始する申請・確認の負担が中心。給付は社会政策という範囲と一致する。",
+      "question": "生活に困った人がお金などの支援を受ける「生活保護」。\n支援を受け始めるときの申請や確認は、もっと簡単にするべきだと思う？"
+    },
+    {
+      "id": "economy-002",
+      "level": 3,
+      "from": "work_and_economy",
+      "proposed_to": "society_public_policy_and_environment",
+      "verdict": "keep",
+      "reason": "無条件の公的給付と生活保障の範囲が中心。働く人の雇用条件の問いではないため社会政策でよい。",
+      "question": "働いていなくても、全員に一定のお金を配る制度はありだと思う？"
+    },
+    {
+      "id": "economy-003",
+      "level": 3,
+      "from": "work_and_economy",
+      "proposed_to": "money_consumption_and_tax",
+      "verdict": "keep",
+      "reason": "所得・資産に応じた税負担の割合が中心。再配分も含むが税を判断対象とするため金銭・税分類でよい。",
+      "question": "収入や資産が多い人に、今より高い割合で税金を負担してもらうことをどう思う？"
+    },
+    {
+      "id": "economy-004",
+      "level": 3,
+      "from": "work_and_economy",
+      "proposed_to": "money_consumption_and_tax",
+      "verdict": "keep",
+      "reason": "相続への課税と家族の財産権が中心。相続というtopicを保つことで家族・税の両面を扱える。",
+      "question": "親から多くの財産を相続する人には、高い税金をかけるべきだと思う？"
+    },
+    {
+      "id": "economy-005",
+      "level": 3,
+      "from": "work_and_economy",
+      "proposed_to": "society_public_policy_and_environment",
+      "verdict": "keep",
+      "reason": "高齢者と若い世代への公的支援の予算配分が中心。社会保障・社会政策の分類に一致する。",
+      "question": "高齢者への社会保障を減らして、若い世代への支援を増やすべきだと思う？"
+    },
+    {
+      "id": "environment-001",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "環境保護による日常負担を引き受けるかが中心。環境分野として明確で、L1/L2の身近な問いともつながる。",
+      "question": "環境を守るためなら、生活が不便になっても受け入れるべきだと思う？"
+    },
+    {
+      "id": "environment-002",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "電力・気候・事故・廃棄物の優先順位が中心。エネルギーと環境の分類に一致する。",
+      "question": "原子力発電を今後も使うか考えるとき、電気の安定供給、気候への影響、事故の危険、廃棄物の管理のうち、何を特に重視したい？"
+    },
+    {
+      "id": "environment-003",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "環境保護と経済成長のトレードオフが中心。雇用条件そのものより環境保護の政策判断が主題である。",
+      "question": "環境保護のためなら、経済成長を遅らせてもいいと思う？"
+    },
+    {
+      "id": "animals-001",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "science_research_and_uncertainty",
+      "verdict": "keep",
+      "reason": "医学研究のための動物利用をどこまで認めるかが中心。治療の選択ではなく研究倫理なので科学・研究でよい。",
+      "question": "人間の医療のためなら、動物実験は認められると思う？"
+    },
+    {
+      "id": "politics-001",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "democracy_rights_and_participation",
+      "verdict": "keep",
+      "reason": "投票を権利と義務のどちらとして扱うかが中心。民主主義への参加という独立した話題になる。",
+      "question": "選挙の投票を義務にするのはありだと思う？"
+    },
+    {
+      "id": "politics-002",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "international_peace_and_cooperation",
+      "verdict": "keep",
+      "reason": "本人の自由を制限して兵役を求める国防制度が中心。対外安全保障を含めるという新分類の範囲に一致する。",
+      "question": "国を守るために、本人の希望にかかわらず一定の人に軍務を求める「徴兵制」を導入してもよいと思う？"
+    },
+    {
+      "id": "politics-003",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "international_peace_and_cooperation",
+      "verdict": "keep",
+      "reason": "国防と他の公共サービスの予算配分が中心。対外安全保障の優先順位を扱うため国際・平和でよい。",
+      "question": "防衛費を増やすためなら、他の公共サービスを減らしてもいいと思う？"
+    },
+    {
+      "id": "r6-02-01-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "culture_religion_and_history",
+      "verdict": "keep",
+      "reason": "観光のサービス期待に対して祈りの場を守る責任が中心。一般の観光政策より信仰・宗教施設の目的を優先した分類でよい。",
+      "question": "宗教施設が観光収入を得ている場合でも、祈りの場を守るために撮影や観光目的の入場を大きく制限してよいと思う？ 観光施設として期待されるサービスに応える責任はどこまである？"
+    },
+    {
+      "id": "r6-02-02-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "housing_community_and_transport",
+      "verdict": "keep",
+      "reason": "住宅地の民泊を地域全体で禁止する範囲と住民負担が中心。住まい・近隣の暮らしに一致する。",
+      "question": "住宅地で一部の民泊が迷惑行為を防げない場合、問題を起こしていない施設も含めて営業を禁止してよいと思う？ 個別に取り締まる費用は住民全体が負担することになる。"
+    },
+    {
+      "id": "r6-02-03-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "housing_community_and_transport",
+      "verdict": "keep",
+      "reason": "住民が維持する公共交通の混雑と観光客への費用負担が中心。税・料金は手段なので地域交通を主分類としてよい。",
+      "question": "住民の税で維持する公共交通が観光客で混雑している。混雑対策の財源として、国籍ではなく居住地を基準に観光客の運賃を高くすることは、公平だと思う？"
+    },
+    {
+      "id": "r6-02-04-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "housing_community_and_transport",
+      "verdict": "keep",
+      "reason": "交通不足を補う参入制度と交通サービスを支える条件が中心。働く人の条件は重要な対立軸としてtopic・解説で残す。",
+      "question": "交通が不足する地域で、自家用車による有償送迎を広げる案がある。移動は便利になる一方、働く人の収入や事故時の補償を安定させにくい。既存の交通事業と同じ条件が整うまで参入を制限するべき？"
+    },
+    {
+      "id": "r6-02-05-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "housing_community_and_transport",
+      "verdict": "keep",
+      "reason": "空室保有への課税を通じて住宅不足に対処する是非が中心。課税自体より住宅利用の政策を判断するため住まい分類でよい。",
+      "question": "住宅不足を減らすため、空室のまま保有する家に高い税をかける案がある。将来自分で住むために確保している人も負担することになる。住まいを必要とする人のためなら、所有者に貸すか売るかを迫る制度を認める？"
+    },
+    {
+      "id": "r6-03-01-l3",
+      "level": 3,
+      "from": "work_and_economy",
+      "proposed_to": "money_consumption_and_tax",
+      "verdict": "hold",
+      "reason": "物価安定と輸出産業の雇用維持を政府が比較する問い。説明の「雇用や働き方ではない」は本文と一致しない。雇用は旧分類とする規則に従い、現行の仕事・経済での配置を維持するのが第一候補。",
+      "question": "輸入品の値上がりを抑える政策が輸出産業の雇用を減らすとしたら、政府は物価の安定と仕事の維持を何で比べるべき？ 両方を同じように守れないとき、どちらを優先する？",
+      "suggested_category": "work_and_economy",
+      "priority": "P2"
+    },
+    {
+      "id": "r6-03-02-l3",
+      "level": 3,
+      "from": "work_and_economy",
+      "proposed_to": "money_consumption_and_tax",
+      "verdict": "adjust",
+      "reason": "給付の所得基準・速さ・対象者間の公平が中心。「公的給付は社会政策へ」という範囲と矛盾するので、変更先を社会・公共政策へ調整する。",
+      "question": "物価高への給付で、所得基準を少し超えた世帯だけが対象から外れると不公平感が生じる。一方、段階的な給付には事務費がかかる。支援を速く配るためなら、境界で大きな差が出てもよい？",
+      "suggested_category": "society_public_policy_and_environment",
+      "priority": "P2"
+    },
+    {
+      "id": "r6-03-03-l3",
+      "level": 3,
+      "from": "work_and_economy",
+      "proposed_to": "money_consumption_and_tax",
+      "verdict": "keep",
+      "reason": "消費税の引下げと将来世代への財政負担が中心。税負担を判断対象とするため金銭・税分類でよい。",
+      "question": "物価高への対策として、借金を増やして消費税を下げる案がある。今困っている人は助かるが、将来の増税や支出削減が必要になる可能性がある。今の生活を守るために、まだ投票できない世代へ負担を回してよいと思う？"
+    },
+    {
+      "id": "r6-05-03-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "housing_community_and_transport",
+      "verdict": "keep",
+      "reason": "人口減少地域の上下水道・道路サービス維持と居住の自由が中心。地域インフラの範囲に一致する。",
+      "question": "人口が減る地域で、全ての集落への上下水道や道路を同じ水準で維持することが難しくなった。行政は、住み続ける自由を認めつつ、一定の地域ではサービスを縮小すると決めてよいと思う？"
+    },
+    {
+      "id": "r6-06-01-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "気候対策の排出負担を一律に求める公平が中心。収入差は対立条件であり、環境対策が判断対象である。",
+      "question": "生活に余裕のない人ほど、安い車や燃料への依存から抜けにくい場合がある。排出量に応じた負担を一律に増やすことは、気候対策として公平だと思う？"
+    },
+    {
+      "id": "r6-06-02-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "避難拒否の事情を災害救助の順番・費用に反映する是非が中心。災害対応に固有の制約があるため防災分類でよい。",
+      "question": "避難を強く求められても残った人が救助を必要とした場合、その選択を救助の順番や費用負担に反映してよいと思う？ 残った事情をすぐ確認できない場合でも？"
+    },
+    {
+      "id": "r6-06-03-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "災害の予防工事と現在の医療・福祉の予算を比べる問い。将来の被害への備えが中心なので防災分類でよい。",
+      "question": "大災害に備えた補強工事は、被害が起きなければ効果を実感しにくい。限られた予算で、将来の被害を減らす工事と、今利用されている医療・福祉を同時には維持できないとしたら、何を基準に決めるべきだと思う？"
+    },
+    {
+      "id": "r6-06-04-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "猛暑・火災リスク下のイベントに行政が介入する範囲が中心。環境・災害リスクと公共負担の判断である。",
+      "question": "危険な暑さや火災リスクがある日のイベントを、参加者が承知していても行政が中止できるべきだと思う？ 救急や消火の負担が他の住民にも及ぶことを、どこまで理由にできる？"
+    },
+    {
+      "id": "r6-06-05-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "気候変化で難しくなった農漁業を維持するか転換するかが中心。雇用を含むが環境変化への適応が判断対象である。",
+      "question": "気候の変化で従来の漁業や農業が難しくなった地域を支える予算は、今までの生産を維持するために使うべき？ 新しい適地への移転や転業に使うべき？"
+    },
+    {
+      "id": "r6-06-06-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "adjust",
+      "reason": "判断対象は環境対策の選択ではなく、異なる危険を一つの指標にまとめる妥当性。不確実性・証拠・指標の扱いを科学・研究へ、発信方法をメディアへ分類する優先規則を明記したい。科学・研究が第一候補。",
+      "question": "複雑な環境問題を一つの危機指標にまとめると、関心を集めやすい一方、違う種類の危険が同じものに見える。注意を促す効果のために、その単純化をどこまで認める？",
+      "suggested_category": "science_research_and_uncertainty",
+      "priority": "P3"
+    },
+    {
+      "id": "r6-08-04-l3",
+      "level": 3,
+      "from": "technology_media_and_privacy",
+      "proposed_to": "science_research_and_uncertainty",
+      "verdict": "keep",
+      "reason": "診療記録の研究利用で、同意と研究の偏りを比較する研究倫理の問い。AIという語だけで技術分類に残す必要はなく、治療判断でもないため科学・研究でよい。",
+      "question": "病院が過去の診療記録をAIの研究に使いたい。一人ずつ同意を取り直すと、連絡できない人の記録が抜けて研究に偏りが出る可能性がある。個人を特定しにくくする措置を取れば、改めて同意を得ずに利用することを認める？"
+    },
+    {
+      "id": "r6-14-02-l3",
+      "level": 3,
+      "from": "culture_religion_and_history",
+      "proposed_to": "democracy_rights_and_participation",
+      "verdict": "keep",
+      "reason": "政治的抗議の表現を刑罰で制限する範囲が中心。国旗という文化的対象より政治表現の自由を主題にした分類でよい。",
+      "question": "政治への抗議として、自分で所有する国旗を傷つける行為を処罰する案がある。誰かの財産を壊したわけではなくても、国の象徴を傷つけたこと自体を犯罪にするべきだと思う？"
+    },
+    {
+      "id": "r6-14-03-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "democracy_rights_and_participation",
+      "verdict": "keep",
+      "reason": "政党への公的助成と大口寄付者の政治的影響が中心。税の負担より政治参加・代表の公平が主題である。",
+      "question": "政党への公的助成をなくすと、税金で支持しない主張を支える必要はなくなる一方、大口の寄付者が政治に及ぼす影響が強まる可能性がある。あなたは公的助成を残すべきだと思う？"
+    },
+    {
+      "id": "r6-14-04-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "democracy_rights_and_participation",
+      "verdict": "keep",
+      "reason": "政党合流による政策変更と有権者への責任が中心。選挙による代表・委任に一致する。",
+      "question": "選挙後に政党が別の政党と合流して主要政策を変える場合、議員は改めて有権者の判断を受けるべきだと思う？ 政治を動かすための妥協として任期中の変更を認める？"
+    },
+    {
+      "id": "r6-14-05-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "international_peace_and_cooperation",
+      "verdict": "keep",
+      "reason": "軍事関与による抑止と戦争参加の危険が中心。国際・平和の分類に明確に一致する。",
+      "question": "他の地域を守るための軍事的な関与が、自国への攻撃の危険も高めるとしたら、国はどの段階で関与を決めるべき？ 被害が出る前の抑止と、戦争に入る危険をどう比べる？"
+    },
+    {
+      "id": "r6-14-06-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "international_peace_and_cooperation",
+      "verdict": "keep",
+      "reason": "自治体と外国政府の協力を国の外交方針にどこまで合わせるかが中心。相手が外国政府であることが判断に不可欠で、単なる地域交流の問いではない。",
+      "question": "自治体が外国政府と協力の覚書を結ぶ場合、地域の経済的利益のためなら国の外交方針と異なる関係を築いてよいと思う？"
+    },
+    {
+      "id": "disaster-003",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "災害で他の受入れ先に移れない中、避難所のペット受入れを決める問い。災害対応の制約が対立を生むため防災分類でよい。",
+      "question": "災害でペットと避難したが、避難所には動物と人を分ける安全な場所がなく、同じ室内にはアレルギーのある人もいる。別の受入れ先へすぐ移動することも難しい。この間、避難所はペットをどこでどう受け入れるべきだと思う？"
+    },
+    {
+      "id": "consumer-001",
+      "level": 4,
+      "from": "work_and_economy",
+      "proposed_to": "money_consumption_and_tax",
+      "verdict": "keep",
+      "reason": "決済方法を選ぶ店の自由と消費者の利用可能性が中心。雇用ではなく買い物・支払いの条件なので金銭・消費分類でよい。",
+      "question": "あなたが店を経営していて、現金の管理には時間も費用もかかっている。完全キャッシュレスにすれば仕事はかなり楽になるが、スマホやクレジットカードを使えない高齢者などが利用できなくなる可能性がある。民間の店なら、利用できない人が出ても完全キャッシュレスにしていいと思う？"
+    },
+    {
+      "id": "community-001",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "housing_community_and_transport",
+      "verdict": "keep",
+      "reason": "観光収入と住民生活の混雑・騒音・ごみを比べる問い。近隣の暮らし・地域観光の範囲に一致する。",
+      "question": "あなたの町が観光地として人気になり、店やホテルが増えて地域の収入も増えた。しかし、道路は混雑し、ゴミや騒音も増え、休日でも落ち着いて生活できなくなった。観光客を制限すれば地元の仕事や収入が減る可能性がある。それでも、住民の生活を守るために観光客を減らすべきだと思う？"
+    },
+    {
+      "id": "disaster-010",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "災害後の避難所で電力・燃料を配分する責任が中心。医療機器は必要度の対立条件なので災害対応を主分類としてよい。",
+      "question": "あなたは大地震後の避難所を任されている。停電が長引き、残っている発電機の燃料は一晩分しかない。医療機器を必要とする少数の避難者に電力を集中させれば、その人たちの安全を守れる可能性が高い。一方、その場合は体育館の暖房を止めることになり、数百人の避難者が厳しい寒さの中で夜を過ごすことになる。全員に少しずつ電力を使えば公平には見えるが、医療機器を必要とする人には十分ではない。あなたが最終決定をしなければならないなら、少数の大きな危険を防ぐために、多数の人へ負担を集中させる？"
+    },
+    {
+      "id": "disaster-011",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "津波避難の車両不足で救助順序を決める問い。災害避難に固有の時間・輸送制約が判断を生むため防災分類でよい。",
+      "question": "津波の危険が迫る地域で、避難に使える車両が不足している。高齢者施設には自力で素早く避難することが難しい人が多くいる。一方、近くの学校にも大勢の子どもが残っている。どちらも全員を同時には運べない。『子どもは将来が長いから優先するべき』『自力で逃げにくい人を優先するべき』『先に救助要請が来た方を優先するべき』という意見が出ている。あなたが順番を決める立場なら、年齢、人数、自力で避難できる可能性のどれを最も重く見る？"
+    },
+    {
+      "id": "disaster-012",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "噂を理由に人を避難所から排除する是非が中心。排除すると災害下で居場所を失うことが不可欠な条件なので防災分類を許容する。偏見・証拠の論点もtopicで追う。",
+      "question": "大規模災害の避難所で、一人の避難者について『過去に重大なトラブルを起こした人物らしい』という情報が広がった。本人は否定しており、現在は避難所で問題を起こしていない。しかし、複数の家族が『あの人がいるなら子どもと一緒にここには泊まれない』と訴え、退去を求めている。本人を追い出せば安全を確認できていない人を災害の中へ戻すことになる。残せば多くの避難者が恐怖を感じる。確かな証拠がない段階でも、多数の安心のために一人を避難所から外すことを認める？"
+    },
+    {
+      "id": "r6-02-01-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "culture_religion_and_history",
+      "verdict": "keep",
+      "reason": "神社運営者が修繕収入と祈りの場を守る責任を比べる問い。本人の利害を伴う宗教施設の目的に焦点がある。",
+      "question": "あなたは観光客に人気の神社の運営を担っている。撮影を制限すれば参拝は落ち着くが、修繕に使う収入が減る見込みだ。建物を維持するため、祈る人が落ち着かない状況をどこまで受け入れる？"
+    },
+    {
+      "id": "r6-02-02-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "housing_community_and_transport",
+      "verdict": "keep",
+      "reason": "民泊への住宅政策の規制で自分の事業と借金を失う場面。住宅不足を解く地域政策が対立の中心である。",
+      "question": "あなたは合法的に民泊を始め、まだ大きな借金が残っている。近隣の住宅不足を理由に、新しい規制で営業できなくなる案が出た。住民の生活を守る政策だと理解していても、補償なしで事業を終えることを受け入れる？"
+    },
+    {
+      "id": "r6-02-03-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "housing_community_and_transport",
+      "verdict": "keep",
+      "reason": "賃貸住宅を観光向けへ切り替える私益と地域の住宅不足が中心。介護費は本人の切実な理由として残し、住まいを主分類としてよい。",
+      "question": "あなたは賃貸住宅の所有者。普通に貸すより観光客向けにすると収入が増え、家族の介護費を賄える。一方、地域では長く住める住宅が不足している。次に空室が出たら、観光客向けへ切り替える？"
+    },
+    {
+      "id": "r6-02-04-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "housing_community_and_transport",
+      "verdict": "keep",
+      "reason": "自社の損失があっても地域の夜間交通を増やす参入を認めるかが中心。経営者の利害を伴うが、地域交通の供給制度が判断対象である。",
+      "question": "あなたは地方でタクシー会社を経営している。夜間の交通不足を補うため一般の運転者にも有償送迎を認めると、自社の利益が減り、昼間の路線も縮小するかもしれない。それでも参入に賛成する？"
+    },
+    {
+      "id": "r6-02-05-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "housing_community_and_transport",
+      "verdict": "keep",
+      "reason": "倒壊しそうな近隣空き家を権利者の同意前に解体する是非が中心。住環境と所有権を扱う地域・住まい分類に一致する。",
+      "question": "親族が多く所有者を確定できない空き家が、あなたの家の隣で倒壊しそうになっている。後から権利者が損害を訴える可能性があっても、行政が同意を待たずに解体することを求める？"
+    },
+    {
+      "id": "r6-03-01-l4",
+      "level": 4,
+      "from": "work_and_economy",
+      "proposed_to": "money_consumption_and_tax",
+      "verdict": "hold",
+      "reason": "本人の輸出企業の雇用・人員削減を引き受ける政策支持が中心。一般の買い物・家計判断に分類すると働き手という主視点が弱まるため、仕事・経済からの移動を保留する。",
+      "question": "あなたの勤める輸出企業は、円安による利益で雇用を維持している。仮に、輸入品の値上がりを抑える政策が円高を進め、あなたの職場の人員削減につながるとしたら、その政策を支持する？",
+      "suggested_category": "work_and_economy",
+      "priority": "P2"
+    },
+    {
+      "id": "r6-03-02-l4",
+      "level": 4,
+      "from": "work_and_economy",
+      "proposed_to": "money_consumption_and_tax",
+      "verdict": "adjust",
+      "reason": "給付の所得境界に合わせた働き方と同僚負担が中心。公的給付の対象から外れることが行動の原因なので、規則に合わせて社会・公共政策へ。働き方を主とするなら現行分類を維持する説明も必要であり、お金分類へ自動的に移す根拠は弱い。",
+      "question": "あなたの世帯は収入基準をわずかに超え、給付を受けられない。残業を減らせば対象になるが、その仕事は同僚が担うことになる。制度に合わせて働く時間を減らす？",
+      "suggested_category": "society_public_policy_and_environment",
+      "priority": "P2"
+    },
+    {
+      "id": "r6-03-03-l4",
+      "level": 4,
+      "from": "work_and_economy",
+      "proposed_to": "money_consumption_and_tax",
+      "verdict": "keep",
+      "reason": "消費税率の一時変更で店舗が費用を負担するかが中心。税制度・買い物に関する分類に一致する。",
+      "question": "あなたは小さな店を経営している。減税は客の助けになるが、価格表示や会計の変更費用を店が負担する。短期間で税率が戻る予定でも、家計支援のためなら減税を支持する？"
+    },
+    {
+      "id": "r6-05-03-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "housing_community_and_transport",
+      "verdict": "keep",
+      "reason": "人口減少地域からの移住を自分の家・墓・暮らしと比較する問い。家族史は本人の利害を表すが、地域インフラと居住が主題である。",
+      "question": "あなたは先祖代々の家と墓がある集落で暮らしている。自治体から、費用を出すので中心部へ移ってほしいと言われた。残れば他の住民の負担が増え、移れば地域で築いた暮らしを失う。あなたなら移る？"
+    },
+    {
+      "id": "r6-06-01-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "工場の雇用で支える家族の生活と将来の気候への影響が中心。気候対策の政策を判断対象とするため環境分類でよい。",
+      "question": "あなたの町の主な雇用は、排出量の多い工場に支えられている。環境対策を強めると閉鎖の可能性があり、同じ賃金の仕事は当面ない。将来の気候への影響を減らすために、今の家族の生活が不安定になる政策を支持する？"
+    },
+    {
+      "id": "r6-06-02-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "災害時の建物に新たな避難者を受け入れるかが中心。物資・空間不足による災害対応のトレードオフに一致する。",
+      "question": "あなたは災害時に開放する建物を管理している。帰宅困難者をこれ以上受け入れると、今いる人の食料と安全な空間が不足する。外に人が待っていても、入口を閉じる？"
+    },
+    {
+      "id": "r6-06-03-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "adjust",
+      "reason": "本文は道路陥没リスクと物流・営業の維持を比較しており、気候や大規模災害が条件として置かれていない。地域インフラの安全を住まい・地域・交通に置くか、防災の範囲に事故予防を含めるかを明記する必要がある。現状の範囲では住まい・地域・交通が第一候補。",
+      "question": "あなたは自治体の首長。道路の陥没リスクがあるが、今すぐ通行止めにすると物流が止まり、倒産する店が出るかもしれない。事故の時期を予測できない段階で、通行止めを決める？",
+      "suggested_category": "housing_community_and_transport",
+      "priority": "P3"
+    },
+    {
+      "id": "r6-06-04-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "猛暑により参加者の安全と主催者の借金が衝突する問い。環境リスクを自分の決断に置き換える分類としてよい。",
+      "question": "あなたは大きなイベントの主催者。猛暑予報を受け、中止すれば多額の借金が残る。対策をしても救急搬送の危険はなくならない。参加者が希望していても中止する？"
+    },
+    {
+      "id": "r6-06-05-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "keep",
+      "reason": "生産環境の変化に合わせる転換と家業・地域伝統を守る判断。解説も環境変化への対応を説明しており、環境分類を許容する。",
+      "question": "あなたは代々続く農家。今の土地に合う作物へ変えるには、家業の名前や地域の伝統を手放す必要がある。公費で従来の作物を支えてもらう？ 自分の代で転換する？"
+    },
+    {
+      "id": "r6-06-06-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "climate_environment_energy_and_disaster",
+      "verdict": "adjust",
+      "reason": "判断対象は環境政策ではなく、行動を促す強い見出しと根拠の幅・不確実性の伝え方。環境という対象語だけで移すより、技術・メディア・プライバシーを主分類としてtopicで環境を残す方が範囲に一貫する。",
+      "question": "あなたは環境情報を発信している。危機を強く表す見出しの方が読まれるが、根拠の幅や不確実性が伝わりにくい。行動してもらうために強い見出しを使う？",
+      "suggested_category": "technology_media_and_privacy",
+      "priority": "P3"
+    },
+    {
+      "id": "r6-08-04-l4",
+      "level": 4,
+      "from": "technology_media_and_privacy",
+      "proposed_to": "science_research_and_uncertainty",
+      "verdict": "keep",
+      "reason": "治療選択ではなく、他の患者のために自分の診療記録を研究へ提供する参加判断が中心。研究倫理として科学・研究でよい。情報リスクの軸はtopic・警告で残す。",
+      "question": "あなたは珍しい病気の患者。研究に自分の診療記録を提供すれば治療開発に役立つが、情報を組み合わせると自分だと分かる危険が残る。将来の患者のために提供する？"
+    },
+    {
+      "id": "r6-14-02-l4",
+      "level": 4,
+      "from": "culture_religion_and_history",
+      "proposed_to": "democracy_rights_and_participation",
+      "verdict": "keep",
+      "reason": "国旗への私的な思いがあっても抗議表現を刑罰から守るかが中心。政治表現の自由に一致する。",
+      "question": "あなたが大切にしている国旗を、抗議活動の参加者が自分で用意して傷つけた。強い侮辱を感じても、他人の財産を壊さない表現として刑罰には反対する？"
+    },
+    {
+      "id": "r6-14-03-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "democracy_rights_and_participation",
+      "verdict": "keep",
+      "reason": "支持する政策の実現と政治家の資金問題への責任追及が中心。政治家の説明責任の分類に一致する。",
+      "question": "あなたが最も支持する政策を実現できそうな政治家に、重大な資金管理の問題が確認された。辞職すれば政策も実現しなくなる可能性が高い。資金問題への責任を取らせるために、辞職を求める？"
+    },
+    {
+      "id": "r6-14-04-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "democracy_rights_and_participation",
+      "verdict": "keep",
+      "reason": "自分の投票で委ねた公約を政党が撤回する場合の責任が中心。有権者・代表の判断に一致する。",
+      "question": "あなたは公約を信じて投票したが、その政党が合流のために公約を撤回した。実現できる政策は増えると説明されても、議席を返して選挙をやり直すべきだと思う？"
+    },
+    {
+      "id": "r6-14-05-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "international_peace_and_cooperation",
+      "verdict": "keep",
+      "reason": "国全体の抑止と本人の地域が攻撃対象になる危険が中心。国防と平和を本人の利害に置き換える問いである。",
+      "question": "あなたの地域に、周辺地域の防衛に重要だとされる施設を増やす計画がある。抑止力になる可能性がある一方、有事には地域が攻撃対象になる危険も高まる。国全体の安全のために、その計画を受け入れる？"
+    },
+    {
+      "id": "r6-14-06-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "proposed_to": "international_peace_and_cooperation",
+      "verdict": "keep",
+      "reason": "人権問題がある外国政府との協力を自治体として止めるかが中心。自分の地域の雇用が利害だが国際協力を判断する問いである。",
+      "question": "あなたは自治体の首長。外国との協力事業は地元の雇用を支えているが、相手政府の重大な人権問題が明らかになった。国が関係を続けていても、自治体として協力を打ち切る？"
+    }
+  ],
+  "counts": {
+    "categories": {
+      "adjust": 2,
+      "keep": 4
+    },
+    "moves": {
+      "keep": 56,
+      "hold": 2,
+      "adjust": 5
+    },
+    "moves_by_level": {
+      "2": 3,
+      "3": 33,
+      "4": 27
+    },
+    "current_total": 906,
+    "proposal_total": 942
+  },
+  "user_experience_effect": {
+    "classification_only": "63件のcategory変更と6分類の定義追加だけでは、現在の表示文や抽選されるカードは変わらない。追加質問を分類することは、編集者が領域の偏り・重複・不足を把握して次の提案を改善する助けになる。",
+    "added_questions": "追加36問はL1が12・L2が18・L3が6・L4が0。L2では関係・学校のカードが64/80件（80.0%）から64/98件（65.3%）となり、入口の偏りを実際に緩める。L1は既存3上位分類に6テーマの入口が加わる。",
+    "level_distribution": "すべてのカテゴリーを全Levelに置いたり、件数を均等にしたりする必要はない。L1の好み・経験、L2の異なる理由、L3の制度判断、L4の本人の利害の違いが保たれることを優先する。新L4を無理に増やさない案は妥当。",
+    "sampling_stats": [
+      {
+        "level": 1,
+        "current_count": 163,
+        "proposal_count": 175,
+        "additions": 12,
+        "additions_share_percent": 6.86,
+        "chance_of_at_least_one_addition_in_5_questions_percent": 30.19
+      },
+      {
+        "level": 2,
+        "current_count": 80,
+        "proposal_count": 98,
+        "additions": 18,
+        "additions_share_percent": 18.37,
+        "chance_of_at_least_one_addition_in_5_questions_percent": 64.6
+      },
+      {
+        "level": 3,
+        "current_count": 301,
+        "proposal_count": 307,
+        "additions": 6,
+        "additions_share_percent": 1.95,
+        "chance_of_at_least_one_addition_in_5_questions_percent": 9.46
+      },
+      {
+        "level": 4,
+        "current_count": 362,
+        "proposal_count": 362,
+        "additions": 0,
+        "additions_share_percent": 0.0,
+        "chance_of_at_least_one_addition_in_5_questions_percent": 0.0
+      }
+    ],
+    "sampling_assumption": "5問をLevel内から等確率に重複なく抽選し、追加36問を全件採用した場合。確率は新しいカテゴリーの出現率ではなく、今回追加するカードが1件以上出る率。"
+  },
+  "recommended_adjustments": [
+    {
+      "ids": [
+        "r6-03-02-l3",
+        "r6-03-02-l4"
+      ],
+      "action": "公的給付優先の規則に合わせて変更先を社会政策へ調整する。"
+    },
+    {
+      "ids": [
+        "r6-03-01-l3",
+        "r6-03-01-l4"
+      ],
+      "action": "雇用・働き手の主視点を尊重して仕事・経済からの移動を保留する。"
+    },
+    {
+      "ids": [
+        "r6-06-03-l4"
+      ],
+      "action": "道路・地域インフラの安全と防災の境界を明記する。現状の範囲なら住まい・地域・交通を第一候補とする。"
+    },
+    {
+      "ids": [
+        "r6-06-06-l3",
+        "r6-06-06-l4"
+      ],
+      "action": "指標・証拠の妥当性と発信の責任を分け、科学・研究／メディア分類を優先する方針を検討する。"
+    },
+    {
+      "ids": [
+        "clarity-science_research_and_uncertainty-02-l1",
+        "clarity-science_research_and_uncertainty-01-l2",
+        "clarity-science_research_and_uncertainty-02-l2",
+        "clarity-science_research_and_uncertainty-03-l2"
+      ],
+      "action": "科学カテゴリーを埋めるための学習・確認問題にせず、知識がなくても確かめる手間、失敗の伝え方、不確実な評判の使い方を比べて話せる問いに調整する。本文担当の独立レビューと突き合わせる。"
+    },
+    {
+      "ids": [],
+      "action": "旧IDは保持しつつ、編集資料の呼称と範囲を「社会・公共政策」「仕事・雇用」など実際の主題に合わせ、税・給付・雇用・環境の優先順位を例で説明する。"
+    }
+  ],
+  "approval_boundary": "本レビューは提案のみ。category・本文・追加・削除・Levelの変更を正本へ反映する前にユーザーの最終確認を取る。本レビューから削除やLevel移動は提案しない。"
+}

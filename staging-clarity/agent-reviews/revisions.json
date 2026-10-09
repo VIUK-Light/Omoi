@@ -1,0 +1,645 @@
+{
+  "review_scope": "既存質問30件の変更案。正本・proposalは変更しない独立概念レビュー。",
+  "reviewed_proposal_sha256": "3cccc8564d494538107ef6083f1cff32b0844b48ecbeb07b13456405336028c6",
+  "concept_evidence": [
+    {
+      "location": "/workspace/Omoi/README.md:11",
+      "quote": "社会や価値観について話すための、オープンソースの質問カードです。"
+    },
+    {
+      "location": "/workspace/Omoi/README.md:13",
+      "quote": "Omoiは、同じ考えになるためのものではありません。違う考えを知るために。"
+    },
+    {
+      "location": "/workspace/Omoi/README.md:23",
+      "quote": "正解を決める必要はありません。「なぜそう思う？」まで話してみてください。"
+    },
+    {
+      "location": "/workspace/Omoi/index.html:143",
+      "quote": "同じ考えになるためではなく、違う考えを知るために。"
+    },
+    {
+      "location": "/workspace/Omoi/guide.html:126",
+      "quote": "日常の価値観から、社会問題、倫理、制度、人生の選択まで、一つの答えに決めにくいテーマについて話せます。"
+    },
+    {
+      "location": "/workspace/Omoi/QUESTION_DATA_SCHEMA.md:25",
+      "quote": "個人的な利害または倫理的なトレードオフを自分に置き換える問い"
+    },
+    {
+      "location": "/workspace/Omoi/README.md:112",
+      "quote": "片方の答えだけが明らかに正しく見える表現をできるだけ避け、複数の立場から話せる問いにしてください。"
+    }
+  ],
+  "rubric": {
+    "verdict": {
+      "keep": "提案のまま概念に適合。任意のminor提案を付ける場合あり。",
+      "adjust": "概念・意味保持または明確化の目的に必要な修正あり。",
+      "hold": "重要な未解決事項により採用保留。今回該当なし。"
+    },
+    "severity": {
+      "blocker": "今回該当なし。",
+      "material": "問いの判断軸、解釈される意味、Level・視点の適合を左右する。",
+      "minor": "局所的な表現、比較条件、任意の追問。",
+      "none": "適合上の具体的問題なし。"
+    },
+    "requirement": {
+      "required": "提案を最終確認に出す前に直す推奨。",
+      "optional": "好み・対話の深さを足す候補であり必須ではない。",
+      "none": "修正要求なし。"
+    },
+    "origin": {
+      "introduced": "変更案で新たに生じた。",
+      "persistent": "現行にも同様に存在する。",
+      "improved_but_remaining": "変更案で改善したが、現行にあった問題の一部が残る。",
+      "null": "具体的指摘なし。"
+    },
+    "binary_questions": "二択の存在だけは欠点としない。二択を外しただけでも欠点としない。価値の重み、異なる立場、自分の利害が実際に話せるかを判断する。",
+    "why_prompts": "全カードに理由の追問を必須にしない。Omoiの使い方がなぜそう思うまで話すと案内している。"
+  },
+  "counts": {
+    "verdict": {
+      "keep": 24,
+      "adjust": 6,
+      "hold": 0
+    },
+    "severity": {
+      "none": 21,
+      "material": 4,
+      "minor": 5
+    },
+    "requirement": {
+      "none": 21,
+      "required": 6,
+      "optional": 3
+    }
+  },
+  "summary": {
+    "required_material": [
+      "bridge-002",
+      "criminal-justice-001",
+      "stigma-001",
+      "r6-13-03-l4-conv"
+    ],
+    "required_minor": [
+      "FAN-J02-L4",
+      "FAN-B02-L4"
+    ],
+    "optional_minor": [
+      "environment-002",
+      "FAN-B01-L4",
+      "FAN-G04-L4"
+    ]
+  },
+  "reviews": [
+    {
+      "id": "contact-004",
+      "level": 1,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "用語の説明を一語句足しただけで、つながりを心地よいと感じるかという身近な価値観が残る。Level 1の入口として自然で、片方の答えを優遇しない。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:45",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:9",
+        "current_data": "/workspace/Omoi/level1.json:195",
+        "before_question": "寝落ち電話は好き？",
+        "proposed_question": "電話をつないだまま眠る「寝落ち電話」は好き？"
+      }
+    },
+    {
+      "id": "friendship-012",
+      "level": 1,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "略語を日常語に置き換え、対面とネットでの話しやすさを比べる軸を保つ。ネットで知り合い対面でも会う友人は両方に当てはまり得るが、それを話せるので致命的な分類や二択の問題ではない。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:57",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:23",
+        "current_data": "/workspace/Omoi/level1.json:923",
+        "before_question": "ネッ友とリア友って、どっちが話しやすいと思う？",
+        "proposed_question": "ネットで知り合った友達と、普段会っている友達では、どちらが話しやすい？"
+      }
+    },
+    {
+      "id": "romance-031",
+      "level": 1,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "重い／愛情深いという評価を、受け手が感じるうれしさと負担に置き換えている。愛情の受け取り方と境界の違いを話せるので、価値観の軸は残る。恋人の経験を必須とはしておらず、想像でも答えられる。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:69",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:37",
+        "current_data": "/workspace/Omoi/level1.json:531",
+        "before_question": "「重い」と「愛情深い」の違いって何だと思う？",
+        "proposed_question": "恋人からの愛情を、うれしいと感じるときと、負担に感じるとき。何が違うと思う？"
+      }
+    },
+    {
+      "id": "conflict-013",
+      "level": 1,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "何について話すかが気持ちと態度に明示された。Level 1では価値観の対立を毎回課す必要はなく、身近な反応の違いを知る入口として適切。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:81",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:51",
+        "current_data": "/workspace/Omoi/level1.json:1203",
+        "before_question": "本音を言えない時はどうなる？",
+        "proposed_question": "本音を言えないとき、気持ちや態度にどんな変化が出る？"
+      }
+    },
+    {
+      "id": "support-003",
+      "level": 2,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "自分たちで解決するか相談するかの判断軸が追加され、友人関係の自律と助けを求める境界を話せる。トラブルに範囲を絞った意味の変化はあるが、Level 2の役割に合い、どちらを選ぶかは固定しない。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:93",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:67",
+        "current_data": "/workspace/Omoi/level2.json:27",
+        "before_question": "友達同士で解決できることって何？",
+        "proposed_question": "友達同士のトラブルで、自分たちだけで解決できそうなことと、誰かに相談したいことは何が違う？"
+      }
+    },
+    {
+      "id": "support-008",
+      "level": 2,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "評価が割れる場面を置き、行動の目的、内容、相手への影響で相談と告げ口を分けられる。責められていることを前提にしても、その非難が妥当かは決めていない。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:105",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:81",
+        "current_data": "/workspace/Omoi/level2.json:163",
+        "before_question": "「先生に言う」と「チクる」の違いは？",
+        "proposed_question": "友達の行動を先生に伝えた人が「チクった」と責められている。相談と告げ口の違いを、何で判断する？"
+      }
+    },
+    {
+      "id": "bridge-002",
+      "level": 2,
+      "verdict": "adjust",
+      "severity": "material",
+      "origin": "introduced",
+      "requirement": "required",
+      "reason": "元の問いは連絡を受ける人と送る人の境界をどう判断するかだった。変更案は相手の負担を小さくする伝え方を探す形で、何を気づかいとみなすかという意見の違いより、上手な連絡方法の助言が中心になりやすい。具体化した場面は残し、境界を判断する問いに戻したい。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:117",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:95",
+        "current_data": "/workspace/Omoi/level2.json:371",
+        "before_question": "返事が遅い友達に、心配していることを伝えるのと催促することの境界はどこだと思う？",
+        "proposed_question": "返事が遅い友達を心配して、もう一度連絡したい。どんな伝え方なら、返事を急がせる負担になりにくいと思う？",
+        "problem_text": "どんな伝え方なら、返事を急がせる負担になりにくいと思う？"
+      },
+      "suggested_question": "返事が遅い友達を心配して、もう一度連絡したい。その連絡が、心配を伝えることになるか、返事の催促になるかは、何で決まると思う？"
+    },
+    {
+      "id": "bridge-009",
+      "level": 2,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "違う秘密を食い違う説明へ具体化しているので、元の範囲すべてを同じ意味で保つ変更ではない。ただし秘密を守ること、友人への忠実さ、公平さをどう扱うかは残る。「どちらかの味方になるか」は中立を選ぶ答えも含み、片方を選ばせる表現ではない。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:129",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:109",
+        "current_data": "/workspace/Omoi/level2.json:427",
+        "before_question": "別々の友達から、同じ出来事について違う秘密を聞いたら、どこまで中立でいられると思う？",
+        "proposed_question": "同じ出来事について、二人の友達から食い違う説明を聞いた。二人とも「誰にも言わないで」と頼んでいる。どちらかの味方になるか、どう決める？"
+      }
+    },
+    {
+      "id": "family-law-001",
+      "level": 3,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "共同親権の法的な責任と権限を簡潔に説明し、原則にするかという制度判断を保持している。現在の法律がその原則だという事実の断言にはなっていない。背景にも子どもの利益、関わり、安全上の懸念が残る。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:141",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:125",
+        "current_data": "/workspace/Omoi/level3.json:54",
+        "before_question": "離婚後は共同親権を原則にするべきだと思う？",
+        "proposed_question": "離婚後も、両方の親が子どもの養育について法的な責任と権限を持つ「共同親権」。\nこの形を基本にするべきだと思う？",
+        "perspective": "observer",
+        "background": "離婚後の親権や子育てへの関わり方は、子ども、母親、父親それぞれの立場から議論されます。共同親権では、離婚後も両方の親が子どもについて法的な責任や権限を持つことになります。\n\n両親が継続して子育てに関わることを重視する立場がある一方、家庭内の対立や安全上の問題がある場合には共同で判断することが難しいという懸念もあります。\n\n親の権利だけでなく、子どもの利益をどう考えるかが重要な争点です。"
+      }
+    },
+    {
+      "id": "family-law-003",
+      "level": 3,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "選べる対象が夫婦それぞれの名字だと分かり、制度に賛成かどうかの判断を保持する。希望する夫婦に限る説明は制度の特徴であり、答えの誘導そのものではない。背景は選択の自由と家族制度の見方を提示している。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:153",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:140",
+        "current_data": "/workspace/Omoi/level3.json:126",
+        "before_question": "選択的夫婦別姓を認めるべきだと思う？",
+        "proposed_question": "結婚後も、希望する夫婦はそれぞれの名字を使えるようにする「選択的夫婦別姓」を認めるべきだと思う？",
+        "perspective": "observer",
+        "background": "結婚後の姓をめぐっては、同じ姓を名乗る現在の仕組みと、希望する夫婦が別々の姓を使えるようにする選択的夫婦別姓が議論されています。\n\n個人の名前や仕事上の継続性、選択の自由を重視する立場があります。一方で、家族として同じ姓を持つことの意味や、戸籍制度との関係を重視する立場もあります。\n\n個人の選択と、家族制度のあり方をどう考えるかが争点です。"
+      }
+    },
+    {
+      "id": "criminal-justice-001",
+      "level": 3,
+      "verdict": "adjust",
+      "severity": "material",
+      "origin": "introduced",
+      "requirement": "required",
+      "reason": "相談への対応と事実確認を分ける方向は有益だが、問いが両方を守るために大切なことを列挙する形になり、判断が難しくなる場面が消えている。両方大切、丁寧に確認する、という共通回答で終わりやすい。元の二択を復活させる必要はないが、事実未確認時の具体的な制度対応を置けば、被害を訴える人の安全と訴えられた人の権利をどう扱うかを話せる。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:165",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:154",
+        "current_data": "/workspace/Omoi/level3.json:99",
+        "before_question": "性被害者の保護と、冤罪を防ぐことは、どちらをより重視するべき？",
+        "proposed_question": "性被害を訴えた人を守ることと、無実の人が罰せられるのを防ぐこと。\n両方を守るために、相談への対応と、事実を確かめる手続きでは何を大切にするべきだと思う？",
+        "perspective": "observer",
+        "background": "性犯罪をめぐっては、被害を訴える人が十分に保護されないという問題と、誤った疑いによって無実の人が重大な不利益を受ける可能性の両方が議論されます。\n\n被害申告を疑いすぎると被害者が声を上げにくくなる一方、疑いだけで有罪視することも適正な手続きの観点から問題になります。\n\n被害者を守ることと、無実の人を守ることを制度の中でどう両立させるかを考える問いです。",
+        "problem_text": "両方を守るために、相談への対応と、事実を確かめる手続きでは何を大切にするべきだと思う？"
+      },
+      "suggested_question": "性被害の訴えがあり、事実はまだ確かめられていないとする。学校や職場が安全を守るために、訴えられた人の活動を一時的に制限するかどうかは、何を基準に決めるべきだと思う？",
+      "note": "修正候補は判断する場面を追加するため、単なる言い換えではない。相談した人への支援と、訴えられた人への措置を同一視しないことが重要。新しい場面を採用する場合も最終確認の対象。"
+    },
+    {
+      "id": "justice-004",
+      "level": 3,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "仮釈放の説明と被害を受けた人の反対を別の文に分けても、被害者の意向と社会復帰の重みを判断する軸は保持している。更生が進んだという仮定の設定として読め、一般に仮釈放が安全だと保証する文ではない。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:177",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:169",
+        "current_data": "/workspace/Omoi/level3.json:418",
+        "before_question": "更生が進んだと判断された受刑者の仮釈放を、被害を受けた人が強く望んでいない。その意向を、仮釈放の判断でどこまで重く見るべきだと思う？",
+        "proposed_question": "更生が進んだ受刑者を、刑期の途中で条件付きで社会に戻す「仮釈放」が検討されている。\n被害を受けた人が反対している場合、その気持ちを判断にどこまで反映するべきだと思う？",
+        "perspective": "observer",
+        "background": "刑罰には、責任を取らせることだけでなく、再び犯罪を起こさないよう社会復帰を支える役割もあります。\n\n更生を重視することが将来の被害を減らすという考えがある一方、被害を受けた側から見れば、加害者への支援が手厚すぎると感じる場合もあります。被害を受けた人への支援や情報提供と、加害者の更生は、必ずしも同じ予算や制度の中で争うものではありません。\n\n社会の安全、被害者の納得、加害者の再出発をどう考えるかが争点です。"
+      }
+    },
+    {
+      "id": "medicine-001",
+      "level": 3,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "死後の提供に範囲を定め、意思表示がない場合を同意とみなす仕組みが明確になった。現在の法律を説明する断言ではなく制度提案への意見であり、救命と自己決定の対立も背景に残る。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:189",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:184",
+        "current_data": "/workspace/Omoi/level3.json:445",
+        "before_question": "臓器提供は、本人が拒否していなければ提供する仕組みにしてもいいと思う？",
+        "proposed_question": "亡くなった後の臓器提供について、本人が拒否の意思を示していなければ、提供に同意したとみなす仕組みをどう思う？",
+        "perspective": "observer",
+        "background": "臓器提供の意思表示を、希望者だけが登録する方式にするか、拒否しない限り提供意思があるとみなす方式にするかで考え方が分かれます。\n\n提供できる臓器を増やせる可能性を重視する立場がある一方、本人の明確な同意なしに扱いを決めることへの懸念もあります。\n\n命を救う利益と本人の自己決定をどう考えるかが争点です。"
+      }
+    },
+    {
+      "id": "family-policy-001",
+      "level": 3,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "代理出産の説明は既存背景と一致する。依頼する人の選択肢と妊娠・出産を担う人の身体的負担や圧力をどう考えるかという制度・倫理の判断を保つ。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:201",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:198",
+        "current_data": "/workspace/Omoi/level3.json:490",
+        "before_question": "代理出産を認めるべきだと思う？",
+        "proposed_question": "子どもを望む人に代わって、別の人が妊娠・出産を担う「代理出産」を認めるべきだと思う？",
+        "perspective": "observer",
+        "background": "代理出産では、子どもを望む人のために別の人が妊娠・出産を担います。\n\n子どもを持つ選択肢を広げるという考えがある一方、妊娠する人の身体的負担、経済格差による圧力、親子関係をどう定めるかなどの問題もあります。\n\n生殖の自由と、身体や家族関係をめぐる倫理を考える問いです。"
+      }
+    },
+    {
+      "id": "technology-004",
+      "level": 3,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "生成AIという対象と作者の許可を明示しており、既存背景が扱う開発と創作者の権利の論点に合う。「どう思う」への変更でも賛否・条件付き賛成を話せ、無断利用の法的可否は断言していない。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:213",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:212",
+        "current_data": "/workspace/Omoi/level3.json:631",
+        "before_question": "AIの学習に、公開されている作品を許可なく使ってもいいと思う？",
+        "proposed_question": "文章や画像を作るAIを開発するために、ネットで公開されている作品を、作者の許可なしで学習に使うことをどう思う？",
+        "perspective": "observer",
+        "background": "生成AIの開発では、大量の文章や画像などを学習に利用することがあります。\n\n公開情報を使った学習は技術発展に必要だという考えがある一方、作者の許可や対価なしに作品を利用することを問題視する立場もあります。\n\n技術革新と創作者の権利をどう両立させるかが争点です。"
+      }
+    },
+    {
+      "id": "economy-001",
+      "level": 3,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "受けやすさを申請・確認へ絞るため元の問いの範囲は狭まるが、既存解説の申請のハードルと不正利用の確認に合っている。確認を簡単にするかという具体的な制度判断が残る。給付額の議論と混同しにくくなる。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:225",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:226",
+        "current_data": "/workspace/Omoi/level3.json:679",
+        "before_question": "生活保護は、もっと受けやすくするべきだと思う？",
+        "proposed_question": "生活に困った人がお金などの支援を受ける「生活保護」。\n支援を受け始めるときの申請や確認は、もっと簡単にするべきだと思う？",
+        "perspective": "observer",
+        "background": "生活に困った人への公的支援では、本当に必要な人が利用しやすいことと、制度の不正利用を防ぐことの両方が求められます。\n\n申請のハードルを下げるべきだという考えと、税金を使う以上は厳しい確認が必要だという考えがあります。\n\n支援の届きやすさと制度への信頼をどう両立させるかが争点です。"
+      }
+    },
+    {
+      "id": "economy-003",
+      "level": 3,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "所得と資産、負担の割合を明示した点は既存背景と一致する。税の公平と経済活動への影響を考える問いとして機能し、金持ちという人物評価から制度の判断へ整えられている。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:237",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:241",
+        "current_data": "/workspace/Omoi/level3.json:703",
+        "before_question": "お金持ちへの税金は、もっと高くしてもいいと思う？",
+        "proposed_question": "収入や資産が多い人に、今より高い割合で税金を負担してもらうことをどう思う？",
+        "perspective": "observer",
+        "background": "所得や資産が多い人に、より高い割合の負担を求めるかは、税の公平をどう考えるかに関わります。\n\n負担能力が高い人がより多く支えるべきだという考えがあります。一方で、努力や投資の成果に高い税をかけすぎれば、経済活動を弱めるという考えもあります。\n\n平等な負担と経済への影響をどう考えるかが争点です。"
+      }
+    },
+    {
+      "id": "politics-002",
+      "level": 3,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "徴兵の意味として本人の希望によらない軍務を示しており、国の安全と個人の自由の対立を隠さず提示できている。この特徴の説明だけを反対への誘導とはみなさない。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:249",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:255",
+        "current_data": "/workspace/Omoi/level3.json:847",
+        "before_question": "国を守るためなら、徴兵制を導入してもいいと思う？",
+        "proposed_question": "国を守るために、本人の希望にかかわらず一定の人に軍務を求める「徴兵制」を導入してもよいと思う？",
+        "perspective": "observer",
+        "background": "国防に必要な人員を確保する方法として、一定の条件で市民に兵役を求める制度があります。\n\n安全保障を国民全体で担うべきだという考えがあります。一方で、本人の意思に反して兵役を課すことは自由を大きく制限するという考えもあります。\n\n国家の安全と個人の自由をどう比較するかを考えます。"
+      }
+    },
+    {
+      "id": "environment-002",
+      "level": 3,
+      "verdict": "keep",
+      "severity": "minor",
+      "origin": "introduced",
+      "requirement": "optional",
+      "reason": "四つの判断材料から特に重視するものを選ぶ形は、価値の優先順位を話せるので概念に合う。賛否の結論を毎回必須にする必要はない。元の政策判断までつなぐ力は少し弱くなるため、継続の可否と理由を一言添える改善は任意で有効。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:261",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:269",
+        "current_data": "/workspace/Omoi/level3.json:787",
+        "before_question": "原子力発電は、今後も使い続けるべきだと思う？",
+        "proposed_question": "原子力発電を今後も使うか考えるとき、電気の安定供給、気候への影響、事故の危険、廃棄物の管理のうち、何を特に重視したい？",
+        "perspective": "observer",
+        "background": "原子力発電は大量の電力を供給でき、発電時の温室効果ガス排出が比較的少ない一方、重大事故や放射性廃棄物への懸念があります。\n\n安定供給や気候対策を重視する立場と、事故時の影響や長期的な廃棄物管理を重視する立場があります。\n\nエネルギーの安定性、環境、安全性をどう比較するかが争点です。",
+        "problem_text": "原子力発電を今後も使うか考えるとき、電気の安定供給、気候への影響、事故の危険、廃棄物の管理のうち、何を特に重視したい？"
+      },
+      "suggested_question": "原子力発電を今後も使うか考えるとき、電気の安定供給、気候への影響、事故の危険、廃棄物の管理のうち、何を特に重視したい？ それを踏まえて、使い続けるかどうかをどう考える？",
+      "note": "任意の追問。二択が消えたことを不適合の根拠にはしていない。"
+    },
+    {
+      "id": "r6-07-05-l3",
+      "level": 3,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "見出しの印象を仮の割合で具体化し、報道の責任という判断を維持している。新背景は仮の数字であることと、賛成以外に保留などが含まれる可能性を説明しており、賛成以外を反対に読み替える誤りがない。比較しやすさとすべての切り口を示す難しさも両方示す。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:273",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:283",
+        "current_data": "/workspace/Omoi/level3.json:2643",
+        "before_question": "同じ統計から複数の正確な見出しを作れても、一つを選ぶことで社会の印象は変わる。報道は、反対の印象を与える読み方まで併記する責任があると思う？",
+        "proposed_question": "同じ調査結果でも、「賛成が3割」と「賛成以外が7割」では印象が違う。\n報道は、もう一方の見方も一緒に示すべきだと思う？",
+        "perspective": "observer",
+        "background": "このカードの割合は、説明のための仮の数字です。「賛成以外」には、反対だけでなく、判断を保留している人などが含まれる場合もあります。\n\n同じ結果でも見出しの選び方で、読者の受け止め方が変わることを考えます。異なる見方も示せば読み手が比較しやすくなる一方、短い記事ですべての切り口を示すのは難しいかもしれません。どこまで示す責任があるかが問いの中心です。"
+      }
+    },
+    {
+      "id": "relationship-290",
+      "level": 4,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "相手に好きになる見込みがあったこと、自分は本気だったこと、好きという言葉を信じたこと、恋愛感情がないことを伝えられなかった点を保持する。自分の信頼と時間を費やした立場から許せるかを考えるLevel 4の問いとして成立する。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:287",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:312",
+        "current_data": "/workspace/Omoi/level4.json:2489",
+        "before_question": "半年間付き合った恋人から、別れ際に「最初は好きではなかったけれど、いつか好きになれると思っていた。大切には思っていたが、恋愛感情は育たなかった」と言われた。あなたは本気で好きで、交際中の「好き」という言葉も信じていた。相手に好きになろうとする気持ちがあったとしても、恋愛感情がないことを伝えず付き合い続けたことを許せる？",
+        "proposed_question": "半年付き合った恋人から、別れ際に「大切には思っていたけれど、恋愛感情は育たなかった」と言われた。相手はいつか好きになれると思っていたという。あなたは本気で好きで、交際中の「好き」も信じていた。\n恋愛感情がないことを伝えずに付き合い続けたことを、許せる？",
+        "perspective": "affected",
+        "background": "恋愛では、付き合い始めた時点で強い恋愛感情がなくても、その後の関係の中で気持ちが育つことがあります。そのため、最初から強く好きではなかったことだけで、関係そのものが嘘だったとは限りません。\n\n一方、自分も同じように好かれていると思っていたからこそ、相手を信頼し、時間や気持ちを関係に注いだ可能性があります。「まだ好きではない」と知っていれば、そもそも付き合わないという選択をしていたかもしれません。\n\n恋愛関係では、実際に感じている愛情と、相手に表現する愛情が一致しないことも研究されています。Horan & Booth-Butterfield（2013）は、恋愛関係における実際の感情と一致しない愛情表現を調査し、その理由として、相手の感情を守ること、衝突を避けたり管理したりすること、感情を調整することなどを報告しています。\n\nただし、この研究は「好きではない相手と長期間付き合うこと」そのものを調べたものではありません。\n\n好きになろうとしていたことと、相手に自分も同じ気持ちだと思わせ続けたこと。好きになれなかったことと、それを半年間言わなかったことは同じ問題なのでしょうか。\n\n自分が別れを告げられた側になったときにも、「付き合ってから好きになることもある」と受け入れられるかを考える問いです。"
+      }
+    },
+    {
+      "id": "stigma-001",
+      "level": 4,
+      "verdict": "adjust",
+      "severity": "material",
+      "origin": "persistent",
+      "requirement": "required",
+      "reason": "投稿を見た自分の感想だけでは、その言葉で扱われる自分の不利益や葛藤が置かれていない。現行データも投稿を見る第三者なのに perspective は affected であり、これは元からある問題。短文化は改善しているが、Level 4と affected を据え置くなら、自分にその呼び名が付く状況を入れ、支援の可視化と人格を決めつけられることを自分事にしたい。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:299",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:327",
+        "current_data": "/workspace/Omoi/level4.json:2533",
+        "before_question": "あなたは、収入が高くなく、友人も少なく、恋愛経験もほとんどない男性について話している投稿を見た。コメント欄では、その人の事情を詳しく知らない人たちが「典型的な弱者男性」「努力しなかった結果」と笑っている。一方で、「男性の孤独や貧困を社会問題として語るためには『弱者男性』という言葉も必要だ」という意見もある。困難を抱える男性をまとめて「弱者男性」と呼ぶことは、問題を見えるようにするための言葉だと思う？ それとも、その人の価値まで低いように見せてしまうレッテルだと思う？",
+        "proposed_question": "収入や人間関係に困る男性を、事情を知らない人が「弱者男性」と呼んで笑っている投稿を見た。一方、その言葉で支援の必要性を伝えたい人もいる。\nあなたは、この呼び方をどう受け止める？",
+        "perspective": "affected",
+        "background": "社会の中で困難を抱える集団に名前を付けることで、それまで見えにくかった問題を議論しやすくなる場合があります。一方、その言葉が本人の事情を説明するものではなく、能力や人格までまとめて評価する言葉として使われることもあります。\n\n特に「弱者」という言葉には、支援が必要な状態を表す意味だけでなく、人として劣っているという印象を与える可能性があります。\n\n問題を可視化するために集団を名付けることと、その集団に属するとされた個人を決めつけることは同じなのでしょうか。",
+        "problem_text": "あなたは、この呼び方をどう受け止める？"
+      },
+      "suggested_question": "あなたは、収入や人間関係で困っている男性だとする。その事情を「弱者男性への支援が必要」と紹介されると、支援につながるかもしれないが、笑ったり見下したりする人もいる。自分をこの言葉で説明されることを、どう受け止める？",
+      "note": "Levelや視点を変更する提案ではない。元からの不整合を質問文で補う候補。架空の役割を自分に置くことは、Levelを利用者の属性として扱うこととは別。"
+    },
+    {
+      "id": "r6-13-03-l4-conv",
+      "level": 4,
+      "verdict": "adjust",
+      "severity": "material",
+      "origin": "introduced",
+      "requirement": "required",
+      "reason": "相談につながっていない人の需要が測れていない、という不確実性を、男性側の必要性が確認できない、という表現へ変えている。潜在的な窓口の利用ニーズの量と、男性支援がそもそも必要かの違いが曖昧になり、提案を支持する側の理由を弱く読むおそれがある。限られた予算と既存利用者への影響は保持し、何が未確認かを元の意味に戻す。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:311",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:342",
+        "current_data": "/workspace/Omoi/level4.json:4211",
+        "before_question": "あなたは支援予算を決める立場で、利用実績のある女性向け窓口の一部を減らして男性向けの相談窓口を増やす案を検討している。相談につながっていない男性の需要は確かめきれていないが、この再配分で支援が途切れる女性が出る可能性がある。それでも再配分を決める？",
+        "proposed_question": "あなたは相談窓口の予算を決める担当者。男性向けの窓口を増やすには、利用実績のある女性向け窓口を一部減らす必要がある。男性側の必要性はまだ十分に確かめられておらず、支援が途切れる女性も出るかもしれない。\nそれでも予算の配分を変える？",
+        "perspective": "decision_maker",
+        "background": "限られた支援予算を別の対象へ移すと、見えていなかった需要に対応する一方、既存の利用者への支援が減る。性別ごとの必要性の決め付けではない。\n\n問いの狙い: 男性への支援拡大を実際の予算再配分の問題として扱う。",
+        "problem_text": "男性側の必要性はまだ十分に確かめられておらず"
+      },
+      "suggested_question": "あなたは相談窓口の予算を決める担当者。男性向けの窓口を増やすには、利用実績のある女性向け窓口を一部減らす必要がある。相談につながっていない男性が、どれだけ窓口を必要としているかは確かめきれておらず、支援が途切れる女性も出るかもしれない。\nそれでも予算の配分を変える？"
+    },
+    {
+      "id": "r6-20-05-l4",
+      "level": 4,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "配信者として自分が利益を得ること、誤解を解くと収入が減りスタッフにも影響があること、私生活を守りたいことが残るので、Level 4の自分事と代償は失われていない。新背景は別の対応でも収入が変わり得ると補い、黙ることへの責任も問える。二択を外したことだけで倫理的な判断が消えたとはみなさない。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:323",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:357",
+        "current_data": "/workspace/Omoi/level4.json:4843",
+        "before_question": "あなたは配信者で、交際相手がいることを公表していない。自分と交際できるかもしれないと期待して多額の支援を続けるファンがいると気づいた。期待が誤解だと伝えれば収入が減り、スタッフの仕事も失う可能性がある。一方、黙り続ければ誤解の上で金銭を受け取り続けることになる。私生活を守るために黙り続ける？ 収入が減っても誤解だと伝える？",
+        "proposed_question": "あなたは配信者。交際相手の存在は公表しておらず、あなたと付き合えると期待して多額の支援をするファンがいる。誤解を解くと、収入が減り、スタッフが仕事を失うかもしれない。\n私生活を守りながら、この誤解にどう対応する？",
+        "perspective": "actor",
+        "background": "この場面では、ファンの期待に気づいていること、収入がスタッフの仕事にも関わること、私生活を守りたいことが重なっています。\n\n誤解を解くために、交際相手の詳しい情報まで明かす必要があるとは限りません。交流の範囲を説明するなどの対応でも収入が変わるかもしれず、黙って支援を受け続けることにも責任があると考える人はいるでしょう。私生活、相手の選択、仕事への影響をどう扱うかを考える問いです。"
+      }
+    },
+    {
+      "id": "FAN-J02-L4",
+      "level": 4,
+      "verdict": "adjust",
+      "severity": "minor",
+      "origin": "improved_but_remaining",
+      "requirement": "required",
+      "reason": "恋人との関係と時間配分は個人的な利害を持つので、Level 4の軸は残る。ただし、誰が推しにお金を使うのかという旧文の省略が一部残り、「あなたの恋人は、推しに使うお金や予定を知っている」は恋人自身の活動とも読める。主語の明確化を目的にするなら、あなたが使うと一語句で特定したい。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:337",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:384",
+        "current_data": "/workspace/Omoi/level4.json:4927",
+        "before_question": "恋人は、誰を推し、何にお金を使い、どの予定を優先しているかを知っている。そのうえで「二人で過ごす時間や予定より、推しに使う時間や予定を優先されていると感じる」と言っている。推しと恋人への感情は別物だという説明で、その不満に答えたことになると思う？",
+        "proposed_question": "あなたの恋人は、推し（応援している人）に使うお金や予定を知っている。それでも「二人で過ごす時間より、推しを優先されている」と感じている。\n「推しと恋人への気持ちは別物」と伝えるだけで、その不満に答えられると思う？",
+        "perspective": "actor",
+        "background": "推しへの気持ちと恋人への気持ちを別の種類だと考えることと、限られた時間やお金をどう配分するかは別の判断です。感情に総合的な順位を付けなくても、重なった予定では何かを選ぶ必要があります。\n\nこの場面の不満は、好きという感情の強さではなく、一緒に過ごす機会の優先順位に向けられています。別物だという説明がその不満に対応しているか、予定や約束について別の説明が必要かを考えます。",
+        "problem_text": "あなたの恋人は、推し（応援している人）に使うお金や予定を知っている。"
+      },
+      "suggested_question": "あなたの恋人は、あなたが推し（応援している人）に使うお金や予定を知っている。それでも「二人で過ごす時間より、推しを優先されている」と感じている。\n「推しと恋人への気持ちは別物」と伝えるだけで、その不満に答えられると思う？",
+      "note": "感情の種類と時間配分が別だという説明は既存解説からある。最後の「だけ」は答えを否定側へ寄せる面があるが、元から同趣旨の評価を尋ねており、今回の必須指摘は主語の残る曖昧さに限る。"
+    },
+    {
+      "id": "FAN-B01-L4",
+      "level": 4,
+      "verdict": "keep",
+      "severity": "minor",
+      "origin": "introduced",
+      "requirement": "optional",
+      "reason": "自分の受け止め方が性別で変わるかという内省と、性別以外の条件を揃える比較は保持している。原文の差の根拠を尋ねる一節は削られており、変更理由の「差の根拠を会話の言葉にする」とは完全には一致しない。ただしOmoiの使い方自体が理由まで話すので、根拠を一言戻すことは任意の改善とする。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:349",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:399",
+        "current_data": "/workspace/Omoi/level4.json:4951",
+        "before_question": "女が彼氏に「推しの方がかっこいい」と言う場合と、男が彼女に「推しの方が可愛い」と言う場合で、あなたの許容は同じか。違うなら、差の根拠は何か。",
+        "proposed_question": "彼女が彼氏に「推し（応援している人）の方がかっこいい」と言う場合と、彼氏が彼女に「推しの方が可愛い」と言う場合。\nほかの条件が同じなら、性別であなたの受け止め方は変わる？",
+        "perspective": "observer",
+        "background": "発言する人と受け取る人の性別を入れ替えたとき、自分が付け加えている印象や期待に気づけるかを考える場面です。性別だけから、二人の関係や被害の程度を確定することはできません。\n\n言い方、頻度、相手がどう受け取っているかなどを同じ条件で比較します。判断に差があるなら、それが実際の行為の違いによるのか、自分が想像した違いによるのかを検討します。",
+        "problem_text": "ほかの条件が同じなら、性別であなたの受け止め方は変わる？"
+      },
+      "suggested_question": "彼女が彼氏に「推し（応援している人）の方がかっこいい」と言う場合と、彼氏が彼女に「推しの方が可愛い」と言う場合。\nほかの条件が同じなら、性別であなたの受け止め方は変わる？ 変わるなら、何が理由？",
+      "note": "observerとしての内省は現行にもある。全Level 4に特定の金銭的損失や二択を付ける要求はしていない。"
+    },
+    {
+      "id": "FAN-B02-L4",
+      "level": 4,
+      "verdict": "adjust",
+      "severity": "minor",
+      "origin": "improved_but_remaining",
+      "requirement": "required",
+      "reason": "友人への助言を担う自分の判断というLevel 4の視点は保持している。一方、質問ではお金・時間・約束だけを同じにし、既存背景が揃える生活への影響や嫉妬の訴えを省くため、同じ助言になるかの差が性別によるものか分かりにくい。性別以外は同じという短い句にすると、解説を開かなくても公平に比較できる。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:361",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:414",
+        "current_data": "/workspace/Omoi/level4.json:4963",
+        "before_question": "友人の相談が二件ある。彼女が彼氏の推し活に嫉妬している件と、彼氏が彼女の推し活に嫉妬している件。片方だけ「我慢しろ」または「やめろ」にする？ 同じ基準にする？",
+        "proposed_question": "友人から二つの相談を受けた。一つは彼氏の推し（応援している人）への活動に彼女が嫉妬している話、もう一つは彼女の推しへの活動に彼氏が嫉妬している話。使うお金や時間、二人の約束は同じとする。\nあなたは、両方に同じ助言をする？",
+        "perspective": "decision_maker",
+        "background": "比較するときは、性別以外の条件をそろえます。課金の額、遠征の頻度、二人の約束、生活への影響、嫉妬している人の訴えの内容が同じケースとして考えます。\n\nそのうえで助言が変わるなら、どの事情を根拠にしたのかを確認します。活動をやめるか我慢するかだけでなく、理由を聞くなど同じ対応を選ぶことも含め、自分の助言の基準を考える問いです。",
+        "problem_text": "使うお金や時間、二人の約束は同じとする。"
+      },
+      "suggested_question": "友人から二つの相談を受けた。一つは彼氏の推し（応援している人）への活動に彼女が嫉妬している話、もう一つは彼女の推しへの活動に彼氏が嫉妬している話。使うお金や時間、二人の約束など、性別以外の条件は同じとする。\nあなたは、両方に同じ助言をする？",
+      "note": "原文は質問文だけでは条件の同一性が全く明示されていなかった。今回一部を示した改善は認め、その残りの省略を指摘する。「同じ基準」と「同じ助言」は厳密には異なるが、同条件のこの場面では、その差だけを必須修正の根拠にはしない。"
+    },
+    {
+      "id": "FAN-G01-L4",
+      "level": 4,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "推しへの自分の気持ちと、将来恋人が必要だという他者の判断を明示できている。不快に感じない答えや複数の理由も残り、呼び名と生き方への介入を分けて、自分にかかわる価値観を話せる。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:373",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:429",
+        "current_data": "/workspace/Omoi/level4.json:4975",
+        "before_question": "知人に「それは疑似恋愛だから、いつか本物の相手が必要になる」と言われた。もし不快に感じるなら、呼び方が嫌なのか、恋人に近い感情だと指摘されたことなのか、それとも別の理由か。複数の理由が重なることもある？",
+        "proposed_question": "推し（応援している人）への気持ちを、知人に「疑似恋愛だから、いつか本物の恋人が必要になる」と言われた。\nどう感じる？ 気になるとしたら、呼び方、恋に近い気持ちだと言われたこと、将来の生き方への意見など、何が理由だろう？",
+        "perspective": "affected",
+        "background": "この発言には、感情への呼び名と、将来は別の相手が必要だという見通しが含まれています。どちらかに納得しても、もう一方には納得しないという受け止め方もできます。\n\n不快に感じるかどうかも、その理由も本人によって異なります。呼び方、指摘された内容、将来の生き方への介入などを分け、複数の理由や別の理由を含めて自分の反応を考えます。"
+      }
+    },
+    {
+      "id": "FAN-G02-L4",
+      "level": 4,
+      "verdict": "keep",
+      "severity": "none",
+      "origin": null,
+      "requirement": "none",
+      "reason": "自分が答えを拒んだ後に関係を失う場面へまとめても、答えない自由と相手が離れる自由の対立、失う関係という自分の利害が残る。最初に拒否するかの問いは減るが、その判断の妥当性を結果から考える構成は成立する。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:385",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:444",
+        "current_data": "/workspace/Omoi/level4.json:4987",
+        "before_question": "恋人に「どっちが好きかだけ教えてほしい」と聞かれた。別物だから答えなくてよい？ 答えなかったことを理由に相手が別れてきたら、相手が不当だと思う？",
+        "proposed_question": "恋人に「自分と推し（応援している人）のどちらが好き？」と聞かれた。\n「気持ちの種類が違うから答えたくない」と伝えたら、相手は別れを選んだ。その選択をどう受け止める？",
+        "perspective": "actor",
+        "background": "異なる種類の愛着を一つの順位にできないと感じることと、比較への回答を拒むことは、順位を隠していることと同じではありません。一方、恋人が関係を続ける条件として答えを求める可能性もあります。\n\n答えない自由と、希望する答えが得られない関係から離れる自由を分けて考えます。感情の順位を答えることと、時間や予定の配分について説明することが同じ要求なのかも検討できます。"
+      }
+    },
+    {
+      "id": "FAN-G04-L4",
+      "level": 4,
+      "verdict": "keep",
+      "severity": "minor",
+      "origin": "persistent",
+      "requirement": "optional",
+      "reason": "自分の感情が恋に近いという内省は明確になり、恋人を作らない理由が分かるかのような旧文も改善している。自分の恋愛的な期待と相手の自由の対立は背景にあるが、質問文だけでは相手の行動への意味付けが中心で、行動や期待の境界までは進まない。自分が相手の自由をどう扱うかまで添えるのは、Level 4の深さを強める任意の改善。",
+      "evidence": {
+        "proposal": "/workspace/Omoi/staging-clarity/proposal.json:397",
+        "revision_list": "/workspace/Omoi/staging-clarity/question-revisions.md:459",
+        "current_data": "/workspace/Omoi/level4.json:5011",
+        "before_question": "自分の気持ちは恋に近いと認めている。だから推しが恋人を作らないのは、ファンへの配慮だと思う？",
+        "proposed_question": "あなたは、推し（応援している人）への気持ちが恋に近いと感じている。推しに恋人がいないとしたら、それをファンへの配慮だと受け止める？",
+        "perspective": "actor",
+        "background": "推しが恋人を作らない理由は、その事実だけから確定できません。また、本人が自発的に選ぶ配慮と、ファンが相手に求める義務は同じではありません。\n\n自分の気持ちを認めたうえで、相手の選択にどんな意味を読み取っているかを考えます。配慮だと受け止めることと、その選択を続けるよう求めることを分けて検討する問いです。",
+        "problem_text": "推しに恋人がいないとしたら、それをファンへの配慮だと受け止める？"
+      },
+      "suggested_question": "あなたは、推し（応援している人）への気持ちが恋に近いと感じている。推しに恋人がいないとしたら、それをファンへの配慮だと受け止める？ 推しに恋人ができたとき、その気持ちと相手の自由をどう扱いたい？",
+      "note": "弱さは元からあり、今回主語と不確実性は改善した。内省を伴う現行の形を不適合と断定しない。追問の追加は新しい論点を含むため、最終確認の対象。"
+    }
+  ]
+}

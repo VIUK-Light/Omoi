@@ -1,0 +1,277 @@
+{
+  "scope": "staging-clarity/proposal.json additions 36件の独立レビュー",
+  "status": "review_only_not_applied",
+  "basis": [
+    {"path": "/workspace/Omoi/README.md", "lines": "11-24, 27-32, 51-53, 112", "finding": "社会や価値観について、正解を決めず、違う考えと理由を知る。片方だけが明らかに正しく見える表現を避ける。"},
+    {"path": "/workspace/Omoi/index.html", "lines": "134-148", "finding": "日常の価値観から社会・制度・人生の選択までを扱い、相手の考えを聞く。"},
+    {"path": "/workspace/Omoi/guide.html", "lines": "120-128, 142-161, 180-182", "finding": "L1は身近な価値観、L2は少し意見が分かれる身近なテーマ。答えを評価せず、理由を話す。"},
+    {"path": "/workspace/Omoi/QUESTION_DATA_SCHEMA.md", "lines": "22-25, 39-40", "finding": "L1は経験から始める入口、L2は日常・集団・境界線から違いを扱う橋渡し、L3は制度・社会・役割の判断。背景は結論を押し付けない。"}
+  ],
+  "verdict_policy": {
+    "keep": "現行案で概念に適合。minorの場合の候補文は任意の改善であり、必須修正ではない。",
+    "adjust": "論点は採用できるが、承認前に明記した概念上の問題を修正する。",
+    "hold": "採用を保留する程度の問題。今回は該当なし。",
+    "material": "対話の論点や複数の立場の成立に影響する修正。美文や語尾の好みとは区別する。"
+  },
+  "counts": {"total": 36, "keep": 30, "adjust": 6, "hold": 0, "blocker": 0, "material": 6, "minor": 3, "none": 27},
+  "duplication_review": {
+    "baseline_count": 906,
+    "method": "既存全906問の質問文を読み込んでテーマ語による関連候補検索と正規化完全一致確認を実施。L1・L2全243問も通読し、疑わしい関連候補の判断対象・立場・軸を個別比較した。網羅的な意味重複の自動証明ではない。",
+    "normalized_exact_matches": [],
+    "finding": "同じテーマでも判断する軸や立場が異なるため、下記関連候補を重複によるholdとは判定していない。"
+  },
+  "results": [
+    {
+      "id": "clarity-money_consumption_and_tax-01-l1",
+      "verdict": "keep", "severity": "none",
+      "reason": "買った経験から、価格に対して何に満足するかという個人差を聞ける短い入口。L1に価値対立を追加する必要はない。",
+      "evidence": ["new-questions.md:13『値段以上に満足』", "QUESTION_DATA_SCHEMA.md:22 身近な経験から始める入口", "guide.html:146 日常や身近な価値観"]
+    },
+    {
+      "id": "clarity-money_consumption_and_tax-02-l1",
+      "verdict": "keep", "severity": "none",
+      "reason": "自由に使える仮のお金を、自分は今と将来にどう分けたいかを聞いている。貯金を唯一の正答にしていない。既存の恋人との将来観の衝突とは判断対象が異なる。",
+      "evidence": ["new-questions.md:14『今の楽しみと貯金にどう分けたい』", "QUESTION_DATA_SCHEMA.md:22", "level4.json relationship-134 は結婚後の恋人との価値観差を受け入れるかを聞く"],
+      "related_existing_ids": ["relationship-134"]
+    },
+    {
+      "id": "clarity-money_consumption_and_tax-01-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "使用頻度・費用と、友達と遊ぶ機会を残す価値が競合する。解約手順のノウハウではなく、何を大切に決めるかが問われるL2。",
+      "evidence": ["new-questions.md:15『ほとんど使っていない』『解約するとその遊びには参加できない』", "QUESTION_DATA_SCHEMA.md:23 日常・集団を通した橋渡し"]
+    },
+    {
+      "id": "clarity-money_consumption_and_tax-02-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "将来の修理可能性と、今の支払い余力の優先順が異なり得る。費用を計算させる正解問題になっていない。",
+      "evidence": ["new-questions.md:16『今の予算が限られていたら』『何を基準に』", "guide.html:151 少し意見が分かれる身近なテーマ"]
+    },
+    {
+      "id": "clarity-money_consumption_and_tax-03-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "全員で同じ経験をすることと、各人の予算や希望を尊重することの違いを話せる。既存の割り勘や一人の希望が通らない場合から、旅行の共同性という別の軸へ広げている。",
+      "evidence": ["new-questions.md:17『同じ行程』『一部は別行動』", "QUESTION_DATA_SCHEMA.md:23", "level2.json bridge-001 は決定後の少数者への同調要求、bridge-013 は使った量が異なる費用の分け方"],
+      "related_existing_ids": ["bridge-001", "bridge-013"]
+    },
+    {
+      "id": "clarity-money_consumption_and_tax-01-l3",
+      "verdict": "adjust", "severity": "material",
+      "reason": "事業者の説明責任の範囲を問うL3としては成立する。ただし背景が、必要な料金を分かりやすく示す立場と『すべての条件を同じ大きさ』にする極端な案を対立させ、表示責任を限定する立場の理由を弱く見せている。必須は背景の対立の修正。質問文の候補変更は責任範囲を明確にする追加案。",
+      "evidence": ["new-questions.md:18『どこまで分かりやすくする責任』", "new-questions.md:24『すべての条件を同じ大きさで示すと』『読みにくくなる』", "QUESTION_DATA_SCHEMA.md:40 背景は結論を押し付けず対立・条件を説明", "README.md:112 複数の立場から話せる問い"],
+      "suggested_question": "月額サービスで、料金や解約方法は申込画面に書かれているが、利用者が見落とすこともある。事業者は目立つ表示に加えて、利用者が理解したことまで確認する責任を負うべきだと思う？",
+      "suggested_detail": "仮のサービスの表示について考えるカードです。実在の事業者が法律に違反しているかを判定する問いではありません。\n\n料金や解約方法を見つけやすく示すだけで十分と考える人もいれば、見落としが繰り返されるなら、申込前の確認や通知まで求める人もいます。利用者の理解を確かめる仕組みは負担を増やすこともあります。事業者が伝える責任と利用者が確認する責任を、どこで分けるかを考えます。",
+      "required_change": "背景の対立の組み立て。現在の質問文を残す選択も可能。",
+      "related_existing_ids": ["r6-10-02-l3", "r6-10-06-l3"],
+      "duplication_note": "既存は詐欺広告による損害補償や専門業者の価値情報の伝達義務であり、本案の申込時の表示責任とは対象が異なる。"
+    },
+    {
+      "id": "clarity-housing_community_and_transport-01-l1",
+      "verdict": "keep", "severity": "none",
+      "reason": "住む場所に求める心地よさを聞く好みの問い。生活上の個人差を自然に話せるL1で、政策の知識を要しない。",
+      "evidence": ["new-questions.md:32『便利さ、静かさ、自然の近さ』", "QUESTION_DATA_SCHEMA.md:22", "guide.html:146"]
+    },
+    {
+      "id": "clarity-housing_community_and_transport-02-l1",
+      "verdict": "keep", "severity": "none",
+      "reason": "日常でどんな場所がほしいかを想像して話せる。既存の『落ち着く場所は？』と近いが、現在の場所の紹介と、地域に新たにほしい場所の希望では答える対象が異なる。",
+      "evidence": ["new-questions.md:33『家の近く』『一つ増えるなら』", "QUESTION_DATA_SCHEMA.md:22", "level1.json daily-010『落ち着く場所は？』"],
+      "related_existing_ids": ["daily-010"]
+    },
+    {
+      "id": "clarity-housing_community_and_transport-01-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "同じ共有空間への異なる日常の希望を明示し、時間・場所・自由・制限のどれを優先するか話せる。問いは方法を聞くが、価値の違いが質問内にあるためノウハウだけにはならない。",
+      "evidence": ["new-questions.md:34『遊ぶ場所』『静かに休む場所』", "QUESTION_DATA_SCHEMA.md:23 日常・集団・境界線"]
+    },
+    {
+      "id": "clarity-housing_community_and_transport-02-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "誰もが集まれる条件と行先への好みの衝突を自分たちの外出として話せる。車がない人の生活判断や社会インフラの制度判断には踏み込んでいない。",
+      "evidence": ["new-questions.md:35『集まりやすい場所と、行きたい場所が違ったら』", "QUESTION_DATA_SCHEMA.md:23"]
+    },
+    {
+      "id": "clarity-housing_community_and_transport-03-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "自分の出費と身近な地域を支えたい気持ちの優先順を聞く。『応援したい』という仮の希望はあるが、安い店を選ぶ理由も問いの中で認めている。",
+      "evidence": ["new-questions.md:36『少し離れた店の方が安い』『どう考える』", "guide.html:151"]
+    },
+    {
+      "id": "clarity-housing_community_and_transport-01-l3",
+      "verdict": "keep", "severity": "minor",
+      "reason": "自治体の公共施設の判断なのでL3に適合。背景には記憶・景観と費用・使いやすさが示され、複数の立場が成立する。任意の改善として、質問だけ読む場合にも残す理由が伝わるとよい。",
+      "evidence": ["new-questions.md:37 自治体の空き家活用と新築の比較", "new-questions.md:43『地域の記憶や景観』", "QUESTION_DATA_SCHEMA.md:24 制度・社会・役割の判断"],
+      "suggested_question": "自治体が、地域の人に親しまれてきた空き家を集会所に変える案を検討している。新しく建てる方が費用を抑え、使いやすくできるとしたら、建物を残すことと、費用や使いやすさをどう比べるべきだと思う？",
+      "required_change": "なし。候補文は任意で、費用比較の仮定も変更するためそのまま置換しない。"
+    },
+    {
+      "id": "clarity-climate_environment_energy_and_disaster-01-l1",
+      "verdict": "keep", "severity": "none",
+      "reason": "電気を使わない好きな遊びを入口に、日常の楽しみの違いを聞ける。省エネをしなければならないという誘導はない。カテゴリーに沿うL1へ社会的な対立を無理に入れなくてよい。",
+      "evidence": ["new-questions.md:51『好きなものはある？』", "QUESTION_DATA_SCHEMA.md:22", "guide.html:146"]
+    },
+    {
+      "id": "clarity-climate_environment_energy_and_disaster-02-l1",
+      "verdict": "keep", "severity": "none",
+      "reason": "身近な自然を好む理由の違いを話せるL1。屋外活動を評価する問いではなく、仮の場面で好みを聞いている。",
+      "evidence": ["new-questions.md:52『散歩や外遊びをするなら』『どんなところが好き』", "QUESTION_DATA_SCHEMA.md:22"]
+    },
+    {
+      "id": "clarity-climate_environment_energy_and_disaster-01-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "食べきれるか不確かな状況で、家計の節約と廃棄を避けたい希望を比べる。食べ残しを避ける作法の確認や、お得さの算数になっていない。",
+      "evidence": ["new-questions.md:53『食べきれるか分からない』『安さと食べ残しを出さないこと』", "QUESTION_DATA_SCHEMA.md:23"]
+    },
+    {
+      "id": "clarity-climate_environment_energy_and_disaster-02-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "自分の日常の時間と環境への負担をどう比べるかを聞くL2。既存の環境配慮の要求を他者に行う問いや、一般に不便を受け入れるべきかという問いと、判断の立場・範囲が違う。",
+      "evidence": ["new-questions.md:54『どんな外出なら』『時間をかけても』", "QUESTION_DATA_SCHEMA.md:23", "level2.json bridge-023 は周囲への配慮要求、level3.json environment-001 は一般的な受容義務"],
+      "related_existing_ids": ["bridge-023", "environment-001"]
+    },
+    {
+      "id": "clarity-climate_environment_energy_and_disaster-03-l2",
+      "verdict": "keep", "severity": "minor",
+      "reason": "準備段階で共有する物を選ぶ場面なら、多数の使いやすさと少数に必要な配慮の優先順を安全に話せるL2。任意の改善として『みんな』を小さな集団に限定すると、自治体の制度判断や緊急の救命配分へ読み替わる可能性を減らせる。",
+      "evidence": ["new-questions.md:55『置き場所が限られている』であり、災害中の救命選択ではない", "QUESTION_DATA_SCHEMA.md:23-25", "level3.json ethics-008 は自治体予算、level4.json disaster-010 は実際の避難所の電力と医療機器"],
+      "suggested_question": "仲間で活動する場所に、防災用品を置く棚が一つある。みんなが使う物と、少数の仲間に欠かせない物を置きたいが、全部は入らない。何を大事にして選びたい？",
+      "required_change": "なし。小さな集団の備えとして読む限りL2で成立する。",
+      "related_existing_ids": ["ethics-008", "disaster-010"]
+    },
+    {
+      "id": "clarity-climate_environment_energy_and_disaster-01-l3",
+      "verdict": "keep", "severity": "none",
+      "reason": "地域の計画で、電気を得る利益と近隣の景観への影響を示し、誰の意見を決定に含めるかを問うL3。単に再生可能エネルギーへの賛否を正答化しない。",
+      "evidence": ["new-questions.md:56『電気を確保できる一方』『景観が変わる』『誰と』", "new-questions.md:62 場所の変更・計画見送りも含めた背景", "QUESTION_DATA_SCHEMA.md:24,40"]
+    },
+    {
+      "id": "clarity-democracy_rights_and_participation-01-l1",
+      "verdict": "keep", "severity": "none",
+      "reason": "自分が話しやすい場の好みと経験を聞く短い入口。既存の声が大きい人に偏った決定をどう改善するかという問いとは異なり、L1として気軽に答えられる。",
+      "evidence": ["new-questions.md:70『自分の意見を話しやすい』", "QUESTION_DATA_SCHEMA.md:22", "level2.json bridge-028 はほかの人の発言機会を作る方法"],
+      "related_existing_ids": ["bridge-028"]
+    },
+    {
+      "id": "clarity-democracy_rights_and_participation-02-l1",
+      "verdict": "keep", "severity": "none",
+      "reason": "集団の中で好きな役割を聞くL1。聞き役やまとめ役を優れた人格として評価する構造がなく、各人が好きな理由を話せる。",
+      "evidence": ["new-questions.md:71『どの役割が好き』", "guide.html:146", "QUESTION_DATA_SCHEMA.md:22"]
+    },
+    {
+      "id": "clarity-democracy_rights_and_participation-01-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "身近なグループの投票で、意思の透明性と気兼ねなく選べることを比べるL2。国政選挙の法的制度を知っているかという問題ではない。",
+      "evidence": ["new-questions.md:72『グループの方針』『見せる』『名前を出さず』", "QUESTION_DATA_SCHEMA.md:23"]
+    },
+    {
+      "id": "clarity-democracy_rights_and_participation-02-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "聞くことと早い判断の優先順が変わる場面を考えられる。両方できる人を否定しておらず、『どんな場合』によって価値観・条件を話せる。",
+      "evidence": ["new-questions.md:73『どんな場合にどちら』", "QUESTION_DATA_SCHEMA.md:23", "README.md:112"]
+    },
+    {
+      "id": "clarity-democracy_rights_and_participation-03-l2",
+      "verdict": "adjust", "severity": "material",
+      "reason": "『よく使う人だけで決めていい？』『意見も聞くべき？』では、聞くことの費用・時間・責任の違いがないため、意見を聞く方だけが配慮ある答えに見えやすい。範囲を広げる価値と、早く決める価値が見える条件を加える。",
+      "evidence": ["new-questions.md:74『だけ』『も聞くべき』", "README.md:112 片方だけが明らかに正しく見える表現を避ける", "guide.html:151 意見が分かれる身近なテーマ"],
+      "suggested_question": "みんなで使う場所のルールを急いで決める必要がある。よく使う人は早く決めたいが、あまり使っていない人にも希望がある。意見を聞く範囲と、決める早さをどう考えたい？",
+      "required_change": "参加を広げることと他の価値が競合する条件を、質問の中に示す。",
+      "related_existing_ids": ["bridge-001", "bridge-028"],
+      "duplication_note": "本案はルールを決める前の参加範囲。既存の少数者への同調要求や、発言しにくい場の改善とは同一ではない。"
+    },
+    {
+      "id": "clarity-democracy_rights_and_participation-01-l3",
+      "verdict": "adjust", "severity": "material",
+      "reason": "行政の役割というL3配置は適切。ただし質問単独では、参加できない人の意見を集める方法の相談になりやすい。背景には費用・時間との緊張があるので、それを質問にも出し、参加の確保をどこまで求めるかという判断にする。",
+      "evidence": ["new-questions.md:75『どのように集め、判断に反映』", "new-questions.md:81『確認や整理にも費用と時間』", "README.md:20 背景は必要なら見る補助", "QUESTION_DATA_SCHEMA.md:24 制度・社会・役割の判断"],
+      "suggested_question": "地域の計画を話し合う平日の昼の説明会に、参加できない人がいる。別の時間の開催や意見募集には追加の費用と時間がかかるなら、行政は参加機会と計画を進める早さをどう比べるべきだと思う？",
+      "required_change": "方法の工夫だけでなく、行政が何をどこまで優先するかを質問内で話せるようにする。"
+    },
+    {
+      "id": "clarity-international_peace_and_cooperation-01-l1",
+      "verdict": "keep", "severity": "none",
+      "reason": "他国の暮らしへの好奇心を聞く入口。特定の国への評価や正しい知識を求めず、知りたい理由の個人差を話せる。",
+      "evidence": ["new-questions.md:89『もっと知ってみたいこと』", "QUESTION_DATA_SCHEMA.md:22"]
+    },
+    {
+      "id": "clarity-international_peace_and_cooperation-02-l1",
+      "verdict": "keep", "severity": "none",
+      "reason": "方法を聞く形でも、『最適な方法』ではなく自分が試したいことを聞いているため、身振り・絵・翻訳などへの好みの違いを話せるL1。会話の正答を教える問いではない。",
+      "evidence": ["new-questions.md:90『どんな方法を試してみたい』", "guide.html:146 日常や身近な価値観", "QUESTION_DATA_SCHEMA.md:22"]
+    },
+    {
+      "id": "clarity-international_peace_and_cooperation-01-l2",
+      "verdict": "adjust", "severity": "material",
+      "reason": "一方だけがいつも深夜という不公平と『お互いの生活を大切に』を先に置き、どう約束するかを聞くので、配慮ある連絡方法を考えるマナー・ノウハウ相談に寄る。両者にどのような負担があるか、会話を維持する価値との競合を入れるとL2の対話になる。",
+      "evidence": ["new-questions.md:91『いつも相手にとって深夜』『お互いの生活を大切にするなら』", "QUESTION_DATA_SCHEMA.md:23 意見の違いを扱う橋渡し", "guide.html:151"],
+      "suggested_question": "別の国に住む友達との通話は、どの時間にしても片方の睡眠時間に重なる。交代で負担することと、通話を減らすことなら、どう決めたい？",
+      "required_change": "互いの負担や会話を続けたい理由の違いを、方法以外の判断として話せる条件にする。",
+      "related_existing_ids": ["contact-003", "contact-016", "bridge-016"],
+      "duplication_note": "既存は好みの連絡頻度や遅刻への対応。時差により両者の時間負担をどう配分するかは別の軸。"
+    },
+    {
+      "id": "clarity-international_peace_and_cooperation-02-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "自宅での慣習と招いた相手の希望を両方示し、境界線とどこまで合わせるかを話せる。特定の習慣を優劣付けせず、異なる希望を持つ理由を聞くL2になる。",
+      "evidence": ["new-questions.md:92『自分の家のやり方と、相手の希望』", "QUESTION_DATA_SCHEMA.md:23 日常・集団・境界線"]
+    },
+    {
+      "id": "clarity-international_peace_and_cooperation-03-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "少額の寄付という身近な選択を通じ、地理的な近さに特別な重みを置くかを話せる。既存の親しい友達を優先するかに似るが、親密さによる義務と地理的近さによる連帯は区別でき、重複で保留する根拠はない。",
+      "evidence": ["new-questions.md:93『場所の近さは』『理由になる？』", "QUESTION_DATA_SCHEMA.md:23", "level2.json ethics-001 は友人への親密さと援助順"],
+      "related_existing_ids": ["ethics-001"]
+    },
+    {
+      "id": "clarity-international_peace_and_cooperation-01-l3",
+      "verdict": "keep", "severity": "none",
+      "reason": "国をまたぐ資源のルールを決める基準というL3。上流の経済と下流の生活・農業を考えられ、背景も人口・利用歴・代替水源など複数の重み付けを支える。国際法の正しい知識を回答として求めない。",
+      "evidence": ["new-questions.md:94 二国の水利用と基準", "new-questions.md:98-100 架空の場面と双方の理由・比較条件", "QUESTION_DATA_SCHEMA.md:24,40"]
+    },
+    {
+      "id": "clarity-science_research_and_uncertainty-01-l1",
+      "verdict": "keep", "severity": "none",
+      "reason": "身近な好奇心を言葉にする入口。知識量や、調べた経験の成否を評価せず、何に関心を持つかの違いを話せる。",
+      "evidence": ["new-questions.md:108『調べてみたくなった』", "QUESTION_DATA_SCHEMA.md:22"]
+    },
+    {
+      "id": "clarity-science_research_and_uncertainty-02-l1",
+      "verdict": "keep", "severity": "none",
+      "reason": "試すことと説明を読むことへの個人の好みを聞くL1。危険な物の扱いを前提にせず、どちらが正しい学習法かを決めていない。",
+      "evidence": ["new-questions.md:109『まず試したい？』『説明を読んでから試したい？』", "guide.html:146", "QUESTION_DATA_SCHEMA.md:22"]
+    },
+    {
+      "id": "clarity-science_research_and_uncertainty-01-l2",
+      "verdict": "adjust", "severity": "material",
+      "reason": "『一度成功したからいつでも使える』という明白な一般化を提示し、確認項目を聞くため、意見の違いを知る問いより科学リテラシーの演習に寄る。確認には客観的に適切な項目があり、確認しない立場は軽率に見えやすい。試す・待つ・普段の方法を続ける価値が成立する場面へ修正する。",
+      "evidence": ["new-questions.md:110『一度』『いつでも』『何を確かめたい』", "README.md:23-24 正解を決めず理由を話す", "README.md:112", "QUESTION_DATA_SCHEMA.md:23"],
+      "suggested_question": "友達が一度試してうまくいった勉強法を勧めている。テストまで時間が少ないなら、まだ確かめられていない方法を試すことと、いつもの方法を続けることを、何で決めたい？",
+      "required_change": "確認項目の正答を挙げる構造から、不確実な方法を採用する基準を話す構造に変える。"
+    },
+    {
+      "id": "clarity-science_research_and_uncertainty-02-l2",
+      "verdict": "keep", "severity": "none",
+      "reason": "サンプルの狭さに気づく場面だが、『信用してはいけない』が唯一の答えではない。同じ趣味の人の評価を自分に合う手掛かりと見ることも、幅広い評価を重視することも成立し、どこまで参考にするかを話せる。科学L2を一律にリテラシー問題と判定しない。",
+      "evidence": ["new-questions.md:111『同じ趣味の友達だけ』『どこまで参考に』", "QUESTION_DATA_SCHEMA.md:23", "level2.json bridge-027 は多数意見を問い直すことへの同調圧力"],
+      "related_existing_ids": ["bridge-027"],
+      "duplication_note": "評判の自分への当てはまりと、集団で確認を口にすることへの圧力では判断の軸が違う。"
+    },
+    {
+      "id": "clarity-science_research_and_uncertainty-03-l2",
+      "verdict": "adjust", "severity": "material",
+      "reason": "成功・失敗の両方があるとき『失敗をどこまで伝える』だけを聞くと、詳しく正直に伝える方がよいという指導に寄りやすい。現在は詳しさを限定したい理由がなく、科学への誠実さの採点になるおそれがある。時間や伝わりやすさとの競合を示し、説明の優先順の違いを話す形にする。",
+      "evidence": ["new-questions.md:112『失敗した条件をどこまで伝えたい』", "README.md:112", "guide.html:182 答えを評価せず理由を話す", "QUESTION_DATA_SCHEMA.md:23"],
+      "suggested_question": "自分たちが作った道具を短い時間で紹介する。成功した例を中心にすると分かりやすいが、失敗した条件まで話すと説明が複雑になる。何を必ず伝え、何を後から説明する形にしたい？",
+      "required_change": "失敗情報を省くことを正当化するのではなく、何をどの段階で伝えるかの価値の競合を明示する。",
+      "related_existing_ids": ["bridge-017", "bridge-015"],
+      "duplication_note": "既存はグループの評価で役割を説明する範囲や未確認のうわさを広める責任。本案は試験の条件を相手へ伝える優先順。"
+    },
+    {
+      "id": "clarity-science_research_and_uncertainty-01-l3",
+      "verdict": "keep", "severity": "minor",
+      "reason": "研究者・発信者の役割について、早い知識共有と誤認のリスクを比べるL3として適合。背景では確かめる人に届ける利点も示され、『独立した再現前なら公開してはいけない』という誤った単一の正答にはしていない。任意で公表先を明確にすると、研究者間の共有と一般向け発表を同じ判断だと読み違えにくい。",
+      "evidence": ["new-questions.md:113 公表時期の判断", "new-questions.md:119『ほかの研究者が確かめたり』『公表の時期、伝える相手、不確かな点の示し方』", "QUESTION_DATA_SCHEMA.md:24,40"],
+      "suggested_question": "新しい研究で期待できそうな結果が出たが、別の人が同じ方法で確かめた結果はまだない。研究者同士での共有と、一般の人への発表では、時期や伝え方を変えるべきだと思う？",
+      "required_change": "なし。現在の背景に伝える相手を分ける補助があり、現行案でも適合する。"
+    }
+  ]
+}

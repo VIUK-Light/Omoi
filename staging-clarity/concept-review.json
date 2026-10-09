@@ -1,0 +1,298 @@
+{
+  "status": "review_complete_not_applied",
+  "date": "2026-10-05",
+  "proposal_status": "pending_approval",
+  "baseline_commit": "da9ba6389a48cf0297c1a8f82b6590d08d4e7ea1",
+  "overall_verdict": "方向性はOmoiの概念に適合。現案の一括反映前に質問・背景9件と分類移動4件を見直す。",
+  "concept_sources": [
+    "README.md:11",
+    "README.md:13",
+    "README.md:23",
+    "README.md:112",
+    "QUESTION_DATA_SCHEMA.md:22",
+    "QUESTION_DATA_SCHEMA.md:40",
+    "guide.html:123",
+    "guide.html:182"
+  ],
+  "independent_review_reports": {
+    "revisions": {
+      "json": "agent-reviews/revisions.json",
+      "markdown": "agent-reviews/revisions.md"
+    },
+    "additions": {
+      "json": "agent-reviews/additions.json",
+      "markdown": "agent-reviews/additions.md"
+    },
+    "categories": {
+      "json": "agent-reviews/categories.json",
+      "markdown": "agent-reviews/categories.md"
+    },
+    "concept": {
+      "json": "agent-reviews/concept.json",
+      "markdown": "agent-reviews/concept.md"
+    }
+  },
+  "coverage_checks": {
+    "revisions": {
+      "expected": 30,
+      "reviewed": 30,
+      "missing_ids": [],
+      "extra_ids": [],
+      "duplicate_ids": []
+    },
+    "additions": {
+      "expected": 36,
+      "reviewed": 36,
+      "missing_ids": [],
+      "extra_ids": [],
+      "duplicate_ids": []
+    },
+    "categories": {
+      "expected": 6,
+      "reviewed": 6,
+      "missing_ids": [],
+      "extra_ids": [],
+      "duplicate_ids": []
+    },
+    "category_moves": {
+      "expected": 63,
+      "reviewed": 63,
+      "missing_ids": [],
+      "extra_ids": [],
+      "duplicate_ids": []
+    }
+  },
+  "independent_verdict_counts": {
+    "revisions": {
+      "keep": 24,
+      "adjust": 6
+    },
+    "additions": {
+      "keep": 30,
+      "adjust": 6
+    },
+    "categories": {
+      "adjust": 2,
+      "keep": 4
+    },
+    "category_moves": {
+      "keep": 56,
+      "hold": 2,
+      "adjust": 5
+    }
+  },
+  "consolidated_recommendations": {
+    "priority_question_or_background_count": 9,
+    "priority_question_or_background": [
+      {
+        "id": "bridge-002",
+        "kind": "question",
+        "severity": "material",
+        "origin": "introduced",
+        "reason": "心配と催促の境界判断を、負担の少ない伝え方の助言へ変えている。",
+        "reviewers": [
+          "revisions",
+          "concept"
+        ]
+      },
+      {
+        "id": "criminal-justice-001",
+        "kind": "question_and_related_background",
+        "severity": "material",
+        "origin": "introduced",
+        "reason": "両方大切という一般論で終わらない具体的な制度判断を残す。候補の採用は論点変更として確認する。",
+        "reviewers": [
+          "revisions",
+          "concept"
+        ]
+      },
+      {
+        "id": "stigma-001",
+        "kind": "question",
+        "severity": "material",
+        "origin": "persistent",
+        "reason": "L4・affectedを維持するなら自分が呼び名で扱われる状況を補う。短文化は改善。",
+        "reviewers": [
+          "revisions"
+        ]
+      },
+      {
+        "id": "r6-13-03-l4-conv",
+        "kind": "question",
+        "severity": "material",
+        "origin": "introduced",
+        "reason": "未確認の窓口需要と、支援自体の必要性を区別する。L4の利害は成立している。",
+        "reviewers": [
+          "revisions"
+        ]
+      },
+      {
+        "id": "FAN-J02-L4",
+        "kind": "question",
+        "severity": "minor",
+        "origin": "improved_but_remaining",
+        "reason": "推しにお金や時間を使う主語を明示する。",
+        "reviewers": [
+          "revisions"
+        ]
+      },
+      {
+        "id": "FAN-B02-L4",
+        "kind": "question",
+        "severity": "minor",
+        "origin": "improved_but_remaining",
+        "reason": "性別以外の比較条件を同じと明記し、背景と揃える。",
+        "reviewers": [
+          "revisions"
+        ]
+      },
+      {
+        "id": "clarity-science_research_and_uncertainty-01-l2",
+        "kind": "question",
+        "severity": "material",
+        "origin": "new_card",
+        "reason": "明白な一般化の誤りを直す演習から、不確かな方法を試す基準の対話へ変える。",
+        "reviewers": [
+          "additions",
+          "concept"
+        ]
+      },
+      {
+        "id": "clarity-democracy_rights_and_participation-03-l2",
+        "kind": "question",
+        "severity": "material",
+        "origin": "new_card",
+        "reason": "参加を広げる側だけが配慮ある答えに見えやすいので、時間や期限との条件を示す。",
+        "reviewers": [
+          "additions"
+        ]
+      },
+      {
+        "id": "clarity-money_consumption_and_tax-01-l3",
+        "kind": "background",
+        "severity": "material",
+        "origin": "new_card",
+        "reason": "同じ表示責任の条件で立場を説明する。質問文の差し替えは必須ではない。",
+        "reviewers": [
+          "additions",
+          "concept"
+        ]
+      }
+    ],
+    "priority_category_move_count": 4,
+    "priority_category_moves": [
+      {
+        "id": "r6-03-01-l3",
+        "recommendation": "cancel_move",
+        "suggested_category": "work_and_economy"
+      },
+      {
+        "id": "r6-03-01-l4",
+        "recommendation": "cancel_move",
+        "suggested_category": "work_and_economy"
+      },
+      {
+        "id": "r6-03-02-l3",
+        "recommendation": "adjust_destination",
+        "suggested_category": "society_public_policy_and_environment"
+      },
+      {
+        "id": "r6-03-02-l4",
+        "recommendation": "adjust_destination_or_keep_with_primary_topic_reason",
+        "suggested_category": "society_public_policy_and_environment",
+        "alternative_category": "work_and_economy"
+      }
+    ],
+    "optional_question_or_background_ids": [
+      "environment-002",
+      "FAN-B01-L4",
+      "FAN-G04-L4",
+      "clarity-housing_community_and_transport-01-l3",
+      "clarity-climate_environment_energy_and_disaster-03-l2",
+      "clarity-science_research_and_uncertainty-01-l3",
+      "clarity-science_research_and_uncertainty-03-l2",
+      "clarity-international_peace_and_cooperation-01-l2",
+      "clarity-democracy_rights_and_participation-01-l3"
+    ],
+    "optional_category_boundary_ids": [
+      "r6-06-03-l4",
+      "r6-06-06-l3",
+      "r6-06-06-l4"
+    ],
+    "all_six_new_themes_conceptually_suitable": true,
+    "judgment_differences": [
+      {
+        "id": "clarity-science_research_and_uncertainty-03-l2",
+        "independent": "additions: adjust/material",
+        "consolidated": "optional",
+        "reason": "説明する範囲の境界判断として成立し、唯一の正解とは限らない。"
+      },
+      {
+        "id": "clarity-international_peace_and_cooperation-01-l2",
+        "independent": "additions: adjust/material",
+        "consolidated": "optional",
+        "reason": "約束の頻度・方法・負担配分と理由の違いは話せる。"
+      },
+      {
+        "id": "clarity-democracy_rights_and_participation-01-l3",
+        "independent": "additions: adjust/material; concept: optional/minor",
+        "consolidated": "optional",
+        "reason": "制度判断として成立し、背景に費用・時間の条件がある。"
+      },
+      {
+        "id": "clarity-money_consumption_and_tax-01-l3",
+        "independent": "additions: adjust/material; concept: optional/minor",
+        "consolidated": "priority_background_only",
+        "reason": "双方が比較条件のずれを指摘。本文は維持できる。"
+      },
+      {
+        "id": "r6-13-03-l4-conv",
+        "independent": "revisions: adjust/material; concept: good_example",
+        "consolidated": "priority_semantic_precision",
+        "reason": "L4の利害は成立し、未確認の需要の表現だけを正確に戻す。"
+      },
+      {
+        "ids": [
+          "clarity-science_research_and_uncertainty-02-l1",
+          "clarity-science_research_and_uncertainty-02-l2"
+        ],
+        "independent": "categories: review_low_level_entry; additions: keep",
+        "consolidated": "keep",
+        "reason": "L1の好みとL2の評判の当てはまりを話す入口として成立する。"
+      }
+    ]
+  },
+  "integrity": {
+    "production_datasets_unchanged": true,
+    "proposal_unchanged": true,
+    "production_sha256": {
+      "level1.json": "b0f287b5059521569a53bccd1244511148411f8cce00b8e7befafe05f0b19fc6",
+      "level2.json": "513e901439709b04225c731a5a46a3b9192f59e7b4142a721ff6f88cf5bba49c",
+      "level3.json": "c4b9a770076e1258b2c2691eb94d09e6f94b2bdd5ced837dbb1aeb8e9874484a",
+      "level4.json": "18ede7bc02211f45772fdee1eb6cbb06c447762904ca3312a3eebcde334c1972"
+    },
+    "proposal_sha256": "3cccc8564d494538107ef6083f1cff32b0844b48ecbeb07b13456405336028c6"
+  },
+  "experience_effect": {
+    "category_selection_added": false,
+    "category_balancing_added": false,
+    "l2_relationship_and_school_current": {
+      "count": 64,
+      "total": 80,
+      "percent": 80.0
+    },
+    "l2_relationship_and_school_proposed": {
+      "count": 64,
+      "total": 98,
+      "percent": 65.3
+    },
+    "category_moves_affect_current_random_selection": false
+  },
+  "limits": [
+    "既存906問全体の概念再監査ではない。",
+    "意味上の重複が一切ないことを証明していない。",
+    "利用者との実際の対話による理解度は未検証。",
+    "既存解説の法律・事実・出典の全面検証は未実施。"
+  ],
+  "approval_boundary": "問題・分類の変更は未反映。修正候補を採用する場合も変更前後を示した最終案へのユーザー確認を得てから反映する。"
+}

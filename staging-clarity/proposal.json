@@ -1,0 +1,1274 @@
+{
+  "version": 1,
+  "status": "pending_approval",
+  "baseline_commit": "da9ba6389a48cf0297c1a8f82b6590d08d4e7ea1",
+  "baseline_sha256": {
+    "level1.json": "b0f287b5059521569a53bccd1244511148411f8cce00b8e7befafe05f0b19fc6",
+    "level2.json": "513e901439709b04225c731a5a46a3b9192f59e7b4142a721ff6f88cf5bba49c",
+    "level3.json": "c4b9a770076e1258b2c2691eb94d09e6f94b2bdd5ced837dbb1aeb8e9874484a",
+    "level4.json": "18ede7bc02211f45772fdee1eb6cbb06c447762904ca3312a3eebcde334c1972"
+  },
+  "new_categories": [
+    {
+      "id": "money_consumption_and_tax",
+      "label": "お金・買い物・税",
+      "scope": "家計、買い物、価格、契約、財産、税の負担。働き方・雇用は work_and_economy、公的給付は society_public_policy_and_environment に残す。"
+    },
+    {
+      "id": "housing_community_and_transport",
+      "label": "住まい・地域・交通",
+      "scope": "住まい、近隣の暮らし、公共空間、観光と住民生活、移動、地域インフラ。家族内の介護や運転の判断は家族・健康の分類を優先する。"
+    },
+    {
+      "id": "climate_environment_energy_and_disaster",
+      "label": "環境・エネルギー・防災",
+      "scope": "気候、環境、資源、エネルギー、災害への備え、避難、復旧。主な論点が性別の扱いの場合は gender_sexuality_and_identity を優先する。"
+    },
+    {
+      "id": "democracy_rights_and_participation",
+      "label": "民主主義・市民参加",
+      "scope": "意思決定への参加、代表、投票、政治家の責任、政治的な表現の自由。対外関係や国防は international_peace_and_cooperation に分ける。"
+    },
+    {
+      "id": "international_peace_and_cooperation",
+      "label": "国際・平和・協力",
+      "scope": "国をまたぐ暮らしや交流、国際協力、国防、平和、外交、人権と対外関係。国内の移住者支援は従来の社会政策の分類を基本にする。"
+    },
+    {
+      "id": "science_research_and_uncertainty",
+      "label": "科学・研究",
+      "scope": "確かめ方、調査、証拠、不確実性、研究への参加、研究倫理。治療や健康についての判断は health_and_disability を優先する。"
+    }
+  ],
+  "revisions": [
+    {
+      "id": "contact-004",
+      "level": 1,
+      "kind": "表現・用語の明確化",
+      "reason": "「寝落ち電話」の意味を質問だけで分かるようにする。",
+      "before": {
+        "question": "寝落ち電話は好き？"
+      },
+      "after": {
+        "question": "電話をつないだまま眠る「寝落ち電話」は好き？"
+      }
+    },
+    {
+      "id": "friendship-012",
+      "level": 1,
+      "kind": "表現・用語の明確化",
+      "reason": "「ネッ友」「リア友」という略語を普段の言葉にする。",
+      "before": {
+        "question": "ネッ友とリア友って、どっちが話しやすいと思う？"
+      },
+      "after": {
+        "question": "ネットで知り合った友達と、普段会っている友達では、どちらが話しやすい？"
+      }
+    },
+    {
+      "id": "romance-031",
+      "level": 1,
+      "kind": "問いの具体化",
+      "reason": "「重い」の意味を、愛情の受け止め方として具体化する。",
+      "before": {
+        "question": "「重い」と「愛情深い」の違いって何だと思う？"
+      },
+      "after": {
+        "question": "恋人からの愛情を、うれしいと感じるときと、負担に感じるとき。何が違うと思う？"
+      }
+    },
+    {
+      "id": "conflict-013",
+      "level": 1,
+      "kind": "表現・用語の明確化",
+      "reason": "「どうなる」が、何について聞いているのかを明示する。",
+      "before": {
+        "question": "本音を言えない時はどうなる？"
+      },
+      "after": {
+        "question": "本音を言えないとき、気持ちや態度にどんな変化が出る？"
+      }
+    },
+    {
+      "id": "support-003",
+      "level": 2,
+      "kind": "問いの具体化",
+      "reason": "「解決できること」を友達同士のトラブルに絞り、相談との判断軸を示す。",
+      "before": {
+        "question": "友達同士で解決できることって何？"
+      },
+      "after": {
+        "question": "友達同士のトラブルで、自分たちだけで解決できそうなことと、誰かに相談したいことは何が違う？"
+      }
+    },
+    {
+      "id": "support-008",
+      "level": 2,
+      "kind": "問いの具体化",
+      "reason": "評価が分かれる場面を置き、「チクる」の意味を文脈で説明する。",
+      "before": {
+        "question": "「先生に言う」と「チクる」の違いは？"
+      },
+      "after": {
+        "question": "友達の行動を先生に伝えた人が「チクった」と責められている。相談と告げ口の違いを、何で判断する？"
+      }
+    },
+    {
+      "id": "bridge-002",
+      "level": 2,
+      "kind": "問いの具体化",
+      "reason": "抽象的な「境界」を、連絡するときの伝え方へ置き換える。",
+      "before": {
+        "question": "返事が遅い友達に、心配していることを伝えるのと催促することの境界はどこだと思う？"
+      },
+      "after": {
+        "question": "返事が遅い友達を心配して、もう一度連絡したい。どんな伝え方なら、返事を急がせる負担になりにくいと思う？"
+      }
+    },
+    {
+      "id": "bridge-009",
+      "level": 2,
+      "kind": "問いの具体化",
+      "reason": "「違う秘密」と「中立」が何を指すか分かる場面を示す。",
+      "before": {
+        "question": "別々の友達から、同じ出来事について違う秘密を聞いたら、どこまで中立でいられると思う？"
+      },
+      "after": {
+        "question": "同じ出来事について、二人の友達から食い違う説明を聞いた。二人とも「誰にも言わないで」と頼んでいる。どちらかの味方になるか、どう決める？"
+      }
+    },
+    {
+      "id": "family-law-001",
+      "level": 3,
+      "kind": "表現・用語の明確化",
+      "reason": "制度名を知らなくても問いに入れるようにし、現行制度の説明と制度への意見を混同しない。",
+      "before": {
+        "question": "離婚後は共同親権を原則にするべきだと思う？"
+      },
+      "after": {
+        "question": "離婚後も、両方の親が子どもの養育について法的な責任と権限を持つ「共同親権」。\nこの形を基本にするべきだと思う？"
+      }
+    },
+    {
+      "id": "family-law-003",
+      "level": 3,
+      "kind": "表現・用語の明確化",
+      "reason": "何が選択できる制度なのかを質問内で説明する。",
+      "before": {
+        "question": "選択的夫婦別姓を認めるべきだと思う？"
+      },
+      "after": {
+        "question": "結婚後も、希望する夫婦はそれぞれの名字を使えるようにする「選択的夫婦別姓」を認めるべきだと思う？"
+      }
+    },
+    {
+      "id": "criminal-justice-001",
+      "level": 3,
+      "kind": "論点の見直し",
+      "reason": "解説が扱う「両立」と、質問文の二者択一が食い違っているため、問いの軸も見直す。",
+      "before": {
+        "question": "性被害者の保護と、冤罪を防ぐことは、どちらをより重視するべき？"
+      },
+      "after": {
+        "question": "性被害を訴えた人を守ることと、無実の人が罰せられるのを防ぐこと。\n両方を守るために、相談への対応と、事実を確かめる手続きでは何を大切にするべきだと思う？"
+      }
+    },
+    {
+      "id": "justice-004",
+      "level": 3,
+      "kind": "表現・用語の明確化",
+      "reason": "「仮釈放」を説明し、判断する場面と問いたいことを分ける。",
+      "before": {
+        "question": "更生が進んだと判断された受刑者の仮釈放を、被害を受けた人が強く望んでいない。その意向を、仮釈放の判断でどこまで重く見るべきだと思う？"
+      },
+      "after": {
+        "question": "更生が進んだ受刑者を、刑期の途中で条件付きで社会に戻す「仮釈放」が検討されている。\n被害を受けた人が反対している場合、その気持ちを判断にどこまで反映するべきだと思う？"
+      }
+    },
+    {
+      "id": "medicine-001",
+      "level": 3,
+      "kind": "前提の明確化",
+      "reason": "生きている間の提供とも読めるあいまいさをなくし、拒否していないことを同意と扱う論点を明示する。",
+      "before": {
+        "question": "臓器提供は、本人が拒否していなければ提供する仕組みにしてもいいと思う？"
+      },
+      "after": {
+        "question": "亡くなった後の臓器提供について、本人が拒否の意思を示していなければ、提供に同意したとみなす仕組みをどう思う？"
+      }
+    },
+    {
+      "id": "family-policy-001",
+      "level": 3,
+      "kind": "表現・用語の明確化",
+      "reason": "「代理出産」という制度・行為の意味を補う。",
+      "before": {
+        "question": "代理出産を認めるべきだと思う？"
+      },
+      "after": {
+        "question": "子どもを望む人に代わって、別の人が妊娠・出産を担う「代理出産」を認めるべきだと思う？"
+      }
+    },
+    {
+      "id": "technology-004",
+      "level": 3,
+      "kind": "前提の明確化",
+      "reason": "AIの何のための利用か、誰の許可かを明示する。法律上の可否を断言する文にはしない。",
+      "before": {
+        "question": "AIの学習に、公開されている作品を許可なく使ってもいいと思う？"
+      },
+      "after": {
+        "question": "文章や画像を作るAIを開発するために、ネットで公開されている作品を、作者の許可なしで学習に使うことをどう思う？"
+      }
+    },
+    {
+      "id": "economy-001",
+      "level": 3,
+      "kind": "問いの具体化",
+      "reason": "「受けやすく」が、給付額ではなく利用開始の手続きを指すことを明示する。",
+      "before": {
+        "question": "生活保護は、もっと受けやすくするべきだと思う？"
+      },
+      "after": {
+        "question": "生活に困った人がお金などの支援を受ける「生活保護」。\n支援を受け始めるときの申請や確認は、もっと簡単にするべきだと思う？"
+      }
+    },
+    {
+      "id": "economy-003",
+      "level": 3,
+      "kind": "表現・用語の明確化",
+      "reason": "「お金持ち」「高く」が指す対象と、負担の割合を具体化する。",
+      "before": {
+        "question": "お金持ちへの税金は、もっと高くしてもいいと思う？"
+      },
+      "after": {
+        "question": "収入や資産が多い人に、今より高い割合で税金を負担してもらうことをどう思う？"
+      }
+    },
+    {
+      "id": "politics-002",
+      "level": 3,
+      "kind": "表現・用語の明確化",
+      "reason": "「徴兵制」の意味を質問内で説明する。",
+      "before": {
+        "question": "国を守るためなら、徴兵制を導入してもいいと思う？"
+      },
+      "after": {
+        "question": "国を守るために、本人の希望にかかわらず一定の人に軍務を求める「徴兵制」を導入してもよいと思う？"
+      }
+    },
+    {
+      "id": "environment-002",
+      "level": 3,
+      "kind": "問いの具体化",
+      "reason": "詳しい知識を前提に賛否だけを聞く形から、既存解説の判断材料を入口にする形へ変える。",
+      "before": {
+        "question": "原子力発電は、今後も使い続けるべきだと思う？"
+      },
+      "after": {
+        "question": "原子力発電を今後も使うか考えるとき、電気の安定供給、気候への影響、事故の危険、廃棄物の管理のうち、何を特に重視したい？"
+      }
+    },
+    {
+      "id": "r6-07-05-l3",
+      "level": 3,
+      "kind": "問いの具体化",
+      "reason": "「複数の正確な見出し」を仮の数字で示す。賛成以外を反対だけと読み替えない。",
+      "before": {
+        "question": "同じ統計から複数の正確な見出しを作れても、一つを選ぶことで社会の印象は変わる。報道は、反対の印象を与える読み方まで併記する責任があると思う？",
+        "detail_text": "数字が正確でも切り口の選択によって印象は変わる。全ての解釈を示せない報道で、編集上の責任が生じる。\n\n問いの狙い: 反対の印象を与える読み方まで示す義務があるか問う。"
+      },
+      "after": {
+        "question": "同じ調査結果でも、「賛成が3割」と「賛成以外が7割」では印象が違う。\n報道は、もう一方の見方も一緒に示すべきだと思う？",
+        "detail_text": "このカードの割合は、説明のための仮の数字です。「賛成以外」には、反対だけでなく、判断を保留している人などが含まれる場合もあります。\n\n同じ結果でも見出しの選び方で、読者の受け止め方が変わることを考えます。異なる見方も示せば読み手が比較しやすくなる一方、短い記事ですべての切り口を示すのは難しいかもしれません。どこまで示す責任があるかが問いの中心です。"
+      }
+    },
+    {
+      "id": "relationship-290",
+      "level": 4,
+      "kind": "長文の整理",
+      "reason": "重なる説明を整理し、好きになろうとした意図と、伝えなかったことの論点を残す。",
+      "before": {
+        "question": "半年間付き合った恋人から、別れ際に「最初は好きではなかったけれど、いつか好きになれると思っていた。大切には思っていたが、恋愛感情は育たなかった」と言われた。あなたは本気で好きで、交際中の「好き」という言葉も信じていた。相手に好きになろうとする気持ちがあったとしても、恋愛感情がないことを伝えず付き合い続けたことを許せる？"
+      },
+      "after": {
+        "question": "半年付き合った恋人から、別れ際に「大切には思っていたけれど、恋愛感情は育たなかった」と言われた。相手はいつか好きになれると思っていたという。あなたは本気で好きで、交際中の「好き」も信じていた。\n恋愛感情がないことを伝えずに付き合い続けたことを、許せる？"
+      }
+    },
+    {
+      "id": "stigma-001",
+      "level": 4,
+      "kind": "長文・論点の整理",
+      "reason": "状況の説明を短くし、問題を伝える目的と、人を見下す使い方の違いについて自由に話せる形にする。",
+      "before": {
+        "question": "あなたは、収入が高くなく、友人も少なく、恋愛経験もほとんどない男性について話している投稿を見た。コメント欄では、その人の事情を詳しく知らない人たちが「典型的な弱者男性」「努力しなかった結果」と笑っている。一方で、「男性の孤独や貧困を社会問題として語るためには『弱者男性』という言葉も必要だ」という意見もある。困難を抱える男性をまとめて「弱者男性」と呼ぶことは、問題を見えるようにするための言葉だと思う？ それとも、その人の価値まで低いように見せてしまうレッテルだと思う？"
+      },
+      "after": {
+        "question": "収入や人間関係に困る男性を、事情を知らない人が「弱者男性」と呼んで笑っている投稿を見た。一方、その言葉で支援の必要性を伝えたい人もいる。\nあなたは、この呼び方をどう受け止める？"
+      }
+    },
+    {
+      "id": "r6-13-03-l4-conv",
+      "level": 4,
+      "kind": "長文・用語の整理",
+      "reason": "担当者、変える内容、不確かな点、判断の順に分け、「需要」「再配分」を普段の言葉にする。",
+      "before": {
+        "question": "あなたは支援予算を決める立場で、利用実績のある女性向け窓口の一部を減らして男性向けの相談窓口を増やす案を検討している。相談につながっていない男性の需要は確かめきれていないが、この再配分で支援が途切れる女性が出る可能性がある。それでも再配分を決める？"
+      },
+      "after": {
+        "question": "あなたは相談窓口の予算を決める担当者。男性向けの窓口を増やすには、利用実績のある女性向け窓口を一部減らす必要がある。男性側の必要性はまだ十分に確かめられておらず、支援が途切れる女性も出るかもしれない。\nそれでも予算の配分を変える？"
+      }
+    },
+    {
+      "id": "r6-20-05-l4",
+      "level": 4,
+      "kind": "長文・論点の整理",
+      "reason": "事情の重複を減らす。「黙るか公表するか」の二択以外の対応も話せるようにするため、論点の変更を伴う。",
+      "before": {
+        "question": "あなたは配信者で、交際相手がいることを公表していない。自分と交際できるかもしれないと期待して多額の支援を続けるファンがいると気づいた。期待が誤解だと伝えれば収入が減り、スタッフの仕事も失う可能性がある。一方、黙り続ければ誤解の上で金銭を受け取り続けることになる。私生活を守るために黙り続ける？ 収入が減っても誤解だと伝える？",
+        "detail_text": "恋愛しないイメージや疑似的な親密さが収益に関わる場合、契約への同意と私生活の自由が衝突する。情報を伏せることも期待を左右する。\n\n問いの狙い: 交際への期待を否定すると収入を失う発信者の選択を置く。"
+      },
+      "after": {
+        "question": "あなたは配信者。交際相手の存在は公表しておらず、あなたと付き合えると期待して多額の支援をするファンがいる。誤解を解くと、収入が減り、スタッフが仕事を失うかもしれない。\n私生活を守りながら、この誤解にどう対応する？",
+        "detail_text": "この場面では、ファンの期待に気づいていること、収入がスタッフの仕事にも関わること、私生活を守りたいことが重なっています。\n\n誤解を解くために、交際相手の詳しい情報まで明かす必要があるとは限りません。交流の範囲を説明するなどの対応でも収入が変わるかもしれず、黙って支援を受け続けることにも責任があると考える人はいるでしょう。私生活、相手の選択、仕事への影響をどう扱うかを考える問いです。"
+      }
+    },
+    {
+      "id": "FAN-J02-L4",
+      "level": 4,
+      "kind": "主語・長文の整理",
+      "reason": "誰の予定・感情についての問いかを明示し、予定への不満と感情の違いを分ける。",
+      "before": {
+        "question": "恋人は、誰を推し、何にお金を使い、どの予定を優先しているかを知っている。そのうえで「二人で過ごす時間や予定より、推しに使う時間や予定を優先されていると感じる」と言っている。推しと恋人への感情は別物だという説明で、その不満に答えたことになると思う？"
+      },
+      "after": {
+        "question": "あなたの恋人は、推し（応援している人）に使うお金や予定を知っている。それでも「二人で過ごす時間より、推しを優先されている」と感じている。\n「推しと恋人への気持ちは別物」と伝えるだけで、その不満に答えられると思う？"
+      }
+    },
+    {
+      "id": "FAN-B01-L4",
+      "level": 4,
+      "kind": "表現・用語の明確化",
+      "reason": "「許容」「差の根拠」を会話の言葉にし、比較の条件を質問内にも示す。",
+      "before": {
+        "question": "女が彼氏に「推しの方がかっこいい」と言う場合と、男が彼女に「推しの方が可愛い」と言う場合で、あなたの許容は同じか。違うなら、差の根拠は何か。"
+      },
+      "after": {
+        "question": "彼女が彼氏に「推し（応援している人）の方がかっこいい」と言う場合と、彼氏が彼女に「推しの方が可愛い」と言う場合。\nほかの条件が同じなら、性別であなたの受け止め方は変わる？"
+      }
+    },
+    {
+      "id": "FAN-B02-L4",
+      "level": 4,
+      "kind": "前提・論点の明確化",
+      "reason": "性別以外の条件が同じという解説の前提を質問にも出し、二択を強いる表現を整理する。",
+      "before": {
+        "question": "友人の相談が二件ある。彼女が彼氏の推し活に嫉妬している件と、彼氏が彼女の推し活に嫉妬している件。片方だけ「我慢しろ」または「やめろ」にする？ 同じ基準にする？"
+      },
+      "after": {
+        "question": "友人から二つの相談を受けた。一つは彼氏の推し（応援している人）への活動に彼女が嫉妬している話、もう一つは彼女の推しへの活動に彼氏が嫉妬している話。使うお金や時間、二人の約束は同じとする。\nあなたは、両方に同じ助言をする？"
+      }
+    },
+    {
+      "id": "FAN-G01-L4",
+      "level": 4,
+      "kind": "主語・前提の明確化",
+      "reason": "「それ」が何を指すか示す。不快に感じない答えも残し、反応の理由を分ける。",
+      "before": {
+        "question": "知人に「それは疑似恋愛だから、いつか本物の相手が必要になる」と言われた。もし不快に感じるなら、呼び方が嫌なのか、恋人に近い感情だと指摘されたことなのか、それとも別の理由か。複数の理由が重なることもある？"
+      },
+      "after": {
+        "question": "推し（応援している人）への気持ちを、知人に「疑似恋愛だから、いつか本物の恋人が必要になる」と言われた。\nどう感じる？ 気になるとしたら、呼び方、恋に近い気持ちだと言われたこと、将来の生き方への意見など、何が理由だろう？"
+      }
+    },
+    {
+      "id": "FAN-G02-L4",
+      "level": 4,
+      "kind": "前提・論点の明確化",
+      "reason": "「どっち」「別物」の対象を明示し、答えないことへの相手の選択を考える一つの場面にする。",
+      "before": {
+        "question": "恋人に「どっちが好きかだけ教えてほしい」と聞かれた。別物だから答えなくてよい？ 答えなかったことを理由に相手が別れてきたら、相手が不当だと思う？"
+      },
+      "after": {
+        "question": "恋人に「自分と推し（応援している人）のどちらが好き？」と聞かれた。\n「気持ちの種類が違うから答えたくない」と伝えたら、相手は別れを選んだ。その選択をどう受け止める？"
+      }
+    },
+    {
+      "id": "FAN-G04-L4",
+      "level": 4,
+      "kind": "主語・前提の明確化",
+      "reason": "問いの主語を示し、「恋人を作らない理由」が分かっているかのような読み方を避ける。",
+      "before": {
+        "question": "自分の気持ちは恋に近いと認めている。だから推しが恋人を作らないのは、ファンへの配慮だと思う？"
+      },
+      "after": {
+        "question": "あなたは、推し（応援している人）への気持ちが恋に近いと感じている。推しに恋人がいないとしたら、それをファンへの配慮だと受け止める？"
+      }
+    }
+  ],
+  "category_moves": [
+    {
+      "id": "bridge-013",
+      "level": 2,
+      "from": "work_and_economy",
+      "to": "money_consumption_and_tax",
+      "reason": "主な論点が買い物・家計・価格・税の負担で、雇用や働き方ではない。"
+    },
+    {
+      "id": "bridge-023",
+      "level": 2,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "bridge-024",
+      "level": 2,
+      "from": "work_and_economy",
+      "to": "money_consumption_and_tax",
+      "reason": "主な論点が買い物・家計・価格・税の負担で、雇用や働き方ではない。"
+    },
+    {
+      "id": "economy-001",
+      "level": 3,
+      "from": "work_and_economy",
+      "to": "society_public_policy_and_environment",
+      "reason": "生活保障・公的給付の対象や配分が中心なので、雇用・労働から社会政策へ整理する。"
+    },
+    {
+      "id": "economy-002",
+      "level": 3,
+      "from": "work_and_economy",
+      "to": "society_public_policy_and_environment",
+      "reason": "生活保障・公的給付の対象や配分が中心なので、雇用・労働から社会政策へ整理する。"
+    },
+    {
+      "id": "economy-003",
+      "level": 3,
+      "from": "work_and_economy",
+      "to": "money_consumption_and_tax",
+      "reason": "主な論点が買い物・家計・価格・税の負担で、雇用や働き方ではない。"
+    },
+    {
+      "id": "economy-004",
+      "level": 3,
+      "from": "work_and_economy",
+      "to": "money_consumption_and_tax",
+      "reason": "主な論点が買い物・家計・価格・税の負担で、雇用や働き方ではない。"
+    },
+    {
+      "id": "economy-005",
+      "level": 3,
+      "from": "work_and_economy",
+      "to": "society_public_policy_and_environment",
+      "reason": "生活保障・公的給付の対象や配分が中心なので、雇用・労働から社会政策へ整理する。"
+    },
+    {
+      "id": "environment-001",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "environment-002",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "environment-003",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "animals-001",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "science_research_and_uncertainty",
+      "reason": "研究のために何をどんな条件で利用できるか、研究倫理が判断の中心。"
+    },
+    {
+      "id": "politics-001",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "democracy_rights_and_participation",
+      "reason": "投票、政治家の責任、政治的な表現の自由が判断の中心。"
+    },
+    {
+      "id": "politics-002",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "international_peace_and_cooperation",
+      "reason": "国防、対外関係、国際的な人権問題が判断の中心。"
+    },
+    {
+      "id": "politics-003",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "international_peace_and_cooperation",
+      "reason": "国防、対外関係、国際的な人権問題が判断の中心。"
+    },
+    {
+      "id": "r6-02-01-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "culture_religion_and_history",
+      "reason": "観光施設一般ではなく、祈りの場や信仰上の習慣を守ることが判断の中心。"
+    },
+    {
+      "id": "r6-02-02-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "housing_community_and_transport",
+      "reason": "住民生活、住宅、移動、地域インフラが判断の中心。"
+    },
+    {
+      "id": "r6-02-03-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "housing_community_and_transport",
+      "reason": "住民生活、住宅、移動、地域インフラが判断の中心。"
+    },
+    {
+      "id": "r6-02-04-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "housing_community_and_transport",
+      "reason": "住民生活、住宅、移動、地域インフラが判断の中心。"
+    },
+    {
+      "id": "r6-02-05-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "housing_community_and_transport",
+      "reason": "住民生活、住宅、移動、地域インフラが判断の中心。"
+    },
+    {
+      "id": "r6-03-01-l3",
+      "level": 3,
+      "from": "work_and_economy",
+      "to": "money_consumption_and_tax",
+      "reason": "主な論点が買い物・家計・価格・税の負担で、雇用や働き方ではない。"
+    },
+    {
+      "id": "r6-03-02-l3",
+      "level": 3,
+      "from": "work_and_economy",
+      "to": "money_consumption_and_tax",
+      "reason": "主な論点が買い物・家計・価格・税の負担で、雇用や働き方ではない。"
+    },
+    {
+      "id": "r6-03-03-l3",
+      "level": 3,
+      "from": "work_and_economy",
+      "to": "money_consumption_and_tax",
+      "reason": "主な論点が買い物・家計・価格・税の負担で、雇用や働き方ではない。"
+    },
+    {
+      "id": "r6-05-03-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "housing_community_and_transport",
+      "reason": "住民生活、住宅、移動、地域インフラが判断の中心。"
+    },
+    {
+      "id": "r6-06-01-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-06-02-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-06-03-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-06-04-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-06-05-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-06-06-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-08-04-l3",
+      "level": 3,
+      "from": "technology_media_and_privacy",
+      "to": "science_research_and_uncertainty",
+      "reason": "研究のために何をどんな条件で利用できるか、研究倫理が判断の中心。"
+    },
+    {
+      "id": "r6-14-02-l3",
+      "level": 3,
+      "from": "culture_religion_and_history",
+      "to": "democracy_rights_and_participation",
+      "reason": "投票、政治家の責任、政治的な表現の自由が判断の中心。"
+    },
+    {
+      "id": "r6-14-03-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "democracy_rights_and_participation",
+      "reason": "投票、政治家の責任、政治的な表現の自由が判断の中心。"
+    },
+    {
+      "id": "r6-14-04-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "democracy_rights_and_participation",
+      "reason": "投票、政治家の責任、政治的な表現の自由が判断の中心。"
+    },
+    {
+      "id": "r6-14-05-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "international_peace_and_cooperation",
+      "reason": "国防、対外関係、国際的な人権問題が判断の中心。"
+    },
+    {
+      "id": "r6-14-06-l3",
+      "level": 3,
+      "from": "society_public_policy_and_environment",
+      "to": "international_peace_and_cooperation",
+      "reason": "国防、対外関係、国際的な人権問題が判断の中心。"
+    },
+    {
+      "id": "disaster-003",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "consumer-001",
+      "level": 4,
+      "from": "work_and_economy",
+      "to": "money_consumption_and_tax",
+      "reason": "主な論点が買い物・家計・価格・税の負担で、雇用や働き方ではない。"
+    },
+    {
+      "id": "community-001",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "housing_community_and_transport",
+      "reason": "住民生活、住宅、移動、地域インフラが判断の中心。"
+    },
+    {
+      "id": "disaster-010",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "disaster-011",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "disaster-012",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-02-01-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "culture_religion_and_history",
+      "reason": "観光施設一般ではなく、祈りの場や信仰上の習慣を守ることが判断の中心。"
+    },
+    {
+      "id": "r6-02-02-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "housing_community_and_transport",
+      "reason": "住民生活、住宅、移動、地域インフラが判断の中心。"
+    },
+    {
+      "id": "r6-02-03-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "housing_community_and_transport",
+      "reason": "住民生活、住宅、移動、地域インフラが判断の中心。"
+    },
+    {
+      "id": "r6-02-04-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "housing_community_and_transport",
+      "reason": "住民生活、住宅、移動、地域インフラが判断の中心。"
+    },
+    {
+      "id": "r6-02-05-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "housing_community_and_transport",
+      "reason": "住民生活、住宅、移動、地域インフラが判断の中心。"
+    },
+    {
+      "id": "r6-03-01-l4",
+      "level": 4,
+      "from": "work_and_economy",
+      "to": "money_consumption_and_tax",
+      "reason": "主な論点が買い物・家計・価格・税の負担で、雇用や働き方ではない。"
+    },
+    {
+      "id": "r6-03-02-l4",
+      "level": 4,
+      "from": "work_and_economy",
+      "to": "money_consumption_and_tax",
+      "reason": "主な論点が買い物・家計・価格・税の負担で、雇用や働き方ではない。"
+    },
+    {
+      "id": "r6-03-03-l4",
+      "level": 4,
+      "from": "work_and_economy",
+      "to": "money_consumption_and_tax",
+      "reason": "主な論点が買い物・家計・価格・税の負担で、雇用や働き方ではない。"
+    },
+    {
+      "id": "r6-05-03-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "housing_community_and_transport",
+      "reason": "住民生活、住宅、移動、地域インフラが判断の中心。"
+    },
+    {
+      "id": "r6-06-01-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-06-02-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-06-03-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-06-04-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-06-05-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-06-06-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "climate_environment_energy_and_disaster",
+      "reason": "環境・エネルギー・災害への対応が判断の中心。"
+    },
+    {
+      "id": "r6-08-04-l4",
+      "level": 4,
+      "from": "technology_media_and_privacy",
+      "to": "science_research_and_uncertainty",
+      "reason": "研究のために何をどんな条件で利用できるか、研究倫理が判断の中心。"
+    },
+    {
+      "id": "r6-14-02-l4",
+      "level": 4,
+      "from": "culture_religion_and_history",
+      "to": "democracy_rights_and_participation",
+      "reason": "投票、政治家の責任、政治的な表現の自由が判断の中心。"
+    },
+    {
+      "id": "r6-14-03-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "democracy_rights_and_participation",
+      "reason": "投票、政治家の責任、政治的な表現の自由が判断の中心。"
+    },
+    {
+      "id": "r6-14-04-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "democracy_rights_and_participation",
+      "reason": "投票、政治家の責任、政治的な表現の自由が判断の中心。"
+    },
+    {
+      "id": "r6-14-05-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "international_peace_and_cooperation",
+      "reason": "国防、対外関係、国際的な人権問題が判断の中心。"
+    },
+    {
+      "id": "r6-14-06-l4",
+      "level": 4,
+      "from": "society_public_policy_and_environment",
+      "to": "international_peace_and_cooperation",
+      "reason": "国防、対外関係、国際的な人権問題が判断の中心。"
+    }
+  ],
+  "additions": [
+    {
+      "reason": "お金・買い物・税のLevel 1の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-money_consumption_and_tax-01-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "money_consumption_and_tax",
+        "topic": "purchase_satisfaction",
+        "question": "最近買って、値段以上に満足したものは？"
+      }
+    },
+    {
+      "reason": "お金・買い物・税のLevel 1の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-money_consumption_and_tax-02-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "money_consumption_and_tax",
+        "topic": "spending_and_saving",
+        "question": "少し自由に使えるお金があったら、今の楽しみと貯金にどう分けたい？"
+      }
+    },
+    {
+      "reason": "お金・買い物・税のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-money_consumption_and_tax-01-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "money_consumption_and_tax",
+        "topic": "subscription_and_participation",
+        "question": "友達と遊ぶための月額サービスを、自分はほとんど使っていない。解約するとその遊びには参加できない。続けるか、何で決める？"
+      }
+    },
+    {
+      "reason": "お金・買い物・税のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-money_consumption_and_tax-02-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "money_consumption_and_tax",
+        "topic": "repair_or_repurchase",
+        "question": "少し高いが修理して長く使える物と、安いが壊れたら買い替える物。今の予算が限られていたら、何を基準に選ぶ？"
+      }
+    },
+    {
+      "reason": "お金・買い物・税のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-money_consumption_and_tax-03-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "money_consumption_and_tax",
+        "topic": "trip_budget_differences",
+        "question": "友達と旅行を計画しているが、使えるお金に差がある。みんなで同じ行程にするか、一部は別行動にするか、どう決めたい？"
+      }
+    },
+    {
+      "reason": "お金・買い物・税のLevel 3の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-money_consumption_and_tax-01-l3",
+        "level": 3,
+        "sensitivity": 2,
+        "category": "money_consumption_and_tax",
+        "topic": "subscription_price_disclosure",
+        "question": "「初月無料」と大きく書かれたサービスで、翌月からの料金は小さく表示されているとする。表示をどこまで分かりやすくする責任を、事業者に求めるべきだと思う？",
+        "perspective": "observer",
+        "detail": {
+          "text": "仮の広告について考えるカードです。実在の事業者が法律に違反しているかを判定する問いではありません。\n\n申し込む前に費用が分かることを重視すれば、料金や解約方法を目立つ場所に示すよう求める考えがあります。一方、すべての条件を同じ大きさで示すと、広告や画面が読みにくくなるかもしれません。利用者が確認することと、事業者が伝えることをどう分担するかを考えます。"
+        }
+      }
+    },
+    {
+      "reason": "住まい・地域・交通のLevel 1の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-housing_community_and_transport-01-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "housing_community_and_transport",
+        "topic": "preferred_neighborhood",
+        "question": "住む場所を選べるなら、便利さ、静かさ、自然の近さのうち、何を大事にしたい？"
+      }
+    },
+    {
+      "reason": "住まい・地域・交通のLevel 1の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-housing_community_and_transport-02-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "housing_community_and_transport",
+        "topic": "places_to_linger",
+        "question": "家の近くに、ゆっくり過ごせる場所が一つ増えるなら、どんな場所がいい？"
+      }
+    },
+    {
+      "reason": "住まい・地域・交通のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-housing_community_and_transport-01-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "housing_community_and_transport",
+        "topic": "shared_space_use",
+        "question": "共同で使う広場を、遊ぶ場所にしたい人と、静かに休む場所にしたい人がいる。使い方のルールをどう決めたい？"
+      }
+    },
+    {
+      "reason": "住まい・地域・交通のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-housing_community_and_transport-02-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "housing_community_and_transport",
+        "topic": "travel_without_car",
+        "question": "友達との外出で、車を使える人と使えない人がいる。集まりやすい場所と、行きたい場所が違ったら、何を優先する？"
+      }
+    },
+    {
+      "reason": "住まい・地域・交通のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-housing_community_and_transport-03-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "housing_community_and_transport",
+        "topic": "supporting_local_shops",
+        "question": "近所の店を応援したいが、少し離れた店の方が安い。同じ物を買うなら、値段と地域の店が続くことをどう考える？"
+      }
+    },
+    {
+      "reason": "住まい・地域・交通のLevel 3の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-housing_community_and_transport-01-l3",
+        "level": 3,
+        "sensitivity": 2,
+        "category": "housing_community_and_transport",
+        "topic": "reuse_of_vacant_buildings",
+        "question": "自治体が、空き家を地域の集会所に変える案を検討している。改修費が高く、新しく建てる方が使いやすいという意見もある。建物を残すことと、費用や使いやすさをどう比べるべきだと思う？",
+        "perspective": "observer",
+        "detail": {
+          "text": "架空の地域と計画について考えるカードです。空き家の状態、所有者の同意、必要な費用、利用する人の希望は、実際には一つずつ確認する必要があります。\n\n既存の建物を残すことには、地域の記憶や景観を大切にする意味を見いだす人がいます。一方、維持費や使いにくさを長く負担するなら、新しい施設を選ぶ考えもあります。何をどれくらいの期間で比べるかを考えます。"
+        }
+      }
+    },
+    {
+      "reason": "環境・エネルギー・防災のLevel 1の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-climate_environment_energy_and_disaster-01-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "climate_environment_energy_and_disaster",
+        "topic": "electricity_free_leisure",
+        "question": "電気を使わずに楽しめることで、好きなものはある？"
+      }
+    },
+    {
+      "reason": "環境・エネルギー・防災のLevel 1の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-climate_environment_energy_and_disaster-02-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "climate_environment_energy_and_disaster",
+        "topic": "everyday_use_of_nature",
+        "question": "散歩や外遊びをするなら、海、山、公園のどんなところが好き？"
+      }
+    },
+    {
+      "reason": "環境・エネルギー・防災のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-climate_environment_energy_and_disaster-01-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "climate_environment_energy_and_disaster",
+        "topic": "food_waste_and_discounts",
+        "question": "食べきれるか分からない量の食品が、少量で買うより割安になっている。安さと食べ残しを出さないことを、どう考えて選ぶ？"
+      }
+    },
+    {
+      "reason": "環境・エネルギー・防災のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-climate_environment_energy_and_disaster-02-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "climate_environment_energy_and_disaster",
+        "topic": "travel_time_and_environment",
+        "question": "環境への負担が小さい移動方法は、今の方法より時間がかかるとする。どんな外出なら、時間をかけても選びたい？"
+      }
+    },
+    {
+      "reason": "環境・エネルギー・防災のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-climate_environment_energy_and_disaster-03-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "climate_environment_energy_and_disaster",
+        "topic": "shared_disaster_supplies",
+        "question": "みんなで使う防災用品の置き場所が限られている。たくさんの人が使う物と、少数の人に欠かせない物を、どう選んで置く？"
+      }
+    },
+    {
+      "reason": "環境・エネルギー・防災のLevel 3の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-climate_environment_energy_and_disaster-01-l3",
+        "level": 3,
+        "sensitivity": 2,
+        "category": "climate_environment_energy_and_disaster",
+        "topic": "renewable_energy_and_landscape",
+        "question": "地域に再生可能エネルギーの発電設備を作る案がある。電気を確保できる一方、大切にしてきた景観が変わるとする。計画を進めるかどうかを、誰とどのように決めるべきだと思う？",
+        "perspective": "observer",
+        "detail": {
+          "text": "仮の発電計画について考えるカードです。電気の供給、景観への影響、建設費などの具体的な効果は、計画ごとに確かめる必要があります。\n\n電気を利用する人と、設備の近くで暮らす人では、得られる利益や受ける変化が異なるかもしれません。話し合いで条件を変えること、別の場所を検討すること、計画を見送ることも含め、誰の意見をどの段階で聞くかを考えます。"
+        }
+      }
+    },
+    {
+      "reason": "民主主義・市民参加のLevel 1の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-democracy_rights_and_participation-01-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "democracy_rights_and_participation",
+        "topic": "comfortable_participation",
+        "question": "みんなで何かを決めるとき、どんな場なら自分の意見を話しやすい？"
+      }
+    },
+    {
+      "reason": "民主主義・市民参加のLevel 1の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-democracy_rights_and_participation-02-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "democracy_rights_and_participation",
+        "topic": "decision_role_preference",
+        "question": "グループで何かを決めるとき、案を出す、意見を聞く、最後にまとめるなら、どの役割が好き？"
+      }
+    },
+    {
+      "reason": "民主主義・市民参加のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-democracy_rights_and_participation-01-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "democracy_rights_and_participation",
+        "topic": "anonymous_group_vote",
+        "question": "グループの方針を決める投票で、誰が何に投票したかを見せる方がいい？ 名前を出さずに投票する方がいい？"
+      }
+    },
+    {
+      "reason": "民主主義・市民参加のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-democracy_rights_and_participation-02-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "democracy_rights_and_participation",
+        "topic": "choosing_representatives",
+        "question": "グループの代表を選ぶとき、みんなの話を聞く人と、早く決めて行動する人では、どんな場合にどちらを選びたい？"
+      }
+    },
+    {
+      "reason": "民主主義・市民参加のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-democracy_rights_and_participation-03-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "democracy_rights_and_participation",
+        "topic": "users_and_rulemaking",
+        "question": "みんなで使う場所のルールを決めるなら、よく使う人だけで決めていい？ 今はあまり使っていない人の意見も聞くべき？"
+      }
+    },
+    {
+      "reason": "民主主義・市民参加のLevel 3の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-democracy_rights_and_participation-01-l3",
+        "level": 3,
+        "sensitivity": 2,
+        "category": "democracy_rights_and_participation",
+        "topic": "access_to_public_participation",
+        "question": "地域の計画を話し合う説明会が、平日の昼だけに開かれるとする。参加できない人の意見を、行政はどのように集め、判断に反映するべきだと思う？",
+        "perspective": "observer",
+        "detail": {
+          "text": "仮の説明会の開き方について考えるカードです。実在の自治体の運用について述べるものではありません。\n\n開催回数を増やしたり、文章やオンラインで意見を受け付けたりすれば、異なる事情の人が参加しやすくなるかもしれません。一方、集めた意見の確認や整理にも費用と時間がかかります。参加した人数だけでなく、参加しにくい理由や意見の内容をどう扱うかを考えます。"
+        }
+      }
+    },
+    {
+      "reason": "国際・平和・協力のLevel 1の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-international_peace_and_cooperation-01-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "international_peace_and_cooperation",
+        "topic": "curiosity_about_other_countries",
+        "question": "ほかの国の暮らしで、もっと知ってみたいことは？"
+      }
+    },
+    {
+      "reason": "国際・平和・協力のLevel 1の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-international_peace_and_cooperation-02-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "international_peace_and_cooperation",
+        "topic": "communication_across_languages",
+        "question": "言葉が通じない相手に、何かを伝えるなら、どんな方法を試してみたい？"
+      }
+    },
+    {
+      "reason": "国際・平和・協力のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-international_peace_and_cooperation-01-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "international_peace_and_cooperation",
+        "topic": "time_zone_fairness",
+        "question": "別の国に住む友達と話す時間が、いつも相手にとって深夜になる。お互いの生活を大切にするなら、どんな約束にしたい？"
+      }
+    },
+    {
+      "reason": "国際・平和・協力のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-international_peace_and_cooperation-02-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "international_peace_and_cooperation",
+        "topic": "cultural_customs_in_exchange",
+        "question": "別の国から来た友達を家に招いた。食事の習慣が違うと分かったら、自分の家のやり方と、相手の希望をどうすり合わせたい？"
+      }
+    },
+    {
+      "reason": "国際・平和・協力のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-international_peace_and_cooperation-03-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "international_peace_and_cooperation",
+        "topic": "local_and_overseas_donations",
+        "question": "少し寄付をしたいが、身近な地域と海外で、どちらにも困っている人がいる。場所の近さは、寄付先を決める理由になる？"
+      }
+    },
+    {
+      "reason": "国際・平和・協力のLevel 3の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-international_peace_and_cooperation-01-l3",
+        "level": 3,
+        "sensitivity": 2,
+        "category": "international_peace_and_cooperation",
+        "topic": "cross_border_water_sharing",
+        "question": "二つの国が同じ川の水を使っている。上流の国が使う量を増やすと、下流の国では生活や農業に使える水が減るとする。水の使い方は、どんな基準で決めるべきだと思う？",
+        "perspective": "observer",
+        "detail": {
+          "text": "架空の二つの国と川について考えるカードです。実在する紛争や、特定の国際法上の権利を説明する問いではありません。\n\n上流側には、自国の暮らしや産業を支えたい理由があり、下流側には、生活に必要な水を確保したい理由があります。人口、生活に必要な量、これまでの利用、代わりの水源など、どの条件を比べるかで考え方が変わります。片方だけで決めることと、共同で調べて合意することの違いも考えられます。"
+        }
+      }
+    },
+    {
+      "reason": "科学・研究のLevel 1の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-science_research_and_uncertainty-01-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "science_research_and_uncertainty",
+        "topic": "everyday_curiosity",
+        "question": "最近「どうしてだろう」と思って、調べてみたくなったことは？"
+      }
+    },
+    {
+      "reason": "科学・研究のLevel 1の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-science_research_and_uncertainty-02-l1",
+        "level": 1,
+        "sensitivity": 1,
+        "category": "science_research_and_uncertainty",
+        "topic": "trying_or_reading",
+        "question": "新しい道具の使い方を知るなら、まず試したい？ 説明を読んでから試したい？"
+      }
+    },
+    {
+      "reason": "科学・研究のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-science_research_and_uncertainty-01-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "science_research_and_uncertainty",
+        "topic": "single_trial_and_confidence",
+        "question": "友達が「一度試してうまくいったから、この方法はいつでも使える」と言っている。自分も使う前に、何を確かめたい？"
+      }
+    },
+    {
+      "reason": "科学・研究のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-science_research_and_uncertainty-02-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "science_research_and_uncertainty",
+        "topic": "survey_scope",
+        "question": "「みんなが気に入っている」と紹介されたアプリがある。聞いてみると、感想を集めたのは同じ趣味の友達だけだった。その評判をどこまで参考にする？"
+      }
+    },
+    {
+      "reason": "科学・研究のLevel 2の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-science_research_and_uncertainty-03-l2",
+        "level": 2,
+        "sensitivity": 1,
+        "category": "science_research_and_uncertainty",
+        "topic": "reporting_failed_attempts",
+        "question": "自分たちが作った道具について、成功した試し方と、失敗した試し方がある。人に紹介するとき、失敗した条件をどこまで伝えたい？"
+      }
+    },
+    {
+      "reason": "科学・研究のLevel 3の入口を補う。制度や統計の現状を断言せず、経験・仮の場面から話せる問いにする。",
+      "card": {
+        "id": "clarity-science_research_and_uncertainty-01-l3",
+        "level": 3,
+        "sensitivity": 2,
+        "category": "science_research_and_uncertainty",
+        "topic": "preliminary_research_disclosure",
+        "question": "新しい研究で期待できそうな結果が出たが、別の人が同じ方法で確かめた結果はまだない。社会に早く役立つ可能性があるなら、公表するかどうかを何で決めるべきだと思う？",
+        "perspective": "observer",
+        "detail": {
+          "text": "仮の研究結果について考えるカードです。特定の技術や治療の効果を述べるものではありません。\n\n早く公開することで、ほかの研究者が確かめたり、次の研究を始めたりしやすくなるかもしれません。一方、まだ確かめきれていない結果が、確立した事実として受け取られることも気になります。公表の時期、伝える相手、不確かな点の示し方を分けて考えます。"
+        }
+      }
+    }
+  ]
+}

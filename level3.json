@@ -53,7 +53,7 @@
   {
     "id": "family-law-001",
     "category": "family_and_care",
-    "question": "離婚後は共同親権を原則にするべきだと思う？",
+    "question": "離婚後も、両方の親が子どもの養育について法的な責任と権限を持つ「共同親権」。\nこの形を基本にするべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -98,11 +98,11 @@
   {
     "id": "criminal-justice-001",
     "category": "justice_safety_and_crime",
-    "question": "性被害者の保護と、冤罪を防ぐことは、どちらをより重視するべき？",
+    "question": "ある職場で性被害の申告があり、事実の確認には時間がかかるとする。関係者を一時的に離す対応は安全につながる一方、疑われた人の仕事や評判にも影響するかもしれない。事実が確かでない段階で、どこまで対応すべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
-      "text": "性犯罪をめぐっては、被害を訴える人が十分に保護されないという問題と、誤った疑いによって無実の人が重大な不利益を受ける可能性の両方が議論されます。\n\n被害申告を疑いすぎると被害者が声を上げにくくなる一方、疑いだけで有罪視することも適正な手続きの観点から問題になります。\n\n被害者を守ることと、無実の人を守ることを制度の中でどう両立させるかを考える問いです。"
+      "text": "仮の職場で、性被害の申告について事実を確かめるのに時間がかかる場面を考えます。\n\n相談した人の話を聞いて必要な支援につなぐこと、確認中に関係者を一時的に離すこと、責任を判断して処分を決めることは、それぞれ別の対応です。一時的に離す対応だけで、疑われた人の責任が確定するわけではありません。\n\n早く安全を確保することを重視する立場がある一方、未確認の段階で仕事や評判に大きな不利益が生じることを心配する立場もあります。一時的な対応でも、誰の働き方を変えるか、期間や情報の共有範囲によって、相談した人と疑われた人の負担は異なります。\n\nどの対応をどこまで行い、情報が増えたときにどう見直すかを考える問いです。"
     },
     "topic": "criminal_justice",
     "perspective": "observer",
@@ -125,7 +125,7 @@
   {
     "id": "family-law-003",
     "category": "family_and_care",
-    "question": "選択的夫婦別姓を認めるべきだと思う？",
+    "question": "結婚後も、希望する夫婦はそれぞれの名字を使えるようにする「選択的夫婦別姓」を認めるべきだと思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -417,7 +417,7 @@
   {
     "id": "justice-004",
     "category": "justice_safety_and_crime",
-    "question": "更生が進んだと判断された受刑者の仮釈放を、被害を受けた人が強く望んでいない。その意向を、仮釈放の判断でどこまで重く見るべきだと思う？",
+    "question": "更生が進んだ受刑者を、刑期の途中で条件付きで社会に戻す「仮釈放」が検討されている。\n被害を受けた人が反対している場合、その気持ちを判断にどこまで反映するべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -444,7 +444,7 @@
   {
     "id": "medicine-001",
     "category": "health_and_disability",
-    "question": "臓器提供は、本人が拒否していなければ提供する仕組みにしてもいいと思う？",
+    "question": "亡くなった後の臓器提供について、本人が拒否の意思を示していなければ、提供に同意したとみなす仕組みをどう思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -489,7 +489,7 @@
   {
     "id": "family-policy-001",
     "category": "family_and_care",
-    "question": "代理出産を認めるべきだと思う？",
+    "question": "子どもを望む人に代わって、別の人が妊娠・出産を担う「代理出産」を認めるべきだと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -630,7 +630,7 @@
   {
     "id": "technology-004",
     "category": "technology_media_and_privacy",
-    "question": "AIの学習に、公開されている作品を許可なく使ってもいいと思う？",
+    "question": "文章や画像を作るAIを開発するために、ネットで公開されている作品を、作者の許可なしで学習に使うことをどう思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -677,8 +677,8 @@
   },
   {
     "id": "economy-001",
-    "category": "work_and_economy",
-    "question": "生活保護は、もっと受けやすくするべきだと思う？",
+    "category": "society_public_policy_and_environment",
+    "question": "生活に困った人がお金などの支援を受ける「生活保護」。\n支援を受け始めるときの申請や確認は、もっと簡単にするべきだと思う？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -689,7 +689,7 @@
   },
   {
     "id": "economy-002",
-    "category": "work_and_economy",
+    "category": "society_public_policy_and_environment",
     "question": "働いていなくても、全員に一定のお金を配る制度はありだと思う？",
     "level": 3,
     "sensitivity": 3,
@@ -701,8 +701,8 @@
   },
   {
     "id": "economy-003",
-    "category": "work_and_economy",
-    "question": "お金持ちへの税金は、もっと高くしてもいいと思う？",
+    "category": "money_consumption_and_tax",
+    "question": "収入や資産が多い人に、今より高い割合で税金を負担してもらうことをどう思う？",
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -713,7 +713,7 @@
   },
   {
     "id": "economy-004",
-    "category": "work_and_economy",
+    "category": "money_consumption_and_tax",
     "question": "親から多くの財産を相続する人には、高い税金をかけるべきだと思う？",
     "level": 3,
     "sensitivity": 2,
@@ -725,7 +725,7 @@
   },
   {
     "id": "economy-005",
-    "category": "work_and_economy",
+    "category": "society_public_policy_and_environment",
     "question": "高齢者への社会保障を減らして、若い世代への支援を増やすべきだと思う？",
     "level": 3,
     "sensitivity": 3,
@@ -773,7 +773,7 @@
   },
   {
     "id": "environment-001",
-    "category": "society_public_policy_and_environment",
+    "category": "climate_environment_energy_and_disaster",
     "question": "環境を守るためなら、生活が不便になっても受け入れるべきだと思う？",
     "level": 3,
     "sensitivity": 2,
@@ -785,8 +785,8 @@
   },
   {
     "id": "environment-002",
-    "category": "society_public_policy_and_environment",
-    "question": "原子力発電は、今後も使い続けるべきだと思う？",
+    "category": "climate_environment_energy_and_disaster",
+    "question": "原子力発電を今後も使うか考えるとき、電気の安定供給、気候への影響、事故の危険、廃棄物の管理のうち、何を特に重視したい？",
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -797,7 +797,7 @@
   },
   {
     "id": "environment-003",
-    "category": "society_public_policy_and_environment",
+    "category": "climate_environment_energy_and_disaster",
     "question": "環境保護のためなら、経済成長を遅らせてもいいと思う？",
     "level": 3,
     "sensitivity": 2,
@@ -809,7 +809,7 @@
   },
   {
     "id": "animals-001",
-    "category": "society_public_policy_and_environment",
+    "category": "science_research_and_uncertainty",
     "question": "人間の医療のためなら、動物実験は認められると思う？",
     "level": 3,
     "sensitivity": 3,
@@ -833,7 +833,7 @@
   },
   {
     "id": "politics-001",
-    "category": "society_public_policy_and_environment",
+    "category": "democracy_rights_and_participation",
     "question": "選挙の投票を義務にするのはありだと思う？",
     "level": 3,
     "sensitivity": 2,
@@ -845,8 +845,8 @@
   },
   {
     "id": "politics-002",
-    "category": "society_public_policy_and_environment",
-    "question": "国を守るためなら、徴兵制を導入してもいいと思う？",
+    "category": "international_peace_and_cooperation",
+    "question": "国を守るために、本人の希望にかかわらず一定の人に軍務を求める「徴兵制」を導入してもよいと思う？",
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -857,7 +857,7 @@
   },
   {
     "id": "politics-003",
-    "category": "society_public_policy_and_environment",
+    "category": "international_peace_and_cooperation",
     "question": "防衛費を増やすためなら、他の公共サービスを減らしてもいいと思う？",
     "level": 3,
     "sensitivity": 3,
@@ -2289,7 +2289,7 @@
     "id": "r6-02-01-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "culture_religion_and_history",
     "topic": "tourism_housing_transport_02-01-l3",
     "question": "宗教施設が観光収入を得ている場合でも、祈りの場を守るために撮影や観光目的の入場を大きく制限してよいと思う？ 観光施設として期待されるサービスに応える責任はどこまである？",
     "perspective": "observer",
@@ -2301,7 +2301,7 @@
     "id": "r6-02-02-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "housing_community_and_transport",
     "topic": "tourism_housing_transport_02-02-l3",
     "question": "住宅地で一部の民泊が迷惑行為を防げない場合、問題を起こしていない施設も含めて営業を禁止してよいと思う？ 個別に取り締まる費用は住民全体が負担することになる。",
     "perspective": "observer",
@@ -2313,7 +2313,7 @@
     "id": "r6-02-03-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "housing_community_and_transport",
     "topic": "tourism_housing_transport_02-03-l3",
     "question": "住民の税で維持する公共交通が観光客で混雑している。混雑対策の財源として、国籍ではなく居住地を基準に観光客の運賃を高くすることは、公平だと思う？",
     "perspective": "observer",
@@ -2325,7 +2325,7 @@
     "id": "r6-02-04-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "housing_community_and_transport",
     "topic": "tourism_housing_transport_02-04-l3",
     "question": "交通が不足する地域で、自家用車による有償送迎を広げる案がある。移動は便利になる一方、働く人の収入や事故時の補償を安定させにくい。既存の交通事業と同じ条件が整うまで参入を制限するべき？",
     "perspective": "observer",
@@ -2337,7 +2337,7 @@
     "id": "r6-02-05-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "housing_community_and_transport",
     "topic": "tourism_housing_transport_02-05-l3",
     "question": "住宅不足を減らすため、空室のまま保有する家に高い税をかける案がある。将来自分で住むために確保している人も負担することになる。住まいを必要とする人のためなら、所有者に貸すか売るかを迫る制度を認める？",
     "perspective": "observer",
@@ -2364,7 +2364,7 @@
     "id": "r6-03-02-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "work_and_economy",
+    "category": "society_public_policy_and_environment",
     "topic": "economy_prices_03-02-l3",
     "question": "物価高への給付で、所得基準を少し超えた世帯だけが対象から外れると不公平感が生じる。一方、段階的な給付には事務費がかかる。支援を速く配るためなら、境界で大きな差が出てもよい？",
     "perspective": "observer",
@@ -2376,7 +2376,7 @@
     "id": "r6-03-03-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "work_and_economy",
+    "category": "money_consumption_and_tax",
     "topic": "economy_prices_03-03-l3",
     "question": "物価高への対策として、借金を増やして消費税を下げる案がある。今困っている人は助かるが、将来の増税や支出削減が必要になる可能性がある。今の生活を守るために、まだ投票できない世代へ負担を回してよいと思う？",
     "perspective": "observer",
@@ -2511,7 +2511,7 @@
     "id": "r6-05-03-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "housing_community_and_transport",
     "topic": "depopulation_05-03-l3",
     "question": "人口が減る地域で、全ての集落への上下水道や道路を同じ水準で維持することが難しくなった。行政は、住み続ける自由を認めつつ、一定の地域ではサービスを縮小すると決めてよいと思う？",
     "perspective": "observer",
@@ -2523,7 +2523,7 @@
     "id": "r6-06-01-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "climate_environment_energy_and_disaster",
     "topic": "climate_disaster_06-01-l3",
     "question": "生活に余裕のない人ほど、安い車や燃料への依存から抜けにくい場合がある。排出量に応じた負担を一律に増やすことは、気候対策として公平だと思う？",
     "perspective": "observer",
@@ -2535,7 +2535,7 @@
     "id": "r6-06-02-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "climate_environment_energy_and_disaster",
     "topic": "climate_disaster_06-02-l3",
     "question": "避難を強く求められても残った人が救助を必要とした場合、その選択を救助の順番や費用負担に反映してよいと思う？ 残った事情をすぐ確認できない場合でも？",
     "perspective": "observer",
@@ -2547,7 +2547,7 @@
     "id": "r6-06-03-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "climate_environment_energy_and_disaster",
     "topic": "climate_disaster_06-03-l3",
     "question": "大災害に備えた補強工事は、被害が起きなければ効果を実感しにくい。限られた予算で、将来の被害を減らす工事と、今利用されている医療・福祉を同時には維持できないとしたら、何を基準に決めるべきだと思う？",
     "perspective": "observer",
@@ -2559,7 +2559,7 @@
     "id": "r6-06-04-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "climate_environment_energy_and_disaster",
     "topic": "climate_disaster_06-04-l3",
     "question": "危険な暑さや火災リスクがある日のイベントを、参加者が承知していても行政が中止できるべきだと思う？ 救急や消火の負担が他の住民にも及ぶことを、どこまで理由にできる？",
     "perspective": "observer",
@@ -2571,7 +2571,7 @@
     "id": "r6-06-05-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "climate_environment_energy_and_disaster",
     "topic": "climate_disaster_06-05-l3",
     "question": "気候の変化で従来の漁業や農業が難しくなった地域を支える予算は、今までの生産を維持するために使うべき？ 新しい適地への移転や転業に使うべき？",
     "perspective": "observer",
@@ -2583,7 +2583,7 @@
     "id": "r6-06-06-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "climate_environment_energy_and_disaster",
     "topic": "climate_disaster_06-06-l3",
     "question": "複雑な環境問題を一つの危機指標にまとめると、関心を集めやすい一方、違う種類の危険が同じものに見える。注意を促す効果のために、その単純化をどこまで認める？",
     "perspective": "observer",
@@ -2645,10 +2645,10 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "misinformation_media_07-05-l3",
-    "question": "同じ統計から複数の正確な見出しを作れても、一つを選ぶことで社会の印象は変わる。報道は、反対の印象を与える読み方まで併記する責任があると思う？",
+    "question": "同じ調査結果でも、「賛成が3割」と「賛成以外が7割」では印象が違う。\n報道は、もう一方の見方も一緒に示すべきだと思う？",
     "perspective": "observer",
     "detail": {
-      "text": "数字が正確でも切り口の選択によって印象は変わる。全ての解釈を示せない報道で、編集上の責任が生じる。\n\n問いの狙い: 反対の印象を与える読み方まで示す義務があるか問う。"
+      "text": "このカードの割合は、説明のための仮の数字です。「賛成以外」には、反対だけでなく、判断を保留している人などが含まれる場合もあります。\n\n同じ結果でも見出しの選び方で、読者の受け止め方が変わることを考えます。異なる見方も示せば読み手が比較しやすくなる一方、短い記事ですべての切り口を示すのは難しいかもしれません。どこまで示す責任があるかが問いの中心です。"
     }
   },
   {
@@ -2721,7 +2721,7 @@
     "id": "r6-08-04-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "technology_media_and_privacy",
+    "category": "science_research_and_uncertainty",
     "topic": "ai_privacy_08-04-l3",
     "question": "病院が過去の診療記録をAIの研究に使いたい。一人ずつ同意を取り直すと、連絡できない人の記録が抜けて研究に偏りが出る可能性がある。個人を特定しにくくする措置を取れば、改めて同意を得ずに利用することを認める？",
     "perspective": "observer",
@@ -3142,7 +3142,7 @@
     "id": "r6-14-02-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "culture_religion_and_history",
+    "category": "democracy_rights_and_participation",
     "topic": "politics_culture_14-02-l3",
     "question": "政治への抗議として、自分で所有する国旗を傷つける行為を処罰する案がある。誰かの財産を壊したわけではなくても、国の象徴を傷つけたこと自体を犯罪にするべきだと思う？",
     "perspective": "observer",
@@ -3157,7 +3157,7 @@
     "id": "r6-14-03-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "democracy_rights_and_participation",
     "topic": "politics_culture_14-03-l3",
     "question": "政党への公的助成をなくすと、税金で支持しない主張を支える必要はなくなる一方、大口の寄付者が政治に及ぼす影響が強まる可能性がある。あなたは公的助成を残すべきだと思う？",
     "perspective": "decision_maker",
@@ -3169,7 +3169,7 @@
     "id": "r6-14-04-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "democracy_rights_and_participation",
     "topic": "politics_culture_14-04-l3",
     "question": "選挙後に政党が別の政党と合流して主要政策を変える場合、議員は改めて有権者の判断を受けるべきだと思う？ 政治を動かすための妥協として任期中の変更を認める？",
     "perspective": "observer",
@@ -3181,7 +3181,7 @@
     "id": "r6-14-05-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "international_peace_and_cooperation",
     "topic": "politics_culture_14-05-l3",
     "question": "他の地域を守るための軍事的な関与が、自国への攻撃の危険も高めるとしたら、国はどの段階で関与を決めるべき？ 被害が出る前の抑止と、戦争に入る危険をどう比べる？",
     "perspective": "observer",
@@ -3193,7 +3193,7 @@
     "id": "r6-14-06-l3",
     "level": 3,
     "sensitivity": 3,
-    "category": "society_public_policy_and_environment",
+    "category": "international_peace_and_cooperation",
     "topic": "politics_culture_14-06-l3",
     "question": "自治体が外国政府と協力の覚書を結ぶ場合、地域の経済的利益のためなら国の外交方針と異なる関係を築いてよいと思う？",
     "perspective": "decision_maker",
@@ -3943,6 +3943,78 @@
     "perspective": "observer",
     "detail": {
       "text": "恋に近い感情を持つことと、相手の交際や活動の継続について要求することは、別の行為です。感情の強さと、相手との間に合意された約束や責任も分けて考えられます。\n\n希望を伝えること、活動への対価を支払わないこと、相手の選択を拘束することの違いを検討します。感情をどう呼ぶかによって、どの範囲の要求まで正当化できると考えるかが論点です。"
+    }
+  },
+  {
+    "id": "clarity-money_consumption_and_tax-01-l3",
+    "level": 3,
+    "sensitivity": 2,
+    "category": "money_consumption_and_tax",
+    "topic": "subscription_price_disclosure",
+    "question": "「初月無料」と大きく書かれたサービスで、翌月からの料金は小さく表示されているとする。表示をどこまで分かりやすくする責任を、事業者に求めるべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "仮の広告について考えるカードです。実在の事業者が法律に違反しているかを判定する問いではありません。\n\n申し込む前に費用が分かるよう、翌月料金や解約方法を目立たせるだけでなく、確認画面や通知まで求める考えがあります。一方、必要な情報を見つけやすく示した後は、利用者にも条件を読む責任があると考える人もいます。限られた画面で何を優先して伝え、理解の確認をどこまで事業者に求めるかを考えます。"
+    }
+  },
+  {
+    "id": "clarity-housing_community_and_transport-01-l3",
+    "level": 3,
+    "sensitivity": 2,
+    "category": "housing_community_and_transport",
+    "topic": "reuse_of_vacant_buildings",
+    "question": "自治体が、空き家を地域の集会所に変える案を検討している。改修費が高く、新しく建てる方が使いやすいという意見もある。建物を残すことと、費用や使いやすさをどう比べるべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "架空の地域と計画について考えるカードです。空き家の状態、所有者の同意、必要な費用、利用する人の希望は、実際には一つずつ確認する必要があります。\n\n既存の建物を残すことには、地域の記憶や景観を大切にする意味を見いだす人がいます。一方、維持費や使いにくさを長く負担するなら、新しい施設を選ぶ考えもあります。何をどれくらいの期間で比べるかを考えます。"
+    }
+  },
+  {
+    "id": "clarity-climate_environment_energy_and_disaster-01-l3",
+    "level": 3,
+    "sensitivity": 2,
+    "category": "climate_environment_energy_and_disaster",
+    "topic": "renewable_energy_and_landscape",
+    "question": "地域に再生可能エネルギーの発電設備を作る案がある。電気を確保できる一方、大切にしてきた景観が変わるとする。計画を進めるかどうかを、誰とどのように決めるべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "仮の発電計画について考えるカードです。電気の供給、景観への影響、建設費などの具体的な効果は、計画ごとに確かめる必要があります。\n\n電気を利用する人と、設備の近くで暮らす人では、得られる利益や受ける変化が異なるかもしれません。話し合いで条件を変えること、別の場所を検討すること、計画を見送ることも含め、誰の意見をどの段階で聞くかを考えます。"
+    }
+  },
+  {
+    "id": "clarity-democracy_rights_and_participation-01-l3",
+    "level": 3,
+    "sensitivity": 2,
+    "category": "democracy_rights_and_participation",
+    "topic": "access_to_public_participation",
+    "question": "地域の計画を話し合う説明会が、平日の昼だけに開かれるとする。参加できない人の意見を、行政はどのように集め、判断に反映するべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "仮の説明会の開き方について考えるカードです。実在の自治体の運用について述べるものではありません。\n\n開催回数を増やしたり、文章やオンラインで意見を受け付けたりすれば、異なる事情の人が参加しやすくなるかもしれません。一方、集めた意見の確認や整理にも費用と時間がかかります。参加した人数だけでなく、参加しにくい理由や意見の内容をどう扱うかを考えます。"
+    }
+  },
+  {
+    "id": "clarity-international_peace_and_cooperation-01-l3",
+    "level": 3,
+    "sensitivity": 2,
+    "category": "international_peace_and_cooperation",
+    "topic": "cross_border_water_sharing",
+    "question": "二つの国が同じ川の水を使っている。上流の国が使う量を増やすと、下流の国では生活や農業に使える水が減るとする。水の使い方は、どんな基準で決めるべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "架空の二つの国と川について考えるカードです。実在する紛争や、特定の国際法上の権利を説明する問いではありません。\n\n上流側には、自国の暮らしや産業を支えたい理由があり、下流側には、生活に必要な水を確保したい理由があります。人口、生活に必要な量、これまでの利用、代わりの水源など、どの条件を比べるかで考え方が変わります。片方だけで決めることと、共同で調べて合意することの違いも考えられます。"
+    }
+  },
+  {
+    "id": "clarity-science_research_and_uncertainty-01-l3",
+    "level": 3,
+    "sensitivity": 2,
+    "category": "science_research_and_uncertainty",
+    "topic": "preliminary_research_disclosure",
+    "question": "新しい研究で期待できそうな結果が出たが、別の人が同じ方法で確かめた結果はまだない。社会に早く役立つ可能性があるなら、公表するかどうかを何で決めるべきだと思う？",
+    "perspective": "observer",
+    "detail": {
+      "text": "仮の研究結果について考えるカードです。特定の技術や治療の効果を述べるものではありません。\n\n早く公開することで、ほかの研究者が確かめたり、次の研究を始めたりしやすくなるかもしれません。一方、まだ確かめきれていない結果が、確立した事実として受け取られることも気になります。公表の時期、伝える相手、不確かな点の示し方を分けて考えます。"
     }
   }
 ]
