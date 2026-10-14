@@ -111,18 +111,18 @@ h1 {
     font-size: 16px;
     text-decoration: none;
 
-    background-color: #111111;
+    background-color: #555555;
     color: #ffffff;
     border-radius: 12px;
 }
 
 .start-button:hover,
 .start-button:focus-visible {
-    background-color: #333333;
+    background-color: #444444;
 }
 
 .start-button:focus-visible {
-    outline: 2px solid #111111;
+    outline: 2px solid #555555;
     outline-offset: 3px;
 }
 

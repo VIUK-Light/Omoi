@@ -1,8 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const level = Number(params.get("level"));
-const count = Number(params.get("count"));
 
-const levelDisplay = document.getElementById("levelDisplay");
 const questionText = document.getElementById("questionText");
 const questionContent =
     document.querySelector(".question-content");
@@ -14,14 +12,26 @@ const sourceList =
 const nextQuestionButton =
     document.getElementById("nextQuestionButton");
 
-const skipQuestionButton =
-    document.getElementById("skipQuestionButton");
+const finishButton =
+    document.getElementById("finishButton");
 
-const reportQuestionLink =
-    document.getElementById("reportQuestionLink");
+const finishConfirmDialog =
+    document.getElementById("finishConfirmDialog");
+
+const cancelFinishButton =
+    document.getElementById("cancelFinishButton");
+
+const confirmFinishButton =
+    document.getElementById("confirmFinishButton");
+
+const previousQuestionButton =
+    document.getElementById("previousQuestionButton");
 
 const detailButton =
     document.getElementById("detailButton");
+
+const detailButtonLabel =
+    document.getElementById("detailButtonLabel");
 
 const detailPanel =
     document.getElementById("detailPanel");
@@ -29,16 +39,9 @@ const detailPanel =
 const detailText =
     document.getElementById("detailText");
 
-const closeDetailButton =
-    document.getElementById("closeDetailButton");
 
-
-let filteredQuestions = [];
+let sessionQuestions = [];
 let currentQuestionIndex = 0;
-
-const reportIssueURL =
-    "https://github.com/VIUK-Light/Omoi/issues/new";
-
 
 const retryLoadButton = document.getElementById("retryLoadButton");
 let state = "idle";
@@ -46,7 +49,9 @@ let state = "idle";
 function setState(nextState) {
     state = nextState;
     nextQuestionButton.disabled = state !== "ready";
-    skipQuestionButton.disabled = state !== "ready";
+    finishButton.disabled = state !== "ready";
+    previousQuestionButton.disabled =
+        state !== "ready" || currentQuestionIndex === 0;
     questionContent.setAttribute("aria-busy", String(state === "loading"));
     retryLoadButton.hidden = state !== "error";
 }
@@ -54,10 +59,8 @@ function setState(nextState) {
 function showMessage(message) {
     questionText.textContent = message;
     updateQuestionLayout({ question: message });
-    hideReportQuestionLink();
     detailButton.hidden = true;
-    detailPanel.hidden = true;
-    detailButton.setAttribute("aria-expanded", "false");
+    setDetailPanelOpen(false);
 }
 
 function validateQuestions(questions) {
@@ -90,7 +93,7 @@ async function loadQuestions() {
     if (state === "loading") return;
     setState("loading");
     showMessage("読み込み中...");
-    filteredQuestions = [];
+    sessionQuestions = [];
     currentQuestionIndex = 0;
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
@@ -102,8 +105,8 @@ async function loadQuestions() {
         const questions = await response.json();
         validateQuestions(questions);
         shuffle(questions);
-        filteredQuestions = questions.slice(0, count);
-        if (filteredQuestions.length === 0) {
+        sessionQuestions = questions;
+        if (sessionQuestions.length === 0) {
             showMessage("このLevelの質問はまだありません。レベルを選び直してください。");
             setState("empty");
             return;
@@ -123,12 +126,10 @@ async function loadQuestions() {
 
 retryLoadButton.addEventListener("click", loadQuestions);
 if (!["1", "2", "3", "4"].includes(params.get("level")) ||
-    !["5", "10", "30", "60"].includes(params.get("count")) ||
-    params.getAll("level").length !== 1 || params.getAll("count").length !== 1) {
+    params.getAll("level").length !== 1) {
     setState("invalid");
     showMessage("質問の条件が正しくありません。「レベルを変える」から選び直してください。");
 } else {
-    levelDisplay.textContent = "Level " + level;
     loadQuestions();
 }
 
@@ -146,20 +147,18 @@ function shuffle(array) {
 
 function showQuestion() {
     const currentQuestion =
-        filteredQuestions[currentQuestionIndex];
+        sessionQuestions[currentQuestionIndex];
 
     questionText.textContent =
         currentQuestion.question;
 
     updateQuestionLayout(currentQuestion);
 
-    updateReportQuestionLink(currentQuestion);
-
     // 前の質問の状態をリセット
     detailButton.hidden = true;
-    detailPanel.hidden = true;
-    detailButton.setAttribute("aria-expanded", "false");
+    setDetailPanelOpen(false);
     sourceSection.hidden = true;
+    previousQuestionButton.disabled = currentQuestionIndex === 0;
 
     detailText.textContent = "";
     sourceList.innerHTML = "";
@@ -260,84 +259,27 @@ window.addEventListener(
 );
 
 
-function updateReportQuestionLink(question) {
-    const rawQuestionID =
-        question.id === null ||
-        question.id === undefined
-            ? ""
-            : String(question.id).trim();
-
-    const questionID =
-        rawQuestionID !== ""
-            ? rawQuestionID
-            : "未設定";
-
-    const reportURL =
-        new URL(reportIssueURL);
-
-    reportURL.searchParams.set(
-        "template",
-        "question-report.yml"
-    );
-
-    reportURL.searchParams.set(
-        "title",
-        "[質問報告] " + questionID
-    );
-
-    reportURL.searchParams.set(
-        "question_id",
-        questionID
-    );
-
-    reportURL.searchParams.set(
-        "level",
-        "Level " + level
-    );
-
-    reportURL.searchParams.set(
-        "question_text",
-        question.question
-    );
-
-    reportURL.searchParams.set(
-        "source_file",
-        "level" + level + ".json"
-    );
-
-    reportURL.searchParams.set(
-        "source_url",
-        window.location.href
-    );
-
-    reportQuestionLink.href =
-        reportURL.toString();
-
-    reportQuestionLink.hidden = false;
-}
-
-
-function hideReportQuestionLink() {
-    reportQuestionLink.hidden = true;
-    reportQuestionLink.removeAttribute("href");
-}
-
-
 function goToNextQuestion() {
     if (state !== "ready") return;
     currentQuestionIndex++;
 
-    if (currentQuestionIndex >= filteredQuestions.length) {
-        setState("finished");
-        window.location.href =
-    "finish.html?level=" +
-    level +
-    "&count=" +
-    count;
+    if (currentQuestionIndex >= sessionQuestions.length) {
+        finishSession();
         return;
     }
 
     showQuestion();
+}
+
+function goToPreviousQuestion() {
+    if (state !== "ready" || currentQuestionIndex === 0) return;
+    currentQuestionIndex--;
+    showQuestion();
+}
+
+function finishSession() {
+    setState("finished");
+    window.location.href = "index.html";
 }
 
 
@@ -345,29 +287,46 @@ nextQuestionButton.addEventListener("click", function () {
     goToNextQuestion();
 });
 
+previousQuestionButton.addEventListener("click", function () {
+    goToPreviousQuestion();
+});
 
-skipQuestionButton.addEventListener("click", function () {
-    goToNextQuestion();
+finishButton.addEventListener("click", function () {
+    if (state !== "ready") return;
+    finishConfirmDialog.showModal();
+    cancelFinishButton.focus();
+});
+
+cancelFinishButton.addEventListener("click", function () {
+    finishConfirmDialog.close();
+    finishButton.focus();
+});
+
+confirmFinishButton.addEventListener("click", function () {
+    finishConfirmDialog.close();
+    finishSession();
+});
+
+finishConfirmDialog.addEventListener("close", function () {
+    if (state === "ready") finishButton.focus();
 });
 
 
 detailButton.addEventListener("click", function () {
-    detailPanel.hidden = false;
-    detailButton.setAttribute("aria-expanded", "true");
-    detailPanel.focus();
+    setDetailPanelOpen(detailPanel.hidden);
 });
 
-
-function closeDetailPanel() {
-    detailPanel.hidden = true;
-    detailButton.setAttribute("aria-expanded", "false");
-    detailButton.focus();
+function setDetailPanelOpen(isOpen) {
+    detailPanel.hidden = !isOpen;
+    detailButton.setAttribute("aria-expanded", String(isOpen));
+    detailButtonLabel.textContent =
+        isOpen ? "背景を閉じる" : "問いの背景";
 }
 
-
-closeDetailButton.addEventListener("click", function () {
-    closeDetailPanel();
-});
+function closeDetailPanel() {
+    setDetailPanelOpen(false);
+    detailButton.focus();
+}
 
 
 document.addEventListener("keydown", function (event) {

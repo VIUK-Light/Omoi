@@ -76,17 +76,17 @@ body {
 }
 
 .level-list input:checked + .level-card {
-    background: #111;
+    background: #555;
     color: #fff;
 }
 
 .level-list input:checked + .level-card div > span {
-    color: #ccc;
+    color: #e0e0e0;
 }
 
 .level-list input:checked + .level-card .radio-mark {
     background: #fff;
-    border: 5px solid #111;
+    border: 5px solid #555;
     outline: 2px solid #fff;
 }
 .select-actions {
@@ -114,7 +114,7 @@ body {
     border: none;
     border-radius: 10px;
 
-    background: #111;
+    background: #555;
     color: #fff;
 
     font-size: 15px;
@@ -122,11 +122,11 @@ body {
 }
 
 #nextButton:hover:not(:disabled) {
-    background: #333;
+    background: #444;
 }
 
 #nextButton:focus-visible {
-    outline: 2px solid #111;
+    outline: 2px solid #555;
     outline-offset: 3px;
 }
 
@@ -134,45 +134,11 @@ body {
     opacity: 0.2;
     cursor: not-allowed;
 }
-.count-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-
-.count-list input {
-    position: absolute;
-    opacity: 0;
-}
-
-.level-list input:focus-visible + .level-card,
-.count-list input:focus-visible + .count-card {
+.level-list input:focus-visible + .level-card {
     outline: 2px solid #111;
     outline-offset: 3px;
 }
 
-.level-list input:not(:checked) + .level-card:hover,
-.count-list input:not(:checked) + .count-card:hover {
+.level-list input:not(:checked) + .level-card:hover {
     background: #f5f5f5;
-}
-
-.count-card {
-    padding: 14px 8px;
-
-    border: 1.5px solid #111;
-    border-radius: 12px;
-
-    text-align: center;
-    cursor: pointer;
-}
-
-.count-list input:checked + .count-card {
-    background: #111;
-    color: #fff;
-}
-
-@media (max-width: 360px) {
-    .count-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }

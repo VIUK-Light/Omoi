@@ -57,7 +57,7 @@ h1 {
 .continue-button {
     padding: 13px 30px;
 
-    background: #111;
+    background: #555;
     color: #fff;
 
     border-radius: 11px;
@@ -71,10 +71,10 @@ h1 {
 
 .back-button:focus-visible,
 .continue-button:focus-visible {
-    outline: 2px solid #111;
+    outline: 2px solid #555;
     outline-offset: 3px;
 }
 
 .continue-button:hover {
-    background: #333;
+    background: #444;
 }
