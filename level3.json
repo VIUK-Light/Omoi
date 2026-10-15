@@ -2,7 +2,18 @@
   {
     "id": "gender-relations-001",
     "category": "gender_sexuality_and_identity",
-    "question": "ハラスメントだと受け取られることを恐れ、異性の同僚とは仕事以外の会話をしない人がいる。その距離の取り方をどう思う？",
+    "scenario": "ハラスメントだと受け取られることを恐れ、異性の同僚とは仕事以外の会話をしない人がいる。",
+    "question": "その距離の取り方をどう思う？",
+    "hints": [
+      "相手が安心して話せる距離は、どう確かめられる？",
+      "会話を避けることで、仕事上の関係にも影響が出ると思う？"
+    ],
+    "terms": [
+      {
+        "term": "ハラスメント",
+        "definition": "嫌がらせや、相手に不快さ・不利益を与える言動のこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -14,7 +25,22 @@
   {
     "id": "gender-identity-001",
     "category": "gender_sexuality_and_identity",
-    "question": "女性用更衣室をトランス女性が利用することについて、利用機会と、着替える際のプライバシーを踏まえ、どのような条件や設備なら認められると思う？ 認められないと考える場合、その理由は？",
+    "scenario": "トランス女性が女性用更衣室を使いたいと希望している。ほかの利用者からは、着替えのプライバシーを心配する声もある。",
+    "question": "トランス女性の利用機会と、ほかの利用者のプライバシーをどう両立する？認めない場合は、その理由は？",
+    "hints": [
+      "個室や仕切りがあれば、利用条件の判断は変わる？",
+      "利用したい人と他の利用者の希望を、どう確かめる？"
+    ],
+    "terms": [
+      {
+        "term": "トランス女性",
+        "definition": "生まれたときに男性とされた人で、自分を女性と認識している人のこと。"
+      },
+      {
+        "term": "プライバシー",
+        "definition": "私生活や個人の情報を、望まない形で知られたり干渉されたりしないこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -30,6 +56,16 @@
     "id": "relationships-001",
     "category": "relationships_and_communication",
     "question": "恋愛や結婚の機会に大きな格差があることは、社会問題だと思う？",
+    "hints": [
+      "本人の選択と、経済状況などで選べないことをどう分ける？",
+      "社会が支援するなら、どんな機会を増やすべき？"
+    ],
+    "terms": [
+      {
+        "term": "格差",
+        "definition": "収入や機会などに大きな差があること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -42,6 +78,16 @@
     "id": "feminism-001",
     "category": "gender_sexuality_and_identity",
     "question": "女性が少ない分野への進学を支援するため、女性だけが応募できる奨学金を設けることは公平だと思う？",
+    "hints": [
+      "女性が少ない理由によって、支援の必要性は変わる？",
+      "経済的に困る他の応募者との公平さをどう考える？"
+    ],
+    "terms": [
+      {
+        "term": "奨学金",
+        "definition": "学ぶための費用を支えるお金。返す必要があるものと、ないものがある。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -54,6 +100,16 @@
     "id": "family-law-001",
     "category": "family_and_care",
     "question": "離婚後は共同親権を原則にするべきだと思う？",
+    "hints": [
+      "子どもの生活について、親同士が話し合えない場合はどうする？",
+      "共同親権を原則にするとき、どんな例外が必要？"
+    ],
+    "terms": [
+      {
+        "term": "共同親権",
+        "definition": "子どもの養育や教育などを決める親の権限と責任を、両方の親が持つこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -69,6 +125,16 @@
     "id": "family-law-002",
     "category": "family_and_care",
     "question": "支払う能力があるのに養育費を払わない人に対し、給与などから強制的に支払いを確保する仕組みは、どこまで認めるべきだと思う？",
+    "hints": [
+      "払う能力を、誰がどう確認するべき？",
+      "子どもの生活と、支払う人の生活をどう守る？"
+    ],
+    "terms": [
+      {
+        "term": "養育費",
+        "definition": "子どもが生活し成長するために必要な費用。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -84,6 +150,11 @@
     "id": "caregiving-001",
     "category": "family_and_care",
     "question": "家事や育児は、収入が多い側が少なく負担しても公平だと思う？",
+    "hints": [
+      "収入以外に、労働時間や体力も考慮するべき？",
+      "二人の納得を、どのように確かめる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -98,7 +169,17 @@
   {
     "id": "criminal-justice-001",
     "category": "justice_safety_and_crime",
-    "question": "性被害者の保護と、冤罪を防ぐことは、どちらをより重視するべき？",
+    "question": "性被害を訴える人を守ることと、誤って罪に問われる人を出さないこと。どちらをより優先するべきだと思う？",
+    "hints": [
+      "被害の訴えを受け止めることと、有罪と決めることはどう違う？",
+      "双方を守るため、事実確認に何が必要？"
+    ],
+    "terms": [
+      {
+        "term": "冤罪",
+        "definition": "罪を犯していない人が、誤って犯罪の責任を負わされること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -114,6 +195,16 @@
     "id": "public-space-001",
     "category": "society_public_policy_and_environment",
     "question": "女性専用車両は男女平等に反すると思う？",
+    "hints": [
+      "被害防止の効果を、どう確かめるべき？",
+      "利用できない人の負担をどう考える？"
+    ],
+    "terms": [
+      {
+        "term": "男女平等",
+        "definition": "性別によって、権利や機会が不当に制限されないこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -126,6 +217,16 @@
     "id": "family-law-003",
     "category": "family_and_care",
     "question": "選択的夫婦別姓を認めるべきだと思う？",
+    "hints": [
+      "同じ名字にすることには、どんな意味がある？",
+      "名字を変える負担や子どもの名字をどう扱う？"
+    ],
+    "terms": [
+      {
+        "term": "選択的夫婦別姓",
+        "definition": "結婚する夫婦が、同じ名字にするか、それぞれの名字を保つかを選べる制度。"
+      }
+    ],
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -141,6 +242,16 @@
     "id": "mental-health-001",
     "category": "health_and_disability",
     "question": "男性の孤独や自殺の問題は、もっと男性に特化して支援するべきだと思う？",
+    "hints": [
+      "男性が相談しにくい理由には、どんなものがある？",
+      "性別を問わない支援と専用の支援は、どう組み合わせられる？"
+    ],
+    "terms": [
+      {
+        "term": "特化",
+        "definition": "特定の対象や問題に重点を置くこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -156,6 +267,11 @@
     "id": "public-support-001",
     "category": "society_public_policy_and_environment",
     "question": "生理用品を税金で無料配布するべきだと思う？",
+    "hints": [
+      "配布の対象と場所を、どう決める？",
+      "他の生活必需品への支援と、どう比べる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -168,6 +284,16 @@
     "id": "relationship-002",
     "category": "relationships_and_communication",
     "question": "既婚者が独身だと偽って恋愛することは、どこまで責任を負うべきだと思う？",
+    "hints": [
+      "嘘が相手の選択に与えた影響を、どう考える？",
+      "謝罪と金銭的な補償には、それぞれ何を求める？"
+    ],
+    "terms": [
+      {
+        "term": "補償",
+        "definition": "受けた損失や負担を、金銭などで補うこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -179,7 +305,18 @@
   {
     "id": "relationship-003",
     "category": "relationships_and_communication",
-    "question": "恋人同士で、一方がもう一方の生活費を支えている。二人が納得している場合でも、経済的な依存が関係の問題になるとしたら、どんなときだと思う？",
+    "scenario": "恋人同士で、一方がもう一方の生活費を支えている。",
+    "question": "二人が納得している場合でも、経済的な依存が関係の問題になるとしたら、どんなときだと思う？",
+    "hints": [
+      "支えられる側が断ったり別れたりできるかは、重要？",
+      "二人の合意が後から変わったとき、どう見直す？"
+    ],
+    "terms": [
+      {
+        "term": "経済的な依存",
+        "definition": "生活に必要なお金を、他の人の支えに頼っていること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -192,6 +329,24 @@
     "id": "society-001",
     "category": "society_public_policy_and_environment",
     "question": "天皇本人が女性であることと、母方を通じて皇統につながる人が天皇になることについて、それぞれどう考える？ 二つで判断が違うなら、その理由は？",
+    "hints": [
+      "女性天皇と女系天皇では、何が違う？",
+      "伝統と継承の安定を、それぞれどう考える？"
+    ],
+    "terms": [
+      {
+        "term": "皇統",
+        "definition": "天皇につながる家系のこと。"
+      },
+      {
+        "term": "女性天皇",
+        "definition": "女性である天皇のこと。"
+      },
+      {
+        "term": "女系天皇",
+        "definition": "母方を通じて天皇の家系につながる天皇のこと。本人が男性か女性かとは別の区分。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -206,7 +361,26 @@
     "topic": "progressive_taxation_and_public_services",
     "perspective": "decision_maker",
     "role": "local_budget_planner",
-    "question": "あなたは自治体の予算を決める立場にある。福祉や教育を維持するには税収を増やす必要があるが、全員の負担を同じ割合で増やす方法と、収入の高い人の負担をより大きくする方法がある。あなたなら、どちらを選ぶ？ その理由は何？",
+    "scenario": "あなたは自治体の予算を決める立場にある。福祉や教育を維持するには税収を増やす必要があるが、全員の負担を同じ割合で増やす方法と、収入の高い人の負担をより大きくする方法がある。",
+    "question": "あなたなら、どちらを選ぶ？ その理由は何？",
+    "hints": [
+      "同じ割合の負担でも、暮らしへの影響は同じ？",
+      "必要なサービスと納税者の負担をどう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "自治体",
+        "definition": "都道府県や市区町村など、地域の行政を担う組織。"
+      },
+      {
+        "term": "福祉",
+        "definition": "生活の困難を支え、安心して暮らせるようにする仕組みや活動。"
+      },
+      {
+        "term": "税収",
+        "definition": "国や自治体が税金として受け取るお金。"
+      }
+    ],
     "level": 3,
     "sensitivity": 1,
     "detail": {
@@ -219,7 +393,13 @@
     "topic": "uniform_rules_and_accommodation",
     "perspective": "decision_maker",
     "role": "school_rule_reviewer",
-    "question": "あなたは学校のルールを見直す委員になった。全員に同じルールを適用すれば分かりやすいが、ある事情を持つ少数の生徒には大きな負担になる。例外を作れば公平でないと言う人もいる。あなたなら、全員に同じルールを守らせる？ それとも事情に応じた例外を認める？",
+    "scenario": "あなたは学校のルールを見直す委員になった。全員に同じルールを適用すれば分かりやすいが、ある事情を持つ少数の生徒には大きな負担になる。例外を作れば公平でないと言う人もいる。",
+    "question": "あなたなら、全員に同じルールを守らせる？ それとも事情に応じた例外を認める？",
+    "hints": [
+      "同じルールで生じる負担の差を、どう確認する？",
+      "例外を認める基準は、誰に説明できればよい？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 1,
     "detail": {
@@ -232,7 +412,13 @@
     "topic": "majority_and_minority_needs",
     "perspective": "decision_maker",
     "role": "local_budget_planner",
-    "question": "あなたは地域の予算を決める立場にある。多くの人が使う施設を直せば全体の満足度は高いが、その予算を使うと、少数の人にとって必要な支援を続けられなくなる。より多くの人に役立つことと、少数の人に必要な支援を守ることがぶつかったら、何を優先する？",
+    "scenario": "あなたは地域の予算を決める立場にある。多くの人が使う施設を直せば全体の満足度は高いが、その予算を使うと、少数の人にとって必要な支援を続けられなくなる。",
+    "question": "あなたなら、多くの人が使う施設の修理を優先する？それとも、少数の人に必要な支援を続ける？",
+    "hints": [
+      "支援がなくなった人への影響は、利用人数だけで測れる？",
+      "施設の修理と支援を、一部ずつ行う方法はある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 1,
     "detail": {
@@ -242,7 +428,13 @@
   {
     "id": "support-007",
     "category": "school_and_youth",
-    "question": "友達が、自分や周りの人がけがをするおそれのあることをしていた。止めてもやめないなら、本人に秘密にして先生へ相談する？",
+    "scenario": "友達が、自分や周りの人がけがをするおそれのあることをしていた。",
+    "question": "止めてもやめないなら、本人に秘密にして先生へ相談する？",
+    "hints": [
+      "けがのおそれがどれほど切迫しているか、何で確かめる？",
+      "相談する理由を、友達に伝える方法はある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "topic": "support",
@@ -255,7 +447,13 @@
   {
     "id": "support-009",
     "category": "school_and_youth",
-    "question": "友達が困っているのに、自分だけでは支えきれない。本人が嫌がるかもしれなくても、先生に相談することは友達を守る行動だと言える？",
+    "scenario": "友達が困っているのに、自分だけでは支えきれない。",
+    "question": "本人が嫌がるかもしれなくても、先生に相談することは友達を守る行動だと言える？",
+    "hints": [
+      "自分一人では難しいと感じるのは、どんなとき？",
+      "友達が安心して相談できる大人を、どう選ぶ？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "topic": "support",
@@ -268,7 +466,13 @@
   {
     "id": "support-010",
     "category": "school_and_youth",
-    "question": "友達から『先生には言わないで』と頼まれた。約束を守ることと、必要なら大人につなぐことの境界を、あなたはどこに置く？",
+    "scenario": "友達から『先生には言わないで』と頼まれた。",
+    "question": "約束を守ることと、必要なら大人につなぐことの境界を、あなたはどこに置く？",
+    "hints": [
+      "秘密を守れないほど危険な状況は、どんなもの？",
+      "相談が必要になったとき、友達にどう説明する？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "topic": "support",
@@ -281,7 +485,13 @@
   {
     "id": "support-013",
     "category": "school_and_youth",
-    "question": "先生に相談すれば状況は変わるかもしれないが、友達から『裏切られた』と思われるかもしれない。それでも相談するかを、何で決める？",
+    "scenario": "先生に相談すれば状況は変わるかもしれないが、友達から『裏切られた』と思われるかもしれない。",
+    "question": "それでも相談するかを、何で決める？",
+    "hints": [
+      "相談しない場合、どんな影響が考えられる？",
+      "相談後も友達を支えるため、何ができる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "topic": "support",
@@ -295,6 +505,11 @@
     "id": "support-014",
     "category": "school_and_youth",
     "question": "友達が隠したいと思っている事実を先生に伝えることは、どんな場合に『裏切り』ではなく必要な助けになると思う？",
+    "hints": [
+      "友達の安全と、隠したい気持ちをどう比べる？",
+      "必要な情報だけを伝えるには、どうすればよい？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "topic": "support",
@@ -308,6 +523,11 @@
     "id": "support-017",
     "category": "school_and_youth",
     "question": "友達の味方でいたい気持ちと、他の人への影響を止めたい気持ちがぶつかったとき、あなたは誰に何を相談する？",
+    "hints": [
+      "友達の行動が他の人に与える影響を、どう確認する？",
+      "相談相手には、友達への気持ちも伝える？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "topic": "support",
@@ -320,7 +540,13 @@
   {
     "id": "bullying-010",
     "category": "school_and_youth",
-    "question": "自分は直接の被害を受けていないが、いじめのような場面を見かけた。安全を損なわずに関わるため、最初に何ができると思う？",
+    "scenario": "自分は直接の被害を受けていないが、いじめのような場面を見かけた。",
+    "question": "安全を損なわずに関わるため、最初に何ができると思う？",
+    "hints": [
+      "自分や被害を受ける人に危険が及ぶ可能性はある？",
+      "一人で関わらず、助けを求めるなら誰がよい？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "topic": "bullying",
@@ -333,7 +559,13 @@
   {
     "id": "bullying-013",
     "category": "school_and_youth",
-    "question": "仲のいい友達が、誰かを傷つける行動をしていると気づいた。関係が壊れるかもしれなくても、どう伝える？",
+    "scenario": "仲のいい友達が、誰かを傷つける行動をしていると気づいた。",
+    "question": "関係が壊れるかもしれなくても、どう伝える？",
+    "hints": [
+      "見た行動と、相手への評価をどう分けて伝える？",
+      "友達が反発したとき、どんな助けを求められる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "topic": "bullying",
@@ -346,7 +578,13 @@
   {
     "id": "bullying-014",
     "category": "school_and_youth",
-    "question": "誰かを傷つける行動を止めたいが、自分も嫌われたり標的になったりしそうだ。一人で直接言う以外に、どんな方法を選べる？",
+    "scenario": "誰かを傷つける行動を止めたいが、自分も嫌われたり標的になったりしそうだ。",
+    "question": "一人で直接言う以外に、どんな方法を選べる？",
+    "hints": [
+      "複数人で相談することには、どんな利点と危険がある？",
+      "傷つけられている人の希望を、どう確かめる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "topic": "bullying",
@@ -359,7 +597,18 @@
   {
     "id": "bullying-018",
     "category": "school_and_youth",
-    "question": "傷つける行動をやめてほしいと伝えても変わらなかった。次に相談するとしたら、何を伝え、どうすれば当事者の安全を守れる？",
+    "scenario": "傷つける行動をやめてほしいと伝えても変わらなかった。",
+    "question": "次に相談するとしたら、何を伝え、どうすれば当事者の安全を守れる？",
+    "hints": [
+      "日時や行動など、何を記録して伝えたい？",
+      "相談したことが知られた場合の安全を、どう確保する？"
+    ],
+    "terms": [
+      {
+        "term": "当事者",
+        "definition": "その出来事に直接関わっている人。"
+      }
+    ],
     "level": 3,
     "sensitivity": 2,
     "topic": "bullying",
@@ -373,6 +622,11 @@
     "id": "justice-001",
     "category": "justice_safety_and_crime",
     "question": "死刑制度は必要だと思う？",
+    "hints": [
+      "取り返せない処罰であることを、どう評価する？",
+      "被害者への支援と、刑罰の重さをどう考える？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -387,7 +641,21 @@
   {
     "id": "justice-002",
     "category": "justice_safety_and_crime",
-    "question": "同じ重大な犯罪をした場合でも、未成年者への処遇は、大人への処罰より更生を重視するべきだと思う？",
+    "question": "同じ重大な犯罪をした場合、未成年には大人より、立ち直るための支援を重視するべきだと思う？",
+    "hints": [
+      "年齢による責任の違いを、どう考える？",
+      "更生と被害者への配慮を、どう両立させる？"
+    ],
+    "terms": [
+      {
+        "term": "更生",
+        "definition": "犯罪などをした人が、自分の行動を改め、社会で暮らし直していくこと。"
+      },
+      {
+        "term": "処遇",
+        "definition": "相手に対して行う扱いや対応。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -403,6 +671,16 @@
     "id": "justice-003",
     "category": "justice_safety_and_crime",
     "question": "前科がある人を、採用で不利にしてもいいと思う？",
+    "hints": [
+      "仕事の内容と過去の犯罪の関係は、重要？",
+      "再出発の機会と職場の安全をどう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "前科",
+        "definition": "過去に犯罪について有罪の判決が確定した経歴。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -417,7 +695,26 @@
   {
     "id": "justice-004",
     "category": "justice_safety_and_crime",
-    "question": "更生が進んだと判断された受刑者の仮釈放を、被害を受けた人が強く望んでいない。その意向を、仮釈放の判断でどこまで重く見るべきだと思う？",
+    "scenario": "更生が進んだと判断された受刑者の仮釈放を、被害を受けた人が強く望んでいない。",
+    "question": "その意向を、仮釈放の判断でどこまで重く見るべきだと思う？",
+    "hints": [
+      "更生したという判断は、何で確かめるべき？",
+      "被害者の不安や安全には、別にどんな対応が必要？"
+    ],
+    "terms": [
+      {
+        "term": "更生",
+        "definition": "犯罪などをした人が、自分の行動を改め、社会で暮らし直していくこと。"
+      },
+      {
+        "term": "受刑者",
+        "definition": "刑事裁判で刑が確定し、その刑を受けている人。"
+      },
+      {
+        "term": "仮釈放",
+        "definition": "刑期が終わる前に、一定の条件の下で刑務所などから出ること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -432,7 +729,18 @@
   {
     "id": "life-002",
     "category": "ethics_and_decision_making",
-    "question": "回復の見込みがない病気で耐え難い苦痛がある人が、十分な説明を受けた上で繰り返し望んでいる場合、医師が死をもたらす薬を投与することを認めるべきだと思う？",
+    "scenario": "治る見込みのない病気で強い苦痛がある人が、説明を受けても何度も医師による安楽死を望んでいる。",
+    "question": "本人の希望に応じた安楽死を認めるべきだと思う？",
+    "hints": [
+      "本人の意思が十分に確かめられているか、何が必要？",
+      "苦痛を和らげる別の方法がある場合、判断は変わる？"
+    ],
+    "terms": [
+      {
+        "term": "安楽死",
+        "definition": "本人の希望を受け、医師が薬を使って死をもたらすこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -444,7 +752,17 @@
   {
     "id": "medicine-001",
     "category": "health_and_disability",
-    "question": "臓器提供は、本人が拒否していなければ提供する仕組みにしてもいいと思う？",
+    "question": "亡くなった後の臓器提供は、本人が生前に拒否していなければ認める仕組みにしてよいと思う？",
+    "hints": [
+      "拒否する意思を、誰もが簡単に示せる必要はある？",
+      "本人の意思が分からないとき、家族の意向をどう扱う？"
+    ],
+    "terms": [
+      {
+        "term": "臓器提供",
+        "definition": "移植を必要とする人のために、体の臓器を提供すること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -460,6 +778,16 @@
     "id": "medicine-002",
     "category": "health_and_disability",
     "question": "出生前診断で重い病気の可能性が分かったら、出産するかどうかの判断材料にしていいと思う？",
+    "hints": [
+      "診断で分かることと、分からないことをどう確認する？",
+      "本人が圧力を受けずに判断するには、どんな支援が必要？"
+    ],
+    "terms": [
+      {
+        "term": "出生前診断",
+        "definition": "生まれる前に、胎児の状態や特定の病気などについて調べる検査。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -475,6 +803,20 @@
     "id": "medicine-003",
     "category": "health_and_disability",
     "question": "遺伝子編集で、生まれる子どもの病気を防げるなら使うべきだと思う？",
+    "hints": [
+      "防げる病気と、将来の危険をどう比べる？",
+      "生まれる子どもが同意できないことを、どう考える？"
+    ],
+    "terms": [
+      {
+        "term": "遺伝子編集",
+        "definition": "体の特徴などに関わる遺伝子の情報を、人の手で変える技術。"
+      },
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -490,6 +832,20 @@
     "id": "family-policy-001",
     "category": "family_and_care",
     "question": "代理出産を認めるべきだと思う？",
+    "hints": [
+      "妊娠する人が自由に同意できる条件は何？",
+      "生まれる子どもの生活や親子関係を、どう守る？"
+    ],
+    "terms": [
+      {
+        "term": "代理出産",
+        "definition": "子どもを望む人に代わって、別の人が妊娠し出産すること。"
+      },
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -505,6 +861,20 @@
     "id": "family-policy-002",
     "category": "family_and_care",
     "question": "精子や卵子の提供で生まれた子どもは、提供者を知る権利があると思う？",
+    "hints": [
+      "子どもが知りたい理由を、どう受け止める？",
+      "提供者の私生活と、子どもの権利をどう調整する？"
+    ],
+    "terms": [
+      {
+        "term": "精子",
+        "definition": "受精に関わる男性の生殖細胞。"
+      },
+      {
+        "term": "卵子",
+        "definition": "受精に関わる女性の生殖細胞。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -520,6 +890,11 @@
     "id": "family-policy-003",
     "category": "family_and_care",
     "question": "同性同士の結婚を、異性同士の結婚と同じ制度にするべきだと思う？",
+    "hints": [
+      "結婚制度が保障するものには、何がある？",
+      "同じ制度にする場合、家族や子どもの扱いをどう考える？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -535,6 +910,16 @@
     "id": "education-001",
     "category": "school_and_youth",
     "question": "大学の学費は、税金で無償にするべきだと思う？",
+    "hints": [
+      "無償化の費用を、誰が負担するべき？",
+      "進学しない人への支援と、どう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "無償",
+        "definition": "お金を支払わずに利用できること、または報酬を受け取らないこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -546,7 +931,17 @@
   {
     "id": "education-002",
     "category": "school_and_youth",
-    "question": "学費を貸し付けるタイプの奨学金は、卒業後の収入にかかわらず、借りた額を返す仕組みでよいと思う？",
+    "question": "返済が必要な奨学金は、卒業後の収入にかかわらず、借りた額を返す仕組みでよいと思う？",
+    "hints": [
+      "収入が少ない人にも同じ返済を求めると、何が起きる？",
+      "返済額を収入に応じて変える仕組みをどう考える？"
+    ],
+    "terms": [
+      {
+        "term": "奨学金",
+        "definition": "学ぶための費用を支えるお金。返す必要があるものと、ないものがある。"
+      }
+    ],
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -559,6 +954,11 @@
     "id": "education-003",
     "category": "school_and_youth",
     "question": "学校は、生徒のスマホを校内で禁止してもいいと思う？",
+    "hints": [
+      "学習中と休み時間で、ルールを分ける必要はある？",
+      "緊急連絡や学習に必要な場合は、どう扱う？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -571,6 +971,11 @@
     "id": "education-004",
     "category": "school_and_youth",
     "question": "学校の制服は必要だと思う？",
+    "hints": [
+      "制服は、費用や学校生活にどんな影響がある？",
+      "選べる制服や私服を認めると、判断は変わる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -583,6 +988,11 @@
     "id": "education-005",
     "category": "school_and_youth",
     "question": "親が子どもの位置情報をいつでも確認できるようにするのは、ありだと思う？",
+    "hints": [
+      "安全のために必要な確認は、どの範囲まで？",
+      "子どもの年齢や希望によって、ルールを変える？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -595,6 +1005,11 @@
     "id": "technology-001",
     "category": "technology_media_and_privacy",
     "question": "街中の監視カメラは、もっと増やすべきだと思う？",
+    "hints": [
+      "防犯の効果と、私生活を記録される負担をどう比べる？",
+      "映像を見られる人や保存期間は、どう決める？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -607,6 +1022,20 @@
     "id": "technology-002",
     "category": "technology_media_and_privacy",
     "question": "SNSは実名制にするべきだと思う？",
+    "hints": [
+      "実名にすると、安心して発言できない人はいる？",
+      "匿名でも責任を問える方法があれば、判断は変わる？"
+    ],
+    "terms": [
+      {
+        "term": "SNS",
+        "definition": "投稿やメッセージを通じて、人々が交流するインターネット上のサービス。"
+      },
+      {
+        "term": "実名制",
+        "definition": "本当の名前を使うことを求める仕組み。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -619,6 +1048,20 @@
     "id": "technology-003",
     "category": "technology_media_and_privacy",
     "question": "SNS運営会社は、差別的な投稿を削除してもいいと思う？",
+    "hints": [
+      "差別的な投稿と政策への批判を、どう見分ける？",
+      "削除に異議を申し立てる仕組みは必要？"
+    ],
+    "terms": [
+      {
+        "term": "SNS",
+        "definition": "投稿やメッセージを通じて、人々が交流するインターネット上のサービス。"
+      },
+      {
+        "term": "差別的",
+        "definition": "性別や出身などを理由に、人を不当に低く扱ったり排除したりする性質。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -631,6 +1074,20 @@
     "id": "technology-004",
     "category": "technology_media_and_privacy",
     "question": "AIの学習に、公開されている作品を許可なく使ってもいいと思う？",
+    "hints": [
+      "作者の意思と、技術の発展をどう比べる？",
+      "許可や対価を求める場合、どんな仕組みが考えられる？"
+    ],
+    "terms": [
+      {
+        "term": "AI",
+        "definition": "文章の処理や予測など、人の知的な作業の一部をコンピューターで行う技術。"
+      },
+      {
+        "term": "対価",
+        "definition": "商品やサービスなどを受け取る代わりに支払うもの。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -643,6 +1100,16 @@
     "id": "technology-005",
     "category": "technology_media_and_privacy",
     "question": "AIが人間の仕事を奪っても、社会全体が豊かになるなら受け入れるべきだと思う？",
+    "hints": [
+      "社会全体の利益は、仕事を失う人にも届く？",
+      "仕事を移るための支援があると、判断は変わる？"
+    ],
+    "terms": [
+      {
+        "term": "AI",
+        "definition": "文章の処理や予測など、人の知的な作業の一部をコンピューターで行う技術。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -655,6 +1122,16 @@
     "id": "technology-006",
     "category": "technology_media_and_privacy",
     "question": "採用や入試の合否を、AIに判断させてもいいと思う？",
+    "hints": [
+      "AIの判断理由を、本人に説明できる必要はある？",
+      "誤った判断に気づいたとき、誰が見直すべき？"
+    ],
+    "terms": [
+      {
+        "term": "AI",
+        "definition": "文章の処理や予測など、人の知的な作業の一部をコンピューターで行う技術。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -667,6 +1144,20 @@
     "id": "technology-007",
     "category": "technology_media_and_privacy",
     "question": "顔認証で人を追跡する仕組みを、防犯のためなら認めてもいいと思う？",
+    "hints": [
+      "追跡する対象や場所は、限定するべき？",
+      "誤認や情報の悪用を防ぐには、何が必要？"
+    ],
+    "terms": [
+      {
+        "term": "顔認証",
+        "definition": "顔の特徴を使って、その人が誰かを確かめる技術。"
+      },
+      {
+        "term": "誤認",
+        "definition": "事実や人物、状況などを間違って認識すること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -679,6 +1170,16 @@
     "id": "economy-001",
     "category": "work_and_economy",
     "question": "生活保護は、もっと受けやすくするべきだと思う？",
+    "hints": [
+      "困っていても申請できない理由には、何がある？",
+      "利用しやすさと不正防止を、どう両立させる？"
+    ],
+    "terms": [
+      {
+        "term": "生活保護",
+        "definition": "生活に困る人に、必要な生活費や医療などを支える公的な制度。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -691,6 +1192,11 @@
     "id": "economy-002",
     "category": "work_and_economy",
     "question": "働いていなくても、全員に一定のお金を配る制度はありだと思う？",
+    "hints": [
+      "働く意欲や暮らしに、どんな影響が考えられる？",
+      "制度の費用と他の支援を、どう比べる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -703,6 +1209,11 @@
     "id": "economy-003",
     "category": "work_and_economy",
     "question": "お金持ちへの税金は、もっと高くしてもいいと思う？",
+    "hints": [
+      "どの程度の収入から負担を増やすべき？",
+      "税を増やす目的と、経済への影響をどう考える？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -715,6 +1226,16 @@
     "id": "economy-004",
     "category": "work_and_economy",
     "question": "親から多くの財産を相続する人には、高い税金をかけるべきだと思う？",
+    "hints": [
+      "相続した財産の種類や額で、扱いを変える？",
+      "生まれた家庭による差と、財産を残す自由をどう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "相続",
+        "definition": "亡くなった人の財産や権利・義務などを引き継ぐこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -727,6 +1248,16 @@
     "id": "economy-005",
     "category": "work_and_economy",
     "question": "高齢者への社会保障を減らして、若い世代への支援を増やすべきだと思う？",
+    "hints": [
+      "困っている高齢者と若者を、どう見分ける？",
+      "世代全体への配分と、個人の必要をどう調整する？"
+    ],
+    "terms": [
+      {
+        "term": "社会保障",
+        "definition": "病気、失業、老後などの生活上の困難を、社会全体で支える仕組み。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -739,6 +1270,11 @@
     "id": "immigration-001",
     "category": "society_public_policy_and_environment",
     "question": "人手不足を補うために、外国人労働者をもっと受け入れるべきだと思う？",
+    "hints": [
+      "働く人の権利や暮らしを守るため、何が必要？",
+      "受け入れる地域や産業の負担を、どう考える？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -751,6 +1287,20 @@
     "id": "immigration-002",
     "category": "society_public_policy_and_environment",
     "question": "難民を受け入れるためなら、税金や社会保障の負担が増えてもいいと思う？",
+    "hints": [
+      "逃れてきた人の安全と、受け入れる側の負担をどう比べる？",
+      "費用を地域や国同士で分担する方法はある？"
+    ],
+    "terms": [
+      {
+        "term": "社会保障",
+        "definition": "病気、失業、老後などの生活上の困難を、社会全体で支える仕組み。"
+      },
+      {
+        "term": "難民",
+        "definition": "迫害などを恐れ、自国を離れて他の国の保護を必要とする人。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -762,7 +1312,13 @@
   {
     "id": "immigration-003",
     "category": "society_public_policy_and_environment",
-    "question": "別の国から移り住んだ人が、法律には反しない自分の国の生活習慣を続けたいと言っている。地域になじむためには、どこまで周囲の習慣に合わせるべきだと思う？",
+    "scenario": "別の国から移り住んだ人が、法律には反しない自分の国の生活習慣を続けたいと言っている。",
+    "question": "地域になじむためには、どこまで周囲の習慣に合わせるべきだと思う？",
+    "hints": [
+      "生活習慣が周囲に与える影響は、何で確かめる？",
+      "互いの習慣を尊重できる共通のルールは作れる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -775,6 +1331,11 @@
     "id": "environment-001",
     "category": "society_public_policy_and_environment",
     "question": "環境を守るためなら、生活が不便になっても受け入れるべきだと思う？",
+    "hints": [
+      "不便の大きさや環境への効果を、どう比べる？",
+      "負担が大きい人には、どんな支援が必要？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -787,6 +1348,16 @@
     "id": "environment-002",
     "category": "society_public_policy_and_environment",
     "question": "原子力発電は、今後も使い続けるべきだと思う？",
+    "hints": [
+      "安定した電力供給と事故や廃棄物の危険をどう比べる？",
+      "代わりの発電方法の条件は、判断にどう影響する？"
+    ],
+    "terms": [
+      {
+        "term": "原子力発電",
+        "definition": "原子核の反応から生じる熱を利用して、電気を作る方法。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -799,6 +1370,16 @@
     "id": "environment-003",
     "category": "society_public_policy_and_environment",
     "question": "環境保護のためなら、経済成長を遅らせてもいいと思う？",
+    "hints": [
+      "成長が遅れることで困る人には、誰がいる？",
+      "環境を守りながら仕事を維持する方法はある？"
+    ],
+    "terms": [
+      {
+        "term": "経済成長",
+        "definition": "国や地域で生み出される商品やサービスの総量が増えること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -811,6 +1392,16 @@
     "id": "animals-001",
     "category": "society_public_policy_and_environment",
     "question": "人間の医療のためなら、動物実験は認められると思う？",
+    "hints": [
+      "動物への苦痛を、どこまで減らせる必要がある？",
+      "別の研究方法がある場合、判断は変わる？"
+    ],
+    "terms": [
+      {
+        "term": "動物実験",
+        "definition": "薬や体の働きなどを調べるため、動物を使って行う実験。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -823,6 +1414,11 @@
     "id": "animals-002",
     "category": "society_public_policy_and_environment",
     "question": "肉を食べるために動物を飼育することは、悪いことだと思う？",
+    "hints": [
+      "飼育や殺す方法によって、判断は変わる？",
+      "食べ物の選択と動物の扱いを、どう考える？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -835,6 +1431,11 @@
     "id": "politics-001",
     "category": "society_public_policy_and_environment",
     "question": "選挙の投票を義務にするのはありだと思う？",
+    "hints": [
+      "投票しない自由を、どう考える？",
+      "投票しやすい環境や白票の扱いは、どうする？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -847,6 +1448,16 @@
     "id": "politics-002",
     "category": "society_public_policy_and_environment",
     "question": "国を守るためなら、徴兵制を導入してもいいと思う？",
+    "hints": [
+      "国の安全と個人の意思を、どう比べる？",
+      "参加できない事情や別の貢献方法を認める？"
+    ],
+    "terms": [
+      {
+        "term": "徴兵制",
+        "definition": "国が一定の条件に当てはまる人に、軍の任務に就くことを義務付ける制度。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -859,6 +1470,16 @@
     "id": "politics-003",
     "category": "society_public_policy_and_environment",
     "question": "防衛費を増やすためなら、他の公共サービスを減らしてもいいと思う？",
+    "hints": [
+      "防衛による安全と、公共サービスの必要をどう比べる？",
+      "減らすサービスで負担を受ける人に、どう配慮する？"
+    ],
+    "terms": [
+      {
+        "term": "防衛費",
+        "definition": "国を守るための活動や装備などに使うお金。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -871,6 +1492,20 @@
     "id": "media-001",
     "category": "technology_media_and_privacy",
     "question": "逮捕された人の実名は、判決前でも報道していいと思う？",
+    "hints": [
+      "事件を知らせる必要と、誤認による被害をどう比べる？",
+      "後に無罪になった場合、報道の影響をどう回復する？"
+    ],
+    "terms": [
+      {
+        "term": "誤認",
+        "definition": "事実や人物、状況などを間違って認識すること。"
+      },
+      {
+        "term": "判決",
+        "definition": "裁判所が事件について示す正式な判断。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -883,6 +1518,11 @@
     "id": "media-002",
     "category": "technology_media_and_privacy",
     "question": "有名人の私生活は、社会的な関心が高ければ報道してもいいと思う？",
+    "hints": [
+      "社会的な関心と、知る必要がある情報は同じ？",
+      "本人や家族の私生活への影響を、どう考える？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -895,6 +1535,11 @@
     "id": "religion-001",
     "category": "culture_religion_and_history",
     "question": "宗教上の理由なら、学校や職場のルールに例外を認めるべきだと思う？",
+    "hints": [
+      "例外を認めることで、他の人にどんな負担が出る？",
+      "安全や業務を守りつつ配慮する方法はある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -906,7 +1551,18 @@
   {
     "id": "sports-001",
     "category": "school_and_youth",
-    "question": "成人の競泳大会で、トランス女性の女子部門への参加条件を決めるなら、参加の機会と公平な競争をどのように両立させるべきだと思う？",
+    "scenario": "成人の水泳大会で、トランス女性が女子部門に参加したいと考えている。",
+    "question": "参加の機会と競技の公平さを両立するには、どんなルールがよいと思う？",
+    "hints": [
+      "競技に関わる身体の特徴は、何で判断するべき？",
+      "参加の機会を守る別の部門や条件をどう考える？"
+    ],
+    "terms": [
+      {
+        "term": "トランス女性",
+        "definition": "生まれたときに男性とされた人で、自分を女性と認識している人のこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -919,6 +1575,11 @@
     "id": "work-policy-001",
     "category": "work_and_economy",
     "question": "企業は、男女比をそろえるために採用結果を調整してもいいと思う？",
+    "hints": [
+      "応募の機会と採用結果の男女比は、どう違う？",
+      "個人の能力や希望を、どのように評価する？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -931,6 +1592,16 @@
     "id": "work-policy-002",
     "category": "work_and_economy",
     "question": "育児休業を取る人が多い職場では、取らない人の負担が増えても仕方ないと思う？",
+    "hints": [
+      "休業する人を支えながら、残る人の負担をどう減らす？",
+      "会社の人員配置や評価には、何が求められる？"
+    ],
+    "terms": [
+      {
+        "term": "育児休業",
+        "definition": "子どもを育てるために、仕事を一定期間休む制度。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -943,6 +1614,16 @@
     "id": "family-policy-004",
     "category": "family_and_care",
     "question": "子どもを持たない人も、少子化対策のために多く税金を負担するべきだと思う？",
+    "hints": [
+      "子育て支援は、子どもを持たない人にも利益がある？",
+      "収入や生活の事情を、負担にどう反映する？"
+    ],
+    "terms": [
+      {
+        "term": "少子化",
+        "definition": "生まれる子どもの数が減っていくこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -958,6 +1639,16 @@
     "id": "sex-education-001",
     "category": "gender_sexuality_and_identity",
     "question": "学校の性教育で、避妊具の具体的な使い方まで教えるべき？",
+    "hints": [
+      "具体的な使い方を知らない場合、何が困る？",
+      "年齢に合う説明や質問しやすい環境をどう作る？"
+    ],
+    "terms": [
+      {
+        "term": "避妊",
+        "definition": "妊娠を防ぐための方法を取ること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -970,6 +1661,11 @@
     "id": "sex-education-002",
     "category": "gender_sexuality_and_identity",
     "question": "保護者が拒否しても、学校の性教育を受けさせるべき？",
+    "hints": [
+      "保護者の考えと、子どもが情報を得る機会をどう比べる？",
+      "授業内容への不安を解消する方法はある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -982,6 +1678,11 @@
     "id": "sex-education-003",
     "category": "gender_sexuality_and_identity",
     "question": "学校の性教育を全員同じ教室で行う場合と、一部を少人数のグループで行う場合では、どんな学びやすさ・話しにくさがあると思う？",
+    "hints": [
+      "全員で学ぶことと、少人数で話すことに何を期待する？",
+      "話したくない経験を話さずに学べる工夫はある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -994,6 +1695,16 @@
     "id": "sex-education-004",
     "category": "gender_sexuality_and_identity",
     "question": "恋人同士の同意の取り方まで、学校が教えるべき？",
+    "hints": [
+      "自由な同意と、断りにくい状況をどう説明する？",
+      "自分の気持ちを確かめ、相手に伝える練習は必要？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1006,6 +1717,11 @@
     "id": "sex-education-005",
     "category": "gender_sexuality_and_identity",
     "question": "性教育の教材を、保護者が事前に確認できるようにするべき？",
+    "hints": [
+      "事前確認で、保護者は何を知るべき？",
+      "保護者の希望が授業内容を変える範囲は、どう決める？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1017,7 +1733,22 @@
   {
     "id": "menstruation-001",
     "category": "gender_sexuality_and_identity",
-    "question": "生理痛への理解を目的に、機器で腹部に痛みの刺激を与える模擬体験を学校で行うとする。実際の生理の症状すべてを再現するものではないが、男子に参加を義務付けることをどう思う？",
+    "scenario": "生理痛を知ってもらうため、学校で機器を使った痛みの体験を行う。ただし、実際の症状をすべて再現できるわけではない。",
+    "question": "男子生徒全員に参加を義務付けてもよいと思う？",
+    "hints": [
+      "参加を望まない生徒の意思を、どう扱う？",
+      "模擬体験の限界を理解してもらうには、何が必要？"
+    ],
+    "terms": [
+      {
+        "term": "生理痛",
+        "definition": "生理に伴って起こる腹痛や腰痛などの痛み。"
+      },
+      {
+        "term": "模擬体験",
+        "definition": "本物に似せた条件を作り、その一部を体験すること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1029,7 +1760,12 @@
   {
     "id": "menstruation-002",
     "category": "gender_sexuality_and_identity",
-    "question": "生理で働くことが難しいときの休暇と、他の体調不良で働くことが難しいときの休暇は、同じ仕組みにする方が公平だと思う？ 別の仕組みが必要だと思う？",
+    "question": "生理で休むときと、ほかの体調不良で休むときは、同じ制度にするべき？それとも生理休暇を別に設けるべき？",
+    "hints": [
+      "症状の違いと、休みを取りやすいことをどう考える？",
+      "理由を詳しく明かさず休める仕組みは必要？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1042,6 +1778,16 @@
     "id": "menstruation-003",
     "category": "gender_sexuality_and_identity",
     "question": "生理休暇を有給にする費用は、会社が負担するべき？",
+    "hints": [
+      "休暇を無給にすると、必要でも休めない人はいる？",
+      "企業ごとの負担の差を、どう扱う？"
+    ],
+    "terms": [
+      {
+        "term": "生理休暇",
+        "definition": "生理による症状で働くことが難しいときに、仕事を休むための休暇。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1054,6 +1800,11 @@
     "id": "menstruation-004",
     "category": "gender_sexuality_and_identity",
     "question": "学校で生理用品を無料にするなら、他の衛生用品も無料にするべき？",
+    "hints": [
+      "生理用品と他の衛生用品の必要性は、どう比べる？",
+      "限られた予算で、配布対象をどう決める？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1066,6 +1817,11 @@
     "id": "menstruation-005",
     "category": "gender_sexuality_and_identity",
     "question": "生理を理由に体育を休むとき、先生に詳しい理由まで説明する必要はある？",
+    "hints": [
+      "授業を休む判断に、先生が必要な情報は何？",
+      "生徒の私生活を守りながら体調を伝える方法はある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1078,6 +1834,16 @@
     "id": "reproductive-health-001",
     "category": "gender_sexuality_and_identity",
     "question": "高校生が性感染症の検査を受けたいとき、保護者に知らせず受けられる仕組みを認めるべきだと思う？",
+    "hints": [
+      "保護者に知らせることで、検査を避ける人はいる？",
+      "本人が説明を理解し、支援を受けるには何が必要？"
+    ],
+    "terms": [
+      {
+        "term": "性感染症",
+        "definition": "主に性的な接触を通じて感染する病気。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1093,6 +1859,24 @@
     "id": "reproductive-health-002",
     "category": "gender_sexuality_and_identity",
     "question": "緊急避妊薬は、年齢や保護者の同意に関係なく入手できるようにするべき？",
+    "hints": [
+      "早く入手する必要と、使い方の説明をどう両立させる？",
+      "年齢や家庭事情に応じた相談の機会は必要？"
+    ],
+    "terms": [
+      {
+        "term": "避妊",
+        "definition": "妊娠を防ぐための方法を取ること。"
+      },
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      },
+      {
+        "term": "緊急避妊薬",
+        "definition": "避妊をしなかったり失敗したりした後に、妊娠の可能性を下げるために使う薬。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1108,6 +1892,16 @@
     "id": "reproductive-health-003",
     "category": "gender_sexuality_and_identity",
     "question": "不妊治療に、税金をどこまで使うべきだと思う？",
+    "hints": [
+      "治療費の負担と、他の医療支援をどう比べる？",
+      "年齢や治療の見込みで、支援範囲を変える？"
+    ],
+    "terms": [
+      {
+        "term": "不妊治療",
+        "definition": "妊娠を望んでも妊娠しにくい人が、医療によって妊娠を目指すこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1122,7 +1916,18 @@
   {
     "id": "reproductive-health-004",
     "category": "gender_sexuality_and_identity",
-    "question": "妊娠した本人が妊娠の継続を望まない場合、本人の意思と胎児の生命への配慮を、制度としてどう扱うべきだと思う？ 妊娠の時期や本人の健康状態によって判断は変わる？",
+    "scenario": "妊娠を続けたくない人がいる。一方、胎児の命への配慮も大切にするべきだという意見がある。妊娠の時期や健康状態も人によって違う。",
+    "question": "中絶を制度で認める条件を決めるとき、本人の意思と胎児への配慮をどう考える？妊娠の時期や健康状態で変わる？",
+    "hints": [
+      "妊娠の時期によって、何を考慮するべき？",
+      "本人が周囲の圧力を受けず判断するため、何が必要？"
+    ],
+    "terms": [
+      {
+        "term": "胎児",
+        "definition": "出生前の発育段階を指す医学用語。医学では、受精後およそ8週を過ぎてから出生までの段階に使う。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1138,6 +1943,16 @@
     "id": "health-policy-001",
     "category": "health_and_disability",
     "question": "学校が特定のワクチン接種を強く勧めるのは、どこまで許される？",
+    "hints": [
+      "勧めることと事実上強制することの境界はどこ？",
+      "効果や副反応について、どんな説明が必要？"
+    ],
+    "terms": [
+      {
+        "term": "ワクチン",
+        "definition": "感染症の発症や重症化を防ぐため、体の免疫の働きを準備するもの。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1153,6 +1968,11 @@
     "id": "body-policy-001",
     "category": "gender_sexuality_and_identity",
     "question": "男女で身体的な負担が違うなら、制度上の扱いも変えていいと思う？",
+    "hints": [
+      "性別全体の傾向と、個人の負担をどう分ける？",
+      "扱いを変える目的に合った基準は、どう作る？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1165,6 +1985,11 @@
     "id": "sex-education-006",
     "category": "gender_sexuality_and_identity",
     "question": "学校の性教育は、家庭の価値観と違っていてもそのまま教えるべき？",
+    "hints": [
+      "家庭の考えと、健康や安全に必要な知識をどう区別する？",
+      "授業と家庭の双方で、子どもが質問できる方法はある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1177,6 +2002,24 @@
     "id": "menstruation-006",
     "category": "gender_sexuality_and_identity",
     "question": "生理痛を理解してもらうためなら、痛みを疑似体験させるのは有効だと思う？",
+    "hints": [
+      "体験だけでは分からない症状を、どう伝える？",
+      "本人の同意や安全に、どんな配慮が必要？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      },
+      {
+        "term": "生理痛",
+        "definition": "生理に伴って起こる腹痛や腰痛などの痛み。"
+      },
+      {
+        "term": "疑似体験",
+        "definition": "実際の出来事そのものではなく、それに似た状況を体験すること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1190,7 +2033,13 @@
     "topic": "consent_under_pressure",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "性的な行為を求められ、「断ったら嫌われるかも」と思ってYESと言った人がいる。自由に選べたかを考えるには、どんな状況を確認する必要があると思う？",
+    "scenario": "性的な行為を求められ、「断ったら嫌われるかも」と思ってYESと言った人がいる。",
+    "question": "自由に選べたかを考えるには、どんな状況を確認する必要があると思う？",
+    "hints": [
+      "断った場合の不利益を、本人はどう感じていた？",
+      "YESという言葉以外に、何を確かめる必要がある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1206,7 +2055,13 @@
     "topic": "peer_pressure",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "周りから「まだ性的な経験がないの？」と言われたことをきっかけに、性的な関係を持つと決めた人がいる。その選択に、周囲の圧力はどの程度影響していると思う？",
+    "scenario": "周りから「まだ性的な経験がないの？」と言われたことをきっかけに、性的な関係を持つと決めた人がいる。",
+    "question": "その選択に、周囲の圧力はどの程度影響していると思う？",
+    "hints": [
+      "周りに言われなければ、同じ選択をしたと思う？",
+      "経験しない選択も尊重される環境はある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1221,7 +2076,18 @@
     "topic": "contraception_communication",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "避妊について話し合えない恋人同士がいる。そのことから二人の関係について何が分かり、何はまだ分からないと思う？",
+    "scenario": "避妊について話し合えない恋人同士がいる。",
+    "question": "避妊について話せないことから、二人の関係について何が分かる？まだ分からないことは何？",
+    "hints": [
+      "話し合えない理由には、どんな可能性がある？",
+      "二人が安心して話すため、何を変えられる？"
+    ],
+    "terms": [
+      {
+        "term": "避妊",
+        "definition": "妊娠を防ぐための方法を取ること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1236,7 +2102,13 @@
     "topic": "risk_perception",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "妊娠の可能性を学校で習っていても「自分は大丈夫」と思ってしまうことを、知識不足だけで説明できると思う？",
+    "scenario": "妊娠の仕組みを学校で学んだ生徒が、それでも「自分は大丈夫」と思っている。",
+    "question": "その考えを、知識不足だけで説明できると思う？",
+    "hints": [
+      "知識があっても危険を小さく感じる理由は何？",
+      "知っていることを行動につなげるには、何が必要？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1251,7 +2123,18 @@
     "topic": "age_power_difference",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "年齢や立場に差がある相手との性的な行為について、本人が「好きだから自分で決めた」と話している。自由な同意だったかを考えるとき、その差をどう扱うべきだと思う？",
+    "scenario": "年齢や立場に差がある相手との性的な行為について、本人が「好きだから自分で決めた」と話している。",
+    "question": "自由な同意だったかを考えるとき、その差をどう扱うべきだと思う？",
+    "hints": [
+      "相手に断れる関係だったか、どう確かめる？",
+      "年齢や立場の差以外に、どんな条件が重要？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1266,7 +2149,13 @@
     "topic": "pregnancy_disclosure",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "妊娠したかもしれない生徒が親に相談できないとき、本人の気持ち、家庭の関係、相談先の選びやすさは、それぞれどう影響していると思う？",
+    "scenario": "妊娠したかもしれない生徒が、親に相談できずにいる。",
+    "question": "相談できない理由や、相談先を見つけやすくする方法には、どんなものがあると思う？",
+    "hints": [
+      "親に話せない理由を、決めつけずに知るにはどうする？",
+      "本人が利用できる相談先に、どんな条件が必要？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1282,6 +2171,11 @@
     "category": "school_and_youth",
     "perspective": "affected",
     "question": "妊娠した生徒が学校に知られたくないと言った場合、学校はどこまでその秘密を守るべき？",
+    "hints": [
+      "秘密を守ることと、健康や安全への支援をどう調整する？",
+      "共有する場合、誰に何を伝える必要がある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1298,6 +2192,11 @@
     "category": "school_and_youth",
     "perspective": "affected",
     "question": "妊娠した生徒が学校を続けたいなら、学校はどこまで特別な配慮をするべき？",
+    "hints": [
+      "通院や体調の変化に、どんな対応が必要？",
+      "他の生徒との公平さを、同じ扱いだけで考えてよい？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1313,7 +2212,12 @@
     "topic": "equal_treatment",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "妊娠した生徒が通院のため授業を欠席する場合、同じ学習目標に沿った別の課題で出席を補うことを認めるのは、公平だと思う？",
+    "question": "妊娠した生徒が通院で授業を休んだとき、別の課題で同じ学習目標を達成すれば出席扱いにしてよい？",
+    "hints": [
+      "別の課題で同じ学びを確保できるか、どう確認する？",
+      "病気など別の理由の欠席にも、同じ基準を使う？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1330,6 +2234,11 @@
     "category": "school_and_youth",
     "perspective": "actor",
     "question": "妊娠による身体的な負担が片方に集中するとき、相手側にはどこまで責任があると思う？",
+    "hints": [
+      "身体的な負担と、生活や費用の負担をどう分ける？",
+      "相手側が支える方法には、どんなものがある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1346,6 +2255,11 @@
     "category": "school_and_youth",
     "perspective": "observer",
     "question": "妊娠を伝えたあと相手が連絡を絶った場合、『怖くて逃げた』ことはどこまで理解できる？",
+    "hints": [
+      "怖さを理解することと、責任を免れることは同じ？",
+      "連絡を絶たれた側への影響を、どう考える？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1361,6 +2275,11 @@
     "category": "school_and_youth",
     "perspective": "decision_maker",
     "question": "未成年同士の妊娠では、相手側の親にも責任があると思う？",
+    "hints": [
+      "親が知っていたことや支援できることは、重要？",
+      "本人たちの責任と親の役割を、どう分ける？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1377,6 +2296,11 @@
     "category": "school_and_youth",
     "perspective": "observer",
     "question": "妊娠について、身体への影響が違う二人に『同じ決定権』を求めることは公平だと思う？",
+    "hints": [
+      "意見を伝える権利と、最終的に決める権利は同じ？",
+      "身体への影響と共同の責任を、どう比べる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1391,7 +2315,13 @@
     "topic": "friend_confidentiality",
     "category": "school_and_youth",
     "perspective": "actor",
-    "question": "友達から「妊娠したかもしれない。誰にも言わないで」と相談された。本人の希望を尊重しながら必要な支援につなぐには、誰に何を相談するかをどう決めたい？",
+    "scenario": "友達から「妊娠したかもしれない。誰にも言わないで」と相談された。",
+    "question": "本人との約束を守りながら必要な支援につなぐには、誰に何を相談する？",
+    "hints": [
+      "秘密にしてほしい理由や危険を、どう確かめる？",
+      "本人と一緒に相談先を選ぶ方法はある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1407,7 +2337,12 @@
     "topic": "rumor_privacy",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "同級生が妊娠したという噂を聞いても、本人に聞かないことが『無関心』になると思う？",
+    "question": "妊娠したという噂を聞いても本人に確かめないのは、無関心だと思う？",
+    "hints": [
+      "噂を確かめることが、本人の負担になる可能性はある？",
+      "詳しく聞かずに気遣いや支援を示せる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1424,7 +2359,12 @@
     "topic": "social_judgment",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "中高生の妊娠を『無責任だった結果』だけで説明するのは公平だと思う？",
+    "question": "中高生の妊娠を「本人が無責任だったから」とだけ説明してよいと思う？",
+    "hints": [
+      "本人の判断以外に、どんな事情が関わりうる？",
+      "責任を考えることと、支援することは両立する？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1440,6 +2380,11 @@
     "category": "school_and_youth",
     "perspective": "observer",
     "question": "同じ妊娠でも、女子生徒と男子生徒で周囲から責められ方が違うとしたら、それはなぜだと思う？",
+    "hints": [
+      "身体に起きる変化が、周囲の評価に影響する？",
+      "責任や支援を、性別の印象で決めていない？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1454,7 +2399,13 @@
     "topic": "male_responsibility_visibility",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "妊娠した生徒は通院で欠席が増え、相手の生徒は普段どおり登校している。周囲には妊娠した側の変化ばかりが見えるとしたら、二人の責任や必要な支援をどう考える？",
+    "scenario": "妊娠した生徒は通院で欠席が増え、相手の生徒は普段どおり登校している。",
+    "question": "妊娠した生徒と相手の生徒が負う責任や、二人に必要な支援をどう考える？",
+    "hints": [
+      "見える変化だけで、責任を判断してよい？",
+      "登校を続ける相手にも、どんな役割や支援が必要？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1469,7 +2420,13 @@
     "topic": "education_vs_parenthood",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "妊娠した生徒が進学を諦めるか迷っている。「現実的な判断」を一緒に考えるなら、本人の希望と、利用できる支援をどう確かめるべきだと思う？",
+    "scenario": "妊娠した生徒が進学を諦めるか迷っている。",
+    "question": "進学を迷う生徒が希望をあきらめずにすむよう、本人の希望や使える支援をどう確かめる？",
+    "hints": [
+      "進学を続けるために、利用できる制度や人はいる？",
+      "本人の希望と周囲の思い込みを、どう分ける？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1484,7 +2441,12 @@
     "topic": "school_role",
     "category": "school_and_youth",
     "perspective": "affected",
-    "question": "中高生の妊娠が分かったとき、学校は『教育の場』を超えてどこまで支援に関わるべき？",
+    "question": "妊娠した生徒に対し、学校は授業以外でどこまで支援するべきだと思う？",
+    "hints": [
+      "学校だけではできない支援は、誰につなぐ？",
+      "本人の意思や私生活を、どう守る？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1501,6 +2463,11 @@
     "category": "school_and_youth",
     "perspective": "affected",
     "question": "性教育は知識を教えるだけでなく、『断り方』『相談の仕方』『相手との話し合い方』まで扱うべき？",
+    "hints": [
+      "知識だけでは対応しにくい場面は、どんなもの？",
+      "断ったり相談したりする練習を、どう授業に入れる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1517,6 +2484,11 @@
     "category": "school_and_youth",
     "perspective": "observer",
     "question": "家庭で性の話を避けることは、子どもの価値観を尊重していることになる？",
+    "hints": [
+      "話を避けることが、必要な情報を得る機会に影響する？",
+      "子どもが質問できる方法を、別に用意できる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1532,6 +2504,11 @@
     "category": "school_and_youth",
     "perspective": "observer",
     "question": "若くして妊娠した人に「将来が終わった」と言うことは、その人の将来の選択にどんな影響を与えると思う？",
+    "hints": [
+      "本人が将来を考えるとき、その言葉はどう響く？",
+      "現実の困難と利用できる支援を、どう伝える？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1546,7 +2523,17 @@
     "topic": "support_without_endorsement",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "妊娠した生徒が過去に避妊をしなかった判断には賛成できなくても、その生徒が学び続けるための支援には賛成できる？",
+    "question": "避妊をしなかった判断に賛成できなくても、妊娠した生徒が学び続けるための支援は必要だと思う？",
+    "hints": [
+      "過去の判断への評価と、今の学習機会をどう分ける？",
+      "支援に賛成する条件があるなら、何が必要？"
+    ],
+    "terms": [
+      {
+        "term": "避妊",
+        "definition": "妊娠を防ぐための方法を取ること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1561,7 +2548,12 @@
     "topic": "responsibility_and_support",
     "category": "school_and_youth",
     "perspective": "observer",
-    "question": "若い人の妊娠について、本人の判断にも責任があると考える場合、その考えは、学業や生活への支援をどこまで行うかという判断に影響する？",
+    "question": "避妊しなかったことを理由に、妊娠した生徒への通院や学習の支援を減らしてよい？",
+    "hints": [
+      "通院や授業を続けられないと、本人にどんな影響がある？",
+      "必要な支援を決めるとき、避妊したかどうかを条件にする？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1569,7 +2561,8 @@
     },
     "content_warning": [
       "pregnancy_and_reproduction"
-    ]
+    ],
+    "scenario": "妊娠した生徒が、通院や授業を続けるための支援を必要としている。本人にも避妊しなかった責任があるという意見がある。"
   },
   {
     "id": "relationship-l3-141",
@@ -1577,6 +2570,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "恋人に異性の親友がいて不安を感じたとき、気持ちを伝えることと、相手の交友関係を制限することの境界はどこだと思う？",
+    "hints": [
+      "自分の不安を伝えることと、禁止することはどう違う？",
+      "双方が納得できる交友のルールを作れる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1589,6 +2587,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "恋人が元恋人と友人として関わり続けることを、今の恋人は受け入れるべきだと思う？",
+    "hints": [
+      "元恋人との関わり方や頻度で、判断は変わる？",
+      "今の恋人の不安と相手の友人関係をどう調整する？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1601,6 +2604,16 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "恋人の過去の恋愛について嫉妬することは、今の関係に必要のない感情だと思う？",
+    "hints": [
+      "嫉妬は、今のどんな不安を表していると思う？",
+      "過去を変えられなくても、安心につながる話はできる？"
+    ],
+    "terms": [
+      {
+        "term": "嫉妬",
+        "definition": "大切な相手を失う不安や、他の人をうらやむ気持ち。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1613,6 +2626,16 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "恋人が他の人から好かれやすいことに嫉妬したとき、相手に行動を変えてもらうのはどこまで許されると思う？",
+    "hints": [
+      "変えてほしい行動は、具体的に何？",
+      "相手の自由と自分の安心を、どう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "嫉妬",
+        "definition": "大切な相手を失う不安や、他の人をうらやむ気持ち。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1625,6 +2648,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "恋人なら、友人や家族より自分を優先してほしいと思うのは自然だと思う？",
+    "hints": [
+      "緊急時と普段の予定では、優先順位は変わる？",
+      "友人や家族への責任も、どう考慮する？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1637,6 +2665,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "自分は異性の友人と付き合いを続けたいのに、恋人には異性の友人との交流を控えてほしいと求めるのは公平だと思う？",
+    "hints": [
+      "二人に同じルールを適用できる？",
+      "それぞれが不安になる理由を、どう確かめる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1649,6 +2682,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "恋人が別の人に一時的に惹かれたとしても、何も行動していないなら問題ではないと思う？",
+    "hints": [
+      "気持ちと行動への責任は、どう違う？",
+      "一時的な気持ちを共有する必要はある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1661,6 +2699,16 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "理由のない嫉妬でも、恋人には安心させる責任があると思う？",
+    "hints": [
+      "安心を求める範囲に、限界はある？",
+      "自分の不安に自分で向き合うことも必要？"
+    ],
+    "terms": [
+      {
+        "term": "嫉妬",
+        "definition": "大切な相手を失う不安や、他の人をうらやむ気持ち。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1673,6 +2721,16 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "恋人のSNS上の交流まで、交際相手が口を出していいと思う？",
+    "hints": [
+      "公開の交流と個人的な連絡では、判断は変わる？",
+      "二人が納得できる境界を、どう話し合う？"
+    ],
+    "terms": [
+      {
+        "term": "SNS",
+        "definition": "投稿やメッセージを通じて、人々が交流するインターネット上のサービス。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1685,6 +2743,20 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "嫉妬したことを相手に伝えるのは、束縛とは違うと思う？",
+    "hints": [
+      "感情を話すことが、相手への圧力になる場合はある？",
+      "行動を制限せず、安心を求める伝え方はできる？"
+    ],
+    "terms": [
+      {
+        "term": "嫉妬",
+        "definition": "大切な相手を失う不安や、他の人をうらやむ気持ち。"
+      },
+      {
+        "term": "束縛",
+        "definition": "相手の行動や人間関係などを制限し、自由を狭めること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1697,6 +2769,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "恋人同士でも、相手には言わない秘密があっていいと思う？",
+    "hints": [
+      "相手の判断に関わる情報と、私的な秘密をどう分ける？",
+      "秘密を持つことと嘘をつくことは同じ？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1709,6 +2786,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "恋人同士なら、スマホのパスワードを共有できる方が信頼関係は強いと思う？",
+    "hints": [
+      "共有しないことは、信頼がない証拠になる？",
+      "友人など第三者とのやり取りを、どう守る？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1724,6 +2806,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "結婚する相手には、自分の重大な過去をすべて話すべきだと思う？",
+    "hints": [
+      "将来の生活に関わる過去とは、どんなもの？",
+      "話す時期や相手の知りたい範囲を、どう決める？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1736,6 +2823,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "結婚前の借金は、金額に関係なく相手に伝えるべきだと思う？",
+    "hints": [
+      "借金の額だけでなく、返済や家計への影響は重要？",
+      "共同の生活に入る前に、何を合意するべき？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1748,6 +2840,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "健康上の情報は、結婚相手にもどこまで伝える必要があると思う？",
+    "hints": [
+      "相手の生活や判断に関わる健康情報は何？",
+      "詳しく話したくないことを、どう扱う？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1760,6 +2857,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "一度だけの裏切りで、その後二度と繰り返していないとしても、恋人には必ず伝えるべきだと思う？",
+    "hints": [
+      "相手が関係を選ぶために、その情報は必要？",
+      "伝えることで受ける傷と、知らずにいる影響をどう比べる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1772,6 +2874,11 @@
     "category": "relationships_and_communication",
     "perspective": "actor",
     "question": "親友の恋人について重大な秘密を知ったら、親友に伝えることが友情だと思う？",
+    "hints": [
+      "秘密の確かさと、親友への影響をどう考える？",
+      "本人たちの私生活に関わるとき、どこまで介入する？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1785,6 +2892,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "恋人の日記やメモには、交際相手にも絶対に見せない領域があっていいと思う？",
+    "hints": [
+      "日記を見せない自由と、信頼をどう結びつける？",
+      "疑問があるとき、無断で読む以外に何ができる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1797,6 +2909,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "自分の家族が恋人を嫌っていることは、恋人本人にも伝えるべきだと思う？",
+    "hints": [
+      "伝えることで、恋人の判断や家族との関係はどう変わる？",
+      "家族の評価をそのまま伝える必要はある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1809,6 +2926,11 @@
     "category": "relationships_and_communication",
     "perspective": "observer",
     "question": "知らなければ幸せでいられる秘密でも、真実は知る方がいいと思う？",
+    "hints": [
+      "真実を知ることで、本人が選べることは増える？",
+      "知りたいかどうかを、本人に確かめられる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1821,6 +2943,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "『男性の方が多く稼いでほしい』という期待は、個人の好みなら問題ないと思う？",
+    "hints": [
+      "個人の好みが、相手への要求になる境界はどこ？",
+      "収入以外の貢献を、どう評価する？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1833,6 +2960,16 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "『女性の方が子育てに向いている』という考えは、経験則と性別による決めつけのどこで分かれると思う？",
+    "hints": [
+      "経験の差が、なぜ生まれたかを考える必要はある？",
+      "個人の希望や能力と、性別をどう分ける？"
+    ],
+    "terms": [
+      {
+        "term": "経験則",
+        "definition": "これまでの経験から、よくある傾向として考えること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1845,6 +2982,16 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "デート代を男性が多く払うことを期待するのは、昔ながらの男女差別と同じ問題だと思う？",
+    "hints": [
+      "支払いを期待する理由は、収入差と性別のどちら？",
+      "双方が同意していても、社会の期待を考える必要はある？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1857,6 +3004,16 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "告白やデートの誘いを『男性からするもの』と考えるのは、ただの恋愛文化だと思う？",
+    "hints": [
+      "誘う役割を固定すると、双方にどんな負担がある？",
+      "慣習を好むことと、他人にも求めることは同じ？"
+    ],
+    "terms": [
+      {
+        "term": "慣習",
+        "definition": "ある地域や集団で、長く続いてきたやり方。"
+      }
+    ],
     "level": 3,
     "sensitivity": 2,
     "detail": {
@@ -1869,6 +3026,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "男性が弱音を吐いたときと、女性が弱音を吐いたときで、周囲の受け止め方が違っても仕方ないと思う？",
+    "hints": [
+      "受け止め方の違いは、相談のしやすさに影響する？",
+      "性別以外に、何を見て対応するべき？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1881,6 +3043,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "affected",
     "question": "学校で重い荷物を運ぶ人を決めるとき、性別、個人の体力、本人の希望をそれぞれどのように考慮するべきだと思う？",
+    "hints": [
+      "個人の体力やけがの有無を、どう確かめる？",
+      "希望しない人に頼む場合、何を説明する？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1894,6 +3061,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "危険な仕事や役割を男性が多く引き受けることを『仕方ない』と考えるのは公平だと思う？",
+    "hints": [
+      "本人の希望と、周囲の期待をどう分ける？",
+      "危険を減らす工夫や負担の分担はできる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1906,6 +3078,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "災害などで『女性や子どもを先に』とする考え方に、男性が後回しになることへの問題はないと思う？",
+    "hints": [
+      "実際に助けが必要な度合いを、どう判断する？",
+      "性別以外の基準で、救助の順番を決められる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1918,6 +3095,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "同じように傷つけられた人でも、男性と女性で『被害者らしさ』を違って感じることはあると思う？",
+    "hints": [
+      "被害者の見た目や振る舞いに、何を期待している？",
+      "その印象が、支援や事実確認に影響してよい？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1930,6 +3112,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "同じ行為でも、加害者が男性か女性かで『怖さ』や『悪質さ』の感じ方が変わるとしたら、それは公平？",
+    "hints": [
+      "実際の危険と、性別による印象をどう分ける？",
+      "同じ基準で行為を評価するには、何を確認する？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1942,6 +3129,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "父親が一人で小さな子どもの世話をしているとき、母親より警戒されることがあるなら、それは子どもの安全のために仕方ないと思う？",
+    "hints": [
+      "具体的な危険と、父親への思い込みをどう見分ける？",
+      "子どもの安全を、性別以外で確かめる方法はある？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1954,6 +3146,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "母親が仕事を優先すると『子どもがかわいそう』と言われやすいのに、父親なら同じように言われないとしたら公平？",
+    "hints": [
+      "親の仕事が子どもに与える影響は、性別で変わる？",
+      "家事育児の分担を、どのように考慮する？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -1966,6 +3163,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "離婚後の子育てで『母親と暮らす方が自然』と最初から考えるのは、子どもの利益を考えた判断だと思う？",
+    "hints": [
+      "子どもと親の関係や生活を、どう確かめる？",
+      "性別を先に基準にすることで、何を見落とす？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1978,6 +3180,16 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "affected",
     "question": "男女の進学格差を減らすために、片方の性別だけを対象にした入試枠や支援を作ることは公平だと思う？",
+    "hints": [
+      "格差の原因に合う支援か、どう確かめる？",
+      "支援の期間や終了条件は、どう決める？"
+    ],
+    "terms": [
+      {
+        "term": "格差",
+        "definition": "収入や機会などに大きな差があること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -1991,6 +3203,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "affected",
     "question": "ある教育分野で男子の成績や進学率が低い場合、女子向け支援と同じように男子だけを対象にした支援も必要だと思う？",
+    "hints": [
+      "成績や進学率が低い理由を、どう確かめる？",
+      "性別を限る支援と、困る人全員への支援をどう比べる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -2003,7 +3220,18 @@
     "topic": "gender_workplace_quota",
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
-    "question": "昇進する人の男女比を改善するため、同程度の実績の候補者なら人数の少ない性別を優先することは、公平だと思う？",
+    "scenario": "職場の管理職には男女の人数に差がある。昇進候補者の実績は同じ程度だ。",
+    "question": "昇進では、人数の少ない性別の候補者を優先してよいと思う？",
+    "hints": [
+      "実績が同程度だという判断を、どう行う？",
+      "優先する措置の目的と終了条件は何？"
+    ],
+    "terms": [
+      {
+        "term": "昇進",
+        "definition": "職場で、より上の役職や地位に進むこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -2016,6 +3244,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "結婚相手を選ぶとき、男性の年収を重視することと、女性の若さや見た目を重視することは同じ種類の価値判断だと思う？",
+    "hints": [
+      "収入と外見が将来の生活に与える影響は同じ？",
+      "好みとして選ぶことと、役割を期待することはどう違う？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -2028,6 +3261,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "恋愛で『男性は自分より背が高い方がいい』という好みは、見た目による偏見とは別物だと思う？",
+    "hints": [
+      "個人の好みと、相手の価値を決めつけることをどう分ける？",
+      "その好みを他の人にも求めると、判断は変わる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -2040,6 +3278,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "男性と女性では、見た目を整えるよう求められる場面や内容に、どんな共通点と違いがあると思う？",
+    "hints": [
+      "学校や職場、恋愛で、求められ方は変わる？",
+      "時間や費用、選択の自由への影響をどう考える？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -2051,7 +3294,12 @@
     "topic": "gender_false_accusation",
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
-    "question": "被害を訴えた人をまず信じることと、疑われた人を最初から加害者扱いしないことは両立できると思う？",
+    "question": "被害を訴えた人の話を聞きながら、疑われた人を最初から犯人扱いせずに調べることはできると思う？",
+    "hints": [
+      "訴えを尊重することと、事実を認定することはどう違う？",
+      "公平な確認が済むまで、双方をどう守る？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -2064,6 +3312,16 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "同じ言葉や接触でも、男性から女性の場合と女性から男性の場合で『セクハラらしさ』の感じ方が変わるとしたら、それはなぜ？",
+    "hints": [
+      "相手との関係や断りやすさは、感じ方に影響する？",
+      "性別にかかわらず、何を基準に行為を評価する？"
+    ],
+    "terms": [
+      {
+        "term": "セクハラ",
+        "definition": "相手の望まない性的な言動によって、不快さや不利益を与えること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -2080,6 +3338,16 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "恋人や配偶者から暴力的な扱いを受けた男性が相談したとき、女性の場合と同じ深刻さで受け止められると思う？",
+    "hints": [
+      "相談をためらう理由には、どんなものがある？",
+      "支援に必要な情報を、性別にかかわらず確認できる？"
+    ],
+    "terms": [
+      {
+        "term": "配偶者",
+        "definition": "結婚している相手のこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -2091,7 +3359,12 @@
     "topic": "gender_emotional_labor",
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
-    "question": "恋愛では、相手の気持ちを察したり関係を整えたりする役割を女性に多く求めることと、男性に『相手を安心させる強さ』を求めることは、同じ性別役割の問題だと思う？",
+    "question": "恋愛で、女性に「相手の気持ちを察する役」、男性に「相手を安心させる役」を求めるのは、どちらも性別による決めつけだと思う？",
+    "hints": [
+      "その役割を求められることで、どんな負担が生じる？",
+      "個人の得意不得意や希望を、どう確かめる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -2103,7 +3376,26 @@
     "topic": "gender_reproductive_responsibility",
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
-    "question": "妊娠では身体的な負担が男女で大きく違う。その非対称性がある中でも、妊娠に至るまでの責任は同じだと言える？",
+    "scenario": "妊娠では身体的な負担が男女で大きく違う。",
+    "question": "妊娠には身体への負担の差がある。それでも、妊娠に至るまでの責任は男女同じだと言える？",
+    "hints": [
+      "身体的な負担と、妊娠に至った判断をどう分ける？",
+      "同意や避妊を話し合えた状況も、責任に影響する？"
+    ],
+    "terms": [
+      {
+        "term": "避妊",
+        "definition": "妊娠を防ぐための方法を取ること。"
+      },
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      },
+      {
+        "term": "非対称性",
+        "definition": "双方の条件や影響が、同じではないこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -2116,6 +3408,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "妊娠について、身体に直接影響を受けない側には、どこまで意見を言う権利があると思う？",
+    "hints": [
+      "意見を伝えることと、決定を強いることはどう違う？",
+      "身体を伴う決定と共同の責任を、どう調整する？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -2128,6 +3425,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "別れた後の子育てで、父親にはお金、母親には日常的な育児をより強く求める考え方は公平だと思う？",
+    "hints": [
+      "収入や育児の経験を、どのように考慮する？",
+      "子どもの必要と親の希望に合う分担を作れる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -2140,6 +3442,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "夫婦のどちらかが仕事を減らして家庭を優先する必要があるとき、収入が高い方を残す決め方は公平だと思う？",
+    "hints": [
+      "今の収入と、将来の仕事の機会をどう比べる？",
+      "本人の希望や家事育児への負担も考慮する？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -2152,6 +3459,16 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "『女性を守る』『男性が荷物を持つ』ような好意的な男女差も、性差別に含まれると思う？",
+    "hints": [
+      "相手が望んでいる好意か、どう確かめる？",
+      "好意的な扱いが、役割の固定につながることはある？"
+    ],
+    "terms": [
+      {
+        "term": "性差別",
+        "definition": "性別を理由に、人を不当に低く扱ったり機会を制限したりすること。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -2163,7 +3480,17 @@
     "topic": "gender_equality_symmetry",
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
-    "question": "男女平等とは、男性と女性をできるだけ同じように扱うこと？それとも違いがある部分では扱いを変えること？",
+    "question": "男女平等のために、男女を同じように扱うことと、状況に応じて扱いを変えることのどちらを重視するべき？",
+    "hints": [
+      "違う扱いが必要な事情には、何がある？",
+      "扱いを変える基準を、誰にでも説明できる？"
+    ],
+    "terms": [
+      {
+        "term": "男女平等",
+        "definition": "性別によって、権利や機会が不当に制限されないこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -2176,6 +3503,11 @@
     "category": "gender_sexuality_and_identity",
     "perspective": "observer",
     "question": "男女それぞれに違う不利益があるとき、『どちらの方が差別されているか』を決めることに意味はあると思う？",
+    "hints": [
+      "不利益の種類や大きさを、どう比べる？",
+      "順位を決めることが、支援の改善につながる？"
+    ],
+    "terms": [],
     "level": 3,
     "sensitivity": 4,
     "detail": {
@@ -2187,7 +3519,18 @@
     "topic": "unpaid_work_and_fairness",
     "category": "ethics_and_decision_making",
     "perspective": "observer",
-    "question": "報酬のない共同活動で、引き受けた役割を果たさない人がいる。その人の事情も確認した上で、無償の活動ではどこまで責任を求めるべきだと思う？",
+    "scenario": "報酬のない共同活動で、引き受けた役割を果たさない人がいる。",
+    "question": "その人の事情も確認した上で、無償の活動ではどこまで責任を求めるべきだと思う？",
+    "hints": [
+      "引き受けたときの約束は、どの程度具体的だった？",
+      "事情への配慮と、他の参加者の負担をどう調整する？"
+    ],
+    "terms": [
+      {
+        "term": "無償",
+        "definition": "お金を支払わずに利用できること、または報酬を受け取らないこと。"
+      }
+    ],
     "level": 3,
     "sensitivity": 3,
     "detail": {
@@ -2200,7 +3543,13 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "immigration_01-01-l3",
-    "question": "外国人労働者の受入れを減らせば、賃金の上昇が期待できる一方、介護や物流のサービスが縮小する可能性もあるとする。国は、生活の不便を国民に求めてでも受入れを減らす方針を選んでよいと思う？",
+    "scenario": "外国人労働者の受入れを減らせば、賃金の上昇が期待できる一方、介護や物流のサービスが縮小する可能性もあるとする。",
+    "question": "介護や物流の人手が足りなくなっても、外国人労働者の受入れを減らすべきだと思う？",
+    "hints": [
+      "賃金上昇とサービス縮小は、それぞれ誰に影響する？",
+      "受け入れを減らす以外の方法は考えられる？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "受入れを減らす利益と、労働力に依存するサービスを維持する利益が衝突する設定。政策の費用を誰が引き受けるかが中心。\n\n問いの狙い: 受入れへの賛否を、住民が負う具体的な不便まで含む制度選択にする。"
@@ -2212,7 +3561,18 @@
     "sensitivity": 4,
     "category": "justice_safety_and_crime",
     "topic": "immigration_01-02-l3",
-    "question": "国籍別の犯罪件数に違いがあっても、人口構成や在留資格などの条件が違えば単純には比較できない。それでも住民の不安に早く応えるため、特定の国籍への取締りを強めてよいと思う？",
+    "scenario": "国籍別の犯罪件数に違いがあっても、人口構成や在留資格などの条件が違えば単純には比較できない。",
+    "question": "住民の不安に応えるためなら、特定の国籍の人への警察の取締りを強めてよいと思う？",
+    "hints": [
+      "比較に必要な条件を、どのように確認する？",
+      "住民の不安と個人を疑う根拠は、分けるべき？"
+    ],
+    "terms": [
+      {
+        "term": "在留資格",
+        "definition": "外国人が日本でどのような目的で暮らし、活動できるかを定める資格。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "crime_and_punishment",
@@ -2228,7 +3588,18 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "immigration_01-03-l3",
-    "question": "外国人労働者の育成費を負担した企業を守るため、一定期間は本人の希望による転職を制限する制度をどう思う？ 費用を企業や公費で回収する仕組みに変えるべき？",
+    "scenario": "外国人労働者を育てた企業は、本人が早く転職すると費用を回収できないことがある。",
+    "question": "外国人労働者の研修費を回収するため、本人の転職を一定期間制限してよい？企業や公費で費用を補う方法もある？",
+    "hints": [
+      "企業の費用と労働者の転職の自由をどう比べる？",
+      "職場に問題がある場合、例外を認める必要はある？"
+    ],
+    "terms": [
+      {
+        "term": "公費",
+        "definition": "国や自治体などが公的な目的で支出するお金。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "企業は採用・育成に投資し、労働者は賃金や働く場所を選びたい。投資の回収を個人の移動制限で担保してよいかが争点。\n\n問いの狙い: 企業への補償と転職制限を別の政策手段として比較できる。"
@@ -2240,7 +3611,18 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "immigration_01-04-l3",
-    "question": "同じ地域で長く暮らし、同程度の税を負担してきた二人が生活に困った。一人は日本国籍、もう一人は外国籍だ。生活を支える公的給付に差を設けるなら、国籍、居住期間、過去の負担のどれを根拠にする？",
+    "scenario": "同じ地域で長く暮らし、同程度の税を負担してきた二人が生活に困った。一人は日本国籍、もう一人は外国籍だ。",
+    "question": "公的な生活支援の条件を決めるなら、国籍・住んだ年数・これまでに払った税金のどれを考慮するべき？",
+    "hints": [
+      "給付の目的は、国民への還元と生活保障のどちら？",
+      "居住や納税の実績を、どう評価する？"
+    ],
+    "terms": [
+      {
+        "term": "公的給付",
+        "definition": "国や自治体などが、条件に当てはまる人に支給するお金や支援。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "福祉の範囲を国籍、居住、過去の負担で決めると、それぞれ対象者が変わる。制度への貢献と国民としての資格を比較する。\n\n問いの狙い: 国籍だけの賛否を避け、給付資格を決める根拠を選ばせる。"
@@ -2252,7 +3634,26 @@
     "sensitivity": 4,
     "category": "society_public_policy_and_environment",
     "topic": "immigration_01-05-l3",
-    "question": "政策を検討するため、帰化した人と出生時から日本国籍を持つ人を行政統計で分ける案がある。差を把握する意義があっても、同じ国民を出自で区別し続ける不利益を、どこまで認める？",
+    "scenario": "政策を検討するため、帰化した人と出生時から日本国籍を持つ人を行政統計で分ける案がある。",
+    "question": "政策に役立つなら、帰化した人を行政の統計で別に集計してよいと思う？同じ国民を出身で分ける影響をどう考える？",
+    "hints": [
+      "政策に必要な違いを知るため、出自の区分は不可欠？",
+      "統計が偏見や不利益につながらない工夫はある？"
+    ],
+    "terms": [
+      {
+        "term": "帰化",
+        "definition": "本人の希望に基づき、国の許可を受けて、それまで持っていなかった国籍を取得すること。この問いでは、日本国籍の取得を指す。"
+      },
+      {
+        "term": "行政統計",
+        "definition": "行政が政策などに利用するため、調査や記録からまとめる数量の情報。"
+      },
+      {
+        "term": "出自",
+        "definition": "生まれ育った家系や背景などのこと。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "discrimination_and_hate"
@@ -2267,7 +3668,22 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "immigration_01-06-l3",
-    "question": "衛生や環境の基準を満たす土葬墓地でも、周辺住民が地域の慣習に合わないとして反対している。行政は、具体的な危険以外の理由でも許可を拒めるべきだと思う？",
+    "scenario": "衛生や環境の基準を満たす土葬墓地でも、周辺住民が地域の慣習に合わないとして反対している。",
+    "question": "衛生や環境に問題がなくても、地域の習慣に合わないという理由で、自治体は土葬墓地の許可を拒んでよいと思う？",
+    "hints": [
+      "慣習への違和感と具体的な危険を、どう分ける？",
+      "住民と利用者が安心できる説明や条件はある？"
+    ],
+    "terms": [
+      {
+        "term": "土葬",
+        "definition": "亡くなった人の体を、火葬せず土に埋める葬り方。"
+      },
+      {
+        "term": "慣習",
+        "definition": "ある地域や集団で、長く続いてきたやり方。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "施設の安全基準と住民の文化的な不安は別の判断材料。宗教上の実践、土地利用、多数決の権限が重なる。\n\n問いの狙い: 具体的な危険がない場合にも慣習を許可基準にできるか問う。"
@@ -2279,7 +3695,18 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "immigration_01-07-l3",
-    "question": "耕す人が減っている地域で、外国法人による農地の取得を制限すれば、土地が使われなくなる可能性がある。食料や土地の管理を国内に保つためなら、その損失を受け入れるべき？",
+    "scenario": "耕す人が減っている地域で、外国法人による農地の取得を制限すれば、土地が使われなくなる可能性がある。",
+    "question": "食料や土地の管理を国内に保つためなら、その損失を受け入れるべき？",
+    "hints": [
+      "国内での管理が失われる危険は、何で確かめる？",
+      "土地を使い続ける別の担い手はいる？"
+    ],
+    "terms": [
+      {
+        "term": "外国法人",
+        "definition": "外国の法律に基づいて設立された会社などの組織。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "耕作の継続や売却利益と、土地の管理を国内に保ちたい考えが衝突する仮定。外国法人一般の危険性を断定するものではない。\n\n問いの狙い: 取得制限の目的だけでなく、制限によって失う利用価値も扱う。"
@@ -2291,7 +3718,13 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "tourism_housing_transport_02-01-l3",
-    "question": "宗教施設が観光収入を得ている場合でも、祈りの場を守るために撮影や観光目的の入場を大きく制限してよいと思う？ 観光施設として期待されるサービスに応える責任はどこまである？",
+    "scenario": "宗教施設が観光客を受け入れる一方、祈りの場を守るために撮影や入場を制限したいと考えている。観光施設としてのサービスを求める人もいる。",
+    "question": "撮影や入場をどこまで制限してよいと思う？",
+    "hints": [
+      "祈りを妨げる行為と観光全体を、どう分ける？",
+      "料金や事前案内によって、責任の判断は変わる？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "宗教施設は信仰の場である一方、観光収入が維持を支える場合もある。観光客の期待と祈りの環境をどこまで両立できるかを問う。\n\n問いの狙い: 観光収入を得ることが、観光客を受け入れる責任を生むかを考える。"
@@ -2303,7 +3736,18 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "tourism_housing_transport_02-02-l3",
-    "question": "住宅地で一部の民泊が迷惑行為を防げない場合、問題を起こしていない施設も含めて営業を禁止してよいと思う？ 個別に取り締まる費用は住民全体が負担することになる。",
+    "scenario": "住宅地の一部の民泊で迷惑行為が起きている。問題のない民泊も含め、個別に取り締まるには費用がかかる。",
+    "question": "問題を起こしていない民泊も、住宅地での営業を禁止してよいと思う？",
+    "hints": [
+      "問題を起こさない施設への影響を、どう考える？",
+      "一律禁止と個別の対策の費用や効果をどう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "民泊",
+        "definition": "住宅などを使って旅行者に宿泊場所を提供すること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "住宅地の規制は迷惑や住宅不足への対応となる一方、既存の合法的な投資にも影響する。個別対応の費用も住民が負う。\n\n問いの狙い: 問題を起こしていない事業者まで一括規制する正当性を扱う。"
@@ -2315,7 +3759,18 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "tourism_housing_transport_02-03-l3",
-    "question": "住民の税で維持する公共交通が観光客で混雑している。混雑対策の財源として、国籍ではなく居住地を基準に観光客の運賃を高くすることは、公平だと思う？",
+    "scenario": "住民の税で維持する公共交通が観光客で混雑している。",
+    "question": "混雑対策のため、地元に住んでいない観光客の運賃を高くしてよいと思う？",
+    "hints": [
+      "住民の税負担と、観光客など住民以外の利用者の負担を、どう考える？",
+      "居住地の確認や、通勤通学で来る人の扱いはどうする？"
+    ],
+    "terms": [
+      {
+        "term": "財源",
+        "definition": "事業や支援などの費用に使うお金の出どころ。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "観光客がもたらす収益と、交通や住宅に生じる負担は同じ人に分配されるとは限らない。受益者と負担者の違いが論点。\n\n問いの狙い: 居住地を根拠とした価格差を、国籍による区別と分けて考える。"
@@ -2327,7 +3782,26 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "tourism_housing_transport_02-04-l3",
-    "question": "交通が不足する地域で、自家用車による有償送迎を広げる案がある。移動は便利になる一方、働く人の収入や事故時の補償を安定させにくい。既存の交通事業と同じ条件が整うまで参入を制限するべき？",
+    "scenario": "交通が不足する地域で、自家用車による有償送迎を広げる案がある。移動は便利になる一方、働く人の収入や事故時の補償を安定させにくい。",
+    "question": "個人の車による有料送迎は、既存のバスやタクシーと同じ安全・補償条件が整うまで制限してよい？",
+    "hints": [
+      "移動できない人の必要と、事業の安全をどう比べる？",
+      "事故の補償や働く人の待遇を守る条件は何？"
+    ],
+    "terms": [
+      {
+        "term": "有償",
+        "definition": "サービスや働きなどの対価として、お金の支払いがあること。"
+      },
+      {
+        "term": "補償",
+        "definition": "受けた損失や負担を、金銭などで補うこと。"
+      },
+      {
+        "term": "参入",
+        "definition": "新たに事業や市場に加わること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "交通不足を補う参入と、運転者の条件・補償・既存事業の維持が衝突する設定。規制の強さによって利用可能性も変わる。\n\n問いの狙い: 便利さだけでなく、サービスを支える人の条件も比較する。"
@@ -2339,7 +3813,13 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "tourism_housing_transport_02-05-l3",
-    "question": "住宅不足を減らすため、空室のまま保有する家に高い税をかける案がある。将来自分で住むために確保している人も負担することになる。住まいを必要とする人のためなら、所有者に貸すか売るかを迫る制度を認める？",
+    "scenario": "住宅不足を減らすため、空き家の持ち主に高い税をかけて賃貸を促す案がある。別の案として、持ち主に家を貸すか売るよう求める制度も考えられている。将来その家に住む予定の人にも影響する。",
+    "question": "空き家の所有者に家を貸すか売るよう求める制度を認める？",
+    "hints": [
+      "将来住む予定など、持ち主の事情をどう考慮する？",
+      "持ち主に選択肢を残しながら、家を使ってもらう方法はある？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "土地や住宅は財産であると同時に、周囲の生活にも影響する。利用を促す課税と危険な空き家への介入では、権利制限の根拠が異なる。\n\n問いの狙い: 所有する自由に対し、居住の必要性からどこまで圧力をかけるか問う。"
@@ -2351,7 +3831,13 @@
     "sensitivity": 3,
     "category": "work_and_economy",
     "topic": "economy_prices_03-01-l3",
-    "question": "輸入品の値上がりを抑える政策が輸出産業の雇用を減らすとしたら、政府は物価の安定と仕事の維持を何で比べるべき？ 両方を同じように守れないとき、どちらを優先する？",
+    "scenario": "外国から買う品物の値上がりを抑えると、輸出企業の仕事が減る場合がある。",
+    "question": "物価を下げることと、仕事を守ることのどちらを優先する？",
+    "hints": [
+      "値上がりと失業で困る人は、それぞれ誰？",
+      "影響の期間や大きさを、どう比較する？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "pregnancy_and_reproduction"
@@ -2366,7 +3852,18 @@
     "sensitivity": 3,
     "category": "work_and_economy",
     "topic": "economy_prices_03-02-l3",
-    "question": "物価高への給付で、所得基準を少し超えた世帯だけが対象から外れると不公平感が生じる。一方、段階的な給付には事務費がかかる。支援を速く配るためなら、境界で大きな差が出てもよい？",
+    "scenario": "給付の条件より少し収入が多いと、支援を受けられなくなる。一方、収入に合わせて少しずつ支援額を変えるには手間がかかる。",
+    "question": "支援を早く配るためなら、所得の境目で受け取る額に大きな差が出てもよいと思う？",
+    "hints": [
+      "基準のすぐ上下で生じる差を、どう評価する？",
+      "給付の速さと細かな調整に、何を求める？"
+    ],
+    "terms": [
+      {
+        "term": "所得",
+        "definition": "収入から必要な経費などを差し引いた金額。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "給付の境界は事務を簡単にする一方、わずかな所得差で大きな受益差を生み得る。制度への対応として行動を変える人もいる。\n\n問いの狙い: 給付の速さと境界付近の公平を比較できる。"
@@ -2378,7 +3875,13 @@
     "sensitivity": 3,
     "category": "work_and_economy",
     "topic": "economy_prices_03-03-l3",
-    "question": "物価高への対策として、借金を増やして消費税を下げる案がある。今困っている人は助かるが、将来の増税や支出削減が必要になる可能性がある。今の生活を守るために、まだ投票できない世代へ負担を回してよいと思う？",
+    "scenario": "物価高への対策として、借金を増やして消費税を下げる案がある。今困っている人は助かるが、将来の増税や支出削減が必要になる可能性がある。",
+    "question": "今の生活を守るために、まだ投票できない世代へ負担を回してよいと思う？",
+    "hints": [
+      "今の支援と将来の負担の大きさを、どう比べる？",
+      "投票できない世代の利益を、誰が考えるべき？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "減税は今の負担を軽くするが、財源や移行費用は別の時点や主体に移る。将来の効果が確実だという設定ではない。\n\n問いの狙い: まだ政治参加できない世代への負担を含めて減税を評価する。"
@@ -2390,7 +3893,22 @@
     "sensitivity": 3,
     "category": "work_and_economy",
     "topic": "economy_prices_03-04-l3",
-    "question": "同じ仕事でも雇用形態によって賃金や保障が違う場合、非正規の待遇を上げる費用を正規の待遇引下げで賄うことを認める？ 全体の費用を増やせない会社なら、何を基準に配るべき？",
+    "scenario": "同じ仕事でも、正社員と非正規社員では賃金や保障に差がある。会社が人件費を増やせない場合もある。",
+    "question": "非正規社員の給料や保障を上げるために、正社員の給料や保障を下げてよいと思う？",
+    "hints": [
+      "同じ仕事でも、責任や働く条件に違いはある？",
+      "待遇を下げられる側に、どんな説明や配慮が必要？"
+    ],
+    "terms": [
+      {
+        "term": "雇用形態",
+        "definition": "正社員や契約社員など、働く人と雇う側との契約の形。"
+      },
+      {
+        "term": "非正規",
+        "definition": "正社員とは異なる契約で働くこと。パートや契約社員などが含まれる。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "格差を縮める方法には、新たな財源の投入と既存の取り分の変更がある。後者では以前の期待や努力との対立が生じる。\n\n問いの狙い: 待遇改善を他の労働者の引下げで賄うことの是非を問う。"
@@ -2402,7 +3920,22 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "social_security_04-01-l3",
-    "question": "平均的には豊かな世代でも、その中には貧しい人がいる。世代間の負担を見直すなら、年齢による一括調整と、年齢を問わない資産・所得による調整のどちらを原則にする？",
+    "scenario": "平均的には豊かな世代でも、その中には貧しい人がいる。",
+    "question": "世代間の負担を見直すなら、年齢で一律に決める？それとも収入や資産に応じて決める？",
+    "hints": [
+      "世代の平均だけでは、何を見落とす？",
+      "資産や所得を確認する費用や難しさをどう考える？"
+    ],
+    "terms": [
+      {
+        "term": "資産",
+        "definition": "貯金や土地など、経済的な価値のある財産。"
+      },
+      {
+        "term": "所得",
+        "definition": "収入から必要な経費などを差し引いた金額。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "世代の平均的な状況と世代内部の差は一致しない。過去の負担を守ることと、今の支払能力で配分することが衝突する。\n\n問いの狙い: 年齢と所得・資産のどちらを再配分の軸にするかを明確にする。"
@@ -2414,7 +3947,18 @@
     "sensitivity": 3,
     "category": "health_and_disability",
     "topic": "social_security_04-02-l3",
-    "question": "高額な治療を受ける人の自己負担上限を維持するには、保険料を増やす必要があるとする。保険料を抑えるために、治療が必要な人の負担上限を引き上げることを、どこまで認める？",
+    "scenario": "高額な治療を受ける人の自己負担上限を維持するには、保険料を増やす必要があるとする。",
+    "question": "高い治療費への補助を保つために保険料を上げる？それとも保険料を抑えるため、患者が払う金額を増やす？",
+    "hints": [
+      "治療を受ける人の支払い能力を、考慮するべき？",
+      "保険で負担を分ける目的を、どう考える？"
+    ],
+    "terms": [
+      {
+        "term": "自己負担上限",
+        "definition": "医療費などについて、本人が負担する金額の上限。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "medical_and_end_of_life"
@@ -2429,7 +3973,18 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "social_security_04-03-l3",
-    "question": "ある地域で、同じ家族構成なら、低賃金で働く世帯より生活保護を受ける世帯の方が、住居費などを差し引いた後に使えるお金が多いとする。その差をなくすために保護費を下げることは、働く世帯への支援を増やすことと同じ意味で公平だと思う？",
+    "scenario": "ある地域で、同じ家族構成なら、低賃金で働く世帯より生活保護を受ける世帯の方が、住居費などを差し引いた後に使えるお金が多いとする。",
+    "question": "働く世帯の手取りが生活保護を下回るとき、生活保護費を下げる？それとも働く世帯への支援を増やす？",
+    "hints": [
+      "保護費を下げた場合と働く世帯を支えた場合で、誰が困る？",
+      "生活の最低限の保障を、どう判断する？"
+    ],
+    "terms": [
+      {
+        "term": "生活保護",
+        "definition": "生活に困る人に、必要な生活費や医療などを支える公的な制度。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "保護費の水準、低賃金、過去の給付削減の回復は別の問題。差をどちら向きに埋め、費用を誰に配るかが重要になる。\n\n問いの狙い: 働く人への公平を、保護費引下げだけで実現してよいかを比較する。"
@@ -2441,7 +3996,17 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "social_security_04-04-l3",
-    "question": "同じ困窮状態でも、浪費や危険な選択が関わった人への支援を減らすべきだと思う？ 原因を調べるために、支援を求める人の私生活を詳しく確認することも認める？",
+    "question": "浪費や危険な行動が困窮の原因でも、同じように支援するべき？支援の前に私生活を詳しく調べてよい？",
+    "hints": [
+      "困窮の原因と、今必要な支援をどう分ける？",
+      "私生活を調べる範囲と判断の正確さをどう考える？"
+    ],
+    "terms": [
+      {
+        "term": "困窮",
+        "definition": "生活に必要なお金などが足りず、暮らしに困っていること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "困窮の程度を重視する配分と、困窮に至る選択や備えを評価する配分は一致しない。原因の確認には私生活の調査も伴う。\n\n問いの狙い: 自己責任を給付基準にすると必要になる調査まで考えさせる。"
@@ -2453,7 +4018,13 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "social_security_04-05-l3",
-    "question": "不正利用を減らすため申請の確認を厳しくすると、本当に困っている人も利用しにくくなる。不正を一定数見逃してでも利用しやすさを優先することを、行政の責任として認める？",
+    "scenario": "不正利用を減らすため申請の確認を厳しくすると、本当に困っている人も利用しにくくなる。",
+    "question": "不正を一定数見逃してでも利用しやすさを優先することを、行政の責任として認める？",
+    "hints": [
+      "不正と利用できない人の発生を、どう比べる？",
+      "申請しやすくしながら確認する方法はある？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "不正防止や事業の効率化は、利用を必要とする人のアクセスを狭める場合がある。件数が少ない支援にも代替がないことがある。\n\n問いの狙い: 取りこぼしと不正の双方を、行政の選択として表に出す。"
@@ -2465,7 +4036,17 @@
     "sensitivity": 3,
     "category": "health_and_disability",
     "topic": "social_security_04-06-l3",
-    "question": "本人や家族が望む医療・介護でも、改善や生活維持への効果が小さいと判断されれば公費の対象から外してよいと思う？ 誰がどの程度の効果を基準に決めるべき？",
+    "question": "治療や介護で改善があまり期待できない場合、税金や保険料による支援を打ち切ってよい？誰がどう決める？",
+    "hints": [
+      "生活を保つ効果は、誰の視点で判断する？",
+      "公費から外れた人が受けられる支援を、どう考える？"
+    ],
+    "terms": [
+      {
+        "term": "公費",
+        "definition": "国や自治体などが公的な目的で支出するお金。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "医療・介護への希望には限りがなくても、公費や家族の資産には限りがある。効果の判断と本人の希望をどこまで切り離すかを問う。\n\n問いの狙い: 公費の対象を効果で線引きする主体と基準を検討する。"
@@ -2477,7 +4058,17 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "social_security_04-07-l3",
-    "question": "配偶者の扶養を前提にした制度が働く時間の選択に影響している場合、制度を個人単位に変えるべきだと思う？ これまでの制度を前提に家事や育児を担ってきた人の負担が増えても？",
+    "question": "配偶者の収入に支えられる人を前提にした制度を、一人ずつの収入で決める形に変える？家事や育児を担ってきた人の負担が増えても？",
+    "hints": [
+      "個人単位にすると、働き方や負担はどう変わる？",
+      "過去の制度に合わせてきた人への移行措置は必要？"
+    ],
+    "terms": [
+      {
+        "term": "扶養",
+        "definition": "収入が少ない家族を、別の家族が養うこと。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "世帯を前提にした制度の変更は、個人の自立を促す一方、旧制度のもとで行った仕事やケアの選択に影響する。\n\n問いの狙い: 改革の利益と移行期の損失を分けて評価する。"
@@ -2489,7 +4080,18 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "depopulation_05-01-l3",
-    "question": "子育て支援の予算を、最も困っている家庭ではなく、支援によって次の子を持つ可能性が高まる家庭に重点配分する案がある。出生数を増やす目的なら、その配り方を認める？",
+    "scenario": "子育て支援の予算を、最も困っている家庭ではなく、支援によって次の子を持つ可能性が高まる家庭に重点配分する案がある。",
+    "question": "出生数を増やすためなら、最も困っている家庭より、次の子を持ちそうな家庭を優先してよい？",
+    "hints": [
+      "出生数を増やすことと、今いる子どもの生活をどう比べる？",
+      "支援の効果を、どの程度確かめるべき？"
+    ],
+    "terms": [
+      {
+        "term": "出生数",
+        "definition": "一定の期間に生まれた子どもの人数。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "出生数を増やす目的と、最も困っている家庭を支える目的では配分先が変わる。効果が不確かな支出を全員で担う問題もある。\n\n問いの狙い: 子育て政策の目的同士が衝突する点を可視化する。"
@@ -2501,7 +4103,17 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "depopulation_05-02-l3",
-    "question": "人口減少に合わせて産業を縮小することと、公費で仕事を維持することでは、どちらを基本方針にするべき？ 維持する場合、利益が出ない仕事に何年間まで費用を使える？",
+    "question": "人口が減ったら産業を縮小する？それとも税金で今の仕事を維持する？維持するなら、何年続ける？",
+    "hints": [
+      "仕事の維持が地域の生活に持つ意味は何？",
+      "公費を使う期限や終了条件を、どう決める？"
+    ],
+    "terms": [
+      {
+        "term": "公費",
+        "definition": "国や自治体などが公的な目的で支出するお金。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "人口が減る地域では、今の仕事を守る支出と新しい産業へ移る支出が競合する。将来の成功はどちらも確約されていない。\n\n問いの狙い: 公的支援で雇用を維持する期間と限界を問う。"
@@ -2513,7 +4125,13 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "depopulation_05-03-l3",
-    "question": "人口が減る地域で、全ての集落への上下水道や道路を同じ水準で維持することが難しくなった。行政は、住み続ける自由を認めつつ、一定の地域ではサービスを縮小すると決めてよいと思う？",
+    "scenario": "人口が減る地域で、全ての集落への上下水道や道路を同じ水準で維持することが難しくなった。",
+    "question": "住民が住み続けたい地域でも、水道や道路などのサービスを縮小してよいと思う？",
+    "hints": [
+      "サービス縮小は、住み続ける自由にどう影響する？",
+      "移住や生活の支援を、どこまで用意するべき？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "住み続ける自由と、少人数の地域までサービスを維持する費用が衝突する。移転費を補えば失う暮らしを全て補えるとは限らない。\n\n問いの狙い: 居住の自由とサービス保障の範囲を分ける。"
@@ -2525,7 +4143,18 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "climate_disaster_06-01-l3",
-    "question": "生活に余裕のない人ほど、安い車や燃料への依存から抜けにくい場合がある。排出量に応じた負担を一律に増やすことは、気候対策として公平だと思う？",
+    "scenario": "生活に余裕のない人ほど、安い車や燃料への依存から抜けにくい場合がある。",
+    "question": "温暖化対策のため、車や燃料を多く使うほど負担を増やすのは、生活に余裕がない人にも公平だと思う？",
+    "hints": [
+      "排出を減らす別の選択肢を、誰もが持っている？",
+      "負担を増やす前に、どんな支援が必要？"
+    ],
+    "terms": [
+      {
+        "term": "排出量",
+        "definition": "ここでは、気候に影響する温室効果ガスなどを出す量のこと。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "環境対策の負担は、収入や移動手段、働く産業によって違う。同じ排出への同じ負担でも、生活への影響はそろわない。\n\n問いの狙い: 排出量に比例する負担がそのまま公平なのかを検討する。"
@@ -2537,7 +4166,12 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "climate_disaster_06-02-l3",
-    "question": "避難を強く求められても残った人が救助を必要とした場合、その選択を救助の順番や費用負担に反映してよいと思う？ 残った事情をすぐ確認できない場合でも？",
+    "question": "避難を求められた後も残った人に、救助の順番や費用で差をつけてよい？残った理由をすぐ確認できなくても？",
+    "hints": [
+      "避難しなかった理由を、どう確かめる？",
+      "救助の必要性と、過去の選択への評価をどう分ける？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "危機時には、避難しなかった事情や救助の必要性を短時間で判断する必要がある。受入れにも資源の限界がある。\n\n問いの狙い: 本人の過去の選択を救助の扱いに反映する是非を問う。"
@@ -2549,7 +4183,18 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "climate_disaster_06-03-l3",
-    "question": "大災害に備えた補強工事は、被害が起きなければ効果を実感しにくい。限られた予算で、将来の被害を減らす工事と、今利用されている医療・福祉を同時には維持できないとしたら、何を基準に決めるべきだと思う？",
+    "scenario": "大きな災害に備える補強工事は、効果が見えにくい。工事費を使うと、今の医療や福祉を減らすことになる。",
+    "question": "今の医療や福祉を減らしてでも、将来の災害に備える工事を優先する？",
+    "hints": [
+      "将来の被害の大きさや確率を、どう考慮する？",
+      "今のサービスを減らす影響を、どう確かめる？"
+    ],
+    "terms": [
+      {
+        "term": "福祉",
+        "definition": "生活の困難を支え、安心して暮らせるようにする仕組みや活動。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "予防保全の便益は災害が起きなければ見えにくい。危険情報が不確かな段階で止めることも、止めないことも損失を生む。\n\n問いの狙い: 現在のサービスと将来の危険への投資を比較する。"
@@ -2561,7 +4206,13 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "climate_disaster_06-04-l3",
-    "question": "危険な暑さや火災リスクがある日のイベントを、参加者が承知していても行政が中止できるべきだと思う？ 救急や消火の負担が他の住民にも及ぶことを、どこまで理由にできる？",
+    "scenario": "危険な暑さや火事のおそれがある日にイベントを開くと、救急や消防が必要になる。その負担は参加者以外にも及ぶ。",
+    "question": "参加者が希望していても、行政がイベントを中止できるべき？",
+    "hints": [
+      "本人の承知だけで、周囲の負担も認められる？",
+      "中止の基準や代替日を、どう決める？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "イベントの参加は個人の選択でも、救急・消火への負担は周囲にも及ぶ。危険を承知する同意だけで判断できるかを問う。\n\n問いの狙い: 参加者の自由と公共の緊急対応資源を結び付ける。"
@@ -2573,7 +4224,12 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "climate_disaster_06-05-l3",
-    "question": "気候の変化で従来の漁業や農業が難しくなった地域を支える予算は、今までの生産を維持するために使うべき？ 新しい適地への移転や転業に使うべき？",
+    "question": "地域の農業や漁業を続けられないとき、今の仕事を補助する？それとも別の場所への移住や転職を支える？",
+    "hints": [
+      "従来の生産を維持できる見込みを、どう確かめる？",
+      "移転や転業で失う暮らしや文化を、どう考える？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "生産環境の変化への対応には、従来の産業を守る道と転換を進める道がある。収入だけでなく技術や地域の継承も関わる。\n\n問いの狙い: 維持と移転・転業のどちらに公費を使うか問う。"
@@ -2585,7 +4241,18 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "climate_disaster_06-06-l3",
-    "question": "複雑な環境問題を一つの危機指標にまとめると、関心を集めやすい一方、違う種類の危険が同じものに見える。注意を促す効果のために、その単純化をどこまで認める？",
+    "scenario": "複雑な環境問題を一つの危機指標にまとめると、関心を集めやすい一方、違う種類の危険が同じものに見える。",
+    "question": "環境問題への関心を集めるためなら、違う種類の危険を一つの指標にまとめてもよいと思う？",
+    "hints": [
+      "一つの指標で、どんな危険が見えなくなる？",
+      "分かりやすさを保ちつつ限界を伝える方法はある？"
+    ],
+    "terms": [
+      {
+        "term": "指標",
+        "definition": "状態や変化を確かめるための目安となる数値など。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "複雑な危機を一つの指標や強い見出しで示すと伝わりやすい一方、前提や不確実性が抜ける。危機を伝える目的と方法の緊張がある。\n\n問いの狙い: 指標による単純化をどこまで認めるかを問う。"
@@ -2597,7 +4264,13 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "misinformation_media_07-01-l3",
-    "question": "災害時の未確認情報は、正しければ救助に役立ち、誤っていれば現場を混乱させる。発信者は確認できるまで待つべき？ 未確認だと明記すれば広めてよい？",
+    "scenario": "災害時の未確認情報は、正しければ救助に役立ち、誤っていれば現場を混乱させる。",
+    "question": "発信者は確認できるまで待つべき？ 未確認だと明記すれば広めてよい？",
+    "hints": [
+      "発信を待つ危険と、誤った情報の危険をどう比べる？",
+      "未確認の表示だけで、混乱を防げる？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "未確認情報は救助の手掛かりにも混乱の原因にもなる。待つことで失う機会と、間違いを広める損失の両方がある。\n\n問いの狙い: 発信の確かさと速さの境界を考える。"
@@ -2609,7 +4282,13 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "misinformation_media_07-02-l3",
-    "question": "選挙中に、外国政府の関与が疑われる大量の投稿が見つかった。投票日までに関与を確定できない場合、国内の正当な発言を巻き込む危険があっても、拡散を一時的に制限してよいと思う？",
+    "scenario": "選挙中に、外国政府の関与が疑われる大量の投稿が見つかった。",
+    "question": "投票日までに外国政府の関与が確かめられなくても、その疑いがある投稿の拡散を止めてよい？正当な発言まで止めるおそれがあっても？",
+    "hints": [
+      "関与が疑われる根拠を、どの程度求める？",
+      "正当な発言の回復や異議申立てを、どう保障する？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "影響工作への対処は選挙の公正を守る一方、正当な国内の発言を制限する危険もある。関与の確定には時間がかかる設定。\n\n問いの狙い: 不確かな段階での規制の権限を問う。"
@@ -2621,7 +4300,12 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "misinformation_media_07-03-l3",
-    "question": "同じ意見を大量に投稿する行為を制限する場合、自動投稿と、人が協力して一斉に投稿する運動を同じ基準で扱うべきだと思う？",
+    "question": "SNSで同じ意見を大量に投稿するのを制限するなら、自動投稿と人が協力する投稿運動を同じように扱うべき？",
+    "hints": [
+      "同じ量でも、発信の仕組みによって影響は違う？",
+      "協力して意見を表明する自由を、どう守る？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "自動投稿と人による協調した発信は、どちらも可視性を高める。支持の多さの見え方と、弱い発信者の機会が衝突する。\n\n問いの狙い: 自動化だけを規制基準にしてよいか考える。"
@@ -2633,7 +4317,13 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "misinformation_media_07-04-l3",
-    "question": "選挙で広まる事実の誤りを訂正する公的機関を作るなら、その機関が与党の主張を正しいと判定する場合も信用できる仕組みは作れると思う？ 作れなければ設置しない方がよい？",
+    "scenario": "選挙中の誤った情報を調べて指摘する公的機関を作る案がある。",
+    "question": "その機関が与党の発言を正しいと判断しても、信頼できる仕組みを作れる？作れないなら設置しない方がよい？",
+    "hints": [
+      "判定する人の独立性を、どう確保する？",
+      "判定に異議がある場合、見直せる仕組みは必要？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "偽情報の訂正は必要でも、何を正しいと認めるかを決める機関にも権力が集中する。政治的な利益と検証が対立し得る。\n\n問いの狙い: 公的な事実認定機関を作る条件と限界を問う。"
@@ -2645,7 +4335,18 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "misinformation_media_07-05-l3",
-    "question": "同じ統計から複数の正確な見出しを作れても、一つを選ぶことで社会の印象は変わる。報道は、反対の印象を与える読み方まで併記する責任があると思う？",
+    "scenario": "同じ統計から複数の正確な見出しを作れても、一つを選ぶことで社会の印象は変わる。",
+    "question": "同じ統計から違う印象の見出しを作れるとき、報道は別の見方も一緒に伝えるべき？",
+    "hints": [
+      "正確な見出しでも、何が伝わらなくなる？",
+      "別の読み方を示す範囲を、どう決める？"
+    ],
+    "terms": [
+      {
+        "term": "併記",
+        "definition": "複数の情報を、合わせて書き示すこと。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "数字が正確でも切り口の選択によって印象は変わる。全ての解釈を示せない報道で、編集上の責任が生じる。\n\n問いの狙い: 反対の印象を与える読み方まで示す義務があるか問う。"
@@ -2657,7 +4358,12 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "misinformation_media_07-06-l3",
-    "question": "同じ種類の事件なら、加害者や被害者の性別を見出しに出す基準も同じにするべきだと思う？ 特定の性別の被害が見落とされてきた場合は、その性別をあえて強調してよい？",
+    "question": "事件報道で加害者や被害者の性別を伝える基準は、いつも同じにするべき？見過ごされてきた被害を伝えるために、性別をあえて載せてもよい？",
+    "hints": [
+      "性別が事件の理解に必要な場面は、どんなとき？",
+      "見落とされてきた被害を示す方法は、見出し以外にもある？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "性別を明示することは被害の可視化にも、集団への一般化にもつながり得る。同じ表記基準と異なる背景への配慮が衝突する。\n\n問いの狙い: 性別による扱いの差を報道ルールとして検討する。"
@@ -2669,7 +4375,13 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "misinformation_media_07-07-l3",
-    "question": "食品の検査基準を満たしていても、産地への不安から購入を避ける自由はある。一方、その不安を公に呼び掛けることには、個人の選択以上の根拠を求めるべきだと思う？",
+    "scenario": "食品の検査基準を満たしていても、産地への不安から購入を避ける自由はある。",
+    "question": "食品検査に問題がなくても、産地への不安を周りに伝えるなら根拠が必要だと思う？",
+    "hints": [
+      "個人で避けることと、人に避けるよう勧めることはどう違う？",
+      "不安の根拠や検査の限界を、どう確かめる？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "medical_and_end_of_life"
@@ -2684,7 +4396,21 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "ai_privacy_08-01-l3",
-    "question": "実在の人に似せた映像に偽物だと表示していても、本人の同意なしに性的・侮辱的な場面を作ることを禁止するべきだと思う？ 風刺や創作との境界はどこに置く？",
+    "question": "本人に似せた偽の映像で、性的・侮辱的な場面を同意なく作ることを禁止してよい？風刺や創作として認める範囲はどこ？",
+    "hints": [
+      "偽物と表示しても、本人にどんな被害がありうる？",
+      "風刺や創作を守りつつ被害を防ぐ基準は作れる？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      },
+      {
+        "term": "風刺",
+        "definition": "社会や人物などの問題を、ユーモアや皮肉を使って表すこと。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "privacy_and_surveillance"
@@ -2699,7 +4425,17 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "ai_privacy_08-02-l3",
-    "question": "成人が望んで使う会話AIでも、強い依存を生む可能性があるなら、利用時間や親密さを演出する機能を規制してよいと思う？ 孤立している人の支えを減らす可能性があっても？",
+    "question": "孤立した人の支えを弱める可能性があっても、依存を防ぐために成人向け会話AIの利用時間や友達・恋人のように話す機能を制限してよい？",
+    "hints": [
+      "支えになっていることと、生活への支障をどう見分ける？",
+      "本人が利用を調整できる仕組みで、規制を減らせる？"
+    ],
+    "terms": [
+      {
+        "term": "AI",
+        "definition": "文章の処理や予測など、人の知的な作業の一部をコンピューターで行う技術。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "親密なAIは孤立への支えにも、利用を強める商品設計にもなり得る。成人の同意と長期の影響をどう扱うかが争点。\n\n問いの狙い: 本人の希望だけで規制を不要とできるか考える。"
@@ -2711,7 +4447,18 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "ai_privacy_08-03-l3",
-    "question": "利用者が買い物を任せたAIが、設定された上限内で高額な契約を結んだが、利用者の本当の希望とは違っていた。販売者もAIの提供者も明確な違反をしていないとしたら、その損失は誰が負うべきだと思う？",
+    "scenario": "利用者が買い物を任せたAIが、設定された上限内で高額な契約を結んだが、利用者の本当の希望とは違っていた。",
+    "question": "AIが本人の希望と違う高額な契約を結んだとき、販売者にもAIの提供者にも明らかな違反がなければ、損失は誰が負うべき？",
+    "hints": [
+      "AIに任せた範囲を、本人は十分理解していた？",
+      "販売者や提供者には、どんな説明や確認を求める？"
+    ],
+    "terms": [
+      {
+        "term": "AI",
+        "definition": "文章の処理や予測など、人の知的な作業の一部をコンピューターで行う技術。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "AIへの権限委譲では、設定上の許可と本人の実際の意図がずれる可能性がある。取引相手の信頼も損失配分に関わる。\n\n問いの狙い: 明確な違反者がいない契約の損失を誰に配るか問う。"
@@ -2723,7 +4470,22 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "ai_privacy_08-04-l3",
-    "question": "病院が過去の診療記録をAIの研究に使いたい。一人ずつ同意を取り直すと、連絡できない人の記録が抜けて研究に偏りが出る可能性がある。個人を特定しにくくする措置を取れば、改めて同意を得ずに利用することを認める？",
+    "scenario": "病院が過去の診療記録をAI研究に使いたい。一人ずつ同意を取り直せない人もいるため、研究結果に偏りが出る可能性がある。",
+    "question": "本人が特定されにくいようにすれば、同意なしで記録を使ってよいと思う？",
+    "hints": [
+      "研究の偏りと患者の意思を、どう比べる？",
+      "利用を拒める仕組みや情報管理は、どの程度必要？"
+    ],
+    "terms": [
+      {
+        "term": "AI",
+        "definition": "文章の処理や予測など、人の知的な作業の一部をコンピューターで行う技術。"
+      },
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "medical_and_end_of_life"
@@ -2738,7 +4500,22 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "ai_privacy_08-05-l3",
-    "question": "作品のAI学習への利用を認める代わりに、作者へ一括で対価を配る制度があるとする。個々の作者が利用自体を拒む権利より、広い利用と対価の分配を優先してよいと思う？",
+    "scenario": "作品のAI学習への利用を認める代わりに、作者へ一括で対価を配る制度があるとする。",
+    "question": "作者に決まった報酬を配るなら、自分の作品をAI学習に使わないよう断る権利より、広く使えることを優先してよい？",
+    "hints": [
+      "対価があれば、利用を拒む理由も解消する？",
+      "作者ごとの希望を扱う費用と権利をどう考える？"
+    ],
+    "terms": [
+      {
+        "term": "AI",
+        "definition": "文章の処理や予測など、人の知的な作業の一部をコンピューターで行う技術。"
+      },
+      {
+        "term": "対価",
+        "definition": "商品やサービスなどを受け取る代わりに支払うもの。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "AI利用の対価を配る制度と、利用自体を拒む権利は同じではない。対価を受けても本人の仕事が減る可能性がある設定。\n\n問いの狙い: 補償があれば利用拒否を制限してよいか考える。"
@@ -2750,7 +4527,19 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "net_harm_privacy_09-01-l3",
-    "question": "誹謗中傷の申告を受けた投稿をすぐ非公開にすると、被害の拡大を抑えられる一方、正当な批判を黙らせるための申告にも使われる。確認前に隠す運用と、確認まで公開を続ける運用のどちらを原則にする？",
+    "scenario": "誹謗中傷の申告を受けた投稿をすぐ非公開にすると、被害の拡大を抑えられる一方、正当な批判を黙らせるための申告にも使われる。",
+    "question": "誹謗中傷の申告があった投稿を、確認前に隠す？それとも確認が終わるまで表示する？どちらを基本にするべき？",
+    "hints": [
+      "確認前の非公開が、発言の機会にどう影響する？",
+      "確認まで投稿の公開を続ける場合、被害を訴える人にはどんな影響がある？",
+      "見直す期限や異議申立ては、どう設ける？"
+    ],
+    "terms": [
+      {
+        "term": "誹謗中傷",
+        "definition": "人を悪く言ったり、根拠のないことなどで名誉を傷つけたりすること。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "privacy_and_surveillance",
@@ -2766,7 +4555,21 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "net_harm_privacy_09-02-l3",
-    "question": "無断転載で得た広告収入は、投稿者だけでなく、収益を分け合った運営会社からも回収するべきだと思う？ 運営会社が侵害を知らなかった場合でも？",
+    "question": "無断転載の広告収入を、転載した人だけでなく、利益を分けた運営会社からも回収してよい？侵害を知らなかった場合も？",
+    "hints": [
+      "利益を得たことと、侵害を知っていたことはどう違う？",
+      "運営会社に、どこまで確認や防止を求める？"
+    ],
+    "terms": [
+      {
+        "term": "無断転載",
+        "definition": "作品や文章などを、必要な許可を得ず別の場所に載せること。"
+      },
+      {
+        "term": "侵害",
+        "definition": "他の人の権利などを、不当に損なうこと。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "転載で利益を得る主体は投稿者だけとは限らない。権利の確認を強めると、証明の難しい正当な投稿も排除され得る。\n\n問いの狙い: 利益の分配と侵害の責任を結び付けて問う。"
@@ -2778,7 +4581,12 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "net_harm_privacy_09-03-l3",
-    "question": "重大な問題を起こした人でも、謝罪や処分の後に批判を続けることに限界を設けるべきだと思う？ 批判を止める基準を、本人や運営会社が決めてよい？",
+    "question": "謝罪や処分の後も続く批判には、どんな限界が必要？本人や運営会社が、批判を止める基準を決めてよい？",
+    "hints": [
+      "再発防止を求める批判と、個人への攻撃をどう分ける？",
+      "謝罪や処分の内容は、判断にどう影響する？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "abuse_and_coercion"
@@ -2793,7 +4601,18 @@
     "sensitivity": 4,
     "category": "technology_media_and_privacy",
     "topic": "net_harm_privacy_09-04-l3",
-    "question": "未成年を有害な投稿から守るため、SNSの利用時に身分証で年齢を確認する制度を設ける案がある。匿名の表示は保てても、運営会社には本人を特定できる情報が集まる。この条件なら義務化を支持する？",
+    "scenario": "未成年を有害な投稿から守るため、SNSの利用時に身分証で年齢を確認する制度を設ける案がある。匿名の表示は保てても、運営会社には本人を特定できる情報が集まる。",
+    "question": "未成年を守るため、SNSを使う全員に身分証での年齢確認を義務付けてよいと思う？",
+    "hints": [
+      "年齢確認の情報を、誰がどれだけ保管するべき？",
+      "年齢だけを確かめる別の方法があれば、判断は変わる？"
+    ],
+    "terms": [
+      {
+        "term": "SNS",
+        "definition": "投稿やメッセージを通じて、人々が交流するインターネット上のサービス。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "sexual_violence"
@@ -2808,7 +4627,18 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "net_harm_privacy_09-05-l3",
-    "question": "漏えいが疑われる段階で公表すれば利用者は備えられるが、誤報なら組織と利用者に混乱を起こす。どの程度の確かさで公表を義務付けるべきだと思う？",
+    "scenario": "漏えいが疑われる段階で公表すれば利用者は備えられるが、誤報なら組織と利用者に混乱を起こす。",
+    "question": "情報漏れが確定する前でも、どの程度の可能性があれば利用者に知らせるべき？",
+    "hints": [
+      "利用者が早く備える利益と、誤報の影響をどう比べる？",
+      "疑いの段階であると明示すれば、公表できる？"
+    ],
+    "terms": [
+      {
+        "term": "漏えい",
+        "definition": "秘密や個人情報などが、外部に漏れること。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "privacy_and_surveillance"
@@ -2823,7 +4653,17 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "net_harm_privacy_09-06-l3",
-    "question": "無料だと思って素材を使った公的機関にも、営利目的の無断利用と同じ賠償を求めるべきだと思う？ 担当者の知識不足による損失を税金で負担することは妥当？",
+    "question": "無料だと思って素材を使った公的機関にも、営利企業と同じ損害賠償を求めてよい？担当者の誤解による損失を税金で補ってよい？",
+    "hints": [
+      "公的機関の利用で、権利者が受けた損害はどう測る？",
+      "税で補う責任と、再発防止をどう考える？"
+    ],
+    "terms": [
+      {
+        "term": "損害賠償",
+        "definition": "相手に与えた損害を、金銭などで補うこと。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "無料の表示を信じた利用でも権利侵害が生じる場合がある。故意、確認の注意、公共機関の費用負担は分けて考える必要がある。\n\n問いの狙い: 悪意のない侵害と賠償責任の関係を問う。"
@@ -2835,7 +4675,13 @@
     "sensitivity": 3,
     "category": "technology_media_and_privacy",
     "topic": "net_harm_privacy_09-07-l3",
-    "question": "動物虐待の映像は、告発や捜査の手掛かりになる一方、拡散が注目や収益のための虐待を誘発するおそれもある。記録として残すことと公開を制限することをどう分ける？",
+    "scenario": "動物虐待の映像は、告発や捜査の手掛かりになる一方、拡散が注目や収益のための虐待を誘発するおそれもある。",
+    "question": "記録として残すことと公開を制限することをどう分ける？",
+    "hints": [
+      "証拠を必要な人に残す方法と、広く拡散することは違う？",
+      "公開範囲や収益化の条件を、どう決める？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "crime_and_punishment",
@@ -2851,7 +4697,18 @@
     "sensitivity": 3,
     "category": "justice_safety_and_crime",
     "topic": "fraud_crime_10-01-l3",
-    "question": "詐欺被害を金融機関が広く補償する制度では、繰り返し警告を受けても送金した人も救われる一方、費用は利用者全体の手数料に反映される。警告を無視したことを理由に、補償を減らしてよいと思う？",
+    "scenario": "詐欺被害を金融機関が広く補償する制度では、繰り返し警告を受けても送金した人も救われる一方、費用は利用者全体の手数料に反映される。",
+    "question": "詐欺だという警告を受けても送金した人への補償を、減らしてよいと思う？",
+    "hints": [
+      "警告を理解できたか、送金を止められたかも考慮する？",
+      "被害の回復と利用者全体の費用をどう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "補償",
+        "definition": "受けた損失や負担を、金銭などで補うこと。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "crime_and_punishment"
@@ -2866,7 +4723,18 @@
     "sensitivity": 3,
     "category": "justice_safety_and_crime",
     "topic": "fraud_crime_10-02-l3",
-    "question": "広告を載せて利益を得るサービスは、その広告が詐欺だったとき、事前に見抜けなかったとしても被害の一部を補償するべきだと思う？ 補償を避けるために、無名の事業者の広告が出せなくなっても？",
+    "scenario": "詐欺広告を載せたサービスは利益を得る。事前確認を厳しくすると、よく知られていない事業者が広告を出しにくくなる。",
+    "question": "事前に詐欺だと見抜けなくても、サービスは被害を補償するべき？",
+    "hints": [
+      "広告を確認する責任は、利益を得ることから生じる？",
+      "補償と広告を出せる機会を、どう両立させる？"
+    ],
+    "terms": [
+      {
+        "term": "補償",
+        "definition": "受けた損失や負担を、金銭などで補うこと。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "crime_and_punishment"
@@ -2881,7 +4749,17 @@
     "sensitivity": 3,
     "category": "justice_safety_and_crime",
     "topic": "fraud_crime_10-03-l3",
-    "question": "乗っ取られたアカウントから被害が広がった場合、持ち主が推奨された安全対策を取っていなかったことを、補償責任に反映するべきだと思う？",
+    "question": "安全対策をしていなかった持ち主にも、アカウント乗っ取りの被害への補償責任を負わせてよい？",
+    "hints": [
+      "推奨された対策が、実行しやすかったかは重要？",
+      "犯罪をした人と持ち主の責任を、どう分ける？"
+    ],
+    "terms": [
+      {
+        "term": "補償",
+        "definition": "受けた損失や負担を、金銭などで補うこと。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "crime_and_punishment"
@@ -2896,14 +4774,25 @@
     "sensitivity": 3,
     "category": "justice_safety_and_crime",
     "topic": "fraud_crime_10-04-l3",
-    "question": "犯罪組織の実行役から情報を得るため、捜査への協力を条件に処分を軽くする仕組みを広げるべきだと思う？ 被害者が実行役への厳罰を求めていても？",
+    "question": "捜査に協力した犯罪組織の実行役の刑を軽くする制度を広げてよい？被害者が厳罰を求めていても？",
+    "hints": [
+      "協力によって得られる情報を、どの程度評価する？",
+      "被害者への説明や補償には、何が必要？"
+    ],
+    "terms": [
+      {
+        "term": "実行役",
+        "definition": "犯罪を実際に行う人。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "crime_and_punishment"
     ],
     "detail": {
       "text": "組織犯罪の実行役は、利益を求める参加者と脅される被害者の両面を持つ場合がある。協力による処分軽減は被害者の意向と衝突する。\n\n問いの狙い: 上位の組織への捜査と実行役の処罰を比較する。"
-    }
+    },
+    "scenario": "犯罪組織の情報を得るため、実行役が捜査に協力すれば刑を軽くする制度が検討されている。被害者は実行役への厳罰を求めている。"
   },
   {
     "id": "r6-10-05-l3",
@@ -2911,7 +4800,13 @@
     "sensitivity": 3,
     "category": "justice_safety_and_crime",
     "topic": "fraud_crime_10-05-l3",
-    "question": "不正送金を防ぐため海外送金の確認を厳しくすると、必要な書類をそろえにくい人が家族へ送金できなくなる。犯罪防止のため、その利用しにくさをどこまで認める？",
+    "scenario": "犯罪を防ぐため海外送金の確認を厳しくすると、必要な書類をそろえにくい人が家族へ送金できなくなる。",
+    "question": "犯罪を防ぐためなら、家族へ送金できない人が出てもよいと思う？",
+    "hints": [
+      "確認を厳しくすると、どんな人が送金しにくくなる？",
+      "別の書類や確認方法を用意できる？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "crime_and_punishment"
@@ -2926,7 +4821,13 @@
     "sensitivity": 3,
     "category": "justice_safety_and_crime",
     "topic": "fraud_crime_10-06-l3",
-    "question": "売買の専門業者が、価値を知らない個人から安く買うことは、商売の知識による正当な利益だと思う？ 高価だと分かっている品には、その情報を売り手に伝える義務を設けるべき？",
+    "scenario": "品物の価値を知らない個人から、専門業者が価値を知って安く買うことがある。",
+    "question": "業者の知識による利益として認める？高価な品物なら、売り手に価値を伝える義務を設ける？",
+    "hints": [
+      "知識の差を利用する利益に、限界はある？",
+      "説明を求める品物や価格差の基準は、どう決める？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "専門業者と個人の間には価値についての情報差がある。安く買うことが知識の正当な利益か、説明すべき不均衡かが争点。\n\n問いの狙い: 価格への合意だけで取引を公平と判断できるか問う。"
@@ -2938,7 +4839,18 @@
     "sensitivity": 3,
     "category": "work_and_economy",
     "topic": "labor_11-01-l3",
-    "question": "管理職がハラスメントを避けるため、異性の部下との個別面談や出張を控えると、育成機会に差が出る。本人が接触を避けたいという希望より、部下の機会を優先させるべき？",
+    "scenario": "管理職がハラスメントを避けるため、異性の部下との個別面談や出張を控えると、育成機会に差が出る。",
+    "question": "上司が異性の部下との面談や出張を避けることで、その部下の育成機会に差が出てもよいと思う？",
+    "hints": [
+      "部下が得られなくなる機会を、どう確かめる？",
+      "接触を避けながら同じ育成機会を用意できる？"
+    ],
+    "terms": [
+      {
+        "term": "ハラスメント",
+        "definition": "嫌がらせや、相手に不快さ・不利益を与える言動のこと。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "abuse_and_coercion"
@@ -2953,7 +4865,18 @@
     "sensitivity": 3,
     "category": "work_and_economy",
     "topic": "labor_11-02-l3",
-    "question": "発注元に依存する企業が代金の減額に同意していても、その同意を自由な交渉と扱ってよいと思う？ 合意内容を規制すれば、取引自体がなくなる場合でも？",
+    "scenario": "小さな会社が大きな取引先から値下げを求められ、取引を続けるために同意した。",
+    "question": "会社が同意していても、力関係に差があれば値下げを規制するべき？規制で取引がなくなる危険があっても？",
+    "hints": [
+      "取引を失う不安は、同意にどんな影響を与える？",
+      "規制による保護と仕事を失う危険をどう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "取引への依存があると、形式的な同意と自由な交渉は一致しない場合がある。規制すれば取引そのものを失う可能性もある。\n\n問いの狙い: 減額への合意だけで公平とみなせるかを問う。"
@@ -2965,7 +4888,13 @@
     "sensitivity": 3,
     "category": "work_and_economy",
     "topic": "labor_11-03-l3",
-    "question": "収入を増やしたい労働者が、自分の意思で長時間働くことを求めている。健康を損なう危険を説明されても希望が変わらない場合、国は本人の選択を制限するべきだと思う？",
+    "scenario": "収入を増やしたい労働者が、自分の意思で長時間働くことを求めている。",
+    "question": "健康を損なう危険を説明しても長時間働きたい人の労働を、国は制限してよいと思う？",
+    "hints": [
+      "本人の希望が経済的な必要から生じている場合、判断は変わる？",
+      "健康を守りながら収入を増やす方法はある？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "働く時間には個人の収入希望と健康への保護が関わる。未払賃金の回復では、会社の存続との衝突が起きる設定も考えられる。\n\n問いの狙い: 本人の同意があっても労働時間を制限すべきか問う。"
@@ -2977,7 +4906,13 @@
     "sensitivity": 3,
     "category": "work_and_economy",
     "topic": "labor_11-04-l3",
-    "question": "不況期に就職できなかった世代を支援するため、正規採用でその世代を優先する案がある。別の世代の応募者が同じ程度に困っていても、過去の採用環境の違いを理由に優先してよいと思う？",
+    "scenario": "不況期に就職できなかった世代を支援するため、正規採用でその世代を優先する案がある。",
+    "question": "同じ程度に困っている他の世代より、就職しにくかった世代を優先して採用してよいと思う？",
+    "hints": [
+      "過去の就職環境が、今の困難にどうつながっている？",
+      "同程度に困る別世代の人を、どう支える？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "不況期の機会不足への是正と、現在の能力や事業の必要性による採用は同じ基準ではない。別世代にも困っている人がいる。\n\n問いの狙い: 世代別の優先措置を他の是正措置と比較できる。"
@@ -2989,7 +4924,18 @@
     "sensitivity": 3,
     "category": "work_and_economy",
     "topic": "labor_11-05-l3",
-    "question": "組織が不正を行った上で自ら公表した場合、その組織への処分を軽くすると、隠蔽を減らせる可能性がある。一方、発覚直前に駆け込みで公表して責任を軽くする行動も起こり得る。自発的な公表をどこまで評価する？",
+    "scenario": "不正を自ら公表した組織の処分を軽くすれば、隠蔽を減らせるかもしれない。一方、発覚直前に公表する組織も出てくる。",
+    "question": "自ら公表したことを、処分の軽減にどこまで考慮するべき？",
+    "hints": [
+      "公表の時期や内容を、どう評価する？",
+      "隠すことを減らしつつ、責任を軽くしすぎない基準はある？"
+    ],
+    "terms": [
+      {
+        "term": "隠蔽",
+        "definition": "問題や事実を、他の人に知られないように隠すこと。"
+      }
+    ],
     "perspective": "decision_maker",
     "content_warning": [
       "crime_and_punishment"
@@ -3004,7 +4950,18 @@
     "sensitivity": 3,
     "category": "family_and_care",
     "topic": "poverty_education_12-01-l3",
-    "question": "子どもへの給付を親の婚姻状況で変えると、婚姻届を出すかどうかで受取額が違う場合が生じる。実際の収入や同居関係を調べる負担が大きくても、婚姻状況による区分をやめるべきだと思う？",
+    "scenario": "子どもへの給付を親の婚姻状況で変えると、婚姻届を出すかどうかで受取額が違う場合が生じる。",
+    "question": "子どもへの支援金を、親が結婚しているかどうかで分けないようにするべき？収入や同居の状況を調べる手間が増えても？",
+    "hints": [
+      "婚姻状況は、子どもの生活をどの程度表している？",
+      "実際の暮らしを調べる費用と公平さをどう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "婚姻",
+        "definition": "法律上、夫婦になること。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "family_conflict"
@@ -3019,7 +4976,13 @@
     "sensitivity": 3,
     "category": "school_and_youth",
     "topic": "poverty_education_12-02-l3",
-    "question": "重大ないじめをした生徒の記録を進学先へ引き継げば、新たな被害を防ぐ手掛かりになる一方、立ち直った後も先入観で見られる可能性がある。本人が反対しても、どこまで引き継ぐべきだと思う？",
+    "scenario": "重大ないじめをした生徒の記録を進学先へ引き継げば、新たな被害を防ぐ手掛かりになる一方、立ち直った後も先入観で見られる可能性がある。",
+    "question": "いじめをした生徒の記録を、本人が反対していても進学先に伝えてよいと思う？",
+    "hints": [
+      "引き継ぐ情報の範囲や期間を、どう決める？",
+      "立ち直りを示す情報も、合わせて伝える必要はある？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "family_conflict",
@@ -3035,7 +4998,18 @@
     "sensitivity": 3,
     "category": "school_and_youth",
     "topic": "poverty_education_12-03-l3",
-    "question": "教育格差を減らすため、入試で家庭の経済状況を考慮する案がある。高得点でも家庭に余裕がある人が不合格になる場合、この調整を認める？",
+    "scenario": "教育格差を減らすため、入試で家庭の経済状況を考慮する案がある。",
+    "question": "家庭の経済状況を入試で考慮するために、経済的に余裕のある高得点者が不合格になってもよいと思う？",
+    "hints": [
+      "家庭の経済状況が学力に与えた影響を、どう確かめる？",
+      "入試の役割と、学ぶ機会の公平さをどう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "格差",
+        "definition": "収入や機会などに大きな差があること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "経済的な教育格差への調整は、得点での評価と衝突する場合がある。所得区分も、境界付近の実際の余裕を完全には示さない。\n\n問いの狙い: 機会の是正に試験結果の調整を用いてよいか問う。"
@@ -3047,7 +5021,22 @@
     "sensitivity": 3,
     "category": "school_and_youth",
     "topic": "poverty_education_12-04-l3",
-    "question": "自転車の違反への罰金や反則金を重くすると、低所得の人や通学に自転車が必要な人ほど生活への影響が大きい。危険な行動を止めるためなら、所得に関係なく同額を求めるべき？",
+    "scenario": "自転車の違反への罰金や反則金を重くすると、低所得の人や通学に自転車が必要な人ほど生活への影響が大きい。",
+    "question": "危険な運転を防ぐためなら、所得や通学で自転車が必要かに関係なく、同じ額の反則金を求めるべき？",
+    "hints": [
+      "同額の負担でも、行動を変える効果は同じ？",
+      "所得に応じた負担や、別の対策をどう考える？"
+    ],
+    "terms": [
+      {
+        "term": "所得",
+        "definition": "収入から必要な経費などを差し引いた金額。"
+      },
+      {
+        "term": "反則金",
+        "definition": "一定の比較的軽い交通違反について、定められた手続きで納めるお金。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "crime_and_punishment"
@@ -3062,7 +5051,18 @@
     "sensitivity": 4,
     "category": "school_and_youth",
     "topic": "poverty_education_12-05-l3",
-    "question": "学校の盗撮対策として職員の私物端末を確認する仕組みを設けるなら、無関係な教職員の私生活を調べる危険をどこまで認める？",
+    "scenario": "学校で盗撮を防ぐため、教職員の私物のスマートフォンを確認する仕組みを設ける案がある。",
+    "question": "盗撮の疑いがない教職員のスマートフォンも調べてよい？関係ない人のプライバシーへの影響をどこまで認める？",
+    "hints": [
+      "私物を確認するために、どんな根拠が必要？",
+      "調べる範囲と情報の扱いを、どう制限する？"
+    ],
+    "terms": [
+      {
+        "term": "盗撮",
+        "definition": "相手が知らない、または望まない状況で、ひそかに撮影すること。"
+      }
+    ],
     "perspective": "decision_maker",
     "content_warning": [
       "sexual_violence",
@@ -3078,7 +5078,13 @@
     "sensitivity": 3,
     "category": "health_and_disability",
     "topic": "mental_health_13-01-l3",
-    "question": "出産後の孤立を減らすため、望まない家庭にも行政が訪問する制度を強める案がある。支援からこぼれる人を減らすためなら、家庭の拒否をどこまで越えてよい？",
+    "scenario": "出産後、周りに頼れず孤立する親もいる。行政が訪問を断る家庭にも支援を届ける案がある。",
+    "question": "支援を届けるため、断る家庭にも行政が訪問してよい？",
+    "hints": [
+      "拒否の理由と、支援の必要をどう確かめる？",
+      "訪問以外に、支援につながる方法はある？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "pregnancy_and_reproduction"
@@ -3093,7 +5099,13 @@
     "sensitivity": 4,
     "category": "health_and_disability",
     "topic": "mental_health_13-02-l3",
-    "question": "自殺の危険が高いと専門家が判断した成人が、家族への連絡を拒んでいる。本人の信頼を失う可能性があっても、重大で差し迫った危険を避けるための情報共有を、どこまで認めるべきだと思う？",
+    "scenario": "自殺の危険が高いと専門家が判断した成人が、家族への連絡を拒んでいる。",
+    "question": "命に関わる危険が差し迫っている場合、本人が拒否しても家族へ情報を伝えてよい？本人との信頼関係を損なうおそれがあっても？",
+    "hints": [
+      "危険の切迫性と、家族への共有の効果をどう確認する？",
+      "共有する相手や情報を、必要な範囲に限れる？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "self_harm"
@@ -3108,7 +5120,18 @@
     "sensitivity": 3,
     "category": "health_and_disability",
     "topic": "mental_health_13-04-l3",
-    "question": "支援窓口の予算を相談件数に応じて配ると、相談しにくい人が多い集団への支援は増えにくい。需要があるか確かめきれていなくても、相談件数の少ない集団に専用の窓口を設けるべきだと思う？",
+    "scenario": "支援窓口の予算を相談件数に応じて配ると、相談しにくい人が多い集団への支援は増えにくい。",
+    "question": "相談の需要がはっきり分からなくても、相談件数の少ない集団に専用の窓口を設けるべき？",
+    "hints": [
+      "相談件数の少なさは、必要が少ないことを示す？",
+      "専用窓口の効果を、どのように検証する？"
+    ],
+    "terms": [
+      {
+        "term": "需要",
+        "definition": "あるものやサービスを、必要としたり求めたりすること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "相談件数は困難の量だけでなく相談のしやすさにも影響され得る。構造的な困難という説明を持つかどうかも支援の評価に関わる。\n\n問いの狙い: 見える需要の数字だけで予算を配る限界を問う。"
@@ -3120,7 +5143,17 @@
     "sensitivity": 3,
     "category": "health_and_disability",
     "topic": "mental_health_13-05-l3",
-    "question": "依存的な支出が続いている人への住居支援を、支出管理に同意することと引き換えにしてよいと思う？ 管理を拒む人を支援から外すことも認める？",
+    "question": "支出をやめられず生活に困る人に、住まいの支援と引き換えに家計の管理を求めてよい？断ったら支援をやめてもよい？",
+    "hints": [
+      "住居を失う危険と支出管理の負担をどう比べる？",
+      "同意しない人にも、別の支援方法はある？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "住居などへの支援に支出管理を求めると、生活を立て直す助けにも本人の自由の制限にもなる。困窮の理由による配分も問題になる。\n\n問いの狙い: 支援を条件付きにし、拒否した人を外す是非を問う。"
@@ -3132,7 +5165,17 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "politics_culture_14-01-l3",
-    "question": "皇位継承のルールを見直すとき、安定した継承、伝統、皇族個人の人生が衝突する場合、どれを優先するべきだと思う？ 国民の支持が多ければ個人に大きな役割を求めてよい？",
+    "question": "皇位継承では、安定・伝統・皇族一人ひとりの人生のどれを優先するべき？国民の賛成が多ければ、本人に大きな役割を求めてよい？",
+    "hints": [
+      "国民の支持と本人の意思を、どう調整する？",
+      "安定した継承と伝統は、いつ衝突する？"
+    ],
+    "terms": [
+      {
+        "term": "皇位継承",
+        "definition": "天皇の地位を、次の人が引き継ぐこと。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "継承制度の安定や伝統には、役割を負う個人の人生が関わる。制度への支持と、個人に役割を求める正当性は別に考えられる。\n\n問いの狙い: 国民の希望と個人の選択をどこまで関連させるか問う。"
@@ -3144,7 +5187,13 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "politics_culture_14-02-l3",
-    "question": "政治への抗議として、自分で所有する国旗を傷つける行為を処罰する案がある。誰かの財産を壊したわけではなくても、国の象徴を傷つけたこと自体を犯罪にするべきだと思う？",
+    "scenario": "政治への抗議として、自分で所有する国旗を傷つける行為を処罰する案がある。",
+    "question": "自分の国旗を壊す行為を、他人の物を壊していなくても、国の象徴を傷つけた罪として罰するべき？",
+    "hints": [
+      "国旗を傷つける行為は、何を伝える表現だと思う？",
+      "象徴への尊重と抗議の自由をどう比べる？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "crime_and_punishment"
@@ -3159,7 +5208,13 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "politics_culture_14-03-l3",
-    "question": "政党への公的助成をなくすと、税金で支持しない主張を支える必要はなくなる一方、大口の寄付者が政治に及ぼす影響が強まる可能性がある。あなたは公的助成を残すべきだと思う？",
+    "scenario": "政党への公的助成をなくすと、税金で支持しない主張を支える必要はなくなる一方、大口の寄付者が政治に及ぼす影響が強まる可能性がある。",
+    "question": "あなたは公的助成を残すべきだと思う？",
+    "hints": [
+      "公的助成の配り方に、公平な基準は作れる？",
+      "大口寄付の影響を抑える別の仕組みはある？"
+    ],
+    "terms": [],
     "perspective": "decision_maker",
     "detail": {
       "text": "政治の公費支援は支持しない主張にも及ぶ。一方、私的な資金への依存も問題となり、政策の利益と資金上の責任が衝突する。\n\n問いの狙い: 公的助成と大口寄付への依存を比較する。"
@@ -3171,7 +5226,12 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "politics_culture_14-04-l3",
-    "question": "選挙後に政党が別の政党と合流して主要政策を変える場合、議員は改めて有権者の判断を受けるべきだと思う？ 政治を動かすための妥協として任期中の変更を認める？",
+    "question": "選挙後に政党が合流して公約を大きく変えた場合、議員はもう一度選挙で判断を受けるべき？それとも任期中の変更を認める？",
+    "hints": [
+      "選挙で示した約束は、どの範囲まで拘束する？",
+      "合流が必要になった事情を、有権者にどう説明する？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "政党は選挙後の交渉で政策を変えることがある。実現可能な妥協と、有権者から受けた委任の範囲が衝突する。\n\n問いの狙い: 政策変更に再選挙を求める基準を扱う。"
@@ -3183,7 +5243,18 @@
     "sensitivity": 3,
     "category": "society_public_policy_and_environment",
     "topic": "politics_culture_14-05-l3",
-    "question": "他の地域を守るための軍事的な関与が、自国への攻撃の危険も高めるとしたら、国はどの段階で関与を決めるべき？ 被害が出る前の抑止と、戦争に入る危険をどう比べる？",
+    "scenario": "他国を守る軍事行動に加われば、攻撃を防げる可能性がある一方、自国が戦争に巻き込まれる危険もある。",
+    "question": "攻撃を防ぐため、国はどの段階で他国を守る軍事行動に加わるべき？攻撃を防ぐ効果と、自国が戦争に巻き込まれる危険をどう比べる？",
+    "hints": [
+      "関与しない危険と関与する危険を、どう比べる？",
+      "抑止が成功する見込みを、何で確かめる？"
+    ],
+    "terms": [
+      {
+        "term": "抑止",
+        "definition": "相手に不利益や危険を予測させ、ある行動を思いとどまらせること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "軍事的な関与は防衛や抑止につながる可能性がある一方、攻撃される危険も伴う。効果は仮定で、特定の軍事情勢の予測ではない。\n\n問いの狙い: 他地域の防衛に関与する時点と危険の配分を問う。"
@@ -3196,6 +5267,20 @@
     "category": "society_public_policy_and_environment",
     "topic": "politics_culture_14-06-l3",
     "question": "自治体が外国政府と協力の覚書を結ぶ場合、地域の経済的利益のためなら国の外交方針と異なる関係を築いてよいと思う？",
+    "hints": [
+      "地域の利益と国全体への影響を、どう比べる？",
+      "協力の内容や拘束力によって、判断は変わる？"
+    ],
+    "terms": [
+      {
+        "term": "自治体",
+        "definition": "都道府県や市区町村など、地域の行政を担う組織。"
+      },
+      {
+        "term": "覚書",
+        "definition": "合意した内容を記録する文書。内容によって法的な効力は異なる。"
+      }
+    ],
     "perspective": "decision_maker",
     "detail": {
       "text": "自治体の経済的な関係と国の外交方針が一致しない場合がある。雇用への利益と相手政府への姿勢も衝突し得る。\n\n問いの狙い: 地方が独自に外国との関係を築く権限を問う。"
@@ -3207,7 +5292,17 @@
     "sensitivity": 3,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_equality_15-01-l3",
-    "question": "男女平等を測るとき、同じ機会があることと、実際の人数や収入の差が小さいことのどちらを重く見る？ 本人の選択が結果の差を生む場合も、制度で差を縮めるべき？",
+    "question": "男女平等を進めるには、同じ機会を与えることと、人数や収入の差を小さくすることのどちらを重視するべき？",
+    "hints": [
+      "機会が同じでも、結果に差が残る理由は何？",
+      "本人の選択が自由だったか、どう確かめる？"
+    ],
+    "terms": [
+      {
+        "term": "男女平等",
+        "definition": "性別によって、権利や機会が不当に制限されないこと。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "機会の形式的な平等と結果の比率の一致は別の目標。自発的な選択も結果に影響する場合、是正の対象と範囲が争点になる。\n\n問いの狙い: 機会と結果のどちらを制度の目標とするか明確にする。"
@@ -3219,7 +5314,18 @@
     "sensitivity": 4,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_equality_15-02-l3",
-    "question": "女性向けの奨学金に、経済的に余裕のある女性は応募でき、生活に困っている男性は応募できない場合がある。目的が女性の少ない分野への進学を増やすことなら、この条件を維持してよいと思う？",
+    "scenario": "女性向けの奨学金に、経済的に余裕のある女性は応募でき、生活に困っている男性は応募できない場合がある。",
+    "question": "女性の少ない分野を増やす目的なら、生活に困っている男性が対象外でも、この奨学金を続けてよいと思う？",
+    "hints": [
+      "分野の男女比と個人の経済的な必要をどう比べる？",
+      "別の支援を組み合わせれば、条件を維持できる？"
+    ],
+    "terms": [
+      {
+        "term": "奨学金",
+        "definition": "学ぶための費用を支えるお金。返す必要があるものと、ないものがある。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "discrimination_and_hate"
@@ -3234,7 +5340,18 @@
     "sensitivity": 4,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_equality_15-03-l3",
-    "question": "安全や安心のための性別限定の場所を設けると、利用できない人の混雑や負担が増える。効果が一定程度あれば、負担する側の同意がなくても設けてよいと思う？",
+    "scenario": "安全や安心のための性別限定の場所を設けると、利用できない人の混雑や負担が増える。",
+    "question": "性別で利用を分ける施設は、使えない人の負担が増えても、安心できる人が増えるなら設けてよいと思う？",
+    "hints": [
+      "安全への効果と、利用できない人の負担をどう測る？",
+      "負担を減らす設備や運用は用意できる？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "discrimination_and_hate"
@@ -3249,7 +5366,12 @@
     "sensitivity": 4,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_equality_15-04-l3",
-    "question": "店が客層を調整するために性別で料金を変えることは、民間の販売戦略として認めるべきだと思う？ 同じサービスを受ける人の公平さを優先するべき？",
+    "question": "店は集客のため、性別によって同じサービスの料金を変えてよいと思う？",
+    "hints": [
+      "料金の差で、誰が利益や不利益を受ける？",
+      "利用者が条件を知って選べれば、公平だと言える？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "discrimination_and_hate"
@@ -3264,7 +5386,18 @@
     "sensitivity": 4,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_equality_15-05-l3",
-    "question": "ある分野で女性の採用を優先した結果、新規採用の男女比は同程度になったが、管理職にはまだ大きな差がある。採用時の優先措置は、入口の差がなくなった時点で終えるべき？ 管理職の差がなくなるまで続けるべき？",
+    "scenario": "ある分野で女性の採用を優先した結果、新規採用の男女比は同程度になったが、管理職にはまだ大きな差がある。",
+    "question": "採用する男女の数が同じになっても、管理職の差が残るなら、女性の優先採用を続けるべき？",
+    "hints": [
+      "管理職の差が、採用段階から生じているかをどう確認する？",
+      "採用以外の昇進や働き方の対策は必要？"
+    ],
+    "terms": [
+      {
+        "term": "昇進",
+        "definition": "職場で、より上の役職や地位に進むこと。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "discrimination_and_hate"
@@ -3279,7 +5412,13 @@
     "sensitivity": 3,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_equality_15-06-l3",
-    "question": "長時間働く人を高く評価する職場と、家事育児を多く担う人がいる家庭は互いに影響する。会社は本人が希望していても、家庭の負担を偏らせる働き方を制限するべき？",
+    "scenario": "長時間働く人を高く評価する職場と、家事育児を多く担う人がいる家庭は互いに影響する。",
+    "question": "家事や育児の負担が家庭で偏る働き方を、本人が希望していても会社は制限してよいと思う？",
+    "hints": [
+      "本人の希望は、家庭内の分担を踏まえたもの？",
+      "会社の評価や勤務条件を変える方法はある？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "長時間労働と家庭内のケアの分担は影響し合う。本人の仕事の希望を尊重すると、別の家族の選択が狭まることがある。\n\n問いの狙い: 会社が家庭の負担を理由に働き方へ介入してよいか考える。"
@@ -3291,7 +5430,22 @@
     "sensitivity": 3,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_equality_15-07-l3",
-    "question": "同じ制度を、ある人は是正が足りないと感じ、別の人は優遇が行き過ぎたと感じている。政策を見直すとき、不公平だという実感をどこまで根拠にしてよいと思う？",
+    "scenario": "同じ制度を、ある人は是正が足りないと感じ、別の人は優遇が行き過ぎたと感じている。",
+    "question": "政策を見直すとき、当事者が「不公平だ」と感じていることを、どこまで根拠にするべき？",
+    "hints": [
+      "不公平だと感じる理由を、どんな情報で確かめる？",
+      "実感が異なる人たちの意見を、どう比較する？"
+    ],
+    "terms": [
+      {
+        "term": "是正",
+        "definition": "問題や偏りを、より適切な状態に直すこと。"
+      },
+      {
+        "term": "優遇",
+        "definition": "他の人より有利な扱いをすること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "不公平の実感は重要だが、制度全体の効果と必ずしも一致しない。受益した人と機会を失ったと感じる人の経験が衝突する。\n\n問いの狙い: 実感を制度改正の根拠に使う範囲を問う。"
@@ -3303,7 +5457,18 @@
     "sensitivity": 4,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_identity_16-01-l3",
-    "question": "接客の売上に外見が影響するとして、企業が容姿を採用や配置の基準にすることを認める？ 顧客の好みへの対応と、その好みを固定することは分けられると思う？",
+    "scenario": "接客の売上には、店員の見た目が影響することがある。",
+    "question": "企業は採用や配置で容姿を基準にしてよい？客の希望に応じることと、見た目への偏見を強めることをどう区別する？",
+    "hints": [
+      "売上への効果を、どの程度確かめる必要がある？",
+      "外見以外で顧客の期待に応える方法はある？"
+    ],
+    "terms": [
+      {
+        "term": "容姿",
+        "definition": "顔立ちや体つきなど、外から見える姿。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "discrimination_and_hate"
@@ -3318,7 +5483,13 @@
     "sensitivity": 4,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_identity_16-02-l3",
-    "question": "性別によって利用者を分ける施設で、本人の申告だけではなく医療情報などの確認を求めることを認める？ 利用の可否を決めるためでも、どこまで私的な情報を求めてよい？",
+    "scenario": "性別で利用者を分ける施設で、利用できる人を決めるため医療情報を求める案がある。",
+    "question": "本人の申告だけでなく医療情報も提出させ、施設を利用できるか決めてよいと思う？",
+    "hints": [
+      "利用判断に、本当に必要な情報は何？",
+      "確認された情報の保管や共有を、どう制限する？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "discrimination_and_hate"
@@ -3333,7 +5504,12 @@
     "sensitivity": 3,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_identity_16-03-l3",
-    "question": "犯罪を不安に感じる人への配慮として、特定の性別の人だけに同行者や追加確認を求める運用を認める？ その人自身を疑う事情がなくても？",
+    "question": "犯罪への不安を理由に、特定の性別の人だけに付き添いや追加確認を求めてよい？その人を疑う事情がなくても？",
+    "hints": [
+      "性別だけで追加確認をする効果は、何で確かめる？",
+      "不安を感じる人への支援を、別の方法で行える？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "安心のための確認が、属性による個人への疑いに変わる場合がある。危険の防止と疑う事情のない人の扱いを区別する。\n\n問いの狙い: 性別を追加確認の基準にしてよいか問う。"
@@ -3345,7 +5521,18 @@
     "sensitivity": 4,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_identity_16-04-l3",
-    "question": "同じ行為でも、相手への恐怖や身体的な影響が違うことがある。性被害やDVへの支援を決める際、行為を共通の基準で見ることと、個別の影響を見ることをどう分ける？",
+    "scenario": "同じ行為でも、被害を受けた人によって恐怖や身体への影響が異なることがある。",
+    "question": "性被害やDVの支援を決めるとき、行為を共通の基準で見る？それとも被害を受けた人への影響を重視する？",
+    "hints": [
+      "同じ行為でも必要な支援が違うことはある？",
+      "行為の評価と、個人への支援をどう区別する？"
+    ],
+    "terms": [
+      {
+        "term": "DV",
+        "definition": "配偶者や恋人など、親密な関係にある相手から受ける暴力や支配的な行為。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "sexual_violence"
@@ -3360,7 +5547,17 @@
     "sensitivity": 4,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_identity_16-05-l3",
-    "question": "平等政策への批判が差別的な言葉を含む場合、政策への異論と表現の問題を分けて扱うべきだと思う？ 表現が不適切でも、異論を公の議論に残す必要はある？",
+    "question": "平等政策への批判に差別的な言葉が含まれていても、その政策への反対意見を公の議論に残すべき？",
+    "hints": [
+      "異論の内容と差別的な言葉を、分けて確認できる？",
+      "内容を残して表現を変える方法はある？"
+    ],
+    "terms": [
+      {
+        "term": "差別的",
+        "definition": "性別や出身などを理由に、人を不当に低く扱ったり排除したりする性質。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "discrimination_and_hate"
@@ -3375,7 +5572,18 @@
     "sensitivity": 3,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_identity_16-06-l3",
-    "question": "ある性別全体への侮蔑を、社会的に優位な側への批判として許す考えがある。個々の読者が置かれた立場を問わず、批判される性別によって投稿の削除基準を変えてよいと思う？",
+    "scenario": "ある性別全体への侮蔑を、社会的に優位な側への批判として許す考えがある。",
+    "question": "読む人の立場を問わず、批判される性別によって投稿を削除する基準を変えてよいと思う？",
+    "hints": [
+      "集団の社会的立場と個人の経験は、同じ？",
+      "削除基準を変えた場合、どんな不公平が起こりうる？"
+    ],
+    "terms": [
+      {
+        "term": "侮蔑",
+        "definition": "相手を見下し、軽んじること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "支配的な側への批判という説明が、性別全体への侮蔑を許す根拠になるかが争点。個人への良い影響と発信の問題も分かれる。\n\n問いの狙い: 侮蔑への規制を性別の社会的位置で変える是非を問う。"
@@ -3387,7 +5595,17 @@
     "sensitivity": 3,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_identity_16-07-l3",
-    "question": "困難を抱える男性の支援を進めるため、男性という共通点で運動を作ることは有効だと思う？ 男性同士の所得や経験の差を見えにくくする危険をどう扱う？",
+    "question": "男性への支援を進めるため、男性全体をまとめる運動を作るべき？男性の収入や経験の違いを見えにくくしないため、何に気をつける？",
+    "hints": [
+      "男性という共通点で、どんな困難を共有できる？",
+      "所得や経験の違いも扱うため、どう工夫する？"
+    ],
+    "terms": [
+      {
+        "term": "所得",
+        "definition": "収入から必要な経費などを差し引いた金額。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "男性の共通する困難を示す運動には、内部の多様性を隠す危険もある。支援を必要とする人の排他的な言動への対応も問題になる。\n\n問いの狙い: 集団としての連帯と個々の条件差を比較する。"
@@ -3399,7 +5617,12 @@
     "sensitivity": 4,
     "category": "gender_sexuality_and_identity",
     "topic": "gender_identity_16-08-l3",
-    "question": "不快に感じたことを差別と訴える権利と、差別だと認定する基準は分けるべきだと思う？ 訴えた人の経験を否定せずに、認定しない判断はできる？",
+    "question": "差別を受けたと訴える権利と、差別と認める基準は分けるべき？訴えた人の経験を否定せず、差別と認めない判断ができる？",
+    "hints": [
+      "不快さの訴えから、何を確かめる必要がある？",
+      "認定しない理由を、本人を尊重して説明できる？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "discrimination_and_hate"
@@ -3414,7 +5637,18 @@
     "sensitivity": 3,
     "category": "family_and_care",
     "topic": "marriage_sexwork_17-01-l3",
-    "question": "夫婦が別々の名字を選べる制度に変わったとする。過去に名字を変えて負担を受けた人への補償も必要だと思う？ 制度を改善することと、以前の制度で生じた損失を補うことはどこで分ける？",
+    "scenario": "夫婦が別々の名字を選べる制度に変わったとする。",
+    "question": "夫婦別姓の制度を改善するだけでなく、過去に名字を変えて負担を受けた人へ補償も必要だと思う？",
+    "hints": [
+      "補償する負担の種類や範囲を、どう決める？",
+      "制度の改善と過去への補償で、目的はどう違う？"
+    ],
+    "terms": [
+      {
+        "term": "補償",
+        "definition": "受けた損失や負担を、金銭などで補うこと。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "婚姻制度を変えると、以前の制度で負担を受けた人との関係が生じる。法律で選べることと相手が受け入れることも異なる。\n\n問いの狙い: 制度の改善に過去の損失の補填まで必要か問う。"
@@ -3426,7 +5660,19 @@
     "sensitivity": 3,
     "category": "family_and_care",
     "topic": "marriage_sexwork_17-02-l3",
-    "question": "親の一方が危険を訴えて子どもを連れ出したが、もう一方は不当な親子分離だと訴えている。すぐに事実を確定できない場合、現状維持と元の生活への復帰のどちらを暫定的な原則にする？",
+    "scenario": "親の一方が危険を訴えて子どもを連れ出したが、もう一方は不当な親子分離だと訴えている。",
+    "question": "危険があったかをすぐに確かめられないとき、子どもは今の生活を続ける？それとも元の生活に戻る？",
+    "hints": [
+      "事実確認が終わるまで、子どもの安全をどう守る？",
+      "別居や親子の交流が途切れた状態が続くことは、子どもにどう影響する？",
+      "暫定的な判断を見直す時期や方法は、どう決める？"
+    ],
+    "terms": [
+      {
+        "term": "暫定",
+        "definition": "正式な判断が決まるまで、ひとまず採用すること。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "family_conflict"
@@ -3441,7 +5687,22 @@
     "sensitivity": 3,
     "category": "family_and_care",
     "topic": "marriage_sexwork_17-03-l3",
-    "question": "養育費と親子交流は別の問題として扱うとしても、一方の約束が守られない状態が続けば、もう一方にも履行を求めにくくなる。制度は、どちらかの不履行を理由に他方を止めることを認めるべき？",
+    "scenario": "離婚後、養育費の支払いと親子の面会は別々の約束として扱われる。一方が守られないと、もう一方を続けにくくなることもある。",
+    "question": "養育費の支払いと親子の面会は別の約束。片方が守られないとき、もう片方も止めてよい？",
+    "hints": [
+      "養育費や交流を止めると、子どもに何が起きる？",
+      "約束違反に対応する別の仕組みはある？"
+    ],
+    "terms": [
+      {
+        "term": "養育費",
+        "definition": "子どもが生活し成長するために必要な費用。"
+      },
+      {
+        "term": "不履行",
+        "definition": "約束や義務を果たさないこと。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "family_conflict"
@@ -3456,7 +5717,18 @@
     "sensitivity": 4,
     "category": "gender_sexuality_and_identity",
     "topic": "marriage_sexwork_17-04-l3",
-    "question": "性的サービスを買う側への処罰を強める政策について、働く人の一部が収入を失うとして反対している。別の仕事や生活支援が十分でない段階でも、搾取を減らす目的で進めるべきだと思う？",
+    "scenario": "性的サービスを買う側への処罰を強める政策について、働く人の一部が収入を失うとして反対している。",
+    "question": "働く人への支援や別の仕事が十分でなくても、搾取を減らすために性サービスを買う人への処罰を強めるべき？",
+    "hints": [
+      "働く人の反対や生活への影響を、どう確認する？",
+      "処罰の強化と支援の整備を、どの順で進める？"
+    ],
+    "terms": [
+      {
+        "term": "搾取",
+        "definition": "相手の弱い立場などを利用し、利益を不当に得ること。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "sexual_violence",
@@ -3472,7 +5744,12 @@
     "sensitivity": 4,
     "category": "gender_sexuality_and_identity",
     "topic": "marriage_sexwork_17-05-l3",
-    "question": "過去に性産業で働いた人を、子どもに関わる仕事から一律に排除することを認める？ 具体的な危険や業務上の問題がなくても、利用者の不安を理由にできる？",
+    "question": "過去に性産業で働いた人を、具体的な危険がなくても子どもに関わる仕事から外してよいと思う？",
+    "hints": [
+      "過去の仕事と現在の危険を、どう結びつける？",
+      "利用者の不安に、一律排除以外で対応できる？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "過去の職業経験と現在の能力・危険性は同じではない。雇用や婚姻の相手選びで、その経験を条件にする範囲が争点になる。\n\n問いの狙い: 具体的な危険がなくても職歴で一律排除してよいか問う。"
@@ -3487,7 +5764,25 @@
     "sensitivity": 3,
     "category": "gender_sexuality_and_identity",
     "topic": "marriage_sexwork_17-06-l3",
-    "question": "成人同士が金銭を伴う交際に同意していても、生活に困っている側の選択肢が少ない場合、その合意をどこまで自由なものと考える？ 所得差だけで取引を制限してよい？",
+    "question": "生活に困って選択肢が少ない人が、お金を受け取ることを条件にした交際に同意した場合、それを自由な合意と考えてよい？",
+    "hints": [
+      "断る選択肢が少ないことは、合意にどう影響する？",
+      "所得差と、具体的な圧力や搾取をどう分ける？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      },
+      {
+        "term": "所得",
+        "definition": "収入から必要な経費などを差し引いた金額。"
+      },
+      {
+        "term": "搾取",
+        "definition": "相手の弱い立場などを利用し、利益を不当に得ること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "成人の同意があっても経済的な選択肢に大きな差があると、自由な関係かどうかの評価が分かれる。所得差だけで決めることにも限界がある。\n\n問いの狙い: 合意と経済的な圧力を区別する基準を問う。"
@@ -3499,7 +5794,18 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "romance_18-01-l3",
-    "question": "孤立や出会いの少なさを社会問題として、公費で交際の機会を作る案がある。交際を望まない人も費用を負担することになる。恋愛の機会は、行政が支える対象にするべきだと思う？",
+    "scenario": "孤立や出会いの少なさを社会問題として、公費で交際の機会を作る案がある。交際を望まない人も費用を負担することになる。",
+    "question": "行政は、恋愛や交際の機会を作る支援をするべきだと思う？",
+    "hints": [
+      "恋愛の機会を支える目的は、何に置くべき？",
+      "交際を望まない人への支援や負担をどう考える？"
+    ],
+    "terms": [
+      {
+        "term": "公費",
+        "definition": "国や自治体などが公的な目的で支出するお金。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "出会いを個人の領域とみるか、公的な支援対象とみるかで費用負担の範囲が変わる。相手を選ぶ自由の不利益は選ばれない人が負う。\n\n問いの狙い: 交際を望まない人も負担する公費の用途を問う。"
@@ -3511,7 +5817,18 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "romance_18-02-l3",
-    "question": "交際を期待して食事代や贈り物を負担した人が、断られた後に不公平だと訴えている。相手が好意に気づいて受け取っていた場合でも、返礼や好意への配慮をどこまで求めてよいと思う？",
+    "scenario": "交際を期待して食事代や贈り物を負担した人が、断られた後に不公平だと訴えている。",
+    "question": "好意を知っていて食事や贈り物を受け取った人には、断った後もお返しや配慮を求めてよい？",
+    "hints": [
+      "贈り物を受け取ることは、何への同意になる？",
+      "好意への配慮と交際を求めることを、どう分ける？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "好意による贈り物には、明示した約束と暗黙の期待が混在する。受け取ることをどこまで相手の期待への応答とみなすかが争点。\n\n問いの狙い: 贈与への同意と交際への配慮を分けて考える。"
@@ -3523,7 +5840,22 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "romance_18-03-l3",
-    "question": "交際では、別れたくない気持ちが強い側ほど譲歩しやすい。双方が同意した約束でも、この気持ちの差によって一方に負担が偏るなら不公平だと思う？",
+    "scenario": "交際では、別れたくない気持ちが強い側ほど譲歩しやすい。",
+    "question": "別れたくない側ばかりが譲歩する約束は、公平だと思う？",
+    "hints": [
+      "約束を断ったり見直したりする余地はある？",
+      "譲歩の偏りを、二人が納得していても問題にする？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      },
+      {
+        "term": "譲歩",
+        "definition": "話し合いなどで、自分の要求を一部引っ込めること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "別れたくない気持ちに差があると、一方が多く譲歩する合意になり得る。断れることだけで対等とみなせるかを考える。\n\n問いの狙い: 形式的な同意と気持ちの力関係を比較する。"
@@ -3535,7 +5867,13 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "romance_18-04-l3",
-    "question": "独身で子どもがいない人は、残業や転勤を引き受けやすいとみなされることがある。家族の世話と本人の趣味や休息を、仕事の配分で同じように扱うべきだと思う？",
+    "scenario": "独身で子どもがいない人は、残業や転勤を引き受けやすいとみなされることがある。",
+    "question": "独身で子どもがいない人の趣味や休息も、家族の世話と同じように仕事の配分で尊重するべき？",
+    "hints": [
+      "家族の世話と休息は、仕事以外の時間にどう関わる？",
+      "本人の事情を、どこまで職場に説明するべき？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "婚姻や子どもの有無によって、本人の時間に余裕があると期待される場合がある。ケアと趣味や休息の扱いの差が論点。\n\n問いの狙い: 家族事情以外の時間にも同じ配慮を認めるか問う。"
@@ -3547,7 +5885,18 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "infidelity_19-01-l3",
-    "question": "不倫が確認された著名人について、仕事の能力や業務上の問題とは別に、広告や出演の契約を終える企業がある。私生活の約束違反を、社会的な仕事の機会にどこまで反映してよいと思う？",
+    "scenario": "不倫が確認された著名人について、仕事の能力や業務上の問題とは別に、広告や出演の契約を終える企業がある。",
+    "question": "仕事に問題がなくても、不倫を理由に広告や出演の契約を終わらせてよいと思う？",
+    "hints": [
+      "契約の目的や事前の約束で、評価は変わる？",
+      "私生活での責任と仕事の能力を、どう分ける？"
+    ],
+    "terms": [
+      {
+        "term": "不倫",
+        "definition": "結婚している人が、配偶者以外の相手と恋愛的・性的な関係を持つこと。どこまでを含むかは人や文脈によって異なる。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "infidelity"
@@ -3562,7 +5911,18 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "infidelity_19-02-l3",
-    "question": "配偶者を傷つけないよう生活を維持しながら他の相手を愛することと、離婚して新しい関係を選ぶことでは、どちらが誠実だと思う？ 経済的に離婚が難しい事情は評価を変える？",
+    "scenario": "配偶者と別れたい人が、経済的な事情で離婚できずにいる。",
+    "question": "婚姻を続けながら別の人と交際するのと、離婚してから新しい関係を選ぶのでは、どちらが誠実？経済的に離婚できない事情で判断は変わる？",
+    "hints": [
+      "配偶者が判断するための情報を、どう扱う？",
+      "生活の維持と気持ちへの誠実さを、どう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "配偶者",
+        "definition": "結婚している相手のこと。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "infidelity"
@@ -3577,7 +5937,21 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "infidelity_19-03-l3",
-    "question": "不倫がある夫婦でも、子どもの生活が安定しているなら、事実を伏せて家庭を続ける方がよいと思う？ 子どもの利益を理由に、配偶者が判断するための情報を隠してよい？",
+    "question": "子どもの生活を守るため、不倫を配偶者に隠してよい？配偶者が今後を決めるための情報とどう両立する？",
+    "hints": [
+      "子どもの安定を、何で確かめる？",
+      "配偶者の選択の機会と、子どもの利益をどう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "配偶者",
+        "definition": "結婚している相手のこと。"
+      },
+      {
+        "term": "不倫",
+        "definition": "結婚している人が、配偶者以外の相手と恋愛的・性的な関係を持つこと。どこまでを含むかは人や文脈によって異なる。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "infidelity",
@@ -3593,7 +5967,21 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "infidelity_19-04-l3",
-    "question": "不倫を疑う人が証拠を得るためでも、配偶者の私的な通信を無断で確認することを認める？ 確認しなければ裏切りを知る方法がない場合は？",
+    "question": "不倫を疑っているなら、証拠を探すために配偶者のメッセージを無断で見てよい？ほかに確かめる方法がなくても？",
+    "hints": [
+      "疑いの根拠や、確認する範囲は重要？",
+      "通信を守る利益と真実を知る必要をどう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "配偶者",
+        "definition": "結婚している相手のこと。"
+      },
+      {
+        "term": "不倫",
+        "definition": "結婚している人が、配偶者以外の相手と恋愛的・性的な関係を持つこと。どこまでを含むかは人や文脈によって異なる。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "infidelity"
@@ -3608,7 +5996,12 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "infidelity_19-05-l3",
-    "question": "家族への約束した支出を満たしていれば、残りを誰との付き合いに使うかは本人の自由だと思う？ 金銭上の合意と、関係への誠実さは別に評価するべき？",
+    "question": "家計の約束を守れば、残りのお金の使い方は自由？パートナーへの誠実さも関係する？",
+    "hints": [
+      "家計の約束以外に、関係でどんな合意がある？",
+      "支出先が家族に与える影響を、どう考える？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "infidelity"
@@ -3623,7 +6016,21 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "infidelity_19-06-l3",
-    "question": "肉体関係はなくても、配偶者に隠して別の人と恋愛的な気持ちを共有している場合、それを不倫と同じ裏切りとして扱うべきだと思う？",
+    "question": "肉体関係がなくても、配偶者に隠れて別の人と恋愛感情を共有したら、同じ裏切りだと思う？",
+    "hints": [
+      "夫婦が考える裏切りの境界は、共有されている？",
+      "秘密にしていることと恋愛感情を、どう評価する？"
+    ],
+    "terms": [
+      {
+        "term": "配偶者",
+        "definition": "結婚している相手のこと。"
+      },
+      {
+        "term": "不倫",
+        "definition": "結婚している人が、配偶者以外の相手と恋愛的・性的な関係を持つこと。どこまでを含むかは人や文脈によって異なる。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "infidelity"
@@ -3638,7 +6045,18 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "infidelity_19-07-l3",
-    "question": "夫婦は長く別居し、一方は関係を終えたと考えているが、もう一方は離婚に応じていない。この間の新しい交際を、同居して関係を続けている夫婦の不倫と同じように評価するべきだと思う？",
+    "scenario": "夫婦は長く別居し、一方は関係を終えたと考えているが、もう一方は離婚に応じていない。",
+    "question": "長く別居している夫婦の一方が始めた新しい交際も、同居中の夫婦の不倫と同じように考えるべき？",
+    "hints": [
+      "関係が終わったかについて、双方の認識をどう扱う？",
+      "別居の理由や離婚できない事情で、判断は変わる？"
+    ],
+    "terms": [
+      {
+        "term": "不倫",
+        "definition": "結婚している人が、配偶者以外の相手と恋愛的・性的な関係を持つこと。どこまでを含むかは人や文脈によって異なる。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "infidelity"
@@ -3653,7 +6071,12 @@
     "sensitivity": 4,
     "category": "relationships_and_communication",
     "topic": "infidelity_19-08-l3",
-    "question": "過去の性産業経験を結婚条件として知りたい人の希望と、その経験を私的な情報として守りたい人の希望は、どちらを優先するべき？ 隠すことと嘘をつくことは分けて考える？",
+    "question": "結婚相手に性産業で働いた経験を話すべき？相手が知る権利と、自分のプライバシーのどちらを優先する？話さないことと嘘をつくことは違う？",
+    "hints": [
+      "知りたい情報が結婚の判断にどう関わるか、何を確かめる？",
+      "答えない自由と、事実と違う説明をどう分ける？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "content_warning": [
       "infidelity",
@@ -3669,7 +6092,21 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "infidelity_19-09-l3",
-    "question": "不倫で傷ついた人が、公表しないことを条件に高い金銭的補償を求めることを、どこまで認める？ 損害の回復と相手を苦しめる目的をどう区別する？",
+    "question": "不倫で傷ついた人が、事実を公表しない約束と引き換えに高い補償金を求めてよい？損害を補うことと相手を苦しめることをどう見分ける？",
+    "hints": [
+      "受けた損害と補償額を、何で比べる？",
+      "公表しない約束が、相手への圧力になる境界はどこ？"
+    ],
+    "terms": [
+      {
+        "term": "補償",
+        "definition": "受けた損失や負担を、金銭などで補うこと。"
+      },
+      {
+        "term": "不倫",
+        "definition": "結婚している人が、配偶者以外の相手と恋愛的・性的な関係を持つこと。どこまでを含むかは人や文脈によって異なる。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "infidelity"
@@ -3684,7 +6121,21 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "infidelity_19-10-l3",
-    "question": "成人同士が恋愛関係に同意していても、一方が成績や昇進を決める立場なら、組織は関係を禁止するべきだと思う？ 評価担当を変える方法だけでは不十分？",
+    "question": "上司と部下が交際したとき、評価担当を変えれば十分？それとも組織は交際自体を禁止するべき？",
+    "hints": [
+      "評価権限が同意や職場の公平さに、どう影響する？",
+      "担当を変えても残る影響には、何がある？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      },
+      {
+        "term": "昇進",
+        "definition": "職場で、より上の役職や地位に進むこと。"
+      }
+    ],
     "perspective": "observer",
     "content_warning": [
       "infidelity"
@@ -3699,7 +6150,18 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-01-l3",
-    "question": "家計への負担が同じなら、推し活への支出と、家族旅行や習い事への支出を同じように評価するべきだと思う？ 家族で共有する楽しみを優先する理由はどこにある？",
+    "scenario": "家族の家計から、推し活や家族旅行、習い事に使うお金を出す。",
+    "question": "家計への負担が同じなら、これらの支出を同じように考えるべき？家族で楽しめる支出を優先する理由はある？",
+    "hints": [
+      "個人の楽しみと家族で共有する楽しみを、どう比べる？",
+      "家族が支出を話し合うとき、何を基準にする？"
+    ],
+    "terms": [
+      {
+        "term": "推し活",
+        "definition": "好きな人物や作品などを応援し、楽しむ活動。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "支出の額が同じでも、本人の趣味と家族の共有利益では評価が分かれる。家庭の状況が変われば以前の合意も揺らぐ。\n\n問いの狙い: 家族で使う楽しみを優先する根拠を問う。"
@@ -3711,7 +6173,12 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-01-l4",
-    "question": "夫婦で合意した自由な支出の範囲でも、家族の介護費が急に増えたら見直すべきだと思う？ 合意した自由と今の必要をどう比べる？",
+    "question": "自由に使うお金の範囲を夫婦で決めていても、家族の介護費が急に増えたら見直すべき？",
+    "hints": [
+      "自由な支出の約束は、どんな事情で見直せる？",
+      "介護費を分担する他の方法はある？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "支出の額が同じでも、本人の趣味と家族の共有利益では評価が分かれる。家庭の状況が変われば以前の合意も揺らぐ。\n\n問いの狙い: 合意済みの自由な支出を、急な介護費のために変えるか扱う。"
@@ -3723,7 +6190,17 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-02-l3",
-    "question": "本人が充実していると感じていても、睡眠や仕事が継続して損なわれる推し活は、周囲が止める対象だと思う？ 生きがいと依存を誰が判断するべき？",
+    "question": "睡眠や仕事に支障が続いても、本人が充実を感じる推し活を止めるべき？誰が判断する？",
+    "hints": [
+      "本人の充実感と生活への影響を、どう確かめる？",
+      "周囲が止めることと支えることは、どう違う？"
+    ],
+    "terms": [
+      {
+        "term": "推し活",
+        "definition": "好きな人物や作品などを応援し、楽しむ活動。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "本人の充実と、睡眠・仕事などへの持続的な影響が同時に存在する場合がある。生きがいを守ることと介入の必要性が衝突する。\n\n問いの狙い: 依存の判断を本人と周囲のどちらに委ねるか問う。"
@@ -3735,7 +6212,12 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-02-l4",
-    "question": "生活の支えになる趣味でも、仕事に継続的な支障が出る場合、周囲や職場はどこまで制限できるべきだと思う？ 本人の支えと労働への影響をどう比べる？",
+    "question": "趣味が生活の支えでも、仕事に支障が続けば周囲や職場が制限してよい？",
+    "hints": [
+      "仕事への支障を、どの程度具体的に確認する？",
+      "制限以外に、生活と趣味を両立する方法はある？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "本人の充実と、睡眠・仕事などへの持続的な影響が同時に存在する場合がある。生きがいを守ることと介入の必要性が衝突する。\n\n問いの狙い: 生活の支えを減らすことが難しい本人の労働との選択を扱う。"
@@ -3747,7 +6229,21 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-03-l3",
-    "question": "支出額が大きいほど推しと接する機会が増える仕組みは、公平な対価だと思う？ 経済的に無理をする人が出ても、成人の自由な消費として認めるべき？",
+    "question": "推しに会える機会を、お金を多く使った人ほど増やすのは公平？成人の自由な買い物として認めるべき？",
+    "hints": [
+      "対価で機会が増えることに、限界はある？",
+      "無理な支出を防ぐ説明や仕組みは必要？"
+    ],
+    "terms": [
+      {
+        "term": "対価",
+        "definition": "商品やサービスなどを受け取る代わりに支払うもの。"
+      },
+      {
+        "term": "推し",
+        "definition": "特に好きで、応援したいと感じる人物や作品など。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "支出額で機会を配る仕組みは、対価の公平にも経済力による格差にも見える。今の機会のために将来の余裕を使う選択もある。\n\n問いの狙い: ファンとの接点を支出額に連動させる仕組みを評価する。"
@@ -3759,7 +6255,17 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-03-l4",
-    "question": "将来の余裕を減らしてまで今しかない機会に借金して課金することは、成人の自由として認めるべきだと思う？ 支出額で機会を配る仕組みをどう評価する？",
+    "question": "推しに会うために将来に響く借金をして課金することを、成人の自由として認める？",
+    "hints": [
+      "借金の返済や将来への影響を、本人は理解している？",
+      "今しかない機会が判断に与える圧力を、どう考える？"
+    ],
+    "terms": [
+      {
+        "term": "課金",
+        "definition": "サービス内の商品や機能などに、お金を支払うこと。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "支出額で機会を配る仕組みは、対価の公平にも経済力による格差にも見える。今の機会のために将来の余裕を使う選択もある。\n\n問いの狙い: 借金で今しかない機会を買う当事者の判断を置く。"
@@ -3771,7 +6277,18 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-04-l3",
-    "question": "推しの成功を自分の成功のように感じることが、生活を支える場合もある。一方、本人を自分の期待どおりに動かしたい思いにつながるなら、応援の何が変わったと考える？",
+    "scenario": "推しの成功を自分の成功のように感じることが、生活を支える場合もある。",
+    "question": "推しの成功を自分の成功のように感じることが応援の支えになる一方、推しを自分の望みどおりに動かそうとしたら、何が変わったと思う？",
+    "hints": [
+      "応援する気持ちが、本人への要求に変わる境界はどこ？",
+      "推しの意思とファンの期待を、どう調整する？"
+    ],
+    "terms": [
+      {
+        "term": "推し",
+        "definition": "特に好きで、応援したいと感じる人物や作品など。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "応援への貢献が、推しの方針への発言権や所有感へ変わることがある。愛着と相手の独立した人生の関係が中心。\n\n問いの狙い: 成功への一体感と相手を動かしたい思いの境界を問う。"
@@ -3783,7 +6300,17 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-05-l3",
-    "question": "アイドルが恋愛しないことを契約で約束し、そのイメージで利益を得ている場合、約束に反したことを理由に仕事や報酬を失わせてもよいと思う？ 本人が契約に同意していれば、私生活への制限はどこまで認められる？",
+    "question": "恋愛しない約束をしたアイドルが約束を破ったら、仕事や報酬を失うべき？契約に同意していても、私生活を制限してよい？",
+    "hints": [
+      "契約への同意は、自由に選べたものだった？",
+      "私生活への制限と仕事上の約束をどう比べる？"
+    ],
+    "terms": [
+      {
+        "term": "同意",
+        "definition": "説明や状況を理解したうえで、自分の意思で認めること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "恋愛しないイメージや疑似的な親密さが収益に関わる場合、契約への同意と私生活の自由が衝突する。情報を伏せることも期待を左右する。\n\n問いの狙い: 恋愛禁止への同意でどこまで私生活を制限できるか問う。"
@@ -3795,7 +6322,17 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-06-l3",
-    "question": "実在の相手との恋愛を望まず、キャラクターや推しとの関わりに満足している人に、社会は交際や結婚を勧めるべきだと思う？ 将来の孤立への懸念を理由にできる？",
+    "question": "推しやキャラクターとの関係に満足し、現実の交際を望まない人にも、孤立を防ぐために恋愛や結婚を勧めるべき？",
+    "hints": [
+      "本人が望む暮らしと、将来への懸念をどう比べる？",
+      "交際や結婚以外で孤立を防ぐ方法はある？"
+    ],
+    "terms": [
+      {
+        "term": "推し",
+        "definition": "特に好きで、応援したいと感じる人物や作品など。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "今満たされている関係の形と、将来の孤立を心配する周囲の期待が一致しない場合がある。特定の生き方を未熟と決め付けない。\n\n問いの狙い: 将来への懸念を理由に恋愛や婚姻を勧める範囲を問う。"
@@ -3807,7 +6344,18 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-07-l3",
-    "question": "政治家への愛着が政治参加を増やす一方、政策や不祥事への批判を受け入れにくくする場合がある。人物への熱狂を、民主主義にとって利益が大きいものと考える？",
+    "scenario": "政治家への熱狂は、人々の政治参加を増やす一方、政策や不祥事を批判しにくくすることがある。",
+    "question": "民主主義にとって、こうした熱狂は役に立つと思う？",
+    "hints": [
+      "参加が増える利益と、批判しにくくなる影響をどう比べる？",
+      "人物への好意と政策の評価を、分けられる？"
+    ],
+    "terms": [
+      {
+        "term": "民主主義",
+        "definition": "人々の意思を、選挙や話し合いなどを通じて政治に反映する考え方や仕組み。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "人物への愛着は参加の動機になる一方、政策評価や批判への態度に影響し得る。過去に使った時間や費用も判断を縛る。\n\n問いの狙い: 政治への参加と批判的な判断の緊張を扱う。"
@@ -3819,7 +6367,12 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-08-l3",
-    "question": "長く活動して多く支出したファンを、イベントや交流の場で優先することを認める？ 活動を支えた貢献と、新しく参加する人の機会を何で比べる？",
+    "question": "長く応援し、お金も使ったファンをイベントで優先してよい？初めて参加する人の機会はどう守る？",
+    "hints": [
+      "長く支えた貢献を、何で測る？",
+      "新しいファンにも機会を残す方法はある？"
+    ],
+    "terms": [],
     "perspective": "observer",
     "detail": {
       "text": "長年の貢献への報酬と新しい参加者の機会は競合する。序列の意味は運営側と古参・新規で変わる。\n\n問いの狙い: 貢献の差を交流機会の優先順位に反映する是非を問う。"
@@ -3831,7 +6384,17 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-09-l3",
-    "question": "迷惑行為を繰り返したファンの情報を、別の運営会社とも共有する制度を認める？ 安全対策になる一方、誤認や過去の行動によって広く参加できなくなる危険がある。",
+    "question": "迷惑行為をしたファンの情報を、複数の運営会社で共有してよい？誤った情報や過去の行動で参加できなくなる人がいても？",
+    "hints": [
+      "共有する情報の正確さを、どう確かめる？",
+      "誤認の訂正や、参加できない期間の見直しは必要？"
+    ],
+    "terms": [
+      {
+        "term": "誤認",
+        "definition": "事実や人物、状況などを間違って認識すること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "安全対策には早期対応が必要でも、誤認や不確かな不安で参加を排除する危険がある。多額の支援も判断を複雑にする。\n\n問いの狙い: 運営会社を越えた情報共有と排除の範囲を問う。"
@@ -3843,7 +6406,18 @@
     "sensitivity": 3,
     "category": "culture_religion_and_history",
     "topic": "oshi_culture_20-10-l3",
-    "question": "配信者が、ファン一人ひとりを特別な存在だと感じさせることで投げ銭を増やしている。実際の交際を約束しておらず、成人が自分で払っている場合でも、売り方を規制するべきだと思う？",
+    "scenario": "配信者が、ファン一人ひとりを特別な存在だと感じさせることで投げ銭を増やしている。",
+    "question": "交際を約束せず、成人が自分で払っていても、配信者がファンに特別感を持たせて投げ銭を集めることを規制するべき？",
+    "hints": [
+      "特別だと感じる演出と、誤解を招く説明をどう分ける？",
+      "成人が選んで払うことだけで、規制の判断は決まる？"
+    ],
+    "terms": [
+      {
+        "term": "投げ銭",
+        "definition": "配信などに対し、応援やお礼としてお金を送ること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "親密さを使う商売には収益と相手の期待が結び付く。応援される側も、返信や相談を続ける負担を負う。\n\n問いの狙い: 成人の自由な課金であっても売り方への規制が必要か問う。"
@@ -3855,7 +6429,22 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "oshi_partner_jealousy",
-    "question": "恋人の推し活への嫉妬を、内容への理解不足と見るか、時間・お金・話題の配分への不満と見るかは、何で判断する？ 配分に偏りがある場合、判断は変わる？",
+    "scenario": "恋人が、あなたの推し活に嫉妬している。",
+    "question": "推し活への理解不足なのか、時間やお金が推し活に偏った不満なのか、どう見分ける？",
+    "hints": [
+      "どの時間や支出が不満なのか、どう確かめる？",
+      "内容を理解しても、配分への不満は残ると思う？"
+    ],
+    "terms": [
+      {
+        "term": "嫉妬",
+        "definition": "大切な相手を失う不安や、他の人をうらやむ気持ち。"
+      },
+      {
+        "term": "推し活",
+        "definition": "好きな人物や作品などを応援し、楽しむ活動。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "推し活の内容を知らないことと、内容を知っていても時間やお金の使い方に不満があることは、別の問題として考えられます。嫉妬という感情だけでは、どちらが理由なのかは決まりません。\n\n配分に偏りがあるか、二人の間にどんな約束があるか、本人が何を不満に感じているかを分けて考える問いです。理解が足りないとも、嫉妬が妥当だとも最初から決めず、判断が変わる条件を考えます。"
@@ -3867,7 +6456,22 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "oshi_jealousy_after_understanding",
-    "question": "推し活の内容を一通り理解した恋人が、それでも嫉妬している。その反応を、まだ理解が足りないからだと考える？ 後回しにされていると感じていることへの不満だと考える？ 何を確かめて判断する？",
+    "scenario": "推し活の内容を一通り理解した恋人が、それでも嫉妬している。",
+    "question": "推し活を理解しても恋人が嫉妬するなら、その理由を知るために何を確かめる？",
+    "hints": [
+      "恋人が不満を感じている具体的な場面は何？",
+      "理解を深めることと、二人の配分を変えることをどう分ける？"
+    ],
+    "terms": [
+      {
+        "term": "嫉妬",
+        "definition": "大切な相手を失う不安や、他の人をうらやむ気持ち。"
+      },
+      {
+        "term": "推し活",
+        "definition": "好きな人物や作品などを応援し、楽しむ活動。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "活動の内容を理解すること、説明に納得すること、その関係を受け入れることは区別できます。説明を聞いても不満が残る場合、それだけで知識不足とも、実際に後回しにされているとも断定できません。\n\n相手が何を理解し、どの扱いに不満を感じているかを考える問いです。必要な情報が足りない可能性と、同じ情報から異なる希望や評価を持っている可能性の両方を検討します。"
@@ -3879,7 +6483,17 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "oshi_partner_appearance_comparison",
-    "question": "彼氏より推しの方がかっこいい、彼女より推しの方が可愛い、を本気で思うことは、作品への感想で済むと思う？ いまの恋人への評価になっていると思う？",
+    "question": "「恋人より推しの方がかっこいい・かわいい」と本気で言うのは、推しへの感想？それとも恋人への評価？",
+    "hints": [
+      "外見への感想と、恋人との関係の評価はどう違う？",
+      "口にする相手や場面によって、意味は変わる？"
+    ],
+    "terms": [
+      {
+        "term": "推し",
+        "definition": "特に好きで、応援したいと感じる人物や作品など。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "推しの表現や見た目への感想と、恋人への評価は、必ずしもどちらか一方に分けられるとは限りません。一つの比較に両方の意味が含まれるという捉え方もできます。\n\n何を比べているのか、恋人との関係全体にどんな意味を持たせているのかを考える問いです。見た目の評価から関係の価値を一括して決めず、比較する軸と、その比較を伝える場面を分けて考えます。"
@@ -3891,7 +6505,17 @@
     "sensitivity": 3,
     "category": "gender_sexuality_and_identity",
     "topic": "oshi_gendered_comparison_judgment",
-    "question": "「彼氏より推しの方がかっこいい」と「彼女より推しの方が可愛い」を、あなたは同じ程度に許容する？ 伝え方や場面が同じなら、発言する人の性別で判断は変わる？",
+    "question": "「恋人より推しの方がかっこいい・かわいい」という発言を、話す人の性別によって違って受け止める？",
+    "hints": [
+      "同じ場面の発言を、性別以外に何で比べる？",
+      "許容の差があるなら、その理由を説明できる？"
+    ],
+    "terms": [
+      {
+        "term": "推し",
+        "definition": "特に好きで、応援したいと感じる人物や作品など。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "ここでは、二つの発言に対する社会全体の反応の差を前提にしていません。伝え方や場面をそろえたとき、自分の評価が性別によって変わるかを考えます。\n\n評価が異なる場合は、発言そのものの意味と、発言者や相手について想定した事情を分けて確認します。同じ基準で見るという答えも、条件によって変えるという答えも、その根拠を明らかにすることが論点です。"
@@ -3903,7 +6527,21 @@
     "sensitivity": 3,
     "category": "gender_sexuality_and_identity",
     "topic": "oshi_gendered_fandom_judgment",
-    "question": "金額・頻度・対象への接し方が同じ遠征や課金なら、行う人の性別で評価は変わる？ 変える場合、何を根拠にする？",
+    "question": "同じ金額・頻度でも、遠征や課金をする人の性別で評価を変える？変えるなら、理由は何？",
+    "hints": [
+      "支出や遠征が生活に与える影響も同じなら、何が違う？",
+      "性別による期待が、評価に影響していない？"
+    ],
+    "terms": [
+      {
+        "term": "課金",
+        "definition": "サービス内の商品や機能などに、お金を支払うこと。"
+      },
+      {
+        "term": "遠征",
+        "definition": "好きな人物の公演やイベントなどに参加するため、遠い場所へ出かけること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "遠征や課金の評価には、生活への影響、本人の負担能力、対象への接し方など、複数の条件が関わります。この問いでは行動の条件をそろえ、性別が判断の根拠になるかを考えます。\n\n特定の性別の行動が社会で肯定されやすい、危険視されやすいとは断定していません。性別に結び付けた印象と、実際に確認できる行動や影響を区別することが論点です。"
@@ -3916,6 +6554,20 @@
     "category": "relationships_and_communication",
     "topic": "oshi_parasocial_label",
     "question": "推しへの熱を疑似恋愛と呼ぶのは、関係の説明として正確だと思う？ 恋愛していないことを貶める呼び方だと思う？",
+    "hints": [
+      "疑似恋愛という言葉で、どんな関わりを説明している？",
+      "本人の感じ方と周囲の評価に、違いはある？"
+    ],
+    "terms": [
+      {
+        "term": "推し",
+        "definition": "特に好きで、応援したいと感じる人物や作品など。"
+      },
+      {
+        "term": "疑似恋愛",
+        "definition": "実際の交際とは別に、恋愛に似た気持ちや関わりを感じること。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "疑似恋愛という言葉は、関係や感情の特徴を説明する意図で使われる場合も、別の関係を優れたものとする評価を伴って使われる場合も考えられます。言葉だけで、本人の感情や発言者の意図は確定しません。\n\nどんな特徴を説明するための呼び方なのか、相手の生き方を変えさせる評価を含むのかを分けて考えます。説明としての意味と価値判断が同時に含まれるという捉え方もできます。"
@@ -3927,7 +6579,22 @@
     "sensitivity": 3,
     "category": "relationships_and_communication",
     "topic": "oshi_marriage_betrayal",
-    "question": "推しの結婚を裏切りだと感じる人は、何を失ったと感じていると思う？ 恋愛に近い期待、理想像、応援やコミュニティとの関わりなどによって、その反応の意味は変わる？",
+    "scenario": "推しが結婚を発表し、裏切られたと感じるファンがいる。",
+    "question": "その人は何を失ったと感じている？期待の種類によって、反応の意味は変わる？",
+    "hints": [
+      "期待していた関係や居場所を、どう確かめる？",
+      "失った気持ちと、推しの選択への要求をどう分ける？"
+    ],
+    "terms": [
+      {
+        "term": "推し",
+        "definition": "特に好きで、応援したいと感じる人物や作品など。"
+      },
+      {
+        "term": "コミュニティ",
+        "definition": "関心や暮らす場所などを共通にする人々の集まり。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "裏切りという言葉が向けられる対象には、約束への期待、理想としていた姿、応援の楽しみ方、周囲との関係など、複数の可能性があります。その言葉だけで感情を恋愛と診断することはできません。\n\n何が変わり、何を失ったと本人が感じているのかを具体的に考える問いです。失ったという感情を理解することと、推しに何らかの義務があったと認めることは分けて検討します。"
@@ -3940,6 +6607,16 @@
     "category": "relationships_and_communication",
     "topic": "oshi_attachment_and_control",
     "question": "気持ちが恋に近いとしても、そのことを理由にファンが推しの交際や引退を止めてよいと思う？",
+    "hints": [
+      "恋に近い気持ちは、相手の選択を決める権利になる？",
+      "自分の気持ちを大切にしつつ、相手の意思を尊重できる？"
+    ],
+    "terms": [
+      {
+        "term": "推し",
+        "definition": "特に好きで、応援したいと感じる人物や作品など。"
+      }
+    ],
     "perspective": "observer",
     "detail": {
       "text": "恋に近い感情を持つことと、相手の交際や活動の継続について要求することは、別の行為です。感情の強さと、相手との間に合意された約束や責任も分けて考えられます。\n\n希望を伝えること、活動への対価を支払わないこと、相手の選択を拘束することの違いを検討します。感情をどう呼ぶかによって、どの範囲の要求まで正当化できると考えるかが論点です。"

@@ -26,7 +26,7 @@
     {
         "id": "self-001",
         "category": "self_and_values",
-        "question": "学校では明るい方？静かな方？",
+        "question": "普段、人といるときは明るい方？静かな方？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -34,7 +34,7 @@
     {
         "id": "self-002",
         "category": "self_and_values",
-        "question": "家と学校で性格変わる？",
+        "question": "家にいるときと、人と会うときで振る舞いは変わる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -42,7 +42,7 @@
     {
         "id": "self-003",
         "category": "self_and_values",
-        "question": "クラスでは目立ちたい？目立ちたくない？",
+        "question": "人が集まる場では、目立ちたい？目立ちたくない？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -50,7 +50,7 @@
     {
         "id": "self-004",
         "category": "self_and_values",
-        "question": "友達の前だとどんな感じ？",
+        "question": "友達といるとき、よく話す方？それとも聞き役になる方？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -58,7 +58,7 @@
     {
         "id": "self-005",
         "category": "self_and_values",
-        "question": "先生の前だとどんな感じ？",
+        "question": "目上の人と話すとき、親しい人と話すときで、話し方や態度は変わる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -106,7 +106,7 @@
     {
         "id": "friendship-005",
         "category": "relationships_and_communication",
-        "question": "一人でいる人に話しかけられる？",
+        "question": "一人でいる人に、自分から話しかけることはできる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "friendship"
@@ -250,7 +250,7 @@
     {
         "id": "jealousy-005",
         "category": "relationships_and_communication",
-        "question": "恋人が、あなたから見て恋人の恋愛対象になりそうな人と親しく話していたら気になる？",
+        "question": "あなたが「恋人の恋愛対象かも」と思う人と、恋人が親しく話していたら気になる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "jealousy"
@@ -618,7 +618,7 @@
     {
         "id": "school-007",
         "category": "school_and_youth",
-        "question": "放課後はすぐ帰りたい？残りたい？",
+        "question": "予定が終わったあと、すぐ帰りたい？それとも、どこかに寄りたい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "school"
@@ -626,7 +626,7 @@
     {
         "id": "school-008",
         "category": "school_and_youth",
-        "question": "学校で落ち着く場所は？",
+        "question": "落ち着いて過ごせる場所はどこ？",
         "level": 1,
         "sensitivity": 1,
         "topic": "school"
@@ -634,7 +634,7 @@
     {
         "id": "school-009",
         "category": "school_and_youth",
-        "question": "授業中に当てられるのは平気？",
+        "question": "人前で突然、意見を求められるのは平気？",
         "level": 1,
         "sensitivity": 1,
         "topic": "school"
@@ -642,7 +642,7 @@
     {
         "id": "school-010",
         "category": "school_and_youth",
-        "question": "発表は得意？苦手？",
+        "question": "人前で発表するのは得意？苦手？",
         "level": 1,
         "sensitivity": 1,
         "topic": "school"
@@ -650,7 +650,7 @@
     {
         "id": "school-011",
         "category": "school_and_youth",
-        "question": "学校で一番疲れる瞬間は？",
+        "question": "一日の中で、どんなときに一番疲れる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "school"
@@ -658,7 +658,7 @@
     {
         "id": "school-012",
         "category": "school_and_youth",
-        "question": "学校で無理して明るくすることある？",
+        "question": "人といるとき、無理に明るくふるまうことはある？",
         "level": 1,
         "sensitivity": 1,
         "topic": "school"
@@ -666,7 +666,7 @@
     {
         "id": "school-013",
         "category": "school_and_youth",
-        "question": "学校で一人になりたい時ある？",
+        "question": "一人になりたいと思うのは、どんなとき？",
         "level": 1,
         "sensitivity": 1,
         "topic": "school"
@@ -674,7 +674,7 @@
     {
         "id": "school-014",
         "category": "school_and_youth",
-        "question": "学校で自分らしくいられる瞬間は？",
+        "question": "どんな人といるとき、自分らしくいられる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "school"
@@ -682,7 +682,7 @@
     {
         "id": "school-015",
         "category": "school_and_youth",
-        "question": "学校で気を使いすぎることある？",
+        "question": "人に気を使いすぎて疲れることはある？",
         "level": 1,
         "sensitivity": 1,
         "topic": "school"
@@ -690,7 +690,7 @@
     {
         "id": "school-016",
         "category": "school_and_youth",
-        "question": "学校で安心できる人はいる？",
+        "question": "困ったとき、安心して話せる人はいる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "school"
@@ -706,7 +706,7 @@
     {
         "id": "self-008",
         "category": "self_and_values",
-        "question": "学校で褒められるなら何を褒められたい？",
+        "question": "人から褒められるなら、何を褒められたい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -714,7 +714,7 @@
     {
         "id": "self-009",
         "category": "self_and_values",
-        "question": "自分はクラスでどんな存在だと思う？",
+        "question": "人の集まりでは、聞き役やまとめ役など、どんな役をすることが多い？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -730,7 +730,7 @@
     {
         "id": "self-012",
         "category": "self_and_values",
-        "question": "先生からどんな人だと思われたい？",
+        "question": "友達以外の人から、どんな人だと思われたい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -738,7 +738,7 @@
     {
         "id": "self-013",
         "category": "self_and_values",
-        "question": "学校で頑張っていると思うことは？",
+        "question": "今、自分が頑張っていると思うことは何？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -746,7 +746,7 @@
     {
         "id": "self-014",
         "category": "self_and_values",
-        "question": "本当は話したいけど話しかけられない時ある？",
+        "question": "話したい相手がいるのに、自分から話しかけられないことはある？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -754,7 +754,7 @@
     {
         "id": "self-015",
         "category": "self_and_values",
-        "question": "学校で強がることある？",
+        "question": "つらくても、人前で平気なふりをすることはある？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -762,7 +762,7 @@
     {
         "id": "self-016",
         "category": "self_and_values",
-        "question": "進学をきっかけに自分の振る舞いや見た目を変えることについて、楽しみだと思うことと、無理をしそうだと思うことはある？",
+        "question": "新しい環境で、見た目や振る舞いを変えてみたい？\n楽しみなことや、無理をしそうなことはある？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -770,7 +770,7 @@
     {
         "id": "self-017",
         "category": "self_and_values",
-        "question": "自分らしくいられない時は？",
+        "question": "どんな場面で、自分らしくいられないと感じる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -778,7 +778,7 @@
     {
         "id": "self-018",
         "category": "self_and_values",
-        "question": "学校で本音を隠すことはある？",
+        "question": "人といるとき、本音を隠すことはある？",
         "level": 1,
         "sensitivity": 1,
         "topic": "self"
@@ -858,7 +858,7 @@
     {
         "id": "study-016",
         "category": "school_and_youth",
-        "question": "テスト期間中の連絡頻度はどうしたい？",
+        "question": "忙しい時期に、親しい人とどれくらいの頻度で連絡を取りたい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "study"
@@ -946,7 +946,7 @@
     {
         "id": "friendship-015",
         "category": "relationships_and_communication",
-        "question": "クラスのノリについていけない時ある？",
+        "question": "人の集まりで、その場のノリについていけないと感じることはある？",
         "level": 1,
         "sensitivity": 1,
         "topic": "friendship"
@@ -1042,7 +1042,7 @@
     {
         "id": "contact-016",
         "category": "relationships_and_communication",
-        "question": "理想の連絡頻度は？",
+        "question": "親しい人と連絡を取るなら、どのくらいの頻度が心地よい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "contact"
@@ -1074,7 +1074,7 @@
     {
         "id": "affection-008",
         "category": "relationships_and_communication",
-        "question": "されて嬉しいことは？",
+        "question": "友達や恋人にされて嬉しいことは？",
         "level": 1,
         "sensitivity": 1,
         "topic": "affection"
@@ -1106,7 +1106,7 @@
     {
         "id": "jealousy-008",
         "category": "relationships_and_communication",
-        "question": "嫉妬した時、言える？",
+        "question": "嫉妬したとき、その気持ちを相手に伝えられる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "jealousy"
@@ -1226,7 +1226,7 @@
     {
         "id": "conflict-016",
         "category": "relationships_and_communication",
-        "question": "恋人にも、言葉にしていない気持ちを察してほしくないことはある？",
+        "question": "恋人に、言っていない気持ちを分かったふうに決めつけられたくないことはある？",
         "level": 1,
         "sensitivity": 1,
         "topic": "conflict"

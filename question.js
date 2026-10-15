@@ -2,6 +2,8 @@ const params = new URLSearchParams(window.location.search);
 const level = Number(params.get("level"));
 
 const questionText = document.getElementById("questionText");
+const scenarioBlock = document.getElementById("scenarioBlock");
+const scenarioText = document.getElementById("scenarioText");
 const questionContent =
     document.querySelector(".question-content");
 const sourceSection =
@@ -9,6 +11,11 @@ const sourceSection =
 
 const sourceList =
     document.getElementById("sourceList");
+const hintButton = document.getElementById("hintButton");
+const hintsPanel = document.getElementById("hintsPanel");
+const hintsList = document.getElementById("hintsList");
+const termsSection = document.getElementById("termsSection");
+const termsList = document.getElementById("termsList");
 const nextQuestionButton =
     document.getElementById("nextQuestionButton");
 
@@ -58,7 +65,11 @@ function setState(nextState) {
 
 function showMessage(message) {
     questionText.textContent = message;
+    scenarioText.textContent = "";
+    scenarioBlock.setAttribute("aria-hidden", "true");
     updateQuestionLayout({ question: message });
+    hintButton.hidden = true;
+    setHintsPanelOpen(false);
     detailButton.hidden = true;
     setDetailPanelOpen(false);
 }
@@ -71,6 +82,21 @@ function validateQuestions(questions) {
         if (!question || question.level !== level ||
             typeof question.question !== "string" || !question.question.trim()) {
             throw new Error("Invalid question or mismatched level in question data.");
+        }
+        if (question.scenario !== undefined && typeof question.scenario !== "string") {
+            throw new Error("Invalid question scenario.");
+        }
+        if (question.hints !== undefined &&
+            (!Array.isArray(question.hints) ||
+                question.hints.some(hint => typeof hint !== "string" || !hint.trim()))) {
+            throw new Error("Invalid question hints.");
+        }
+        if (question.terms !== undefined &&
+            (!Array.isArray(question.terms) ||
+                question.terms.some(term => !term ||
+                    typeof term.term !== "string" || !term.term.trim() ||
+                    typeof term.definition !== "string" || !term.definition.trim()))) {
+            throw new Error("Invalid question terms.");
         }
         if (question.detail !== undefined) {
             const detail = question.detail;
@@ -152,36 +178,56 @@ function showQuestion() {
     questionText.textContent =
         currentQuestion.question;
 
+    const scenario = currentQuestion.scenario?.trim() ?? "";
+    scenarioText.textContent = scenario;
+    scenarioBlock.setAttribute("aria-hidden", String(scenario === ""));
+
     updateQuestionLayout(currentQuestion);
 
     // 前の質問の状態をリセット
+    hintButton.hidden = true;
+    setHintsPanelOpen(false);
+    hintsList.innerHTML = "";
     detailButton.hidden = true;
     setDetailPanelOpen(false);
     sourceSection.hidden = true;
+    termsSection.hidden = true;
     previousQuestionButton.disabled = currentQuestionIndex === 0;
 
     detailText.textContent = "";
     sourceList.innerHTML = "";
+    termsList.innerHTML = "";
 
-    // 詳細文がある場合だけボタンを表示
-    if (
-        currentQuestion.detail &&
-        currentQuestion.detail.text &&
-        currentQuestion.detail.text.trim() !== ""
-    ) {
+    const hints = currentQuestion.hints ?? [];
+    if (hints.length > 0) {
+        hintButton.hidden = false;
+        hints.forEach(function (hint) {
+            const listItem = document.createElement("li");
+            listItem.textContent = hint;
+            hintsList.appendChild(listItem);
+        });
+    }
+
+    const detail = currentQuestion.detail;
+    const detailValue = detail?.text?.trim() ?? "";
+    const sources = detail?.sources ?? [];
+    const terms = currentQuestion.terms ?? [];
+    if (detailValue !== "" || sources.length > 0 || terms.length > 0) {
         detailButton.hidden = false;
+        detailText.textContent = detailValue;
 
-        detailText.textContent =
-            currentQuestion.detail.text;
+        termsSection.hidden = terms.length === 0;
+        terms.forEach(function (term) {
+            const name = document.createElement("dt");
+            name.textContent = term.term;
+            const definition = document.createElement("dd");
+            definition.textContent = term.definition;
+            termsList.appendChild(name);
+            termsList.appendChild(definition);
+        });
 
         // 出典がある場合だけ表示
-        const sources =
-            currentQuestion.detail.sources;
-
-        if (
-            sources &&
-            sources.length > 0
-        ) {
+        if (sources.length > 0) {
             sourceSection.hidden = false;
 
             sources.forEach(function (source) {
@@ -216,13 +262,23 @@ function updateQuestionLayout(question) {
         typeof question.question === "string"
             ? question.question
             : "";
+    const scenarioValue =
+        typeof question.scenario === "string"
+            ? question.scenario
+            : "";
 
     const isLongQuestion =
+        [...questionValue, ...scenarioValue].length >= 60;
+    const hasLongQuestionText =
         [...questionValue].length >= 60;
 
     questionContent.classList.toggle(
         "long-question",
         isLongQuestion
+    );
+    questionContent.classList.toggle(
+        "long-question-text",
+        hasLongQuestionText
     );
 
     questionContent.scrollTop = 0;
@@ -316,11 +372,22 @@ detailButton.addEventListener("click", function () {
     setDetailPanelOpen(detailPanel.hidden);
 });
 
+hintButton.addEventListener("click", function () {
+    setHintsPanelOpen(hintsPanel.hidden);
+});
+
 function setDetailPanelOpen(isOpen) {
+    if (isOpen) setHintsPanelOpen(false);
     detailPanel.hidden = !isOpen;
     detailButton.setAttribute("aria-expanded", String(isOpen));
     detailButtonLabel.textContent =
         isOpen ? "背景を閉じる" : "問いの背景";
+}
+
+function setHintsPanelOpen(isOpen) {
+    if (isOpen) setDetailPanelOpen(false);
+    hintsPanel.hidden = !isOpen;
+    hintButton.setAttribute("aria-expanded", String(isOpen));
 }
 
 function closeDetailPanel() {
@@ -328,9 +395,17 @@ function closeDetailPanel() {
     detailButton.focus();
 }
 
+function closeHintsPanel() {
+    setHintsPanelOpen(false);
+    hintButton.focus();
+}
 
 document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape" && !detailPanel.hidden) {
-        closeDetailPanel();
+    if (event.key === "Escape") {
+        if (!hintsPanel.hidden) {
+            closeHintsPanel();
+        } else if (!detailPanel.hidden) {
+            closeDetailPanel();
+        }
     }
 });

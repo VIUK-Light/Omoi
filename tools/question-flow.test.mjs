@@ -13,10 +13,11 @@ function setup(search = '?level=1') {
     const elements = new Map();
     const element = id => {
         if (!elements.has(id)) elements.set(id, {
-            hidden: false, disabled: false, textContent: '', attrs: {},
+            hidden: false, disabled: false, textContent: '', attrs: {}, children: [],
             classList: { remove() {}, toggle() {} },
             setAttribute(key, value) { this.attrs[key] = value; },
             removeAttribute(key) { delete this[key]; },
+            set innerHTML(value) { this.children = []; },
             addEventListener(event, handler) {
                 if (event === 'close') this.onClose = handler;
                 else this[event] = handler;
@@ -26,7 +27,7 @@ function setup(search = '?level=1') {
                 this.open = false;
                 this.onClose?.();
             },
-            appendChild() {}, focus() { this.focused = true; },
+            appendChild(child) { this.children.push(child); }, focus() { this.focused = true; },
             scrollHeight: 100, clientHeight: 100, scrollTop: 0
         });
         return elements.get(id);
@@ -37,11 +38,17 @@ function setup(search = '?level=1') {
     const documentStub = {
         getElementById: element,
         querySelector: element,
-        createElement: element,
+        createElement() {
+            return {
+                textContent: '', children: [],
+                appendChild(child) { this.children.push(child); }
+            };
+        },
         addEventListener(event, handler) { this[event] = handler; }
     };
     vm.runInNewContext(code, {
         URL, URLSearchParams, AbortController,
+        Math: { random: () => 0.999, floor: Math.floor },
         setTimeout(fn) { onTimeout = fn; return 1; }, clearTimeout() {},
         console: { error(...args) { errors.push(args); } },
         document: documentStub,
@@ -179,6 +186,50 @@ test('detail button toggles the compact background panel and resets on navigatio
     app.element('nextQuestionButton').click();
     assert.equal(app.element('detailPanel').hidden, true);
     assert.equal(app.element('detailButton').attrs['aria-expanded'], 'false');
+});
+
+test('scenario, hints, and terms are rendered and reset when moving to another card', async () => {
+    const data = [
+        {
+            ...cards[0],
+            scenario: 'Scenario context',
+            hints: ['Hint one', 'Hint two'],
+            terms: [{ term: 'Term', definition: 'Definition' }]
+        },
+        cards[1]
+    ];
+    const app = setup(); app.respond(data); await flush();
+
+    assert.equal(app.element('scenarioText').textContent, 'Scenario context');
+    assert.equal(app.element('scenarioBlock').attrs['aria-hidden'], 'false');
+    assert.equal(app.element('scenarioText').textContent, 'Scenario context');
+    assert.equal(app.element('hintButton').hidden, false);
+    assert.deepEqual(app.element('hintsList').children.map(item => item.textContent), ['Hint one', 'Hint two']);
+    assert.equal(app.element('termsSection').hidden, false);
+    assert.deepEqual(app.element('termsList').children.map(item => item.textContent), ['Term', 'Definition']);
+
+    app.element('hintButton').click();
+    assert.equal(app.element('hintsPanel').hidden, false);
+    assert.equal(app.element('hintButton').attrs['aria-expanded'], 'true');
+    app.element('detailButton').click();
+    assert.equal(app.element('hintsPanel').hidden, true);
+    assert.equal(app.element('detailPanel').hidden, false);
+
+    app.element('nextQuestionButton').click();
+    assert.equal(app.element('scenarioBlock').attrs['aria-hidden'], 'true');
+    assert.equal(app.element('hintButton').hidden, true);
+    assert.equal(app.element('hintsPanel').hidden, true);
+    assert.equal(app.element('detailPanel').hidden, true);
+    assert.equal(app.element('termsSection').hidden, true);
+});
+
+test('escape closes the hints panel and restores focus to its button', async () => {
+    const app = setup(); app.respond([{ ...cards[0], hints: ['Hint'] }]); await flush();
+    app.element('hintButton').click();
+    app.document.keydown({ key: 'Escape' });
+    assert.equal(app.element('hintsPanel').hidden, true);
+    assert.equal(app.element('hintButton').attrs['aria-expanded'], 'false');
+    assert.equal(app.element('hintButton').focused, true);
 });
 
 

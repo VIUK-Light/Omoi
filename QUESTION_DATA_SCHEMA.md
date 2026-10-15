@@ -38,6 +38,9 @@ Level 3とLevel 4では、共通フィールドに加えて次を必須にしま
 | --- | --- |
 | `perspective` | 問いの主な立場。`affected`、`actor`、`decision_maker`、`observer`のみ |
 | `detail.text` | 結論を押し付けず、考えるための背景・対立・条件を説明する文章 |
+| `scenario` | 任意。その問いを考える状況や前提。質問文の前に表示 |
+| `hints` | 任意。会話を深める問いかけの配列。カードの「会話のヒント」から表示 |
+| `terms` | 任意。`term` と `definition` を持つ用語の配列。「問いの背景」内に表示 |
 
 具体的な立場が必要な場合は、主視点を増やさず任意の `role` に `parent`、`teacher`、`friend` などを記録します。Level 4では、`affected`・`actor`・`decision_maker`をそれぞれ20%以上に保ちます。
 

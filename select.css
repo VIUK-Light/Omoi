@@ -47,19 +47,27 @@ body {
 
     padding: 14px 16px;
 
-    border: 1.5px solid #111;
+    border: 1.5px solid #ddd;
     border-radius: 14px;
 
     cursor: pointer;
 }
 
 .level-card strong,
-.level-card span {
+.level-card small {
     display: block;
 }
 
-.level-card div > span {
+.level-card small {
     margin-top: 4px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.level-example {
+    display: none;
+    margin-top: 8px;
     font-size: 13px;
     line-height: 1.5;
     color: #666;
@@ -78,9 +86,15 @@ body {
 .level-list input:checked + .level-card {
     background: #555;
     color: #fff;
+    border-color: #111;
 }
 
-.level-list input:checked + .level-card div > span {
+.level-list input:checked + .level-card small {
+    color: #e0e0e0;
+}
+
+.level-list input:checked + .level-card .level-example {
+    display: block;
     color: #e0e0e0;
 }
 
