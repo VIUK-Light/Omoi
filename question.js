@@ -1,9 +1,9 @@
 const params = new URLSearchParams(window.location.search);
 const level = Number(params.get("level"));
-const count = Number(params.get("count"));
 
-const levelDisplay = document.getElementById("levelDisplay");
 const questionText = document.getElementById("questionText");
+const scenarioBlock = document.getElementById("scenarioBlock");
+const scenarioText = document.getElementById("scenarioText");
 const questionContent =
     document.querySelector(".question-content");
 const sourceSection =
@@ -11,17 +11,34 @@ const sourceSection =
 
 const sourceList =
     document.getElementById("sourceList");
+const hintButton = document.getElementById("hintButton");
+const hintsPanel = document.getElementById("hintsPanel");
+const hintsList = document.getElementById("hintsList");
+const termsSection = document.getElementById("termsSection");
+const termsList = document.getElementById("termsList");
 const nextQuestionButton =
     document.getElementById("nextQuestionButton");
 
-const skipQuestionButton =
-    document.getElementById("skipQuestionButton");
+const finishButton =
+    document.getElementById("finishButton");
 
-const reportQuestionLink =
-    document.getElementById("reportQuestionLink");
+const finishConfirmDialog =
+    document.getElementById("finishConfirmDialog");
+
+const cancelFinishButton =
+    document.getElementById("cancelFinishButton");
+
+const confirmFinishButton =
+    document.getElementById("confirmFinishButton");
+
+const previousQuestionButton =
+    document.getElementById("previousQuestionButton");
 
 const detailButton =
     document.getElementById("detailButton");
+
+const detailButtonLabel =
+    document.getElementById("detailButtonLabel");
 
 const detailPanel =
     document.getElementById("detailPanel");
@@ -29,16 +46,9 @@ const detailPanel =
 const detailText =
     document.getElementById("detailText");
 
-const closeDetailButton =
-    document.getElementById("closeDetailButton");
 
-
-let filteredQuestions = [];
+let sessionQuestions = [];
 let currentQuestionIndex = 0;
-
-const reportIssueURL =
-    "https://github.com/VIUK-Light/Omoi/issues/new";
-
 
 const retryLoadButton = document.getElementById("retryLoadButton");
 let state = "idle";
@@ -46,18 +56,22 @@ let state = "idle";
 function setState(nextState) {
     state = nextState;
     nextQuestionButton.disabled = state !== "ready";
-    skipQuestionButton.disabled = state !== "ready";
+    finishButton.disabled = state !== "ready";
+    previousQuestionButton.disabled =
+        state !== "ready" || currentQuestionIndex === 0;
     questionContent.setAttribute("aria-busy", String(state === "loading"));
     retryLoadButton.hidden = state !== "error";
 }
 
 function showMessage(message) {
     questionText.textContent = message;
+    scenarioText.textContent = "";
+    scenarioBlock.setAttribute("aria-hidden", "true");
     updateQuestionLayout({ question: message });
-    hideReportQuestionLink();
+    hintButton.hidden = true;
+    setHintsPanelOpen(false);
     detailButton.hidden = true;
-    detailPanel.hidden = true;
-    detailButton.setAttribute("aria-expanded", "false");
+    setDetailPanelOpen(false);
 }
 
 function validateQuestions(questions) {
@@ -68,6 +82,21 @@ function validateQuestions(questions) {
         if (!question || question.level !== level ||
             typeof question.question !== "string" || !question.question.trim()) {
             throw new Error("Invalid question or mismatched level in question data.");
+        }
+        if (question.scenario !== undefined && typeof question.scenario !== "string") {
+            throw new Error("Invalid question scenario.");
+        }
+        if (question.hints !== undefined &&
+            (!Array.isArray(question.hints) ||
+                question.hints.some(hint => typeof hint !== "string" || !hint.trim()))) {
+            throw new Error("Invalid question hints.");
+        }
+        if (question.terms !== undefined &&
+            (!Array.isArray(question.terms) ||
+                question.terms.some(term => !term ||
+                    typeof term.term !== "string" || !term.term.trim() ||
+                    typeof term.definition !== "string" || !term.definition.trim()))) {
+            throw new Error("Invalid question terms.");
         }
         if (question.detail !== undefined) {
             const detail = question.detail;
@@ -90,7 +119,7 @@ async function loadQuestions() {
     if (state === "loading") return;
     setState("loading");
     showMessage("読み込み中...");
-    filteredQuestions = [];
+    sessionQuestions = [];
     currentQuestionIndex = 0;
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
@@ -102,8 +131,8 @@ async function loadQuestions() {
         const questions = await response.json();
         validateQuestions(questions);
         shuffle(questions);
-        filteredQuestions = questions.slice(0, count);
-        if (filteredQuestions.length === 0) {
+        sessionQuestions = questions;
+        if (sessionQuestions.length === 0) {
             showMessage("このLevelの質問はまだありません。レベルを選び直してください。");
             setState("empty");
             return;
@@ -123,12 +152,10 @@ async function loadQuestions() {
 
 retryLoadButton.addEventListener("click", loadQuestions);
 if (!["1", "2", "3", "4"].includes(params.get("level")) ||
-    !["5", "10", "30", "60"].includes(params.get("count")) ||
-    params.getAll("level").length !== 1 || params.getAll("count").length !== 1) {
+    params.getAll("level").length !== 1) {
     setState("invalid");
     showMessage("質問の条件が正しくありません。「レベルを変える」から選び直してください。");
 } else {
-    levelDisplay.textContent = "Level " + level;
     loadQuestions();
 }
 
@@ -146,43 +173,61 @@ function shuffle(array) {
 
 function showQuestion() {
     const currentQuestion =
-        filteredQuestions[currentQuestionIndex];
+        sessionQuestions[currentQuestionIndex];
 
     questionText.textContent =
         currentQuestion.question;
 
+    const scenario = currentQuestion.scenario?.trim() ?? "";
+    scenarioText.textContent = scenario;
+    scenarioBlock.setAttribute("aria-hidden", String(scenario === ""));
+
     updateQuestionLayout(currentQuestion);
 
-    updateReportQuestionLink(currentQuestion);
-
     // 前の質問の状態をリセット
+    hintButton.hidden = true;
+    setHintsPanelOpen(false);
+    hintsList.innerHTML = "";
     detailButton.hidden = true;
-    detailPanel.hidden = true;
-    detailButton.setAttribute("aria-expanded", "false");
+    setDetailPanelOpen(false);
     sourceSection.hidden = true;
+    termsSection.hidden = true;
+    previousQuestionButton.disabled = currentQuestionIndex === 0;
 
     detailText.textContent = "";
     sourceList.innerHTML = "";
+    termsList.innerHTML = "";
 
-    // 詳細文がある場合だけボタンを表示
-    if (
-        currentQuestion.detail &&
-        currentQuestion.detail.text &&
-        currentQuestion.detail.text.trim() !== ""
-    ) {
+    const hints = currentQuestion.hints ?? [];
+    if (hints.length > 0) {
+        hintButton.hidden = false;
+        hints.forEach(function (hint) {
+            const listItem = document.createElement("li");
+            listItem.textContent = hint;
+            hintsList.appendChild(listItem);
+        });
+    }
+
+    const detail = currentQuestion.detail;
+    const detailValue = detail?.text?.trim() ?? "";
+    const sources = detail?.sources ?? [];
+    const terms = currentQuestion.terms ?? [];
+    if (detailValue !== "" || sources.length > 0 || terms.length > 0) {
         detailButton.hidden = false;
+        detailText.textContent = detailValue;
 
-        detailText.textContent =
-            currentQuestion.detail.text;
+        termsSection.hidden = terms.length === 0;
+        terms.forEach(function (term) {
+            const name = document.createElement("dt");
+            name.textContent = term.term;
+            const definition = document.createElement("dd");
+            definition.textContent = term.definition;
+            termsList.appendChild(name);
+            termsList.appendChild(definition);
+        });
 
         // 出典がある場合だけ表示
-        const sources =
-            currentQuestion.detail.sources;
-
-        if (
-            sources &&
-            sources.length > 0
-        ) {
+        if (sources.length > 0) {
             sourceSection.hidden = false;
 
             sources.forEach(function (source) {
@@ -217,13 +262,23 @@ function updateQuestionLayout(question) {
         typeof question.question === "string"
             ? question.question
             : "";
+    const scenarioValue =
+        typeof question.scenario === "string"
+            ? question.scenario
+            : "";
 
     const isLongQuestion =
+        [...questionValue, ...scenarioValue].length >= 60;
+    const hasLongQuestionText =
         [...questionValue].length >= 60;
 
     questionContent.classList.toggle(
         "long-question",
         isLongQuestion
+    );
+    questionContent.classList.toggle(
+        "long-question-text",
+        hasLongQuestionText
     );
 
     questionContent.scrollTop = 0;
@@ -260,84 +315,27 @@ window.addEventListener(
 );
 
 
-function updateReportQuestionLink(question) {
-    const rawQuestionID =
-        question.id === null ||
-        question.id === undefined
-            ? ""
-            : String(question.id).trim();
-
-    const questionID =
-        rawQuestionID !== ""
-            ? rawQuestionID
-            : "未設定";
-
-    const reportURL =
-        new URL(reportIssueURL);
-
-    reportURL.searchParams.set(
-        "template",
-        "question-report.yml"
-    );
-
-    reportURL.searchParams.set(
-        "title",
-        "[質問報告] " + questionID
-    );
-
-    reportURL.searchParams.set(
-        "question_id",
-        questionID
-    );
-
-    reportURL.searchParams.set(
-        "level",
-        "Level " + level
-    );
-
-    reportURL.searchParams.set(
-        "question_text",
-        question.question
-    );
-
-    reportURL.searchParams.set(
-        "source_file",
-        "level" + level + ".json"
-    );
-
-    reportURL.searchParams.set(
-        "source_url",
-        window.location.href
-    );
-
-    reportQuestionLink.href =
-        reportURL.toString();
-
-    reportQuestionLink.hidden = false;
-}
-
-
-function hideReportQuestionLink() {
-    reportQuestionLink.hidden = true;
-    reportQuestionLink.removeAttribute("href");
-}
-
-
 function goToNextQuestion() {
     if (state !== "ready") return;
     currentQuestionIndex++;
 
-    if (currentQuestionIndex >= filteredQuestions.length) {
-        setState("finished");
-        window.location.href =
-    "finish.html?level=" +
-    level +
-    "&count=" +
-    count;
+    if (currentQuestionIndex >= sessionQuestions.length) {
+        finishSession();
         return;
     }
 
     showQuestion();
+}
+
+function goToPreviousQuestion() {
+    if (state !== "ready" || currentQuestionIndex === 0) return;
+    currentQuestionIndex--;
+    showQuestion();
+}
+
+function finishSession() {
+    setState("finished");
+    window.location.href = "index.html";
 }
 
 
@@ -345,33 +343,69 @@ nextQuestionButton.addEventListener("click", function () {
     goToNextQuestion();
 });
 
+previousQuestionButton.addEventListener("click", function () {
+    goToPreviousQuestion();
+});
 
-skipQuestionButton.addEventListener("click", function () {
-    goToNextQuestion();
+finishButton.addEventListener("click", function () {
+    if (state !== "ready") return;
+    finishConfirmDialog.showModal();
+    cancelFinishButton.focus();
+});
+
+cancelFinishButton.addEventListener("click", function () {
+    finishConfirmDialog.close();
+    finishButton.focus();
+});
+
+confirmFinishButton.addEventListener("click", function () {
+    finishConfirmDialog.close();
+    finishSession();
+});
+
+finishConfirmDialog.addEventListener("close", function () {
+    if (state === "ready") finishButton.focus();
 });
 
 
 detailButton.addEventListener("click", function () {
-    detailPanel.hidden = false;
-    detailButton.setAttribute("aria-expanded", "true");
-    detailPanel.focus();
+    setDetailPanelOpen(detailPanel.hidden);
 });
 
+hintButton.addEventListener("click", function () {
+    setHintsPanelOpen(hintsPanel.hidden);
+});
+
+function setDetailPanelOpen(isOpen) {
+    if (isOpen) setHintsPanelOpen(false);
+    detailPanel.hidden = !isOpen;
+    detailButton.setAttribute("aria-expanded", String(isOpen));
+    detailButtonLabel.textContent =
+        isOpen ? "背景を閉じる" : "問いの背景";
+}
+
+function setHintsPanelOpen(isOpen) {
+    if (isOpen) setDetailPanelOpen(false);
+    hintsPanel.hidden = !isOpen;
+    hintButton.setAttribute("aria-expanded", String(isOpen));
+}
 
 function closeDetailPanel() {
-    detailPanel.hidden = true;
-    detailButton.setAttribute("aria-expanded", "false");
+    setDetailPanelOpen(false);
     detailButton.focus();
 }
 
-
-closeDetailButton.addEventListener("click", function () {
-    closeDetailPanel();
-});
-
+function closeHintsPanel() {
+    setHintsPanelOpen(false);
+    hintButton.focus();
+}
 
 document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape" && !detailPanel.hidden) {
-        closeDetailPanel();
+    if (event.key === "Escape") {
+        if (!hintsPanel.hidden) {
+            closeHintsPanel();
+        } else if (!detailPanel.hidden) {
+            closeDetailPanel();
+        }
     }
 });

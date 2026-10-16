@@ -1,14 +1,10 @@
 const levelInputs =
     document.querySelectorAll('input[name="level"]');
 
-const countInputs =
-    document.querySelectorAll('input[name="count"]');
-
 const nextButton =
     document.getElementById("nextButton");
 
 let selectedLevel = null;
-let selectedCount = null;
 
 
 levelInputs.forEach(function (input) {
@@ -19,31 +15,21 @@ levelInputs.forEach(function (input) {
 });
 
 
-countInputs.forEach(function (input) {
-    input.addEventListener("change", function () {
-        selectedCount = input.value;
-        updateNextButton();
-    });
-});
-
-
 function updateNextButton() {
-    nextButton.disabled =
-        selectedLevel === null ||
-        selectedCount === null;
+    nextButton.disabled = selectedLevel === null;
 }
 
 
 nextButton.addEventListener("click", function () {
     if (
-        selectedLevel === null ||
-        selectedCount === null
+        selectedLevel === null
     ) {
         return;
     }
 
     if (selectedLevel === "4") {
         window.location.href =
+            "warning.html";
             "warning.html?count=" + encodeURIComponent(selectedCount);
         const warningUrl = new URL("warning.html", window.location.href);
         warningUrl.searchParams.set("count", selectedCount);
@@ -53,6 +39,8 @@ nextButton.addEventListener("click", function () {
     }
 
     if (selectedLevel === "3") {
+        window.location.href =
+            "warning3.html";
         const warning3Url = new URL("warning3.html", window.location.href);
         warning3Url.searchParams.set("count", selectedCount);
         window.location.href = warning3Url.toString();
@@ -62,6 +50,7 @@ nextButton.addEventListener("click", function () {
 
     window.location.href =
         "question.html?level=" +
+        selectedLevel;
         encodeURIComponent(selectedLevel) +
         "&count=" +
         encodeURIComponent(selectedCount);

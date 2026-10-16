@@ -175,38 +175,29 @@ summary:focus-visible {
     margin-top: 18px;
 }
 
-.level-cards,
+.category-cards,
 .step-list {
     margin: 28px 0 0;
     padding: 0;
     list-style: none;
 }
 
-.level-cards {
+.category-cards {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
 }
 
-.level-cards li {
+.category-cards li {
     padding: 20px;
     border: 1px solid var(--guide-line);
     border-radius: 12px;
     background: var(--guide-soft);
 }
 
-.level-cards p {
+.category-cards p {
     margin-top: 8px;
     font-size: 14px;
-}
-
-.level-name {
-    display: block;
-    margin-bottom: 8px;
-    color: var(--guide-accent);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
 }
 
 .step-list {
@@ -359,7 +350,7 @@ summary:focus-visible {
         gap: 12px;
     }
 
-    .level-cards {
+    .category-cards {
         grid-template-columns: 1fr;
     }
 

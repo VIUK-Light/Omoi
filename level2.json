@@ -18,7 +18,7 @@
     {
         "id": "support-002",
         "category": "school_and_youth",
-        "question": "友達との問題を先生に相談することに、ためらいを感じる？ 感じるなら、何が気になる？",
+        "question": "友達との問題を、信頼できる人に相談するのをためらう？ためらうなら、何が気になる？",
         "level": 2,
         "sensitivity": 1,
         "topic": "support"
@@ -42,7 +42,7 @@
     {
         "id": "support-005",
         "category": "school_and_youth",
-        "question": "自分が間違っていた時、友達に止めてほしい？",
+        "question": "自分が何か間違ったことをしたとき、友達に指摘してほしい？",
         "level": 2,
         "sensitivity": 1,
         "topic": "support"
@@ -74,7 +74,7 @@
     {
         "id": "bullying-003",
         "category": "school_and_youth",
-        "question": "友達を傷つけることを言った人が「ノリだった」と説明したら、その説明をどこまで受け入れられる？",
+        "question": "友達を傷つける言葉を言った人が「ノリだった」と説明したら、その説明をどこまで受け入れられる？",
         "level": 2,
         "sensitivity": 2,
         "topic": "bullying"
@@ -162,7 +162,7 @@
     {
         "id": "support-008",
         "category": "school_and_youth",
-        "question": "「先生に言う」と「チクる」の違いは？",
+        "question": "問題を信頼できる人に伝えることと、「チクる」ことはどう違う？",
         "level": 2,
         "sensitivity": 2,
         "topic": "support"
@@ -170,7 +170,7 @@
     {
         "id": "support-011",
         "category": "school_and_youth",
-        "question": "自分に関係ないトラブルでも先生に相談する？",
+        "question": "自分に直接関係ないトラブルでも、信頼できる人に相談する？",
         "level": 2,
         "sensitivity": 2,
         "topic": "support"
@@ -186,7 +186,7 @@
     {
         "id": "support-015",
         "category": "school_and_youth",
-        "question": "ルールを破った人より、先生に言った人が責められるのはどう思う？",
+        "question": "ルールを破った人より、問題を伝えた人が責められるのはどう思う？",
         "level": 2,
         "sensitivity": 2,
         "topic": "support"
@@ -194,7 +194,7 @@
     {
         "id": "support-016",
         "category": "school_and_youth",
-        "question": "自分では正しいと思う意見を伝えた人が「空気を壊した」と言われたら、意見の内容と伝え方をどう分けて考える？",
+        "question": "正しいと思う意見を伝えた人が「空気を壊した」と言われたら、意見の内容と伝え方をどう分けて考える？",
         "level": 2,
         "sensitivity": 2,
         "topic": "support"
@@ -218,7 +218,7 @@
     {
         "id": "bullying-009",
         "category": "school_and_youth",
-        "question": "本当は嫌そうだけど笑っている人を見たらどうする？",
+        "question": "誰かがからかわれて笑っているけれど、嫌そうに見えるとき、どう声をかける？",
         "level": 2,
         "sensitivity": 2,
         "topic": "bullying"
@@ -242,7 +242,7 @@
     {
         "id": "bullying-015",
         "category": "school_and_youth",
-        "question": "友達が別の人をからかい、その人が嫌がっているように見える。「やめた方がいい」と伝えるとしたら、何が言いやすさや言いにくさにつながる？",
+        "question": "友達が誰かをからかい、相手が嫌そうに見えたら、「やめよう」と言える？言いにくいとしたら、何が気になる？",
         "level": 2,
         "sensitivity": 2,
         "topic": "bullying"
@@ -298,7 +298,7 @@
     {
         "id": "jealousy-017",
         "category": "relationships_and_communication",
-        "question": "隠し事はどこまであり？",
+        "question": "恋人に隠し事をするのは、どこまでなら許される？",
         "level": 2,
         "sensitivity": 1,
         "topic": "jealousy"
@@ -314,7 +314,7 @@
     {
         "id": "ethics-001",
         "category": "ethics_and_decision_making",
-        "question": "友達グループで、親しい友達とあまり話したことがない人が同時に困っている。二人ともすぐには助けられないなら、あなたはまず誰に声をかける？ 親しい友達を優先するのは自然？ それとも困り方を見て決める？",
+        "question": "親しい友達と、あまり知らない人が同時に困っている。助けられるのが一人なら、どちらを先に助ける？決め手は何？",
         "level": 2,
         "sensitivity": 1,
         "topic": "ethics"
@@ -322,7 +322,7 @@
     {
         "id": "ethics-003",
         "category": "ethics_and_decision_making",
-        "question": "友達が明日の発表をすごく不安がっている。あなたは「絶対うまくいくよ」と言えば少し安心すると思うけれど、本当は失敗する可能性もあると思っている。安心させるために、本心より明るく言うのはあり？",
+        "question": "発表を控えた友達を安心させるため、失敗するかもしれないのに「絶対うまくいくよ」と言っていい？",
         "level": 2,
         "sensitivity": 1,
         "topic": "ethics"
@@ -330,7 +330,7 @@
     {
         "id": "ethics-004",
         "category": "ethics_and_decision_making",
-        "question": "友達がクラス発表で使う資料を見せてくれた。あなたは少し分かりにくいと思ったが、本人は完成したと満足している。頼まれていないのに伝える？ それとも、自信をなくさせないために言わない？",
+        "question": "友達が満足している発表資料に分かりにくい点がある。自信をなくすかもしれなくても、頼まれていなくても伝える？",
         "level": 2,
         "sensitivity": 1,
         "topic": "ethics"
@@ -338,7 +338,7 @@
     {
         "id": "ethics-005",
         "category": "ethics_and_decision_making",
-        "question": "グループで意見がぶつかり、あなたは自分が悪かったとは思っていない。でも自分が一言謝れば、その場は早く終わりそうだ。自分が納得していなくても、場を収めるために謝る？",
+        "question": "グループで意見がぶつかった。自分は悪くないと思うが、自分が謝れば話は早く終わりそう。納得していなくても謝る？",
         "level": 2,
         "sensitivity": 1,
         "topic": "ethics"
@@ -346,7 +346,7 @@
     {
         "id": "ethics-006",
         "category": "ethics_and_decision_making",
-        "question": "同じ結果を出した二人がいる。一人はもともと得意で短い時間でできた。もう一人は苦手でも長く練習してできるようになった。クラスや部活で一人だけを評価するなら、どちらをより高く評価する？",
+        "question": "同じ結果を出した二人がいる。得意で短時間でできた人と、苦手でも練習してできるようになった人。評価するならどちらを高く見る？",
         "level": 2,
         "sensitivity": 1,
         "topic": "ethics"
@@ -354,7 +354,7 @@
     {
         "id": "ethics-007",
         "category": "ethics_and_decision_making",
-        "question": "冗談のつもりで言ったことに、友達が後から傷ついていたと分かった。悪気はなかったとしても、あなたはどこまで謝ったり、行動を変えたりするべきだと思う？",
+        "question": "冗談で言ったことに友達が傷ついていたと後から分かった。悪気がなくても、どこまで謝り、行動を変えるべき？",
         "level": 2,
         "sensitivity": 1,
         "topic": "ethics"
@@ -363,7 +363,7 @@
         "id": "bridge-001",
         "category": "relationships_and_communication",
         "topic": "group_decision_making",
-        "question": "みんなで決める予定で、一人だけ希望が通らなかったら、どこまで合わせてもらうのが公平だと思う？",
+        "question": "みんなで予定を決めるとき、一人だけ希望が通らなかったら、ほかの人はどこまで合わせるべき？",
         "level": 2,
         "sensitivity": 1
     },
@@ -379,7 +379,7 @@
         "id": "bridge-003",
         "category": "relationships_and_communication",
         "topic": "cancelling_plans",
-        "question": "約束の直前に『今日は一人でいたい』と断られたら、理由を聞く？ それとも待つ？",
+        "question": "約束の直前に『今日は一人でいたい』と断られたら、理由を聞く？それとも、相手が話したくなるまでそっとしておく？",
         "level": 2,
         "sensitivity": 1
     },
@@ -411,7 +411,7 @@
         "id": "bridge-007",
         "category": "relationships_and_communication",
         "topic": "helping_limits",
-        "question": "相談に乗りたい友達がいるけれど、自分も余裕がないとき、どこまで手伝うと伝える？",
+        "question": "友達の相談を聞きたいけれど自分にも余裕がないとき、手伝える範囲をどう伝える？",
         "level": 2,
         "sensitivity": 2
     },
@@ -427,7 +427,7 @@
         "id": "bridge-009",
         "category": "relationships_and_communication",
         "topic": "conflicting_confidences",
-        "question": "別々の友達から、同じ出来事について違う秘密を聞いたら、どこまで中立でいられると思う？",
+        "question": "別々の友達から、同じ出来事についてそれぞれ秘密を打ち明けられたら、どちらの味方にもならずにいられる？",
         "level": 2,
         "sensitivity": 2
     },
@@ -435,7 +435,7 @@
         "id": "bridge-010",
         "category": "relationships_and_communication",
         "topic": "constructive_feedback",
-        "question": "友達の投稿や作品が気になったとき、頼まれていなくても感想を伝える？",
+        "question": "友達の投稿や作品を見て何か気づいたことがあったら、頼まれていなくても感想を伝える？",
         "level": 2,
         "sensitivity": 1
     },
@@ -443,7 +443,7 @@
         "id": "bridge-011",
         "category": "school_and_youth",
         "topic": "group_work_fairness",
-        "question": "グループ作業の途中で役割の偏りに気づいたら、その場で分担の見直しを提案する？ 今回は続けて、終わった後に話す？",
+        "question": "グループ作業で、仕事が一人に偏っていると気づいたら、その場で分担を見直そうと提案する？終わった後に話す？",
         "level": 2,
         "sensitivity": 1
     },
@@ -523,7 +523,7 @@
         "id": "bridge-021",
         "category": "relationships_and_communication",
         "topic": "personal_boundaries",
-        "question": "苦手だと伝えたことを相手が冗談で続けたら、何を基準に距離を置くか決める？",
+        "question": "苦手だと伝えたことを相手が冗談で続けたら、どんな場合にその人と距離を置く？",
         "level": 2,
         "sensitivity": 2
     },
@@ -595,7 +595,7 @@
         "id": "bridge-030",
         "category": "school_and_youth",
         "topic": "speaking_up_in_meetings",
-        "question": "話し合いで意見がまとまりそうなときに違和感があったら、最後でも言う？",
+        "question": "話し合いで意見がまとまりそうなとき、納得できないことがあれば最後に伝える？",
         "level": 2,
         "sensitivity": 1
     },

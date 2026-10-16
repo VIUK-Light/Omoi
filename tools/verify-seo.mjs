@@ -23,7 +23,6 @@ const publicPages = [
 const noindexPages = [
     "select.html",
     "question.html",
-    "finish.html",
     "warning.html",
     "warning3.html"
 ];
