@@ -53,8 +53,9 @@ nextButton.addEventListener("click", function () {
     }
 
     if (selectedLevel === "3") {
-        window.location.href =
-            "warning3.html?count=" + selectedCount;
+        const warning3Url = new URL("warning3.html", window.location.href);
+        warning3Url.searchParams.set("count", selectedCount);
+        window.location.href = warning3Url.toString();
 
         return;
     }
