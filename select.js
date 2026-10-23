@@ -29,7 +29,6 @@ nextButton.addEventListener("click", function () {
 
     if (selectedLevel === "4") {
         const warningUrl = new URL("warning.html", window.location.href);
-        warningUrl.searchParams.set("count", selectedCount);
         window.location.href = warningUrl.toString();
 
         return;
@@ -37,7 +36,6 @@ nextButton.addEventListener("click", function () {
 
     if (selectedLevel === "3") {
         const warning3Url = new URL("warning3.html", window.location.href);
-        warning3Url.searchParams.set("count", selectedCount);
         window.location.href = warning3Url.toString();
 
         return;
@@ -45,6 +43,5 @@ nextButton.addEventListener("click", function () {
 
     const questionUrl = new URL("question.html", window.location.href);
     questionUrl.searchParams.set("level", selectedLevel);
-    questionUrl.searchParams.set("count", selectedCount);
     window.location.href = questionUrl.toString();
 });
