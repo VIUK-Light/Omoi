@@ -16,9 +16,10 @@ function setupSelect() {
         disabled: true, click: null,
         addEventListener(event, handler) { this[event] = handler; }
     };
-    const location = { href: '' };
+    const location = { href: 'https://omoi.viuk-light.org/select.html' };
 
     vm.runInNewContext(selectCode, {
+        URL,
         document: {
             querySelectorAll() { return levelInputs; },
             getElementById() { return nextButton; }
@@ -58,14 +59,14 @@ test('Level 3 routes through warning3.html without a count', () => {
     const app = setupSelect();
     app.choose('3');
     app.nextButton.click();
-    assert.equal(app.location.href, 'warning3.html');
+    assert.equal(app.location.href, 'https://omoi.viuk-light.org/warning3.html');
 });
 
 test('Level 4 keeps routing through warning.html', () => {
     const app = setupSelect();
     app.choose('4');
     app.nextButton.click();
-    assert.equal(app.location.href, 'warning.html');
+    assert.equal(app.location.href, 'https://omoi.viuk-light.org/warning.html');
 });
 
 test('Level 1 and 2 go directly to question.html', () => {
@@ -73,7 +74,7 @@ test('Level 1 and 2 go directly to question.html', () => {
         const app = setupSelect();
         app.choose(level);
         app.nextButton.click();
-        assert.equal(app.location.href, `question.html?level=${level}`);
+        assert.equal(app.location.href, `https://omoi.viuk-light.org/question.html?level=${level}`);
     }
 });
 
