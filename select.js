@@ -23,14 +23,20 @@ nextButton.addEventListener("click", function () {
     }
 
     if (selectedLevel === "4") {
-        window.location.href = "warning.html";
+        const warningUrl = new URL("warning.html", window.location.href);
+        window.location.href = warningUrl.toString();
+
         return;
     }
 
     if (selectedLevel === "3") {
-        window.location.href = "warning3.html";
+        const warning3Url = new URL("warning3.html", window.location.href);
+        window.location.href = warning3Url.toString();
+
         return;
     }
 
-    window.location.href = "question.html?level=" + encodeURIComponent(selectedLevel);
+    const questionUrl = new URL("question.html", window.location.href);
+    questionUrl.searchParams.set("level", selectedLevel);
+    window.location.href = questionUrl.toString();
 });
