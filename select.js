@@ -6,7 +6,6 @@ const nextButton =
 
 let selectedLevel = null;
 
-
 levelInputs.forEach(function (input) {
     input.addEventListener("change", function () {
         selectedLevel = input.value;
@@ -14,16 +13,12 @@ levelInputs.forEach(function (input) {
     });
 });
 
-
 function updateNextButton() {
     nextButton.disabled = selectedLevel === null;
 }
 
-
 nextButton.addEventListener("click", function () {
-    if (
-        selectedLevel === null
-    ) {
+    if (selectedLevel === null) {
         return;
     }
 
