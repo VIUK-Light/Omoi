@@ -183,3 +183,15 @@ h1 {
         gap: 12px;
     }
 }
+
+.Kiyaku {
+    margin-top: 10px;
+    font-size: 70%;
+    line-height: 1.8;
+    color: var(--subtext);
+}
+
+.Kiyaku a {
+    color: var(--text);
+    text-underline-offset: 4px;
+}
