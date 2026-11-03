@@ -178,7 +178,7 @@
     {
         "id": "contact-002",
         "category": "relationships_and_communication",
-        "question": "毎日連絡したいタイプ？",
+        "question": "親しい人とは、毎日連絡を取りたい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "contact"
@@ -402,7 +402,7 @@
     {
         "id": "values-020",
         "category": "self_and_values",
-        "question": "相手に合わせることと我慢の違いって何だと思う？",
+        "question": "予定や店選びで人に合わせるとき、納得して譲るのと、嫌と言えず我慢するのはどう違う？",
         "level": 1,
         "sensitivity": 1,
         "topic": "values"
@@ -530,7 +530,7 @@
     {
         "id": "romance-031",
         "category": "relationships_and_communication",
-        "question": "「重い」と「愛情深い」の違いって何だと思う？",
+        "question": "大切な人から、毎日会いたい、すぐに返信してほしいと言われたら、どこまで嬉しく、どこから負担に感じる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "romance"
@@ -874,7 +874,7 @@
     {
         "id": "study-018",
         "category": "school_and_youth",
-        "question": "教えてもらうのと一緒に考えるの、どっちがいい？",
+        "question": "分からないことがあるとき、やり方を教えてもらうのと、一緒に考えるのではどちらが好き？",
         "level": 1,
         "sensitivity": 1,
         "topic": "study"
@@ -970,7 +970,7 @@
     {
         "id": "contact-007",
         "category": "relationships_and_communication",
-        "question": "返信が遅いと不安になる？",
+        "question": "メッセージの返信が遅いと不安になる？相手によって違う？",
         "level": 1,
         "sensitivity": 1,
         "topic": "contact"
@@ -986,7 +986,7 @@
     {
         "id": "contact-009",
         "category": "relationships_and_communication",
-        "question": "会えない日が続いたらどうしたい？",
+        "question": "会いたい人と会えない日が続いたら、どう過ごしたい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "contact"
@@ -994,7 +994,7 @@
     {
         "id": "contact-010",
         "category": "relationships_and_communication",
-        "question": "毎日話すならどんな話がいい？",
+        "question": "毎日誰かと話すなら、どんな話題がいい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "contact"
@@ -1002,7 +1002,7 @@
     {
         "id": "contact-011",
         "category": "relationships_and_communication",
-        "question": "忙しい時はどう伝えてほしい？",
+        "question": "忙しくて連絡が取れないとき、相手からどんなふうに伝えてほしい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "contact"
@@ -1026,7 +1026,7 @@
     {
         "id": "contact-014",
         "category": "relationships_and_communication",
-        "question": "距離が近すぎると疲れることある？",
+        "question": "親しい人でも、長い時間一緒にいると、一人になる時間がほしくなる？",
         "level": 1,
         "sensitivity": 1,
         "topic": "contact"
@@ -1186,7 +1186,7 @@
     {
         "id": "conflict-011",
         "category": "relationships_and_communication",
-        "question": "我慢してしまうことはある？",
+        "question": "頼み事や誘いを断れず、無理をして引き受けてしまうことはある？",
         "level": 1,
         "sensitivity": 1,
         "topic": "conflict"
@@ -1298,7 +1298,7 @@
     {
         "id": "future-018",
         "category": "self_and_values",
-        "question": "支え合う関係ってどんな関係？",
+        "question": "身近な人が疲れているとき、どう支えたい？自分が疲れたときは、どう支えてほしい？",
         "level": 1,
         "sensitivity": 1,
         "topic": "future"
