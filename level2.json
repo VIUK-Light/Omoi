@@ -338,7 +338,7 @@
     {
         "id": "ethics-005",
         "category": "ethics_and_decision_making",
-        "question": "グループで意見がぶつかった。自分は悪くないと思うが、自分が謝れば話は早く終わりそう。納得していなくても謝る？",
+        "question": "話し合って決めたグループ課題の分担に、友達から「自分の作業が多すぎる」と責められた。自分に落ち度はないと思うが、謝れば話は収まりそう。納得していなくても謝る？",
         "level": 2,
         "sensitivity": 1,
         "topic": "ethics"
@@ -435,7 +435,7 @@
         "id": "bridge-010",
         "category": "relationships_and_communication",
         "topic": "constructive_feedback",
-        "question": "友達の投稿や作品を見て何か気づいたことがあったら、頼まれていなくても感想を伝える？",
+        "question": "友達がSNSに載せた絵を見て、色を変えるともっと見やすくなると思った。頼まれていなくても、感想や改善案を伝える？",
         "level": 2,
         "sensitivity": 1
     },
@@ -451,7 +451,7 @@
         "id": "bridge-012",
         "category": "relationships_and_communication",
         "topic": "correcting_in_public",
-        "question": "友達の間違いに気づいたとき、みんなの前で直すのと後で伝えるのは、どう使い分ける？",
+        "question": "友達がみんなの前で、好きな作品の登場人物の名前を言い間違えた。その場で訂正する？後で本人に伝える？どう使い分ける？",
         "level": 2,
         "sensitivity": 1
     },
@@ -531,7 +531,7 @@
         "id": "bridge-022",
         "category": "school_and_youth",
         "topic": "game_rules",
-        "question": "遊びやゲームで、一部の人だけが有利なルールになっていたら、楽しければそのままでいいと思う？",
+        "question": "みんなで遊ぶゲームで、慣れた人だけが初心者より強い道具を使える。楽しんでいる人が多ければ、ルールを変えなくてもいいと思う？",
         "level": 2,
         "sensitivity": 1
     },
