@@ -1,8 +1,8 @@
 # Omoi
 
 <img
-  src="https://github.com/user-attachments/assets/aa523935-5b32-48c8-8121-5021506581cc"
-  alt="Omoi home screen"
+  src="docs/screenshots/home.png"
+  alt="Omoiのホーム画面"
   width="320"
 />
 
@@ -17,8 +17,8 @@ Omoiは、同じ考えになるためのものではありません。
 
 1. カテゴリーを選びます。
 2. 表示された質問について話します。
-3. Level 3・4では、必要なら「この問いを知る」から背景や異なる考え方を確認できます。
-4. 話したくない質問は「今回は話さない」で飛ばせます。
+3. Level 3・4では、必要なら「問いの背景」から背景や異なる考え方を確認できます。
+4. 話したくない質問は「次の問いを見る」で飛ばせます。
 
 正解を決める必要はありません。
 「なぜそう思う？」まで話してみてください。
@@ -38,15 +38,15 @@ Level 4の前には警告画面があります。Omoiは対話のきっかけで
 **重い話題**
 
 <img
-  src="https://github.com/user-attachments/assets/9ebdc0a9-3d38-4a8e-87ae-edb80ff95eca"
-  alt="Omoi question screen"
+  src="docs/screenshots/question-level3.png"
+  alt="OmoiのLevel 3の質問画面。会話のヒント、問いの背景、次の問いを見るボタンを表示"
   width="320"
 />
 
 社会問題や倫理観についての重い話題を扱います。
 被害者加害者目線どちらも質問に含まれています。
 
-## 「この問いを知る」
+## 「問いの背景」
 
 背景解説があるのは、現在 Level 3 と Level 4 の質問です。Level 1 と Level 2 にはありません。
 
