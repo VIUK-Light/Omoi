@@ -2,7 +2,7 @@
     {
         "id": "relationship-001",
         "category": "relationships_and_communication",
-        "question": "友達のためなら、嘘をついてもいい？",
+        "question": "寝坊で遅刻した友達から、ほかの人には「電車が遅れた」と説明してほしいと頼まれた。友達をかばって嘘をつく？",
         "level": 2,
         "sensitivity": 1,
         "topic": "relationship"
@@ -10,7 +10,7 @@
     {
         "id": "support-001",
         "category": "school_and_youth",
-        "question": "友達がルールを破っているのを見たら、どう対応する？ その場で注意するか、別の方法を選ぶかは何で決める？",
+        "question": "友達が、学校で使用禁止の時間にスマホで遊んでいる。その場で注意する？別の方法を選ぶ？何で決める？",
         "level": 2,
         "sensitivity": 1,
         "topic": "support"
@@ -18,7 +18,7 @@
     {
         "id": "support-002",
         "category": "school_and_youth",
-        "question": "友達との問題を、信頼できる人に相談するのをためらう？ためらうなら、何が気になる？",
+        "question": "友達に嫌なあだ名で呼ばれ続けている。別の人に相談するのをためらうなら、何が気になる？",
         "level": 2,
         "sensitivity": 1,
         "topic": "support"
@@ -26,7 +26,7 @@
     {
         "id": "support-003",
         "category": "school_and_youth",
-        "question": "友達同士で解決できることって何？",
+        "question": "友達に貸した物が返ってこない。二人で話し合うのと、先生などに間に入ってもらうのは、どう使い分ける？",
         "level": 2,
         "sensitivity": 1,
         "topic": "support"
@@ -42,7 +42,7 @@
     {
         "id": "support-005",
         "category": "school_and_youth",
-        "question": "自分が何か間違ったことをしたとき、友達に指摘してほしい？",
+        "question": "友達との約束を忘れて相手を待たせてしまった。自分で気づいていなくても、友達に指摘してほしい？",
         "level": 2,
         "sensitivity": 1,
         "topic": "support"
@@ -50,7 +50,7 @@
     {
         "id": "support-006",
         "category": "school_and_youth",
-        "question": "理由に納得できない学校のルールでも、守るべきだと思う？",
+        "question": "「靴下は白だけ」という校則に、理由を聞いても納得できない。ルールが変わるまでは守るべきだと思う？",
         "level": 2,
         "sensitivity": 1,
         "topic": "support"
@@ -162,7 +162,7 @@
     {
         "id": "support-008",
         "category": "school_and_youth",
-        "question": "問題を信頼できる人に伝えることと、「チクる」ことはどう違う？",
+        "question": "友達がほかの人の持ち物を隠している。先生へ伝えることを「チクる」と責められたら、助けを求めることとの違いをどう説明する？",
         "level": 2,
         "sensitivity": 2,
         "topic": "support"
@@ -170,7 +170,7 @@
     {
         "id": "support-011",
         "category": "school_and_youth",
-        "question": "自分に直接関係ないトラブルでも、信頼できる人に相談する？",
+        "question": "あまり話したことのない同級生が、グループから無視されている。自分に直接の被害がなくても、先生などに相談する？",
         "level": 2,
         "sensitivity": 2,
         "topic": "support"
@@ -186,7 +186,7 @@
     {
         "id": "support-015",
         "category": "school_and_youth",
-        "question": "ルールを破った人より、問題を伝えた人が責められるのはどう思う？",
+        "question": "授業中にスマホで遊んだ人より、それを先生に伝えた人が仲間から責められた。この責め方をどう思う？",
         "level": 2,
         "sensitivity": 2,
         "topic": "support"
@@ -194,7 +194,7 @@
     {
         "id": "support-016",
         "category": "school_and_youth",
-        "question": "正しいと思う意見を伝えた人が「空気を壊した」と言われたら、意見の内容と伝え方をどう分けて考える？",
+        "question": "グループ作業が一人に偏っていると伝えた人が、「空気を壊した」と言われた。意見の内容と伝え方をどう分けて考える？",
         "level": 2,
         "sensitivity": 2,
         "topic": "support"
@@ -290,7 +290,7 @@
     {
         "id": "jealousy-016",
         "category": "relationships_and_communication",
-        "question": "嘘をつかれたらどこまで許せる？",
+        "question": "恋人が「家にいた」と言っていた日に、友達と遊んでいたと分かった。何を確かめて、許せるかを決める？",
         "level": 2,
         "sensitivity": 1,
         "topic": "jealousy"
@@ -314,7 +314,7 @@
     {
         "id": "ethics-001",
         "category": "ethics_and_decision_making",
-        "question": "親しい友達と、あまり知らない人が同時に困っている。助けられるのが一人なら、どちらを先に助ける？決め手は何？",
+        "question": "親友と、あまり知らない同級生から、同じ締切の宿題を手伝ってほしいと頼まれた。一人しか手伝えないなら、どちらを選ぶ？決め手は何？",
         "level": 2,
         "sensitivity": 1,
         "topic": "ethics"
@@ -338,7 +338,7 @@
     {
         "id": "ethics-005",
         "category": "ethics_and_decision_making",
-        "question": "グループで意見がぶつかった。自分は悪くないと思うが、自分が謝れば話は早く終わりそう。納得していなくても謝る？",
+        "question": "話し合って決めたグループ課題の分担に、友達から「自分の作業が多すぎる」と責められた。自分に落ち度はないと思うが、謝れば話は収まりそう。納得していなくても謝る？",
         "level": 2,
         "sensitivity": 1,
         "topic": "ethics"
@@ -387,7 +387,7 @@
         "id": "bridge-004",
         "category": "relationships_and_communication",
         "topic": "value_differences",
-        "question": "友達と大事にしていることが違うと分かったとき、分かり合おうとするのはどこまで必要だと思う？",
+        "question": "あなたは遊ぶ予定を先に決めたいが、友達は当日の気分で変えたいと言う。考えが違っても、どこまで分かり合おうとする？",
         "level": 2,
         "sensitivity": 1
     },
@@ -427,7 +427,7 @@
         "id": "bridge-009",
         "category": "relationships_and_communication",
         "topic": "conflicting_confidences",
-        "question": "別々の友達から、同じ出来事についてそれぞれ秘密を打ち明けられたら、どちらの味方にもならずにいられる？",
+        "question": "仲たがいした二人から、それぞれ「相手に悪口を言われた。誰にも言わないで」と相談された。どちらの味方にもならずに話を聞ける？",
         "level": 2,
         "sensitivity": 2
     },
@@ -435,7 +435,7 @@
         "id": "bridge-010",
         "category": "relationships_and_communication",
         "topic": "constructive_feedback",
-        "question": "友達の投稿や作品を見て何か気づいたことがあったら、頼まれていなくても感想を伝える？",
+        "question": "友達がSNSに載せた絵を見て、色を変えるともっと見やすくなると思った。頼まれていなくても、感想や改善案を伝える？",
         "level": 2,
         "sensitivity": 1
     },
@@ -451,7 +451,7 @@
         "id": "bridge-012",
         "category": "relationships_and_communication",
         "topic": "correcting_in_public",
-        "question": "友達の間違いに気づいたとき、みんなの前で直すのと後で伝えるのは、どう使い分ける？",
+        "question": "友達がみんなの前で、好きな作品の登場人物の名前を言い間違えた。その場で訂正する？後で本人に伝える？どう使い分ける？",
         "level": 2,
         "sensitivity": 1
     },
@@ -459,7 +459,7 @@
         "id": "bridge-013",
         "category": "work_and_economy",
         "topic": "shared_expenses",
-        "question": "みんなで使ったお金を割り勘にするとき、使った量が違うならどう分けるのが納得できる？",
+        "question": "友達との食事で、自分は一品だけ、ほかの人は何品も注文した。同額の割り勘と、注文した分だけ払うのでは、どちらが納得できる？",
         "level": 2,
         "sensitivity": 1
     },
@@ -523,7 +523,7 @@
         "id": "bridge-021",
         "category": "relationships_and_communication",
         "topic": "personal_boundaries",
-        "question": "苦手だと伝えたことを相手が冗談で続けたら、どんな場合にその人と距離を置く？",
+        "question": "「そのあだ名で呼ばないで」と伝えても、友達が冗談だと言って呼び続ける。どんな場合に距離を置く？",
         "level": 2,
         "sensitivity": 2
     },
@@ -531,7 +531,7 @@
         "id": "bridge-022",
         "category": "school_and_youth",
         "topic": "game_rules",
-        "question": "遊びやゲームで、一部の人だけが有利なルールになっていたら、楽しければそのままでいいと思う？",
+        "question": "みんなで遊ぶゲームで、慣れた人だけが初心者より強い道具を使える。楽しんでいる人が多ければ、ルールを変えなくてもいいと思う？",
         "level": 2,
         "sensitivity": 1
     },
@@ -539,7 +539,7 @@
         "id": "bridge-023",
         "category": "society_public_policy_and_environment",
         "topic": "everyday_environmental_choices",
-        "question": "少し不便でも環境のために選び方を変えることを、周りに求めていいと思う？",
+        "question": "ごみを減らすため、買い物では毎回マイバッグを持つよう友達に求めてよいと思う？少し手間が増えても？",
         "level": 2,
         "sensitivity": 1
     },
@@ -619,7 +619,7 @@
         "id": "bridge-033",
         "category": "justice_safety_and_crime",
         "topic": "everyday_safety_rules",
-        "question": "危ないと思う行動を友達がしていたら、嫌がられても止めるべきだと思う？",
+        "question": "友達が、車が来ていないからと赤信号で道路を渡ろうとしている。嫌がられても止めるべきだと思う？",
         "level": 2,
         "sensitivity": 1
     },
