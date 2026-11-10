@@ -7,6 +7,7 @@ import { createHash } from "node:crypto";
 import { isDeepStrictEqual } from "node:util";
 
 export const REVIEW_BASE_COMMIT = "3eeff5a9618ba1503d2716c6fe89d47d30bd710d";
+export const ACTIVE_LEVELS = Object.freeze([2, 3, 4]);
 const helperFields = new Set(["summary", "hints", "detail", "terms"]);
 const nonEmpty = value => typeof value === "string" && value.trim() !== "";
 const core = record => Object.fromEntries(Object.entries(record).filter(([key]) => !helperFields.has(key)));
@@ -15,15 +16,19 @@ export const fingerprintQuestion = record => createHash("sha256").update(JSON.st
 export function validateV3Review({ review, currentByLevel, baseByLevel, currentRaw, baseRaw }) {
     const errors = [];
     const add = (code, message, id) => errors.push({ code, message, ...(id ? { id } : {}) });
-    if (!review || review.version !== 1 || review.baseCommit !== REVIEW_BASE_COMMIT || !Array.isArray(review.records)) {
-        add("invalid_review_manifest", "Review version 1 must identify the fixed pre-v3 base and contain a records array.");
+    if (!review || review.version !== 1 || review.baseCommit !== REVIEW_BASE_COMMIT || !isDeepStrictEqual(review.activeLevels, ACTIVE_LEVELS) || !Array.isArray(review.records)) {
+        add("invalid_review_manifest", "Review version 1 must identify the fixed pre-v3 base, active Levels 2/3/4, and a records array.");
         return errors;
+    }
+
+    if (Object.hasOwn(currentByLevel, 1) || Object.hasOwn(currentRaw, 1)) {
+        add("retired_level_present", "Level 1 is retired; level1.json and Level 1 records must not be present.");
     }
 
     const current = new Map();
     const eligible = new Map();
     let total = 0;
-    for (const level of [1, 2, 3, 4]) {
+    for (const level of ACTIVE_LEVELS) {
         const before = baseByLevel[level];
         const after = currentByLevel[level];
         if (!Array.isArray(before) || !Array.isArray(after)) {
@@ -32,7 +37,7 @@ export function validateV3Review({ review, currentByLevel, baseByLevel, currentR
         }
         total += after.length;
         if (before.length !== after.length) add("changed_card_count", `Level ${level} card count changed.`);
-        if (level <= 2 && (typeof currentRaw[level] !== "string" || currentRaw[level] !== baseRaw[level])) {
+        if (level === 2 && (typeof currentRaw[level] !== "string" || currentRaw[level] !== baseRaw[level])) {
             add("changed_lower_level_file", `Level ${level} must remain byte-for-byte unchanged.`);
         }
         const originals = new Map(before.map(record => [record.id, record]));
@@ -49,7 +54,7 @@ export function validateV3Review({ review, currentByLevel, baseByLevel, currentR
             if (level >= 3) eligible.set(record.id, record);
         }
     }
-    if (total !== 906) add("wrong_total_count", "The v3 preview must retain all 906 cards.");
+    if (total !== 743) add("wrong_total_count", "The v3 preview must retain all 743 active Level 2/3/4 cards.");
     if (eligible.size !== 663) add("wrong_review_scope", "The review must cover all 663 Level 3/4 cards.");
 
     const reviewed = new Set();
@@ -86,15 +91,21 @@ export function verifyRepository(repositoryRoot) {
     const review = JSON.parse(fs.readFileSync(path.join(repositoryRoot, "docs/v3-content-review.json"), "utf8"));
     const currentRaw = {}, baseRaw = {}, currentByLevel = {}, baseByLevel = {};
     for (const level of [1, 2, 3, 4]) {
-        currentRaw[level] = fs.readFileSync(path.join(repositoryRoot, `level${level}.json`), "utf8");
         baseRaw[level] = execFileSync("git", ["show", `${REVIEW_BASE_COMMIT}:level${level}.json`], {
             cwd: repositoryRoot, encoding: "utf8", maxBuffer: 10 * 1024 * 1024
         });
-        currentByLevel[level] = JSON.parse(currentRaw[level]);
         baseByLevel[level] = JSON.parse(baseRaw[level]);
+    }
+    for (const level of ACTIVE_LEVELS) {
+        currentRaw[level] = fs.readFileSync(path.join(repositoryRoot, `level${level}.json`), "utf8");
+        currentByLevel[level] = JSON.parse(currentRaw[level]);
+    }
+    if (fs.existsSync(path.join(repositoryRoot, "level1.json"))) {
+        currentRaw[1] = fs.readFileSync(path.join(repositoryRoot, "level1.json"), "utf8");
     }
     return {
         baseCommit: REVIEW_BASE_COMMIT,
+        activeLevels: [...ACTIVE_LEVELS],
         totalCards: Object.values(currentByLevel).reduce((sum, rows) => sum + rows.length, 0),
         reviewedCards: review.records?.length ?? 0,
         findings: validateV3Review({ review, currentByLevel, baseByLevel, currentRaw, baseRaw })
@@ -103,13 +114,13 @@ export function verifyRepository(repositoryRoot) {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
     if (process.argv.includes("--help")) {
-        console.log("Usage: node tools/verify-v3-review.mjs [--summary]\nChecks complete independent review and preservation of the pre-v3 question content.");
+        console.log("Usage: node tools/verify-v3-review.mjs [--summary]\nChecks complete independent review, Level 1 retirement, and preservation of the 743 active questions.");
     } else {
         try {
             const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
             const report = verifyRepository(repositoryRoot);
             console.log(JSON.stringify(process.argv.includes("--summary") ? {
-                baseCommit: report.baseCommit, totalCards: report.totalCards,
+                baseCommit: report.baseCommit, activeLevels: report.activeLevels, totalCards: report.totalCards,
                 reviewedCards: report.reviewedCards, errors: report.findings.length
             } : report, null, 2));
             if (report.findings.length) process.exitCode = 1;

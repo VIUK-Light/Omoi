@@ -57,7 +57,7 @@ test('normal warning flow offers optional helpers without preview queries or dia
   expect(errors).toEqual([]);
 });
 
-for (const level of [1, 2]) {
+for (const level of [2]) {
   test(`Level ${level} never offers helpers even if unexpected data includes them`, async ({ page }) => {
     await page.route(`**/level${level}.json`, route => route.fulfill({ json: [{ ...completeCard, level }] }));
     await page.goto(`/question.html?level=${level}`);
@@ -87,3 +87,20 @@ test('terms-only background and hints-only questions do not require a detail exp
   await page.locator('#hintButton').click();
   await expect(page.locator('#hintsPanel')).toBeVisible();
 });
+
+for (const prefix of ['/', '/preview/omoi-v3/']) {
+  test(`retired Level 1 is rejected before fetching and returns to active selection: ${prefix}`, async ({ page }) => {
+    const datasetRequests = [];
+    page.on('request', request => {
+      if (/\/level[0-9]+\.json(?:\?|$)/.test(request.url())) datasetRequests.push(request.url());
+    });
+    await page.goto(`${prefix}question.html?level=1`);
+    await expect(page.locator('#questionText')).toContainText('条件が正しくありません');
+    await expect(page.locator('#nextQuestionButton')).toBeDisabled();
+    await expect(page.locator('#retryLoadButton')).toBeHidden();
+    expect(datasetRequests).toEqual([]);
+    await page.locator('.back-link').click();
+    await expect(page).toHaveURL(new RegExp(`${prefix}select.html`));
+    expect(await page.locator('input[name="level"]').evaluateAll(inputs => inputs.map(input => input.value))).toEqual(['2', '3', '4']);
+  });
+}

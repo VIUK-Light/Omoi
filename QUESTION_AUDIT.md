@@ -1,6 +1,6 @@
 # Omoi 質問データ監査
 
-> **履歴スナップショット:** 以下は基準コミット `e2c0d73` 時点の監査記録です。現在の正本は `Beta` の `5c87e79` で、643カード（L1: 163 / L2: 80 / L3: 168 / L4: 232）です。現行のスキーマ・必須metadata・品質目標は [QUESTION_DATA_SCHEMA.md](QUESTION_DATA_SCHEMA.md) と `node tools/verify-question-dataset.mjs --enforce-quality-targets` を正とします。
+> **履歴スナップショット:** 以下は過去の監査記録で、Level 1を含む件数は現在の v3 には適用しません。現在の v3 はLevel 2・3・4の全743問です。現行のルールは [QUESTION_DATA_SCHEMA.md](QUESTION_DATA_SCHEMA.md)、採用構成は [README](README.md) を参照してください。
 
 **基準コミット:** `e2c0d73`（2026-08-27）
 **監査対象:** `level1.json`〜`level4.json`、質問表示フロー

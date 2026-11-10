@@ -6,6 +6,7 @@ import { renderSummaryContent } from "./summary-content.mjs";
 
 const params = new URLSearchParams(window.location.search);
 const level = Number(params.get("level"));
+const allowedLevels = new Set(["2", "3", "4"]);
 let previewState = { sampleId: null };
 let previewError = "";
 try {
@@ -207,7 +208,8 @@ function validateQuestions(questions) {
 }
 
 async function loadQuestions() {
-    if (state === "loading") return;
+    if (state === "loading" || !allowedLevels.has(params.get("level")) ||
+        params.getAll("level").length !== 1) return;
     setState("loading");
     showMessage("読み込み中...");
     sessionQuestions = [];
@@ -245,7 +247,7 @@ retryLoadButton.addEventListener("click", loadQuestions);
 if (previewError) {
     setState("invalid");
     showMessage(previewError);
-} else if (!["1", "2", "3", "4"].includes(params.get("level")) ||
+} else if (!allowedLevels.has(params.get("level")) ||
     params.getAll("level").length !== 1) {
     setState("invalid");
     showMessage("質問の条件が正しくありません。「レベルを変える」から選び直してください。");

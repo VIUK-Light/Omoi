@@ -1,3 +1,5 @@
+> **旧計画の記録:** Level 1を含む以前の追加案です。現在の v3 はLevel 2・3・4で運用し、この文書のLevel 1の追加目標は適用しません。現行の構成・編集条件はREADMEとQUESTION_DATA_SCHEMA.mdを参照してください。
+
 # Omoi 将来追加のための調査ロードマップ
 
 > **履歴文書:** この文書中の件数と「今回追加しない」という記述は、基準コミット `e2c0d73` 時点の計画です。現在のデータスキーマ・品質基準は [QUESTION_DATA_SCHEMA.md](QUESTION_DATA_SCHEMA.md) と `tools/verify-question-dataset.mjs` を正とします。

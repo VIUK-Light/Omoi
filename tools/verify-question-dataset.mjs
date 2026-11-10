@@ -7,7 +7,8 @@ import { validateQuestionSupport } from "./question-support-schema.mjs";
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = path.resolve(scriptDirectory, "..");
-const questionFiles = ["level1.json", "level2.json", "level3.json", "level4.json"];
+const activeLevels = [2, 3, 4];
+const questionFiles = activeLevels.map(level => `level${level}.json`);
 const argumentsSet = new Set(process.argv.slice(2));
 const reportOnly = argumentsSet.has("--report-only");
 const outputJson = argumentsSet.has("--json");
@@ -162,6 +163,10 @@ function validateContentWarnings(record) {
     }
 }
 
+if (fs.existsSync(path.join(repositoryRoot, "level1.json"))) {
+    addFinding("error", "retired_level_present", "Level 1 is retired; remove level1.json from this version.", { file: "level1.json" });
+}
+
 for (const fileName of questionFiles) {
     const filePath = path.join(repositoryRoot, fileName);
     const expectedLevel = Number(fileName.match(/\d+/)?.[0]);
@@ -202,8 +207,8 @@ for (const fileName of questionFiles) {
             addFinding("error", "invalid_question", "question must be a non-empty string.", record);
         }
 
-        if (!Number.isInteger(entry.level) || entry.level < 1 || entry.level > 4) {
-            addFinding("error", "invalid_level", "level must be an integer from 1 to 4.", record);
+        if (!Number.isInteger(entry.level) || !activeLevels.includes(entry.level)) {
+            addFinding("error", "invalid_level", "level must be one of the active integers 2, 3, or 4.", record);
         } else if (entry.level !== expectedLevel) {
             addFinding("error", "level_file_mismatch", "Card level does not match its level*.json file.", record);
         }
@@ -273,7 +278,7 @@ const levelCounts = Object.fromEntries(questionFiles.map((fileName) => [
     records.filter((record) => record.file === fileName).length
 ]));
 
-const internalLevelCounts = Object.fromEntries([1, 2, 3, 4].map((level) => [
+const internalLevelCounts = Object.fromEntries(activeLevels.map((level) => [
     `level${level}`,
     records.filter((record) => record.level === level).length
 ]));

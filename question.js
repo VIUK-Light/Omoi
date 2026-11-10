@@ -1,5 +1,6 @@
 const params = new URLSearchParams(window.location.search);
 const level = Number(params.get("level"));
+const allowedLevels = new Set(["2", "3", "4"]);
 
 const questionText = document.getElementById("questionText");
 const scenarioBlock = document.getElementById("scenarioBlock");
@@ -187,7 +188,8 @@ function setQuestionSummaryOpen(isOpen) {
 }
 
 async function loadQuestions() {
-    if (state === "loading") return;
+    if (state === "loading" || !allowedLevels.has(params.get("level")) ||
+        params.getAll("level").length !== 1) return;
     setState("loading");
     showMessage("読み込み中...");
     sessionQuestions = [];
@@ -222,7 +224,7 @@ async function loadQuestions() {
 }
 
 retryLoadButton.addEventListener("click", loadQuestions);
-if (!["1", "2", "3", "4"].includes(params.get("level")) ||
+if (!allowedLevels.has(params.get("level")) ||
     params.getAll("level").length !== 1) {
     setState("invalid");
     showMessage("質問の条件が正しくありません。「レベルを変える」から選び直してください。");

@@ -7,21 +7,22 @@ const levelInputs =
 const nextButton =
     document.getElementById("nextButton");
 
+const allowedLevels = new Set(["2", "3", "4"]);
 let selectedLevel = null;
 
 levelInputs.forEach(function (input) {
     input.addEventListener("change", function () {
-        selectedLevel = input.value;
+        selectedLevel = allowedLevels.has(input.value) ? input.value : null;
         updateNextButton();
     });
 });
 
 function updateNextButton() {
-    nextButton.disabled = selectedLevel === null;
+    nextButton.disabled = !allowedLevels.has(selectedLevel);
 }
 
 nextButton.addEventListener("click", function () {
-    if (selectedLevel === null) {
+    if (!allowedLevels.has(selectedLevel)) {
         return;
     }
 

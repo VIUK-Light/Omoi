@@ -14,8 +14,8 @@ test('each helper is optional, including terms without a background explanation'
     ]) assert.deepEqual(validateQuestionSupport({ level: 3, ...support }), []);
 });
 
-test('Level 1/2 do not accept helpers even when their structure is valid', () => {
-    for (const level of [1, 2]) {
+test('Level 2 accepts an ordinary card but never supplemental helpers', () => {
+    for (const level of [2]) {
         assert.deepEqual(validateQuestionSupport({ level }), []);
         assert.ok(validateQuestionSupport({ level, hints: ['A question?'] }).some(error => error.code === 'helper_level_not_supported'));
     }

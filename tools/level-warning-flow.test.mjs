@@ -69,8 +69,8 @@ test('Level 4 keeps routing through warning.html', () => {
     assert.equal(app.location.href, 'https://omoi.viuk-light.org/warning.html');
 });
 
-test('Level 1 and 2 go directly to question.html', () => {
-    for (const level of ['1', '2']) {
+test('Level 2 goes directly to question.html', () => {
+    for (const level of ['2']) {
         const app = setupSelect();
         app.choose(level);
         app.nextButton.click();
@@ -83,4 +83,14 @@ test('warning pages continue to questions without a count', () => {
     const level4 = setupWarning(warningCode);
     assert.equal(level3.continueLink.href, 'question.html?level=3');
     assert.equal(level4.continueLink.href, 'question.html?level=4');
+});
+
+test('retired Level 1 cannot enable next or navigate, even after a valid choice', () => {
+    const app = setupSelect();
+    app.choose('2');
+    assert.equal(app.nextButton.disabled, false);
+    app.choose('1');
+    assert.equal(app.nextButton.disabled, true);
+    app.nextButton.click();
+    assert.equal(app.location.href, 'https://omoi.viuk-light.org/select.html');
 });

@@ -5,14 +5,14 @@ import vm from 'node:vm';
 
 const code = fs.readFileSync(new URL('../question.js', import.meta.url), 'utf8');
 const cards = Array.from({ length: 5 }, (_, i) => ({
-    id: `test-${i}`, level: 1, question: `Question ${i}`
+    id: `test-${i}`, level: 2, question: `Question ${i}`
 }));
 const helperCards = cards.map(card => ({
     ...card, level: 3,
     detail: { text: 'Background', sources: [{ title: 'Reviewed source', url: 'https://example.test/source' }] }
 }));
 const flush = () => new Promise(resolve => setImmediate(resolve));
-function setup(search = '?level=1') {
+function setup(search = '?level=2') {
     const elements = new Map();
     const element = id => {
         if (!elements.has(id)) elements.set(id, {
@@ -92,7 +92,7 @@ test('finish button opens an Omoi confirmation dialog', async () => {
     app.element('finishButton').click();
     assert.equal(app.element('finishConfirmDialog').open, true);
     assert.equal(app.element('cancelFinishButton').focused, true);
-    assert.equal(app.location.href, 'https://example.test/question.html?level=1');
+    assert.equal(app.location.href, 'https://example.test/question.html?level=2');
 });
 
 test('confirming finish ends the session', async () => {
@@ -111,7 +111,7 @@ test('canceling finish confirmation keeps the current session open', async () =>
     app.element('finishButton').click();
     app.element('cancelFinishButton').click();
     assert.equal(app.element('finishConfirmDialog').open, false);
-    assert.equal(app.location.href, 'https://example.test/question.html?level=1');
+    assert.equal(app.location.href, 'https://example.test/question.html?level=2');
     assert.equal(app.element('finishButton').disabled, false);
     assert.equal(app.element('finishButton').focused, true);
 });
@@ -130,14 +130,14 @@ test('previous question navigation is disabled initially and returns to the prio
 });
 
 test('legacy count parameter does not limit available questions', async () => {
-    const app = setup('?level=1&count=1');
+    const app = setup('?level=2&count=1');
     app.respond(); await flush();
     for (let i = 0; i < 4; i++) app.element('nextQuestionButton').click();
     app.element('nextQuestionButton').click();
     assert.equal(app.location.href, 'index.html');
 });
 
-for (const search of ['?', '?level=0', '?level=1&level=2']) {
+for (const search of ['?', '?level=0', '?level=1', '?level=1&level=2', '?level=2&level=2']) {
     test(`invalid parameters do not fetch: ${search}`, () => {
         const app = setup(search);
         assert.equal(app.requests.length, 0);
@@ -153,7 +153,7 @@ for (const failure of ['http', 'network', 'json', 'shape', 'card', 'timeout']) {
         if (failure === 'network') app.requests[0].reject(new Error('Offline'));
         if (failure === 'json') app.requests[0].resolve({ ok: true, json: async () => { throw new SyntaxError('Bad JSON'); } });
         if (failure === 'shape') app.respond({});
-        if (failure === 'card') app.respond([{ level: 1, question: null }]);
+        if (failure === 'card') app.respond([{ level: 2, question: null }]);
         if (failure === 'timeout') app.timeout();
         await flush();
         assert.equal(app.errors.length, 1);
@@ -292,8 +292,8 @@ test('summary, hints and background are mutually exclusive, and Escape restores 
     assert.equal(app.element('questionSummaryText').children.length, 0);
 });
 
-test('Level 1/2 ignore well-formed helpers even if unexpected data includes them', async () => {
-    for (const level of [1, 2]) {
+test('Level 2 ignores well-formed helpers even if unexpected data includes them', async () => {
+    for (const level of [2]) {
         const app = setup(`?level=${level}`);
         app.respond([{ ...helperCards[0], level, summary: [{ type: 'text', text: 'Not for this level.' }], hints: ['A hint?'], terms: [{ term: 'Term', definition: 'Meaning' }] }]);
         await flush();

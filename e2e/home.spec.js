@@ -10,6 +10,8 @@ test('home opens category selection and enables the next step', async ({ page })
   await expect(page.getByRole('heading', { name: 'どんな話をしたい？' })).toBeVisible();
   const nextButton = page.getByRole('button', { name: '次へ' });
   await expect(nextButton).toBeDisabled();
-  await page.getByText('日常や自分のこと', { exact: true }).click();
+  await expect(page.locator('input[name="level"]')).toHaveCount(3);
+  await expect(page.locator('#level1')).toHaveCount(0);
+  await page.locator('label[for="level2"]').click();
   await expect(nextButton).toBeEnabled();
 });
