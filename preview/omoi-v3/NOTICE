@@ -1,0 +1,90 @@
+Omoi v3 preview — notices and license boundaries
+
+Required Notice: Copyright (c) 2026 VIUK-Light — https://viuk-light.org/
+
+New Omoi v3-specific code and changes, new documentation, and new independent
+relation-diagram annotations are supplied under the custom Omoi v3
+Noncommercial Attribution License 1.0 in the complete accompanying LICENSE.
+The new license does not cover pre-existing MIT portions or copied/adapted
+CC BY-SA content. It is modified from PolyForm Noncommercial 1.0.0, not the
+stock license and not an alternative grant of that stock license.
+
+Ordinary use of VIUK-Light's Official Service is free for commercial and
+noncommercial purposes. Commercial copying, modification, redistribution,
+rehosting, or incorporation of Covered Material is not licensed. Both LICENSE
+and NOTICE must accompany noncommercial copies; derivative interfaces also
+require VIUK-Light attribution linked to https://viuk-light.org/ in an About
+section or visible footer. The attribution identifies provenance, not
+endorsement. See LICENSE for the complete conditions.
+
+1. Retained Omoi v2 code
+
+Inherited portions of copied HTML, CSS and JavaScript retain the existing MIT
+License below. New modifications are covered only to the extent they are new
+copyrightable contributions. Previously granted rights to the old portions
+remain available, including their MIT commercial permissions.
+Source: https://github.com/VIUK-Light/Omoi
+
+MIT License
+
+Copyright (c) 2026 VIUK-Light
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+2. Existing question and explanation content
+
+Existing question text, scenarios, background explanations, hints and terms
+from level1.json through level4.json remain under Creative Commons
+Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+Copyright (c) 2026 VIUK-Light — https://viuk-light.org/
+Source: https://github.com/VIUK-Light/Omoi
+License: https://creativecommons.org/licenses/by-sa/4.0/
+
+Quotes and adaptations of that content retain its applicable attribution and
+share-alike requirements; they are not converted to noncommercial-only terms
+by this preview. New independent diagram data, distinct from those inherited
+or adapted portions, is identified separately under the custom license.
+
+3. Relation-diagram component and third-party dependency
+
+The new component is distributed with its own LICENSE and NOTICE at
+../../packages/relation-diagram/. Cytoscape.js 3.34.4 retains its MIT license
+in ../../packages/relation-diagram/vendor/cytoscape-LICENSE.txt, reproduced
+below. Retain this notice and the vendor license when distributing copies.
+Source: https://github.com/cytoscape/cytoscape.js/tree/v3.34.4
+
+Copyright (c) 2016-2026, The Cytoscape Consortium.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the “Software”), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

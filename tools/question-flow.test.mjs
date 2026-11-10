@@ -5,8 +5,11 @@ import vm from 'node:vm';
 
 const code = fs.readFileSync(new URL('../question.js', import.meta.url), 'utf8');
 const cards = Array.from({ length: 5 }, (_, i) => ({
-    id: `test-${i}`, level: 1, question: `Question ${i}`,
-    detail: { text: 'Background', sources: [] }
+    id: `test-${i}`, level: 1, question: `Question ${i}`
+}));
+const helperCards = cards.map(card => ({
+    ...card, level: 3,
+    detail: { text: 'Background', sources: [{ title: 'Reviewed source', url: 'https://example.test/source' }] }
 }));
 const flush = () => new Promise(resolve => setImmediate(resolve));
 function setup(search = '?level=1') {
@@ -173,7 +176,7 @@ test('empty data is distinct from failure', async () => {
 });
 
 test('detail button toggles the compact background panel and resets on navigation', async () => {
-    const app = setup(); app.respond(); await flush();
+    const app = setup('?level=3'); app.respond(helperCards); await flush();
     app.element('detailButton').click();
     assert.equal(app.element('detailPanel').hidden, false);
     assert.equal(app.element('detailButton').attrs['aria-expanded'], 'true');
@@ -191,14 +194,14 @@ test('detail button toggles the compact background panel and resets on navigatio
 test('scenario, hints, and terms are rendered and reset when moving to another card', async () => {
     const data = [
         {
-            ...cards[0],
+            ...helperCards[0],
             scenario: 'Scenario context',
             hints: ['Hint one', 'Hint two'],
             terms: [{ term: 'Term', definition: 'Definition' }]
         },
-        cards[1]
+        { ...cards[1], level: 3 }
     ];
-    const app = setup(); app.respond(data); await flush();
+    const app = setup('?level=3'); app.respond(data); await flush();
 
     assert.equal(app.element('scenarioText').textContent, 'Scenario context');
     assert.equal(app.element('scenarioBlock').attrs['aria-hidden'], 'false');
@@ -224,7 +227,7 @@ test('scenario, hints, and terms are rendered and reset when moving to another c
 });
 
 test('escape closes the hints panel and restores focus to its button', async () => {
-    const app = setup(); app.respond([{ ...cards[0], hints: ['Hint'] }]); await flush();
+    const app = setup('?level=3'); app.respond([{ ...helperCards[0], hints: ['Hint'] }]); await flush();
     app.element('hintButton').click();
     app.document.keydown({ key: 'Escape' });
     assert.equal(app.element('hintsPanel').hidden, true);
@@ -234,7 +237,7 @@ test('escape closes the hints panel and restores focus to its button', async () 
 
 
 test('escape closes the detail panel and restores focus', async () => {
-    const app = setup(); app.respond(); await flush();
+    const app = setup('?level=3'); app.respond(helperCards); await flush();
     app.element('detailButton').click();
     assert.equal(app.element('detailPanel').hidden, false);
     app.document.keydown({ key: 'Escape' });
@@ -242,4 +245,80 @@ test('escape closes the detail panel and restores focus', async () => {
     assert.equal(app.element('detailButton').attrs['aria-expanded'], 'false');
     assert.equal(app.element('detailButton').focused, true);
     assert.equal(app.element('detailButtonLabel').textContent, '問いの背景');
+});
+
+test('reviewed summaries are available without a query, start closed, and clear on navigation', async () => {
+    const app = setup('?level=3');
+    app.respond([
+        { ...cards[0], level: 3, summary: [{ type: 'bullets', items: [{ label: 'Decision', text: '<img src=x onerror=alert(1)>' }] }] },
+        { ...cards[1], level: 3 }
+    ]);
+    await flush();
+    assert.equal(app.element('questionSummaryToggle').hidden, false);
+    assert.equal(app.element('questionSummary').hidden, true);
+    assert.equal(app.element('questionSummaryText').children.length, 0);
+    app.element('questionSummaryToggle').click();
+    assert.equal(app.element('questionSummary').hidden, false);
+    assert.equal(app.element('questionSummaryToggle').attrs['aria-expanded'], 'true');
+    const list = app.element('questionSummaryText').children[0];
+    assert.equal(list.children[0].children[1].textContent, '<img src=x onerror=alert(1)>');
+    app.element('nextQuestionButton').click();
+    assert.equal(app.element('questionSummaryToggle').hidden, true);
+    assert.equal(app.element('questionSummary').hidden, true);
+    assert.equal(app.element('questionSummaryText').children.length, 0);
+    app.element('previousQuestionButton').click();
+    assert.equal(app.element('questionSummaryToggle').hidden, false);
+    assert.equal(app.element('questionSummary').hidden, true);
+});
+
+test('summary, hints and background are mutually exclusive, and Escape restores summary focus', async () => {
+    const app = setup('?level=3');
+    app.respond([{ ...helperCards[0], summary: [{ type: 'text', text: 'What is being decided.' }], hints: ['Another view?'] }]);
+    await flush();
+    app.element('questionSummaryToggle').click();
+    app.element('hintButton').click();
+    assert.equal(app.element('questionSummary').hidden, true);
+    assert.equal(app.element('hintsPanel').hidden, false);
+    app.element('questionSummaryToggle').click();
+    assert.equal(app.element('hintsPanel').hidden, true);
+    app.element('detailButton').click();
+    assert.equal(app.element('questionSummary').hidden, true);
+    assert.equal(app.element('detailPanel').hidden, false);
+    app.element('questionSummaryToggle').click();
+    assert.equal(app.element('detailPanel').hidden, true);
+    app.document.keydown({ key: 'Escape' });
+    assert.equal(app.element('questionSummary').hidden, true);
+    assert.equal(app.element('questionSummaryToggle').focused, true);
+    assert.equal(app.element('questionSummaryText').children.length, 0);
+});
+
+test('Level 1/2 ignore well-formed helpers even if unexpected data includes them', async () => {
+    for (const level of [1, 2]) {
+        const app = setup(`?level=${level}`);
+        app.respond([{ ...helperCards[0], level, summary: [{ type: 'text', text: 'Not for this level.' }], hints: ['A hint?'], terms: [{ term: 'Term', definition: 'Meaning' }] }]);
+        await flush();
+        assert.equal(app.element('nextQuestionButton').disabled, false);
+        for (const id of ['questionSummaryToggle', 'hintButton', 'detailButton']) assert.equal(app.element(id).hidden, true, id);
+        assert.equal(app.element('questionSummaryText').children.length, 0);
+        assert.equal(app.element('hintsList').children.length, 0);
+        assert.equal(app.element('termsList').children.length, 0);
+    }
+});
+
+test('omitted helpers, hints-only and terms-only cards work without a background explanation', async () => {
+    for (const support of [{}, { hints: ['A useful follow-up?'] }, { terms: [{ term: 'Term', definition: 'Meaning' }] }]) {
+        const app = setup('?level=4');
+        app.respond([{ ...cards[0], level: 4, ...support }]);
+        await flush();
+        assert.equal(app.element('nextQuestionButton').disabled, false);
+        assert.equal(app.element('questionSummaryToggle').hidden, true);
+        assert.equal(app.element('hintButton').hidden, !support.hints);
+        assert.equal(app.element('detailButton').hidden, !support.terms);
+        if (support.terms) {
+            app.element('detailButton').click();
+            assert.equal(app.element('termsSection').hidden, false);
+            assert.equal(app.element('sourceSection').hidden, true);
+            assert.equal(app.element('detailText').textContent, '');
+        }
+    }
 });

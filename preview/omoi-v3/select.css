@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #111;
+    background: #fff;
+}
+
+.select-screen {
+    min-height: 100vh;
+    padding: 48px 24px;
+    box-sizing: border-box;
+}
+
+.select-content {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.select-content h1,
+.select-content h2 {
+    margin: 32px 0 20px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.select-content h1:first-child,
+.select-content h2:first-child {
+    margin-top: 16px;
+}
+
+.level-list {
+    display: grid;
+    gap: 10px;
+}
+
+.level-list input {
+    position: absolute;
+    opacity: 0;
+}
+
+.level-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    padding: 14px 16px;
+
+    border: 1.5px solid #ddd;
+    border-radius: 14px;
+
+    cursor: pointer;
+}
+
+.level-card strong,
+.level-card small {
+    display: block;
+}
+
+.level-card small {
+    margin-top: 4px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.level-example {
+    display: none;
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.radio-mark {
+    box-sizing: border-box;
+    flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+
+    border: 2px solid #111;
+    border-radius: 50%;
+}
+
+.level-list input:checked + .level-card {
+    background: #555;
+    color: #fff;
+    border-color: #111;
+}
+
+.level-list input:checked + .level-card small {
+    color: #e0e0e0;
+}
+
+.level-list input:checked + .level-card .level-example {
+    display: block;
+    color: #e0e0e0;
+}
+
+.level-list input:checked + .level-card .radio-mark {
+    background: #fff;
+    border: 5px solid #555;
+    outline: 2px solid #fff;
+}
+.select-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 32px;
+}
+
+.back-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    color: #111;
+}
+
+#nextButton {
+    padding: 12px 28px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #555;
+    color: #fff;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#nextButton:hover:not(:disabled) {
+    background: #444;
+}
+
+#nextButton:focus-visible {
+    outline: 2px solid #555;
+    outline-offset: 3px;
+}
+
+#nextButton:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+.level-list input:focus-visible + .level-card {
+    outline: 2px solid #111;
+    outline-offset: 3px;
+}
+
+.level-list input:not(:checked) + .level-card:hover {
+    background: #f5f5f5;
+}

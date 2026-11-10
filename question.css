@@ -138,12 +138,26 @@ body {
 
 .question-tools {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 
     padding-bottom: 16px;
     border-bottom: 1px solid #eeeeee;
 }
+
+.question-summary[hidden] { display: none; }
+.question-summary { box-sizing: border-box; margin: 16px 0 0; padding: 16px 18px; border-left: 3px solid #c6beb0; border-radius: 0 8px 8px 0; background: #faf8f4; text-align: left; }
+.question-summary > h2 { margin: 0 0 10px; color: #666057; font-size: 14px; font-weight: 600; line-height: 1.5; }
+.question-summary-content { min-width: 0; color: #292824; font-size: 16px; line-height: 1.8; overflow-wrap: anywhere; }
+.question-summary-content > p { margin: 0; }
+.question-summary-content > * + * { margin-top: 14px; }
+.summary-bullets { margin: 0; padding-left: 1.4em; }
+.summary-bullets li + li { margin-top: 10px; }
+.summary-bullets strong { font-weight: 600; }
+.question-summary-toggle { box-sizing: border-box; width: min(100%, 11em); min-height: 44px; cursor: pointer; }
+.question-summary-toggle:focus-visible { outline: 2px solid #495b63; outline-offset: 3px; }
+.question-tool { max-width: 100%; }
 
 .question-tool {
     display: inline-flex;

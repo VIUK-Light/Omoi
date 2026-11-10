@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateQuestionSupport } from "./question-support-schema.mjs";
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = path.resolve(scriptDirectory, "..");
@@ -11,7 +12,6 @@ const argumentsSet = new Set(process.argv.slice(2));
 const reportOnly = argumentsSet.has("--report-only");
 const outputJson = argumentsSet.has("--json");
 const summaryOnly = argumentsSet.has("--summary");
-const strictDetails = argumentsSet.has("--strict-details");
 const enforceQualityTargets = argumentsSet.has("--enforce-quality-targets");
 
 if (argumentsSet.has("--help")) {
@@ -19,7 +19,7 @@ if (argumentsSet.has("--help")) {
 
 Options:
   --report-only     Report findings without a failing exit status.
-  --strict-details  Require detail.text for Level 3 and Level 4 cards (legacy alias; this is now the default).
+  --strict-details  Deprecated compatibility flag; background remains optional in v3.
   --enforce-quality-targets  Fail unless Level 2 has 80+ cards and each primary Level 4 perspective is 20%+.
   --json            Print the full report as JSON.
   --summary         Print only aggregate counts and finding-code totals.
@@ -105,63 +105,9 @@ function isNonEmptyString(value) {
     return typeof value === "string" && value.trim() !== "";
 }
 
-function validateDetail(record) {
-    if (record.detail === undefined) {
-        if (record.level >= 3) {
-            addFinding("error", "missing_detail", "Level 3/4 card has no detail object.", record);
-        }
-        return;
-    }
-
-    if (!record.detail || typeof record.detail !== "object" || Array.isArray(record.detail)) {
-        addFinding("error", "invalid_detail", "detail must be an object when present.", record);
-        return;
-    }
-
-    const text = record.detail.text;
-    if (text !== undefined && !isNonEmptyString(text)) {
-        addFinding("error", "invalid_detail_text", "detail.text must be a non-empty string when present.", record);
-    }
-
-    if (record.level >= 3 && !isNonEmptyString(text)) {
-        addFinding("error", "missing_detail_text", "Level 3/4 card is missing detail.text.", record);
-    }
-
-    if (record.detail.sources !== undefined) {
-        if (!Array.isArray(record.detail.sources)) {
-            addFinding("error", "invalid_sources", "detail.sources must be an array when present.", record);
-        } else {
-            record.detail.sources.forEach((source, sourceIndex) => {
-                const sourceContext = { ...record, sourceIndex };
-
-                if (!source || typeof source !== "object" || Array.isArray(source)) {
-                    addFinding("error", "invalid_source", "Each source must be an object.", sourceContext);
-                    return;
-                }
-
-                if (!isNonEmptyString(source.title)) {
-                    addFinding("error", "invalid_source_title", "Each source needs a non-empty title.", sourceContext);
-                }
-
-                if (!isNonEmptyString(source.url)) {
-                    addFinding("error", "invalid_source_url", "Each source needs a non-empty URL.", sourceContext);
-                    return;
-                }
-
-                try {
-                    const url = new URL(source.url);
-                    if (url.protocol !== "https:" && url.protocol !== "http:") {
-                        addFinding("error", "unsupported_source_protocol", "Source URLs must use http or https.", sourceContext);
-                    }
-                } catch {
-                    addFinding("error", "invalid_source_url", "Source URL is not a valid URL.", sourceContext);
-                }
-            });
-        }
-    }
-
-    if (isNonEmptyString(text) && (!Array.isArray(record.detail.sources) || record.detail.sources.length === 0)) {
-        addFinding("warning", "detail_without_sources", "detail.text exists but has no linked sources.", record);
+function validateSupport(record) {
+    for (const finding of validateQuestionSupport(record)) {
+        addFinding("error", finding.code, finding.message, record);
     }
 }
 
@@ -280,7 +226,7 @@ for (const fileName of questionFiles) {
             addFinding("error", "invalid_role", "role must be a non-empty string when present.", record);
         }
 
-        validateDetail(record);
+        validateSupport(record);
         validateSafety(record);
         validateContentWarnings(record);
     });

@@ -1,0 +1,122 @@
+/* Review controls live outside the copied Omoi screens. */
+.question-summary[hidden] { display: none; }
+.question-summary { box-sizing: border-box; margin: 16px 0 0; padding: 16px 18px; border-left: 3px solid #c6beb0; border-radius: 0 8px 8px 0; background: #faf8f4; text-align: left; }
+.question-summary > h2 { margin: 0 0 10px; color: #666057; font-size: 14px; font-weight: 600; line-height: 1.5; }
+.question-summary-content { min-width: 0; color: #292824; font-size: 16px; line-height: 1.8; overflow-wrap: anywhere; }
+.summary-content > p { margin: 0; }
+.summary-content > * + * { margin-top: 14px; }
+.summary-bullets { margin: 0; padding-left: 1.4em; }
+.summary-bullets li + li { margin-top: 10px; }
+.summary-bullets strong { font-weight: 600; }
+.summary-table-wrap { max-width: 100%; overflow-x: auto; }
+.summary-table-wrap table { width: 100%; border-collapse: collapse; font: inherit; }
+.summary-table-wrap caption { margin-bottom: 8px; text-align: left; }
+.summary-table-wrap th, .summary-table-wrap td { padding: 8px 10px; border: 1px solid #d4cec4; text-align: left; vertical-align: top; }
+.summary-figure { margin: 0; }
+.summary-figure img { display: block; max-width: 100%; height: auto; }
+.summary-figure figcaption { margin-top: 8px; }
+.summary-diagram { min-width: 0; max-width: 100%; }
+.question-summary-toggle { box-sizing: border-box; width: min(100%, 11em); min-height: 44px; cursor: pointer; }
+.question-summary-toggle:focus-visible { outline: 2px solid #495b63; outline-offset: 3px; }
+.has-summary-tool .question-tools { flex-wrap: wrap; }
+.has-summary-tool .question-tool { max-width: 100%; }
+.scenario-heading { display: contents; }
+.scenario-reading-toggle[hidden] { display: none; }
+.scenario-reading-toggle {
+    min-height: 44px;
+    padding: 6px 10px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #444444;
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+}
+.scenario-reading-toggle:focus-visible { outline: 2px solid #495b63; outline-offset: 3px; }
+.has-reading-trial .scenario-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+.has-reading-trial .scenario-label { margin: 0; }
+.scenario-segment { display: block; }
+.scenario-segment + .scenario-segment { margin-top: .8em; }
+.has-reading-trial .question-screen { min-height: 0; }
+.has-reading-trial .question-content { max-height: none; overflow: visible; margin: 40px auto 0; }
+.has-reading-trial .question-content::after { display: none; }
+.has-reading-trial .question-tools { flex-wrap: wrap; }
+.has-reading-trial .question-tool { max-width: 100%; }
+.relation-diagram-toggle { margin-top: 24px; min-height: 44px; cursor: pointer; }
+.relation-diagram-toggle:focus-visible { outline: 2px solid #495b63; outline-offset: 4px; }
+.has-relation-diagram .question-screen { min-height: 0; }
+.has-relation-diagram .question-content {
+    max-width: 900px;
+    max-height: none;
+    overflow: visible;
+    margin: 40px auto 0;
+    text-align: left;
+}
+.has-path-relation .question-content { max-width: 1040px; }
+.has-relation-diagram .scenario-block[aria-hidden="true"] { display: none; }
+.has-relation-diagram .question-content::after { display: none; }
+.has-relation-diagram #relationDiagram { margin-top: 36px; }
+.has-relation-diagram #questionText { text-align: left; }
+.has-relation-diagram .rd-sequence { max-width: 640px; margin-inline: auto; }
+.preview-review {
+    box-sizing: border-box;
+    width: min(100% - 48px, 900px);
+    margin: 28px auto 0;
+    padding: 18px 0 24px;
+    border-top: 1px solid #dedede;
+    color: #555;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.preview-review p { margin: 0 0 8px; }
+.preview-review strong { color: #222; }
+.preview-review__links,
+.preview-review__comparison {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 18px;
+    margin: 10px 0;
+}
+.preview-review__comparison[hidden] { display: none; }
+.preview-review a,
+.preview-entry a { color: #3c4b51; text-underline-offset: 3px; }
+.preview-review a:focus-visible,
+.preview-entry a:focus-visible { outline: 2px solid #495b63; outline-offset: 4px; }
+.preview-review__comparison a[aria-current="true"] { font-weight: 700; color: #111; }
+.preview-review__credit {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 16px;
+}
+.preview-review__credit img { width: 18px; height: 18px; object-fit: contain; }
+.preview-error { color: #8d3333; font-size: 14px; line-height: 1.7; }
+
+.preview-entry {
+    margin: 0;
+    color: #202428;
+    background: #fafaf8;
+    font-family: sans-serif;
+    line-height: 1.75;
+}
+.preview-entry__main { box-sizing: border-box; width: min(100% - 40px, 880px); margin: 0 auto; padding: 40px 0 20px; }
+.preview-entry__eyebrow { margin: 0 0 6px; font-size: 13px; color: #59676d; }
+.preview-entry h1 { margin: 0 0 16px; font-size: clamp(27px, 4vw, 40px); line-height: 1.35; }
+.preview-entry__intro { max-width: 66ch; margin: 0 0 26px; color: #50585d; }
+.preview-entry__normal { display: inline-block; margin: 0 0 30px; padding: 10px 18px; border: 1px solid #65727a; border-radius: 10px; background: #fff; text-decoration: none; }
+.preview-entry__samples { display: grid; gap: 16px; }
+.preview-entry__sample { padding: 22px; border: 1px solid #d7dcdd; border-radius: 14px; background: #fff; }
+.preview-entry__sample h2 { margin: 5px 0 8px; font-size: 20px; line-height: 1.45; }
+.preview-entry__sample p { margin: 0; color: #596067; }
+.preview-entry__level { font-size: 12px; font-weight: 600; }
+.preview-entry__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.preview-entry__actions a { padding: 10px 14px; border: 1px solid #bdc7ca; border-radius: 8px; text-decoration: none; font-size: 14px; }
+.preview-entry__actions a:first-child { color: #fff; background: #435961; border-color: #435961; }
+.preview-entry__metadata { margin-top: 26px; font-size: 12px; color: #646c72; }
+@media (min-width: 760px) {
+    .preview-entry__samples { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

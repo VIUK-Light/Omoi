@@ -1,0 +1,197 @@
+:root {
+    --background: #ffffff;
+    --text: #111111;
+    --subtext: #666666;
+    --button: #111111;
+    --button-text: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.home {
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    width: min(90%, 420px);
+    padding: 24px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 32px;
+    font-size: 48px;
+}
+
+.catchcopy {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.description {
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--subtext);
+}
+
+.site-footer {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.home-nav {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    display: flex;
+    gap: 16px;
+}
+
+.home-nav a {
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+}
+
+.home-nav a:hover,
+.home-nav a:focus-visible {
+    color: #111111;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 12px;
+    color: #666666;
+}
+
+.brand-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
+
+.brand:hover,
+.brand:focus-visible {
+    color: #111111;
+}
+
+.start-button {
+    display: inline-block;
+
+    margin-top: 40px;
+    padding: 14px 36px;
+
+    font-size: 16px;
+    text-decoration: none;
+
+    background-color: #555555;
+    color: #ffffff;
+    border-radius: 12px;
+}
+
+.start-button:hover,
+.start-button:focus-visible {
+    background-color: #444444;
+}
+
+.start-button:focus-visible {
+    outline: 2px solid #555555;
+    outline-offset: 3px;
+}
+
+.about-omoi {
+    width: min(100% - 48px, 680px);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 72px 0 96px;
+    border-top: 1px solid #eeeeee;
+}
+
+.about-omoi h2 {
+    margin: 0 0 24px;
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.about-omoi p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 2;
+    color: var(--subtext);
+}
+
+.about-omoi p + p {
+    margin-top: 20px;
+}
+
+.about-omoi p:nth-of-type(2) {
+    margin-top: 20px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.about-omoi p:nth-of-type(3) {
+    margin-top: 20px;
+}
+
+.home-resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin-top: 32px;
+}
+
+.home-resource-links a {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 560px) {
+    .home-nav {
+        left: 24px;
+        right: 24px;
+        justify-content: flex-end;
+        gap: 12px;
+    }
+}
+
+.Kiyaku {
+    margin-top: 10px;
+    font-size: 70%;
+    line-height: 1.8;
+    color: var(--subtext);
+}
+
+.Kiyaku a {
+    color: var(--text);
+    text-underline-offset: 4px;
+}

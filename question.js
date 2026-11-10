@@ -4,6 +4,10 @@ const level = Number(params.get("level"));
 const questionText = document.getElementById("questionText");
 const scenarioBlock = document.getElementById("scenarioBlock");
 const scenarioText = document.getElementById("scenarioText");
+const questionSummaryToggle = document.getElementById("questionSummaryToggle");
+const questionSummary = document.getElementById("questionSummary");
+const questionSummaryText = document.getElementById("questionSummaryText");
+let currentSummary = null;
 const questionContent =
     document.querySelector(".question-content");
 const sourceSection =
@@ -68,6 +72,9 @@ function showMessage(message) {
     scenarioText.textContent = "";
     scenarioBlock.setAttribute("aria-hidden", "true");
     updateQuestionLayout({ question: message });
+    currentSummary = null;
+    questionSummaryToggle.hidden = true;
+    setQuestionSummaryOpen(false);
     hintButton.hidden = true;
     setHintsPanelOpen(false);
     detailButton.hidden = true;
@@ -86,13 +93,14 @@ function validateQuestions(questions) {
         if (question.scenario !== undefined && typeof question.scenario !== "string") {
             throw new Error("Invalid question scenario.");
         }
+        validateSummary(question.summary);
         if (question.hints !== undefined &&
-            (!Array.isArray(question.hints) ||
+            (!Array.isArray(question.hints) || question.hints.length === 0 ||
                 question.hints.some(hint => typeof hint !== "string" || !hint.trim()))) {
             throw new Error("Invalid question hints.");
         }
         if (question.terms !== undefined &&
-            (!Array.isArray(question.terms) ||
+            (!Array.isArray(question.terms) || question.terms.length === 0 ||
                 question.terms.some(term => !term ||
                     typeof term.term !== "string" || !term.term.trim() ||
                     typeof term.definition !== "string" || !term.definition.trim()))) {
@@ -101,8 +109,8 @@ function validateQuestions(questions) {
         if (question.detail !== undefined) {
             const detail = question.detail;
             if (!detail || typeof detail !== "object" || Array.isArray(detail) ||
-                (detail.text !== undefined && typeof detail.text !== "string") ||
-                (detail.sources !== undefined && !Array.isArray(detail.sources))) {
+                typeof detail.text !== "string" || !detail.text.trim() ||
+                !Array.isArray(detail.sources) || detail.sources.length === 0) {
                 throw new Error("Invalid question detail.");
             }
             for (const source of detail.sources ?? []) {
@@ -113,6 +121,69 @@ function validateQuestions(questions) {
             }
         }
     }
+}
+
+function validateSummary(summary) {
+    if (summary === undefined) return;
+    if (!Array.isArray(summary) || summary.length === 0) {
+        throw new Error("Invalid question summary.");
+    }
+    const nonEmpty = value => typeof value === "string" && value.trim() !== "";
+    for (const block of summary) {
+        if (!block || typeof block !== "object" || Array.isArray(block)) {
+            throw new Error("Invalid question summary block.");
+        }
+        if (block.type === "text") {
+            if (!nonEmpty(block.text)) throw new Error("Invalid summary text.");
+        } else if (block.type === "bullets") {
+            if (!Array.isArray(block.items) || block.items.length === 0 ||
+                block.items.some(item => !item || !nonEmpty(item.text) ||
+                    (item.label !== undefined && !nonEmpty(item.label)))) {
+                throw new Error("Invalid summary bullets.");
+            }
+        } else {
+            throw new Error("Unsupported question summary format.");
+        }
+    }
+}
+
+function setQuestionSummaryOpen(isOpen) {
+    isOpen = Boolean(isOpen && state === "ready" && currentSummary);
+    if (isOpen) {
+        setHintsPanelOpen(false);
+        setDetailPanelOpen(false);
+    }
+    questionSummaryText.innerHTML = "";
+    if (isOpen) {
+        for (const block of currentSummary) {
+            if (block.type === "text") {
+                const paragraph = document.createElement("p");
+                paragraph.textContent = block.text;
+                questionSummaryText.appendChild(paragraph);
+            } else {
+                const list = document.createElement("ul");
+                list.className = "summary-bullets";
+                for (const item of block.items) {
+                    const entry = document.createElement("li");
+                    if (item.label !== undefined) {
+                        const label = document.createElement("strong");
+                        label.textContent = item.label + "：";
+                        const text = document.createElement("span");
+                        text.textContent = item.text;
+                        entry.appendChild(label);
+                        entry.appendChild(text);
+                    } else {
+                        entry.textContent = item.text;
+                    }
+                    list.appendChild(entry);
+                }
+                questionSummaryText.appendChild(list);
+            }
+        }
+    }
+    questionSummary.hidden = !isOpen;
+    questionSummaryToggle.setAttribute("aria-expanded", String(isOpen));
+    questionSummaryToggle.textContent = isOpen ? "要点を閉じる" : "問いの要点を見る";
 }
 
 async function loadQuestions() {
@@ -185,6 +256,10 @@ function showQuestion() {
     updateQuestionLayout(currentQuestion);
 
     // 前の質問の状態をリセット
+    setQuestionSummaryOpen(false);
+    const supportsHelpers = currentQuestion.level === 3 || currentQuestion.level === 4;
+    currentSummary = supportsHelpers ? currentQuestion.summary ?? null : null;
+    questionSummaryToggle.hidden = !currentSummary;
     hintButton.hidden = true;
     setHintsPanelOpen(false);
     hintsList.innerHTML = "";
@@ -198,7 +273,7 @@ function showQuestion() {
     sourceList.innerHTML = "";
     termsList.innerHTML = "";
 
-    const hints = currentQuestion.hints ?? [];
+    const hints = supportsHelpers ? currentQuestion.hints ?? [] : [];
     if (hints.length > 0) {
         hintButton.hidden = false;
         hints.forEach(function (hint) {
@@ -208,10 +283,10 @@ function showQuestion() {
         });
     }
 
-    const detail = currentQuestion.detail;
+    const detail = supportsHelpers ? currentQuestion.detail : undefined;
     const detailValue = detail?.text?.trim() ?? "";
     const sources = detail?.sources ?? [];
-    const terms = currentQuestion.terms ?? [];
+    const terms = supportsHelpers ? currentQuestion.terms ?? [] : [];
     if (detailValue !== "" || sources.length > 0 || terms.length > 0) {
         detailButton.hidden = false;
         detailText.textContent = detailValue;
@@ -334,6 +409,9 @@ function goToPreviousQuestion() {
 }
 
 function finishSession() {
+    setQuestionSummaryOpen(false);
+    setHintsPanelOpen(false);
+    setDetailPanelOpen(false);
     setState("finished");
     window.location.href = "index.html";
 }
@@ -376,8 +454,15 @@ hintButton.addEventListener("click", function () {
     setHintsPanelOpen(hintsPanel.hidden);
 });
 
+questionSummaryToggle.addEventListener("click", function () {
+    setQuestionSummaryOpen(questionSummary.hidden);
+});
+
 function setDetailPanelOpen(isOpen) {
-    if (isOpen) setHintsPanelOpen(false);
+    if (isOpen) {
+        setHintsPanelOpen(false);
+        setQuestionSummaryOpen(false);
+    }
     detailPanel.hidden = !isOpen;
     detailButton.setAttribute("aria-expanded", String(isOpen));
     detailButtonLabel.textContent =
@@ -385,7 +470,10 @@ function setDetailPanelOpen(isOpen) {
 }
 
 function setHintsPanelOpen(isOpen) {
-    if (isOpen) setDetailPanelOpen(false);
+    if (isOpen) {
+        setDetailPanelOpen(false);
+        setQuestionSummaryOpen(false);
+    }
     hintsPanel.hidden = !isOpen;
     hintButton.setAttribute("aria-expanded", String(isOpen));
 }
@@ -402,10 +490,18 @@ function closeHintsPanel() {
 
 document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
-        if (!hintsPanel.hidden) {
+        if (finishConfirmDialog.open) return;
+        if (!questionSummary.hidden) {
+            setQuestionSummaryOpen(false);
+            questionSummaryToggle.focus();
+        } else if (!hintsPanel.hidden) {
             closeHintsPanel();
         } else if (!detailPanel.hidden) {
             closeDetailPanel();
         }
     }
+});
+
+window.addEventListener("pagehide", function () {
+    setQuestionSummaryOpen(false);
 });

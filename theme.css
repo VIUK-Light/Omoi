@@ -1,0 +1,177 @@
+/* Omoi v3 follows the device color scheme without a saved setting. */
+:root { color-scheme: light dark; }
+.home { flex-direction: column; box-sizing: border-box; padding-top: 64px; }
+.home .hero { box-sizing: border-box; margin-block: auto; }
+.terms-article { overflow-wrap: anywhere; }
+.home .site-footer { position: static; box-sizing: border-box; margin-top: auto; padding: 24px; }
+.v3-attribution { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; margin: 0 auto; padding: 20px 24px; color: #666666; font-family: sans-serif; font-size: 12px; line-height: 1.7; text-align: center; }
+.v3-attribution a { color: inherit; text-underline-offset: 3px; }
+.v3-status { display: block; margin: 6px 0 0; color: #666666; font-size: 12px; line-height: 1.7; }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --omoi-page: #16181b;
+        --omoi-surface: #202327;
+        --omoi-hover: #2b3036;
+        --omoi-ink: #f0f0ee;
+        --omoi-muted: #b9b9b5;
+        --omoi-border: #757a80;
+        --omoi-divider: #3b4046;
+        --omoi-primary: #d3d4d2;
+        --omoi-primary-hover: #eeeeeb;
+        --omoi-on-primary: #171a1d;
+        --omoi-link: #b8d2de;
+        --omoi-focus: #b8d2de;
+        --background: var(--omoi-page);
+        --text: var(--omoi-ink);
+        --subtext: var(--omoi-muted);
+        --button: var(--omoi-primary);
+        --button-text: var(--omoi-on-primary);
+        --guide-background: var(--omoi-page);
+        --guide-text: var(--omoi-ink);
+        --guide-subtext: var(--omoi-muted);
+        --guide-line: var(--omoi-divider);
+        --guide-soft: var(--omoi-surface);
+        --guide-accent: var(--omoi-muted);
+    }
+
+    body, .preview-entry {
+        background: var(--omoi-page);
+        color: var(--omoi-ink);
+    }
+
+    a, .preview-review a, .preview-entry a, .terms-article a {
+        color: var(--omoi-link);
+    }
+
+    .back-link, .back-button, .home-nav a, .brand, .site-footer p,
+    .level-label, .level-card small, .level-example, .description,
+    .scenario-label, .next-note, .finish-button, .previous-button,
+    .detail-note, .safety-link, .finish-confirm-dialog p,
+    .question-summary > h2, .preview-review, .preview-entry__eyebrow,
+    .preview-entry__intro, .preview-entry__sample p,
+    .preview-entry__metadata, .terms-meta {
+        color: var(--omoi-muted);
+    }
+
+    .back-link:hover, .back-link:focus-visible,
+    .back-button:hover, .back-button:focus-visible,
+    .home-nav a:hover, .home-nav a:focus-visible,
+    .brand:hover, .brand:focus-visible,
+    .finish-button:hover:not(:disabled), .previous-button:hover:not(:disabled),
+    .safety-link:hover, .safety-link:focus-visible,
+    .preview-review strong, .preview-review__comparison a[aria-current="true"],
+    .terms-brand, .terms-article p, .terms-article li {
+        color: var(--omoi-ink);
+    }
+
+    .scenario-block, .question-summary, .hints-panel, .detail-panel,
+    .finish-confirm-dialog {
+        background: var(--omoi-surface);
+        border-color: var(--omoi-border);
+        color: var(--omoi-ink);
+    }
+
+    .scenario-text, .question-summary-content { color: var(--omoi-ink); }
+    .question-tools, .preview-review, .about-omoi, .terms-section {
+        border-color: var(--omoi-divider);
+    }
+
+    .question-tool, .scenario-reading-toggle, .cancel-finish-button,
+    #retryLoadButton, .preview-entry__normal, .preview-entry__sample {
+        background: var(--omoi-surface);
+        color: var(--omoi-ink);
+        border-color: var(--omoi-border);
+    }
+
+    .question-tool:hover, .question-tool:focus-visible,
+    .scenario-reading-toggle:hover, .cancel-finish-button:hover,
+    #retryLoadButton:hover {
+        background: var(--omoi-hover);
+        color: var(--omoi-ink);
+        border-color: var(--omoi-primary);
+    }
+    .finish-confirm-actions .cancel-finish-button {
+        border-color: var(--omoi-border);
+    }
+
+    .start-button, .continue-button, #nextButton,
+    .question-actions button, .confirm-finish-button,
+    .question-tool[aria-expanded="true"] {
+        background: var(--omoi-primary);
+        color: var(--omoi-on-primary);
+        border-color: var(--omoi-primary);
+    }
+
+    .start-button:hover, .start-button:focus-visible,
+    .continue-button:hover, #nextButton:hover:not(:disabled),
+    .next-button:hover:not(:disabled), .confirm-finish-button:hover,
+    .question-tool[aria-expanded="true"]:hover,
+    .question-tool[aria-expanded="true"]:focus-visible {
+        background: var(--omoi-primary-hover);
+        color: var(--omoi-on-primary);
+        border-color: var(--omoi-primary-hover);
+    }
+
+    .level-card, .radio-mark, .safety-link,
+    .summary-table-wrap th, .summary-table-wrap td {
+        border-color: var(--omoi-border);
+    }
+    .safety-link:hover, .safety-link:focus-visible {
+        border-color: var(--omoi-primary);
+    }
+    .level-list input:not(:checked) + .level-card:hover {
+        background: var(--omoi-hover);
+    }
+    .level-list input:checked + .level-card {
+        background: var(--omoi-primary);
+        border-color: var(--omoi-primary);
+        color: var(--omoi-on-primary);
+    }
+    .level-list input:checked + .level-card small,
+    .level-list input:checked + .level-card .level-example {
+        color: var(--omoi-on-primary);
+    }
+    .level-list input:checked + .level-card .radio-mark {
+        background: var(--omoi-on-primary);
+        border-color: var(--omoi-primary);
+        outline-color: var(--omoi-on-primary);
+    }
+
+    .previous-button:disabled, .finish-button:disabled {
+        color: #90959b;
+    }
+    #nextButton:disabled { opacity: .45; }
+    .question-content { scrollbar-color: var(--omoi-border) transparent; }
+    .question-content::-webkit-scrollbar-thumb { background: var(--omoi-border); }
+
+    .preview-entry__actions a {
+        color: var(--omoi-link);
+        border-color: var(--omoi-border);
+    }
+    .preview-entry__actions a:first-child {
+        background: var(--omoi-link);
+        border-color: var(--omoi-link);
+        color: var(--omoi-on-primary);
+    }
+    .preview-error { color: #f0a6a6; }
+    .terms-article { background: var(--omoi-page); }
+    .v3-attribution, .v3-status { color: var(--omoi-muted); }
+    .step-list li::before { background: var(--omoi-page); }
+    .guide-cta, .skip-link {
+        background: var(--omoi-primary);
+        color: var(--omoi-on-primary);
+    }
+    .guide-cta:hover, .guide-cta:focus-visible {
+        background: var(--omoi-primary-hover);
+        color: var(--omoi-on-primary);
+    }
+    .finish-confirm-dialog::backdrop { background: rgb(0 0 0 / 70%); }
+
+    :root :focus-visible, #nextButton:focus-visible, #retryLoadButton:focus-visible,
+    .question-navigation button:focus-visible, .question-actions button:focus-visible,
+    .question-tools button:focus-visible, .finish-confirm-actions button:focus-visible,
+    .level-list input:focus-visible + .level-card {
+        outline-color: var(--omoi-focus);
+    }
+}

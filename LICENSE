@@ -1,21 +1,259 @@
-MIT License
+# Omoi v3 Noncommercial Attribution License 1.0
 
 Copyright (c) 2026 VIUK-Light
+https://viuk-light.org/
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This is a CUSTOM SOURCE-AVAILABLE license. It is based on, but is NOT the
+unmodified PolyForm Noncommercial License 1.0.0 and is not represented as an
+open-source license or as having a stock SPDX license identifier.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This entire document, including Part A and the incorporated text in Part B,
+is ONE license. Part B is offered only as modified by Part A, not as a
+separate or alternative license. Where Part A and Part B differ, Part A
+controls. A copy of the stock PolyForm license or its URL alone does not
+provide the license offered for the Covered Material.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## Part A — Additional and overriding terms
+
+### A1. Covered Material and retained rights
+
+"Covered Material" means the newly authored Omoi v3-specific code, new
+modifications to inherited code, the independently authored relation-diagram
+component and its documentation, and new independent diagram data identified
+as subject to this license by the accompanying NOTICE. In Part B, "software"
+means this Covered Material, "licensor" means VIUK-Light and other identified
+copyright holders offering Covered Material under this document, and "these
+terms" means this COMPLETE document.
+
+This license applies only to rights the licensor holds in Covered Material.
+It does not replace, revoke, narrow, or relicense rights already granted in
+previously released Omoi code under the MIT License, or in existing question
+and explanation content under CC BY-SA 4.0. Inherited portions, quotations
+and adaptations of that content, and third-party code retain their applicable
+licenses. See NOTICE and the scope table in README.md. The presence of those
+materials beside Covered Material does not place them under this license.
+
+### A2. Free use of the Official Service
+
+"Official Service" means an Omoi service operated and supplied by VIUK-Light,
+including an official preview, rather than a third party's copy or derivative.
+Ordinary access to, interaction with, and display or projection of the Official
+Service through a browser is permitted free of charge for both commercial and
+noncommercial purposes. This includes use at work or in a paid activity and
+temporary technical copies needed solely for that ordinary access.
+
+This permission does not authorize extracting Covered Material for another
+product, hosting a separate copy, or commercially copying, modifying,
+redistributing, or incorporating Covered Material. Ordinary users of the
+Official Service are not required to create their own LICENSE, NOTICE, or
+attribution display merely to access or display it.
+
+### A3. Noncommercial grants only
+
+Except for the limited Official Service permission in A2 and rights provided
+by applicable law, every grant in Part B is limited to noncommercial purposes,
+including its Distribution License and Changes and New Works License.
+
+You may not use Covered Material for a commercial purpose without separate
+written permission from its copyright holders. This includes commercial
+copying or modification, sale or other commercial redistribution, commercial
+rehosting, or incorporation into a commercial product or service. Giving away
+a copy does not make a commercial purpose noncommercial. A commercial purpose
+includes a use primarily intended for or directed toward commercial advantage,
+monetary compensation, a paid product or service, or a revenue-generating
+product or service; it can include an internal commercial deployment.
+
+The status or funding of a person or organization alone does not exempt a
+commercial purpose. To the extent the Personal Uses or Noncommercial
+Organizations provisions in Part B would otherwise permit a commercial
+purpose, this A3 overrides them. Noncommercial research, study, experiments,
+and genuinely noncommercial projects remain permitted subject to all of
+these terms. No separate license from VIUK-Light is needed for the
+noncommercial uses this document already permits.
+
+### A4. Copies must include both LICENSE and NOTICE
+
+When you supply any copy of Covered Material, including source, bundles,
+modified versions, or derivative works, you must supply the complete text of
+this combined license as LICENSE and the applicable NOTICE, preserving the
+following required notice and all applicable upstream notices:
+
+Required Notice: Copyright (c) 2026 VIUK-Light — https://viuk-light.org/
+
+A URL to the stock PolyForm license is not a substitute for this combined
+LICENSE or for NOTICE. This requirement overrides any less restrictive
+notice-delivery option in Part B. Retain notices for MIT, CC BY-SA 4.0, and
+other third-party material under their own licenses as well.
+
+### A5. Visible attribution in derivative interfaces
+
+If a copy, modification, derivative work, or product containing or based on
+Covered Material has a user interface, you must also place readable original-
+work attribution in an ordinarily accessible About page or section, OR in a
+visible footer of that interface, including a visible component footer.
+The attribution must identify VIUK-Light and link to https://viuk-light.org/.
+Use "原作：VIUK-Light" or "Original work by VIUK-Light", with the URL written
+out if the interface cannot support a working link.
+
+Do not hide or obscure the attribution. A source comment, a LICENSE or NOTICE
+file alone, or an unrelated legal page alone does not satisfy this interface
+requirement. Conversely, visible interface attribution does not replace the
+LICENSE and NOTICE distribution requirements in A4. The component's default
+visible original-work footer may satisfy this requirement while it remains
+readable and linked; another compliant About section or footer is also allowed.
+
+### A6. Provenance, not endorsement
+
+The required attribution identifies provenance only. It must not imply that
+VIUK-Light operates, endorses, sponsors, approves, or guarantees a derivative.
+Identify modified or third-party versions as such. This license permits use
+of the VIUK-Light name and URL for required attribution and truthful
+identification of the original work, but grants no other trademark or
+branding permission. Retain independent third-party credit without implying
+that those third parties endorse the derivative either.
+
+### A7. Application of the base text
+
+All permissions, conditions, termination provisions, and disclaimers in
+Part B apply subject to A1–A6. The stock license name and URL in Part B
+identify the source text only; they do not offer a second license for Covered
+Material. Nothing in this document limits uses allowed independently by
+applicable law or by the separate licenses retained under A1.
+
+## Part B — Incorporated base text, subject to all of Part A
+
+The following official base text is reproduced without alteration. It has
+legal effect for Covered Material only as part of this combined, modified
+license and subject to the additional and overriding terms above.
+
+# PolyForm Noncommercial License 1.0.0
+
+<https://polyformproject.org/licenses/noncommercial/1.0.0>
+
+## Acceptance
+
+In order to get any license under these terms, you must agree
+to them as both strict obligations and conditions to all
+your licenses.
+
+## Copyright License
+
+The licensor grants you a copyright license for the
+software to do everything you might do with the software
+that would otherwise infringe the licensor's copyright
+in it for any permitted purpose.  However, you may
+only distribute the software according to [Distribution
+License](#distribution-license) and make changes or new works
+based on the software according to [Changes and New Works
+License](#changes-and-new-works-license).
+
+## Distribution License
+
+The licensor grants you an additional copyright license
+to distribute copies of the software.  Your license
+to distribute covers distributing the software with
+changes and new works permitted by [Changes and New Works
+License](#changes-and-new-works-license).
+
+## Notices
+
+You must ensure that anyone who gets a copy of any part of
+the software from you also gets a copy of these terms or the
+URL for them above, as well as copies of any plain-text lines
+beginning with `Required Notice:` that the licensor provided
+with the software.  For example:
+
+> Required Notice: Copyright Yoyodyne, Inc. (http://example.com)
+
+## Changes and New Works License
+
+The licensor grants you an additional copyright license to
+make changes and new works based on the software for any
+permitted purpose.
+
+## Patent License
+
+The licensor grants you a patent license for the software that
+covers patent claims the licensor can license, or becomes able
+to license, that you would infringe by using the software.
+
+## Noncommercial Purposes
+
+Any noncommercial purpose is a permitted purpose.
+
+## Personal Uses
+
+Personal use for research, experiment, and testing for
+the benefit of public knowledge, personal study, private
+entertainment, hobby projects, amateur pursuits, or religious
+observance, without any anticipated commercial application,
+is use for a permitted purpose.
+
+## Noncommercial Organizations
+
+Use by any charitable organization, educational institution,
+public research organization, public safety or health
+organization, environmental protection organization,
+or government institution is use for a permitted purpose
+regardless of the source of funding or obligations resulting
+from the funding.
+
+## Fair Use
+
+You may have "fair use" rights for the software under the
+law. These terms do not limit them.
+
+## No Other Rights
+
+These terms do not allow you to sublicense or transfer any of
+your licenses to anyone else, or prevent the licensor from
+granting licenses to anyone else.  These terms do not imply
+any other licenses.
+
+## Patent Defense
+
+If you make any written claim that the software infringes or
+contributes to infringement of any patent, your patent license
+for the software granted under these terms ends immediately. If
+your company makes such a claim, your patent license ends
+immediately for work on behalf of your company.
+
+## Violations
+
+The first time you are notified in writing that you have
+violated any of these terms, or done anything with the software
+not covered by your licenses, your licenses can nonetheless
+continue if you come into full compliance with these terms,
+and take practical steps to correct past violations, within
+32 days of receiving notice.  Otherwise, all your licenses
+end immediately.
+
+## No Liability
+
+***As far as the law allows, the software comes as is, without
+any warranty or condition, and the licensor will not be liable
+to you for any damages arising out of these terms or the use
+or nature of the software, under any kind of legal claim.***
+
+## Definitions
+
+The **licensor** is the individual or entity offering these
+terms, and the **software** is the software the licensor makes
+available under these terms.
+
+**You** refers to the individual or entity agreeing to these
+terms.
+
+**Your company** is any legal entity, sole proprietorship,
+or other kind of organization that you work for, plus all
+organizations that have control over, are under the control of,
+or are under common control with that organization.  **Control**
+means ownership of substantially all the assets of an entity,
+or the power to direct its management and policies by vote,
+contract, or otherwise.  Control can be direct or indirect.
+
+**Your licenses** are all the licenses granted to you for the
+software under these terms.
+
+**Use** means anything you do with the software requiring one
+of your licenses.

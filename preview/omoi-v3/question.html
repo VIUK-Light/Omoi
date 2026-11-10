@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>質問 - Omoi</title>
+    <link rel="icon" href="../../omoi-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="question.css">
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <main class="question-screen">
+
+        <!-- レベル選択に戻る -->
+        <a href="select.html" class="back-link">
+            ← カテゴリーを変える
+        </a>
+
+        <!-- 質問 -->
+        <div class="question-content" aria-live="polite" aria-atomic="true" aria-busy="true">
+            <div id="scenarioBlock" class="scenario-block" aria-hidden="true">
+                <div class="scenario-heading">
+                    <p class="scenario-label">こんな場面を想像してください</p>
+                    <button type="button" id="scenarioReadingToggle" class="scenario-reading-toggle"
+                        aria-pressed="false" aria-controls="scenarioText" hidden>場面文を区切る</button>
+                </div>
+                <p id="scenarioText" class="scenario-text"></p>
+            </div>
+            <h1 id="questionText">
+                読み込み中...
+            </h1>
+            <button type="button" id="relationDiagramToggle"
+                class="question-tool relation-diagram-toggle"
+                aria-expanded="false" aria-controls="relationDiagram" hidden>
+                関係図を表示
+            </button>
+            <section id="relationDiagram" data-relation-diagram aria-label="関係図" hidden></section>
+        </div>
+
+        <!-- 質問の操作 -->
+        <div class="question-footer">
+
+            <button type="button" id="retryLoadButton" hidden>再試行する</button>
+
+            <div class="question-tools">
+                <button type="button" id="questionSummaryToggle" class="question-tool question-summary-toggle"
+                    aria-expanded="false" aria-controls="questionSummary" hidden>問いの要点を見る</button>
+                <button
+                    type="button"
+                    id="hintButton"
+                    aria-expanded="false"
+                    aria-controls="hintsPanel"
+                    class="question-tool question-hint"
+                    hidden
+                >
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M8 10h8M8 14h5M5 19l-1 3 4-2h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v9a3 3 0 0 0 2 3Z"/>
+                    </svg>
+                    会話のヒント
+                </button>
+                <button
+                    type="button" id="detailButton"
+                    aria-expanded="false"
+                    aria-controls="detailPanel"
+                    class="question-tool detail-button"
+                    hidden
+                >
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M6 3.5h8l4 4V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z"/>
+                        <path d="M14 3.5v4h4M8 12h8M8 16h8"/>
+                    </svg>
+                    <span id="detailButtonLabel">問いの背景</span>
+                </button>
+            </div>
+
+            <section id="questionSummary" class="question-summary" aria-labelledby="questionSummaryHeading" hidden>
+                <h2 id="questionSummaryHeading">問いの要点</h2>
+                <div id="questionSummaryText" class="question-summary-content"></div>
+            </section>
+
+            <div
+                id="hintsPanel"
+                class="hints-panel"
+                role="region"
+                aria-label="会話のヒント"
+                tabindex="-1"
+                hidden
+            >
+                <ul id="hintsList"></ul>
+            </div>
+
+            <!-- 質問の詳細 -->
+            <div
+                id="detailPanel"
+                class="detail-panel"
+                role="region"
+                aria-label="質問の背景"
+                tabindex="-1"
+                hidden
+            >
+                <p id="detailText"></p>
+                <div id="termsSection" hidden>
+                    <h2>用語</h2>
+                    <dl id="termsList"></dl>
+                </div>
+                <!-- 出典がある場合だけ表示 -->
+                <div id="sourceSection" hidden>
+                    <h2>出典</h2>
+                    <ul id="sourceList"></ul>
+                </div>
+
+                <p class="detail-note">
+                    この解説には、異なる見解や不確実性が
+                    含まれる場合があります。
+                </p>
+
+                <a
+                    href="https://viuk-light.org/omoi-safety.html"
+                    class="safety-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Omoi公式の安全設計ページを開く"
+                    title="Omoi公式の安全設計"
+                >
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M12 3 19 6v5c0 4.5-2.9 8-7 10-4.1-2-7-5.5-7-10V6l7-3Z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                    <span>安全について</span>
+                </a>
+            </div>
+
+            <div class="question-actions">
+                <button
+                    type="button"
+                    id="nextQuestionButton"
+                    class="next-button"
+                    disabled
+                >
+                    次の問いを見る <span aria-hidden="true">→</span>
+                </button>
+                <p class="next-note">話さずに次へ進んでも大丈夫です</p>
+            </div>
+
+            <div class="question-navigation">
+                <button type="button" id="previousQuestionButton" class="previous-button" disabled>
+                    <span aria-hidden="true">←</span> 前の問い
+                </button>
+                <button type="button" id="finishButton" class="finish-button" disabled>
+                    ここで終える
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <dialog
+        id="finishConfirmDialog"
+        class="finish-confirm-dialog"
+        aria-labelledby="finishConfirmTitle"
+        aria-describedby="finishConfirmMessage"
+    >
+        <h2 id="finishConfirmTitle">本当にここで終わりますか？</h2>
+        <p id="finishConfirmMessage">質問を終了して、終了画面へ戻ります。</p>
+        <div class="finish-confirm-actions">
+            <button type="button" id="cancelFinishButton" class="cancel-finish-button">
+                続ける
+            </button>
+            <button type="button" id="confirmFinishButton" class="confirm-finish-button">
+                終了する
+            </button>
+        </div>
+    </dialog>
+
+    <script type="module" src="question.js"></script>
+    <script type="module" src="review.mjs"></script>
+</body>
+</html>

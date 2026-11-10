@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>関係図の再利用デモ</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #292824; background: #f7f5f0; font-family: system-ui, "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.8; }
+    main { width: min(100% - 36px, 1040px); margin: 36px auto; }
+    h1 { margin: 0; font-size: clamp(26px, 4vw, 40px); line-height: 1.4; }
+    .intro { max-width: 48em; margin: 16px 0 24px; color: #625b50; }
+    .modes { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 24px; }
+    .modes button { padding: 12px 18px; min-height: 48px; border: 1px solid #c2b7a7; border-radius: 8px; background: white; color: #292824; font: inherit; cursor: pointer; }
+    .modes button[aria-pressed="true"] { background: #3e4b45; border-color: #3e4b45; color: white; }
+    .modes button:focus-visible, a:focus-visible { outline: 3px solid #9c5838; outline-offset: 4px; }
+    .diagram { padding: clamp(12px, 3vw, 28px); border: 1px solid #ddd5c8; border-radius: 16px; background: white; }
+    .error { padding: 16px; background: #fff0eb; border: 1px solid #bb5834; }
+    .documents { display: flex; gap: 20px; margin-top: 24px; }
+    .documents a { color: #68503c; text-underline-offset: .2em; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #ecebe8; background: #16181b; }
+      .intro { color: #b6b3ad; }
+      .modes button { color: #ecebe8; background: #202327; border-color: #6c7076; }
+      .modes button[aria-pressed="true"] { color: #16181b; background: #d1dcd5; border-color: #d1dcd5; }
+      .modes button:focus-visible, a:focus-visible { outline-color: #e2a17b; }
+      .diagram { background: #202327; border-color: #6c7076; }
+      .error { color: #f0c1ae; background: #39251f; border-color: #d58e6b; }
+      .documents a { color: #e2bca0; }
+    }
+  </style>
+  <script type="module" src="./demo.mjs"></script>
+</head>
+<body>
+  <main>
+    <h1>人物と、その間の関係</h1>
+    <p class="intro">同じ部品に異なるデータを渡すデモです。登場人物と出来事は架空の例です。人物相関、枝分かれ、順に並べた人物の間にある関係を表示できます。</p>
+    <nav class="modes" aria-label="表示する図を選ぶ">
+      <button type="button" data-demo-mode="network" aria-pressed="true">読書会の人物相関</button>
+      <button type="button" data-demo-mode="branches" aria-pressed="false">展示会の準備</button>
+      <button type="button" data-demo-mode="path" aria-pressed="false">原稿の受け渡し</button>
+      <button type="button" data-demo-mode="editor" aria-pressed="false">編集者を中心に見る</button>
+      <button type="button" data-demo-mode="pairs" aria-pressed="false">二つのやりとり</button>
+    </nav>
+    <p id="demo-error" class="error" role="alert" hidden></p>
+    <div id="diagram" class="diagram"></div>
+    <nav class="documents" aria-label="部品の資料">
+      <a href="../API.md">APIの説明</a>
+      <a href="../LICENSE">利用条件</a>
+    </nav>
+  </main>
+</body>
+</html>
