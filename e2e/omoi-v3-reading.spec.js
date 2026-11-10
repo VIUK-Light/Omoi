@@ -6,8 +6,8 @@ const preview = '/preview/omoi-v3/';
 const card = JSON.parse(fs.readFileSync(path.join(__dirname, '../level4.json'), 'utf8'))
   .find(item => item.id === 'l4-relationship-002');
 
-async function openReading(page, { reading = 'chunks', diagram = '0' } = {}) {
-  const params = new URLSearchParams({ sample: card.id, diagram });
+async function openReading(page, { reading = 'chunks' } = {}) {
+  const params = new URLSearchParams({ sample: card.id });
   if (reading !== null) params.set('reading', reading);
   await page.goto(`${preview}warning.html?${params}`);
   await expect(page.getByRole('heading', { name: '話をはじめる前に' })).toBeVisible();
@@ -46,13 +46,13 @@ test('reading trial entry and comparisons always pass through the warning with t
   await page.locator(`#sample-${card.id}`).getByRole('link', { name: '区切った文章を試す', exact: true }).click();
   await expect(page.getByRole('heading', { name: '話をはじめる前に' })).toBeVisible();
   expect(new URL(page.url()).searchParams.get('reading')).toBe('chunks');
-  expect(new URL(page.url()).searchParams.get('diagram')).toBe('0');
+  expect(new URL(page.url()).searchParams.has('diagram')).toBe(false);
   await page.getByRole('link', { name: '続ける', exact: true }).click();
   await expect(page.locator('#questionText')).toHaveText(card.question);
   await expect(page.locator('#scenarioReadingToggle')).toHaveAttribute('aria-pressed', 'true');
-  await expect(page.locator('#relationDiagramToggle')).toBeHidden();
-  await expect(page.locator('#relationDiagram')).toBeHidden();
-  for (const id of ['previewDiagramOff', 'previewDiagramOn']) {
+  await expect(page.locator('#relationDiagramToggle')).toHaveCount(0);
+  await expect(page.locator('#relationDiagram')).toHaveCount(0);
+  for (const id of ['previewOriginal']) {
     const destination = new URL(await page.locator(`#${id}`).getAttribute('href'), page.url());
     expect(destination.pathname).toBe(`${preview}warning.html`);
     expect(destination.searchParams.get('sample')).toBe(card.id);
@@ -63,7 +63,7 @@ test('reading trial entry and comparisons always pass through the warning with t
   const destination = new URL(await readingLink.getAttribute('href'), page.url());
   expect(destination.pathname).toBe(`${preview}warning.html`);
   expect(destination.searchParams.get('sample')).toBe(card.id);
-  expect(destination.searchParams.get('diagram')).toBe('0');
+  expect(destination.searchParams.has('diagram')).toBe(false);
   expect(destination.searchParams.get('reading')).toBe('chunks');
 });
 
@@ -124,28 +124,13 @@ test('the original baseline remains unchanged without a reading parameter', asyn
   await expect(toggle).toBeHidden();
   await expect(page.locator('.scenario-segment')).toHaveCount(0);
   await expect(page.locator('body')).not.toHaveClass(/has-reading-trial/);
-  await expect(page.locator('#relationDiagramToggle')).toBeHidden();
-  await expect(page.locator('#relationDiagram')).toBeHidden();
-});
-
-test('the original reading variant and existing diagram can be used without changing the question', async ({ page }) => {
-  const toggle = await openReading(page, { reading: 'original', diagram: '1' });
-  await expect(toggle).toHaveAttribute('aria-pressed', 'false');
-  await expect(page.locator('.scenario-segment')).toHaveCount(0);
-  await expect(page.locator('#relationDiagram')).toBeHidden();
-  await expect(page.locator('#relationDiagramToggle')).toHaveAttribute('aria-expanded', 'false');
-  await page.locator('#relationDiagramToggle').click();
-  await expect(page.locator('[data-rd-ready="true"]')).toBeVisible();
-  await expect(page.locator('[data-node-id]')).toHaveCount(3);
-  await toggle.click();
-  await expect(page.locator('.scenario-segment')).toHaveCount(3);
-  expect(await page.locator('#scenarioText').textContent()).toBe(card.scenario);
-  await expect(page.locator('#questionText')).toHaveText(card.question);
+  await expect(page.locator('#relationDiagramToggle')).toHaveCount(0);
+  await expect(page.locator('#relationDiagram')).toHaveCount(0);
 });
 
 for (const query of ['reading=other', 'reading=chunks&reading=original']) {
   test(`invalid reading selection is stopped at the warning: ${query}`, async ({ page }) => {
-    await page.goto(`${preview}warning.html?sample=${card.id}&diagram=0&${query}`);
+    await page.goto(`${preview}warning.html?sample=${card.id}&${query}`);
     await expect(page.getByRole('alert')).toBeVisible();
     await expect(page.getByRole('link', { name: '続ける', exact: true })).toHaveCount(0);
     await expect(page.locator('#continueLink')).toHaveAttribute('aria-disabled', 'true');

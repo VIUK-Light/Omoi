@@ -20,7 +20,7 @@
 | 3 | 社会や倫理についての重い話 |
 | 4 | 自分に置き換えて考える、非常に重く深い話 |
 
-Level 1・2の継続は検討中です。今回のプレビューでは従来どおり残しています。
+Level 1を外して「2・3・4」にする構成も検討中です。まだ確定していないため、今回のプレビューでは1〜4を残しています。
 
 Level は対象年齢ではなく、会話の深さと扱う判断の重さです。Omoi は相談窓口や緊急支援の代わりにはなりません。[利用時の案内](https://viuk-light.org/omoi-safety.html)も確認できます。
 
@@ -46,7 +46,7 @@ Level 3・4 全663問の採用・省略理由、独立した読み合わせ、�
 
 通常の Omoi 画面に要点とダークモードを組み込みます。配色は端末のライト／ダーク設定へ追従します。使い方・注意画面・規約・終了確認も対象です。
 
-関係図、場面切り替え、文章の区切り方は [検証用ページ](preview/omoi-v3/preview.html)に残しています。通常画面に実験用の操作や比較フッター、質問IDは表示せず、関係図ライブラリも読み込みません。[汎用関係図デモ](packages/relation-diagram/demo/index.html)では Omoi 固有の処理を使わず同じ部品を確認できます。
+関係図は検証用を含めて廃止しました。要点や文章の区切り方は [検証用ページ](preview/omoi-v3/preview.html)で比較できます。通常画面に実験用の操作や比較フッター、質問IDは表示しません。
 
 ## ローカル確認
 
@@ -57,7 +57,7 @@ python3 -m http.server 4173 --bind 127.0.0.1
 ブラウザで `http://127.0.0.1:4173/` を開きます。クラウド環境のこのアドレスは利用者の端末から直接は開けないため、共有確認には本人限定の非公開プレビューを使います。
 
 ```sh
-node --test tools/*.test.mjs packages/relation-diagram/*.test.mjs preview/omoi-v3/*.test.mjs
+node --test tools/*.test.mjs preview/omoi-v3/*.test.mjs
 node tools/verify-question-dataset.mjs --enforce-quality-targets --summary
 node tools/verify-v3-review.mjs --summary
 node tools/verify-seo.mjs
@@ -75,8 +75,6 @@ VIUK-Light が提供する公式サービスの通常の閲覧・操作・投影
 | 新規 v3 コード・変更差分・新規文書 | [Omoi v3 Noncommercial Attribution License 1.0](LICENSE)。PolyForm Noncommercial 1.0.0 に追加・優先条件を設けた独自ライセンス |
 | 既存の v2 コードとその継承部分 | 従来の [MIT License](LICENSE-MIT) を維持 |
 | 既存の質問・場面・解説・ヒント・用語と、その引用・翻案にあたる要点等 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) を維持 |
-| 関係図の新規コード・独立した図データ | 同部品の [LICENSE](packages/relation-diagram/LICENSE) と [NOTICE](packages/relation-diagram/NOTICE) |
-| Cytoscape.js | [MIT License](packages/relation-diagram/vendor/cytoscape-LICENSE.txt) |
 
 新規 v3 部分の商用コピー・商用目的の改変配布・商用組み込みは許諾していません。非商用のコピーにも完全な LICENSE と該当する NOTICE の同梱が必要です。派生 UI の About または見えるフッターに「原作：VIUK-Light」と [https://viuk-light.org/](https://viuk-light.org/) へのリンクを表示してください。詳細と継承元の表示は [NOTICE](NOTICE)、利用条件は [規約](terms.html)を参照してください。
 

@@ -23,15 +23,15 @@ test('different cards and revised scenarios fall back to their original text', (
 });
 
 test('reading comparison survives the warning and can exit to the original baseline', () => {
-    const state = readPreviewState('?sample=l4-relationship-002&diagram=0&reading=chunks');
+    const state = readPreviewState('?sample=l4-relationship-002&reading=chunks');
     const baseUrl = 'https://example.test/project/preview/omoi-v3/preview.html';
     const entry = new URL(sampleEntryHref(card.id, state, { baseUrl }));
     assert.equal(entry.pathname, '/project/preview/omoi-v3/warning.html');
     assert.equal(entry.searchParams.get('reading'), 'chunks');
     const question = new URL(previewHref('question.html', state, { baseUrl: entry.href, sampleId: card.id, level: 4 }));
     assert.equal(question.searchParams.get('reading'), 'chunks');
-    assert.equal(question.searchParams.get('diagram'), '0');
-    const baseline = new URL(sampleEntryHref(card.id, state, { baseUrl: question.href, diagram: false, reading: null }));
+    assert.equal(question.searchParams.has('diagram'), false);
+    const baseline = new URL(sampleEntryHref(card.id, state, { baseUrl: question.href, reading: null }));
     assert.equal(baseline.searchParams.has('reading'), false);
     assert.equal(readPreviewState('?reading=original').reading, 'original');
     for (const search of ['?reading=unknown', '?reading=chunks&reading=original', '?reading=']) {

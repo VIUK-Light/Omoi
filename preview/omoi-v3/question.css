@@ -491,29 +491,3 @@ body {
     outline: 2px solid #555555;
     outline-offset: 3px;
 }
-
-
-/* The original card layout is unchanged when its diagram is off. */
-#relationDiagram[hidden] {
-    display: none;
-}
-
-.question-content.has-relation-diagram {
-    max-width: 900px;
-    max-height: none;
-    overflow: visible;
-    margin: 28px auto 0;
-    text-align: left;
-}
-
-.question-content.has-relation-diagram .scenario-block[aria-hidden="true"] {
-    display: none;
-}
-
-.question-content.has-relation-diagram #relationDiagram {
-    margin-top: 28px;
-}
-
-.question-content.has-relation-diagram + .question-footer {
-    margin-top: 28px;
-}

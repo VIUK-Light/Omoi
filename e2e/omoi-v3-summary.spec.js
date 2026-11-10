@@ -5,10 +5,10 @@ const path = require('node:path');
 const preview = '/preview/omoi-v3/';
 const records = Object.fromEntries([3, 4].map(level => [level, JSON.parse(fs.readFileSync(path.join(__dirname, `../level${level}.json`), 'utf8'))]));
 const samples = [
-  { id: 'relationship-009', level: 4, diagram: true, summary: false },
-  { id: 'l4-relationship-002', level: 4, diagram: true },
-  { id: 'gender-l3-009', level: 3, diagram: true },
-  { id: 'r6-08-02-l4', level: 4, diagram: false },
+  { id: 'relationship-009', level: 4, summary: false },
+  { id: 'l4-relationship-002', level: 4 },
+  { id: 'gender-l3-009', level: 3 },
+  { id: 'r6-08-02-l4', level: 4 },
 ].map(sample => ({ ...sample, card: records[sample.level].find(card => card.id === sample.id) }));
 const ai = samples[3];
 
@@ -29,8 +29,8 @@ async function expectCollapsed(page, { available = true } = {}) {
   }
 }
 
-async function openSummary(page, sample = ai, { summary = '1', diagram = '0', reveal = true } = {}) {
-  const query = new URLSearchParams({ sample: sample.id, diagram });
+async function openSummary(page, sample = ai, { summary = '1', reveal = true } = {}) {
+  const query = new URLSearchParams({ sample: sample.id });
   if (summary !== null) query.set('summary', summary);
   const warning = sample.level === 3 ? 'warning3.html' : 'warning.html';
   await page.goto(`${preview}${warning}?${query}`);
@@ -103,17 +103,13 @@ async function summaryGeometry(page) {
 }
 
 for (const sample of samples) {
-  const behavior = sample.summary === false ? 'a clear question omits its summary while retaining its diagram' : 'summary starts closed and is shown only on request without replacing its source';
+  const behavior = sample.summary === false ? 'a clear question needs no summary' : 'summary starts closed and is shown only on request without replacing its source';
   test(`${behavior}: ${sample.id}`, async ({ page }) => {
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
-    const section = await openSummary(page, sample, { diagram: '1', reveal: false });
+    const section = await openSummary(page, sample, { reveal: false });
     if (sample.summary === false) {
       await expect(page.locator('#previewSummaryOn')).toBeHidden();
-      await expect(page.locator('#relationDiagramToggle')).toHaveAttribute('aria-expanded', 'false');
-      await page.locator('#relationDiagramToggle').click();
-      await expect(page.locator('#relationDiagram')).toBeVisible();
-      await expect(page.locator('#relationDiagramToggle')).toHaveAttribute('aria-expanded', 'true');
       await expectCollapsed(page, { available: false });
       await expect(page.locator('#questionText')).toHaveText(sample.card.question);
       expect(await page.locator('#scenarioText').textContent()).toBe(sample.card.scenario || '');
@@ -125,12 +121,7 @@ for (const sample of samples) {
     expect(await section.evaluate(panel => Boolean(panel.closest('.question-footer')))).toBe(true);
     await page.locator('#questionSummaryToggle').click();
     await expectContent(page, sample);
-    await expect(page.locator('#relationDiagram')).toBeHidden();
-    if (sample.diagram) await expect(page.locator('#relationDiagramToggle')).toHaveAttribute('aria-expanded', 'false');
-    else {
-      await expect(page.locator('#relationDiagramToggle')).toBeHidden();
-      await expect(page.locator('#previewDiagramOn')).toBeHidden();
-    }
+    await expect(page.locator('#relationDiagram, #relationDiagramToggle')).toHaveCount(0);
     await expect(page.getByRole('link', { name: 'Omoi / VIUK-Light', exact: true })).toBeVisible();
     expect(errors).toEqual([]);
   });
@@ -180,7 +171,7 @@ test('AI summary entry and footer comparisons retain the warning and selected ca
   const warning = new URL(page.url());
   expect(warning.pathname).toBe(`${preview}warning.html`);
   expect(warning.searchParams.get('summary')).toBe('1');
-  expect(warning.searchParams.get('diagram')).toBe('0');
+  expect(warning.searchParams.has('diagram')).toBe(false);
   expect(warning.searchParams.get('sample')).toBe(ai.id);
   await page.getByRole('link', { name: '続ける', exact: true }).click();
   await expect(page.locator('#nextQuestionButton')).toBeEnabled();
@@ -188,12 +179,12 @@ test('AI summary entry and footer comparisons retain the warning and selected ca
   const enabled = new URL(await page.locator('#previewSummaryOn').getAttribute('href'), page.url());
   expect(enabled.pathname).toBe(`${preview}warning.html`);
   expect(enabled.searchParams.get('summary')).toBe('1');
-  expect(enabled.searchParams.get('diagram')).toBe('0');
+  expect(enabled.searchParams.has('diagram')).toBe(false);
   expect(enabled.searchParams.get('sample')).toBe(ai.id);
-  const baseline = new URL(await page.locator('#previewDiagramOff').getAttribute('href'), page.url());
+  const baseline = new URL(await page.locator('#previewOriginal').getAttribute('href'), page.url());
   expect(baseline.searchParams.has('summary')).toBe(false);
   expect(baseline.searchParams.has('reading')).toBe(false);
-  await page.locator('#previewDiagramOff').click();
+  await page.locator('#previewOriginal').click();
   await page.getByRole('link', { name: '続ける', exact: true }).click();
   await expect(page.locator('#nextQuestionButton')).toBeEnabled();
   await expectCollapsed(page, { available: false });
@@ -204,7 +195,7 @@ for (const summary of [null, '0']) {
   test(`the baseline has no summary control when selection is ${summary === null ? 'absent' : summary}`, async ({ page }) => {
     await openSummary(page, ai, { summary });
     await expectCollapsed(page, { available: false });
-    await expect(page.locator('#relationDiagramToggle')).toBeHidden();
+    await expect(page.locator('#relationDiagramToggle')).toHaveCount(0);
   });
 }
 
@@ -241,7 +232,7 @@ for (const field of ['question', 'scenario']) {
   test(`a revised source ${field} hides the outdated helper and its control`, async ({ page }) => {
     const revised = { ...ai.card, [field]: ai.card[field] + '（改訂）' };
     await page.route('**/level4.json', route => route.fulfill({ json: [revised] }));
-    const query = new URLSearchParams({ level: '4', sample: ai.id, diagram: '0', summary: '1' });
+    const query = new URLSearchParams({ level: '4', sample: ai.id, summary: '1' });
     await page.goto(`${preview}question.html?${query}`);
     await expect(page.locator('#nextQuestionButton')).toBeEnabled();
     await expect(page.locator('#questionText')).toHaveText(revised.question);
@@ -253,7 +244,7 @@ for (const field of ['question', 'scenario']) {
 test('a loading failure has no helper, and retry restores only the closed control', async ({ page }) => {
   let fail = true;
   await page.route('**/level4.json', route => fail ? route.fulfill({ status: 503, body: 'Unavailable' }) : route.fulfill({ json: [ai.card] }));
-  await page.goto(`${preview}warning.html?sample=${ai.id}&diagram=0&summary=1`);
+  await page.goto(`${preview}warning.html?sample=${ai.id}&summary=1`);
   await page.getByRole('link', { name: '続ける', exact: true }).click();
   await expect(page.locator('#retryLoadButton')).toBeVisible();
   await expectCollapsed(page, { available: false });
@@ -267,7 +258,7 @@ test('a loading failure has no helper, and retry restores only the closed contro
 
 for (const query of ['summary=unknown', 'summary=1&summary=0', 'summary=']) {
   test(`invalid summary selection is stopped at the warning: ${query}`, async ({ page }) => {
-    await page.goto(`${preview}warning.html?sample=${ai.id}&diagram=0&${query}`);
+    await page.goto(`${preview}warning.html?sample=${ai.id}&${query}`);
     await expect(page.getByRole('alert')).toBeVisible();
     await expect(page.getByRole('link', { name: '続ける', exact: true })).toHaveCount(0);
     await expect(page.locator('#continueLink')).toHaveAttribute('aria-disabled', 'true');
@@ -297,7 +288,7 @@ for (const width of [320, 360, 768, 1280]) {
   }
 }
 
-test('summary content renders safe text, bullets, a semantic table, a diagram and an accessible image, then cleans up', async ({ page }) => {
+test('summary content renders safe text, bullets, a semantic table and an accessible image, then cleans up', async ({ page }) => {
   await page.goto(`${preview}preview.html`);
   await page.evaluate(async () => {
     const { renderSummaryContent } = await import('/preview/omoi-v3/summary-content.mjs');
@@ -311,7 +302,6 @@ test('summary content renders safe text, bullets, a semantic table, a diagram an
       { type: 'text', text: literal },
       { type: 'bullets', items: [{ label: '条件', text: '同じ条件を確認する' }] },
       { type: 'table', caption: '二つの予定の比較', columns: ['予定', '時間'], rows: [['相談', '午前'], ['確認', '午後']] },
-      { type: 'diagram', data: { nodes: [{ id: 'a', title: '依頼者', kind: 'person' }, { id: 'b', title: '担当者', kind: 'person' }], edges: [{ source: 'a', target: 'b', label: '依頼する', directed: true }] }, options: { layout: 'pairs', interactive: false } },
       { type: 'image', src: '../../omoi-icon.svg', alt: '表示テスト用のOmoiアイコン', caption: '図形の説明' },
     ]);
     window.summaryRendererLiteral = literal;
@@ -323,8 +313,6 @@ test('summary content renders safe text, bullets, a semantic table, a diagram an
   await expect(host.locator('thead th')).toHaveText(['予定', '時間']);
   await expect(host.locator('tbody tr')).toHaveCount(2);
   await expect(host.locator('tbody tr').first().locator('td')).toHaveText(['相談', '午前']);
-  await expect(host.locator('[data-rd-ready="true"]')).toBeVisible();
-  await expect(host.getByRole('link', { name: /原作.*VIUK-Light/ })).toBeVisible();
   await expect(host.getByRole('img', { name: '表示テスト用のOmoiアイコン', exact: true })).toBeVisible();
   await expect(host.locator('img')).toHaveCount(1);
   await expect(host.locator('figcaption')).toHaveText('図形の説明');
@@ -342,10 +330,9 @@ test('summary content renders safe text, bullets, a semantic table, a diagram an
     const remounted = renderSummaryContent(host, [{ type: 'text', text: '再表示' }]);
     const restored = host.textContent === '再表示';
     remounted.destroy();
-    const noGraph = host.querySelectorAll('.rd-diagram').length === 0;
     host.remove();
     delete window.summaryRendererView;
-    return { rejected, unchanged, empty, restored, noGraph };
+    return { rejected, unchanged, empty, restored };
   });
-  expect(result).toEqual({ rejected: true, unchanged: true, empty: true, restored: true, noGraph: true });
+  expect(result).toEqual({ rejected: true, unchanged: true, empty: true, restored: true });
 });

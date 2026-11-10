@@ -1,6 +1,3 @@
-import { createRelationDiagram } from '../../packages/relation-diagram/index.mjs';
-import { normalizeData, normalizeOptions } from '../../packages/relation-diagram/model.mjs';
-
 const mounted = new WeakMap();
 
 function record(value, name) {
@@ -44,10 +41,6 @@ export function normalizeSummaryContent(input, { baseUrl = import.meta.url } = {
                 });
                 return { type: 'table', caption: text(block.caption, `${name}.caption`), columns, rows };
             }
-            case 'diagram': {
-                const options = normalizeOptions(block.options);
-                return { type: 'diagram', data: normalizeData(block.data, options), options };
-            }
             case 'image': {
                 const source = text(block.src, `${name}.src`);
                 let base, url;
@@ -62,12 +55,12 @@ export function normalizeSummaryContent(input, { baseUrl = import.meta.url } = {
                 };
             }
             default:
-                throw new TypeError(`${name}.type must be text, bullets, table, diagram, or image.`);
+                throw new TypeError(`${name}.type must be text, bullets, table, or image.`);
         }
     });
 }
 
-/** Mount only when the reader opens the summary; cleanup also disposes graphs. */
+/** Mount only when the reader opens the summary; cleanup removes the mounted content. */
 export function renderSummaryContent(host, input) {
     if (!host || host.nodeType !== 1 || !host.ownerDocument) throw new TypeError('host must be an Element.');
     if (mounted.has(host)) throw new TypeError('This host already contains summary content.');
@@ -81,8 +74,6 @@ export function renderSummaryContent(host, input) {
         return node;
     };
     const root = element('div', 'summary-content');
-    const pendingDiagrams = [];
-    const diagrams = [];
     for (const block of blocks) {
         if (block.type === 'text') root.append(element('p', '', block.text));
         if (block.type === 'bullets') {
@@ -113,10 +104,6 @@ export function renderSummaryContent(host, input) {
             }
             table.append(body); wrapper.append(table); root.append(wrapper);
         }
-        if (block.type === 'diagram') {
-            const diagramHost = element('div', 'summary-diagram');
-            root.append(diagramHost); pendingDiagrams.push({ host: diagramHost, block });
-        }
         if (block.type === 'image') {
             const figure = element('figure', 'summary-figure');
             const image = element('img');
@@ -130,15 +117,11 @@ export function renderSummaryContent(host, input) {
     function destroy() {
         if (destroyed) return;
         destroyed = true;
-        for (const diagram of diagrams) diagram.destroy();
         root.remove();
         mounted.delete(host);
     }
     try {
         host.append(root);
-        for (const pending of pendingDiagrams) {
-            diagrams.push(createRelationDiagram(pending.host, pending.block.data, pending.block.options));
-        }
         const api = { destroy };
         mounted.set(host, api);
         return api;

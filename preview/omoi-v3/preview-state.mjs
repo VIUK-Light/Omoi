@@ -12,16 +12,11 @@ export function readPreviewState(search = "") {
         (params.has("reading") && !["original", "chunks"].includes(params.get("reading")))) {
         throw new Error("文章の表示条件が正しくありません。プレビュー入口から選び直してください。");
     }
-    if (params.getAll("diagram").length > 1 ||
-        (params.has("diagram") && !["0", "1"].includes(params.get("diagram")))) {
-        throw new Error("関係図の表示条件が正しくありません。プレビュー入口から選び直してください。");
-    }
     if (params.getAll("sample").length > 1 ||
         (params.has("sample") && !getSample(params.get("sample")))) {
         throw new Error("指定されたサンプルが見つかりません。プレビュー入口から選び直してください。");
     }
     return {
-        diagram: params.get("diagram") !== "0",
         sampleId: params.get("sample") || null,
         ...(params.has("reading") ? { reading: params.get("reading") } : {}),
         ...(params.has("summary") ? { summary: params.get("summary") === "1" } : {})
@@ -35,9 +30,10 @@ export function assertSampleLevel(state, level) {
     }
 }
 
-export function previewHref(path, state, { baseUrl, level, sampleId = null, diagram = state.diagram, reading = state.reading, summary = state.summary } = {}) {
+export function previewHref(path, state, { baseUrl, level, sampleId = null, reading = state.reading, summary = state.summary } = {}) {
     const url = new URL(path, baseUrl);
-    url.searchParams.set("diagram", diagram ? "1" : "0");
+    // The retired diagram flag is ignored on old URLs and never propagated.
+    url.searchParams.delete("diagram");
     if (level !== undefined) url.searchParams.set("level", String(level));
     if (sampleId) url.searchParams.set("sample", sampleId);
     else url.searchParams.delete("sample");

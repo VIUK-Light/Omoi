@@ -15,7 +15,6 @@
 .summary-figure { margin: 0; }
 .summary-figure img { display: block; max-width: 100%; height: auto; }
 .summary-figure figcaption { margin-top: 8px; }
-.summary-diagram { min-width: 0; max-width: 100%; }
 .question-summary-toggle { box-sizing: border-box; width: min(100%, 11em); min-height: 44px; cursor: pointer; }
 .question-summary-toggle:focus-visible { outline: 2px solid #495b63; outline-offset: 3px; }
 .has-summary-tool .question-tools { flex-wrap: wrap; }
@@ -43,22 +42,6 @@
 .has-reading-trial .question-content::after { display: none; }
 .has-reading-trial .question-tools { flex-wrap: wrap; }
 .has-reading-trial .question-tool { max-width: 100%; }
-.relation-diagram-toggle { margin-top: 24px; min-height: 44px; cursor: pointer; }
-.relation-diagram-toggle:focus-visible { outline: 2px solid #495b63; outline-offset: 4px; }
-.has-relation-diagram .question-screen { min-height: 0; }
-.has-relation-diagram .question-content {
-    max-width: 900px;
-    max-height: none;
-    overflow: visible;
-    margin: 40px auto 0;
-    text-align: left;
-}
-.has-path-relation .question-content { max-width: 1040px; }
-.has-relation-diagram .scenario-block[aria-hidden="true"] { display: none; }
-.has-relation-diagram .question-content::after { display: none; }
-.has-relation-diagram #relationDiagram { margin-top: 36px; }
-.has-relation-diagram #questionText { text-align: left; }
-.has-relation-diagram .rd-sequence { max-width: 640px; margin-inline: auto; }
 .preview-review {
     box-sizing: border-box;
     width: min(100% - 48px, 900px);

@@ -1,5 +1,3 @@
-import { createRelationSequence } from "../../packages/relation-diagram/sequence.mjs";
-import { getRelationSequence } from "./adapter.mjs";
 import { readPreviewState, assertSampleLevel, putSampleFirst, previewHref } from "./preview-state.mjs";
 import { showReviewQuestion } from "./review.mjs";
 import { getScenarioSegments } from "./scenario-reading.mjs";
@@ -8,7 +6,7 @@ import { renderSummaryContent } from "./summary-content.mjs";
 
 const params = new URLSearchParams(window.location.search);
 const level = Number(params.get("level"));
-let previewState = { diagram: true, sampleId: null };
+let previewState = { sampleId: null };
 let previewError = "";
 try {
     previewState = readPreviewState(window.location.search);
@@ -71,11 +69,7 @@ let currentQuestionIndex = 0;
 
 const retryLoadButton = document.getElementById("retryLoadButton");
 let state = "idle";
-const relationHost = document.getElementById("relationDiagram");
-const relationToggle = document.getElementById("relationDiagramToggle");
-let relationDiagram = null;
-let relationData = null;
-let relationQuestion = null;
+let currentReviewQuestion = null;
 const scenarioReadingToggle = document.getElementById("scenarioReadingToggle");
 let scenarioReadingParts = null;
 let scenarioReadingSource = "";
@@ -100,7 +94,7 @@ function setQuestionSummaryOpen(isOpen) {
     questionSummaryToggle.setAttribute("aria-expanded", String(isOpen));
     questionSummaryToggle.textContent = isOpen ? "要点を閉じる" : "問いの要点を見る";
     document.body.classList.toggle("has-question-summary", isOpen);
-    showReviewQuestion(relationQuestion, { diagramShown: Boolean(relationDiagram), summaryShown: isOpen });
+    showReviewQuestion(currentReviewQuestion, { summaryShown: isOpen });
 }
 
 function prepareQuestionSummary(question) {
@@ -146,44 +140,7 @@ scenarioReadingToggle.addEventListener("click", () => {
     requestAnimationFrame(updateQuestionScrollState);
 });
 
-function clearRelationDiagram() {
-    relationDiagram?.destroy();
-    relationDiagram = null;
-    relationHost.replaceChildren();
-    relationHost.hidden = true;
-    relationToggle.setAttribute("aria-expanded", "false");
-    relationToggle.textContent = "関係図を表示";
-    document.body.classList.remove("has-relation-diagram", "has-path-relation");
-}
-
-function prepareRelationDiagram(question) {
-    clearRelationDiagram();
-    relationQuestion = question;
-    relationData = previewState.diagram ? getRelationSequence(question) : null;
-    relationToggle.hidden = !relationData;
-    showReviewQuestion(question, { diagramShown: false });
-}
-
-relationToggle.addEventListener("click", function () {
-    if (state !== "ready" || !relationData) return;
-    if (relationDiagram) {
-        clearRelationDiagram();
-    } else {
-        relationHost.hidden = false;
-        document.body.classList.add("has-relation-diagram");
-        document.body.classList.toggle("has-path-relation", relationData.frames[0].options.layout === "path");
-        relationDiagram = createRelationSequence(relationHost, relationData);
-        relationToggle.setAttribute("aria-expanded", "true");
-        relationToggle.textContent = "関係図を閉じる";
-    }
-    showReviewQuestion(relationQuestion, { diagramShown: Boolean(relationDiagram), summaryShown: !questionSummary.hidden });
-    requestAnimationFrame(updateQuestionScrollState);
-});
-
-window.addEventListener("pagehide", () => {
-    clearRelationDiagram();
-    setQuestionSummaryOpen(false);
-});
+window.addEventListener("pagehide", () => setQuestionSummaryOpen(false));
 
 function setState(nextState) {
     state = nextState;
@@ -196,10 +153,7 @@ function setState(nextState) {
 }
 
 function showMessage(message) {
-    clearRelationDiagram();
-    relationData = null;
-    relationQuestion = null;
-    relationToggle.hidden = true;
+    currentReviewQuestion = null;
     showReviewQuestion(null);
     questionText.textContent = message;
     prepareQuestionSummary(null);
@@ -318,8 +272,9 @@ function showQuestion() {
     questionText.textContent =
         currentQuestion.question;
 
+    currentReviewQuestion = currentQuestion;
     prepareQuestionSummary(currentQuestion);
-    prepareRelationDiagram(currentQuestion);
+    showReviewQuestion(currentQuestion);
     prepareScenarioReading(currentQuestion);
 
     updateQuestionLayout(currentQuestion);
