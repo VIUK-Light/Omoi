@@ -7,6 +7,8 @@ const scenarioBlock = document.getElementById("scenarioBlock");
 const scenarioText = document.getElementById("scenarioText");
 const furiganaSettings = document.querySelector(".furigana-settings");
 const furiganaSettingsSummary = document.getElementById("furiganaSettingsSummary");
+const questionScreen = document.querySelector(".question-screen");
+const classroomModeToggle = document.getElementById("classroomModeToggle");
 const questionSummaryToggle = document.getElementById("questionSummaryToggle");
 const furiganaToggle = document.getElementById("furiganaToggle");
 const questionSummary = document.getElementById("questionSummary");
@@ -61,6 +63,7 @@ let readingsByQuestionId = {};
 let currentFurigana = {};
 let currentTextFields = new Map();
 let furiganaEnabled = false;
+let classroomModeEnabled = false;
 
 const retryLoadButton = document.getElementById("retryLoadButton");
 let state = "idle";
@@ -83,6 +86,7 @@ function showMessage(message) {
     currentTextFields.clear();
     currentFurigana = {};
     furiganaSettings.hidden = true;
+    classroomModeToggle.hidden = true;
     furiganaToggle.hidden = true;
     scenarioBlock.setAttribute("aria-hidden", "true");
     updateQuestionLayout({ question: message });
@@ -427,7 +431,10 @@ function showQuestion() {
     currentFurigana = readingsByQuestionId[currentQuestion.id];
     currentTextFields = new Map();
     furiganaToggle.hidden = Object.keys(currentFurigana).length === 0;
-    furiganaSettings.hidden = furiganaToggle.hidden;
+    classroomModeToggle.hidden = false;
+    furiganaSettings.hidden = false;
+    classroomModeToggle.setAttribute("aria-pressed", String(classroomModeEnabled));
+    classroomModeToggle.textContent = classroomModeEnabled ? "授業モードを終了" : "授業モード";
     furiganaToggle.setAttribute("aria-pressed", String(furiganaEnabled));
     furiganaToggle.textContent = furiganaEnabled ? "ふりがなを隠す" : "ふりがなを表示";
     renderFuriganaText(questionText, currentQuestion.question, "question");
@@ -648,6 +655,14 @@ furiganaToggle.addEventListener("click", function () {
     furiganaToggle.setAttribute("aria-pressed", String(furiganaEnabled));
     furiganaToggle.textContent = furiganaEnabled ? "ふりがなを隠す" : "ふりがなを表示";
     refreshFuriganaText();
+});
+
+classroomModeToggle.addEventListener("click", function () {
+    if (state !== "ready") return;
+    classroomModeEnabled = !classroomModeEnabled;
+    questionScreen.classList.toggle("classroom-mode", classroomModeEnabled);
+    classroomModeToggle.setAttribute("aria-pressed", String(classroomModeEnabled));
+    classroomModeToggle.textContent = classroomModeEnabled ? "授業モードを終了" : "授業モード";
 });
 
 document.addEventListener("click", function (event) {

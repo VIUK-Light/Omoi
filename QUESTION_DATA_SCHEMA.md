@@ -69,7 +69,7 @@ Level 3とLevel 4では `perspective` を必須にします。補助は必要な
 
 ## フリガナ
 
-質問画面右上の読みやすさ設定パネルにある「ふりがなを表示」ボタンで切り替えます。初期状態は非表示です。質問・場面文・要点・ヒント・背景・用語・出典名の読みは、原文を変更せず `level2-furigana.json`・`level3-furigana.json`・`level4-furigana.json` に記録します。ルビの文字サイズ・太さは `question.css` の `--furigana-font-size` と `--furigana-font-weight` で調整できます。
+質問画面右上の読みやすさ設定パネルで「授業モード」と「ふりがなを表示」を切り替えます。授業モードは質問や補助コンテンツの文字を大きくし、次の問いボタンを低めに表示します。授業モードは初期オフで、現在のセッション中は質問を移動しても維持されます。フリガナも初期非表示です。質問・場面文・要点・ヒント・背景・用語・出典名の読みは、原文を変更せず `level2-furigana.json`・`level3-furigana.json`・`level4-furigana.json` に記録します。ルビの文字サイズ・太さは `question.css` の `--furigana-font-size` と `--furigana-font-weight` で調整できます。
 
 各サイドカーは質問IDをキーにし、その値に表示項目のパスと分割配列を記録します。`text` セグメントは通常の文字列、`ruby` セグメントは漢字を含む本文とひらがなの読みです。
 

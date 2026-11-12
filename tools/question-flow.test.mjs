@@ -23,9 +23,19 @@ function setup(search = '?level=2') {
     const createdElements = [];
     const element = id => {
         if (!elements.has(id)) {
+            const classes = new Set();
             const node = {
                 hidden: false, disabled: false, textContent: '', attrs: {}, children: [], dataset: {},
-                classList: { remove() {}, toggle() {} },
+                classList: {
+                    add(...names) { names.forEach(name => classes.add(name)); },
+                    remove(...names) { names.forEach(name => classes.delete(name)); },
+                    contains(name) { return classes.has(name); },
+                    toggle(name, force = !classes.has(name)) {
+                        if (force) classes.add(name);
+                        else classes.delete(name);
+                        return force;
+                    }
+                },
                 setAttribute(key, value) { this.attrs[key] = value; },
                 removeAttribute(key) { delete this[key]; },
                 set innerHTML(value) { this.children = []; this.textContent = ''; },
@@ -298,6 +308,32 @@ test('furigana starts off, toggles safely, and stays enabled across questions', 
     toggle.click();
     assert.equal(app.element('questionText').textContent, data[1].question);
     assert.equal(app.element('termsSection').hidden, true);
+});
+
+test('classroom mode enlarges the question and stays enabled across cards', async () => {
+    const app = setup();
+    app.respond();
+    await flush();
+
+    const toggle = app.element('classroomModeToggle');
+    const questionScreen = app.element('.question-screen');
+    assert.equal(toggle.hidden, false);
+    assert.equal(toggle.attrs['aria-pressed'], 'false');
+    assert.equal(questionScreen.classList.contains('classroom-mode'), false);
+
+    toggle.click();
+    assert.equal(toggle.attrs['aria-pressed'], 'true');
+    assert.equal(toggle.textContent, '授業モードを終了');
+    assert.equal(questionScreen.classList.contains('classroom-mode'), true);
+
+    app.element('nextQuestionButton').click();
+    assert.equal(toggle.attrs['aria-pressed'], 'true');
+    assert.equal(questionScreen.classList.contains('classroom-mode'), true);
+
+    toggle.click();
+    assert.equal(toggle.attrs['aria-pressed'], 'false');
+    assert.equal(toggle.textContent, '授業モード');
+    assert.equal(questionScreen.classList.contains('classroom-mode'), false);
 });
 
 test('question loading rejects missing kanji readings and allows retry', async () => {

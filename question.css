@@ -368,11 +368,22 @@ body {
     color: #ffffff;
 }
 
-ruby { ruby-position: over; }
+ruby {
+    position: relative;
+    ruby-position: over;
+    ruby-align: center;
+    white-space: nowrap;
+}
 rt {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    display: block;
+    transform: translateX(-50%);
     font-size: var(--furigana-font-size);
     font-weight: var(--furigana-font-weight);
     line-height: 1;
+    white-space: nowrap;
 }
 
 .finish-button:hover:not(:disabled),
@@ -502,6 +513,59 @@ rt {
 .safety-link:focus-visible {
     border-color: #111111;
     color: #111111;
+}
+
+.question-screen.classroom-mode #questionText {
+    font-size: clamp(36px, 5.2vw, 54px);
+}
+
+.question-screen.classroom-mode .question-content.long-question-text #questionText {
+    font-size: clamp(29px, 3.8vw, 39px);
+}
+
+.question-screen.classroom-mode .question-content.long-question:not(.long-question-text) #questionText {
+    font-size: clamp(32px, 4.5vw, 47px);
+}
+
+.question-screen.classroom-mode .scenario-label {
+    font-size: 13px;
+}
+
+.question-screen.classroom-mode .scenario-text {
+    font-size: 19px;
+}
+
+.question-screen.classroom-mode .question-summary > h2,
+.question-screen.classroom-mode .detail-panel h2 {
+    font-size: 17px;
+}
+
+.question-screen.classroom-mode .question-summary-content,
+.question-screen.classroom-mode #detailText {
+    font-size: 19px;
+}
+
+.question-screen.classroom-mode .hints-panel ul {
+    font-size: 17px;
+}
+
+.question-screen.classroom-mode #termsList,
+.question-screen.classroom-mode #sourceList {
+    font-size: 16px;
+}
+
+.question-screen.classroom-mode .detail-note {
+    font-size: 15px;
+}
+
+.question-screen.classroom-mode .safety-link {
+    font-size: 13px;
+}
+
+.question-screen.classroom-mode .question-actions button {
+    min-height: 44px;
+    padding: 6px 18px;
+    font-size: 18px;
 }
 
 .question-actions button:disabled {
