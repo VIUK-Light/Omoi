@@ -11,28 +11,43 @@ const helperCards = cards.map(card => ({
     ...card, level: 3,
     detail: { text: 'Background', sources: [{ title: 'Reviewed source', url: 'https://example.test/source' }] }
 }));
+const plainReadings = questions => Array.isArray(questions)
+    ? Object.fromEntries(questions.map(question => [
+    question.id,
+    { question: [{ text: question.question }] }
+    ]))
+    : {};
 const flush = () => new Promise(resolve => setImmediate(resolve));
 function setup(search = '?level=2') {
     const elements = new Map();
+    const createdElements = [];
     const element = id => {
-        if (!elements.has(id)) elements.set(id, {
-            hidden: false, disabled: false, textContent: '', attrs: {}, children: [],
-            classList: { remove() {}, toggle() {} },
-            setAttribute(key, value) { this.attrs[key] = value; },
-            removeAttribute(key) { delete this[key]; },
-            set innerHTML(value) { this.children = []; },
-            addEventListener(event, handler) {
-                if (event === 'close') this.onClose = handler;
-                else this[event] = handler;
-            },
-            showModal() { this.open = true; },
-            close() {
-                this.open = false;
-                this.onClose?.();
-            },
-            appendChild(child) { this.children.push(child); }, focus() { this.focused = true; },
-            scrollHeight: 100, clientHeight: 100, scrollTop: 0
-        });
+        if (!elements.has(id)) {
+            const node = {
+                hidden: false, disabled: false, textContent: '', attrs: {}, children: [], dataset: {},
+                classList: { remove() {}, toggle() {} },
+                setAttribute(key, value) { this.attrs[key] = value; },
+                removeAttribute(key) { delete this[key]; },
+                set innerHTML(value) { this.children = []; this.textContent = ''; },
+                addEventListener(event, handler) {
+                    if (event === 'close') this.onClose = handler;
+                    else this[event] = handler;
+                },
+                showModal() { this.open = true; },
+                close() {
+                    this.open = false;
+                    this.onClose?.();
+                },
+                appendChild(child) {
+                    this.children.push(child);
+                    this.textContent += child.textContent ?? '';
+                },
+                replaceChildren() { this.children = []; this.textContent = ''; },
+                focus() { this.focused = true; },
+                scrollHeight: 100, clientHeight: 100, scrollTop: 0
+            };
+            elements.set(id, node);
+        }
         return elements.get(id);
     };
     const requests = [], errors = [];
@@ -42,10 +57,13 @@ function setup(search = '?level=2') {
         getElementById: element,
         querySelector: element,
         createElement() {
-            return {
-                textContent: '', children: [],
-                appendChild(child) { this.children.push(child); }
-            };
+            const node = element(`created-${createdElements.length}`);
+            createdElements.push(node);
+            return node;
+        },
+        createTextNode(textContent) { return { textContent }; },
+        querySelectorAll() {
+            return [...elements.values()].filter(node => node.dataset?.furiganaPath);
         },
         addEventListener(event, handler) { this[event] = handler; }
     };
@@ -66,8 +84,16 @@ function setup(search = '?level=2') {
     return {
         element, requests, location, errors, document: documentStub,
         timeout: () => onTimeout(),
-        respond(data = cards, ok = true) {
-            requests.at(-1).resolve({ ok, status: ok ? 200 : 404, json: async () => structuredClone(data) });
+        respond(data = cards, ok = true, readings = plainReadings(data)) {
+            const [questionsRequest, readingsRequest] = requests.slice(-2);
+            questionsRequest.resolve({
+                ok, status: ok ? 200 : 404,
+                json: async () => structuredClone(data)
+            });
+            readingsRequest.resolve({
+                ok, status: ok ? 200 : 404,
+                json: async () => structuredClone(readings)
+            });
         }
     };
 }
@@ -151,8 +177,14 @@ for (const failure of ['http', 'network', 'json', 'shape', 'card', 'timeout']) {
         const app = setup();
         if (failure === 'http') app.respond([], false);
         if (failure === 'network') app.requests[0].reject(new Error('Offline'));
-        if (failure === 'json') app.requests[0].resolve({ ok: true, json: async () => { throw new SyntaxError('Bad JSON'); } });
-        if (failure === 'shape') app.respond({});
+        if (failure === 'json') {
+            const [questionsRequest, readingsRequest] = app.requests;
+            questionsRequest.resolve({
+                ok: true, json: async () => { throw new SyntaxError('Bad JSON'); }
+            });
+            readingsRequest.resolve({ ok: true, json: async () => ({}) });
+        }
+        if (failure === 'shape') app.respond({}, true, {});
         if (failure === 'card') app.respond([{ level: 2, question: null }]);
         if (failure === 'timeout') app.timeout();
         await flush();
@@ -161,7 +193,7 @@ for (const failure of ['http', 'network', 'json', 'shape', 'card', 'timeout']) {
         assert.equal(app.element('nextQuestionButton').disabled, true);
         app.element('retryLoadButton').click();
         app.element('retryLoadButton').click();
-        assert.equal(app.requests.length, 2);
+        assert.equal(app.requests.length, 4);
         app.respond(); await flush();
         assert.equal(app.element('retryLoadButton').hidden, true);
         assert.equal(app.element('nextQuestionButton').disabled, false);
@@ -223,7 +255,130 @@ test('scenario, hints, and terms are rendered and reset when moving to another c
     assert.equal(app.element('hintButton').hidden, true);
     assert.equal(app.element('hintsPanel').hidden, true);
     assert.equal(app.element('detailPanel').hidden, true);
+});
+
+test('furigana starts off, toggles safely, and stays enabled across questions', async () => {
+    const data = [
+        { id: 'reading-1', level: 2, question: '学校で話す' },
+        { id: 'reading-2', level: 2, question: '選択を考える' }
+    ];
+    const readings = {
+        'reading-1': {
+            question: [
+                { ruby: '学校', reading: 'がっこう' },
+                { text: 'で' },
+                { ruby: '話', reading: 'はな' },
+                { text: 'す' }
+            ]
+        },
+        'reading-2': {
+            question: [
+                { ruby: '選択', reading: 'せんたく' },
+                { text: 'を' },
+                { ruby: '考', reading: 'かんが' },
+                { text: 'える' }
+            ]
+        }
+    };
+    const app = setup();
+    app.respond(data, true, readings);
+    await flush();
+
+    const toggle = app.element('furiganaToggle');
+    assert.equal(toggle.hidden, false);
+    assert.equal(toggle.attrs['aria-pressed'], 'false');
+    assert.equal(app.element('questionText').textContent, data[0].question);
+
+    toggle.click();
+    assert.equal(toggle.attrs['aria-pressed'], 'true');
+    assert.equal(app.element('questionText').textContent, '学校がっこうで話はなす');
+
+    app.element('nextQuestionButton').click();
+    assert.equal(app.element('questionText').textContent, '選択せんたくを考かんがえる');
+    toggle.click();
+    assert.equal(app.element('questionText').textContent, data[1].question);
     assert.equal(app.element('termsSection').hidden, true);
+});
+
+test('question loading rejects missing kanji readings and allows retry', async () => {
+    const data = [{ id: 'missing-reading', level: 2, question: '学校' }];
+    const app = setup();
+    app.respond(data, true, {
+        'missing-reading': { question: [{ text: '学校' }] }
+    });
+    await flush();
+    assert.equal(app.errors.length, 1);
+    assert.equal(app.element('retryLoadButton').hidden, false);
+    assert.equal(app.element('nextQuestionButton').disabled, true);
+
+    app.element('retryLoadButton').click();
+    app.respond(data, true, {
+        'missing-reading': { question: [{ ruby: '学校', reading: 'がっこう' }] }
+    });
+    await flush();
+    assert.equal(app.element('nextQuestionButton').disabled, false);
+});
+
+test('furigana applies to scenarios and all supporting question content', async () => {
+    const data = [{
+        id: 'reading-helpers',
+        level: 3,
+        question: '学校',
+        scenario: '家族',
+        summary: [
+            { type: 'text', text: '理由' },
+            { type: 'bullets', items: [{ label: '対象', text: '読書' }] }
+        ],
+        hints: ['何'],
+        detail: {
+            text: '物語',
+            sources: [{ title: '出典', url: 'https://example.test/source' }]
+        },
+        terms: [{ term: '漢字', definition: '意味' }]
+    }];
+    const ruby = (base, reading) => [{ ruby: base, reading }];
+    const readings = {
+        'reading-helpers': {
+            question: ruby('学校', 'がっこう'),
+            scenario: ruby('家族', 'かぞく'),
+            'summary.0.text': ruby('理由', 'りゆう'),
+            'summary.1.items.0.label': ruby('対象', 'たいしょう'),
+            'summary.1.items.0.text': ruby('読書', 'どくしょ'),
+            'hints.0': ruby('何', 'なに'),
+            'detail.text': ruby('物語', 'ものがたり'),
+            'terms.0.term': ruby('漢字', 'かんじ'),
+            'terms.0.definition': ruby('意味', 'いみ'),
+            'detail.sources.0.title': ruby('出典', 'しゅってん')
+        }
+    };
+    const app = setup('?level=3');
+    app.respond(data, true, readings);
+    await flush();
+    app.element('furiganaToggle').click();
+
+    assert.equal(app.element('scenarioText').textContent, '家族かぞく');
+    app.element('questionSummaryToggle').click();
+    assert.match(app.element('questionSummaryText').textContent, /理由りゆう/);
+    assert.match(app.element('questionSummaryText').textContent, /対象たいしょう/);
+    assert.match(app.element('questionSummaryText').textContent, /読書どくしょ/);
+
+    app.element('hintButton').click();
+    assert.equal(app.element('hintsList').children[0].textContent, '何なに');
+    app.element('detailButton').click();
+    assert.equal(app.element('detailText').textContent, '物語ものがたり');
+    assert.deepEqual(app.element('termsList').children.map(item => item.textContent), [
+        '漢字かんじ', '意味いみ'
+    ]);
+    assert.equal(app.element('sourceList').children[0].children[0].textContent, '出典しゅってん');
+});
+
+test('Escape closes the furigana settings panel and restores focus to its icon', () => {
+    const app = setup();
+    const settings = app.element('.furigana-settings');
+    settings.open = true;
+    app.document.keydown({ key: 'Escape' });
+    assert.equal(settings.open, false);
+    assert.equal(app.element('furiganaSettingsSummary').focused, true);
 });
 
 test('escape closes the hints panel and restores focus to its button', async () => {

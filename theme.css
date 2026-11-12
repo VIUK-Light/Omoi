@@ -1,5 +1,20 @@
-/* Omoi v3 follows the device color scheme without a saved setting. */
-:root { color-scheme: light dark; }
+/* Omoi v3 theme tokens and shared display controls. */
+:root {
+    color-scheme: light;
+    --omoi-page: #ffffff;
+    --omoi-surface: #f7f7f7;
+    --omoi-hover: #eeeeee;
+    --omoi-ink: #111111;
+    --omoi-muted: #666666;
+    --omoi-border: #b7b7b7;
+    --omoi-divider: #e8e8e8;
+    --omoi-primary: #111111;
+    --omoi-primary-hover: #333333;
+    --omoi-on-primary: #ffffff;
+    --omoi-link: #24566b;
+    --omoi-focus: #24566b;
+}
+
 .home { flex-direction: column; box-sizing: border-box; padding-top: 64px; }
 .home .hero { box-sizing: border-box; margin-block: auto; }
 .terms-article { overflow-wrap: anywhere; }
@@ -8,32 +23,103 @@
 .v3-attribution a { color: inherit; text-underline-offset: 3px; }
 .v3-status { display: block; margin: 6px 0 0; color: #666666; font-size: 12px; line-height: 1.7; }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --omoi-page: #16181b;
-        --omoi-surface: #202327;
-        --omoi-hover: #2b3036;
-        --omoi-ink: #f0f0ee;
-        --omoi-muted: #b9b9b5;
-        --omoi-border: #757a80;
-        --omoi-divider: #3b4046;
-        --omoi-primary: #d3d4d2;
-        --omoi-primary-hover: #eeeeeb;
-        --omoi-on-primary: #171a1d;
-        --omoi-link: #b8d2de;
-        --omoi-focus: #b8d2de;
-        --background: var(--omoi-page);
-        --text: var(--omoi-ink);
-        --subtext: var(--omoi-muted);
-        --button: var(--omoi-primary);
-        --button-text: var(--omoi-on-primary);
-        --guide-background: var(--omoi-page);
-        --guide-text: var(--omoi-ink);
-        --guide-subtext: var(--omoi-muted);
-        --guide-line: var(--omoi-divider);
-        --guide-soft: var(--omoi-surface);
-        --guide-accent: var(--omoi-muted);
-    }
+.home-nav { right: 68px; }
+.guide-nav { margin-right: 48px; }
+
+.theme-control {
+    position: fixed;
+    z-index: 10;
+    top: 12px;
+    right: 12px;
+    color: var(--omoi-ink);
+    font-family: sans-serif;
+}
+
+.theme-control > summary {
+    display: grid;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    place-items: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: var(--omoi-surface);
+    color: inherit;
+    cursor: pointer;
+    list-style: none;
+}
+
+.theme-control > summary::-webkit-details-marker { display: none; }
+.theme-control > summary:hover { background: var(--omoi-hover); }
+.theme-control > summary:focus-visible {
+    outline: 2px solid var(--omoi-focus);
+    outline-offset: 2px;
+}
+.theme-control svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; }
+
+.theme-menu {
+    position: absolute;
+    top: 44px;
+    right: 0;
+    display: grid;
+    min-width: 136px;
+    gap: 2px;
+    padding: 6px;
+    border: 1px solid var(--omoi-border);
+    border-radius: 10px;
+    background: var(--omoi-page);
+    box-shadow: 0 6px 24px rgb(0 0 0 / 14%);
+}
+
+.theme-menu button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.theme-menu button::before {
+    width: 1em;
+    content: "✓";
+    visibility: hidden;
+}
+
+.theme-menu button[aria-pressed="true"]::before { visibility: visible; }
+.theme-menu button:hover,
+.theme-menu button:focus-visible { background: var(--omoi-hover); }
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --omoi-page: #16181b;
+    --omoi-surface: #202327;
+    --omoi-hover: #2b3036;
+    --omoi-ink: #f0f0ee;
+    --omoi-muted: #b9b9b5;
+    --omoi-border: #757a80;
+    --omoi-divider: #3b4046;
+    --omoi-primary: #d3d4d2;
+    --omoi-primary-hover: #eeeeeb;
+    --omoi-on-primary: #171a1d;
+    --omoi-link: #b8d2de;
+    --omoi-focus: #b8d2de;
+    --background: var(--omoi-page);
+    --text: var(--omoi-ink);
+    --subtext: var(--omoi-muted);
+    --button: var(--omoi-primary);
+    --button-text: var(--omoi-on-primary);
+    --guide-background: var(--omoi-page);
+    --guide-text: var(--omoi-ink);
+    --guide-subtext: var(--omoi-muted);
+    --guide-line: var(--omoi-divider);
+    --guide-soft: var(--omoi-surface);
+    --guide-accent: var(--omoi-muted);
 
     body, .preview-entry {
         background: var(--omoi-page);
@@ -97,7 +183,8 @@
 
     .start-button, .continue-button, #nextButton,
     .question-actions button, .confirm-finish-button,
-    .question-tool[aria-expanded="true"] {
+    .question-tool[aria-expanded="true"],
+    .question-tool[aria-pressed="true"] {
         background: var(--omoi-primary);
         color: var(--omoi-on-primary);
         border-color: var(--omoi-primary);
@@ -107,6 +194,7 @@
     .continue-button:hover, #nextButton:hover:not(:disabled),
     .next-button:hover:not(:disabled), .confirm-finish-button:hover,
     .question-tool[aria-expanded="true"]:hover,
+    .question-tool[aria-pressed="true"]:hover,
     .question-tool[aria-expanded="true"]:focus-visible {
         background: var(--omoi-primary-hover);
         color: var(--omoi-on-primary);
@@ -168,7 +256,7 @@
     }
     .finish-confirm-dialog::backdrop { background: rgb(0 0 0 / 70%); }
 
-    :root :focus-visible, #nextButton:focus-visible, #retryLoadButton:focus-visible,
+    &:focus-visible, :focus-visible, #nextButton:focus-visible, #retryLoadButton:focus-visible,
     .question-navigation button:focus-visible, .question-actions button:focus-visible,
     .question-tools button:focus-visible, .finish-confirm-actions button:focus-visible,
     .level-list input:focus-visible + .level-card {

@@ -5,7 +5,10 @@ const allowedLevels = new Set(["2", "3", "4"]);
 const questionText = document.getElementById("questionText");
 const scenarioBlock = document.getElementById("scenarioBlock");
 const scenarioText = document.getElementById("scenarioText");
+const furiganaSettings = document.querySelector(".furigana-settings");
+const furiganaSettingsSummary = document.getElementById("furiganaSettingsSummary");
 const questionSummaryToggle = document.getElementById("questionSummaryToggle");
+const furiganaToggle = document.getElementById("furiganaToggle");
 const questionSummary = document.getElementById("questionSummary");
 const questionSummaryText = document.getElementById("questionSummaryText");
 let currentSummary = null;
@@ -54,6 +57,10 @@ const detailText =
 
 let sessionQuestions = [];
 let currentQuestionIndex = 0;
+let readingsByQuestionId = {};
+let currentFurigana = {};
+let currentTextFields = new Map();
+let furiganaEnabled = false;
 
 const retryLoadButton = document.getElementById("retryLoadButton");
 let state = "idle";
@@ -71,6 +78,12 @@ function setState(nextState) {
 function showMessage(message) {
     questionText.textContent = message;
     scenarioText.textContent = "";
+    questionText.removeAttribute("data-furigana-path");
+    scenarioText.removeAttribute("data-furigana-path");
+    currentTextFields.clear();
+    currentFurigana = {};
+    furiganaSettings.hidden = true;
+    furiganaToggle.hidden = true;
     scenarioBlock.setAttribute("aria-hidden", "true");
     updateQuestionLayout({ question: message });
     currentSummary = null;
@@ -124,6 +137,102 @@ function validateQuestions(questions) {
     }
 }
 
+function getVisibleTextFields(question) {
+    const fields = { question: question.question };
+    const scenario = question.scenario?.trim() ?? "";
+    if (scenario) fields.scenario = scenario;
+
+    if (question.level === 3 || question.level === 4) {
+        for (const [blockIndex, block] of (question.summary ?? []).entries()) {
+            if (block.type === "text") {
+                fields[`summary.${blockIndex}.text`] = block.text;
+            } else {
+                for (const [itemIndex, item] of block.items.entries()) {
+                    if (item.label !== undefined) {
+                        fields[`summary.${blockIndex}.items.${itemIndex}.label`] = item.label;
+                    }
+                    fields[`summary.${blockIndex}.items.${itemIndex}.text`] = item.text;
+                }
+            }
+        }
+
+        for (const [index, hint] of (question.hints ?? []).entries()) {
+            fields[`hints.${index}`] = hint;
+        }
+        const detailText = question.detail?.text?.trim() ?? "";
+        if (detailText) fields["detail.text"] = detailText;
+        for (const [index, term] of (question.terms ?? []).entries()) {
+            fields[`terms.${index}.term`] = term.term;
+            fields[`terms.${index}.definition`] = term.definition;
+        }
+        for (const [index, source] of (question.detail?.sources ?? []).entries()) {
+            fields[`detail.sources.${index}.title`] = source.title;
+        }
+    }
+    return fields;
+}
+
+function validateFurigana(questions, readings) {
+    if (!readings || typeof readings !== "object" || Array.isArray(readings)) {
+        throw new Error("Invalid furigana data.");
+    }
+
+    const questionIds = new Set(questions.map(question => question.id));
+    for (const [questionId, fields] of Object.entries(readings)) {
+        if (!questionIds.has(questionId) || !fields ||
+            typeof fields !== "object" || Array.isArray(fields)) {
+            throw new Error("Invalid furigana question entry.");
+        }
+    }
+
+    const containsKanji = value => /\p{Script=Han}/u.test(value);
+    for (const question of questions) {
+        const fields = getVisibleTextFields(question);
+        const readingsForQuestion = readings[question.id];
+        if (!readingsForQuestion || !Array.isArray(readingsForQuestion.question)) {
+            throw new Error(`Missing question furigana: ${question.id}`);
+        }
+        for (const [fieldPath, segments] of Object.entries(readingsForQuestion)) {
+            const source = fields[fieldPath];
+            if (typeof source !== "string" || !Array.isArray(segments) || segments.length === 0) {
+                throw new Error(`Invalid furigana field: ${question.id}.${fieldPath}`);
+            }
+
+            let reconstructed = "";
+            for (const segment of segments) {
+                if (!segment || typeof segment !== "object" || Array.isArray(segment)) {
+                    throw new Error(`Invalid furigana segment: ${question.id}.${fieldPath}`);
+                }
+                if (typeof segment.text === "string" &&
+                    Object.keys(segment).length === 1) {
+                    if (containsKanji(segment.text)) {
+                        throw new Error(`Unannotated kanji: ${question.id}.${fieldPath}`);
+                    }
+                    reconstructed += segment.text;
+                } else if (typeof segment.ruby === "string" &&
+                    typeof segment.reading === "string" &&
+                    Object.keys(segment).length === 2 &&
+                    containsKanji(segment.ruby) &&
+                    /^[\u3041-\u3096\u309D-\u309F\u30FC・]+$/u.test(segment.reading)) {
+                    reconstructed += segment.ruby;
+                } else {
+                    throw new Error(`Invalid ruby segment: ${question.id}.${fieldPath}`);
+                }
+            }
+            if (reconstructed !== source) {
+                throw new Error(`Furigana text does not match source: ${question.id}.${fieldPath}`);
+            }
+        }
+
+        for (const [fieldPath, source] of Object.entries(fields)) {
+            if (containsKanji(source) &&
+                !Object.hasOwn(readingsForQuestion, fieldPath)) {
+                throw new Error(`Missing furigana: ${question.id}.${fieldPath}`);
+            }
+        }
+    }
+}
+
 function validateSummary(summary) {
     if (summary === undefined) return;
     if (!Array.isArray(summary) || summary.length === 0) {
@@ -148,6 +257,46 @@ function validateSummary(summary) {
     }
 }
 
+function drawFuriganaText(element, text, fieldPath, suffix = "") {
+    const segments = currentFurigana[fieldPath];
+    if (!furiganaEnabled || !segments) {
+        element.textContent = text + suffix;
+        return;
+    }
+
+    element.replaceChildren();
+    for (const segment of segments) {
+        if (typeof segment.text === "string") {
+            element.appendChild(document.createTextNode(segment.text));
+        } else {
+            const ruby = document.createElement("ruby");
+            ruby.appendChild(document.createTextNode(segment.ruby));
+            const reading = document.createElement("rt");
+            reading.textContent = segment.reading;
+            ruby.appendChild(reading);
+            element.appendChild(ruby);
+        }
+    }
+    if (suffix) element.appendChild(document.createTextNode(suffix));
+}
+
+function renderFuriganaText(element, text, fieldPath, suffix = "") {
+    element.dataset.furiganaPath = fieldPath;
+    element.dataset.furiganaSuffix = suffix;
+    currentTextFields.set(fieldPath, text);
+    drawFuriganaText(element, text, fieldPath, suffix);
+}
+
+function refreshFuriganaText() {
+    document.querySelectorAll("[data-furigana-path]").forEach(element => {
+        const fieldPath = element.dataset.furiganaPath;
+        const text = currentTextFields.get(fieldPath);
+        if (text !== undefined) {
+            drawFuriganaText(element, text, fieldPath, element.dataset.furiganaSuffix);
+        }
+    });
+}
+
 function setQuestionSummaryOpen(isOpen) {
     isOpen = Boolean(isOpen && state === "ready" && currentSummary);
     if (isOpen) {
@@ -156,25 +305,42 @@ function setQuestionSummaryOpen(isOpen) {
     }
     questionSummaryText.innerHTML = "";
     if (isOpen) {
-        for (const block of currentSummary) {
+        for (const [blockIndex, block] of currentSummary.entries()) {
             if (block.type === "text") {
                 const paragraph = document.createElement("p");
-                paragraph.textContent = block.text;
+                renderFuriganaText(
+                    paragraph,
+                    block.text,
+                    `summary.${blockIndex}.text`
+                );
                 questionSummaryText.appendChild(paragraph);
             } else {
                 const list = document.createElement("ul");
                 list.className = "summary-bullets";
-                for (const item of block.items) {
+                for (const [itemIndex, item] of block.items.entries()) {
                     const entry = document.createElement("li");
                     if (item.label !== undefined) {
                         const label = document.createElement("strong");
-                        label.textContent = item.label + "：";
+                        renderFuriganaText(
+                            label,
+                            item.label,
+                            `summary.${blockIndex}.items.${itemIndex}.label`,
+                            "："
+                        );
                         const text = document.createElement("span");
-                        text.textContent = item.text;
+                        renderFuriganaText(
+                            text,
+                            item.text,
+                            `summary.${blockIndex}.items.${itemIndex}.text`
+                        );
                         entry.appendChild(label);
                         entry.appendChild(text);
                     } else {
-                        entry.textContent = item.text;
+                        renderFuriganaText(
+                            entry,
+                            item.text,
+                            `summary.${blockIndex}.items.${itemIndex}.text`
+                        );
                     }
                     list.appendChild(entry);
                 }
@@ -197,14 +363,22 @@ async function loadQuestions() {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
     try {
-        const response = await fetch("level" + level + ".json", { signal: controller.signal });
-        if (!response.ok) {
-            throw new Error("Question request failed: HTTP " + response.status);
+        const [response, furiganaResponse] = await Promise.all([
+            fetch("level" + level + ".json", { signal: controller.signal }),
+            fetch("level" + level + "-furigana.json", { signal: controller.signal })
+        ]);
+        if (!response.ok || !furiganaResponse.ok) {
+            throw new Error("Question or furigana request failed.");
         }
-        const questions = await response.json();
+        const [questions, furigana] = await Promise.all([
+            response.json(),
+            furiganaResponse.json()
+        ]);
         validateQuestions(questions);
+        validateFurigana(questions, furigana);
         shuffle(questions);
         sessionQuestions = questions;
+        readingsByQuestionId = furigana;
         if (sessionQuestions.length === 0) {
             showMessage("このLevelの質問はまだありません。レベルを選び直してください。");
             setState("empty");
@@ -213,8 +387,10 @@ async function loadQuestions() {
         showQuestion();
         setState("ready");
     } catch (error) {
+        const timedOut = controller.signal.aborted;
         console.error("Omoi: 質問の読み込みに失敗しました。", error);
-        showMessage(controller.signal.aborted
+        if (!timedOut) controller.abort();
+        showMessage(timedOut
             ? "読み込みに時間がかかっています。接続を確認して再試行してください。"
             : "質問を読み込めませんでした。接続を確認して再試行してください。");
         setState("error");
@@ -248,11 +424,16 @@ function showQuestion() {
     const currentQuestion =
         sessionQuestions[currentQuestionIndex];
 
-    questionText.textContent =
-        currentQuestion.question;
+    currentFurigana = readingsByQuestionId[currentQuestion.id];
+    currentTextFields = new Map();
+    furiganaToggle.hidden = Object.keys(currentFurigana).length === 0;
+    furiganaSettings.hidden = furiganaToggle.hidden;
+    furiganaToggle.setAttribute("aria-pressed", String(furiganaEnabled));
+    furiganaToggle.textContent = furiganaEnabled ? "ふりがなを隠す" : "ふりがなを表示";
+    renderFuriganaText(questionText, currentQuestion.question, "question");
 
     const scenario = currentQuestion.scenario?.trim() ?? "";
-    scenarioText.textContent = scenario;
+    renderFuriganaText(scenarioText, scenario, "scenario");
     scenarioBlock.setAttribute("aria-hidden", String(scenario === ""));
 
     updateQuestionLayout(currentQuestion);
@@ -278,9 +459,9 @@ function showQuestion() {
     const hints = supportsHelpers ? currentQuestion.hints ?? [] : [];
     if (hints.length > 0) {
         hintButton.hidden = false;
-        hints.forEach(function (hint) {
+        hints.forEach(function (hint, index) {
             const listItem = document.createElement("li");
-            listItem.textContent = hint;
+            renderFuriganaText(listItem, hint, `hints.${index}`);
             hintsList.appendChild(listItem);
         });
     }
@@ -291,14 +472,16 @@ function showQuestion() {
     const terms = supportsHelpers ? currentQuestion.terms ?? [] : [];
     if (detailValue !== "" || sources.length > 0 || terms.length > 0) {
         detailButton.hidden = false;
-        detailText.textContent = detailValue;
+        if (detailValue) {
+            renderFuriganaText(detailText, detailValue, "detail.text");
+        }
 
         termsSection.hidden = terms.length === 0;
-        terms.forEach(function (term) {
+        terms.forEach(function (term, index) {
             const name = document.createElement("dt");
-            name.textContent = term.term;
+            renderFuriganaText(name, term.term, `terms.${index}.term`);
             const definition = document.createElement("dd");
-            definition.textContent = term.definition;
+            renderFuriganaText(definition, term.definition, `terms.${index}.definition`);
             termsList.appendChild(name);
             termsList.appendChild(definition);
         });
@@ -307,15 +490,14 @@ function showQuestion() {
         if (sources.length > 0) {
             sourceSection.hidden = false;
 
-            sources.forEach(function (source) {
+            sources.forEach(function (source, index) {
                 const listItem =
                     document.createElement("li");
 
                 const link =
                     document.createElement("a");
 
-                link.textContent =
-                    source.title;
+                renderFuriganaText(link, source.title, `detail.sources.${index}.title`);
 
                 link.href =
                     source.url;
@@ -460,6 +642,20 @@ questionSummaryToggle.addEventListener("click", function () {
     setQuestionSummaryOpen(questionSummary.hidden);
 });
 
+furiganaToggle.addEventListener("click", function () {
+    if (state !== "ready") return;
+    furiganaEnabled = !furiganaEnabled;
+    furiganaToggle.setAttribute("aria-pressed", String(furiganaEnabled));
+    furiganaToggle.textContent = furiganaEnabled ? "ふりがなを隠す" : "ふりがなを表示";
+    refreshFuriganaText();
+});
+
+document.addEventListener("click", function (event) {
+    if (!furiganaSettings.contains(event.target)) {
+        furiganaSettings.open = false;
+    }
+});
+
 function setDetailPanelOpen(isOpen) {
     if (isOpen) {
         setHintsPanelOpen(false);
@@ -493,7 +689,10 @@ function closeHintsPanel() {
 document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
         if (finishConfirmDialog.open) return;
-        if (!questionSummary.hidden) {
+        if (furiganaSettings.open) {
+            furiganaSettings.open = false;
+            furiganaSettingsSummary.focus();
+        } else if (!questionSummary.hidden) {
             setQuestionSummaryOpen(false);
             questionSummaryToggle.focus();
         } else if (!hintsPanel.hidden) {

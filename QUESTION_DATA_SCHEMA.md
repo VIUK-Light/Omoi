@@ -67,6 +67,43 @@ Level 3とLevel 4では `perspective` を必須にします。補助は必要な
 - 不要な補助はフィールドを省略します。空白・空配列や定型文で埋めません。補助が一つもないカードも正常な編集結果です。
 - 判断や原文にない事実・需要・感情を補わず、要点を読まなくても回答・対話・スキップできる状態を保ちます。自動検証は中立性や理解しやすさを判定しないため、文案とは独立した読み合わせを行います。
 
+## フリガナ
+
+質問画面右上の読みやすさ設定パネルにある「ふりがなを表示」ボタンで切り替えます。初期状態は非表示です。質問・場面文・要点・ヒント・背景・用語・出典名の読みは、原文を変更せず `level2-furigana.json`・`level3-furigana.json`・`level4-furigana.json` に記録します。ルビの文字サイズ・太さは `question.css` の `--furigana-font-size` と `--furigana-font-weight` で調整できます。
+
+各サイドカーは質問IDをキーにし、その値に表示項目のパスと分割配列を記録します。`text` セグメントは通常の文字列、`ruby` セグメントは漢字を含む本文とひらがなの読みです。
+
+```json
+{
+  "question-id": {
+    "question": [
+      { "ruby": "学校", "reading": "がっこう" },
+      { "text": "で" },
+      { "ruby": "話", "reading": "はな" },
+      { "text": "す？" }
+    ],
+    "scenario": [
+      { "text": "まず" },
+      { "ruby": "状況", "reading": "じょうきょう" },
+      { "text": "を" },
+      { "ruby": "考", "reading": "かんが" },
+      { "text": "える。" }
+    ]
+  }
+}
+```
+
+使用できるパスは `question`、`scenario`、`summary.N.text`、`summary.N.items.N.label`、`summary.N.items.N.text`、`hints.N`、`detail.text`、`terms.N.term`、`terms.N.definition`、`detail.sources.N.title` です。分割をつなげた本文は元の表示文字列と完全一致させます。漢字を含む表示項目は全て読みを付け、読みは文脈に合うひらがなで記述します。ID、分類、URLなど利用者に表示しないデータは対象外です。
+
+## フリガナ検証
+
+```sh
+node tools/verify-question-furigana.mjs
+node --test tools/furigana-schema.test.mjs tools/question-flow.test.mjs
+```
+
+検証は全質問の表示項目を収集し、読みデータの不足、元の表示文との不一致、漢字の読み漏れ、形式不正を検出します。
+
 v3プレビューではLevel 3・4の全663問を対象に、採用／省略理由と文面の指紋を `docs/v3-content-review.json` に記録します。版は `version: 1`、有効Levelは `activeLevels: [2, 3, 4]`、起点は `baseCommit`、各記録には `id`、`level`、`fingerprint`、4補助の `decisions`、`reviewer`、別の読み手の `independentReviewer` を持たせます。指紋は現在のカード全体を `JSON.stringify()` したUTF-8文字列のSHA-256です。補助文を変更した場合も再確認が必要です。
 
 ## 高リスクの内容

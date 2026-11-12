@@ -5,6 +5,73 @@ body {
     color: #111111;
 }
 
+:root {
+    --furigana-font-size: 0.55em;
+    --furigana-font-weight: 400;
+}
+
+.furigana-settings {
+    position: fixed;
+    z-index: 20;
+    top: 12px;
+    right: 56px;
+    color: var(--omoi-ink, #111111);
+    font-family: sans-serif;
+}
+
+.furigana-settings > summary {
+    display: grid;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    place-items: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: var(--omoi-surface, #f7f7f7);
+    color: inherit;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1;
+    list-style: none;
+}
+
+.furigana-settings > summary::-webkit-details-marker { display: none; }
+.furigana-settings > summary:hover { background: var(--omoi-hover, #eeeeee); }
+.furigana-settings > summary:focus-visible {
+    outline: 2px solid var(--omoi-focus, #24566b);
+    outline-offset: 2px;
+}
+.furigana-settings[open] > summary { background: var(--omoi-hover, #eeeeee); }
+
+.furigana-settings-panel {
+    position: absolute;
+    top: 44px;
+    right: 0;
+    display: grid;
+    width: min(240px, calc(100vw - 80px));
+    gap: 12px;
+    padding: 14px;
+    box-sizing: border-box;
+    border: 1px solid var(--omoi-border, #b7b7b7);
+    border-radius: 10px;
+    background: var(--omoi-page, #ffffff);
+    box-shadow: 0 6px 24px rgb(0 0 0 / 14%);
+}
+
+.furigana-settings-panel > p {
+    margin: 0;
+    color: var(--omoi-ink, #111111);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.furigana-settings-panel .furigana-toggle {
+    width: 100%;
+    min-height: 44px;
+    cursor: pointer;
+}
+
 .question-screen {
     min-height: 100vh;
     min-height: 100svh;
@@ -289,10 +356,23 @@ body {
     color: #ffffff;
 }
 
+.question-tool[aria-pressed="true"] {
+    border-color: #555555;
+    background: #555555;
+    color: #ffffff;
+}
+
 .question-tool[aria-expanded="true"]:hover {
     border-color: #444444;
     background: #444444;
     color: #ffffff;
+}
+
+ruby { ruby-position: over; }
+rt {
+    font-size: var(--furigana-font-size);
+    font-weight: var(--furigana-font-weight);
+    line-height: 1;
 }
 
 .finish-button:hover:not(:disabled),

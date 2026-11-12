@@ -7,10 +7,23 @@
 
     <title>質問 - Omoi</title>
     <link rel="stylesheet" href="question.css">
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="theme.css">
 </head>
 <body>
     <main class="question-screen">
+        <details class="furigana-settings">
+            <summary id="furiganaSettingsSummary" aria-label="読みやすさ設定"
+                aria-controls="furiganaSettingsPanel" title="読みやすさ設定">
+                <span aria-hidden="true">あ</span>
+            </summary>
+            <div id="furiganaSettingsPanel" class="furigana-settings-panel"
+                role="group" aria-label="読みやすさ設定">
+                <p>読みやすさ設定</p>
+                <button type="button" id="furiganaToggle" class="question-tool furigana-toggle"
+                    aria-pressed="false" hidden>ふりがなを表示</button>
+            </div>
+        </details>
 
         <!-- レベル選択に戻る -->
         <a href="select.html" class="back-link">

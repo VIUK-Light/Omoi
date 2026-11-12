@@ -15,3 +15,28 @@ test('home opens category selection and enables the next step', async ({ page })
   await page.locator('label[for="level2"]').click();
   await expect(nextButton).toBeEnabled();
 });
+
+test('theme can follow the device or be set manually across pages', async ({ page }) => {
+  await page.emulateMedia({ colorScheme: 'dark' });
+  await page.goto('/');
+
+  const root = page.locator('html');
+  await expect(root).toHaveAttribute('data-theme', 'dark');
+  await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(22, 24, 27)');
+
+  await page.locator('.theme-control > summary').click();
+  await page.getByRole('button', { name: 'ライト' }).click();
+  await expect(root).toHaveAttribute('data-theme', 'light');
+  await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
+
+  await page.goto('/select.html');
+  await expect(root).toHaveAttribute('data-theme', 'light');
+  await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
+
+  await page.locator('.theme-control > summary').click();
+  await page.getByRole('button', { name: '自動' }).click();
+  await expect(root).toHaveAttribute('data-theme', 'dark');
+
+  await page.emulateMedia({ colorScheme: 'light' });
+  await expect(root).toHaveAttribute('data-theme', 'light');
+});
