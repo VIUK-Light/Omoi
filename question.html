@@ -20,12 +20,18 @@
             <div id="furiganaSettingsPanel" class="furigana-settings-panel"
                 role="group" aria-label="読みやすさ設定">
                 <p>読みやすさ設定</p>
-                <button type="button" id="classroomModeToggle" class="question-tool classroom-mode-toggle"
-                    aria-pressed="false" hidden>授業モード</button>
+                <button type="button" id="largeTextToggle" class="question-tool large-text-toggle"
+                    aria-pressed="false" hidden>文字を大きく</button>
                 <button type="button" id="furiganaToggle" class="question-tool furigana-toggle"
                     aria-pressed="false" hidden>ふりがなを表示</button>
             </div>
         </details>
+        <button type="button" id="classroomModeToggle" class="classroom-mode-icon"
+            aria-label="授業モード" title="授業モード" aria-pressed="false" hidden>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 4.5h16v12H4zM7 8h10M7 11h7M8 21l2-4.5m6 4.5L14 16.5"/>
+            </svg>
+        </button>
 
         <!-- レベル選択に戻る -->
         <a href="select.html" class="back-link">

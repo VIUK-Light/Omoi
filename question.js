@@ -8,6 +8,7 @@ const scenarioText = document.getElementById("scenarioText");
 const furiganaSettings = document.querySelector(".furigana-settings");
 const furiganaSettingsSummary = document.getElementById("furiganaSettingsSummary");
 const questionScreen = document.querySelector(".question-screen");
+const largeTextToggle = document.getElementById("largeTextToggle");
 const classroomModeToggle = document.getElementById("classroomModeToggle");
 const questionSummaryToggle = document.getElementById("questionSummaryToggle");
 const furiganaToggle = document.getElementById("furiganaToggle");
@@ -63,6 +64,7 @@ let readingsByQuestionId = {};
 let currentFurigana = {};
 let currentTextFields = new Map();
 let furiganaEnabled = false;
+let largeTextEnabled = false;
 let classroomModeEnabled = false;
 
 const retryLoadButton = document.getElementById("retryLoadButton");
@@ -86,6 +88,7 @@ function showMessage(message) {
     currentTextFields.clear();
     currentFurigana = {};
     furiganaSettings.hidden = true;
+    largeTextToggle.hidden = true;
     classroomModeToggle.hidden = true;
     furiganaToggle.hidden = true;
     scenarioBlock.setAttribute("aria-hidden", "true");
@@ -431,10 +434,10 @@ function showQuestion() {
     currentFurigana = readingsByQuestionId[currentQuestion.id];
     currentTextFields = new Map();
     furiganaToggle.hidden = Object.keys(currentFurigana).length === 0;
+    largeTextToggle.hidden = false;
     classroomModeToggle.hidden = false;
     furiganaSettings.hidden = false;
-    classroomModeToggle.setAttribute("aria-pressed", String(classroomModeEnabled));
-    classroomModeToggle.textContent = classroomModeEnabled ? "授業モードを終了" : "授業モード";
+    updateDisplayModes();
     furiganaToggle.setAttribute("aria-pressed", String(furiganaEnabled));
     furiganaToggle.textContent = furiganaEnabled ? "ふりがなを隠す" : "ふりがなを表示";
     renderFuriganaText(questionText, currentQuestion.question, "question");
@@ -657,13 +660,35 @@ furiganaToggle.addEventListener("click", function () {
     refreshFuriganaText();
 });
 
+largeTextToggle.addEventListener("click", function () {
+    if (state !== "ready") return;
+    largeTextEnabled = !largeTextEnabled;
+    if (largeTextEnabled) classroomModeEnabled = false;
+    updateDisplayModes();
+});
+
 classroomModeToggle.addEventListener("click", function () {
     if (state !== "ready") return;
     classroomModeEnabled = !classroomModeEnabled;
-    questionScreen.classList.toggle("classroom-mode", classroomModeEnabled);
-    classroomModeToggle.setAttribute("aria-pressed", String(classroomModeEnabled));
-    classroomModeToggle.textContent = classroomModeEnabled ? "授業モードを終了" : "授業モード";
+    if (classroomModeEnabled) {
+        largeTextEnabled = false;
+        setQuestionSummaryOpen(false);
+        setHintsPanelOpen(false);
+        setDetailPanelOpen(false);
+    }
+    updateDisplayModes();
 });
+
+function updateDisplayModes() {
+    questionScreen.classList.toggle("large-text-mode", largeTextEnabled);
+    questionScreen.classList.toggle("classroom-mode", classroomModeEnabled);
+    largeTextToggle.setAttribute("aria-pressed", String(largeTextEnabled));
+    largeTextToggle.textContent = largeTextEnabled ? "標準サイズに戻す" : "文字を大きく";
+    classroomModeToggle.setAttribute("aria-pressed", String(classroomModeEnabled));
+    const classroomLabel = classroomModeEnabled ? "授業モードを終了" : "授業モード";
+    classroomModeToggle.setAttribute("aria-label", classroomLabel);
+    classroomModeToggle.title = classroomLabel;
+}
 
 document.addEventListener("click", function (event) {
     if (!furiganaSettings.contains(event.target)) {

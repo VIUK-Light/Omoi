@@ -310,20 +310,30 @@ test('furigana starts off, toggles safely, and stays enabled across questions', 
     assert.equal(app.element('termsSection').hidden, true);
 });
 
-test('classroom mode enlarges the question and stays enabled across cards', async () => {
+test('large text and classroom modes are exclusive and persist across cards', async () => {
     const app = setup();
     app.respond();
     await flush();
 
+    const largeTextToggle = app.element('largeTextToggle');
     const toggle = app.element('classroomModeToggle');
     const questionScreen = app.element('.question-screen');
+    assert.equal(largeTextToggle.hidden, false);
     assert.equal(toggle.hidden, false);
+    assert.equal(largeTextToggle.attrs['aria-pressed'], 'false');
     assert.equal(toggle.attrs['aria-pressed'], 'false');
+    assert.equal(questionScreen.classList.contains('large-text-mode'), false);
     assert.equal(questionScreen.classList.contains('classroom-mode'), false);
 
+    largeTextToggle.click();
+    assert.equal(largeTextToggle.attrs['aria-pressed'], 'true');
+    assert.equal(questionScreen.classList.contains('large-text-mode'), true);
+
     toggle.click();
+    assert.equal(largeTextToggle.attrs['aria-pressed'], 'false');
+    assert.equal(questionScreen.classList.contains('large-text-mode'), false);
     assert.equal(toggle.attrs['aria-pressed'], 'true');
-    assert.equal(toggle.textContent, '授業モードを終了');
+    assert.equal(toggle.attrs['aria-label'], '授業モードを終了');
     assert.equal(questionScreen.classList.contains('classroom-mode'), true);
 
     app.element('nextQuestionButton').click();
@@ -332,7 +342,7 @@ test('classroom mode enlarges the question and stays enabled across cards', asyn
 
     toggle.click();
     assert.equal(toggle.attrs['aria-pressed'], 'false');
-    assert.equal(toggle.textContent, '授業モード');
+    assert.equal(toggle.attrs['aria-label'], '授業モード');
     assert.equal(questionScreen.classList.contains('classroom-mode'), false);
 });
 
