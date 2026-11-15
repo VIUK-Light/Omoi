@@ -71,12 +71,12 @@
         <a href="select.html" class="back-link" id="changeCategoryLink">
             ← カテゴリーを変える
         </a>
-        <a href="select.html" class="back-link other-questions-link" id="otherQuestionsLink" hidden>
-            他の質問をする →
-        </a>
 
         <!-- 質問 -->
         <div class="question-content" aria-live="polite" aria-atomic="true" aria-busy="true">
+            <p id="sharedQuestionNotice" class="shared-question-notice" role="note" hidden>
+                共有された質問です
+            </p>
             <div id="scenarioBlock" class="scenario-block" aria-hidden="true">
                 <p class="scenario-label">こんな場面を想像してください</p>
                 <p id="scenarioText" class="scenario-text"></p>
@@ -208,6 +208,9 @@
                 <button type="button" id="previousQuestionButton" class="previous-button" disabled>
                     <span aria-hidden="true">←</span> 前の問い
                 </button>
+                <a href="select.html" class="finish-button other-questions-link" id="otherQuestionsLink" hidden>
+                    他の質問をする →
+                </a>
                 <button type="button" id="finishButton" class="finish-button" disabled>
                     ここで終える
                 </button>

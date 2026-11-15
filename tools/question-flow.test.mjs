@@ -131,6 +131,23 @@ test('finish button opens an Omoi confirmation dialog', async () => {
     assert.equal(app.location.href, 'https://example.test/question.html?level=2');
 });
 
+test('shared question shows its label and other-questions link without finish or classroom mode', async () => {
+    const app = setup('?level=2&id=test-2');
+    app.respond(); await flush();
+
+    assert.equal(app.element('sharedQuestionNotice').hidden, false);
+    assert.equal(app.element('otherQuestionsLink').hidden, false);
+    assert.equal(app.element('changeCategoryLink').hidden, true);
+    assert.equal(app.element('finishButton').hidden, true);
+    assert.equal(app.element('classroomModeToggle').hidden, true);
+    assert.equal(app.element('questionText').textContent, cards[2].question);
+
+    app.element('finishButton').click();
+    app.element('classroomModeToggle').click();
+    assert.equal(app.element('finishConfirmDialog').open, undefined);
+    assert.equal(app.element('.question-screen').classList.contains('classroom-mode'), false);
+});
+
 test('confirming finish ends the session', async () => {
     const app = setup();
     app.respond(); await flush();

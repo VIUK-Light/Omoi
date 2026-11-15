@@ -16,6 +16,7 @@ const furiganaSettingsSummary = document.getElementById("furiganaSettingsSummary
 const questionScreen = document.querySelector(".question-screen");
 const changeCategoryLink = document.getElementById("changeCategoryLink");
 const otherQuestionsLink = document.getElementById("otherQuestionsLink");
+const sharedQuestionNotice = document.getElementById("sharedQuestionNotice");
 const nextNote = document.getElementById("nextNote");
 const shareButton = document.getElementById("shareButton");
 const shareStatus = document.getElementById("shareStatus");
@@ -99,11 +100,14 @@ function setState(nextState) {
 
 function applySharedMode() {
     questionScreen.classList.toggle("shared-question", isSharedQuestion);
+    sharedQuestionNotice.hidden = !isSharedQuestion;
     nextQuestionButton.hidden = isSharedQuestion;
     previousQuestionButton.hidden = isSharedQuestion;
     nextNote.hidden = isSharedQuestion;
     changeCategoryLink.hidden = isSharedQuestion;
     otherQuestionsLink.hidden = !isSharedQuestion;
+    finishButton.hidden = isSharedQuestion;
+    classroomModeToggle.hidden = isSharedQuestion;
 }
 
 function showMessage(message) {
@@ -485,7 +489,7 @@ function showQuestion() {
     currentTextFields = new Map();
     furiganaToggle.hidden = Object.keys(currentFurigana).length === 0;
     textSizeControl.hidden = false;
-    classroomModeToggle.hidden = false;
+    classroomModeToggle.hidden = isSharedQuestion;
     furiganaSettings.hidden = false;
     updateDisplayModes();
     furiganaToggle.setAttribute("aria-pressed", String(furiganaEnabled));
@@ -698,7 +702,7 @@ previousQuestionButton.addEventListener("click", function () {
 });
 
 finishButton.addEventListener("click", function () {
-    if (state !== "ready") return;
+    if (state !== "ready" || isSharedQuestion) return;
     finishConfirmDialog.showModal();
     cancelFinishButton.focus();
 });
@@ -774,7 +778,7 @@ for (const { size, element } of textSizeButtons) {
 }
 
 classroomModeToggle.addEventListener("click", function () {
-    if (state !== "ready") return;
+    if (state !== "ready" || isSharedQuestion) return;
     classroomModeEnabled = !classroomModeEnabled;
     if (classroomModeEnabled) {
         setQuestionSummaryOpen(false);

@@ -152,6 +152,17 @@ body {
     white-space: pre-line;
 }
 
+.shared-question-notice {
+    margin: 0 0 20px;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.other-questions-link {
+    text-decoration: none;
+}
+
 .scenario-block {
     min-height: clamp(64px, 10svh, 78px);
     margin: 0 0 36px;
