@@ -106,6 +106,16 @@ node --test tools/furigana-schema.test.mjs tools/question-flow.test.mjs
 
 v3プレビューではLevel 3・4の全663問を対象に、採用／省略理由と文面の指紋を `docs/v3-content-review.json` に記録します。版は `version: 1`、有効Levelは `activeLevels: [2, 3, 4]`、起点は `baseCommit`、各記録には `id`、`level`、`fingerprint`、4補助の `decisions`、`reviewer`、別の読み手の `independentReviewer` を持たせます。指紋は現在のカード全体を `JSON.stringify()` したUTF-8文字列のSHA-256です。補助文を変更した場合も再確認が必要です。
 
+## 表示設定
+
+各ページ右上の「表示設定」パネルでは、テーマと背景を選べます。選択は端末（ブラウザの `localStorage`）に保存し、次回以降も同じ設定で表示されます。サーバーへは送りません。設定はサイト全体で共通で、ページ移動しても同じ見た目になります。
+
+- テーマ: 自動・ライト・ダーク・セピア・ナイト・VIUK-Light・VIUK-Light dark。「自動」は端末のライト／ダーク設定へ追従します。VIUK-Light は本家の配色（ink・accent）に寄せた白基調で、VIUK-Light dark は同じブランド色を暗色にしたものです。
+- 背景: なし・朝焼け・波・森・和紙・夕暮れ・雲・桜・深海・星空・波紋・格子。画像ファイルは使わず、CSSのグラデーションで描きます。ダーク系のテーマ（ダーク・ナイト・VIUK-Light dark）では、背景も同じ暗い配色で描きます。背景ごとに文字が乗る主色を `--omoi-bg-<id>-base` として定義し、可読性の基準にします。
+- 背景の濃さ: 0〜100%で背景の濃さを調整します。100%なら背景をそのまま見せ、0%なら背景を隠して単色に戻します。初期値は55%です。背景が「なし」のときはこの項目は表示しません。
+
+現在の状態は `html` の `data-theme`（`light`・`dark`・`sepia`・`night`・`viuk`・`viuk-dark`。自動は解決後の値）、`data-selected-theme`（選択中のテーマ）、`data-background`（背景のID）、`--omoi-scrim-opacity`（水幕の濃度。背景の濃さ100%で0、0%で1）で表します。保存先は `omoi-display`（テーマ・背景・濃度のJSON）1つです。以前はテーマだけを `omoi-theme` に保存していたため、読み込み時に `omoi-theme` があれば読み替えて `omoi-display` へ移し、以後は `omoi-theme` を使いません。
+
 ## 高リスクの内容
 
 必要なカードだけに、任意の `content_warning` 配列を付けます。使える値は次の10種類です。

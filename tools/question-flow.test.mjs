@@ -36,6 +36,7 @@ function setup(search = '?level=2') {
                         return force;
                     }
                 },
+                contains() { return false; },
                 setAttribute(key, value) { this.attrs[key] = value; },
                 removeAttribute(key) { delete this[key]; },
                 set innerHTML(value) { this.children = []; this.textContent = ''; },
@@ -84,6 +85,7 @@ function setup(search = '?level=2') {
         console: { error(...args) { errors.push(args); } },
         document: documentStub,
         window: { location, addEventListener() {} }, requestAnimationFrame(fn) { fn(); },
+        navigator: { clipboard: { writeText: async () => {} } },
         fetch(url, options) {
             return new Promise((resolve, reject) => {
                 requests.push({ url, resolve, reject });
@@ -167,6 +169,18 @@ test('canceling finish confirmation keeps the current session open', async () =>
     assert.equal(app.location.href, 'https://example.test/question.html?level=2');
     assert.equal(app.element('finishButton').disabled, false);
     assert.equal(app.element('finishButton').focused, true);
+});
+
+test('clicking another button clears the copied-link status', async () => {
+    const app = setup();
+    app.respond(); await flush();
+    await app.element('shareButton').click();
+    assert.equal(app.element('shareStatus').textContent, 'リンクをコピーしました');
+
+    app.document.click({
+        target: { closest: () => app.element('hintButton') }
+    });
+    assert.equal(app.element('shareStatus').textContent, '');
 });
 
 test('previous question navigation is disabled initially and returns to the prior question', async () => {

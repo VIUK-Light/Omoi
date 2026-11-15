@@ -13,6 +13,203 @@
     --omoi-on-primary: #ffffff;
     --omoi-link: #24566b;
     --omoi-focus: #24566b;
+    --omoi-disabled: #aaaaaa;
+    --omoi-danger: #b04a4a;
+    --omoi-backdrop: rgb(0 0 0 / 45%);
+    --omoi-scrim-color: rgb(255 255 255);
+    --omoi-scrim-opacity: .55;
+    --omoi-bg-dawn: linear-gradient(160deg, #ffe9d6 0%, #ffd0bb 45%, #f7c2d4 100%);
+    --omoi-bg-ocean: linear-gradient(180deg, #dff1f8 0%, #a8d6ea 45%, #6fb0d4 100%);
+    --omoi-bg-forest: linear-gradient(165deg, #e6f3e0 0%, #bcdcb2 45%, #8bb78f 100%);
+    --omoi-bg-paper: repeating-linear-gradient(135deg, #f6f1e6 0 10px, #ece4d3 10px 20px);
+    --omoi-bg-dusk: linear-gradient(180deg, #fbe0c6 0%, #f0b3ac 45%, #c39ac9 100%);
+    --omoi-bg-cloud: linear-gradient(180deg, #eef2f6 0%, #dbe3ec 55%, #c9d6e4 100%);
+    --omoi-bg-sakura: linear-gradient(160deg, #fdeef2 0%, #f8d9e4 50%, #eec7d8 100%);
+    --omoi-bg-deep: linear-gradient(180deg, #dcefef 0%, #a9cfd2 50%, #6fa6ad 100%);
+    --omoi-bg-star: radial-gradient(circle at 18% 26%, rgb(255 255 255 / 95%) 0 1.5px, transparent 2px),
+        radial-gradient(circle at 63% 16%, rgb(255 255 255 / 85%) 0 1.5px, transparent 2px),
+        radial-gradient(circle at 82% 58%, rgb(255 255 255 / 90%) 0 1.5px, transparent 2px),
+        radial-gradient(circle at 38% 72%, rgb(255 255 255 / 80%) 0 1.5px, transparent 2px),
+        linear-gradient(180deg, #e3e9f6 0%, #c3cfe6 55%, #aab9d6 100%);
+    --omoi-bg-ripple: repeating-radial-gradient(circle at 32% 38%, rgb(255 255 255 / 55%) 0 2px, transparent 2px 28px),
+        linear-gradient(160deg, #eef3f1 0%, #d5e3e0 60%, #bdd4d0 100%);
+    --omoi-bg-lattice: repeating-linear-gradient(0deg, rgb(17 17 17 / 5%) 0 1px, transparent 1px 30px),
+        repeating-linear-gradient(90deg, rgb(17 17 17 / 5%) 0 1px, transparent 1px 30px),
+        linear-gradient(180deg, #f7f8fa 0%, #e9edf2 100%);
+    --omoi-bg-dawn-base: #ffd0bb;
+    --omoi-bg-ocean-base: #6fb0d4;
+    --omoi-bg-forest-base: #8bb78f;
+    --omoi-bg-paper-base: #ece4d3;
+    --omoi-bg-dusk-base: #f0b3ac;
+    --omoi-bg-cloud-base: #c9d6e4;
+    --omoi-bg-sakura-base: #eec7d8;
+    --omoi-bg-deep-base: #6fa6ad;
+    --omoi-bg-star-base: #aab9d6;
+    --omoi-bg-ripple-base: #bdd4d0;
+    --omoi-bg-lattice-base: #e9edf2;
+}
+
+:root[data-theme="sepia"] {
+    color-scheme: light;
+    --omoi-page: #f7f1e4;
+    --omoi-surface: #efe6d4;
+    --omoi-hover: #e6dbc4;
+    --omoi-ink: #2b2620;
+    --omoi-muted: #6b6153;
+    --omoi-border: #b9ab8f;
+    --omoi-divider: #ddd2ba;
+    --omoi-primary: #3a3227;
+    --omoi-primary-hover: #554a3a;
+    --omoi-on-primary: #f7f1e4;
+    --omoi-link: #7a5c2e;
+    --omoi-focus: #7a5c2e;
+    --omoi-disabled: #a1957f;
+    --omoi-danger: #a04b3c;
+    --omoi-backdrop: rgb(43 38 32 / 45%);
+    --omoi-scrim-color: rgb(247 241 228);
+}
+
+:root[data-theme="night"] {
+    color-scheme: dark;
+    --omoi-page: #10151f;
+    --omoi-surface: #18202d;
+    --omoi-hover: #222c3c;
+    --omoi-ink: #e6ecf5;
+    --omoi-muted: #a3b2c7;
+    --omoi-border: #46566e;
+    --omoi-divider: #2a3546;
+    --omoi-primary: #cfdcec;
+    --omoi-primary-hover: #e8f0fa;
+    --omoi-on-primary: #10151f;
+    --omoi-link: #a9c8e8;
+    --omoi-focus: #a9c8e8;
+    --omoi-disabled: #6d7c92;
+    --omoi-danger: #f0a6a6;
+    --omoi-backdrop: rgb(0 0 0 / 65%);
+    --omoi-scrim-color: rgb(16 21 31);
+    --omoi-bg-dawn: linear-gradient(160deg, #3f322e 0%, #4e3330 45%, #3a2a3f 100%);
+    --omoi-bg-ocean: linear-gradient(180deg, #17222b 0%, #172f3c 45%, #112b3d 100%);
+    --omoi-bg-forest: linear-gradient(165deg, #1a261a 0%, #1e2d22 45%, #18281f 100%);
+    --omoi-bg-paper: repeating-linear-gradient(135deg, #22221e 0 10px, #292823 10px 20px);
+    --omoi-bg-dusk: linear-gradient(180deg, #2e231d 0%, #352224 45%, #281d31 100%);
+    --omoi-bg-cloud: linear-gradient(180deg, #182029 0%, #1f2833 55%, #26303b 100%);
+    --omoi-bg-sakura: linear-gradient(160deg, #2b2028 0%, #312330 50%, #362636 100%);
+    --omoi-bg-deep: linear-gradient(180deg, #0e1d21 0%, #122b31 50%, #173840 100%);
+    --omoi-bg-star: radial-gradient(circle at 18% 26%, rgb(255 255 255 / 90%) 0 1.5px, transparent 2px),
+        radial-gradient(circle at 63% 16%, rgb(255 255 255 / 75%) 0 1.5px, transparent 2px),
+        radial-gradient(circle at 82% 58%, rgb(255 255 255 / 85%) 0 1.5px, transparent 2px),
+        radial-gradient(circle at 38% 72%, rgb(255 255 255 / 70%) 0 1.5px, transparent 2px),
+        linear-gradient(180deg, #111827 0%, #161e31 55%, #1b2440 100%);
+    --omoi-bg-ripple: repeating-radial-gradient(circle at 32% 38%, rgb(255 255 255 / 8%) 0 2px, transparent 2px 28px),
+        linear-gradient(160deg, #141d1c 0%, #192623 60%, #1f2f2c 100%);
+    --omoi-bg-lattice: repeating-linear-gradient(0deg, rgb(255 255 255 / 6%) 0 1px, transparent 1px 30px),
+        repeating-linear-gradient(90deg, rgb(255 255 255 / 6%) 0 1px, transparent 1px 30px),
+        linear-gradient(180deg, #15181d 0%, #1b1f25 100%);
+    --omoi-bg-dawn-base: #4e3330;
+    --omoi-bg-ocean-base: #172f3c;
+    --omoi-bg-forest-base: #1e2d22;
+    --omoi-bg-paper-base: #292823;
+    --omoi-bg-dusk-base: #352224;
+    --omoi-bg-cloud-base: #26303b;
+    --omoi-bg-sakura-base: #362636;
+    --omoi-bg-deep-base: #173840;
+    --omoi-bg-star-base: #1b2440;
+    --omoi-bg-ripple-base: #1f2f2c;
+    --omoi-bg-lattice-base: #1b1f25;
+}
+
+:root[data-theme="viuk"] {
+    color-scheme: light;
+    --omoi-page: #faf9f6;
+    --omoi-surface: #f2f1ec;
+    --omoi-hover: #e8e7e1;
+    --omoi-ink: #171715;
+    --omoi-muted: #626260;
+    --omoi-border: #c9c8c2;
+    --omoi-divider: #dededb;
+    --omoi-primary: #ef502b;
+    --omoi-primary-hover: #d9421f;
+    --omoi-on-primary: #171715;
+    --omoi-link: #203344;
+    --omoi-focus: #203344;
+    --omoi-disabled: #a3a29c;
+    --omoi-danger: #a3301c;
+    --omoi-backdrop: rgb(23 23 21 / 45%);
+    --omoi-scrim-color: rgb(250 249 246);
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --omoi-page: #16181b;
+    --omoi-surface: #202327;
+    --omoi-hover: #2b3036;
+    --omoi-ink: #f0f0ee;
+    --omoi-muted: #b9b9b5;
+    --omoi-border: #757a80;
+    --omoi-divider: #3b4046;
+    --omoi-primary: #d3d4d2;
+    --omoi-primary-hover: #eeeeeb;
+    --omoi-on-primary: #171a1d;
+    --omoi-link: #b8d2de;
+    --omoi-focus: #b8d2de;
+    --omoi-disabled: #90959b;
+    --omoi-danger: #f0a6a6;
+    --omoi-backdrop: rgb(0 0 0 / 70%);
+    --omoi-scrim-color: rgb(22 24 27);
+}
+
+:root[data-theme="viuk-dark"] {
+    color-scheme: dark;
+    --omoi-page: #171715;
+    --omoi-surface: #232320;
+    --omoi-hover: #2e2e2a;
+    --omoi-ink: #ffffff;
+    --omoi-muted: #b9b9b5;
+    --omoi-border: #4a4a46;
+    --omoi-divider: #34342f;
+    --omoi-primary: #ef502b;
+    --omoi-primary-hover: #ff7858;
+    --omoi-on-primary: #171715;
+    --omoi-link: #9db9d6;
+    --omoi-focus: #9db9d6;
+    --omoi-disabled: #7c7c78;
+    --omoi-danger: #f0a6a6;
+    --omoi-backdrop: rgb(0 0 0 / 70%);
+    --omoi-scrim-color: rgb(23 23 21);
+}
+
+/* ダーク系の背景は dark と viuk-dark で共有する。 */
+:root[data-theme="dark"],
+:root[data-theme="viuk-dark"] {
+    --omoi-bg-dawn: linear-gradient(160deg, #46362f 0%, #573733 45%, #422d45 100%);
+    --omoi-bg-ocean: linear-gradient(180deg, #1b2830 0%, #1b3a4a 45%, #14364c 100%);
+    --omoi-bg-forest: linear-gradient(165deg, #1f2d1d 0%, #253628 45%, #1d3125 100%);
+    --omoi-bg-paper: repeating-linear-gradient(135deg, #282722 0 10px, #302e28 10px 20px);
+    --omoi-bg-dusk: linear-gradient(180deg, #372820 0%, #402728 45%, #30223a 100%);
+    --omoi-bg-cloud: linear-gradient(180deg, #1b2027 0%, #222932 55%, #2a323c 100%);
+    --omoi-bg-sakura: linear-gradient(160deg, #2e2229 0%, #342530 50%, #39283a 100%);
+    --omoi-bg-deep: linear-gradient(180deg, #102024 0%, #143036 50%, #193f47 100%);
+    --omoi-bg-star: radial-gradient(circle at 18% 26%, rgb(255 255 255 / 92%) 0 1.5px, transparent 2px),
+        radial-gradient(circle at 63% 16%, rgb(255 255 255 / 78%) 0 1.5px, transparent 2px),
+        radial-gradient(circle at 82% 58%, rgb(255 255 255 / 88%) 0 1.5px, transparent 2px),
+        radial-gradient(circle at 38% 72%, rgb(255 255 255 / 72%) 0 1.5px, transparent 2px),
+        linear-gradient(180deg, #131a2b 0%, #182034 55%, #1d2740 100%);
+    --omoi-bg-ripple: repeating-radial-gradient(circle at 32% 38%, rgb(255 255 255 / 9%) 0 2px, transparent 2px 28px),
+        linear-gradient(160deg, #16201f 0%, #1b2926 60%, #213330 100%);
+    --omoi-bg-lattice: repeating-linear-gradient(0deg, rgb(255 255 255 / 7%) 0 1px, transparent 1px 30px),
+        repeating-linear-gradient(90deg, rgb(255 255 255 / 7%) 0 1px, transparent 1px 30px),
+        linear-gradient(180deg, #171a1f 0%, #1d2127 100%);
+    --omoi-bg-dawn-base: #573733;
+    --omoi-bg-ocean-base: #1b3a4a;
+    --omoi-bg-forest-base: #253628;
+    --omoi-bg-paper-base: #302e28;
+    --omoi-bg-dusk-base: #402728;
+    --omoi-bg-cloud-base: #2a323c;
+    --omoi-bg-sakura-base: #39283a;
+    --omoi-bg-deep-base: #193f47;
+    --omoi-bg-star-base: #1d2740;
+    --omoi-bg-ripple-base: #213330;
+    --omoi-bg-lattice-base: #1d2127;
 }
 
 .home { flex-direction: column; box-sizing: border-box; padding-top: 64px; }
@@ -85,30 +282,187 @@
     cursor: pointer;
 }
 
-.theme-menu button::before {
-    width: 1em;
-    content: "✓";
-    visibility: hidden;
-}
-
-.theme-menu button[aria-pressed="true"]::before { visibility: visible; }
 .theme-menu button:hover,
 .theme-menu button:focus-visible { background: var(--omoi-hover); }
 
-:root[data-theme="dark"] {
-    color-scheme: dark;
-    --omoi-page: #16181b;
-    --omoi-surface: #202327;
-    --omoi-hover: #2b3036;
-    --omoi-ink: #f0f0ee;
-    --omoi-muted: #b9b9b5;
-    --omoi-border: #757a80;
-    --omoi-divider: #3b4046;
-    --omoi-primary: #d3d4d2;
-    --omoi-primary-hover: #eeeeeb;
-    --omoi-on-primary: #171a1d;
-    --omoi-link: #b8d2de;
-    --omoi-focus: #b8d2de;
+/* 表示設定パネル（質問画面） */
+.theme-panel {
+    box-sizing: border-box;
+    width: min(320px, calc(100vw - 24px));
+    max-height: min(72svh, 560px);
+    gap: 14px;
+    padding: 14px;
+    overflow-y: auto;
+}
+
+.theme-panel__title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.theme-panel__group {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.theme-panel__group legend {
+    padding: 0;
+    color: var(--omoi-muted);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.theme-swatches {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.theme-swatches--backgrounds {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+}
+
+.theme-panel button::before { content: none; }
+
+.theme-panel .theme-swatch {
+    display: grid;
+    gap: 4px;
+    justify-items: stretch;
+    padding: 6px 4px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 11px;
+    line-height: 1.4;
+    text-align: center;
+    cursor: pointer;
+}
+
+.theme-panel .theme-swatch:hover,
+.theme-panel .theme-swatch:focus-visible { background: var(--omoi-hover); }
+
+.theme-panel .theme-swatch[aria-pressed="true"] {
+    border-color: var(--omoi-primary);
+    background: var(--omoi-hover);
+}
+
+.theme-swatch__preview {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(0 0 0 / 15%);
+    border-radius: 8px;
+    background-color: var(--swatch-bg, var(--omoi-surface));
+    background-image: linear-gradient(to top, var(--swatch-accent, transparent) 0 6px, transparent 6px);
+    background-size: cover;
+    background-position: center;
+}
+
+.theme-swatches--backgrounds .theme-swatch__preview { height: 26px; }
+
+.theme-swatch__label {
+    overflow: hidden;
+    font-size: 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.theme-swatch__preview--auto { background-image: linear-gradient(115deg, #ffffff 0 50%, #16181b 50% 100%); }
+.theme-swatch__preview--light { --swatch-bg: #ffffff; --swatch-accent: #111111; }
+.theme-swatch__preview--dark { --swatch-bg: #16181b; --swatch-accent: #d3d4d2; }
+.theme-swatch__preview--sepia { --swatch-bg: #f7f1e4; --swatch-accent: #3a3227; }
+.theme-swatch__preview--night { --swatch-bg: #10151f; --swatch-accent: #cfdcec; }
+.theme-swatch__preview--viuk { --swatch-bg: #faf9f6; --swatch-accent: #ef502b; }
+.theme-swatch__preview--viuk-dark { --swatch-bg: #171715; --swatch-accent: #ef502b; }
+.theme-swatch__preview--none { background-color: var(--omoi-page); background-image: none; }
+.theme-swatch__preview--dawn { background-image: var(--omoi-bg-dawn); }
+.theme-swatch__preview--ocean { background-image: var(--omoi-bg-ocean); }
+.theme-swatch__preview--forest { background-image: var(--omoi-bg-forest); }
+.theme-swatch__preview--paper { background-image: var(--omoi-bg-paper); }
+.theme-swatch__preview--dusk { background-image: var(--omoi-bg-dusk); }
+.theme-swatch__preview--cloud { background-image: var(--omoi-bg-cloud); }
+.theme-swatch__preview--sakura { background-image: var(--omoi-bg-sakura); }
+.theme-swatch__preview--deep { background-image: var(--omoi-bg-deep); }
+.theme-swatch__preview--star { background-image: var(--omoi-bg-star); }
+.theme-swatch__preview--ripple { background-image: var(--omoi-bg-ripple); }
+.theme-swatch__preview--lattice { background-image: var(--omoi-bg-lattice); }
+
+.theme-panel__scrim {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px;
+    color: var(--omoi-muted);
+    font-size: 12px;
+}
+
+.theme-panel__scrim[hidden] { display: none; }
+.theme-panel__scrim input[type="range"] { width: 100%; accent-color: var(--omoi-primary); }
+.theme-panel__scrim output { min-width: 3em; text-align: right; }
+
+.theme-panel .theme-panel__reset {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 8px 14px;
+    border: 1px solid var(--omoi-border);
+    border-radius: 999px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.theme-panel .theme-panel__reset:hover,
+.theme-panel .theme-panel__reset:focus-visible { background: var(--omoi-hover); }
+
+/* 背景レイヤー（質問画面） */
+.page-background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: var(--omoi-bg-image, none);
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+}
+
+.page-background::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: var(--omoi-scrim-color);
+    opacity: var(--omoi-scrim-opacity, 0);
+}
+
+:root[data-background="dawn"] { --omoi-bg-image: var(--omoi-bg-dawn); }
+:root[data-background="ocean"] { --omoi-bg-image: var(--omoi-bg-ocean); }
+:root[data-background="forest"] { --omoi-bg-image: var(--omoi-bg-forest); }
+:root[data-background="paper"] { --omoi-bg-image: var(--omoi-bg-paper); }
+:root[data-background="dusk"] { --omoi-bg-image: var(--omoi-bg-dusk); }
+:root[data-background="cloud"] { --omoi-bg-image: var(--omoi-bg-cloud); }
+:root[data-background="sakura"] { --omoi-bg-image: var(--omoi-bg-sakura); }
+:root[data-background="deep"] { --omoi-bg-image: var(--omoi-bg-deep); }
+:root[data-background="star"] { --omoi-bg-image: var(--omoi-bg-star); }
+:root[data-background="ripple"] { --omoi-bg-image: var(--omoi-bg-ripple); }
+:root[data-background="lattice"] { --omoi-bg-image: var(--omoi-bg-lattice); }
+
+/* テーマ共通の要素指定。配色はパレットのトークンから決まる。 */
+:root[data-theme="dark"],
+:root[data-theme="sepia"],
+:root[data-theme="night"],
+:root[data-theme="viuk"],
+:root[data-theme="viuk-dark"] {
     --background: var(--omoi-page);
     --text: var(--omoi-ink);
     --subtext: var(--omoi-muted);
@@ -136,7 +490,7 @@
     .detail-note, .safety-link, .finish-confirm-dialog p,
     .question-summary > h2, .preview-review, .preview-entry__eyebrow,
     .preview-entry__intro, .preview-entry__sample p,
-    .preview-entry__metadata, .terms-meta {
+    .preview-entry__metadata, .terms-meta, .shared-question-notice {
         color: var(--omoi-muted);
     }
 
@@ -227,7 +581,7 @@
     }
 
     .previous-button:disabled, .finish-button:disabled {
-        color: #90959b;
+        color: var(--omoi-disabled);
     }
     #nextButton:disabled { opacity: .45; }
     .question-content { scrollbar-color: var(--omoi-border) transparent; }
@@ -242,7 +596,7 @@
         border-color: var(--omoi-link);
         color: var(--omoi-on-primary);
     }
-    .preview-error { color: #f0a6a6; }
+    .preview-error { color: var(--omoi-danger); }
     .terms-article { background: var(--omoi-page); }
     .v3-attribution, .v3-status { color: var(--omoi-muted); }
     .step-list li::before { background: var(--omoi-page); }
@@ -254,7 +608,7 @@
         background: var(--omoi-primary-hover);
         color: var(--omoi-on-primary);
     }
-    .finish-confirm-dialog::backdrop { background: rgb(0 0 0 / 70%); }
+    .finish-confirm-dialog::backdrop { background: var(--omoi-backdrop); }
 
     &:focus-visible, :focus-visible, #nextButton:focus-visible, #retryLoadButton:focus-visible,
     .question-navigation button:focus-visible, .question-actions button:focus-visible,

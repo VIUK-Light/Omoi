@@ -801,6 +801,10 @@ function updateDisplayModes() {
 }
 
 document.addEventListener("click", function (event) {
+    const clickedButton = event.target.closest("button");
+    if (clickedButton && clickedButton !== shareButton) {
+        shareStatus.textContent = "";
+    }
     if (!furiganaSettings.contains(event.target)) {
         furiganaSettings.open = false;
     }
