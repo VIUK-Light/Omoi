@@ -13,12 +13,14 @@ test('furigana settings open at the top right and preserve the original question
   const settingsBounds = await settingsIcon.boundingBox();
   const themeBounds = await themeIcon.boundingBox();
   expect(settingsBounds.x + settingsBounds.width).toBeLessThan(themeBounds.x);
-  const classroomBounds = await page.locator('#classroomModeToggle').boundingBox();
-  expect(classroomBounds.x + classroomBounds.width).toBeLessThan(settingsBounds.x);
+  await expect(page.locator('#classroomModeToggle')).toBeHidden();
 
   await settingsIcon.click();
   const toggle = page.locator('#furiganaToggle');
   await expect(toggle).toBeVisible();
+  await expect(page.locator('#textSizeControl')).toBeVisible();
+  await expect(page.locator('#mediumTextToggle')).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('#classroomModeToggle')).toBeVisible();
   await expect(toggle).toHaveAttribute('aria-pressed', 'false');
 
   await toggle.click();
@@ -31,25 +33,33 @@ test('furigana settings open at the top right and preserve the original question
   await expect(question.locator('ruby')).toHaveCount(0);
 });
 
-test('large text mode and classroom mode have distinct sizes and button heights', async ({ page }) => {
+test('text size has three levels and classroom mode has distinct sizes and button heights', async ({ page }) => {
   await page.goto('/question.html?level=2');
 
   await expect(page.locator('#nextQuestionButton')).toBeEnabled();
   const question = page.locator('#questionText');
-  const defaultFontSize = Number.parseFloat(await question.evaluate(element => getComputedStyle(element).fontSize));
+  const mediumFontSize = Number.parseFloat(await question.evaluate(element => getComputedStyle(element).fontSize));
   const nextButton = page.locator('#nextQuestionButton');
   const defaultButtonHeight = (await nextButton.boundingBox()).height;
 
-  const largeTextToggle = page.locator('#largeTextToggle');
+  const smallToggle = page.locator('#smallTextToggle');
+  const mediumToggle = page.locator('#mediumTextToggle');
+  const largeToggle = page.locator('#largeTextToggle');
   const classroomToggle = page.locator('#classroomModeToggle');
-  await expect(classroomToggle).toBeVisible();
   await page.locator('.furigana-settings > summary').click();
-  await expect(largeTextToggle).toBeVisible();
-  await largeTextToggle.click();
+  await expect(mediumToggle).toHaveAttribute('aria-pressed', 'true');
 
-  const largeTextFontSize = Number.parseFloat(await question.evaluate(element => getComputedStyle(element).fontSize));
-  expect(largeTextFontSize).toBeGreaterThan(defaultFontSize);
-  await expect(largeTextToggle).toHaveAttribute('aria-pressed', 'true');
+  await smallToggle.click();
+  const smallFontSize = Number.parseFloat(await question.evaluate(element => getComputedStyle(element).fontSize));
+  expect(smallFontSize).toBeLessThan(mediumFontSize);
+  await expect(smallToggle).toHaveAttribute('aria-pressed', 'true');
+  await expect(mediumToggle).toHaveAttribute('aria-pressed', 'false');
+
+  await largeToggle.click();
+  const largeFontSize = Number.parseFloat(await question.evaluate(element => getComputedStyle(element).fontSize));
+  expect(largeFontSize).toBeGreaterThan(mediumFontSize);
+  await expect(largeToggle).toHaveAttribute('aria-pressed', 'true');
+  await expect(smallToggle).toHaveAttribute('aria-pressed', 'false');
 
   await page.locator('#furiganaToggle').click();
   await classroomToggle.click();
@@ -57,12 +67,13 @@ test('large text mode and classroom mode have distinct sizes and button heights'
   const classroomFontSize = Number.parseFloat(await question.evaluate(element => getComputedStyle(element).fontSize));
   const classroomLineHeight = Number.parseFloat(await question.evaluate(element => getComputedStyle(element).lineHeight));
   const classroomButtonHeight = (await nextButton.boundingBox()).height;
-  expect(classroomFontSize).toBeGreaterThan(largeTextFontSize);
+  expect(classroomFontSize).toBeGreaterThan(largeFontSize);
   expect(classroomLineHeight / classroomFontSize).toBeGreaterThanOrEqual(1.8);
   await expect(question.locator('ruby')).not.toHaveCount(0);
   expect(classroomButtonHeight).toBeLessThan(defaultButtonHeight);
-  await expect(largeTextToggle).toHaveAttribute('aria-pressed', 'false');
+  await expect(largeToggle).toHaveAttribute('aria-pressed', 'true');
   await expect(classroomToggle).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.question-screen')).toHaveClass(/text-size-large/);
   await expect(page.locator('.question-screen')).toHaveClass(/classroom-mode/);
   await expect(nextButton).toBeVisible();
   await expect(page.locator('.back-link')).toBeHidden();

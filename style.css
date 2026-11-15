@@ -74,6 +74,25 @@ h1 {
     color: #111111;
 }
 
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    color: #666666;
+    text-decoration: none;
+}
+
+.github-link:hover,
+.github-link:focus-visible {
+    color: #111111;
+}
+
+.site-footer .github-link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+}
+
 .site-footer p {
     margin: 0;
     font-size: 12px;

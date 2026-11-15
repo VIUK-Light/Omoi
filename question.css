@@ -44,40 +44,6 @@ body {
 }
 .furigana-settings[open] > summary { background: var(--omoi-hover, #eeeeee); }
 
-.classroom-mode-icon {
-    position: fixed;
-    z-index: 20;
-    top: 12px;
-    right: 100px;
-    display: grid;
-    width: 36px;
-    height: 36px;
-    box-sizing: border-box;
-    place-items: center;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    background: var(--omoi-surface, #f7f7f7);
-    color: var(--omoi-ink, #111111);
-    cursor: pointer;
-}
-
-.classroom-mode-icon[hidden] { display: none; }
-.classroom-mode-icon svg {
-    width: 20px;
-    height: 20px;
-    fill: none;
-    stroke: currentColor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 1.7;
-}
-.classroom-mode-icon:hover,
-.classroom-mode-icon[aria-pressed="true"] { background: var(--omoi-hover, #eeeeee); }
-.classroom-mode-icon:focus-visible {
-    outline: 2px solid var(--omoi-focus, #24566b);
-    outline-offset: 2px;
-}
-
 .furigana-settings-panel {
     position: absolute;
     top: 44px;
@@ -100,7 +66,37 @@ body {
     font-weight: 600;
 }
 
-.furigana-settings-panel .furigana-toggle {
+.text-size-control {
+    display: grid;
+    gap: 6px;
+}
+
+.text-size-control[hidden] {
+    display: none;
+}
+
+.text-size-label {
+    margin: 0;
+    color: #666666;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.text-size-options {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+}
+
+.text-size-options .text-size-option {
+    width: 100%;
+    min-height: 40px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.furigana-settings-panel .furigana-toggle,
+.furigana-settings-panel .classroom-mode-toggle {
     width: 100%;
     min-height: 44px;
     cursor: pointer;
@@ -200,6 +196,12 @@ body {
     font-size: clamp(24px, 3.5vw, 36px);
     line-height: 1.55;
     text-align: center;
+}
+
+#questionText:has(ruby),
+.question-content.long-question-text #questionText:has(ruby),
+.question-content.long-question:not(.long-question-text) #questionText:has(ruby) {
+    line-height: 1.7;
 }
 
 .question-content.long-question + .question-footer {
@@ -324,6 +326,26 @@ body {
     text-align: center;
 }
 
+.share-status {
+    margin: 8px 0 0;
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.share-status:empty {
+    display: none;
+}
+
+.question-screen.shared-question .question-actions,
+.question-screen.shared-question .previous-button {
+    display: none;
+}
+
+.question-screen.shared-question .question-navigation {
+    justify-content: flex-end;
+}
+
 .finish-button {
     border: 0;
     background: transparent;
@@ -374,7 +396,8 @@ body {
     margin-right: 8px;
 }
 
-.detail-button {
+.detail-button,
+.share-button {
     cursor: pointer;
 }
 
@@ -403,20 +426,14 @@ body {
 }
 
 ruby {
-    position: relative;
     ruby-position: over;
     ruby-align: center;
+    ruby-merge: separate;
     white-space: nowrap;
 }
 rt {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    display: block;
-    transform: translateX(-50%);
     font-size: var(--furigana-font-size);
     font-weight: var(--furigana-font-weight);
-    line-height: 1;
     white-space: nowrap;
 }
 
@@ -549,50 +566,97 @@ rt {
     color: #111111;
 }
 
-.question-screen.large-text-mode #questionText {
-    font-size: clamp(34px, 4.8vw, 50px);
+.question-screen.text-size-small #questionText {
+    font-size: clamp(24px, 3.4vw, 36px);
 }
 
-.question-screen.large-text-mode .question-content.long-question-text #questionText {
-    font-size: clamp(27px, 3.8vw, 36px);
+.question-screen.text-size-small .question-content.long-question-text #questionText {
+    font-size: clamp(19px, 2.8vw, 27px);
 }
 
-.question-screen.large-text-mode .question-content.long-question:not(.long-question-text) #questionText {
-    font-size: clamp(29px, 4.2vw, 43px);
+.question-screen.text-size-small .question-content.long-question:not(.long-question-text) #questionText {
+    font-size: clamp(21px, 3vw, 31px);
 }
 
-.question-screen.large-text-mode .scenario-label {
+.question-screen.text-size-small .scenario-label {
+    font-size: 10px;
+}
+
+.question-screen.text-size-small .scenario-text {
+    font-size: 14px;
+}
+
+.question-screen.text-size-small .question-summary > h2,
+.question-screen.text-size-small .detail-panel h2 {
     font-size: 13px;
 }
 
-.question-screen.large-text-mode .scenario-text {
-    font-size: 18px;
-}
-
-.question-screen.large-text-mode .question-summary > h2,
-.question-screen.large-text-mode .detail-panel h2 {
-    font-size: 17px;
-}
-
-.question-screen.large-text-mode .question-summary-content,
-.question-screen.large-text-mode #detailText {
-    font-size: 19px;
-}
-
-.question-screen.large-text-mode .hints-panel ul {
-    font-size: 17px;
-}
-
-.question-screen.large-text-mode #termsList,
-.question-screen.large-text-mode #sourceList {
-    font-size: 16px;
-}
-
-.question-screen.large-text-mode .detail-note {
+.question-screen.text-size-small .question-summary-content,
+.question-screen.text-size-small #detailText {
     font-size: 15px;
 }
 
-.question-screen.large-text-mode .safety-link {
+.question-screen.text-size-small .hints-panel ul {
+    font-size: 13px;
+}
+
+.question-screen.text-size-small #termsList,
+.question-screen.text-size-small #sourceList {
+    font-size: 12px;
+}
+
+.question-screen.text-size-small .detail-note {
+    font-size: 11px;
+}
+
+.question-screen.text-size-small .safety-link {
+    font-size: 10px;
+}
+
+.question-screen.text-size-large #questionText {
+    font-size: clamp(34px, 4.8vw, 50px);
+}
+
+.question-screen.text-size-large .question-content.long-question-text #questionText {
+    font-size: clamp(27px, 3.8vw, 36px);
+}
+
+.question-screen.text-size-large .question-content.long-question:not(.long-question-text) #questionText {
+    font-size: clamp(29px, 4.2vw, 43px);
+}
+
+.question-screen.text-size-large .scenario-label {
+    font-size: 13px;
+}
+
+.question-screen.text-size-large .scenario-text {
+    font-size: 18px;
+}
+
+.question-screen.text-size-large .question-summary > h2,
+.question-screen.text-size-large .detail-panel h2 {
+    font-size: 17px;
+}
+
+.question-screen.text-size-large .question-summary-content,
+.question-screen.text-size-large #detailText {
+    font-size: 19px;
+}
+
+.question-screen.text-size-large .hints-panel ul {
+    font-size: 17px;
+}
+
+.question-screen.text-size-large #termsList,
+.question-screen.text-size-large #sourceList {
+    font-size: 16px;
+}
+
+.question-screen.text-size-large .detail-note {
+    font-size: 15px;
+}
+
+.question-screen.text-size-large .safety-link {
     font-size: 13px;
 }
 
@@ -609,7 +673,7 @@ rt {
     font-size: clamp(36px, 5.5vw, 60px);
 }
 
-.question-screen.large-text-mode .question-content #questionText:has(ruby),
+.question-screen.text-size-large .question-content #questionText:has(ruby),
 .question-screen.classroom-mode .question-content #questionText:has(ruby) {
     line-height: 1.9;
 }

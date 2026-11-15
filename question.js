@@ -1,6 +1,12 @@
 const params = new URLSearchParams(window.location.search);
 const level = Number(params.get("level"));
 const allowedLevels = new Set(["2", "3", "4"]);
+const sharedIdValues = params.getAll("id");
+const hasSharedId = params.has("id");
+const sharedId = sharedIdValues.length === 1 ? sharedIdValues[0] : null;
+const isSharedIdMalformed = hasSharedId &&
+    (sharedIdValues.length !== 1 || sharedId.trim() === "");
+const isSharedQuestion = hasSharedId;
 
 const questionText = document.getElementById("questionText");
 const scenarioBlock = document.getElementById("scenarioBlock");
@@ -8,7 +14,17 @@ const scenarioText = document.getElementById("scenarioText");
 const furiganaSettings = document.querySelector(".furigana-settings");
 const furiganaSettingsSummary = document.getElementById("furiganaSettingsSummary");
 const questionScreen = document.querySelector(".question-screen");
-const largeTextToggle = document.getElementById("largeTextToggle");
+const changeCategoryLink = document.getElementById("changeCategoryLink");
+const otherQuestionsLink = document.getElementById("otherQuestionsLink");
+const nextNote = document.getElementById("nextNote");
+const shareButton = document.getElementById("shareButton");
+const shareStatus = document.getElementById("shareStatus");
+const textSizeControl = document.getElementById("textSizeControl");
+const textSizeButtons = [
+    { size: "small", element: document.getElementById("smallTextToggle") },
+    { size: "medium", element: document.getElementById("mediumTextToggle") },
+    { size: "large", element: document.getElementById("largeTextToggle") }
+];
 const classroomModeToggle = document.getElementById("classroomModeToggle");
 const questionSummaryToggle = document.getElementById("questionSummaryToggle");
 const furiganaToggle = document.getElementById("furiganaToggle");
@@ -64,7 +80,7 @@ let readingsByQuestionId = {};
 let currentFurigana = {};
 let currentTextFields = new Map();
 let furiganaEnabled = false;
-let largeTextEnabled = false;
+let textSize = "medium";
 let classroomModeEnabled = false;
 
 const retryLoadButton = document.getElementById("retryLoadButton");
@@ -73,11 +89,21 @@ let state = "idle";
 function setState(nextState) {
     state = nextState;
     nextQuestionButton.disabled = state !== "ready";
+    shareButton.disabled = state !== "ready";
     finishButton.disabled = state !== "ready";
     previousQuestionButton.disabled =
         state !== "ready" || currentQuestionIndex === 0;
     questionContent.setAttribute("aria-busy", String(state === "loading"));
     retryLoadButton.hidden = state !== "error";
+}
+
+function applySharedMode() {
+    questionScreen.classList.toggle("shared-question", isSharedQuestion);
+    nextQuestionButton.hidden = isSharedQuestion;
+    previousQuestionButton.hidden = isSharedQuestion;
+    nextNote.hidden = isSharedQuestion;
+    changeCategoryLink.hidden = isSharedQuestion;
+    otherQuestionsLink.hidden = !isSharedQuestion;
 }
 
 function showMessage(message) {
@@ -88,7 +114,7 @@ function showMessage(message) {
     currentTextFields.clear();
     currentFurigana = {};
     furiganaSettings.hidden = true;
-    largeTextToggle.hidden = true;
+    textSizeControl.hidden = true;
     classroomModeToggle.hidden = true;
     furiganaToggle.hidden = true;
     scenarioBlock.setAttribute("aria-hidden", "true");
@@ -100,17 +126,26 @@ function showMessage(message) {
     setHintsPanelOpen(false);
     detailButton.hidden = true;
     setDetailPanelOpen(false);
+    shareButton.hidden = true;
+    shareButton.disabled = true;
+    shareStatus.textContent = "";
 }
 
 function validateQuestions(questions) {
     if (!Array.isArray(questions)) {
         throw new Error("Question data must be an array.");
     }
+    const questionIds = new Set();
     for (const question of questions) {
         if (!question || question.level !== level ||
+            typeof question.id !== "string" || !question.id.trim() ||
             typeof question.question !== "string" || !question.question.trim()) {
             throw new Error("Invalid question or mismatched level in question data.");
         }
+        if (questionIds.has(question.id)) {
+            throw new Error("Duplicate question id.");
+        }
+        questionIds.add(question.id);
         if (question.scenario !== undefined && typeof question.scenario !== "string") {
             throw new Error("Invalid question scenario.");
         }
@@ -361,7 +396,8 @@ function setQuestionSummaryOpen(isOpen) {
 }
 
 async function loadQuestions() {
-    if (state === "loading" || !allowedLevels.has(params.get("level")) ||
+    if (state === "loading" || isSharedIdMalformed ||
+        !allowedLevels.has(params.get("level")) ||
         params.getAll("level").length !== 1) return;
     setState("loading");
     showMessage("読み込み中...");
@@ -383,13 +419,23 @@ async function loadQuestions() {
         ]);
         validateQuestions(questions);
         validateFurigana(questions, furigana);
-        shuffle(questions);
-        sessionQuestions = questions;
         readingsByQuestionId = furigana;
-        if (sessionQuestions.length === 0) {
+        if (questions.length === 0) {
             showMessage("このLevelの質問はまだありません。レベルを選び直してください。");
             setState("empty");
             return;
+        }
+        shuffle(questions);
+        if (isSharedQuestion) {
+            const target = questions.find(question => question.id === sharedId);
+            if (!target) {
+                showMessage("指定された問いが見つかりませんでした。共有リンクが古いか、URLが正しくない可能性があります。「他の質問をする」から選び直してください。");
+                setState("invalid");
+                return;
+            }
+            sessionQuestions = [target];
+        } else {
+            sessionQuestions = questions;
         }
         showQuestion();
         setState("ready");
@@ -407,10 +453,14 @@ async function loadQuestions() {
 }
 
 retryLoadButton.addEventListener("click", loadQuestions);
+applySharedMode();
 if (!allowedLevels.has(params.get("level")) ||
     params.getAll("level").length !== 1) {
     setState("invalid");
     showMessage("質問の条件が正しくありません。「レベルを変える」から選び直してください。");
+} else if (isSharedIdMalformed) {
+    setState("invalid");
+    showMessage("共有リンクの形式が正しくありません。URLを確認するか、「他の質問をする」から選び直してください。");
 } else {
     loadQuestions();
 }
@@ -434,7 +484,7 @@ function showQuestion() {
     currentFurigana = readingsByQuestionId[currentQuestion.id];
     currentTextFields = new Map();
     furiganaToggle.hidden = Object.keys(currentFurigana).length === 0;
-    largeTextToggle.hidden = false;
+    textSizeControl.hidden = false;
     classroomModeToggle.hidden = false;
     furiganaSettings.hidden = false;
     updateDisplayModes();
@@ -523,6 +573,34 @@ function showQuestion() {
             });
         }
     }
+
+    shareButton.hidden = !currentQuestion.id;
+    shareButton.disabled = false;
+    shareStatus.textContent = "";
+    syncUrlWithCurrentQuestion(currentQuestion);
+}
+
+
+function syncUrlWithCurrentQuestion(question) {
+    if (!question?.id) return;
+    const url = new URL(window.location.href);
+    url.search = "";
+    url.searchParams.set("level", String(level));
+    url.searchParams.set("id", question.id);
+    try {
+        window.history?.replaceState(null, "", url.href);
+    } catch (error) {
+        // 履歴APIが使えない環境ではURL同期をしない
+    }
+}
+
+
+function buildShareUrl(question) {
+    const url = new URL("question.html", window.location.href);
+    url.search = "";
+    url.searchParams.set("level", String(question.level));
+    url.searchParams.set("id", question.id);
+    return url.href;
 }
 
 
@@ -585,7 +663,7 @@ window.addEventListener(
 
 
 function goToNextQuestion() {
-    if (state !== "ready") return;
+    if (state !== "ready" || isSharedQuestion) return;
     currentQuestionIndex++;
 
     if (currentQuestionIndex >= sessionQuestions.length) {
@@ -597,7 +675,7 @@ function goToNextQuestion() {
 }
 
 function goToPreviousQuestion() {
-    if (state !== "ready" || currentQuestionIndex === 0) return;
+    if (state !== "ready" || isSharedQuestion || currentQuestionIndex === 0) return;
     currentQuestionIndex--;
     showQuestion();
 }
@@ -652,6 +730,33 @@ questionSummaryToggle.addEventListener("click", function () {
     setQuestionSummaryOpen(questionSummary.hidden);
 });
 
+shareButton.addEventListener("click", async function () {
+    if (state !== "ready") return;
+    const question = sessionQuestions[currentQuestionIndex];
+    if (!question?.id) return;
+    const url = buildShareUrl(question);
+    shareStatus.textContent = "";
+    try {
+        if (typeof navigator.share === "function") {
+            await navigator.share({
+                title: "Omoi｜質問カード",
+                text: question.question,
+                url
+            });
+            shareStatus.textContent = "共有しました";
+            return;
+        }
+    } catch (error) {
+        if (error?.name === "AbortError") return;
+    }
+    try {
+        await navigator.clipboard.writeText(url);
+        shareStatus.textContent = "リンクをコピーしました";
+    } catch (error) {
+        window.prompt("このURLをコピーしてください。", url);
+    }
+});
+
 furiganaToggle.addEventListener("click", function () {
     if (state !== "ready") return;
     furiganaEnabled = !furiganaEnabled;
@@ -660,18 +765,18 @@ furiganaToggle.addEventListener("click", function () {
     refreshFuriganaText();
 });
 
-largeTextToggle.addEventListener("click", function () {
-    if (state !== "ready") return;
-    largeTextEnabled = !largeTextEnabled;
-    if (largeTextEnabled) classroomModeEnabled = false;
-    updateDisplayModes();
-});
+for (const { size, element } of textSizeButtons) {
+    element.addEventListener("click", function () {
+        if (state !== "ready") return;
+        textSize = size;
+        updateDisplayModes();
+    });
+}
 
 classroomModeToggle.addEventListener("click", function () {
     if (state !== "ready") return;
     classroomModeEnabled = !classroomModeEnabled;
     if (classroomModeEnabled) {
-        largeTextEnabled = false;
         setQuestionSummaryOpen(false);
         setHintsPanelOpen(false);
         setDetailPanelOpen(false);
@@ -680,14 +785,15 @@ classroomModeToggle.addEventListener("click", function () {
 });
 
 function updateDisplayModes() {
-    questionScreen.classList.toggle("large-text-mode", largeTextEnabled);
+    questionScreen.classList.toggle("text-size-small", textSize === "small");
+    questionScreen.classList.toggle("text-size-large", textSize === "large");
     questionScreen.classList.toggle("classroom-mode", classroomModeEnabled);
-    largeTextToggle.setAttribute("aria-pressed", String(largeTextEnabled));
-    largeTextToggle.textContent = largeTextEnabled ? "標準サイズに戻す" : "文字を大きく";
+    for (const { size, element } of textSizeButtons) {
+        element.setAttribute("aria-pressed", String(textSize === size));
+    }
     classroomModeToggle.setAttribute("aria-pressed", String(classroomModeEnabled));
-    const classroomLabel = classroomModeEnabled ? "授業モードを終了" : "授業モード";
-    classroomModeToggle.setAttribute("aria-label", classroomLabel);
-    classroomModeToggle.title = classroomLabel;
+    classroomModeToggle.textContent =
+        classroomModeEnabled ? "授業モードを終了" : "授業モード";
 }
 
 document.addEventListener("click", function (event) {

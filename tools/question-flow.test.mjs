@@ -310,40 +310,58 @@ test('furigana starts off, toggles safely, and stays enabled across questions', 
     assert.equal(app.element('termsSection').hidden, true);
 });
 
-test('large text and classroom modes are exclusive and persist across cards', async () => {
+test('text size has three levels and classroom mode is independent', async () => {
     const app = setup();
     app.respond();
     await flush();
 
-    const largeTextToggle = app.element('largeTextToggle');
+    const smallToggle = app.element('smallTextToggle');
+    const mediumToggle = app.element('mediumTextToggle');
+    const largeToggle = app.element('largeTextToggle');
     const toggle = app.element('classroomModeToggle');
     const questionScreen = app.element('.question-screen');
-    assert.equal(largeTextToggle.hidden, false);
+    assert.equal(app.element('textSizeControl').hidden, false);
     assert.equal(toggle.hidden, false);
-    assert.equal(largeTextToggle.attrs['aria-pressed'], 'false');
-    assert.equal(toggle.attrs['aria-pressed'], 'false');
-    assert.equal(questionScreen.classList.contains('large-text-mode'), false);
+    assert.equal(smallToggle.attrs['aria-pressed'], 'false');
+    assert.equal(mediumToggle.attrs['aria-pressed'], 'true');
+    assert.equal(largeToggle.attrs['aria-pressed'], 'false');
+    assert.equal(questionScreen.classList.contains('text-size-small'), false);
+    assert.equal(questionScreen.classList.contains('text-size-large'), false);
     assert.equal(questionScreen.classList.contains('classroom-mode'), false);
 
-    largeTextToggle.click();
-    assert.equal(largeTextToggle.attrs['aria-pressed'], 'true');
-    assert.equal(questionScreen.classList.contains('large-text-mode'), true);
+    smallToggle.click();
+    assert.equal(smallToggle.attrs['aria-pressed'], 'true');
+    assert.equal(mediumToggle.attrs['aria-pressed'], 'false');
+    assert.equal(questionScreen.classList.contains('text-size-small'), true);
+
+    largeToggle.click();
+    assert.equal(largeToggle.attrs['aria-pressed'], 'true');
+    assert.equal(smallToggle.attrs['aria-pressed'], 'false');
+    assert.equal(questionScreen.classList.contains('text-size-small'), false);
+    assert.equal(questionScreen.classList.contains('text-size-large'), true);
 
     toggle.click();
-    assert.equal(largeTextToggle.attrs['aria-pressed'], 'false');
-    assert.equal(questionScreen.classList.contains('large-text-mode'), false);
+    assert.equal(largeToggle.attrs['aria-pressed'], 'true');
+    assert.equal(questionScreen.classList.contains('text-size-large'), true);
     assert.equal(toggle.attrs['aria-pressed'], 'true');
-    assert.equal(toggle.attrs['aria-label'], '授業モードを終了');
+    assert.equal(toggle.textContent, '授業モードを終了');
     assert.equal(questionScreen.classList.contains('classroom-mode'), true);
 
     app.element('nextQuestionButton').click();
-    assert.equal(toggle.attrs['aria-pressed'], 'true');
+    assert.equal(largeToggle.attrs['aria-pressed'], 'true');
+    assert.equal(questionScreen.classList.contains('text-size-large'), true);
     assert.equal(questionScreen.classList.contains('classroom-mode'), true);
 
     toggle.click();
     assert.equal(toggle.attrs['aria-pressed'], 'false');
-    assert.equal(toggle.attrs['aria-label'], '授業モード');
+    assert.equal(toggle.textContent, '授業モード');
     assert.equal(questionScreen.classList.contains('classroom-mode'), false);
+    assert.equal(largeToggle.attrs['aria-pressed'], 'true');
+
+    mediumToggle.click();
+    assert.equal(mediumToggle.attrs['aria-pressed'], 'true');
+    assert.equal(largeToggle.attrs['aria-pressed'], 'false');
+    assert.equal(questionScreen.classList.contains('text-size-large'), false);
 });
 
 test('question loading rejects missing kanji readings and allows retry', async () => {
