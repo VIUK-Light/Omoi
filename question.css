@@ -412,6 +412,47 @@ body {
     cursor: pointer;
 }
 
+.share-control {
+    position: relative;
+    display: inline-flex;
+}
+
+.share-menu {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 8px);
+    z-index: 30;
+    display: grid;
+    min-width: 176px;
+    gap: 2px;
+    padding: 6px;
+    border: 1px solid var(--omoi-border, #b7b7b7);
+    border-radius: 10px;
+    background: var(--omoi-page, #ffffff);
+    box-shadow: 0 6px 24px rgb(0 0 0 / 14%);
+}
+
+.share-menu[hidden] { display: none; }
+
+.share-menu-item {
+    display: flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.share-menu-item:hover,
+.share-menu-item:focus-visible { background: var(--omoi-hover, #eeeeee); }
+
 .question-tool:hover,
 .question-tool:focus-visible {
     border-color: #aaaaaa;

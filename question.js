@@ -6,7 +6,28 @@ const hasSharedId = params.has("id");
 const sharedId = sharedIdValues.length === 1 ? sharedIdValues[0] : null;
 const isSharedIdMalformed = hasSharedId &&
     (sharedIdValues.length !== 1 || sharedId.trim() === "");
-const isSharedQuestion = hasSharedId;
+
+// 進行中のセッションは、URLのtokenと端末の保存データが揃ったときだけ再開する。
+const sessionTokenValues = params.getAll("session");
+const sessionTokenFromUrl = sessionTokenValues.length === 1
+    ? sessionTokenValues[0]
+    : null;
+const hasSessionToken = typeof sessionTokenFromUrl === "string" &&
+    /^[A-Za-z0-9_-]{6,64}$/.test(sessionTokenFromUrl);
+
+function readSavedProgress() {
+    if (!hasSessionToken || !window.OmoiProgress) return null;
+    const saved = window.OmoiProgress.read();
+    if (!saved || saved.token !== sessionTokenFromUrl || saved.level !== level) {
+        return null;
+    }
+    return saved;
+}
+
+const savedProgress = readSavedProgress();
+let sessionToken = savedProgress ? savedProgress.token : null;
+// 保存データが無いときは、別端末で開いた共有リンクとして扱う。
+let isSharedQuestion = hasSharedId && !savedProgress;
 
 const questionText = document.getElementById("questionText");
 const scenarioBlock = document.getElementById("scenarioBlock");
@@ -19,6 +40,10 @@ const otherQuestionsLink = document.getElementById("otherQuestionsLink");
 const sharedQuestionNotice = document.getElementById("sharedQuestionNotice");
 const nextNote = document.getElementById("nextNote");
 const shareButton = document.getElementById("shareButton");
+const shareControl = document.getElementById("shareControl");
+const shareMenu = document.getElementById("shareMenu");
+const shareUrlButton = document.getElementById("shareUrlButton");
+const shareImageButton = document.getElementById("shareImageButton");
 const shareStatus = document.getElementById("shareStatus");
 const textSizeControl = document.getElementById("textSizeControl");
 const textSizeButtons = [
@@ -132,6 +157,7 @@ function showMessage(message) {
     setDetailPanelOpen(false);
     shareButton.hidden = true;
     shareButton.disabled = true;
+    setShareMenuOpen(false);
     shareStatus.textContent = "";
 }
 
@@ -429,7 +455,6 @@ async function loadQuestions() {
             setState("empty");
             return;
         }
-        shuffle(questions);
         if (isSharedQuestion) {
             const target = questions.find(question => question.id === sharedId);
             if (!target) {
@@ -438,8 +463,22 @@ async function loadQuestions() {
                 return;
             }
             sessionQuestions = [target];
+        } else if (savedProgress) {
+            // 前回の並び順と位置を復元する。消えたIDは除く。
+            const byId = new Map(questions.map(question => [question.id, question]));
+            const ordered = savedProgress.ids
+                .map(id => byId.get(id))
+                .filter(Boolean);
+            if (ordered.length > 0) {
+                sessionQuestions = ordered;
+                const currentId = savedProgress.ids[savedProgress.index];
+                const restoredIndex = ordered.findIndex(question => question.id === currentId);
+                currentQuestionIndex = restoredIndex >= 0 ? restoredIndex : 0;
+            } else {
+                startNewSession(questions);
+            }
         } else {
-            sessionQuestions = questions;
+            startNewSession(questions);
         }
         showQuestion();
         setState("ready");
@@ -479,6 +518,30 @@ function shuffle(array) {
         [array[i], array[j]] =
             [array[j], array[i]];
     }
+}
+
+
+function startNewSession(questions) {
+    shuffle(questions);
+    sessionQuestions = questions;
+    currentQuestionIndex = 0;
+    sessionToken = window.OmoiProgress
+        ? window.OmoiProgress.createToken()
+        : null;
+}
+
+
+function saveProgress() {
+    if (isSharedQuestion || !sessionToken ||
+        !window.OmoiProgress || sessionQuestions.length === 0) return;
+    window.OmoiProgress.write({
+        version: 1,
+        token: sessionToken,
+        level,
+        ids: sessionQuestions.map(question => question.id),
+        index: currentQuestionIndex,
+        updatedAt: Date.now()
+    });
 }
 
 function showQuestion() {
@@ -581,6 +644,7 @@ function showQuestion() {
     shareButton.hidden = !currentQuestion.id;
     shareButton.disabled = false;
     shareStatus.textContent = "";
+    saveProgress();
     syncUrlWithCurrentQuestion(currentQuestion);
 }
 
@@ -591,6 +655,9 @@ function syncUrlWithCurrentQuestion(question) {
     url.search = "";
     url.searchParams.set("level", String(level));
     url.searchParams.set("id", question.id);
+    if (!isSharedQuestion && sessionToken) {
+        url.searchParams.set("session", sessionToken);
+    }
     try {
         window.history?.replaceState(null, "", url.href);
     } catch (error) {
@@ -605,6 +672,394 @@ function buildShareUrl(question) {
     url.searchParams.set("level", String(question.level));
     url.searchParams.set("id", question.id);
     return url.href;
+}
+
+
+const cardWidth = 1080;
+const cardHeight = 1350;
+const cardPadding = 84;
+
+const levelDescriptions = {
+    2: "意見が分かれる身近な話",
+    3: "社会や価値観について",
+    4: "人生に関わる難しい選択"
+};
+
+function readCardColors() {
+    const fallback = {
+        page: "#ffffff",
+        ink: "#111111",
+        muted: "#666666",
+        accent: "#24566b",
+        scrim: "rgb(255 255 255)",
+        scrimOpacity: 0
+    };
+    if (typeof getComputedStyle !== "function") {
+        return fallback;
+    }
+    const styles = getComputedStyle(document.documentElement);
+    const read = (name, defaultValue) => {
+        const value = styles.getPropertyValue(name).trim();
+        return value || defaultValue;
+    };
+    const opacity = Number.parseFloat(read("--omoi-scrim-opacity", "0"));
+    return {
+        page: read("--omoi-page", fallback.page),
+        ink: read("--omoi-ink", fallback.ink),
+        muted: read("--omoi-muted", fallback.muted),
+        accent: read("--omoi-link", fallback.accent),
+        scrim: read("--omoi-scrim-color", fallback.scrim),
+        scrimOpacity: Number.isFinite(opacity) ? Math.min(1, Math.max(0, opacity)) : 0
+    };
+}
+
+
+function readCardBackgroundImage() {
+    if (typeof getComputedStyle !== "function") {
+        return "";
+    }
+    const layer = document.querySelector(".page-background");
+    if (!layer) {
+        return "";
+    }
+    const image = getComputedStyle(layer).backgroundImage;
+    if (!image || image === "none") {
+        return "";
+    }
+    return image;
+}
+
+
+function escapeSvgAttribute(value) {
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/"/g, "&quot;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+}
+
+
+// CSSのグラデーションを解析せず、そのまま画像として描画するためSVGへ埋め込む。
+async function drawCardBackground(context, image) {
+    if (!image || typeof Image !== "function") {
+        return false;
+    }
+    const svg = [
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${cardWidth}" height="${cardHeight}"`,
+        ` viewBox="0 0 ${cardWidth} ${cardHeight}">`,
+        `<foreignObject x="0" y="0" width="${cardWidth}" height="${cardHeight}">`,
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${cardWidth}px;height:${cardHeight}px;`,
+        `background:${escapeSvgAttribute(image)};"></div>`,
+        `</foreignObject></svg>`
+    ].join("");
+    const picture = new Image();
+    picture.src = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+    try {
+        await picture.decode();
+    } catch (error) {
+        return false;
+    }
+    try {
+        context.drawImage(picture, 0, 0, cardWidth, cardHeight);
+    } catch (error) {
+        return false;
+    }
+    return true;
+}
+
+
+// 行頭に置かない文字と、行末に置かない文字（簡易的な禁則処理）。
+const noLineStart = "、。，．！？!?ー〜」』】）〕｝〉》…‥・：；ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮ";
+const noLineEnd = "「『【（〔｛〈《";
+
+function wrapCardText(context, text, maxWidth) {
+    const lines = [];
+    for (const paragraph of String(text ?? "").split("\n")) {
+        if (paragraph === "") {
+            lines.push("");
+            continue;
+        }
+        let current = "";
+        for (const character of paragraph) {
+            const candidate = current + character;
+            if (current && context.measureText(candidate).width > maxWidth) {
+                if (noLineStart.includes(character)) {
+                    // 句読点などは行頭に送らず、行に含める。
+                    lines.push(candidate);
+                    current = "";
+                } else if (noLineEnd.includes(current[current.length - 1])) {
+                    // 開き括弧は行末に残さず、次の行へ送る。
+                    const tail = current.slice(-1);
+                    lines.push(current.slice(0, -1));
+                    current = tail + character;
+                } else {
+                    lines.push(current);
+                    current = character;
+                }
+            } else {
+                current = candidate;
+            }
+        }
+        if (current) {
+            lines.push(current);
+        }
+    }
+    return lines;
+}
+
+
+function drawCardLines(context, lines, options) {
+    const shown = lines.slice(0, options.maxLines);
+    if (lines.length > options.maxLines && shown.length > 0) {
+        shown[shown.length - 1] = `${shown[shown.length - 1].slice(0, -1)}…`;
+    }
+    shown.forEach((line, index) => {
+        context.fillText(line, options.x, options.y + index * options.lineHeight);
+    });
+    return shown.length * options.lineHeight;
+}
+
+
+async function createQuestionCard(question) {
+    const canvas = document.createElement("canvas");
+    canvas.width = cardWidth;
+    canvas.height = cardHeight;
+    const context = canvas.getContext ? canvas.getContext("2d") : null;
+    if (!context) {
+        return null;
+    }
+
+    const colors = readCardColors();
+    const contentWidth = cardWidth - cardPadding * 2;
+    const headerRuleY = 248;
+    const footerRuleY = cardHeight - 152;
+
+    context.textBaseline = "top";
+    context.textAlign = "left";
+    context.fillStyle = colors.page;
+    context.fillRect(0, 0, cardWidth, cardHeight);
+
+    // 背景は画面の選択と同じグラデーションを、指定された濃さのまま重ねる。
+    const painted = await drawCardBackground(context, readCardBackgroundImage());
+    if (painted && colors.scrimOpacity > 0) {
+        context.globalAlpha = colors.scrimOpacity;
+        context.fillStyle = colors.scrim;
+        context.fillRect(0, 0, cardWidth, cardHeight);
+        context.globalAlpha = 1;
+    }
+
+    // 見出し（左：ロゴ、右：Level）
+    context.fillStyle = colors.ink;
+    context.font = "700 52px sans-serif";
+    if ("letterSpacing" in context) {
+        context.letterSpacing = "2px";
+    }
+    context.fillText("Omoi", cardPadding, cardPadding);
+    if ("letterSpacing" in context) {
+        context.letterSpacing = "0px";
+    }
+
+    context.textAlign = "right";
+    context.fillStyle = colors.accent;
+    context.font = "600 23px sans-serif";
+    if ("letterSpacing" in context) {
+        context.letterSpacing = "2px";
+    }
+    context.fillText(`LEVEL ${question.level}`, cardWidth - cardPadding, cardPadding + 2);
+    if ("letterSpacing" in context) {
+        context.letterSpacing = "0px";
+    }
+    context.fillStyle = colors.muted;
+    context.font = "400 21px sans-serif";
+    const levelDescription = levelDescriptions[question.level];
+    if (levelDescription) {
+        context.fillText(levelDescription, cardWidth - cardPadding, cardPadding + 40);
+    }
+    context.textAlign = "left";
+
+    // 見出しの罫線
+    context.globalAlpha = 0.18;
+    context.fillStyle = colors.ink;
+    context.fillRect(cardPadding, headerRuleY, contentWidth, 1.5);
+    context.globalAlpha = 1;
+
+    // 本文の高さを測る。入りきらないときは問いを少しずつ小さくし、
+    // それでも入らなければ場面の行数を減らす。
+    const scenarioLineHeight = 58;
+    const scenarioLabelHeight = 44;
+    const scenarioGap = 64;
+    const questionSizes = [92, 86, 80, 74, 68];
+    const bodyZoneHeight = footerRuleY - headerRuleY;
+    const bodyAvailable = bodyZoneHeight - 64 - 48;
+
+    let scenarioLines = [];
+    if (question.scenario) {
+        context.font = "400 34px sans-serif";
+        scenarioLines = wrapCardText(context, question.scenario, contentWidth - 34);
+    }
+
+    let questionLines = [];
+    let questionFontSize = 0;
+    let questionLineHeight = 0;
+    let scenarioLineLimit = 0;
+    let questionLineLimit = 0;
+    let bodyHeight = 0;
+
+    fit: for (const scenarioLimit of [5, 4, 3, 2]) {
+        for (const size of questionSizes) {
+            const lineHeight = Math.round(size * 1.32);
+            context.font = `700 ${size}px sans-serif`;
+            const wrapped = wrapCardText(context, question.question, contentWidth);
+            const shownScenario = scenarioLines.length > 0
+                ? Math.min(scenarioLines.length, scenarioLimit)
+                : 0;
+            const scenarioHeight = shownScenario > 0
+                ? scenarioLabelHeight + shownScenario * scenarioLineHeight
+                : 0;
+            const shownQuestion = Math.min(wrapped.length, 6);
+            const total = scenarioHeight +
+                (scenarioHeight > 0 ? scenarioGap : 0) +
+                shownQuestion * lineHeight;
+            if (wrapped.length <= 6 && total <= bodyAvailable) {
+                questionLines = wrapped;
+                questionFontSize = size;
+                questionLineHeight = lineHeight;
+                scenarioLineLimit = shownScenario;
+                questionLineLimit = shownQuestion;
+                bodyHeight = total;
+                break fit;
+            }
+        }
+    }
+
+    if (bodyHeight === 0) {
+        // 極端に長いときは最小の大きさで先頭から表示する。
+        questionFontSize = questionSizes[questionSizes.length - 1];
+        questionLineHeight = Math.round(questionFontSize * 1.32);
+        context.font = `700 ${questionFontSize}px sans-serif`;
+        questionLines = wrapCardText(context, question.question, contentWidth);
+        scenarioLineLimit = Math.min(scenarioLines.length, 2);
+        questionLineLimit = Math.min(questionLines.length, 6);
+        const scenarioHeight = scenarioLineLimit > 0
+            ? scenarioLabelHeight + scenarioLineLimit * scenarioLineHeight
+            : 0;
+        bodyHeight = scenarioHeight +
+            (scenarioHeight > 0 ? scenarioGap : 0) +
+            questionLineLimit * questionLineHeight;
+    }
+
+    let y = headerRuleY + Math.max(64, (bodyZoneHeight - bodyHeight) / 2);
+
+    // 場面（左の細い罫線つき）
+    if (scenarioLineLimit > 0) {
+        const ruleTop = y + 4;
+        const ruleHeight = scenarioLabelHeight + scenarioLineLimit * scenarioLineHeight;
+        context.globalAlpha = 0.5;
+        context.fillStyle = colors.accent;
+        context.fillRect(cardPadding, ruleTop, 3, ruleHeight);
+        context.globalAlpha = 1;
+
+        const textX = cardPadding + 34;
+        context.fillStyle = colors.muted;
+        context.font = "600 21px sans-serif";
+        if ("letterSpacing" in context) {
+            context.letterSpacing = "1px";
+        }
+        context.fillText("こんな場面を想像してください", textX, y + 4);
+        if ("letterSpacing" in context) {
+            context.letterSpacing = "0px";
+        }
+
+        context.font = "400 34px sans-serif";
+        drawCardLines(context, scenarioLines, {
+            x: textX,
+            y: y + scenarioLabelHeight,
+            lineHeight: scenarioLineHeight,
+            maxLines: scenarioLineLimit
+        });
+        y += scenarioLabelHeight + scenarioLineLimit * scenarioLineHeight + scenarioGap;
+    }
+
+    // 問い
+    context.fillStyle = colors.ink;
+    context.font = `700 ${questionFontSize}px sans-serif`;
+    drawCardLines(context, questionLines, {
+        x: cardPadding,
+        y,
+        lineHeight: questionLineHeight,
+        maxLines: questionLineLimit
+    });
+
+    // フッターの罫線とURL
+    context.globalAlpha = 0.18;
+    context.fillStyle = colors.ink;
+    context.fillRect(cardPadding, footerRuleY, contentWidth, 1.5);
+    context.globalAlpha = 1;
+
+    context.fillStyle = colors.muted;
+    context.font = "400 22px sans-serif";
+    context.fillText("omoi.viuk-light.org", cardPadding, footerRuleY + 30);
+
+    context.textAlign = "right";
+    context.font = "400 20px sans-serif";
+    context.fillText("重い話を話せる質問カード", cardWidth - cardPadding, footerRuleY + 32);
+    context.textAlign = "left";
+
+    return canvas;
+}
+
+
+async function shareQuestionImage(question) {
+    const canvas = await createQuestionCard(question);
+    if (!canvas) {
+        shareStatus.textContent = "画像を作れませんでした";
+        return;
+    }
+    const blob = await new Promise(resolve => canvas.toBlob(resolve, "image/png"));
+    if (!blob) {
+        shareStatus.textContent = "画像を作れませんでした";
+        return;
+    }
+
+    let file = null;
+    if (typeof File === "function") {
+        file = new File([blob], "omoi-question.png", { type: "image/png" });
+    }
+    if (file && typeof navigator.canShare === "function" && navigator.canShare({ files: [file] })) {
+        try {
+            await navigator.share({
+                files: [file],
+                title: "Omoi｜質問カード",
+                text: question.question
+            });
+            shareStatus.textContent = "画像を共有しました";
+            return;
+        } catch (error) {
+            if (error?.name === "AbortError") {
+                return;
+            }
+        }
+    }
+
+    const objectUrl = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = objectUrl;
+    link.download = "omoi-question.png";
+    document.body.append(link);
+    link.click();
+    link.remove();
+    // ダウンロードの開始後にURLを破棄すると保存が失敗することがあるため、遅らせて片付ける。
+    setTimeout(() => URL.revokeObjectURL(objectUrl), 30000);
+    shareStatus.textContent = "画像を保存しました";
+}
+
+
+function setShareMenuOpen(isOpen) {
+    if (!shareMenu) {
+        return;
+    }
+    shareMenu.hidden = !isOpen;
+    shareButton.setAttribute("aria-expanded", String(isOpen));
 }
 
 
@@ -671,7 +1126,7 @@ function goToNextQuestion() {
     currentQuestionIndex++;
 
     if (currentQuestionIndex >= sessionQuestions.length) {
-        finishSession();
+        finishSession(true);
         return;
     }
 
@@ -684,11 +1139,15 @@ function goToPreviousQuestion() {
     showQuestion();
 }
 
-function finishSession() {
+function finishSession(completed = false) {
     setQuestionSummaryOpen(false);
     setHintsPanelOpen(false);
     setDetailPanelOpen(false);
     setState("finished");
+    // 途中で終えたときは続きを残し、全問終えたときだけ消す。
+    if (completed) {
+        window.OmoiProgress?.clear();
+    }
     window.location.href = "index.html";
 }
 
@@ -734,10 +1193,17 @@ questionSummaryToggle.addEventListener("click", function () {
     setQuestionSummaryOpen(questionSummary.hidden);
 });
 
-shareButton.addEventListener("click", async function () {
+shareButton.addEventListener("click", function () {
+    if (state !== "ready") return;
+    setShareMenuOpen(shareMenu.hidden);
+});
+
+shareUrlButton.addEventListener("click", async function () {
     if (state !== "ready") return;
     const question = sessionQuestions[currentQuestionIndex];
     if (!question?.id) return;
+    setShareMenuOpen(false);
+    shareButton.focus();
     const url = buildShareUrl(question);
     shareStatus.textContent = "";
     try {
@@ -759,6 +1225,16 @@ shareButton.addEventListener("click", async function () {
     } catch (error) {
         window.prompt("このURLをコピーしてください。", url);
     }
+});
+
+shareImageButton.addEventListener("click", async function () {
+    if (state !== "ready") return;
+    const question = sessionQuestions[currentQuestionIndex];
+    if (!question?.id) return;
+    setShareMenuOpen(false);
+    shareButton.focus();
+    shareStatus.textContent = "";
+    await shareQuestionImage(question);
 });
 
 furiganaToggle.addEventListener("click", function () {
@@ -802,8 +1278,12 @@ function updateDisplayModes() {
 
 document.addEventListener("click", function (event) {
     const clickedButton = event.target.closest("button");
-    if (clickedButton && clickedButton !== shareButton) {
+    const shareButtons = [shareButton, shareUrlButton, shareImageButton];
+    if (clickedButton && !shareButtons.includes(clickedButton)) {
         shareStatus.textContent = "";
+    }
+    if (shareControl && !shareControl.contains(event.target)) {
+        setShareMenuOpen(false);
     }
     if (!furiganaSettings.contains(event.target)) {
         furiganaSettings.open = false;
@@ -843,7 +1323,10 @@ function closeHintsPanel() {
 document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
         if (finishConfirmDialog.open) return;
-        if (furiganaSettings.open) {
+        if (shareMenu && !shareMenu.hidden) {
+            setShareMenuOpen(false);
+            shareButton.focus();
+        } else if (furiganaSettings.open) {
             furiganaSettings.open = false;
             furiganaSettingsSummary.focus();
         } else if (!questionSummary.hidden) {
@@ -856,6 +1339,8 @@ document.addEventListener("keydown", function (event) {
         }
     }
 });
+
+setShareMenuOpen(false);
 
 window.addEventListener("pagehide", function () {
     setQuestionSummaryOpen(false);

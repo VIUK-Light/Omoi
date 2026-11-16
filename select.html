@@ -8,6 +8,7 @@
     <title>話の深さを選ぶ - Omoi</title>
     <link rel="stylesheet" href="select.css">
     <script src="theme.js"></script>
+    <script src="progress.js"></script>
     <link rel="stylesheet" href="theme.css">
 </head>
 
@@ -16,6 +17,22 @@
         <div class="select-content">
 
             <h1 id="levelHeading">どんな話をしたい？</h1>
+
+            <aside id="resumeNotice" class="resume-notice" aria-label="前回の続き" hidden>
+                <p class="resume-notice-text">
+                    <strong>前回の続きがあります</strong>
+                    <span id="resumeNoticeDetail"></span>
+                </p>
+                <a id="resumeNoticeLink" class="resume-notice-link" href="select.html">
+                    続きから話す
+                </a>
+                <button
+                    type="button"
+                    id="resumeNoticeClose"
+                    class="resume-notice-close"
+                    aria-label="前回の続きのお知らせを閉じる"
+                >×</button>
+            </aside>
 
             <div class="level-list" role="radiogroup" aria-labelledby="levelHeading">
 

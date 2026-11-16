@@ -3,7 +3,9 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 
-const code = fs.readFileSync(new URL('../question.js', import.meta.url), 'utf8');
+const progressCode = fs.readFileSync(new URL('../progress.js', import.meta.url), 'utf8');
+const questionCode = fs.readFileSync(new URL('../question.js', import.meta.url), 'utf8');
+const code = `${progressCode}\n${questionCode}`;
 const cards = Array.from({ length: 5 }, (_, i) => ({
     id: `test-${i}`, level: 2, question: `Question ${i}`
 }));
@@ -18,7 +20,18 @@ const plainReadings = questions => Array.isArray(questions)
     ]))
     : {};
 const flush = () => new Promise(resolve => setImmediate(resolve));
-function setup(search = '?level=2') {
+function createStorage() {
+    const values = new Map();
+    return {
+        getItem(key) { return values.has(key) ? values.get(key) : null; },
+        setItem(key, value) { values.set(key, String(value)); },
+        removeItem(key) { values.delete(key); },
+        clear() { values.clear(); },
+        key(index) { return [...values.keys()][index] ?? null; },
+        get length() { return values.size; }
+    };
+}
+function setup(search = '?level=2', storage = createStorage()) {
     const elements = new Map();
     const createdElements = [];
     const element = id => {
@@ -84,7 +97,8 @@ function setup(search = '?level=2') {
         setTimeout(fn) { onTimeout = fn; return 1; }, clearTimeout() {},
         console: { error(...args) { errors.push(args); } },
         document: documentStub,
-        window: { location, addEventListener() {} }, requestAnimationFrame(fn) { fn(); },
+        window: { location, localStorage: storage, addEventListener() {} },
+        requestAnimationFrame(fn) { fn(); },
         navigator: { clipboard: { writeText: async () => {} } },
         fetch(url, options) {
             return new Promise((resolve, reject) => {
@@ -94,7 +108,7 @@ function setup(search = '?level=2') {
         }
     });
     return {
-        element, requests, location, errors, document: documentStub,
+        element, requests, location, errors, document: documentStub, storage,
         timeout: () => onTimeout(),
         respond(data = cards, ok = true, readings = plainReadings(data)) {
             const [questionsRequest, readingsRequest] = requests.slice(-2);
@@ -174,7 +188,7 @@ test('canceling finish confirmation keeps the current session open', async () =>
 test('clicking another button clears the copied-link status', async () => {
     const app = setup();
     app.respond(); await flush();
-    await app.element('shareButton').click();
+    await app.element('shareUrlButton').click();
     assert.equal(app.element('shareStatus').textContent, 'リンクをコピーしました');
 
     app.document.click({
@@ -571,4 +585,81 @@ test('omitted helpers, hints-only and terms-only cards work without a background
             assert.equal(app.element('detailText').textContent, '');
         }
     }
+});
+
+test('the share button opens a menu with a link and a picture', async () => {
+    const app = setup();
+    app.respond(); await flush();
+
+    assert.equal(app.element('shareMenu').hidden, true);
+    app.element('shareButton').click();
+    assert.equal(app.element('shareMenu').hidden, false);
+    assert.equal(app.element('shareButton').attrs['aria-expanded'], 'true');
+
+    app.document.click({ target: { closest: () => null } });
+    assert.equal(app.element('shareMenu').hidden, true);
+});
+
+test('a normal session is saved on the device and reloads without shared mode', async () => {
+    const app = setup();
+    app.respond(); await flush();
+
+    const saved = JSON.parse(app.storage.getItem('omoi-progress'));
+    assert.equal(saved.version, 1);
+    assert.equal(saved.level, 2);
+    assert.equal(saved.index, 0);
+    assert.deepEqual(saved.ids, cards.map(card => card.id));
+    assert.match(saved.token, /^[A-Za-z0-9_-]{6,64}$/);
+
+    const reload = setup(`?level=2&id=${saved.ids[0]}&session=${saved.token}`, app.storage);
+    reload.respond(); await flush();
+
+    assert.equal(reload.element('sharedQuestionNotice').hidden, true);
+    assert.equal(reload.element('nextQuestionButton').hidden, false);
+    assert.equal(reload.element('finishButton').hidden, false);
+    assert.equal(reload.element('questionText').textContent, cards[0].question);
+});
+
+test('a session token without saved progress falls back to a shared question', async () => {
+    const app = setup('?level=2&id=test-2&session=abcdef123456');
+    app.respond(); await flush();
+
+    assert.equal(app.element('sharedQuestionNotice').hidden, false);
+    assert.equal(app.element('nextQuestionButton').hidden, true);
+    assert.equal(app.element('questionText').textContent, cards[2].question);
+});
+
+test('reloading restores the same position and order', async () => {
+    const app = setup();
+    app.respond(); await flush();
+    app.element('nextQuestionButton').click();
+    app.element('nextQuestionButton').click();
+    const current = app.element('questionText').textContent;
+
+    const saved = JSON.parse(app.storage.getItem('omoi-progress'));
+    assert.equal(saved.index, 2);
+
+    const reload = setup(`?level=2&id=${saved.ids[saved.index]}&session=${saved.token}`, app.storage);
+    reload.respond(); await flush();
+
+    assert.equal(reload.element('questionText').textContent, current);
+    assert.equal(reload.element('previousQuestionButton').disabled, false);
+    reload.element('previousQuestionButton').click();
+    assert.equal(reload.element('questionText').textContent, cards[1].question);
+});
+
+test('finishing mid-way keeps the progress, finishing every question clears it', async () => {
+    const app = setup();
+    app.respond(); await flush();
+    app.element('finishButton').click();
+    app.element('confirmFinishButton').click();
+    assert.notEqual(app.storage.getItem('omoi-progress'), null);
+
+    const complete = setup();
+    complete.respond(); await flush();
+    for (let index = 0; index < cards.length; index++) {
+        complete.element('nextQuestionButton').click();
+    }
+    assert.equal(complete.location.href, 'index.html');
+    assert.equal(complete.storage.getItem('omoi-progress'), null);
 });

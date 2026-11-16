@@ -1,0 +1,83 @@
+const { test, expect } = require('@playwright/test');
+
+test.describe.configure({ timeout: 60000 });
+
+const ready = { timeout: 20000 };
+
+test('a normal session keeps its place after a reload instead of becoming a shared question', async ({ page }) => {
+    await page.goto('/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+
+    const firstUrl = new URL(page.url());
+    expect(firstUrl.searchParams.get('session')).toBeTruthy();
+    expect(firstUrl.searchParams.get('id')).toBeTruthy();
+
+    await page.locator('#nextQuestionButton').click();
+    const secondQuestion = await page.locator('#questionText').innerText();
+
+    await page.reload();
+    await expect(page.locator('#questionText')).toHaveText(secondQuestion, ready);
+    await expect(page.locator('#sharedQuestionNotice')).toBeHidden();
+    await expect(page.locator('#nextQuestionButton')).toBeVisible();
+    await expect(page.locator('#previousQuestionButton')).toBeEnabled();
+});
+
+test('ending mid-way leaves a resume notice on the level screen, not the home screen', async ({ page }) => {
+    await page.goto('/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+
+    await page.locator('#nextQuestionButton').click();
+    const question = await page.locator('#questionText').innerText();
+
+    await page.locator('#finishButton').click();
+    await page.locator('#confirmFinishButton').click();
+    await page.waitForURL('**/index.html');
+
+    await expect(page.locator('#resumeNotice')).toHaveCount(0);
+
+    await page.getByRole('link', { name: 'はじめる', exact: true }).click();
+    await page.waitForURL('**/select.html');
+    await expect(page.locator('#resumeNotice')).toBeVisible();
+    await expect(page.locator('#resumeNotice')).toContainText('前回の続きがあります');
+    await expect(page.locator('#resumeNoticeDetail')).toContainText('Level 2');
+    await expect(page.locator('#resumeNoticeDetail')).toContainText('2問目から');
+
+    await page.locator('#resumeNoticeLink').click();
+    await expect(page.locator('#questionText')).toHaveText(question, ready);
+    await expect(page.locator('#sharedQuestionNotice')).toBeHidden();
+    await expect(page.locator('#nextQuestionButton')).toBeVisible();
+});
+
+test('the resume notice is hidden when there is no saved progress', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('#resumeNotice')).toHaveCount(0);
+    await page.goto('/select.html');
+    await expect(page.locator('#resumeNotice')).toBeHidden();
+});
+
+test('a shared link still opens as a single shared question', async ({ page }) => {
+    await page.goto('/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+    const id = new URL(page.url()).searchParams.get('id');
+
+    await page.goto(`/question.html?level=2&id=${encodeURIComponent(id)}`);
+    await expect(page.locator('#sharedQuestionNotice')).toBeVisible(ready);
+    await expect(page.locator('#nextQuestionButton')).toBeHidden();
+    await expect(page.locator('#finishButton')).toBeHidden();
+});
+
+test('the resume notice can be dismissed with the close button', async ({ page }) => {
+    await page.goto('/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+
+    await page.locator('#finishButton').click();
+    await page.locator('#confirmFinishButton').click();
+    await page.waitForURL('**/index.html');
+
+    await page.goto('/select.html');
+    const notice = page.locator('#resumeNotice');
+    await expect(notice).toBeVisible();
+    await page.locator('#resumeNoticeClose').click();
+    await expect(notice).toBeHidden();
+    await expect(page.locator('#level2')).toBeFocused();
+});

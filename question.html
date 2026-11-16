@@ -120,17 +120,32 @@
                     </svg>
                     <span id="detailButtonLabel">問いの背景</span>
                 </button>
-                <button
-                    type="button" id="shareButton"
-                    class="question-tool share-button"
-                    hidden
-                >
-                    <svg aria-hidden="true" viewBox="0 0 24 24">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l2-2a5 5 0 0 0-7.07-7.07l-1.15 1.15"/>
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-2 2a5 5 0 0 0 7.07 7.07l1.14-1.14"/>
-                    </svg>
-                
-                </button>
+                <div class="share-control" id="shareControl">
+                    <button
+                        type="button"
+                        id="shareButton"
+                        class="question-tool share-button"
+                        aria-haspopup="menu"
+                        aria-expanded="false"
+                        aria-controls="shareMenu"
+                        aria-label="共有"
+                        title="共有"
+                        hidden
+                    >
+                        <svg aria-hidden="true" viewBox="0 0 24 24">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l2-2a5 5 0 0 0-7.07-7.07l-1.15 1.15"/>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-2 2a5 5 0 0 0 7.07 7.07l1.14-1.14"/>
+                        </svg>
+                    </button>
+                    <div id="shareMenu" class="share-menu" role="menu" aria-label="共有の方法" hidden>
+                        <button type="button" id="shareUrlButton" class="share-menu-item" role="menuitem">
+                            リンクを共有
+                        </button>
+                        <button type="button" id="shareImageButton" class="share-menu-item" role="menuitem">
+                            問いの画像を保存
+                        </button>
+                    </div>
+                </div>
             </div>
 
             <p id="shareStatus" class="share-status" role="status" aria-live="polite"></p>
@@ -226,8 +241,8 @@
         aria-labelledby="finishConfirmTitle"
         aria-describedby="finishConfirmMessage"
     >
-        <h2 id="finishConfirmTitle">本当にここで終わりますか？</h2>
-        <p id="finishConfirmMessage">質問を終了して、終了画面へ戻ります。</p>
+        <h2 id="finishConfirmTitle">ここで終わりますか？</h2>
+        <p id="finishConfirmMessage">ここまでの続きはこの端末に保存されます。次に開いたとき、続きから話せます。</p>
         <div class="finish-confirm-actions">
             <button type="button" id="cancelFinishButton" class="cancel-finish-button">
                 続ける
@@ -238,6 +253,7 @@
         </div>
     </dialog>
 
+    <script src="progress.js"></script>
     <script src="question.js"></script>
     <footer class="v3-attribution" aria-label="プレビューと帰属表示">
         <span>Omoi v3 プレビュー</span>
