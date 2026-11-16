@@ -25,7 +25,7 @@ test('the share button offers a link or a picture of the question', async ({ pag
     const file = fs.readFileSync(await download.path());
     expect(file.subarray(1, 4).toString()).toBe('PNG');
     expect(file.readUInt32BE(16)).toBe(1080);
-    expect(file.readUInt32BE(20)).toBe(1350);
+    expect(file.readUInt32BE(20)).toBe(1620);
 });
 
 test('the share menu closes with Escape and keeps the focus on the share button', async ({ page }) => {
@@ -78,5 +78,5 @@ test('the card renders even when the scenario and question are very long', async
         return canvas ? [canvas.width, canvas.height] : null;
     });
 
-    expect(size).toEqual([1080, 1350]);
+    expect(size).toEqual([1080, 1620]);
 });

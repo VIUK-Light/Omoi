@@ -391,6 +391,14 @@ test('text size has three levels and classroom mode is independent', async () =>
     assert.equal(toggle.attrs['aria-pressed'], 'true');
     assert.equal(toggle.textContent, '授業モードを終了');
     assert.equal(questionScreen.classList.contains('classroom-mode'), true);
+    assert.equal(smallToggle.disabled, true);
+    assert.equal(mediumToggle.disabled, true);
+    assert.equal(largeToggle.disabled, true);
+
+    // 授業モード中は文字の大きさを変えられない。
+    smallToggle.click();
+    assert.equal(questionScreen.classList.contains('text-size-small'), false);
+    assert.equal(questionScreen.classList.contains('text-size-large'), true);
 
     app.element('nextQuestionButton').click();
     assert.equal(largeToggle.attrs['aria-pressed'], 'true');
@@ -402,6 +410,9 @@ test('text size has three levels and classroom mode is independent', async () =>
     assert.equal(toggle.textContent, '授業モード');
     assert.equal(questionScreen.classList.contains('classroom-mode'), false);
     assert.equal(largeToggle.attrs['aria-pressed'], 'true');
+    assert.equal(smallToggle.disabled, false);
+    assert.equal(mediumToggle.disabled, false);
+    assert.equal(largeToggle.disabled, false);
 
     mediumToggle.click();
     assert.equal(mediumToggle.attrs['aria-pressed'], 'true');
@@ -646,6 +657,16 @@ test('reloading restores the same position and order', async () => {
     assert.equal(reload.element('previousQuestionButton').disabled, false);
     reload.element('previousQuestionButton').click();
     assert.equal(reload.element('questionText').textContent, cards[1].question);
+});
+
+test('changing the category discards the saved progress', async () => {
+    const app = setup();
+    app.respond(); await flush();
+    app.element('nextQuestionButton').click();
+    assert.notEqual(app.storage.getItem('omoi-progress'), null);
+
+    app.element('changeCategoryLink').click();
+    assert.equal(app.storage.getItem('omoi-progress'), null);
 });
 
 test('finishing mid-way keeps the progress, finishing every question clears it', async () => {

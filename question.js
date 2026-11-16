@@ -676,7 +676,7 @@ function buildShareUrl(question) {
 
 
 const cardWidth = 1080;
-const cardHeight = 1350;
+const cardHeight = 1620;
 const cardPadding = 84;
 
 const levelDescriptions = {
@@ -1166,6 +1166,13 @@ finishButton.addEventListener("click", function () {
     cancelFinishButton.focus();
 });
 
+changeCategoryLink.addEventListener("click", function () {
+    // カテゴリーを変えるときは、今の続きを保存しない。
+    if (!isSharedQuestion) {
+        window.OmoiProgress?.clear();
+    }
+});
+
 cancelFinishButton.addEventListener("click", function () {
     finishConfirmDialog.close();
     finishButton.focus();
@@ -1247,7 +1254,7 @@ furiganaToggle.addEventListener("click", function () {
 
 for (const { size, element } of textSizeButtons) {
     element.addEventListener("click", function () {
-        if (state !== "ready") return;
+        if (state !== "ready" || classroomModeEnabled) return;
         textSize = size;
         updateDisplayModes();
     });
@@ -1270,6 +1277,8 @@ function updateDisplayModes() {
     questionScreen.classList.toggle("classroom-mode", classroomModeEnabled);
     for (const { size, element } of textSizeButtons) {
         element.setAttribute("aria-pressed", String(textSize === size));
+        // 授業モードでは文字の大きさを切り替えない。
+        element.disabled = classroomModeEnabled;
     }
     classroomModeToggle.setAttribute("aria-pressed", String(classroomModeEnabled));
     classroomModeToggle.textContent =

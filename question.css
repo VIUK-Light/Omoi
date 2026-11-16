@@ -6,7 +6,7 @@ body {
 }
 
 :root {
-    --furigana-font-size: 0.55em;
+    --furigana-font-size: 0.44em;
     --furigana-font-weight: 400;
 }
 
@@ -93,6 +93,11 @@ body {
     min-height: 40px;
     padding: 0;
     cursor: pointer;
+}
+
+.text-size-options .text-size-option:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
 }
 
 .furigana-settings-panel .furigana-toggle,
@@ -194,6 +199,10 @@ body {
     white-space: pre-line;
 }
 
+.scenario-text:has(ruby) {
+    line-height: 2.2;
+}
+
 .question-content.long-question {
     text-align: left;
 }
@@ -212,7 +221,7 @@ body {
 #questionText:has(ruby),
 .question-content.long-question-text #questionText:has(ruby),
 .question-content.long-question:not(.long-question-text) #questionText:has(ruby) {
-    line-height: 1.7;
+    line-height: 2.1;
 }
 
 .question-content.long-question + .question-footer {
@@ -484,9 +493,21 @@ ruby {
     white-space: nowrap;
 }
 rt {
-    font-size: var(--furigana-font-size);
+    font-size: max(var(--furigana-font-size), 6.5px);
     font-weight: var(--furigana-font-weight);
+    line-height: 1;
+    margin-bottom: 0.3em;
+    color: var(--omoi-muted, currentColor);
     white-space: nowrap;
+}
+
+/* ルビがある本文は、行間を広げて注釈と本文を離す。 */
+.question-summary-content:has(ruby),
+#detailText:has(ruby),
+.hints-panel li:has(ruby),
+#termsList:has(ruby),
+#sourceList li:has(ruby) {
+    line-height: 2.05;
 }
 
 .finish-button:hover:not(:disabled),
@@ -727,7 +748,7 @@ rt {
 
 .question-screen.text-size-large .question-content #questionText:has(ruby),
 .question-screen.classroom-mode .question-content #questionText:has(ruby) {
-    line-height: 1.9;
+    line-height: 2.15;
 }
 
 .question-screen.classroom-mode .scenario-label {

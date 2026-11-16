@@ -66,6 +66,16 @@ test('a shared link still opens as a single shared question', async ({ page }) =
     await expect(page.locator('#finishButton')).toBeHidden();
 });
 
+test('changing the category discards the saved progress', async ({ page }) => {
+    await page.goto('/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+    await page.locator('#nextQuestionButton').click();
+
+    await page.locator('#changeCategoryLink').click();
+    await page.waitForURL('**/select.html');
+    await expect(page.locator('#resumeNotice')).toBeHidden();
+});
+
 test('the resume notice can be dismissed with the close button', async ({ page }) => {
     await page.goto('/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
