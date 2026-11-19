@@ -54,8 +54,17 @@ body {
 }
 
 .level-card strong,
-.level-card small {
+.level-card small,
+.level-name {
     display: block;
+}
+
+.level-name {
+    margin-bottom: 3px;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    color: #666;
 }
 
 .level-card small {
@@ -89,7 +98,8 @@ body {
     border-color: #111;
 }
 
-.level-list input:checked + .level-card small {
+.level-list input:checked + .level-card small,
+.level-list input:checked + .level-card .level-name {
     color: #e0e0e0;
 }
 

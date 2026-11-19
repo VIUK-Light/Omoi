@@ -24,6 +24,7 @@ test('normal warning flow offers optional helpers without preview queries or dia
   await page.locator('label[for="level3"]').click();
   await page.locator('#nextButton').click();
   await expect(page).toHaveURL(/\/warning3\.html$/);
+  await expect(page).toHaveTitle('話をはじめる前に - Omoi');
   await page.getByRole('link', { name: '続ける', exact: true }).click();
   await expect(page).toHaveURL(/\/question\.html\?level=3$/);
   await expect(page.locator('#questionText')).toHaveText(completeCard.question);
@@ -74,6 +75,7 @@ test('terms-only background and hints-only questions do not require a detail exp
     { id: 'hints-only', level: 4, question: '別の見方も考える？', hints: completeCard.hints }
   ] }));
   await page.goto('/warning.html');
+  await expect(page).toHaveTitle('話をはじめる前に - Omoi');
   await page.getByRole('link', { name: '続ける', exact: true }).click();
   await expect(page.locator('#detailButton')).toBeVisible();
   await expect(page.locator('#hintButton')).toBeHidden();

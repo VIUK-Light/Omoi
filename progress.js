@@ -3,6 +3,11 @@
     const storageKey = "omoi-progress";
     const maxAge = 7 * 24 * 60 * 60 * 1000;
     const tokenPattern = /^[A-Za-z0-9_-]{6,64}$/;
+    const levelNames = {
+        2: "低",
+        3: "中",
+        4: "高"
+    };
     const levelLabels = {
         2: "意見が分かれる身近な話",
         3: "社会や価値観について",
@@ -103,7 +108,7 @@
         const detail = document.getElementById("resumeNoticeDetail");
         if (detail) {
             detail.textContent =
-                `Level ${data.level}｜${levelLabels[data.level]}・${data.index + 1}問目から`;
+                `level:${levelNames[data.level]}｜${levelLabels[data.level]}・${data.index + 1}問目から`;
         }
         const link = document.getElementById("resumeNoticeLink");
         if (link) {

@@ -12,6 +12,9 @@ test('home opens category selection and enables the next step', async ({ page })
   await expect(nextButton).toBeDisabled();
   await expect(page.locator('input[name="level"]')).toHaveCount(3);
   await expect(page.locator('#level1')).toHaveCount(0);
+  await expect(page.locator('label[for="level2"]')).toContainText('level:低');
+  await expect(page.locator('label[for="level3"]')).toContainText('level:中');
+  await expect(page.locator('label[for="level4"]')).toContainText('level:高');
   await page.locator('label[for="level2"]').click();
   await expect(nextButton).toBeEnabled();
 });

@@ -451,7 +451,7 @@ async function loadQuestions() {
         validateFurigana(questions, furigana);
         readingsByQuestionId = furigana;
         if (questions.length === 0) {
-            showMessage("このLevelの質問はまだありません。レベルを選び直してください。");
+            showMessage("このカテゴリーの質問はまだありません。カテゴリーを選び直してください。");
             setState("empty");
             return;
         }
@@ -500,7 +500,7 @@ applySharedMode();
 if (!allowedLevels.has(params.get("level")) ||
     params.getAll("level").length !== 1) {
     setState("invalid");
-    showMessage("質問の条件が正しくありません。「レベルを変える」から選び直してください。");
+    showMessage("質問の条件が正しくありません。「カテゴリーを変える」から選び直してください。");
 } else if (isSharedIdMalformed) {
     setState("invalid");
     showMessage("共有リンクの形式が正しくありません。URLを確認するか、「他の質問をする」から選び直してください。");
@@ -679,6 +679,12 @@ const cardWidth = 1080;
 const cardHeight = 1620;
 const cardPadding = 84;
 
+const levelNames = {
+    2: "低",
+    3: "中",
+    4: "高"
+};
+
 const levelDescriptions = {
     2: "意見が分かれる身近な話",
     3: "社会や価値観について",
@@ -848,7 +854,7 @@ async function createQuestionCard(question) {
         context.globalAlpha = 1;
     }
 
-    // 見出し（左：ロゴ、右：Level）
+    // 見出し（左：ロゴ、右：level）
     context.fillStyle = colors.ink;
     context.font = "700 52px sans-serif";
     if ("letterSpacing" in context) {
@@ -865,7 +871,7 @@ async function createQuestionCard(question) {
     if ("letterSpacing" in context) {
         context.letterSpacing = "2px";
     }
-    context.fillText(`LEVEL ${question.level}`, cardWidth - cardPadding, cardPadding + 2);
+    context.fillText(`level:${levelNames[question.level]}`, cardWidth - cardPadding, cardPadding + 2);
     if ("letterSpacing" in context) {
         context.letterSpacing = "0px";
     }

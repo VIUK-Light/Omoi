@@ -485,7 +485,7 @@
     }
 
     .back-link, .back-button, .home-nav a, .brand, .site-footer p,
-    .level-label, .level-card small, .level-example, .description,
+    .level-label, .level-name, .level-card small, .level-example, .description,
     .scenario-label, .next-note, .finish-button, .previous-button,
     .detail-note, .safety-link, .finish-confirm-dialog p,
     .question-summary > h2, .preview-review, .preview-entry__eyebrow,
@@ -571,6 +571,7 @@
         color: var(--omoi-on-primary);
     }
     .level-list input:checked + .level-card small,
+    .level-list input:checked + .level-card .level-name,
     .level-list input:checked + .level-card .level-example {
         color: var(--omoi-on-primary);
     }

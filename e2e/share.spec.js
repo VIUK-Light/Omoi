@@ -28,6 +28,32 @@ test('the share button offers a link or a picture of the question', async ({ pag
     expect(file.readUInt32BE(20)).toBe(1620);
 });
 
+test('the card shows the level name instead of the level number', async ({ page }) => {
+    await page.goto('/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+
+    const texts = await page.evaluate(async () => {
+        const original = CanvasRenderingContext2D.prototype.fillText;
+        const calls = [];
+        CanvasRenderingContext2D.prototype.fillText = function (text, ...args) {
+            calls.push(String(text));
+            return original.call(this, text, ...args);
+        };
+        try {
+            await createQuestionCard({
+                level: 4,
+                scenario: 'テストの場面文',
+                question: 'テストの問い'
+            });
+        } finally {
+            CanvasRenderingContext2D.prototype.fillText = original;
+        }
+        return calls;
+    });
+
+    expect(texts).toContain('level:高');
+});
+
 test('the share menu closes with Escape and keeps the focus on the share button', async ({ page }) => {
     await page.goto('/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
