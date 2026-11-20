@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, follow">
 
-    <title>話の深さを選ぶ - Omoi</title>
+    <title>問いの選び方 - Omoi</title>
     <link rel="stylesheet" href="select.css">
     <script src="theme.js"></script>
     <script src="progress.js"></script>
@@ -16,7 +16,7 @@
     <main class="select-screen">
         <div class="select-content">
 
-            <h1 id="levelHeading">どんな話をしたい？</h1>
+            <h1 id="modeHeading">どんな話をしたい？</h1>
 
             <aside id="resumeNotice" class="resume-notice" aria-label="前回の続き" hidden>
                 <p class="resume-notice-text">
@@ -34,43 +34,40 @@
                 >×</button>
             </aside>
 
-            <div class="level-list" role="radiogroup" aria-labelledby="levelHeading">
+            <div class="mode-list" role="radiogroup" aria-labelledby="modeHeading">
 
-
-                <input type="radio" name="level" id="level2" value="2">
-                <label for="level2" class="level-card">
+                <input type="radio" name="mode" id="modeStudent" value="student">
+                <label for="modeStudent" class="mode-card">
                     <div>
-                        <span class="level-name">level:低</span>
-                        <strong>意見が分かれる身近な話</strong>
-                        <small>学校・人間関係・日常の判断について</small>
-                        <span class="level-example">例「友達と意見が違ったら、どうする？」</span>
+                        <span class="mode-name">student</span>
+                        <strong>学校・若者向け</strong>
+                        <small>学校や若者に関わる問いから選びます</small>
                     </div>
                     <span class="radio-mark"></span>
                 </label>
 
-                <input type="radio" name="level" id="level3" value="3">
-                <label for="level3" class="level-card">
+                <input type="radio" name="mode" id="modeAll" value="all">
+                <label for="modeAll" class="mode-card">
                     <div>
-                        <span class="level-name">level:中</span>
-                        <strong>社会や価値観について</strong>
-                        <small>社会制度・人権・倫理などについて</small>
-                        <span class="level-example">例「公平であることと、平等であることは同じ？」</span>
+                        <span class="mode-name">all</span>
+                        <strong>すべてから選ぶ</strong>
+                        <small>次の画面で話の深さ（level）を選びます</small>
                     </div>
                     <span class="radio-mark"></span>
                 </label>
 
-                <input type="radio" name="level" id="level4" value="4">
-                <label for="level4" class="level-card">
+                <input type="radio" name="mode" id="modeCustom" value="custom">
+                <label for="modeCustom" class="mode-card">
                     <div>
-                        <span class="level-name">level:高</span>
-                        <strong>人生に関わる難しい選択</strong>
-                        <small>自分が当事者だったらどう判断するか</small>
-                        <span class="level-example">例「大切な人との信頼が揺らいだら、何を優先する？」</span>
+                        <span class="mode-name">custom</span>
+                        <strong>自分で選ぶ</strong>
+                        <small>次の画面でカテゴリーと問いを組み合わせます</small>
                     </div>
                     <span class="radio-mark"></span>
                 </label>
 
             </div>
+
             <div class="select-actions">
                 <a href="index.html" class="back-link">
                     ← 戻る

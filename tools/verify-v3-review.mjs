@@ -9,9 +9,20 @@ import { isDeepStrictEqual } from "node:util";
 export const REVIEW_BASE_COMMIT = "3eeff5a9618ba1503d2716c6fe89d47d30bd710d";
 export const ACTIVE_LEVELS = Object.freeze([2, 3, 4]);
 const helperFields = new Set(["summary", "hints", "detail", "terms"]);
+// labels は表示・絞り込み用のメタデータで、カード本文のレビュー対象ではない。
+const nonContentFields = new Set([...helperFields, "labels"]);
 const nonEmpty = value => typeof value === "string" && value.trim() !== "";
-const core = record => Object.fromEntries(Object.entries(record).filter(([key]) => !helperFields.has(key)));
-export const fingerprintQuestion = record => createHash("sha256").update(JSON.stringify(record)).digest("hex");
+const core = record => Object.fromEntries(Object.entries(record).filter(([key]) => !nonContentFields.has(key)));
+const withoutLabels = record => Object.fromEntries(Object.entries(record).filter(([key]) => key !== "labels"));
+export const fingerprintQuestion = record => createHash("sha256").update(JSON.stringify(withoutLabels(record))).digest("hex");
+const labelFreeRaw = raw => {
+    try {
+        const rows = JSON.parse(raw);
+        return JSON.stringify(Array.isArray(rows) ? rows.map(withoutLabels) : rows);
+    } catch {
+        return raw;
+    }
+};
 
 export function validateV3Review({ review, currentByLevel, baseByLevel, currentRaw, baseRaw }) {
     const errors = [];
@@ -37,8 +48,10 @@ export function validateV3Review({ review, currentByLevel, baseByLevel, currentR
         }
         total += after.length;
         if (before.length !== after.length) add("changed_card_count", `Level ${level} card count changed.`);
-        if (level === 2 && (typeof currentRaw[level] !== "string" || currentRaw[level] !== baseRaw[level])) {
-            add("changed_lower_level_file", `Level ${level} must remain byte-for-byte unchanged.`);
+        if (level === 2 && (typeof currentRaw[level] !== "string" ||
+            typeof baseRaw[level] !== "string" ||
+            labelFreeRaw(currentRaw[level]) !== labelFreeRaw(baseRaw[level]))) {
+            add("changed_lower_level_file", `Level ${level} must remain unchanged except for labels.`);
         }
         const originals = new Map(before.map(record => [record.id, record]));
         if (!isDeepStrictEqual(before.map(record => record.id), after.map(record => record.id))) {

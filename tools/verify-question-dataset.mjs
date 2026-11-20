@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateQuestionSupport } from "./question-support-schema.mjs";
+import { validateLabelList } from "./question-labels.mjs";
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = path.resolve(scriptDirectory, "..");
@@ -227,6 +228,10 @@ for (const fileName of questionFiles) {
             addFinding("error", "invalid_perspective", "Level 3/4 perspective must be affected, actor, decision_maker, or observer.", record);
         }
 
+        for (const message of validateLabelList(entry.labels)) {
+            addFinding("error", "invalid_labels", message, record);
+        }
+
         if (entry.role !== undefined && !isNonEmptyString(entry.role)) {
             addFinding("error", "invalid_role", "role must be a non-empty string when present.", record);
         }
@@ -312,6 +317,15 @@ const categoryCounts = Object.entries(records.reduce((counts, record) => {
     return counts;
 }, {})).sort(([left], [right]) => left.localeCompare(right));
 
+const labelCounts = Object.entries(records.reduce((counts, record) => {
+    if (Array.isArray(record.labels)) {
+        for (const label of record.labels) {
+            if (isNonEmptyString(label)) counts[label] = (counts[label] ?? 0) + 1;
+        }
+    }
+    return counts;
+}, {})).sort(([left], [right]) => left.localeCompare(right));
+
 const errors = findings.filter((finding) => finding.severity === "error");
 const warnings = findings.filter((finding) => finding.severity === "warning");
 const findingCodeCounts = Object.fromEntries([...new Set(findings.map((finding) => finding.code))]
@@ -326,7 +340,8 @@ const report = {
     errors,
     warnings,
     findingCodeCounts,
-    categories: Object.fromEntries(categoryCounts)
+    categories: Object.fromEntries(categoryCounts),
+    labels: Object.fromEntries(labelCounts)
 };
 
 if (summaryOnly) {
@@ -334,6 +349,7 @@ if (summaryOnly) {
         files: report.files,
         internalLevels: report.internalLevels,
         totalRecords: report.totalRecords,
+        labels: report.labels,
         errors: errors.length,
         warnings: warnings.length,
         findingCodeCounts: report.findingCodeCounts
@@ -345,6 +361,7 @@ if (summaryOnly) {
     console.log(`Records: ${report.totalRecords}`);
     console.log(`Files: ${Object.entries(levelCounts).map(([name, count]) => `${name}=${count}`).join(", ")}`);
     console.log(`Internal levels: ${Object.entries(internalLevelCounts).map(([name, count]) => `${name}=${count}`).join(", ")}`);
+    console.log(`Labels: ${Object.entries(report.labels).map(([name, count]) => `${name}=${count}`).join(", ")}`);
     console.log(`Errors: ${errors.length}`);
     console.log(`Warnings: ${warnings.length}`);
 

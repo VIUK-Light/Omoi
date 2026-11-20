@@ -102,7 +102,7 @@ function setup(search = '?level=2', storage = createStorage()) {
         navigator: { clipboard: { writeText: async () => {} } },
         fetch(url, options) {
             return new Promise((resolve, reject) => {
-                requests.push({ url, resolve, reject });
+                requests.push({ url, resolve, reject, resolved: false });
                 options.signal.addEventListener('abort', () => reject(new Error('Aborted')));
             });
         }
@@ -112,6 +112,8 @@ function setup(search = '?level=2', storage = createStorage()) {
         timeout: () => onTimeout(),
         respond(data = cards, ok = true, readings = plainReadings(data)) {
             const [questionsRequest, readingsRequest] = requests.slice(-2);
+            questionsRequest.resolved = true;
+            readingsRequest.resolved = true;
             questionsRequest.resolve({
                 ok, status: ok ? 200 : 404,
                 json: async () => structuredClone(data)
@@ -120,6 +122,21 @@ function setup(search = '?level=2', storage = createStorage()) {
                 ok, status: ok ? 200 : 404,
                 json: async () => structuredClone(readings)
             });
+        },
+        respondAll(byLevel, ok = true) {
+            for (const request of requests) {
+                if (request.resolved) continue;
+                const match = /^level(\d+)(-furigana)?\.json$/.exec(request.url);
+                if (!match) continue;
+                const level = Number(match[1]);
+                const data = byLevel[level] ?? [];
+                const body = match[2] ? plainReadings(data) : data;
+                request.resolved = true;
+                request.resolve({
+                    ok, status: ok ? 200 : 404,
+                    json: async () => structuredClone(body)
+                });
+            }
         }
     };
 }
@@ -616,7 +633,8 @@ test('a normal session is saved on the device and reloads without shared mode', 
     app.respond(); await flush();
 
     const saved = JSON.parse(app.storage.getItem('omoi-progress'));
-    assert.equal(saved.version, 1);
+    assert.equal(saved.version, 2);
+    assert.equal(saved.mode, 'all');
     assert.equal(saved.level, 2);
     assert.equal(saved.index, 0);
     assert.deepEqual(saved.ids, cards.map(card => card.id));
@@ -683,4 +701,98 @@ test('finishing mid-way keeps the progress, finishing every question clears it',
     }
     assert.equal(complete.location.href, 'index.html');
     assert.equal(complete.storage.getItem('omoi-progress'), null);
+});
+
+test('student mode loads every level, keeps student labels and saves mode v2', async () => {
+    const byLevel = {
+        2: [{ id: 's2', level: 2, question: 'Student 2', labels: ['student', 'school'] }],
+        3: [{ id: 's3', level: 3, question: 'Student 3', labels: ['student', 'care'] }],
+        4: [{ id: 'n4', level: 4, question: 'Adult 4', labels: ['care'] }]
+    };
+    const app = setup('?mode=student');
+    app.respondAll(byLevel); await flush();
+
+    assert.equal(app.element('questionText').textContent, 'Student 2');
+    assert.equal(app.element('sharedQuestionNotice').hidden, true);
+
+    const saved = JSON.parse(app.storage.getItem('omoi-progress'));
+    assert.equal(saved.version, 2);
+    assert.equal(saved.mode, 'student');
+    assert.equal('level' in saved, false);
+    assert.deepEqual(saved.ids, ['s2', 's3']);
+
+    app.element('nextQuestionButton').click();
+    assert.equal(app.element('questionText').textContent, 'Student 3');
+
+    const reload = setup(`?mode=student&session=${saved.token}`, app.storage);
+    reload.respondAll(byLevel); await flush();
+    assert.equal(reload.element('questionText').textContent, 'Student 3');
+    assert.equal(reload.element('sharedQuestionNotice').hidden, true);
+});
+
+test('custom mode combines labels and individual questions across levels', async () => {
+    const byLevel = {
+        2: [{ id: 'c2', level: 2, question: 'Custom school', labels: ['school'] }],
+        3: [{ id: 'c3', level: 3, question: 'Custom friend', labels: ['friendship'] }],
+        4: [{ id: 'c4', level: 4, question: 'Custom selected', labels: ['care'] }]
+    };
+    const storage = createStorage();
+    storage.setItem('omoi-selection', JSON.stringify({
+        version: 1,
+        token: 'seltoken123',
+        mode: 'custom',
+        labels: ['school'],
+        ids: ['c4'],
+        createdAt: Date.now()
+    }));
+    const app = setup('?mode=custom&session=seltoken123', storage);
+    app.respondAll(byLevel); await flush();
+
+    assert.equal(app.element('questionText').textContent, 'Custom school');
+    assert.equal(app.element('sharedQuestionNotice').hidden, true);
+    assert.equal(storage.getItem('omoi-selection'), null);
+
+    const saved = JSON.parse(storage.getItem('omoi-progress'));
+    assert.equal(saved.version, 2);
+    assert.equal(saved.mode, 'custom');
+    assert.deepEqual(saved.labels, ['school']);
+    assert.deepEqual(saved.selectedIds, ['c4']);
+    assert.deepEqual(saved.ids, ['c2', 'c4']);
+
+    app.element('nextQuestionButton').click();
+    assert.equal(app.element('questionText').textContent, 'Custom selected');
+
+    const reload = setup(`?mode=custom&session=${saved.token}`, storage);
+    reload.respondAll(byLevel); await flush();
+    assert.equal(reload.element('questionText').textContent, 'Custom selected');
+    reload.element('nextQuestionButton').click();
+    assert.equal(reload.location.href, 'index.html');
+    assert.equal(storage.getItem('omoi-progress'), null);
+});
+
+test('custom mode without a saved selection does not fetch', () => {
+    const app = setup('?mode=custom&session=abcdef123456');
+    assert.equal(app.requests.length, 0);
+    assert.match(app.element('questionText').textContent, /見つかりませんでした/);
+});
+
+test('version 1 progress resumes as all mode and is rewritten as version 2', async () => {
+    const storage = createStorage();
+    storage.setItem('omoi-progress', JSON.stringify({
+        version: 1,
+        token: 'legacytoken1',
+        level: 2,
+        ids: cards.map(card => card.id),
+        index: 2,
+        updatedAt: Date.now()
+    }));
+    const app = setup('?level=2&session=legacytoken1', storage);
+    app.respond(); await flush();
+
+    assert.equal(app.element('questionText').textContent, cards[2].question);
+    const saved = JSON.parse(storage.getItem('omoi-progress'));
+    assert.equal(saved.version, 2);
+    assert.equal(saved.mode, 'all');
+    assert.equal(saved.level, 2);
+    assert.equal(saved.index, 2);
 });

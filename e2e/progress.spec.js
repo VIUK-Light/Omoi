@@ -89,5 +89,5 @@ test('the resume notice can be dismissed with the close button', async ({ page }
     await expect(notice).toBeVisible();
     await page.locator('#resumeNoticeClose').click();
     await expect(notice).toBeHidden();
-    await expect(page.locator('#level2')).toBeFocused();
+    await expect(page.locator('#modeStudent')).toBeFocused();
 });

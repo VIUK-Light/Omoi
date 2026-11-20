@@ -13,20 +13,69 @@ async function keepOrder(page) {
   await page.addInitScript(() => { Math.random = () => .999999; });
 }
 
+function readingSegments(text) {
+  const segments = [];
+  let rest = text;
+  while (rest) {
+    const match = /(\p{Script=Han}+)/u.exec(rest);
+    if (!match) {
+      segments.push({ text: rest });
+      break;
+    }
+    if (match.index > 0) segments.push({ text: rest.slice(0, match.index) });
+    segments.push({ ruby: match[0], reading: 'あ' });
+    rest = rest.slice(match.index + match[0].length);
+  }
+  return segments;
+}
+
+function furiganaFor(records) {
+  return Object.fromEntries(records.map(record => {
+    const fields = {};
+    const add = (path, value) => {
+      if (typeof value === 'string') fields[path] = readingSegments(value);
+    };
+    add('question', record.question);
+    add('scenario', record.scenario);
+    if (record.level < 3) return [record.id, fields];
+    (record.summary ?? []).forEach((block, blockIndex) => {
+      add(`summary.${blockIndex}.text`, block.text);
+      (block.items ?? []).forEach((item, itemIndex) => {
+        add(`summary.${blockIndex}.items.${itemIndex}.label`, item.label);
+        add(`summary.${blockIndex}.items.${itemIndex}.text`, item.text);
+      });
+    });
+    (record.hints ?? []).forEach((hint, index) => add(`hints.${index}`, hint));
+    add('detail.text', record.detail?.text);
+    (record.detail?.sources ?? []).forEach((source, index) => add(`detail.sources.${index}.title`, source.title));
+    (record.terms ?? []).forEach((term, index) => {
+      add(`terms.${index}.term`, term.term);
+      add(`terms.${index}.definition`, term.definition);
+    });
+    return [record.id, fields];
+  }));
+}
+
 test('normal warning flow offers optional helpers without preview queries or diagram code', async ({ page }) => {
   const requests = [], errors = [];
   page.on('request', request => requests.push(request.url()));
   page.on('pageerror', error => errors.push(error.message));
   await keepOrder(page);
-  await page.route('**/level3.json', route => route.fulfill({ json: [completeCard, { id: 'normal-v3-simple', level: 3, question: '短い問いだけでも話せる？' }] }));
+  const level3Cards = [completeCard, { id: 'normal-v3-simple', level: 3, question: '短い問いだけでも話せる？' }];
+  await page.route('**/level3.json', route => route.fulfill({ json: level3Cards }));
+  await page.route('**/level3-furigana.json', route => route.fulfill({ json: furiganaFor(level3Cards) }));
   await page.goto('/');
   await page.getByRole('link', { name: 'はじめる', exact: true }).click();
+  await page.locator('label[for="modeAll"]').click();
+  await page.locator('#nextButton').click();
+  await expect(page).toHaveURL(/\/level-select\.html$/);
   await page.locator('label[for="level3"]').click();
   await page.locator('#nextButton').click();
   await expect(page).toHaveURL(/\/warning3\.html$/);
   await expect(page).toHaveTitle('話をはじめる前に - Omoi');
+  await expect(page.locator('.back-button')).toHaveAttribute('href', 'level-select.html');
   await page.getByRole('link', { name: '続ける', exact: true }).click();
-  await expect(page).toHaveURL(/\/question\.html\?level=3$/);
+  await expect(page).toHaveURL(/\/question\.html\?.*level=3/);
   await expect(page.locator('#questionText')).toHaveText(completeCard.question);
   await expect(page.locator('#scenarioText')).toHaveText(completeCard.scenario);
   for (const id of ['questionSummary', 'hintsPanel', 'detailPanel']) await expect(page.locator(`#${id}`)).toBeHidden();
@@ -60,7 +109,9 @@ test('normal warning flow offers optional helpers without preview queries or dia
 
 for (const level of [2]) {
   test(`Level ${level} never offers helpers even if unexpected data includes them`, async ({ page }) => {
-    await page.route(`**/level${level}.json`, route => route.fulfill({ json: [{ ...completeCard, level }] }));
+    const levelCards = [{ ...completeCard, level }];
+    await page.route(`**/level${level}.json`, route => route.fulfill({ json: levelCards }));
+    await page.route(`**/level${level}-furigana.json`, route => route.fulfill({ json: furiganaFor(levelCards) }));
     await page.goto(`/question.html?level=${level}`);
     await expect(page.locator('#questionText')).toHaveText(completeCard.question);
     for (const id of ['questionSummaryToggle', 'hintButton', 'detailButton']) await expect(page.locator(`#${id}`)).toBeHidden();
@@ -70,10 +121,12 @@ for (const level of [2]) {
 
 test('terms-only background and hints-only questions do not require a detail explanation', async ({ page }) => {
   await keepOrder(page);
-  await page.route('**/level4.json', route => route.fulfill({ json: [
+  const level4Cards = [
     { id: 'terms-only', level: 4, question: '言葉を確認して話す？', terms: completeCard.terms },
     { id: 'hints-only', level: 4, question: '別の見方も考える？', hints: completeCard.hints }
-  ] }));
+  ];
+  await page.route('**/level4.json', route => route.fulfill({ json: level4Cards }));
+  await page.route('**/level4-furigana.json', route => route.fulfill({ json: furiganaFor(level4Cards) }));
   await page.goto('/warning.html');
   await expect(page).toHaveTitle('話をはじめる前に - Omoi');
   await page.getByRole('link', { name: '続ける', exact: true }).click();
@@ -103,6 +156,12 @@ for (const prefix of ['/', '/preview/omoi-v3/']) {
     expect(datasetRequests).toEqual([]);
     await page.locator('.back-link').click();
     await expect(page).toHaveURL(new RegExp(`${prefix}select.html`));
+    if (prefix === '/') {
+      expect(await page.locator('input[name="mode"]').evaluateAll(inputs => inputs.map(input => input.value))).toEqual(['student', 'all', 'custom']);
+      await page.locator('label[for="modeAll"]').click();
+      await page.locator('#nextButton').click();
+      await expect(page).toHaveURL(new RegExp(`${prefix}level-select.html`));
+    }
     expect(await page.locator('input[name="level"]').evaluateAll(inputs => inputs.map(input => input.value))).toEqual(['2', '3', '4']);
   });
 }

@@ -54,10 +54,21 @@ test('missing, duplicated, self-reviewed and unexplained entries fail the public
     }
 });
 
-test('Level 2 remains byte-for-byte unchanged, including formatting', () => {
-    const input = fixture();
-    input.currentRaw[2] += '\n';
-    assert.ok(validateV3Review(input).some(error => error.code === 'changed_lower_level_file'));
+test('Level 2 stays unchanged except for navigation labels', () => {
+    const labels = fixture();
+    labels.currentByLevel[2][0].labels = ['school'];
+    labels.currentRaw[2] = JSON.stringify(labels.currentByLevel[2]);
+    assert.deepEqual(validateV3Review(labels), []);
+
+    // 内容が同じなら、整形の違いだけではレビューを無効にしない。
+    const formatting = fixture();
+    formatting.currentRaw[2] += '\n';
+    assert.deepEqual(validateV3Review(formatting), []);
+
+    const content = fixture();
+    content.currentByLevel[2][0].question = 'Changed';
+    content.currentRaw[2] = JSON.stringify(content.currentByLevel[2]);
+    assert.ok(validateV3Review(content).some(error => error.code === 'changed_lower_level_file'));
 });
 
 test('retired Level 1 data is rejected even when active cards and reviews are unchanged', () => {

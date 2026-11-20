@@ -1,6 +1,22 @@
 const params = new URLSearchParams(window.location.search);
-const level = Number(params.get("level"));
 const allowedLevels = new Set(["2", "3", "4"]);
+const allowedModes = new Set(["student", "all", "custom"]);
+
+const levelParameters = params.getAll("level");
+const hasLevelParameter = params.has("level");
+const level = levelParameters.length === 1 ? Number(levelParameters[0]) : NaN;
+const hasValidLevelParameter = levelParameters.length === 1 &&
+    allowedLevels.has(levelParameters[0]);
+
+const modeParameters = params.getAll("mode");
+const hasModeParameter = params.has("mode");
+const modeFromUrl = modeParameters.length === 1 ? modeParameters[0] : null;
+const isModeMalformed = hasModeParameter &&
+    (modeParameters.length !== 1 || !allowedModes.has(modeFromUrl));
+const mode = isModeMalformed
+    ? null
+    : (modeFromUrl ?? (hasValidLevelParameter ? "all" : null));
+
 const sharedIdValues = params.getAll("id");
 const hasSharedId = params.has("id");
 const sharedId = sharedIdValues.length === 1 ? sharedIdValues[0] : null;
@@ -15,19 +31,39 @@ const sessionTokenFromUrl = sessionTokenValues.length === 1
 const hasSessionToken = typeof sessionTokenFromUrl === "string" &&
     /^[A-Za-z0-9_-]{6,64}$/.test(sessionTokenFromUrl);
 
+const isRequestValid = !isModeMalformed &&
+    allowedModes.has(mode) &&
+    (mode !== "all" || hasValidLevelParameter) &&
+    (mode === "all" || !hasLevelParameter) &&
+    !(hasSharedId && mode !== "all");
+
+function savedProgressMode(saved) {
+    return saved?.version === 1 ? "all" : saved?.mode;
+}
+
 function readSavedProgress() {
     if (!hasSessionToken || !window.OmoiProgress) return null;
     const saved = window.OmoiProgress.read();
-    if (!saved || saved.token !== sessionTokenFromUrl || saved.level !== level) {
-        return null;
-    }
+    if (!saved || saved.token !== sessionTokenFromUrl) return null;
+    if (savedProgressMode(saved) !== mode) return null;
+    if (mode === "all" && saved.level !== level) return null;
     return saved;
 }
 
 const savedProgress = readSavedProgress();
-let sessionToken = savedProgress ? savedProgress.token : null;
+const pendingSelection = !savedProgress && mode === "custom" && hasSessionToken
+    ? window.OmoiProgress?.readSelection(sessionTokenFromUrl) ?? null
+    : null;
+let sessionToken = savedProgress
+    ? savedProgress.token
+    : pendingSelection
+        ? pendingSelection.token
+        : null;
+let sessionCustomLabels = [];
+let sessionCustomIds = [];
 // 保存データが無いときは、別端末で開いた共有リンクとして扱う。
-let isSharedQuestion = hasSharedId && !savedProgress;
+let isSharedQuestion = hasSharedId && mode === "all" &&
+    !savedProgress && !pendingSelection;
 
 const questionText = document.getElementById("questionText");
 const scenarioBlock = document.getElementById("scenarioBlock");
@@ -161,16 +197,21 @@ function showMessage(message) {
     shareStatus.textContent = "";
 }
 
-function validateQuestions(questions) {
+function validateQuestions(questions, expectedLevel) {
     if (!Array.isArray(questions)) {
         throw new Error("Question data must be an array.");
     }
     const questionIds = new Set();
     for (const question of questions) {
-        if (!question || question.level !== level ||
+        if (!question || question.level !== expectedLevel ||
             typeof question.id !== "string" || !question.id.trim() ||
             typeof question.question !== "string" || !question.question.trim()) {
             throw new Error("Invalid question or mismatched level in question data.");
+        }
+        if (question.labels !== undefined &&
+            (!Array.isArray(question.labels) || question.labels.length === 0 ||
+                question.labels.some(label => typeof label !== "string" || !label.trim()))) {
+            throw new Error("Invalid question labels.");
         }
         if (questionIds.has(question.id)) {
             throw new Error("Duplicate question id.");
@@ -425,10 +466,59 @@ function setQuestionSummaryOpen(isOpen) {
     questionSummaryToggle.textContent = isOpen ? "要点を閉じる" : "問いの要点を見る";
 }
 
+async function loadLevelDataset(levelValue, signal) {
+    const [response, furiganaResponse] = await Promise.all([
+        fetch("level" + levelValue + ".json", { signal }),
+        fetch("level" + levelValue + "-furigana.json", { signal })
+    ]);
+    if (!response.ok || !furiganaResponse.ok) {
+        throw new Error("Question or furigana request failed.");
+    }
+    const [questions, furigana] = await Promise.all([
+        response.json(),
+        furiganaResponse.json()
+    ]);
+    validateQuestions(questions, levelValue);
+    validateFurigana(questions, furigana);
+    return { questions, furigana };
+}
+
+function levelsForSession() {
+    return mode === "all" ? [level] : [2, 3, 4];
+}
+
+function studentPool(questions) {
+    return questions.filter(question =>
+        Array.isArray(question.labels) && question.labels.includes("student"));
+}
+
+function customPool(questions, labels, ids) {
+    const labelSet = new Set(Array.isArray(labels) ? labels : []);
+    const idSet = new Set(Array.isArray(ids) ? ids : []);
+    return questions.filter(question =>
+        idSet.has(question.id) ||
+        (Array.isArray(question.labels) &&
+            question.labels.some(label => labelSet.has(label))));
+}
+
+function fallbackPoolForSavedProgress(questions, saved) {
+    const savedMode = savedProgressMode(saved);
+    if (savedMode === "student") return studentPool(questions);
+    if (savedMode === "custom") {
+        sessionCustomLabels = Array.isArray(saved.labels) ? saved.labels : [];
+        sessionCustomIds = Array.isArray(saved.selectedIds) ? saved.selectedIds : [];
+        return customPool(questions, sessionCustomLabels, sessionCustomIds);
+    }
+    return questions;
+}
+
 async function loadQuestions() {
-    if (state === "loading" || isSharedIdMalformed ||
-        !allowedLevels.has(params.get("level")) ||
-        params.getAll("level").length !== 1) return;
+    if (state === "loading" || isSharedIdMalformed || !isRequestValid) return;
+    if (mode === "custom" && !savedProgress && !pendingSelection) {
+        showMessage("選んだ内容が見つかりませんでした。条件を選び直してください。");
+        setState("invalid");
+        return;
+    }
     setState("loading");
     showMessage("読み込み中...");
     sessionQuestions = [];
@@ -436,27 +526,24 @@ async function loadQuestions() {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
     try {
-        const [response, furiganaResponse] = await Promise.all([
-            fetch("level" + level + ".json", { signal: controller.signal }),
-            fetch("level" + level + "-furigana.json", { signal: controller.signal })
-        ]);
-        if (!response.ok || !furiganaResponse.ok) {
-            throw new Error("Question or furigana request failed.");
+        const datasets = await Promise.all(
+            levelsForSession().map(levelValue =>
+                loadLevelDataset(levelValue, controller.signal))
+        );
+        const allQuestions = [];
+        readingsByQuestionId = {};
+        for (const dataset of datasets) {
+            allQuestions.push(...dataset.questions);
+            Object.assign(readingsByQuestionId, dataset.furigana);
         }
-        const [questions, furigana] = await Promise.all([
-            response.json(),
-            furiganaResponse.json()
-        ]);
-        validateQuestions(questions);
-        validateFurigana(questions, furigana);
-        readingsByQuestionId = furigana;
-        if (questions.length === 0) {
-            showMessage("このカテゴリーの質問はまだありません。カテゴリーを選び直してください。");
+        if (allQuestions.length === 0) {
+            showMessage("この条件の質問はまだありません。条件を選び直してください。");
             setState("empty");
             return;
         }
+        const byId = new Map(allQuestions.map(question => [question.id, question]));
         if (isSharedQuestion) {
-            const target = questions.find(question => question.id === sharedId);
+            const target = byId.get(sharedId);
             if (!target) {
                 showMessage("指定された問いが見つかりませんでした。共有リンクが古いか、URLが正しくない可能性があります。「他の質問をする」から選び直してください。");
                 setState("invalid");
@@ -465,7 +552,6 @@ async function loadQuestions() {
             sessionQuestions = [target];
         } else if (savedProgress) {
             // 前回の並び順と位置を復元する。消えたIDは除く。
-            const byId = new Map(questions.map(question => [question.id, question]));
             const ordered = savedProgress.ids
                 .map(id => byId.get(id))
                 .filter(Boolean);
@@ -474,11 +560,40 @@ async function loadQuestions() {
                 const currentId = savedProgress.ids[savedProgress.index];
                 const restoredIndex = ordered.findIndex(question => question.id === currentId);
                 currentQuestionIndex = restoredIndex >= 0 ? restoredIndex : 0;
+                if (savedProgress.version !== 1 && savedProgress.mode === "custom") {
+                    sessionCustomLabels = Array.isArray(savedProgress.labels) ? savedProgress.labels : [];
+                    sessionCustomIds = Array.isArray(savedProgress.selectedIds) ? savedProgress.selectedIds : [];
+                }
             } else {
-                startNewSession(questions);
+                const fallback = fallbackPoolForSavedProgress(allQuestions, savedProgress);
+                if (fallback.length === 0) {
+                    showMessage("前回の続きを復元できませんでした。条件を選び直してください。");
+                    setState("empty");
+                    return;
+                }
+                startNewSession(fallback);
             }
+        } else if (mode === "student") {
+            const pool = studentPool(allQuestions);
+            if (pool.length === 0) {
+                showMessage("学校・若者向けの質問はまだありません。別のモードを選んでください。");
+                setState("empty");
+                return;
+            }
+            startNewSession(pool);
+        } else if (mode === "custom") {
+            sessionCustomLabels = Array.isArray(pendingSelection.labels) ? pendingSelection.labels : [];
+            sessionCustomIds = Array.isArray(pendingSelection.ids) ? pendingSelection.ids : [];
+            const pool = customPool(allQuestions, sessionCustomLabels, sessionCustomIds);
+            if (pool.length === 0) {
+                showMessage("選んだカテゴリーや問いに合う質問がありません。条件を選び直してください。");
+                setState("empty");
+                return;
+            }
+            startNewSession(pool, { newToken: false });
+            window.OmoiProgress?.clearSelection();
         } else {
-            startNewSession(questions);
+            startNewSession(allQuestions);
         }
         showQuestion();
         setState("ready");
@@ -497,10 +612,9 @@ async function loadQuestions() {
 
 retryLoadButton.addEventListener("click", loadQuestions);
 applySharedMode();
-if (!allowedLevels.has(params.get("level")) ||
-    params.getAll("level").length !== 1) {
+if (!isRequestValid) {
     setState("invalid");
-    showMessage("質問の条件が正しくありません。「カテゴリーを変える」から選び直してください。");
+    showMessage("質問の条件が正しくありません。「選び直す」から選び直してください。");
 } else if (isSharedIdMalformed) {
     setState("invalid");
     showMessage("共有リンクの形式が正しくありません。URLを確認するか、「他の質問をする」から選び直してください。");
@@ -521,27 +635,37 @@ function shuffle(array) {
 }
 
 
-function startNewSession(questions) {
+function startNewSession(questions, options = {}) {
     shuffle(questions);
     sessionQuestions = questions;
     currentQuestionIndex = 0;
-    sessionToken = window.OmoiProgress
-        ? window.OmoiProgress.createToken()
-        : null;
+    if (options.newToken !== false || !sessionToken) {
+        sessionToken = window.OmoiProgress
+            ? window.OmoiProgress.createToken()
+            : null;
+    }
 }
 
 
 function saveProgress() {
     if (isSharedQuestion || !sessionToken ||
         !window.OmoiProgress || sessionQuestions.length === 0) return;
-    window.OmoiProgress.write({
-        version: 1,
+    const data = {
+        version: 2,
         token: sessionToken,
-        level,
+        mode,
         ids: sessionQuestions.map(question => question.id),
         index: currentQuestionIndex,
         updatedAt: Date.now()
-    });
+    };
+    if (mode === "all") {
+        data.level = level;
+    }
+    if (mode === "custom") {
+        data.labels = [...sessionCustomLabels];
+        data.selectedIds = [...sessionCustomIds];
+    }
+    window.OmoiProgress.write(data);
 }
 
 function showQuestion() {
@@ -653,8 +777,13 @@ function syncUrlWithCurrentQuestion(question) {
     if (!question?.id) return;
     const url = new URL(window.location.href);
     url.search = "";
-    url.searchParams.set("level", String(level));
-    url.searchParams.set("id", question.id);
+    if (!isSharedQuestion) {
+        url.searchParams.set("mode", mode);
+    }
+    if (isSharedQuestion || mode === "all") {
+        url.searchParams.set("level", String(isSharedQuestion ? question.level : level));
+        url.searchParams.set("id", question.id);
+    }
     if (!isSharedQuestion && sessionToken) {
         url.searchParams.set("session", sessionToken);
     }

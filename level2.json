@@ -5,7 +5,10 @@
         "question": "寝坊で遅刻した友達から、ほかの人には「電車が遅れた」と説明してほしいと頼まれた。友達をかばって嘘をつく？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "relationship"
+        "topic": "relationship",
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "support-001",
@@ -13,7 +16,12 @@
         "question": "友達が、学校で使用禁止の時間にスマホで遊んでいる。その場で注意する？別の方法を選ぶ？何で決める？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "support"
+        "topic": "support",
+        "labels": [
+            "student",
+            "school",
+            "care"
+        ]
     },
     {
         "id": "support-002",
@@ -21,7 +29,12 @@
         "question": "友達に嫌なあだ名で呼ばれ続けている。別の人に相談するのをためらうなら、何が気になる？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "support"
+        "topic": "support",
+        "labels": [
+            "student",
+            "school",
+            "care"
+        ]
     },
     {
         "id": "support-003",
@@ -29,7 +42,12 @@
         "question": "友達に貸した物が返ってこない。二人で話し合うのと、先生などに間に入ってもらうのは、どう使い分ける？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "support"
+        "topic": "support",
+        "labels": [
+            "student",
+            "school",
+            "care"
+        ]
     },
     {
         "id": "support-004",
@@ -37,7 +55,12 @@
         "question": "友達からの注意をありがたいと思うのは、どんなとき？ 負担に感じるのはどんなとき？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "support"
+        "topic": "support",
+        "labels": [
+            "student",
+            "school",
+            "care"
+        ]
     },
     {
         "id": "support-005",
@@ -45,7 +68,12 @@
         "question": "友達との約束を忘れて相手を待たせてしまった。自分で気づいていなくても、友達に指摘してほしい？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "support"
+        "topic": "support",
+        "labels": [
+            "student",
+            "school",
+            "care"
+        ]
     },
     {
         "id": "support-006",
@@ -53,7 +81,12 @@
         "question": "「靴下は白だけ」という校則に、理由を聞いても納得できない。ルールが変わるまでは守るべきだと思う？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "support"
+        "topic": "support",
+        "labels": [
+            "student",
+            "school",
+            "care"
+        ]
     },
     {
         "id": "bullying-001",
@@ -61,7 +94,12 @@
         "question": "いじりといじめの違いは？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "bullying-002",
@@ -69,7 +107,12 @@
         "question": "冗談でも言ってはいけないことはある？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "bullying-003",
@@ -77,7 +120,12 @@
         "question": "友達を傷つける言葉を言った人が「ノリだった」と説明したら、その説明をどこまで受け入れられる？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "bullying-004",
@@ -85,7 +133,12 @@
         "question": "冗談を言われた相手が笑っていたら、嫌ではなかったと判断していいと思う？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "bullying-005",
@@ -93,7 +146,12 @@
         "question": "一人をからかってみんなが笑っているけれど、からかわれた本人は嫌そうに見える。その場でどうする？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "bullying-006",
@@ -101,7 +159,12 @@
         "question": "友達同士なら多少きついことを言ってもいいと思う？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "boundaries-001",
@@ -109,7 +172,10 @@
         "question": "下ネタは話しても平気？苦手？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "boundaries"
+        "topic": "boundaries",
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "boundaries-002",
@@ -117,7 +183,10 @@
         "question": "性的な冗談について、笑える話題と避けたい話題はある？ 全般に話したくないという答えでもいい。",
         "level": 2,
         "sensitivity": 2,
-        "topic": "boundaries"
+        "topic": "boundaries",
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "boundaries-003",
@@ -125,7 +194,10 @@
         "question": "性に関する話題を友達と話すことに、抵抗はある？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "boundaries"
+        "topic": "boundaries",
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "boundaries-004",
@@ -133,7 +205,10 @@
         "question": "恋人でも聞かれたくないことはある？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "boundaries"
+        "topic": "boundaries",
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "boundaries-006",
@@ -141,7 +216,10 @@
         "question": "冗談でも苦手な話題はある？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "boundaries"
+        "topic": "boundaries",
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "friendship-016",
@@ -149,7 +227,10 @@
         "question": "いじりと悪口の違いは何だと思う？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "friendship"
+        "topic": "friendship",
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "friendship-017",
@@ -157,7 +238,10 @@
         "question": "冗談でも言われたくないことは？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "friendship"
+        "topic": "friendship",
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "support-008",
@@ -165,7 +249,12 @@
         "question": "友達がほかの人の持ち物を隠している。先生へ伝えることを「チクる」と責められたら、助けを求めることとの違いをどう説明する？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "support"
+        "topic": "support",
+        "labels": [
+            "student",
+            "school",
+            "care"
+        ]
     },
     {
         "id": "support-011",
@@ -173,7 +262,12 @@
         "question": "あまり話したことのない同級生が、グループから無視されている。自分に直接の被害がなくても、先生などに相談する？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "support"
+        "topic": "support",
+        "labels": [
+            "student",
+            "school",
+            "care"
+        ]
     },
     {
         "id": "support-012",
@@ -181,7 +275,12 @@
         "question": "誰かが悪口を言われていたら止める？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "support"
+        "topic": "support",
+        "labels": [
+            "student",
+            "school",
+            "care"
+        ]
     },
     {
         "id": "support-015",
@@ -189,7 +288,12 @@
         "question": "授業中にスマホで遊んだ人より、それを先生に伝えた人が仲間から責められた。この責め方をどう思う？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "support"
+        "topic": "support",
+        "labels": [
+            "student",
+            "school",
+            "care"
+        ]
     },
     {
         "id": "support-016",
@@ -197,7 +301,12 @@
         "question": "グループ作業が一人に偏っていると伝えた人が、「空気を壊した」と言われた。意見の内容と伝え方をどう分けて考える？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "support"
+        "topic": "support",
+        "labels": [
+            "student",
+            "school",
+            "care"
+        ]
     },
     {
         "id": "bullying-007",
@@ -205,7 +314,12 @@
         "question": "友達が誰かの悪口を言い始めたら、あなたはその場でどうする？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "bullying-008",
@@ -213,7 +327,12 @@
         "question": "友達が誰かを仲間外れにしていたらどうする？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "bullying-009",
@@ -221,7 +340,12 @@
         "question": "誰かがからかわれて笑っているけれど、嫌そうに見えるとき、どう声をかける？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "bullying-011",
@@ -229,7 +353,12 @@
         "question": "グループで一人だけ無視されていたら声をかける？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "bullying-012",
@@ -237,7 +366,12 @@
         "question": "友達がSNSで誰かをバカにしていたら注意する？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "bullying-015",
@@ -245,7 +379,12 @@
         "question": "友達が誰かをからかい、相手が嫌そうに見えたら、「やめよう」と言える？言いにくいとしたら、何が気になる？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "bullying-016",
@@ -253,7 +392,12 @@
         "question": "友達が誰かを傷つけているとき、友達としてどこまで関わるべきだと思う？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "bullying-017",
@@ -261,7 +405,12 @@
         "question": "友達のからかい方がきついと感じたら、その場で伝える？ 後で二人きりのときに伝える？ どう使い分ける？",
         "level": 2,
         "sensitivity": 2,
-        "topic": "bullying"
+        "topic": "bullying",
+        "labels": [
+            "student",
+            "school",
+            "bullying"
+        ]
     },
     {
         "id": "jealousy-013",
@@ -269,7 +418,11 @@
         "question": "交際中、異性の友達との距離感について、恋人とどんなルールを決めたい？ ルールを設けないという選び方もありだと思う？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "jealousy"
+        "topic": "jealousy",
+        "labels": [
+            "friendship",
+            "romance"
+        ]
     },
     {
         "id": "jealousy-014",
@@ -277,7 +430,11 @@
         "question": "恋人がいる人が、異性の友達と二人で遊ぶことをどう思う？ 判断が変わる条件はある？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "jealousy"
+        "topic": "jealousy",
+        "labels": [
+            "friendship",
+            "romance"
+        ]
     },
     {
         "id": "jealousy-015",
@@ -285,7 +442,11 @@
         "question": "過去の恋愛話はどこまで話していい？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "jealousy"
+        "topic": "jealousy",
+        "labels": [
+            "friendship",
+            "romance"
+        ]
     },
     {
         "id": "jealousy-016",
@@ -293,7 +454,11 @@
         "question": "恋人が「家にいた」と言っていた日に、友達と遊んでいたと分かった。何を確かめて、許せるかを決める？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "jealousy"
+        "topic": "jealousy",
+        "labels": [
+            "friendship",
+            "romance"
+        ]
     },
     {
         "id": "jealousy-017",
@@ -301,7 +466,11 @@
         "question": "恋人に隠し事をするのは、どこまでなら許される？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "jealousy"
+        "topic": "jealousy",
+        "labels": [
+            "friendship",
+            "romance"
+        ]
     },
     {
         "id": "jealousy-018",
@@ -309,7 +478,11 @@
         "question": "恋人が異性の友達と仲良くしていたらどう思う？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "jealousy"
+        "topic": "jealousy",
+        "labels": [
+            "friendship",
+            "romance"
+        ]
     },
     {
         "id": "ethics-001",
@@ -317,7 +490,10 @@
         "question": "親友と、あまり知らない同級生から、同じ締切の宿題を手伝ってほしいと頼まれた。一人しか手伝えないなら、どちらを選ぶ？決め手は何？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "ethics"
+        "topic": "ethics",
+        "labels": [
+            "ethics"
+        ]
     },
     {
         "id": "ethics-003",
@@ -325,7 +501,10 @@
         "question": "発表を控えた友達を安心させるため、失敗するかもしれないのに「絶対うまくいくよ」と言っていい？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "ethics"
+        "topic": "ethics",
+        "labels": [
+            "ethics"
+        ]
     },
     {
         "id": "ethics-004",
@@ -333,7 +512,10 @@
         "question": "友達が満足している発表資料に分かりにくい点がある。自信をなくすかもしれなくても、頼まれていなくても伝える？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "ethics"
+        "topic": "ethics",
+        "labels": [
+            "ethics"
+        ]
     },
     {
         "id": "ethics-005",
@@ -341,7 +523,10 @@
         "question": "話し合って決めたグループ課題の分担に、友達から「自分の作業が多すぎる」と責められた。自分に落ち度はないと思うが、謝れば話は収まりそう。納得していなくても謝る？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "ethics"
+        "topic": "ethics",
+        "labels": [
+            "ethics"
+        ]
     },
     {
         "id": "ethics-006",
@@ -349,7 +534,10 @@
         "question": "同じ結果を出した二人がいる。得意で短時間でできた人と、苦手でも練習してできるようになった人。評価するならどちらを高く見る？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "ethics"
+        "topic": "ethics",
+        "labels": [
+            "ethics"
+        ]
     },
     {
         "id": "ethics-007",
@@ -357,7 +545,10 @@
         "question": "冗談で言ったことに友達が傷ついていたと後から分かった。悪気がなくても、どこまで謝り、行動を変えるべき？",
         "level": 2,
         "sensitivity": 1,
-        "topic": "ethics"
+        "topic": "ethics",
+        "labels": [
+            "ethics"
+        ]
     },
     {
         "id": "bridge-001",
@@ -365,7 +556,10 @@
         "topic": "group_decision_making",
         "question": "みんなで予定を決めるとき、一人だけ希望が通らなかったら、ほかの人はどこまで合わせるべき？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-002",
@@ -373,7 +567,10 @@
         "topic": "reply_expectations",
         "question": "返事が遅い友達に、心配していることを伝えるのと催促することの境界はどこだと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-003",
@@ -381,7 +578,10 @@
         "topic": "cancelling_plans",
         "question": "約束の直前に『今日は一人でいたい』と断られたら、理由を聞く？それとも、相手が話したくなるまでそっとしておく？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-004",
@@ -389,7 +589,10 @@
         "topic": "value_differences",
         "question": "あなたは遊ぶ予定を先に決めたいが、友達は当日の気分で変えたいと言う。考えが違っても、どこまで分かり合おうとする？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-005",
@@ -397,7 +600,11 @@
         "topic": "sharing_screenshots",
         "question": "友達との個人的なやり取りを、相談のために別の人へスクリーンショットで見せるのはあり？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "labels": [
+            "technology",
+            "media"
+        ]
     },
     {
         "id": "bridge-006",
@@ -405,7 +612,10 @@
         "topic": "borrowing_and_returning",
         "question": "友達に貸した物をなかなか返してもらえない。関係を悪くせず返してほしいと伝えるには、どうする？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-007",
@@ -413,7 +623,10 @@
         "topic": "helping_limits",
         "question": "友達の相談を聞きたいけれど自分にも余裕がないとき、手伝える範囲をどう伝える？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-008",
@@ -421,7 +634,10 @@
         "topic": "declining_requests",
         "question": "頼み事を断ったあとに相手が残念そうだったら、断った自分が悪いと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-009",
@@ -429,7 +645,10 @@
         "topic": "conflicting_confidences",
         "question": "仲たがいした二人から、それぞれ「相手に悪口を言われた。誰にも言わないで」と相談された。どちらの味方にもならずに話を聞ける？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-010",
@@ -437,7 +656,10 @@
         "topic": "constructive_feedback",
         "question": "友達がSNSに載せた絵を見て、色を変えるともっと見やすくなると思った。頼まれていなくても、感想や改善案を伝える？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-011",
@@ -445,7 +667,13 @@
         "topic": "group_work_fairness",
         "question": "グループ作業で、仕事が一人に偏っていると気づいたら、その場で分担を見直そうと提案する？終わった後に話す？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "student",
+            "school",
+            "friendship",
+            "work"
+        ]
     },
     {
         "id": "bridge-012",
@@ -453,7 +681,10 @@
         "topic": "correcting_in_public",
         "question": "友達がみんなの前で、好きな作品の登場人物の名前を言い間違えた。その場で訂正する？後で本人に伝える？どう使い分ける？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-013",
@@ -461,7 +692,11 @@
         "topic": "shared_expenses",
         "question": "友達との食事で、自分は一品だけ、ほかの人は何品も注文した。同額の割り勘と、注文した分だけ払うのでは、どちらが納得できる？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "work",
+            "money"
+        ]
     },
     {
         "id": "bridge-014",
@@ -469,7 +704,10 @@
         "topic": "starting_an_apology",
         "question": "けんかでどちらにも言い分があるとき、先に謝る人だけが損をすると思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-015",
@@ -477,7 +715,12 @@
         "topic": "rumor_sharing",
         "question": "本当か分からない話を『聞いただけだけど』と広めることに責任はあると思う？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "labels": [
+            "bullying",
+            "technology",
+            "media"
+        ]
     },
     {
         "id": "bridge-016",
@@ -485,7 +728,10 @@
         "topic": "chronic_lateness",
         "question": "いつも遅れてくる友達を待つことと、時間を守ってほしいと伝えることは両立できる？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-017",
@@ -493,7 +739,13 @@
         "topic": "credit_for_group_work",
         "question": "グループの成果を先生が一人ずつ評価するとき、役割の違いをどこまで説明するべきだと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "student",
+            "school",
+            "friendship",
+            "work"
+        ]
     },
     {
         "id": "bridge-018",
@@ -501,7 +753,12 @@
         "topic": "welcoming_newcomers",
         "question": "新しく入った人がグループになじめていないとき、最初に声をかけるのは誰の役目だと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "student",
+            "school",
+            "friendship"
+        ]
     },
     {
         "id": "bridge-019",
@@ -509,7 +766,12 @@
         "topic": "photo_consent",
         "question": "集合写真をSNSに載せる前に、写っている人全員へ確認するのはどこまで必要だと思う？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "labels": [
+            "sexuality",
+            "technology",
+            "privacy"
+        ]
     },
     {
         "id": "bridge-020",
@@ -517,7 +779,11 @@
         "topic": "account_privacy",
         "question": "親しい友達でも、スマホやアカウントを見せたくないと思うことは信頼不足だと思う？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "labels": [
+            "technology",
+            "privacy"
+        ]
     },
     {
         "id": "bridge-021",
@@ -525,7 +791,10 @@
         "topic": "personal_boundaries",
         "question": "「そのあだ名で呼ばないで」と伝えても、友達が冗談だと言って呼び続ける。どんな場合に距離を置く？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-022",
@@ -533,7 +802,11 @@
         "topic": "game_rules",
         "question": "みんなで遊ぶゲームで、慣れた人だけが初心者より強い道具を使える。楽しんでいる人が多ければ、ルールを変えなくてもいいと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "student",
+            "school"
+        ]
     },
     {
         "id": "bridge-023",
@@ -541,7 +814,12 @@
         "topic": "everyday_environmental_choices",
         "question": "ごみを減らすため、買い物では毎回マイバッグを持つよう友達に求めてよいと思う？少し手間が増えても？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "health",
+            "politics",
+            "environment"
+        ]
     },
     {
         "id": "bridge-024",
@@ -549,7 +827,12 @@
         "topic": "lending_money_to_friends",
         "question": "友達がお金を貸してほしいと困っていたら、返ってこないかもしれなくても貸す？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "labels": [
+            "friendship",
+            "work",
+            "money"
+        ]
     },
     {
         "id": "bridge-025",
@@ -557,7 +840,10 @@
         "topic": "gift_expectations",
         "question": "贈り物をもらったら、同じくらいのお返しをするのが礼儀だと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-026",
@@ -565,7 +851,11 @@
         "topic": "gossip_exclusion",
         "question": "悪口のグループに誘われたとき、参加しないことをどう伝えたらいいと思う？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "labels": [
+            "bullying",
+            "friendship"
+        ]
     },
     {
         "id": "bridge-027",
@@ -573,7 +863,10 @@
         "topic": "inclusive_language",
         "question": "『みんなそう思っている』と言われたとき、本当にそうか確かめるのは空気を読めないことだと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-028",
@@ -581,7 +874,11 @@
         "topic": "informal_leadership",
         "question": "グループで一番声が大きい人が決める流れになったら、ほかの人が意見を言えるように何ができる？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "student",
+            "school"
+        ]
     },
     {
         "id": "bridge-029",
@@ -589,7 +886,10 @@
         "topic": "social_energy",
         "question": "誘いを断る理由を詳しく説明したくないとき、『今は行けない』だけで十分だと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-030",
@@ -597,7 +897,11 @@
         "topic": "speaking_up_in_meetings",
         "question": "話し合いで意見がまとまりそうなとき、納得できないことがあれば最後に伝える？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "student",
+            "school"
+        ]
     },
     {
         "id": "bridge-031",
@@ -605,7 +909,10 @@
         "topic": "unintended_harm",
         "question": "自分の言葉で誰かが傷ついたと知ったら、意図がなかったことを最初に説明する？",
         "level": 2,
-        "sensitivity": 2
+        "sensitivity": 2,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-032",
@@ -613,7 +920,10 @@
         "topic": "checking_in",
         "question": "いつもより元気がない友達に、理由を聞かずにそばにいることは助けになると思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "friendship"
+        ]
     },
     {
         "id": "bridge-033",
@@ -621,7 +931,10 @@
         "topic": "everyday_safety_rules",
         "question": "友達が、車が来ていないからと赤信号で道路を渡ろうとしている。嫌がられても止めるべきだと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "crime"
+        ]
     },
     {
         "id": "bridge-034",
@@ -629,7 +942,10 @@
         "topic": "queue_fairness",
         "question": "急いでいる人が列の前に入りたいと言ったら、事情を聞いて譲るのは公平だと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "ethics"
+        ]
     },
     {
         "id": "bridge-035",
@@ -637,6 +953,9 @@
         "topic": "changing_your_mind",
         "question": "前に強く言った意見を変えることは、ぶれていることだと思う？",
         "level": 2,
-        "sensitivity": 1
+        "sensitivity": 1,
+        "labels": [
+            "values"
+        ]
     }
 ]

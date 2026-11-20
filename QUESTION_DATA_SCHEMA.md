@@ -11,6 +11,7 @@
 | `sensitivity` | はい | 難しさではなく、話す前に配慮が必要な度合い（1〜4） |
 | `category` | はい | 下記12分類のいずれか |
 | `topic` | はい | 具体的な論点。細かな分類や検索・編集用の軸 |
+| `labels` | はい | 表示・絞り込み用ラベル。`labels.json` に定義したIDのみを重複なく並べる |
 | `question` | はい | 画面に表示する問い |
 
 `sensitivity` が高いことは、特定の答えが正しいことや、利用者を年齢で制限することを意味しません。話したくない問いは、どのLevelでも飛ばせます。
@@ -42,6 +43,24 @@ Levelは対象者の属性ではありません。Level変更は、編集レビ�
 ## 12の上位カテゴリ
 
 `self_and_values`、`relationships_and_communication`、`family_and_care`、`school_and_youth`、`work_and_economy`、`gender_sexuality_and_identity`、`health_and_disability`、`technology_media_and_privacy`、`justice_safety_and_crime`、`society_public_policy_and_environment`、`culture_religion_and_history`、`ethics_and_decision_making`。
+
+## 表示ラベル
+
+`labels` は12の上位カテゴリより細かい、画面表示と絞り込みのための分類です。表示名・種類・並び順は `labels.json` に定義し、質問データにはIDだけを保存します。
+
+- `kind: "audience"` は「誰に向けた問いか」を表します。現在は `student`（学校・若者向け）だけです。
+- `kind: "topic"` は「何についての問いか」を表します。学校・いじめ・友人関係・家族・介護・恋愛・仕事・お金・健康・障害・ジェンダー・性・テクノロジー・プライバシー・メディア・犯罪・政治・環境・文化・倫理・自分・価値観の21種類です。
+- 各質問には topic ラベルを1つ以上付けます。`student` は暫定的に `category` が `school_and_youth` の質問へ付けています。
+
+ラベルは `category`・`topic` のルールから `tools/generate-question-labels.mjs` で生成します。
+
+```sh
+node tools/generate-question-labels.mjs --check
+node tools/generate-question-labels.mjs --write
+node tools/generate-question-labels.mjs --rewrite-labels
+```
+
+`--write` は `labels` がない質問だけ補い、`labels.json` と `questions-index.json`（選択画面用の一覧）を更新します。`--rewrite-labels` は全問をルールから計算し直します。`--check` は未知のラベル、重複、topicラベルの欠落、生成ファイルの古さを検出します。`labels` は表示と絞り込みのためのメタデータであり、質問文のレビュー対象・指紋には含めません。
 
 ## Level 3・4の追加フィールド
 
@@ -104,7 +123,7 @@ node --test tools/furigana-schema.test.mjs tools/question-flow.test.mjs
 
 検証は全質問の表示項目を収集し、読みデータの不足、元の表示文との不一致、漢字の読み漏れ、形式不正を検出します。
 
-v3プレビューではLevel 3・4の全663問を対象に、採用／省略理由と文面の指紋を `docs/v3-content-review.json` に記録します。版は `version: 1`、有効Levelは `activeLevels: [2, 3, 4]`、起点は `baseCommit`、各記録には `id`、`level`、`fingerprint`、4補助の `decisions`、`reviewer`、別の読み手の `independentReviewer` を持たせます。指紋は現在のカード全体を `JSON.stringify()` したUTF-8文字列のSHA-256です。補助文を変更した場合も再確認が必要です。
+v3プレビューではLevel 3・4の全663問を対象に、採用／省略理由と文面の指紋を `docs/v3-content-review.json` に記録します。版は `version: 1`、有効Levelは `activeLevels: [2, 3, 4]`、起点は `baseCommit`、各記録には `id`、`level`、`fingerprint`、4補助の `decisions`、`reviewer`、別の読み手の `independentReviewer` を持たせます。指紋は現在のカードから表示ラベル `labels` を除いた全体を `JSON.stringify()` したUTF-8文字列のSHA-256です。補助文を変更した場合も再確認が必要です。Level 2は `labels` を除いて変更がないことを検証します。
 
 ## 表示設定
 
@@ -128,7 +147,7 @@ v3プレビューではLevel 3・4の全663問を対象に、採用／省略理�
 - 保存先は `omoi-progress` 1つで、`{ "version": 1, "token": "...", "level": 4, "ids": [...], "index": 3, "updatedAt": 1750000000000 }` の形です。`ids` は出題順、`index` は現在の位置です。新しいセッションを始めると上書きします。
 - 有効期限は7日です。期限切れや形式不正のデータは読み捨てます。
 - `session` と保存データの token・level が一致するときだけ進行を復元します。保存データが無い場合（別端末で共有リンクを開いた場合など）は、共有された1問として表示します。
-- 「ここで終える」で途中終了したときは保存を残し、カテゴリ選択画面に「前回の続きがあります」と現在の位置を表示します（ホームには表示しません）。お知らせは×ボタンで閉じられます。「カテゴリーを変える」でカテゴリ選択へ戻ったときと、全問を終えたときは保存を削除します。
+- 「ここで終える」で途中終了したときは保存を残し、はじめの選び方の画面に「前回の続きがあります」と現在の位置を表示します（ホームには表示しません）。お知らせは×ボタンで閉じられます。「カテゴリーを変える」で選び方の画面へ戻ったときと、全問を終えたときは保存を削除します。
 
 ## 高リスクの内容
 

@@ -1,0 +1,7368 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "relationship-001",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "寝坊で遅刻した友達から、ほかの人には「電車が遅れた」と説明してほしいと頼まれた。友達をかばって嘘をつく？"
+    },
+    {
+      "id": "support-001",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "友達が、学校で使用禁止の時間にスマホで遊んでいる。その場で注意する？別の方法を選ぶ？何で決める？"
+    },
+    {
+      "id": "support-002",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "友達に嫌なあだ名で呼ばれ続けている。別の人に相談するのをためらうなら、何が気になる？"
+    },
+    {
+      "id": "support-003",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "友達に貸した物が返ってこない。二人で話し合うのと、先生などに間に入ってもらうのは、どう使い分ける？"
+    },
+    {
+      "id": "support-004",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "友達からの注意をありがたいと思うのは、どんなとき？ 負担に感じるのはどんなとき？"
+    },
+    {
+      "id": "support-005",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "友達との約束を忘れて相手を待たせてしまった。自分で気づいていなくても、友達に指摘してほしい？"
+    },
+    {
+      "id": "support-006",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "「靴下は白だけ」という校則に、理由を聞いても納得できない。ルールが変わるまでは守るべきだと思う？"
+    },
+    {
+      "id": "bullying-001",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "いじりといじめの違いは？"
+    },
+    {
+      "id": "bullying-002",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "冗談でも言ってはいけないことはある？"
+    },
+    {
+      "id": "bullying-003",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "友達を傷つける言葉を言った人が「ノリだった」と説明したら、その説明をどこまで受け入れられる？"
+    },
+    {
+      "id": "bullying-004",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "冗談を言われた相手が笑っていたら、嫌ではなかったと判断していいと思う？"
+    },
+    {
+      "id": "bullying-005",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "一人をからかってみんなが笑っているけれど、からかわれた本人は嫌そうに見える。その場でどうする？"
+    },
+    {
+      "id": "bullying-006",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "友達同士なら多少きついことを言ってもいいと思う？"
+    },
+    {
+      "id": "boundaries-001",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "下ネタは話しても平気？苦手？"
+    },
+    {
+      "id": "boundaries-002",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "性的な冗談について、笑える話題と避けたい話題はある？ 全般に話したくないという答えでもいい。"
+    },
+    {
+      "id": "boundaries-003",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "性に関する話題を友達と話すことに、抵抗はある？"
+    },
+    {
+      "id": "boundaries-004",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "恋人でも聞かれたくないことはある？"
+    },
+    {
+      "id": "boundaries-006",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "冗談でも苦手な話題はある？"
+    },
+    {
+      "id": "friendship-016",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "いじりと悪口の違いは何だと思う？"
+    },
+    {
+      "id": "friendship-017",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "冗談でも言われたくないことは？"
+    },
+    {
+      "id": "support-008",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "友達がほかの人の持ち物を隠している。先生へ伝えることを「チクる」と責められたら、助けを求めることとの違いをどう説明する？"
+    },
+    {
+      "id": "support-011",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "あまり話したことのない同級生が、グループから無視されている。自分に直接の被害がなくても、先生などに相談する？"
+    },
+    {
+      "id": "support-012",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "誰かが悪口を言われていたら止める？"
+    },
+    {
+      "id": "support-015",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "授業中にスマホで遊んだ人より、それを先生に伝えた人が仲間から責められた。この責め方をどう思う？"
+    },
+    {
+      "id": "support-016",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "グループ作業が一人に偏っていると伝えた人が、「空気を壊した」と言われた。意見の内容と伝え方をどう分けて考える？"
+    },
+    {
+      "id": "bullying-007",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "友達が誰かの悪口を言い始めたら、あなたはその場でどうする？"
+    },
+    {
+      "id": "bullying-008",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "友達が誰かを仲間外れにしていたらどうする？"
+    },
+    {
+      "id": "bullying-009",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "誰かがからかわれて笑っているけれど、嫌そうに見えるとき、どう声をかける？"
+    },
+    {
+      "id": "bullying-011",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "グループで一人だけ無視されていたら声をかける？"
+    },
+    {
+      "id": "bullying-012",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "友達がSNSで誰かをバカにしていたら注意する？"
+    },
+    {
+      "id": "bullying-015",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "友達が誰かをからかい、相手が嫌そうに見えたら、「やめよう」と言える？言いにくいとしたら、何が気になる？"
+    },
+    {
+      "id": "bullying-016",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "友達が誰かを傷つけているとき、友達としてどこまで関わるべきだと思う？"
+    },
+    {
+      "id": "bullying-017",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "友達のからかい方がきついと感じたら、その場で伝える？ 後で二人きりのときに伝える？ どう使い分ける？"
+    },
+    {
+      "id": "jealousy-013",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "交際中、異性の友達との距離感について、恋人とどんなルールを決めたい？ ルールを設けないという選び方もありだと思う？"
+    },
+    {
+      "id": "jealousy-014",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人がいる人が、異性の友達と二人で遊ぶことをどう思う？ 判断が変わる条件はある？"
+    },
+    {
+      "id": "jealousy-015",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "過去の恋愛話はどこまで話していい？"
+    },
+    {
+      "id": "jealousy-016",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人が「家にいた」と言っていた日に、友達と遊んでいたと分かった。何を確かめて、許せるかを決める？"
+    },
+    {
+      "id": "jealousy-017",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人に隠し事をするのは、どこまでなら許される？"
+    },
+    {
+      "id": "jealousy-018",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人が異性の友達と仲良くしていたらどう思う？"
+    },
+    {
+      "id": "ethics-001",
+      "level": 2,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "ethics"
+      ],
+      "question": "親友と、あまり知らない同級生から、同じ締切の宿題を手伝ってほしいと頼まれた。一人しか手伝えないなら、どちらを選ぶ？決め手は何？"
+    },
+    {
+      "id": "ethics-003",
+      "level": 2,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "ethics"
+      ],
+      "question": "発表を控えた友達を安心させるため、失敗するかもしれないのに「絶対うまくいくよ」と言っていい？"
+    },
+    {
+      "id": "ethics-004",
+      "level": 2,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "ethics"
+      ],
+      "question": "友達が満足している発表資料に分かりにくい点がある。自信をなくすかもしれなくても、頼まれていなくても伝える？"
+    },
+    {
+      "id": "ethics-005",
+      "level": 2,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "ethics"
+      ],
+      "question": "話し合って決めたグループ課題の分担に、友達から「自分の作業が多すぎる」と責められた。自分に落ち度はないと思うが、謝れば話は収まりそう。納得していなくても謝る？"
+    },
+    {
+      "id": "ethics-006",
+      "level": 2,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "ethics"
+      ],
+      "question": "同じ結果を出した二人がいる。得意で短時間でできた人と、苦手でも練習してできるようになった人。評価するならどちらを高く見る？"
+    },
+    {
+      "id": "ethics-007",
+      "level": 2,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "ethics"
+      ],
+      "question": "冗談で言ったことに友達が傷ついていたと後から分かった。悪気がなくても、どこまで謝り、行動を変えるべき？"
+    },
+    {
+      "id": "bridge-001",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "みんなで予定を決めるとき、一人だけ希望が通らなかったら、ほかの人はどこまで合わせるべき？"
+    },
+    {
+      "id": "bridge-002",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "返事が遅い友達に、心配していることを伝えるのと催促することの境界はどこだと思う？"
+    },
+    {
+      "id": "bridge-003",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "約束の直前に『今日は一人でいたい』と断られたら、理由を聞く？それとも、相手が話したくなるまでそっとしておく？"
+    },
+    {
+      "id": "bridge-004",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "あなたは遊ぶ予定を先に決めたいが、友達は当日の気分で変えたいと言う。考えが違っても、どこまで分かり合おうとする？"
+    },
+    {
+      "id": "bridge-005",
+      "level": 2,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "友達との個人的なやり取りを、相談のために別の人へスクリーンショットで見せるのはあり？"
+    },
+    {
+      "id": "bridge-006",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "友達に貸した物をなかなか返してもらえない。関係を悪くせず返してほしいと伝えるには、どうする？"
+    },
+    {
+      "id": "bridge-007",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "友達の相談を聞きたいけれど自分にも余裕がないとき、手伝える範囲をどう伝える？"
+    },
+    {
+      "id": "bridge-008",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "頼み事を断ったあとに相手が残念そうだったら、断った自分が悪いと思う？"
+    },
+    {
+      "id": "bridge-009",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "仲たがいした二人から、それぞれ「相手に悪口を言われた。誰にも言わないで」と相談された。どちらの味方にもならずに話を聞ける？"
+    },
+    {
+      "id": "bridge-010",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "友達がSNSに載せた絵を見て、色を変えるともっと見やすくなると思った。頼まれていなくても、感想や改善案を伝える？"
+    },
+    {
+      "id": "bridge-011",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship",
+        "work"
+      ],
+      "question": "グループ作業で、仕事が一人に偏っていると気づいたら、その場で分担を見直そうと提案する？終わった後に話す？"
+    },
+    {
+      "id": "bridge-012",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "友達がみんなの前で、好きな作品の登場人物の名前を言い間違えた。その場で訂正する？後で本人に伝える？どう使い分ける？"
+    },
+    {
+      "id": "bridge-013",
+      "level": 2,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "友達との食事で、自分は一品だけ、ほかの人は何品も注文した。同額の割り勘と、注文した分だけ払うのでは、どちらが納得できる？"
+    },
+    {
+      "id": "bridge-014",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "けんかでどちらにも言い分があるとき、先に謝る人だけが損をすると思う？"
+    },
+    {
+      "id": "bridge-015",
+      "level": 2,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "bullying",
+        "technology",
+        "media"
+      ],
+      "question": "本当か分からない話を『聞いただけだけど』と広めることに責任はあると思う？"
+    },
+    {
+      "id": "bridge-016",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "いつも遅れてくる友達を待つことと、時間を守ってほしいと伝えることは両立できる？"
+    },
+    {
+      "id": "bridge-017",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship",
+        "work"
+      ],
+      "question": "グループの成果を先生が一人ずつ評価するとき、役割の違いをどこまで説明するべきだと思う？"
+    },
+    {
+      "id": "bridge-018",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship"
+      ],
+      "question": "新しく入った人がグループになじめていないとき、最初に声をかけるのは誰の役目だと思う？"
+    },
+    {
+      "id": "bridge-019",
+      "level": 2,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "sexuality",
+        "technology",
+        "privacy"
+      ],
+      "question": "集合写真をSNSに載せる前に、写っている人全員へ確認するのはどこまで必要だと思う？"
+    },
+    {
+      "id": "bridge-020",
+      "level": 2,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "親しい友達でも、スマホやアカウントを見せたくないと思うことは信頼不足だと思う？"
+    },
+    {
+      "id": "bridge-021",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "「そのあだ名で呼ばないで」と伝えても、友達が冗談だと言って呼び続ける。どんな場合に距離を置く？"
+    },
+    {
+      "id": "bridge-022",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "みんなで遊ぶゲームで、慣れた人だけが初心者より強い道具を使える。楽しんでいる人が多ければ、ルールを変えなくてもいいと思う？"
+    },
+    {
+      "id": "bridge-023",
+      "level": 2,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "health",
+        "politics",
+        "environment"
+      ],
+      "question": "ごみを減らすため、買い物では毎回マイバッグを持つよう友達に求めてよいと思う？少し手間が増えても？"
+    },
+    {
+      "id": "bridge-024",
+      "level": 2,
+      "category": "work_and_economy",
+      "labels": [
+        "friendship",
+        "work",
+        "money"
+      ],
+      "question": "友達がお金を貸してほしいと困っていたら、返ってこないかもしれなくても貸す？"
+    },
+    {
+      "id": "bridge-025",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "贈り物をもらったら、同じくらいのお返しをするのが礼儀だと思う？"
+    },
+    {
+      "id": "bridge-026",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "bullying",
+        "friendship"
+      ],
+      "question": "悪口のグループに誘われたとき、参加しないことをどう伝えたらいいと思う？"
+    },
+    {
+      "id": "bridge-027",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "『みんなそう思っている』と言われたとき、本当にそうか確かめるのは空気を読めないことだと思う？"
+    },
+    {
+      "id": "bridge-028",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "グループで一番声が大きい人が決める流れになったら、ほかの人が意見を言えるように何ができる？"
+    },
+    {
+      "id": "bridge-029",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "誘いを断る理由を詳しく説明したくないとき、『今は行けない』だけで十分だと思う？"
+    },
+    {
+      "id": "bridge-030",
+      "level": 2,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "話し合いで意見がまとまりそうなとき、納得できないことがあれば最後に伝える？"
+    },
+    {
+      "id": "bridge-031",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "自分の言葉で誰かが傷ついたと知ったら、意図がなかったことを最初に説明する？"
+    },
+    {
+      "id": "bridge-032",
+      "level": 2,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "いつもより元気がない友達に、理由を聞かずにそばにいることは助けになると思う？"
+    },
+    {
+      "id": "bridge-033",
+      "level": 2,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "友達が、車が来ていないからと赤信号で道路を渡ろうとしている。嫌がられても止めるべきだと思う？"
+    },
+    {
+      "id": "bridge-034",
+      "level": 2,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "ethics"
+      ],
+      "question": "急いでいる人が列の前に入りたいと言ったら、事情を聞いて譲るのは公平だと思う？"
+    },
+    {
+      "id": "bridge-035",
+      "level": 2,
+      "category": "self_and_values",
+      "labels": [
+        "values"
+      ],
+      "question": "前に強く言った意見を変えることは、ぶれていることだと思う？"
+    },
+    {
+      "id": "gender-relations-001",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "その距離の取り方をどう思う？"
+    },
+    {
+      "id": "gender-identity-001",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "トランス女性の利用機会と、ほかの利用者のプライバシーをどう両立する？認めない場合は、その理由は？"
+    },
+    {
+      "id": "relationships-001",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "恋愛や結婚の機会に大きな格差があることは、社会問題だと思う？"
+    },
+    {
+      "id": "feminism-001",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "女性が少ない分野への進学を支援するため、女性だけが応募できる奨学金を設けることは公平だと思う？"
+    },
+    {
+      "id": "family-law-001",
+      "level": 3,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "離婚後は共同親権を原則にするべきだと思う？"
+    },
+    {
+      "id": "family-law-002",
+      "level": 3,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "支払う能力があるのに養育費を払わない人に対し、給与などから強制的に支払いを確保する仕組みは、どこまで認めるべきだと思う？"
+    },
+    {
+      "id": "caregiving-001",
+      "level": 3,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "家事や育児は、収入が多い側が少なく負担しても公平だと思う？"
+    },
+    {
+      "id": "criminal-justice-001",
+      "level": 3,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "性被害を訴える人を守ることと、誤って罪に問われる人を出さないこと。どちらをより優先するべきだと思う？"
+    },
+    {
+      "id": "public-space-001",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "女性専用車両は男女平等に反すると思う？"
+    },
+    {
+      "id": "family-law-003",
+      "level": 3,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "選択的夫婦別姓を認めるべきだと思う？"
+    },
+    {
+      "id": "mental-health-001",
+      "level": 3,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "男性の孤独や自殺の問題は、もっと男性に特化して支援するべきだと思う？"
+    },
+    {
+      "id": "public-support-001",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "care",
+        "politics"
+      ],
+      "question": "生理用品を税金で無料配布するべきだと思う？"
+    },
+    {
+      "id": "relationship-002",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "既婚者が独身だと偽って恋愛することは、どこまで責任を負うべきだと思う？"
+    },
+    {
+      "id": "relationship-003",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "二人が納得している場合でも、経済的な依存が関係の問題になるとしたら、どんなときだと思う？"
+    },
+    {
+      "id": "society-001",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "天皇本人が女性であることと、母方を通じて皇統につながる人が天皇になることについて、それぞれどう考える？ 二つで判断が違うなら、その理由は？"
+    },
+    {
+      "id": "life-001",
+      "level": 3,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "money",
+        "politics",
+        "ethics"
+      ],
+      "question": "あなたなら、どちらを選ぶ？ その理由は何？"
+    },
+    {
+      "id": "ethics-002",
+      "level": 3,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "school",
+        "care",
+        "disability",
+        "ethics"
+      ],
+      "question": "全員に制服を着てもらう？肌の状態に応じて私服を認める？例外の基準をどう決める？"
+    },
+    {
+      "id": "ethics-008",
+      "level": 3,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "ethics"
+      ],
+      "question": "体育館の修理を優先する？それとも、通院の送迎を続ける？何を基準に決める？"
+    },
+    {
+      "id": "support-007",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "止めてもやめないなら、本人に秘密にして先生へ相談する？"
+    },
+    {
+      "id": "support-009",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "本人が嫌がるかもしれなくても、先生に相談することは友達を守る行動だと言える？"
+    },
+    {
+      "id": "support-010",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "約束を守ることと、必要なら大人につなぐことの境界を、あなたはどこに置く？"
+    },
+    {
+      "id": "support-013",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "それでも相談するかを、何で決める？"
+    },
+    {
+      "id": "support-014",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "本人が隠したいことを先生に伝えるのは、どんな場合に「裏切り」ではなく必要な助けになる？"
+    },
+    {
+      "id": "support-017",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "友達の味方でいたい気持ちと、投稿を止めたい気持ちがぶつかったら、誰に何を相談する？"
+    },
+    {
+      "id": "bullying-010",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "安全を損なわずに関わるため、最初に何ができると思う？"
+    },
+    {
+      "id": "bullying-013",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "関係が壊れるかもしれなくても、どう伝える？"
+    },
+    {
+      "id": "bullying-014",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "一人で直接言う以外に、どんな方法を選べる？"
+    },
+    {
+      "id": "bullying-018",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "次に相談するとしたら、何を伝え、どうすれば当事者の安全を守れる？"
+    },
+    {
+      "id": "justice-001",
+      "level": 3,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "死刑制度は必要だと思う？"
+    },
+    {
+      "id": "justice-002",
+      "level": 3,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "17歳の人には25歳の人より、立ち直るための支援を重視するべきだと思う？"
+    },
+    {
+      "id": "justice-003",
+      "level": 3,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "前科がある人を、採用で不利にしてもいいと思う？"
+    },
+    {
+      "id": "justice-004",
+      "level": 3,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "その意向を、仮釈放の判断でどこまで重く見るべきだと思う？"
+    },
+    {
+      "id": "life-002",
+      "level": 3,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "ethics"
+      ],
+      "question": "本人の希望に応じた安楽死を認めるべきだと思う？"
+    },
+    {
+      "id": "medicine-001",
+      "level": 3,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "亡くなった後の臓器提供は、本人が生前に拒否していなければ認める仕組みにしてよいと思う？"
+    },
+    {
+      "id": "medicine-002",
+      "level": 3,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "出生前診断で重い病気の可能性が分かったら、出産するかどうかの判断材料にしていいと思う？"
+    },
+    {
+      "id": "medicine-003",
+      "level": 3,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "遺伝子編集で、生まれる子どもの病気を防げるなら使うべきだと思う？"
+    },
+    {
+      "id": "family-policy-001",
+      "level": 3,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "代理出産を認めるべきだと思う？"
+    },
+    {
+      "id": "family-policy-002",
+      "level": 3,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "精子や卵子の提供で生まれた子どもは、提供者を知る権利があると思う？"
+    },
+    {
+      "id": "family-policy-003",
+      "level": 3,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "同性同士の結婚を、異性同士の結婚と同じ制度にするべきだと思う？"
+    },
+    {
+      "id": "education-001",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "大学の学費は、税金で無償にするべきだと思う？"
+    },
+    {
+      "id": "education-002",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "返済が必要な奨学金は、卒業後の収入にかかわらず、借りた額を返す仕組みでよいと思う？"
+    },
+    {
+      "id": "education-003",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "学校は、生徒のスマホを校内で禁止してもいいと思う？"
+    },
+    {
+      "id": "education-004",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "学校の制服は必要だと思う？"
+    },
+    {
+      "id": "education-005",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "親が子どもの位置情報をいつでも確認できるようにするのは、ありだと思う？"
+    },
+    {
+      "id": "technology-001",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology"
+      ],
+      "question": "街中の監視カメラは、もっと増やすべきだと思う？"
+    },
+    {
+      "id": "technology-002",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology"
+      ],
+      "question": "SNSは実名制にするべきだと思う？"
+    },
+    {
+      "id": "technology-003",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology"
+      ],
+      "question": "SNS運営会社は、差別的な投稿を削除してもいいと思う？"
+    },
+    {
+      "id": "technology-004",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology"
+      ],
+      "question": "AIの学習に、公開されている作品を許可なく使ってもいいと思う？"
+    },
+    {
+      "id": "technology-005",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology"
+      ],
+      "question": "AIが人間の仕事を奪っても、社会全体が豊かになるなら受け入れるべきだと思う？"
+    },
+    {
+      "id": "technology-006",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology"
+      ],
+      "question": "採用や入試の合否を、AIに判断させてもいいと思う？"
+    },
+    {
+      "id": "technology-007",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology"
+      ],
+      "question": "顔認証で人を追跡する仕組みを、防犯のためなら認めてもいいと思う？"
+    },
+    {
+      "id": "economy-001",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "生活保護は、もっと受けやすくするべきだと思う？"
+    },
+    {
+      "id": "economy-002",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "働いていなくても、全員に一定のお金を配る制度はありだと思う？"
+    },
+    {
+      "id": "economy-003",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "お金持ちへの税金は、もっと高くしてもいいと思う？"
+    },
+    {
+      "id": "economy-004",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "親から多くの財産を相続する人には、高い税金をかけるべきだと思う？"
+    },
+    {
+      "id": "economy-005",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "高齢者への社会保障を減らして、若い世代への支援を増やすべきだと思う？"
+    },
+    {
+      "id": "immigration-001",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "人手不足を補うために、外国人労働者をもっと受け入れるべきだと思う？"
+    },
+    {
+      "id": "immigration-002",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "難民を受け入れるためなら、税金や社会保障の負担が増えてもいいと思う？"
+    },
+    {
+      "id": "immigration-003",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "地域になじむためには、どこまで周囲の習慣に合わせるべきだと思う？"
+    },
+    {
+      "id": "environment-001",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "環境を守るためなら、生活が不便になっても受け入れるべきだと思う？"
+    },
+    {
+      "id": "environment-002",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "原子力発電は、今後も使い続けるべきだと思う？"
+    },
+    {
+      "id": "environment-003",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "環境保護のためなら、経済成長を遅らせてもいいと思う？"
+    },
+    {
+      "id": "animals-001",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "人間の医療のためなら、動物実験は認められると思う？"
+    },
+    {
+      "id": "animals-002",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "肉を食べるために動物を飼育することは、悪いことだと思う？"
+    },
+    {
+      "id": "politics-001",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "選挙の投票を義務にするのはありだと思う？"
+    },
+    {
+      "id": "politics-002",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "国を守るためなら、徴兵制を導入してもいいと思う？"
+    },
+    {
+      "id": "politics-003",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "防衛費を増やすためなら、他の公共サービスを減らしてもいいと思う？"
+    },
+    {
+      "id": "media-001",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "逮捕された人の実名は、判決前でも報道していいと思う？"
+    },
+    {
+      "id": "media-002",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "有名人の私生活は、社会的な関心が高ければ報道してもいいと思う？"
+    },
+    {
+      "id": "religion-001",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "culture"
+      ],
+      "question": "宗教上の理由なら、学校や職場のルールに例外を認めるべきだと思う？"
+    },
+    {
+      "id": "sports-001",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "参加の機会と競技の公平さを両立するには、どんなルールがよいと思う？"
+    },
+    {
+      "id": "work-policy-001",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "企業は、男女比をそろえるために採用結果を調整してもいいと思う？"
+    },
+    {
+      "id": "work-policy-002",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "育児休業を取る人が多い職場では、取らない人の負担が増えても仕方ないと思う？"
+    },
+    {
+      "id": "family-policy-004",
+      "level": 3,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "子どもを持たない人も、少子化対策のために多く税金を負担するべきだと思う？"
+    },
+    {
+      "id": "sex-education-001",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "学校の性教育で、避妊具の具体的な使い方まで教えるべき？"
+    },
+    {
+      "id": "sex-education-002",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "保護者が拒否しても、学校の性教育を受けさせるべき？"
+    },
+    {
+      "id": "sex-education-003",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "学校の性教育を全員同じ教室で行う場合と、一部を少人数のグループで行う場合では、どんな学びやすさ・話しにくさがあると思う？"
+    },
+    {
+      "id": "sex-education-004",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "恋人同士の同意の取り方まで、学校が教えるべき？"
+    },
+    {
+      "id": "sex-education-005",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "性教育の教材を、保護者が事前に確認できるようにするべき？"
+    },
+    {
+      "id": "menstruation-001",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "男子生徒全員に参加を義務付けてもよいと思う？"
+    },
+    {
+      "id": "menstruation-002",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "生理で休むときと、ほかの体調不良で休むときは、同じ制度にするべき？それとも生理休暇を別に設けるべき？"
+    },
+    {
+      "id": "menstruation-003",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "生理休暇を有給にする費用は、会社が負担するべき？"
+    },
+    {
+      "id": "menstruation-004",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "学校で生理用品を無料にするなら、他の衛生用品も無料にするべき？"
+    },
+    {
+      "id": "menstruation-005",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "生理を理由に体育を休むとき、先生に詳しい理由まで説明する必要はある？"
+    },
+    {
+      "id": "reproductive-health-001",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "health",
+        "gender",
+        "sexuality"
+      ],
+      "question": "高校生が性感染症の検査を受けたいとき、保護者に知らせず受けられる仕組みを認めるべきだと思う？"
+    },
+    {
+      "id": "reproductive-health-002",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "health",
+        "gender",
+        "sexuality"
+      ],
+      "question": "緊急避妊薬は、年齢や保護者の同意に関係なく入手できるようにするべき？"
+    },
+    {
+      "id": "reproductive-health-003",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "health",
+        "gender",
+        "sexuality"
+      ],
+      "question": "不妊治療に、税金をどこまで使うべきだと思う？"
+    },
+    {
+      "id": "reproductive-health-004",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "health",
+        "gender",
+        "sexuality"
+      ],
+      "question": "中絶を制度で認める条件を決めるとき、本人の意思と胎児への配慮をどう考える？妊娠の時期や健康状態で変わる？"
+    },
+    {
+      "id": "health-policy-001",
+      "level": 3,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "学校が特定のワクチン接種を強く勧めるのは、どこまで許される？"
+    },
+    {
+      "id": "body-policy-001",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "妊娠・出産や生理による負担を考えて、休暇の制度を性別で変えてよいと思う？性別ではなく、一人ずつの体調で決める方法とは何が違う？"
+    },
+    {
+      "id": "sex-education-006",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "学校の性教育は、家庭の価値観と違っていてもそのまま教えるべき？"
+    },
+    {
+      "id": "menstruation-006",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "生理痛を理解してもらうためなら、痛みを疑似体験させるのは有効だと思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-001",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "sexuality"
+      ],
+      "question": "自由に選べたかを考えるには、どんな状況を確認する必要があると思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-002",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship"
+      ],
+      "question": "その選択に、周囲の圧力はどの程度影響していると思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-003",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "sexuality"
+      ],
+      "question": "避妊について話せないことから、二人の関係について何が分かる？まだ分からないことは何？"
+    },
+    {
+      "id": "youth-pregnancy-l3-004",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "その考えを、知識不足だけで説明できると思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-005",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "自由な同意だったかを考えるとき、その差をどう扱うべきだと思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-006",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "sexuality"
+      ],
+      "question": "相談できない理由や、相談先を見つけやすくする方法には、どんなものがあると思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-007",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "健康や通学を支えるためでも、保健室の先生は本人の同意なく担任などへ伝えてよい？情報を共有する範囲は、どう決める？"
+    },
+    {
+      "id": "youth-pregnancy-l3-008",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "学校は、授業の録画を用意したり、課題の提出期限を延ばしたりする配慮を、どこまで行うべき？"
+    },
+    {
+      "id": "youth-pregnancy-l3-009",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "妊娠した生徒が通院で授業を休んだとき、別の課題で同じ学習目標を達成すれば出席扱いにしてよい？"
+    },
+    {
+      "id": "youth-pregnancy-l3-010",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "妊娠による身体的な負担が片方に集中するとき、相手側にはどこまで責任があると思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-011",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "妊娠を伝えたあと相手が連絡を絶った場合、『怖くて逃げた』ことはどこまで理解できる？"
+    },
+    {
+      "id": "youth-pregnancy-l3-012",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "family"
+      ],
+      "question": "未成年同士の妊娠で、通院費の援助や相談先探しが必要なとき、妊娠した人の親だけでなく、相手の親にも支える責任があると思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-013",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "妊娠を続けるか中絶するかを決めるとき、妊娠した人とその交際相手に「同じ決定権」を認めることは公平だと思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-014",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship"
+      ],
+      "question": "本人との約束を守りながら必要な支援につなぐには、誰に何を相談する？"
+    },
+    {
+      "id": "youth-pregnancy-l3-015",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying",
+        "privacy",
+        "media"
+      ],
+      "question": "妊娠したという噂を聞いても本人に確かめないのは、無関心だと思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-016",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "中高生の妊娠を「本人が無責任だったから」とだけ説明してよいと思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-017",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "同じ妊娠でも、女子生徒と男子生徒で周囲から責められ方が違うとしたら、それはなぜだと思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-018",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "妊娠した生徒と相手の生徒が負う責任や、二人に必要な支援をどう考える？"
+    },
+    {
+      "id": "youth-pregnancy-l3-019",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "family"
+      ],
+      "question": "進学を迷う生徒が希望をあきらめずにすむよう、本人の希望や使える支援をどう確かめる？"
+    },
+    {
+      "id": "youth-pregnancy-l3-020",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "妊娠した生徒に対し、学校は授業以外でどこまで支援するべきだと思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-021",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "sexuality"
+      ],
+      "question": "性教育は知識を教えるだけでなく、『断り方』『相談の仕方』『相手との話し合い方』まで扱うべき？"
+    },
+    {
+      "id": "youth-pregnancy-l3-022",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "family",
+        "sexuality"
+      ],
+      "question": "家庭で性の話を避けることは、子どもの価値観を尊重していることになる？"
+    },
+    {
+      "id": "youth-pregnancy-l3-023",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying"
+      ],
+      "question": "若くして妊娠した人に「将来が終わった」と言うことは、その人の将来の選択にどんな影響を与えると思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-024",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "避妊をしなかった判断に賛成できなくても、妊娠した生徒が学び続けるための支援は必要だと思う？"
+    },
+    {
+      "id": "youth-pregnancy-l3-025",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care"
+      ],
+      "question": "避妊しなかったことを理由に、妊娠した生徒への通院や学習の支援を減らしてよい？"
+    },
+    {
+      "id": "relationship-l3-141",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人に異性の親友がいて不安を感じたとき、気持ちを伝えることと、相手の交友関係を制限することの境界はどこだと思う？"
+    },
+    {
+      "id": "relationship-l3-142",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人が元恋人と友人として関わり続けることを、今の恋人は受け入れるべきだと思う？"
+    },
+    {
+      "id": "relationship-l3-143",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人の過去の恋愛について嫉妬することは、今の関係に必要のない感情だと思う？"
+    },
+    {
+      "id": "relationship-l3-144",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人が他の人から好かれやすいことに嫉妬したとき、相手に行動を変えてもらうのはどこまで許されると思う？"
+    },
+    {
+      "id": "relationship-l3-145",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人なら、友人や家族より自分を優先してほしいと思うのは自然だと思う？"
+    },
+    {
+      "id": "relationship-l3-146",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "自分は異性の友人と付き合いを続けたいのに、恋人には異性の友人との交流を控えてほしいと求めるのは公平だと思う？"
+    },
+    {
+      "id": "relationship-l3-147",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人が別の人に一時的に惹かれたとしても、何も行動していないなら問題ではないと思う？"
+    },
+    {
+      "id": "relationship-l3-148",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "理由のない嫉妬でも、恋人には安心させる責任があると思う？"
+    },
+    {
+      "id": "relationship-l3-149",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance",
+        "media"
+      ],
+      "question": "恋人のSNS上の交流まで、交際相手が口を出していいと思う？"
+    },
+    {
+      "id": "relationship-l3-150",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "嫉妬したことを相手に伝えるのは、束縛とは違うと思う？"
+    },
+    {
+      "id": "relationship-l3-151",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "恋人同士でも、相手には言わない秘密があっていいと思う？"
+    },
+    {
+      "id": "relationship-l3-152",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "恋人同士なら、スマホのパスワードを共有できる方が信頼関係は強いと思う？"
+    },
+    {
+      "id": "relationship-l3-153",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "過去の浮気や返済中の借金など、結婚するかの判断に関わりそうなことは、結婚前にどこまで話すべき？"
+    },
+    {
+      "id": "relationship-l3-154",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "money"
+      ],
+      "question": "結婚前の借金は、金額に関係なく相手に伝えるべきだと思う？"
+    },
+    {
+      "id": "relationship-l3-155",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "health"
+      ],
+      "question": "健康上の情報は、結婚相手にもどこまで伝える必要があると思う？"
+    },
+    {
+      "id": "relationship-l3-156",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "その後繰り返していなくても、今の恋人には伝えるべきだと思う？"
+    },
+    {
+      "id": "relationship-l3-157",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "親友の恋人が、独身だと言っているが実際は結婚していると知った。親友に伝えることが友情だと思う？"
+    },
+    {
+      "id": "relationship-l3-158",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "恋人の日記やメモには、交際相手にも絶対に見せない領域があっていいと思う？"
+    },
+    {
+      "id": "relationship-l3-159",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "自分の家族が恋人を嫌っていることは、恋人本人にも伝えるべきだと思う？"
+    },
+    {
+      "id": "relationship-l3-160",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "今の関係が幸せでも、その事実を知る方がよいと思う？"
+    },
+    {
+      "id": "gender-l3-001",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "『男性の方が多く稼いでほしい』という期待は、個人の好みなら問題ないと思う？"
+    },
+    {
+      "id": "gender-l3-002",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "care",
+        "gender"
+      ],
+      "question": "『女性の方が子育てに向いている』という考えは、経験則と性別による決めつけのどこで分かれると思う？"
+    },
+    {
+      "id": "gender-l3-003",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "romance",
+        "gender"
+      ],
+      "question": "デート代を男性が多く払うことを期待するのは、昔ながらの男女差別と同じ問題だと思う？"
+    },
+    {
+      "id": "gender-l3-004",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "romance",
+        "gender"
+      ],
+      "question": "告白やデートの誘いを『男性からするもの』と考えるのは、ただの恋愛文化だと思う？"
+    },
+    {
+      "id": "gender-l3-005",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "男性が弱音を吐いたときと、女性が弱音を吐いたときで、周囲の受け止め方が違っても仕方ないと思う？"
+    },
+    {
+      "id": "gender-l3-006",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "学校で重い荷物を運ぶ人を決めるとき、性別、個人の体力、本人の希望をそれぞれどのように考慮するべきだと思う？"
+    },
+    {
+      "id": "gender-l3-007",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "crime"
+      ],
+      "question": "危険な仕事や役割を男性が多く引き受けることを『仕方ない』と考えるのは公平だと思う？"
+    },
+    {
+      "id": "gender-l3-008",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "災害などで『女性や子どもを先に』とする考え方に、男性が後回しになることへの問題はないと思う？"
+    },
+    {
+      "id": "gender-l3-009",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "被害を受けた人が男性か女性かで、「被害者らしさ」の感じ方は変わると思う？"
+    },
+    {
+      "id": "gender-l3-010",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "加害者が男性か女性かで、「怖さ」や「悪質さ」の感じ方が変わるなら、それは公平？"
+    },
+    {
+      "id": "gender-l3-011",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "family",
+        "gender"
+      ],
+      "question": "父親が一人で小さな子どもの世話をしているとき、母親より警戒されることがあるなら、それは子どもの安全のために仕方ないと思う？"
+    },
+    {
+      "id": "gender-l3-012",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "family",
+        "gender"
+      ],
+      "question": "母親が仕事を優先すると『子どもがかわいそう』と言われやすいのに、父親なら同じように言われないとしたら公平？"
+    },
+    {
+      "id": "gender-l3-013",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "離婚後の子育てで『母親と暮らす方が自然』と最初から考えるのは、子どもの利益を考えた判断だと思う？"
+    },
+    {
+      "id": "gender-l3-014",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "care",
+        "gender"
+      ],
+      "question": "男女の進学格差を減らすために、片方の性別だけを対象にした入試枠や支援を作ることは公平だと思う？"
+    },
+    {
+      "id": "gender-l3-015",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "ある教育分野で男子の成績や進学率が低い場合、女子向け支援と同じように男子だけを対象にした支援も必要だと思う？"
+    },
+    {
+      "id": "gender-l3-016",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "work",
+        "gender"
+      ],
+      "question": "昇進では、人数の少ない性別の候補者を優先してよいと思う？"
+    },
+    {
+      "id": "gender-l3-017",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "結婚相手を選ぶとき、男性の年収を重視することと、女性の若さや見た目を重視することは同じ種類の価値判断だと思う？"
+    },
+    {
+      "id": "gender-l3-018",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "恋愛で『男性は自分より背が高い方がいい』という好みは、見た目による偏見とは別物だと思う？"
+    },
+    {
+      "id": "gender-l3-019",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "男性と女性では、見た目を整えるよう求められる場面や内容に、どんな共通点と違いがあると思う？"
+    },
+    {
+      "id": "gender-l3-020",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "被害を訴えた人の話を聞きながら、疑われた人を最初から犯人扱いせずに調べることはできると思う？"
+    },
+    {
+      "id": "gender-l3-021",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "bullying",
+        "gender",
+        "sexuality"
+      ],
+      "question": "男性から女性に言う場合と、女性から男性に言う場合で、「セクハラらしさ」の感じ方が変わるなら、なぜ？"
+    },
+    {
+      "id": "gender-l3-022",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "恋人や配偶者から暴力的な扱いを受けた男性が相談したとき、女性の場合と同じ深刻さで受け止められると思う？"
+    },
+    {
+      "id": "gender-l3-023",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "恋愛で、女性に「相手の気持ちを察する役」、男性に「相手を安心させる役」を求めるのは、どちらも性別による決めつけだと思う？"
+    },
+    {
+      "id": "gender-l3-024",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "妊娠には身体への負担の差がある。それでも、妊娠に至るまでの責任は男女同じだと言える？"
+    },
+    {
+      "id": "gender-l3-025",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "sexuality"
+      ],
+      "question": "妊娠した本人の交際相手には、妊娠を続けるか中絶するかについて、どこまで意見を言う権利があると思う？"
+    },
+    {
+      "id": "gender-l3-026",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "family",
+        "care",
+        "gender"
+      ],
+      "question": "別れた後の子育てで、父親にはお金、母親には日常的な育児をより強く求める考え方は公平だと思う？"
+    },
+    {
+      "id": "gender-l3-027",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "family",
+        "work",
+        "gender"
+      ],
+      "question": "夫婦のどちらかが仕事を減らして家庭を優先する必要があるとき、収入が高い方を残す決め方は公平だと思う？"
+    },
+    {
+      "id": "gender-l3-028",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "『女性を守る』『男性が荷物を持つ』ような好意的な男女差も、性差別に含まれると思う？"
+    },
+    {
+      "id": "gender-l3-029",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "男女平等のために、男女を同じように扱うことと、状況に応じて扱いを変えることのどちらを重視するべき？"
+    },
+    {
+      "id": "gender-l3-030",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "男女それぞれに違う不利益があるとき、『どちらの方が差別されているか』を決めることに意味はあると思う？"
+    },
+    {
+      "id": "ethics-009",
+      "level": 3,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "work",
+        "ethics"
+      ],
+      "question": "その人の事情も確認した上で、無償の活動ではどこまで責任を求めるべきだと思う？"
+    },
+    {
+      "id": "r6-01-01-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "介護や物流の人手が足りなくなっても、外国人労働者の受入れを減らすべきだと思う？"
+    },
+    {
+      "id": "r6-01-02-l3",
+      "level": 3,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime",
+        "politics"
+      ],
+      "question": "住民の不安に応えるためなら、特定の国籍の人への警察の取締りを強めてよいと思う？"
+    },
+    {
+      "id": "r6-01-03-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "外国人労働者の研修費を回収するため、本人の転職を一定期間制限してよい？企業や公費で費用を補う方法もある？"
+    },
+    {
+      "id": "r6-01-04-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "公的な生活支援の条件を決めるなら、国籍・住んだ年数・これまでに払った税金のどれを考慮するべき？"
+    },
+    {
+      "id": "r6-01-05-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "政策に役立つなら、帰化した人を行政の統計で別に集計してよいと思う？同じ国民を出身で分ける影響をどう考える？"
+    },
+    {
+      "id": "r6-01-06-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "衛生や環境に問題がなくても、地域の習慣に合わないという理由で、自治体は土葬墓地の許可を拒んでよいと思う？"
+    },
+    {
+      "id": "r6-01-07-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "食料や土地の管理を国内に保つためなら、その損失を受け入れるべき？"
+    },
+    {
+      "id": "r6-02-01-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "撮影や入場をどこまで制限してよいと思う？"
+    },
+    {
+      "id": "r6-02-02-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "問題を起こしていない民泊も、住宅地での営業を禁止してよいと思う？"
+    },
+    {
+      "id": "r6-02-03-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "混雑対策のため、地元に住んでいない観光客の運賃を高くしてよいと思う？"
+    },
+    {
+      "id": "r6-02-04-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "個人の車による有料送迎は、既存のバスやタクシーと同じ安全・補償条件が整うまで制限してよい？"
+    },
+    {
+      "id": "r6-02-05-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "空き家の所有者に家を貸すか売るよう求める制度を認める？"
+    },
+    {
+      "id": "r6-03-01-l3",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "物価を下げることと、仕事を守ることのどちらを優先する？"
+    },
+    {
+      "id": "r6-03-02-l3",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "支援を早く配るためなら、所得の境目で受け取る額に大きな差が出てもよいと思う？"
+    },
+    {
+      "id": "r6-03-03-l3",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "今の生活を守るために、まだ投票できない世代へ負担を回してよいと思う？"
+    },
+    {
+      "id": "r6-03-04-l3",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "非正規社員の給料や保障を上げるために、正社員の給料や保障を下げてよいと思う？"
+    },
+    {
+      "id": "r6-04-01-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "money",
+        "politics"
+      ],
+      "question": "世代間の負担を見直すなら、年齢で一律に決める？それとも収入や資産に応じて決める？"
+    },
+    {
+      "id": "r6-04-02-l3",
+      "level": 3,
+      "category": "health_and_disability",
+      "labels": [
+        "money",
+        "health",
+        "politics"
+      ],
+      "question": "高い治療費への補助を保つために保険料を上げる？それとも保険料を抑えるため、患者が払う金額を増やす？"
+    },
+    {
+      "id": "r6-04-03-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "money",
+        "politics"
+      ],
+      "question": "働く世帯の手取りが生活保護を下回るとき、生活保護費を下げる？それとも働く世帯への支援を増やす？"
+    },
+    {
+      "id": "r6-04-04-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "money",
+        "politics"
+      ],
+      "question": "賭け事で生活費を使い切った人にも、病気で働けなくなった人と同じように生活支援をするべき？支援の前に家計を詳しく調べてよい？"
+    },
+    {
+      "id": "r6-04-05-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "money",
+        "politics"
+      ],
+      "question": "不正を一定数見逃してでも利用しやすさを優先することを、行政の責任として認める？"
+    },
+    {
+      "id": "r6-04-06-l3",
+      "level": 3,
+      "category": "health_and_disability",
+      "labels": [
+        "money",
+        "health",
+        "politics"
+      ],
+      "question": "病気や体の機能が回復する見込みが低いことを理由に、今の治療や介助への公的な支援を打ち切ってよい？誰がどう決める？"
+    },
+    {
+      "id": "r6-04-07-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "money",
+        "politics"
+      ],
+      "question": "この保険料の免除をなくす案に賛成する？家事や育児のために仕事を減らしてきた人の負担が増えても？"
+    },
+    {
+      "id": "r6-05-01-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "出生数を増やすためなら、最も困っている家庭より、次の子を持ちそうな家庭を優先してよい？"
+    },
+    {
+      "id": "r6-05-02-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "人口減少で客が減った商店街を、税金の補助で維持するべき？別の仕事へ移る支援を優先する？補助を続けるなら何年？"
+    },
+    {
+      "id": "r6-05-03-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "住民が住み続けたい地域でも、水道や道路などのサービスを縮小してよいと思う？"
+    },
+    {
+      "id": "r6-06-01-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "温暖化対策のため、車や燃料を多く使うほど負担を増やすのは、生活に余裕がない人にも公平だと思う？"
+    },
+    {
+      "id": "r6-06-02-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "避難を求められた後も残った人に、救助の順番や費用で差をつけてよい？残った理由をすぐ確認できなくても？"
+    },
+    {
+      "id": "r6-06-03-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "今の医療や福祉を減らしてでも、将来の災害に備える工事を優先する？"
+    },
+    {
+      "id": "r6-06-04-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "参加者が希望していても、行政がイベントを中止できるべき？"
+    },
+    {
+      "id": "r6-06-05-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "地域の農業や漁業を続けられないとき、今の仕事を補助する？それとも別の場所への移住や転職を支える？"
+    },
+    {
+      "id": "r6-06-06-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "環境問題への関心を集めるためなら、違う種類の危険を一つの指標にまとめてもよいと思う？"
+    },
+    {
+      "id": "r6-07-01-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "発信者は確認できるまで待つべき？ 未確認だと明記すれば広めてよい？"
+    },
+    {
+      "id": "r6-07-02-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "投票日までに外国政府の関与が確かめられなくても、その疑いがある投稿の拡散を止めてよい？正当な発言まで止めるおそれがあっても？"
+    },
+    {
+      "id": "r6-07-03-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "SNSで同じ意見を大量に投稿するのを制限するなら、自動投稿と人が協力する投稿運動を同じように扱うべき？"
+    },
+    {
+      "id": "r6-07-04-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "その機関が与党の発言を正しいと判断しても、信頼できる仕組みを作れる？作れないなら設置しない方がよい？"
+    },
+    {
+      "id": "r6-07-05-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "同じ統計から違う印象の見出しを作れるとき、報道は別の見方も一緒に伝えるべき？"
+    },
+    {
+      "id": "r6-07-06-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "事件報道で加害者や被害者の性別を伝える基準は、いつも同じにするべき？見過ごされてきた被害を伝えるために、性別をあえて載せてもよい？"
+    },
+    {
+      "id": "r6-07-07-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "食品検査に問題がなくても、産地への不安を周りに伝えるなら根拠が必要だと思う？"
+    },
+    {
+      "id": "r6-08-01-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "本人に似せた偽の映像で、性的・侮辱的な場面を同意なく作ることを禁止してよい？風刺や創作として認める範囲はどこ？"
+    },
+    {
+      "id": "r6-08-02-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "孤立した人の支えを弱める可能性があっても、依存を防ぐために成人向け会話AIの利用時間や友達・恋人のように話す機能を制限してよい？"
+    },
+    {
+      "id": "r6-08-03-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "AIが本人の希望と違う部屋を予約したとき、販売者にもAIの提供者にも明らかな違反がなければ、取消料は誰が負うべき？"
+    },
+    {
+      "id": "r6-08-04-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "本人が特定されにくいようにすれば、同意なしで記録を使ってよいと思う？"
+    },
+    {
+      "id": "r6-08-05-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "作者に決まった報酬を配るなら、自分の作品をAI学習に使わないよう断る権利より、広く使えることを優先してよい？"
+    },
+    {
+      "id": "r6-09-01-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "誹謗中傷の申告があった投稿を、確認前に隠す？それとも確認が終わるまで表示する？どちらを基本にするべき？"
+    },
+    {
+      "id": "r6-09-02-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "無断転載の広告収入を、転載した人だけでなく、利益を分けた運営会社からも回収してよい？侵害を知らなかった場合も？"
+    },
+    {
+      "id": "r6-09-03-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "批判を続けることに、どんな限界が必要？本人やSNSの運営会社が、批判を止める基準を決めてよい？"
+    },
+    {
+      "id": "r6-09-04-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "未成年を守るため、SNSを使う全員に身分証での年齢確認を義務付けてよいと思う？"
+    },
+    {
+      "id": "r6-09-05-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "情報漏れが確定する前でも、どの程度の可能性があれば利用者に知らせるべき？"
+    },
+    {
+      "id": "r6-09-06-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "無料だと思って素材を使った公的機関にも、営利企業と同じ損害賠償を求めてよい？担当者の誤解による損失を税金で補ってよい？"
+    },
+    {
+      "id": "r6-09-07-l3",
+      "level": 3,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "記録として残すことと公開を制限することをどう分ける？"
+    },
+    {
+      "id": "r6-10-01-l3",
+      "level": 3,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "詐欺だという警告を受けても送金した人への補償を、減らしてよいと思う？"
+    },
+    {
+      "id": "r6-10-02-l3",
+      "level": 3,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "事前に詐欺だと見抜けなくても、サービスは被害を補償するべき？"
+    },
+    {
+      "id": "r6-10-03-l3",
+      "level": 3,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "アカウントを乗っ取られ、友人が偽の送金依頼を信じてお金を失った。追加の確認コードを使う設定を勧められてもしていなかった持ち主にも、補償責任を求めてよい？"
+    },
+    {
+      "id": "r6-10-04-l3",
+      "level": 3,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "捜査に協力した犯罪組織の実行役の刑を軽くする制度を広げてよい？被害者が厳罰を求めていても？"
+    },
+    {
+      "id": "r6-10-05-l3",
+      "level": 3,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "犯罪を防ぐためなら、家族へ送金できない人が出てもよいと思う？"
+    },
+    {
+      "id": "r6-10-06-l3",
+      "level": 3,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "業者の知識による利益として認める？高価な品物なら、売り手に価値を伝える義務を設ける？"
+    },
+    {
+      "id": "r6-11-01-l3",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "上司が異性の部下との面談や出張を避けることで、その部下の育成機会に差が出てもよいと思う？"
+    },
+    {
+      "id": "r6-11-02-l3",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "会社が同意していても、力関係に差があれば値下げを規制するべき？規制で取引がなくなる危険があっても？"
+    },
+    {
+      "id": "r6-11-03-l3",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "健康を損なう危険を説明しても長時間働きたい人の労働を、国は制限してよいと思う？"
+    },
+    {
+      "id": "r6-11-04-l3",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "同じ程度に困っている他の世代より、就職しにくかった世代を優先して採用してよいと思う？"
+    },
+    {
+      "id": "r6-11-05-l3",
+      "level": 3,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "自ら公表したことを、処分の軽減にどこまで考慮するべき？"
+    },
+    {
+      "id": "r6-12-01-l3",
+      "level": 3,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care",
+        "money"
+      ],
+      "question": "子どもへの支援金を、親が結婚しているかどうかで分けないようにするべき？収入や同居の状況を調べる手間が増えても？"
+    },
+    {
+      "id": "r6-12-02-l3",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care",
+        "money"
+      ],
+      "question": "いじめをした生徒の記録を、本人が反対していても進学先に伝えてよいと思う？"
+    },
+    {
+      "id": "r6-12-03-l3",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care",
+        "money"
+      ],
+      "question": "家庭の経済状況を入試で考慮するために、経済的に余裕のある高得点者が不合格になってもよいと思う？"
+    },
+    {
+      "id": "r6-12-04-l3",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care",
+        "money"
+      ],
+      "question": "危険な運転を防ぐためなら、所得や通学で自転車が必要かに関係なく、同じ額の反則金を求めるべき？"
+    },
+    {
+      "id": "r6-12-05-l3",
+      "level": 3,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care",
+        "money"
+      ],
+      "question": "盗撮の疑いがない教職員のスマートフォンも調べてよい？関係ない人のプライバシーへの影響をどこまで認める？"
+    },
+    {
+      "id": "r6-13-01-l3",
+      "level": 3,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "支援を届けるため、断る家庭にも行政が訪問してよい？"
+    },
+    {
+      "id": "r6-13-02-l3",
+      "level": 3,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "命に関わる危険が差し迫っている場合、本人が拒否しても家族へ情報を伝えてよい？本人との信頼関係を損なうおそれがあっても？"
+    },
+    {
+      "id": "r6-13-04-l3",
+      "level": 3,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "相談の需要がはっきり分からなくても、男性向けの専用窓口を設けるべき？"
+    },
+    {
+      "id": "r6-13-05-l3",
+      "level": 3,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "家賃補助を受ける条件として、支援者と毎月の支出を確認し使える額を決めることを求めてよい？断ったら補助をやめてもよい？"
+    },
+    {
+      "id": "r6-14-01-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "皇位継承では、安定・伝統・皇族一人ひとりの人生のどれを優先するべき？国民の賛成が多ければ、皇族本人が望まなくても、皇位を継ぐよう求めてよい？"
+    },
+    {
+      "id": "r6-14-02-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "自分の国旗を壊す行為を、他人の物を壊していなくても、国の象徴を傷つけた罪として罰するべき？"
+    },
+    {
+      "id": "r6-14-03-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "あなたは公的助成を残すべきだと思う？"
+    },
+    {
+      "id": "r6-14-04-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "選挙後に政党が合流して公約を大きく変えた場合、議員はもう一度選挙で判断を受けるべき？それとも任期中の変更を認める？"
+    },
+    {
+      "id": "r6-14-05-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "攻撃を防ぐため、国はどの段階で他国を守る軍事行動に加わるべき？攻撃を防ぐ効果と、自国が戦争に巻き込まれる危険をどう比べる？"
+    },
+    {
+      "id": "r6-14-06-l3",
+      "level": 3,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "自治体が外国政府と協力の覚書を結ぶ場合、地域の経済的利益のためなら国の外交方針と異なる関係を築いてよいと思う？"
+    },
+    {
+      "id": "r6-15-01-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "男女平等を進めるには、同じ機会を与えることと、人数や収入の差を小さくすることのどちらを重視するべき？"
+    },
+    {
+      "id": "r6-15-02-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "女性の少ない分野を増やす目的なら、生活に困っている男性が対象外でも、この奨学金を続けてよいと思う？"
+    },
+    {
+      "id": "r6-15-03-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "性別で利用を分ける施設は、使えない人の負担が増えても、安心できる人が増えるなら設けてよいと思う？"
+    },
+    {
+      "id": "r6-15-04-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "店は集客のため、性別によって同じサービスの料金を変えてよいと思う？"
+    },
+    {
+      "id": "r6-15-05-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "採用する男女の数が同じになっても、管理職の差が残るなら、女性の優先採用を続けるべき？"
+    },
+    {
+      "id": "r6-15-06-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "従業員が希望していても、家族の負担を減らすために会社が長時間労働を制限してよいと思う？"
+    },
+    {
+      "id": "r6-15-07-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "政策を見直すとき、当事者が「不公平だ」と感じていることを、どこまで根拠にするべき？"
+    },
+    {
+      "id": "r6-16-01-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "企業は採用や配置で容姿を基準にしてよい？客の希望に応じることと、見た目への偏見を強めることをどう区別する？"
+    },
+    {
+      "id": "r6-16-02-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "本人の性別の申告だけでなく、診断書や治療歴も確認して、使える更衣室を決めてよいと思う？"
+    },
+    {
+      "id": "r6-16-03-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "子ども向け施設で、男性の保護者だけに子どもとの関係を証明する書類を求めてよい？その人を疑う事情がなくても？"
+    },
+    {
+      "id": "r6-16-04-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "性被害やDVの支援を決めるとき、行為を共通の基準で見る？それとも被害を受けた人への影響を重視する？"
+    },
+    {
+      "id": "r6-16-05-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "平等政策への批判に差別的な言葉が含まれていても、その政策への反対意見を公の議論に残すべき？"
+    },
+    {
+      "id": "r6-16-06-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "読む人の立場を問わず、批判される性別によって投稿を削除する基準を変えてよいと思う？"
+    },
+    {
+      "id": "r6-16-07-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "男性への支援を進めるため、男性全体をまとめる運動を作るべき？男性の収入や経験の違いを見えにくくしないため、何に気をつける？"
+    },
+    {
+      "id": "r6-16-08-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "差別を受けたと訴える権利と、差別と認める基準は分けるべき？訴えた人の経験を否定せず、差別と認めない判断ができる？"
+    },
+    {
+      "id": "r6-17-01-l3",
+      "level": 3,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "romance",
+        "work",
+        "sexuality"
+      ],
+      "question": "夫婦別姓の制度を改善するだけでなく、過去に名字を変えて負担を受けた人へ補償も必要だと思う？"
+    },
+    {
+      "id": "r6-17-02-l3",
+      "level": 3,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "romance",
+        "work",
+        "sexuality"
+      ],
+      "question": "子どもがたたかれる危険をすぐに確かめられないとき、子どもは連れ出した親との別居生活を続ける？それとも元の自宅に戻る？"
+    },
+    {
+      "id": "r6-17-03-l3",
+      "level": 3,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "romance",
+        "work",
+        "sexuality"
+      ],
+      "question": "養育費の支払いと親子の面会は別の約束。片方が守られないとき、もう片方も止めてよい？"
+    },
+    {
+      "id": "r6-17-04-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "romance",
+        "work",
+        "gender",
+        "sexuality"
+      ],
+      "question": "働く人への支援や別の仕事が十分でなくても、搾取を減らすために性サービスを買う人への処罰を強めるべき？"
+    },
+    {
+      "id": "r6-17-05-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "romance",
+        "work",
+        "gender",
+        "sexuality"
+      ],
+      "question": "過去に性産業で働いた人を、具体的な危険がなくても子どもに関わる仕事から外してよいと思う？"
+    },
+    {
+      "id": "r6-17-06-l3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "romance",
+        "work",
+        "gender",
+        "sexuality"
+      ],
+      "question": "生活に困って選択肢が少ない成人が、お金を受け取ることを条件にした交際に同意した場合、それを自由な合意と考えてよい？"
+    },
+    {
+      "id": "r6-18-01-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "行政は、恋愛や交際の機会を作る支援をするべきだと思う？"
+    },
+    {
+      "id": "r6-18-02-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "好意を知って食事や贈り物を受け取った場合、交際やお返しを約束していなくても、交際を断った後に返金や贈り物の返却を求めてよい？"
+    },
+    {
+      "id": "r6-18-03-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "別れたくない側ばかりが譲歩する約束は、公平だと思う？"
+    },
+    {
+      "id": "r6-18-04-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "独身で子どもがいない人の趣味や休息も、家族の世話と同じように仕事の配分で尊重するべき？"
+    },
+    {
+      "id": "r6-19-01-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "仕事に問題がなくても、不倫を理由に広告や出演の契約を終わらせてよいと思う？"
+    },
+    {
+      "id": "r6-19-02-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "婚姻を続けながら別の人と交際するのと、離婚してから新しい関係を選ぶのでは、どちらが誠実？経済的に離婚できない事情で判断は変わる？"
+    },
+    {
+      "id": "r6-19-03-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "子どもの住まいや通学先が変わることを心配して、不倫を配偶者に隠してよい？配偶者が今後を決めるための情報とどう両立する？"
+    },
+    {
+      "id": "r6-19-04-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "不倫を疑っているなら、証拠を探すために配偶者のメッセージを無断で見てよい？ほかに確かめる方法がなくても？"
+    },
+    {
+      "id": "r6-19-05-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "家計の約束を守れば、残りのお金の使い方は自由？パートナーへの誠実さも関係する？"
+    },
+    {
+      "id": "r6-19-06-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "配偶者に隠れて別の人と恋愛感情を共有することは、肉体関係がなくても、別の人と肉体関係を持つことと同じ裏切りだと思う？"
+    },
+    {
+      "id": "r6-19-07-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "長く別居している夫婦の一方が始めた新しい交際も、同居中の夫婦の不倫と同じように考えるべき？"
+    },
+    {
+      "id": "r6-19-08-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "結婚相手に性産業で働いた経験を話すべき？相手が知る権利と、自分のプライバシーのどちらを優先する？話さないことと嘘をつくことは違う？"
+    },
+    {
+      "id": "r6-19-09-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "不倫で傷ついた人が、事実を公表しない約束と引き換えに高い補償金を求めてよい？損害を補うことと相手を苦しめることをどう見分ける？"
+    },
+    {
+      "id": "r6-19-10-l3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "上司と部下が交際したとき、評価担当を変えれば十分？それとも組織は交際自体を禁止するべき？"
+    },
+    {
+      "id": "r6-20-01-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "家計への負担が同じなら、これらの支出を同じように考えるべき？家族で楽しめる支出を優先する理由はある？"
+    },
+    {
+      "id": "r6-20-01-l3-conv",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "自由に使うお金の範囲を夫婦で決めていても、家族の介護費が急に増えたら見直すべき？"
+    },
+    {
+      "id": "r6-20-02-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "睡眠不足と仕事への遅刻が続いても、本人が充実を感じる推し活を止めるべき？誰が判断する？"
+    },
+    {
+      "id": "r6-20-02-l3-conv",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "仕事への遅刻が続く場合、周囲や職場は、夜に趣味へ使う時間を減らすよう求めてよい？趣味が本人の生活の支えでも？"
+    },
+    {
+      "id": "r6-20-03-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "推しに会える機会を、お金を多く使った人ほど増やすのは公平？成人の自由な買い物として認めるべき？"
+    },
+    {
+      "id": "r6-20-03-l3-conv",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "推しに会うために将来に響く借金をして課金することを、成人の自由として認める？"
+    },
+    {
+      "id": "r6-20-04-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "推しの成功を一緒に喜ぶことと、応援への見返りとして活動内容を変えるよう求めることでは、推しとの関わり方にどんな違いがあると思う？"
+    },
+    {
+      "id": "r6-20-05-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "恋愛しない約束をしたアイドルが約束を破ったら、仕事や報酬を失うべき？契約に同意していても、私生活を制限してよい？"
+    },
+    {
+      "id": "r6-20-06-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "推しやキャラクターとの関係に満足し、現実の交際を望まない人にも、孤立を防ぐために恋愛や結婚を勧めるべき？"
+    },
+    {
+      "id": "r6-20-07-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "民主主義にとって、こうした熱狂は役に立つと思う？"
+    },
+    {
+      "id": "r6-20-08-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "長く応援し、お金も使ったファンをイベントで優先してよい？初めて参加する人の機会はどう守る？"
+    },
+    {
+      "id": "r6-20-09-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "このファンの氏名・顔写真・行為の記録を、ほかの運営会社と共有してよい？誤った情報での排除や、行動を改めた人への影響をどう考える？"
+    },
+    {
+      "id": "r6-20-10-l3",
+      "level": 3,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "交際を約束せず、成人が自分で払っていても、配信者がファンに特別感を持たせて投げ銭を集めることを規制するべき？"
+    },
+    {
+      "id": "FAN-J01-L3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "推し活への理解不足なのか、時間やお金が推し活に偏った不満なのか、どう見分ける？"
+    },
+    {
+      "id": "FAN-J02-L3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "推し活を理解しても恋人が嫉妬するなら、その理由を知るために何を確かめる？"
+    },
+    {
+      "id": "FAN-C01-L3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "「恋人より推しの方がかっこいい・かわいい」と本気で言うのは、推しへの感想？それとも恋人への評価？"
+    },
+    {
+      "id": "FAN-B01-L3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "romance",
+        "gender"
+      ],
+      "question": "伝え方や場面など性別以外の条件が同じなら、「恋人より推しの方がかっこいい・かわいい」という発言を、話す人の性別によって違って受け止める？"
+    },
+    {
+      "id": "FAN-B02-L3",
+      "level": 3,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "romance",
+        "gender"
+      ],
+      "question": "推しのイベントへの遠征や有料サービスへの課金について、金額・頻度・生活への影響が同じでも、遠征や課金をする人の性別で評価を変える？変えるなら、理由は何？"
+    },
+    {
+      "id": "FAN-G01-L3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "推しへの熱を疑似恋愛と呼ぶのは、関係の説明として正確だと思う？ 恋愛していないことを貶める呼び方だと思う？"
+    },
+    {
+      "id": "FAN-G03-L3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "その人は何を失ったと感じている？期待の種類によって、反応の意味は変わる？"
+    },
+    {
+      "id": "FAN-G04-L3",
+      "level": 3,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "気持ちが恋に近いとしても、そのことを理由にファンが推しの交際や引退を止めてよいと思う？"
+    },
+    {
+      "id": "relationship-401",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "事実の確認、子どもとの関係、配偶者との信頼のうち、何を優先する？"
+    },
+    {
+      "id": "l4-relationship-002",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "それでも、その子を育て続けたい？"
+    },
+    {
+      "id": "relationship-403",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "不倫相手との子どもができたら、配偶者に隠して育てる？"
+    },
+    {
+      "id": "criminal-justice-002",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "あなたならどう対応する？"
+    },
+    {
+      "id": "criminal-justice-003",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "痴漢されたと思ったけど確信が持てなかったら、申告する？"
+    },
+    {
+      "id": "family-law-004",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "離婚後、自分の子どもとほとんど会えなくなったら受け入れられる？"
+    },
+    {
+      "id": "family-law-005",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "子どもが会いたがっているなら、元配偶者との交流を支える？"
+    },
+    {
+      "id": "caregiving-002",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "work"
+      ],
+      "question": "いつ分担を変えてほしいと伝える？伝えても応じない場合はどうする？"
+    },
+    {
+      "id": "caregiving-003",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "work"
+      ],
+      "question": "仕事がかなり忙しかったら、家事や育児を相手にほとんど任せても仕方ない？"
+    },
+    {
+      "id": "work-001",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "care",
+        "work"
+      ],
+      "question": "あなたなら会社に何を求める？"
+    },
+    {
+      "id": "work-002",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "care",
+        "work"
+      ],
+      "question": "自分が上司なら、半年後から育児休業に入る部下に、一年間のプロジェクトの責任者を任せる？途中で引き継ぐ必要があっても？"
+    },
+    {
+      "id": "relationship-006",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "結婚を考えていた相手に妻や夫、子どもがいると分かったら許せる？"
+    },
+    {
+      "id": "relationship-007",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "既婚なのに独身だと偽って付き合っていたら、いつ本当のことを話す？"
+    },
+    {
+      "id": "caregiving-005",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "自分の介護のために子どもが仕事を辞めると言ったら、受け入れる？"
+    },
+    {
+      "id": "work-003",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "家族を養っているときに突然仕事を失ったら、どうする？"
+    },
+    {
+      "id": "work-004",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "会社を守るためなら、長年働いた人を解雇できる？"
+    },
+    {
+      "id": "relationship-008",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "配偶者の不倫を知ったら、関係を続けられる？"
+    },
+    {
+      "id": "relationship-009",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "自分が一度だけ浮気してしまったら、相手に話す？"
+    },
+    {
+      "id": "workplace-001",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "bullying",
+        "work"
+      ],
+      "question": "あなたなら、今の仕事を辞めるかどうかを何を基準に決める？"
+    },
+    {
+      "id": "workplace-002",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "bullying",
+        "work"
+      ],
+      "question": "仕事を教えるつもりだったとき、部下の指摘にどう対応する？"
+    },
+    {
+      "id": "workplace-003",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "bullying",
+        "work",
+        "sexuality"
+      ],
+      "question": "嫌だった性的な質問を「冗談だった」と説明されたら、許せる？"
+    },
+    {
+      "id": "workplace-004",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "bullying",
+        "work",
+        "sexuality"
+      ],
+      "question": "冗談のつもりで聞いたことが相手を傷つけたと分かったら、どう対応する？"
+    },
+    {
+      "id": "family-law-006",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "離婚後、相手が養育費を払わなくなったらどうする？"
+    },
+    {
+      "id": "family-law-007",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "子どもに会えなくても、養育費を払い続けるべきだと思う？"
+    },
+    {
+      "id": "caregiving-006",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "仕事を辞めるか、働き方や介護の分担を変えるかを、何を基準に決める？"
+    },
+    {
+      "id": "caregiving-007",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "兄弟が親の介護をしてくれているなら、自分は任せたままでもいい？"
+    },
+    {
+      "id": "social-media-001",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "bullying",
+        "technology",
+        "media"
+      ],
+      "question": "SNSで大量に批判されたら、アカウントを消す？"
+    },
+    {
+      "id": "social-media-002",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "bullying",
+        "technology",
+        "media"
+      ],
+      "question": "自分も問題だと思ったら、投稿を引用して批判や拡散に参加する？"
+    },
+    {
+      "id": "traffic-001",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "交通事故で足に後遺症が残り、以前の仕事を続けられなくなった。事故を起こした相手を許せる？"
+    },
+    {
+      "id": "traffic-002",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "自分の不注意で歩行者をはね、相手に歩行の障害が残った。謝罪や補償に加え、その後の生活でどう責任に向き合う？"
+    },
+    {
+      "id": "family-001",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "親から何年も、失敗するたびに人格を否定する言葉を浴びせられてきた。大人になり別々に暮らせるようになったら、親との連絡を断つ？"
+    },
+    {
+      "id": "family-002",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "育児に追い詰められて、子どもに強く当たっていると気づいたらどうする？"
+    },
+    {
+      "id": "finance-001",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "同居する家族が、家族に隠して300万円の借金をしていた。返済を助けると自分の生活費や貯金が足りなくなっても、一緒に返す？"
+    },
+    {
+      "id": "finance-002",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "返せないと分かっていても、生活のためならさらに借りる？"
+    },
+    {
+      "id": "workplace-005",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "bullying",
+        "work"
+      ],
+      "question": "自分だけ仕事に必要な情報を受け取れていないと感じたら、誰かに相談する？相談するなら、誰に何を伝える？"
+    },
+    {
+      "id": "workplace-006",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "bullying",
+        "work"
+      ],
+      "question": "理由が分からないままでも、周囲に合わせてその同僚への連絡を避ける？"
+    },
+    {
+      "id": "relationship-010",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "他に好きな人ができたから別れるのは、悪いことだと思う？"
+    },
+    {
+      "id": "relationship-011",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "自分に他に好きな人ができたら、今の恋人と別れる？"
+    },
+    {
+      "id": "relationship-012",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人から「他に好きな人ができた」と別れを告げられたら、相手を責める？"
+    },
+    {
+      "id": "youth-pregnancy-001",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "sexuality"
+      ],
+      "question": "断ったら嫌われそうで怖いとき、誰にどんな支えを求めたい？"
+    },
+    {
+      "id": "youth-pregnancy-002",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship"
+      ],
+      "question": "周りの意見と自分の気持ちが違うとき、何を基準に決めたい？"
+    },
+    {
+      "id": "youth-pregnancy-003",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "sexuality"
+      ],
+      "question": "どんな伝え方や状況なら話しやすいと思う？"
+    },
+    {
+      "id": "youth-pregnancy-004",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "自分がYESと言ったなら、それだけで対等な同意だと思う？"
+    },
+    {
+      "id": "youth-pregnancy-005",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "「自分たちは大丈夫」という感覚と妊娠の可能性についての知識が食い違うとき、どう行動する？"
+    },
+    {
+      "id": "youth-pregnancy-006",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "sexuality"
+      ],
+      "question": "誰にも言わずにいたくなると思う？"
+    },
+    {
+      "id": "youth-pregnancy-007",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "交際相手が妊娠したとき、自分の身体に起きていなくても、どんな責任を負うべき？"
+    },
+    {
+      "id": "youth-pregnancy-008",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship"
+      ],
+      "question": "親友との約束を守ることと、安全のために信頼できる大人へ相談することをどう両立する？"
+    },
+    {
+      "id": "youth-pregnancy-009",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "相手から連絡が来ないとき、誰に助けを求めたい？"
+    },
+    {
+      "id": "youth-pregnancy-010",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "相手に責任を求め続ける？"
+    },
+    {
+      "id": "youth-pregnancy-011",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "その気持ちがある中で、まずどんな行動を取る？"
+    },
+    {
+      "id": "youth-pregnancy-012",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship"
+      ],
+      "question": "親友から『誰にも言わないで』と言われたら、どこまで約束を守る？"
+    },
+    {
+      "id": "youth-pregnancy-013",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "family"
+      ],
+      "question": "あなたなら、まず誰に何を相談して話し合いを進める？"
+    },
+    {
+      "id": "youth-pregnancy-014",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "sexuality"
+      ],
+      "question": "確かめることを先延ばしにしてしまうと思う？"
+    },
+    {
+      "id": "youth-pregnancy-015",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "family"
+      ],
+      "question": "でも親を失望させるくらいなら、できるだけ隠していたいと思う？"
+    },
+    {
+      "id": "youth-pregnancy-016",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "family"
+      ],
+      "question": "きょうだいに相談するとき、親には言わないでと約束させる？"
+    },
+    {
+      "id": "youth-pregnancy-017",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "family"
+      ],
+      "question": "そのあと親が謝ってきても、もう一度頼れると思う？"
+    },
+    {
+      "id": "youth-pregnancy-018",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "family"
+      ],
+      "question": "中絶を望む親に、出産したいという自分の希望をどう伝える？"
+    },
+    {
+      "id": "youth-pregnancy-019",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "中絶を望む自分と出産を望む交際相手で意見が違うとき、相手の希望を自分の判断にどこまで反映する？"
+    },
+    {
+      "id": "youth-pregnancy-020",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "相手が自分と違う選択をしても、通院の付き添いや費用の分担など、自分にできる支えを話し合える？"
+    },
+    {
+      "id": "youth-pregnancy-021",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "学び続けるために先生へ妊娠を伝えて相談するか、何を確かめてから決めたい？"
+    },
+    {
+      "id": "youth-pregnancy-022",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "周囲から『今は学校より自分の生活を優先した方がいい』と言われても、卒業まで通い続けたいと思う？"
+    },
+    {
+      "id": "youth-pregnancy-023",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship",
+        "care",
+        "disability"
+      ],
+      "question": "同級生が学び続けることと、共同課題の作業を分け合うことをどう両立する？"
+    },
+    {
+      "id": "youth-pregnancy-024",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying",
+        "media"
+      ],
+      "question": "退学するという噂を訂正するためでも、妊娠や通院について周囲に説明する必要があると思う？"
+    },
+    {
+      "id": "youth-pregnancy-025",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship"
+      ],
+      "question": "それでも理由を聞きたいと思う？"
+    },
+    {
+      "id": "youth-pregnancy-026",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship"
+      ],
+      "question": "どこまで友達として支え続ける？"
+    },
+    {
+      "id": "youth-pregnancy-027",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "受験を来年にするよう勧められても、今年の受験を目指し続けたい？"
+    },
+    {
+      "id": "youth-pregnancy-028",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "相手と担う責任と、自分が守りたい将来をどう考える？"
+    },
+    {
+      "id": "youth-pregnancy-029",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "それを見ても、相手を責めずにいられると思う？"
+    },
+    {
+      "id": "youth-pregnancy-030",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "もう一度信頼できる？"
+    },
+    {
+      "id": "youth-pregnancy-031",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship"
+      ],
+      "question": "連絡を無視する友達に、妊娠を伝えた相手と向き合うよう勧める？どう伝える？"
+    },
+    {
+      "id": "youth-pregnancy-032",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "family"
+      ],
+      "question": "親として、関わりたくないと言う子どもに、相手と向き合うよう求める？"
+    },
+    {
+      "id": "youth-pregnancy-033",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "family"
+      ],
+      "question": "相手への怒りを感じても、子どもに必要な支援をどう確かめる？"
+    },
+    {
+      "id": "youth-pregnancy-034",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "本人の希望と必要な支援を踏まえ、誰に何を共有するかをどう決める？"
+    },
+    {
+      "id": "youth-pregnancy-035",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "bullying",
+        "friendship",
+        "media"
+      ],
+      "question": "本人に確かめたくなっても、聞かずにいられる？"
+    },
+    {
+      "id": "youth-pregnancy-036",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "妊娠したことを振り返るとき、自分を責め続けずに考えるにはどうしたらいい？"
+    },
+    {
+      "id": "youth-pregnancy-037",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "friendship"
+      ],
+      "question": "一緒に対応してきた経験のあとも、相手と以前と同じように付き合い続けたいと思う？"
+    },
+    {
+      "id": "youth-pregnancy-038",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "その考えをどこまで変えられる？"
+    },
+    {
+      "id": "disability-001",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "family",
+        "care",
+        "health"
+      ],
+      "question": "進学先や働く場所など、自分の暮らしの選択にも影響するとして、きょうだいとの同居と毎日の手助けを引き受ける？"
+    },
+    {
+      "id": "disability-002",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "family",
+        "health",
+        "disability"
+      ],
+      "question": "本人が一人暮らしを始めるために、どんな支援を整えればよいと思う？"
+    },
+    {
+      "id": "disability-003",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "care",
+        "health",
+        "disability"
+      ],
+      "question": "学び続けるために、音声教材を用意してほしいと求める？ほかの方法も一緒に探す？"
+    },
+    {
+      "id": "disability-004",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "friendship",
+        "care",
+        "health",
+        "disability"
+      ],
+      "question": "全員が参加できることと、行事で楽しみにしていたことを、どう両立させたい？"
+    },
+    {
+      "id": "disability-005",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "family",
+        "health",
+        "disability"
+      ],
+      "question": "それでも採用する？"
+    },
+    {
+      "id": "disability-006",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "health",
+        "disability"
+      ],
+      "question": "教材や試験の受け方について相談するために、障害と困り事を担当者に伝える？"
+    },
+    {
+      "id": "disability-007",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "family",
+        "health"
+      ],
+      "question": "家族以外の支援に慣れてもらうために、本人が嫌がっていても施設への宿泊を始める？"
+    },
+    {
+      "id": "disability-008",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "family",
+        "health"
+      ],
+      "question": "どんな情報や支えを踏まえて、自分の希望を考えたい？"
+    },
+    {
+      "id": "disability-009",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "今後の仕事や暮らしを考えるとき、その子への支援と、家族それぞれの希望をどう調整したい？"
+    },
+    {
+      "id": "disability-010",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "health",
+        "disability"
+      ],
+      "question": "周囲から『治せるなら治した方がいい』と言われたら、どう思う？"
+    },
+    {
+      "id": "children-001",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care",
+        "money"
+      ],
+      "question": "家族の生活と進学の希望について、どんな選択肢を調べ、何を優先して決めたい？"
+    },
+    {
+      "id": "children-002",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "弟妹の世話や親の仕事をどこまで手伝うか、親にどう希望を伝える？"
+    },
+    {
+      "id": "children-003",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "親を失望させても自分の道を選べる？"
+    },
+    {
+      "id": "children-004",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "privacy"
+      ],
+      "question": "子どもとの信頼を損ない、相談されなくなるかもしれなくても、無断でスマホを確認する？"
+    },
+    {
+      "id": "children-005",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "bullying",
+        "family"
+      ],
+      "question": "被害を止める対応と、自分の子どもへの支援を、親としてどう進める？"
+    },
+    {
+      "id": "children-006",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "bullying",
+        "friendship",
+        "family"
+      ],
+      "question": "親友に嫌われても、大人に相談できる？"
+    },
+    {
+      "id": "children-007",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "失敗すれば何年も立て直せないかもしれないと分かっていても、『あなたの人生だから』と任せられる？"
+    },
+    {
+      "id": "children-008",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "家族が困るかもしれなくても、信頼できる大人に秘密を相談する？"
+    },
+    {
+      "id": "children-009",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family"
+      ],
+      "question": "自分の希望を言える？"
+    },
+    {
+      "id": "children-010",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "privacy"
+      ],
+      "question": "それでも監視をやめてほしいと言える？"
+    },
+    {
+      "id": "elderly-001",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "それでも、安全のために運転をやめられる？"
+    },
+    {
+      "id": "elderly-002",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "それでも免許を返してほしいと言える？"
+    },
+    {
+      "id": "elderly-003",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "子どもが「大丈夫」と言う場合、あなたの希望と子どもの負担をどう考える？"
+    },
+    {
+      "id": "elderly-004",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "親から昔たくさん支えてもらったとしても、自分の人生を優先できる？"
+    },
+    {
+      "id": "elderly-005",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care",
+        "money",
+        "disability"
+      ],
+      "question": "将来の生活費を守るためなら、本人のお金を家族が管理する？"
+    },
+    {
+      "id": "elderly-006",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "friendship",
+        "family",
+        "care",
+        "disability"
+      ],
+      "question": "それでも『親だから』会い続けられる？"
+    },
+    {
+      "id": "elderly-007",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "それでも『もっと来てほしい』と言える？"
+    },
+    {
+      "id": "elderly-008",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care",
+        "romance"
+      ],
+      "question": "その結婚で将来の相続や家族関係が大きく変わると分かっていても、『親の人生だから』と心から応援できる？"
+    },
+    {
+      "id": "elderly-009",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care",
+        "money"
+      ],
+      "question": "自分の相続がほとんどなくなっても、『親のお金だから自由だ』と言える？"
+    },
+    {
+      "id": "elderly-010",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care"
+      ],
+      "question": "離れて暮らす子どもに負担をかけても、一人暮らしを続けたい？"
+    },
+    {
+      "id": "relationship-101",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family",
+        "romance"
+      ],
+      "question": "家族と疎遠になるおそれがあっても、反対する家族より結婚したい相手を選ぶ？"
+    },
+    {
+      "id": "relationship-102",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance",
+        "money"
+      ],
+      "question": "それでも結婚を考えられる？"
+    },
+    {
+      "id": "relationship-103",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family",
+        "romance"
+      ],
+      "question": "どちらも考えを変えるつもりがないなら、愛情だけで結婚できる？"
+    },
+    {
+      "id": "relationship-104",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "care",
+        "romance"
+      ],
+      "question": "相手の夢を応援したいと思っていても、自分のキャリアを手放せる？"
+    },
+    {
+      "id": "relationship-105",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "家事や生活費まで完全に半分ずつにすることを、今までと同じように公平だと思える？"
+    },
+    {
+      "id": "relationship-106",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family",
+        "care",
+        "romance"
+      ],
+      "question": "結婚相手の親の通院や食事の手助けを、毎週末、自分も担うべきだと思う？"
+    },
+    {
+      "id": "relationship-107",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "自分にとっても今の名字が大切なら、どこまで相手の希望を受け入れられる？"
+    },
+    {
+      "id": "relationship-108",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "結婚式の準備が進んでいても、結婚に迷ったら立ち止まる？"
+    },
+    {
+      "id": "relationship-109",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "子どものためなら、夫婦関係を続けるべきだと思う？"
+    },
+    {
+      "id": "relationship-110",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family",
+        "money"
+      ],
+      "question": "それでも離婚を選べる？"
+    },
+    {
+      "id": "relationship-111",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "元配偶者が変わったと知って後悔したとき、当時の離婚の決断をどう考え直す？"
+    },
+    {
+      "id": "relationship-112",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "親を失望させても、自分の結婚を自分で終わらせられる？"
+    },
+    {
+      "id": "relationship-113",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "子どもが一緒に暮らしたくないなら、新しい恋人との同居を待つ？"
+    },
+    {
+      "id": "relationship-114",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "元配偶者との関わりを減らしてほしいという恋人の希望を、どこまで聞く？"
+    },
+    {
+      "id": "relationship-115",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "結婚が続かなかったとしても、離婚を人生の失敗だと思わずにいられる？"
+    },
+    {
+      "id": "relationship-116",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "それでも、一度終わらせると決めた関係から離れ続けられる？"
+    },
+    {
+      "id": "relationship-117",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "privacy"
+      ],
+      "question": "自分には隠したいことがなくても、常に居場所を知られる関係を受け入れられる？"
+    },
+    {
+      "id": "relationship-118",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "恋人の不安を減らすために、その友人との関係を変えられる？"
+    },
+    {
+      "id": "relationship-119",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "相手が本気で不安になっていると分かっていても、自分の服装を変えずにいられる？"
+    },
+    {
+      "id": "relationship-120",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "スマホのパスワードを教えないことは、恋人を信頼していないという意味だと思う？"
+    },
+    {
+      "id": "relationship-121",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "恋人を安心させるために、友達や勉強よりすぐの返信を優先し続ける？"
+    },
+    {
+      "id": "relationship-122",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "それでも『愛されている証拠』だと思える？"
+    },
+    {
+      "id": "relationship-123",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "『やめてほしい』と伝えることと、相手を束縛することの境界をどこに置く？"
+    },
+    {
+      "id": "relationship-124",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "位置情報の共有や友人との交流制限を、二人が納得して決めたなら問題ないと思う？自分は続けられる？"
+    },
+    {
+      "id": "relationship-125",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "過去に不倫した人でも、今の誠実さを見て信頼できる？"
+    },
+    {
+      "id": "relationship-126",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "それでも『相手のことを全部知りたい』と思う？"
+    },
+    {
+      "id": "relationship-127",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "今は同じことを繰り返さないと決めていても、結婚前には伝えるべきだと思う？"
+    },
+    {
+      "id": "relationship-128",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "crime"
+      ],
+      "question": "刑罰を終え、長年まじめに暮らしている人と結婚できる？"
+    },
+    {
+      "id": "relationship-129",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "その事実だけで、恋人や友人との今の関係は変わる？"
+    },
+    {
+      "id": "relationship-130",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "恋人が嘘をついたことと、今正直に話したことのどちらを重く見る？"
+    },
+    {
+      "id": "relationship-131",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "media",
+        "culture"
+      ],
+      "question": "それでも過去の言葉を気にする？"
+    },
+    {
+      "id": "relationship-132",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "恋人が「前の相手が人生で一番好きだったかもしれない」と言っても、今あなたを選んでいるなら気にならない？"
+    },
+    {
+      "id": "relationship-133",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "politics",
+        "values"
+      ],
+      "question": "日常生活では問題がなくても、その人と将来を築ける？"
+    },
+    {
+      "id": "relationship-134",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "money",
+        "values"
+      ],
+      "question": "結婚後も変わらないとしたら、その違いを受け入れられる？"
+    },
+    {
+      "id": "relationship-135",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family",
+        "values"
+      ],
+      "question": "この違いを愛情だけで埋められると思う？"
+    },
+    {
+      "id": "relationship-136",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "values"
+      ],
+      "question": "男女の役割について考えが大きく違っていても、結婚生活を続けられる？"
+    },
+    {
+      "id": "relationship-137",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "culture",
+        "values"
+      ],
+      "question": "結婚生活や子育てに、相手の信仰をどこまで取り入れられる？"
+    },
+    {
+      "id": "relationship-138",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family",
+        "values"
+      ],
+      "question": "まだ子どもがいなくても、その違いを結婚の判断材料にする？"
+    },
+    {
+      "id": "relationship-139",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "values"
+      ],
+      "question": "恋人との関係を守るために、自分の考えを変えて味方をする？"
+    },
+    {
+      "id": "relationship-140",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "values"
+      ],
+      "question": "昔好きだった相手への気持ちだけで、今の関係を続けられる？"
+    },
+    {
+      "id": "relationship-141",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "自分の嫉妬のために、相手の大切な友情を変えてほしいと言える？"
+    },
+    {
+      "id": "relationship-142",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "その関係をやめてほしいと求める？"
+    },
+    {
+      "id": "relationship-143",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "聞かなければ苦しまなかったと分かっても、それでも相手の過去をもっと知りたい？"
+    },
+    {
+      "id": "relationship-144",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "そんな嫉妬を恋人に正直に話せる？"
+    },
+    {
+      "id": "relationship-145",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人に態度を変えてほしいと思う？"
+    },
+    {
+      "id": "relationship-146",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance",
+        "media"
+      ],
+      "question": "恋人自身は何も悪いことをしていなくても、その交流を減らしてほしいと思う？"
+    },
+    {
+      "id": "relationship-147",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "『恋人なら一番でいてほしい』と思う気持ちを、どこまで相手に求める？"
+    },
+    {
+      "id": "relationship-148",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "自分でも矛盾していると分かっていたら、その感情をどう扱う？"
+    },
+    {
+      "id": "relationship-149",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "正直に話してくれたことを、信頼の証として受け止められる？"
+    },
+    {
+      "id": "relationship-150",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人を疑う理由がないのに不安が消えないとき、安心するために何を求めたい？"
+    },
+    {
+      "id": "relationship-151",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance",
+        "culture"
+      ],
+      "question": "『過去まで消してほしいとは言えない』と思いながらも苦しいとしたら、その思い出を受け入れられる？"
+    },
+    {
+      "id": "relationship-152",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "相手が変わっても、自分が信じられないなら関係を続けられる？"
+    },
+    {
+      "id": "relationship-153",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "悪いことを隠しているわけではなくても、自分だけの秘密を持ち続けたいと思う？"
+    },
+    {
+      "id": "relationship-154",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "無断でスマホを見た責任を認めたうえで、別の人とも交際していたことについて説明を求める？"
+    },
+    {
+      "id": "relationship-155",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "親友との約束を守る？それとも、恋人が今後の仕事に備えられるように伝える？"
+    },
+    {
+      "id": "relationship-156",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "money"
+      ],
+      "question": "借金そのものより『隠されていたこと』の方を重く感じる？"
+    },
+    {
+      "id": "relationship-157",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family",
+        "money"
+      ],
+      "question": "引っ越し資金が貯まらず困っていても、結婚相手の親への援助について自分の家族には相談しない？"
+    },
+    {
+      "id": "relationship-158",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "今のあなたには誠実に接しているとして、その過去と、伝えなかったことをどう受け止める？"
+    },
+    {
+      "id": "relationship-159",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "結婚の話が出るまで、子どもがいることを話していなかった恋人を、どう受け止める？"
+    },
+    {
+      "id": "relationship-160",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "health"
+      ],
+      "question": "二人の生活に関わる健康情報を長く隠していた恋人に、もっと早く話してほしかったと思う？"
+    },
+    {
+      "id": "relationship-161",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "health"
+      ],
+      "question": "将来の子どもに関わる遺伝の情報を、結婚相手に伝える義務があると思う？"
+    },
+    {
+      "id": "relationship-162",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "親友の恋人の浮気を知ったら、親友に伝える？"
+    },
+    {
+      "id": "relationship-163",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "それでも真実を話す？"
+    },
+    {
+      "id": "relationship-164",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "二人の生活に影響しない過去のことも、恋人にすべて話すべきだと思う？"
+    },
+    {
+      "id": "relationship-165",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "この事実を恋人に伝える？"
+    },
+    {
+      "id": "relationship-166",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "書いてあった内容が相手を傷つけたとして、謝るべきなのはどちらだと思う？"
+    },
+    {
+      "id": "relationship-167",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "family"
+      ],
+      "question": "家族が恋人を嫌っていても、そのことを恋人に隠し続けるのは誠実だと思う？"
+    },
+    {
+      "id": "relationship-168",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "夢そのものより、何年も相談されなかったことを裏切りだと感じる？"
+    },
+    {
+      "id": "relationship-169",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "現在あなたを愛していることに疑いがなくても、それを残してほしくないと思う？"
+    },
+    {
+      "id": "relationship-170",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship"
+      ],
+      "question": "知らなければ今の暮らしが変わらなくても、恋人の秘密を確かめたい？"
+    },
+    {
+      "id": "relationship-290",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋愛感情がないことを伝えずに付き合い続けた相手を許せる？"
+    },
+    {
+      "id": "social-media-003",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology"
+      ],
+      "question": "この扱いの差は公平だと思う？"
+    },
+    {
+      "id": "stigma-001",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "「弱者男性」という言葉は困難を伝えるのに役立つ？それとも人を見下す呼び方になる？"
+    },
+    {
+      "id": "stigma-002",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "family",
+        "gender"
+      ],
+      "question": "仕事の負担を減らすため、同僚と職場のそれぞれに何を求める？"
+    },
+    {
+      "id": "stigma-003",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "「境界知能」を悪口に使うことは、単に「バカ」と言うより問題だと思う？"
+    },
+    {
+      "id": "stigma-004",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "care",
+        "gender"
+      ],
+      "question": "行動への批判に年齢を表す言葉を加えることを、どう考える？"
+    },
+    {
+      "id": "stigma-005",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "辞めた社員の例だけで、新しく応募した若い人を不採用にしてよいと思う？"
+    },
+    {
+      "id": "stigma-006",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "family",
+        "gender"
+      ],
+      "question": "大人が親と暮らしているだけで、自立していないと決めつけてよい？"
+    },
+    {
+      "id": "stigma-007",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "family",
+        "gender"
+      ],
+      "question": "「親ガチャ」という言葉は、家庭の事情で進学先が限られた経験を伝えるのに役立つ？その後の選択にはどう影響する？"
+    },
+    {
+      "id": "stigma-008",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "友達の人数だけで、仕事で協力する力を判断してよいと思う？"
+    },
+    {
+      "id": "stigma-009",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender",
+        "values"
+      ],
+      "question": "本人が使っていた言葉なら、他人も同じように呼んでよいと思う？"
+    },
+    {
+      "id": "stigma-010",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "侮辱を問題にする基準は、相手の属性によって変えてよいと思う？"
+    },
+    {
+      "id": "education-l4-001",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "work",
+        "technology"
+      ],
+      "question": "内容の理解を評価する課題で、提出後にAI利用を理由に減点されたら納得できる？"
+    },
+    {
+      "id": "school-001",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school"
+      ],
+      "question": "それでも、一部の生徒が守らない以上、全員からスマホを預かるのは仕方ないと思う？"
+    },
+    {
+      "id": "work-005",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "technology"
+      ],
+      "question": "あなたならAIを導入する？"
+    },
+    {
+      "id": "labor-001",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "最低賃金を上げて収入を増やすことと、店や雇用を守ることをどう両立させる？"
+    },
+    {
+      "id": "transport-001",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "care",
+        "politics"
+      ],
+      "question": "生活の移動手段がなくても、家族として運転をやめるよう強く求める？"
+    },
+    {
+      "id": "privacy-001",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "family",
+        "technology",
+        "privacy"
+      ],
+      "question": "家族は、安全のためなら本人の許可なく位置情報を確認してよいと思う？"
+    },
+    {
+      "id": "disaster-003",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "このような状況で、避難所はペットをどこで、どう受け入れるべき？"
+    },
+    {
+      "id": "consumer-001",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "民間の店なら、利用できない人が出ても完全キャッシュレスにしていいと思う？"
+    },
+    {
+      "id": "accessibility-001",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "care",
+        "health",
+        "disability"
+      ],
+      "question": "全員の結果を公平に評価できているかを考えるには、どんな条件を確かめたい？"
+    },
+    {
+      "id": "community-001",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "住民の生活を守るために、観光客を減らすべきだと思う？"
+    },
+    {
+      "id": "security-001",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "データが厳重に管理されるなら、安全のために街中で顔認証を使うことを受け入れられる？"
+    },
+    {
+      "id": "media-l4-001",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "売り物の食品を無断で開封して戻した人なら、名前や学校、勤務先をネットで晒してもよいと思う？"
+    },
+    {
+      "id": "disaster-010",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "privacy",
+        "politics",
+        "environment"
+      ],
+      "question": "あなたが決める立場なら、数百人の暖房を止めてでも、医療機器が必要な少数の人に電気を優先する？"
+    },
+    {
+      "id": "disaster-011",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "年齢、人数、逃げにくさ、救助を求めた時刻のうち、何を優先して避難の順番を決める？"
+    },
+    {
+      "id": "disaster-012",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "bullying",
+        "crime",
+        "politics",
+        "environment"
+      ],
+      "question": "確かな証拠がなくても、多くの人の不安を理由に、その人を避難所から追い出してよい？"
+    },
+    {
+      "id": "healthcare-010",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "health",
+        "privacy"
+      ],
+      "question": "治療の順番を、回復の見込み、先着順、年齢、家族への影響の何で決める？"
+    },
+    {
+      "id": "healthcare-011",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "health",
+        "technology"
+      ],
+      "question": "AIの結果を確かめるため、何を調べて追加検査を決める？"
+    },
+    {
+      "id": "healthcare-012",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "患者の秘密と、家族が早く検査を受ける機会のどちらを優先する？"
+    },
+    {
+      "id": "security-010",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "AIの予測が正確でも、その地域に警察や監視カメラを集中させてよい？"
+    },
+    {
+      "id": "security-011",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "顔認証の結果だけを根拠に、その人を逮捕したり取り調べたりしてよい？"
+    },
+    {
+      "id": "crime-010",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "犯罪をしていない人の行動を、将来事件を起こすという予測だけで制限してよい？"
+    },
+    {
+      "id": "ethics-l4-001",
+      "level": 4,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "ethics"
+      ],
+      "question": "関係ない人の個人情報を隠して、誰にどこまで知らせる？"
+    },
+    {
+      "id": "ethics-l4-002",
+      "level": 4,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "ethics"
+      ],
+      "question": "全員同じ確率の抽選と、必要性を見て順位をつける方法のどちらを選ぶ？"
+    },
+    {
+      "id": "ethics-l4-003",
+      "level": 4,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "crime",
+        "ethics"
+      ],
+      "question": "刑罰を終えて長年問題がなくても、過去の犯罪を理由に採用を断る？"
+    },
+    {
+      "id": "sexual-crime-001",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "相談が遅れたり、相手と連絡を続けたりした事情以外に、被害を確かめるため何を調べる？"
+    },
+    {
+      "id": "sexual-crime-002",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "時間や細かな点の食い違いを、被害の訴えを判断するときどこまで重く見る？"
+    },
+    {
+      "id": "sexual-crime-003",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "以前親しかったことだけで、その行為にも同意があったと考えてよい？"
+    },
+    {
+      "id": "sexual-crime-004",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "事実が確定する前でも、その演出担当者を稽古の指導から一時的に外す？"
+    },
+    {
+      "id": "sexual-crime-005",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "相談者の情報を守りながら、いつ外部の専門機関に相談する？"
+    },
+    {
+      "id": "sexual-crime-006",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "防犯の注意を伝えることと、被害者を責めることはどう違う？"
+    },
+    {
+      "id": "sexual-crime-007",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "被害を訴えた人を支えながら、訴えられた人を事実確認前に犯人扱いしないために、どんな対応が必要？"
+    },
+    {
+      "id": "sexual-crime-008",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "sexuality",
+        "crime"
+      ],
+      "question": "過去の性犯罪を理由に、採用を断る？"
+    },
+    {
+      "id": "sexual-crime-009",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "刑事裁判で有罪にするには「合理的な疑い」を残さない証明が必要です。説明が食い違うとき、裁判官なら何を確かめ、どんな思い込みを避ける？"
+    },
+    {
+      "id": "sexual-crime-010",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "証拠を集めにくくなっても、このような性犯罪には時効を設けない方が公平だと思う？"
+    },
+    {
+      "id": "sexual-crime-011",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "有罪が決まるまでは、逮捕された人の名前も匿名にするべき？"
+    },
+    {
+      "id": "sexual-crime-012",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "sexuality",
+        "crime"
+      ],
+      "question": "有罪となった人の氏名や住む地域を、地域の人に知らせる制度を支持する？"
+    },
+    {
+      "id": "sexual-crime-013",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "AIの判定だけで、その人の位置情報を常時確認し、夜間の外出を制限してよい？"
+    },
+    {
+      "id": "sexual-crime-014",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "本人が望まなくても、将来の被害を防ぐために情報を共有する？"
+    },
+    {
+      "id": "sexual-crime-015",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "school",
+        "crime"
+      ],
+      "question": "双方が学び続けられる場所や期間を、本人たちの希望も聞いてどう決める？"
+    },
+    {
+      "id": "sexual-crime-016",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "複数人の申告を判断材料にする前に、何を確かめる？"
+    },
+    {
+      "id": "sexual-crime-017",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "friendship",
+        "crime"
+      ],
+      "question": "事実が確定する前に、被害を訴えた人へどこまで謝る？"
+    },
+    {
+      "id": "ethics-sexual-crime-001",
+      "level": 4,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "crime",
+        "ethics"
+      ],
+      "question": "有罪と認める証拠が足りない事件を処罰するために、刑事裁判の基準を下げるべき？"
+    },
+    {
+      "id": "ethics-l4-004",
+      "level": 4,
+      "category": "ethics_and_decision_making",
+      "labels": [
+        "ethics"
+      ],
+      "question": "その原因が分かることで、本人に求める倫理的な責任は変わると思う？"
+    },
+    {
+      "id": "r6-01-01-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "それでも、外国から働く人を減らす政策を続けたい？"
+    },
+    {
+      "id": "r6-01-02-l4",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime",
+        "politics"
+      ],
+      "question": "疑う根拠のない外国人住民もいる中、外国人全員への警察の見回りを増やす案に賛成する？"
+    },
+    {
+      "id": "r6-01-03-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "本人が転職できないようにする制度を求める？"
+    },
+    {
+      "id": "r6-01-04-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "これまで税を払ってきたことを根拠に、日本人と同じ条件で生活費の給付を求める？"
+    },
+    {
+      "id": "r6-01-05-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "集計条件を省いて、目立つ結論を見出しに出してよいと思う？"
+    },
+    {
+      "id": "r6-01-06-l4",
+      "level": 4,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "あなたは、その多数決で建設を止められる制度を支持する？"
+    },
+    {
+      "id": "r6-01-07-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "地域の人から国内に残してほしいと言われても、その会社に売る？"
+    },
+    {
+      "id": "r6-02-01-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "修繕に使う収入が減っても、参拝者が静かに過ごせるよう撮影を制限する？"
+    },
+    {
+      "id": "r6-02-02-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "住民の生活を守る政策だと理解していても、補償なしで事業を終えることを受け入れる？"
+    },
+    {
+      "id": "r6-02-03-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "次に空室が出たら、観光客向けへ切り替える？"
+    },
+    {
+      "id": "r6-02-04-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "それでも参入に賛成する？"
+    },
+    {
+      "id": "r6-02-05-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "後から権利者が損害を訴える可能性があっても、行政が同意を待たずに解体することを求める？"
+    },
+    {
+      "id": "r6-03-01-l4",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "輸入品を安くする政策で職場の人が減るとしても、その政策を支持する？"
+    },
+    {
+      "id": "r6-03-02-l4",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "制度に合わせて働く時間を減らす？"
+    },
+    {
+      "id": "r6-03-03-l4",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "短期間で税率が戻る予定でも、家計支援のためなら減税を支持する？"
+    },
+    {
+      "id": "r6-03-04-l4",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work",
+        "money"
+      ],
+      "question": "自分が受け継ぐはずの家を手放すことになっても、相続税を増やして住宅支援に使う案を支持する？"
+    },
+    {
+      "id": "r6-04-01-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "money",
+        "politics"
+      ],
+      "question": "若い人の保険料を下げるために、自分の年金が減っても納得できる？"
+    },
+    {
+      "id": "r6-04-02-l4",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "money",
+        "health",
+        "politics"
+      ],
+      "question": "自分の医療費を抑えるため、自己負担の上限を今のままにしてほしいと求める？"
+    },
+    {
+      "id": "r6-04-03-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "money",
+        "politics"
+      ],
+      "question": "高齢者の通院送迎を減らしてでも、過去に不足した生活費の追加支援を先に行う？"
+    },
+    {
+      "id": "r6-04-04-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "money",
+        "politics"
+      ],
+      "question": "貯金などの額を基準に、公的支援を決める仕組みを支持できる？"
+    },
+    {
+      "id": "r6-04-05-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "money",
+        "politics"
+      ],
+      "question": "他に支援がない人がいても、利用者が少ない事業を廃止する？"
+    },
+    {
+      "id": "r6-04-06-l4",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "money",
+        "health",
+        "politics"
+      ],
+      "question": "家族全体が困窮する前に、本人を費用の安い施設へ移す？"
+    },
+    {
+      "id": "r6-04-07-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "money",
+        "politics"
+      ],
+      "question": "保険料の負担を増やす改革に賛成する？すぐ働く時間を増やせない人の保険料には、例外を設ける？"
+    },
+    {
+      "id": "r6-05-01-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "出生数が増えるか確かでなくても、子どもを持たない自分も増税を受け入れる？"
+    },
+    {
+      "id": "r6-05-02-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "自分の会社と従業員の仕事を守るために、補助の継続を求める？"
+    },
+    {
+      "id": "r6-05-03-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics"
+      ],
+      "question": "あなたなら移る？"
+    },
+    {
+      "id": "r6-06-01-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "工場閉鎖で今の仕事がなくなるおそれがあっても、温暖化を抑える政策を支持する？"
+    },
+    {
+      "id": "r6-06-02-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "外で待つ人がいても、新たな受け入れを止める？"
+    },
+    {
+      "id": "r6-06-03-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "事故がいつ起きるか分からなくても、今すぐ道路を通行止めにする？"
+    },
+    {
+      "id": "r6-06-04-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "参加者が希望していても中止する？"
+    },
+    {
+      "id": "r6-06-05-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "昔からの作物を公費で作り続ける？それとも、土地に合う作物へ自分の代で変える？"
+    },
+    {
+      "id": "r6-06-06-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "environment"
+      ],
+      "question": "読んでもらうために、危機を実際より強く見せる見出しを使う？"
+    },
+    {
+      "id": "r6-07-01-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "救助を急がせるために自分も拡散する？"
+    },
+    {
+      "id": "r6-07-02-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "主張の内容自体は変わらなくても、その支援を拒み、活動が縮小することを受け入れる？"
+    },
+    {
+      "id": "r6-07-03-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "多くの別々の人が支持しているように見せてでも、運営側のアカウントによる自動投稿を増やす？"
+    },
+    {
+      "id": "r6-07-04-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "あなたは自分の影響力を使って訂正を広める？"
+    },
+    {
+      "id": "r6-07-05-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "政策に都合のよい数字だけを選ばないため、統計と一緒に何を伝える？"
+    },
+    {
+      "id": "r6-07-06-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "見出しに性別を入れる？"
+    },
+    {
+      "id": "r6-07-07-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "media"
+      ],
+      "question": "注文が減って自分の生活に影響が出ても、この不安を表す投稿の撤回を求める？"
+    },
+    {
+      "id": "r6-08-01-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "誤解が残っても静かに削除を求める？それとも、自分から公表して反論する？"
+    },
+    {
+      "id": "r6-08-02-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "利用者が友人との約束よりAIとの会話を優先することがあっても、恋人のように話しかける機能を増やす？"
+    },
+    {
+      "id": "r6-08-03-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "AIが注文したことを理由に、取引先へ注文の取り消しを求める？"
+    },
+    {
+      "id": "r6-08-04-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "将来の患者のために提供する？"
+    },
+    {
+      "id": "r6-08-05-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "対価を受け取って利用を認める？"
+    },
+    {
+      "id": "r6-09-01-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "全利用者のメッセージの相手と日時の記録を、30日から2年間に延ばして保存することに賛成する？"
+    },
+    {
+      "id": "r6-09-02-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "誤って排除する危険を受け入れて審査を強める？"
+    },
+    {
+      "id": "r6-09-03-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "事実を伝える投稿でも、削除を求められたら応じる？"
+    },
+    {
+      "id": "r6-09-04-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "例外なく利用を禁止する制度を支持する？"
+    },
+    {
+      "id": "r6-09-05-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "不正の証拠として確かめにくくなっても、家族の住所や顔は隠して公開する？"
+    },
+    {
+      "id": "r6-09-06-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "作者への支払いを学校に求める？ 確認しなかった自分が負担する？"
+    },
+    {
+      "id": "r6-09-07-l4",
+      "level": 4,
+      "category": "technology_media_and_privacy",
+      "labels": [
+        "technology",
+        "privacy"
+      ],
+      "question": "通報だけでは動いてもらえないと感じても、公開を控える？"
+    },
+    {
+      "id": "r6-10-01-l4",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "法的な責任が確定していなくても、家族の貯金を使って友人の損失を補う？"
+    },
+    {
+      "id": "r6-10-02-l4",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "紹介料を伏せることは、嘘の効果を宣伝していなくても裏切りだと思う？"
+    },
+    {
+      "id": "r6-10-03-l4",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "知人の損失を自分の貯金から補う？"
+    },
+    {
+      "id": "r6-10-04-l4",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "家族の刑の重さに、応募時の意思と、その後の脅迫をどう反映する？"
+    },
+    {
+      "id": "r6-10-05-l4",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "家族の家賃の支払いに間に合わせるため、確認が終わる前に送金してほしいと銀行に例外を求める？それとも家主に支払いの延期を頼む？"
+    },
+    {
+      "id": "r6-10-06-l4",
+      "level": 4,
+      "category": "justice_safety_and_crime",
+      "labels": [
+        "crime"
+      ],
+      "question": "本当の市場価値を伝えて買値を上げる？"
+    },
+    {
+      "id": "r6-11-01-l4",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "ハラスメントだと受け取られる不安があっても、その部下への助言や練習の機会を、ほかの部下と同じように設ける？"
+    },
+    {
+      "id": "r6-11-02-l4",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "下請け会社が代金の値下げに同意したなら、自社の雇用を守るため受け入れる？"
+    },
+    {
+      "id": "r6-11-03-l4",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "自分の未払分を全額請求する？"
+    },
+    {
+      "id": "r6-11-04-l4",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "景気が悪いときも、過去に仕事の機会を得にくかった人を採用基準で優先する？"
+    },
+    {
+      "id": "r6-11-05-l4",
+      "level": 4,
+      "category": "work_and_economy",
+      "labels": [
+        "work"
+      ],
+      "question": "調査の詳細を公表しないと隠蔽と疑われても、相談者の私生活を守るため公表を控える？"
+    },
+    {
+      "id": "r6-12-01-l4",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "care",
+        "money"
+      ],
+      "question": "支援が減らないよう、交際相手との同居を遅らせる？"
+    },
+    {
+      "id": "r6-12-02-l4",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care",
+        "money"
+      ],
+      "question": "学校への責任追及と、別の学ぶ場所を探すことのどちらに、限られた時間とお金を使う？"
+    },
+    {
+      "id": "r6-12-03-l4",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care",
+        "money"
+      ],
+      "question": "点数が低くても、所得の低い家庭向けの枠で合格した人がいたら、その制度を公平だと思う？"
+    },
+    {
+      "id": "r6-12-04-l4",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care",
+        "money"
+      ],
+      "question": "代わりの通学に高い費用がかかっても、安全のため子どもに自転車を使わせない？"
+    },
+    {
+      "id": "r6-12-05-l4",
+      "level": 4,
+      "category": "school_and_youth",
+      "labels": [
+        "student",
+        "school",
+        "care",
+        "money"
+      ],
+      "question": "学校名の公表を支持する？"
+    },
+    {
+      "id": "r6-13-01-l4",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "あなたが望んでいなくても、支援者が行政や支援機関に家庭の状況を伝えることを認める？"
+    },
+    {
+      "id": "r6-13-02-l4",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "本人が拒んでも、緊急の支援を求める？"
+    },
+    {
+      "id": "r6-13-03-l4-conv",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "支援が途切れる女性が出る可能性があっても、女性向け窓口を減らし男性向け窓口を増やす？"
+    },
+    {
+      "id": "r6-13-03-l4",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "今通っている女性の一部が相談を続けられなくなる可能性があっても、男性向けの相談窓口を新設する？"
+    },
+    {
+      "id": "r6-13-04-l4",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "支援する人を選ぶとき、困った理由で優先順位を変える？"
+    },
+    {
+      "id": "r6-13-05-l4",
+      "level": 4,
+      "category": "health_and_disability",
+      "labels": [
+        "health"
+      ],
+      "question": "生活に困る程度が同じでも、借金をした理由によって支援の順番を変える？"
+    },
+    {
+      "id": "r6-14-01-l4",
+      "level": 4,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "家族として、本人が王位の継承を辞退することを支持する？"
+    },
+    {
+      "id": "r6-14-02-l4",
+      "level": 4,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "自分で用意した国旗を傷つけただけでも、刑罰を科すべきだと思う？"
+    },
+    {
+      "id": "r6-14-03-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "資金問題への責任を取らせるために、辞職を求める？"
+    },
+    {
+      "id": "r6-14-04-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "公約を取り下げた政党が合流しても、議席を返して選挙をやり直すべきだと思う？"
+    },
+    {
+      "id": "r6-14-05-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "国を守るためなら、その施設を地域に受け入れる？"
+    },
+    {
+      "id": "r6-14-06-l4",
+      "level": 4,
+      "category": "society_public_policy_and_environment",
+      "labels": [
+        "politics",
+        "culture"
+      ],
+      "question": "国が関係を続けていても、自治体として協力を打ち切る？"
+    },
+    {
+      "id": "r6-15-01-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "女性を増やすため、必要な技能を満たす男性候補者の採用を見送って募集を続ける？"
+    },
+    {
+      "id": "r6-15-02-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "自分が受験できない女子枠を、なくすよう求める？"
+    },
+    {
+      "id": "r6-15-03-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "自分の通勤が不便になっても、女性専用車両を増やすことに賛成する？"
+    },
+    {
+      "id": "r6-15-04-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "それでも料金を統一する？"
+    },
+    {
+      "id": "r6-15-05-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "女性向け採用枠で入った人だけ、昇進の評価を厳しくしてよいと思う？"
+    },
+    {
+      "id": "r6-15-06-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "収入が減っても、相手の希望に応じて働く時間を減らす？"
+    },
+    {
+      "id": "r6-15-07-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "この採用制度を続けるべきだと思う？"
+    },
+    {
+      "id": "r6-16-01-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "店を維持するために、人気のある人を表に出す配置を選ぶ？"
+    },
+    {
+      "id": "r6-16-02-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "同じ基準を全員に適用していると説明されても、利用するために提出する？"
+    },
+    {
+      "id": "r6-16-03-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "安全確認に協力する？それとも、性別で対応を変えないよう求める？"
+    },
+    {
+      "id": "r6-16-04-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "友人が望まず、知人には誰の話か分かる可能性があっても、名前を伏せてその被害経験をSNSで紹介する？"
+    },
+    {
+      "id": "r6-16-05-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "それでも仲間の発言を公に批判する？"
+    },
+    {
+      "id": "r6-16-06-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "自分への良い影響が大きくても、支持をやめる？"
+    },
+    {
+      "id": "r6-16-07-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "女性への敵意を示す人の参加を、支援が必要でも断る？"
+    },
+    {
+      "id": "r6-16-08-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "gender"
+      ],
+      "question": "性差別と認められなくても、性別にかかわらず希望する仕事を経験できるよう、配置の決め方を変えるよう求める？"
+    },
+    {
+      "id": "r6-17-01-l4",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "romance",
+        "work",
+        "sexuality"
+      ],
+      "question": "自分の名字を変えないために、結婚をやめる？"
+    },
+    {
+      "id": "r6-17-02-l4",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "romance",
+        "work",
+        "sexuality"
+      ],
+      "question": "子どもが会いたくないと言っていても、面会の手続きを続ける？それとも待つ？"
+    },
+    {
+      "id": "r6-17-03-l4",
+      "level": 4,
+      "category": "family_and_care",
+      "labels": [
+        "family",
+        "romance",
+        "work",
+        "sexuality"
+      ],
+      "question": "養育費を払わない親に支払いを促すため、子どもとの面会を止める？"
+    },
+    {
+      "id": "r6-17-04-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "romance",
+        "work",
+        "gender",
+        "sexuality"
+      ],
+      "question": "搾取を減らすことを目的とする案でも、性的なサービスを買う客への処罰に反対する？"
+    },
+    {
+      "id": "r6-17-05-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "romance",
+        "work",
+        "gender",
+        "sexuality"
+      ],
+      "question": "相手の条件に納得できなくても、過去の仕事を自分から伝えるべき？"
+    },
+    {
+      "id": "r6-17-06-l4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "romance",
+        "work",
+        "gender",
+        "sexuality"
+      ],
+      "question": "相手がお金がなければ自分を選ばないと感じても、金銭を渡して交際を続ける？"
+    },
+    {
+      "id": "r6-18-01-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "収入や外見を理由に何度も断られても、相手の好みとして受け入れられる？それとも、そうした選び方を社会の問題だと思う？"
+    },
+    {
+      "id": "r6-18-02-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "相手に恋愛感情はないと分かったとき、これまでの受取り方が不誠実だったと責める？"
+    },
+    {
+      "id": "r6-18-03-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "相手が別れたくなくて予定やお金をあなたに合わせているなら、「自分に合わせなくていい」と伝えるべき？"
+    },
+    {
+      "id": "r6-18-04-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "結婚しないことを理由に親の介護を主に担うよう期待されたら、引き受けるべきだと思う？"
+    },
+    {
+      "id": "r6-19-01-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "今回は活動を続けてほしいと思うなら、その判断の違いを認める？"
+    },
+    {
+      "id": "r6-19-02-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "今の生活を守るために不倫を続けるのは、自分への言い訳だと思う？"
+    },
+    {
+      "id": "r6-19-03-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "子どもに親の不倫が知られ続ける可能性があっても、その経緯を公に話す？"
+    },
+    {
+      "id": "r6-19-04-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "何もなかった場合の損失も引き受けて、事実を確かめる？"
+    },
+    {
+      "id": "r6-19-05-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "金額の配分を理由に愛情を疑われたら、その批判を受け入れる？"
+    },
+    {
+      "id": "r6-19-06-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "配偶者から関係をやめてほしいと言われたら応じる？"
+    },
+    {
+      "id": "r6-19-07-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "自分が苦しいことを理由に、二人の関係を終えてほしいと求める？"
+    },
+    {
+      "id": "r6-19-08-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "仕事の経験自体は受け入れられても、嘘を理由に関係を終える？"
+    },
+    {
+      "id": "r6-19-09-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "不倫をした配偶者を許せなくても、仕事や評判に影響する情報の公表を控える？"
+    },
+    {
+      "id": "r6-19-10-l4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "部下との交際を続けるなら、自分の昇進の機会を失っても、異動してその部下の評価担当を外れる？"
+    },
+    {
+      "id": "r6-20-04-l4",
+      "level": 4,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "推しに、自分の望まない活動方針を変えるよう求める？"
+    },
+    {
+      "id": "r6-20-05-l4",
+      "level": 4,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "私生活を守るため黙る？収入が減っても、ファンの期待はかなわないと伝える？"
+    },
+    {
+      "id": "r6-20-06-l4",
+      "level": 4,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "恋愛を望んでいなくても、将来出会いにくくなると言われたら、今から交際を始める？"
+    },
+    {
+      "id": "r6-20-07-l4",
+      "level": 4,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "その人が自分の大切な政策を撤回したとき、それまでの応援を無駄にしないために支持を続ける？"
+    },
+    {
+      "id": "r6-20-08-l4",
+      "level": 4,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "新しいファンが公演に来やすくなる代わりに、自分のチケット先行抽選の枠が減っても受け入れる？"
+    },
+    {
+      "id": "r6-20-09-l4",
+      "level": 4,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "明確なルール違反がなくても、出演者が恐れている常連客を入場禁止にする？"
+    },
+    {
+      "id": "r6-20-10-l4",
+      "level": 4,
+      "category": "culture_religion_and_history",
+      "labels": [
+        "romance",
+        "culture"
+      ],
+      "question": "契約した配信は続けても、個人的な返信や相談はやめてよい？"
+    },
+    {
+      "id": "FAN-J01-L4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "推しの話や課金を隠さず、今のまま続ける？それとも推しに使う時間を減らす？"
+    },
+    {
+      "id": "FAN-J02-L4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "「推しと恋人への気持ちは別」と言うだけで、推しを優先されているという恋人の不満に答えたことになる？"
+    },
+    {
+      "id": "FAN-C01-L4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "推しの方がかっこいい、または可愛いと思うと恋人に伝える？伝えても「別物だから」で済む？"
+    },
+    {
+      "id": "FAN-B01-L4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "romance",
+        "gender"
+      ],
+      "question": "彼女が彼氏に「推しの方がかっこいい」と言うのも、彼氏が彼女に「推しの方がかわいい」と言うのも、同じように受け入れる？違うならなぜ？"
+    },
+    {
+      "id": "FAN-B02-L4",
+      "level": 4,
+      "category": "gender_sexuality_and_identity",
+      "labels": [
+        "romance",
+        "gender"
+      ],
+      "question": "二つの相談に同じ基準で答える？片方だけに我慢や推し活をやめるよう勧める？"
+    },
+    {
+      "id": "FAN-G01-L4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "推し活を「疑似恋愛」と呼び、将来は恋人が必要だと言われたら、どう感じる？気になる点があれば、それは何？"
+    },
+    {
+      "id": "FAN-G02-L4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "恋人と推しのどちらが好きか、順位をつけて答える？恋人が、答えてくれないことを理由に別れを選ぶのは不当だと思う？"
+    },
+    {
+      "id": "FAN-G03-L4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "推しが結婚したとき、自分は相手にどんな約束や義務を期待していたと思う？"
+    },
+    {
+      "id": "FAN-G04-L4",
+      "level": 4,
+      "category": "relationships_and_communication",
+      "labels": [
+        "friendship",
+        "romance"
+      ],
+      "question": "推しが恋人を作らないことを、ファンへの配慮だと思う？"
+    }
+  ]
+}

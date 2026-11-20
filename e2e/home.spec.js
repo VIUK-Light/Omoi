@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('home opens category selection and enables the next step', async ({ page }) => {
+test('home opens mode selection and moves to level selection', async ({ page }) => {
   await page.goto('/');
 
   await expect(page).toHaveTitle(/Omoi/);
@@ -8,15 +8,25 @@ test('home opens category selection and enables the next step', async ({ page })
   await page.getByRole('link', { name: 'はじめる' }).click();
 
   await expect(page.getByRole('heading', { name: 'どんな話をしたい？' })).toBeVisible();
-  const nextButton = page.getByRole('button', { name: '次へ' });
-  await expect(nextButton).toBeDisabled();
+  const modeNext = page.getByRole('button', { name: '次へ' });
+  await expect(modeNext).toBeDisabled();
+  await expect(page.locator('input[name="mode"]')).toHaveCount(3);
+  await expect(page.locator('input[name="level"]')).toHaveCount(0);
+  await page.locator('label[for="modeAll"]').click();
+  await expect(modeNext).toBeEnabled();
+  await modeNext.click();
+
+  await expect(page).toHaveURL(/\/level-select\.html$/);
+  await expect(page.getByRole('heading', { name: '話の深さを選ぶ' })).toBeVisible();
+  const levelNext = page.getByRole('button', { name: '次へ' });
+  await expect(levelNext).toBeDisabled();
   await expect(page.locator('input[name="level"]')).toHaveCount(3);
   await expect(page.locator('#level1')).toHaveCount(0);
   await expect(page.locator('label[for="level2"]')).toContainText('level:低');
   await expect(page.locator('label[for="level3"]')).toContainText('level:中');
   await expect(page.locator('label[for="level4"]')).toContainText('level:高');
   await page.locator('label[for="level2"]').click();
-  await expect(nextButton).toBeEnabled();
+  await expect(levelNext).toBeEnabled();
 });
 
 test('theme can follow the device or be set manually across pages', async ({ page }) => {
