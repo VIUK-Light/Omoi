@@ -11,6 +11,7 @@ const questionPicker = document.getElementById("questionPicker");
 const questionPickerStatus = document.getElementById("questionPickerStatus");
 const questionPickerCount = document.getElementById("questionPickerCount");
 const questionSearch = document.getElementById("questionSearch");
+const questionCategoryFilter = document.getElementById("questionCategoryFilter");
 const showMoreQuestions = document.getElementById("showMoreQuestions");
 const selectedQuestionsCount = document.getElementById("selectedQuestionsCount");
 const selectedQuestionList = document.getElementById("selectedQuestionList");
@@ -95,6 +96,7 @@ let selectedLabels = new Set();
 let selectedQuestionIds = new Set();
 let visibleQuestionCount = pageSize;
 let selectedLevel = "all";
+let selectedCategoryFilter = "all";
 
 function createToken() {
     if (window.OmoiProgress?.createToken) {
@@ -157,6 +159,9 @@ function filteredQuestions() {
     const readingTerm = textToReading(rawTerm);
     const list = questions.filter(question => {
         if (selectedLevel !== "all" && String(question.level) !== selectedLevel) {
+            return false;
+        }
+        if (selectedCategoryFilter !== "all" && !question.labels.includes(selectedCategoryFilter)) {
             return false;
         }
         if (!term) return true;
@@ -565,6 +570,29 @@ function renderQuestionPicker() {
     }
 }
 
+function populateCategoryFilter() {
+    if (!questionCategoryFilter) return;
+    const previous = questionCategoryFilter.value || "all";
+    questionCategoryFilter.replaceChildren();
+
+    const allOption = document.createElement("option");
+    allOption.value = "all";
+    allOption.textContent = "すべてのカテゴリー";
+    questionCategoryFilter.append(allOption);
+
+    for (const label of topicLabels) {
+        const count = questions.filter(question => question.labels.includes(label.id)).length;
+        if (count === 0) continue;
+        const option = document.createElement("option");
+        option.value = label.id;
+        option.textContent = `${label.name}（${count}問）`;
+        questionCategoryFilter.append(option);
+    }
+
+    questionCategoryFilter.value = topicLabels.some(label => label.id === previous) ? previous : "all";
+    selectedCategoryFilter = questionCategoryFilter.value;
+}
+
 function populateLabels() {
     if (!labelList) return;
 
@@ -703,6 +731,7 @@ async function loadIndex() {
 
         hideError();
         populateLabels();
+        populateCategoryFilter();
         updateCustomUi();
         renderQuestionPicker();
     } catch (error) {
@@ -801,6 +830,14 @@ if (questionSearch) {
         renderQuestionPicker();
     });
     questionSearch.addEventListener("search", function () {
+        visibleQuestionCount = pageSize;
+        renderQuestionPicker();
+    });
+}
+
+if (questionCategoryFilter) {
+    questionCategoryFilter.addEventListener("change", function () {
+        selectedCategoryFilter = questionCategoryFilter.value || "all";
         visibleQuestionCount = pageSize;
         renderQuestionPicker();
     });

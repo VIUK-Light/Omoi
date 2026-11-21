@@ -732,6 +732,141 @@
     font-size: 12px;
 }
 
+/* カテゴリー内の問い */
+
+.label-card {
+    display: grid;
+    gap: 8px;
+}
+
+.label-card-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.label-expand {
+    align-self: start;
+    min-height: 32px;
+    padding: 0 2px;
+
+    border: 0;
+    background: transparent;
+    color: var(--omoi-link, #24566b);
+
+    font: inherit;
+    font-size: 12px;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.label-expand:hover,
+.label-expand:focus-visible {
+    color: var(--omoi-ink, #111);
+}
+
+.label-expand:focus-visible {
+    outline: 2px solid var(--omoi-focus, #24566b);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.label-question-panel {
+    padding: 8px 10px 10px;
+    border: 1px solid var(--omoi-divider, #e8e8e8);
+    border-radius: 10px;
+    background: var(--omoi-surface, #f7f7f7);
+}
+
+.label-question-list {
+    display: grid;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.label-question-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.label-question-pick {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.label-question-check {
+    display: grid;
+    place-items: center;
+    width: 20px;
+    height: 20px;
+    flex: none;
+
+    border: 1px solid var(--omoi-border, #b7b7b7);
+    border-radius: 6px;
+    background: var(--omoi-page, #fff);
+    color: transparent;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.label-question-pick input:checked + .label-question-check {
+    background: var(--omoi-accent, #24566b);
+    border-color: var(--omoi-accent, #24566b);
+    color: #fff;
+}
+
+.label-question-pick input:checked + .label-question-check::after {
+    content: "✓";
+}
+
+.label-question-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.label-question-text .level-badge {
+    flex: none;
+}
+
+/* カテゴリー絞り込み */
+
+.question-category-filter {
+    flex: 1;
+    min-width: 0;
+    min-height: 40px;
+    padding: 0 12px;
+
+    border: 1px solid var(--omoi-border, #b7b7b7);
+    border-radius: 10px;
+    background: var(--omoi-page, #fff);
+    color: var(--omoi-ink, #111);
+
+    font: inherit;
+    font-size: 13px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.question-category-filter:focus-visible {
+    outline: 2px solid var(--omoi-focus, #24566b);
+    outline-offset: 2px;
+}
+
 /* 検索結果 */
 
 .question-picker-status {
