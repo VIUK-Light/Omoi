@@ -28,6 +28,32 @@ test('the share button offers a link or a picture of the question', async ({ pag
     expect(file.readUInt32BE(20)).toBe(1620);
 });
 
+test('the share menu stays inside narrow and short viewports', async ({ page }) => {
+    for (const viewport of [
+        { width: 320, height: 480 },
+        { width: 844, height: 390 }
+    ]) {
+        await page.setViewportSize(viewport);
+        await page.goto('/question.html?level=2');
+        await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+
+        await page.locator('#shareButton').click();
+        const menuBox = await page.locator('#shareMenu').boundingBox();
+        expect(menuBox).not.toBeNull();
+        expect(menuBox.x).toBeGreaterThanOrEqual(0);
+        expect(menuBox.y).toBeGreaterThanOrEqual(0);
+        expect(menuBox.x + menuBox.width).toBeLessThanOrEqual(viewport.width);
+        expect(menuBox.y + menuBox.height).toBeLessThanOrEqual(viewport.height);
+        await expect(page.getByRole('menuitem', { name: 'リンクを共有' }))
+            .toBeInViewport({ ratio: 1 });
+        await expect(page.getByRole('menuitem', { name: '問いの画像を保存' }))
+            .toBeInViewport({ ratio: 1 });
+
+        await page.keyboard.press('Escape');
+        await expect(page.locator('#shareMenu')).toBeHidden();
+    }
+});
+
 test('the card shows the level name instead of the level number', async ({ page }) => {
     await page.goto('/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);

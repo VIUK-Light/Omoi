@@ -1189,12 +1189,73 @@ async function shareQuestionImage(question) {
 }
 
 
+const shareMenuGap = 8;
+const shareMenuMargin = 12;
+
+
+function positionShareMenu() {
+    if (!shareMenu || shareMenu.hidden) return;
+    if (typeof shareButton.getBoundingClientRect !== "function" ||
+        typeof shareMenu.getBoundingClientRect !== "function") {
+        return;
+    }
+
+    const buttonRect = shareButton.getBoundingClientRect();
+    const menuRect = shareMenu.getBoundingClientRect();
+    const viewportWidth =
+        document.documentElement?.clientWidth ||
+        window.innerWidth ||
+        0;
+    const viewportHeight =
+        document.documentElement?.clientHeight ||
+        window.innerHeight ||
+        0;
+
+    if (viewportWidth <= 0 || viewportHeight <= 0) return;
+
+    const menuWidth = menuRect.width;
+    const menuHeight = menuRect.height;
+    const maxLeft = Math.max(
+        shareMenuMargin,
+        viewportWidth - menuWidth - shareMenuMargin
+    );
+    const maxTop = Math.max(
+        shareMenuMargin,
+        viewportHeight - menuHeight - shareMenuMargin
+    );
+
+    // 右端をボタンに合わせ、入りきらない場合は左端合わせか画面内へ寄せる。
+    let left = buttonRect.right - menuWidth;
+    if (left < shareMenuMargin) {
+        left = buttonRect.left;
+    }
+    left = Math.min(Math.max(left, shareMenuMargin), maxLeft);
+
+    // 基本はボタンの上。上に余地がなければ下、それも無理なら画面内へ寄せる。
+    let top = buttonRect.top - menuHeight - shareMenuGap;
+    if (top < shareMenuMargin) {
+        const below = buttonRect.bottom + shareMenuGap;
+        top = below + menuHeight <= viewportHeight - shareMenuMargin
+            ? below
+            : maxTop;
+    }
+    top = Math.min(Math.max(top, shareMenuMargin), maxTop);
+
+    shareMenu.style.left = `${Math.round(left)}px`;
+    shareMenu.style.top = `${Math.round(top)}px`;
+}
+
+
 function setShareMenuOpen(isOpen) {
     if (!shareMenu) {
         return;
     }
     shareMenu.hidden = !isOpen;
     shareButton.setAttribute("aria-expanded", String(isOpen));
+    if (isOpen) {
+        positionShareMenu();
+        requestAnimationFrame(positionShareMenu);
+    }
 }
 
 
@@ -1254,6 +1315,9 @@ window.addEventListener(
     "resize",
     updateQuestionScrollState
 );
+
+window.addEventListener("resize", positionShareMenu);
+window.addEventListener("scroll", positionShareMenu, true);
 
 
 function goToNextQuestion() {

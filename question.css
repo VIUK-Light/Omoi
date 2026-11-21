@@ -427,14 +427,21 @@ body {
 }
 
 .share-menu {
-    position: absolute;
-    right: 0;
-    bottom: calc(100% + 8px);
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 30;
     display: grid;
-    min-width: 176px;
+    box-sizing: border-box;
+    width: max-content;
+    min-width: min(176px, calc(100vw - 24px));
+    max-width: calc(100vw - 24px);
+    max-height: calc(100vh - 24px);
+    max-height: calc(100dvh - 24px);
     gap: 2px;
     padding: 6px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     border: 1px solid var(--omoi-border, #b7b7b7);
     border-radius: 10px;
     background: var(--omoi-page, #ffffff);
@@ -446,7 +453,7 @@ body {
 .share-menu-item {
     display: flex;
     align-items: center;
-    min-height: 38px;
+    min-height: 44px;
     padding: 8px 10px;
     border: 0;
     border-radius: 6px;
