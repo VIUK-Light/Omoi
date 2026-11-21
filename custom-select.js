@@ -99,6 +99,7 @@ let visibleQuestionCount = pageSize;
 let selectedLevel = "all";
 let selectedCategoryFilter = "all";
 const editMode = new URLSearchParams(window.location.search).get("edit") === "1";
+const sessionTokenFromUrl = new URLSearchParams(window.location.search).get("session");
 
 function createToken() {
     if (window.OmoiProgress?.createToken) {
@@ -745,11 +746,27 @@ async function loadIndex() {
             if (!validLabelIds.has(id)) selectedLabels.delete(id);
         }
 
-        if (editMode && window.OmoiProgress) {
-            const saved = window.OmoiProgress.read();
-            if (saved && saved.mode === "custom") {
-                selectedLabels = new Set(Array.isArray(saved.labels) ? saved.labels : []);
-                selectedQuestionIds = new Set(Array.isArray(saved.selectedIds) ? saved.selectedIds : []);
+        if (window.OmoiProgress) {
+            let restored = false;
+            // セッショントークンがあれば omoi-selection から復元（確認画面からの編集）
+            if (sessionTokenFromUrl) {
+                const pending = window.OmoiProgress.readSelection(sessionTokenFromUrl);
+                if (pending && pending.mode === "custom") {
+                    selectedLabels = new Set(Array.isArray(pending.labels) ? pending.labels : []);
+                    selectedQuestionIds = new Set(Array.isArray(pending.ids) ? pending.ids : []);
+                    restored = true;
+                }
+            }
+            // edit=1 のみの場合は omoi-progress から復元（質問画面からの編集）
+            if (!restored && editMode) {
+                const saved = window.OmoiProgress.read();
+                if (saved && saved.mode === "custom") {
+                    selectedLabels = new Set(Array.isArray(saved.labels) ? saved.labels : []);
+                    selectedQuestionIds = new Set(Array.isArray(saved.selectedIds) ? saved.selectedIds : []);
+                    restored = true;
+                }
+            }
+            if (restored) {
                 for (const id of [...selectedQuestionIds]) {
                     if (!validQuestionIds.has(id)) selectedQuestionIds.delete(id);
                 }

@@ -11,6 +11,7 @@ const questionCountEl = document.getElementById("confirmQuestionCount");
 const totalElement = document.getElementById("confirmTotal");
 const breakdownElement = document.getElementById("confirmBreakdown");
 const startButton = document.getElementById("confirmStartButton");
+const editLink = document.getElementById("confirmEditLink");
 const shareButton = document.getElementById("confirmShareButton");
 const shareStatus = document.getElementById("confirmShareStatus");
 
@@ -322,6 +323,9 @@ function load() {
         return;
     }
     selection = window.OmoiProgress.readSelection(sessionToken);
+    if (editLink && sessionToken) {
+        editLink.href = "custom-select.html?edit=1&session=" + encodeURIComponent(sessionToken);
+    }
     if (!selection) {
         showError("選択内容が見つかりませんでした。選択画面からやり直してください。");
         return;
