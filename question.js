@@ -88,9 +88,6 @@ const furiganaSettingsSummary = document.getElementById("furiganaSettingsSummary
 const questionScreen = document.querySelector(".question-screen");
 const changeCategoryLink = document.getElementById("changeCategoryLink");
 const otherQuestionsLink = document.getElementById("otherQuestionsLink");
-const customSelectionSummary = document.getElementById("customSelectionSummary");
-const customSelectionSummaryText = document.getElementById("customSelectionSummaryText");
-const customSelectionShareButton = document.getElementById("customSelectionShareButton");
 const sharedQuestionNotice = document.getElementById("sharedQuestionNotice");
 const nextNote = document.getElementById("nextNote");
 const shareButton = document.getElementById("shareButton");
@@ -534,54 +531,6 @@ function fallbackPoolForSavedProgress(questions, saved) {
     return questions;
 }
 
-function updateCustomSelectionSummary() {
-    if (!customSelectionSummary || !customSelectionSummaryText) return;
-    if (mode !== "custom") {
-        customSelectionSummary.hidden = true;
-        return;
-    }
-    const labels = Array.isArray(sessionCustomLabels) ? sessionCustomLabels : [];
-    const ids = Array.isArray(sessionCustomIds) ? sessionCustomIds : [];
-    const parts = [];
-    if (labels.length > 0) parts.push(`カテゴリー${labels.length}件`);
-    if (ids.length > 0) parts.push(`個別${ids.length}問`);
-    customSelectionSummaryText.textContent = parts.length > 0
-        ? `選択中: ${parts.join("・")}（${sessionQuestions.length}問）`
-        : `選択中: ${sessionQuestions.length}問`;
-    customSelectionSummary.hidden = false;
-}
-
-function buildCustomShareUrl() {
-    const url = new URL("question.html", window.location.href);
-    url.search = "";
-    url.searchParams.set("mode", "custom");
-    const labels = Array.isArray(sessionCustomLabels) ? sessionCustomLabels : [];
-    const ids = Array.isArray(sessionCustomIds) ? sessionCustomIds : [];
-    if (labels.length > 0) url.searchParams.set("labels", labels.join(","));
-    if (ids.length > 0) url.searchParams.set("ids", ids.join(","));
-    return url.href;
-}
-
-if (customSelectionShareButton) {
-    customSelectionShareButton.addEventListener("click", async function () {
-        const url = buildCustomShareUrl();
-        if (!url) return;
-        try {
-            if (typeof navigator.share === "function") {
-                await navigator.share({ title: "Omoi｜質問カード", text: "カスタムモードの選択", url });
-                return;
-            }
-        } catch (error) {
-            if (error?.name === "AbortError") return;
-        }
-        try {
-            await navigator.clipboard.writeText(url);
-        } catch (error) {
-            window.prompt("このURLをコピーしてください。", url);
-        }
-    });
-}
-
 async function loadQuestions() {
     if (state === "loading" || isSharedIdMalformed || !isRequestValid) return;
     if (mode === "custom" && !savedProgress && !pendingSelection && !sharedCustomSelection) {
@@ -684,7 +633,6 @@ async function loadQuestions() {
         }
         showQuestion();
         setState("ready");
-        updateCustomSelectionSummary();
     } catch (error) {
         const timedOut = controller.signal.aborted;
         console.error("Omoi: 質問の読み込みに失敗しました。", error);
