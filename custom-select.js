@@ -675,12 +675,13 @@ function validateLabelsDocument(documentValue) {
 }
 
 function validateIndexDocument(documentValue, labelMap) {
-    if (!documentValue || documentValue.version !== 4 ||
+    if (!documentValue || documentValue.version !== 5 ||
         !Array.isArray(documentValue.questions)) {
         throw new Error("Invalid questions index.");
     }
     return documentValue.questions.map((question, order) => {
         if (!question || typeof question.id !== "string" ||
+            !Number.isInteger(question.index) ||
             !Number.isInteger(question.level) || !allowedLevels.has(String(question.level)) ||
             typeof question.category !== "string" ||
             typeof question.question !== "string" ||
@@ -696,6 +697,7 @@ function validateIndexDocument(documentValue, labelMap) {
         }
         return {
             id: question.id,
+            index: question.index,
             level: question.level,
             category: question.category,
             labels: question.labels,

@@ -19,12 +19,12 @@ const labelsDocument = {
     ]
 };
 const indexDocument = {
-    version: 4,
+    version: 5,
     questions: [
-        { id: 'q1', level: 2, category: 'school_and_youth', labels: ['student', 'school'], question: 'Q1', search: '', scenario: '', summary: '', hints: [], terms: [], reading: 'q1' },
-        { id: 'q2', level: 3, category: 'school_and_youth', labels: ['student', 'school'], question: 'Q2', search: '', scenario: '', summary: '', hints: [], terms: [], reading: 'q2' },
-        { id: 'q3', level: 4, category: 'family_and_care', labels: ['care'], question: 'Q3', search: '背景テキスト ヒント', scenario: '背景テキスト', summary: '', hints: ['ヒント'], terms: [], reading: 'q3' },
-        { id: 'q4', level: 2, category: 'relationships_and_communication', labels: ['friendship'], question: 'Q4', search: '', scenario: '', summary: '', hints: [], terms: [], reading: 'q4' }
+        { index: 0, id: 'q1', level: 2, category: 'school_and_youth', labels: ['student', 'school'], question: 'Q1', search: '', scenario: '', summary: '', hints: [], terms: [], reading: 'q1' },
+        { index: 1, id: 'q2', level: 3, category: 'school_and_youth', labels: ['student', 'school'], question: 'Q2', search: '', scenario: '', summary: '', hints: [], terms: [], reading: 'q2' },
+        { index: 2, id: 'q3', level: 4, category: 'family_and_care', labels: ['care'], question: 'Q3', search: '背景テキスト ヒント', scenario: '背景テキスト', summary: '', hints: ['ヒント'], terms: [], reading: 'q3' },
+        { index: 3, id: 'q4', level: 2, category: 'relationships_and_communication', labels: ['friendship'], question: 'Q4', search: '', scenario: '', summary: '', hints: [], terms: [], reading: 'q4' }
     ]
 };
 

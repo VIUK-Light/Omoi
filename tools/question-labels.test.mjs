@@ -143,8 +143,9 @@ test('generated label files match the current question data', () => {
         }).filter(Boolean) : [];
 
     assert.deepEqual(read('questions-index.json'), {
-        version: 4,
-        questions: rows.map(row => ({
+        version: 5,
+        questions: rows.map((row, i) => ({
+            index: i,
             id: row.id,
             level: row.level,
             category: row.category,

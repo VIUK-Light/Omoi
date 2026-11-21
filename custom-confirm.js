@@ -294,10 +294,21 @@ function buildShareUrl() {
     const url = new URL("question.html", window.location.href);
     url.search = "";
     url.searchParams.set("mode", "custom");
+    url.searchParams.set("v", "1");
+
+    // 選択された問いのインデックス集合を作る
+    const indexSet = new Set();
     const labels = Array.isArray(selection.labels) ? selection.labels : [];
     const ids = Array.isArray(selection.ids) ? selection.ids : [];
-    if (labels.length > 0) url.searchParams.set("labels", labels.join(","));
-    if (ids.length > 0) url.searchParams.set("ids", ids.join(","));
+    for (const [id, question] of questionsById) {
+        if (typeof question.index !== "number") continue;
+        const inCategory = labels.some(labelId => Array.isArray(question.labels) && question.labels.includes(labelId));
+        const inIndividual = ids.includes(id);
+        if (inCategory || inIndividual) indexSet.add(question.index);
+    }
+    // 個別選択のうち index が questionsById に無いものは無視（共有不可）
+    const payload = window.OmoiShare ? window.OmoiShare.encodeSharePayload([...indexSet]) : "";
+    if (payload) url.searchParams.set("sel", payload);
     return url.href;
 }
 

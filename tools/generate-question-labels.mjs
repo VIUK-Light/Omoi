@@ -203,9 +203,11 @@ if (write) {
     fs.writeFileSync(path.join(repositoryRoot, labelsFile), labelsDocumentText);
 
     const questions = [];
+    let questionIndex = 0;
     for (const fileName of levelFiles) {
         for (const record of levels.get(fileName)?.records ?? []) {
             questions.push({
+                index: questionIndex,
                 id: record.id,
                 level: record.level,
                 category: record.category,
@@ -218,9 +220,10 @@ if (write) {
                 terms: buildQuestionTerms(record),
                 reading: buildQuestionReading(record)
             });
+            questionIndex += 1;
         }
     }
-    const indexDocument = { version: 4, questions };
+    const indexDocument = { version: 5, questions };
     fs.writeFileSync(
         path.join(repositoryRoot, indexFile),
         `${JSON.stringify(indexDocument, null, 2)}\n`
@@ -249,9 +252,11 @@ if (write) {
         }
         if (actualIndex) {
             const expectedQuestions = [];
+            let expectedIndexCounter = 0;
             for (const fileName of levelFiles) {
                 for (const record of levels.get(fileName)?.records ?? []) {
                     expectedQuestions.push({
+                        index: expectedIndexCounter,
                         id: record.id,
                         level: record.level,
                         category: record.category,
@@ -264,9 +269,10 @@ if (write) {
                         terms: buildQuestionTerms(record),
                         reading: buildQuestionReading(record)
                     });
+                    expectedIndexCounter += 1;
                 }
             }
-            const expectedIndex = { version: 4, questions: expectedQuestions };
+            const expectedIndex = { version: 5, questions: expectedQuestions };
             if (actualIndex.version !== expectedIndex.version ||
                 JSON.stringify(actualIndex.questions) !== JSON.stringify(expectedQuestions)) {
                 addFinding("stale_index_file", `${indexFile} differs from the level data; run with --write.`);

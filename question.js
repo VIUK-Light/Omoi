@@ -35,11 +35,13 @@ const hasSessionToken = typeof sessionTokenFromUrl === "string" &&
 
 const sharedLabelsParam = params.get("labels");
 const sharedIdsParam = params.get("ids");
+const sharedSelParam = params.get("sel");
 const sharedCustomSelection = !hasSessionToken && mode === "custom" &&
-    (sharedLabelsParam || sharedIdsParam)
+    (sharedLabelsParam || sharedIdsParam || sharedSelParam)
     ? {
         labels: sharedLabelsParam ? sharedLabelsParam.split(",").map(v => v.trim()).filter(Boolean) : [],
-        ids: sharedIdsParam ? sharedIdsParam.split(",").map(v => v.trim()).filter(Boolean) : []
+        ids: sharedIdsParam ? sharedIdsParam.split(",").map(v => v.trim()).filter(Boolean) : [],
+        sel: sharedSelParam || null
     }
     : null;
 
@@ -654,8 +656,17 @@ async function loadQuestions() {
                 sessionCustomLabels = Array.isArray(pendingSelection.labels) ? pendingSelection.labels : [];
                 sessionCustomIds = Array.isArray(pendingSelection.ids) ? pendingSelection.ids : [];
             } else if (sharedCustomSelection) {
-                sessionCustomLabels = sharedCustomSelection.labels;
-                sessionCustomIds = sharedCustomSelection.ids;
+                sessionCustomLabels = sharedCustomSelection.labels || [];
+                sessionCustomIds = sharedCustomSelection.ids || [];
+                if (sharedCustomSelection.sel && window.OmoiShare) {
+                    const indices = window.OmoiShare.decodeSharePayload(sharedCustomSelection.sel);
+                    const idByIndex = new Map(allQuestions.map((q, i) => [i, q.id]));
+                    const decodedIds = indices.map(i => idByIndex.get(i)).filter(Boolean);
+                    if (decodedIds.length > 0) {
+                        sessionCustomIds = decodedIds;
+                        sessionCustomLabels = [];
+                    }
+                }
             } else {
                 sessionCustomLabels = [];
                 sessionCustomIds = [];
