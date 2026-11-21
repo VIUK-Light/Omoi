@@ -76,6 +76,7 @@ let sessionToken = savedProgress
         : null;
 let sessionCustomLabels = [];
 let sessionCustomIds = [];
+let sessionCustomExcluded = [];
 // 保存データが無いときは、別端末で開いた共有リンクとして扱う。
 let isSharedQuestion = hasSharedId && mode === "all" &&
     !savedProgress && !pendingSelection;
@@ -512,13 +513,16 @@ function studentPool(questions) {
         Array.isArray(question.labels) && question.labels.includes("student"));
 }
 
-function customPool(questions, labels, ids) {
+function customPool(questions, labels, ids, excluded) {
     const labelSet = new Set(Array.isArray(labels) ? labels : []);
     const idSet = new Set(Array.isArray(ids) ? ids : []);
+    const excludedSet = new Set(Array.isArray(excluded) ? excluded : []);
     return questions.filter(question =>
-        idSet.has(question.id) ||
-        (Array.isArray(question.labels) &&
-            question.labels.some(label => labelSet.has(label))));
+        idSet.has(question.id) || (
+            !excludedSet.has(question.id) &&
+            Array.isArray(question.labels) &&
+            question.labels.some(label => labelSet.has(label))
+        ));
 }
 
 function fallbackPoolForSavedProgress(questions, saved) {
@@ -527,7 +531,8 @@ function fallbackPoolForSavedProgress(questions, saved) {
     if (savedMode === "custom") {
         sessionCustomLabels = Array.isArray(saved.labels) ? saved.labels : [];
         sessionCustomIds = Array.isArray(saved.selectedIds) ? saved.selectedIds : [];
-        return customPool(questions, sessionCustomLabels, sessionCustomIds);
+        sessionCustomExcluded = Array.isArray(saved.excludedIds) ? saved.excludedIds : [];
+        return customPool(questions, sessionCustomLabels, sessionCustomIds, sessionCustomExcluded);
     }
     return questions;
 }
@@ -605,9 +610,11 @@ async function loadQuestions() {
             if (pendingSelection) {
                 sessionCustomLabels = Array.isArray(pendingSelection.labels) ? pendingSelection.labels : [];
                 sessionCustomIds = Array.isArray(pendingSelection.ids) ? pendingSelection.ids : [];
+                sessionCustomExcluded = Array.isArray(pendingSelection.excludedIds) ? pendingSelection.excludedIds : [];
             } else if (sharedCustomSelection) {
                 sessionCustomLabels = sharedCustomSelection.labels || [];
                 sessionCustomIds = sharedCustomSelection.ids || [];
+                sessionCustomExcluded = [];
                 if (sharedCustomSelection.sel && window.OmoiShare) {
                     const indices = window.OmoiShare.decodeSharePayload(sharedCustomSelection.sel);
                     const idByIndex = new Map(allQuestions.map((q, i) => [i, q.id]));
@@ -620,8 +627,9 @@ async function loadQuestions() {
             } else {
                 sessionCustomLabels = [];
                 sessionCustomIds = [];
+                sessionCustomExcluded = [];
             }
-            const pool = customPool(allQuestions, sessionCustomLabels, sessionCustomIds);
+            const pool = customPool(allQuestions, sessionCustomLabels, sessionCustomIds, sessionCustomExcluded);
             if (pool.length === 0) {
                 showMessage("選んだカテゴリーや問いに合う質問がありません。条件を選び直してください。");
                 setState("empty");
@@ -701,6 +709,7 @@ function saveProgress() {
     if (mode === "custom") {
         data.labels = [...sessionCustomLabels];
         data.selectedIds = [...sessionCustomIds];
+        data.excludedIds = [...sessionCustomExcluded];
     }
     window.OmoiProgress.write(data);
 }
@@ -1405,7 +1414,10 @@ finishButton.addEventListener("click", function () {
 
 changeCategoryLink.addEventListener("click", function () {
     // 編集リンクのときは進捗を残して復元できるようにする。
-    const isEditLink = changeCategoryLink.getAttribute("href")?.includes("edit=1");
+    const href = typeof changeCategoryLink.getAttribute === "function"
+        ? changeCategoryLink.getAttribute("href")
+        : changeCategoryLink.href;
+    const isEditLink = (href || "").includes("edit=1");
     if (!isSharedQuestion && !isEditLink) {
         window.OmoiProgress?.clear();
     }

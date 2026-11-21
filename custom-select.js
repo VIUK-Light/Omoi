@@ -95,6 +95,7 @@ let topicLabels = [];
 let questions = [];
 let selectedLabels = new Set();
 let selectedQuestionIds = new Set();
+let excludedQuestionIds = new Set();
 let visibleQuestionCount = pageSize;
 let selectedLevel = "all";
 let selectedCategoryFilter = "all";
@@ -133,6 +134,9 @@ function categoryPool() {
 function unionPool() {
     const included = new Set(categoryPool().map(question => question.id));
     for (const id of selectedQuestionIds) included.add(id);
+    for (const id of excludedQuestionIds) {
+        if (!selectedQuestionIds.has(id)) included.delete(id);
+    }
     return included;
 }
 
@@ -741,6 +745,9 @@ async function loadIndex() {
         for (const id of [...selectedQuestionIds]) {
             if (!validQuestionIds.has(id)) selectedQuestionIds.delete(id);
         }
+        for (const id of [...excludedQuestionIds]) {
+            if (!validQuestionIds.has(id)) excludedQuestionIds.delete(id);
+        }
         const validLabelIds = new Set(topicLabels.map(label => label.id));
         for (const id of [...selectedLabels]) {
             if (!validLabelIds.has(id)) selectedLabels.delete(id);
@@ -754,6 +761,7 @@ async function loadIndex() {
                 if (pending && pending.mode === "custom") {
                     selectedLabels = new Set(Array.isArray(pending.labels) ? pending.labels : []);
                     selectedQuestionIds = new Set(Array.isArray(pending.ids) ? pending.ids : []);
+                    excludedQuestionIds = new Set(Array.isArray(pending.excludedIds) ? pending.excludedIds : []);
                     restored = true;
                 }
             }
@@ -763,6 +771,7 @@ async function loadIndex() {
                 if (saved && saved.mode === "custom") {
                     selectedLabels = new Set(Array.isArray(saved.labels) ? saved.labels : []);
                     selectedQuestionIds = new Set(Array.isArray(saved.selectedIds) ? saved.selectedIds : []);
+                    excludedQuestionIds = new Set(Array.isArray(saved.excludedIds) ? saved.excludedIds : []);
                     restored = true;
                 }
             }
@@ -986,6 +995,7 @@ nextButton.addEventListener("click", function () {
         mode: "custom",
         labels: selectedTopicLabels(),
         ids: [...selectedQuestionIds],
+        excludedIds: [...excludedQuestionIds],
         createdAt: Date.now()
     };
     if (!window.OmoiProgress?.writeSelection?.(selection)) {

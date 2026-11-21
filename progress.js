@@ -81,7 +81,8 @@
         } else {
             if (!isMode(data.mode)) return false;
             if (data.mode === "all" && (!Number.isInteger(data.level) || !levelLabels[data.level])) return false;
-            if (data.mode === "custom" && (!isStringArray(data.labels) || !isStringArray(data.selectedIds))) return false;
+            if (data.mode === "custom" && (!isStringArray(data.labels) || !isStringArray(data.selectedIds) ||
+                (data.excludedIds !== undefined && !isStringArray(data.excludedIds)))) return false;
         }
         return Date.now() - data.updatedAt <= maxAge;
     }

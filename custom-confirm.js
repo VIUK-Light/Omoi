@@ -6,6 +6,10 @@ const labelList = document.getElementById("confirmLabelList");
 const labelEmpty = document.getElementById("confirmLabelEmpty");
 const labelCountEl = document.getElementById("confirmLabelCount");
 const questionList = document.getElementById("confirmQuestionList");
+const excludedList = document.getElementById("confirmExcludedList");
+const excludedEmpty = document.getElementById("confirmExcludedEmpty");
+const excludedCountEl = document.getElementById("confirmExcludedCount");
+const excludedSection = document.getElementById("confirmExcludedSection");
 const questionEmpty = document.getElementById("confirmQuestionEmpty");
 const questionCountEl = document.getElementById("confirmQuestionCount");
 const totalElement = document.getElementById("confirmTotal");
@@ -139,7 +143,9 @@ function render() {
                 const meta = document.createElement("span");
                 meta.className = "confirm-category-meta";
                 const qs = questionsByLabel.get(labelId) ?? [];
-                meta.textContent = `${qs.length}問`;
+                const excludedSet = new Set(Array.isArray(selection.excludedIds) ? selection.excludedIds : []);
+                const visibleCount = qs.filter(q => !excludedSet.has(q.id)).length;
+                meta.textContent = `${visibleCount}問`;
 
                 const actions = document.createElement("div");
                 actions.className = "confirm-category-actions";
@@ -171,6 +177,7 @@ function render() {
                 const questionUl = document.createElement("ul");
                 questionUl.className = "confirm-nested-list";
                 for (const q of qs) {
+                    if (excludedSet.has(q.id)) continue;
                     const li = document.createElement("li");
                     li.className = "confirm-nested-item";
 
@@ -198,15 +205,8 @@ function render() {
                     remove.textContent = "×";
                     remove.setAttribute("aria-label", `「${q.question}」をこのカテゴリーから外す`);
                     remove.addEventListener("click", function () {
-                        const otherIds = qs
-                            .filter(item => item.id !== q.id)
-                            .map(item => item.id);
-                        selection.labels = selection.labels.filter(id => id !== labelId);
-                        if (!Array.isArray(selection.ids)) selection.ids = [];
-                        for (const otherId of otherIds) {
-                            if (!selection.ids.includes(otherId)) selection.ids.push(otherId);
-                        }
-                        selection.ids = selection.ids.filter(id => id !== q.id);
+                        if (!Array.isArray(selection.excludedIds)) selection.excludedIds = [];
+                        if (!selection.excludedIds.includes(q.id)) selection.excludedIds.push(q.id);
                         persist();
                         render();
                     });
@@ -278,6 +278,39 @@ function render() {
         }
     }
 
+    const excludedIds = Array.isArray(selection.excludedIds) ? selection.excludedIds : [];
+    if (excludedCountEl) excludedCountEl.textContent = `${excludedIds.length}問`;
+    if (excludedList) {
+        excludedList.replaceChildren();
+        if (excludedIds.length === 0) {
+            if (excludedEmpty) excludedEmpty.hidden = false;
+            if (excludedSection) excludedSection.hidden = true;
+        } else {
+            if (excludedEmpty) excludedEmpty.hidden = true;
+            if (excludedSection) excludedSection.hidden = false;
+            for (const id of excludedIds) {
+                const question = questionsById.get(id);
+                const item = document.createElement("li");
+                item.className = "confirm-item";
+                const text = document.createElement("span");
+                text.className = "confirm-item-text";
+                text.textContent = question ? question.question : id;
+                const restore = document.createElement("button");
+                restore.type = "button";
+                restore.className = "confirm-remove";
+                restore.textContent = "戻";
+                restore.setAttribute("aria-label", "除外を解除する");
+                restore.addEventListener("click", function () {
+                    selection.excludedIds = selection.excludedIds.filter(v => v !== id);
+                    persist();
+                    render();
+                });
+                item.append(text, restore);
+                excludedList.append(item);
+            }
+        }
+    }
+
     const labelCount = labels.length;
     const idCount = ids.length;
     if (totalElement) totalElement.textContent = labelCount + idCount > 0 ? "確認" : "未選択";
@@ -301,8 +334,10 @@ function buildShareUrl() {
     const indexSet = new Set();
     const labels = Array.isArray(selection.labels) ? selection.labels : [];
     const ids = Array.isArray(selection.ids) ? selection.ids : [];
+    const excluded = new Set(Array.isArray(selection.excludedIds) ? selection.excludedIds : []);
     for (const [id, question] of questionsById) {
         if (typeof question.index !== "number") continue;
+        if (excluded.has(id) && !ids.includes(id)) continue;
         const inCategory = labels.some(labelId => Array.isArray(question.labels) && question.labels.includes(labelId));
         const inIndividual = ids.includes(id);
         if (inCategory || inIndividual) indexSet.add(question.index);
