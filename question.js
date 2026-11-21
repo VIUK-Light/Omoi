@@ -1404,8 +1404,9 @@ finishButton.addEventListener("click", function () {
 });
 
 changeCategoryLink.addEventListener("click", function () {
-    // カテゴリーを変えるときは、今の続きを保存しない。
-    if (!isSharedQuestion) {
+    // 編集リンクのときは進捗を残して復元できるようにする。
+    const isEditLink = changeCategoryLink.getAttribute("href")?.includes("edit=1");
+    if (!isSharedQuestion && !isEditLink) {
         window.OmoiProgress?.clear();
     }
 });
