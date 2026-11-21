@@ -445,6 +445,78 @@
     opacity: var(--omoi-scrim-opacity, 0);
 }
 
+/* 星空の背景: 星（白い点）だけをゆっくり流し、瞬かせる。 */
+.page-background__stars {
+    display: none;
+    position: absolute;
+    inset: -10%;
+    pointer-events: none;
+    background-repeat: repeat;
+}
+
+:root[data-background="star"] .page-background__stars { display: block; }
+
+.page-background__stars--far {
+    background-image:
+        radial-gradient(circle at 12% 16%, rgb(255 255 255 / 72%) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 40% 6%, rgb(255 255 255 / 58%) 0 1px, transparent 1.5px),
+        radial-gradient(circle at 68% 28%, rgb(255 255 255 / 66%) 0 1.1px, transparent 1.7px),
+        radial-gradient(circle at 24% 54%, rgb(255 255 255 / 52%) 0 1px, transparent 1.5px),
+        radial-gradient(circle at 82% 62%, rgb(255 255 255 / 60%) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 56% 84%, rgb(255 255 255 / 55%) 0 1px, transparent 1.5px);
+    background-size: 300px 260px;
+    animation:
+        omoi-star-twinkle 6.5s ease-in-out infinite alternate,
+        omoi-star-drift--far 120s linear infinite;
+}
+
+.page-background__stars--near {
+    background-image:
+        radial-gradient(circle at 20% 24%, rgb(255 255 255 / 95%) 0 1.6px, transparent 2.4px),
+        radial-gradient(circle at 58% 12%, rgb(255 255 255 / 80%) 0 1.2px, transparent 2px),
+        radial-gradient(circle at 78% 44%, rgb(255 255 255 / 90%) 0 1.5px, transparent 2.3px),
+        radial-gradient(circle at 34% 66%, rgb(255 255 255 / 82%) 0 1.3px, transparent 2.1px),
+        radial-gradient(circle at 88% 82%, rgb(255 255 255 / 88%) 0 1.4px, transparent 2.2px),
+        radial-gradient(circle at 8% 88%, rgb(255 255 255 / 76%) 0 1.2px, transparent 2px);
+    background-size: 440px 380px;
+    animation:
+        omoi-star-twinkle 3.4s ease-in-out -1.4s infinite alternate,
+        omoi-star-drift--near 90s linear infinite;
+}
+
+/* 元からある星も、ごくゆっくり揺れる。 */
+:root[data-background="star"] .page-background {
+    inset: -2%;
+    animation: omoi-star-sway 60s ease-in-out infinite alternate;
+}
+
+@keyframes omoi-star-drift--far {
+    from { background-position: 0 0; }
+    to { background-position: 300px 260px; }
+}
+
+@keyframes omoi-star-drift--near {
+    from { background-position: 0 0; }
+    to { background-position: -440px -380px; }
+}
+
+@keyframes omoi-star-twinkle {
+    from { opacity: .35; }
+    to { opacity: 1; }
+}
+
+@keyframes omoi-star-sway {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-1.2%, .8%, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root[data-background="star"] .page-background,
+    :root[data-background="star"] .page-background__stars {
+        animation: none;
+    }
+}
+
 :root[data-background="dawn"] { --omoi-bg-image: var(--omoi-bg-dawn); }
 :root[data-background="ocean"] { --omoi-bg-image: var(--omoi-bg-ocean); }
 :root[data-background="forest"] { --omoi-bg-image: var(--omoi-bg-forest); }

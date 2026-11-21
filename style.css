@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: var(--background, #fff);
+    background-color: var(--background);
     color: var(--text);
 }
 
@@ -213,28 +213,4 @@ h1 {
 .Kiyaku a {
     color: var(--text);
     text-underline-offset: 4px;
-}
-/* 背景の一部をアニメーション */
-body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background: linear-gradient(120deg, rgba(36, 86, 107, 0.12), rgba(107, 36, 86, 0.10), rgba(36, 86, 107, 0.12));
-    background-size: 300% 300%;
-    animation: omoi-bg-drift 3s ease infinite;
-}
-
-@keyframes omoi-bg-drift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    body::after { animation: none; }
 }

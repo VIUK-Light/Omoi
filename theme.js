@@ -206,6 +206,12 @@
             layer.setAttribute("aria-hidden", "true");
             document.body.prepend(layer);
         }
+        if (!layer.querySelector(".page-background__stars")) {
+            layer.insertAdjacentHTML("afterbegin", `
+                <span class="page-background__stars page-background__stars--far"></span>
+                <span class="page-background__stars page-background__stars--near"></span>
+            `);
+        }
         return layer;
     }
 

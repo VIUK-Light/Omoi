@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    background: var(--omoi-page, #fff);
     font-family: sans-serif;
+    background: #ffffff;
     color: #111111;
 }
 
@@ -950,41 +950,4 @@ rt {
     line-height: 1.4;
     text-decoration: none;
     cursor: pointer;
-}
-
-/* 背景の一部をアニメーション */
-body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background: linear-gradient(120deg, rgba(36, 86, 107, 0.18), rgba(107, 36, 86, 0.14), rgba(36, 86, 107, 0.18));
-    background-size: 300% 300%;
-    animation: omoi-bg-drift 3s ease infinite;
-}
-
-.question-screen {
-    position: relative;
-    z-index: 1;
-    background: transparent;
-}
-
-@keyframes omoi-bg-drift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-    50% {
-        transform: translate3d(-2%, 1%, 0) scale(1.05);
-    }
-    100% {
-        transform: translate3d(2%, -1%, 0) scale(1);
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    body::after {
-        animation: none;
-    }
 }

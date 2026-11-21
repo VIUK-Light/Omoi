@@ -10,10 +10,7 @@ body {
 }
 
 .select-screen {
-    position: relative;
-    z-index: 1;
     min-height: 100vh;
-    background: transparent;
     padding: 48px 24px;
     box-sizing: border-box;
 }
@@ -191,36 +188,4 @@ body {
 .mode-list input:not(:checked) + .mode-card:hover,
 .level-list input:not(:checked) + .level-card:hover {
     background: var(--omoi-hover, #f5f5f5);
-}
-
-/* 背景の一部をアニメーション */
-body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background: linear-gradient(120deg, rgba(36, 86, 107, 0.18), rgba(107, 36, 86, 0.14), rgba(36, 86, 107, 0.18));
-    background-size: 300% 300%;
-    animation: omoi-bg-drift 3s ease infinite;
-}
-
-
-@keyframes omoi-bg-drift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-    50% {
-        transform: translate3d(-2%, 1%, 0) scale(1.05);
-    }
-    100% {
-        transform: translate3d(2%, -1%, 0) scale(1);
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    body::after {
-        animation: none;
-    }
 }
