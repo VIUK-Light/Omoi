@@ -40,6 +40,73 @@ function persist() {
     window.OmoiProgress.writeSelection(selection);
 }
 
+function renderDetail(container, question) {
+    if (!container) return;
+    container.replaceChildren();
+
+    const hasDetail = Boolean(question.scenario) ||
+        (question.summary && question.summary !== question.question) ||
+        (Array.isArray(question.hints) && question.hints.length > 0) ||
+        (Array.isArray(question.terms) && question.terms.length > 0);
+
+    if (!hasDetail) {
+        const note = document.createElement("p");
+        note.className = "confirm-nested-detail-empty";
+        note.textContent = "詳細情報はありません。";
+        container.append(note);
+        return;
+    }
+
+    if (question.scenario) {
+        const block = document.createElement("div");
+        block.className = "confirm-nested-detail-block";
+        const heading = document.createElement("strong");
+        heading.textContent = "背景";
+        const body = document.createElement("p");
+        body.textContent = question.scenario;
+        block.append(heading, body);
+        container.append(block);
+    }
+    if (question.summary && question.summary !== question.question) {
+        const block = document.createElement("div");
+        block.className = "confirm-nested-detail-block";
+        const heading = document.createElement("strong");
+        heading.textContent = "要点";
+        const body = document.createElement("p");
+        body.textContent = question.summary;
+        block.append(heading, body);
+        container.append(block);
+    }
+    if (Array.isArray(question.hints) && question.hints.length > 0) {
+        const block = document.createElement("div");
+        block.className = "confirm-nested-detail-block";
+        const heading = document.createElement("strong");
+        heading.textContent = "ヒント";
+        const list = document.createElement("ul");
+        for (const hint of question.hints) {
+            const li = document.createElement("li");
+            li.textContent = hint;
+            list.append(li);
+        }
+        block.append(heading, list);
+        container.append(block);
+    }
+    if (Array.isArray(question.terms) && question.terms.length > 0) {
+        const block = document.createElement("div");
+        block.className = "confirm-nested-detail-block";
+        const heading = document.createElement("strong");
+        heading.textContent = "用語";
+        const list = document.createElement("ul");
+        for (const term of question.terms) {
+            const li = document.createElement("li");
+            li.textContent = term;
+            list.append(li);
+        }
+        block.append(heading, list);
+        container.append(block);
+    }
+}
+
 function render() {
     if (!selection) return;
 
@@ -108,13 +175,19 @@ function render() {
                     text.className = "confirm-nested-text";
                     text.textContent = q.question;
 
+                    const detailToggle = document.createElement("button");
+                    detailToggle.type = "button";
+                    detailToggle.className = "confirm-nested-detail-toggle";
+                    detailToggle.textContent = "？";
+                    detailToggle.setAttribute("aria-label", `「${q.question}」の詳細を見る`);
+                    detailToggle.setAttribute("aria-expanded", "false");
+
                     const remove = document.createElement("button");
                     remove.type = "button";
                     remove.className = "confirm-nested-remove";
                     remove.textContent = "×";
                     remove.setAttribute("aria-label", `「${q.question}」をこのカテゴリーから外す`);
                     remove.addEventListener("click", function () {
-                        // Break the category into individual selections, excluding this question.
                         const otherIds = qs
                             .filter(item => item.id !== q.id)
                             .map(item => item.id);
@@ -128,7 +201,23 @@ function render() {
                         render();
                     });
 
-                    li.append(text, remove);
+                    const detail = document.createElement("div");
+                    detail.className = "confirm-nested-detail";
+                    detail.hidden = true;
+                    renderDetail(detail, q);
+
+                    detailToggle.addEventListener("click", function () {
+                        const willOpen = detail.hidden;
+                        detail.hidden = !willOpen;
+                        detailToggle.setAttribute("aria-expanded", String(willOpen));
+                        detailToggle.classList.toggle("is-open", willOpen);
+                    });
+
+                    const row = document.createElement("div");
+                    row.className = "confirm-nested-row";
+                    row.append(text, detailToggle, remove);
+
+                    li.append(row, detail);
                     questionUl.append(li);
                 }
                 body.append(questionUl);
