@@ -4,14 +4,17 @@ const errorBox = document.getElementById("customConfirmError");
 const errorText = document.getElementById("customConfirmErrorText");
 const labelList = document.getElementById("confirmLabelList");
 const labelEmpty = document.getElementById("confirmLabelEmpty");
+const labelCountEl = document.getElementById("confirmLabelCount");
 const questionList = document.getElementById("confirmQuestionList");
 const questionEmpty = document.getElementById("confirmQuestionEmpty");
+const questionCountEl = document.getElementById("confirmQuestionCount");
 const totalElement = document.getElementById("confirmTotal");
 const breakdownElement = document.getElementById("confirmBreakdown");
 const startButton = document.getElementById("confirmStartButton");
 
 let labelsById = new Map();
 let questionsById = new Map();
+let questionsByLabel = new Map();
 let selection = null;
 
 function showError(message) {
@@ -32,11 +35,19 @@ function labelName(labelId) {
     return labelsById.get(labelId)?.name ?? labelId;
 }
 
+function persist() {
+    if (!selection || !window.OmoiProgress?.writeSelection) return;
+    window.OmoiProgress.writeSelection(selection);
+}
+
 function render() {
     if (!selection) return;
 
     const labels = Array.isArray(selection.labels) ? selection.labels : [];
     const ids = Array.isArray(selection.ids) ? selection.ids : [];
+
+    if (labelCountEl) labelCountEl.textContent = `${labels.length}件`;
+    if (questionCountEl) questionCountEl.textContent = `${ids.length}問`;
 
     if (labelList) {
         labelList.replaceChildren();
@@ -45,11 +56,30 @@ function render() {
         } else {
             if (labelEmpty) labelEmpty.hidden = true;
             for (const labelId of labels) {
-                const item = document.createElement("li");
-                item.className = "confirm-item";
-                const text = document.createElement("span");
-                text.className = "confirm-item-text";
-                text.textContent = labelName(labelId);
+                const card = document.createElement("div");
+                card.className = "confirm-category-card";
+
+                const head = document.createElement("div");
+                head.className = "confirm-category-head";
+
+                const name = document.createElement("span");
+                name.className = "confirm-category-name";
+                name.textContent = labelName(labelId);
+
+                const meta = document.createElement("span");
+                meta.className = "confirm-category-meta";
+                const qs = questionsByLabel.get(labelId) ?? [];
+                meta.textContent = `${qs.length}問`;
+
+                const actions = document.createElement("div");
+                actions.className = "confirm-category-actions";
+
+                const toggle = document.createElement("button");
+                toggle.type = "button";
+                toggle.className = "confirm-toggle";
+                toggle.textContent = "中の問いを見る";
+                toggle.setAttribute("aria-expanded", "false");
+
                 const remove = document.createElement("button");
                 remove.type = "button";
                 remove.className = "confirm-remove";
@@ -60,8 +90,33 @@ function render() {
                     persist();
                     render();
                 });
-                item.append(text, remove);
-                labelList.append(item);
+
+                actions.append(toggle, remove);
+                head.append(name, meta, actions);
+
+                const body = document.createElement("div");
+                body.className = "confirm-category-body";
+                body.hidden = true;
+
+                const questionUl = document.createElement("ul");
+                questionUl.className = "confirm-nested-list";
+                for (const q of qs) {
+                    const li = document.createElement("li");
+                    li.className = "confirm-nested-item";
+                    li.textContent = q.question;
+                    questionUl.append(li);
+                }
+                body.append(questionUl);
+
+                toggle.addEventListener("click", function () {
+                    const willOpen = body.hidden;
+                    body.hidden = !willOpen;
+                    toggle.setAttribute("aria-expanded", String(willOpen));
+                    toggle.textContent = willOpen ? "閉じる" : "中の問いを見る";
+                });
+
+                card.append(head, body);
+                labelList.append(card);
             }
         }
     }
@@ -97,7 +152,7 @@ function render() {
 
     const labelCount = labels.length;
     const idCount = ids.length;
-    if (totalElement) totalElement.textContent = `${labelCount + idCount > 0 ? "選択中" : "未選択"}`;
+    if (totalElement) totalElement.textContent = labelCount + idCount > 0 ? "確認" : "未選択";
     if (breakdownElement) {
         const parts = [];
         if (labelCount > 0) parts.push(`カテゴリー${labelCount}件`);
@@ -107,12 +162,7 @@ function render() {
     if (startButton) startButton.disabled = (labels.length === 0 && ids.length === 0);
 }
 
-function persist() {
-    if (!selection || !window.OmoiProgress?.writeSelection) return;
-    window.OmoiProgress.writeSelection(selection);
-}
-
-async function load() {
+function load() {
     if (!sessionToken) {
         showError("選択内容が見つかりませんでした。選択画面からやり直してください。");
         return;
@@ -127,28 +177,29 @@ async function load() {
         return;
     }
 
-    try {
-        const [labelsResponse, indexResponse] = await Promise.all([
-            fetch("labels.json"),
-            fetch("questions-index.json")
-        ]);
-        if (!labelsResponse.ok || !indexResponse.ok) throw new Error("load failed");
-        const [labelsDocument, indexDocument] = await Promise.all([
-            labelsResponse.json(),
-            indexResponse.json()
-        ]);
-        for (const label of labelsDocument.labels ?? []) {
-            labelsById.set(label.id, label);
-        }
-        for (const question of indexDocument.questions ?? []) {
-            questionsById.set(question.id, question);
-        }
-        hideError();
-        render();
-    } catch (error) {
-        console.error("Omoi: 選択内容の読み込みに失敗しました。", error);
-        showError("選択内容の読み込みに失敗しました。");
-    }
+    Promise.all([fetch("labels.json"), fetch("questions-index.json")])
+        .then(responses => {
+            if (!responses[0].ok || !responses[1].ok) throw new Error("load failed");
+            return Promise.all([responses[0].json(), responses[1].json()]);
+        })
+        .then(([labelsDocument, indexDocument]) => {
+            for (const label of labelsDocument.labels ?? []) {
+                labelsById.set(label.id, label);
+            }
+            for (const question of indexDocument.questions ?? []) {
+                questionsById.set(question.id, question);
+                for (const labelId of question.labels ?? []) {
+                    if (!questionsByLabel.has(labelId)) questionsByLabel.set(labelId, []);
+                    questionsByLabel.get(labelId).push(question);
+                }
+            }
+            hideError();
+            render();
+        })
+        .catch(error => {
+            console.error("Omoi: 選択内容の読み込みに失敗しました。", error);
+            showError("選択内容の読み込みに失敗しました。");
+        });
 }
 
 if (startButton) {

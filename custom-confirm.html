@@ -24,7 +24,7 @@
                 <p class="custom-eyebrow">自分で選ぶ</p>
                 <h1>選択内容の確認</h1>
                 <p class="custom-confirm-lead">
-                    選んだカテゴリーと問いを確認してください。内容を変更したい場合は「選択を編集する」から戻れます。
+                    選んだ内容を確認してください。カテゴリーを展開すると中の問いが見られます。
                 </p>
             </header>
 
@@ -34,13 +34,19 @@
             </div>
 
             <section class="custom-confirm-section">
-                <h2>選択中のカテゴリー</h2>
-                <ul id="confirmLabelList" class="confirm-list"></ul>
+                <div class="section-head">
+                    <h2>選択中のカテゴリー</h2>
+                    <span id="confirmLabelCount" class="section-count">0件</span>
+                </div>
+                <div id="confirmLabelList" class="confirm-card-list"></div>
                 <p id="confirmLabelEmpty" class="confirm-empty" hidden>カテゴリーは選択されていません。</p>
             </section>
 
             <section class="custom-confirm-section">
-                <h2>個別に選んだ問い</h2>
+                <div class="section-head">
+                    <h2>個別に選んだ問い</h2>
+                    <span id="confirmQuestionCount" class="section-count">0問</span>
+                </div>
                 <ul id="confirmQuestionList" class="confirm-list"></ul>
                 <p id="confirmQuestionEmpty" class="confirm-empty" hidden>個別に選んだ問いはありません。</p>
             </section>
