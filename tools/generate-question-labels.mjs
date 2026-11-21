@@ -58,6 +58,43 @@ function buildQuestionSearchText(record) {
     return parts.join("\n");
 }
 
+function katakanaToHiragana(value) {
+    return String(value ?? "").replace(/[ァ-ン]/g, char =>
+        String.fromCharCode(char.charCodeAt(0) - 0x60)
+    );
+}
+
+function buildQuestionReading(record) {
+    const text = [
+        record.question,
+        typeof record.scenario === "string" ? record.scenario : "",
+        flattenSummary(record.summary),
+        Array.isArray(record.hints) ? record.hints.join(" ") : "",
+        Array.isArray(record.terms)
+            ? record.terms.map(term => (typeof term === "string" ? term : (term?.term ?? "") + " " + (term?.definition ?? ""))).join(" ")
+            : ""
+    ].filter(Boolean).join(" ");
+
+    try {
+        const tokens = kuromojiTokenizer.tokenize(text);
+        const reading = tokens
+            .map(token => (token.reading && token.reading !== "*" ? token.reading : token.surface_form))
+            .join("");
+        return katakanaToHiragana(reading);
+    } catch (error) {
+        return katakanaToHiragana(text);
+    }
+}
+
+const kuromoji = await import("kuromoji");
+const kuromojiTokenizer = await new Promise((resolve, reject) => {
+    kuromoji.default.builder({ dicPath: path.join(path.resolve(scriptDirectory, ".."), "node_modules", "kuromoji", "dict") })
+        .build((error, tokenizer) => {
+            if (error) reject(error);
+            else resolve(tokenizer);
+        });
+});
+
 const repositoryRoot = path.resolve(scriptDirectory, "..");
 const activeLevels = [2, 3, 4];
 const levelFiles = activeLevels.map(level => `level${level}.json`);
@@ -178,11 +215,12 @@ if (write) {
                 scenario: typeof record.scenario === "string" ? record.scenario : "",
                 summary: flattenSummary(record.summary),
                 hints: buildQuestionHints(record),
-                terms: buildQuestionTerms(record)
+                terms: buildQuestionTerms(record),
+                reading: buildQuestionReading(record)
             });
         }
     }
-    const indexDocument = { version: 3, questions };
+    const indexDocument = { version: 4, questions };
     fs.writeFileSync(
         path.join(repositoryRoot, indexFile),
         `${JSON.stringify(indexDocument, null, 2)}\n`
@@ -223,11 +261,12 @@ if (write) {
                         scenario: typeof record.scenario === "string" ? record.scenario : "",
                         summary: flattenSummary(record.summary),
                         hints: buildQuestionHints(record),
-                        terms: buildQuestionTerms(record)
+                        terms: buildQuestionTerms(record),
+                        reading: buildQuestionReading(record)
                     });
                 }
             }
-            const expectedIndex = { version: 3, questions: expectedQuestions };
+            const expectedIndex = { version: 4, questions: expectedQuestions };
             if (actualIndex.version !== expectedIndex.version ||
                 JSON.stringify(actualIndex.questions) !== JSON.stringify(expectedQuestions)) {
                 addFinding("stale_index_file", `${indexFile} differs from the level data; run with --write.`);

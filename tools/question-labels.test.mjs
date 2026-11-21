@@ -1,4 +1,5 @@
 import test from 'node:test';
+import kuromoji from 'kuromoji';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {
@@ -8,6 +9,51 @@ import {
     topicLabelIds,
     validateLabelList
 } from './question-labels.mjs';
+
+const kuromojiTokenizer = await new Promise((resolve, reject) => {
+    kuromoji.builder({ dicPath: 'node_modules/kuromoji/dict' }).build((error, tokenizer) => {
+        if (error) reject(error);
+        else resolve(tokenizer);
+    });
+});
+const katakanaToHiragana = value => String(value ?? '').replace(/[ァ-ン]/g, char =>
+    String.fromCharCode(char.charCodeAt(0) - 0x60)
+);
+const flattenSummary = summary => {
+    if (!Array.isArray(summary)) return '';
+    return summary.map(block => {
+        if (!block || typeof block !== 'object') return '';
+        if (block.type === 'text') return typeof block.text === 'string' ? block.text : '';
+        if (block.type === 'bullets' && Array.isArray(block.items)) {
+            return block.items.map(item => {
+                if (!item || typeof item !== 'object') return '';
+                return [item.label, item.text].filter(value => typeof value === 'string' && value).join(' ');
+            }).filter(Boolean).join(' ');
+        }
+        return '';
+    }).filter(Boolean).join(' ');
+};
+
+const buildQuestionReading = record => {
+    const text = [
+        record.question,
+        typeof record.scenario === 'string' ? record.scenario : '',
+        flattenSummary(record.summary),
+        Array.isArray(record.hints) ? record.hints.join(' ') : '',
+        Array.isArray(record.terms)
+            ? record.terms.map(term => (typeof term === 'string' ? term : (term?.term ?? '') + ' ' + (term?.definition ?? ''))).join(' ')
+            : ''
+    ].filter(Boolean).join(' ');
+    try {
+        const tokens = kuromojiTokenizer.tokenize(text);
+        const reading = tokens
+            .map(token => (token.reading && token.reading !== '*' ? token.reading : token.surface_form))
+            .join('');
+        return katakanaToHiragana(reading);
+    } catch (error) {
+        return katakanaToHiragana(text);
+    }
+};
 
 test('label definitions separate audience and topic labels', () => {
     assert.equal(labelDefinitions.filter(label => label.kind === 'audience').length, 1);
@@ -97,7 +143,7 @@ test('generated label files match the current question data', () => {
         }).filter(Boolean) : [];
 
     assert.deepEqual(read('questions-index.json'), {
-        version: 3,
+        version: 4,
         questions: rows.map(row => ({
             id: row.id,
             level: row.level,
@@ -108,7 +154,8 @@ test('generated label files match the current question data', () => {
             scenario: typeof row.scenario === 'string' ? row.scenario : '',
             summary: flattenSummary(row.summary),
             hints: buildQuestionHints(row),
-            terms: buildQuestionTerms(row)
+            terms: buildQuestionTerms(row),
+            reading: buildQuestionReading(row)
         }))
     });
 });

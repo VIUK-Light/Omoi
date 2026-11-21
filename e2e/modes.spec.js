@@ -160,3 +160,20 @@ test('custom selection fits 320px and keeps the action bar visible', async ({ pa
   await expect(page.locator('#nextButton')).toBeEnabled();
   await expect(actionBar).toBeVisible();
 });
+
+
+test('question search matches variant spellings via readings', async ({ page }) => {
+  await page.goto('/custom-select.html');
+  await expect(page.locator('#labelList input[value="school"]')).toHaveCount(1, ready);
+
+  await page.locator('#tabQuestions').click();
+  await expect(page.locator('#questionsPanel')).toBeVisible();
+  await page.waitForTimeout(3000);
+
+  const search = page.locator('#questionSearch');
+  await search.fill('子供');
+  await expect(page.locator('#questionPickerStatus')).toContainText('75問', ready);
+  await expect(page.locator('#questionPicker .question-pick').first()).toBeVisible();
+  const visibleQuestions = await page.locator('#questionPicker .question-pick-question').allTextContents();
+  expect(visibleQuestions.some(text => text.includes('子ども'))).toBe(true);
+});
