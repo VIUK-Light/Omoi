@@ -103,7 +103,32 @@ function render() {
                 for (const q of qs) {
                     const li = document.createElement("li");
                     li.className = "confirm-nested-item";
-                    li.textContent = q.question;
+
+                    const text = document.createElement("span");
+                    text.className = "confirm-nested-text";
+                    text.textContent = q.question;
+
+                    const remove = document.createElement("button");
+                    remove.type = "button";
+                    remove.className = "confirm-nested-remove";
+                    remove.textContent = "×";
+                    remove.setAttribute("aria-label", `「${q.question}」をこのカテゴリーから外す`);
+                    remove.addEventListener("click", function () {
+                        // Break the category into individual selections, excluding this question.
+                        const otherIds = qs
+                            .filter(item => item.id !== q.id)
+                            .map(item => item.id);
+                        selection.labels = selection.labels.filter(id => id !== labelId);
+                        if (!Array.isArray(selection.ids)) selection.ids = [];
+                        for (const otherId of otherIds) {
+                            if (!selection.ids.includes(otherId)) selection.ids.push(otherId);
+                        }
+                        selection.ids = selection.ids.filter(id => id !== q.id);
+                        persist();
+                        render();
+                    });
+
+                    li.append(text, remove);
                     questionUl.append(li);
                 }
                 body.append(questionUl);

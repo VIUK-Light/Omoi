@@ -146,11 +146,40 @@
 }
 
 .confirm-nested-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-size: 13px;
     line-height: 1.5;
     padding: 6px 8px;
     border-radius: 8px;
     background: var(--omoi-surface, #f7f7f7);
+}
+
+.confirm-nested-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.confirm-nested-remove {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    flex: none;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--omoi-muted, #666);
+    font: inherit;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.confirm-nested-remove:hover {
+    background: var(--omoi-hover, #eee);
+    color: var(--omoi-ink, #111);
 }
 
 .confirm-list {

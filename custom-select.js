@@ -12,6 +12,7 @@ const questionPickerStatus = document.getElementById("questionPickerStatus");
 const questionPickerCount = document.getElementById("questionPickerCount");
 const questionSearch = document.getElementById("questionSearch");
 const questionCategoryFilter = document.getElementById("questionCategoryFilter");
+const selectAllQuestionsButton = document.getElementById("selectAllQuestions");
 const showMoreQuestions = document.getElementById("showMoreQuestions");
 const selectedQuestionsCount = document.getElementById("selectedQuestionsCount");
 const selectedQuestionList = document.getElementById("selectedQuestionList");
@@ -336,12 +337,27 @@ function renderSelectedQuestions() {
     });
 }
 
+function updateSelectAllButton() {
+    if (!selectAllQuestionsButton) return;
+    const filtered = filteredQuestions();
+    if (filtered.length === 0) {
+        selectAllQuestionsButton.hidden = true;
+        return;
+    }
+    selectAllQuestionsButton.hidden = false;
+    const allSelected = filtered.every(question => selectedQuestionIds.has(question.id));
+    selectAllQuestionsButton.textContent = allSelected
+        ? "表示中の選択をすべて解除"
+        : "表示中の問いをすべて選択";
+}
+
 function updateCustomUi() {
     updateLabelSection();
     updatePickerCount();
     updateCustomSummary();
     updateNextButton();
     renderSelectedQuestions();
+    updateSelectAllButton();
 }
 
 function showError(message, canRetry) {
@@ -387,6 +403,7 @@ function setLoadingState() {
     if (selectedQuestionsCount) selectedQuestionsCount.textContent = "0問";
     if (selectedQuestionList) selectedQuestionList.replaceChildren();
     if (openSelectedQuestionsButton) openSelectedQuestionsButton.hidden = true;
+    if (selectAllQuestionsButton) selectAllQuestionsButton.hidden = true;
 
     if (questionPicker) questionPicker.replaceChildren();
     if (questionPickerStatus) {
@@ -854,6 +871,21 @@ if (questionCategoryFilter) {
     questionCategoryFilter.addEventListener("change", function () {
         selectedCategoryFilter = questionCategoryFilter.value || "all";
         visibleQuestionCount = pageSize;
+        renderQuestionPicker();
+    });
+}
+
+if (selectAllQuestionsButton) {
+    selectAllQuestionsButton.addEventListener("click", function () {
+        const filtered = filteredQuestions();
+        if (filtered.length === 0) return;
+        const allSelected = filtered.every(question => selectedQuestionIds.has(question.id));
+        if (allSelected) {
+            for (const question of filtered) selectedQuestionIds.delete(question.id);
+        } else {
+            for (const question of filtered) selectedQuestionIds.add(question.id);
+        }
+        updateCustomUi();
         renderQuestionPicker();
     });
 }

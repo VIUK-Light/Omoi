@@ -95,7 +95,7 @@ function setupCustomSelect() {
     for (const id of [
         'nextButton', 'labelList', 'labelSelectionSummary', 'clearLabels',
         'questionPickerDetails', 'questionPicker', 'questionPickerStatus',
-        'questionPickerCount', 'questionSearch', 'questionCategoryFilter', 'showMoreQuestions',
+        'questionPickerCount', 'questionSearch', 'questionCategoryFilter', 'selectAllQuestions', 'showMoreQuestions',
         'customTotal', 'customBreakdown', 'customError', 'customErrorText',
         'retryLoadButton',
         'tabLabels', 'tabQuestions', 'labelsPanel', 'questionsPanel',

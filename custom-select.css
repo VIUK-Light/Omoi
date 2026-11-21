@@ -867,6 +867,36 @@
     outline-offset: 2px;
 }
 
+/* すべて選択 */
+
+.question-select-all-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.select-all-button {
+    min-height: 36px;
+    padding: 0 14px;
+    border: 1px solid var(--omoi-border, #b7b7b7);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--omoi-link, #24566b);
+    font: inherit;
+    font-size: 12px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.select-all-button:hover {
+    background: var(--omoi-hover, #eee);
+    color: var(--omoi-ink, #111);
+}
+
+.select-all-button:focus-visible {
+    outline: 2px solid var(--omoi-focus, #24566b);
+    outline-offset: 2px;
+}
+
 /* 検索結果 */
 
 .question-picker-status {
