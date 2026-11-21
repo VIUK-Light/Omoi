@@ -109,6 +109,7 @@ function filteredQuestions() {
             question.question,
             question.category,
             levelNames[question.level] ?? "",
+            question.search ?? "",
             ...question.labels.map(labelName)
         ].join(" ").normalize("NFKC").toLowerCase();
         return haystack.includes(term);
@@ -463,7 +464,7 @@ function validateLabelsDocument(documentValue) {
 }
 
 function validateIndexDocument(documentValue, labelMap) {
-    if (!documentValue || documentValue.version !== 1 ||
+    if (!documentValue || documentValue.version !== 2 ||
         !Array.isArray(documentValue.questions)) {
         throw new Error("Invalid questions index.");
     }
@@ -473,7 +474,8 @@ function validateIndexDocument(documentValue, labelMap) {
             typeof question.category !== "string" ||
             typeof question.question !== "string" ||
             !Array.isArray(question.labels) || question.labels.length === 0 ||
-            question.labels.some(label => !labelMap.has(label))) {
+            question.labels.some(label => !labelMap.has(label)) ||
+            typeof question.search !== "string") {
             throw new Error("Invalid question index entry.");
         }
         return {
@@ -482,6 +484,7 @@ function validateIndexDocument(documentValue, labelMap) {
             category: question.category,
             labels: question.labels,
             question: question.question,
+            search: question.search,
             order
         };
     });

@@ -110,6 +110,12 @@ test('the question picker filters by words and level and keeps a selected list',
   await expect(page.locator('#questionPickerCount')).toBeHidden();
   await expect(firstQuestion).toHaveAttribute('data-selected', 'false');
 
+  await page.locator('[data-level-filter="all"]').click();
+  await search.fill('血のつながり');
+  await expect(page.locator('#questionPickerStatus')).not.toHaveAttribute('data-empty', 'true');
+  await expect(page.locator('#questionPicker .question-pick-question')
+    .filter({ hasText: 'それでも、その子を育て続けたい？' })).toHaveCount(1);
+
   await search.fill('存在しない語句xyz');
   await expect(page.locator('#questionPickerStatus')).toHaveAttribute('data-empty', 'true');
   await expect(page.locator('#questionPickerStatus')).toContainText('一致する問いがありません');

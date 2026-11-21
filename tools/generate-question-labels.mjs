@@ -11,6 +11,40 @@ import {
 } from "./question-labels.mjs";
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
+function flattenSummary(summary) {
+    if (!Array.isArray(summary)) return "";
+    return summary.map(block => {
+        if (!block || typeof block !== "object") return "";
+        if (block.type === "text") return typeof block.text === "string" ? block.text : "";
+        if (block.type === "bullets" && Array.isArray(block.items)) {
+            return block.items.map(item => {
+                if (!item || typeof item !== "object") return "";
+                return [item.label, item.text].filter(value => typeof value === "string" && value).join(" ");
+            }).filter(Boolean).join(" ");
+        }
+        return "";
+    }).filter(Boolean).join(" ");
+}
+
+function buildQuestionSearchText(record) {
+    const parts = [];
+    if (typeof record.scenario === "string" && record.scenario) parts.push(record.scenario);
+    const summary = flattenSummary(record.summary);
+    if (summary) parts.push(summary);
+    if (Array.isArray(record.hints)) {
+        const hints = record.hints.filter(value => typeof value === "string" && value).join(" ");
+        if (hints) parts.push(hints);
+    }
+    if (Array.isArray(record.terms)) {
+        const terms = record.terms.map(term => {
+            if (!term || typeof term !== "object") return "";
+            return [term.term, term.definition].filter(value => typeof value === "string" && value).join(" ");
+        }).filter(Boolean).join(" ");
+        if (terms) parts.push(terms);
+    }
+    return parts.join("\n");
+}
+
 const repositoryRoot = path.resolve(scriptDirectory, "..");
 const activeLevels = [2, 3, 4];
 const levelFiles = activeLevels.map(level => `level${level}.json`);
@@ -126,11 +160,12 @@ if (write) {
                 level: record.level,
                 category: record.category,
                 labels: record.labels,
-                question: record.question
+                question: record.question,
+                search: buildQuestionSearchText(record)
             });
         }
     }
-    const indexDocument = { version: 1, questions };
+    const indexDocument = { version: 2, questions };
     fs.writeFileSync(
         path.join(repositoryRoot, indexFile),
         `${JSON.stringify(indexDocument, null, 2)}\n`
@@ -166,11 +201,14 @@ if (write) {
                         level: record.level,
                         category: record.category,
                         labels: record.labels,
-                        question: record.question
+                        question: record.question,
+                        search: buildQuestionSearchText(record)
                     });
                 }
             }
-            if (JSON.stringify(actualIndex.questions) !== JSON.stringify(expectedQuestions)) {
+            const expectedIndex = { version: 2, questions: expectedQuestions };
+            if (actualIndex.version !== expectedIndex.version ||
+                JSON.stringify(actualIndex.questions) !== JSON.stringify(expectedQuestions)) {
                 addFinding("stale_index_file", `${indexFile} differs from the level data; run with --write.`);
             }
         }

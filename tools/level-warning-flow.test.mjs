@@ -19,12 +19,12 @@ const labelsDocument = {
     ]
 };
 const indexDocument = {
-    version: 1,
+    version: 2,
     questions: [
-        { id: 'q1', level: 2, category: 'school_and_youth', labels: ['student', 'school'], question: 'Q1' },
-        { id: 'q2', level: 3, category: 'school_and_youth', labels: ['student', 'school'], question: 'Q2' },
-        { id: 'q3', level: 4, category: 'family_and_care', labels: ['care'], question: 'Q3' },
-        { id: 'q4', level: 2, category: 'relationships_and_communication', labels: ['friendship'], question: 'Q4' }
+        { id: 'q1', level: 2, category: 'school_and_youth', labels: ['student', 'school'], question: 'Q1', search: '' },
+        { id: 'q2', level: 3, category: 'school_and_youth', labels: ['student', 'school'], question: 'Q2', search: '' },
+        { id: 'q3', level: 4, category: 'family_and_care', labels: ['care'], question: 'Q3', search: '背景テキスト ヒント' },
+        { id: 'q4', level: 2, category: 'relationships_and_communication', labels: ['friendship'], question: 'Q4', search: '' }
     ]
 };
 
@@ -97,7 +97,10 @@ function setupCustomSelect() {
         'questionPickerDetails', 'questionPicker', 'questionPickerStatus',
         'questionPickerCount', 'questionSearch', 'showMoreQuestions',
         'customTotal', 'customBreakdown', 'customError', 'customErrorText',
-        'retryLoadButton'
+        'retryLoadButton',
+        'tabLabels', 'tabQuestions', 'labelsPanel', 'questionsPanel',
+        'labelTabCount', 'selectedQuestionsPanel', 'selectedQuestionsCount',
+        'selectedQuestionList', 'clearQuestions'
     ]) {
         elements.set(id, makeElement());
     }
