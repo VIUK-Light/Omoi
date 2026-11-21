@@ -510,12 +510,7 @@
     to { transform: translate3d(-1.2%, .8%, 0); }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    :root[data-background="star"] .page-background,
-    :root[data-background="star"] .page-background__stars {
-        animation: none;
-    }
-}
+
 
 :root[data-background="dawn"] { --omoi-bg-image: var(--omoi-bg-dawn); }
 :root[data-background="ocean"] { --omoi-bg-image: var(--omoi-bg-ocean); }
@@ -782,4 +777,102 @@
 .resume-notice-close:focus-visible {
     outline: 2px solid var(--omoi-focus);
     outline-offset: 1px;
+}
+
+/* 星空以外の背景も、それぞれの雰囲気に合わせてゆっくり動かす。 */
+:root[data-background="dawn"] .page-background,
+:root[data-background="dusk"] .page-background,
+:root[data-background="forest"] .page-background,
+:root[data-background="cloud"] .page-background,
+:root[data-background="sakura"] .page-background,
+:root[data-background="ocean"] .page-background,
+:root[data-background="deep"] .page-background,
+:root[data-background="paper"] .page-background,
+:root[data-background="ripple"] .page-background,
+:root[data-background="lattice"] .page-background {
+    inset: -5%;
+}
+
+/* 朝焼け・夕暮れ: 光がゆっくり広がる。 */
+:root[data-background="dawn"] .page-background {
+    animation: omoi-bg-glow 24s ease-in-out infinite alternate;
+}
+
+:root[data-background="dusk"] .page-background {
+    animation: omoi-bg-glow 28s ease-in-out -6s infinite alternate-reverse;
+}
+
+@keyframes omoi-bg-glow {
+    from { transform: scale(1.02) translate3d(-1.5%, 1%, 0); }
+    to { transform: scale(1.08) translate3d(1.5%, -1%, 0); }
+}
+
+/* 森・桜: ゆらりと揺れる。 */
+:root[data-background="forest"] .page-background {
+    animation: omoi-bg-sway 26s ease-in-out infinite alternate;
+}
+
+:root[data-background="sakura"] .page-background {
+    animation: omoi-bg-sway 20s ease-in-out -4s infinite alternate-reverse;
+}
+
+@keyframes omoi-bg-sway {
+    from { transform: translate3d(-2%, .4%, 0) scale(1.03); }
+    to { transform: translate3d(2%, -.4%, 0) scale(1.03); }
+}
+
+/* 波・深海: 上下にゆっくり行き来する。 */
+:root[data-background="ocean"] .page-background {
+    animation: omoi-bg-tide 8s ease-in-out infinite alternate;
+}
+
+:root[data-background="deep"] .page-background {
+    animation: omoi-bg-tide 24s ease-in-out infinite alternate;
+}
+
+@keyframes omoi-bg-tide {
+    from { transform: translate3d(0, 2%, 0); }
+    to { transform: translate3d(0, -2%, 0); }
+}
+
+/* 雲: ゆっくり流れる。 */
+:root[data-background="cloud"] .page-background {
+    animation: omoi-bg-cloud 32s ease-in-out infinite alternate;
+}
+
+@keyframes omoi-bg-cloud {
+    from { transform: translate3d(-3%, .5%, 0); }
+    to { transform: translate3d(3%, -.5%, 0); }
+}
+
+/* 和紙・格子: 模様がごくゆっくり滑る。 */
+:root[data-background="paper"] .page-background {
+    animation: omoi-bg-slide 40s linear infinite alternate;
+}
+
+:root[data-background="lattice"] .page-background {
+    animation: omoi-bg-slide 36s linear infinite alternate-reverse;
+}
+
+@keyframes omoi-bg-slide {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-2.5%, 2.5%, 0); }
+}
+
+/* 波紋: 中心から広がるように脈打つ。 */
+:root[data-background="ripple"] .page-background {
+    transform-origin: 32% 38%;
+    animation: omoi-bg-ripple 7s ease-in-out infinite alternate;
+}
+
+@keyframes omoi-bg-ripple {
+    from { transform: scale(1); }
+    to { transform: scale(1.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root:not([data-background="none"]) .page-background,
+    .page-background__stars {
+        animation: none;
+    }
 }
