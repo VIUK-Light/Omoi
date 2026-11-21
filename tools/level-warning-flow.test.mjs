@@ -108,7 +108,7 @@ function setupCustomSelect() {
     const location = { href: 'https://omoi.viuk-light.org/custom-select.html' };
     const selections = [];
     const context = {
-        URL, AbortController,
+        URL, URLSearchParams, AbortController,
         setTimeout() { return 1; }, clearTimeout() {},
         console: { error() {} },
         document: {
@@ -237,7 +237,7 @@ test('custom mode saves the selected category and starts without a warning', asy
     assert.match(app.elements.get('customBreakdown').textContent, /カテゴリー1件/);
 
     app.elements.get('nextButton').click();
-    assert.equal(app.location.href, 'https://omoi.viuk-light.org/question.html?mode=custom&session=token123456');
+    assert.equal(app.location.href, 'https://omoi.viuk-light.org/custom-confirm.html?mode=custom&session=token123456');
     assert.equal(app.selections.length, 1);
     assert.deepEqual([...app.selections[0].labels], ['school']);
     assert.deepEqual([...app.selections[0].ids], []);

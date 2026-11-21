@@ -73,6 +73,8 @@ const furiganaSettingsSummary = document.getElementById("furiganaSettingsSummary
 const questionScreen = document.querySelector(".question-screen");
 const changeCategoryLink = document.getElementById("changeCategoryLink");
 const otherQuestionsLink = document.getElementById("otherQuestionsLink");
+const customSelectionSummary = document.getElementById("customSelectionSummary");
+const customSelectionSummaryText = document.getElementById("customSelectionSummaryText");
 const sharedQuestionNotice = document.getElementById("sharedQuestionNotice");
 const nextNote = document.getElementById("nextNote");
 const shareButton = document.getElementById("shareButton");
@@ -167,6 +169,10 @@ function applySharedMode() {
     nextNote.hidden = isSharedQuestion;
     changeCategoryLink.hidden = isSharedQuestion;
     otherQuestionsLink.hidden = !isSharedQuestion;
+    if (!isSharedQuestion && mode === "custom") {
+        changeCategoryLink.href = "custom-select.html?edit=1";
+        changeCategoryLink.textContent = "← 選択を変更する";
+    }
     finishButton.hidden = isSharedQuestion;
     classroomModeToggle.hidden = isSharedQuestion;
 }
@@ -512,6 +518,23 @@ function fallbackPoolForSavedProgress(questions, saved) {
     return questions;
 }
 
+function updateCustomSelectionSummary() {
+    if (!customSelectionSummary || !customSelectionSummaryText) return;
+    if (mode !== "custom") {
+        customSelectionSummary.hidden = true;
+        return;
+    }
+    const labels = Array.isArray(sessionCustomLabels) ? sessionCustomLabels : [];
+    const ids = Array.isArray(sessionCustomIds) ? sessionCustomIds : [];
+    const parts = [];
+    if (labels.length > 0) parts.push(`カテゴリー${labels.length}件`);
+    if (ids.length > 0) parts.push(`個別${ids.length}問`);
+    customSelectionSummaryText.textContent = parts.length > 0
+        ? `選択中: ${parts.join("・")}（${sessionQuestions.length}問）`
+        : `選択中: ${sessionQuestions.length}問`;
+    customSelectionSummary.hidden = false;
+}
+
 async function loadQuestions() {
     if (state === "loading" || isSharedIdMalformed || !isRequestValid) return;
     if (mode === "custom" && !savedProgress && !pendingSelection) {
@@ -597,6 +620,7 @@ async function loadQuestions() {
         }
         showQuestion();
         setState("ready");
+        updateCustomSelectionSummary();
     } catch (error) {
         const timedOut = controller.signal.aborted;
         console.error("Omoi: 質問の読み込みに失敗しました。", error);

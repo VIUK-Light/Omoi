@@ -97,6 +97,7 @@ let selectedQuestionIds = new Set();
 let visibleQuestionCount = pageSize;
 let selectedLevel = "all";
 let selectedCategoryFilter = "all";
+const editMode = new URLSearchParams(window.location.search).get("edit") === "1";
 
 function createToken() {
     if (window.OmoiProgress?.createToken) {
@@ -725,6 +726,20 @@ async function loadIndex() {
             if (!validLabelIds.has(id)) selectedLabels.delete(id);
         }
 
+        if (editMode && window.OmoiProgress) {
+            const saved = window.OmoiProgress.read();
+            if (saved && saved.mode === "custom") {
+                selectedLabels = new Set(Array.isArray(saved.labels) ? saved.labels : []);
+                selectedQuestionIds = new Set(Array.isArray(saved.selectedIds) ? saved.selectedIds : []);
+                for (const id of [...selectedQuestionIds]) {
+                    if (!validQuestionIds.has(id)) selectedQuestionIds.delete(id);
+                }
+                for (const id of [...selectedLabels]) {
+                    if (!validLabelIds.has(id)) selectedLabels.delete(id);
+                }
+            }
+        }
+
         indexReady = true;
         indexError = "";
         visibleQuestionCount = pageSize;
@@ -926,7 +941,7 @@ nextButton.addEventListener("click", function () {
         showError("この環境では選択を保存できません。ブラウザの設定を確認してください。", false);
         return;
     }
-    const questionUrl = new URL("question.html", window.location.href);
+    const questionUrl = new URL("custom-confirm.html", window.location.href);
     questionUrl.searchParams.set("mode", "custom");
     questionUrl.searchParams.set("session", token);
     redirect(questionUrl);

@@ -35,9 +35,12 @@ test('custom mode starts from selected categories without a warning', async ({ p
   await expect(page.locator('#clearLabels')).toBeVisible();
   await page.locator('#nextButton').click();
 
-  await expect(page).toHaveURL(/\/question\.html\?mode=custom&session=/);
+  await expect(page).toHaveURL(/\/custom-confirm.html\?.*session=/);
+  await expect(page.locator('#confirmStartButton')).toBeEnabled(ready);
+
+  await page.locator('#confirmStartButton').click();
+  await expect(page).toHaveURL(/\/question.html\?mode=custom&session=/);
   await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
-  await expect(page.locator('#sharedQuestionNotice')).toBeHidden();
 
   const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('omoi-progress')));
   expect(saved.version).toBe(2);
@@ -63,7 +66,11 @@ test('custom mode can start from an individually selected question', async ({ pa
   await expect(page.locator('#nextButton')).toBeEnabled();
   await page.locator('#nextButton').click();
 
-  await expect(page).toHaveURL(/\/question\.html\?mode=custom&session=/);
+  await expect(page).toHaveURL(/\/custom-confirm.html\?.*session=/);
+  await expect(page.locator('#confirmStartButton')).toBeEnabled(ready);
+
+  await page.locator('#confirmStartButton').click();
+  await expect(page).toHaveURL(/\/question.html\?mode=custom&session=/);
   await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
   const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('omoi-progress')));
   expect(saved.labels).toEqual([]);

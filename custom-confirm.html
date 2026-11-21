@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+
+    <title>選択内容の確認 - Omoi</title>
+    <link rel="stylesheet" href="select.css">
+    <link rel="stylesheet" href="custom-confirm.css">
+    <script src="theme.js"></script>
+    <script src="progress.js"></script>
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+    <main class="select-screen custom-confirm-screen">
+        <div class="select-content custom-confirm-content">
+
+            <header class="custom-confirm-header">
+                <a href="custom-select.html?edit=1" class="back-link custom-confirm-back">
+                    ← 選択を編集する
+                </a>
+                <p class="custom-eyebrow">自分で選ぶ</p>
+                <h1>選択内容の確認</h1>
+                <p class="custom-confirm-lead">
+                    選んだカテゴリーと問いを確認してください。内容を変更したい場合は「選択を編集する」から戻れます。
+                </p>
+            </header>
+
+            <div id="customConfirmError" class="custom-error" role="alert" hidden>
+                <p id="customConfirmErrorText"></p>
+                <a href="custom-select.html" class="custom-retry-button">選択画面へ戻る</a>
+            </div>
+
+            <section class="custom-confirm-section">
+                <h2>選択中のカテゴリー</h2>
+                <ul id="confirmLabelList" class="confirm-list"></ul>
+                <p id="confirmLabelEmpty" class="confirm-empty" hidden>カテゴリーは選択されていません。</p>
+            </section>
+
+            <section class="custom-confirm-section">
+                <h2>個別に選んだ問い</h2>
+                <ul id="confirmQuestionList" class="confirm-list"></ul>
+                <p id="confirmQuestionEmpty" class="confirm-empty" hidden>個別に選んだ問いはありません。</p>
+            </section>
+
+            <div class="custom-confirm-summary" role="status" aria-live="polite">
+                <strong id="confirmTotal">—</strong>
+                <span id="confirmBreakdown">選択内容を読み込んでいます…</span>
+            </div>
+
+            <div class="custom-confirm-actions">
+                <a href="custom-select.html?edit=1" class="custom-confirm-edit">選択を編集する</a>
+                <button type="button" id="confirmStartButton" disabled>
+                    この内容で始める
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="custom-confirm.js"></script>
+</body>
+</html>
