@@ -175,12 +175,19 @@ function render() {
                     text.className = "confirm-nested-text";
                     text.textContent = q.question;
 
-                    const detailToggle = document.createElement("button");
-                    detailToggle.type = "button";
-                    detailToggle.className = "confirm-nested-detail-toggle";
-                    detailToggle.textContent = "？";
-                    detailToggle.setAttribute("aria-label", `「${q.question}」の詳細を見る`);
-                    detailToggle.setAttribute("aria-expanded", "false");
+                    const hasDetail = Boolean(q.scenario) ||
+                        (q.summary && q.summary !== q.question) ||
+                        (Array.isArray(q.hints) && q.hints.length > 0) ||
+                        (Array.isArray(q.terms) && q.terms.length > 0);
+
+                    const detailToggle = hasDetail ? document.createElement("button") : null;
+                    if (detailToggle) {
+                        detailToggle.type = "button";
+                        detailToggle.className = "confirm-nested-detail-toggle";
+                        detailToggle.textContent = "i";
+                        detailToggle.setAttribute("aria-label", `「${q.question}」の詳細を見る`);
+                        detailToggle.setAttribute("aria-expanded", "false");
+                    }
 
                     const remove = document.createElement("button");
                     remove.type = "button";
@@ -204,18 +211,22 @@ function render() {
                     const detail = document.createElement("div");
                     detail.className = "confirm-nested-detail";
                     detail.hidden = true;
-                    renderDetail(detail, q);
+                    if (hasDetail) renderDetail(detail, q);
+                    else detail.hidden = true;
 
-                    detailToggle.addEventListener("click", function () {
-                        const willOpen = detail.hidden;
-                        detail.hidden = !willOpen;
-                        detailToggle.setAttribute("aria-expanded", String(willOpen));
-                        detailToggle.classList.toggle("is-open", willOpen);
-                    });
+                    if (detailToggle) {
+                        detailToggle.addEventListener("click", function () {
+                            const willOpen = detail.hidden;
+                            detail.hidden = !willOpen;
+                            detailToggle.setAttribute("aria-expanded", String(willOpen));
+                            detailToggle.classList.toggle("is-open", willOpen);
+                        });
+                    }
 
                     const row = document.createElement("div");
                     row.className = "confirm-nested-row";
-                    row.append(text, detailToggle, remove);
+                    if (detailToggle) row.append(text, detailToggle, remove);
+                    else row.append(text, remove);
 
                     li.append(row, detail);
                     questionUl.append(li);
