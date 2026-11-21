@@ -56,7 +56,7 @@ test('custom mode can start from an individually selected question', async ({ pa
 
   await expect(firstQuestion).toHaveAttribute('data-selected', 'true');
   await expect(page.locator('#questionPickerCount')).toHaveText('1問');
-  await expect(page.locator('#selectedQuestionsPanel')).toBeVisible();
+  await expect(page.locator('#openSelectedQuestions')).toBeVisible();
   await expect(page.locator('.selected-question-item')).toHaveCount(1);
   await expect(page.locator('#customTotal')).toHaveText('1問');
   await expect(page.locator('#customBreakdown')).toContainText('個別1問');
@@ -105,8 +105,9 @@ test('the question picker filters by words and level and keeps a selected list',
   await expect(page.locator('#customBreakdown')).toContainText('カテゴリー1件');
   await expect(page.locator('#customBreakdown')).toContainText('個別1問');
 
+  await page.locator('#openSelectedQuestions').click();
   await page.locator('.selected-question-remove').click();
-  await expect(page.locator('#selectedQuestionsPanel')).toBeHidden();
+  await expect(page.locator('#openSelectedQuestions')).toBeHidden();
   await expect(page.locator('#questionPickerCount')).toBeHidden();
   await expect(firstQuestion).toHaveAttribute('data-selected', 'false');
 
@@ -143,13 +144,14 @@ test('custom selection fits 320px and keeps the action bar visible', async ({ pa
   await expect(page.locator('[data-level-filter="all"]')).toBeVisible();
 
   await page.locator('#questionPicker .question-pick').first().locator('label').click();
-  await expect(page.locator('.selected-question-item')).toBeVisible();
+  await expect(page.locator('.selected-question-item')).toHaveCount(1);
   const pickerOverflow = await page.evaluate(() =>
     document.documentElement.scrollWidth - document.documentElement.clientWidth);
   expect(pickerOverflow).toBeLessThanOrEqual(0);
 
+  await page.locator('#openSelectedQuestions').click();
   await page.locator('.selected-question-remove').click();
-  await expect(page.locator('#selectedQuestionsPanel')).toBeHidden();
+  await expect(page.locator('#openSelectedQuestions')).toBeHidden();
 
   await page.locator('#tabLabels').click();
   await page.locator('#labelList label.label-card')

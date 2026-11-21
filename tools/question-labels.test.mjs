@@ -88,15 +88,27 @@ test('generated label files match the current question data', () => {
         return parts.join('\n');
     };
 
+    const buildQuestionHints = record => Array.isArray(record.hints)
+        ? record.hints.filter(value => typeof value === 'string' && value) : [];
+    const buildQuestionTerms = record => Array.isArray(record.terms)
+        ? record.terms.map(term => {
+            if (!term || typeof term !== 'object' || typeof term.term !== 'string' || !term.term) return '';
+            return term.definition ? term.term + ': ' + term.definition : term.term;
+        }).filter(Boolean) : [];
+
     assert.deepEqual(read('questions-index.json'), {
-        version: 2,
+        version: 3,
         questions: rows.map(row => ({
             id: row.id,
             level: row.level,
             category: row.category,
             labels: row.labels,
             question: row.question,
-            search: buildQuestionSearchText(row)
+            search: buildQuestionSearchText(row),
+            scenario: typeof row.scenario === 'string' ? row.scenario : '',
+            summary: flattenSummary(row.summary),
+            hints: buildQuestionHints(row),
+            terms: buildQuestionTerms(row)
         }))
     });
 });

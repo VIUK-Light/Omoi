@@ -12,10 +12,13 @@ const questionPickerStatus = document.getElementById("questionPickerStatus");
 const questionPickerCount = document.getElementById("questionPickerCount");
 const questionSearch = document.getElementById("questionSearch");
 const showMoreQuestions = document.getElementById("showMoreQuestions");
-const selectedQuestionsPanel = document.getElementById("selectedQuestionsPanel");
 const selectedQuestionsCount = document.getElementById("selectedQuestionsCount");
 const selectedQuestionList = document.getElementById("selectedQuestionList");
 const clearQuestionsButton = document.getElementById("clearQuestions");
+const openSelectedQuestionsButton = document.getElementById("openSelectedQuestions");
+const selectedQuestionsDialog = document.getElementById("selectedQuestionsDialog");
+const closeSelectedQuestionsButton = document.getElementById("closeSelectedQuestions");
+const selectedQuestionsDialogStatus = document.getElementById("selectedQuestionsDialogStatus");
 const customTotal = document.getElementById("customTotal");
 const customBreakdown = document.getElementById("customBreakdown");
 const customError = document.getElementById("customError");
@@ -185,17 +188,52 @@ function updateCustomSummary() {
     customBreakdown.textContent = parts.join("・");
 }
 
+function openSelectedQuestionsDialog() {
+    if (!selectedQuestionsDialog) return;
+    if (typeof selectedQuestionsDialog.showModal === "function") {
+        try {
+            selectedQuestionsDialog.showModal();
+        } catch (error) {
+            selectedQuestionsDialog.setAttribute("open", "");
+        }
+    } else {
+        selectedQuestionsDialog.setAttribute("open", "");
+    }
+}
+
+function closeSelectedQuestionsDialog() {
+    if (!selectedQuestionsDialog) return;
+    if (typeof selectedQuestionsDialog.close === "function") {
+        try {
+            selectedQuestionsDialog.close();
+            return;
+        } catch (error) {
+            // Fall through to attribute removal.
+        }
+    }
+    selectedQuestionsDialog.removeAttribute("open");
+}
+
 function renderSelectedQuestions() {
-    if (!selectedQuestionsPanel || !selectedQuestionList) return;
+    if (!selectedQuestionList) return;
 
     const selected = questions.filter(question => selectedQuestionIds.has(question.id));
 
-    selectedQuestionsPanel.hidden = selected.length === 0;
     if (selectedQuestionsCount) {
         selectedQuestionsCount.textContent = `${selected.length}問`;
     }
+    if (openSelectedQuestionsButton) {
+        openSelectedQuestionsButton.hidden = selected.length === 0;
+        openSelectedQuestionsButton.textContent = `選択中の問いを見る（${selected.length}問）`;
+    }
 
     selectedQuestionList.replaceChildren();
+
+    if (selectedQuestionsDialogStatus) {
+        selectedQuestionsDialogStatus.textContent = selected.length === 0
+            ? "まだ選択されていません。"
+            : `${selected.length}問を選択中です。`;
+    }
 
     selected.forEach(function (question, index) {
         const item = document.createElement("li");
@@ -217,13 +255,17 @@ function renderSelectedQuestions() {
             updateCustomUi();
             renderQuestionPicker();
 
+            if (selectedQuestionIds.size === 0) {
+                closeSelectedQuestionsDialog();
+            }
+
             const nextRemove = selectedQuestionList.children[
                 Math.min(index, selectedQuestionList.children.length - 1)
             ]?.children?.[1];
             if (nextRemove && typeof nextRemove.focus === "function") {
                 nextRemove.focus();
-            } else if (questionSearch && typeof questionSearch.focus === "function") {
-                questionSearch.focus();
+            } else if (closeSelectedQuestionsButton && typeof closeSelectedQuestionsButton.focus === "function") {
+                closeSelectedQuestionsButton.focus();
             }
         });
 
@@ -280,9 +322,9 @@ function setLoadingState() {
         questionPickerCount.textContent = "0問";
         questionPickerCount.hidden = true;
     }
-    if (selectedQuestionsPanel) selectedQuestionsPanel.hidden = true;
     if (selectedQuestionsCount) selectedQuestionsCount.textContent = "0問";
     if (selectedQuestionList) selectedQuestionList.replaceChildren();
+    if (openSelectedQuestionsButton) openSelectedQuestionsButton.hidden = true;
 
     if (questionPicker) questionPicker.replaceChildren();
     if (questionPickerStatus) {
@@ -387,7 +429,74 @@ function renderQuestionPicker() {
 
         text.append(meta, questionText);
         label.append(checkbox, check, text);
-        item.append(label);
+
+        const detail = document.createElement("details");
+        detail.className = "question-pick-detail";
+
+        const detailSummary = document.createElement("summary");
+        detailSummary.className = "question-pick-detail-summary";
+        detailSummary.textContent = "詳細を見る（背景・ヒント・用語）";
+        detail.append(detailSummary);
+
+        if (question.scenario) {
+            const block = document.createElement("div");
+            block.className = "question-detail-block";
+            const heading = document.createElement("strong");
+            heading.textContent = "背景";
+            const body = document.createElement("p");
+            body.textContent = question.scenario;
+            block.append(heading, body);
+            detail.append(block);
+        }
+        if (question.summary && question.summary !== question.question) {
+            const block = document.createElement("div");
+            block.className = "question-detail-block";
+            const heading = document.createElement("strong");
+            heading.textContent = "要点";
+            const body = document.createElement("p");
+            body.textContent = question.summary;
+            block.append(heading, body);
+            detail.append(block);
+        }
+        if (Array.isArray(question.hints) && question.hints.length > 0) {
+            const block = document.createElement("div");
+            block.className = "question-detail-block";
+            const heading = document.createElement("strong");
+            heading.textContent = "ヒント";
+            const list = document.createElement("ul");
+            for (const hint of question.hints) {
+                const li = document.createElement("li");
+                li.textContent = hint;
+                list.append(li);
+            }
+            block.append(heading, list);
+            detail.append(block);
+        }
+        if (Array.isArray(question.terms) && question.terms.length > 0) {
+            const block = document.createElement("div");
+            block.className = "question-detail-block";
+            const heading = document.createElement("strong");
+            heading.textContent = "用語";
+            const list = document.createElement("ul");
+            for (const term of question.terms) {
+                const li = document.createElement("li");
+                li.textContent = term;
+                list.append(li);
+            }
+            block.append(heading, list);
+            detail.append(block);
+        }
+        if (!question.scenario &&
+            (!question.hints || question.hints.length === 0) &&
+            (!question.terms || question.terms.length === 0) &&
+            (!question.summary || question.summary === question.question)) {
+            const note = document.createElement("p");
+            note.className = "question-detail-empty";
+            note.textContent = "詳細情報はありません。";
+            detail.append(note);
+        }
+
+        item.append(label, detail);
         questionPicker.append(item);
     }
 
@@ -464,7 +573,7 @@ function validateLabelsDocument(documentValue) {
 }
 
 function validateIndexDocument(documentValue, labelMap) {
-    if (!documentValue || documentValue.version !== 2 ||
+    if (!documentValue || documentValue.version !== 3 ||
         !Array.isArray(documentValue.questions)) {
         throw new Error("Invalid questions index.");
     }
@@ -475,7 +584,11 @@ function validateIndexDocument(documentValue, labelMap) {
             typeof question.question !== "string" ||
             !Array.isArray(question.labels) || question.labels.length === 0 ||
             question.labels.some(label => !labelMap.has(label)) ||
-            typeof question.search !== "string") {
+            typeof question.search !== "string" ||
+            typeof question.scenario !== "string" ||
+            typeof question.summary !== "string" ||
+            !Array.isArray(question.hints) ||
+            !Array.isArray(question.terms)) {
             throw new Error("Invalid question index entry.");
         }
         return {
@@ -485,6 +598,10 @@ function validateIndexDocument(documentValue, labelMap) {
             labels: question.labels,
             question: question.question,
             search: question.search,
+            scenario: question.scenario,
+            summary: question.summary,
+            hints: question.hints,
+            terms: question.terms,
             order
         };
     });
@@ -658,6 +775,17 @@ if (clearLabelsButton) {
     });
 }
 
+if (openSelectedQuestionsButton) {
+    openSelectedQuestionsButton.addEventListener("click", openSelectedQuestionsDialog);
+}
+if (closeSelectedQuestionsButton) {
+    closeSelectedQuestionsButton.addEventListener("click", closeSelectedQuestionsDialog);
+}
+if (selectedQuestionsDialog) {
+    selectedQuestionsDialog.addEventListener("click", function (event) {
+        if (event.target === selectedQuestionsDialog) closeSelectedQuestionsDialog();
+    });
+}
 if (clearQuestionsButton) {
     clearQuestionsButton.addEventListener("click", function () {
         if (selectedQuestionIds.size === 0) return;
@@ -665,6 +793,7 @@ if (clearQuestionsButton) {
         selectedQuestionIds.clear();
         updateCustomUi();
         renderQuestionPicker();
+        closeSelectedQuestionsDialog();
 
         if (questionSearch && typeof questionSearch.focus === "function") {
             questionSearch.focus();

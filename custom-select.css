@@ -461,29 +461,103 @@
     outline-offset: 2px;
 }
 
-/* 選択中の問い */
+/* 選択中の問い（別画面） */
 
-.selected-questions {
-    display: grid;
-    min-width: 0;
-    gap: 8px;
-    padding: 12px 14px;
-
-    border: 1px solid var(--omoi-border, #b7b7b7);
-    border-radius: 14px;
-    background: var(--omoi-surface, #f7f7f7);
+.selected-questions-bar {
+    display: flex;
+    justify-content: flex-start;
 }
 
-.selected-questions-head {
+.selected-open-button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 14px;
+
+    border: 1px solid var(--omoi-border, #b7b7b7);
+    border-radius: 999px;
+    background: var(--omoi-surface, #f7f7f7);
+    color: var(--omoi-ink, #111);
+
+    font: inherit;
+    font-size: 13px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.selected-open-button:hover {
+    background: var(--omoi-hover, #eee);
+}
+
+.selected-open-button:focus-visible {
+    outline: 2px solid var(--omoi-focus, #24566b);
+    outline-offset: 2px;
+}
+
+.selected-questions-dialog {
+    width: min(100% - 24px, 560px);
+    max-height: min(80vh, 640px);
+    padding: 0;
+    border: 1px solid var(--omoi-border, #b7b7b7);
+    border-radius: 18px;
+    background: var(--omoi-page, #fff);
+    color: var(--omoi-ink, #111);
+}
+
+.selected-questions-dialog::backdrop {
+    background: rgb(0 0 0 / 45%);
+}
+
+.selected-dialog-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
+    padding: 16px 18px 12px;
+    border-bottom: 1px solid var(--omoi-divider, #e8e8e8);
 }
 
-.selected-questions-head strong {
-    font-size: 13px;
+.selected-dialog-head h2 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.selected-dialog-close {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--omoi-muted, #666);
+
+    font: inherit;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.selected-dialog-close:hover {
+    background: var(--omoi-hover, #eee);
+    color: var(--omoi-ink, #111);
+}
+
+.selected-dialog-status {
+    margin: 0;
+    padding: 10px 18px 0;
+    color: var(--omoi-muted, #666);
+    font-size: 12px;
     line-height: 1.5;
+}
+
+.selected-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 18px 16px;
+    border-top: 1px solid var(--omoi-divider, #e8e8e8);
 }
 
 .selected-count {
@@ -526,9 +600,9 @@
     display: grid;
     min-width: 0;
     gap: 6px;
-    max-height: 248px;
+    max-height: 48vh;
     margin: 0;
-    padding: 0;
+    padding: 12px 18px;
     overflow-y: auto;
     overscroll-behavior: contain;
 
@@ -590,6 +664,72 @@
 .selected-question-remove:focus-visible {
     outline: 2px solid var(--omoi-focus, #24566b);
     outline-offset: -2px;
+}
+
+/* 問いの詳細 */
+
+.question-pick-detail {
+    margin-top: 10px;
+    padding: 10px 12px;
+    border: 1px solid var(--omoi-divider, #e8e8e8);
+    border-radius: 12px;
+    background: var(--omoi-surface, #f7f7f7);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.question-pick-detail summary {
+    cursor: pointer;
+    color: var(--omoi-link, #24566b);
+    font-size: 12px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.question-pick-detail summary::-webkit-details-marker {
+    display: none;
+}
+
+.question-pick-detail summary::before {
+    content: "＋ ";
+}
+
+.question-pick-detail[open] summary::before {
+    content: "− ";
+}
+
+.question-detail-block {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--omoi-divider, #e8e8e8);
+}
+
+.question-detail-block:first-of-type {
+    border-top: 0;
+    padding-top: 6px;
+}
+
+.question-detail-block strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--omoi-muted, #666);
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.question-detail-block p {
+    margin: 0;
+}
+
+.question-detail-block ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.question-detail-empty {
+    margin: 8px 0 0;
+    color: var(--omoi-muted, #666);
+    font-size: 12px;
 }
 
 /* 検索結果 */

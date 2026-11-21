@@ -21,7 +21,6 @@
                 <a href="select.html" class="back-link custom-select-back">
                     ← 選び方に戻る
                 </a>
-                <p class="custom-eyebrow">自分で選ぶ</p>
                 <h1 id="customHeading">問いを選ぶ</h1>
                 <p class="custom-select-lead">
                     近いテーマからまとめて選ぶか、問いをひとつずつ選べます。組み合わせてもかまいません。
@@ -129,17 +128,10 @@
                     </div>
                 </div>
 
-                <div id="selectedQuestionsPanel" class="selected-questions" hidden>
-                    <div class="selected-questions-head">
-                        <strong>
-                            選択中の問い
-                            <span id="selectedQuestionsCount" class="selected-count">0問</span>
-                        </strong>
-                        <button type="button" id="clearQuestions" class="selected-clear">
-                            すべて解除
-                        </button>
-                    </div>
-                    <ul id="selectedQuestionList" class="selected-question-list"></ul>
+                <div class="selected-questions-bar">
+                    <button type="button" id="openSelectedQuestions" class="selected-open-button" hidden>
+                        選択中の問いを見る（<span id="selectedQuestionsCount">0</span>問）
+                    </button>
                 </div>
 
                 <p id="questionPickerStatus" class="question-picker-status" role="status"></p>
@@ -163,6 +155,18 @@
 
         </div>
     </main>
+
+    <dialog id="selectedQuestionsDialog" class="selected-questions-dialog" aria-labelledby="selectedQuestionsTitle">
+        <div class="selected-dialog-head">
+            <h2 id="selectedQuestionsTitle">選択中の問い</h2>
+            <button type="button" id="closeSelectedQuestions" class="selected-dialog-close" aria-label="閉じる">×</button>
+        </div>
+        <p id="selectedQuestionsDialogStatus" class="selected-dialog-status" role="status"></p>
+        <ul id="selectedQuestionList" class="selected-question-list"></ul>
+        <div class="selected-dialog-actions">
+            <button type="button" id="clearQuestions" class="selected-clear">すべて解除</button>
+        </div>
+    </dialog>
 
     <script src="custom-select.js"></script>
 </body>

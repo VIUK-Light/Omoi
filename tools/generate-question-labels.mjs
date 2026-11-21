@@ -26,6 +26,19 @@ function flattenSummary(summary) {
     }).filter(Boolean).join(" ");
 }
 
+function buildQuestionHints(record) {
+    if (!Array.isArray(record.hints)) return [];
+    return record.hints.filter(value => typeof value === "string" && value);
+}
+
+function buildQuestionTerms(record) {
+    if (!Array.isArray(record.terms)) return [];
+    return record.terms.map(term => {
+        if (!term || typeof term !== "object" || typeof term.term !== "string" || !term.term) return "";
+        return term.definition ? term.term + ": " + term.definition : term.term;
+    }).filter(Boolean);
+}
+
 function buildQuestionSearchText(record) {
     const parts = [];
     if (typeof record.scenario === "string" && record.scenario) parts.push(record.scenario);
@@ -161,11 +174,15 @@ if (write) {
                 category: record.category,
                 labels: record.labels,
                 question: record.question,
-                search: buildQuestionSearchText(record)
+                search: buildQuestionSearchText(record),
+                scenario: typeof record.scenario === "string" ? record.scenario : "",
+                summary: flattenSummary(record.summary),
+                hints: buildQuestionHints(record),
+                terms: buildQuestionTerms(record)
             });
         }
     }
-    const indexDocument = { version: 2, questions };
+    const indexDocument = { version: 3, questions };
     fs.writeFileSync(
         path.join(repositoryRoot, indexFile),
         `${JSON.stringify(indexDocument, null, 2)}\n`
@@ -202,11 +219,15 @@ if (write) {
                         category: record.category,
                         labels: record.labels,
                         question: record.question,
-                        search: buildQuestionSearchText(record)
+                        search: buildQuestionSearchText(record),
+                        scenario: typeof record.scenario === "string" ? record.scenario : "",
+                        summary: flattenSummary(record.summary),
+                        hints: buildQuestionHints(record),
+                        terms: buildQuestionTerms(record)
                     });
                 }
             }
-            const expectedIndex = { version: 2, questions: expectedQuestions };
+            const expectedIndex = { version: 3, questions: expectedQuestions };
             if (actualIndex.version !== expectedIndex.version ||
                 JSON.stringify(actualIndex.questions) !== JSON.stringify(expectedQuestions)) {
                 addFinding("stale_index_file", `${indexFile} differs from the level data; run with --write.`);
