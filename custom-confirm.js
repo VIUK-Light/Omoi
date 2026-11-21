@@ -23,6 +23,7 @@ let labelsById = new Map();
 let questionsById = new Map();
 let questionsByLabel = new Map();
 let selection = null;
+const expandedLabels = new Set();
 
 function showError(message) {
     if (errorBox) errorBox.hidden = false;
@@ -153,8 +154,9 @@ function render() {
                 const toggle = document.createElement("button");
                 toggle.type = "button";
                 toggle.className = "confirm-toggle";
-                toggle.textContent = "中の問いを見る";
-                toggle.setAttribute("aria-expanded", "false");
+                const initiallyOpen = expandedLabels.has(labelId);
+                toggle.textContent = initiallyOpen ? "閉じる" : "中の問いを見る";
+                toggle.setAttribute("aria-expanded", String(initiallyOpen));
 
                 const remove = document.createElement("button");
                 remove.type = "button";
@@ -172,7 +174,7 @@ function render() {
 
                 const body = document.createElement("div");
                 body.className = "confirm-category-body";
-                body.hidden = true;
+                body.hidden = !expandedLabels.has(labelId);
 
                 const questionUl = document.createElement("ul");
                 questionUl.className = "confirm-nested-list";
@@ -241,6 +243,8 @@ function render() {
                     body.hidden = !willOpen;
                     toggle.setAttribute("aria-expanded", String(willOpen));
                     toggle.textContent = willOpen ? "閉じる" : "中の問いを見る";
+                    if (willOpen) expandedLabels.add(labelId);
+                    else expandedLabels.delete(labelId);
                 });
 
                 card.append(head, body);
