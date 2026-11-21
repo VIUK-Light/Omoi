@@ -323,6 +323,23 @@
     z-index: 10;
 }
 
+.custom-confirm-share {
+    min-height: 42px;
+    padding: 0 16px;
+    border: 1px solid var(--omoi-border, #b7b7b7);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--omoi-link, #24566b);
+    font: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.custom-confirm-share:hover {
+    background: var(--omoi-hover, #eee);
+}
+
 .custom-confirm-edit {
     display: inline-flex;
     align-items: center;

@@ -11,6 +11,8 @@ const questionCountEl = document.getElementById("confirmQuestionCount");
 const totalElement = document.getElementById("confirmTotal");
 const breakdownElement = document.getElementById("confirmBreakdown");
 const startButton = document.getElementById("confirmStartButton");
+const shareButton = document.getElementById("confirmShareButton");
+const shareStatus = document.getElementById("confirmShareStatus");
 
 let labelsById = new Map();
 let questionsById = new Map();
@@ -287,6 +289,18 @@ function render() {
     if (startButton) startButton.disabled = (labels.length === 0 && ids.length === 0);
 }
 
+function buildShareUrl() {
+    if (!selection) return null;
+    const url = new URL("question.html", window.location.href);
+    url.search = "";
+    url.searchParams.set("mode", "custom");
+    const labels = Array.isArray(selection.labels) ? selection.labels : [];
+    const ids = Array.isArray(selection.ids) ? selection.ids : [];
+    if (labels.length > 0) url.searchParams.set("labels", labels.join(","));
+    if (ids.length > 0) url.searchParams.set("ids", ids.join(","));
+    return url.href;
+}
+
 function load() {
     if (!sessionToken) {
         showError("選択内容が見つかりませんでした。選択画面からやり直してください。");
@@ -334,6 +348,33 @@ if (startButton) {
         url.searchParams.set("mode", "custom");
         url.searchParams.set("session", sessionToken);
         redirect(url);
+    });
+}
+
+if (shareButton) {
+    shareButton.addEventListener("click", async function () {
+        const url = buildShareUrl();
+        if (!url) return;
+        if (shareStatus) shareStatus.textContent = "";
+        try {
+            if (typeof navigator.share === "function") {
+                await navigator.share({
+                    title: "Omoi｜質問カード",
+                    text: "カスタムモードの選択",
+                    url
+                });
+                if (shareStatus) shareStatus.textContent = "共有しました";
+                return;
+            }
+        } catch (error) {
+            if (error?.name === "AbortError") return;
+        }
+        try {
+            await navigator.clipboard.writeText(url);
+            if (shareStatus) shareStatus.textContent = "リンクをコピーしました";
+        } catch (error) {
+            window.prompt("このURLをコピーしてください。", url);
+        }
     });
 }
 

@@ -921,3 +921,33 @@ rt {
     outline: 2px solid #555555;
     outline-offset: 3px;
 }
+
+/* カスタム選択サマリー */
+.custom-selection-summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+    margin: 8px 0 12px;
+    padding: 8px 12px;
+    border: 1px solid var(--omoi-border, #b7b7b7);
+    border-radius: 10px;
+    background: var(--omoi-surface, #f7f7f7);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.custom-selection-summary button,
+.custom-selection-summary a {
+    min-height: 32px;
+    padding: 0 10px;
+    border: 1px solid var(--omoi-border, #b7b7b7);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--omoi-link, #24566b);
+    font: inherit;
+    font-size: 12px;
+    line-height: 1.4;
+    text-decoration: none;
+    cursor: pointer;
+}

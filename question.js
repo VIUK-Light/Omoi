@@ -23,6 +23,8 @@ const sharedId = sharedIdValues.length === 1 ? sharedIdValues[0] : null;
 const isSharedIdMalformed = hasSharedId &&
     (sharedIdValues.length !== 1 || sharedId.trim() === "");
 
+
+
 // 進行中のセッションは、URLのtokenと端末の保存データが揃ったときだけ再開する。
 const sessionTokenValues = params.getAll("session");
 const sessionTokenFromUrl = sessionTokenValues.length === 1
@@ -30,6 +32,16 @@ const sessionTokenFromUrl = sessionTokenValues.length === 1
     : null;
 const hasSessionToken = typeof sessionTokenFromUrl === "string" &&
     /^[A-Za-z0-9_-]{6,64}$/.test(sessionTokenFromUrl);
+
+const sharedLabelsParam = params.get("labels");
+const sharedIdsParam = params.get("ids");
+const sharedCustomSelection = !hasSessionToken && mode === "custom" &&
+    (sharedLabelsParam || sharedIdsParam)
+    ? {
+        labels: sharedLabelsParam ? sharedLabelsParam.split(",").map(v => v.trim()).filter(Boolean) : [],
+        ids: sharedIdsParam ? sharedIdsParam.split(",").map(v => v.trim()).filter(Boolean) : []
+    }
+    : null;
 
 const isRequestValid = !isModeMalformed &&
     allowedModes.has(mode) &&
@@ -54,6 +66,7 @@ const savedProgress = readSavedProgress();
 const pendingSelection = !savedProgress && mode === "custom" && hasSessionToken
     ? window.OmoiProgress?.readSelection(sessionTokenFromUrl) ?? null
     : null;
+const hasSharedCustomSelection = Boolean(sharedCustomSelection);
 let sessionToken = savedProgress
     ? savedProgress.token
     : pendingSelection
@@ -75,6 +88,7 @@ const changeCategoryLink = document.getElementById("changeCategoryLink");
 const otherQuestionsLink = document.getElementById("otherQuestionsLink");
 const customSelectionSummary = document.getElementById("customSelectionSummary");
 const customSelectionSummaryText = document.getElementById("customSelectionSummaryText");
+const customSelectionShareButton = document.getElementById("customSelectionShareButton");
 const sharedQuestionNotice = document.getElementById("sharedQuestionNotice");
 const nextNote = document.getElementById("nextNote");
 const shareButton = document.getElementById("shareButton");
@@ -535,9 +549,40 @@ function updateCustomSelectionSummary() {
     customSelectionSummary.hidden = false;
 }
 
+function buildCustomShareUrl() {
+    const url = new URL("question.html", window.location.href);
+    url.search = "";
+    url.searchParams.set("mode", "custom");
+    const labels = Array.isArray(sessionCustomLabels) ? sessionCustomLabels : [];
+    const ids = Array.isArray(sessionCustomIds) ? sessionCustomIds : [];
+    if (labels.length > 0) url.searchParams.set("labels", labels.join(","));
+    if (ids.length > 0) url.searchParams.set("ids", ids.join(","));
+    return url.href;
+}
+
+if (customSelectionShareButton) {
+    customSelectionShareButton.addEventListener("click", async function () {
+        const url = buildCustomShareUrl();
+        if (!url) return;
+        try {
+            if (typeof navigator.share === "function") {
+                await navigator.share({ title: "Omoi｜質問カード", text: "カスタムモードの選択", url });
+                return;
+            }
+        } catch (error) {
+            if (error?.name === "AbortError") return;
+        }
+        try {
+            await navigator.clipboard.writeText(url);
+        } catch (error) {
+            window.prompt("このURLをコピーしてください。", url);
+        }
+    });
+}
+
 async function loadQuestions() {
     if (state === "loading" || isSharedIdMalformed || !isRequestValid) return;
-    if (mode === "custom" && !savedProgress && !pendingSelection) {
+    if (mode === "custom" && !savedProgress && !pendingSelection && !sharedCustomSelection) {
         showMessage("選んだ内容が見つかりませんでした。条件を選び直してください。");
         setState("invalid");
         return;
@@ -605,8 +650,16 @@ async function loadQuestions() {
             }
             startNewSession(pool);
         } else if (mode === "custom") {
-            sessionCustomLabels = Array.isArray(pendingSelection.labels) ? pendingSelection.labels : [];
-            sessionCustomIds = Array.isArray(pendingSelection.ids) ? pendingSelection.ids : [];
+            if (pendingSelection) {
+                sessionCustomLabels = Array.isArray(pendingSelection.labels) ? pendingSelection.labels : [];
+                sessionCustomIds = Array.isArray(pendingSelection.ids) ? pendingSelection.ids : [];
+            } else if (sharedCustomSelection) {
+                sessionCustomLabels = sharedCustomSelection.labels;
+                sessionCustomIds = sharedCustomSelection.ids;
+            } else {
+                sessionCustomLabels = [];
+                sessionCustomIds = [];
+            }
             const pool = customPool(allQuestions, sessionCustomLabels, sessionCustomIds);
             if (pool.length === 0) {
                 showMessage("選んだカテゴリーや問いに合う質問がありません。条件を選び直してください。");
@@ -799,6 +852,7 @@ function showQuestion() {
 
 function syncUrlWithCurrentQuestion(question) {
     if (!question?.id) return;
+    if (hasSharedCustomSelection) return;
     const url = new URL(window.location.href);
     url.search = "";
     if (!isSharedQuestion) {
