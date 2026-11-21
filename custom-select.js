@@ -430,73 +430,73 @@ function renderQuestionPicker() {
         text.append(meta, questionText);
         label.append(checkbox, check, text);
 
-        const detail = document.createElement("details");
-        detail.className = "question-pick-detail";
+        const hasDetail = Boolean(question.scenario) ||
+            (question.summary && question.summary !== question.question) ||
+            (Array.isArray(question.hints) && question.hints.length > 0) ||
+            (Array.isArray(question.terms) && question.terms.length > 0);
 
-        const detailSummary = document.createElement("summary");
-        detailSummary.className = "question-pick-detail-summary";
-        detailSummary.textContent = "詳細を見る（背景・ヒント・用語）";
-        detail.append(detailSummary);
+        if (hasDetail) {
+            const detail = document.createElement("details");
+            detail.className = "question-pick-detail";
 
-        if (question.scenario) {
-            const block = document.createElement("div");
-            block.className = "question-detail-block";
-            const heading = document.createElement("strong");
-            heading.textContent = "背景";
-            const body = document.createElement("p");
-            body.textContent = question.scenario;
-            block.append(heading, body);
-            detail.append(block);
-        }
-        if (question.summary && question.summary !== question.question) {
-            const block = document.createElement("div");
-            block.className = "question-detail-block";
-            const heading = document.createElement("strong");
-            heading.textContent = "要点";
-            const body = document.createElement("p");
-            body.textContent = question.summary;
-            block.append(heading, body);
-            detail.append(block);
-        }
-        if (Array.isArray(question.hints) && question.hints.length > 0) {
-            const block = document.createElement("div");
-            block.className = "question-detail-block";
-            const heading = document.createElement("strong");
-            heading.textContent = "ヒント";
-            const list = document.createElement("ul");
-            for (const hint of question.hints) {
-                const li = document.createElement("li");
-                li.textContent = hint;
-                list.append(li);
+            const detailSummary = document.createElement("summary");
+            detailSummary.className = "question-pick-detail-summary";
+            detailSummary.textContent = "詳細を見る（背景・ヒント・用語）";
+            detail.append(detailSummary);
+
+            if (question.scenario) {
+                const block = document.createElement("div");
+                block.className = "question-detail-block";
+                const heading = document.createElement("strong");
+                heading.textContent = "背景";
+                const body = document.createElement("p");
+                body.textContent = question.scenario;
+                block.append(heading, body);
+                detail.append(block);
             }
-            block.append(heading, list);
-            detail.append(block);
-        }
-        if (Array.isArray(question.terms) && question.terms.length > 0) {
-            const block = document.createElement("div");
-            block.className = "question-detail-block";
-            const heading = document.createElement("strong");
-            heading.textContent = "用語";
-            const list = document.createElement("ul");
-            for (const term of question.terms) {
-                const li = document.createElement("li");
-                li.textContent = term;
-                list.append(li);
+            if (question.summary && question.summary !== question.question) {
+                const block = document.createElement("div");
+                block.className = "question-detail-block";
+                const heading = document.createElement("strong");
+                heading.textContent = "要点";
+                const body = document.createElement("p");
+                body.textContent = question.summary;
+                block.append(heading, body);
+                detail.append(block);
             }
-            block.append(heading, list);
-            detail.append(block);
-        }
-        if (!question.scenario &&
-            (!question.hints || question.hints.length === 0) &&
-            (!question.terms || question.terms.length === 0) &&
-            (!question.summary || question.summary === question.question)) {
-            const note = document.createElement("p");
-            note.className = "question-detail-empty";
-            note.textContent = "詳細情報はありません。";
-            detail.append(note);
-        }
+            if (Array.isArray(question.hints) && question.hints.length > 0) {
+                const block = document.createElement("div");
+                block.className = "question-detail-block";
+                const heading = document.createElement("strong");
+                heading.textContent = "ヒント";
+                const list = document.createElement("ul");
+                for (const hint of question.hints) {
+                    const li = document.createElement("li");
+                    li.textContent = hint;
+                    list.append(li);
+                }
+                block.append(heading, list);
+                detail.append(block);
+            }
+            if (Array.isArray(question.terms) && question.terms.length > 0) {
+                const block = document.createElement("div");
+                block.className = "question-detail-block";
+                const heading = document.createElement("strong");
+                heading.textContent = "用語";
+                const list = document.createElement("ul");
+                for (const term of question.terms) {
+                    const li = document.createElement("li");
+                    li.textContent = term;
+                    list.append(li);
+                }
+                block.append(heading, list);
+                detail.append(block);
+            }
 
-        item.append(label, detail);
+            item.append(label, detail);
+        } else {
+            item.append(label);
+        }
         questionPicker.append(item);
     }
 
