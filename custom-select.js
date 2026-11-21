@@ -2,12 +2,20 @@ const nextButton = document.getElementById("nextButton");
 const labelList = document.getElementById("labelList");
 const labelSelectionSummary = document.getElementById("labelSelectionSummary");
 const clearLabelsButton = document.getElementById("clearLabels");
-const questionPickerDetails = document.getElementById("questionPickerDetails");
+const tabLabels = document.getElementById("tabLabels");
+const tabQuestions = document.getElementById("tabQuestions");
+const labelsPanel = document.getElementById("labelsPanel");
+const questionsPanel = document.getElementById("questionsPanel");
+const labelTabCount = document.getElementById("labelTabCount");
 const questionPicker = document.getElementById("questionPicker");
 const questionPickerStatus = document.getElementById("questionPickerStatus");
 const questionPickerCount = document.getElementById("questionPickerCount");
 const questionSearch = document.getElementById("questionSearch");
 const showMoreQuestions = document.getElementById("showMoreQuestions");
+const selectedQuestionsPanel = document.getElementById("selectedQuestionsPanel");
+const selectedQuestionsCount = document.getElementById("selectedQuestionsCount");
+const selectedQuestionList = document.getElementById("selectedQuestionList");
+const clearQuestionsButton = document.getElementById("clearQuestions");
 const customTotal = document.getElementById("customTotal");
 const customBreakdown = document.getElementById("customBreakdown");
 const customError = document.getElementById("customError");
@@ -20,7 +28,9 @@ const levelNames = {
     3: "level:中",
     4: "level:高"
 };
-const pageSize = 50;
+const pageSize = 20;
+const tabs = [tabLabels, tabQuestions].filter(Boolean);
+const levelFilterButtons = [...document.querySelectorAll("[data-level-filter]")];
 
 let indexPromise = null;
 let indexReady = false;
@@ -31,6 +41,7 @@ let questions = [];
 let selectedLabels = new Set();
 let selectedQuestionIds = new Set();
 let visibleQuestionCount = pageSize;
+let selectedLevel = "all";
 
 function createToken() {
     if (window.OmoiProgress?.createToken) {
@@ -90,6 +101,9 @@ function normalizeSearch(value) {
 function filteredQuestions() {
     const term = normalizeSearch(questionSearch?.value ?? "");
     const list = questions.filter(question => {
+        if (selectedLevel !== "all" && String(question.level) !== selectedLevel) {
+            return false;
+        }
         if (!term) return true;
         const haystack = [
             question.question,
@@ -111,6 +125,10 @@ function updateLabelSection() {
     if (!indexReady) {
         labelSelectionSummary.textContent = indexError ? "読み込めませんでした" : "読み込み中…";
         if (clearLabelsButton) clearLabelsButton.hidden = true;
+        if (labelTabCount) {
+            labelTabCount.textContent = "0件";
+            labelTabCount.hidden = true;
+        }
         return;
     }
 
@@ -120,14 +138,18 @@ function updateLabelSection() {
         : `全${topicLabels.length}カテゴリー`;
 
     if (clearLabelsButton) clearLabelsButton.hidden = selectedCount === 0;
+    if (labelTabCount) {
+        labelTabCount.textContent = `${selectedCount}件`;
+        labelTabCount.hidden = selectedCount === 0;
+    }
 }
 
 function updatePickerCount() {
     if (!questionPickerCount) return;
 
     const count = selectedQuestionIds.size;
-    questionPickerCount.textContent = count > 0 ? `${count}問選択中` : "任意";
-    questionPickerCount.dataset.active = count > 0 ? "true" : "false";
+    questionPickerCount.textContent = `${count}問`;
+    questionPickerCount.hidden = count === 0;
 }
 
 function updateCustomSummary() {
@@ -162,11 +184,59 @@ function updateCustomSummary() {
     customBreakdown.textContent = parts.join("・");
 }
 
+function renderSelectedQuestions() {
+    if (!selectedQuestionsPanel || !selectedQuestionList) return;
+
+    const selected = questions.filter(question => selectedQuestionIds.has(question.id));
+
+    selectedQuestionsPanel.hidden = selected.length === 0;
+    if (selectedQuestionsCount) {
+        selectedQuestionsCount.textContent = `${selected.length}問`;
+    }
+
+    selectedQuestionList.replaceChildren();
+
+    selected.forEach(function (question, index) {
+        const item = document.createElement("li");
+        item.className = "selected-question-item";
+
+        const text = document.createElement("span");
+        text.className = "selected-question-text";
+        text.textContent = question.question;
+        text.title = question.question;
+
+        const remove = document.createElement("button");
+        remove.type = "button";
+        remove.className = "selected-question-remove";
+        remove.textContent = "×";
+        remove.setAttribute("aria-label", `「${question.question}」を選択から外す`);
+        remove.addEventListener("click", function () {
+            if (!selectedQuestionIds.delete(question.id)) return;
+
+            updateCustomUi();
+            renderQuestionPicker();
+
+            const nextRemove = selectedQuestionList.children[
+                Math.min(index, selectedQuestionList.children.length - 1)
+            ]?.children?.[1];
+            if (nextRemove && typeof nextRemove.focus === "function") {
+                nextRemove.focus();
+            } else if (questionSearch && typeof questionSearch.focus === "function") {
+                questionSearch.focus();
+            }
+        });
+
+        item.append(text, remove);
+        selectedQuestionList.append(item);
+    });
+}
+
 function updateCustomUi() {
     updateLabelSection();
     updatePickerCount();
     updateCustomSummary();
     updateNextButton();
+    renderSelectedQuestions();
 }
 
 function showError(message, canRetry) {
@@ -200,15 +270,24 @@ function setLoadingState() {
     renderLabelSkeletons();
     if (labelSelectionSummary) labelSelectionSummary.textContent = "読み込み中…";
     if (clearLabelsButton) clearLabelsButton.hidden = true;
-
-    if (questionPickerDetails) questionPickerDetails.hidden = true;
-    if (questionPickerCount) {
-        questionPickerCount.textContent = "—";
-        questionPickerCount.dataset.active = "false";
+    if (labelTabCount) {
+        labelTabCount.textContent = "0件";
+        labelTabCount.hidden = true;
     }
 
+    if (questionPickerCount) {
+        questionPickerCount.textContent = "0問";
+        questionPickerCount.hidden = true;
+    }
+    if (selectedQuestionsPanel) selectedQuestionsPanel.hidden = true;
+    if (selectedQuestionsCount) selectedQuestionsCount.textContent = "0問";
+    if (selectedQuestionList) selectedQuestionList.replaceChildren();
+
     if (questionPicker) questionPicker.replaceChildren();
-    if (questionPickerStatus) questionPickerStatus.textContent = "読み込み中…";
+    if (questionPickerStatus) {
+        questionPickerStatus.textContent = "読み込み中…";
+        questionPickerStatus.dataset.empty = "false";
+    }
     if (showMoreQuestions) showMoreQuestions.hidden = true;
 
     if (customTotal) customTotal.textContent = "—";
@@ -218,10 +297,9 @@ function setLoadingState() {
     hideError();
 }
 
-function renderQuestionPicker(options = {}) {
+function renderQuestionPicker() {
     if (!questionPicker) return;
 
-    const previousScroll = options.preserveScroll ? questionPicker.scrollTop ?? 0 : 0;
     questionPicker.replaceChildren();
 
     if (!indexReady) {
@@ -229,6 +307,7 @@ function renderQuestionPicker(options = {}) {
             questionPickerStatus.textContent = indexError
                 ? "問いを読み込めませんでした。"
                 : "読み込み中…";
+            questionPickerStatus.dataset.empty = "false";
         }
         if (showMoreQuestions) showMoreQuestions.hidden = true;
         return;
@@ -236,11 +315,20 @@ function renderQuestionPicker(options = {}) {
 
     const list = filteredQuestions();
     const shown = list.slice(0, visibleQuestionCount);
+    const term = questionSearch?.value?.trim() ?? "";
 
     if (questionPickerStatus) {
-        questionPickerStatus.textContent = list.length === 0
-            ? "該当する問いがありません。"
-            : `${list.length}問中${shown.length}問を表示しています。`;
+        questionPickerStatus.dataset.empty = String(list.length === 0);
+        if (list.length === 0) {
+            questionPickerStatus.textContent = term
+                ? `「${term}」に一致する問いがありません。別の言葉で探してみてください。`
+                : "条件に一致する問いがありません。";
+        } else if (shown.length >= list.length) {
+            questionPickerStatus.textContent = `${list.length}問を表示しています。`;
+        } else {
+            questionPickerStatus.textContent =
+                `${list.length}問中${shown.length}問を表示しています。`;
+        }
     }
 
     for (const question of shown) {
@@ -262,9 +350,7 @@ function renderQuestionPicker(options = {}) {
             else selectedQuestionIds.delete(question.id);
 
             item.dataset.selected = checkbox.checked ? "true" : "false";
-            updatePickerCount();
-            updateCustomSummary();
-            updateNextButton();
+            updateCustomUi();
         });
 
         const check = document.createElement("span");
@@ -304,8 +390,13 @@ function renderQuestionPicker(options = {}) {
         questionPicker.append(item);
     }
 
-    if (showMoreQuestions) showMoreQuestions.hidden = shown.length >= list.length;
-    questionPicker.scrollTop = previousScroll;
+    if (showMoreQuestions) {
+        const remaining = list.length - shown.length;
+        showMoreQuestions.hidden = remaining <= 0;
+        showMoreQuestions.textContent = remaining > 0
+            ? `もっと見る（残り${remaining}問）`
+            : "もっと見る";
+    }
 }
 
 function populateLabels() {
@@ -330,9 +421,8 @@ function populateLabels() {
             if (checkbox.checked) selectedLabels.add(label.id);
             else selectedLabels.delete(label.id);
 
-            visibleQuestionCount = pageSize;
             updateCustomUi();
-            renderQuestionPicker({ preserveScroll: true });
+            renderQuestionPicker();
         });
 
         const check = document.createElement("span");
@@ -434,7 +524,6 @@ async function loadIndex() {
         visibleQuestionCount = pageSize;
 
         hideError();
-        if (questionPickerDetails) questionPickerDetails.hidden = false;
         populateLabels();
         updateCustomUi();
         renderQuestionPicker();
@@ -448,12 +537,12 @@ async function loadIndex() {
 
         if (!controller.signal.aborted) controller.abort();
         if (labelList) labelList.replaceChildren();
-        if (questionPickerDetails) questionPickerDetails.hidden = true;
         showError(indexError, true);
         updateLabelSection();
         updatePickerCount();
         updateCustomSummary();
         updateNextButton();
+        renderQuestionPicker();
         throw error;
     } finally {
         clearTimeout(timeout);
@@ -470,17 +559,84 @@ function ensureIndex() {
     return indexPromise;
 }
 
+function setActiveTab(name) {
+    if (!tabLabels || !tabQuestions || !labelsPanel || !questionsPanel) return;
+
+    const showLabels = name === "labels";
+    tabLabels.setAttribute("aria-selected", String(showLabels));
+    tabQuestions.setAttribute("aria-selected", String(!showLabels));
+    tabLabels.tabIndex = showLabels ? 0 : -1;
+    tabQuestions.tabIndex = showLabels ? -1 : 0;
+    labelsPanel.hidden = !showLabels;
+    questionsPanel.hidden = showLabels;
+
+    if (!showLabels) {
+        renderQuestionPicker();
+    }
+}
+
+function handleTabKeydown(event) {
+    const keys = ["ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown", "Home", "End"];
+    if (!keys.includes(event.key) || tabs.length < 2) return;
+
+    event.preventDefault();
+    const currentIndex = tabs.indexOf(event.currentTarget);
+    let nextIndex;
+
+    if (event.key === "Home") {
+        nextIndex = 0;
+    } else if (event.key === "End") {
+        nextIndex = tabs.length - 1;
+    } else {
+        const direction = event.key === "ArrowRight" || event.key === "ArrowDown" ? 1 : -1;
+        nextIndex = (currentIndex + direction + tabs.length) % tabs.length;
+    }
+
+    const nextTab = tabs[nextIndex];
+    setActiveTab(nextTab === tabQuestions ? "questions" : "labels");
+    nextTab.focus();
+}
+
+if (tabLabels) {
+    tabLabels.addEventListener("click", function () {
+        setActiveTab("labels");
+    });
+    tabLabels.addEventListener("keydown", handleTabKeydown);
+}
+
+if (tabQuestions) {
+    tabQuestions.addEventListener("click", function () {
+        setActiveTab("questions");
+    });
+    tabQuestions.addEventListener("keydown", handleTabKeydown);
+}
+
 if (questionSearch) {
     questionSearch.addEventListener("input", function () {
         visibleQuestionCount = pageSize;
         renderQuestionPicker();
     });
+    questionSearch.addEventListener("search", function () {
+        visibleQuestionCount = pageSize;
+        renderQuestionPicker();
+    });
 }
+
+levelFilterButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+        selectedLevel = button.dataset.levelFilter ?? "all";
+        visibleQuestionCount = pageSize;
+        levelFilterButtons.forEach(function (other) {
+            other.setAttribute("aria-pressed", String(other === button));
+        });
+        renderQuestionPicker();
+    });
+});
 
 if (showMoreQuestions) {
     showMoreQuestions.addEventListener("click", function () {
         visibleQuestionCount += pageSize;
-        renderQuestionPicker({ preserveScroll: true });
+        renderQuestionPicker();
     });
 }
 
@@ -489,14 +645,26 @@ if (clearLabelsButton) {
         if (selectedLabels.size === 0) return;
 
         selectedLabels.clear();
-        visibleQuestionCount = pageSize;
-        populateLabels();
         updateCustomUi();
-        renderQuestionPicker({ preserveScroll: true });
+        renderQuestionPicker();
 
         const firstCheckbox = labelList?.children[0]?.children[0];
         if (firstCheckbox && typeof firstCheckbox.focus === "function") {
             firstCheckbox.focus();
+        }
+    });
+}
+
+if (clearQuestionsButton) {
+    clearQuestionsButton.addEventListener("click", function () {
+        if (selectedQuestionIds.size === 0) return;
+
+        selectedQuestionIds.clear();
+        updateCustomUi();
+        renderQuestionPicker();
+
+        if (questionSearch && typeof questionSearch.focus === "function") {
+            questionSearch.focus();
         }
     });
 }
