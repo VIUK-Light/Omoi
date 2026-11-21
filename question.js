@@ -182,10 +182,7 @@ function applySharedMode() {
     nextNote.hidden = isSharedQuestion;
     changeCategoryLink.hidden = isSharedQuestion;
     otherQuestionsLink.hidden = !isSharedQuestion;
-    if (!isSharedQuestion && mode === "custom") {
-        changeCategoryLink.href = "custom-select.html?edit=1";
-        changeCategoryLink.textContent = "← 選択を変更する";
-    }
+
     finishButton.hidden = isSharedQuestion;
     classroomModeToggle.hidden = isSharedQuestion;
 }
