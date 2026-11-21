@@ -221,16 +221,18 @@ body::after {
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    background:
-        radial-gradient(40% 30% at 20% 20%, rgba(36, 86, 107, 0.18), transparent 70%),
-        radial-gradient(35% 25% at 80% 70%, rgba(107, 36, 86, 0.14), transparent 70%);
-    animation: omoi-bg-drift 1s ease-in-out infinite alternate;
+    background: linear-gradient(120deg, rgba(36, 86, 107, 0.12), rgba(107, 36, 86, 0.10), rgba(36, 86, 107, 0.12));
+    background-size: 300% 300%;
+    animation: omoi-bg-drift 3s ease infinite;
 }
 
 @keyframes omoi-bg-drift {
-    0% { transform: translate3d(0, 0, 0) scale(1); }
-    50% { transform: translate3d(-6%, 3%, 0) scale(1.12); }
-    100% { transform: translate3d(6%, -3%, 0) scale(1); }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
