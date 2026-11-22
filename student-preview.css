@@ -4,6 +4,7 @@
     padding: 24px 16px 120px;
     display: grid;
     gap: 24px;
+    box-sizing: border-box;
 }
 
 .student-preview-summary,

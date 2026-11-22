@@ -1299,7 +1299,7 @@ function showQuestion() {
     const detailValue = detail?.text?.trim() ?? "";
     const sources = detail?.sources ?? [];
     const terms = supportsHelpers ? currentQuestion.terms ?? [] : [];
-    const hasScenario = supportsHelpers && scenario !== "";
+    const hasScenario = scenario !== "";
     if (detailValue !== "" || sources.length > 0 || terms.length > 0 || hasScenario) {
         detailButton.hidden = false;
         if (detailValue) {
