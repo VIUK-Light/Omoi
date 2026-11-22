@@ -318,6 +318,7 @@
     gap: 10px;
     justify-content: flex-end;
     padding: 12px 16px;
+    box-sizing: border-box;
     background: var(--omoi-page, #fff);
     border-top: 1px solid var(--omoi-border, #b7b7b7);
     z-index: 10;
@@ -406,5 +407,7 @@
     .custom-confirm-actions button {
         width: 100%;
         justify-content: center;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
     }
 }
