@@ -39,6 +39,7 @@
     const levelSettingsBlock = document.getElementById("levelSettingsBlock");
     const countSettingsBlock = document.getElementById("countSettingsBlock");
     const avoidHeavyToggle = document.getElementById("avoidHeavyToggle");
+    const safetyNote = document.getElementById("safetyNote");
     const studentTotal = document.getElementById("studentTotal");
     const studentBreakdown = document.getElementById("studentBreakdown");
     const studentError = document.getElementById("studentError");
@@ -439,7 +440,8 @@
             themeSettingsBlock,
             levelSettingsBlock,
             countSettingsBlock,
-            avoidHeavyToggle
+            avoidHeavyToggle,
+            safetyNote
         ]) {
             if (element) element.hidden = active;
         }
@@ -469,7 +471,9 @@
         const deck = deckQuestions();
         studentTotal.textContent = `${deck.length}問`;
 
-        if (selectedQuestionIds.size > 0) {
+        if (deck.length === 0 && selectedQuestionIds.size === 0) {
+            studentBreakdown.textContent = "テーマを選ぶか、深さ・重い内容の条件を見直してください";
+        } else if (selectedQuestionIds.size > 0) {
             studentBreakdown.textContent = `個別に選んだ${selectedQuestionIds.size}問で始めます`;
         } else {
             const pool = basePool();
@@ -487,6 +491,14 @@
             studentBreakdown.textContent = `${themeLabel}・${levelLabel}・${countLabel}${heavyLabel}`;
         }
 
+        const individualMode = role === "teacher" && selectedQuestionIds.size > 0;
+        if (safetyNote) {
+            if (individualMode) {
+                safetyNote.hidden = true;
+            } else {
+                safetyNote.hidden = !basePool().some(question => question.sensitivity === 4);
+            }
+        }
         if (nextButton) nextButton.disabled = deck.length === 0;
     }
 
@@ -942,9 +954,7 @@
                 .sort((left, right) => (left.order ?? 0) - (right.order ?? 0));
             questions = validateFilterDocument(filterDocument, labelsById);
 
-            loadScenarios().then(function () {
-                if (indexReady) renderAll();
-            });
+            loadScenarios();
 
             const validLabelIds = new Set(topicLabels.map(label => label.id));
             for (const id of [...selectedThemes]) {
