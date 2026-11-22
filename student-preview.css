@@ -5,6 +5,7 @@
     display: grid;
     gap: 24px;
     box-sizing: border-box;
+    background: #ffffff;
 }
 
 .student-preview-summary,
@@ -45,7 +46,7 @@
     padding: 14px;
     border: 1px solid var(--omoi-border, #b7b7b7);
     border-radius: 14px;
-    background: var(--omoi-page, #fff);
+    background: #ffffff;
 }
 
 .student-preview-item-main {
