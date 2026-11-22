@@ -22,6 +22,7 @@
     let topicLabels = [];
     let questions = [];
     let deck = [];
+    let scenarioById = new Map();
     let loadPromise = null;
 
     function parseThemeParameter(value) {
@@ -222,7 +223,15 @@
             text.className = "student-preview-question";
             text.textContent = question.question;
 
-            main.append(meta, text);
+            const scenario = scenarioById.get(question.id) || "";
+            if (scenario) {
+                const scenarioBlock = document.createElement("p");
+                scenarioBlock.className = "student-preview-scenario";
+                scenarioBlock.textContent = scenario;
+                main.append(meta, text, scenarioBlock);
+            } else {
+                main.append(meta, text);
+            }
 
             const remove = document.createElement("button");
             remove.type = "button";
@@ -266,9 +275,10 @@
         if (backLink) backLink.href = backUrl();
         renderSummary();
         try {
-            const [labelsRes, filterRes] = await Promise.all([
+            const [labelsRes, filterRes, indexRes] = await Promise.all([
                 fetch("labels.json"),
-                fetch("question-filter-index.json")
+                fetch("question-filter-index.json"),
+                fetch("questions-index.json").catch(() => null)
             ]);
             if (!labelsRes.ok || !filterRes.ok) throw new Error("load failed");
             const [labelsDoc, filterDoc] = await Promise.all([labelsRes.json(), filterRes.json()]);
@@ -277,6 +287,15 @@
                 .filter(label => label.kind === "topic")
                 .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
             questions = Array.isArray(filterDoc.questions) ? filterDoc.questions : [];
+            if (indexRes && indexRes.ok) {
+                const indexDoc = await indexRes.json();
+                const all = Array.isArray(indexDoc.questions) ? indexDoc.questions : [];
+                scenarioById = new Map(
+                    all
+                        .filter(question => typeof question?.id === "string" && typeof question?.scenario === "string")
+                        .map(question => [question.id, question.scenario.trim()])
+                );
+            }
             deck = resolveDeck();
             hideError();
             syncUrl();
