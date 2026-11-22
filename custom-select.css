@@ -623,18 +623,14 @@
 }
 
 .selected-question-text {
-    display: -webkit-box;
     flex: 1;
     min-width: 0;
     padding: 8px 0;
-    overflow: hidden;
 
     font-size: 13px;
     line-height: 1.5;
     overflow-wrap: anywhere;
-
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    white-space: pre-wrap;
 }
 
 .selected-question-remove {

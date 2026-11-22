@@ -228,7 +228,7 @@
                 const scenarioBlock = document.createElement("p");
                 scenarioBlock.className = "student-preview-scenario";
                 scenarioBlock.textContent = scenario;
-                main.append(meta, text, scenarioBlock);
+                main.append(meta, scenarioBlock, text);
             } else {
                 main.append(meta, text);
             }
@@ -343,7 +343,14 @@
                     document.execCommand("copy");
                     area.remove();
                 }
-                if (previewShareStatus) previewShareStatus.textContent = "セットのURLをコピーしました。";
+                if (previewShareStatus) {
+                    previewShareStatus.textContent = "✓ セットのURLをコピーしました。";
+                    window.setTimeout(() => {
+                        if (previewShareStatus.textContent === "✓ セットのURLをコピーしました。") {
+                            previewShareStatus.textContent = "";
+                        }
+                    }, 3000);
+                }
             } catch (error) {
                 if (previewShareStatus) previewShareStatus.textContent = "URLをコピーできませんでした。";
             }

@@ -32,6 +32,9 @@
     padding: 0;
     display: grid;
     gap: 10px;
+    max-height: 60vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
 
 .student-preview-item {
@@ -143,6 +146,10 @@
 }
 
 @media (max-width: 480px) {
+    .student-preview-list {
+        max-height: 50vh;
+    }
+
     .student-preview-content {
         padding: 20px 14px 120px;
     }

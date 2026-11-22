@@ -1299,10 +1299,13 @@ function showQuestion() {
     const detailValue = detail?.text?.trim() ?? "";
     const sources = detail?.sources ?? [];
     const terms = supportsHelpers ? currentQuestion.terms ?? [] : [];
-    if (detailValue !== "" || sources.length > 0 || terms.length > 0) {
+    const hasScenario = supportsHelpers && scenario !== "";
+    if (detailValue !== "" || sources.length > 0 || terms.length > 0 || hasScenario) {
         detailButton.hidden = false;
         if (detailValue) {
             renderFuriganaText(detailText, detailValue, "detail.text");
+        } else if (hasScenario) {
+            renderFuriganaText(detailText, scenario, "scenario");
         }
 
         termsSection.hidden = terms.length === 0;
@@ -2056,7 +2059,10 @@ shareUrlButton.addEventListener("click", async function () {
                 text: question.question,
                 url
             });
-            shareStatus.textContent = "共有しました";
+            shareStatus.textContent = "✓ 共有しました";
+            window.setTimeout(() => {
+                if (shareStatus.textContent === "✓ 共有しました") shareStatus.textContent = "";
+            }, 3000);
             return;
         }
     } catch (error) {
@@ -2064,7 +2070,12 @@ shareUrlButton.addEventListener("click", async function () {
     }
     try {
         await navigator.clipboard.writeText(url);
-        shareStatus.textContent = "リンクをコピーしました";
+        shareStatus.textContent = "✓ リンクをコピーしました";
+        window.setTimeout(() => {
+            if (shareStatus.textContent === "✓ リンクをコピーしました") {
+                shareStatus.textContent = "";
+            }
+        }, 3000);
     } catch (error) {
         window.prompt("このURLをコピーしてください。", url);
     }
