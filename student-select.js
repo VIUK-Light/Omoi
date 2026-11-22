@@ -1191,4 +1191,6 @@
     }
     setLoadingState();
     ensureLoad();
+    // E2E がクリック可能になるタイミングを判定できるよう、初期化完了を記録する。
+    document.documentElement.dataset.studentSelectReady = "true";
 })();

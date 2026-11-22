@@ -4,8 +4,13 @@ test.describe.configure({ timeout: 60000 });
 
 const ready = { timeout: 20000 };
 
+async function waitForStudentSelect(page) {
+  await expect(page.locator('html[data-student-select-ready="true"]')).toBeAttached(ready);
+}
+
 async function openSettings(page, role = 'teacher') {
   await page.goto('/student-select.html');
+  await waitForStudentSelect(page);
   await expect(page.locator('[data-student-role="student"]')).toBeVisible(ready);
   await page.locator('[data-student-role="' + role + '"]').click();
   await expect(page.locator('#themeGroups input[name="theme-group"]')).toHaveCount(7, ready);
@@ -24,6 +29,7 @@ test('quick start opens the 120 student questions without a settings detour', as
   await page.locator('#nextButton').click();
   await expect(page).toHaveURL(/\/student-select\.html$/);
   await expect(page.getByRole('heading', { name: '使うのは？' })).toBeVisible();
+  await waitForStudentSelect(page);
 
   await page.locator('[data-student-role="student"]').click();
   await expect(page.getByRole('heading', { name: '自分で設定する' })).toBeVisible();
@@ -143,6 +149,7 @@ test('the settings screen restores the saved student session for editing', async
 test('teacher role reveals individual question selection, student role hides it', async ({ page }) => {
   await page.goto('/student-select.html');
   await expect(page.getByRole('heading', { name: '使うのは？' })).toBeVisible(ready);
+  await waitForStudentSelect(page);
 
   await page.locator('[data-student-role="student"]').click();
   await expect(page.locator('#themeGroups input[name="theme-group"]')).toHaveCount(7, ready);

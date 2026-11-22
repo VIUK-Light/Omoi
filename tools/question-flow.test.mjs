@@ -104,6 +104,8 @@ function setup(search = '?level=2', storage = createStorage()) {
             location,
             localStorage: storage,
             addEventListener() {},
+            setTimeout(fn) { onTimeout = fn; return 1; },
+            clearTimeout() {},
             OmoiShare: {
                 decodeSharePayload: value => {
                     try {
@@ -241,11 +243,21 @@ test('clicking another button clears the copied-link status', async () => {
     const app = setup();
     app.respond(); await flush();
     await app.element('shareUrlButton').click();
-    assert.equal(app.element('shareStatus').textContent, 'リンクをコピーしました');
+    assert.equal(app.element('shareStatus').textContent, '✓ リンクをコピーしました');
 
     app.document.click({
         target: { closest: () => app.element('hintButton') }
     });
+    assert.equal(app.element('shareStatus').textContent, '');
+});
+
+test('the copied-link status clears after three seconds', async () => {
+    const app = setup();
+    app.respond(); await flush();
+    await app.element('shareUrlButton').click();
+    assert.equal(app.element('shareStatus').textContent, '✓ リンクをコピーしました');
+
+    app.timeout();
     assert.equal(app.element('shareStatus').textContent, '');
 });
 

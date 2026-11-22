@@ -11,6 +11,7 @@ test('student mode opens its settings screen and starts without a warning', asyn
   await page.locator('#nextButton').click();
   await expect(page).toHaveURL(/\/student-select\.html$/);
   await expect(page.getByRole('heading', { name: '使うのは？' })).toBeVisible();
+  await expect(page.locator('html[data-student-select-ready="true"]')).toBeAttached(ready);
 
   await page.locator('[data-student-role="student"]').click();
   await expect(page.getByRole('heading', { name: '自分で設定する' })).toBeVisible();
