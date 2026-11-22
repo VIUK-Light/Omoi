@@ -164,8 +164,21 @@
 .student-preview-action-buttons {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 8px;
     justify-content: flex-end;
+}
+
+@media (max-width: 480px) {
+    .student-preview-action-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .student-preview-action-buttons > * {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .student-preview-secondary-button {

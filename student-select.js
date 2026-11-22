@@ -662,6 +662,25 @@
             text.append(meta, questionText);
             label.append(checkbox, check, text);
             item.append(label);
+
+            const scenarioText = (question.scenario || "").trim();
+            if (scenarioText) {
+                const detail = document.createElement("details");
+                detail.className = "question-pick-detail";
+                const summary = document.createElement("summary");
+                summary.className = "question-pick-detail-summary";
+                summary.textContent = "背景を見る";
+                detail.append(summary);
+
+                const block = document.createElement("div");
+                block.className = "question-detail-block";
+                const body = document.createElement("p");
+                body.textContent = scenarioText;
+                block.append(body);
+                detail.append(block);
+                item.append(detail);
+            }
+
             questionPicker.append(item);
         }
 
