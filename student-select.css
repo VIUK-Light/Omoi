@@ -1,0 +1,507 @@
+.student-select-screen {
+    padding-bottom: calc(128px + env(safe-area-inset-bottom));
+}
+
+.student-select-content {
+    max-width: 720px;
+}
+
+.student-select-header .custom-eyebrow {
+    margin-top: 4px;
+}
+
+.student-select-header h1 {
+    font-size: 26px;
+}
+
+/* おまかせ */
+
+.student-quick-start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+
+    margin-top: 24px;
+    padding: 18px 20px;
+
+    border: 1.5px solid var(--omoi-border, #b7b7b7);
+    border-radius: 18px;
+    background: var(--omoi-surface, #f7f7f7);
+}
+
+.student-quick-start-text {
+    min-width: 0;
+}
+
+.student-quick-start h2 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.student-quick-start p {
+    margin: 6px 0 0;
+    color: var(--omoi-muted, #666);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.student-quick-start-button {
+    flex: none;
+    min-height: 48px;
+    padding: 10px 18px;
+
+    border: 1px solid var(--omoi-primary, #111);
+    border-radius: 999px;
+    background: var(--omoi-primary, #111);
+    color: var(--omoi-on-primary, #fff);
+
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.student-quick-start-button:hover {
+    background: var(--omoi-primary-hover, #333);
+}
+
+.student-quick-start-button:focus-visible {
+    outline: 2px solid var(--omoi-focus, #24566b);
+    outline-offset: 3px;
+}
+
+/* 設定全体 */
+
+.student-settings {
+    margin-top: 34px;
+}
+
+.student-settings > h2 {
+    margin: 0 0 16px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.student-setting-block {
+    margin: 0;
+    padding: 18px;
+    border: 1px solid var(--omoi-divider, #e8e8e8);
+    border-radius: 18px;
+    background: var(--omoi-page, #fff);
+}
+
+.student-setting-block + .student-setting-block,
+.student-option-grid + .student-setting-block,
+.student-setting-block + .student-option-grid,
+.student-option-grid + .student-option-grid {
+    margin-top: 14px;
+}
+
+.student-setting-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.student-setting-head h3,
+.student-fieldset legend {
+    margin: 0;
+    color: var(--omoi-ink, #111);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.student-setting-head .custom-section-meta {
+    margin-top: 4px;
+}
+
+.student-setting-note {
+    margin: 6px 0 0;
+    color: var(--omoi-muted, #666);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.student-fieldset {
+    min-width: 0;
+}
+
+.student-fieldset legend {
+    padding: 0;
+}
+
+.student-fieldset .question-level-filters {
+    margin-top: 10px;
+}
+
+.student-option-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.student-option-grid .student-setting-block + .student-setting-block {
+    margin-top: 0;
+}
+
+/* テーマ */
+
+.student-theme-groups {
+    margin-top: 16px;
+}
+
+.student-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.student-theme-group {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.student-theme-group legend {
+    margin-bottom: 8px;
+    padding: 0;
+    color: var(--omoi-muted, #666);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.student-theme-group .label-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.label-card-hint {
+    color: var(--omoi-muted, #666);
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+.label-card:has(input:checked) .label-card-hint {
+    color: inherit;
+    opacity: 0.75;
+}
+
+.label-card:has(input:disabled) {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+/* 授業モード・重い内容 */
+
+.student-toggle-list {
+    display: grid;
+    gap: 10px;
+}
+
+.student-toggle {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid var(--omoi-divider, #e8e8e8);
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.student-toggle:hover {
+    background: var(--omoi-hover, #f5f5f5);
+}
+
+.student-toggle:has(input:focus-visible) {
+    outline: 2px solid var(--omoi-focus, #24566b);
+    outline-offset: 2px;
+}
+
+.student-toggle input {
+    width: 20px;
+    height: 20px;
+    margin: 1px 0 0;
+    flex: none;
+    accent-color: var(--omoi-primary, #111);
+}
+
+.student-toggle-body {
+    display: grid;
+    min-width: 0;
+    gap: 2px;
+}
+
+.student-toggle-body strong {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.student-toggle-body small {
+    color: var(--omoi-muted, #666);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.student-safety-note {
+    margin: 14px 2px 0;
+    padding: 10px 14px;
+    border-left: 3px solid var(--omoi-border, #b7b7b7);
+    border-radius: 0 8px 8px 0;
+    background: var(--omoi-surface, #f7f7f7);
+    color: var(--omoi-muted, #666);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* 個別選択 */
+
+.student-individual-mode {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0 0 14px;
+    padding: 14px 16px;
+    border-left: 3px solid var(--omoi-link, #24566b);
+    border-radius: 0 12px 12px 0;
+    background: var(--omoi-surface, #f7f7f7);
+}
+
+.student-individual-mode strong {
+    display: block;
+    color: var(--omoi-ink, #111);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.student-individual-mode p {
+    margin: 4px 0 0;
+    color: var(--omoi-muted, #666);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.student-individual-mode .custom-clear-button {
+    min-height: 32px;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.student-picker-block {
+    display: grid;
+    gap: 16px;
+}
+
+.student-picker-block > * {
+    min-width: 0;
+}
+
+.student-picker-block .student-setting-head {
+    display: block;
+}
+
+.student-picker-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    margin-top: 8px;
+}
+
+.student-picker-block .student-setting-head .custom-clear-button {
+    margin-top: 0;
+}
+
+.student-role-block .question-level-filters {
+    margin-top: 12px;
+}
+
+.student-selected {
+    padding: 12px;
+    border: 1px solid var(--omoi-divider, #e8e8e8);
+    border-radius: 14px;
+    background: var(--omoi-surface, #f7f7f7);
+}
+
+.student-selected > .custom-section-meta {
+    margin: 0 0 8px;
+}
+
+.student-selected-list {
+    max-height: 240px;
+    padding: 0;
+}
+
+.student-picker-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.student-picker-meta .question-picker-status {
+    flex: 1;
+    min-width: 0;
+}
+
+.student-picker-meta .select-all-button {
+    flex: none;
+}
+
+/* レスポンシブ */
+
+@media (max-width: 640px) {
+    .student-option-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .student-theme-group .label-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .student-select-screen {
+        padding: 28px 16px calc(120px + env(safe-area-inset-bottom));
+    }
+
+    .student-select-header h1 {
+        font-size: 22px;
+    }
+
+    .student-quick-start {
+        align-items: stretch;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .student-quick-start-button {
+        width: 100%;
+    }
+
+    .student-setting-block {
+        padding: 14px;
+    }
+
+    .student-individual-mode {
+        flex-direction: column;
+    }
+
+    .student-theme-group .label-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .student-picker-meta {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .student-picker-meta .select-all-button {
+        align-self: flex-start;
+    }
+}
+
+
+/* 役割選択ステップ */
+
+.student-back-button {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.student-role-step {
+    margin-top: 24px;
+}
+
+.student-role-step h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.student-role-lead {
+    margin: 8px 0 0;
+    color: var(--omoi-muted, #666);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.student-role-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.student-role-card {
+    display: grid;
+    gap: 8px;
+    min-height: 132px;
+    padding: 20px;
+    border: 1.5px solid var(--omoi-border, #b7b7b7);
+    border-radius: 18px;
+    background: var(--omoi-page, #fff);
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.student-role-card strong {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.student-role-card small {
+    color: var(--omoi-muted, #666);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.student-role-card:hover {
+    background: var(--omoi-hover, #f5f5f5);
+    border-color: var(--omoi-primary, #111);
+}
+
+.student-role-card:focus-visible {
+    outline: 2px solid var(--omoi-focus, #24566b);
+    outline-offset: 3px;
+}
+
+@media (max-width: 560px) {
+    .student-role-cards {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .student-role-card {
+        min-height: 0;
+    }
+}
+
+.student-picker-toggle {
+    min-height: 40px;
+    padding: 8px 14px;
+    border: 1px solid var(--omoi-border, #b7b7b7);
+    border-radius: 999px;
+    background: var(--omoi-page, #fff);
+    color: var(--omoi-ink, #111);
+    font: inherit;
+    font-size: 13px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.student-picker-toggle:hover {
+    background: var(--omoi-hover, #f5f5f5);
+}
+
+.student-picker-toggle:focus-visible {
+    outline: 2px solid var(--omoi-focus, #24566b);
+    outline-offset: 2px;
+}

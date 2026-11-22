@@ -173,11 +173,11 @@ test('mode selection enables next only after a mode is chosen', () => {
     assert.equal(app.nextButton.disabled, false);
 });
 
-test('student mode starts without a warning screen', () => {
+test('student mode opens the settings screen without a warning screen', () => {
     const app = setupSelect();
     app.choose('student');
     app.nextButton.click();
-    assert.equal(app.location.href, 'https://omoi.viuk-light.org/question.html?mode=student');
+    assert.equal(app.location.href, 'https://omoi.viuk-light.org/student-select.html');
 });
 
 test('all mode moves to the level selection screen', () => {

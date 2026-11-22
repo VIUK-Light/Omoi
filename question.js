@@ -51,6 +51,64 @@ const isRequestValid = !isModeMalformed &&
     (mode === "all" || !hasLevelParameter) &&
     !(hasSharedId && mode !== "all");
 
+function parseThemeParameter(value) {
+    if (typeof value !== "string" || value.trim() === "") return [];
+    return [...new Set(
+        value.split(",")
+            .map(theme => theme.trim())
+            .filter(theme => /^[a-z][a-z_]{0,30}$/.test(theme))
+    )].slice(0, 24);
+}
+
+function parseLevelsParameter(value) {
+    if (typeof value !== "string" || value.trim() === "") return [];
+    return [...new Set(
+        value.split(",")
+            .map(levelValue => Number(levelValue.trim()))
+            .filter(levelValue => [2, 3, 4].includes(levelValue))
+    )].sort((left, right) => left - right);
+}
+
+function parseCountParameter(value) {
+    if (value === "all") return "all";
+    if (typeof value !== "string" || !/^[0-9]{1,3}$/.test(value)) return null;
+    const count = Number(value);
+    return count >= 1 && count <= 200 ? count : null;
+}
+
+const studentThemes = mode === "student"
+    ? parseThemeParameter(params.get("themes"))
+    : [];
+const studentLevels = mode === "student"
+    ? parseLevelsParameter(params.get("levels"))
+    : [];
+const parsedStudentCount = mode === "student"
+    ? parseCountParameter(params.get("count"))
+    : null;
+const studentHeavy = mode === "student" &&
+    (params.get("heavy") === "1" || params.get("heavy") === "true");
+const classroomFromUrl = params.get("classroom") === "1" ||
+    params.get("classroom") === "true";
+function parseIdList(value) {
+    if (typeof value !== "string" || value.trim() === "") return [];
+    return [...new Set(
+        value.split(",")
+            .map(id => id.trim())
+            .filter(id => /^[A-Za-z0-9_-]{1,80}$/.test(id))
+    )].slice(0, 200);
+}
+
+const studentSelectionIds = mode === "student"
+    ? parseIdList(params.get("ids"))
+    : [];
+const hasStudentSelection = mode === "student" && (params.has("sel") || studentSelectionIds.length > 0);
+const studentSelectionIndices = !studentSelectionIds.length && hasStudentSelection && window.OmoiShare
+    ? window.OmoiShare.decodeSharePayload(params.get("sel") ?? "")
+    : [];
+const studentSource = hasStudentSelection
+    ? "selection"
+    : (studentThemes.length > 0 ? "themes" : "default");
+
 function savedProgressMode(saved) {
     return saved?.version === 1 ? "all" : saved?.mode;
 }
@@ -65,6 +123,10 @@ function readSavedProgress() {
 }
 
 const savedProgress = readSavedProgress();
+const savedStudentSettings = savedProgress?.version === 3 &&
+    savedProgress.mode === "student" && savedProgress.student
+    ? savedProgress.student
+    : null;
 const pendingSelection = !savedProgress && mode === "custom" && hasSessionToken
     ? window.OmoiProgress?.readSelection(sessionTokenFromUrl) ?? null
     : null;
@@ -90,12 +152,20 @@ const questionScreen = document.querySelector(".question-screen");
 const changeCategoryLink = document.getElementById("changeCategoryLink");
 const otherQuestionsLink = document.getElementById("otherQuestionsLink");
 const sharedQuestionNotice = document.getElementById("sharedQuestionNotice");
+const classroomModeButton = document.getElementById("classroomModeButton");
+const questionProgress = document.getElementById("questionProgress");
+const fullscreenButton = document.getElementById("fullscreenButton");
 const nextNote = document.getElementById("nextNote");
 const shareButton = document.getElementById("shareButton");
+const speakButton = document.getElementById("speakButton");
+const voiceControl = document.getElementById("voiceControl");
+const voiceSelect = document.getElementById("voiceSelect");
+const questionLive = document.getElementById("questionLive");
 const shareControl = document.getElementById("shareControl");
 const shareMenu = document.getElementById("shareMenu");
 const shareUrlButton = document.getElementById("shareUrlButton");
 const shareImageButton = document.getElementById("shareImageButton");
+const printQuestionButton = document.getElementById("printQuestionButton");
 const shareStatus = document.getElementById("shareStatus");
 const textSizeControl = document.getElementById("textSizeControl");
 const textSizeButtons = [
@@ -123,9 +193,35 @@ const termsSection = document.getElementById("termsSection");
 const termsList = document.getElementById("termsList");
 const nextQuestionButton =
     document.getElementById("nextQuestionButton");
+const nextQuestionLabel =
+    document.getElementById("nextQuestionLabel");
 
 const finishButton =
     document.getElementById("finishButton");
+
+const sessionComplete =
+    document.getElementById("sessionComplete");
+const sessionCompleteTitle =
+    document.getElementById("sessionCompleteTitle");
+const sessionCompleteMessage =
+    document.getElementById("sessionCompleteMessage");
+const restartSessionButton =
+    document.getElementById("restartSessionButton");
+const completeSettingsLink =
+    document.getElementById("completeSettingsLink");
+
+const printSheet =
+    document.getElementById("printSheet");
+const printSheetLevel =
+    document.getElementById("printSheetLevel");
+const printSheetLevelNote =
+    document.getElementById("printSheetLevelNote");
+const printSheetScenarioBlock =
+    document.getElementById("printSheetScenarioBlock");
+const printSheetScenario =
+    document.getElementById("printSheetScenario");
+const printSheetQuestion =
+    document.getElementById("printSheetQuestion");
 
 const finishConfirmDialog =
     document.getElementById("finishConfirmDialog");
@@ -154,12 +250,32 @@ const detailText =
 
 let sessionQuestions = [];
 let currentQuestionIndex = 0;
+if (sessionComplete) sessionComplete.hidden = true;
 let readingsByQuestionId = {};
 let currentFurigana = {};
 let currentTextFields = new Map();
 let furiganaEnabled = false;
 let textSize = "medium";
-let classroomModeEnabled = false;
+let classroomModeEnabled = mode === "student" && (savedProgress
+    ? savedProgress.classroom === true || savedStudentSettings?.classroom === true
+    : classroomFromUrl);
+let sessionStudentSettings = savedStudentSettings
+    ? {
+        themes: [...savedStudentSettings.themes],
+        levels: [...savedStudentSettings.levels],
+        count: savedStudentSettings.count,
+        heavy: savedStudentSettings.heavy,
+        classroom: classroomModeEnabled,
+        source: savedStudentSettings.source
+    }
+    : {
+        themes: [...studentThemes],
+        levels: [...studentLevels],
+        count: parsedStudentCount ?? "all",
+        heavy: studentHeavy,
+        classroom: classroomModeEnabled,
+        source: studentSource
+    };
 
 const retryLoadButton = document.getElementById("retryLoadButton");
 let state = "idle";
@@ -173,6 +289,11 @@ function setState(nextState) {
         state !== "ready" || currentQuestionIndex === 0;
     questionContent.setAttribute("aria-busy", String(state === "loading"));
     retryLoadButton.hidden = state !== "error";
+    if (classroomModeButton) {
+        classroomModeButton.disabled = state !== "ready";
+    }
+    updateQuestionProgress();
+    updateNextQuestionLabel();
 }
 
 function applySharedMode() {
@@ -187,9 +308,25 @@ function applySharedMode() {
         changeCategoryLink.href = "custom-select.html?edit=1";
         changeCategoryLink.textContent = "← 選択を編集する";
     }
+    if (!isSharedQuestion && mode === "student") {
+        changeCategoryLink.href = "student-select.html?edit=1";
+        changeCategoryLink.textContent = "← 設定を変える";
+    }
+    if (completeSettingsLink) {
+        completeSettingsLink.href = mode === "student"
+            ? "student-select.html?edit=1"
+            : mode === "custom"
+                ? "custom-select.html?edit=1"
+                : "select.html";
+    }
 
     finishButton.hidden = isSharedQuestion;
-    classroomModeToggle.hidden = isSharedQuestion;
+    classroomModeToggle.hidden = isSharedQuestion || mode !== "student";
+    classroomModeButton.hidden = isSharedQuestion || mode !== "student";
+    fullscreenButton.hidden = isSharedQuestion || mode !== "student";
+    if (mode !== "student") {
+        questionProgress.hidden = true;
+    }
 }
 
 function showMessage(message) {
@@ -202,7 +339,19 @@ function showMessage(message) {
     furiganaSettings.hidden = true;
     textSizeControl.hidden = true;
     classroomModeToggle.hidden = true;
+    classroomModeButton.hidden = true;
+    fullscreenButton.hidden = true;
+    questionProgress.hidden = true;
     furiganaToggle.hidden = true;
+    if (speakButton) speakButton.hidden = true;
+    if (voiceControl) voiceControl.hidden = true;
+    if (printSheet) {
+        printSheetQuestion.textContent = "";
+        printSheetScenario.textContent = "";
+        printSheetScenarioBlock.hidden = true;
+        printSheetLevel.textContent = "";
+        printSheetLevelNote.textContent = "";
+    }
     scenarioBlock.setAttribute("aria-hidden", "true");
     updateQuestionLayout({ question: message });
     currentSummary = null;
@@ -505,12 +654,54 @@ async function loadLevelDataset(levelValue, signal) {
 }
 
 function levelsForSession() {
-    return mode === "all" ? [level] : [2, 3, 4];
+    if (mode === "all") return [level];
+    if (mode === "student") {
+        if (hasStudentSelection || sessionStudentSettings.source === "selection") {
+            return [2, 3, 4];
+        }
+        if (sessionStudentSettings.levels.length > 0) {
+            return [...sessionStudentSettings.levels].sort((left, right) => left - right);
+        }
+    }
+    return [2, 3, 4];
 }
 
 function studentPool(questions) {
-    return questions.filter(question =>
-        Array.isArray(question.labels) && question.labels.includes("student"));
+    if (hasStudentSelection) {
+        const seen = new Set();
+        const selected = [];
+        if (studentSelectionIds.length > 0) {
+            const byId = new Map(questions.map(question => [question.id, question]));
+            for (const id of studentSelectionIds) {
+                const question = byId.get(id);
+                if (!question || seen.has(question.id)) continue;
+                seen.add(question.id);
+                selected.push(question);
+            }
+            return selected;
+        }
+        for (const index of studentSelectionIndices) {
+            const question = questions[index];
+            if (!question || seen.has(question.id)) continue;
+            seen.add(question.id);
+            selected.push(question);
+        }
+        return selected;
+    }
+
+    const themeSet = new Set(sessionStudentSettings.themes);
+    const levelSet = new Set(sessionStudentSettings.levels);
+    return questions.filter(question => {
+        if (!Array.isArray(question.labels)) return false;
+        if (themeSet.size > 0) {
+            if (!question.labels.some(label => themeSet.has(label))) return false;
+        } else if (!question.labels.includes("student")) {
+            return false;
+        }
+        if (levelSet.size > 0 && !levelSet.has(question.level)) return false;
+        if (sessionStudentSettings.heavy && question.sensitivity === 4) return false;
+        return true;
+    });
 }
 
 function customPool(questions, labels, ids, excluded) {
@@ -596,16 +787,51 @@ async function loadQuestions() {
                     setState("empty");
                     return;
                 }
-                startNewSession(fallback);
+                const savedStudentSource = savedProgress.version === 3 &&
+                    savedProgress.mode === "student"
+                    ? savedProgress.student?.source
+                    : null;
+                const savedStudentCount = savedProgress.version === 3 &&
+                    savedProgress.mode === "student"
+                    ? savedProgress.student?.count
+                    : null;
+                startNewSession(fallback, {
+                    shuffle: savedStudentSource !== "selection",
+                    limit: savedStudentSource === "selection" ||
+                        savedStudentCount === null ||
+                        savedStudentCount === "all"
+                        ? undefined
+                        : savedStudentCount
+                });
             }
         } else if (mode === "student") {
+            const hasIdsParam = studentSelectionIds.length > 0;
+            const hasSelParam = params.has("sel");
+            if (hasSelParam && !hasIdsParam && studentSelectionIndices.length === 0) {
+                showMessage("共有された問いの形式が正しくありません。URLを確認するか、設定から選び直してください。");
+                setState("invalid");
+                return;
+            }
+            if (hasIdsParam && studentSelectionIds.length === 0) {
+                showMessage("共有された問いの形式が正しくありません。URLを確認するか、設定から選び直してください。");
+                setState("invalid");
+                return;
+            }
             const pool = studentPool(allQuestions);
             if (pool.length === 0) {
-                showMessage("学校・若者向けの質問はまだありません。別のモードを選んでください。");
+                showMessage(hasStudentSelection
+                    ? "選んだ問いが見つかりませんでした。設定から選び直してください。"
+                    : "この条件に合う学校・若者向けの問いはありません。テーマや深さを変えてください。");
                 setState("empty");
                 return;
             }
-            startNewSession(pool);
+            startNewSession(pool, {
+                shuffle: sessionStudentSettings.source !== "selection",
+                limit: sessionStudentSettings.source === "selection" ||
+                    sessionStudentSettings.count === "all"
+                    ? undefined
+                    : sessionStudentSettings.count
+            });
         } else if (mode === "custom") {
             if (pendingSelection) {
                 sessionCustomLabels = Array.isArray(pendingSelection.labels) ? pendingSelection.labels : [];
@@ -681,8 +907,13 @@ function shuffle(array) {
 
 
 function startNewSession(questions, options = {}) {
-    shuffle(questions);
-    sessionQuestions = questions;
+    if (options.shuffle !== false) {
+        shuffle(questions);
+    }
+    const limit = Number.isInteger(options.limit) && options.limit > 0
+        ? options.limit
+        : questions.length;
+    sessionQuestions = questions.slice(0, limit);
     currentQuestionIndex = 0;
     if (options.newToken !== false || !sessionToken) {
         sessionToken = window.OmoiProgress
@@ -696,12 +927,13 @@ function saveProgress() {
     if (isSharedQuestion || !sessionToken ||
         !window.OmoiProgress || sessionQuestions.length === 0) return;
     const data = {
-        version: 2,
+        version: mode === "student" ? 3 : 2,
         token: sessionToken,
         mode,
         ids: sessionQuestions.map(question => question.id),
         index: currentQuestionIndex,
-        updatedAt: Date.now()
+        updatedAt: Date.now(),
+        classroom: classroomModeEnabled
     };
     if (mode === "all") {
         data.level = level;
@@ -711,10 +943,308 @@ function saveProgress() {
         data.selectedIds = [...sessionCustomIds];
         data.excludedIds = [...sessionCustomExcluded];
     }
+    if (mode === "student") {
+        sessionStudentSettings.classroom = classroomModeEnabled;
+        data.student = {
+            themes: [...sessionStudentSettings.themes],
+            levels: [...sessionStudentSettings.levels],
+            count: sessionStudentSettings.count,
+            heavy: sessionStudentSettings.heavy,
+            classroom: classroomModeEnabled,
+            source: sessionStudentSettings.source
+        };
+    }
     window.OmoiProgress.write(data);
 }
 
+const voiceStorageKey = "omoi-speech-voice";
+let speechUtterance = null;
+let voiceWaitHandler = null;
+let voiceWaitTimer = null;
+
+function readSavedVoiceURI() {
+    try {
+        return window.localStorage?.getItem(voiceStorageKey) || "";
+    } catch (error) {
+        return "";
+    }
+}
+
+function saveVoiceURI(value) {
+    try {
+        if (value) {
+            window.localStorage.setItem(voiceStorageKey, value);
+        } else {
+            window.localStorage.removeItem(voiceStorageKey);
+        }
+    } catch (error) {
+        // 保存できない環境でも読み上げ自体は使える。
+    }
+}
+
+function getJapaneseVoices() {
+    if (typeof window === "undefined" || !window.speechSynthesis?.getVoices) {
+        return [];
+    }
+    try {
+        return window.speechSynthesis.getVoices()
+            .filter(voice => voice && /^ja/i.test(voice.lang || ""));
+    } catch (error) {
+        return [];
+    }
+}
+
+// 端末に入っている日本語音声を、聞き取りやすい順に並べる。
+function scoreJapaneseVoice(voice) {
+    if (!voice || !/^ja/i.test(voice.lang || "")) return -1000;
+    const name = `${voice.name || ""} ${voice.voiceURI || ""}`;
+    let score = 0;
+    if (/^ja[-_]JP$/i.test(voice.lang || "")) score += 30;
+    if (/Google.*(日本語|Japanese)/i.test(name)) score += 100;
+    if (/(Microsoft|Windows).*(Nanami|Keita|Mayu|Daichi|Naoki|Shiori)/i.test(name)) score += 95;
+    if (/Natural|Neural/i.test(name)) score += 80;
+    if (/Enhanced|Premium/i.test(name)) score += 70;
+    if (/Kyoko/i.test(name)) score += 50;
+    if (/O-Ren|Otoya|Hattori/i.test(name)) score += 45;
+    if (/compact/i.test(name)) score -= 30;
+    if (voice.localService === false) score += 5;
+    return score;
+}
+
+function chooseJapaneseVoice(voices, preferredURI) {
+    const japanese = (Array.isArray(voices) ? voices : [])
+        .filter(voice => voice && /^ja/i.test(voice.lang || ""));
+    if (japanese.length === 0) return null;
+    if (preferredURI) {
+        const preferred = japanese.find(voice =>
+            voice.voiceURI === preferredURI || voice.name === preferredURI);
+        if (preferred) return preferred;
+    }
+    return japanese
+        .slice()
+        .sort((left, right) => scoreJapaneseVoice(right) - scoreJapaneseVoice(left))[0];
+}
+
+function voiceQualityLabel(voice) {
+    const name = `${voice?.name || ""} ${voice?.voiceURI || ""}`;
+    return /Google|Natural|Neural|Enhanced|Premium/i.test(name) ? "（高音質）" : "";
+}
+
+function refreshVoiceOptions() {
+    if (!voiceControl || !voiceSelect ||
+        typeof window === "undefined" || !window.speechSynthesis) {
+        if (voiceControl) voiceControl.hidden = true;
+        return;
+    }
+    const voices = getJapaneseVoices()
+        .slice()
+        .sort((left, right) => scoreJapaneseVoice(right) - scoreJapaneseVoice(left));
+    if (isSharedQuestion || voices.length < 2) {
+        voiceControl.hidden = true;
+        return;
+    }
+
+    const preferred = voiceSelect.value || readSavedVoiceURI();
+    voiceSelect.replaceChildren();
+
+    const autoOption = document.createElement("option");
+    autoOption.value = "";
+    autoOption.textContent = "自動（高音質を優先）";
+    voiceSelect.appendChild(autoOption);
+
+    voices.forEach(voice => {
+        const option = document.createElement("option");
+        option.value = voice.voiceURI || voice.name || "";
+        option.textContent = `${voice.name || "日本語の声"}${voiceQualityLabel(voice)}`;
+        voiceSelect.appendChild(option);
+    });
+
+    const hasPreferred = voices.some(voice =>
+        (voice.voiceURI || voice.name) === preferred);
+    voiceSelect.value = hasPreferred ? preferred : "";
+    voiceControl.hidden = false;
+}
+
+function cancelVoiceWait() {
+    if (typeof window === "undefined" || !window.speechSynthesis) return;
+    if (voiceWaitHandler && window.speechSynthesis.removeEventListener) {
+        window.speechSynthesis.removeEventListener("voiceschanged", voiceWaitHandler);
+    }
+    voiceWaitHandler = null;
+    if (voiceWaitTimer !== null) {
+        clearTimeout(voiceWaitTimer);
+        voiceWaitTimer = null;
+    }
+}
+
+function stopSpeech() {
+    if (typeof window === "undefined" || !window.speechSynthesis) return;
+    cancelVoiceWait();
+    window.speechSynthesis.cancel();
+    speechUtterance = null;
+    if (speakButton) {
+        speakButton.setAttribute("aria-pressed", "false");
+        speakButton.textContent = "読み上げ";
+    }
+}
+
+function speakCurrentQuestion() {
+    if (typeof window === "undefined" || !window.speechSynthesis) return;
+    const question = sessionQuestions[currentQuestionIndex];
+    if (!question) return;
+
+    const begin = () => {
+        cancelVoiceWait();
+        window.speechSynthesis.cancel();
+        const parts = [];
+        if (question.scenario && question.scenario.trim()) parts.push(question.scenario.trim());
+        parts.push(question.question);
+        const utterance = new SpeechSynthesisUtterance(parts.join("。"));
+        utterance.lang = "ja-JP";
+        utterance.rate = 0.95;
+        utterance.pitch = 1;
+        const preferred = voiceSelect?.value || readSavedVoiceURI();
+        const jaVoice = chooseJapaneseVoice(getJapaneseVoices(), preferred);
+        if (jaVoice) utterance.voice = jaVoice;
+        utterance.onend = () => { stopSpeech(); };
+        utterance.onerror = () => { stopSpeech(); };
+        speechUtterance = utterance;
+        if (speakButton) {
+            speakButton.setAttribute("aria-pressed", "true");
+            speakButton.textContent = "停止";
+        }
+        window.speechSynthesis.speak(utterance);
+    };
+
+    // Chromeなどは初回に音声一覧が空のことがあるため、読み込みを少し待つ。
+    if (getJapaneseVoices().length === 0 &&
+        typeof window.speechSynthesis.addEventListener === "function") {
+        cancelVoiceWait();
+        if (speakButton) {
+            speakButton.setAttribute("aria-pressed", "true");
+            speakButton.textContent = "準備中";
+        }
+        voiceWaitHandler = () => begin();
+        window.speechSynthesis.addEventListener("voiceschanged", voiceWaitHandler);
+        voiceWaitTimer = setTimeout(() => begin(), 800);
+        return;
+    }
+
+    begin();
+}
+
+function toggleSpeech() {
+    if (typeof window === "undefined" || !window.speechSynthesis) return;
+    if (window.speechSynthesis.speaking ||
+        window.speechSynthesis.pending ||
+        voiceWaitHandler) {
+        stopSpeech();
+    } else {
+        speakCurrentQuestion();
+    }
+}
+
+if (speakButton) {
+    speakButton.addEventListener("click", function () {
+        if (state !== "ready") return;
+        toggleSpeech();
+    });
+}
+
+if (voiceSelect) {
+    voiceSelect.addEventListener("change", function () {
+        saveVoiceURI(voiceSelect.value);
+        if (window.speechSynthesis &&
+            (window.speechSynthesis.speaking || window.speechSynthesis.pending)) {
+            stopSpeech();
+            speakCurrentQuestion();
+        }
+    });
+}
+
+if (typeof window !== "undefined" && window.speechSynthesis?.addEventListener) {
+    window.speechSynthesis.addEventListener("voiceschanged", refreshVoiceOptions);
+}
+refreshVoiceOptions();
+
+window.addEventListener("beforeunload", stopSpeech);
+document.addEventListener("visibilitychange", function () {
+    if (document.hidden) stopSpeech();
+});
+
+function updateNextQuestionLabel() {
+    if (!nextQuestionLabel) return;
+    const isLast = state === "ready" &&
+        sessionQuestions.length > 0 &&
+        currentQuestionIndex === sessionQuestions.length - 1;
+    nextQuestionLabel.textContent = isLast
+        ? "すべての問いを終える"
+        : "次の問いを見る";
+}
+
+function updatePrintSheet(question) {
+    if (!printSheet || !question) return;
+    printSheetQuestion.textContent = question.question || "";
+    printSheetQuestion.classList.toggle(
+        "long",
+        (question.question || "").length > 80
+    );
+    const scenario = question.scenario?.trim() ?? "";
+    printSheetScenario.textContent = scenario;
+    printSheetScenarioBlock.hidden = scenario === "";
+    printSheetLevel.textContent = question.level
+        ? `level:${levelNames[question.level] ?? ""}`
+        : "";
+    printSheetLevelNote.textContent = levelDescriptions[question.level] ?? "";
+}
+
+function completeSession() {
+    stopSpeech();
+    setQuestionSummaryOpen(false);
+    setHintsPanelOpen(false);
+    setDetailPanelOpen(false);
+    setShareMenuOpen(false);
+    window.OmoiProgress?.clear();
+    setState("completed");
+    questionScreen.classList.add("session-complete-mode");
+    document.body?.classList.add("session-complete-active");
+    if (sessionComplete) sessionComplete.hidden = false;
+    if (sessionCompleteMessage) {
+        const total = sessionQuestions.length;
+        sessionCompleteMessage.textContent = total > 0
+            ? `${total}問を終えました。ここまで話したことを、またいつでも思い出せます。`
+            : "すべての問いを終えました。";
+    }
+    if (questionLive) questionLive.textContent = "すべての問いが終わりました";
+    // 再読み込みで共有質問扱いにならないよう、セッション情報をURLから外す。
+    try {
+        const url = new URL(window.location.href);
+        url.searchParams.delete("id");
+        url.searchParams.delete("session");
+        window.history?.replaceState(null, "", url.href);
+    } catch (error) {
+        // 履歴APIが使えない環境ではURLを変えない。
+    }
+    if (sessionCompleteTitle && typeof sessionCompleteTitle.focus === "function") {
+        sessionCompleteTitle.focus();
+    }
+}
+
+function restartSession() {
+    if (sessionQuestions.length === 0) return;
+    if (sessionComplete) sessionComplete.hidden = true;
+    questionScreen.classList.remove("session-complete-mode");
+    document.body?.classList.remove("session-complete-active");
+    currentQuestionIndex = 0;
+    sessionToken = window.OmoiProgress
+        ? window.OmoiProgress.createToken()
+        : sessionToken;
+    setState("ready");
+    showQuestion();
+}
+
 function showQuestion() {
+    stopSpeech();
     const currentQuestion =
         sessionQuestions[currentQuestionIndex];
 
@@ -722,7 +1252,9 @@ function showQuestion() {
     currentTextFields = new Map();
     furiganaToggle.hidden = Object.keys(currentFurigana).length === 0;
     textSizeControl.hidden = false;
-    classroomModeToggle.hidden = isSharedQuestion;
+    classroomModeToggle.hidden = isSharedQuestion || mode !== "student";
+    classroomModeButton.hidden = isSharedQuestion || mode !== "student";
+    if (speakButton) speakButton.hidden = isSharedQuestion || typeof window.speechSynthesis === "undefined";
     furiganaSettings.hidden = false;
     updateDisplayModes();
     furiganaToggle.setAttribute("aria-pressed", String(furiganaEnabled));
@@ -814,8 +1346,17 @@ function showQuestion() {
     shareButton.hidden = !currentQuestion.id;
     shareButton.disabled = false;
     shareStatus.textContent = "";
+    if (questionLive && sessionQuestions.length > 0) {
+        questionLive.textContent = `${currentQuestionIndex + 1}問目 / ${sessionQuestions.length}問`;
+    }
+    refreshVoiceOptions();
+    updatePrintSheet(currentQuestion);
+    updateNextQuestionLabel();
     saveProgress();
     syncUrlWithCurrentQuestion(currentQuestion);
+    if (!isSharedQuestion && typeof questionText?.focus === "function") {
+        questionText.focus({ preventScroll: false });
+    }
 }
 
 
@@ -833,6 +1374,43 @@ function syncUrlWithCurrentQuestion(question) {
     }
     if (!isSharedQuestion && sessionToken) {
         url.searchParams.set("session", sessionToken);
+    }
+    if (!isSharedQuestion && mode === "student") {
+        if (sessionStudentSettings.source === "selection" && hasStudentSelection) {
+            if (studentSelectionIds.length > 0) {
+                url.searchParams.set("ids", studentSelectionIds.join(","));
+            } else if (params.get("sel")) {
+                url.searchParams.set("sel", params.get("sel"));
+            }
+            if (sessionStudentSettings.themes.length > 0) {
+                url.searchParams.set("themes", sessionStudentSettings.themes.join(","));
+            }
+            if (sessionStudentSettings.levels.length > 0) {
+                url.searchParams.set("levels", sessionStudentSettings.levels.join(","));
+            }
+            if (sessionStudentSettings.count !== "all") {
+                url.searchParams.set("count", String(sessionStudentSettings.count));
+            }
+            if (sessionStudentSettings.heavy) {
+                url.searchParams.set("heavy", "1");
+            }
+        } else if (sessionStudentSettings.source !== "selection") {
+            if (sessionStudentSettings.themes.length > 0) {
+                url.searchParams.set("themes", sessionStudentSettings.themes.join(","));
+            }
+            if (sessionStudentSettings.levels.length > 0) {
+                url.searchParams.set("levels", sessionStudentSettings.levels.join(","));
+            }
+            if (sessionStudentSettings.count !== "all") {
+                url.searchParams.set("count", String(sessionStudentSettings.count));
+            }
+            if (sessionStudentSettings.heavy) {
+                url.searchParams.set("heavy", "1");
+            }
+        }
+        if (classroomModeEnabled) {
+            url.searchParams.set("classroom", "1");
+        }
     }
     try {
         window.history?.replaceState(null, "", url.href);
@@ -1369,6 +1947,7 @@ window.addEventListener("scroll", positionShareMenu, true);
 
 function goToNextQuestion() {
     if (state !== "ready" || isSharedQuestion) return;
+    stopSpeech();
     currentQuestionIndex++;
 
     if (currentQuestionIndex >= sessionQuestions.length) {
@@ -1381,19 +1960,22 @@ function goToNextQuestion() {
 
 function goToPreviousQuestion() {
     if (state !== "ready" || isSharedQuestion || currentQuestionIndex === 0) return;
+    stopSpeech();
     currentQuestionIndex--;
     showQuestion();
 }
 
 function finishSession(completed = false) {
+    if (completed) {
+        completeSession();
+        return;
+    }
+    stopSpeech();
     setQuestionSummaryOpen(false);
     setHintsPanelOpen(false);
     setDetailPanelOpen(false);
     setState("finished");
-    // 途中で終えたときは続きを残し、全問終えたときだけ消す。
-    if (completed) {
-        window.OmoiProgress?.clear();
-    }
+    // 途中で終えたときは続きを残す。
     window.location.href = "index.html";
 }
 
@@ -1405,6 +1987,10 @@ nextQuestionButton.addEventListener("click", function () {
 previousQuestionButton.addEventListener("click", function () {
     goToPreviousQuestion();
 });
+
+if (restartSessionButton) {
+    restartSessionButton.addEventListener("click", restartSession);
+}
 
 finishButton.addEventListener("click", function () {
     if (state !== "ready" || isSharedQuestion) return;
@@ -1494,6 +2080,17 @@ shareImageButton.addEventListener("click", async function () {
     await shareQuestionImage(question);
 });
 
+if (printQuestionButton) {
+    printQuestionButton.addEventListener("click", function () {
+        if (state !== "ready") return;
+        const question = sessionQuestions[currentQuestionIndex];
+        if (question) updatePrintSheet(question);
+        setShareMenuOpen(false);
+        shareButton.focus();
+        window.print();
+    });
+}
+
 furiganaToggle.addEventListener("click", function () {
     if (state !== "ready") return;
     furiganaEnabled = !furiganaEnabled;
@@ -1510,16 +2107,78 @@ for (const { size, element } of textSizeButtons) {
     });
 }
 
-classroomModeToggle.addEventListener("click", function () {
-    if (state !== "ready" || isSharedQuestion) return;
-    classroomModeEnabled = !classroomModeEnabled;
+function setClassroomMode(enabled) {
+    if (mode !== "student" || state !== "ready" || isSharedQuestion) return;
+    const next = Boolean(enabled);
+    if (next === classroomModeEnabled) return;
+    classroomModeEnabled = next;
     if (classroomModeEnabled) {
         setQuestionSummaryOpen(false);
         setHintsPanelOpen(false);
         setDetailPanelOpen(false);
     }
     updateDisplayModes();
+    saveProgress();
+}
+
+classroomModeToggle.addEventListener("click", function () {
+    setClassroomMode(!classroomModeEnabled);
 });
+
+if (classroomModeButton) {
+    classroomModeButton.addEventListener("click", function () {
+        setClassroomMode(!classroomModeEnabled);
+    });
+}
+
+if (fullscreenButton) {
+    fullscreenButton.addEventListener("click", toggleFullscreen);
+}
+
+document.addEventListener("fullscreenchange", updateFullscreenButton);
+
+function updateQuestionProgress() {
+    if (!questionProgress) return;
+    const show = mode === "student" &&
+        !isSharedQuestion &&
+        state === "ready" &&
+        sessionQuestions.length > 0 &&
+        (sessionQuestions.length > 1 || classroomModeEnabled);
+    questionProgress.hidden = !show;
+    if (show) {
+        questionProgress.textContent =
+            `${currentQuestionIndex + 1} / ${sessionQuestions.length}`;
+    }
+}
+
+function updateFullscreenButton() {
+    if (!fullscreenButton) return;
+    const supported = typeof document !== "undefined" &&
+        typeof document.documentElement?.requestFullscreen === "function";
+    fullscreenButton.hidden = mode !== "student" || !classroomModeEnabled || isSharedQuestion || !supported;
+    fullscreenButton.textContent = document.fullscreenElement
+        ? "全画面を終了"
+        : "全画面";
+}
+
+function toggleFullscreen() {
+    if (typeof document === "undefined") return;
+    try {
+        if (document.fullscreenElement) {
+            const result = document.exitFullscreen?.();
+            if (result && typeof result.catch === "function") {
+                result.catch(() => {});
+            }
+        } else if (typeof document.documentElement?.requestFullscreen === "function") {
+            const result = document.documentElement.requestFullscreen();
+            if (result && typeof result.catch === "function") {
+                result.catch(() => {});
+            }
+        }
+    } catch (error) {
+        // 全画面にできない環境では何もしない。
+    }
+}
 
 function updateDisplayModes() {
     questionScreen.classList.toggle("text-size-small", textSize === "small");
@@ -1533,11 +2192,19 @@ function updateDisplayModes() {
     classroomModeToggle.setAttribute("aria-pressed", String(classroomModeEnabled));
     classroomModeToggle.textContent =
         classroomModeEnabled ? "授業モードを終了" : "授業モード";
+    if (classroomModeButton) {
+        classroomModeButton.setAttribute("aria-pressed", String(classroomModeEnabled));
+        classroomModeButton.textContent =
+            classroomModeEnabled ? "授業モードを終了" : "授業モード";
+        classroomModeButton.disabled = state !== "ready";
+    }
+    updateQuestionProgress();
+    updateFullscreenButton();
 }
 
 document.addEventListener("click", function (event) {
     const clickedButton = event.target.closest("button");
-    const shareButtons = [shareButton, shareUrlButton, shareImageButton];
+    const shareButtons = [shareButton, shareUrlButton, shareImageButton, printQuestionButton].filter(Boolean);
     if (clickedButton && !shareButtons.includes(clickedButton)) {
         shareStatus.textContent = "";
     }
@@ -1596,6 +2263,28 @@ document.addEventListener("keydown", function (event) {
         } else if (!detailPanel.hidden) {
             closeDetailPanel();
         }
+        return;
+    }
+
+    if (finishConfirmDialog.open || event.defaultPrevented) return;
+    const target = event.target;
+    const isEditable = Boolean(target) && (
+        target.tagName === "INPUT" ||
+        target.tagName === "TEXTAREA" ||
+        target.tagName === "SELECT" ||
+        target.isContentEditable
+    );
+    if (isEditable || event.altKey || event.ctrlKey || event.metaKey) return;
+
+    if (event.key === "ArrowRight") {
+        event.preventDefault();
+        goToNextQuestion();
+    } else if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        goToPreviousQuestion();
+    } else if (event.key.toLowerCase() === "f" && classroomModeEnabled) {
+        event.preventDefault();
+        toggleFullscreen();
     }
 });
 

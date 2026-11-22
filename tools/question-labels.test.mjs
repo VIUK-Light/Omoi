@@ -159,4 +159,17 @@ test('generated label files match the current question data', () => {
             reading: buildQuestionReading(row)
         }))
     });
+
+    assert.deepEqual(read('question-filter-index.json'), {
+        version: 1,
+        questions: rows.map((row, i) => ({
+            index: i,
+            id: row.id,
+            level: row.level,
+            sensitivity: row.sensitivity,
+            labels: row.labels,
+            question: row.question,
+            reading: buildQuestionReading(row)
+        }))
+    });
 });

@@ -132,3 +132,27 @@ test('the card renders even when the scenario and question are very long', async
 
     expect(size).toEqual([1080, 1620]);
 });
+
+test('printing shows only a clean question card and runs from the share menu', async ({ page }) => {
+    await page.goto('/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+    const question = (await page.locator('#questionText').innerText()).trim();
+
+    await expect(page.locator('#printSheet')).toBeHidden();
+    await page.emulateMedia({ media: 'print' });
+    await expect(page.locator('#printSheet')).toBeVisible();
+    await expect(page.locator('.question-screen')).toBeHidden();
+    await expect(page.locator('#printSheetQuestion')).toHaveText(question);
+    await expect(page.locator('#printSheetLevel')).toContainText('level:');
+    await expect(page.locator('#nextQuestionButton')).toBeHidden();
+    await expect(page.locator('#finishButton')).toBeHidden();
+
+    await page.emulateMedia({ media: 'screen' });
+    await page.evaluate(() => {
+        window.__omoiPrinted = false;
+        window.print = () => { window.__omoiPrinted = true; };
+    });
+    await page.locator('#shareButton').click();
+    await page.getByRole('menuitem', { name: 'この問いを印刷' }).click();
+    await expect.poll(() => page.evaluate(() => window.__omoiPrinted)).toBe(true);
+});

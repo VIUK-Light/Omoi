@@ -2,7 +2,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
+import { createRequire } from 'node:module';
 
+const require = createRequire(import.meta.url);
+const { encodeSharePayload } = require('../question-share.js');
 const progressCode = fs.readFileSync(new URL('../progress.js', import.meta.url), 'utf8');
 const questionCode = fs.readFileSync(new URL('../question.js', import.meta.url), 'utf8');
 const code = `${progressCode}\n${questionCode}`;
@@ -97,7 +100,36 @@ function setup(search = '?level=2', storage = createStorage()) {
         setTimeout(fn) { onTimeout = fn; return 1; }, clearTimeout() {},
         console: { error(...args) { errors.push(args); } },
         document: documentStub,
-        window: { location, localStorage: storage, addEventListener() {} },
+        window: {
+            location,
+            localStorage: storage,
+            addEventListener() {},
+            OmoiShare: {
+                decodeSharePayload: value => {
+                    try {
+                        const padded = value.replace(/-/g, '+').replace(/_/g, '/') +
+                            '==='.slice(0, (4 - (value.length % 4)) % 4);
+                        const binary = atob(padded);
+                        const bytes = Uint8Array.from(binary, char => char.charCodeAt(0));
+                        const wordCount = bytes.length === 96 ? 12 : (bytes.length === 104 ? 13 : 0);
+                        if (!wordCount) return [];
+                        const indices = [];
+                        for (let w = 0; w < wordCount; w++) {
+                            let word = 0n;
+                            for (let b = 7; b >= 0; b--) {
+                                word = (word << 8n) | BigInt(bytes[w * 8 + b]);
+                            }
+                            for (let b = 0; b < 64; b++) {
+                                if (word & (1n << BigInt(b))) indices.push(w * 64 + b);
+                            }
+                        }
+                        return indices;
+                    } catch (error) {
+                        return [];
+                    }
+                }
+            }
+        },
         requestAnimationFrame(fn) { fn(); },
         navigator: { clipboard: { writeText: async () => {} } },
         fetch(url, options) {
@@ -109,6 +141,7 @@ function setup(search = '?level=2', storage = createStorage()) {
     });
     return {
         element, requests, location, errors, document: documentStub, storage,
+        window: { OmoiShare: { encodeSharePayload } },
         timeout: () => onTimeout(),
         respond(data = cards, ok = true, readings = plainReadings(data)) {
             const [questionsRequest, readingsRequest] = requests.slice(-2);
@@ -151,8 +184,10 @@ test('loading blocks navigation, then all cards finish once', async () => {
     for (let i = 0; i < 4; i++) app.element('nextQuestionButton').click();
     assert.match(app.location.href, /question.html/);
     app.element('nextQuestionButton').click();
-    assert.equal(app.location.href, 'index.html');
+    assert.match(app.location.href, /question\.html/);
+    assert.equal(app.element('sessionComplete').hidden, false);
     assert.equal(app.element('nextQuestionButton').disabled, true);
+    assert.equal(app.storage.getItem('omoi-progress'), null);
 });
 
 test('finish button opens an Omoi confirmation dialog', async () => {
@@ -232,7 +267,8 @@ test('legacy count parameter does not limit available questions', async () => {
     app.respond(); await flush();
     for (let i = 0; i < 4; i++) app.element('nextQuestionButton').click();
     app.element('nextQuestionButton').click();
-    assert.equal(app.location.href, 'index.html');
+    assert.match(app.location.href, /question\.html/);
+    assert.equal(app.element('sessionComplete').hidden, false);
 });
 
 for (const search of ['?', '?level=0', '?level=1', '?level=1&level=2', '?level=2&level=2']) {
@@ -373,8 +409,15 @@ test('furigana starts off, toggles safely, and stays enabled across questions', 
 });
 
 test('text size has three levels and classroom mode is independent', async () => {
-    const app = setup();
-    app.respond();
+    const app = setup('?mode=student');
+    app.respondAll({
+        2: [
+            { id: 't2a', level: 2, sensitivity: 1, question: 'T2a', labels: ['student', 'school'] },
+            { id: 't2b', level: 2, sensitivity: 1, question: 'T2b', labels: ['student', 'school'] }
+        ],
+        3: [],
+        4: []
+    });
     await flush();
 
     const smallToggle = app.element('smallTextToggle');
@@ -699,11 +742,19 @@ test('finishing mid-way keeps the progress, finishing every question clears it',
     for (let index = 0; index < cards.length; index++) {
         complete.element('nextQuestionButton').click();
     }
-    assert.equal(complete.location.href, 'index.html');
+    assert.match(complete.location.href, /question\.html/);
+    assert.equal(complete.element('sessionComplete').hidden, false);
+    assert.equal(complete.element('sessionCompleteTitle').focused, true);
     assert.equal(complete.storage.getItem('omoi-progress'), null);
+
+    complete.element('restartSessionButton').click();
+    assert.equal(complete.element('sessionComplete').hidden, true);
+    assert.equal(complete.element('nextQuestionButton').disabled, false);
+    const restarted = JSON.parse(complete.storage.getItem('omoi-progress'));
+    assert.equal(restarted.index, 0);
 });
 
-test('student mode loads every level, keeps student labels and saves mode v2', async () => {
+test('student mode loads every level, keeps student labels and saves mode v3', async () => {
     const byLevel = {
         2: [{ id: 's2', level: 2, question: 'Student 2', labels: ['student', 'school'] }],
         3: [{ id: 's3', level: 3, question: 'Student 3', labels: ['student', 'care'] }],
@@ -716,10 +767,18 @@ test('student mode loads every level, keeps student labels and saves mode v2', a
     assert.equal(app.element('sharedQuestionNotice').hidden, true);
 
     const saved = JSON.parse(app.storage.getItem('omoi-progress'));
-    assert.equal(saved.version, 2);
+    assert.equal(saved.version, 3);
     assert.equal(saved.mode, 'student');
     assert.equal('level' in saved, false);
     assert.deepEqual(saved.ids, ['s2', 's3']);
+    assert.deepEqual(saved.student, {
+        themes: [],
+        levels: [],
+        count: 'all',
+        heavy: false,
+        classroom: false,
+        source: 'default'
+    });
 
     app.element('nextQuestionButton').click();
     assert.equal(app.element('questionText').textContent, 'Student 3');
@@ -728,6 +787,124 @@ test('student mode loads every level, keeps student labels and saves mode v2', a
     reload.respondAll(byLevel); await flush();
     assert.equal(reload.element('questionText').textContent, 'Student 3');
     assert.equal(reload.element('sharedQuestionNotice').hidden, true);
+});
+
+test('student mode filters by theme, level, heavy content and count', async () => {
+    const byLevel = {
+        2: [
+            { id: 'b2', level: 2, sensitivity: 1, question: 'Bullying 2', labels: ['student', 'bullying'] },
+            { id: 'f2', level: 2, sensitivity: 4, question: 'Friend heavy', labels: ['student', 'friendship'] },
+            { id: 'b2b', level: 2, sensitivity: 2, question: 'Bullying 2b', labels: ['student', 'bullying'] }
+        ],
+        3: [{ id: 'b3', level: 3, sensitivity: 2, question: 'Bullying 3', labels: ['bullying'] }],
+        4: [{ id: 'b4', level: 4, sensitivity: 3, question: 'Bullying 4', labels: ['bullying'] }]
+    };
+    const app = setup('?mode=student&themes=bullying&levels=2&count=2&heavy=1');
+    app.respondAll(byLevel); await flush();
+
+    // level=2 だけを読み、sensitivity 4 を除外して2問に絞る。
+    assert.equal(app.requests.length, 2);
+    assert.equal(app.element('questionText').textContent, 'Bullying 2');
+    assert.equal(app.element('questionProgress').textContent, '1 / 2');
+
+    const saved = JSON.parse(app.storage.getItem('omoi-progress'));
+    assert.equal(saved.version, 3);
+    assert.deepEqual(saved.ids, ['b2', 'b2b']);
+    assert.deepEqual(saved.student, {
+        themes: ['bullying'],
+        levels: [2],
+        count: 2,
+        heavy: true,
+        classroom: false,
+        source: 'themes'
+    });
+
+    app.element('nextQuestionButton').click();
+    assert.equal(app.element('questionText').textContent, 'Bullying 2b');
+    assert.equal(app.element('questionProgress').textContent, '2 / 2');
+
+    const reload = setup(`?mode=student&session=${saved.token}`, app.storage);
+    reload.respondAll(byLevel); await flush();
+    assert.equal(reload.element('questionText').textContent, 'Bullying 2b');
+    assert.equal(reload.requestLevels?.join(',') ?? '2', '2');
+});
+
+test('student mode opens an explicitly selected deck through the share bitmask', async () => {
+    const byLevel = {
+        2: Array.from({ length: 5 }, (_, index) => ({
+            id: `selected-${index}`,
+            level: 2,
+            sensitivity: 2,
+            question: `Selected ${index}`,
+            labels: ['student', 'school']
+        })),
+        3: [],
+        4: []
+    };
+    const app = setup(`?mode=student&sel=${encodeSharePayload([1, 3])}`);
+    app.respondAll(byLevel); await flush();
+
+    assert.equal(app.element('questionText').textContent, 'Selected 1');
+    assert.equal(app.element('questionProgress').textContent, '1 / 2');
+
+    app.element('nextQuestionButton').click();
+    assert.equal(app.element('questionText').textContent, 'Selected 3');
+
+    const saved = JSON.parse(app.storage.getItem('omoi-progress'));
+    assert.equal(saved.version, 3);
+    assert.deepEqual(saved.ids, ['selected-1', 'selected-3']);
+    assert.equal(saved.student.source, 'selection');
+    assert.equal(saved.student.count, 'all');
+});
+
+test('classroom mode can start from the URL and its state is saved', async () => {
+    const app = setup('?mode=student&classroom=1');
+    app.respondAll({
+        2: [
+            { id: 's2a', level: 2, sensitivity: 1, question: 'S2a', labels: ['student', 'school'] },
+            { id: 's2b', level: 2, sensitivity: 1, question: 'S2b', labels: ['student', 'school'] }
+        ],
+        3: [],
+        4: []
+    }); await flush();
+
+    assert.equal(app.element('.question-screen').classList.contains('classroom-mode'), true);
+    assert.equal(app.element('classroomModeButton').hidden, false);
+    assert.equal(app.element('classroomModeButton').textContent, '授業モードを終了');
+    assert.equal(app.element('questionProgress').hidden, false);
+    assert.equal(app.element('questionProgress').textContent, '1 / 2');
+
+    const saved = JSON.parse(app.storage.getItem('omoi-progress'));
+    assert.equal(saved.classroom, true);
+
+    app.element('nextQuestionButton').click();
+    assert.equal(app.element('questionProgress').textContent, '2 / 2');
+
+    app.element('classroomModeButton').click();
+    assert.equal(app.element('.question-screen').classList.contains('classroom-mode'), false);
+    assert.equal(app.element('classroomModeButton').textContent, '授業モード');
+    const updated = JSON.parse(app.storage.getItem('omoi-progress'));
+    assert.equal(updated.classroom, false);
+});
+
+test('arrow keys move between questions without leaving the page', async () => {
+    const app = setup();
+    app.respond(); await flush();
+    const first = app.element('questionText').textContent;
+
+    app.document.keydown({
+        key: 'ArrowRight',
+        target: { tagName: 'BODY' },
+        preventDefault() {}
+    });
+    assert.notEqual(app.element('questionText').textContent, first);
+
+    app.document.keydown({
+        key: 'ArrowLeft',
+        target: { tagName: 'BODY' },
+        preventDefault() {}
+    });
+    assert.equal(app.element('questionText').textContent, first);
 });
 
 test('custom mode combines labels and individual questions across levels', async () => {
@@ -766,7 +943,8 @@ test('custom mode combines labels and individual questions across levels', async
     reload.respondAll(byLevel); await flush();
     assert.equal(reload.element('questionText').textContent, 'Custom selected');
     reload.element('nextQuestionButton').click();
-    assert.equal(reload.location.href, 'index.html');
+    assert.match(reload.location.href, /question\.html/);
+    assert.equal(reload.element('sessionComplete').hidden, false);
     assert.equal(storage.getItem('omoi-progress'), null);
 });
 

@@ -4,12 +4,18 @@ test.describe.configure({ timeout: 60000 });
 
 const ready = { timeout: 20000 };
 
-test('student mode starts without a warning from labelled questions', async ({ page }) => {
+test('student mode opens its settings screen and starts without a warning', async ({ page }) => {
   await page.goto('/select.html');
   await page.locator('label[for="modeStudent"]').click();
   await expect(page.locator('#nextButton')).toBeEnabled();
   await page.locator('#nextButton').click();
-  await expect(page).toHaveURL(/\/question\.html\?mode=student(?:&session=[A-Za-z0-9_-]+)?$/);
+  await expect(page).toHaveURL(/\/student-select\.html$/);
+  await expect(page.getByRole('heading', { name: '使うのは？' })).toBeVisible();
+
+  await page.locator('[data-student-role="student"]').click();
+  await expect(page.getByRole('heading', { name: '自分で設定する' })).toBeVisible();
+  await page.locator('#quickStartButton').click();
+  await expect(page).toHaveURL(/\/question\.html\?mode=student(?:&[^#]*)?$/);
   await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
   await expect(page.locator('#sharedQuestionNotice')).toBeHidden();
 

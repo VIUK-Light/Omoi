@@ -22,9 +22,7 @@ nextButton.addEventListener("click", function () {
     if (nextButton.disabled) return;
 
     if (selectedMode === "student") {
-        const questionUrl = new URL("question.html", window.location.href);
-        questionUrl.searchParams.set("mode", "student");
-        redirect(questionUrl);
+        redirect(new URL("student-select.html", window.location.href));
         return;
     }
 

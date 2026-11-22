@@ -90,4 +90,33 @@ test('the resume notice can be dismissed with the close button', async ({ page }
     await page.locator('#resumeNoticeClose').click();
     await expect(notice).toBeHidden();
     await expect(page.locator('#modeStudent')).toBeFocused();
+
+    await page.reload();
+    await expect(page.locator('#resumeNotice')).toBeHidden();
+});
+
+test('finishing every question shows a completion screen and can restart', async ({ page }) => {
+    await page.goto('/question.html?mode=student&levels=2&count=1');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+    await expect(page.locator('#nextQuestionLabel')).toHaveText('すべての問いを終える');
+    const question = (await page.locator('#questionText').innerText()).trim();
+
+    await page.locator('#nextQuestionButton').click();
+    await expect(page.locator('#sessionComplete')).toBeVisible();
+    await expect(page.locator('#sessionCompleteTitle')).toBeFocused();
+    await expect(page).toHaveURL(/\/question\.html/);
+
+    const completedUrl = new URL(page.url());
+    expect(completedUrl.searchParams.get('session')).toBeNull();
+    expect(completedUrl.searchParams.get('id')).toBeNull();
+    expect(await page.evaluate(() => localStorage.getItem('omoi-progress'))).toBeNull();
+
+    await page.locator('#restartSessionButton').click();
+    await expect(page.locator('#sessionComplete')).toBeHidden();
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled();
+    await expect(page.locator('#questionText')).toHaveText(question, ready);
+
+    const restartedUrl = new URL(page.url());
+    expect(restartedUrl.searchParams.get('session')).toBeTruthy();
+    expect(await page.evaluate(() => JSON.parse(localStorage.getItem('omoi-progress')).index)).toBe(0);
 });

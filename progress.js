@@ -2,6 +2,7 @@
 (() => {
     const storageKey = "omoi-progress";
     const selectionKey = "omoi-selection";
+    const dismissedKey = "omoi-progress-resume-dismissed";
     const maxAge = 7 * 24 * 60 * 60 * 1000;
     const selectionMaxAge = 60 * 60 * 1000;
     const tokenPattern = /^[A-Za-z0-9_-]{6,64}$/;
@@ -70,8 +71,24 @@
         return modes.has(value);
     }
 
+    function isStudentSettings(value) {
+        if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+        if (!isStringArray(value.themes ?? [])) return false;
+        if (!value.themes.every(theme => /^[a-z][a-z_]{0,30}$/.test(theme))) return false;
+        if (!Array.isArray(value.levels ?? [])) return false;
+        if (!value.levels.every(level => [2, 3, 4].includes(level))) return false;
+        if (!(value.count === "all" ||
+            (Number.isInteger(value.count) && value.count >= 1 && value.count <= 200))) {
+            return false;
+        }
+        if (typeof value.heavy !== "boolean") return false;
+        if (typeof value.classroom !== "boolean") return false;
+        if (!["default", "themes", "selection"].includes(value.source)) return false;
+        return true;
+    }
+
     function isValid(data) {
-        if (!data || ![1, 2].includes(data.version) || !tokenPattern.test(data.token)) return false;
+        if (!data || ![1, 2, 3].includes(data.version) || !tokenPattern.test(data.token)) return false;
         if (!Array.isArray(data.ids) || data.ids.length === 0) return false;
         if (!data.ids.every(id => typeof id === "string" && id.trim() !== "")) return false;
         if (!Number.isInteger(data.index) || data.index < 0 || data.index >= data.ids.length) return false;
@@ -83,6 +100,11 @@
             if (data.mode === "all" && (!Number.isInteger(data.level) || !levelLabels[data.level])) return false;
             if (data.mode === "custom" && (!isStringArray(data.labels) || !isStringArray(data.selectedIds) ||
                 (data.excludedIds !== undefined && !isStringArray(data.excludedIds)))) return false;
+            if (data.classroom !== undefined && typeof data.classroom !== "boolean") return false;
+            if (data.version === 3 && data.mode === "student" &&
+                !isStudentSettings(data.student)) {
+                return false;
+            }
         }
         return Date.now() - data.updatedAt <= maxAge;
     }
@@ -121,6 +143,7 @@
 
     function clear() {
         removeStorage(storageKey);
+        removeStorage(dismissedKey);
     }
 
     function writeSelection(data) {
@@ -160,6 +183,26 @@
             url.searchParams.set("level", String(data.level));
             url.searchParams.set("id", data.ids[data.index]);
         }
+        if (mode === "student" && data.version === 3 && data.student) {
+            const settings = data.student;
+            if (settings.source !== "selection") {
+                if (settings.themes.length > 0) {
+                    url.searchParams.set("themes", settings.themes.join(","));
+                }
+                if (settings.levels.length > 0) {
+                    url.searchParams.set("levels", settings.levels.join(","));
+                }
+                if (settings.count !== "all") {
+                    url.searchParams.set("count", String(settings.count));
+                }
+                if (settings.heavy) {
+                    url.searchParams.set("heavy", "1");
+                }
+            }
+            if (data.classroom === true || settings.classroom) {
+                url.searchParams.set("classroom", "1");
+            }
+        }
         url.searchParams.set("session", data.token);
         return url.href;
     }
@@ -173,7 +216,28 @@
             return `level:${levelNames[data.level]}｜${levelLabels[data.level]}・${position}`;
         }
         if (data.mode === "student") {
-            return `${modeLabels.student}・${position}`;
+            const settings = data.version === 3 ? data.student : null;
+            const parts = [];
+            if (settings?.source === "selection") {
+                parts.push(`選んだ${data.ids.length}問`);
+            } else if (settings) {
+                if (settings.themes.length > 0) {
+                    parts.push(`${settings.themes.length}テーマ`);
+                }
+                if (settings.levels.length > 0) {
+                    parts.push(`level:${[...settings.levels]
+                        .sort((left, right) => left - right)
+                        .map(value => levelNames[value])
+                        .join("・")}`);
+                }
+                if (settings.count !== "all") {
+                    parts.push(`${settings.count}問`);
+                }
+            }
+            if (data.classroom === true || settings?.classroom === true) {
+                parts.push("授業モード");
+            }
+            return `${modeLabels.student}${parts.length > 0 ? `｜${parts.join("・")}` : ""}・${position}`;
         }
         const labels = typeof data.labels?.length === "number" ? data.labels.length : 0;
         const selected = typeof data.selectedIds?.length === "number" ? data.selectedIds.length : 0;
@@ -187,7 +251,8 @@
         const notice = document.getElementById("resumeNotice");
         if (!notice) return;
         const data = read();
-        if (!data) {
+        const dismissed = readStorage(dismissedKey);
+        if (!data || dismissed === data.token) {
             notice.hidden = true;
             return;
         }
@@ -202,6 +267,7 @@
         const close = document.getElementById("resumeNoticeClose");
         if (close) {
             close.addEventListener("click", function () {
+                writeStorage(dismissedKey, data.token);
                 notice.hidden = true;
                 const firstMode = document.querySelector('input[name="mode"]');
                 const firstLevel = document.querySelector('input[name="level"]');

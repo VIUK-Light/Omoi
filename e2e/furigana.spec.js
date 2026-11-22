@@ -20,7 +20,8 @@ test('furigana settings open at the top right and preserve the original question
   await expect(toggle).toBeVisible();
   await expect(page.locator('#textSizeControl')).toBeVisible();
   await expect(page.locator('#mediumTextToggle')).toHaveAttribute('aria-pressed', 'true');
-  await expect(page.locator('#classroomModeToggle')).toBeVisible();
+  // 授業モードUIはstudentモードのみ
+  await expect(page.locator('#classroomModeToggle')).toBeHidden();
   await expect(toggle).toHaveAttribute('aria-pressed', 'false');
 
   await toggle.click();
@@ -73,7 +74,7 @@ test('furigana keeps a clear gap from the body text with smaller readings', asyn
   expect(metrics.scenario.lineHeight).toBeGreaterThan(metrics.scenario.baseSize * 2);
 });
 
-test('text size has three levels and classroom mode has distinct sizes and button heights', async ({ page }) => {
+test('text size has three levels and classroom UI is only shown in student mode', async ({ page }) => {
   await page.goto('/question.html?level=2');
 
   await expect(page.locator('#nextQuestionButton')).toBeEnabled();
@@ -102,24 +103,8 @@ test('text size has three levels and classroom mode has distinct sizes and butto
   await expect(smallToggle).toHaveAttribute('aria-pressed', 'false');
 
   await page.locator('#furiganaToggle').click();
-  await classroomToggle.click();
-
-  const classroomFontSize = Number.parseFloat(await question.evaluate(element => getComputedStyle(element).fontSize));
-  const classroomLineHeight = Number.parseFloat(await question.evaluate(element => getComputedStyle(element).lineHeight));
-  const classroomButtonHeight = (await nextButton.boundingBox()).height;
-  expect(classroomFontSize).toBeGreaterThan(largeFontSize);
-  expect(classroomLineHeight / classroomFontSize).toBeGreaterThanOrEqual(1.8);
-  await expect(question.locator('ruby')).not.toHaveCount(0);
-  expect(classroomButtonHeight).toBeLessThan(defaultButtonHeight);
-  await expect(largeToggle).toHaveAttribute('aria-pressed', 'true');
-  await expect(smallToggle).toBeDisabled();
-  await expect(mediumToggle).toBeDisabled();
-  await expect(largeToggle).toBeDisabled();
-  await expect(classroomToggle).toHaveAttribute('aria-pressed', 'true');
-  await expect(page.locator('.question-screen')).toHaveClass(/text-size-large/);
-  await expect(page.locator('.question-screen')).toHaveClass(/classroom-mode/);
-  await expect(nextButton).toBeVisible();
-  await expect(page.locator('.back-link')).toBeHidden();
-  await expect(page.locator('.question-tools')).toBeHidden();
-  await expect(page.locator('.question-navigation')).toBeHidden();
+  // 授業モードUIはstudentモードのみ。allモードでは設定内トグルも表示しない。
+  await expect(classroomToggle).toBeHidden();
+  await expect(page.locator('#classroomModeButton')).toBeHidden();
+  await expect(page.locator('#questionProgress')).toBeHidden();
 });

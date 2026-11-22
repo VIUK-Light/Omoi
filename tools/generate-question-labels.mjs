@@ -100,6 +100,7 @@ const activeLevels = [2, 3, 4];
 const levelFiles = activeLevels.map(level => `level${level}.json`);
 const labelsFile = "labels.json";
 const indexFile = "questions-index.json";
+const filterIndexFile = "question-filter-index.json";
 const argumentsSet = new Set(process.argv.slice(2));
 const write = argumentsSet.has("--write");
 const rewriteLabels = argumentsSet.has("--rewrite-labels");
@@ -191,6 +192,79 @@ for (const [fileName, entry] of levels) {
     }
 }
 
+function readJsonFile(fileName) {
+    const fullPath = path.join(repositoryRoot, fileName);
+    if (!fs.existsSync(fullPath)) return { exists: false, value: null, error: null };
+    try {
+        return { exists: true, value: JSON.parse(fs.readFileSync(fullPath, "utf8")), error: null };
+    } catch (error) {
+        return { exists: true, value: null, error };
+    }
+}
+
+function buildExpectedIndexes() {
+    const existingIndex = readJsonFile(indexFile);
+    const existingById = new Map();
+    if (existingIndex.value && Array.isArray(existingIndex.value.questions)) {
+        for (const question of existingIndex.value.questions) {
+            if (question && typeof question.id === "string" && Number.isInteger(question.index)) {
+                existingById.set(question.id, question.index);
+            }
+        }
+    }
+
+    const records = [];
+    for (const fileName of levelFiles) {
+        for (const record of levels.get(fileName)?.records ?? []) {
+            records.push(record);
+        }
+    }
+
+    let nextIndex = 0;
+    for (const index of existingById.values()) {
+        if (index >= nextIndex) nextIndex = index + 1;
+    }
+
+    const usedIndices = new Set();
+    const entries = [];
+    for (const record of records) {
+        let index = existingById.get(record.id);
+        if (!Number.isInteger(index) || index < 0 || usedIndices.has(index)) {
+            while (usedIndices.has(nextIndex)) nextIndex += 1;
+            index = nextIndex;
+            nextIndex += 1;
+        }
+        usedIndices.add(index);
+        const reading = buildQuestionReading(record);
+        entries.push({
+            index,
+            id: record.id,
+            level: record.level,
+            category: record.category,
+            labels: record.labels,
+            question: record.question,
+            search: buildQuestionSearchText(record),
+            scenario: typeof record.scenario === "string" ? record.scenario : "",
+            summary: flattenSummary(record.summary),
+            hints: buildQuestionHints(record),
+            terms: buildQuestionTerms(record),
+            reading,
+            sensitivity: record.sensitivity
+        });
+    }
+
+    entries.sort((left, right) => left.index - right.index);
+    const questions = entries.map(({ sensitivity, ...question }) => question);
+    const filterQuestions = entries.map(({ index, id, level, sensitivity, labels, question, reading }) => ({
+        index, id, level, sensitivity, labels, question, reading
+    }));
+    return { questions, filterQuestions };
+}
+
+const { questions: expectedQuestions, filterQuestions: expectedFilterQuestions } = buildExpectedIndexes();
+const expectedIndexDocument = { version: 5, questions: expectedQuestions };
+const expectedFilterIndexDocument = { version: 1, questions: expectedFilterQuestions };
+
 if (write) {
     for (const [fileName, { records, indent }] of levels) {
         const text = `${JSON.stringify(records, null, indent)}\n`;
@@ -201,32 +275,13 @@ if (write) {
         }
     }
     fs.writeFileSync(path.join(repositoryRoot, labelsFile), labelsDocumentText);
-
-    const questions = [];
-    let questionIndex = 0;
-    for (const fileName of levelFiles) {
-        for (const record of levels.get(fileName)?.records ?? []) {
-            questions.push({
-                index: questionIndex,
-                id: record.id,
-                level: record.level,
-                category: record.category,
-                labels: record.labels,
-                question: record.question,
-                search: buildQuestionSearchText(record),
-                scenario: typeof record.scenario === "string" ? record.scenario : "",
-                summary: flattenSummary(record.summary),
-                hints: buildQuestionHints(record),
-                terms: buildQuestionTerms(record),
-                reading: buildQuestionReading(record)
-            });
-            questionIndex += 1;
-        }
-    }
-    const indexDocument = { version: 5, questions };
     fs.writeFileSync(
         path.join(repositoryRoot, indexFile),
-        `${JSON.stringify(indexDocument, null, 2)}\n`
+        `${JSON.stringify(expectedIndexDocument, null, 2)}\n`
+    );
+    fs.writeFileSync(
+        path.join(repositoryRoot, filterIndexFile),
+        `${JSON.stringify(expectedFilterIndexDocument)}\n`
     );
 } else {
     // labels.json と questions-index.json が現在の定義・カードと一致するか確認する。
@@ -240,44 +295,24 @@ if (write) {
         }
     }
 
-    const indexPath = path.join(repositoryRoot, indexFile);
-    if (!fs.existsSync(indexPath)) {
+    const actualIndex = readJsonFile(indexFile);
+    if (!actualIndex.exists) {
         addFinding("missing_index_file", `${indexFile} is missing; run with --write.`);
-    } else {
-        let actualIndex;
-        try {
-            actualIndex = JSON.parse(fs.readFileSync(indexPath, "utf8"));
-        } catch (error) {
-            addFinding("invalid_index_json", `Could not parse ${indexFile}: ${error.message}`);
-        }
-        if (actualIndex) {
-            const expectedQuestions = [];
-            let expectedIndexCounter = 0;
-            for (const fileName of levelFiles) {
-                for (const record of levels.get(fileName)?.records ?? []) {
-                    expectedQuestions.push({
-                        index: expectedIndexCounter,
-                        id: record.id,
-                        level: record.level,
-                        category: record.category,
-                        labels: record.labels,
-                        question: record.question,
-                        search: buildQuestionSearchText(record),
-                        scenario: typeof record.scenario === "string" ? record.scenario : "",
-                        summary: flattenSummary(record.summary),
-                        hints: buildQuestionHints(record),
-                        terms: buildQuestionTerms(record),
-                        reading: buildQuestionReading(record)
-                    });
-                    expectedIndexCounter += 1;
-                }
-            }
-            const expectedIndex = { version: 5, questions: expectedQuestions };
-            if (actualIndex.version !== expectedIndex.version ||
-                JSON.stringify(actualIndex.questions) !== JSON.stringify(expectedQuestions)) {
-                addFinding("stale_index_file", `${indexFile} differs from the level data; run with --write.`);
-            }
-        }
+    } else if (actualIndex.error) {
+        addFinding("invalid_index_json", `Could not parse ${indexFile}: ${actualIndex.error.message}`);
+    } else if (actualIndex.value?.version !== expectedIndexDocument.version ||
+        JSON.stringify(actualIndex.value?.questions) !== JSON.stringify(expectedQuestions)) {
+        addFinding("stale_index_file", `${indexFile} differs from the level data; run with --write.`);
+    }
+
+    const actualFilterIndex = readJsonFile(filterIndexFile);
+    if (!actualFilterIndex.exists) {
+        addFinding("missing_filter_index_file", `${filterIndexFile} is missing; run with --write.`);
+    } else if (actualFilterIndex.error) {
+        addFinding("invalid_filter_index_json", `Could not parse ${filterIndexFile}: ${actualFilterIndex.error.message}`);
+    } else if (actualFilterIndex.value?.version !== expectedFilterIndexDocument.version ||
+        JSON.stringify(actualFilterIndex.value?.questions) !== JSON.stringify(expectedFilterQuestions)) {
+        addFinding("stale_filter_index_file", `${filterIndexFile} differs from the level data; run with --write.`);
     }
 }
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <title>ワークシート - Omoi</title>
+    <link rel="stylesheet" href="select.css">
+    <link rel="stylesheet" href="worksheet.css">
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <main class="worksheet-screen">
+        <div class="worksheet-toolbar">
+            <a href="student-preview.html" id="backLink" class="back-link">← セットの確認に戻る</a>
+            <div class="worksheet-toolbar-actions">
+                <label class="worksheet-option" id="helpersOption">
+                    <input type="checkbox" id="includeHelpers">
+                    <span>背景・ヒント・用語も載せる</span>
+                </label>
+                <button type="button" id="printButton" class="worksheet-print-button" disabled>印刷する</button>
+            </div>
+        </div>
+
+        <article class="worksheet-sheet" id="worksheetPage" aria-labelledby="worksheetTitle">
+            <header class="worksheet-header">
+                <div class="worksheet-header-top">
+                    <p class="worksheet-brand">Omoi</p>
+                    <p class="worksheet-kicker">重い話を話せる質問カード</p>
+                </div>
+                <div class="worksheet-title-row">
+                    <h1 id="worksheetTitle">ワークシート</h1>
+                    <p id="worksheetMeta" class="worksheet-meta"></p>
+                </div>
+                <div class="worksheet-fields">
+                    <label class="worksheet-field"><span>名前</span><span class="worksheet-field-line"></span></label>
+                    <label class="worksheet-field"><span>日付</span><span class="worksheet-field-line"></span></label>
+                </div>
+                <p class="worksheet-lead">
+                    気になった問いから書いてみましょう。答えにくい問いは飛ばして大丈夫です。
+                </p>
+            </header>
+
+            <p id="worksheetNote" class="worksheet-note" hidden></p>
+            <div id="worksheetError" class="worksheet-error" role="alert" hidden></div>
+            <ol id="worksheetList" class="worksheet-list"></ol>
+        </article>
+    </main>
+    <script src="question-share.js"></script>
+    <script src="worksheet.js"></script>
+</body>
+</html>
