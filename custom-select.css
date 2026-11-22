@@ -611,6 +611,7 @@
 
 .selected-question-item {
     display: flex;
+    flex-wrap: wrap;
     min-width: 0;
     align-items: center;
     gap: 6px;
@@ -660,6 +661,50 @@
 .selected-question-remove:focus-visible {
     outline: 2px solid var(--omoi-focus, #24566b);
     outline-offset: -2px;
+}
+
+.selected-question-detail-toggle {
+    display: grid;
+    flex: none;
+    place-items: center;
+
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid var(--omoi-divider, #e8e8e8);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--omoi-link, #24566b);
+
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.selected-question-detail-toggle:hover {
+    background: var(--omoi-hover, #eee);
+}
+
+.selected-question-detail-toggle[aria-expanded="true"] {
+    background: var(--omoi-surface, #f7f7f7);
+}
+
+.selected-question-scenario {
+    flex-basis: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 8px 10px 10px;
+
+    border-left: 2px solid var(--omoi-link, #24566b);
+    background: var(--omoi-surface, #f7f7f7);
+    color: var(--omoi-muted, #666);
+
+    font-size: 13px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
 }
 
 /* 問いの詳細 */

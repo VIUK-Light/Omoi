@@ -314,6 +314,10 @@ body {
     #questionText {
         text-wrap: pretty;
     }
+
+    .question-topbar {
+        padding-right: 16px;
+    }
 }
 
 .question-footer {

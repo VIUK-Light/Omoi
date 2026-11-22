@@ -493,6 +493,28 @@
             text.textContent = question.question;
             text.title = question.question;
 
+            const scenarioText = (question.scenario || "").trim();
+            let detailToggle = null;
+            let scenario = null;
+            if (scenarioText) {
+                detailToggle = document.createElement("button");
+                detailToggle.type = "button";
+                detailToggle.className = "selected-question-detail-toggle";
+                detailToggle.textContent = "i";
+                detailToggle.setAttribute("aria-label", `「${question.question}」の背景を表示`);
+                detailToggle.setAttribute("aria-expanded", "false");
+
+                scenario = document.createElement("p");
+                scenario.className = "selected-question-scenario";
+                scenario.hidden = true;
+                scenario.textContent = scenarioText;
+
+                detailToggle.addEventListener("click", function () {
+                    scenario.hidden = !scenario.hidden;
+                    detailToggle.setAttribute("aria-expanded", String(!scenario.hidden));
+                });
+            }
+
             const remove = document.createElement("button");
             remove.type = "button";
             remove.className = "selected-question-remove";
@@ -511,7 +533,10 @@
                 }
             });
 
-            item.append(text, remove);
+            item.append(text);
+            if (detailToggle) item.append(detailToggle);
+            item.append(remove);
+            if (scenario) item.append(scenario);
             selectedQuestionList.append(item);
         }
     }
