@@ -373,6 +373,31 @@
     cursor: not-allowed;
 }
 
+#confirmStartButton {
+    min-height: 42px;
+    padding: 0 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: var(--omoi-primary, #111111);
+    color: var(--omoi-on-primary, #ffffff);
+
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#confirmStartButton:hover:not(:disabled) {
+    background: var(--omoi-primary-hover, #333333);
+}
+
+#confirmStartButton:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
 @media (max-width: 480px) {
     .custom-confirm-actions {
         flex-direction: column-reverse;

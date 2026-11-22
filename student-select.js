@@ -75,6 +75,25 @@
     let labelsById = new Map();
     let topicLabels = [];
     let questions = [];
+    let scenarioById = new Map();
+    async function loadScenarios() {
+        try {
+            const datasets = await Promise.all([2, 3, 4].map(level =>
+                fetch(`level${level}.json`)
+                    .then(response => (response.ok ? response.json() : []))
+                    .catch(() => [])
+            ));
+            for (const dataset of datasets) {
+                if (!Array.isArray(dataset)) continue;
+                for (const question of dataset) {
+                    if (question?.id && (question.scenario || "").trim()) {
+                        scenarioById.set(question.id, question.scenario.trim());
+                    }
+                }
+            }
+        } catch (error) {
+        }
+    }
     let indexReady = false;
     let indexError = "";
     let indexPromise = null;
@@ -493,7 +512,7 @@
             text.textContent = question.question;
             text.title = question.question;
 
-            const scenarioText = (question.scenario || "").trim();
+            const scenarioText = (scenarioById.get(question.id) || "").trim();
             let detailToggle = null;
             let scenario = null;
             if (scenarioText) {
@@ -663,7 +682,7 @@
             label.append(checkbox, check, text);
             item.append(label);
 
-            const scenarioText = (question.scenario || "").trim();
+            const scenarioText = (scenarioById.get(question.id) || "").trim();
             if (scenarioText) {
                 const detail = document.createElement("details");
                 detail.className = "question-pick-detail";
@@ -922,6 +941,10 @@
                 .filter(label => label.kind === "topic")
                 .sort((left, right) => (left.order ?? 0) - (right.order ?? 0));
             questions = validateFilterDocument(filterDocument, labelsById);
+
+            loadScenarios().then(function () {
+                if (indexReady) renderAll();
+            });
 
             const validLabelIds = new Set(topicLabels.map(label => label.id));
             for (const id of [...selectedThemes]) {
