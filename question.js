@@ -648,7 +648,12 @@ async function loadLevelDataset(levelValue, signal) {
         furiganaResponse.json()
     ]);
     validateQuestions(questions, levelValue);
-    validateFurigana(questions, furigana);
+    try {
+        validateFurigana(questions, furigana);
+    } catch (error) {
+        console.warn("Omoi: ふりがなの検証に失敗しました。ふりがななしで表示します。", error);
+        return { questions, furigana: {} };
+    }
     return { questions, furigana };
 }
 
