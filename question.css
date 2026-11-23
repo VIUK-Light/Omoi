@@ -426,17 +426,6 @@ body {
     text-align: center;
 }
 
-.share-status {
-    margin: 8px 0 0;
-    color: var(--omoi-link, #24566b);
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1.5;
-}
-
-.share-status:empty {
-    display: none;
-}
 
 .question-screen.shared-question .question-actions,
 .question-screen.shared-question .previous-button {

@@ -870,9 +870,47 @@
     to { transform: scale(1.08); }
 }
 
+/* コピーや共有の結果を、画面の流れから切り離して上部に一時表示する。 */
+.omoi-toast {
+    position: fixed;
+    top: calc(10px + env(safe-area-inset-top, 0px));
+    left: 50%;
+    z-index: 60;
+
+    width: max-content;
+    max-width: calc(100vw - 32px);
+    margin: 0;
+    padding: 11px 18px;
+    box-sizing: border-box;
+
+    border-radius: 999px;
+    background: var(--omoi-ink, #111111);
+    color: var(--omoi-page, #ffffff);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 24%);
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+
+    opacity: 0;
+    transform: translate(-50%, -8px);
+    transition: opacity 160ms ease, transform 160ms ease;
+    pointer-events: none;
+}
+
+.omoi-toast:not(:empty) {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
 @media (prefers-reduced-motion: reduce) {
     :root:not([data-background="none"]) .page-background,
     .page-background__stars {
         animation: none;
+    }
+
+    .omoi-toast {
+        transition: none;
     }
 }

@@ -227,19 +227,6 @@
     cursor: not-allowed;
 }
 
-.student-preview-share-status {
-    width: 100%;
-    margin: 0;
-    font-size: 12px;
-    line-height: 1.5;
-    color: var(--omoi-muted, #666);
-    text-align: right;
-}
-
-.student-preview-share-status:empty {
-    display: none;
-}
-
 @media print {
     html,
     body {
