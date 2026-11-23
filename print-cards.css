@@ -8,7 +8,7 @@
 .back-link { color: var(--omoi-link, #24566b); text-decoration: none; font-size: 14px; }
 
 .print-sheets { display: flex; flex-direction: column; align-items: center; gap: 16px; }
-.print-sheet { display: flex !important; }
+.print-sheet { width: 210mm; min-height: 296mm; box-sizing: border-box; }
 
 /* On screen: show at reduced scale for preview */
 .print-sheet {
