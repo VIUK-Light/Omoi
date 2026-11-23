@@ -941,6 +941,7 @@ if (clearLabelsButton) {
         if (selectedLabels.size === 0) return;
 
         selectedLabels.clear();
+        populateLabels();
         updateCustomUi();
         renderQuestionPicker();
 
