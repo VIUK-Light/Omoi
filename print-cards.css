@@ -17,9 +17,11 @@
 
 @media print {
     body { background: #fff; }
+    /* question.css の #printSheet ルールを上書きして、このページのコンテナを表示する */
+    body > main.print-cards-screen { display: block !important; }
     .print-toolbar, .back-link, .print-status { display: none !important; }
     .print-cards-screen { padding: 0; margin: 0; }
-    .print-sheets { display: block; }
+    .print-sheets { display: block !important; }
     .print-sheet {
         display: flex !important;
         page-break-after: always;
