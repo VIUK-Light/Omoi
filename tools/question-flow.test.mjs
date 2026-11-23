@@ -739,6 +739,7 @@ test('changing the category discards the saved progress', async () => {
     assert.notEqual(app.storage.getItem('omoi-progress'), null);
 
     app.element('changeCategoryLink').click();
+    await flush();
     assert.equal(app.storage.getItem('omoi-progress'), null);
 });
 

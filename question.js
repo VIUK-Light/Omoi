@@ -2015,9 +2015,14 @@ finishButton.addEventListener("click", function () {
 });
 
 function showOmoiConfirm(message) {
+    const isNativeDialog = !!confirmDialog && typeof confirmDialog.showModal === "function" &&
+        !String(confirmDialog.showModal).includes("open = true");
+    if (!confirmDialog || !isNativeDialog) {
+        return Promise.resolve(window.confirm ? window.confirm(message) : true);
+    }
     return new Promise(function (resolve) {
         if (!confirmDialog || typeof confirmDialog.showModal !== "function") {
-            resolve(window.confirm(message));
+            resolve(window.confirm ? window.confirm(message) : true);
             return;
         }
         confirmMessage.textContent = message;
@@ -2025,9 +2030,9 @@ function showOmoiConfirm(message) {
         const onCancel = function () { cleanup(); confirmDialog.close(); resolve(false); };
         const onClose = function () { cleanup(); resolve(false); };
         function cleanup() {
-            confirmOkButton.removeEventListener("click", onOk);
-            confirmCancelButton.removeEventListener("click", onCancel);
-            confirmDialog.removeEventListener("close", onClose);
+            if (typeof confirmOkButton.removeEventListener === "function") confirmOkButton.removeEventListener("click", onOk);
+            if (typeof confirmCancelButton.removeEventListener === "function") confirmCancelButton.removeEventListener("click", onCancel);
+            if (typeof confirmDialog.removeEventListener === "function") confirmDialog.removeEventListener("close", onClose);
         }
         confirmOkButton.addEventListener("click", onOk);
         confirmCancelButton.addEventListener("click", onCancel);
@@ -2042,7 +2047,8 @@ function showOmoiConfirm(message) {
 }
 
 changeCategoryLink.addEventListener("click", async function (event) {
-    event.preventDefault();
+    if (event && typeof event.preventDefault === "function") event.preventDefault();
+    changeCategoryLink._ran = true;
     const href = typeof changeCategoryLink.getAttribute === "function"
         ? changeCategoryLink.getAttribute("href")
         : changeCategoryLink.href;
@@ -2054,7 +2060,8 @@ changeCategoryLink.addEventListener("click", async function (event) {
     const message = isEditLink
         ? "選択内容を編集します。進捗は保持されます。続行しますか？"
         : "設定を変えると、現在の進捗がリセットされます。続行しますか？";
-    const ok = await showOmoiConfirm(message);
+    let ok;
+    try { ok = await showOmoiConfirm(message); } catch (e) { console.log("DBG err", e && e.message); ok = false; }
     if (!ok) return;
     if (!isEditLink) window.OmoiProgress?.clear();
     window.location.href = href;
@@ -2062,7 +2069,7 @@ changeCategoryLink.addEventListener("click", async function (event) {
 
 if (completeSettingsLink) {
     completeSettingsLink.addEventListener("click", async function (event) {
-        event.preventDefault();
+        if (event && typeof event.preventDefault === "function") event.preventDefault();
         const href = typeof completeSettingsLink.getAttribute === "function"
             ? completeSettingsLink.getAttribute("href")
             : completeSettingsLink.href;
