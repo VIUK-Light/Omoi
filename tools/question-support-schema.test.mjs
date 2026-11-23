@@ -10,7 +10,8 @@ test('each helper is optional, including terms without a background explanation'
         { terms: [{ term: 'Consent', definition: 'An explanation of the term.' }] },
         { summary: [{ type: 'text', text: 'A long contextual explanation. '.repeat(30) }] },
         { summary: [{ type: 'bullets', items: [{ text: 'One useful point.' }] }] },
-        { detail: { text: 'A checked fact.', sources: [source] } }
+        { detail: { text: 'A checked fact.', sources: [source] } },
+        { detail: { text: 'A checked fact.' } }
     ]) assert.deepEqual(validateQuestionSupport({ level: 3, ...support }), []);
 });
 
@@ -34,9 +35,10 @@ test('malformed content and empty filler fail without enforcing a fixed number o
     assert.deepEqual(validateQuestionSupport({ level: 4, summary: [{ type: 'bullets', items: Array.from({ length: 5 }, (_, i) => ({ text: `Relevant point ${i}` })) }] }), []);
 });
 
-test('published background needs linked sources with safe, valid URLs', () => {
-    for (const sources of [undefined, [], [{ title: 'Source', url: 'javascript:alert(1)' }], [{ title: '', url: source.url }], [{ title: 'Source', url: 'invalid' }]]) {
+test('published background sources are validated when present, and text-only backgrounds are allowed', () => {
+    for (const sources of [[{ title: 'Source', url: 'javascript:alert(1)' }], [{ title: '', url: source.url }], [{ title: 'Source', url: 'invalid' }], []]) {
         assert.ok(validateQuestionSupport({ level: 4, detail: { text: 'Background', sources } }).length > 0);
     }
+    assert.deepEqual(validateQuestionSupport({ level: 4, detail: { text: 'Background' } }), []);
     assert.deepEqual(validateQuestionSupport({ level: 4, detail: { text: 'Background', sources: [source] } }), []);
 });

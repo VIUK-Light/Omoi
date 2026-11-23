@@ -14,6 +14,7 @@ const questionSearch = document.getElementById("questionSearch");
 const questionCategoryFilter = document.getElementById("questionCategoryFilter");
 const selectAllQuestionsButton = document.getElementById("selectAllQuestions");
 const showMoreQuestions = document.getElementById("showMoreQuestions");
+const questionPickerHint = document.getElementById("questionPickerHint");
 const selectedQuestionsCount = document.getElementById("selectedQuestionsCount");
 const selectedQuestionList = document.getElementById("selectedQuestionList");
 const clearQuestionsButton = document.getElementById("clearQuestions");
@@ -133,11 +134,16 @@ function categoryPool() {
 
 function unionPool() {
     const included = new Set(categoryPool().map(question => question.id));
+    for (const id of excludedQuestionIds) included.delete(id);
     for (const id of selectedQuestionIds) included.add(id);
-    for (const id of excludedQuestionIds) {
-        if (!selectedQuestionIds.has(id)) included.delete(id);
-    }
+    for (const id of excludedQuestionIds) included.delete(id);
     return included;
+}
+
+// カテゴリー経由でも個別経由でも、出題に含まれる問いかどうかを返す。
+function isQuestionIncluded(question) {
+    if (selectedQuestionIds.has(question.id)) return true;
+    return questionMatchesLabels(question) && !excludedQuestionIds.has(question.id);
 }
 
 function updateNextButton() {
@@ -219,7 +225,7 @@ function updateLabelSection() {
 function updatePickerCount() {
     if (!questionPickerCount) return;
 
-    const count = selectedQuestionIds.size;
+    const count = unionPool().size;
     questionPickerCount.textContent = `${count}問`;
     questionPickerCount.hidden = count === 0;
 }
@@ -235,8 +241,12 @@ function updateCustomSummary() {
         return;
     }
 
-    const categoryCount = categoryPool().length;
-    const individualCount = selectedQuestionIds.size;
+    const categoryIncluded = questions.filter(question =>
+        questionMatchesLabels(question) && !excludedQuestionIds.has(question.id));
+    const excludedFromCategory = questions.filter(question =>
+        questionMatchesLabels(question) && excludedQuestionIds.has(question.id)).length;
+    const individualOnly = questions.filter(question =>
+        selectedQuestionIds.has(question.id) && !questionMatchesLabels(question)).length;
     const total = unionPool().size;
 
     customTotal.textContent = `${total}問`;
@@ -248,10 +258,14 @@ function updateCustomSummary() {
 
     const parts = [];
     if (selectedLabels.size > 0) {
-        parts.push(`カテゴリー${selectedLabels.size}件（${categoryCount}問）`);
+        let categoryPart = `カテゴリー${selectedLabels.size}件（${categoryIncluded.length}問`;
+        if (excludedFromCategory > 0) {
+            categoryPart += `・除外${excludedFromCategory}問`;
+        }
+        parts.push(`${categoryPart}）`);
     }
-    if (individualCount > 0) {
-        parts.push(`個別${individualCount}問`);
+    if (individualOnly > 0) {
+        parts.push(`個別${individualOnly}問`);
     }
     customBreakdown.textContent = parts.join("・");
 }
@@ -285,7 +299,7 @@ function closeSelectedQuestionsDialog() {
 function renderSelectedQuestions() {
     if (!selectedQuestionList) return;
 
-    const selected = questions.filter(question => selectedQuestionIds.has(question.id));
+    const selected = questions.filter(isQuestionIncluded);
 
     if (selectedQuestionsCount) {
         selectedQuestionsCount.textContent = `${selected.length}問`;
@@ -298,9 +312,18 @@ function renderSelectedQuestions() {
     selectedQuestionList.replaceChildren();
 
     if (selectedQuestionsDialogStatus) {
-        selectedQuestionsDialogStatus.textContent = selected.length === 0
-            ? "まだ選択されていません。"
-            : `${selected.length}問を選択中です。`;
+        if (selected.length === 0) {
+            selectedQuestionsDialogStatus.textContent = "まだ選択されていません。";
+        } else if (selectedLabels.size > 0) {
+            selectedQuestionsDialogStatus.textContent =
+                `${selected.length}問を選択中です（カテゴリーの問いを含みます）。`;
+        } else {
+            selectedQuestionsDialogStatus.textContent = `${selected.length}問を選択中です。`;
+        }
+    }
+
+    if (questionPickerHint) {
+        questionPickerHint.hidden = !indexReady || selectedLabels.size === 0;
     }
 
     selected.forEach(function (question, index) {
@@ -312,18 +335,35 @@ function renderSelectedQuestions() {
         text.textContent = question.question;
         text.title = question.question;
 
+        if (questionMatchesLabels(question)) {
+            const tag = document.createElement("span");
+            tag.className = "selected-question-tag";
+            tag.textContent = "カテゴリー";
+            text.append(tag);
+        }
+
         const remove = document.createElement("button");
         remove.type = "button";
         remove.className = "selected-question-remove";
         remove.textContent = "×";
-        remove.setAttribute("aria-label", `「${question.question}」を選択から外す`);
+        remove.setAttribute(
+            "aria-label",
+            questionMatchesLabels(question)
+                ? `「${question.question}」をこのカテゴリーの選択から外す`
+                : `「${question.question}」を選択から外す`
+        );
         remove.addEventListener("click", function () {
-            if (!selectedQuestionIds.delete(question.id)) return;
+            if (questionMatchesLabels(question)) {
+                excludedQuestionIds.add(question.id);
+            } else {
+                selectedQuestionIds.delete(question.id);
+                excludedQuestionIds.delete(question.id);
+            }
 
             updateCustomUi();
             renderQuestionPicker();
 
-            if (selectedQuestionIds.size === 0) {
+            if (unionPool().size === 0) {
                 closeSelectedQuestionsDialog();
             }
 
@@ -350,7 +390,7 @@ function updateSelectAllButton() {
         return;
     }
     selectAllQuestionsButton.hidden = false;
-    const allSelected = filtered.every(question => selectedQuestionIds.has(question.id));
+    const allSelected = filtered.every(isQuestionIncluded);
     selectAllQuestionsButton.textContent = allSelected
         ? "表示中の選択をすべて解除"
         : "表示中の問いをすべて選択";
@@ -461,7 +501,7 @@ function renderQuestionPicker() {
     for (const question of shown) {
         const item = document.createElement("li");
         item.className = "question-pick";
-        item.dataset.selected = selectedQuestionIds.has(question.id) ? "true" : "false";
+        item.dataset.selected = isQuestionIncluded(question) ? "true" : "false";
 
         const label = document.createElement("label");
         label.className = "question-pick-label";
@@ -470,13 +510,24 @@ function renderQuestionPicker() {
         checkbox.type = "checkbox";
         checkbox.name = "question";
         checkbox.value = question.id;
-        checkbox.checked = selectedQuestionIds.has(question.id);
+        checkbox.checked = isQuestionIncluded(question);
         checkbox.dataset.questionId = question.id;
         checkbox.addEventListener("change", function () {
-            if (checkbox.checked) selectedQuestionIds.add(question.id);
-            else selectedQuestionIds.delete(question.id);
+            const inCategory = questionMatchesLabels(question);
+            if (checkbox.checked) {
+                excludedQuestionIds.delete(question.id);
+                if (!inCategory) selectedQuestionIds.add(question.id);
+            } else {
+                if (inCategory) {
+                    excludedQuestionIds.add(question.id);
+                } else {
+                    selectedQuestionIds.delete(question.id);
+                    excludedQuestionIds.delete(question.id);
+                }
+            }
 
             item.dataset.selected = checkbox.checked ? "true" : "false";
+            syncCategoryBadge();
             updateCustomUi();
         });
 
@@ -500,12 +551,21 @@ function renderQuestionPicker() {
         labels.textContent = labelNamesFor(question);
         meta.append(labels);
 
+        let categoryBadge = null;
         if (questionMatchesLabels(question)) {
-            const included = document.createElement("span");
-            included.className = "question-pick-included";
-            included.textContent = "カテゴリーに含む";
-            meta.append(included);
+            categoryBadge = document.createElement("span");
+            meta.append(categoryBadge);
         }
+
+        function syncCategoryBadge() {
+            if (!categoryBadge) return;
+            const excluded = excludedQuestionIds.has(question.id);
+            categoryBadge.className = excluded
+                ? "question-pick-included question-pick-excluded"
+                : "question-pick-included";
+            categoryBadge.textContent = excluded ? "カテゴリーから除外" : "カテゴリーに含む";
+        }
+        syncCategoryBadge();
 
         const questionText = document.createElement("span");
         questionText.className = "question-pick-question";
@@ -638,6 +698,7 @@ function populateLabels() {
             if (checkbox.checked) selectedLabels.add(label.id);
             else selectedLabels.delete(label.id);
 
+            excludedQuestionIds.clear();
             updateCustomUi();
             renderQuestionPicker();
         });
@@ -907,11 +968,23 @@ if (selectAllQuestionsButton) {
     selectAllQuestionsButton.addEventListener("click", function () {
         const filtered = filteredQuestions();
         if (filtered.length === 0) return;
-        const allSelected = filtered.every(question => selectedQuestionIds.has(question.id));
+        const allSelected = filtered.every(isQuestionIncluded);
         if (allSelected) {
-            for (const question of filtered) selectedQuestionIds.delete(question.id);
+            for (const question of filtered) {
+                if (questionMatchesLabels(question)) {
+                    excludedQuestionIds.add(question.id);
+                } else {
+                    selectedQuestionIds.delete(question.id);
+                    excludedQuestionIds.delete(question.id);
+                }
+            }
         } else {
-            for (const question of filtered) selectedQuestionIds.add(question.id);
+            for (const question of filtered) {
+                excludedQuestionIds.delete(question.id);
+                if (!questionMatchesLabels(question)) {
+                    selectedQuestionIds.add(question.id);
+                }
+            }
         }
         updateCustomUi();
         renderQuestionPicker();
@@ -941,6 +1014,7 @@ if (clearLabelsButton) {
         if (selectedLabels.size === 0) return;
 
         selectedLabels.clear();
+        excludedQuestionIds.clear();
         populateLabels();
         updateCustomUi();
         renderQuestionPicker();
@@ -965,9 +1039,12 @@ if (selectedQuestionsDialog) {
 }
 if (clearQuestionsButton) {
     clearQuestionsButton.addEventListener("click", function () {
-        if (selectedQuestionIds.size === 0) return;
+        if (unionPool().size === 0) return;
 
         selectedQuestionIds.clear();
+        excludedQuestionIds.clear();
+        selectedLabels.clear();
+        populateLabels();
         updateCustomUi();
         renderQuestionPicker();
         closeSelectedQuestionsDialog();

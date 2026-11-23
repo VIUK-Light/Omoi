@@ -114,8 +114,7 @@ for (const level of [2]) {
     await page.route(`**/level${level}-furigana.json`, route => route.fulfill({ json: furiganaFor(levelCards) }));
     await page.goto(`/question.html?level=${level}`);
     await expect(page.locator('#questionText')).toHaveText(completeCard.question);
-    for (const id of ['questionSummaryToggle', 'hintButton']) await expect(page.locator(`#${id}`)).toBeHidden();
-    await expect(page.locator('#detailButton')).toBeVisible();
+    for (const id of ['questionSummaryToggle', 'hintButton', 'detailButton']) await expect(page.locator(`#${id}`)).toBeHidden();
     await expect(page.locator('#nextQuestionButton')).toBeEnabled();
   });
 }

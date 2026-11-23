@@ -115,15 +115,33 @@ test('the question picker filters by words and level and keeps a selected list',
     .filter({ has: page.locator('input[value="school"]') })
     .click();
   await page.locator('#tabQuestions').click();
-  await expect(page.locator('.selected-question-item')).toHaveCount(1);
-  await expect(page.locator('#customBreakdown')).toContainText('カテゴリー1件');
-  await expect(page.locator('#customBreakdown')).toContainText('個別1問');
 
-  await page.locator('#openSelectedQuestions').click();
-  await page.locator('.selected-question-remove').click();
-  await expect(page.locator('#openSelectedQuestions')).toBeHidden();
-  await expect(page.locator('#questionPickerCount')).toBeHidden();
+  // カテゴリーで選んだ問いは、個別選択タブでも選択済みとして表示される。
+  await expect(firstQuestion).toHaveAttribute('data-selected', 'true');
+  await expect(firstQuestion).toContainText('カテゴリーに含む');
+  await expect(page.locator('#questionPickerHint')).toBeVisible();
+  await expect(page.locator('#customBreakdown')).toContainText('カテゴリー1件');
+
+  const totalBefore = await page.locator('#customTotal').textContent();
+  const totalNumber = Number(totalBefore.replace('問', ''));
+  await firstQuestion.locator('label').click();
   await expect(firstQuestion).toHaveAttribute('data-selected', 'false');
+  await expect(firstQuestion).toContainText('カテゴリーから除外');
+  await expect(page.locator('#customTotal')).toHaveText(`${totalNumber - 1}問`);
+
+  await firstQuestion.locator('label').click();
+  await expect(firstQuestion).toHaveAttribute('data-selected', 'true');
+  await expect(page.locator('#customTotal')).toHaveText(`${totalNumber}問`);
+
+  // カテゴリーを外すと、個別に選んでいた問いだけが残る。
+  await page.locator('#tabLabels').click();
+  await page.locator('#labelList label.label-card')
+    .filter({ has: page.locator('input[value="school"]') })
+    .click();
+  await expect(page.locator('#customTotal')).toHaveText('1問');
+  await expect(page.locator('#customBreakdown')).toContainText('個別1問');
+  await expect(page.locator('#questionPickerHint')).toBeHidden();
+  await page.locator('#tabQuestions').click();
 
   await page.locator('[data-level-filter="all"]').click();
   await search.fill('血のつながり');
@@ -134,6 +152,44 @@ test('the question picker filters by words and level and keeps a selected list',
   await search.fill('存在しない語句xyz');
   await expect(page.locator('#questionPickerStatus')).toHaveAttribute('data-empty', 'true');
   await expect(page.locator('#questionPickerStatus')).toContainText('一致する問いがありません');
+});
+
+test('category selection pre-checks its questions in the individual picker', async ({ page }) => {
+  await page.goto('/custom-select.html');
+  await expect(page.locator('#labelList input[value="school"]')).toHaveCount(1, ready);
+
+  await page.locator('#labelList label.label-card')
+    .filter({ has: page.locator('input[value="school"]') })
+    .click();
+
+  const categoryTotal = Number((await page.locator('#customTotal').textContent()).replace('問', ''));
+  expect(categoryTotal).toBeGreaterThan(1);
+
+  await page.locator('#tabQuestions').click();
+  await page.locator('#questionCategoryFilter').selectOption('school');
+  await expect(page.locator('#questionPickerHint')).toBeVisible();
+
+  const pick = page.locator('#questionPicker .question-pick').first();
+  await expect(pick).toHaveAttribute('data-selected', 'true');
+  await expect(pick.locator('input[type="checkbox"]')).toBeChecked();
+  await expect(pick).toContainText('カテゴリーに含む');
+
+  // チェックを外すと、その問いだけが出題から外れる。
+  await pick.locator('label').click();
+  await expect(pick).toHaveAttribute('data-selected', 'false');
+  await expect(pick).toContainText('カテゴリーから除外');
+  await expect(page.locator('#customTotal')).toHaveText(`${categoryTotal - 1}問`);
+
+  await page.locator('#openSelectedQuestions').click();
+  await expect(page.locator('.selected-question-item')).toHaveCount(categoryTotal - 1);
+  await expect(page.locator('.selected-question-tag')).toHaveCount(categoryTotal - 1);
+  await page.locator('#closeSelectedQuestions').click();
+
+  // もう一度チェックすると選択状態に戻る。
+  await pick.locator('label').click();
+  await expect(pick).toHaveAttribute('data-selected', 'true');
+  await expect(page.locator('#customTotal')).toHaveText(`${categoryTotal}問`);
+  await expect(page.locator('#nextButton')).toBeEnabled();
 });
 
 test('custom selection fits 320px and keeps the action bar visible', async ({ page }) => {

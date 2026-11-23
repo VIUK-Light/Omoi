@@ -103,6 +103,13 @@ function normalizeQuestion(question) {
         .toLowerCase();
 }
 
+function normalizeScenario(scenario) {
+    return String(scenario ?? "")
+        .normalize("NFKC")
+        .replace(/[\s　]+/g, "")
+        .toLowerCase();
+}
+
 function isNonEmptyString(value) {
     return typeof value === "string" && value.trim() !== "";
 }
@@ -254,9 +261,11 @@ for (const record of records) {
 
     if (isNonEmptyString(record.question)) {
         const normalized = normalizeQuestion(record.question);
-        const matchingRecords = recordsByQuestion.get(normalized) ?? [];
+        // 同じ質問文でも場面が異なれば別の問いとして扱う。
+        const key = `${normalized}|${normalizeScenario(record.scenario)}`;
+        const matchingRecords = recordsByQuestion.get(key) ?? [];
         matchingRecords.push(record);
-        recordsByQuestion.set(normalized, matchingRecords);
+        recordsByQuestion.set(key, matchingRecords);
     }
 }
 
@@ -269,7 +278,8 @@ for (const [id, matchingRecords] of recordsById) {
     }
 }
 
-for (const [normalizedQuestion, matchingRecords] of recordsByQuestion) {
+for (const [compositeKey, matchingRecords] of recordsByQuestion) {
+    const normalizedQuestion = compositeKey.split("|")[0];
     if (matchingRecords.length > 1) {
         addFinding("error", "duplicate_question", "Question text is duplicated after normalization.", {
             normalizedQuestion,

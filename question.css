@@ -350,7 +350,21 @@ body {
 }
 
 .question-summary[hidden] { display: none; }
-.question-summary { box-sizing: border-box; margin: 16px 0 0; padding: 16px 18px; border-left: 3px solid #c6beb0; border-radius: 0 8px 8px 0; background: #faf8f4; text-align: left; }
+.question-summary {
+    width: 100%;
+    max-width: 680px;
+    max-height: min(35svh, 280px);
+    overflow-y: auto;
+
+    box-sizing: border-box;
+    margin: 12px 0 0;
+    padding: 16px;
+
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    background: #f7f7f7;
+    text-align: left;
+}
 .question-summary > h2 { margin: 0 0 10px; color: #666057; font-size: 14px; font-weight: 600; line-height: 1.5; }
 .question-summary-content { min-width: 0; color: #292824; font-size: 16px; line-height: 1.8; overflow-wrap: anywhere; }
 .question-summary-content > p { margin: 0; }

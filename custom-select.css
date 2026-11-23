@@ -634,6 +634,20 @@
     white-space: pre-wrap;
 }
 
+.selected-question-tag {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 6px;
+
+    border: 1px solid var(--omoi-border, #ddd);
+    border-radius: 999px;
+    color: var(--omoi-muted, #666);
+
+    font-size: 10px;
+    line-height: 1.4;
+    vertical-align: middle;
+}
+
 .selected-question-remove {
     display: grid;
     flex: none;
@@ -940,6 +954,20 @@
 
 /* 検索結果 */
 
+.question-picker-hint {
+    margin: 0;
+    padding: 10px 12px;
+
+    border: 1px solid var(--omoi-divider, #e8e8e8);
+    border-radius: 12px;
+    background: var(--omoi-surface, #f7f7f7);
+    color: var(--omoi-muted, #666);
+
+    font-size: 12px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
 .question-picker-status {
     margin: 0;
     color: var(--omoi-muted, #666);
@@ -1058,6 +1086,11 @@
 
     font-size: 10px;
     line-height: 1.4;
+}
+
+.question-pick-included.question-pick-excluded {
+    border-style: dashed;
+    color: var(--omoi-muted, #666);
 }
 
 .question-pick-question {

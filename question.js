@@ -406,8 +406,7 @@ function validateQuestions(questions, expectedLevel) {
         if (question.detail !== undefined) {
             const detail = question.detail;
             if (!detail || typeof detail !== "object" || Array.isArray(detail) ||
-                typeof detail.text !== "string" || !detail.text.trim() ||
-                !Array.isArray(detail.sources) || detail.sources.length === 0) {
+                typeof detail.text !== "string" || !detail.text.trim()) {
                 throw new Error("Invalid question detail.");
             }
             for (const source of detail.sources ?? []) {
@@ -1299,13 +1298,10 @@ function showQuestion() {
     const detailValue = detail?.text?.trim() ?? "";
     const sources = detail?.sources ?? [];
     const terms = supportsHelpers ? currentQuestion.terms ?? [] : [];
-    const hasScenario = scenario !== "";
-    if (detailValue !== "" || sources.length > 0 || terms.length > 0 || hasScenario) {
+    if (detailValue !== "" || sources.length > 0 || terms.length > 0) {
         detailButton.hidden = false;
         if (detailValue) {
             renderFuriganaText(detailText, detailValue, "detail.text");
-        } else if (hasScenario) {
-            renderFuriganaText(detailText, scenario, "scenario");
         }
 
         termsSection.hidden = terms.length === 0;

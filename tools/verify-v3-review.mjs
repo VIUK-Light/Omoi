@@ -61,8 +61,26 @@ export function validateV3Review({ review, currentByLevel, baseByLevel, currentR
             if (current.has(record.id)) add("duplicate_card_id", "Card ID appears more than once.", record.id);
             current.set(record.id, record);
             const original = originals.get(record.id);
-            if (!original || !isDeepStrictEqual(core(original), core(record))) {
+            if (!original) {
                 add("changed_core_content", "Only summary, hints, detail and terms may change; question, scenario and metadata must match the base.", record.id);
+            } else {
+                const approvedChanges = new Map(
+                    (Array.isArray(review.approvedCoreChanges) ? review.approvedCoreChanges : [])
+                        .filter(change => change && change.id === record.id)
+                        .map(change => [change.field, change])
+                );
+                const diffFields = Object.keys(core(record)).filter(field =>
+                    !isDeepStrictEqual(core(original)[field], core(record)[field]));
+                const disallowed = diffFields.filter(field => {
+                    const change = approvedChanges.get(field);
+                    if (!change) return true;
+                    if (change.after !== record[field]) return true;
+                    if (change.before !== undefined && change.before !== original[field]) return true;
+                    return false;
+                });
+                if (disallowed.length > 0) {
+                    add("changed_core_content", "Only summary, hints, detail and terms may change; question, scenario and metadata must match the base.", record.id);
+                }
             }
             if (level >= 3) eligible.set(record.id, record);
         }

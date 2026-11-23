@@ -274,6 +274,37 @@ test('custom mode can start from an individually selected question only', async 
     assert.deepEqual([...app.selections[0].ids], ['q3']);
 });
 
+test('category selection pre-checks its questions in the individual picker', async () => {
+    const app = setupCustomSelect();
+    await waitFor(() => app.labelCheckbox('school') !== null);
+
+    const label = app.labelCheckbox('school');
+    label.checked = true;
+    label.change();
+
+    await waitFor(() => app.elements.get('questionPicker').children.length > 0);
+    assert.equal(app.elements.get('questionPickerCount').textContent, '2問');
+
+    const item = app.elements.get('questionPicker').children.find(node =>
+        node.children[0].children[0].value === 'q1');
+    const checkbox = item.children[0].children[0];
+    assert.equal(checkbox.checked, true);
+    assert.equal(item.dataset.selected, 'true');
+
+    // カテゴリーの問いを外すと、その問いだけが除外される。
+    checkbox.checked = false;
+    checkbox.change();
+    assert.equal(item.dataset.selected, 'false');
+    assert.equal(app.elements.get('customTotal').textContent, '1問');
+    assert.match(app.elements.get('customBreakdown').textContent, /除外1問/);
+
+    checkbox.checked = true;
+    checkbox.change();
+    assert.equal(item.dataset.selected, 'true');
+    assert.equal(app.elements.get('customTotal').textContent, '2問');
+    assert.equal(app.elements.get('nextButton').disabled, false);
+});
+
 test('warning pages continue to questions without a count', () => {
     const level3 = setupWarning(warning3Code);
     const level4 = setupWarning(warningCode);

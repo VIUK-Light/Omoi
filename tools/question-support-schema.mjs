@@ -50,9 +50,10 @@ export function validateQuestionSupport(record) {
             add("invalid_detail", "detail must be an object when present.");
         } else {
             if (!text(record.detail.text)) add("invalid_detail_text", "detail.text must be non-empty when detail is present.");
-            if (!Array.isArray(record.detail.sources) || record.detail.sources.length === 0) {
-                add("detail_without_sources", "Published v3 background explanations require verified linked sources; omit unverified explanations.");
-            } else {
+            if (record.detail.sources !== undefined && (!Array.isArray(record.detail.sources) || record.detail.sources.length === 0)) {
+                add("invalid_detail_sources", "detail.sources must be a non-empty array of sources when present.");
+            }
+            if (Array.isArray(record.detail.sources) && record.detail.sources.length > 0) {
                 for (const source of record.detail.sources) {
                     if (!object(source) || !text(source.title) || !text(source.url)) {
                         add("invalid_source", "Each source needs a non-empty title and URL.");
