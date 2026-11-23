@@ -6,6 +6,7 @@
     <title>質問カード印刷 - Omoi</title>
     <link rel="icon" href="omoi-icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="question.css">
     <link rel="stylesheet" href="print-cards.css">
     <script src="theme.js"></script>
 </head>
@@ -14,14 +15,6 @@
         <div class="print-toolbar">
             <a href="database.html" class="back-link">← データベースに戻る</a>
             <div class="print-toolbar-group">
-                <label class="print-option">
-                    <span>レイアウト</span>
-                    <select id="layoutSelect">
-                        <option value="4">A4に4枚（2×2）</option>
-                        <option value="2">A4に2枚（1×2）</option>
-                        <option value="1">A4に1枚</option>
-                    </select>
-                </label>
                 <label class="print-option"><input type="checkbox" id="optQuestion" checked> 問い</label>
                 <label class="print-option"><input type="checkbox" id="optScenario" checked> 場面</label>
                 <label class="print-option"><input type="checkbox" id="optDetail"> 背景説明</label>
@@ -34,7 +27,7 @@
 
         <p id="printStatus" class="print-status" role="status"></p>
 
-        <div id="printArea" class="print-area"></div>
+        <div id="printSheets" class="print-sheets"></div>
     </main>
 
     <script src="print-cards.js"></script>
