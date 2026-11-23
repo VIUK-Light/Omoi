@@ -232,6 +232,18 @@ const cancelFinishButton =
 const confirmFinishButton =
     document.getElementById("confirmFinishButton");
 
+const confirmDialog =
+    document.getElementById("confirmDialog");
+
+const confirmCancelButton =
+    document.getElementById("confirmCancelButton");
+
+const confirmOkButton =
+    document.getElementById("confirmOkButton");
+
+const confirmMessage =
+    document.getElementById("confirmMessage");
+
 const previousQuestionButton =
     document.getElementById("previousQuestionButton");
 
@@ -2002,16 +2014,64 @@ finishButton.addEventListener("click", function () {
     cancelFinishButton.focus();
 });
 
-changeCategoryLink.addEventListener("click", function () {
-    // 編集リンクのときは進捗を残して復元できるようにする。
+function showOmoiConfirm(message) {
+    return new Promise(function (resolve) {
+        if (!confirmDialog || typeof confirmDialog.showModal !== "function") {
+            resolve(window.confirm(message));
+            return;
+        }
+        confirmMessage.textContent = message;
+        const onOk = function () { cleanup(); confirmDialog.close(); resolve(true); };
+        const onCancel = function () { cleanup(); confirmDialog.close(); resolve(false); };
+        const onClose = function () { cleanup(); resolve(false); };
+        function cleanup() {
+            confirmOkButton.removeEventListener("click", onOk);
+            confirmCancelButton.removeEventListener("click", onCancel);
+            confirmDialog.removeEventListener("close", onClose);
+        }
+        confirmOkButton.addEventListener("click", onOk);
+        confirmCancelButton.addEventListener("click", onCancel);
+        confirmDialog.addEventListener("close", onClose);
+        try {
+            confirmDialog.showModal();
+        } catch (error) {
+            confirmDialog.setAttribute("open", "");
+        }
+        confirmCancelButton.focus();
+    });
+}
+
+changeCategoryLink.addEventListener("click", async function (event) {
+    event.preventDefault();
     const href = typeof changeCategoryLink.getAttribute === "function"
         ? changeCategoryLink.getAttribute("href")
         : changeCategoryLink.href;
     const isEditLink = (href || "").includes("edit=1");
-    if (!isSharedQuestion && !isEditLink) {
-        window.OmoiProgress?.clear();
+    if (isSharedQuestion) {
+        window.location.href = href;
+        return;
     }
+    const message = isEditLink
+        ? "選択内容を編集します。進捗は保持されます。続行しますか？"
+        : "設定を変えると、現在の進捗がリセットされます。続行しますか？";
+    const ok = await showOmoiConfirm(message);
+    if (!ok) return;
+    if (!isEditLink) window.OmoiProgress?.clear();
+    window.location.href = href;
 });
+
+if (completeSettingsLink) {
+    completeSettingsLink.addEventListener("click", async function (event) {
+        event.preventDefault();
+        const href = typeof completeSettingsLink.getAttribute === "function"
+            ? completeSettingsLink.getAttribute("href")
+            : completeSettingsLink.href;
+        const ok = await showOmoiConfirm("設定を変えると、現在の進捗がリセットされます。続行しますか？");
+        if (!ok) return;
+        window.OmoiProgress?.clear();
+        window.location.href = href;
+    });
+}
 
 cancelFinishButton.addEventListener("click", function () {
     finishConfirmDialog.close();

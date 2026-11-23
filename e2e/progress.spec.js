@@ -72,6 +72,8 @@ test('changing the category discards the saved progress', async ({ page }) => {
     await page.locator('#nextQuestionButton').click();
 
     await page.locator('#changeCategoryLink').click();
+    await page.locator('#confirmOkButton').waitFor();
+    await page.locator('#confirmOkButton').click();
     await page.waitForURL('**/select.html');
     await expect(page.locator('#resumeNotice')).toBeHidden();
 });

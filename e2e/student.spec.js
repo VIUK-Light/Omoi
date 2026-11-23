@@ -136,6 +136,8 @@ test('the settings screen restores the saved student session for editing', async
 
   await expect(page.locator('#changeCategoryLink')).toHaveText('← 設定を変える');
   await page.locator('#changeCategoryLink').click();
+  await page.locator('#confirmOkButton').waitFor();
+  await page.locator('#confirmOkButton').click();
   await expect(page).toHaveURL(/\/student-select\.html\?.*edit=1/);
   await expect(page.locator('#themeGroups input[name="theme-group"]')).toHaveCount(7, ready);
 

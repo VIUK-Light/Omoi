@@ -315,6 +315,24 @@
     </article>
 
     <dialog
+        id="confirmDialog"
+        class="finish-confirm-dialog"
+        aria-labelledby="confirmTitle"
+        aria-describedby="confirmMessage"
+    >
+        <h2 id="confirmTitle">確認</h2>
+        <p id="confirmMessage"></p>
+        <div class="finish-confirm-actions">
+            <button type="button" id="confirmCancelButton" class="cancel-finish-button">
+                キャンセル
+            </button>
+            <button type="button" id="confirmOkButton" class="confirm-finish-button">
+                続行する
+            </button>
+        </div>
+    </dialog>
+
+    <dialog
         id="finishConfirmDialog"
         class="finish-confirm-dialog"
         aria-labelledby="finishConfirmTitle"

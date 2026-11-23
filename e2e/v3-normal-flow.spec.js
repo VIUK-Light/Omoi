@@ -155,6 +155,10 @@ for (const prefix of ['/', '/preview/omoi-v3/']) {
     await expect(page.locator('#retryLoadButton')).toBeHidden();
     expect(datasetRequests).toEqual([]);
     await page.locator('.back-link').click();
+    const confirmOkButton = page.locator('#confirmOkButton');
+    if (await confirmOkButton.isVisible().catch(() => false)) {
+      await confirmOkButton.click();
+    }
     await expect(page).toHaveURL(new RegExp(`${prefix}select.html`));
     if (prefix === '/') {
       expect(await page.locator('input[name="mode"]').evaluateAll(inputs => inputs.map(input => input.value))).toEqual(['student', 'all', 'custom']);
