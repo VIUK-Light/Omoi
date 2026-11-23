@@ -726,24 +726,24 @@
     line-height: 1.5;
 }
 
-.resume-notice-link {
+a.resume-notice-link {
     flex: none;
     padding: 9px 16px;
     border: 1px solid var(--omoi-primary);
     border-radius: 999px;
     background: var(--omoi-primary);
-    color: var(--omoi-on-primary);
+    color: var(--omoi-on-primary) !important;
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
     white-space: nowrap;
 }
 
-.resume-notice-link:hover,
-.resume-notice-link:focus-visible {
+a.resume-notice-link:hover,
+a.resume-notice-link:focus-visible {
     border-color: var(--omoi-primary-hover);
     background: var(--omoi-primary-hover);
-    color: var(--omoi-on-primary);
+    color: var(--omoi-on-primary) !important;
 }
 
 .resume-notice-link:focus-visible {
