@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>質問データベース - Omoi</title>
+    <link rel="icon" href="omoi-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="database.css">
+    <script src="theme.js"></script>
+</head>
+<body>
+    <main class="database-screen">
+        <header class="database-header">
+            <a href="index.html" class="back-link">← ホームに戻る</a>
+            <h1>質問データベース</h1>
+            <p class="database-lead">全問を検索・絞り込みできます。印刷したい問いにチェックを入れて「印刷する」を押してください。</p>
+        </header>
+
+        <div class="database-layout">
+            <aside class="database-filters">
+                <label class="database-filter">
+                    <span>検索</span>
+                    <input type="search" id="dbSearch" placeholder="言葉・カテゴリーで検索">
+                </label>
+                <label class="database-filter">
+                    <span>レベル</span>
+                    <select id="dbLevel">
+                        <option value="all">すべて</option>
+                        <option value="2">低</option>
+                        <option value="3">中</option>
+                        <option value="4">高</option>
+                    </select>
+                </label>
+                <label class="database-filter">
+                    <span>カテゴリ</span>
+                    <select id="dbCategory">
+                        <option value="all">すべて</option>
+                    </select>
+                </label>
+                <label class="database-filter">
+                    <span>テーマ</span>
+                    <select id="dbTheme">
+                        <option value="all">すべて</option>
+                    </select>
+                </label>
+                <div class="database-filter-actions">
+                    <button type="button" id="selectAllVisible" class="database-button">表示中をすべて選択</button>
+                    <button type="button" id="clearSelection" class="database-button secondary">選択を解除</button>
+                </div>
+                <p class="database-count" id="dbCount" role="status">読み込み中…</p>
+            </aside>
+
+            <section class="database-list" id="dbList" aria-live="polite"></section>
+        </div>
+
+        <div class="database-action-bar">
+            <div class="database-action-inner">
+                <span id="selectedCount">0問を選択中</span>
+                <button type="button" id="printSelected" class="database-print-button" disabled>選択した問いを印刷</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js" defer></script>
+    <script src="database.js"></script>
+</body>
+</html>

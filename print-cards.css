@@ -1,0 +1,32 @@
+.print-cards-screen { max-width: 1200px; margin: 0 auto; padding: 16px; color: var(--omoi-ink, #111); }
+.print-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--omoi-divider, #e8e8e8); border-radius: 12px; background: var(--omoi-surface, #f7f7f7); margin-bottom: 12px; }
+.print-toolbar-group { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; flex: 1; }
+.print-option { display: inline-flex; align-items: center; gap: 4px; font-size: 13px; }
+.print-option select { padding: 6px 8px; border: 1px solid var(--omoi-border, #b7b7b7); border-radius: 6px; }
+.print-button { padding: 10px 16px; border: 0; border-radius: 8px; background: var(--omoi-primary, #111); color: var(--omoi-on-primary, #fff); cursor: pointer; font-size: 14px; }
+.print-button:disabled { background: var(--omoi-disabled, #aaa); cursor: not-allowed; }
+.print-status { font-size: 13px; color: var(--omoi-muted, #666); margin: 8px 0; }
+.back-link { color: var(--omoi-link, #24566b); text-decoration: none; font-size: 14px; }
+
+.print-area { display: grid; gap: 8mm; justify-content: center; }
+.print-area[style*="--cols: 2"] { grid-template-columns: repeat(2, 77mm); }
+.print-area[style*="--cols: 1"] { grid-template-columns: 77mm; }
+
+.print-card { width: 77mm; height: 123mm; box-sizing: border-box; padding: 8mm; border: 1px solid #999; border-radius: 4mm; background: #fff; overflow: hidden; display: flex; flex-direction: column; gap: 4px; page-break-inside: avoid; break-inside: avoid; }
+.print-card-id { margin: 0; font-size: 9px; color: #666; font-family: monospace; }
+.print-card-question { margin: 0; font-size: 13px; line-height: 1.5; font-weight: 700; }
+.print-card-scenario { margin: 0; font-size: 11px; line-height: 1.5; color: #333; }
+.print-card-detail { margin: 0; font-size: 11px; line-height: 1.5; }
+.print-card-hints { margin: 0; padding-left: 14px; font-size: 11px; line-height: 1.5; }
+.print-card-terms { margin: 0; font-size: 10px; display: grid; grid-template-columns: auto 1fr; gap: 2px 6px; }
+.print-card-terms dt { font-weight: 600; }
+.print-card-terms dd { margin: 0; }
+
+@media print {
+    body { background: #fff; }
+    .print-toolbar, .back-link, .print-status { display: none !important; }
+    .print-cards-screen { padding: 0; margin: 0; }
+    @page { size: A4 portrait; margin: 10mm; }
+    .print-area { gap: 8mm; }
+    .print-card { border: 1px solid #999; }
+}
