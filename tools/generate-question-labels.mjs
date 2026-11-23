@@ -106,12 +106,14 @@ const kuromojiTokenizer = await new Promise((resolve, reject) => {
 
 const repositoryRoot = path.resolve(scriptDirectory, "..");
 const activeLevels = [2, 3, 4];
-const levelFiles = activeLevels.map(level => `level${level}.json`);
-const labelsFile = "labels.json";
-const indexFile = "questions-index.json";
-const detailIndexFile = "question-details-index.json";
-const addedDatesFile = "question-added-dates.json";
-const filterIndexFile = "question-filter-index.json";
+const questionDataDirectory = "データ/質問";
+const indexDataDirectory = "データ/索引";
+const levelFiles = activeLevels.map(level => `${questionDataDirectory}/level${level}.json`);
+const labelsFile = `${indexDataDirectory}/labels.json`;
+const indexFile = `${indexDataDirectory}/questions-index.json`;
+const detailIndexFile = `${indexDataDirectory}/question-details-index.json`;
+const addedDatesFile = `${indexDataDirectory}/question-added-dates.json`;
+const filterIndexFile = `${indexDataDirectory}/question-filter-index.json`;
 const argumentsSet = new Set(process.argv.slice(2));
 const write = argumentsSet.has("--write");
 const rewriteLabels = argumentsSet.has("--rewrite-labels");
@@ -124,7 +126,7 @@ Options:
   --write            Add missing labels and write the generated question indexes.
   --rewrite-labels   Re-apply rules to every card instead of preserving existing labels.
   --check            Validate labels and generated files without writing (default).
-                     Added dates are maintained in question-added-dates.json.
+                     Added dates are maintained in ${addedDatesFile}.
   --json             Print the report as JSON.
   --help             Show this help.`);
     process.exit(0);

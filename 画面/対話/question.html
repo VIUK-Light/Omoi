@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+
+    <title>質問 - Omoi</title>
+
+    <meta
+        name="description"
+        content="Omoiの質問カード。正解のない問いから、違う考えを知るための対話を始められます。"
+    >
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Omoi">
+    <meta property="og:title" content="Omoi｜質問カード">
+    <meta
+        property="og:description"
+        content="正解のない問いから、違う考えを知るための質問カード。"
+    >
+    <meta property="og:url" content="https://omoi.viuk-light.org/%E7%94%BB%E9%9D%A2/%E5%AF%BE%E8%A9%B1/question.html">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="https://omoi.viuk-light.org/%E7%94%BB%E5%83%8F/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Omoi｜違う考えを知るための質問カード">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Omoi｜質問カード">
+    <meta
+        name="twitter:description"
+        content="正解のない問いから、違う考えを知るための質問カード。"
+    >
+    <meta name="twitter:image" content="https://omoi.viuk-light.org/%E7%94%BB%E5%83%8F/og-image.png">
+    <meta name="twitter:image:alt" content="Omoi｜違う考えを知るための質問カード">
+
+    <link rel="stylesheet" href="../../スタイル/question.css">
+    <script src="../../スクリプト/theme.js"></script>
+    <link rel="stylesheet" href="../../スタイル/theme.css">
+</head>
+<body>
+    <main class="question-screen">
+        <details class="furigana-settings">
+            <summary id="furiganaSettingsSummary" aria-label="読みやすさ設定"
+                aria-controls="furiganaSettingsPanel" title="読みやすさ設定">
+                <span aria-hidden="true">あ</span>
+            </summary>
+            <div id="furiganaSettingsPanel" class="furigana-settings-panel"
+                role="group" aria-label="読みやすさ設定">
+                <p>読みやすさ設定</p>
+                <div id="textSizeControl" class="text-size-control" hidden>
+                    <p id="textSizeLabel" class="text-size-label">文字の大きさ</p>
+                    <div class="text-size-options" role="group" aria-labelledby="textSizeLabel">
+                        <button type="button" id="smallTextToggle" class="question-tool text-size-option"
+                            aria-pressed="false">小</button>
+                        <button type="button" id="mediumTextToggle" class="question-tool text-size-option"
+                            aria-pressed="true">中</button>
+                        <button type="button" id="largeTextToggle" class="question-tool text-size-option"
+                            aria-pressed="false">大</button>
+                    </div>
+                </div>
+                <button type="button" id="furiganaToggle" class="question-tool furigana-toggle"
+                    aria-pressed="false" hidden>ふりがなを表示</button>
+                <button type="button" id="classroomModeToggle" class="question-tool classroom-mode-toggle"
+                    aria-pressed="false" hidden>授業モード</button>
+                <div id="voiceControl" class="voice-control" hidden>
+                    <label for="voiceSelect" class="voice-label">読み上げの声</label>
+                    <select id="voiceSelect" class="voice-select"></select>
+                </div>
+            </div>
+        </details>
+
+        <div class="question-topbar">
+            <div class="question-topbar-left">
+                <!-- レベル選択に戻る -->
+                <a href="../選択/select.html" class="back-link" id="changeCategoryLink">
+                    ← カテゴリーを変える
+                </a>
+                <button
+                    type="button"
+                    id="classroomModeButton"
+                    class="classroom-mode-button"
+                    aria-pressed="false"
+                    hidden
+                >
+                    授業モード
+                </button>
+                <button
+                    type="button"
+                    id="fullscreenButton"
+                    class="classroom-mode-button"
+                    hidden
+                >
+                    全画面
+                </button>
+            </div>
+            <p id="questionProgress" class="question-progress" hidden></p>
+        </div>
+
+
+        <!-- 質問 -->
+        <p id="questionLive" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+        <div class="question-content" aria-live="polite" aria-atomic="true" aria-busy="true">
+            <p id="sharedQuestionNotice" class="shared-question-notice" role="note" hidden>
+                共有された質問です
+            </p>
+            <div id="scenarioBlock" class="scenario-block" aria-hidden="true">
+                <p class="scenario-label">こんな場面を想像してください</p>
+                <p id="scenarioText" class="scenario-text"></p>
+            </div>
+            <h1 id="questionText" tabindex="-1">
+                読み込み中...
+            </h1>
+        </div>
+
+        <!-- 質問の操作 -->
+        <div class="question-footer">
+
+            <button type="button" id="retryLoadButton" hidden>再試行する</button>
+
+            <div class="question-tools">
+                <button type="button" id="questionSummaryToggle" class="question-tool question-summary-toggle"
+                    aria-expanded="false" aria-controls="questionSummary" hidden>問いの要点を見る</button>
+                <button
+                    type="button"
+                    id="hintButton"
+                    aria-expanded="false"
+                    aria-controls="hintsPanel"
+                    class="question-tool question-hint"
+                    hidden
+                >
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M8 10h8M8 14h5M5 19l-1 3 4-2h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v9a3 3 0 0 0 2 3Z"/>
+                    </svg>
+                    会話のヒント
+                </button>
+                <button
+                    type="button" id="detailButton"
+                    aria-expanded="false"
+                    aria-controls="detailPanel"
+                    class="question-tool detail-button"
+                    hidden
+                >
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M6 3.5h8l4 4V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z"/>
+                        <path d="M14 3.5v4h4M8 12h8M8 16h8"/>
+                    </svg>
+                    <span id="detailButtonLabel">問いの背景</span>
+                </button>
+                <button
+                    type="button"
+                    id="speakButton"
+                    class="question-tool speak-button"
+                    aria-pressed="false"
+                    hidden
+                >読み上げ</button>
+                <div class="share-control" id="shareControl">
+                    <button
+                        type="button"
+                        id="shareButton"
+                        class="question-tool share-button"
+                        aria-haspopup="menu"
+                        aria-expanded="false"
+                        aria-controls="shareMenu"
+                        aria-label="共有"
+                        title="共有"
+                        hidden
+                    >
+                        <svg aria-hidden="true" viewBox="0 0 24 24">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l2-2a5 5 0 0 0-7.07-7.07l-1.15 1.15"/>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-2 2a5 5 0 0 0 7.07 7.07l1.14-1.14"/>
+                        </svg>
+                    </button>
+                    <div id="shareMenu" class="share-menu" role="menu" aria-label="共有の方法" hidden>
+                        <button type="button" id="shareUrlButton" class="share-menu-item" role="menuitem">
+                            リンクを共有
+                        </button>
+                        <button type="button" id="shareImageButton" class="share-menu-item" role="menuitem">
+                            問いの画像を保存
+                        </button>
+                        <button type="button" id="printQuestionButton" class="share-menu-item" role="menuitem">
+                            この問いを印刷
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <p id="shareStatus" class="share-status omoi-toast" role="status" aria-live="polite"></p>
+
+            <section id="questionSummary" class="question-summary" aria-label="問いの要点" hidden>
+                <div id="questionSummaryText" class="question-summary-content"></div>
+            </section>
+
+            <div
+                id="hintsPanel"
+                class="hints-panel"
+                role="region"
+                aria-label="会話のヒント"
+                tabindex="-1"
+                hidden
+            >
+                <ul id="hintsList"></ul>
+            </div>
+
+            <!-- 質問の詳細 -->
+            <div
+                id="detailPanel"
+                class="detail-panel"
+                role="region"
+                aria-label="質問の背景"
+                tabindex="-1"
+                hidden
+            >
+                <p id="detailText"></p>
+                <div id="termsSection" hidden>
+                    <h2>用語</h2>
+                    <dl id="termsList"></dl>
+                </div>
+                <!-- 出典がある場合だけ表示 -->
+                <div id="sourceSection" hidden>
+                    <h2>出典</h2>
+                    <ul id="sourceList"></ul>
+                </div>
+
+                <p class="detail-note">
+                    この解説には、異なる見解や不確実性が
+                    含まれる場合があります。
+                </p>
+
+                <a
+                    href="https://viuk-light.org/omoi-safety.html"
+                    class="safety-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Omoi公式の安全設計ページを開く"
+                    title="Omoi公式の安全設計"
+                >
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M12 3 19 6v5c0 4.5-2.9 8-7 10-4.1-2-7-5.5-7-10V6l7-3Z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                    <span>安全について</span>
+                </a>
+            </div>
+
+            <div class="question-actions">
+                <button
+                    type="button"
+                    id="nextQuestionButton"
+                    class="next-button"
+                    disabled
+                >
+                    <span id="nextQuestionLabel">次の問いを見る</span> <span aria-hidden="true">→</span>
+                </button>
+                <p id="nextNote" class="next-note">話さずに次へ進んでも大丈夫です</p>
+            </div>
+
+            <div class="question-navigation">
+                <button type="button" id="previousQuestionButton" class="previous-button" disabled>
+                    <span aria-hidden="true">←</span> 前の問い
+                </button>
+                <a href="../選択/select.html" class="finish-button other-questions-link" id="otherQuestionsLink" hidden>
+                    他の質問をする →
+                </a>
+                <button type="button" id="finishButton" class="finish-button" disabled>
+                    ここで終える
+                </button>
+            </div>
+
+        </div>
+
+        <section
+            id="sessionComplete"
+            class="session-complete"
+            aria-labelledby="sessionCompleteTitle"
+            tabindex="-1"
+            hidden
+        >
+            <p class="session-complete-brand">Omoi</p>
+            <h1 id="sessionCompleteTitle" tabindex="-1">おつかれさまでした</h1>
+            <p id="sessionCompleteMessage" class="session-complete-message"></p>
+            <div class="session-complete-actions">
+                <button type="button" id="restartSessionButton" class="next-button">
+                    もう一度はなす
+                </button>
+                <a id="completeSettingsLink" class="session-complete-link" href="../選択/select.html">
+                    設定を変える
+                </a>
+                <a class="session-complete-link" href="../../index.html">ホームへ</a>
+            </div>
+        </section>
+
+    </main>
+
+    <article id="printSheet" class="print-sheet" aria-hidden="true">
+        <header class="print-sheet-header">
+            <p class="print-sheet-brand">Omoi</p>
+            <div class="print-sheet-meta">
+                <p id="printSheetLevel" class="print-sheet-level"></p>
+                <p id="printSheetLevelNote" class="print-sheet-level-note"></p>
+            </div>
+        </header>
+        <div class="print-sheet-body">
+            <div id="printSheetScenarioBlock" class="print-sheet-scenario" hidden>
+                <p class="print-sheet-label">こんな場面を想像してください</p>
+                <p id="printSheetScenario" class="print-sheet-scenario-text"></p>
+            </div>
+            <p id="printSheetQuestion" class="print-sheet-question"></p>
+        </div>
+        <footer class="print-sheet-footer">
+            <span>omoi.viuk-light.org</span>
+            <span>重い話を話せる質問カード</span>
+        </footer>
+    </article>
+
+    <dialog
+        id="confirmDialog"
+        class="finish-confirm-dialog"
+        aria-labelledby="confirmTitle"
+        aria-describedby="confirmMessage"
+    >
+        <h2 id="confirmTitle">確認</h2>
+        <p id="confirmMessage"></p>
+        <div class="finish-confirm-actions">
+            <button type="button" id="confirmCancelButton" class="cancel-finish-button">
+                キャンセル
+            </button>
+            <button type="button" id="confirmOkButton" class="confirm-finish-button">
+                続行する
+            </button>
+        </div>
+    </dialog>
+
+    <dialog
+        id="finishConfirmDialog"
+        class="finish-confirm-dialog"
+        aria-labelledby="finishConfirmTitle"
+        aria-describedby="finishConfirmMessage"
+    >
+        <h2 id="finishConfirmTitle">ここで終わりますか？</h2>
+        <p id="finishConfirmMessage">ここまでの続きはこの端末に保存されます。次に開いたとき、続きから話せます。</p>
+        <div class="finish-confirm-actions">
+            <button type="button" id="cancelFinishButton" class="cancel-finish-button">
+                続ける
+            </button>
+            <button type="button" id="confirmFinishButton" class="confirm-finish-button">
+                終了する
+            </button>
+        </div>
+    </dialog>
+
+    <script src="../../スクリプト/progress.js"></script>
+    <script src="../../スクリプト/question-share.js"></script>
+    <script src="../../スクリプト/question.js"></script>
+</body>
+</html>

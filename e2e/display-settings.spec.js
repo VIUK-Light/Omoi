@@ -55,7 +55,7 @@ async function readPalette(page) {
 
 test('display settings extend the theme and stay on the device', async ({ page }) => {
     await page.emulateMedia({ colorScheme: 'light' });
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('.theme-control')).toBeAttached(ready);
 
     const root = page.locator('html');
@@ -88,11 +88,11 @@ test('the chosen theme and background follow across every page', async ({ page }
     await page.getByRole('button', { name: 'ナイト' }).click();
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'night', ready);
 
-    await page.goto('/select.html');
+    await page.goto('/画面/選択/select.html');
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'night', ready);
     await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(16, 21, 31)', ready);
 
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'night', ready);
     await expect(page.locator('html')).toHaveAttribute('data-background', 'none', ready);
 });
@@ -113,7 +113,7 @@ test('every page offers the same display settings', async ({ page }) => {
 
 test('background strength can be adjusted and is kept on the device', async ({ page }) => {
     await page.emulateMedia({ colorScheme: 'light' });
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('.theme-control')).toBeAttached(ready);
 
     await page.locator('.theme-control > summary').click();
@@ -134,7 +134,7 @@ test('background strength can be adjusted and is kept on the device', async ({ p
 
 test('reset restores the default display settings', async ({ page }) => {
     await page.emulateMedia({ colorScheme: 'light' });
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('.theme-control')).toBeAttached(ready);
 
     await page.locator('.theme-control > summary').click();
@@ -166,7 +166,7 @@ test('the setting kept under the old key is carried over', async ({ page }) => {
 });
 
 test('every palette keeps readable contrast', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('.theme-control')).toBeAttached(ready);
 
     for (const palette of palettes) {
@@ -183,7 +183,7 @@ test('every palette keeps readable contrast', async ({ page }) => {
 });
 
 test('backgrounds stay readable in every theme even at full strength', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('.theme-control')).toBeAttached(ready);
 
     const backgroundIds = await page.evaluate(() => Array.from(document.querySelectorAll('[data-theme-background]'))

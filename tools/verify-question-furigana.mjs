@@ -6,8 +6,8 @@ let annotatedFieldCount = 0;
 let kanjiFieldCount = 0;
 
 for (const level of [2, 3, 4]) {
-    const questions = JSON.parse(fs.readFileSync(`level${level}.json`, "utf8"));
-    const sidecar = JSON.parse(fs.readFileSync(`level${level}-furigana.json`, "utf8"));
+    const questions = JSON.parse(fs.readFileSync(`データ/質問/level${level}.json`, "utf8"));
+    const sidecar = JSON.parse(fs.readFileSync(`データ/質問/level${level}-furigana.json`, "utf8"));
     const result = validateFuriganaSidecar(questions, sidecar);
     questionCount += questions.length;
     annotatedFieldCount += result.annotatedFieldCount;

@@ -3,11 +3,11 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 
-const selectCode = fs.readFileSync(new URL('../select.js', import.meta.url), 'utf8');
-const levelSelectCode = fs.readFileSync(new URL('../level-select.js', import.meta.url), 'utf8');
-const customSelectCode = fs.readFileSync(new URL('../custom-select.js', import.meta.url), 'utf8');
-const warningCode = fs.readFileSync(new URL('../warning.js', import.meta.url), 'utf8');
-const warning3Code = fs.readFileSync(new URL('../warning3.js', import.meta.url), 'utf8');
+const selectCode = fs.readFileSync(new URL('../スクリプト/select.js', import.meta.url), 'utf8');
+const levelSelectCode = fs.readFileSync(new URL('../スクリプト/level-select.js', import.meta.url), 'utf8');
+const customSelectCode = fs.readFileSync(new URL('../スクリプト/custom-select.js', import.meta.url), 'utf8');
+const warningCode = fs.readFileSync(new URL('../スクリプト/warning.js', import.meta.url), 'utf8');
+const warning3Code = fs.readFileSync(new URL('../スクリプト/warning3.js', import.meta.url), 'utf8');
 
 const labelsDocument = {
     version: 1,
@@ -43,7 +43,7 @@ function makeElement() {
 function setupSelect() {
     const modeInputs = ['student', 'all', 'custom'].map(value => Object.assign(makeElement(), { value }));
     const nextButton = makeElement();
-    const location = { href: 'https://omoi.viuk-light.org/select.html' };
+    const location = { href: 'https://omoi.viuk-light.org/画面/選択/select.html' };
     vm.runInNewContext(selectCode, {
         URL,
         document: {
@@ -68,7 +68,7 @@ function setupSelect() {
 function setupLevelSelect() {
     const levelInputs = ['1', '2', '3', '4'].map(value => Object.assign(makeElement(), { value }));
     const nextButton = makeElement();
-    const location = { href: 'https://omoi.viuk-light.org/level-select.html' };
+    const location = { href: 'https://omoi.viuk-light.org/画面/選択/level-select.html' };
     vm.runInNewContext(levelSelectCode, {
         URL,
         document: {
@@ -105,7 +105,7 @@ function setupCustomSelect() {
     ]) {
         elements.set(id, makeElement());
     }
-    const location = { href: 'https://omoi.viuk-light.org/custom-select.html' };
+    const location = { href: 'https://omoi.viuk-light.org/画面/選択/custom-select.html' };
     const selections = [];
     const context = {
         URL, URLSearchParams, AbortController,
@@ -127,7 +127,7 @@ function setupCustomSelect() {
             }
         },
         fetch(url) {
-            const body = url === 'labels.json' ? labelsDocument : indexDocument;
+            const body = url === '../../データ/索引/labels.json' ? labelsDocument : indexDocument;
             return Promise.resolve({ ok: true, json: async () => structuredClone(body) });
         }
     };
@@ -177,21 +177,21 @@ test('student mode opens the settings screen without a warning screen', () => {
     const app = setupSelect();
     app.choose('student');
     app.nextButton.click();
-    assert.equal(app.location.href, 'https://omoi.viuk-light.org/student-select.html');
+    assert.equal(app.location.href, 'https://omoi.viuk-light.org/%E7%94%BB%E9%9D%A2/%E9%81%B8%E6%8A%9E/student-select.html');
 });
 
 test('all mode moves to the level selection screen', () => {
     const app = setupSelect();
     app.choose('all');
     app.nextButton.click();
-    assert.equal(app.location.href, 'https://omoi.viuk-light.org/level-select.html');
+    assert.equal(app.location.href, 'https://omoi.viuk-light.org/%E7%94%BB%E9%9D%A2/%E9%81%B8%E6%8A%9E/level-select.html');
 });
 
 test('custom mode moves to the category selection screen', () => {
     const app = setupSelect();
     app.choose('custom');
     app.nextButton.click();
-    assert.equal(app.location.href, 'https://omoi.viuk-light.org/custom-select.html');
+    assert.equal(app.location.href, 'https://omoi.viuk-light.org/%E7%94%BB%E9%9D%A2/%E9%81%B8%E6%8A%9E/custom-select.html');
 });
 
 test('level selection enables next only after choosing an active level', () => {
@@ -207,21 +207,21 @@ test('Level 3 routes through warning3.html without a count', () => {
     const app = setupLevelSelect();
     app.choose('3');
     app.nextButton.click();
-    assert.equal(app.location.href, 'https://omoi.viuk-light.org/warning3.html');
+    assert.equal(app.location.href, 'https://omoi.viuk-light.org/%E7%94%BB%E9%9D%A2/%E5%AF%BE%E8%A9%B1/warning3.html');
 });
 
 test('Level 4 keeps routing through warning.html', () => {
     const app = setupLevelSelect();
     app.choose('4');
     app.nextButton.click();
-    assert.equal(app.location.href, 'https://omoi.viuk-light.org/warning.html');
+    assert.equal(app.location.href, 'https://omoi.viuk-light.org/%E7%94%BB%E9%9D%A2/%E5%AF%BE%E8%A9%B1/warning.html');
 });
 
 test('Level 2 goes directly to question.html', () => {
     const app = setupLevelSelect();
     app.choose('2');
     app.nextButton.click();
-    assert.equal(app.location.href, 'https://omoi.viuk-light.org/question.html?level=2');
+    assert.equal(app.location.href, 'https://omoi.viuk-light.org/%E7%94%BB%E9%9D%A2/%E5%AF%BE%E8%A9%B1/question.html?level=2');
 });
 
 test('custom mode saves the selected category and starts without a warning', async () => {
@@ -237,7 +237,7 @@ test('custom mode saves the selected category and starts without a warning', asy
     assert.match(app.elements.get('customBreakdown').textContent, /カテゴリー1件/);
 
     app.elements.get('nextButton').click();
-    assert.equal(app.location.href, 'https://omoi.viuk-light.org/custom-confirm.html?mode=custom&session=token123456');
+    assert.equal(app.location.href, 'https://omoi.viuk-light.org/%E7%94%BB%E9%9D%A2/%E9%81%B8%E6%8A%9E/custom-confirm.html?mode=custom&session=token123456');
     assert.equal(app.selections.length, 1);
     assert.deepEqual([...app.selections[0].labels], ['school']);
     assert.deepEqual([...app.selections[0].ids], []);

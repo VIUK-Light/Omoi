@@ -42,7 +42,7 @@ test('theme can follow the device or be set manually across pages', async ({ pag
   await expect(root).toHaveAttribute('data-theme', 'light');
   await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
 
-  await page.goto('/select.html');
+  await page.goto('/画面/選択/select.html');
   await expect(root).toHaveAttribute('data-theme', 'light');
   await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>質問カード印刷 - Omoi</title>
+    <link rel="icon" href="../../画像/omoi-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../スタイル/theme.css">
+    <link rel="stylesheet" href="../../スタイル/print-cards.css">
+    <style id="printPageOrientation">@page { size: A4 portrait; margin: 0; }</style>
+    <script src="../../スクリプト/theme.js"></script>
+</head>
+<body>
+    <main class="print-cards-screen" id="printSheetsPage">
+        <div class="print-toolbar">
+            <a href="../データベース/database.html" class="back-link">← データベースに戻る</a>
+            <label class="print-layout-option" for="cardSize">
+                カードサイズ
+                <select id="cardSize">
+                    <option value="compact" selected>カード型（80 × 125mm・4枚）</option>
+                    <option value="half">A4 2枚（用紙の向きを選択）</option>
+                    <option value="full">A4全体（1枚）</option>
+                </select>
+            </label>
+            <label class="print-layout-option" id="fullOrientationOption" for="fullOrientation" hidden>
+                用紙の向き
+                <select id="fullOrientation">
+                    <option value="portrait" selected>縦</option>
+                    <option value="landscape">横</option>
+                </select>
+            </label>
+            <label class="print-layout-option" id="halfOrientationOption" for="halfOrientation" hidden>
+                用紙の向き
+                <select id="halfOrientation">
+                    <option value="landscape" selected>横（A5縦カード2枚）</option>
+                    <option value="portrait">縦（A4を上下2分割）</option>
+                </select>
+            </label>
+            <label class="print-option" id="largeModeOption" hidden>
+                <input type="checkbox" id="optLarge"> 文字・間隔を大きく
+            </label>
+            <div class="print-toolbar-group">
+                <label class="print-option"><input type="checkbox" id="optQuestion" checked> 問い</label>
+                <label class="print-option"><input type="checkbox" id="optScenario" checked> 場面</label>
+                <label class="print-option"><input type="checkbox" id="optDetail"> 背景説明</label>
+                <label class="print-option"><input type="checkbox" id="optHints"> 会話のヒント</label>
+                <label class="print-option"><input type="checkbox" id="optTerms" checked> 用語</label>
+                <label class="print-option"><input type="checkbox" id="optId" checked> 質問ID</label>
+            </div>
+            <button type="button" id="printButton" class="print-button">印刷する</button>
+        </div>
+
+        <p id="printStatus" class="print-status" role="status" aria-live="polite"></p>
+        <p id="printOverflowWarning" class="print-warning" role="alert" hidden>
+            背景説明を追加すると、A4に4枚配置する場合は一部のカードで内容がはみ出る可能性があります。印刷前にプレビューを確認してください。
+        </p>
+
+        <div id="printSheets" class="print-sheets"></div>
+    </main>
+
+    <script src="../../スクリプト/print-cards.js"></script>
+</body>
+</html>

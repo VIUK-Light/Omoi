@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
-const { encodeSharePayload, decodeSharePayload, SHARE_BIT_COUNT } = require('../question-share.js');
+const { encodeSharePayload, decodeSharePayload, SHARE_BIT_COUNT } = require('../スクリプト/question-share.js');
 
 test('round-trips indices within legacy 96-byte range', () => {
     const indices = [0, 1, 2, 63, 64, 200, 742, 767];

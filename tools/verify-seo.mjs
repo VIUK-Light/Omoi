@@ -8,29 +8,29 @@ const origin = "https://omoi.viuk-light.org";
 const publicPages = [
     {
         file: "index.html",
-        favicon: "omoi-icon.svg",
+        favicon: "画像/omoi-icon.svg",
         url: `${origin}/`,
         requiredTypes: ["WebSite", "SoftwareApplication", "WebPage"]
     },
     {
-        file: "guide.html",
-        favicon: "viuk-light.jpg",
-        url: `${origin}/guide.html`,
+        file: "画面/案内/guide.html",
+        favicon: "../../画像/viuk-light.jpg",
+        url: `${origin}/%E7%94%BB%E9%9D%A2/%E6%A1%88%E5%86%85/guide.html`,
         requiredTypes: ["WebSite", "WebPage", "BreadcrumbList"]
     }
 ];
 
 const noindexPages = [
-    "select.html",
-    "question.html",
-    "warning.html",
-    "warning3.html"
+    "画面/選択/select.html",
+    "画面/対話/question.html",
+    "画面/対話/warning.html",
+    "画面/対話/warning3.html"
 ];
 
 const redirectPages = [
     {
-        file: "howto.html",
-        target: `${origin}/guide.html`
+        file: "画面/案内/howto.html",
+        target: `${origin}/%E7%94%BB%E9%9D%A2/%E6%A1%88%E5%86%85/guide.html`
     }
 ];
 
@@ -173,7 +173,7 @@ function localPathFromUrl(value) {
 
     const pathname = parsed.pathname === "/"
         ? "index.html"
-        : parsed.pathname.replace(/^\//, "");
+        : decodeURIComponent(parsed.pathname.replace(/^\//, ""));
 
     return pathname;
 }
@@ -250,8 +250,8 @@ for (const page of publicPages) {
         errors.push(`${page.file}: og:url must match canonical`);
     }
 
-    if (ogImage !== `${origin}/og-image.png` || twitterImage !== ogImage) {
-        errors.push(`${page.file}: OGP and Twitter image must use ${origin}/og-image.png`);
+    if (ogImage !== `${origin}/%E7%94%BB%E5%83%8F/og-image.png` || twitterImage !== ogImage) {
+        errors.push(`${page.file}: OGP and Twitter image must use ${origin}/%E7%94%BB%E5%83%8F/og-image.png`);
     }
 
     if (!metaValue(html, "property", "og:image:alt")) {
@@ -303,14 +303,14 @@ for (const page of redirectPages) {
     const html = read(page.file);
     const canonical = linkValue(html, "canonical");
     const refresh = metaValue(html, "http-equiv", "refresh").toLowerCase();
-    const targetPath = new URL(page.target).pathname.replace(/^\//, "");
+    const refreshTarget = refresh.match(/url\s*=\s*([^;]+)/)?.[1]?.trim();
 
     if (canonical !== page.target) {
         errors.push(`${page.file}: redirect canonical must be ${page.target}`);
     }
 
-    if (!refresh.includes(`url=${targetPath}`)) {
-        errors.push(`${page.file}: meta refresh must point to ${targetPath}`);
+    if (!refreshTarget || new URL(refreshTarget, `${origin}/${page.file}`).toString() !== page.target) {
+        errors.push(`${page.file}: meta refresh must point to ${page.target}`);
     }
 
     checkInternalLinks({ file: page.file, url: `${origin}/${page.file}` }, html);
@@ -333,13 +333,13 @@ if (!read("robots.txt").includes(`Sitemap: ${origin}/sitemap.xml`)) {
     errors.push("robots.txt: sitemap directive is missing or incorrect");
 }
 
-for (const asset of new Set(["og-image.png", "viuk-light.jpg", ...publicPages.map((page) => page.favicon)])) {
+for (const asset of new Set(["画像/og-image.png", "画像/viuk-light.jpg", "画像/omoi-icon.svg"])) {
     if (!fs.existsSync(path.join(root, asset))) {
         errors.push(`${asset}: referenced asset does not exist`);
     }
 }
 
-checkPngDimensions("og-image.png", 1200, 630);
+checkPngDimensions("画像/og-image.png", 1200, 630);
 
 if (errors.length > 0) {
     console.error(`SEO verification failed with ${errors.length} error(s).`);

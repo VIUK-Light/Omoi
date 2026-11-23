@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { getScenarioSegments } from './scenario-reading.mjs';
 import { readPreviewState, sampleEntryHref, previewHref } from './preview-state.mjs';
 
-const card = JSON.parse(readFileSync(new URL('../../level4.json', import.meta.url))).find(item => item.id === 'l4-relationship-002');
+const card = JSON.parse(readFileSync(new URL('../../データ/質問/level4.json', import.meta.url))).find(item => item.id === 'l4-relationship-002');
 
 test('reading segments preserve every source character without mutating the source question', () => {
     const before = structuredClone(card);

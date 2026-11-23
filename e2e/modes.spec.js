@@ -5,7 +5,7 @@ test.describe.configure({ timeout: 60000 });
 const ready = { timeout: 20000 };
 
 test('student mode opens its settings screen and starts without a warning', async ({ page }) => {
-  await page.goto('/select.html');
+  await page.goto('/画面/選択/select.html');
   await page.locator('label[for="modeStudent"]').click();
   await expect(page.locator('#nextButton')).toBeEnabled();
   await page.locator('#nextButton').click();
@@ -26,7 +26,7 @@ test('student mode opens its settings screen and starts without a warning', asyn
 });
 
 test('custom mode starts from selected categories without a warning', async ({ page }) => {
-  await page.goto('/select.html');
+  await page.goto('/画面/選択/select.html');
   await page.locator('label[for="modeCustom"]').click();
   await page.locator('#nextButton').click();
   await expect(page).toHaveURL(/\/custom-select\.html$/);
@@ -56,7 +56,7 @@ test('custom mode starts from selected categories without a warning', async ({ p
 });
 
 test('custom mode can start from an individually selected question', async ({ page }) => {
-  await page.goto('/custom-select.html');
+  await page.goto('/画面/選択/custom-select.html');
   await expect(page.locator('#labelList input[value="school"]')).toHaveCount(1, ready);
 
   await page.locator('#tabQuestions').click();
@@ -85,7 +85,7 @@ test('custom mode can start from an individually selected question', async ({ pa
 });
 
 test('the question picker filters by words and level and keeps a selected list', async ({ page }) => {
-  await page.goto('/custom-select.html');
+  await page.goto('/画面/選択/custom-select.html');
   await expect(page.locator('#labelList input[value="school"]')).toHaveCount(1, ready);
 
   await page.locator('#tabQuestions').click();
@@ -155,7 +155,7 @@ test('the question picker filters by words and level and keeps a selected list',
 });
 
 test('category selection pre-checks its questions in the individual picker', async ({ page }) => {
-  await page.goto('/custom-select.html');
+  await page.goto('/画面/選択/custom-select.html');
   await expect(page.locator('#labelList input[value="school"]')).toHaveCount(1, ready);
 
   await page.locator('#labelList label.label-card')
@@ -195,7 +195,7 @@ test('category selection pre-checks its questions in the individual picker', asy
 test('custom selection fits 320px and keeps the action bar visible', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 800 });
   await page.emulateMedia({ colorScheme: 'dark' });
-  await page.goto('/custom-select.html');
+  await page.goto('/画面/選択/custom-select.html');
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   await expect(page.locator('#labelList input[value="school"]')).toHaveCount(1, ready);
 
@@ -233,7 +233,7 @@ test('custom selection fits 320px and keeps the action bar visible', async ({ pa
 
 
 test('question search matches variant spellings via readings', async ({ page }) => {
-  await page.goto('/custom-select.html');
+  await page.goto('/画面/選択/custom-select.html');
   await expect(page.locator('#labelList input[value="school"]')).toHaveCount(1, ready);
 
   await page.locator('#tabQuestions').click();

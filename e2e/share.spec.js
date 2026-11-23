@@ -6,7 +6,7 @@ test.describe.configure({ timeout: 60000 });
 const ready = { timeout: 20000 };
 
 test('the share button offers a link or a picture of the question', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
 
     await page.locator('#shareButton').click();
@@ -34,7 +34,7 @@ test('the share menu stays inside narrow and short viewports', async ({ page }) 
         { width: 844, height: 390 }
     ]) {
         await page.setViewportSize(viewport);
-        await page.goto('/question.html?level=2');
+        await page.goto('/画面/対話/question.html?level=2');
         await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
 
         await page.locator('#shareButton').click();
@@ -55,7 +55,7 @@ test('the share menu stays inside narrow and short viewports', async ({ page }) 
 });
 
 test('the card shows the level name instead of the level number', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
 
     const texts = await page.evaluate(async () => {
@@ -81,7 +81,7 @@ test('the card shows the level name instead of the level number', async ({ page 
 });
 
 test('the share menu closes with Escape and keeps the focus on the share button', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
 
     await page.locator('#shareButton').click();
@@ -93,7 +93,7 @@ test('the share menu closes with Escape and keeps the focus on the share button'
 });
 
 test('the card follows the chosen background and theme', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
 
     const question = {
@@ -118,7 +118,7 @@ test('the card follows the chosen background and theme', async ({ page }) => {
 });
 
 test('the card renders even when the scenario and question are very long', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
 
     const size = await page.evaluate(async () => {
@@ -134,7 +134,7 @@ test('the card renders even when the scenario and question are very long', async
 });
 
 test('printing shows only a clean question card and runs from the share menu', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
     const question = (await page.locator('#questionText').innerText()).trim();
 

@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const preview = '/preview/omoi-v3/';
-const card = JSON.parse(fs.readFileSync(path.join(__dirname, '../level4.json'), 'utf8'))
+const card = JSON.parse(fs.readFileSync(path.join(__dirname, '../データ/質問/level4.json'), 'utf8'))
   .find(item => item.id === 'l4-relationship-002');
 
 test('comparison entry exposes text experiments without retired diagram links', async ({ page }) => {

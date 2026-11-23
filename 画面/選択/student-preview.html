@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <title>セットの確認 - Omoi</title>
+    <link rel="stylesheet" href="../../スタイル/select.css">
+    <link rel="stylesheet" href="../../スタイル/custom-select.css">
+    <link rel="stylesheet" href="../../スタイル/student-preview.css">
+    <script src="../../スクリプト/theme.js"></script>
+    <script src="../../スクリプト/progress.js"></script>
+    <link rel="stylesheet" href="../../スタイル/theme.css">
+</head>
+<body>
+    <main class="select-screen custom-select-screen student-preview-screen">
+        <div class="select-content custom-select-content student-preview-content">
+            <header class="custom-select-header">
+                <a href="student-select.html" class="back-link custom-select-back" id="backLink">← 設定に戻る</a>
+                <p class="custom-eyebrow">preview</p>
+                <h1>セットの確認</h1>
+                <p class="custom-select-lead" id="previewLead">始める前に、問いのセットを確認できます。</p>
+            </header>
+
+            <div id="previewError" class="custom-error" role="alert" hidden>
+                <p id="previewErrorText"></p>
+                <button type="button" id="retryLoadButton" class="custom-retry-button">再読み込み</button>
+            </div>
+
+            <section class="student-preview-summary" aria-labelledby="summaryHeading">
+                <h2 id="summaryHeading">選択内容</h2>
+                <p id="previewSummary" class="custom-section-meta">読み込み中…</p>
+            </section>
+
+            <section class="student-preview-list-section" aria-labelledby="listHeading">
+                <div class="student-preview-list-head">
+                    <h2 id="listHeading">問いの一覧</h2>
+                    <p id="previewCount" class="custom-section-meta" role="status"></p>
+                </div>
+                <ol id="previewList" class="student-preview-list"></ol>
+            </section>
+
+            <div class="custom-action-bar">
+                <div class="custom-action-inner student-preview-actions">
+                    <div id="previewActionSummary" class="custom-action-summary" role="status" aria-live="polite">
+                        <strong id="previewTotal">—</strong>
+                        <span id="previewBreakdown">問いを読み込んでいます…</span>
+                    </div>
+                    <div class="student-preview-action-buttons">
+                        <button type="button" id="printButton" class="student-preview-secondary-button" disabled>印刷</button>
+                        <button type="button" id="shareButton" class="student-preview-secondary-button" disabled>共有</button>
+                        <button type="button" id="startButton" disabled>このセットで始める</button>
+                    </div>
+                    <p id="previewShareStatus" class="student-preview-share-status omoi-toast" aria-live="polite"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../../スクリプト/question-share.js"></script>
+    <script src="../../スクリプト/student-preview.js"></script>
+</body>
+</html>

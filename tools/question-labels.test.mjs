@@ -87,7 +87,10 @@ test('invalid label lists are reported', () => {
 });
 
 test('generated label files match the current question data', () => {
-    const read = name => JSON.parse(fs.readFileSync(new URL(`../${name}`, import.meta.url), 'utf8'));
+    const read = name => {
+        const directory = name.startsWith('level') ? '質問' : '索引';
+        return JSON.parse(fs.readFileSync(new URL(`../データ/${directory}/${name}`, import.meta.url), 'utf8'));
+    };
     assert.deepEqual(read('labels.json'), {
         version: 1,
         labels: labelDefinitions.map(label => ({ ...label }))

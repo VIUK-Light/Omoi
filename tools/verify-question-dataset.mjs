@@ -9,7 +9,7 @@ import { validateLabelList } from "./question-labels.mjs";
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = path.resolve(scriptDirectory, "..");
 const activeLevels = [2, 3, 4];
-const questionFiles = activeLevels.map(level => `level${level}.json`);
+const questionFiles = activeLevels.map(level => `データ/質問/level${level}.json`);
 const argumentsSet = new Set(process.argv.slice(2));
 const reportOnly = argumentsSet.has("--report-only");
 const outputJson = argumentsSet.has("--json");
@@ -171,8 +171,8 @@ function validateContentWarnings(record) {
     }
 }
 
-if (fs.existsSync(path.join(repositoryRoot, "level1.json"))) {
-    addFinding("error", "retired_level_present", "Level 1 is retired; remove level1.json from this version.", { file: "level1.json" });
+if (fs.existsSync(path.join(repositoryRoot, "データ/質問/level1.json"))) {
+    addFinding("error", "retired_level_present", "Level 1 is retired; remove level1.json from this version.", { file: "データ/質問/level1.json" });
 }
 
 for (const fileName of questionFiles) {

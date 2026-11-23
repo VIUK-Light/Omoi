@@ -119,7 +119,7 @@ export function validateV3Review({ review, currentByLevel, baseByLevel, currentR
 }
 
 export function verifyRepository(repositoryRoot) {
-    const review = JSON.parse(fs.readFileSync(path.join(repositoryRoot, "docs/v3-content-review.json"), "utf8"));
+    const review = JSON.parse(fs.readFileSync(path.join(repositoryRoot, "資料/v3-content-review.json"), "utf8"));
     const currentRaw = {}, baseRaw = {}, currentByLevel = {}, baseByLevel = {};
     for (const level of [1, 2, 3, 4]) {
         baseRaw[level] = execFileSync("git", ["show", `${REVIEW_BASE_COMMIT}:level${level}.json`], {
@@ -128,11 +128,11 @@ export function verifyRepository(repositoryRoot) {
         baseByLevel[level] = JSON.parse(baseRaw[level]);
     }
     for (const level of ACTIVE_LEVELS) {
-        currentRaw[level] = fs.readFileSync(path.join(repositoryRoot, `level${level}.json`), "utf8");
+        currentRaw[level] = fs.readFileSync(path.join(repositoryRoot, `データ/質問/level${level}.json`), "utf8");
         currentByLevel[level] = JSON.parse(currentRaw[level]);
     }
-    if (fs.existsSync(path.join(repositoryRoot, "level1.json"))) {
-        currentRaw[1] = fs.readFileSync(path.join(repositoryRoot, "level1.json"), "utf8");
+    if (fs.existsSync(path.join(repositoryRoot, "データ/質問/level1.json"))) {
+        currentRaw[1] = fs.readFileSync(path.join(repositoryRoot, "データ/質問/level1.json"), "utf8");
     }
     return {
         baseCommit: REVIEW_BASE_COMMIT,

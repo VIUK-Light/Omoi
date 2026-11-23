@@ -73,7 +73,7 @@ test('normal warning flow offers optional helpers without preview queries or dia
   await page.locator('#nextButton').click();
   await expect(page).toHaveURL(/\/warning3\.html$/);
   await expect(page).toHaveTitle('話をはじめる前に - Omoi');
-  await expect(page.locator('.back-button')).toHaveAttribute('href', 'level-select.html');
+  await expect(page.locator('.back-button')).toHaveAttribute('href', '../選択/level-select.html');
   await page.getByRole('link', { name: '続ける', exact: true }).click();
   await expect(page).toHaveURL(/\/question\.html\?.*level=3/);
   await expect(page.locator('#questionText')).toHaveText(completeCard.question);
@@ -112,7 +112,7 @@ for (const level of [2]) {
     const levelCards = [{ ...completeCard, level }];
     await page.route(`**/level${level}.json`, route => route.fulfill({ json: levelCards }));
     await page.route(`**/level${level}-furigana.json`, route => route.fulfill({ json: furiganaFor(levelCards) }));
-    await page.goto(`/question.html?level=${level}`);
+    await page.goto(`/画面/対話/question.html?level=${level}`);
     await expect(page.locator('#questionText')).toHaveText(completeCard.question);
     for (const id of ['questionSummaryToggle', 'hintButton', 'detailButton']) await expect(page.locator(`#${id}`)).toBeHidden();
     await expect(page.locator('#nextQuestionButton')).toBeEnabled();
@@ -127,7 +127,7 @@ test('terms-only background and hints-only questions do not require a detail exp
   ];
   await page.route('**/level4.json', route => route.fulfill({ json: level4Cards }));
   await page.route('**/level4-furigana.json', route => route.fulfill({ json: furiganaFor(level4Cards) }));
-  await page.goto('/warning.html');
+  await page.goto('/画面/対話/warning.html');
   await expect(page).toHaveTitle('話をはじめる前に - Omoi');
   await page.getByRole('link', { name: '続ける', exact: true }).click();
   await expect(page.locator('#detailButton')).toBeVisible();
@@ -145,11 +145,12 @@ test('terms-only background and hints-only questions do not require a detail exp
 
 for (const prefix of ['/', '/preview/omoi-v3/']) {
   test(`retired Level 1 is rejected before fetching and returns to active selection: ${prefix}`, async ({ page }) => {
+    const pagePrefix = prefix === '/' ? '/画面/対話/' : prefix;
     const datasetRequests = [];
     page.on('request', request => {
       if (/\/level[0-9]+\.json(?:\?|$)/.test(request.url())) datasetRequests.push(request.url());
     });
-    await page.goto(`${prefix}question.html?level=1`);
+    await page.goto(`${pagePrefix}question.html?level=1`);
     await expect(page.locator('#questionText')).toContainText('条件が正しくありません');
     await expect(page.locator('#nextQuestionButton')).toBeDisabled();
     await expect(page.locator('#retryLoadButton')).toBeHidden();
@@ -159,12 +160,12 @@ for (const prefix of ['/', '/preview/omoi-v3/']) {
     if (await confirmOkButton.isVisible().catch(() => false)) {
       await confirmOkButton.click();
     }
-    await expect(page).toHaveURL(new RegExp(`${prefix}select.html`));
+    await expect(page).toHaveURL(new RegExp(`${prefix === '/' ? '' : prefix}select.html`));
     if (prefix === '/') {
       expect(await page.locator('input[name="mode"]').evaluateAll(inputs => inputs.map(input => input.value))).toEqual(['student', 'all', 'custom']);
       await page.locator('label[for="modeAll"]').click();
       await page.locator('#nextButton').click();
-      await expect(page).toHaveURL(new RegExp(`${prefix}level-select.html`));
+      await expect(page).toHaveURL(new RegExp(`${prefix === '/' ? '' : prefix}level-select.html`));
     }
     expect(await page.locator('input[name="level"]').evaluateAll(inputs => inputs.map(input => input.value))).toEqual(['2', '3', '4']);
   });

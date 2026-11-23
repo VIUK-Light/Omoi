@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { getQuestionSummary, getQuestionSummaryContent } from './question-summary.mjs';
 
 const datasets = new Map([3, 4].map(level => [level,
-    JSON.parse(readFileSync(new URL(`../../level${level}.json`, import.meta.url)))
+    JSON.parse(readFileSync(new URL(`../../データ/質問/level${level}.json`, import.meta.url)))
 ]));
 const cases = [
     [4, 'l4-relationship-002'],

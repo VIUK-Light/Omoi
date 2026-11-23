@@ -217,7 +217,7 @@ async function loadQuestions() {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
     try {
-        const response = await fetch(new URL("../../level" + level + ".json", import.meta.url), { signal: controller.signal });
+        const response = await fetch(new URL("../../データ/質問/level" + level + ".json", import.meta.url), { signal: controller.signal });
         if (!response.ok) {
             throw new Error("Question request failed: HTTP " + response.status);
         }

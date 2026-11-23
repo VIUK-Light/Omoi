@@ -9,7 +9,7 @@ async function waitForStudentSelect(page) {
 }
 
 async function openSettings(page, role = 'teacher') {
-  await page.goto('/student-select.html');
+  await page.goto('/画面/選択/student-select.html');
   await waitForStudentSelect(page);
   await expect(page.locator('[data-student-role="student"]')).toBeVisible(ready);
   await page.locator('[data-student-role="' + role + '"]').click();
@@ -24,7 +24,7 @@ async function chooseTheme(page, id) {
 }
 
 test('quick start opens the 120 student questions without a settings detour', async ({ page }) => {
-  await page.goto('/select.html');
+  await page.goto('/画面/選択/select.html');
   await page.locator('label[for="modeStudent"]').click();
   await page.locator('#nextButton').click();
   await expect(page).toHaveURL(/\/student-select\.html$/);
@@ -149,7 +149,7 @@ test('the settings screen restores the saved student session for editing', async
 });
 
 test('teacher role reveals individual question selection, student role hides it', async ({ page }) => {
-  await page.goto('/student-select.html');
+  await page.goto('/画面/選択/student-select.html');
   await expect(page.getByRole('heading', { name: '使うのは？' })).toBeVisible(ready);
   await waitForStudentSelect(page);
 

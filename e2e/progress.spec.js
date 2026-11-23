@@ -5,7 +5,7 @@ test.describe.configure({ timeout: 60000 });
 const ready = { timeout: 20000 };
 
 test('a normal session keeps its place after a reload instead of becoming a shared question', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
 
     const firstUrl = new URL(page.url());
@@ -23,7 +23,7 @@ test('a normal session keeps its place after a reload instead of becoming a shar
 });
 
 test('ending mid-way leaves a resume notice on the level screen, not the home screen', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
 
     await page.locator('#nextQuestionButton').click();
@@ -51,23 +51,23 @@ test('ending mid-way leaves a resume notice on the level screen, not the home sc
 test('the resume notice is hidden when there is no saved progress', async ({ page }) => {
     await page.goto('/');
     await expect(page.locator('#resumeNotice')).toHaveCount(0);
-    await page.goto('/select.html');
+    await page.goto('/画面/選択/select.html');
     await expect(page.locator('#resumeNotice')).toBeHidden();
 });
 
 test('a shared link still opens as a single shared question', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
     const id = new URL(page.url()).searchParams.get('id');
 
-    await page.goto(`/question.html?level=2&id=${encodeURIComponent(id)}`);
+    await page.goto(`/画面/対話/question.html?level=2&id=${encodeURIComponent(id)}`);
     await expect(page.locator('#sharedQuestionNotice')).toBeVisible(ready);
     await expect(page.locator('#nextQuestionButton')).toBeHidden();
     await expect(page.locator('#finishButton')).toBeHidden();
 });
 
 test('changing the category discards the saved progress', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
     await page.locator('#nextQuestionButton').click();
 
@@ -79,14 +79,14 @@ test('changing the category discards the saved progress', async ({ page }) => {
 });
 
 test('the resume notice can be dismissed with the close button', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
 
     await page.locator('#finishButton').click();
     await page.locator('#confirmFinishButton').click();
     await page.waitForURL('**/index.html');
 
-    await page.goto('/select.html');
+    await page.goto('/画面/選択/select.html');
     const notice = page.locator('#resumeNotice');
     await expect(notice).toBeVisible();
     await page.locator('#resumeNoticeClose').click();
@@ -98,7 +98,7 @@ test('the resume notice can be dismissed with the close button', async ({ page }
 });
 
 test('finishing every question shows a completion screen and can restart', async ({ page }) => {
-    await page.goto('/question.html?mode=student&levels=2&count=1');
+    await page.goto('/画面/対話/question.html?mode=student&levels=2&count=1');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
     await expect(page.locator('#nextQuestionLabel')).toHaveText('すべての問いを終える');
     const question = (await page.locator('#questionText').innerText()).trim();

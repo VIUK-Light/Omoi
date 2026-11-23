@@ -5,7 +5,7 @@ test.describe.configure({ timeout: 60000 });
 const ready = { timeout: 20000 };
 
 test('reading prefers a high quality Japanese voice and keeps an explicit choice', async ({ page }) => {
-    await page.goto('/question.html?level=2');
+    await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
 
     const automatic = await page.evaluate(() => {

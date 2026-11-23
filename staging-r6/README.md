@@ -1,6 +1,6 @@
 # staging-r6 — Omoi 246問 審査結果取り込み（ステージング確認用）
 
-本ディレクトリは `level3.json` / `level4.json` 本体を変更せず、レビュー結果の取り込み案を隔離確認するためのものです。
+本ディレクトリは `データ/質問/level3.json` / `データ/質問/level4.json` 本体を変更せず、レビュー結果の取り込み案を隔離確認するためのものです。
 ユーザー回答: ステージングで確認 / レベル入替は指示通り / 20.05-L4は補強 / 厳密ゲート適用しない（軽量検証のみ）。
 
 ## 入力
@@ -42,7 +42,7 @@
 - 13.03-L3→L4 は既存13.03-L4とテーマ近接。両立／片方除外を要判断。
 - 20.01/02/03 のL3降格分は既存同番号L3と切分け済みだが、意味近接のため文言最終確認推奨。
 - content_warning は広めに付与しているため、本反映前に絞り込み推奨。
-- 本反映手順（承認後）: `level3-proposed.json` を `level3.json` へ追記、`level4-proposed.json` を `level4.json` へ追記し、`node tools/verify-question-dataset.mjs --enforce-quality-targets --summary` と `node --test tools/question-flow.test.mjs` を実行。
+- 本反映手順（承認後）: `level3-proposed.json` を `データ/質問/level3.json` へ追記、`level4-proposed.json` を `データ/質問/level4.json` へ追記し、`node tools/verify-question-dataset.mjs --enforce-quality-targets --summary` と `node --test tools/question-flow.test.mjs` を実行。
 
 ## 再生成方法
 - `node /tmp/build-staging.mjs` → `node /tmp/fix-persp.mjs` → `node /tmp/light-verify.mjs`

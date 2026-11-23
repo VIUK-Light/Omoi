@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const preview = '/preview/omoi-v3/';
-const records = Object.fromEntries([3, 4].map(level => [level, JSON.parse(fs.readFileSync(path.join(__dirname, `../level${level}.json`), 'utf8'))]));
+const records = Object.fromEntries([3, 4].map(level => [level, JSON.parse(fs.readFileSync(path.join(__dirname, `../データ/質問/level${level}.json`), 'utf8'))]));
 const samples = [
   { id: 'relationship-009', level: 4, summary: false },
   { id: 'l4-relationship-002', level: 4 },

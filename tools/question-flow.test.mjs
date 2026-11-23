@@ -5,9 +5,9 @@ import vm from 'node:vm';
 import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
-const { encodeSharePayload } = require('../question-share.js');
-const progressCode = fs.readFileSync(new URL('../progress.js', import.meta.url), 'utf8');
-const questionCode = fs.readFileSync(new URL('../question.js', import.meta.url), 'utf8');
+const { encodeSharePayload } = require('../スクリプト/question-share.js');
+const progressCode = fs.readFileSync(new URL('../スクリプト/progress.js', import.meta.url), 'utf8');
+const questionCode = fs.readFileSync(new URL('../スクリプト/question.js', import.meta.url), 'utf8');
 const code = `${progressCode}\n${questionCode}`;
 const cards = Array.from({ length: 5 }, (_, i) => ({
     id: `test-${i}`, level: 2, question: `Question ${i}`
@@ -161,7 +161,7 @@ function setup(search = '?level=2', storage = createStorage()) {
         respondAll(byLevel, ok = true) {
             for (const request of requests) {
                 if (request.resolved) continue;
-                const match = /^level(\d+)(-furigana)?\.json$/.exec(request.url);
+                const match = /(?:^|\/)level(\d+)(-furigana)?\.json$/.exec(request.url);
                 if (!match) continue;
                 const level = Number(match[1]);
                 const data = byLevel[level] ?? [];
@@ -224,7 +224,7 @@ test('confirming finish ends the session', async () => {
     app.element('finishButton').click();
     app.element('confirmFinishButton').click();
     assert.equal(app.element('finishConfirmDialog').open, false);
-    assert.equal(app.location.href, 'index.html');
+    assert.equal(app.location.href, '../../index.html');
     assert.equal(app.element('finishButton').disabled, true);
 });
 

@@ -22,14 +22,14 @@ test('homepage navigation places the database link at the left edge', async ({ p
 });
 
 test('question picker loads the current question index', async ({ page }) => {
-  await page.goto('/custom-select.html');
+  await page.goto('/画面/選択/custom-select.html');
   await expect(page.locator('#customError')).toBeHidden();
   await expect(page.locator('#labelSelectionSummary')).toContainText('カテゴリー');
 });
 
 test('database selection supports three fixed card sizes and matching paper orientations', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 });
-  await page.goto('/database.html');
+  await page.goto('/画面/データベース/database.html');
   await expect(page.locator('.db-card').first()).toBeVisible();
   await expect(page.locator('#dbCount')).toContainText('問を表示');
 

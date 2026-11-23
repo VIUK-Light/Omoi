@@ -28,7 +28,7 @@ review.innerHTML = `
         <a href="NOTICE">NOTICE</a>
     </nav>
     <div class="preview-review__credit">
-        <img src="../../viuk-light.jpg" alt="">
+        <img src="../../画像/viuk-light.jpg" alt="">
         <span>原版 <a href="https://viuk-light.org/omoi.html">Omoi / VIUK-Light</a> をもとにしたv3試作</span>
     </div>
 `;

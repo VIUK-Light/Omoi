@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test('furigana settings open at the top right and preserve the original question text', async ({ page }) => {
-  await page.goto('/question.html?level=2');
+  await page.goto('/画面/対話/question.html?level=2');
 
   await expect(page.locator('#nextQuestionButton')).toBeEnabled();
   const question = page.locator('#questionText');
@@ -35,7 +35,7 @@ test('furigana settings open at the top right and preserve the original question
 });
 
 test('furigana keeps a clear gap from the body text with smaller readings', async ({ page }) => {
-  await page.goto('/question.html?level=4&id=youth-pregnancy-025');
+  await page.goto('/画面/対話/question.html?level=4&id=youth-pregnancy-025');
   await expect(page.locator('#questionText')).toContainText('それでも理由を聞きたいと思う？');
 
   await page.locator('.furigana-settings > summary').click();
@@ -75,7 +75,7 @@ test('furigana keeps a clear gap from the body text with smaller readings', asyn
 });
 
 test('text size has three levels and classroom UI is only shown in student mode', async ({ page }) => {
-  await page.goto('/question.html?level=2');
+  await page.goto('/画面/対話/question.html?level=2');
 
   await expect(page.locator('#nextQuestionButton')).toBeEnabled();
   const question = page.locator('#questionText');
