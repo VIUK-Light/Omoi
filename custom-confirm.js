@@ -48,6 +48,35 @@ function persist() {
     window.OmoiProgress.writeSelection(selection);
 }
 
+function hasQuestionDetail(question) {
+    return Boolean(question) && (Boolean(question.scenario) ||
+        Boolean(question.summary && question.summary !== question.question) ||
+        (Array.isArray(question.hints) && question.hints.length > 0) ||
+        (Array.isArray(question.terms) && question.terms.length > 0));
+}
+
+// 削除のたびに画面全体を作り直すため、フォーカスが外れた要素があると
+// ブラウザによってはスクロール位置が先頭に戻ってしまう。位置とフォーカスを保つ。
+function rerenderPreservingView(mutate, afterRender) {
+    const scrollPosition = window.scrollY;
+    if (document.activeElement instanceof HTMLElement) {
+        document.activeElement.blur();
+    }
+    mutate();
+    persist();
+    render();
+    if (typeof afterRender === "function") afterRender();
+    window.scrollTo(0, scrollPosition);
+}
+
+function focusNth(container, selector, index) {
+    if (!container) return;
+    const targets = [...container.querySelectorAll(selector)];
+    if (targets.length === 0) return;
+    const target = targets[Math.max(0, Math.min(index, targets.length - 1))];
+    target.focus({ preventScroll: true });
+}
+
 function renderDetail(container, question) {
     if (!container) return;
     container.replaceChildren();
@@ -133,6 +162,7 @@ function render() {
             for (const labelId of labels) {
                 const card = document.createElement("div");
                 card.className = "confirm-category-card";
+                card.dataset.labelId = labelId;
 
                 const head = document.createElement("div");
                 head.className = "confirm-category-head";
@@ -164,9 +194,12 @@ function render() {
                 remove.textContent = "×";
                 remove.setAttribute("aria-label", `${labelName(labelId)} を選択から外す`);
                 remove.addEventListener("click", function () {
-                    selection.labels = selection.labels.filter(id => id !== labelId);
-                    persist();
-                    render();
+                    const index = [...labelList.querySelectorAll(".confirm-category-card")].indexOf(card);
+                    rerenderPreservingView(function () {
+                        selection.labels = selection.labels.filter(id => id !== labelId);
+                    }, function () {
+                        focusNth(labelList, ".confirm-remove", index);
+                    });
                 });
 
                 actions.append(toggle, remove);
@@ -187,10 +220,7 @@ function render() {
                     text.className = "confirm-nested-text";
                     text.textContent = q.question;
 
-                    const hasDetail = Boolean(q.scenario) ||
-                        (q.summary && q.summary !== q.question) ||
-                        (Array.isArray(q.hints) && q.hints.length > 0) ||
-                        (Array.isArray(q.terms) && q.terms.length > 0);
+                    const hasDetail = hasQuestionDetail(q);
 
                     const detailToggle = hasDetail ? document.createElement("button") : null;
                     if (detailToggle) {
@@ -207,10 +237,20 @@ function render() {
                     remove.textContent = "×";
                     remove.setAttribute("aria-label", `「${q.question}」をこのカテゴリーから外す`);
                     remove.addEventListener("click", function () {
-                        if (!Array.isArray(selection.excludedIds)) selection.excludedIds = [];
-                        if (!selection.excludedIds.includes(q.id)) selection.excludedIds.push(q.id);
-                        persist();
-                        render();
+                        const index = [...questionUl.children].indexOf(li);
+                        rerenderPreservingView(function () {
+                            if (!Array.isArray(selection.excludedIds)) selection.excludedIds = [];
+                            if (!selection.excludedIds.includes(q.id)) selection.excludedIds.push(q.id);
+                        }, function () {
+                            const targetCard = labelList?.querySelector(
+                                '.confirm-category-card[data-label-id="' + labelId + '"]'
+                            );
+                            focusNth(
+                                targetCard?.querySelector(".confirm-nested-list"),
+                                ".confirm-nested-remove",
+                                index
+                            );
+                        });
                     });
 
                     const detail = document.createElement("div");
@@ -263,20 +303,55 @@ function render() {
                 const question = questionsById.get(id);
                 const item = document.createElement("li");
                 item.className = "confirm-item";
+
+                const row = document.createElement("div");
+                row.className = "confirm-item-row";
+
                 const text = document.createElement("span");
                 text.className = "confirm-item-text";
                 text.textContent = question ? question.question : id;
+
+                row.append(text);
+
+                const hasDetail = hasQuestionDetail(question);
+                const detail = document.createElement("div");
+                detail.className = "confirm-nested-detail";
+                detail.hidden = true;
+
+                if (hasDetail) {
+                    const detailToggle = document.createElement("button");
+                    detailToggle.type = "button";
+                    detailToggle.className = "confirm-item-detail-toggle";
+                    detailToggle.textContent = "i";
+                    detailToggle.setAttribute("aria-label", `「${text.textContent}」の詳細を見る`);
+                    detailToggle.setAttribute("aria-expanded", "false");
+                    detailToggle.addEventListener("click", function () {
+                        const willOpen = detail.hidden;
+                        detail.hidden = !willOpen;
+                        detailToggle.setAttribute("aria-expanded", String(willOpen));
+                        detailToggle.classList.toggle("is-open", willOpen);
+                    });
+                    renderDetail(detail, question);
+                    row.append(detailToggle);
+                }
+
                 const remove = document.createElement("button");
                 remove.type = "button";
                 remove.className = "confirm-remove";
                 remove.textContent = "×";
                 remove.setAttribute("aria-label", "この問いを選択から外す");
                 remove.addEventListener("click", function () {
-                    selection.ids = selection.ids.filter(value => value !== id);
-                    persist();
-                    render();
+                    const index = [...questionList.children].indexOf(item);
+                    rerenderPreservingView(function () {
+                        selection.ids = selection.ids.filter(value => value !== id);
+                    }, function () {
+                        focusNth(questionList, ".confirm-remove", index);
+                    });
                 });
-                item.append(text, remove);
+                row.append(remove);
+
+                item.append(row);
+                if (hasDetail) item.append(detail);
                 questionList.append(item);
             }
         }
@@ -296,20 +371,30 @@ function render() {
                 const question = questionsById.get(id);
                 const item = document.createElement("li");
                 item.className = "confirm-item";
+
+                const row = document.createElement("div");
+                row.className = "confirm-item-row";
+
                 const text = document.createElement("span");
                 text.className = "confirm-item-text";
                 text.textContent = question ? question.question : id;
+
                 const restore = document.createElement("button");
                 restore.type = "button";
                 restore.className = "confirm-remove";
-                restore.textContent = "戻";
+                restore.textContent = "↩︎";
                 restore.setAttribute("aria-label", "除外を解除する");
                 restore.addEventListener("click", function () {
-                    selection.excludedIds = selection.excludedIds.filter(v => v !== id);
-                    persist();
-                    render();
+                    const index = [...excludedList.children].indexOf(item);
+                    rerenderPreservingView(function () {
+                        selection.excludedIds = selection.excludedIds.filter(v => v !== id);
+                    }, function () {
+                        focusNth(excludedList, ".confirm-remove", index);
+                    });
                 });
-                item.append(text, restore);
+
+                row.append(text, restore);
+                item.append(row);
                 excludedList.append(item);
             }
         }
