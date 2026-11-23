@@ -56,11 +56,13 @@ h1 {
 
 .home-nav {
     position: absolute;
-    top: 24px;
+    top: 12px;
     right: 24px;
 
     display: flex;
+    align-items: center;
     gap: 16px;
+    height: 36px;
 }
 
 .home-nav a {
