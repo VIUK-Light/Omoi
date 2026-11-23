@@ -117,6 +117,15 @@ test('generated label files match the current question data', () => {
     };
     const buildQuestionSearchText = record => {
         const parts = [];
+        for (const value of [
+            record.category,
+            record.topic,
+            record.perspective,
+            record.role,
+            ...(Array.isArray(record.content_warning) ? record.content_warning : [])
+        ]) {
+            if (typeof value === 'string' && value) parts.push(value);
+        }
         if (typeof record.scenario === 'string' && record.scenario) parts.push(record.scenario);
         const summary = flattenSummary(record.summary);
         if (summary) parts.push(summary);
@@ -142,13 +151,20 @@ test('generated label files match the current question data', () => {
             return term.definition ? term.term + ': ' + term.definition : term.term;
         }).filter(Boolean) : [];
 
+    const addedDates = read('question-added-dates.json').dates;
     assert.deepEqual(read('questions-index.json'), {
-        version: 5,
+        version: 6,
         questions: rows.map((row, i) => ({
             index: i,
             id: row.id,
             level: row.level,
             category: row.category,
+            topic: row.topic ?? '',
+            perspective: row.perspective ?? '',
+            role: row.role ?? '',
+            sensitivity: row.sensitivity ?? null,
+            content_warning: row.content_warning ?? [],
+            addedDate: addedDates[row.id],
             labels: row.labels,
             question: row.question,
             search: buildQuestionSearchText(row),
@@ -158,6 +174,17 @@ test('generated label files match the current question data', () => {
             terms: buildQuestionTerms(row),
             reading: buildQuestionReading(row)
         }))
+    });
+
+    assert.deepEqual(read('question-details-index.json'), {
+        version: 1,
+        questions: rows.filter(row => (Array.isArray(row.summary) && row.summary.length > 0) || row.detail)
+            .map(row => ({
+                id: row.id,
+                summaryBlocks: Array.isArray(row.summary) ? row.summary : [],
+                detail: row.detail ?? null
+            }))
+            .sort((left, right) => left.id.localeCompare(right.id))
     });
 
     assert.deepEqual(read('question-filter-index.json'), {

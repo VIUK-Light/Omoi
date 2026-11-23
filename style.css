@@ -57,10 +57,12 @@ h1 {
 .home-nav {
     position: absolute;
     top: 12px;
+    left: 24px;
     right: 24px;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 16px;
     height: 36px;
 }
@@ -198,9 +200,7 @@ h1 {
 
 @media (max-width: 560px) {
     .home-nav {
-        left: 24px;
-        right: 24px;
-        justify-content: flex-end;
+        justify-content: space-between;
         gap: 12px;
     }
 }

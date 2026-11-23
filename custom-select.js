@@ -741,7 +741,7 @@ function validateLabelsDocument(documentValue) {
 }
 
 function validateIndexDocument(documentValue, labelMap) {
-    if (!documentValue || documentValue.version !== 5 ||
+    if (!documentValue || ![5, 6].includes(documentValue.version) ||
         !Array.isArray(documentValue.questions)) {
         throw new Error("Invalid questions index.");
     }

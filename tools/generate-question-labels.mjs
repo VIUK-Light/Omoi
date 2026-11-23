@@ -41,6 +41,15 @@ function buildQuestionTerms(record) {
 
 function buildQuestionSearchText(record) {
     const parts = [];
+    for (const value of [
+        record.category,
+        record.topic,
+        record.perspective,
+        record.role,
+        ...(Array.isArray(record.content_warning) ? record.content_warning : [])
+    ]) {
+        if (typeof value === "string" && value) parts.push(value);
+    }
     if (typeof record.scenario === "string" && record.scenario) parts.push(record.scenario);
     const summary = flattenSummary(record.summary);
     if (summary) parts.push(summary);
@@ -100,6 +109,8 @@ const activeLevels = [2, 3, 4];
 const levelFiles = activeLevels.map(level => `level${level}.json`);
 const labelsFile = "labels.json";
 const indexFile = "questions-index.json";
+const detailIndexFile = "question-details-index.json";
+const addedDatesFile = "question-added-dates.json";
 const filterIndexFile = "question-filter-index.json";
 const argumentsSet = new Set(process.argv.slice(2));
 const write = argumentsSet.has("--write");
@@ -110,9 +121,10 @@ if (argumentsSet.has("--help")) {
     console.log(`Usage: node tools/generate-question-labels.mjs [options]
 
 Options:
-  --write            Add missing labels, then write labels.json and questions-index.json.
+  --write            Add missing labels and write the generated question indexes.
   --rewrite-labels   Re-apply rules to every card instead of preserving existing labels.
   --check            Validate labels and generated files without writing (default).
+                     Added dates are maintained in question-added-dates.json.
   --json             Print the report as JSON.
   --help             Show this help.`);
     process.exit(0);
@@ -202,6 +214,20 @@ function readJsonFile(fileName) {
     }
 }
 
+const addedDatesDocument = readJsonFile(addedDatesFile);
+let addedDates = {};
+if (!addedDatesDocument.exists) {
+    addFinding("missing_added_dates_file", `${addedDatesFile} is missing.`);
+} else if (addedDatesDocument.error) {
+    addFinding("invalid_added_dates_json", `Could not parse ${addedDatesFile}: ${addedDatesDocument.error.message}`);
+} else if (!addedDatesDocument.value?.dates ||
+    typeof addedDatesDocument.value.dates !== "object" ||
+    Array.isArray(addedDatesDocument.value.dates)) {
+    addFinding("invalid_added_dates", `${addedDatesFile} must contain a dates object.`);
+} else {
+    addedDates = addedDatesDocument.value.dates;
+}
+
 function buildExpectedIndexes() {
     const existingIndex = readJsonFile(indexFile);
     const existingById = new Map();
@@ -227,6 +253,7 @@ function buildExpectedIndexes() {
 
     const usedIndices = new Set();
     const entries = [];
+    const detailEntries = [];
     for (const record of records) {
         let index = existingById.get(record.id);
         if (!Number.isInteger(index) || index < 0 || usedIndices.has(index)) {
@@ -235,12 +262,26 @@ function buildExpectedIndexes() {
             nextIndex += 1;
         }
         usedIndices.add(index);
+        const addedDate = addedDates[record.id];
+        if (typeof addedDate !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(addedDate)) {
+            addFinding("missing_added_date", `${record.id} has no valid added date in ${addedDatesFile}.`, {
+                id: typeof record.id === "string" ? record.id : undefined
+            });
+        }
         const reading = buildQuestionReading(record);
+        const summaryBlocks = Array.isArray(record.summary) ? record.summary : [];
+        const detail = record.detail && typeof record.detail === "object" ? record.detail : null;
         entries.push({
             index,
             id: record.id,
             level: record.level,
             category: record.category,
+            topic: typeof record.topic === "string" ? record.topic : "",
+            perspective: typeof record.perspective === "string" ? record.perspective : "",
+            role: typeof record.role === "string" ? record.role : "",
+            sensitivity: Number.isInteger(record.sensitivity) ? record.sensitivity : null,
+            content_warning: Array.isArray(record.content_warning) ? record.content_warning : [],
+            addedDate: typeof addedDate === "string" ? addedDate : "",
             labels: record.labels,
             question: record.question,
             search: buildQuestionSearchText(record),
@@ -248,22 +289,26 @@ function buildExpectedIndexes() {
             summary: flattenSummary(record.summary),
             hints: buildQuestionHints(record),
             terms: buildQuestionTerms(record),
-            reading,
-            sensitivity: record.sensitivity
+            reading
         });
+        if (summaryBlocks.length > 0 || detail) {
+            detailEntries.push({ id: record.id, summaryBlocks, detail });
+        }
     }
 
     entries.sort((left, right) => left.index - right.index);
-    const questions = entries.map(({ sensitivity, ...question }) => question);
+    detailEntries.sort((left, right) => left.id.localeCompare(right.id));
+    const questions = entries;
     const filterQuestions = entries.map(({ index, id, level, sensitivity, labels, question, reading }) => ({
         index, id, level, sensitivity, labels, question, reading
     }));
-    return { questions, filterQuestions };
+    return { questions, filterQuestions, details: detailEntries };
 }
 
-const { questions: expectedQuestions, filterQuestions: expectedFilterQuestions } = buildExpectedIndexes();
-const expectedIndexDocument = { version: 5, questions: expectedQuestions };
+const { questions: expectedQuestions, filterQuestions: expectedFilterQuestions, details: expectedDetails } = buildExpectedIndexes();
+const expectedIndexDocument = { version: 6, questions: expectedQuestions };
 const expectedFilterIndexDocument = { version: 1, questions: expectedFilterQuestions };
+const expectedDetailIndexDocument = { version: 1, questions: expectedDetails };
 
 if (write) {
     for (const [fileName, { records, indent }] of levels) {
@@ -278,6 +323,10 @@ if (write) {
     fs.writeFileSync(
         path.join(repositoryRoot, indexFile),
         `${JSON.stringify(expectedIndexDocument, null, 2)}\n`
+    );
+    fs.writeFileSync(
+        path.join(repositoryRoot, detailIndexFile),
+        `${JSON.stringify(expectedDetailIndexDocument, null, 2)}\n`
     );
     fs.writeFileSync(
         path.join(repositoryRoot, filterIndexFile),
@@ -303,6 +352,16 @@ if (write) {
     } else if (actualIndex.value?.version !== expectedIndexDocument.version ||
         JSON.stringify(actualIndex.value?.questions) !== JSON.stringify(expectedQuestions)) {
         addFinding("stale_index_file", `${indexFile} differs from the level data; run with --write.`);
+    }
+
+    const actualDetailIndex = readJsonFile(detailIndexFile);
+    if (!actualDetailIndex.exists) {
+        addFinding("missing_detail_index_file", `${detailIndexFile} is missing; run with --write.`);
+    } else if (actualDetailIndex.error) {
+        addFinding("invalid_detail_index_json", `Could not parse ${detailIndexFile}: ${actualDetailIndex.error.message}`);
+    } else if (actualDetailIndex.value?.version !== expectedDetailIndexDocument.version ||
+        JSON.stringify(actualDetailIndex.value?.questions) !== JSON.stringify(expectedDetails)) {
+        addFinding("stale_detail_index_file", `${detailIndexFile} differs from the level data; run with --write.`);
     }
 
     const actualFilterIndex = readJsonFile(filterIndexFile);

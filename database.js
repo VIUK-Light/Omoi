@@ -23,21 +23,26 @@ function normalizeSearch(value) {
 }
 
 async function loadData() {
-    const [labelsDoc, indexDoc] = await Promise.all([
+    const [labelsDoc, indexDoc, detailIndexDoc] = await Promise.all([
         fetch("labels.json").then(r => r.json()),
-        fetch("questions-index.json").then(r => r.json())
+        fetch("questions-index.json").then(r => r.json()),
+        fetch("question-details-index.json").then(r => r.json())
     ]);
+    if (!Array.isArray(indexDoc.questions) || !Array.isArray(detailIndexDoc.questions)) {
+        throw new Error("Question index data is invalid.");
+    }
     for (const label of labelsDoc.labels ?? []) labelsById.set(label.id, label);
+    const detailsById = new Map(detailIndexDoc.questions.map(question => [question.id, question]));
     questions = (indexDoc.questions ?? []).map(q => ({
-        id: q.id,
-        level: q.level,
-        category: q.category,
-        labels: q.labels ?? [],
-        question: q.question,
+        ...q,
+        ...detailsById.get(q.id),
+        labels: Array.isArray(q.labels) ? q.labels : [],
         scenario: q.scenario ?? "",
         summary: q.summary ?? "",
-        hints: q.hints ?? [],
-        terms: q.terms ?? [],
+        summaryBlocks: Array.isArray(q.summaryBlocks) ? q.summaryBlocks : [],
+        hints: Array.isArray(q.hints) ? q.hints : [],
+        terms: Array.isArray(q.terms) ? q.terms : [],
+        content_warning: Array.isArray(q.content_warning) ? q.content_warning : [],
         reading: q.reading ?? "",
         search: q.search ?? ""
     }));
@@ -90,7 +95,11 @@ function filteredQuestions() {
         if (category !== "all" && q.category !== category) return false;
         if (theme !== "all" && !q.labels.includes(theme)) return false;
         if (!term) return true;
-        const haystack = [q.question, q.category, q.search, ...q.labels.map(l => labelsById.get(l)?.name ?? l)].join(" ").normalize("NFKC").toLowerCase();
+        const detailSearch = [
+            q.detail?.text,
+            ...(Array.isArray(q.detail?.sources) ? q.detail.sources.map(source => source?.title) : [])
+        ].filter(Boolean);
+        const haystack = [q.question, q.category, q.search, ...detailSearch, ...q.labels.map(l => labelsById.get(l)?.name ?? l)].join(" ").normalize("NFKC").toLowerCase();
         if (haystack.includes(term)) return true;
         if (readingTerm && q.reading) return normalizeSearch(q.reading).includes(normalizeSearch(readingTerm));
         return false;
@@ -99,11 +108,31 @@ function filteredQuestions() {
 
 function labelName(id) { return labelsById.get(id)?.name ?? id; }
 
+function formatAddedDate(value) {
+    const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value ?? "");
+    return match ? `${match[1]}年${match[2]}月${match[3]}日` : "日付不明";
+}
+
+function termParts(term) {
+    if (typeof term === "string") {
+        const separator = term.indexOf(":");
+        return separator > 0
+            ? { term: term.slice(0, separator).trim(), definition: term.slice(separator + 1).trim() }
+            : { term: "", definition: term.trim() };
+    }
+    if (!term || typeof term !== "object") return null;
+    const name = typeof term.term === "string" ? term.term.trim() : "";
+    const definition = typeof term.definition === "string" ? term.definition.trim() : "";
+    return name || definition ? { term: name, definition } : null;
+}
+
 function hasDetail(q) {
     return Boolean(q.scenario) || (q.summary && q.summary !== q.question) ||
         (Array.isArray(q.hints) && q.hints.length > 0) ||
         (Array.isArray(q.terms) && q.terms.length > 0) ||
-        (q.detail && q.detail.text);
+        (q.detail && (q.detail.text || q.detail.sources?.length)) ||
+        q.addedDate || q.topic || q.perspective || q.role ||
+        Number.isInteger(q.sensitivity) || q.content_warning.length > 0;
 }
 
 function renderCard(q) {
@@ -117,6 +146,7 @@ function renderCard(q) {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.className = "db-card-check";
+    checkbox.setAttribute("aria-label", `この問いを選択：${q.question}`);
     checkbox.checked = selectedIds.has(q.id);
     checkbox.addEventListener("change", () => {
         if (checkbox.checked) selectedIds.add(q.id); else selectedIds.delete(q.id);
@@ -144,7 +174,11 @@ function renderCard(q) {
 
     const meta = document.createElement("p");
     meta.className = "db-card-meta";
-    meta.textContent = [labelName(q.labels.find(l => l !== "student") ?? ""), q.category].filter(Boolean).join(" ・ ");
+    meta.textContent = [
+        ...q.labels.filter(label => label !== "student").map(labelName),
+        q.category ? `カテゴリ: ${q.category}` : "",
+        `追加日: ${formatAddedDate(q.addedDate)}`
+    ].filter(Boolean).join(" ・ ");
     card.append(meta);
 
     if (q.scenario) {
@@ -158,8 +192,35 @@ function renderCard(q) {
         const details = document.createElement("details");
         details.className = "db-card-details";
         const summary = document.createElement("summary");
-        summary.textContent = "詳細を見る";
+        summary.textContent = "全情報を見る";
         details.append(summary);
+
+        const metadata = [
+            ["追加日", formatAddedDate(q.addedDate)],
+            ["カテゴリ", q.category],
+            ["テーマ", q.topic ? labelName(q.topic) : ""],
+            ["視点", q.perspective],
+            ["役割", q.role],
+            ["センシティブ度", Number.isInteger(q.sensitivity) ? String(q.sensitivity) : ""],
+            ["内容上の注意", q.content_warning.map(labelName).join("、")],
+            ["ラベル", q.labels.map(labelName).join("、")]
+        ].filter(([, value]) => Boolean(value));
+        if (metadata.length > 0) {
+            const block = document.createElement("div");
+            block.className = "db-detail-block";
+            const heading = document.createElement("strong");
+            heading.textContent = "基本情報";
+            const list = document.createElement("dl");
+            metadata.forEach(([label, value]) => {
+                const term = document.createElement("dt");
+                term.textContent = label;
+                const description = document.createElement("dd");
+                description.textContent = value;
+                list.append(term, description);
+            });
+            block.append(heading, list);
+            details.append(block);
+        }
 
         if (q.scenario) {
             const block = document.createElement("div");
@@ -169,7 +230,34 @@ function renderCard(q) {
             block.append(h, body);
             details.append(block);
         }
-        if (q.summary && q.summary !== q.question) {
+        if (q.summaryBlocks.length > 0) {
+            const block = document.createElement("div");
+            block.className = "db-detail-block";
+            const h = document.createElement("strong"); h.textContent = "要点";
+            block.append(h);
+            q.summaryBlocks.forEach(summaryBlock => {
+                if (summaryBlock?.type === "text" && typeof summaryBlock.text === "string") {
+                    const body = document.createElement("p");
+                    body.textContent = summaryBlock.text;
+                    block.append(body);
+                } else if (summaryBlock?.type === "bullets" && Array.isArray(summaryBlock.items)) {
+                    const list = document.createElement("ul");
+                    summaryBlock.items.forEach(item => {
+                        if (!item || typeof item !== "object") return;
+                        const entry = document.createElement("li");
+                        if (typeof item.label === "string" && item.label) {
+                            const label = document.createElement("strong");
+                            label.textContent = `${item.label}：`;
+                            entry.append(label);
+                        }
+                        if (typeof item.text === "string") entry.append(document.createTextNode(item.text));
+                        list.append(entry);
+                    });
+                    block.append(list);
+                }
+            });
+            details.append(block);
+        } else if (q.summary && q.summary !== q.question) {
             const block = document.createElement("div");
             block.className = "db-detail-block";
             const h = document.createElement("strong"); h.textContent = "要点";
@@ -191,28 +279,46 @@ function renderCard(q) {
             block.className = "db-detail-block";
             const h = document.createElement("strong"); h.textContent = "用語";
             const dl = document.createElement("dl");
-            q.terms.forEach(t => {
-                const dt = document.createElement("dt"); dt.textContent = t.term;
-                const dd = document.createElement("dd"); dd.textContent = t.definition;
+            q.terms.map(termParts).filter(Boolean).forEach(term => {
+                const dt = document.createElement("dt"); dt.textContent = term.term;
+                const dd = document.createElement("dd"); dd.textContent = term.definition;
                 dl.append(dt, dd);
             });
             block.append(h, dl);
             details.append(block);
         }
-        if (q.detail && q.detail.text) {
+        if (q.detail && (q.detail.text || q.detail.sources?.length)) {
             const block = document.createElement("div");
             block.className = "db-detail-block";
             const h = document.createElement("strong"); h.textContent = "背景説明";
-            const body = document.createElement("p"); body.textContent = q.detail.text;
-            block.append(h, body);
+            block.append(h);
+            if (q.detail.text) {
+                const body = document.createElement("p"); body.textContent = q.detail.text;
+                block.append(body);
+            }
             if (Array.isArray(q.detail.sources) && q.detail.sources.length > 0) {
                 const ul = document.createElement("ul");
                 ul.className = "db-sources";
                 q.detail.sources.forEach(s => {
+                    if (!s || typeof s !== "object") return;
                     const li = document.createElement("li");
-                    const a = document.createElement("a");
-                    a.href = s.url; a.target = "_blank"; a.rel = "noopener noreferrer"; a.textContent = s.title;
-                    li.append(a); ul.append(li);
+                    const title = typeof s.title === "string" ? s.title : "";
+                    const url = typeof s.url === "string" ? s.url : "";
+                    if (/^https?:\/\//i.test(url)) {
+                        const a = document.createElement("a");
+                        a.href = url; a.target = "_blank"; a.rel = "noopener noreferrer";
+                        a.textContent = title || url;
+                        li.append(a);
+                    } else if (title) {
+                        li.textContent = title;
+                    }
+                    if (url) {
+                        const urlText = document.createElement("span");
+                        urlText.className = "db-source-url";
+                        urlText.textContent = url;
+                        li.append(" ", urlText);
+                    }
+                    if (li.childNodes.length > 0) ul.append(li);
                 });
                 block.append(ul);
             }

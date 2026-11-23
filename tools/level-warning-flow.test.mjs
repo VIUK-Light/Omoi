@@ -19,7 +19,7 @@ const labelsDocument = {
     ]
 };
 const indexDocument = {
-    version: 5,
+    version: 6,
     questions: [
         { index: 0, id: 'q1', level: 2, category: 'school_and_youth', labels: ['student', 'school'], question: 'Q1', search: '', scenario: '', summary: '', hints: [], terms: [], reading: 'q1' },
         { index: 1, id: 'q2', level: 3, category: 'school_and_youth', labels: ['student', 'school'], question: 'Q2', search: '', scenario: '', summary: '', hints: [], terms: [], reading: 'q2' },
