@@ -225884,5 +225884,3112 @@
         "text": "。"
       }
     ]
+  },
+  "dating-app-001": {
+    "question": [
+      {
+        "text": "ほとんどマッチしない"
+      },
+      {
+        "ruby": "状況",
+        "reading": "じょうきょう"
+      },
+      {
+        "text": "でも、あなたは"
+      },
+      {
+        "ruby": "課金",
+        "reading": "かきん"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "続け",
+        "reading": "つづけ"
+      },
+      {
+        "text": "ますか？"
+      },
+      {
+        "ruby": "続ける",
+        "reading": "つづける"
+      },
+      {
+        "text": "としたら、どこまで"
+      },
+      {
+        "ruby": "許容",
+        "reading": "きょよう"
+      },
+      {
+        "text": "できますか？"
+      }
+    ],
+    "scenario": [
+      {
+        "text": "あなたは"
+      },
+      {
+        "ruby": "男性",
+        "reading": "だんせい"
+      },
+      {
+        "text": "で、マッチングアプリを"
+      },
+      {
+        "ruby": "使っ",
+        "reading": "つかっ"
+      },
+      {
+        "text": "ています。いいねを"
+      },
+      {
+        "ruby": "増やし",
+        "reading": "ふやし"
+      },
+      {
+        "text": "たり、プロフィールを"
+      },
+      {
+        "ruby": "目立た",
+        "reading": "めだた"
+      },
+      {
+        "text": "せたりするために"
+      },
+      {
+        "ruby": "課金",
+        "reading": "かきん"
+      },
+      {
+        "text": "しています。しかし、"
+      },
+      {
+        "ruby": "自分",
+        "reading": "じぶん"
+      },
+      {
+        "text": "より"
+      },
+      {
+        "ruby": "顔",
+        "reading": "かお"
+      },
+      {
+        "text": "も"
+      },
+      {
+        "ruby": "年収",
+        "reading": "ねんしゅう"
+      },
+      {
+        "text": "も"
+      },
+      {
+        "ruby": "上",
+        "reading": "うえ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "男性",
+        "reading": "だんせい"
+      },
+      {
+        "text": "にばかり"
+      },
+      {
+        "ruby": "女性",
+        "reading": "じょせい"
+      },
+      {
+        "text": "が"
+      },
+      {
+        "ruby": "集まっ",
+        "reading": "あつまっ"
+      },
+      {
+        "text": "ていると"
+      },
+      {
+        "ruby": "感じ",
+        "reading": "かんじ"
+      },
+      {
+        "text": "ます。あなたにはほとんどマッチせず、"
+      },
+      {
+        "ruby": "毎月",
+        "reading": "まいつき"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "課金",
+        "reading": "かきん"
+      },
+      {
+        "text": "だけが"
+      },
+      {
+        "ruby": "続い",
+        "reading": "つづい"
+      },
+      {
+        "text": "ています。\n\n"
+      },
+      {
+        "ruby": "周囲",
+        "reading": "しゅうい"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "男性",
+        "reading": "だんせい"
+      },
+      {
+        "text": "からも、"
+      },
+      {
+        "ruby": "同じ",
+        "reading": "おなじ"
+      },
+      {
+        "text": "ような"
+      },
+      {
+        "ruby": "経験",
+        "reading": "けいけん"
+      },
+      {
+        "text": "をしたという"
+      },
+      {
+        "ruby": "話",
+        "reading": "はなし"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "聞き",
+        "reading": "きき"
+      },
+      {
+        "text": "ます。"
+      }
+    ],
+    "summary.0.items.0.label": [
+      {
+        "ruby": "決める",
+        "reading": "きめる"
+      },
+      {
+        "text": "こと"
+      }
+    ],
+    "summary.0.items.0.text": [
+      {
+        "ruby": "課金",
+        "reading": "かきん"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "続ける",
+        "reading": "つづける"
+      },
+      {
+        "text": "か、やめるか、"
+      },
+      {
+        "ruby": "使い方",
+        "reading": "つかいかた"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "変える",
+        "reading": "かえる"
+      },
+      {
+        "text": "か"
+      }
+    ],
+    "summary.0.items.1.label": [
+      {
+        "ruby": "考え",
+        "reading": "かんがえ"
+      },
+      {
+        "text": "たいこと"
+      }
+    ],
+    "summary.0.items.1.text": [
+      {
+        "ruby": "期待",
+        "reading": "きたい"
+      },
+      {
+        "text": "と"
+      },
+      {
+        "ruby": "現実",
+        "reading": "げんじつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "差",
+        "reading": "さ"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "自己",
+        "reading": "じこ"
+      },
+      {
+        "ruby": "評価",
+        "reading": "ひょうか"
+      },
+      {
+        "text": "への"
+      },
+      {
+        "ruby": "影響",
+        "reading": "えいきょう"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "お金",
+        "reading": "おかね"
+      },
+      {
+        "text": "と"
+      },
+      {
+        "ruby": "時間",
+        "reading": "じかん"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "使い方",
+        "reading": "つかいかた"
+      }
+    ],
+    "summary.0.items.2.label": [
+      {
+        "ruby": "見落とし",
+        "reading": "みおとし"
+      },
+      {
+        "text": "がちなこと"
+      }
+    ],
+    "summary.0.items.2.text": [
+      {
+        "text": "アプリによって"
+      },
+      {
+        "ruby": "利用",
+        "reading": "りよう"
+      },
+      {
+        "ruby": "者",
+        "reading": "しゃ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "層",
+        "reading": "そう"
+      },
+      {
+        "text": "や"
+      },
+      {
+        "ruby": "表示",
+        "reading": "ひょうじ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "仕組み",
+        "reading": "しくみ"
+      },
+      {
+        "text": "が"
+      },
+      {
+        "ruby": "違う",
+        "reading": "ちがう"
+      },
+      {
+        "text": "こと、"
+      },
+      {
+        "ruby": "課金",
+        "reading": "かきん"
+      },
+      {
+        "text": "がマッチを"
+      },
+      {
+        "ruby": "保証",
+        "reading": "ほしょう"
+      },
+      {
+        "text": "しないこと"
+      }
+    ],
+    "hints.0": [
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "立場",
+        "reading": "たちば"
+      },
+      {
+        "text": "では、"
+      },
+      {
+        "ruby": "何",
+        "reading": "なに"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "確かめ",
+        "reading": "たしかめ"
+      },
+      {
+        "text": "たい？"
+      }
+    ],
+    "hints.1": [
+      {
+        "ruby": "お金",
+        "reading": "おかね"
+      },
+      {
+        "text": "ではなく、"
+      },
+      {
+        "ruby": "時間",
+        "reading": "じかん"
+      },
+      {
+        "text": "や"
+      },
+      {
+        "ruby": "別",
+        "reading": "べつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "手段",
+        "reading": "しゅだん"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "変え",
+        "reading": "かえ"
+      },
+      {
+        "text": "たらどうなる？"
+      }
+    ],
+    "hints.2": [
+      {
+        "text": "「"
+      },
+      {
+        "ruby": "続け",
+        "reading": "つづけ"
+      },
+      {
+        "text": "たい"
+      },
+      {
+        "ruby": "理由",
+        "reading": "りゆう"
+      },
+      {
+        "text": "」は、"
+      },
+      {
+        "ruby": "期待",
+        "reading": "きたい"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "習慣",
+        "reading": "しゅうかん"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "見栄",
+        "reading": "みえ"
+      },
+      {
+        "text": "のどれに"
+      },
+      {
+        "ruby": "近い",
+        "reading": "ちかい"
+      },
+      {
+        "text": "？"
+      }
+    ]
+  },
+  "sexless-marriage-001": {
+    "question": [
+      {
+        "ruby": "妻",
+        "reading": "つま"
+      },
+      {
+        "text": "（または"
+      },
+      {
+        "ruby": "夫",
+        "reading": "おっと"
+      },
+      {
+        "text": "）が「"
+      },
+      {
+        "ruby": "触れ",
+        "reading": "ふれ"
+      },
+      {
+        "text": "られたくない」と"
+      },
+      {
+        "ruby": "言う",
+        "reading": "いう"
+      },
+      {
+        "ruby": "中",
+        "reading": "なか"
+      },
+      {
+        "text": "で、"
+      },
+      {
+        "ruby": "夫婦",
+        "reading": "ふうふ"
+      },
+      {
+        "text": "としてこれからどう"
+      },
+      {
+        "ruby": "向き合う",
+        "reading": "むきあう"
+      },
+      {
+        "text": "？"
+      }
+    ],
+    "scenario": [
+      {
+        "text": "あなたは"
+      },
+      {
+        "ruby": "結婚",
+        "reading": "けっこん"
+      },
+      {
+        "text": "しています。"
+      },
+      {
+        "ruby": "妻",
+        "reading": "つま"
+      },
+      {
+        "text": "（または"
+      },
+      {
+        "ruby": "夫",
+        "reading": "おっと"
+      },
+      {
+        "text": "）とのセックスレスが"
+      },
+      {
+        "ruby": "長年",
+        "reading": "ながねん"
+      },
+      {
+        "ruby": "続い",
+        "reading": "つづい"
+      },
+      {
+        "text": "ています。あなたは"
+      },
+      {
+        "ruby": "不満",
+        "reading": "ふまん"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "感じ",
+        "reading": "かんじ"
+      },
+      {
+        "text": "ていますが、"
+      },
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "は「"
+      },
+      {
+        "ruby": "触れ",
+        "reading": "ふれ"
+      },
+      {
+        "text": "られたくない」と"
+      },
+      {
+        "ruby": "言い",
+        "reading": "いい"
+      },
+      {
+        "text": "ます。"
+      }
+    ],
+    "summary.0.items.0.label": [
+      {
+        "ruby": "決める",
+        "reading": "きめる"
+      },
+      {
+        "text": "こと"
+      }
+    ],
+    "summary.0.items.0.text": [
+      {
+        "ruby": "不満",
+        "reading": "ふまん"
+      },
+      {
+        "text": "をどう"
+      },
+      {
+        "ruby": "伝える",
+        "reading": "つたえる"
+      },
+      {
+        "text": "か、"
+      },
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "形",
+        "reading": "かたち"
+      },
+      {
+        "text": "をどう"
+      },
+      {
+        "ruby": "見直す",
+        "reading": "みなおす"
+      },
+      {
+        "text": "か"
+      }
+    ],
+    "summary.0.items.1.label": [
+      {
+        "ruby": "考え",
+        "reading": "かんがえ"
+      },
+      {
+        "text": "たいこと"
+      }
+    ],
+    "summary.0.items.1.text": [
+      {
+        "ruby": "身体",
+        "reading": "しんたい"
+      },
+      {
+        "ruby": "的",
+        "reading": "てき"
+      },
+      {
+        "text": "な"
+      },
+      {
+        "ruby": "親密",
+        "reading": "しんみつ"
+      },
+      {
+        "text": "さと"
+      },
+      {
+        "ruby": "精神",
+        "reading": "せいしん"
+      },
+      {
+        "ruby": "的",
+        "reading": "てき"
+      },
+      {
+        "text": "な"
+      },
+      {
+        "ruby": "親密",
+        "reading": "しんみつ"
+      },
+      {
+        "text": "さの"
+      },
+      {
+        "ruby": "違い",
+        "reading": "ちがい"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "拒否",
+        "reading": "きょひ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "意味",
+        "reading": "いみ"
+      }
+    ],
+    "summary.0.items.2.label": [
+      {
+        "ruby": "見落とし",
+        "reading": "みおとし"
+      },
+      {
+        "text": "がちなこと"
+      }
+    ],
+    "summary.0.items.2.text": [
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "境界",
+        "reading": "きょうかい"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "尊重",
+        "reading": "そんちょう"
+      },
+      {
+        "text": "することと、"
+      },
+      {
+        "ruby": "自分",
+        "reading": "じぶん"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "感情",
+        "reading": "かんじょう"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "隠す",
+        "reading": "かくす"
+      },
+      {
+        "text": "ことの"
+      },
+      {
+        "ruby": "違い",
+        "reading": "ちがい"
+      }
+    ],
+    "hints.0": [
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "立場",
+        "reading": "たちば"
+      },
+      {
+        "text": "では、"
+      },
+      {
+        "ruby": "何",
+        "reading": "なに"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "確かめ",
+        "reading": "たしかめ"
+      },
+      {
+        "text": "たい？"
+      }
+    ],
+    "hints.1": [
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "が「"
+      },
+      {
+        "ruby": "触れ",
+        "reading": "ふれ"
+      },
+      {
+        "text": "られたくない」と"
+      },
+      {
+        "ruby": "感じる",
+        "reading": "かんじる"
+      },
+      {
+        "ruby": "理由",
+        "reading": "りゆう"
+      },
+      {
+        "text": "を、"
+      },
+      {
+        "ruby": "決めつけ",
+        "reading": "きめつけ"
+      },
+      {
+        "text": "ずにどう"
+      },
+      {
+        "ruby": "確かめ",
+        "reading": "たしかめ"
+      },
+      {
+        "text": "られる？"
+      }
+    ],
+    "hints.2": [
+      {
+        "ruby": "親密",
+        "reading": "しんみつ"
+      },
+      {
+        "text": "さを、"
+      },
+      {
+        "ruby": "性行為",
+        "reading": "せいこうい"
+      },
+      {
+        "ruby": "以外",
+        "reading": "いがい"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "形",
+        "reading": "かたち"
+      },
+      {
+        "text": "で"
+      },
+      {
+        "ruby": "表す",
+        "reading": "あらわす"
+      },
+      {
+        "text": "ことはできる？"
+      }
+    ]
+  },
+  "dna-testing-001": {
+    "question": [
+      {
+        "ruby": "出生",
+        "reading": "しゅっしょう"
+      },
+      {
+        "ruby": "時",
+        "reading": "じ"
+      },
+      {
+        "text": "のDNA"
+      },
+      {
+        "ruby": "鑑定",
+        "reading": "かんてい"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "全員",
+        "reading": "ぜんいん"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "義務づける",
+        "reading": "ぎむづける"
+      },
+      {
+        "text": "ことに"
+      },
+      {
+        "ruby": "賛成",
+        "reading": "さんせい"
+      },
+      {
+        "text": "ですか？"
+      },
+      {
+        "ruby": "反対",
+        "reading": "はんたい"
+      },
+      {
+        "text": "ですか？"
+      }
+    ],
+    "scenario": [
+      {
+        "text": "あなたはこれから"
+      },
+      {
+        "ruby": "子ども",
+        "reading": "こども"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "持つ",
+        "reading": "もつ"
+      },
+      {
+        "ruby": "予定",
+        "reading": "よてい"
+      },
+      {
+        "text": "です。\n\n"
+      },
+      {
+        "ruby": "仮に",
+        "reading": "かりに"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "子ども",
+        "reading": "こども"
+      },
+      {
+        "text": "が"
+      },
+      {
+        "ruby": "生まれ",
+        "reading": "うまれ"
+      },
+      {
+        "text": "た"
+      },
+      {
+        "ruby": "際",
+        "reading": "さい"
+      },
+      {
+        "text": "に、"
+      },
+      {
+        "ruby": "父親",
+        "reading": "ちちおや"
+      },
+      {
+        "text": "と"
+      },
+      {
+        "ruby": "子ども",
+        "reading": "こども"
+      },
+      {
+        "text": "のDNA"
+      },
+      {
+        "ruby": "鑑定",
+        "reading": "かんてい"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "全員",
+        "reading": "ぜんいん"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "義務づける",
+        "reading": "ぎむづける"
+      },
+      {
+        "ruby": "制度",
+        "reading": "せいど"
+      },
+      {
+        "text": "が"
+      },
+      {
+        "ruby": "提案",
+        "reading": "ていあん"
+      },
+      {
+        "text": "されたとします。\n\nこれによって、"
+      },
+      {
+        "ruby": "血縁",
+        "reading": "けつえん"
+      },
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "がない"
+      },
+      {
+        "ruby": "場合",
+        "reading": "ばあい"
+      },
+      {
+        "text": "でも、"
+      },
+      {
+        "ruby": "父親",
+        "reading": "ちちおや"
+      },
+      {
+        "text": "が"
+      },
+      {
+        "ruby": "早い",
+        "reading": "はやい"
+      },
+      {
+        "ruby": "段階",
+        "reading": "だんかい"
+      },
+      {
+        "text": "で"
+      },
+      {
+        "ruby": "事実",
+        "reading": "じじつ"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "知る",
+        "reading": "しる"
+      },
+      {
+        "text": "ことができます。"
+      },
+      {
+        "ruby": "一方",
+        "reading": "いっぽう"
+      },
+      {
+        "text": "で、"
+      },
+      {
+        "ruby": "夫婦",
+        "reading": "ふうふ"
+      },
+      {
+        "ruby": "間",
+        "reading": "かん"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "信頼",
+        "reading": "しんらい"
+      },
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "が"
+      },
+      {
+        "ruby": "壊れ",
+        "reading": "こわれ"
+      },
+      {
+        "text": "たり、"
+      },
+      {
+        "ruby": "家族",
+        "reading": "かぞく"
+      },
+      {
+        "text": "のプライバシーが"
+      },
+      {
+        "ruby": "侵害",
+        "reading": "しんがい"
+      },
+      {
+        "text": "されたりする"
+      },
+      {
+        "ruby": "可能",
+        "reading": "かのう"
+      },
+      {
+        "ruby": "性",
+        "reading": "せい"
+      },
+      {
+        "text": "もあります。"
+      }
+    ],
+    "summary.0.items.0.label": [
+      {
+        "ruby": "決める",
+        "reading": "きめる"
+      },
+      {
+        "text": "こと"
+      }
+    ],
+    "summary.0.items.0.text": [
+      {
+        "ruby": "義務",
+        "reading": "ぎむ"
+      },
+      {
+        "ruby": "化",
+        "reading": "か"
+      },
+      {
+        "text": "への"
+      },
+      {
+        "ruby": "賛否",
+        "reading": "さんぴ"
+      },
+      {
+        "text": "と、その"
+      },
+      {
+        "ruby": "理由",
+        "reading": "りゆう"
+      }
+    ],
+    "summary.0.items.1.label": [
+      {
+        "ruby": "考え",
+        "reading": "かんがえ"
+      },
+      {
+        "text": "たいこと"
+      }
+    ],
+    "summary.0.items.1.text": [
+      {
+        "ruby": "父親",
+        "reading": "ちちおや"
+      },
+      {
+        "text": "や"
+      },
+      {
+        "ruby": "子ども",
+        "reading": "こども"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "知る",
+        "reading": "しる"
+      },
+      {
+        "ruby": "権利",
+        "reading": "けんり"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "家族",
+        "reading": "かぞく"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "信頼",
+        "reading": "しんらい"
+      },
+      {
+        "text": "、プライバシー、"
+      },
+      {
+        "ruby": "子ども",
+        "reading": "こども"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "利益",
+        "reading": "りえき"
+      }
+    ],
+    "summary.0.items.2.label": [
+      {
+        "ruby": "見落とし",
+        "reading": "みおとし"
+      },
+      {
+        "text": "がちなこと"
+      }
+    ],
+    "summary.0.items.2.text": [
+      {
+        "ruby": "全員",
+        "reading": "ぜんいん"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "義務",
+        "reading": "ぎむ"
+      },
+      {
+        "ruby": "化",
+        "reading": "か"
+      },
+      {
+        "text": "することと、"
+      },
+      {
+        "ruby": "必要",
+        "reading": "ひつよう"
+      },
+      {
+        "text": "な"
+      },
+      {
+        "ruby": "場合",
+        "reading": "ばあい"
+      },
+      {
+        "text": "にのみ"
+      },
+      {
+        "ruby": "行う",
+        "reading": "おこなう"
+      },
+      {
+        "text": "ことの"
+      },
+      {
+        "ruby": "違い",
+        "reading": "ちがい"
+      }
+    ],
+    "hints.0": [
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "立場",
+        "reading": "たちば"
+      },
+      {
+        "text": "では、"
+      },
+      {
+        "ruby": "何",
+        "reading": "なに"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "確かめ",
+        "reading": "たしかめ"
+      },
+      {
+        "text": "たい？"
+      }
+    ],
+    "hints.1": [
+      {
+        "text": "「"
+      },
+      {
+        "ruby": "事実",
+        "reading": "じじつ"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "早く",
+        "reading": "はやく"
+      },
+      {
+        "ruby": "知る",
+        "reading": "しる"
+      },
+      {
+        "text": "」ことと「"
+      },
+      {
+        "ruby": "家族",
+        "reading": "かぞく"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "安心",
+        "reading": "あんしん"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "守る",
+        "reading": "まもる"
+      },
+      {
+        "text": "」ことは、どこで"
+      },
+      {
+        "ruby": "衝突",
+        "reading": "しょうとつ"
+      },
+      {
+        "text": "する？"
+      }
+    ],
+    "hints.2": [
+      {
+        "ruby": "義務",
+        "reading": "ぎむ"
+      },
+      {
+        "ruby": "化",
+        "reading": "か"
+      },
+      {
+        "text": "しなくても、"
+      },
+      {
+        "ruby": "必要",
+        "reading": "ひつよう"
+      },
+      {
+        "text": "な"
+      },
+      {
+        "ruby": "人",
+        "reading": "ひと"
+      },
+      {
+        "text": "が"
+      },
+      {
+        "ruby": "知る",
+        "reading": "しる"
+      },
+      {
+        "ruby": "方法",
+        "reading": "ほうほう"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "整える",
+        "reading": "ととのえる"
+      },
+      {
+        "text": "ことはできる？"
+      }
+    ]
+  },
+  "repeated-infidelity-001": {
+    "question": [
+      {
+        "ruby": "過去",
+        "reading": "かこ"
+      },
+      {
+        "text": "にも"
+      },
+      {
+        "ruby": "浮気",
+        "reading": "うわき"
+      },
+      {
+        "text": "をしていたパートナーが"
+      },
+      {
+        "ruby": "再び",
+        "reading": "ふたたび"
+      },
+      {
+        "ruby": "浮気",
+        "reading": "うわき"
+      },
+      {
+        "text": "したとき、"
+      },
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "続ける",
+        "reading": "つづける"
+      },
+      {
+        "text": "かどうかを"
+      },
+      {
+        "ruby": "何で",
+        "reading": "なんで"
+      },
+      {
+        "ruby": "判断",
+        "reading": "はんだん"
+      },
+      {
+        "text": "しますか？"
+      }
+    ],
+    "scenario": [
+      {
+        "text": "あなたはパートナーがいます。パートナーが"
+      },
+      {
+        "ruby": "浮気",
+        "reading": "うわき"
+      },
+      {
+        "text": "をしたことがわかりました。"
+      },
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "は「"
+      },
+      {
+        "ruby": "今回",
+        "reading": "こんかい"
+      },
+      {
+        "text": "は"
+      },
+      {
+        "ruby": "一",
+        "reading": "いち"
+      },
+      {
+        "ruby": "度",
+        "reading": "ど"
+      },
+      {
+        "text": "きりだった」「"
+      },
+      {
+        "ruby": "君",
+        "reading": "きみ"
+      },
+      {
+        "text": "が"
+      },
+      {
+        "ruby": "一番",
+        "reading": "いちばん"
+      },
+      {
+        "text": "だ」と"
+      },
+      {
+        "ruby": "言っ",
+        "reading": "いっ"
+      },
+      {
+        "text": "ています。ただ、"
+      },
+      {
+        "ruby": "過去",
+        "reading": "かこ"
+      },
+      {
+        "text": "にも"
+      },
+      {
+        "ruby": "浮気",
+        "reading": "うわき"
+      },
+      {
+        "text": "をしていたことがあります。"
+      }
+    ],
+    "summary.0.items.0.label": [
+      {
+        "ruby": "決める",
+        "reading": "きめる"
+      },
+      {
+        "text": "こと"
+      }
+    ],
+    "summary.0.items.0.text": [
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "続ける",
+        "reading": "つづける"
+      },
+      {
+        "text": "か、"
+      },
+      {
+        "ruby": "見直す",
+        "reading": "みなおす"
+      },
+      {
+        "text": "か、"
+      },
+      {
+        "ruby": "条件",
+        "reading": "じょうけん"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "決める",
+        "reading": "きめる"
+      },
+      {
+        "text": "か"
+      }
+    ],
+    "summary.0.items.1.label": [
+      {
+        "ruby": "考え",
+        "reading": "かんがえ"
+      },
+      {
+        "text": "たいこと"
+      }
+    ],
+    "summary.0.items.1.text": [
+      {
+        "ruby": "信頼",
+        "reading": "しんらい"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "修復",
+        "reading": "しゅうふく"
+      },
+      {
+        "ruby": "可能",
+        "reading": "かのう"
+      },
+      {
+        "ruby": "性",
+        "reading": "せい"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "言葉",
+        "reading": "ことば"
+      },
+      {
+        "text": "と"
+      },
+      {
+        "ruby": "行動",
+        "reading": "こうどう"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "一致",
+        "reading": "いっち"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "自分",
+        "reading": "じぶん"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "境界",
+        "reading": "きょうかい"
+      }
+    ],
+    "summary.0.items.2.label": [
+      {
+        "ruby": "見落とし",
+        "reading": "みおとし"
+      },
+      {
+        "text": "がちなこと"
+      }
+    ],
+    "summary.0.items.2.text": [
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "謝罪",
+        "reading": "しゃざい"
+      },
+      {
+        "text": "と、"
+      },
+      {
+        "ruby": "自分",
+        "reading": "じぶん"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "安全",
+        "reading": "あんぜん"
+      },
+      {
+        "text": "・"
+      },
+      {
+        "ruby": "尊厳",
+        "reading": "そんげん"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "確保",
+        "reading": "かくほ"
+      },
+      {
+        "text": "は"
+      },
+      {
+        "ruby": "別",
+        "reading": "べつ"
+      },
+      {
+        "text": "のこと"
+      }
+    ],
+    "hints.0": [
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "立場",
+        "reading": "たちば"
+      },
+      {
+        "text": "では、"
+      },
+      {
+        "ruby": "何",
+        "reading": "なに"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "確かめ",
+        "reading": "たしかめ"
+      },
+      {
+        "text": "たい？"
+      }
+    ],
+    "hints.1": [
+      {
+        "text": "「"
+      },
+      {
+        "ruby": "一度",
+        "reading": "いちど"
+      },
+      {
+        "text": "きり」と「"
+      },
+      {
+        "ruby": "過去",
+        "reading": "かこ"
+      },
+      {
+        "text": "にもあった」という"
+      },
+      {
+        "ruby": "事実",
+        "reading": "じじつ"
+      },
+      {
+        "text": "を、どう"
+      },
+      {
+        "ruby": "受け止める",
+        "reading": "うけとめる"
+      },
+      {
+        "text": "？"
+      }
+    ],
+    "hints.2": [
+      {
+        "ruby": "信頼",
+        "reading": "しんらい"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "取り戻す",
+        "reading": "とりもどす"
+      },
+      {
+        "text": "ために"
+      },
+      {
+        "ruby": "必要",
+        "reading": "ひつよう"
+      },
+      {
+        "text": "な"
+      },
+      {
+        "ruby": "条件",
+        "reading": "じょうけん"
+      },
+      {
+        "text": "は、"
+      },
+      {
+        "ruby": "誰",
+        "reading": "だれ"
+      },
+      {
+        "text": "が"
+      },
+      {
+        "ruby": "決める",
+        "reading": "きめる"
+      },
+      {
+        "text": "？"
+      }
+    ]
+  },
+  "attraction-to-other-001": {
+    "question": [
+      {
+        "ruby": "今",
+        "reading": "いま"
+      },
+      {
+        "text": "のパートナーがいるのに"
+      },
+      {
+        "ruby": "別",
+        "reading": "べつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "異性",
+        "reading": "いせい"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "強く",
+        "reading": "つよく"
+      },
+      {
+        "ruby": "惹か",
+        "reading": "ひか"
+      },
+      {
+        "text": "れたとき、その"
+      },
+      {
+        "ruby": "気持ち",
+        "reading": "きもち"
+      },
+      {
+        "text": "にどう"
+      },
+      {
+        "ruby": "向き合う",
+        "reading": "むきあう"
+      },
+      {
+        "text": "？"
+      }
+    ],
+    "scenario": [
+      {
+        "text": "あなたは"
+      },
+      {
+        "ruby": "交際",
+        "reading": "こうさい"
+      },
+      {
+        "ruby": "中",
+        "reading": "ちゅう"
+      },
+      {
+        "text": "です。"
+      },
+      {
+        "ruby": "今",
+        "reading": "いま"
+      },
+      {
+        "text": "のパートナーとの"
+      },
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "に、どこか"
+      },
+      {
+        "ruby": "物足りな",
+        "reading": "ものたりな"
+      },
+      {
+        "text": "さを"
+      },
+      {
+        "ruby": "感じ",
+        "reading": "かんじ"
+      },
+      {
+        "text": "ています。\n\nそんな"
+      },
+      {
+        "ruby": "中",
+        "reading": "なか"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "別",
+        "reading": "べつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "異性",
+        "reading": "いせい"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "強く",
+        "reading": "つよく"
+      },
+      {
+        "ruby": "惹か",
+        "reading": "ひか"
+      },
+      {
+        "text": "れるようになりました。"
+      },
+      {
+        "ruby": "今",
+        "reading": "いま"
+      },
+      {
+        "text": "のパートナーよりも"
+      },
+      {
+        "ruby": "魅力",
+        "reading": "みりょく"
+      },
+      {
+        "ruby": "的",
+        "reading": "てき"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "感じ",
+        "reading": "かんじ"
+      },
+      {
+        "text": "てしまい、"
+      },
+      {
+        "ruby": "実際",
+        "reading": "じっさい"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "持つ",
+        "reading": "もつ"
+      },
+      {
+        "text": "ことも"
+      },
+      {
+        "ruby": "考え",
+        "reading": "かんがえ"
+      },
+      {
+        "text": "ています。\n\n"
+      },
+      {
+        "ruby": "今",
+        "reading": "いま"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "恋人",
+        "reading": "こいびと"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "傷つけ",
+        "reading": "きずつけ"
+      },
+      {
+        "text": "たくない"
+      },
+      {
+        "ruby": "気持ち",
+        "reading": "きもち"
+      },
+      {
+        "text": "はありますが、"
+      },
+      {
+        "ruby": "自分",
+        "reading": "じぶん"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "気持ち",
+        "reading": "きもち"
+      },
+      {
+        "text": "にも"
+      },
+      {
+        "ruby": "嘘",
+        "reading": "うそ"
+      },
+      {
+        "text": "をつきたくありません。"
+      }
+    ],
+    "summary.0.items.0.label": [
+      {
+        "ruby": "決める",
+        "reading": "きめる"
+      },
+      {
+        "text": "こと"
+      }
+    ],
+    "summary.0.items.0.text": [
+      {
+        "ruby": "今",
+        "reading": "いま"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "続ける",
+        "reading": "つづける"
+      },
+      {
+        "text": "か、"
+      },
+      {
+        "ruby": "見直す",
+        "reading": "みなおす"
+      },
+      {
+        "text": "か、"
+      },
+      {
+        "ruby": "別",
+        "reading": "べつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "持つ",
+        "reading": "もつ"
+      },
+      {
+        "ruby": "前",
+        "reading": "まえ"
+      },
+      {
+        "text": "にどうするか"
+      }
+    ],
+    "summary.0.items.1.label": [
+      {
+        "ruby": "考え",
+        "reading": "かんがえ"
+      },
+      {
+        "text": "たいこと"
+      }
+    ],
+    "summary.0.items.1.text": [
+      {
+        "ruby": "魅力",
+        "reading": "みりょく"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "違い",
+        "reading": "ちがい"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "不満",
+        "reading": "ふまん"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "正直",
+        "reading": "しょうじき"
+      },
+      {
+        "text": "さと"
+      },
+      {
+        "ruby": "責任",
+        "reading": "せきにん"
+      }
+    ],
+    "summary.0.items.2.label": [
+      {
+        "ruby": "見落とし",
+        "reading": "みおとし"
+      },
+      {
+        "text": "がちなこと"
+      }
+    ],
+    "summary.0.items.2.text": [
+      {
+        "text": "「"
+      },
+      {
+        "ruby": "気持ち",
+        "reading": "きもち"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "正直",
+        "reading": "しょうじき"
+      },
+      {
+        "text": "になる」ことと「"
+      },
+      {
+        "ruby": "行動",
+        "reading": "こうどう"
+      },
+      {
+        "text": "をすぐ"
+      },
+      {
+        "ruby": "取る",
+        "reading": "とる"
+      },
+      {
+        "text": "」ことは"
+      },
+      {
+        "ruby": "同じ",
+        "reading": "おなじ"
+      },
+      {
+        "text": "ではない"
+      }
+    ],
+    "hints.0": [
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "立場",
+        "reading": "たちば"
+      },
+      {
+        "text": "では、"
+      },
+      {
+        "ruby": "何",
+        "reading": "なに"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "確かめ",
+        "reading": "たしかめ"
+      },
+      {
+        "text": "たい？"
+      }
+    ],
+    "hints.1": [
+      {
+        "ruby": "物足りな",
+        "reading": "ものたりな"
+      },
+      {
+        "text": "さは、"
+      },
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "問題",
+        "reading": "もんだい"
+      },
+      {
+        "text": "か、"
+      },
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "段階",
+        "reading": "だんかい"
+      },
+      {
+        "text": "か、"
+      },
+      {
+        "ruby": "自分",
+        "reading": "じぶん"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "期待",
+        "reading": "きたい"
+      },
+      {
+        "text": "か？"
+      }
+    ],
+    "hints.2": [
+      {
+        "ruby": "別",
+        "reading": "べつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "異性",
+        "reading": "いせい"
+      },
+      {
+        "text": "への"
+      },
+      {
+        "ruby": "魅力",
+        "reading": "みりょく"
+      },
+      {
+        "text": "は、"
+      },
+      {
+        "ruby": "今",
+        "reading": "いま"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "不足",
+        "reading": "ふそく"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "示し",
+        "reading": "しめし"
+      },
+      {
+        "text": "ているのか、それとも"
+      },
+      {
+        "ruby": "別",
+        "reading": "べつ"
+      },
+      {
+        "text": "のことか？"
+      }
+    ]
+  },
+  "oshi-katsu-001": {
+    "question": [
+      {
+        "ruby": "推し",
+        "reading": "おし"
+      },
+      {
+        "ruby": "活",
+        "reading": "かつ"
+      },
+      {
+        "text": "と"
+      },
+      {
+        "ruby": "恋人",
+        "reading": "こいびと"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "気持ち",
+        "reading": "きもち"
+      },
+      {
+        "text": "が"
+      },
+      {
+        "ruby": "衝突",
+        "reading": "しょうとつ"
+      },
+      {
+        "text": "したとき、"
+      },
+      {
+        "ruby": "自分",
+        "reading": "じぶん"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "楽しみ",
+        "reading": "たのしみ"
+      },
+      {
+        "text": "をどこまで"
+      },
+      {
+        "ruby": "優先",
+        "reading": "ゆうせん"
+      },
+      {
+        "text": "しますか？"
+      }
+    ],
+    "scenario": [
+      {
+        "text": "あなたは"
+      },
+      {
+        "ruby": "交際",
+        "reading": "こうさい"
+      },
+      {
+        "ruby": "中",
+        "reading": "ちゅう"
+      },
+      {
+        "text": "です。\n\n"
+      },
+      {
+        "ruby": "推し",
+        "reading": "おし"
+      },
+      {
+        "ruby": "活",
+        "reading": "かつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "一環",
+        "reading": "いっかん"
+      },
+      {
+        "text": "として、"
+      },
+      {
+        "ruby": "推し",
+        "reading": "おし"
+      },
+      {
+        "text": "にDMで「"
+      },
+      {
+        "ruby": "好き",
+        "reading": "すき"
+      },
+      {
+        "text": "」と"
+      },
+      {
+        "ruby": "伝え",
+        "reading": "つたえ"
+      },
+      {
+        "text": "ていました。"
+      },
+      {
+        "ruby": "推し",
+        "reading": "おし"
+      },
+      {
+        "text": "のことを「"
+      },
+      {
+        "ruby": "世界",
+        "reading": "せかい"
+      },
+      {
+        "text": "で"
+      },
+      {
+        "ruby": "一番",
+        "reading": "いちばん"
+      },
+      {
+        "text": "かっこよくて"
+      },
+      {
+        "ruby": "優しい",
+        "reading": "やさしい"
+      },
+      {
+        "text": "」「もし"
+      },
+      {
+        "ruby": "現実",
+        "reading": "げんじつ"
+      },
+      {
+        "text": "にいたら"
+      },
+      {
+        "ruby": "付き合っ",
+        "reading": "つきあっ"
+      },
+      {
+        "text": "ていたかもしれない」と"
+      },
+      {
+        "ruby": "本気",
+        "reading": "ほんき"
+      },
+      {
+        "text": "で"
+      },
+      {
+        "ruby": "感じ",
+        "reading": "かんじ"
+      },
+      {
+        "text": "ています。\n\n"
+      },
+      {
+        "ruby": "実際",
+        "reading": "じっさい"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "会っ",
+        "reading": "あっ"
+      },
+      {
+        "text": "たことは"
+      },
+      {
+        "ruby": "一",
+        "reading": "いち"
+      },
+      {
+        "ruby": "度",
+        "reading": "ど"
+      },
+      {
+        "text": "もなく、"
+      },
+      {
+        "ruby": "現実",
+        "reading": "げんじつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "恋愛",
+        "reading": "れんあい"
+      },
+      {
+        "text": "とは"
+      },
+      {
+        "ruby": "別",
+        "reading": "べつ"
+      },
+      {
+        "text": "だと"
+      },
+      {
+        "ruby": "考え",
+        "reading": "かんがえ"
+      },
+      {
+        "text": "ていました。しかし、"
+      },
+      {
+        "ruby": "いつの間にか",
+        "reading": "いつのまにか"
+      },
+      {
+        "ruby": "推し",
+        "reading": "おし"
+      },
+      {
+        "text": "への"
+      },
+      {
+        "ruby": "気持ち",
+        "reading": "きもち"
+      },
+      {
+        "text": "はかなり"
+      },
+      {
+        "ruby": "深く",
+        "reading": "ふかく"
+      },
+      {
+        "text": "なっています。\n\n"
+      },
+      {
+        "ruby": "恋人",
+        "reading": "こいびと"
+      },
+      {
+        "text": "はあなたの"
+      },
+      {
+        "ruby": "様子",
+        "reading": "ようす"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "気づき",
+        "reading": "きづき"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "嫉妬",
+        "reading": "しっと"
+      },
+      {
+        "text": "しています。"
+      }
+    ],
+    "summary.0.items.0.label": [
+      {
+        "ruby": "決める",
+        "reading": "きめる"
+      },
+      {
+        "text": "こと"
+      }
+    ],
+    "summary.0.items.0.text": [
+      {
+        "ruby": "推し",
+        "reading": "おし"
+      },
+      {
+        "ruby": "活",
+        "reading": "かつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "続け",
+        "reading": "つづけ"
+      },
+      {
+        "ruby": "方",
+        "reading": "かた"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "恋人",
+        "reading": "こいびと"
+      },
+      {
+        "text": "との"
+      },
+      {
+        "ruby": "境界",
+        "reading": "きょうかい"
+      },
+      {
+        "ruby": "線",
+        "reading": "せん"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "気持ち",
+        "reading": "きもち"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "伝え",
+        "reading": "つたえ"
+      },
+      {
+        "ruby": "方",
+        "reading": "かた"
+      }
+    ],
+    "summary.0.items.1.label": [
+      {
+        "ruby": "考え",
+        "reading": "かんがえ"
+      },
+      {
+        "text": "たいこと"
+      }
+    ],
+    "summary.0.items.1.text": [
+      {
+        "ruby": "推し",
+        "reading": "おし"
+      },
+      {
+        "text": "への"
+      },
+      {
+        "ruby": "恋愛",
+        "reading": "れんあい"
+      },
+      {
+        "ruby": "感情",
+        "reading": "かんじょう"
+      },
+      {
+        "text": "と"
+      },
+      {
+        "ruby": "現実",
+        "reading": "げんじつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "恋愛",
+        "reading": "れんあい"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "違い",
+        "reading": "ちがい"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "相手",
+        "reading": "あいて"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "嫉妬",
+        "reading": "しっと"
+      },
+      {
+        "text": "、"
+      },
+      {
+        "ruby": "自分",
+        "reading": "じぶん"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "楽しみ",
+        "reading": "たのしみ"
+      }
+    ],
+    "summary.0.items.2.label": [
+      {
+        "ruby": "見落とし",
+        "reading": "みおとし"
+      },
+      {
+        "text": "がちなこと"
+      }
+    ],
+    "summary.0.items.2.text": [
+      {
+        "text": "「"
+      },
+      {
+        "ruby": "実際",
+        "reading": "じっさい"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "会っ",
+        "reading": "あっ"
+      },
+      {
+        "text": "ていない」ことと「"
+      },
+      {
+        "ruby": "恋人",
+        "reading": "こいびと"
+      },
+      {
+        "text": "が"
+      },
+      {
+        "ruby": "傷つか",
+        "reading": "きずつか"
+      },
+      {
+        "text": "ない」ことは"
+      },
+      {
+        "ruby": "同じ",
+        "reading": "おなじ"
+      },
+      {
+        "text": "ではない。"
+      }
+    ],
+    "summary.0.items.3.label": [
+      {
+        "ruby": "見落とし",
+        "reading": "みおとし"
+      },
+      {
+        "text": "がちなこと"
+      }
+    ],
+    "summary.0.items.3.text": [
+      {
+        "ruby": "感情",
+        "reading": "かんじょう"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "持つ",
+        "reading": "もつ"
+      },
+      {
+        "text": "ことと、その"
+      },
+      {
+        "ruby": "感情",
+        "reading": "かんじょう"
+      },
+      {
+        "text": "をどのように"
+      },
+      {
+        "ruby": "行動",
+        "reading": "こうどう"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "移す",
+        "reading": "うつす"
+      },
+      {
+        "text": "かは"
+      },
+      {
+        "ruby": "別",
+        "reading": "べつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "問題",
+        "reading": "もんだい"
+      },
+      {
+        "text": "である。"
+      }
+    ],
+    "hints.0": [
+      {
+        "ruby": "恋人",
+        "reading": "こいびと"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "立場",
+        "reading": "たちば"
+      },
+      {
+        "text": "では、"
+      },
+      {
+        "ruby": "何",
+        "reading": "なに"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "確かめ",
+        "reading": "たしかめ"
+      },
+      {
+        "text": "たい？"
+      }
+    ],
+    "hints.1": [
+      {
+        "ruby": "推し",
+        "reading": "おし"
+      },
+      {
+        "text": "に「"
+      },
+      {
+        "ruby": "好き",
+        "reading": "すき"
+      },
+      {
+        "text": "」と"
+      },
+      {
+        "ruby": "伝える",
+        "reading": "つたえる"
+      },
+      {
+        "ruby": "行為",
+        "reading": "こうい"
+      },
+      {
+        "text": "は、"
+      },
+      {
+        "ruby": "恋人",
+        "reading": "こいびと"
+      },
+      {
+        "text": "からどのように"
+      },
+      {
+        "ruby": "見える",
+        "reading": "みえる"
+      },
+      {
+        "text": "？"
+      }
+    ],
+    "hints.2": [
+      {
+        "ruby": "推し",
+        "reading": "おし"
+      },
+      {
+        "ruby": "活",
+        "reading": "かつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "楽しみ",
+        "reading": "たのしみ"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "残し",
+        "reading": "のこし"
+      },
+      {
+        "text": "ながら、"
+      },
+      {
+        "ruby": "恋人",
+        "reading": "こいびと"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "安心",
+        "reading": "あんしん"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "増やす",
+        "reading": "ふやす"
+      },
+      {
+        "ruby": "方法",
+        "reading": "ほうほう"
+      },
+      {
+        "text": "はある？"
+      }
+    ],
+    "hints.3": [
+      {
+        "ruby": "推し",
+        "reading": "おし"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "向け",
+        "reading": "むけ"
+      },
+      {
+        "text": "た"
+      },
+      {
+        "ruby": "気持ち",
+        "reading": "きもち"
+      },
+      {
+        "text": "は、"
+      },
+      {
+        "ruby": "恋愛",
+        "reading": "れんあい"
+      },
+      {
+        "text": "に"
+      },
+      {
+        "ruby": "近い",
+        "reading": "ちかい"
+      },
+      {
+        "ruby": "憧れ",
+        "reading": "あこがれ"
+      },
+      {
+        "text": "なのか、それとも"
+      },
+      {
+        "ruby": "別",
+        "reading": "べつ"
+      },
+      {
+        "text": "の"
+      },
+      {
+        "ruby": "感情",
+        "reading": "かんじょう"
+      },
+      {
+        "text": "なのか？"
+      }
+    ],
+    "hints.4": [
+      {
+        "ruby": "推し",
+        "reading": "おし"
+      },
+      {
+        "ruby": "活",
+        "reading": "かつ"
+      },
+      {
+        "text": "を"
+      },
+      {
+        "ruby": "続け",
+        "reading": "つづけ"
+      },
+      {
+        "text": "ながら、"
+      },
+      {
+        "ruby": "恋人",
+        "reading": "こいびと"
+      },
+      {
+        "text": "との"
+      },
+      {
+        "ruby": "関係",
+        "reading": "かんけい"
+      },
+      {
+        "text": "も"
+      },
+      {
+        "ruby": "大切",
+        "reading": "たいせつ"
+      },
+      {
+        "text": "にするには、どのような"
+      },
+      {
+        "ruby": "工夫",
+        "reading": "くふう"
+      },
+      {
+        "text": "ができる？"
+      }
+    ]
   }
 }

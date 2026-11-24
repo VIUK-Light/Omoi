@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { REVIEW_BASE_COMMIT, ACTIVE_LEVELS, fingerprintQuestion, validateV3Review } from './verify-v3-review.mjs';
 
 function fixture() {
-    const baseByLevel = Object.fromEntries([[1, 163], [2, 80], [3, 301], [4, 362]].map(([level, count]) => [level,
+    const baseByLevel = Object.fromEntries([[1, 163], [2, 80], [3, 301], [4, 368]].map(([level, count]) => [level,
         Array.from({ length: count }, (_, index) => ({ id: `l${level}-${index}`, level, question: `Question ${level}/${index}`, scenario: 'Original situation', category: 'original' }))
     ]));
     const currentByLevel = structuredClone(baseByLevel);
@@ -19,7 +19,7 @@ function fixture() {
     return { review: { version: 1, baseCommit: REVIEW_BASE_COMMIT, activeLevels: [...ACTIVE_LEVELS], records }, currentByLevel, baseByLevel, currentRaw, baseRaw };
 }
 
-test('complete independent review permits omitted helpers and preserves all 743 active core cards', () => {
+test('complete independent review permits omitted helpers and preserves all 749 active core cards', () => {
     assert.deepEqual(validateV3Review(fixture()), []);
 });
 

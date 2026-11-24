@@ -90,7 +90,7 @@ test('the question picker filters by words and level and keeps a selected list',
 
   await page.locator('#tabQuestions').click();
   await expect(page.locator('#questionsPanel')).toBeVisible();
-  await expect(page.locator('#questionPickerStatus')).toContainText('743問', ready);
+  await expect(page.locator('#questionPickerStatus')).toContainText('749問', ready);
 
   const search = page.locator('#questionSearch');
   await search.fill('いじめ');
@@ -242,7 +242,7 @@ test('question search matches variant spellings via readings', async ({ page }) 
 
   const search = page.locator('#questionSearch');
   await search.fill('子供');
-  await expect(page.locator('#questionPickerStatus')).toContainText('75問', ready);
+  await expect(page.locator('#questionPickerStatus')).toContainText('76問', ready);
   await expect(page.locator('#questionPicker .question-pick').first()).toBeVisible();
   const visibleQuestions = await page.locator('#questionPicker .question-pick-question').allTextContents();
   expect(visibleQuestions.some(text => text.includes('子ども'))).toBe(true);

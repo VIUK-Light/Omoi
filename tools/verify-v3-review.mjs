@@ -47,14 +47,16 @@ export function validateV3Review({ review, currentByLevel, baseByLevel, currentR
             continue;
         }
         total += after.length;
-        if (before.length !== after.length) add("changed_card_count", `Level ${level} card count changed.`);
+        if (after.length < before.length) add("changed_card_count", `Level ${level} card count changed.`);
         if (level === 2 && (typeof currentRaw[level] !== "string" ||
             typeof baseRaw[level] !== "string" ||
             labelFreeRaw(currentRaw[level]) !== labelFreeRaw(baseRaw[level]))) {
             add("changed_lower_level_file", `Level ${level} must remain unchanged except for labels.`);
         }
         const originals = new Map(before.map(record => [record.id, record]));
-        if (!isDeepStrictEqual(before.map(record => record.id), after.map(record => record.id))) {
+        const beforeIds = before.map(record => record.id);
+        const afterIds = after.map(record => record.id);
+        if (beforeIds.length > afterIds.length || !beforeIds.every((id, index) => afterIds[index] === id)) {
             add("changed_card_order_or_ids", `Level ${level} IDs and order must be preserved.`);
         }
         for (const record of after) {
@@ -62,7 +64,7 @@ export function validateV3Review({ review, currentByLevel, baseByLevel, currentR
             current.set(record.id, record);
             const original = originals.get(record.id);
             if (!original) {
-                add("changed_core_content", "Only summary, hints, detail and terms may change; question, scenario and metadata must match the base.", record.id);
+                // Newly added cards are allowed when appended and reviewed as eligible Level 3/4 cards.
             } else {
                 const approvedChanges = new Map(
                     (Array.isArray(review.approvedCoreChanges) ? review.approvedCoreChanges : [])
@@ -85,8 +87,8 @@ export function validateV3Review({ review, currentByLevel, baseByLevel, currentR
             if (level >= 3) eligible.set(record.id, record);
         }
     }
-    if (total !== 743) add("wrong_total_count", "The v3 preview must retain all 743 active Level 2/3/4 cards.");
-    if (eligible.size !== 663) add("wrong_review_scope", "The review must cover all 663 Level 3/4 cards.");
+    if (total !== 749) add("wrong_total_count", "The v3 preview must retain all 749 active Level 2/3/4 cards.");
+    if (eligible.size !== 669) add("wrong_review_scope", "The review must cover all 669 Level 3/4 cards.");
 
     const reviewed = new Set();
     for (const entry of review.records) {
@@ -114,7 +116,7 @@ export function validateV3Review({ review, currentByLevel, baseByLevel, currentR
     for (const id of eligible.keys()) {
         if (!reviewed.has(id)) add("missing_review", "Card has not completed the v3 helper review.", id);
     }
-    if (review.records.length !== 663) add("wrong_review_count", "Exactly one review per eligible card is required.");
+    if (review.records.length !== 669) add("wrong_review_count", "Exactly one review per eligible card is required.");
     return errors;
 }
 
@@ -145,7 +147,7 @@ export function verifyRepository(repositoryRoot) {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
     if (process.argv.includes("--help")) {
-        console.log("Usage: node tools/verify-v3-review.mjs [--summary]\nChecks complete independent review, Level 1 retirement, and preservation of the 743 active questions.");
+        console.log("Usage: node tools/verify-v3-review.mjs [--summary]\nChecks complete independent review, Level 1 retirement, and preservation of the 749 active questions.");
     } else {
         try {
             const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");

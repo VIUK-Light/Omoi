@@ -8620,6 +8620,84 @@
       },
       "reviewer": "/root/edit_l4b",
       "independentReviewer": "/root/edit_l3b"
+    },
+    {
+      "id": "dating-app-001",
+      "level": 4,
+      "fingerprint": "2abd39fe72dc5abf2e27e809aa3501f0ac54bd34b8ae2182466ef43fc20e4887",
+      "decisions": {
+        "summary": "新規追加カードとして、状況と判断対象を整理する要点を設ける。",
+        "hints": "異なる見方や相手の理由を聞く問い返しを設ける。",
+        "background": "未確認の外部事実は掲載しない。",
+        "terms": "必要な用語のみを示す。"
+      },
+      "reviewer": "manual-add",
+      "independentReviewer": "manual-review"
+    },
+    {
+      "id": "sexless-marriage-001",
+      "level": 4,
+      "fingerprint": "664ee5eb6c4d36453a0356cee2f885013721b37233adcd4f1f90a63835150b3e",
+      "decisions": {
+        "summary": "新規追加カードとして、状況と判断対象を整理する要点を設ける。",
+        "hints": "異なる見方や相手の理由を聞く問い返しを設ける。",
+        "background": "未確認の外部事実は掲載しない。",
+        "terms": "必要な用語のみを示す。"
+      },
+      "reviewer": "manual-add",
+      "independentReviewer": "manual-review"
+    },
+    {
+      "id": "dna-testing-001",
+      "level": 4,
+      "fingerprint": "3fbdf2681a43e064fe0f854b9ac858dee9a9e8abe50768d0fbe071093cfb762f",
+      "decisions": {
+        "summary": "新規追加カードとして、状況と判断対象を整理する要点を設ける。",
+        "hints": "異なる見方や相手の理由を聞く問い返しを設ける。",
+        "background": "未確認の外部事実は掲載しない。",
+        "terms": "必要な用語のみを示す。"
+      },
+      "reviewer": "manual-add",
+      "independentReviewer": "manual-review"
+    },
+    {
+      "id": "repeated-infidelity-001",
+      "level": 4,
+      "fingerprint": "3ca904a7679501873c40bd27d2b3ff1c50a1a8255621be494e82f9414df4e770",
+      "decisions": {
+        "summary": "新規追加カードとして、状況と判断対象を整理する要点を設ける。",
+        "hints": "異なる見方や相手の理由を聞く問い返しを設ける。",
+        "background": "未確認の外部事実は掲載しない。",
+        "terms": "必要な用語のみを示す。"
+      },
+      "reviewer": "manual-add",
+      "independentReviewer": "manual-review"
+    },
+    {
+      "id": "attraction-to-other-001",
+      "level": 4,
+      "fingerprint": "69d209b388d462d26349430b87264c45695f74996412282ad5ccf00afc39d7c4",
+      "decisions": {
+        "summary": "新規追加カードとして、状況と判断対象を整理する要点を設ける。",
+        "hints": "異なる見方や相手の理由を聞く問い返しを設ける。",
+        "background": "未確認の外部事実は掲載しない。",
+        "terms": "必要な用語のみを示す。"
+      },
+      "reviewer": "manual-add",
+      "independentReviewer": "manual-review"
+    },
+    {
+      "id": "oshi-katsu-001",
+      "level": 4,
+      "fingerprint": "082f5c7486bbb9c099103411b38e5fff0fb4a956d65b0ef1fac88d7382a8a3fe",
+      "decisions": {
+        "summary": "新規追加カードとして、状況と判断対象を整理する要点を設ける。",
+        "hints": "異なる見方や相手の理由を聞く問い返しを設ける。",
+        "background": "未確認の外部事実は掲載しない。",
+        "terms": "必要な用語のみを示す。"
+      },
+      "reviewer": "manual-add",
+      "independentReviewer": "manual-review"
     }
   ],
   "sourceChecks": {

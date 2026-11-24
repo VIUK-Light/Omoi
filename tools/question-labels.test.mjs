@@ -97,7 +97,7 @@ test('generated label files match the current question data', () => {
     });
 
     const rows = [2, 3, 4].flatMap(level => read(`level${level}.json`));
-    assert.equal(rows.length, 743);
+    assert.equal(rows.length, 749);
     assert.equal(rows.filter(row => row.labels.includes('student')).length, 120);
     for (const row of rows) {
         assert.deepEqual(validateLabelList(row.labels), []);
