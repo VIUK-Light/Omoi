@@ -97,7 +97,13 @@
             if (!Number.isInteger(data.level) || !levelLabels[data.level]) return false;
         } else {
             if (!isMode(data.mode)) return false;
-            if (data.mode === "all" && (!Number.isInteger(data.level) || !levelLabels[data.level])) return false;
+            if (data.mode === "all") {
+                if (data.pickup === true) {
+                    if (data.level !== undefined) return false;
+                } else if (!Number.isInteger(data.level) || !levelLabels[data.level]) {
+                    return false;
+                }
+            }
             if (data.mode === "custom" && (!isStringArray(data.labels) || !isStringArray(data.selectedIds) ||
                 (data.excludedIds !== undefined && !isStringArray(data.excludedIds)))) return false;
             if (data.classroom !== undefined && typeof data.classroom !== "boolean") return false;
@@ -180,7 +186,11 @@
         const mode = data.version === 1 ? "all" : data.mode;
         url.searchParams.set("mode", mode);
         if (mode === "all") {
-            url.searchParams.set("level", String(data.level));
+            if (data.pickup === true) {
+                url.searchParams.set("pickup", "1");
+            } else {
+                url.searchParams.set("level", String(data.level));
+            }
             url.searchParams.set("id", data.ids[data.index]);
         }
         if (mode === "student" && data.version === 3 && data.student) {
@@ -213,6 +223,9 @@
             return `level:${levelNames[data.level]}｜${levelLabels[data.level]}・${position}`;
         }
         if (data.mode === "all") {
+            if (data.pickup === true) {
+                return `今月のピックアップ質問｜${data.ids.length}問・${position}`;
+            }
             return `level:${levelNames[data.level]}｜${levelLabels[data.level]}・${position}`;
         }
         if (data.mode === "student") {

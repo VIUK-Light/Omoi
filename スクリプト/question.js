@@ -17,6 +17,15 @@ const mode = isModeMalformed
     ? null
     : (modeFromUrl ?? (hasValidLevelParameter ? "all" : null));
 
+const pickupParameters = params.getAll("pickup");
+const hasPickupParameter = params.has("pickup");
+const pickupFromUrl = pickupParameters.length === 1 && pickupParameters[0] === "1";
+const isPickupParameterMalformed = hasPickupParameter && !pickupFromUrl;
+const isPickup = mode === "all" && pickupFromUrl;
+const pickupLevels = [2, 3, 4];
+const pickupQuestionsPerLevel = 10;
+const pickupQuestionsTotal = pickupLevels.length * pickupQuestionsPerLevel;
+
 const sharedIdValues = params.getAll("id");
 const hasSharedId = params.has("id");
 const sharedId = sharedIdValues.length === 1 ? sharedIdValues[0] : null;
@@ -46,10 +55,13 @@ const sharedCustomSelection = !hasSessionToken && mode === "custom" &&
     : null;
 
 const isRequestValid = !isModeMalformed &&
+    !isPickupParameterMalformed &&
     allowedModes.has(mode) &&
-    (mode !== "all" || hasValidLevelParameter) &&
+    (mode !== "all" ||
+        (isPickup ? !hasLevelParameter : hasValidLevelParameter)) &&
     (mode === "all" || !hasLevelParameter) &&
-    !(hasSharedId && mode !== "all");
+    !(hasSharedId && mode !== "all") &&
+    !(hasPickupParameter && mode !== "all");
 
 function parseThemeParameter(value) {
     if (typeof value !== "string" || value.trim() === "") return [];
@@ -118,7 +130,13 @@ function readSavedProgress() {
     const saved = window.OmoiProgress.read();
     if (!saved || saved.token !== sessionTokenFromUrl) return null;
     if (savedProgressMode(saved) !== mode) return null;
-    if (mode === "all" && saved.level !== level) return null;
+    if (mode === "all") {
+        if (isPickup) {
+            if (saved.pickup !== true) return null;
+        } else if (saved.level !== level) {
+            return null;
+        }
+    }
     return saved;
 }
 
@@ -647,6 +665,39 @@ function setQuestionSummaryOpen(isOpen) {
     questionSummaryToggle.textContent = isOpen ? "要点を閉じる" : "問いの要点を見る";
 }
 
+async function loadPickupQuestions(signal) {
+    const response = await fetch("../../データ/ピックアップ/questions.json", { signal, cache: "no-store" });
+    if (!response.ok) {
+        throw new Error("Pickup request failed.");
+    }
+    const data = await response.json();
+    if (!data || typeof data !== "object" || Array.isArray(data) ||
+        data.version !== 1 ||
+        !data.levels || typeof data.levels !== "object" || Array.isArray(data.levels)) {
+        throw new Error("Invalid pickup data.");
+    }
+
+    const entries = [];
+    const seen = new Set();
+    for (const levelValue of pickupLevels) {
+        const ids = data.levels[String(levelValue)];
+        if (!Array.isArray(ids) || ids.length !== pickupQuestionsPerLevel) {
+            throw new Error("Invalid pickup level group.");
+        }
+        for (const id of ids) {
+            if (typeof id !== "string" || id.trim() === "" || seen.has(id)) {
+                throw new Error("Invalid pickup question ID.");
+            }
+            seen.add(id);
+            entries.push({ id, level: levelValue });
+        }
+    }
+    if (entries.length !== pickupQuestionsTotal) {
+        throw new Error("Invalid pickup question total.");
+    }
+    return entries;
+}
+
 async function loadLevelDataset(levelValue, signal) {
     const [response, furiganaResponse] = await Promise.all([
         fetch("../../データ/質問/level" + levelValue + ".json", { signal }),
@@ -670,7 +721,7 @@ async function loadLevelDataset(levelValue, signal) {
 }
 
 function levelsForSession() {
-    if (mode === "all") return [level];
+    if (mode === "all") return isPickup ? pickupLevels : [level];
     if (mode === "student") {
         if (hasStudentSelection || sessionStudentSettings.source === "selection") {
             return [2, 3, 4];
@@ -758,10 +809,16 @@ async function loadQuestions() {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
     try {
-        const datasets = await Promise.all(
-            levelsForSession().map(levelValue =>
-                loadLevelDataset(levelValue, controller.signal))
-        );
+        const pickupEntriesPromise = isPickup && !savedProgress && !isSharedQuestion
+            ? loadPickupQuestions(controller.signal)
+            : Promise.resolve([]);
+        const [datasets, pickupEntries] = await Promise.all([
+            Promise.all(
+                levelsForSession().map(levelValue =>
+                    loadLevelDataset(levelValue, controller.signal))
+            ),
+            pickupEntriesPromise
+        ]);
         const allQuestions = [];
         readingsByQuestionId = {};
         for (const dataset of datasets) {
@@ -782,6 +839,17 @@ async function loadQuestions() {
                 return;
             }
             sessionQuestions = [target];
+        } else if (isPickup && !savedProgress) {
+            const picked = pickupEntries.map(entry => {
+                const question = byId.get(entry.id);
+                return question && question.level === entry.level ? question : null;
+            });
+            if (picked.some(question => !question)) {
+                showMessage("今月のピックアップ質問を読み込めませんでした。時間をおいて、もう一度お試しください。");
+                setState("empty");
+                return;
+            }
+            startNewSession(picked, { shuffle: false });
         } else if (savedProgress) {
             // 前回の並び順と位置を復元する。消えたIDは除く。
             const ordered = savedProgress.ids
@@ -797,6 +865,11 @@ async function loadQuestions() {
                     sessionCustomIds = Array.isArray(savedProgress.selectedIds) ? savedProgress.selectedIds : [];
                 }
             } else {
+                if (isPickup) {
+                    showMessage("前回の続きを復元できませんでした。選び方の画面から、もう一度お試しください。");
+                    setState("empty");
+                    return;
+                }
                 const fallback = fallbackPoolForSavedProgress(allQuestions, savedProgress);
                 if (fallback.length === 0) {
                     showMessage("前回の続きを復元できませんでした。条件を選び直してください。");
@@ -952,7 +1025,11 @@ function saveProgress() {
         classroom: classroomModeEnabled
     };
     if (mode === "all") {
-        data.level = level;
+        if (isPickup) {
+            data.pickup = true;
+        } else {
+            data.level = level;
+        }
     }
     if (mode === "custom") {
         data.labels = [...sessionCustomLabels];
@@ -1385,7 +1462,11 @@ function syncUrlWithCurrentQuestion(question) {
         url.searchParams.set("mode", mode);
     }
     if (isSharedQuestion || mode === "all") {
-        url.searchParams.set("level", String(isSharedQuestion ? question.level : level));
+        if (isPickup && !isSharedQuestion) {
+            url.searchParams.set("pickup", "1");
+        } else {
+            url.searchParams.set("level", String(isSharedQuestion ? question.level : level));
+        }
         url.searchParams.set("id", question.id);
     }
     if (!isSharedQuestion && sessionToken) {

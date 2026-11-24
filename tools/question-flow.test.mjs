@@ -172,6 +172,26 @@ function setup(search = '?level=2', storage = createStorage()) {
                     json: async () => structuredClone(body)
                 });
             }
+        },
+        respondPickup(byLevel, ok = true) {
+            const document = {
+                version: 1,
+                month: '2026-11',
+                title: '今月のピックアップ質問',
+                levels: Object.fromEntries([2, 3, 4].map(level => [
+                    String(level),
+                    (byLevel[level] ?? []).map(question => question.id)
+                ]))
+            };
+            for (const request of requests) {
+                if (request.resolved ||
+                    !/\/ピックアップ\/questions\.json$/.test(request.url)) continue;
+                request.resolved = true;
+                request.resolve({
+                    ok, status: ok ? 200 : 404,
+                    json: async () => structuredClone(document)
+                });
+            }
         }
     };
 }
@@ -190,6 +210,36 @@ test('loading blocks navigation, then all cards finish once', async () => {
     assert.equal(app.element('sessionComplete').hidden, false);
     assert.equal(app.element('nextQuestionButton').disabled, true);
     assert.equal(app.storage.getItem('omoi-progress'), null);
+});
+
+test('pickup starts in low-to-high file order without shuffling', async () => {
+    const byLevel = Object.fromEntries([2, 3, 4].map(level => [
+        level,
+        Array.from({ length: 10 }, (_, index) => ({
+            id: `pickup-${level}-${index}`,
+            level,
+            question: `Pickup ${level}-${index}`
+        }))
+    ]));
+    const app = setup('?mode=all&pickup=1');
+    app.respondAll(byLevel);
+    app.respondPickup(byLevel);
+    await flush();
+    await flush();
+
+    assert.equal(app.element('questionText').textContent, 'Pickup 2-0');
+    assert.equal(app.element('questionLive').textContent, '1問目 / 30問');
+    const saved = JSON.parse(app.storage.getItem('omoi-progress'));
+    assert.equal(saved.pickup, true);
+    assert.equal(saved.level, undefined);
+    assert.deepEqual(saved.ids, [2, 3, 4].flatMap(level =>
+        byLevel[level].map(question => question.id)
+    ));
+
+    app.element('nextQuestionButton').click();
+    assert.equal(app.element('questionText').textContent, 'Pickup 2-1');
+    assert.equal(app.element('questionLive').textContent, '2問目 / 30問');
+    assert.equal(JSON.parse(app.storage.getItem('omoi-progress')).index, 1);
 });
 
 test('finish button opens an Omoi confirmation dialog', async () => {
@@ -283,7 +333,11 @@ test('legacy count parameter does not limit available questions', async () => {
     assert.equal(app.element('sessionComplete').hidden, false);
 });
 
-for (const search of ['?', '?level=0', '?level=1', '?level=1&level=2', '?level=2&level=2']) {
+for (const search of [
+    '?', '?level=0', '?level=1', '?level=1&level=2', '?level=2&level=2',
+    '?mode=all&pickup=0', '?mode=all&pickup=2', '?mode=all&pickup=1&pickup=1',
+    '?level=2&pickup=1', '?mode=student&pickup=1'
+]) {
     test(`invalid parameters do not fetch: ${search}`, () => {
         const app = setup(search);
         assert.equal(app.requests.length, 0);

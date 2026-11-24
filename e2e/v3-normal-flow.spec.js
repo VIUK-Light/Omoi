@@ -167,6 +167,7 @@ for (const prefix of ['/', '/preview/omoi-v3/']) {
       await page.locator('#nextButton').click();
       await expect(page).toHaveURL(new RegExp(`${prefix === '/' ? '' : prefix}level-select.html`));
     }
-    expect(await page.locator('input[name="level"]').evaluateAll(inputs => inputs.map(input => input.value))).toEqual(['2', '3', '4']);
+    const expectedLevels = prefix === '/' ? ['pickup', '2', '3', '4'] : ['2', '3', '4'];
+    expect(await page.locator('input[name="level"]').evaluateAll(inputs => inputs.map(input => input.value))).toEqual(expectedLevels);
   });
 }

@@ -65,9 +65,23 @@ function setupSelect() {
     };
 }
 
+const pickupDocument = {
+    version: 1,
+    month: '2026-11',
+    title: '今月のピックアップ質問',
+    levels: Object.fromEntries(['2', '3', '4'].map(level => [
+        level,
+        Array.from({ length: 10 }, (_, index) => `pickup-${level}-${index}`)
+    ]))
+};
+
 function setupLevelSelect() {
-    const levelInputs = ['1', '2', '3', '4'].map(value => Object.assign(makeElement(), { value }));
+    const levelInputs = ['pickup', '1', '2', '3', '4'].map(value => Object.assign(makeElement(), {
+        value,
+        disabled: value === 'pickup'
+    }));
     const nextButton = makeElement();
+    const pickupSummary = makeElement();
     const location = { href: 'https://omoi.viuk-light.org/画面/選択/level-select.html' };
     vm.runInNewContext(levelSelectCode, {
         URL,
@@ -75,13 +89,27 @@ function setupLevelSelect() {
             querySelectorAll(selector) {
                 return selector === 'input[name="level"]' ? levelInputs : [];
             },
-            getElementById(id) { return id === 'nextButton' ? nextButton : null; }
+            getElementById(id) {
+                if (id === 'nextButton') return nextButton;
+                if (id === 'levelPickup') {
+                    return levelInputs.find(input => input.value === 'pickup');
+                }
+                if (id === 'pickupSummary') return pickupSummary;
+                return null;
+            }
         },
-        window: { location }
+        window: { location },
+        fetch() {
+            return Promise.resolve({
+                ok: true,
+                json: async () => structuredClone(pickupDocument)
+            });
+        }
     });
 
     return {
-        location, nextButton, levelInputs,
+        location, nextButton, levelInputs, pickupSummary,
+        pickupInput: levelInputs.find(input => input.value === 'pickup'),
         choose(value) {
             const input = levelInputs.find(item => item.value === value);
             input.checked = true;
@@ -224,6 +252,22 @@ test('Level 2 goes directly to question.html', () => {
     assert.equal(app.location.href, 'https://omoi.viuk-light.org/%E7%94%BB%E9%9D%A2/%E5%AF%BE%E8%A9%B1/question.html?level=2');
 });
 
+test('pickup waits for its data, then continues through the warning screen', async () => {
+    const app = setupLevelSelect();
+    assert.equal(app.pickupInput.disabled, true);
+    await waitFor(() => app.pickupInput.disabled === false);
+    assert.match(app.pickupSummary.textContent, /2026年11月・30問/);
+    assert.match(app.pickupSummary.textContent, /低10・中10・高10/);
+
+    app.choose('pickup');
+    assert.equal(app.nextButton.disabled, false);
+    app.nextButton.click();
+    assert.equal(
+        app.location.href,
+        'https://omoi.viuk-light.org/%E7%94%BB%E9%9D%A2/%E5%AF%BE%E8%A9%B1/warning.html?pickup=1'
+    );
+});
+
 test('custom mode saves the selected category and starts without a warning', async () => {
     const app = setupCustomSelect();
     await waitFor(() => app.labelCheckbox('school') !== null);
@@ -310,4 +354,9 @@ test('warning pages continue to questions without a count', () => {
     const level4 = setupWarning(warningCode);
     assert.equal(level3.continueLink.href, 'question.html?level=3');
     assert.equal(level4.continueLink.href, 'question.html?level=4');
+});
+
+test('the warning screen continues pickup sessions as mixed-level', () => {
+    const pickup = setupWarning(warningCode, '?pickup=1');
+    assert.equal(pickup.continueLink.href, 'question.html?mode=all&pickup=1');
 });
