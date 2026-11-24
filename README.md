@@ -4,7 +4,7 @@
 
 重い話題も質問カードをきっかけに話せるようにする、Omoi v3 の試作です。目の前の相手と理由や思いを伝え合うことを中心にしています。会話や回答の入力・保存、広告、課金はありません。
 
-この版は `v3` ブランチで開発しています。[現在の公開版 Omoi](https://omoi.viuk-light.org/) を配信する `main` とは分かれています。新しい v3 コードは独自の非商用ライセンスで提供しており、v3 全体を OSS とは表記しません。
+この版は `v3` ブランチで開発しています。[現在の公開版 Omoi](https://omoi.viuk-light.org/) を配信する `main` とは分かれています。新しい v3 コードは独自のソース公開ライセンス（PolyForm Perimeter 1.0.1 ベース）で提供しており、v3 全体を OSS とは表記しません。
 
 ## フォルダー構成
 
@@ -97,11 +97,11 @@ VIUK-Light が提供する公式サービスの通常の閲覧・操作・投影
 
 | 対象 | 条件 |
 | --- | --- |
-| 新規 v3 コード・変更差分・新規文書 | [Omoi v3 Noncommercial Attribution License 1.0](LICENSE)。PolyForm Noncommercial 1.0.0 に追加・優先条件を設けた独自ライセンス |
+| 新規 v3 コード・変更差分・新規文書 | [Omoi v3 Perimeter Attribution License 1.0](LICENSE)。PolyForm Perimeter 1.0.1 に追加・優先条件を設けた独自ライセンス |
 | 既存の v2 コードとその継承部分 | 従来の [MIT License](LICENSE-MIT) を維持 |
 | 既存の質問・場面・解説・ヒント・用語と、その引用・翻案にあたる要点等 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) を維持 |
 
-新規 v3 部分の商用コピー・商用目的の改変配布・商用組み込みは許諾していません。非商用のコピーにも完全な LICENSE と該当する NOTICE の同梱が必要です。派生 UI の About または見えるフッターに「原作：VIUK-Light」と [https://viuk-light.org/](https://viuk-light.org/) へのリンクを表示してください。詳細と継承元の表示は [NOTICE](NOTICE)、利用条件は [規約](画面/案内/terms.html)を参照してください。
+新規 v3 部分は商用利用を含めて利用できますが、ソフトウェアと競合する製品の提供には使えません。コピーには完全な LICENSE と該当する NOTICE の同梱が必要です。派生 UI の About または見えるフッターに「原作：VIUK-Light」と [https://viuk-light.org/](https://viuk-light.org/) へのリンクを表示してください。詳細と継承元の表示は [NOTICE](NOTICE)、利用条件は [規約](画面/案内/terms.html)を参照してください。
 
 ## 改善の提案
 

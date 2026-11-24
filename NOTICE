@@ -4,18 +4,19 @@ Required Notice: Copyright (c) 2026 VIUK-Light — https://viuk-light.org/
 
 New Omoi v3-specific code and changes and new documentation are supplied under
 the custom Omoi v3
-Noncommercial Attribution License 1.0 in the complete accompanying LICENSE.
+Perimeter Attribution License 1.0 in the complete accompanying LICENSE.
 The new license does not cover pre-existing MIT portions or copied/adapted
-CC BY-SA content. It is modified from PolyForm Noncommercial 1.0.0, not the
+CC BY-SA content. It is modified from PolyForm Perimeter 1.0.1, not the
 stock license and not an alternative grant of that stock license.
 
 Ordinary use of VIUK-Light's Official Service is free for commercial and
-noncommercial purposes. Commercial copying, modification, redistribution,
-rehosting, or incorporation of Covered Material is not licensed. Both LICENSE
-and NOTICE must accompany noncommercial copies; derivative interfaces also
-require VIUK-Light attribution linked to https://viuk-light.org/ in an About
-section or visible footer. The attribution identifies provenance, not
-endorsement. See LICENSE for the complete conditions. The original repository MIT grant is also retained verbatim in LICENSE-MIT.
+noncommercial purposes. Commercial use is permitted, but providing to others any product that
+competes with the software is not licensed. Both LICENSE and NOTICE must
+accompany copies; derivative interfaces also require VIUK-Light attribution
+linked to https://viuk-light.org/ in an About section or visible footer. The
+attribution identifies provenance, not endorsement. See LICENSE for the
+complete conditions. The original repository MIT grant is also retained
+verbatim in LICENSE-MIT.
 
 1. Retained Omoi v2 code
 
