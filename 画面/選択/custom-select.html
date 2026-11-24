@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+
+    <title>問いを選ぶ - Omoi</title>
+    <link rel="stylesheet" href="../../スタイル/select.css">
+    <link rel="stylesheet" href="../../スタイル/custom-select.css">
+    <script src="../../スクリプト/theme.js"></script>
+    <script src="../../スクリプト/progress.js"></script>
+    <link rel="stylesheet" href="../../スタイル/theme.css">
+</head>
+
+<body>
+    <main class="select-screen custom-select-screen">
+        <div class="select-content custom-select-content">
+
+            <header class="custom-select-header">
+                <a href="select.html" class="back-link custom-select-back">
+                    ← 選び方に戻る
+                </a>
+                <h1 id="customHeading">問いを選ぶ</h1>
+                <p class="custom-select-lead">
+                    近いテーマからまとめて選ぶか、問いをひとつずつ選べます。組み合わせてもかまいません。
+                </p>
+            </header>
+
+            <div class="custom-select-tabs" role="tablist" aria-label="問いの選び方">
+                <button
+                    type="button"
+                    id="tabLabels"
+                    class="custom-select-tab"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="labelsPanel"
+                >
+                    <span class="tab-label-long">カテゴリーから選ぶ</span>
+                    <span class="tab-label-short">カテゴリー</span>
+                    <span id="labelTabCount" class="tab-count" hidden>0件</span>
+                </button>
+                <button
+                    type="button"
+                    id="tabQuestions"
+                    class="custom-select-tab"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="questionsPanel"
+                    tabindex="-1"
+                >
+                    <span class="tab-label-long">問いを個別に選ぶ</span>
+                    <span class="tab-label-short">個別に選ぶ</span>
+                    <span id="questionPickerCount" class="tab-count" hidden>0問</span>
+                </button>
+            </div>
+
+            <div id="customError" class="custom-error" role="alert" hidden>
+                <p id="customErrorText"></p>
+                <button type="button" id="retryLoadButton" class="custom-retry-button">
+                    再読み込み
+                </button>
+            </div>
+
+            <section
+                id="labelsPanel"
+                class="custom-select-panel"
+                role="tabpanel"
+                aria-labelledby="tabLabels"
+            >
+                <div class="custom-section-heading">
+                    <p id="labelSelectionSummary" class="custom-section-meta">読み込み中…</p>
+                    <button type="button" id="clearLabels" class="custom-clear-button" hidden>
+                        すべて解除
+                    </button>
+                </div>
+
+                <div id="labelList" class="label-grid" role="group" aria-labelledby="tabLabels"></div>
+            </section>
+
+            <section
+                id="questionsPanel"
+                class="custom-select-panel"
+                role="tabpanel"
+                aria-labelledby="tabQuestions"
+                hidden
+            >
+                <div class="question-search-control">
+                    <label for="questionSearch">問いを検索（言葉・カテゴリー）</label>
+                    <div class="question-search-wrap">
+                        <svg
+                            class="question-search-icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            aria-hidden="true"
+                        >
+                            <circle cx="11" cy="11" r="6"></circle>
+                            <path d="m16 16 4 4"></path>
+                        </svg>
+                        <input
+                            type="search"
+                            id="questionSearch"
+                            class="question-search"
+                            placeholder="例：友達、学校、家族"
+                            autocomplete="off"
+                        >
+                    </div>
+                </div>
+
+                <div class="question-filter-row">
+                    <span class="question-filter-label">レベル</span>
+                    <div class="question-level-filters" role="group" aria-label="レベルで絞り込む">
+                        <button type="button" class="level-filter" data-level-filter="all" aria-pressed="true">
+                            すべて
+                        </button>
+                        <button type="button" class="level-filter" data-level-filter="2" aria-pressed="false" title="level:低">
+                            低
+                        </button>
+                        <button type="button" class="level-filter" data-level-filter="3" aria-pressed="false" title="level:中">
+                            中
+                        </button>
+                        <button type="button" class="level-filter" data-level-filter="4" aria-pressed="false" title="level:高">
+                            高
+                        </button>
+                    </div>
+                </div>
+
+                <div class="question-filter-row">
+                    <label class="question-filter-label" for="questionCategoryFilter">カテゴリー</label>
+                    <select id="questionCategoryFilter" class="question-category-filter">
+                        <option value="all">すべてのカテゴリー</option>
+                    </select>
+                </div>
+
+                <div class="question-select-all-row">
+                    <button type="button" id="selectAllQuestions" class="select-all-button">
+                        表示中の問いをすべて選択
+                    </button>
+                </div>
+
+                <div class="selected-questions-bar">
+                    <button type="button" id="openSelectedQuestions" class="selected-open-button" hidden>
+                        選択中の問いを見る（<span id="selectedQuestionsCount">0</span>問）
+                    </button>
+                </div>
+
+                <p id="questionPickerHint" class="question-picker-hint" hidden>
+                    カテゴリーで選んだ問いは、はじめから選択されています。チェックを外すと、その問いだけを出題から外せます。
+                </p>
+                <p id="questionPickerStatus" class="question-picker-status" role="status"></p>
+                <ul id="questionPicker" class="question-picker"></ul>
+                <button type="button" id="showMoreQuestions" class="show-more-questions" hidden>
+                    もっと見る
+                </button>
+            </section>
+
+            <div class="custom-action-bar">
+                <div class="custom-action-inner">
+                    <div id="customSummary" class="custom-action-summary" role="status" aria-live="polite">
+                        <strong id="customTotal">—</strong>
+                        <span id="customBreakdown">問いを読み込んでいます…</span>
+                    </div>
+                    <button type="button" id="nextButton" disabled>
+                        次へ
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <dialog id="selectedQuestionsDialog" class="selected-questions-dialog" aria-labelledby="selectedQuestionsTitle">
+        <div class="selected-dialog-head">
+            <h2 id="selectedQuestionsTitle">選択中の問い</h2>
+            <button type="button" id="closeSelectedQuestions" class="selected-dialog-close" aria-label="閉じる">×</button>
+        </div>
+        <p id="selectedQuestionsDialogStatus" class="selected-dialog-status" role="status"></p>
+        <ul id="selectedQuestionList" class="selected-question-list"></ul>
+        <div class="selected-dialog-actions">
+            <button type="button" id="clearQuestions" class="selected-clear">すべて解除</button>
+        </div>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js" defer></script>
+    <script src="../../スクリプト/custom-select.js"></script>
+</body>
+</html>

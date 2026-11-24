@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+
+    <title>話の深さを選ぶ - Omoi</title>
+    <link rel="stylesheet" href="../../スタイル/select.css">
+    <script src="../../スクリプト/theme.js"></script>
+    <link rel="stylesheet" href="../../スタイル/theme.css">
+</head>
+
+<body>
+    <main class="select-screen">
+        <div class="select-content">
+
+            <h1 id="levelHeading">話の深さを選ぶ</h1>
+
+            <div class="level-list" role="radiogroup" aria-labelledby="levelHeading">
+
+                <input type="radio" name="level" id="levelPickup" value="pickup" disabled>
+                <label for="levelPickup" class="level-card level-card-pickup">
+                    <div>
+                        <span class="level-name">pickup</span>
+                        <strong>今月のピックアップ質問 30</strong>
+                        <small>新着・おすすめの30問を、低→中→高の順に話します</small>
+                        <span id="pickupSummary" class="pickup-summary" role="status">読み込み中…</span>
+                    </div>
+                    <span class="radio-mark"></span>
+                </label>
+
+                <input type="radio" name="level" id="level2" value="2">
+                <label for="level2" class="level-card">
+                    <div>
+                        <span class="level-name">level:低</span>
+                        <strong>意見が分かれる身近な話</strong>
+                        <small>学校・人間関係・日常の判断について</small>
+                        <span class="level-example">例「友達と意見が違ったら、どうする？」</span>
+                    </div>
+                    <span class="radio-mark"></span>
+                </label>
+
+                <input type="radio" name="level" id="level3" value="3">
+                <label for="level3" class="level-card">
+                    <div>
+                        <span class="level-name">level:中</span>
+                        <strong>社会や価値観について</strong>
+                        <small>社会制度・人権・倫理などについて</small>
+                        <span class="level-example">例「公平であることと、平等であることは同じ？」</span>
+                    </div>
+                    <span class="radio-mark"></span>
+                </label>
+
+                <input type="radio" name="level" id="level4" value="4">
+                <label for="level4" class="level-card">
+                    <div>
+                        <span class="level-name">level:高</span>
+                        <strong>人生に関わる難しい選択</strong>
+                        <small>自分が当事者だったらどう判断するか</small>
+                        <span class="level-example">例「大切な人との信頼が揺らいだら、何を優先する？」</span>
+                    </div>
+                    <span class="radio-mark"></span>
+                </label>
+
+            </div>
+
+            <div class="select-actions">
+                <a href="select.html" class="back-link">
+                    ← 戻る
+                </a>
+
+                <button type="button" id="nextButton" disabled>
+                    次へ
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="../../スクリプト/level-select.js"></script>
+</body>
+</html>

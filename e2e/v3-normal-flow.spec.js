@@ -1,0 +1,173 @@
+const { test, expect } = require('@playwright/test');
+
+const completeCard = {
+  id: 'normal-v3-helper', level: 3,
+  question: 'この条件で機能を増やす？', scenario: '条件をそろえた架空の場面。',
+  summary: [{ type: 'bullets', items: [{ label: '決めること', text: '<img src=x onerror=alert(1)>という文字も、そのまま読める。' }] }],
+  hints: ['別の立場では、何を確かめたい？'],
+  terms: [{ term: '用語', definition: '必要な言葉の意味。' }],
+  detail: { text: '確認した説明。', sources: [{ title: '出典', url: 'https://example.test/source' }] }
+};
+
+async function keepOrder(page) {
+  await page.addInitScript(() => { Math.random = () => .999999; });
+}
+
+function readingSegments(text) {
+  const segments = [];
+  let rest = text;
+  while (rest) {
+    const match = /(\p{Script=Han}+)/u.exec(rest);
+    if (!match) {
+      segments.push({ text: rest });
+      break;
+    }
+    if (match.index > 0) segments.push({ text: rest.slice(0, match.index) });
+    segments.push({ ruby: match[0], reading: 'あ' });
+    rest = rest.slice(match.index + match[0].length);
+  }
+  return segments;
+}
+
+function furiganaFor(records) {
+  return Object.fromEntries(records.map(record => {
+    const fields = {};
+    const add = (path, value) => {
+      if (typeof value === 'string') fields[path] = readingSegments(value);
+    };
+    add('question', record.question);
+    add('scenario', record.scenario);
+    if (record.level < 3) return [record.id, fields];
+    (record.summary ?? []).forEach((block, blockIndex) => {
+      add(`summary.${blockIndex}.text`, block.text);
+      (block.items ?? []).forEach((item, itemIndex) => {
+        add(`summary.${blockIndex}.items.${itemIndex}.label`, item.label);
+        add(`summary.${blockIndex}.items.${itemIndex}.text`, item.text);
+      });
+    });
+    (record.hints ?? []).forEach((hint, index) => add(`hints.${index}`, hint));
+    add('detail.text', record.detail?.text);
+    (record.detail?.sources ?? []).forEach((source, index) => add(`detail.sources.${index}.title`, source.title));
+    (record.terms ?? []).forEach((term, index) => {
+      add(`terms.${index}.term`, term.term);
+      add(`terms.${index}.definition`, term.definition);
+    });
+    return [record.id, fields];
+  }));
+}
+
+test('normal warning flow offers optional helpers without preview queries or diagram code', async ({ page }) => {
+  const requests = [], errors = [];
+  page.on('request', request => requests.push(request.url()));
+  page.on('pageerror', error => errors.push(error.message));
+  await keepOrder(page);
+  const level3Cards = [completeCard, { id: 'normal-v3-simple', level: 3, question: '短い問いだけでも話せる？' }];
+  await page.route('**/level3.json', route => route.fulfill({ json: level3Cards }));
+  await page.route('**/level3-furigana.json', route => route.fulfill({ json: furiganaFor(level3Cards) }));
+  await page.goto('/');
+  await page.getByRole('link', { name: 'はじめる', exact: true }).click();
+  await page.locator('label[for="modeAll"]').click();
+  await page.locator('#nextButton').click();
+  await expect(page).toHaveURL(/\/level-select\.html$/);
+  await page.locator('label[for="level3"]').click();
+  await page.locator('#nextButton').click();
+  await expect(page).toHaveURL(/\/warning3\.html$/);
+  await expect(page).toHaveTitle('話をはじめる前に - Omoi');
+  await expect(page.locator('.back-button')).toHaveAttribute('href', '../選択/level-select.html');
+  await page.getByRole('link', { name: '続ける', exact: true }).click();
+  await expect(page).toHaveURL(/\/question\.html\?.*level=3/);
+  await expect(page.locator('#questionText')).toHaveText(completeCard.question);
+  await expect(page.locator('#scenarioText')).toHaveText(completeCard.scenario);
+  for (const id of ['questionSummary', 'hintsPanel', 'detailPanel']) await expect(page.locator(`#${id}`)).toBeHidden();
+  await page.locator('#questionSummaryToggle').click();
+  await expect(page.locator('#questionSummary')).toBeVisible();
+  await expect(page.locator('#questionSummaryText')).toContainText(completeCard.summary[0].items[0].text);
+  await expect(page.locator('#questionSummaryText img')).toHaveCount(0);
+  await page.locator('#hintButton').click();
+  await expect(page.locator('#questionSummary')).toBeHidden();
+  await expect(page.locator('#hintsPanel')).toBeVisible();
+  await page.locator('#detailButton').click();
+  await expect(page.locator('#hintsPanel')).toBeHidden();
+  await expect(page.locator('#detailPanel')).toBeVisible();
+  await expect(page.locator('#sourceList a')).toHaveAttribute('href', completeCard.detail.sources[0].url);
+  await page.locator('#questionSummaryToggle').click();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#questionSummary')).toBeHidden();
+  await expect(page.locator('#questionSummaryToggle')).toBeFocused();
+  await page.locator('#nextQuestionButton').click();
+  for (const id of ['questionSummaryToggle', 'hintButton', 'detailButton']) await expect(page.locator(`#${id}`)).toBeHidden();
+  await page.locator('#previousQuestionButton').click();
+  await expect(page.locator('#questionSummaryToggle')).toBeVisible();
+  await expect(page.locator('#questionSummary')).toBeHidden();
+  await page.reload();
+  await expect(page.locator('#questionSummaryToggle')).toBeVisible();
+  await expect(page.locator('#questionSummary')).toBeHidden();
+  expect(requests.filter(url => /cytoscape|\/packages\/relation-diagram\/|\/preview\//.test(url))).toEqual([]);
+  await expect(page.locator('.preview-review, #relationDiagramToggle, #scenarioReadingToggle')).toHaveCount(0);
+  expect(errors).toEqual([]);
+});
+
+for (const level of [2]) {
+  test(`Level ${level} never offers helpers even if unexpected data includes them`, async ({ page }) => {
+    const levelCards = [{ ...completeCard, level }];
+    await page.route(`**/level${level}.json`, route => route.fulfill({ json: levelCards }));
+    await page.route(`**/level${level}-furigana.json`, route => route.fulfill({ json: furiganaFor(levelCards) }));
+    await page.goto(`/画面/対話/question.html?level=${level}`);
+    await expect(page.locator('#questionText')).toHaveText(completeCard.question);
+    for (const id of ['questionSummaryToggle', 'hintButton', 'detailButton']) await expect(page.locator(`#${id}`)).toBeHidden();
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled();
+  });
+}
+
+test('terms-only background and hints-only questions do not require a detail explanation', async ({ page }) => {
+  await keepOrder(page);
+  const level4Cards = [
+    { id: 'terms-only', level: 4, question: '言葉を確認して話す？', terms: completeCard.terms },
+    { id: 'hints-only', level: 4, question: '別の見方も考える？', hints: completeCard.hints }
+  ];
+  await page.route('**/level4.json', route => route.fulfill({ json: level4Cards }));
+  await page.route('**/level4-furigana.json', route => route.fulfill({ json: furiganaFor(level4Cards) }));
+  await page.goto('/画面/対話/warning.html');
+  await expect(page).toHaveTitle('話をはじめる前に - Omoi');
+  await page.getByRole('link', { name: '続ける', exact: true }).click();
+  await expect(page.locator('#detailButton')).toBeVisible();
+  await expect(page.locator('#hintButton')).toBeHidden();
+  await page.locator('#detailButton').click();
+  await expect(page.locator('#termsList')).toContainText('必要な言葉の意味。');
+  await expect(page.locator('#sourceSection')).toBeHidden();
+  await expect(page.locator('#detailText')).toBeEmpty();
+  await page.locator('#nextQuestionButton').click();
+  await expect(page.locator('#detailButton')).toBeHidden();
+  await expect(page.locator('#hintButton')).toBeVisible();
+  await page.locator('#hintButton').click();
+  await expect(page.locator('#hintsPanel')).toBeVisible();
+});
+
+for (const prefix of ['/', '/preview/omoi-v3/']) {
+  test(`retired Level 1 is rejected before fetching and returns to active selection: ${prefix}`, async ({ page }) => {
+    const pagePrefix = prefix === '/' ? '/画面/対話/' : prefix;
+    const datasetRequests = [];
+    page.on('request', request => {
+      if (/\/level[0-9]+\.json(?:\?|$)/.test(request.url())) datasetRequests.push(request.url());
+    });
+    await page.goto(`${pagePrefix}question.html?level=1`);
+    await expect(page.locator('#questionText')).toContainText('条件が正しくありません');
+    await expect(page.locator('#nextQuestionButton')).toBeDisabled();
+    await expect(page.locator('#retryLoadButton')).toBeHidden();
+    expect(datasetRequests).toEqual([]);
+    await page.locator('.back-link').click();
+    const confirmOkButton = page.locator('#confirmOkButton');
+    if (await confirmOkButton.isVisible().catch(() => false)) {
+      await confirmOkButton.click();
+    }
+    await expect(page).toHaveURL(new RegExp(`${prefix === '/' ? '' : prefix}select.html`));
+    if (prefix === '/') {
+      expect(await page.locator('input[name="mode"]').evaluateAll(inputs => inputs.map(input => input.value))).toEqual(['student', 'all', 'custom']);
+      await page.locator('label[for="modeAll"]').click();
+      await page.locator('#nextButton').click();
+      await expect(page).toHaveURL(new RegExp(`${prefix === '/' ? '' : prefix}level-select.html`));
+    }
+    const expectedLevels = prefix === '/' ? ['pickup', '2', '3', '4'] : ['2', '3', '4'];
+    expect(await page.locator('input[name="level"]').evaluateAll(inputs => inputs.map(input => input.value))).toEqual(expectedLevels);
+  });
+}

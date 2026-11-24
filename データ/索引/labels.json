@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "labels": [
+    {
+      "id": "student",
+      "name": "学校・若者向け",
+      "kind": "audience",
+      "order": 0
+    },
+    {
+      "id": "school",
+      "name": "学校",
+      "kind": "topic",
+      "order": 10
+    },
+    {
+      "id": "bullying",
+      "name": "いじめ",
+      "kind": "topic",
+      "order": 20
+    },
+    {
+      "id": "friendship",
+      "name": "友人関係",
+      "kind": "topic",
+      "order": 30
+    },
+    {
+      "id": "family",
+      "name": "家族",
+      "kind": "topic",
+      "order": 40
+    },
+    {
+      "id": "care",
+      "name": "介護・福祉",
+      "kind": "topic",
+      "order": 50
+    },
+    {
+      "id": "romance",
+      "name": "恋愛・結婚",
+      "kind": "topic",
+      "order": 60
+    },
+    {
+      "id": "work",
+      "name": "仕事",
+      "kind": "topic",
+      "order": 70
+    },
+    {
+      "id": "money",
+      "name": "お金・経済",
+      "kind": "topic",
+      "order": 80
+    },
+    {
+      "id": "health",
+      "name": "健康・医療",
+      "kind": "topic",
+      "order": 90
+    },
+    {
+      "id": "disability",
+      "name": "障害",
+      "kind": "topic",
+      "order": 100
+    },
+    {
+      "id": "gender",
+      "name": "ジェンダー",
+      "kind": "topic",
+      "order": 110
+    },
+    {
+      "id": "sexuality",
+      "name": "性",
+      "kind": "topic",
+      "order": 120
+    },
+    {
+      "id": "technology",
+      "name": "テクノロジー",
+      "kind": "topic",
+      "order": 130
+    },
+    {
+      "id": "privacy",
+      "name": "プライバシー",
+      "kind": "topic",
+      "order": 140
+    },
+    {
+      "id": "media",
+      "name": "メディア・情報",
+      "kind": "topic",
+      "order": 150
+    },
+    {
+      "id": "crime",
+      "name": "犯罪・司法",
+      "kind": "topic",
+      "order": 160
+    },
+    {
+      "id": "politics",
+      "name": "政治・制度",
+      "kind": "topic",
+      "order": 170
+    },
+    {
+      "id": "environment",
+      "name": "環境・災害",
+      "kind": "topic",
+      "order": 180
+    },
+    {
+      "id": "culture",
+      "name": "文化・宗教・歴史",
+      "kind": "topic",
+      "order": 190
+    },
+    {
+      "id": "ethics",
+      "name": "倫理・判断",
+      "kind": "topic",
+      "order": 200
+    },
+    {
+      "id": "values",
+      "name": "自分・価値観",
+      "kind": "topic",
+      "order": 210
+    }
+  ]
+}

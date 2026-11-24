@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+
+    <title>選択内容の確認 - Omoi</title>
+    <link rel="stylesheet" href="../../スタイル/select.css">
+    <link rel="stylesheet" href="../../スタイル/custom-confirm.css">
+    <script src="../../スクリプト/theme.js"></script>
+    <script src="../../スクリプト/progress.js"></script>
+    <link rel="stylesheet" href="../../スタイル/theme.css">
+</head>
+
+<body>
+    <main class="select-screen custom-confirm-screen">
+        <div class="select-content custom-confirm-content">
+
+            <header class="custom-confirm-header">
+                <a href="select.html" class="back-link custom-confirm-back">
+                    ← 選び方に戻る
+                </a>
+                <p class="custom-eyebrow">自分で選ぶ</p>
+                <h1>選択内容の確認</h1>
+                <p class="custom-confirm-lead">
+                    選んだ内容を確認してください。カテゴリーを展開すると中の問いが見られます。
+                </p>
+            </header>
+
+            <div id="customConfirmError" class="custom-error" role="alert" hidden>
+                <p id="customConfirmErrorText"></p>
+                <a href="custom-select.html" class="custom-retry-button">選択画面へ戻る</a>
+            </div>
+
+            <section class="custom-confirm-section">
+                <div class="section-head">
+                    <h2>選択中のカテゴリー</h2>
+                    <span id="confirmLabelCount" class="section-count">0件</span>
+                </div>
+                <div id="confirmLabelList" class="confirm-card-list"></div>
+                <p id="confirmLabelEmpty" class="confirm-empty" hidden>カテゴリーは選択されていません。</p>
+            </section>
+
+            <section class="custom-confirm-section">
+                <div class="section-head">
+                    <h2>個別に選んだ問い</h2>
+                    <span id="confirmQuestionCount" class="section-count">0問</span>
+                </div>
+                <ul id="confirmQuestionList" class="confirm-list"></ul>
+                <p id="confirmQuestionEmpty" class="confirm-empty" hidden>個別に選んだ問いはありません。</p>
+            </section>
+
+            <section class="custom-confirm-section" id="confirmExcludedSection">
+                <div class="section-head">
+                    <h2>除外した問い</h2>
+                    <span id="confirmExcludedCount" class="section-count">0問</span>
+                </div>
+                <ul id="confirmExcludedList" class="confirm-list"></ul>
+                <p id="confirmExcludedEmpty" class="confirm-empty" hidden>除外した問いはありません。</p>
+            </section>
+
+            <div class="custom-confirm-summary" role="status" aria-live="polite">
+                <strong id="confirmTotal">—</strong>
+                <span id="confirmBreakdown">選択内容を読み込んでいます…</span>
+            </div>
+
+            <div class="custom-confirm-status omoi-toast" id="confirmShareStatus" role="status" aria-live="polite"></div>
+            <div class="custom-confirm-actions">
+                <a href="#" id="confirmEditLink" class="custom-confirm-edit">選択を編集する</a>
+                <button type="button" id="confirmShareButton" class="custom-confirm-share">
+                    この選択を共有する
+                </button>
+                <button type="button" id="confirmStartButton" disabled>
+                    この内容で始める
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="../../スクリプト/question-share.js"></script>
+    <script src="../../スクリプト/custom-confirm.js"></script>
+</body>
+</html>

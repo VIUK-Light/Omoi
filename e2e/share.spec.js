@@ -1,0 +1,158 @@
+const fs = require('fs');
+const { test, expect } = require('@playwright/test');
+
+test.describe.configure({ timeout: 60000 });
+
+const ready = { timeout: 20000 };
+
+test('the share button offers a link or a picture of the question', async ({ page }) => {
+    await page.goto('/画面/対話/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+
+    await page.locator('#shareButton').click();
+    await expect(page.getByRole('menuitem', { name: 'リンクを共有' })).toBeVisible();
+    await expect(page.getByRole('menuitem', { name: '問いの画像を保存' })).toBeVisible();
+    await expect(page.locator('#shareButton')).toHaveAttribute('aria-expanded', 'true');
+
+    const downloadPromise = page.waitForEvent('download');
+    await page.getByRole('menuitem', { name: '問いの画像を保存' }).click();
+    const download = await downloadPromise;
+
+    expect(download.suggestedFilename()).toBe('omoi-question.png');
+    await expect(page.locator('#shareStatus')).toHaveText('画像を保存しました', ready);
+    await expect(page.locator('#shareMenu')).toBeHidden();
+
+    const file = fs.readFileSync(await download.path());
+    expect(file.subarray(1, 4).toString()).toBe('PNG');
+    expect(file.readUInt32BE(16)).toBe(1080);
+    expect(file.readUInt32BE(20)).toBe(1620);
+});
+
+test('the share menu stays inside narrow and short viewports', async ({ page }) => {
+    for (const viewport of [
+        { width: 320, height: 480 },
+        { width: 844, height: 390 }
+    ]) {
+        await page.setViewportSize(viewport);
+        await page.goto('/画面/対話/question.html?level=2');
+        await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+
+        await page.locator('#shareButton').click();
+        const menuBox = await page.locator('#shareMenu').boundingBox();
+        expect(menuBox).not.toBeNull();
+        expect(menuBox.x).toBeGreaterThanOrEqual(0);
+        expect(menuBox.y).toBeGreaterThanOrEqual(0);
+        expect(menuBox.x + menuBox.width).toBeLessThanOrEqual(viewport.width);
+        expect(menuBox.y + menuBox.height).toBeLessThanOrEqual(viewport.height);
+        await expect(page.getByRole('menuitem', { name: 'リンクを共有' }))
+            .toBeInViewport({ ratio: 1 });
+        await expect(page.getByRole('menuitem', { name: '問いの画像を保存' }))
+            .toBeInViewport({ ratio: 1 });
+
+        await page.keyboard.press('Escape');
+        await expect(page.locator('#shareMenu')).toBeHidden();
+    }
+});
+
+test('the card shows the level name instead of the level number', async ({ page }) => {
+    await page.goto('/画面/対話/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+
+    const texts = await page.evaluate(async () => {
+        const original = CanvasRenderingContext2D.prototype.fillText;
+        const calls = [];
+        CanvasRenderingContext2D.prototype.fillText = function (text, ...args) {
+            calls.push(String(text));
+            return original.call(this, text, ...args);
+        };
+        try {
+            await createQuestionCard({
+                level: 4,
+                scenario: 'テストの場面文',
+                question: 'テストの問い'
+            });
+        } finally {
+            CanvasRenderingContext2D.prototype.fillText = original;
+        }
+        return calls;
+    });
+
+    expect(texts).toContain('level:高');
+});
+
+test('the share menu closes with Escape and keeps the focus on the share button', async ({ page }) => {
+    await page.goto('/画面/対話/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+
+    await page.locator('#shareButton').click();
+    await expect(page.locator('#shareMenu')).toBeVisible();
+
+    await page.keyboard.press('Escape');
+    await expect(page.locator('#shareMenu')).toBeHidden();
+    await expect(page.locator('#shareButton')).toBeFocused();
+});
+
+test('the card follows the chosen background and theme', async ({ page }) => {
+    await page.goto('/画面/対話/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+
+    const question = {
+        level: 3,
+        scenario: 'テストの場面文',
+        question: 'テストの問い'
+    };
+    const card = () => page.evaluate(async (value) => (await createQuestionCard(value)).toDataURL(), question);
+
+    const plain = await card();
+
+    await page.locator('.theme-control > summary').click();
+    await page.getByRole('button', { name: '朝焼け' }).click();
+    await page.waitForTimeout(200);
+    const withBackground = await card();
+    expect(withBackground).not.toBe(plain);
+
+    await page.getByRole('button', { name: 'VIUK-Light dark' }).click();
+    await page.waitForTimeout(200);
+    const withDarkTheme = await card();
+    expect(withDarkTheme).not.toBe(withBackground);
+});
+
+test('the card renders even when the scenario and question are very long', async ({ page }) => {
+    await page.goto('/画面/対話/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+
+    const size = await page.evaluate(async () => {
+        const canvas = await createQuestionCard({
+            level: 4,
+            scenario: 'とても長い場面の説明がここに入ります。'.repeat(12),
+            question: 'とても長い問いがここに入りますか？'.repeat(10)
+        });
+        return canvas ? [canvas.width, canvas.height] : null;
+    });
+
+    expect(size).toEqual([1080, 1620]);
+});
+
+test('printing shows only a clean question card and runs from the share menu', async ({ page }) => {
+    await page.goto('/画面/対話/question.html?level=2');
+    await expect(page.locator('#nextQuestionButton')).toBeEnabled(ready);
+    const question = (await page.locator('#questionText').innerText()).trim();
+
+    await expect(page.locator('#printSheet')).toBeHidden();
+    await page.emulateMedia({ media: 'print' });
+    await expect(page.locator('#printSheet')).toBeVisible();
+    await expect(page.locator('.question-screen')).toBeHidden();
+    await expect(page.locator('#printSheetQuestion')).toHaveText(question);
+    await expect(page.locator('#printSheetLevel')).toContainText('level:');
+    await expect(page.locator('#nextQuestionButton')).toBeHidden();
+    await expect(page.locator('#finishButton')).toBeHidden();
+
+    await page.emulateMedia({ media: 'screen' });
+    await page.evaluate(() => {
+        window.__omoiPrinted = false;
+        window.print = () => { window.__omoiPrinted = true; };
+    });
+    await page.locator('#shareButton').click();
+    await page.getByRole('menuitem', { name: 'この問いを印刷' }).click();
+    await expect.poll(() => page.evaluate(() => window.__omoiPrinted)).toBe(true);
+});

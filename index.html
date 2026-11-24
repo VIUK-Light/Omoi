@@ -8,11 +8,11 @@
 
     <meta
         name="description"
-        content="Omoiは、日常から社会や倫理、人生の選択まで、4つのカテゴリから話題を選べる無料の質問カードです。正解のない問いから、違う考えを知る対話を始められます。"
+        content="Omoiは、日常から社会や倫理、人生の選択まで、3つのカテゴリから話題を選べる無料の質問カードです。正解のない問いから、違う考えを知る対話を始められます。"
     >
 
     <link rel="canonical" href="https://omoi.viuk-light.org/">
-    <link rel="icon" href="omoi-icon.svg" type="image/svg+xml">
+    <link rel="icon" href="画像/omoi-icon.svg" type="image/svg+xml">
     <meta name="theme-color" content="#111111">
 
     <meta property="og:type" content="website">
@@ -20,11 +20,11 @@
     <meta property="og:title" content="Omoi｜違う考えを知るための質問カード">
     <meta
         property="og:description"
-        content="日常から社会や倫理、人生の選択まで。4つのカテゴリから選び、正解のない問いをきっかけに対話できます。"
+        content="日常から社会や倫理、人生の選択まで。3つのカテゴリから選び、正解のない問いをきっかけに対話できます。"
     >
     <meta property="og:url" content="https://omoi.viuk-light.org/">
     <meta property="og:locale" content="ja_JP">
-    <meta property="og:image" content="https://omoi.viuk-light.org/og-image.png">
+    <meta property="og:image" content="https://omoi.viuk-light.org/%E7%94%BB%E5%83%8F/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Omoi｜違う考えを知るための質問カード">
@@ -33,12 +33,12 @@
     <meta name="twitter:title" content="Omoi｜違う考えを知るための質問カード">
     <meta
         name="twitter:description"
-        content="4つのカテゴリから話題を選び、正解のない問いから違う考えを知るための無料の質問カードです。"
+        content="3つのカテゴリから話題を選び、正解のない問いから違う考えを知るための無料の質問カードです。"
     >
-    <meta name="twitter:image" content="https://omoi.viuk-light.org/og-image.png">
+    <meta name="twitter:image" content="https://omoi.viuk-light.org/%E7%94%BB%E5%83%8F/og-image.png">
     <meta name="twitter:image:alt" content="Omoi｜違う考えを知るための質問カード">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="スタイル/style.css">
 
     <script type="application/ld+json">
     {
@@ -57,7 +57,7 @@
                 "@id": "https://omoi.viuk-light.org/#application",
                 "name": "Omoi",
                 "url": "https://omoi.viuk-light.org/",
-                "description": "日常から社会や倫理、人生の選択まで、4つのカテゴリから話題を選べる無料の質問カード。",
+                "description": "日常から社会や倫理、人生の選択まで、3つのカテゴリから話題を選べる無料の質問カード。",
                 "applicationCategory": "LifestyleApplication",
                 "operatingSystem": "Web browser",
                 "inLanguage": "ja",
@@ -73,7 +73,7 @@
                 "@id": "https://omoi.viuk-light.org/#webpage",
                 "url": "https://omoi.viuk-light.org/",
                 "name": "Omoi｜違う考えを知るための質問カード",
-                "description": "Omoiは、日常から社会や倫理、人生の選択まで、4つのカテゴリから話題を選べる無料の質問カードです。",
+                "description": "Omoiは、日常から社会や倫理、人生の選択まで、3つのカテゴリから話題を選べる無料の質問カードです。",
                 "isPartOf": {
                     "@id": "https://omoi.viuk-light.org/#website"
                 },
@@ -85,12 +85,18 @@
         ]
     }
     </script>
+    <script src="スクリプト/theme.js"></script>
+    <script src="スクリプト/home-catchcopy.js" defer></script>
+    <link rel="stylesheet" href="スタイル/theme.css">
 </head>
 
 <body>
     <main class="home">
         <nav class="home-nav" aria-label="主要メニュー">
-            <a href="guide.html">
+            <a href="画面/データベース/database.html">
+                質問データベース
+            </a>
+            <a href="画面/案内/guide.html">
                 使い方
             </a>
         </nav>
@@ -99,33 +105,42 @@
             <h1>Omoi</h1>
 
             <p class="catchcopy">
-                違う考えを知るために。
+                <span class="catchcopy__quote">『</span><span class="catchcopy__word">
+                    <span class="catchcopy__word-sizer" aria-hidden="true">Omoi</span>
+                    <span class="catchcopy__word-current" data-catchcopy-word>Omoi</span>
+                    <span class="catchcopy__word-next" aria-hidden="true"></span>
+                </span><span class="catchcopy__quote">』</span><span class="catchcopy__suffix">を伝え合おう</span>
             </p>
 
             <p class="description">
                 人間関係から社会問題、倫理、人生の選択まで。<br/>正解のない問いをきっかけに、相手の考えと自分の考えを深める無償の質問カード。
             </p>
 
-            <a href="select.html" class="start-button">
+            <a href="画面/選択/select.html" class="start-button">
                 はじめる
             </a>
-             <p class="Kiyaku"><a href="terms.html">利用規約</a>が適用されます</p>
+             <p class="Kiyaku"><a href="画面/案内/terms.html">利用規約</a>が適用されます</p>
         </section>
 
         <footer class="site-footer">
             <a
-                href="https://viuk-light.org/omoi.html"
+                href="https://viuk-light.org/"
                 class="brand"
-                aria-label="VIUK-LightのOmoi公式ページ"
+                aria-label="原作VIUK-Lightの公式サイト"
             >
                 <img
-                    src="viuk-light.jpg"
+                    src="画像/viuk-light.jpg"
                     alt=""
                     class="brand-icon"
                     width="18"
                     height="18"
                 >
                 <span>VIUK-Light</span>
+            </a>
+            <a href="https://github.com/VIUK-Light/Omoi" class="github-link footer-github" target="_blank" rel="noopener noreferrer" aria-label="GitHubリポジトリ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
             </a>
         </footer>
     </main>

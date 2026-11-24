@@ -3,15 +3,17 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateQuestionSupport } from "./question-support-schema.mjs";
+import { validateLabelList } from "./question-labels.mjs";
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = path.resolve(scriptDirectory, "..");
-const questionFiles = ["level1.json", "level2.json", "level3.json", "level4.json"];
+const activeLevels = [2, 3, 4];
+const questionFiles = activeLevels.map(level => `データ/質問/level${level}.json`);
 const argumentsSet = new Set(process.argv.slice(2));
 const reportOnly = argumentsSet.has("--report-only");
 const outputJson = argumentsSet.has("--json");
 const summaryOnly = argumentsSet.has("--summary");
-const strictDetails = argumentsSet.has("--strict-details");
 const enforceQualityTargets = argumentsSet.has("--enforce-quality-targets");
 
 if (argumentsSet.has("--help")) {
@@ -19,7 +21,7 @@ if (argumentsSet.has("--help")) {
 
 Options:
   --report-only     Report findings without a failing exit status.
-  --strict-details  Require detail.text for Level 3 and Level 4 cards (legacy alias; this is now the default).
+  --strict-details  Deprecated compatibility flag; background remains optional in v3.
   --enforce-quality-targets  Fail unless Level 2 has 80+ cards and each primary Level 4 perspective is 20%+.
   --json            Print the full report as JSON.
   --summary         Print only aggregate counts and finding-code totals.
@@ -101,67 +103,20 @@ function normalizeQuestion(question) {
         .toLowerCase();
 }
 
+function normalizeScenario(scenario) {
+    return String(scenario ?? "")
+        .normalize("NFKC")
+        .replace(/[\s　]+/g, "")
+        .toLowerCase();
+}
+
 function isNonEmptyString(value) {
     return typeof value === "string" && value.trim() !== "";
 }
 
-function validateDetail(record) {
-    if (record.detail === undefined) {
-        if (record.level >= 3) {
-            addFinding("error", "missing_detail", "Level 3/4 card has no detail object.", record);
-        }
-        return;
-    }
-
-    if (!record.detail || typeof record.detail !== "object" || Array.isArray(record.detail)) {
-        addFinding("error", "invalid_detail", "detail must be an object when present.", record);
-        return;
-    }
-
-    const text = record.detail.text;
-    if (text !== undefined && !isNonEmptyString(text)) {
-        addFinding("error", "invalid_detail_text", "detail.text must be a non-empty string when present.", record);
-    }
-
-    if (record.level >= 3 && !isNonEmptyString(text)) {
-        addFinding("error", "missing_detail_text", "Level 3/4 card is missing detail.text.", record);
-    }
-
-    if (record.detail.sources !== undefined) {
-        if (!Array.isArray(record.detail.sources)) {
-            addFinding("error", "invalid_sources", "detail.sources must be an array when present.", record);
-        } else {
-            record.detail.sources.forEach((source, sourceIndex) => {
-                const sourceContext = { ...record, sourceIndex };
-
-                if (!source || typeof source !== "object" || Array.isArray(source)) {
-                    addFinding("error", "invalid_source", "Each source must be an object.", sourceContext);
-                    return;
-                }
-
-                if (!isNonEmptyString(source.title)) {
-                    addFinding("error", "invalid_source_title", "Each source needs a non-empty title.", sourceContext);
-                }
-
-                if (!isNonEmptyString(source.url)) {
-                    addFinding("error", "invalid_source_url", "Each source needs a non-empty URL.", sourceContext);
-                    return;
-                }
-
-                try {
-                    const url = new URL(source.url);
-                    if (url.protocol !== "https:" && url.protocol !== "http:") {
-                        addFinding("error", "unsupported_source_protocol", "Source URLs must use http or https.", sourceContext);
-                    }
-                } catch {
-                    addFinding("error", "invalid_source_url", "Source URL is not a valid URL.", sourceContext);
-                }
-            });
-        }
-    }
-
-    if (isNonEmptyString(text) && (!Array.isArray(record.detail.sources) || record.detail.sources.length === 0)) {
-        addFinding("warning", "detail_without_sources", "detail.text exists but has no linked sources.", record);
+function validateSupport(record) {
+    for (const finding of validateQuestionSupport(record)) {
+        addFinding("error", finding.code, finding.message, record);
     }
 }
 
@@ -216,6 +171,10 @@ function validateContentWarnings(record) {
     }
 }
 
+if (fs.existsSync(path.join(repositoryRoot, "データ/質問/level1.json"))) {
+    addFinding("error", "retired_level_present", "Level 1 is retired; remove level1.json from this version.", { file: "データ/質問/level1.json" });
+}
+
 for (const fileName of questionFiles) {
     const filePath = path.join(repositoryRoot, fileName);
     const expectedLevel = Number(fileName.match(/\d+/)?.[0]);
@@ -256,8 +215,8 @@ for (const fileName of questionFiles) {
             addFinding("error", "invalid_question", "question must be a non-empty string.", record);
         }
 
-        if (!Number.isInteger(entry.level) || entry.level < 1 || entry.level > 4) {
-            addFinding("error", "invalid_level", "level must be an integer from 1 to 4.", record);
+        if (!Number.isInteger(entry.level) || !activeLevels.includes(entry.level)) {
+            addFinding("error", "invalid_level", "level must be one of the active integers 2, 3, or 4.", record);
         } else if (entry.level !== expectedLevel) {
             addFinding("error", "level_file_mismatch", "Card level does not match its level*.json file.", record);
         }
@@ -276,11 +235,15 @@ for (const fileName of questionFiles) {
             addFinding("error", "invalid_perspective", "Level 3/4 perspective must be affected, actor, decision_maker, or observer.", record);
         }
 
+        for (const message of validateLabelList(entry.labels)) {
+            addFinding("error", "invalid_labels", message, record);
+        }
+
         if (entry.role !== undefined && !isNonEmptyString(entry.role)) {
             addFinding("error", "invalid_role", "role must be a non-empty string when present.", record);
         }
 
-        validateDetail(record);
+        validateSupport(record);
         validateSafety(record);
         validateContentWarnings(record);
     });
@@ -298,9 +261,11 @@ for (const record of records) {
 
     if (isNonEmptyString(record.question)) {
         const normalized = normalizeQuestion(record.question);
-        const matchingRecords = recordsByQuestion.get(normalized) ?? [];
+        // 同じ質問文でも場面が異なれば別の問いとして扱う。
+        const key = `${normalized}|${normalizeScenario(record.scenario)}`;
+        const matchingRecords = recordsByQuestion.get(key) ?? [];
         matchingRecords.push(record);
-        recordsByQuestion.set(normalized, matchingRecords);
+        recordsByQuestion.set(key, matchingRecords);
     }
 }
 
@@ -313,7 +278,8 @@ for (const [id, matchingRecords] of recordsById) {
     }
 }
 
-for (const [normalizedQuestion, matchingRecords] of recordsByQuestion) {
+for (const [compositeKey, matchingRecords] of recordsByQuestion) {
+    const normalizedQuestion = compositeKey.split("|")[0];
     if (matchingRecords.length > 1) {
         addFinding("error", "duplicate_question", "Question text is duplicated after normalization.", {
             normalizedQuestion,
@@ -327,7 +293,7 @@ const levelCounts = Object.fromEntries(questionFiles.map((fileName) => [
     records.filter((record) => record.file === fileName).length
 ]));
 
-const internalLevelCounts = Object.fromEntries([1, 2, 3, 4].map((level) => [
+const internalLevelCounts = Object.fromEntries(activeLevels.map((level) => [
     `level${level}`,
     records.filter((record) => record.level === level).length
 ]));
@@ -361,6 +327,15 @@ const categoryCounts = Object.entries(records.reduce((counts, record) => {
     return counts;
 }, {})).sort(([left], [right]) => left.localeCompare(right));
 
+const labelCounts = Object.entries(records.reduce((counts, record) => {
+    if (Array.isArray(record.labels)) {
+        for (const label of record.labels) {
+            if (isNonEmptyString(label)) counts[label] = (counts[label] ?? 0) + 1;
+        }
+    }
+    return counts;
+}, {})).sort(([left], [right]) => left.localeCompare(right));
+
 const errors = findings.filter((finding) => finding.severity === "error");
 const warnings = findings.filter((finding) => finding.severity === "warning");
 const findingCodeCounts = Object.fromEntries([...new Set(findings.map((finding) => finding.code))]
@@ -375,7 +350,8 @@ const report = {
     errors,
     warnings,
     findingCodeCounts,
-    categories: Object.fromEntries(categoryCounts)
+    categories: Object.fromEntries(categoryCounts),
+    labels: Object.fromEntries(labelCounts)
 };
 
 if (summaryOnly) {
@@ -383,6 +359,7 @@ if (summaryOnly) {
         files: report.files,
         internalLevels: report.internalLevels,
         totalRecords: report.totalRecords,
+        labels: report.labels,
         errors: errors.length,
         warnings: warnings.length,
         findingCodeCounts: report.findingCodeCounts
@@ -394,6 +371,7 @@ if (summaryOnly) {
     console.log(`Records: ${report.totalRecords}`);
     console.log(`Files: ${Object.entries(levelCounts).map(([name, count]) => `${name}=${count}`).join(", ")}`);
     console.log(`Internal levels: ${Object.entries(internalLevelCounts).map(([name, count]) => `${name}=${count}`).join(", ")}`);
+    console.log(`Labels: ${Object.entries(report.labels).map(([name, count]) => `${name}=${count}`).join(", ")}`);
     console.log(`Errors: ${errors.length}`);
     console.log(`Warnings: ${warnings.length}`);
 
