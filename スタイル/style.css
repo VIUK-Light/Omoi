@@ -39,6 +39,63 @@ h1 {
     line-height: 1.6;
 }
 
+.catchcopy__word {
+    position: relative;
+    display: inline-block;
+    height: 1.6em;
+    overflow: hidden;
+    vertical-align: baseline;
+}
+
+.catchcopy__word-sizer {
+    display: block;
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+.catchcopy__word-current,
+.catchcopy__word-next {
+    position: absolute;
+    top: 0.365em;
+    right: 0;
+    left: 0;
+    display: block;
+    line-height: inherit;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.catchcopy__suffix {
+    line-height: inherit;
+}
+
+.catchcopy__word-next {
+    transform: translateY(100%);
+}
+
+.catchcopy__word.is-scrolling .catchcopy__word-current {
+    animation: catchcopy-scroll-out 450ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+.catchcopy__word.is-scrolling .catchcopy__word-next {
+    animation: catchcopy-scroll-in 450ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+@keyframes catchcopy-scroll-out {
+    to { transform: translateY(-100%); }
+}
+
+@keyframes catchcopy-scroll-in {
+    to { transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .catchcopy__word.is-scrolling .catchcopy__word-current,
+    .catchcopy__word.is-scrolling .catchcopy__word-next {
+        animation-duration: 1ms;
+    }
+}
+
 .description {
     margin-top: 24px;
     font-size: 15px;

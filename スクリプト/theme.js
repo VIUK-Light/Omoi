@@ -30,7 +30,7 @@
 
     const defaultDisplay = {
         theme: "auto",
-        background: "none",
+        background: "star",
         scrim: 55
     };
 

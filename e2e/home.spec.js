@@ -1,5 +1,70 @@
 const { test, expect } = require('@playwright/test');
 
+test('home catchcopy cycles through the thought words once per second and ends at Omoi', async ({ page }) => {
+  await page.goto('/');
+
+  const word = page.locator('[data-catchcopy-word]');
+  const fixedQuotes = await page.evaluate(() => Array.from(
+    document.querySelectorAll('.catchcopy__quote'),
+    (quote) => {
+      const { left, top } = quote.getBoundingClientRect();
+      return { left, top };
+    }
+  ));
+  const expectStableSpacing = async () => {
+    const layout = await page.evaluate(() => {
+      const current = document.querySelector('[data-catchcopy-word]');
+      const range = document.createRange();
+      range.selectNodeContents(current);
+      const word = range.getBoundingClientRect();
+      const viewport = document.querySelector('.catchcopy__word').getBoundingClientRect();
+      const quotes = Array.from(document.querySelectorAll('.catchcopy__quote'),
+        (quote) => quote.getBoundingClientRect());
+      const suffix = document.querySelector('.catchcopy__suffix').getBoundingClientRect();
+      return {
+        openQuoteToWord: viewport.left - quotes[0].right,
+        wordCenterOffset: Math.abs((word.left + word.right) / 2 - (viewport.left + viewport.right) / 2),
+        closeQuoteToSuffix: suffix.left - quotes[1].right,
+        quotePositions: quotes.map((quote) => ({ left: quote.left, top: quote.top })),
+        wordVerticalOffset: current.getBoundingClientRect().bottom - suffix.bottom
+      };
+    });
+    expect(Math.abs(layout.openQuoteToWord)).toBeLessThan(1);
+    expect(layout.wordCenterOffset).toBeLessThan(1);
+    expect(Math.abs(layout.closeQuoteToSuffix)).toBeLessThan(1);
+    layout.quotePositions.forEach((position, index) => {
+      expect(Math.abs(position.left - fixedQuotes[index].left)).toBeLessThan(1);
+      expect(Math.abs(position.top - fixedQuotes[index].top)).toBeLessThan(1);
+    });
+    return layout;
+  };
+  await expect(word).toHaveText('Omoi');
+  const initialLayout = await expectStableSpacing();
+  expect(initialLayout.wordVerticalOffset).toBeGreaterThan(5);
+  expect(initialLayout.wordVerticalOffset).toBeLessThan(6.5);
+  const scrollAnimations = page.evaluate(() => {
+    const container = document.querySelector('.catchcopy__word');
+    return Promise.all(
+      ['.catchcopy__word-current', '.catchcopy__word-next'].map((selector) => new Promise((resolve) => {
+        container.querySelector(selector).addEventListener(
+          'animationstart',
+          (event) => resolve(event.animationName),
+          { once: true }
+        );
+      }))
+    );
+  });
+
+  for (const nextWord of ['重い', '思い', '想い', 'Omoi']) {
+    await expect(word).toHaveText(nextWord, { timeout: 2000 });
+    await expectStableSpacing();
+  }
+
+  await page.waitForTimeout(1100);
+  await expect(word).toHaveText('Omoi');
+  expect(await scrollAnimations).toEqual(['catchcopy-scroll-out', 'catchcopy-scroll-in']);
+});
+
 test('home opens mode selection and moves to level selection', async ({ page }) => {
   await page.goto('/');
 

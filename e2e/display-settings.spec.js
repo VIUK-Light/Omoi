@@ -59,12 +59,14 @@ test('display settings extend the theme and stay on the device', async ({ page }
     await expect(page.locator('.theme-control')).toBeAttached(ready);
 
     const root = page.locator('html');
+    await expect(root).toHaveAttribute('data-background', 'star', ready);
     await page.locator('.theme-control > summary').click();
 
     await expect(page.getByRole('button', { name: 'セピア' })).toBeVisible();
     await expect(page.getByRole('button', { name: 'ナイト' })).toBeVisible();
     await expect(page.getByRole('button', { name: 'VIUK-Light', exact: true })).toBeVisible();
     await expect(page.getByRole('button', { name: '朝焼け' })).toBeVisible();
+    await expect(page.getByRole('button', { name: '星空' })).toHaveAttribute('aria-pressed', 'true', ready);
 
     await page.getByRole('button', { name: 'セピア' }).click();
     await expect(root).toHaveAttribute('data-theme', 'sepia', ready);
@@ -94,7 +96,7 @@ test('the chosen theme and background follow across every page', async ({ page }
 
     await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'night', ready);
-    await expect(page.locator('html')).toHaveAttribute('data-background', 'none', ready);
+    await expect(page.locator('html')).toHaveAttribute('data-background', 'star', ready);
 });
 
 test('every page offers the same display settings', async ({ page }) => {
@@ -144,7 +146,7 @@ test('reset restores the default display settings', async ({ page }) => {
 
     await page.getByRole('button', { name: '表示設定を初期化' }).click();
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'light', ready);
-    await expect(page.locator('html')).toHaveAttribute('data-background', 'none', ready);
+    await expect(page.locator('html')).toHaveAttribute('data-background', 'star', ready);
 });
 
 test('the setting kept under the old key is carried over', async ({ page }) => {
