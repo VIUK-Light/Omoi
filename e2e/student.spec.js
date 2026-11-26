@@ -57,7 +57,7 @@ test('category, level, count, heavy and classroom settings reach the question UR
 
   await expect(page.locator('#studentTotal')).toHaveText('5問');
   await expect(page.locator('#studentBreakdown')).toContainText('1カテゴリー');
-  await expect(page.locator('#studentBreakdown')).toContainText('level:低');
+  await expect(page.locator('#studentBreakdown')).toContainText('低');
   await expect(page.locator('#studentBreakdown')).toContainText('重い内容を除外');
 
   await page.locator('#nextButton').click();

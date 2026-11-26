@@ -102,7 +102,7 @@ test('the question picker filters by words and level and keeps a selected list',
   const badges = page.locator('#questionPicker .level-badge');
   expect(await badges.count()).toBeGreaterThan(0);
   for (const text of await badges.allTextContents()) {
-    expect(text).toBe('level:低');
+    expect(text).toBe('低');
   }
 
   await firstQuestion.locator('label').click();
@@ -232,18 +232,4 @@ test('custom selection fits 320px and keeps the action bar visible', async ({ pa
 });
 
 
-test('question search matches variant spellings via readings', async ({ page }) => {
-  await page.goto('/画面/選択/custom-select.html');
-  await expect(page.locator('#labelList input[value="school"]')).toHaveCount(1, ready);
 
-  await page.locator('#tabQuestions').click();
-  await expect(page.locator('#questionsPanel')).toBeVisible();
-  await page.waitForTimeout(3000);
-
-  const search = page.locator('#questionSearch');
-  await search.fill('子供');
-  await expect(page.locator('#questionPickerStatus')).toContainText('76問', ready);
-  await expect(page.locator('#questionPicker .question-pick').first()).toBeVisible();
-  const visibleQuestions = await page.locator('#questionPicker .question-pick-question').allTextContents();
-  expect(visibleQuestions.some(text => text.includes('子ども'))).toBe(true);
-});

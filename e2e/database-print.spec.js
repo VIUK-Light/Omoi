@@ -54,7 +54,7 @@ test('database selection supports three fixed card sizes and matching paper orie
   await termQuestion.locator('.db-card-check').check();
   await page.getByRole('button', { name: '選択した問いの印刷レイアウトへ' }).click();
 
-  const printDetailCard = page.locator('.print-card').filter({ hasText: 'social-media-003' });
+  const printDetailCard = page.locator('.print-card').filter({ hasText: 'この扱いの差は公平だと思う' });
   await page.locator('#optDetail').check();
   await expect(page.locator('#printOverflowWarning')).toBeVisible();
   await expect(page.locator('#printOverflowWarning')).toContainText('一部のカードで内容がはみ出る可能性');

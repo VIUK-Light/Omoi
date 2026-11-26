@@ -23,6 +23,7 @@ body {
     display: grid;
     width: 36px;
     height: 36px;
+    position: relative;
     box-sizing: border-box;
     place-items: center;
     border: 1px solid transparent;
@@ -37,6 +38,11 @@ body {
 }
 
 .furigana-settings > summary::-webkit-details-marker { display: none; }
+.furigana-settings > summary::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+}
 .furigana-settings > summary:hover { background: var(--omoi-hover, #eeeeee); }
 .furigana-settings > summary:focus-visible {
     outline: 2px solid var(--omoi-focus, #24566b);
@@ -141,6 +147,10 @@ body {
     color: #666666;
     text-decoration: none;
     font-size: 14px;
+    min-height: 36px;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 0;
 }
 
 .classroom-mode-button {
@@ -164,6 +174,10 @@ body {
 
 .classroom-mode-button[hidden],
 .question-progress[hidden] {
+    display: none;
+}
+.finish-button[hidden],
+.previous-button[hidden] {
     display: none;
 }
 
@@ -226,6 +240,7 @@ body {
 
 #questionText {
     margin: 0;
+    outline: none;
 
     font-size: clamp(28px, 4vw, 42px);
     line-height: 1.45;
@@ -382,7 +397,7 @@ body {
     justify-content: center;
     gap: 9px;
 
-    min-height: 38px;
+    min-height: 44px;
     padding: 0 14px;
 
     border: 1px solid #dddddd;
@@ -457,6 +472,10 @@ body {
     font: inherit;
     font-size: 14px;
     cursor: pointer;
+    min-height: 44px;
+    padding: 10px 0;
+    display: inline-flex;
+    align-items: center;
 }
 
 .finish-button:disabled {
@@ -489,6 +508,10 @@ body {
     font: inherit;
     font-size: 14px;
     cursor: pointer;
+    min-height: 44px;
+    padding: 10px 0;
+    display: inline-flex;
+    align-items: center;
 }
 
 .previous-button:disabled {

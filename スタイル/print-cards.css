@@ -140,8 +140,8 @@
 @media (max-width: 600px) {
     .print-cards-screen { padding: 12px; }
     .print-toolbar { align-items: stretch; flex-direction: column; gap: 8px; }
-    .print-toolbar-group { gap: 4px 10px; }
-    .print-option { min-height: 32px; }
+    .print-toolbar-group { gap: 4px 10px; flex: 0 1 auto; }
+    .print-option { min-height: 36px; }
     .print-button { width: 100%; }
     .print-page { padding: 2.86%; }
     .print-page[data-card-size="half"] { padding: 2.02%; }

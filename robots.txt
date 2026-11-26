@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
+Disallow: /preview/
+Disallow: /staging-r6/
+Disallow: /research/
+Disallow: /tools/
+Disallow: /e2e/
+Disallow: /node_modules/
+Disallow: /playwright-report/
+Disallow: /test-results/
+
 Sitemap: https://omoi.viuk-light.org/sitemap.xml

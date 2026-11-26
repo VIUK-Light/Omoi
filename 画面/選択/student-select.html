@@ -85,7 +85,7 @@
                         </button>
                     </div>
                     <p class="student-setting-note">
-                        大まかなカテゴリーから選べます。選ばない場合は学校・若者向けの問いから出題します。
+                        大まかなカテゴリーから選べます。選ばない場合は学校・若者向けの問いから出題します。カテゴリーを選ぶと、学校・若者向け以外の問いも含めて出題します。
                     </p>
                     <div id="themeGroups" class="student-theme-groups"></div>
                 </div>
@@ -97,13 +97,13 @@
                             <button type="button" class="level-filter" data-student-level="all" aria-pressed="true">
                                 すべて
                             </button>
-                            <button type="button" class="level-filter" data-student-level="2" aria-pressed="false" title="level:低">
+                            <button type="button" class="level-filter" data-student-level="2" aria-pressed="false" title="低">
                                 低
                             </button>
-                            <button type="button" class="level-filter" data-student-level="3" aria-pressed="false" title="level:中">
+                            <button type="button" class="level-filter" data-student-level="3" aria-pressed="false" title="中">
                                 中
                             </button>
-                            <button type="button" class="level-filter" data-student-level="4" aria-pressed="false" title="level:高">
+                            <button type="button" class="level-filter" data-student-level="4" aria-pressed="false" title="高">
                                 高
                             </button>
                         </div>
@@ -139,7 +139,7 @@
                         <input type="checkbox" id="avoidHeavy">
                         <span class="student-toggle-body">
                             <strong>重い内容を避ける</strong>
-                            <small>特に配慮が必要な問い（sensitivity 4）を除きます</small>
+                            <small>特に配慮が必要な問いを除きます</small>
                         </span>
                     </label>
                     <label class="student-toggle">
@@ -242,7 +242,6 @@
         </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js" defer></script>
     <script src="../../スクリプト/question-share.js"></script>
     <script src="../../スクリプト/student-select.js"></script>
 </body>

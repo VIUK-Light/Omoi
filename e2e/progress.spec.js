@@ -39,7 +39,7 @@ test('ending mid-way leaves a resume notice on the level screen, not the home sc
     await page.waitForURL('**/select.html');
     await expect(page.locator('#resumeNotice')).toBeVisible();
     await expect(page.locator('#resumeNotice')).toContainText('前回の続きがあります');
-    await expect(page.locator('#resumeNoticeDetail')).toContainText('level:低');
+    await expect(page.locator('#resumeNoticeDetail')).toContainText('低');
     await expect(page.locator('#resumeNoticeDetail')).toContainText('2問目から');
 
     await page.locator('#resumeNoticeLink').click();

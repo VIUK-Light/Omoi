@@ -98,8 +98,6 @@
     let indexReady = false;
     let indexError = "";
     let indexPromise = null;
-    let kuromojiTokenizer = null;
-    let kuromojiLoadingPromise = null;
     let visibleQuestionCount = pageSize;
 
     const selectedThemes = new Set();
@@ -114,53 +112,6 @@
 
     function normalizeSearch(value) {
         return String(value ?? "").normalize("NFKC").toLowerCase();
-    }
-
-    function katakanaToHiragana(value) {
-        return String(value ?? "").replace(/[ァ-ン]/g, char =>
-            String.fromCharCode(char.charCodeAt(0) - 0x60)
-        );
-    }
-
-    function loadKuromoji() {
-        if (kuromojiTokenizer) return Promise.resolve(kuromojiTokenizer);
-        if (kuromojiLoadingPromise) return kuromojiLoadingPromise;
-        if (typeof window === "undefined" || !window.kuromoji) {
-            return Promise.resolve(null);
-        }
-        kuromojiLoadingPromise = new Promise(resolve => {
-            try {
-                window.kuromoji.builder({ dicPath: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/" })
-                    .build((error, tokenizer) => {
-                        if (error || !tokenizer) {
-                            kuromojiTokenizer = null;
-                            resolve(null);
-                            return;
-                        }
-                        kuromojiTokenizer = tokenizer;
-                        resolve(tokenizer);
-                    });
-            } catch (error) {
-                kuromojiTokenizer = null;
-                resolve(null);
-            }
-        });
-        return kuromojiLoadingPromise;
-    }
-
-    function textToReading(value) {
-        const normalized = normalizeSearch(value);
-        if (!normalized) return "";
-        if (!kuromojiTokenizer) return normalized;
-        try {
-            const tokens = kuromojiTokenizer.tokenize(String(value ?? ""));
-            const reading = tokens
-                .map(token => (token.reading && token.reading !== "*" ? token.reading : token.surface_form))
-                .join("");
-            return normalizeSearch(katakanaToHiragana(reading));
-        } catch (error) {
-            return normalized;
-        }
     }
 
     function labelName(labelId) {
@@ -201,7 +152,6 @@
     function filterPickerQuestions() {
         const rawTerm = questionSearch?.value ?? "";
         const term = normalizeSearch(rawTerm);
-        const readingTerm = textToReading(rawTerm);
         const topic = questionTopicFilter?.value || "all";
 
         return questions.filter(question => {
@@ -214,7 +164,7 @@
                 ...question.labels.map(labelName)
             ].join(" ").normalize("NFKC").toLowerCase();
             if (haystack.includes(term)) return true;
-            return Boolean(readingTerm) && normalizeSearch(question.reading).includes(readingTerm);
+            return false;
         });
     }
 
@@ -333,7 +283,7 @@
         }
         const selectedCategories = selectedCategoryCount();
         if (selectedCategories > 0) {
-            themeSummary.textContent = `${selectedCategories}カテゴリーを選択中・${basePool().length}問`;
+            themeSummary.textContent = `${selectedCategories}カテゴリーを選択中・${basePool().length}問（学校・若者向け以外も含む）`;
             return;
         }
         const count = basePool().length;
@@ -353,7 +303,7 @@
             button.setAttribute("aria-pressed", String(pressed));
             button.setAttribute("title", value === "all"
                 ? "すべての深さ"
-                : `level:${levelNames[Number(value)]}｜${levelDescriptions[Number(value)]}`);
+                : `${levelNames[Number(value)]}｜${levelDescriptions[Number(value)]}`);
         }
     }
 
@@ -486,7 +436,7 @@
                 : "学校・若者向け";
             const levelLabel = selectedLevels.size === 0
                 ? "すべての深さ"
-                : `level:${[...selectedLevels].sort().map(value => levelNames[value]).join("・")}`;
+                : `${[...selectedLevels].sort().map(value => levelNames[value]).join("・")}`;
             const heavyLabel = avoidHeavy ? "・重い内容を除外" : "";
             studentBreakdown.textContent = `${themeLabel}・${levelLabel}・${countLabel}${heavyLabel}`;
         }
@@ -666,7 +616,7 @@
 
             const levelBadge = document.createElement("span");
             levelBadge.className = "level-badge";
-            levelBadge.textContent = `level:${levelNames[question.level] ?? question.level}`;
+            levelBadge.textContent = `${levelNames[question.level] ?? question.level}`;
             meta.append(levelBadge);
 
             const labels = document.createElement("span");
@@ -1122,9 +1072,7 @@
             updateSelectAllButton();
         });
         questionSearch.addEventListener("focus", function () {
-            loadKuromoji().then(function (tokenizer) {
-                if (tokenizer) renderPicker();
-            });
+            renderPicker();
         });
     }
 

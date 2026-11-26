@@ -14,7 +14,6 @@ const STORAGE_KEY = "omoi-print-selection";
 let questions = [];
 let labelsById = new Map();
 let selectedIds = new Set();
-let kuromojiTokenizer = null;
 
 const levelNames = { 2: "低", 3: "中", 4: "高" };
 
@@ -69,24 +68,11 @@ async function loadData() {
         if (Array.isArray(saved)) saved.forEach(id => selectedIds.add(id));
     } catch (e) {}
 
-    // kuromoji
-    if (typeof kuromoji !== "undefined") {
-        kuromoji.builder({ dicPath: "node_modules/kuromoji/dict" }).build((err, tokenizer) => {
-            if (!err) kuromojiTokenizer = tokenizer;
-        });
-    }
-
     render();
-}
-
-function textToReading(value) {
-    if (!kuromojiTokenizer) return "";
-    try { return kuromojiTokenizer.tokenize(value).map(t => t.reading || t.surface_form).join(""); } catch (e) { return ""; }
 }
 
 function filteredQuestions() {
     const term = normalizeSearch(dbSearch.value);
-    const readingTerm = textToReading(dbSearch.value);
     const level = dbLevel.value;
     const category = dbCategory.value;
     const theme = dbTheme.value;
@@ -99,9 +85,8 @@ function filteredQuestions() {
             q.detail?.text,
             ...(Array.isArray(q.detail?.sources) ? q.detail.sources.map(source => source?.title) : [])
         ].filter(Boolean);
-        const haystack = [q.question, q.category, q.search, ...detailSearch, ...q.labels.map(l => labelsById.get(l)?.name ?? l)].join(" ").normalize("NFKC").toLowerCase();
+        const haystack = [q.question, q.category, q.search, q.reading, ...detailSearch, ...q.labels.map(l => labelsById.get(l)?.name ?? l)].join(" ").normalize("NFKC").toLowerCase();
         if (haystack.includes(term)) return true;
-        if (readingTerm && q.reading) return normalizeSearch(q.reading).includes(normalizeSearch(readingTerm));
         return false;
     }).sort((a, b) => a.level - b.level || a.id.localeCompare(b.id));
 }
@@ -157,7 +142,7 @@ function renderCard(q) {
 
     const badge = document.createElement("span");
     badge.className = "db-level-badge";
-    badge.textContent = `level:${levelNames[q.level] ?? q.level}`;
+    badge.textContent = `${levelNames[q.level] ?? q.level}`;
     head.append(badge);
 
     const idEl = document.createElement("span");

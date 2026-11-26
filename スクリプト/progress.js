@@ -220,13 +220,13 @@
     function resumeDetail(data) {
         const position = `${data.index + 1}問目から`;
         if (data.version === 1) {
-            return `level:${levelNames[data.level]}｜${levelLabels[data.level]}・${position}`;
+            return `${levelNames[data.level]}｜${levelLabels[data.level]}・${position}`;
         }
         if (data.mode === "all") {
             if (data.pickup === true) {
                 return `今月のピックアップ質問｜${data.ids.length}問・${position}`;
             }
-            return `level:${levelNames[data.level]}｜${levelLabels[data.level]}・${position}`;
+            return `${levelNames[data.level]}｜${levelLabels[data.level]}・${position}`;
         }
         if (data.mode === "student") {
             const settings = data.version === 3 ? data.student : null;
@@ -238,7 +238,7 @@
                     parts.push(`${settings.themes.length}テーマ`);
                 }
                 if (settings.levels.length > 0) {
-                    parts.push(`level:${[...settings.levels]
+                    parts.push(`${[...settings.levels]
                         .sort((left, right) => left - right)
                         .map(value => levelNames[value])
                         .join("・")}`);

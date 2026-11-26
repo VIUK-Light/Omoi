@@ -143,7 +143,7 @@ test('terms-only background and hints-only questions do not require a detail exp
   await expect(page.locator('#hintsPanel')).toBeVisible();
 });
 
-for (const prefix of ['/', '/preview/omoi-v3/']) {
+for (const prefix of ['/']) {
   test(`retired Level 1 is rejected before fetching and returns to active selection: ${prefix}`, async ({ page }) => {
     const pagePrefix = prefix === '/' ? '/画面/対話/' : prefix;
     const datasetRequests = [];
@@ -167,7 +167,7 @@ for (const prefix of ['/', '/preview/omoi-v3/']) {
       await page.locator('#nextButton').click();
       await expect(page).toHaveURL(new RegExp(`${prefix === '/' ? '' : prefix}level-select.html`));
     }
-    const expectedLevels = prefix === '/' ? ['pickup', '2', '3', '4'] : ['2', '3', '4'];
+    const expectedLevels = ['pickup', '2', '3', '4'];
     expect(await page.locator('input[name="level"]').evaluateAll(inputs => inputs.map(input => input.value))).toEqual(expectedLevels);
   });
 }

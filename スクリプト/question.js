@@ -1286,7 +1286,7 @@ function updatePrintSheet(question) {
     printSheetScenario.textContent = scenario;
     printSheetScenarioBlock.hidden = scenario === "";
     printSheetLevel.textContent = question.level
-        ? `level:${levelNames[question.level] ?? ""}`
+        ? `${levelNames[question.level] ?? ""}`
         : "";
     printSheetLevelNote.textContent = levelDescriptions[question.level] ?? "";
 }
@@ -1722,7 +1722,7 @@ async function createQuestionCard(question) {
     if ("letterSpacing" in context) {
         context.letterSpacing = "2px";
     }
-    context.fillText(`level:${levelNames[question.level]}`, cardWidth - cardPadding, cardPadding + 2);
+    context.fillText(`${levelNames[question.level]}`, cardWidth - cardPadding, cardPadding + 2);
     if ("letterSpacing" in context) {
         context.letterSpacing = "0px";
     }
@@ -1855,7 +1855,7 @@ async function createQuestionCard(question) {
 
     context.fillStyle = colors.muted;
     context.font = "400 22px sans-serif";
-    context.fillText("omoi.viuk-light.org", cardPadding, footerRuleY + 30);
+    context.fillText("原作：VIUK-Light · omoi.viuk-light.org", cardPadding, footerRuleY + 30);
 
     context.textAlign = "right";
     context.font = "400 20px sans-serif";
@@ -2142,7 +2142,7 @@ changeCategoryLink.addEventListener("click", async function (event) {
         ? "選択内容を編集します。進捗は保持されます。続行しますか？"
         : "設定を変えると、現在の進捗がリセットされます。続行しますか？";
     let ok;
-    try { ok = await showOmoiConfirm(message); } catch (e) { console.log("DBG err", e && e.message); ok = false; }
+    try { ok = await showOmoiConfirm(message); } catch (e) { ok = false; }
     if (!ok) return;
     if (!isEditLink) window.OmoiProgress?.clear();
     window.location.href = href;
@@ -2299,8 +2299,7 @@ document.addEventListener("fullscreenchange", updateFullscreenButton);
 
 function updateQuestionProgress() {
     if (!questionProgress) return;
-    const show = mode === "student" &&
-        !isSharedQuestion &&
+    const show = !isSharedQuestion &&
         state === "ready" &&
         sessionQuestions.length > 0 &&
         (sessionQuestions.length > 1 || classroomModeEnabled);

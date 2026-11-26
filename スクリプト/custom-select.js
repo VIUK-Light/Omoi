@@ -29,60 +29,10 @@ const customErrorText = document.getElementById("customErrorText");
 const retryLoadButton = document.getElementById("retryLoadButton");
 
 const allowedLevels = new Set(["2", "3", "4"]);
-let kuromojiTokenizer = null;
-let kuromojiLoadingPromise = null;
-
-function katakanaToHiragana(value) {
-    return String(value ?? "").replace(/[ァ-ン]/g, char =>
-        String.fromCharCode(char.charCodeAt(0) - 0x60)
-    );
-}
-
-function loadKuromoji() {
-    if (kuromojiTokenizer) return Promise.resolve(kuromojiTokenizer);
-    if (kuromojiLoadingPromise) return kuromojiLoadingPromise;
-    if (typeof window === "undefined" || !window.kuromoji) {
-        return Promise.resolve(null);
-    }
-    kuromojiLoadingPromise = new Promise(resolve => {
-        try {
-            window.kuromoji.builder({ dicPath: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/" })
-                .build((error, tokenizer) => {
-                    if (error || !tokenizer) {
-                        kuromojiTokenizer = null;
-                        resolve(null);
-                        return;
-                    }
-                    kuromojiTokenizer = tokenizer;
-                    resolve(tokenizer);
-                });
-        } catch (error) {
-            kuromojiTokenizer = null;
-            resolve(null);
-        }
-    });
-    return kuromojiLoadingPromise;
-}
-
-function textToReading(value) {
-    const normalized = normalizeSearch(value);
-    if (!normalized) return "";
-    if (!kuromojiTokenizer) return normalized;
-    try {
-        const tokens = kuromojiTokenizer.tokenize(String(value ?? ""));
-        const reading = tokens
-            .map(token => (token.reading && token.reading !== "*" ? token.reading : token.surface_form))
-            .join("");
-        return normalizeSearch(katakanaToHiragana(reading));
-    } catch (error) {
-        return normalized;
-    }
-}
-
 const levelNames = {
-    2: "level:低",
-    3: "level:中",
-    4: "level:高"
+    2: "低",
+    3: "中",
+    4: "高"
 };
 const pageSize = 20;
 const tabs = [tabLabels, tabQuestions].filter(Boolean);
@@ -169,7 +119,6 @@ function normalizeSearch(value) {
 function filteredQuestions() {
     const rawTerm = questionSearch?.value ?? "";
     const term = normalizeSearch(rawTerm);
-    const readingTerm = textToReading(rawTerm);
     const list = questions.filter(question => {
         if (selectedLevel !== "all" && String(question.level) !== selectedLevel) {
             return false;
@@ -183,12 +132,10 @@ function filteredQuestions() {
             question.category,
             levelNames[question.level] ?? "",
             question.search ?? "",
+            question.reading ?? "",
             ...question.labels.map(labelName)
         ].join(" ").normalize("NFKC").toLowerCase();
         if (haystack.includes(term)) return true;
-        if (readingTerm && question.reading) {
-            return normalizeSearch(question.reading).includes(readingTerm);
-        }
         return false;
     });
     return list.sort((left, right) => {
@@ -935,16 +882,13 @@ if (tabLabels) {
 if (tabQuestions) {
     tabQuestions.addEventListener("click", function () {
         setActiveTab("questions");
-        loadKuromoji();
     });
     tabQuestions.addEventListener("keydown", handleTabKeydown);
 }
 
 if (questionSearch) {
     questionSearch.addEventListener("focus", function () {
-        loadKuromoji().then(function () {
-            renderQuestionPicker();
-        });
+        renderQuestionPicker();
     });
     questionSearch.addEventListener("input", function () {
         visibleQuestionCount = pageSize;

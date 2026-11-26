@@ -176,7 +176,7 @@
                 .filter(level => levelNames[level])
                 .sort();
             const levelText = levels.length > 0
-                ? levels.map(level => `level:${levelNames[level]}`).join("・")
+                ? levels.map(level => `${levelNames[level]}`).join("・")
                 : "";
             worksheetMeta.textContent = levelText
                 ? `${questions.length}問 ／ ${levelText}`
@@ -208,7 +208,7 @@
 
             const level = document.createElement("span");
             level.className = "worksheet-level";
-            level.textContent = `level:${levelNames[question.level] ?? question.level}`;
+            level.textContent = `${levelNames[question.level] ?? question.level}`;
             meta.append(level);
 
             const topic = topicName(question);

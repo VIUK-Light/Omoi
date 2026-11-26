@@ -112,7 +112,7 @@ function buildCard(q) {
     const meta = document.createElement("span");
     meta.className = "print-card-meta";
     meta.textContent = [
-        q.level ? `level:${levelNames[q.level] ?? q.level}` : "",
+        q.level ? `${levelNames[q.level] ?? q.level}` : "",
         optId.checked ? q.id : ""
     ].filter(Boolean).join(" ・ ");
     header.append(meta);
@@ -190,7 +190,7 @@ function buildCard(q) {
 
     const footer = document.createElement("footer");
     footer.className = "print-card-footer";
-    footer.textContent = "omoi.viuk-light.org";
+    footer.textContent = "原作：VIUK-Light · omoi.viuk-light.org";
     card.append(footer);
 
     return card;

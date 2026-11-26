@@ -177,7 +177,7 @@
             if (selectedThemes.length > 0) parts.push(`${selectedThemes.length}カテゴリー`);
             else parts.push("学校・若者向け");
             if (selectedLevels.length > 0) {
-                parts.push(`level:${selectedLevels.map(l => levelNames[l]).join("・")}`);
+                parts.push(`${selectedLevels.map(l => levelNames[l]).join("・")}`);
             } else {
                 parts.push("すべての深さ");
             }
@@ -209,7 +209,7 @@
 
             const level = document.createElement("span");
             level.className = "level-badge";
-            level.textContent = `level:${levelNames[question.level] ?? question.level}`;
+            level.textContent = `${levelNames[question.level] ?? question.level}`;
             meta.append(num, level);
 
             if (question.sensitivity === 4) {

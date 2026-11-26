@@ -236,6 +236,7 @@
     display: grid;
     width: 36px;
     height: 36px;
+    position: relative;
     box-sizing: border-box;
     place-items: center;
     border: 1px solid transparent;
@@ -247,6 +248,11 @@
 }
 
 .theme-control > summary::-webkit-details-marker { display: none; }
+.theme-control > summary::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+}
 .theme-control > summary:hover { background: var(--omoi-hover); }
 .theme-control > summary:focus-visible {
     outline: 2px solid var(--omoi-focus);

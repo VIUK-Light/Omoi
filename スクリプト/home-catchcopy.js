@@ -7,8 +7,11 @@
     }
 
     window.addEventListener("load", () => {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            return;
+        }
         const words = ["重い", "思い", "想い", "Omoi"];
-        const transitionDuration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 1 : 450;
+        const transitionDuration = 450;
         let index = 0;
         const interval = window.setInterval(() => {
             const next = words[index];

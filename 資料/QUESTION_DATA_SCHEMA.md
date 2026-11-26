@@ -123,7 +123,7 @@ node --test tools/furigana-schema.test.mjs tools/question-flow.test.mjs
 
 検証は全質問の表示項目を収集し、読みデータの不足、元の表示文との不一致、漢字の読み漏れ、形式不正を検出します。
 
-v3プレビューではLevel 3・4の全663問を対象に、採用／省略理由と文面の指紋を `資料/v3-content-review.json` に記録します。版は `version: 1`、有効Levelは `activeLevels: [2, 3, 4]`、起点は `baseCommit`、各記録には `id`、`level`、`fingerprint`、4補助の `decisions`、`reviewer`、別の読み手の `independentReviewer` を持たせます。指紋は現在のカードから表示ラベル `labels` を除いた全体を `JSON.stringify()` したUTF-8文字列のSHA-256です。補助文を変更した場合も再確認が必要です。Level 2は `labels` を除いて変更がないことを検証します。
+この版ではLevel 3・4の全669問を対象に、採用／省略理由と文面の指紋を `資料/v3-content-review.json` に記録します。版は `version: 1`、有効Levelは `activeLevels: [2, 3, 4]`、起点は `baseCommit`、各記録には `id`、`level`、`fingerprint`、4補助の `decisions`、`reviewer`、別の読み手の `independentReviewer` を持たせます。指紋は現在のカードから表示ラベル `labels` を除いた全体を `JSON.stringify()` したUTF-8文字列のSHA-256です。補助文を変更した場合も再確認が必要です。Level 2は `labels` を除いて変更がないことを検証します。
 
 ## 表示設定
 
@@ -192,4 +192,4 @@ node tools/verify-v3-review.mjs --summary
 
 データ検証は、JSON構文、ID一意性、重複質問、Levelと配置の一致、必須metadata、補助の形式と掲載Level、カテゴリ・警告値、L2の80件以上、L4の視点比率を確認します。ピックアップ検証は、`version`・`month`・`title`、Level 2〜4の各10件、合計30件、IDの重複、質問データとのLevel一致を確認します。旧 `--strict-details` 指定は互換性のため受け付けますが、v3で背景を必須に戻す効果はありません。
 
-レビュー検証は全663問の確認記録と指紋、独立した読み手、起点からの有効な全743問（Level 2・3・4）の保持と、Level 1の廃止を確認します。変更できるカード項目は `summary`・`hints`・`detail`・`terms` だけです。質問・場面文・ID・Level・分類・順序を保持し、Level 2のファイルはバイト単位で保持します。Level 1のデータファイルや現行レコードが存在する場合は検証に失敗します。未確認や文面不一致があれば反映を止めます。
+レビュー検証は全669問の確認記録と指紋、独立した読み手、起点からの有効な全749問（Level 2・3・4）の保持と、Level 1の廃止を確認します。変更できるカード項目は `summary`・`hints`・`detail`・`terms` だけです。質問・場面文・ID・Level・分類・順序を保持し、Level 2のファイルはバイト単位で保持します。Level 1のデータファイルや現行レコードが存在する場合は検証に失敗します。未確認や文面不一致があれば反映を止めます。

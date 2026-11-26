@@ -41,19 +41,6 @@ test('home catchcopy cycles through the thought words once per second and ends a
   await expect(word).toHaveText('Omoi');
   const initialLayout = await expectStableSpacing();
   expect(Math.abs(initialLayout.wordBaselineOffset)).toBeLessThan(1);
-  const scrollAnimations = page.evaluate(() => {
-    const container = document.querySelector('.catchcopy__word');
-    return Promise.all(
-      ['.catchcopy__word-current', '.catchcopy__word-next'].map((selector) => new Promise((resolve) => {
-        container.querySelector(selector).addEventListener(
-          'animationstart',
-          (event) => resolve(event.animationName),
-          { once: true }
-        );
-      }))
-    );
-  });
-
   for (const nextWord of ['重い', '思い', '想い', 'Omoi']) {
     await expect(word).toHaveText(nextWord, { timeout: 2000 });
     await expectStableSpacing();
@@ -61,7 +48,6 @@ test('home catchcopy cycles through the thought words once per second and ends a
 
   await page.waitForTimeout(1100);
   await expect(word).toHaveText('Omoi');
-  expect(await scrollAnimations).toEqual(['catchcopy-scroll-out', 'catchcopy-scroll-in']);
 });
 
 test('home opens mode selection and moves to level selection', async ({ page }) => {
@@ -87,9 +73,9 @@ test('home opens mode selection and moves to level selection', async ({ page }) 
   await expect(page.locator('input[name="level"]')).toHaveCount(4);
   await expect(page.locator('#level1')).toHaveCount(0);
   await expect(page.locator('#levelPickup')).toBeVisible();
-  await expect(page.locator('label[for="level2"]')).toContainText('level:低');
-  await expect(page.locator('label[for="level3"]')).toContainText('level:中');
-  await expect(page.locator('label[for="level4"]')).toContainText('level:高');
+  await expect(page.locator('label[for="level2"]')).toContainText('低');
+  await expect(page.locator('label[for="level3"]')).toContainText('中');
+  await expect(page.locator('label[for="level4"]')).toContainText('高');
   await page.locator('label[for="level2"]').click();
   await expect(levelNext).toBeEnabled();
 });

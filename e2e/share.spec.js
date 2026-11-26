@@ -77,7 +77,7 @@ test('the card shows the level name instead of the level number', async ({ page 
         return calls;
     });
 
-    expect(texts).toContain('level:高');
+    expect(texts).toContain('高');
 });
 
 test('the share menu closes with Escape and keeps the focus on the share button', async ({ page }) => {
@@ -143,7 +143,7 @@ test('printing shows only a clean question card and runs from the share menu', a
     await expect(page.locator('#printSheet')).toBeVisible();
     await expect(page.locator('.question-screen')).toBeHidden();
     await expect(page.locator('#printSheetQuestion')).toHaveText(question);
-    await expect(page.locator('#printSheetLevel')).toContainText('level:');
+    await expect(page.locator('#printSheetLevel')).toContainText('低');
     await expect(page.locator('#nextQuestionButton')).toBeHidden();
     await expect(page.locator('#finishButton')).toBeHidden();
 
