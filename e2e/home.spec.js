@@ -26,7 +26,7 @@ test('home catchcopy cycles through the thought words once per second and ends a
         wordCenterOffset: Math.abs((word.left + word.right) / 2 - (viewport.left + viewport.right) / 2),
         closeQuoteToSuffix: suffix.left - quotes[1].right,
         quotePositions: quotes.map((quote) => ({ left: quote.left, top: quote.top })),
-        wordVerticalOffset: current.getBoundingClientRect().bottom - suffix.bottom
+        wordBaselineOffset: word.bottom - suffix.bottom
       };
     });
     expect(Math.abs(layout.openQuoteToWord)).toBeLessThan(1);
@@ -40,8 +40,7 @@ test('home catchcopy cycles through the thought words once per second and ends a
   };
   await expect(word).toHaveText('Omoi');
   const initialLayout = await expectStableSpacing();
-  expect(initialLayout.wordVerticalOffset).toBeGreaterThan(5);
-  expect(initialLayout.wordVerticalOffset).toBeLessThan(6.5);
+  expect(Math.abs(initialLayout.wordBaselineOffset)).toBeLessThan(1);
   const scrollAnimations = page.evaluate(() => {
     const container = document.querySelector('.catchcopy__word');
     return Promise.all(

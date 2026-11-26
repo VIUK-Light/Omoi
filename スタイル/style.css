@@ -56,7 +56,8 @@ h1 {
 .catchcopy__word-current,
 .catchcopy__word-next {
     position: absolute;
-    top: 0.365em;
+    /* 日本語の文字とベースラインを揃える（従来より約1pt下げる） */
+    top: 0.433em;
     right: 0;
     left: 0;
     display: block;
