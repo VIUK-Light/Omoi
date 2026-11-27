@@ -2452,3 +2452,19 @@ setShareMenuOpen(false);
 window.addEventListener("pagehide", function () {
     setQuestionSummaryOpen(false);
 });
+
+// スマホ版の親ボタンview（details）を、外側クリック/Escapeで閉じる。
+document.querySelectorAll(".question-tool-group").forEach((group) => {
+    document.addEventListener("click", (event) => {
+        if (group.open && !group.contains(event.target)) {
+            group.open = false;
+        }
+    });
+
+    group.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && group.open) {
+            group.open = false;
+            group.querySelector("summary")?.focus();
+        }
+    });
+});

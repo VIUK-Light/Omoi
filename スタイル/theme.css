@@ -1,4 +1,8 @@
 /* Omoi v3 theme tokens and shared display controls. */
+html {
+    background: var(--omoi-page);
+}
+
 :root {
     color-scheme: light;
     --omoi-page: #ffffff;
@@ -212,22 +216,22 @@
     --omoi-bg-lattice-base: #1d2127;
 }
 
-.home { flex-direction: column; box-sizing: border-box; padding-top: 64px; }
+.home { flex-direction: column; box-sizing: border-box; padding-top: calc(64px + env(safe-area-inset-top, 0px)); padding-bottom: env(safe-area-inset-bottom, 0px); }
 .home .hero { box-sizing: border-box; margin-block: auto; }
 .terms-article { overflow-wrap: anywhere; }
-.home .site-footer { position: static; box-sizing: border-box; margin-top: auto; padding: 24px; }
+.home .site-footer { position: static; box-sizing: border-box; margin-top: auto; padding: 24px; padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px)); }
 .v3-attribution { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; margin: 0 auto; padding: 20px 24px; color: #666666; font-family: sans-serif; font-size: 12px; line-height: 1.7; text-align: center; }
 .v3-attribution a { color: inherit; text-underline-offset: 3px; }
 .v3-status { display: block; margin: 6px 0 0; color: #666666; font-size: 12px; line-height: 1.7; }
 
-.home-nav { right: 68px; }
+.home-nav { right: calc(68px + env(safe-area-inset-right, 0px)); top: calc(12px + env(safe-area-inset-top, 0px)); }
 .guide-nav { margin-right: 48px; }
 
 .theme-control {
     position: fixed;
     z-index: 10;
-    top: 12px;
-    right: 12px;
+    top: calc(12px + env(safe-area-inset-top, 0px));
+    right: calc(12px + env(safe-area-inset-right, 0px));
     color: var(--omoi-ink);
     font-family: sans-serif;
 }
@@ -918,5 +922,13 @@ a.resume-notice-link:focus-visible {
 
     .omoi-toast {
         transition: none;
+    }
+}
+
+/* スマホ版: 固定UIを縦に積み、親ボタンviewと重ならないようにする。 */
+@media (max-width: 599px) {
+    .theme-control {
+        top: calc(60px + env(safe-area-inset-top, 0px));
+        right: calc(12px + env(safe-area-inset-right, 0px));
     }
 }

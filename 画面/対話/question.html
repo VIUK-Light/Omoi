@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="robots" content="noindex, follow">
 
     <title>質問 - Omoi</title>
@@ -120,70 +120,86 @@
             <button type="button" id="retryLoadButton" hidden>再試行する</button>
 
             <div class="question-tools">
-                <button type="button" id="questionSummaryToggle" class="question-tool question-summary-toggle"
-                    aria-expanded="false" aria-controls="questionSummary" hidden>問いの要点を見る</button>
-                <button
-                    type="button"
-                    id="hintButton"
-                    aria-expanded="false"
-                    aria-controls="hintsPanel"
-                    class="question-tool question-hint"
-                    hidden
-                >
-                    <svg aria-hidden="true" viewBox="0 0 24 24">
-                        <path d="M8 10h8M8 14h5M5 19l-1 3 4-2h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v9a3 3 0 0 0 2 3Z"/>
-                    </svg>
-                    会話のヒント
-                </button>
-                <button
-                    type="button" id="detailButton"
-                    aria-expanded="false"
-                    aria-controls="detailPanel"
-                    class="question-tool detail-button"
-                    hidden
-                >
-                    <svg aria-hidden="true" viewBox="0 0 24 24">
-                        <path d="M6 3.5h8l4 4V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z"/>
-                        <path d="M14 3.5v4h4M8 12h8M8 16h8"/>
-                    </svg>
-                    <span id="detailButtonLabel">問いの背景</span>
-                </button>
-                <button
-                    type="button"
-                    id="speakButton"
-                    class="question-tool speak-button"
-                    aria-pressed="false"
-                    hidden
-                >読み上げ</button>
-                <div class="share-control" id="shareControl">
-                    <button
-                        type="button"
-                        id="shareButton"
-                        class="question-tool share-button"
-                        aria-haspopup="menu"
-                        aria-expanded="false"
-                        aria-controls="shareMenu"
-                        aria-label="共有"
-                        title="共有"
-                        hidden
+                <details class="question-tool-group">
+                    <summary
+                        class="question-tool question-tool-parent"
+                        aria-label="その他の操作"
                     >
                         <svg aria-hidden="true" viewBox="0 0 24 24">
-                            <path d="M10 13a5 5 0 0 0 7.54.54l2-2a5 5 0 0 0-7.07-7.07l-1.15 1.15"/>
-                            <path d="M14 11a5 5 0 0 0-7.54-.54l-2 2a5 5 0 0 0 7.07 7.07l1.14-1.14"/>
+                            <circle cx="5" cy="12" r="1.8"/>
+                            <circle cx="12" cy="12" r="1.8"/>
+                            <circle cx="19" cy="12" r="1.8"/>
                         </svg>
-                    </button>
-                    <div id="shareMenu" class="share-menu" role="menu" aria-label="共有の方法" hidden>
-                        <button type="button" id="shareUrlButton" class="share-menu-item" role="menuitem">
-                            リンクを共有
+                        <span class="sr-only">その他</span>
+                    </summary>
+
+                    <div class="question-tool-menu">
+                        <button type="button" id="questionSummaryToggle" class="question-tool question-summary-toggle"
+                            aria-expanded="false" aria-controls="questionSummary" hidden>問いの要点を見る</button>
+                        <button
+                            type="button"
+                            id="hintButton"
+                            aria-expanded="false"
+                            aria-controls="hintsPanel"
+                            class="question-tool question-hint"
+                            hidden
+                        >
+                            <svg aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M8 10h8M8 14h5M5 19l-1 3 4-2h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v9a3 3 0 0 0 2 3Z"/>
+                            </svg>
+                            会話のヒント
                         </button>
-                        <button type="button" id="shareImageButton" class="share-menu-item" role="menuitem">
-                            問いの画像を保存
+                        <button
+                            type="button" id="detailButton"
+                            aria-expanded="false"
+                            aria-controls="detailPanel"
+                            class="question-tool detail-button"
+                            hidden
+                        >
+                            <svg aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M6 3.5h8l4 4V20a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z"/>
+                                <path d="M14 3.5v4h4M8 12h8M8 16h8"/>
+                            </svg>
+                            <span id="detailButtonLabel">問いの背景</span>
                         </button>
-                        <button type="button" id="printQuestionButton" class="share-menu-item" role="menuitem">
-                            この問いを印刷
-                        </button>
+                        <button
+                            type="button"
+                            id="speakButton"
+                            class="question-tool speak-button"
+                            aria-pressed="false"
+                            hidden
+                        >読み上げ</button>
+                        <div class="share-control" id="shareControl">
+                            <button
+                                type="button"
+                                id="shareButton"
+                                class="question-tool share-button"
+                                aria-haspopup="menu"
+                                aria-expanded="false"
+                                aria-controls="shareMenu"
+                                aria-label="共有"
+                                title="共有"
+                                hidden
+                            >
+                                <svg aria-hidden="true" viewBox="0 0 24 24">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l2-2a5 5 0 0 0-7.07-7.07l-1.15 1.15"/>
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-2 2a5 5 0 0 0 7.07 7.07l1.14-1.14"/>
+                                </svg>
+                            </button>
+                            <div id="shareMenu" class="share-menu" role="menu" aria-label="共有の方法" hidden>
+                                <button type="button" id="shareUrlButton" class="share-menu-item" role="menuitem">
+                                    リンクを共有
+                                </button>
+                                <button type="button" id="shareImageButton" class="share-menu-item" role="menuitem">
+                                    問いの画像を保存
+                                </button>
+                                <button type="button" id="printQuestionButton" class="share-menu-item" role="menuitem">
+                                    この問いを印刷
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </details>
             </div>
 
             <p id="shareStatus" class="share-status omoi-toast" role="status" aria-live="polite"></p>

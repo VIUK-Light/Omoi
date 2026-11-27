@@ -13,8 +13,8 @@ body {
 .furigana-settings {
     position: fixed;
     z-index: 20;
-    top: 12px;
-    right: 56px;
+    top: calc(12px + env(safe-area-inset-top, 0px));
+    right: calc(56px + env(safe-area-inset-right, 0px));
     color: var(--omoi-ink, #111111);
     font-family: sans-serif;
 }
@@ -118,7 +118,7 @@ body {
     min-height: 100svh;
     box-sizing: border-box;
 
-    padding: 32px 24px;
+    padding: calc(32px + env(safe-area-inset-top, 0px)) 24px calc(32px + env(safe-area-inset-bottom, 0px));
 
     display: flex;
     flex-direction: column;
@@ -542,9 +542,9 @@ body {
     box-sizing: border-box;
     width: max-content;
     min-width: min(176px, calc(100vw - 24px));
-    max-width: calc(100vw - 24px);
-    max-height: calc(100vh - 24px);
-    max-height: calc(100dvh - 24px);
+    max-width: calc(100vw - 24px - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px));
+    max-height: calc(100vh - 24px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+    max-height: calc(100dvh - 24px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
     gap: 2px;
     padding: 6px;
     overflow-y: auto;
@@ -1380,4 +1380,82 @@ body.session-complete-active .furigana-settings {
 
 .speak-button[aria-pressed="true"] {
     border-color: var(--omoi-primary, #111111);
+}
+
+
+/* スマホ版: 親ボタンview / 子こぼたん の整理 */
+.question-tool-group {
+    display: contents;
+}
+
+.question-tool-group > summary {
+    display: none;
+    list-style: none;
+}
+
+.question-tool-group > summary::-webkit-details-marker {
+    display: none;
+}
+
+.question-tool-group > .question-tool-menu {
+    display: contents;
+}
+
+.question-tool-parent {
+    gap: 6px;
+}
+
+.question-tool-menu {
+    display: contents;
+}
+
+/* スマホ版: ページ全体スクロール + ボタン削減 */
+@media (max-width: 599px) {
+    .question-tool-group {
+        display: block;
+        width: 100%;
+    }
+
+    .question-tool-group > summary {
+        display: inline-flex;
+    }
+
+    .question-tool-group > .question-tool-menu {
+        display: none;
+        margin-top: 10px;
+    }
+
+    .question-tool-group[open] > .question-tool-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .question-tool-menu .question-tool {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .question-content {
+        max-height: none;
+        overflow: visible;
+        margin-inline: auto;
+        margin-block: 0;
+    }
+
+    .question-summary,
+    .detail-panel,
+    .hints-panel {
+        max-height: none;
+        overflow: visible;
+    }
+
+    .furigana-settings {
+        top: calc(12px + env(safe-area-inset-top, 0px));
+        right: calc(56px + env(safe-area-inset-right, 0px));
+    }
+
+    #fullscreenButton {
+        display: none;
+    }
 }

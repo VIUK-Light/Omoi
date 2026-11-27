@@ -104,6 +104,10 @@ h1 {
     color: var(--subtext);
 }
 
+.description__lead {
+    white-space: nowrap;
+}
+
 .site-footer {
     position: absolute;
     bottom: 24px;
@@ -256,7 +260,16 @@ h1 {
     text-underline-offset: 4px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 599px) {
+    .home .hero {
+        width: 100%;
+        padding-inline: 16px;
+    }
+
+    .description {
+        font-size: clamp(12px, 3.8vw, 15px);
+    }
+
     .home-nav {
         justify-content: space-between;
         gap: 12px;
