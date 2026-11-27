@@ -2467,6 +2467,16 @@ toolGroupDesktopQuery.addEventListener("change", syncToolGroups);
 
 // スマホ版の親ボタンview（details）を、外側クリック/Escapeで閉じる。
 document.querySelectorAll(".question-tool-group").forEach((group) => {
+    // スマホ版でメニューを閉じたら、そこから開いたパネル(ヒント・要点・背景)も一緒に閉じる。
+    group.addEventListener("toggle", () => {
+        if (toolGroupDesktopQuery.matches || group.open) {
+            return;
+        }
+        setQuestionSummaryOpen(false);
+        setHintsPanelOpen(false);
+        setDetailPanelOpen(false);
+    });
+
     document.addEventListener("click", (event) => {
         if (toolGroupDesktopQuery.matches) {
             return;
