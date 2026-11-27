@@ -467,9 +467,11 @@ body {
 .page-background__stars {
     display: none;
     position: absolute;
-    inset: -10%;
+    /* 流しは transform で行うため、タイル1枚分以上はみ出させて隙間を出さない。
+       (insetをタイルより小さくすると、1周期の端で背景が剥げる) */
     pointer-events: none;
     background-repeat: repeat;
+    will-change: transform, opacity;
 }
 
 :root[data-background="star"] .page-background__stars { display: block; }
@@ -482,6 +484,7 @@ body {
         radial-gradient(circle at 24% 54%, rgb(255 255 255 / 52%) 0 1px, transparent 1.5px),
         radial-gradient(circle at 82% 62%, rgb(255 255 255 / 60%) 0 1px, transparent 1.6px),
         radial-gradient(circle at 56% 84%, rgb(255 255 255 / 55%) 0 1px, transparent 1.5px);
+    inset: -300px;
     background-size: 300px 260px;
     animation:
         omoi-star-twinkle 6.5s ease-in-out infinite alternate,
@@ -496,6 +499,7 @@ body {
         radial-gradient(circle at 34% 66%, rgb(255 255 255 / 82%) 0 1.3px, transparent 2.1px),
         radial-gradient(circle at 88% 82%, rgb(255 255 255 / 88%) 0 1.4px, transparent 2.2px),
         radial-gradient(circle at 8% 88%, rgb(255 255 255 / 76%) 0 1.2px, transparent 2px);
+    inset: -440px;
     background-size: 440px 380px;
     animation:
         omoi-star-twinkle 3.4s ease-in-out -1.4s infinite alternate,
@@ -508,14 +512,16 @@ body {
     animation: omoi-star-sway 60s ease-in-out infinite alternate;
 }
 
+/* background-position のアニメーションは巨大レイヤーの毎フレーム再描画になってGPUを
+   圧迫するため、タイル1枚ぶんの translate3d(合成のみ・再描画なし)で同じ流れを実現する。 */
 @keyframes omoi-star-drift--far {
-    from { background-position: 0 0; }
-    to { background-position: 300px 260px; }
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(300px, 260px, 0); }
 }
 
 @keyframes omoi-star-drift--near {
-    from { background-position: 0 0; }
-    to { background-position: -440px -380px; }
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-440px, -380px, 0); }
 }
 
 @keyframes omoi-star-twinkle {
