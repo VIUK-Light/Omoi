@@ -724,13 +724,24 @@
 /* 問いの詳細 */
 
 .question-pick-detail {
-    margin-top: 10px;
-    padding: 10px 12px;
-    border: 1px solid var(--omoi-divider, #e8e8e8);
-    border-radius: 12px;
-    background: var(--omoi-surface, #f7f7f7);
+    margin-top: -1px;
+    padding: 10px 14px 12px;
+    border: 1.5px solid var(--omoi-border, #ddd);
+    border-top: 0;
+    border-radius: 0 0 14px 14px;
+    background: var(--omoi-page, #fff);
     font-size: 13px;
     line-height: 1.6;
+}
+
+/* 背景を見るを問いのカードに連結させ、どの問いの背景かを明確にする */
+.question-pick:has(.question-pick-detail) .question-pick-label {
+    border-radius: 14px 14px 0 0;
+}
+
+.question-pick[data-selected="true"] .question-pick-detail {
+    border-color: var(--omoi-primary, #111);
+    background: var(--omoi-surface, #f7f7f7);
 }
 
 .question-pick-detail summary {

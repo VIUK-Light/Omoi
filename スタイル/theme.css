@@ -7,6 +7,8 @@ html {
    z-index: -1 の背景レイヤー(.page-background)が body の背景より先に描画され、隠れてしまう。 */
 body {
     background: transparent;
+    /* font-family 未指定の画面で iOS が明朝にフォールバックするのを防ぐ */
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
 }
 
 :root {
@@ -937,10 +939,5 @@ a.resume-notice-link:focus-visible {
     }
 }
 
-/* スマホ版: 固定UIを縦に積み、親ボタンviewと重ならないようにする。 */
-@media (max-width: 599px) {
-    .theme-control {
-        top: calc(60px + env(safe-area-inset-top, 0px));
-        right: calc(12px + env(safe-area-inset-right, 0px));
-    }
-}
+/* スマホ版もふりがなボタンと同じ最上段の1行に並べる。
+   (60pxに積むとトップバーが折り返したときに重なってしまうため) */

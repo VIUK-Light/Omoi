@@ -1146,8 +1146,7 @@ body.session-complete-active .furigana-settings {
     color: var(--omoi-muted, #666666);
     font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0.24em;
-   
+    letter-spacing: 0.12em;
 }
 
 .session-complete h1 {
