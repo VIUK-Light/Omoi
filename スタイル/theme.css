@@ -30,35 +30,20 @@ body {
     --omoi-backdrop: rgb(0 0 0 / 45%);
     --omoi-scrim-color: rgb(255 255 255);
     --omoi-scrim-opacity: .55;
-    --omoi-bg-dawn: linear-gradient(160deg, #ffe9d6 0%, #ffd0bb 45%, #f7c2d4 100%);
-    --omoi-bg-ocean: linear-gradient(180deg, #dff1f8 0%, #a8d6ea 45%, #6fb0d4 100%);
-    --omoi-bg-forest: linear-gradient(165deg, #e6f3e0 0%, #bcdcb2 45%, #8bb78f 100%);
-    --omoi-bg-paper: repeating-linear-gradient(135deg, #f6f1e6 0 10px, #ece4d3 10px 20px);
-    --omoi-bg-dusk: linear-gradient(180deg, #fbe0c6 0%, #f0b3ac 45%, #c39ac9 100%);
-    --omoi-bg-cloud: linear-gradient(180deg, #eef2f6 0%, #dbe3ec 55%, #c9d6e4 100%);
+    --omoi-bg-christmas: linear-gradient(180deg, #eef4fb 0%, #dfe9f6 52%, #d5e2f3 100%);
     --omoi-bg-sakura: linear-gradient(160deg, #fdeef2 0%, #f8d9e4 50%, #eec7d8 100%);
-    --omoi-bg-deep: linear-gradient(180deg, #dcefef 0%, #a9cfd2 50%, #6fa6ad 100%);
+    --omoi-bg-momiji: linear-gradient(160deg, #f9ead9 0%, #f2d5b8 52%, #e9c3a4 100%);
+    --omoi-bg-hanabi: linear-gradient(180deg, #eceef8 0%, #dde0f2 55%, #d3d7ee 100%);
     --omoi-bg-star: radial-gradient(circle at 18% 26%, rgb(255 255 255 / 95%) 0 1.5px, transparent 2px),
         radial-gradient(circle at 63% 16%, rgb(255 255 255 / 85%) 0 1.5px, transparent 2px),
         radial-gradient(circle at 82% 58%, rgb(255 255 255 / 90%) 0 1.5px, transparent 2px),
         radial-gradient(circle at 38% 72%, rgb(255 255 255 / 80%) 0 1.5px, transparent 2px),
         linear-gradient(180deg, #e3e9f6 0%, #c3cfe6 55%, #aab9d6 100%);
-    --omoi-bg-ripple: repeating-radial-gradient(circle at 32% 38%, rgb(255 255 255 / 55%) 0 2px, transparent 2px 28px),
-        linear-gradient(160deg, #eef3f1 0%, #d5e3e0 60%, #bdd4d0 100%);
-    --omoi-bg-lattice: repeating-linear-gradient(0deg, rgb(17 17 17 / 5%) 0 1px, transparent 1px 30px),
-        repeating-linear-gradient(90deg, rgb(17 17 17 / 5%) 0 1px, transparent 1px 30px),
-        linear-gradient(180deg, #f7f8fa 0%, #e9edf2 100%);
-    --omoi-bg-dawn-base: #ffd0bb;
-    --omoi-bg-ocean-base: #6fb0d4;
-    --omoi-bg-forest-base: #8bb78f;
-    --omoi-bg-paper-base: #ece4d3;
-    --omoi-bg-dusk-base: #f0b3ac;
-    --omoi-bg-cloud-base: #c9d6e4;
+    --omoi-bg-christmas-base: #dfe9f6;
+    --omoi-bg-momiji-base: #f2d5b8;
+    --omoi-bg-hanabi-base: #dde0f2;
     --omoi-bg-sakura-base: #eec7d8;
-    --omoi-bg-deep-base: #6fa6ad;
     --omoi-bg-star-base: #aab9d6;
-    --omoi-bg-ripple-base: #bdd4d0;
-    --omoi-bg-lattice-base: #e9edf2;
 }
 
 :root[data-theme="sepia"] {
@@ -99,35 +84,20 @@ body {
     --omoi-danger: #f0a6a6;
     --omoi-backdrop: rgb(0 0 0 / 65%);
     --omoi-scrim-color: rgb(16 21 31);
-    --omoi-bg-dawn: linear-gradient(160deg, #3f322e 0%, #4e3330 45%, #3a2a3f 100%);
-    --omoi-bg-ocean: linear-gradient(180deg, #17222b 0%, #172f3c 45%, #112b3d 100%);
-    --omoi-bg-forest: linear-gradient(165deg, #1a261a 0%, #1e2d22 45%, #18281f 100%);
-    --omoi-bg-paper: repeating-linear-gradient(135deg, #22221e 0 10px, #292823 10px 20px);
-    --omoi-bg-dusk: linear-gradient(180deg, #2e231d 0%, #352224 45%, #281d31 100%);
-    --omoi-bg-cloud: linear-gradient(180deg, #182029 0%, #1f2833 55%, #26303b 100%);
+    --omoi-bg-christmas: linear-gradient(180deg, #10182b 0%, #17203a 52%, #1d2a46 100%);
     --omoi-bg-sakura: linear-gradient(160deg, #2b2028 0%, #312330 50%, #362636 100%);
-    --omoi-bg-deep: linear-gradient(180deg, #0e1d21 0%, #122b31 50%, #173840 100%);
+    --omoi-bg-momiji: linear-gradient(160deg, #2b1d14 0%, #33231a 52%, #3a2a1e 100%);
+    --omoi-bg-hanabi: linear-gradient(180deg, #141a33 0%, #1c2145 55%, #281f49 100%);
     --omoi-bg-star: radial-gradient(circle at 18% 26%, rgb(255 255 255 / 90%) 0 1.5px, transparent 2px),
         radial-gradient(circle at 63% 16%, rgb(255 255 255 / 75%) 0 1.5px, transparent 2px),
         radial-gradient(circle at 82% 58%, rgb(255 255 255 / 85%) 0 1.5px, transparent 2px),
         radial-gradient(circle at 38% 72%, rgb(255 255 255 / 70%) 0 1.5px, transparent 2px),
         linear-gradient(180deg, #111827 0%, #161e31 55%, #1b2440 100%);
-    --omoi-bg-ripple: repeating-radial-gradient(circle at 32% 38%, rgb(255 255 255 / 8%) 0 2px, transparent 2px 28px),
-        linear-gradient(160deg, #141d1c 0%, #192623 60%, #1f2f2c 100%);
-    --omoi-bg-lattice: repeating-linear-gradient(0deg, rgb(255 255 255 / 6%) 0 1px, transparent 1px 30px),
-        repeating-linear-gradient(90deg, rgb(255 255 255 / 6%) 0 1px, transparent 1px 30px),
-        linear-gradient(180deg, #15181d 0%, #1b1f25 100%);
-    --omoi-bg-dawn-base: #4e3330;
-    --omoi-bg-ocean-base: #172f3c;
-    --omoi-bg-forest-base: #1e2d22;
-    --omoi-bg-paper-base: #292823;
-    --omoi-bg-dusk-base: #352224;
-    --omoi-bg-cloud-base: #26303b;
+    --omoi-bg-christmas-base: #17203a;
+    --omoi-bg-momiji-base: #33231a;
+    --omoi-bg-hanabi-base: #1c2145;
     --omoi-bg-sakura-base: #362636;
-    --omoi-bg-deep-base: #173840;
     --omoi-bg-star-base: #1b2440;
-    --omoi-bg-ripple-base: #1f2f2c;
-    --omoi-bg-lattice-base: #1b1f25;
 }
 
 :root[data-theme="viuk"] {
@@ -193,35 +163,20 @@ body {
 /* ダーク系の背景は dark と viuk-dark で共有する。 */
 :root[data-theme="dark"],
 :root[data-theme="viuk-dark"] {
-    --omoi-bg-dawn: linear-gradient(160deg, #46362f 0%, #573733 45%, #422d45 100%);
-    --omoi-bg-ocean: linear-gradient(180deg, #1b2830 0%, #1b3a4a 45%, #14364c 100%);
-    --omoi-bg-forest: linear-gradient(165deg, #1f2d1d 0%, #253628 45%, #1d3125 100%);
-    --omoi-bg-paper: repeating-linear-gradient(135deg, #282722 0 10px, #302e28 10px 20px);
-    --omoi-bg-dusk: linear-gradient(180deg, #372820 0%, #402728 45%, #30223a 100%);
-    --omoi-bg-cloud: linear-gradient(180deg, #1b2027 0%, #222932 55%, #2a323c 100%);
+    --omoi-bg-christmas: linear-gradient(180deg, #10182b 0%, #17203a 52%, #1d2a46 100%);
     --omoi-bg-sakura: linear-gradient(160deg, #2e2229 0%, #342530 50%, #39283a 100%);
-    --omoi-bg-deep: linear-gradient(180deg, #102024 0%, #143036 50%, #193f47 100%);
+    --omoi-bg-momiji: linear-gradient(160deg, #2b1d14 0%, #33231a 52%, #3a2a1e 100%);
+    --omoi-bg-hanabi: linear-gradient(180deg, #141a33 0%, #1c2145 55%, #281f49 100%);
     --omoi-bg-star: radial-gradient(circle at 18% 26%, rgb(255 255 255 / 92%) 0 1.5px, transparent 2px),
         radial-gradient(circle at 63% 16%, rgb(255 255 255 / 78%) 0 1.5px, transparent 2px),
         radial-gradient(circle at 82% 58%, rgb(255 255 255 / 88%) 0 1.5px, transparent 2px),
         radial-gradient(circle at 38% 72%, rgb(255 255 255 / 72%) 0 1.5px, transparent 2px),
         linear-gradient(180deg, #131a2b 0%, #182034 55%, #1d2740 100%);
-    --omoi-bg-ripple: repeating-radial-gradient(circle at 32% 38%, rgb(255 255 255 / 9%) 0 2px, transparent 2px 28px),
-        linear-gradient(160deg, #16201f 0%, #1b2926 60%, #213330 100%);
-    --omoi-bg-lattice: repeating-linear-gradient(0deg, rgb(255 255 255 / 7%) 0 1px, transparent 1px 30px),
-        repeating-linear-gradient(90deg, rgb(255 255 255 / 7%) 0 1px, transparent 1px 30px),
-        linear-gradient(180deg, #171a1f 0%, #1d2127 100%);
-    --omoi-bg-dawn-base: #573733;
-    --omoi-bg-ocean-base: #1b3a4a;
-    --omoi-bg-forest-base: #253628;
-    --omoi-bg-paper-base: #302e28;
-    --omoi-bg-dusk-base: #402728;
-    --omoi-bg-cloud-base: #2a323c;
+    --omoi-bg-christmas-base: #17203a;
+    --omoi-bg-momiji-base: #33231a;
+    --omoi-bg-hanabi-base: #1c2145;
     --omoi-bg-sakura-base: #39283a;
-    --omoi-bg-deep-base: #193f47;
     --omoi-bg-star-base: #1d2740;
-    --omoi-bg-ripple-base: #213330;
-    --omoi-bg-lattice-base: #1d2127;
 }
 
 .home { flex-direction: column; box-sizing: border-box; padding-top: calc(64px + env(safe-area-inset-top, 0px)); padding-bottom: env(safe-area-inset-bottom, 0px); }
@@ -401,17 +356,11 @@ body {
 .theme-swatch__preview--viuk { --swatch-bg: #faf9f6; --swatch-accent: #ef502b; }
 .theme-swatch__preview--viuk-dark { --swatch-bg: #171715; --swatch-accent: #ef502b; }
 .theme-swatch__preview--none { background-color: var(--omoi-page); background-image: none; }
-.theme-swatch__preview--dawn { background-image: var(--omoi-bg-dawn); }
-.theme-swatch__preview--ocean { background-image: var(--omoi-bg-ocean); }
-.theme-swatch__preview--forest { background-image: var(--omoi-bg-forest); }
-.theme-swatch__preview--paper { background-image: var(--omoi-bg-paper); }
-.theme-swatch__preview--dusk { background-image: var(--omoi-bg-dusk); }
-.theme-swatch__preview--cloud { background-image: var(--omoi-bg-cloud); }
+.theme-swatch__preview--christmas { background-image: var(--omoi-bg-christmas); }
 .theme-swatch__preview--sakura { background-image: var(--omoi-bg-sakura); }
-.theme-swatch__preview--deep { background-image: var(--omoi-bg-deep); }
+.theme-swatch__preview--momiji { background-image: var(--omoi-bg-momiji); }
+.theme-swatch__preview--hanabi { background-image: var(--omoi-bg-hanabi); }
 .theme-swatch__preview--star { background-image: var(--omoi-bg-star); }
-.theme-swatch__preview--ripple { background-image: var(--omoi-bg-ripple); }
-.theme-swatch__preview--lattice { background-image: var(--omoi-bg-lattice); }
 
 .theme-panel__scrim {
     display: grid;
@@ -472,6 +421,8 @@ body {
     pointer-events: none;
     background-repeat: repeat;
     will-change: transform, opacity;
+    /* 水幕(scrim)より上に置き、「背景の濃さ」で演出が暗くならないようにする */
+    z-index: 1;
 }
 
 :root[data-background="star"] .page-background__stars { display: block; }
@@ -518,6 +469,7 @@ body {
     opacity: 0;
     pointer-events: none;
     will-change: transform, opacity;
+    z-index: 1;
 }
 
 :root[data-background="star"] .page-background__shooting-star { display: block; }
@@ -581,6 +533,208 @@ body {
     100% { opacity: 0; transform: translate3d(var(--travel-x), var(--travel-y), 0) rotate(var(--angle)); }
 }
 
+/* ===== 背景ごとの追加演出。要素は共通生成し、選択中の背景だけ表示する。
+   すべてtransform/opacityのアニメーションでGPU負荷を抑える。
+   (低スペ端末の静止画フォールバック・prefers-reduced-motionでは
+    装飾要素は基本opacity:0なので自動的に消える) ===== */
+.page-background__effects {
+    display: block;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.page-background__effects > * {
+    display: none;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.page-background__effects i {
+    display: block;
+    position: absolute;
+    will-change: transform, opacity;
+}
+
+/* クリスマス: 雪とイルミネーション */
+:root[data-background="christmas"] .page-background__snow,
+:root[data-background="christmas"] .page-background__lights {
+    display: block;
+}
+
+.page-background__snow i {
+    top: -6vh;
+    left: var(--x);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgb(255 255 255 / 95%) 0 38%, rgb(255 255 255 / 0%) 74%);
+    opacity: 0;
+    animation: omoi-snow-fall var(--fall) linear var(--delay) infinite;
+}
+
+@keyframes omoi-snow-fall {
+    0% { opacity: 0; transform: translate3d(0, 0, 0); }
+    10% { opacity: .9; }
+    55% { transform: translate3d(calc(var(--sway) * 0.5), 52vh, 0); }
+    90% { opacity: .85; }
+    100% { opacity: 0; transform: translate3d(var(--sway), 106vh, 0); }
+}
+
+.page-background__snow i:nth-child(1) { --x: 4%;  --size: 9px;  --fall: 11s; --delay: -2s;  --sway: 5vw; }
+.page-background__snow i:nth-child(2) { --x: 14%; --size: 6px;  --fall: 14s; --delay: -7s;  --sway: -4vw; }
+.page-background__snow i:nth-child(3) { --x: 24%; --size: 11px; --fall: 9s;  --delay: -4s;  --sway: 6vw; }
+.page-background__snow i:nth-child(4) { --x: 36%; --size: 5px;  --fall: 16s; --delay: -10s; --sway: -5vw; }
+.page-background__snow i:nth-child(5) { --x: 48%; --size: 8px;  --fall: 12s; --delay: -1s;  --sway: 5vw; }
+.page-background__snow i:nth-child(6) { --x: 60%; --size: 6px;  --fall: 15s; --delay: -8s;  --sway: -6vw; }
+.page-background__snow i:nth-child(7) { --x: 72%; --size: 10px; --fall: 10s; --delay: -5s;  --sway: 6vw; }
+.page-background__snow i:nth-child(8) { --x: 84%; --size: 7px;  --fall: 13s; --delay: -12s; --sway: -4vw; }
+.page-background__snow i:nth-child(9) { --x: 93%; --size: 9px;  --fall: 11s; --delay: -6s;  --sway: 5vw; }
+.page-background__snow i:nth-child(10) { --x: 55%; --size: 5px; --fall: 17s; --delay: -14s; --sway: -5vw; }
+
+.page-background__lights i {
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--glow) 0 28%, rgb(255 255 255 / 0%) 72%);
+    opacity: 0;
+    animation: omoi-light-twinkle var(--tw) ease-in-out var(--delay) infinite;
+}
+
+@keyframes omoi-light-twinkle {
+    0%, 100% { opacity: .08; transform: scale(0.8); }
+    50% { opacity: .95; transform: scale(1.18); }
+}
+
+.page-background__lights i:nth-child(1) { --x: 8%;  --y: 16%; --size: 26px; --tw: 3.2s; --delay: -0.5s; --glow: rgb(255 122 122 / 90%); }
+.page-background__lights i:nth-child(2) { --x: 24%; --y: 8%;  --size: 18px; --tw: 2.7s; --delay: -1.2s; --glow: rgb(126 235 165 / 90%); }
+.page-background__lights i:nth-child(3) { --x: 42%; --y: 20%; --size: 30px; --tw: 3.6s; --delay: -2.1s; --glow: rgb(255 214 110 / 90%); }
+.page-background__lights i:nth-child(4) { --x: 58%; --y: 10%; --size: 20px; --tw: 2.9s; --delay: -0.8s; --glow: rgb(150 190 255 / 90%); }
+.page-background__lights i:nth-child(5) { --x: 74%; --y: 18%; --size: 26px; --tw: 3.4s; --delay: -1.6s; --glow: rgb(255 122 122 / 90%); }
+.page-background__lights i:nth-child(6) { --x: 88%; --y: 8%;  --size: 18px; --tw: 2.6s; --delay: -2.4s; --glow: rgb(126 235 165 / 90%); }
+.page-background__lights i:nth-child(7) { --x: 66%; --y: 30%; --size: 16px; --tw: 3.0s; --delay: -1.9s; --glow: rgb(255 214 110 / 90%); }
+
+/* 桜: 花びらがS字に舞い落ちる */
+:root[data-background="sakura"] .page-background__petals {
+    display: block;
+}
+
+.page-background__petals i {
+    top: -7vh;
+    left: var(--x);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 12px 2px 12px 2px;
+    background: linear-gradient(135deg, rgb(255 189 203 / 92%), rgb(255 224 231 / 92%));
+    opacity: 0;
+    animation: omoi-petal-fall var(--fall) linear var(--delay) infinite;
+}
+
+@keyframes omoi-petal-fall {
+    0% { opacity: 0; transform: translate3d(0, -8vh, 0) rotate(0deg); }
+    10% { opacity: .9; }
+    35% { transform: translate3d(calc(var(--sway) * 0.55), 32vh, 0) rotate(150deg); }
+    65% { transform: translate3d(calc(var(--sway) * -0.15), 62vh, 0) rotate(290deg); }
+    92% { opacity: .85; }
+    100% { opacity: 0; transform: translate3d(var(--sway), 110vh, 0) rotate(440deg); }
+}
+
+.page-background__petals i:nth-child(1) { --x: 6%;  --size: 11px; --fall: 12s; --delay: -2s;  --sway: 9vw; }
+.page-background__petals i:nth-child(2) { --x: 20%; --size: 9px;  --fall: 10s; --delay: -6s;  --sway: -7vw; }
+.page-background__petals i:nth-child(3) { --x: 34%; --size: 13px; --fall: 13s; --delay: -9s;  --sway: 11vw; }
+.page-background__petals i:nth-child(4) { --x: 48%; --size: 11px; --fall: 11s; --delay: -4s;  --sway: -9vw; }
+.page-background__petals i:nth-child(5) { --x: 62%; --size: 10px; --fall: 9s;  --delay: -1s;  --sway: 8vw; }
+.page-background__petals i:nth-child(6) { --x: 76%; --size: 12px; --fall: 14s; --delay: -11s; --sway: -10vw; }
+.page-background__petals i:nth-child(7) { --x: 88%; --size: 9px;  --fall: 10s; --delay: -7s;  --sway: 7vw; }
+.page-background__petals i:nth-child(8) { --x: 94%; --size: 11px; --fall: 12s; --delay: -3s;  --sway: 10vw; }
+
+/* 紅葉: 葉がくるくる回りながら落ちる */
+:root[data-background="momiji"] .page-background__leaves {
+    display: block;
+}
+
+.page-background__leaves i {
+    top: -7vh;
+    left: var(--x);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 0 70% 0 70%;
+    background: linear-gradient(135deg, rgb(235 150 70 / 92%), rgb(198 82 48 / 92%));
+    opacity: 0;
+    animation: omoi-leaf-fall var(--fall) linear var(--delay) infinite;
+}
+
+@keyframes omoi-leaf-fall {
+    0% { opacity: 0; transform: translate3d(0, -6vh, 0) rotate(0deg); }
+    8% { opacity: .92; }
+    40% { transform: translate3d(calc(var(--sway) * 0.7), 34vh, 0) rotate(220deg); }
+    70% { transform: translate3d(calc(var(--sway) * -0.2), 66vh, 0) rotate(480deg); }
+    94% { opacity: .9; }
+    100% { opacity: 0; transform: translate3d(var(--sway), 110vh, 0) rotate(720deg); }
+}
+
+.page-background__leaves i:nth-child(1) { --x: 8%;  --size: 13px; --fall: 10s; --delay: -1s;  --sway: 8vw; }
+.page-background__leaves i:nth-child(2) { --x: 22%; --size: 11px; --fall: 13s; --delay: -6s;  --sway: -7vw; }
+.page-background__leaves i:nth-child(3) { --x: 38%; --size: 15px; --fall: 9s;  --delay: -3s;  --sway: 10vw; }
+.page-background__leaves i:nth-child(4) { --x: 52%; --size: 12px; --fall: 12s; --delay: -8s;  --sway: -8vw; }
+.page-background__leaves i:nth-child(5) { --x: 66%; --size: 14px; --fall: 10s; --delay: -5s;  --sway: 9vw; }
+.page-background__leaves i:nth-child(6) { --x: 80%; --size: 10px; --fall: 14s; --delay: -11s; --sway: -9vw; }
+.page-background__leaves i:nth-child(7) { --x: 90%; --size: 13px; --fall: 11s; --delay: -2s;  --sway: 8vw; }
+.page-background__leaves i:nth-child(8) { --x: 46%; --size: 11px; --fall: 15s; --delay: -13s; --sway: -8vw; }
+
+/* 花火: しばらく置くと開花し、光の輪が広がって消える */
+:root[data-background="hanabi"] .page-background__fireworks {
+    display: block;
+}
+
+.page-background__fireworks span {
+    display: block;
+    top: var(--y);
+    left: var(--x);
+    width: 54vmin;
+    height: 54vmin;
+    margin: -27vmin 0 0 -27vmin;
+    border-radius: 50%;
+    border: 2px dotted var(--burst);
+    opacity: 0;
+    animation: omoi-hanabi-burst var(--cycle) ease-out var(--delay) infinite;
+}
+
+.page-background__fireworks span::before {
+    content: "";
+    position: absolute;
+    inset: 40%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgb(255 255 255 / 95%) 0 26%, var(--burst) 46%, rgb(255 255 255 / 0%) 72%);
+    opacity: 0;
+    animation: omoi-hanabi-flash var(--cycle) ease-out var(--delay) infinite;
+    will-change: transform, opacity;
+}
+
+@keyframes omoi-hanabi-burst {
+    0% { opacity: 0; transform: scale(0.06) rotate(0deg); }
+    5% { opacity: 1; }
+    24% { opacity: .8; transform: scale(0.82) rotate(16deg); }
+    38% { opacity: 0; transform: scale(1) rotate(22deg); }
+    100% { opacity: 0; transform: scale(1) rotate(22deg); }
+}
+
+@keyframes omoi-hanabi-flash {
+    0% { opacity: 0; transform: scale(0.3); }
+    5% { opacity: 1; transform: scale(1); }
+    14% { opacity: 0; transform: scale(1.4); }
+    100% { opacity: 0; transform: scale(1.4); }
+}
+
+.page-background__firework--a { --x: 26%; --y: 24%; --burst: rgb(255 214 130 / 90%); --cycle: 12s; --delay: 1.5s; }
+.page-background__firework--b { --x: 68%; --y: 18%; --burst: rgb(255 160 190 / 90%); --cycle: 15s; --delay: 6s; }
+.page-background__firework--c { --x: 47%; --y: 36%; --burst: rgb(150 220 255 / 90%); --cycle: 18s; --delay: 10.5s; }
+
 /* 元からある星も、ごくゆっくり揺れる。 */
 :root[data-background="star"] .page-background {
     inset: -2%;
@@ -611,17 +765,11 @@ body {
 
 
 
-:root[data-background="dawn"] { --omoi-bg-image: var(--omoi-bg-dawn); }
-:root[data-background="ocean"] { --omoi-bg-image: var(--omoi-bg-ocean); }
-:root[data-background="forest"] { --omoi-bg-image: var(--omoi-bg-forest); }
-:root[data-background="paper"] { --omoi-bg-image: var(--omoi-bg-paper); }
-:root[data-background="dusk"] { --omoi-bg-image: var(--omoi-bg-dusk); }
-:root[data-background="cloud"] { --omoi-bg-image: var(--omoi-bg-cloud); }
+:root[data-background="christmas"] { --omoi-bg-image: var(--omoi-bg-christmas); }
 :root[data-background="sakura"] { --omoi-bg-image: var(--omoi-bg-sakura); }
-:root[data-background="deep"] { --omoi-bg-image: var(--omoi-bg-deep); }
+:root[data-background="momiji"] { --omoi-bg-image: var(--omoi-bg-momiji); }
+:root[data-background="hanabi"] { --omoi-bg-image: var(--omoi-bg-hanabi); }
 :root[data-background="star"] { --omoi-bg-image: var(--omoi-bg-star); }
-:root[data-background="ripple"] { --omoi-bg-image: var(--omoi-bg-ripple); }
-:root[data-background="lattice"] { --omoi-bg-image: var(--omoi-bg-lattice); }
 
 /* テーマ共通の要素指定。配色はパレットのトークンから決まる。 */
 :root[data-theme="dark"],
@@ -884,95 +1032,14 @@ a.resume-notice-link:focus-visible {
     outline-offset: 1px;
 }
 
-/* 星空以外の背景も、それぞれの雰囲気に合わせてゆっくり動かす。 */
-:root[data-background="dawn"] .page-background,
-:root[data-background="dusk"] .page-background,
-:root[data-background="forest"] .page-background,
-:root[data-background="cloud"] .page-background,
-:root[data-background="sakura"] .page-background,
-:root[data-background="ocean"] .page-background,
-:root[data-background="deep"] .page-background,
-:root[data-background="paper"] .page-background,
-:root[data-background="ripple"] .page-background,
-:root[data-background="lattice"] .page-background {
-    inset: -5%;
-}
-
-/* 朝焼け・夕暮れ: 光がゆっくり広がる。 */
-:root[data-background="dawn"] .page-background {
-    animation: omoi-bg-glow 24s ease-in-out infinite alternate;
-}
-
-:root[data-background="dusk"] .page-background {
-    animation: omoi-bg-glow 28s ease-in-out -6s infinite alternate-reverse;
-}
-
-@keyframes omoi-bg-glow {
-    from { transform: scale(1.02) translate3d(-1.5%, 1%, 0); }
-    to { transform: scale(1.08) translate3d(1.5%, -1%, 0); }
-}
-
-/* 森・桜: ゆらりと揺れる。 */
-:root[data-background="forest"] .page-background {
-    animation: omoi-bg-sway 26s ease-in-out infinite alternate;
-}
-
+/* 桜: 花びらに合わせてゆらりと揺れる。 */
 :root[data-background="sakura"] .page-background {
-    animation: omoi-bg-sway 20s ease-in-out -4s infinite alternate-reverse;
+    animation: omoi-bg-sway 24s ease-in-out infinite alternate;
 }
 
 @keyframes omoi-bg-sway {
     from { transform: translate3d(-2%, .4%, 0) scale(1.03); }
     to { transform: translate3d(2%, -.4%, 0) scale(1.03); }
-}
-
-/* 波・深海: 上下にゆっくり行き来する。 */
-:root[data-background="ocean"] .page-background {
-    animation: omoi-bg-tide 8s ease-in-out infinite alternate;
-}
-
-:root[data-background="deep"] .page-background {
-    animation: omoi-bg-tide 24s ease-in-out infinite alternate;
-}
-
-@keyframes omoi-bg-tide {
-    from { transform: translate3d(0, 2%, 0); }
-    to { transform: translate3d(0, -2%, 0); }
-}
-
-/* 雲: ゆっくり流れる。 */
-:root[data-background="cloud"] .page-background {
-    animation: omoi-bg-cloud 32s ease-in-out infinite alternate;
-}
-
-@keyframes omoi-bg-cloud {
-    from { transform: translate3d(-3%, .5%, 0); }
-    to { transform: translate3d(3%, -.5%, 0); }
-}
-
-/* 和紙・格子: 模様がごくゆっくり滑る。 */
-:root[data-background="paper"] .page-background {
-    animation: omoi-bg-slide 40s linear infinite alternate;
-}
-
-:root[data-background="lattice"] .page-background {
-    animation: omoi-bg-slide 36s linear infinite alternate-reverse;
-}
-
-@keyframes omoi-bg-slide {
-    from { transform: translate3d(0, 0, 0); }
-    to { transform: translate3d(-2.5%, 2.5%, 0); }
-}
-
-/* 波紋: 中心から広がるように脈打つ。 */
-:root[data-background="ripple"] .page-background {
-    transform-origin: 32% 38%;
-    animation: omoi-bg-ripple 7s ease-in-out infinite alternate;
-}
-
-@keyframes omoi-bg-ripple {
-    from { transform: scale(1); }
-    to { transform: scale(1.08); }
 }
 
 /* コピーや共有の結果を、画面の流れから切り離して上部に一時表示する。 */
@@ -1011,13 +1078,19 @@ a.resume-notice-link:focus-visible {
 
 /* 低スペ端末でフレームレートが出ないときの静止画フォールバック */
 :root[data-low-power="true"] .page-background,
-:root[data-low-power="true"] .page-background__stars {
+:root[data-low-power="true"] .page-background__stars,
+:root[data-low-power="true"] .page-background__effects,
+:root[data-low-power="true"] .page-background__effects i,
+:root[data-low-power="true"] .page-background__effects span {
     animation: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
     :root:not([data-background="none"]) .page-background,
-    .page-background__stars {
+    .page-background__stars,
+    .page-background__effects,
+    .page-background__effects i,
+    .page-background__effects span {
         animation: none;
     }
 

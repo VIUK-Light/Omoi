@@ -65,7 +65,7 @@ test('display settings extend the theme and stay on the device', async ({ page }
     await expect(page.getByRole('button', { name: 'セピア' })).toBeVisible();
     await expect(page.getByRole('button', { name: 'ナイト' })).toBeVisible();
     await expect(page.getByRole('button', { name: 'VIUK-Light', exact: true })).toBeVisible();
-    await expect(page.getByRole('button', { name: '朝焼け' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'クリスマス' })).toBeVisible();
     await expect(page.getByRole('button', { name: '星空' })).toHaveAttribute('aria-pressed', 'true', ready);
 
     await page.getByRole('button', { name: 'セピア' }).click();
@@ -73,12 +73,12 @@ test('display settings extend the theme and stay on the device', async ({ page }
     await expect(page.locator('html')).toHaveCSS('background-color', 'rgb(247, 241, 228)', ready);
     await expect(page.getByRole('button', { name: 'セピア' })).toHaveAttribute('aria-pressed', 'true', ready);
 
-    await page.getByRole('button', { name: '波', exact: true }).click();
-    await expect(root).toHaveAttribute('data-background', 'ocean', ready);
+    await page.getByRole('button', { name: '桜' }).click();
+    await expect(root).toHaveAttribute('data-background', 'sakura', ready);
 
     await page.reload();
     await expect(root).toHaveAttribute('data-theme', 'sepia', ready);
-    await expect(root).toHaveAttribute('data-background', 'ocean', ready);
+    await expect(root).toHaveAttribute('data-background', 'sakura', ready);
 });
 
 test('the chosen theme and background follow across every page', async ({ page }) => {
@@ -110,7 +110,7 @@ test('every page offers the same display settings', async ({ page }) => {
     await expect(page.getByRole('button', { name: 'セピア' })).toBeVisible();
     await expect(page.getByRole('button', { name: 'ナイト' })).toBeVisible();
     await expect(page.getByRole('button', { name: 'VIUK-Light', exact: true })).toBeVisible();
-    await expect(page.getByRole('button', { name: '朝焼け' })).toBeVisible();
+    await expect(page.getByRole('button', { name: '紅葉' })).toBeVisible();
 });
 
 test('background strength can be adjusted and is kept on the device', async ({ page }) => {
@@ -119,8 +119,8 @@ test('background strength can be adjusted and is kept on the device', async ({ p
     await expect(page.locator('.theme-control')).toBeAttached(ready);
 
     await page.locator('.theme-control > summary').click();
-    await page.getByRole('button', { name: '朝焼け' }).click();
-    await expect(page.locator('html')).toHaveAttribute('data-background', 'dawn', ready);
+    await page.getByRole('button', { name: '花火' }).click();
+    await expect(page.locator('html')).toHaveAttribute('data-background', 'hanabi', ready);
 
     const scrim = page.locator('#themeScrimRange');
     await expect(scrim).toBeVisible(ready);
@@ -141,7 +141,7 @@ test('reset restores the default display settings', async ({ page }) => {
 
     await page.locator('.theme-control > summary').click();
     await page.getByRole('button', { name: 'ナイト' }).click();
-    await page.getByRole('button', { name: '波', exact: true }).click();
+    await page.getByRole('button', { name: '桜' }).click();
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'night', ready);
 
     await page.getByRole('button', { name: '表示設定を初期化' }).click();
@@ -219,14 +219,12 @@ test('the display settings offer every theme and background', async ({ page }) =
         .map((button) => button.dataset.themeBackground));
 
     expect(themes).toEqual(['auto', 'light', 'dark', 'sepia', 'night', 'viuk', 'viuk-dark']);
-    expect(backgrounds).toEqual(['none', 'dawn', 'ocean', 'forest', 'paper', 'dusk',
-        'cloud', 'sakura', 'deep', 'star', 'ripple', 'lattice']);
+    expect(backgrounds).toEqual(['none', 'star', 'christmas', 'sakura', 'momiji', 'hanabi']);
 
     await expect(page.getByRole('button', { name: 'VIUK-Light dark' })).toBeVisible();
-    await expect(page.getByRole('button', { name: '雲' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'クリスマス' })).toBeVisible();
     await expect(page.getByRole('button', { name: '桜' })).toBeVisible();
-    await expect(page.getByRole('button', { name: '深海' })).toBeVisible();
+    await expect(page.getByRole('button', { name: '紅葉' })).toBeVisible();
+    await expect(page.getByRole('button', { name: '花火' })).toBeVisible();
     await expect(page.getByRole('button', { name: '星空' })).toBeVisible();
-    await expect(page.getByRole('button', { name: '波紋' })).toBeVisible();
-    await expect(page.getByRole('button', { name: '格子' })).toBeVisible();
 });

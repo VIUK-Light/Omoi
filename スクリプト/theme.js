@@ -15,17 +15,11 @@
 
     const backgrounds = {
         none: "なし",
-        dawn: "朝焼け",
-        ocean: "波",
-        forest: "森",
-        paper: "和紙",
-        dusk: "夕暮れ",
-        cloud: "雲",
-        sakura: "桜",
-        deep: "深海",
         star: "星空",
-        ripple: "波紋",
-        lattice: "格子"
+        christmas: "クリスマス",
+        sakura: "桜",
+        momiji: "紅葉",
+        hanabi: "花火"
     };
 
     const defaultDisplay = {
@@ -215,6 +209,32 @@
                 <span class="page-background__shooting-star page-background__shooting-star--c"></span>
                 <span class="page-background__shooting-star page-background__shooting-star--d"></span>
                 <span class="page-background__shooting-star page-background__shooting-star--e"></span>
+            `);
+        }
+
+        // 背景ごとの追加演出(雪・イルミネーション・花びら・紅葉・花火)。
+        // 要素は共通で生成し、選択中の背景だけCSSで表示する。
+        if (!layer.querySelector(".page-background__effects")) {
+            layer.insertAdjacentHTML("beforeend", `
+                <span class="page-background__effects">
+                    <span class="page-background__snow">
+                        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                    </span>
+                    <span class="page-background__lights">
+                        <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                    </span>
+                    <span class="page-background__petals">
+                        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                    </span>
+                    <span class="page-background__leaves">
+                        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                    </span>
+                    <span class="page-background__fireworks">
+                        <span class="page-background__firework page-background__firework--a"></span>
+                        <span class="page-background__firework page-background__firework--b"></span>
+                        <span class="page-background__firework page-background__firework--c"></span>
+                    </span>
+                </span>
             `);
         }
         return layer;
