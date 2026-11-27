@@ -2047,13 +2047,22 @@ window.addEventListener("scroll", positionShareMenu, true);
 function animateQuestionSwitch(direction) {
     if (typeof questionContent?.animate !== "function") return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    questionContent.animate(
-        [
-            { opacity: 0, transform: direction === "previous" ? "translateY(-14px)" : "translateY(14px)" },
-            { opacity: 1, transform: "translateY(0)" }
-        ],
-        { duration: 260, easing: "cubic-bezier(0.22, 0.61, 0.36, 1)" }
-    );
+    // 次へは右から、戻るは左から。場面文→問いの順にわずかに遅らせて階差をつける。
+    const fromX = direction === "previous" ? -36 : 36;
+    const easing = "cubic-bezier(0.16, 1, 0.3, 1)";
+    [
+        [scenarioBlock, 0],
+        [questionText, 70]
+    ].forEach(([element, delay]) => {
+        if (!element?.animate) return;
+        element.animate(
+            [
+                { opacity: 0, transform: `translate3d(${fromX}px, 0, 0)` },
+                { opacity: 1, transform: "translate3d(0, 0, 0)" }
+            ],
+            { duration: 380, delay, easing, fill: "backwards" }
+        );
+    });
 }
 
 function goToNextQuestion() {

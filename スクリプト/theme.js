@@ -210,6 +210,8 @@
             layer.insertAdjacentHTML("afterbegin", `
                 <span class="page-background__stars page-background__stars--far"></span>
                 <span class="page-background__stars page-background__stars--near"></span>
+                <span class="page-background__shooting-star page-background__shooting-star--a"></span>
+                <span class="page-background__shooting-star page-background__shooting-star--b"></span>
             `);
         }
         return layer;

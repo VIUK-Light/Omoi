@@ -506,6 +506,50 @@ body {
         omoi-star-drift--near 90s linear infinite;
 }
 
+/* 流れ星: 短く光って斜めに流れ、しばらく消えてを繰り返す。
+   (opacity:0が初期値なので、低スペ端末の静止画フォールバック時は自動で消える) */
+.page-background__shooting-star {
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgb(255 255 255 / 0%), rgb(255 255 255 / 40%) 60%, rgb(255 255 255 / 95%));
+    opacity: 0;
+    pointer-events: none;
+    will-change: transform, opacity;
+}
+
+:root[data-background="star"] .page-background__shooting-star { display: block; }
+
+/* 落下方向(右上→左下は逆光。ここでは左上から右下へ落ちる)に沿って
+   頭が前・尾が後ろになるよう、gradientの明るい側を進行方向に置く。 */
+.page-background__shooting-star--a {
+    top: 8%;
+    left: -170px;
+    animation: omoi-shooting-star--a 11s ease-in 3s infinite;
+}
+
+.page-background__shooting-star--b {
+    top: 16%;
+    left: 8%;
+    animation: omoi-shooting-star--b 17s ease-in 8s infinite;
+}
+
+@keyframes omoi-shooting-star--a {
+    0% { opacity: 0; transform: translate3d(0, 0, 0) rotate(26deg); }
+    3% { opacity: 1; }
+    10% { opacity: 0; transform: translate3d(72vw, 35vw, 0) rotate(26deg); }
+    100% { opacity: 0; transform: translate3d(72vw, 35vw, 0) rotate(26deg); }
+}
+
+@keyframes omoi-shooting-star--b {
+    0% { opacity: 0; transform: translate3d(0, 0, 0) rotate(22deg); }
+    2% { opacity: .9; }
+    9% { opacity: 0; transform: translate3d(60vw, 24vw, 0) rotate(22deg); }
+    100% { opacity: 0; transform: translate3d(60vw, 24vw, 0) rotate(22deg); }
+}
+
 /* 元からある星も、ごくゆっくり揺れる。 */
 :root[data-background="star"] .page-background {
     inset: -2%;
