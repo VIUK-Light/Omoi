@@ -527,27 +527,58 @@ body {
 .page-background__shooting-star--a {
     top: 8%;
     left: -170px;
-    animation: omoi-shooting-star--a 11s ease-in 3s infinite;
+    width: 150px;
+    --angle: 26deg;
+    --travel-x: 72vw;
+    --travel-y: 35vw;
+    animation: omoi-shooting-star 11s ease-in 2s infinite;
 }
 
 .page-background__shooting-star--b {
-    top: 16%;
-    left: 8%;
-    animation: omoi-shooting-star--b 17s ease-in 8s infinite;
+    top: 14%;
+    left: 4%;
+    width: 120px;
+    --angle: 22deg;
+    --travel-x: 60vw;
+    --travel-y: 24vw;
+    animation: omoi-shooting-star 15s ease-in 7s infinite;
 }
 
-@keyframes omoi-shooting-star--a {
-    0% { opacity: 0; transform: translate3d(0, 0, 0) rotate(26deg); }
+.page-background__shooting-star--c {
+    top: 3%;
+    left: 26%;
+    width: 130px;
+    --angle: 26deg;
+    --travel-x: 55vw;
+    --travel-y: 27vw;
+    animation: omoi-shooting-star 9s ease-in 5s infinite;
+}
+
+.page-background__shooting-star--d {
+    top: 28%;
+    left: -150px;
+    width: 110px;
+    --angle: 24deg;
+    --travel-x: 64vw;
+    --travel-y: 29vw;
+    animation: omoi-shooting-star 13s ease-in 11s infinite;
+}
+
+.page-background__shooting-star--e {
+    top: 20%;
+    left: 38%;
+    width: 140px;
+    --angle: 23deg;
+    --travel-x: 58vw;
+    --travel-y: 24vw;
+    animation: omoi-shooting-star 19s ease-in 14s infinite;
+}
+
+@keyframes omoi-shooting-star {
+    0% { opacity: 0; transform: translate3d(0, 0, 0) rotate(var(--angle)); }
     3% { opacity: 1; }
-    10% { opacity: 0; transform: translate3d(72vw, 35vw, 0) rotate(26deg); }
-    100% { opacity: 0; transform: translate3d(72vw, 35vw, 0) rotate(26deg); }
-}
-
-@keyframes omoi-shooting-star--b {
-    0% { opacity: 0; transform: translate3d(0, 0, 0) rotate(22deg); }
-    2% { opacity: .9; }
-    9% { opacity: 0; transform: translate3d(60vw, 24vw, 0) rotate(22deg); }
-    100% { opacity: 0; transform: translate3d(60vw, 24vw, 0) rotate(22deg); }
+    10% { opacity: 0; transform: translate3d(var(--travel-x), var(--travel-y), 0) rotate(var(--angle)); }
+    100% { opacity: 0; transform: translate3d(var(--travel-x), var(--travel-y), 0) rotate(var(--angle)); }
 }
 
 /* 元からある星も、ごくゆっくり揺れる。 */

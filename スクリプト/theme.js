@@ -212,6 +212,9 @@
                 <span class="page-background__stars page-background__stars--near"></span>
                 <span class="page-background__shooting-star page-background__shooting-star--a"></span>
                 <span class="page-background__shooting-star page-background__shooting-star--b"></span>
+                <span class="page-background__shooting-star page-background__shooting-star--c"></span>
+                <span class="page-background__shooting-star page-background__shooting-star--d"></span>
+                <span class="page-background__shooting-star page-background__shooting-star--e"></span>
             `);
         }
         return layer;
