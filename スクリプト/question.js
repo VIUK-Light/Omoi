@@ -176,6 +176,7 @@ const fullscreenButton = document.getElementById("fullscreenButton");
 const nextNote = document.getElementById("nextNote");
 const shareButton = document.getElementById("shareButton");
 const speakButton = document.getElementById("speakButton");
+const speakButtonLabel = document.getElementById("speakButtonLabel");
 const voiceControl = document.getElementById("voiceControl");
 const voiceSelect = document.getElementById("voiceSelect");
 const questionLive = document.getElementById("questionLive");
@@ -1177,7 +1178,7 @@ function stopSpeech() {
     speechUtterance = null;
     if (speakButton) {
         speakButton.setAttribute("aria-pressed", "false");
-        speakButton.textContent = "読み上げ";
+        if (speakButtonLabel) speakButtonLabel.textContent = "読み上げ";
     }
 }
 
@@ -1204,7 +1205,7 @@ function speakCurrentQuestion() {
         speechUtterance = utterance;
         if (speakButton) {
             speakButton.setAttribute("aria-pressed", "true");
-            speakButton.textContent = "停止";
+            if (speakButtonLabel) speakButtonLabel.textContent = "停止";
         }
         window.speechSynthesis.speak(utterance);
     };
@@ -1215,7 +1216,7 @@ function speakCurrentQuestion() {
         cancelVoiceWait();
         if (speakButton) {
             speakButton.setAttribute("aria-pressed", "true");
-            speakButton.textContent = "準備中";
+            if (speakButtonLabel) speakButtonLabel.textContent = "準備中";
         }
         voiceWaitHandler = () => begin();
         window.speechSynthesis.addEventListener("voiceschanged", voiceWaitHandler);
