@@ -934,6 +934,12 @@ a.resume-notice-link:focus-visible {
     transform: translate(-50%, 0);
 }
 
+/* 低スペ端末でフレームレートが出ないときの静止画フォールバック */
+:root[data-low-power="true"] .page-background,
+:root[data-low-power="true"] .page-background__stars {
+    animation: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
     :root:not([data-background="none"]) .page-background,
     .page-background__stars {

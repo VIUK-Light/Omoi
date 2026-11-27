@@ -304,6 +304,33 @@
         }
     });
 
+    // 低スペ端末の救済: 背景アニメーション中のフレームレートが著しく低い場合、
+    // 静止画に落としてページ全体の操作性を優先する。
+    function degradeIfSlow() {
+        if (display.background === "none") return;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        const start = performance.now();
+        let frames = 0;
+        const tick = () => {
+            frames += 1;
+            const elapsed = performance.now() - start;
+            if (elapsed >= 2000) {
+                if (frames / (elapsed / 1000) < 30) {
+                    document.documentElement.dataset.lowPower = "true";
+                }
+                return;
+            }
+            requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+    }
+
+    if (document.readyState === "loading") {
+        window.addEventListener("load", () => window.setTimeout(degradeIfSlow, 1000), { once: true });
+    } else {
+        window.setTimeout(degradeIfSlow, 1000);
+    }
+
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", addControl, { once: true });
     } else {
