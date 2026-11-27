@@ -2043,6 +2043,19 @@ window.addEventListener("resize", positionShareMenu);
 window.addEventListener("scroll", positionShareMenu, true);
 
 
+// 問いを切り替えたときに内容が入れ替わったことが分かるよう、短いフェードで演出する。
+function animateQuestionSwitch(direction) {
+    if (typeof questionContent?.animate !== "function") return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    questionContent.animate(
+        [
+            { opacity: 0, transform: direction === "previous" ? "translateY(-14px)" : "translateY(14px)" },
+            { opacity: 1, transform: "translateY(0)" }
+        ],
+        { duration: 260, easing: "cubic-bezier(0.22, 0.61, 0.36, 1)" }
+    );
+}
+
 function goToNextQuestion() {
     if (state !== "ready" || isSharedQuestion) return;
     stopSpeech();
@@ -2054,6 +2067,7 @@ function goToNextQuestion() {
     }
 
     showQuestion();
+    animateQuestionSwitch("next");
 }
 
 function goToPreviousQuestion() {
@@ -2061,6 +2075,7 @@ function goToPreviousQuestion() {
     stopSpeech();
     currentQuestionIndex--;
     showQuestion();
+    animateQuestionSwitch("previous");
 }
 
 function finishSession(completed = false) {
