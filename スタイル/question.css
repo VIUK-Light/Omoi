@@ -1442,6 +1442,12 @@ body.session-complete-active .furigana-settings {
         overflow: visible;
         margin-inline: auto;
         margin-block: 0;
+        /* 余白を吸収して「次の問いを見る」を画面下部の固定位置に置く。
+           (問いの文字量でボタンの位置が変わるのを防ぐ) */
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .question-summary,
