@@ -43,7 +43,11 @@ h1 {
     position: relative;
     display: inline-block;
     height: 1.6em;
-    overflow: hidden;
+    /* 縦スクロール演出は clip-path で上下だけをクリップする。
+       overflow は使わない: スクロールコンテナになるとインラインブロックの
+       ベースラインが下端扱いになり、「Omoi」の字の下端がクリップ下端に重なって切れてしまう。
+       左右は框の外まで広げ、字端が切れないようにする。 */
+    clip-path: inset(0 -1em 0 -1em);
     vertical-align: baseline;
 }
 
@@ -56,8 +60,10 @@ h1 {
 .catchcopy__word-current,
 .catchcopy__word-next {
     position: absolute;
-    /* 日本語の文字とベースラインを揃える（従来より約1pt下げる） */
-    top: 0.433em;
+    /* sizer と同じ位置に置く。overflow を使っていないため
+       このインラインブロックのベースラインは sizer の文字ベースラインになり、
+       日本語の文字と自然に揃う。 */
+    top: 0;
     right: 0;
     left: 0;
     display: block;

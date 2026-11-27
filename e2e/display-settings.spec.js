@@ -70,7 +70,7 @@ test('display settings extend the theme and stay on the device', async ({ page }
 
     await page.getByRole('button', { name: 'セピア' }).click();
     await expect(root).toHaveAttribute('data-theme', 'sepia', ready);
-    await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(247, 241, 228)', ready);
+    await expect(page.locator('html')).toHaveCSS('background-color', 'rgb(247, 241, 228)', ready);
     await expect(page.getByRole('button', { name: 'セピア' })).toHaveAttribute('aria-pressed', 'true', ready);
 
     await page.getByRole('button', { name: '波', exact: true }).click();
@@ -92,7 +92,7 @@ test('the chosen theme and background follow across every page', async ({ page }
 
     await page.goto('/画面/選択/select.html');
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'night', ready);
-    await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(16, 21, 31)', ready);
+    await expect(page.locator('html')).toHaveCSS('background-color', 'rgb(16, 21, 31)', ready);
 
     await page.goto('/画面/対話/question.html?level=2');
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'night', ready);

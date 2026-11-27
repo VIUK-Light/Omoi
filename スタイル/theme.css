@@ -3,6 +3,12 @@ html {
     background: var(--omoi-page);
 }
 
+/* ページの地色は html 側に敷く。body を不透明にすると、
+   z-index: -1 の背景レイヤー(.page-background)が body の背景より先に描画され、隠れてしまう。 */
+body {
+    background: transparent;
+}
+
 :root {
     color-scheme: light;
     --omoi-page: #ffffff;
@@ -552,7 +558,13 @@ html {
     --guide-soft: var(--omoi-surface);
     --guide-accent: var(--omoi-muted);
 
-    body, .preview-entry {
+    /* body の背景は transparent のまま(html の地色を見せる)。
+       .preview-entry は要素自身の面として地色を持つ。 */
+    body {
+        color: var(--omoi-ink);
+    }
+
+    .preview-entry {
         background: var(--omoi-page);
         color: var(--omoi-ink);
     }

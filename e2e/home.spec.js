@@ -86,16 +86,16 @@ test('theme can follow the device or be set manually across pages', async ({ pag
 
   const root = page.locator('html');
   await expect(root).toHaveAttribute('data-theme', 'dark');
-  await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(22, 24, 27)');
+  await expect(page.locator('html')).toHaveCSS('background-color', 'rgb(22, 24, 27)');
 
   await page.locator('.theme-control > summary').click();
   await page.getByRole('button', { name: 'ライト' }).click();
   await expect(root).toHaveAttribute('data-theme', 'light');
-  await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
+  await expect(page.locator('html')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
 
   await page.goto('/画面/選択/select.html');
   await expect(root).toHaveAttribute('data-theme', 'light');
-  await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
+  await expect(page.locator('html')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
 
   await page.locator('.theme-control > summary').click();
   await page.getByRole('button', { name: '自動' }).click();
