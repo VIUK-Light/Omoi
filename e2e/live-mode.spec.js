@@ -2,7 +2,9 @@
 // ルームサーバーはモックで置き換え、本流側の挙動だけを見る。
 const { test, expect } = require('@playwright/test');
 
-const LIVE_ORIGIN = 'https://omoi-live.workers.dev';
+// 本流側は localStorage の omoiLiveOrigin でオリジンを差し替えられるため、
+// テストではモック用オリジンを使い、デプロイURLに依存しない
+const LIVE_ORIGIN = 'https://omoi-live.test';
 const ROOM_RESPONSE = {
   code: 'LIVE01',
   hostKey: 'HOSTKEY12345678',
@@ -11,6 +13,7 @@ const ROOM_RESPONSE = {
 };
 
 test('対話モードにチェックすると問いデータとともにOmoi Liveへ遷移する', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('omoiLiveOrigin', 'https://omoi-live.test'));
   let requestBody = null;
   await page.route(`${LIVE_ORIGIN}/api/rooms`, async route => {
     requestBody = route.request().postDataJSON();
@@ -46,6 +49,7 @@ test('対話モードのチェックなしでは従来どおり質問画面へ�
 });
 
 test('自分で選ぶの確認画面からも対話モードで開始できる', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('omoiLiveOrigin', 'https://omoi-live.test'));
   let requestBody = null;
   await page.route(`${LIVE_ORIGIN}/api/rooms`, async route => {
     requestBody = route.request().postDataJSON();

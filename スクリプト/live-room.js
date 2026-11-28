@@ -5,7 +5,7 @@
     "use strict";
 
     // デプロイ済みの Omoi Live のURL。デプロイ時に差し替える。
-    const DEFAULT_ORIGIN = "https://omoi-live.workers.dev";
+    const DEFAULT_ORIGIN = "https://omoi-live.omoi-live.workers.dev";
     const OVERRIDE_KEY = "omoiLiveOrigin";
     const MAX_QUESTIONS = 100;
 
