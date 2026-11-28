@@ -388,6 +388,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 9px;
+    vertical-align: middle;
 
     min-height: 44px;
     padding: 0 14px;
@@ -523,6 +524,7 @@ body {
 .share-control {
     position: relative;
     display: inline-flex;
+    vertical-align: middle;
 }
 
 .share-menu {
@@ -1376,7 +1378,11 @@ body.session-complete-active .furigana-settings {
 
 /* スマホ版: 親ボタンview / 子こぼたん の整理 */
 .question-tool-group {
-    display: contents;
+    /* detailsを実体のブロックにする。display:contentsにすると
+       Chromeが内容スロットをdetailsのボックスとして扱い、中のボタンと
+       共有ボタンが同じ行に並ばない(details内で折り返す)ため */
+    display: block;
+    width: 100%;
 }
 
 .question-tool-group > summary {
