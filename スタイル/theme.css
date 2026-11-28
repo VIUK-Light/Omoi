@@ -705,15 +705,16 @@ body {
     left: var(--x);
     width: 0;
     height: 0;
+    transform: rotate(var(--spin, 0deg));
 }
 
 /* 火花: 中心から8方向へ飛び出してフェードアウトする線 */
 .page-background__firework i {
     position: absolute;
     left: clamp(-2.5px, -0.35vmin, -1.5px);
-    top: calc(clamp(13px, 2.2vmin, 30px) / -2);
+    top: calc(clamp(26px, 4.2vmin, 56px) / -2);
     width: clamp(3px, 0.7vmin, 7px);
-    height: clamp(24px, 4.5vmin, 60px);
+    height: clamp(26px, 4.2vmin, 56px);
     border-radius: 999px;
     background: linear-gradient(to bottom, var(--burst) 0%, rgb(255 255 255 / 50%) 55%, rgb(255 255 255 / 0%) 100%);
     opacity: 0;
@@ -722,10 +723,7 @@ body {
     will-change: transform, opacity;
 }
 
-.page-background__firework i:nth-child(even) {
-    height: clamp(18px, 3.4vmin, 46px);
-    opacity: 0;
-}
+
 
 /* 開花の瞬間の閃光 */
 .page-background__firework::before {
@@ -756,9 +754,9 @@ body {
     100% { opacity: 0; transform: scale(2.1); }
 }
 
-.page-background__firework--a { --x: 28%; --y: 40%; --burst: rgb(255 214 130 / 95%); --cycle: 13s; --delay: 1.5s; }
-.page-background__firework--b { --x: 66%; --y: 34%; --burst: rgb(255 160 190 / 95%); --cycle: 16s; --delay: 6.5s; }
-.page-background__firework--c { --x: 46%; --y: 54%; --burst: rgb(150 220 255 / 95%); --cycle: 19s; --delay: 11.5s; }
+.page-background__firework--a { --x: 28%; --y: 40%; --burst: rgb(255 214 130 / 95%); --cycle: 13s; --delay: 1.5s; --dist: clamp(96px, 16vmin, 210px); --spin: 0deg; }
+.page-background__firework--b { --x: 66%; --y: 34%; --burst: rgb(255 160 190 / 95%); --cycle: 16s; --delay: 6.5s; --dist: clamp(88px, 14vmin, 190px); --spin: 15deg; }
+.page-background__firework--c { --x: 46%; --y: 54%; --burst: rgb(150 220 255 / 95%); --cycle: 19s; --delay: 11.5s; --dist: clamp(104px, 17vmin, 220px); --spin: 8deg; }
 
 /* ガーランド: 上端に弧を描く電球列が交互に瞬く */
 .page-background__garland {
@@ -807,18 +805,18 @@ body {
     to { opacity: 1; }
 }
 
-.page-background__firework i:nth-child(1) { --r: 0deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.72); }
-.page-background__firework i:nth-child(2) { --r: 30deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.58); }
-.page-background__firework i:nth-child(3) { --r: 60deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.76); }
-.page-background__firework i:nth-child(4) { --r: 90deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.6); }
-.page-background__firework i:nth-child(5) { --r: 120deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.8); }
-.page-background__firework i:nth-child(6) { --r: 150deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.58); }
-.page-background__firework i:nth-child(7) { --r: 180deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.74); }
-.page-background__firework i:nth-child(8) { --r: 210deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.6); }
-.page-background__firework i:nth-child(9) { --r: 240deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.78); }
-.page-background__firework i:nth-child(10) { --r: 270deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.58); }
-.page-background__firework i:nth-child(11) { --r: 300deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.75); }
-.page-background__firework i:nth-child(12) { --r: 330deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.62); }
+.page-background__firework i:nth-child(1) { --r: 0deg; }
+.page-background__firework i:nth-child(2) { --r: 30deg; }
+.page-background__firework i:nth-child(3) { --r: 60deg; }
+.page-background__firework i:nth-child(4) { --r: 90deg; }
+.page-background__firework i:nth-child(5) { --r: 120deg; }
+.page-background__firework i:nth-child(6) { --r: 150deg; }
+.page-background__firework i:nth-child(7) { --r: 180deg; }
+.page-background__firework i:nth-child(8) { --r: 210deg; }
+.page-background__firework i:nth-child(9) { --r: 240deg; }
+.page-background__firework i:nth-child(10) { --r: 270deg; }
+.page-background__firework i:nth-child(11) { --r: 300deg; }
+.page-background__firework i:nth-child(12) { --r: 330deg; }
 
 
 /* 元からある星も、ごくゆっくり揺れる。 */
