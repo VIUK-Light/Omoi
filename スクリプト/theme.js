@@ -218,11 +218,15 @@
             layer.insertAdjacentHTML("beforeend", `
                 <span class="page-background__effects">
                     <span class="page-background__snow">
-                        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
                     </span>
                     <span class="page-background__lights">
                         <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
                     </span>
+                    <span class="page-background__garland">
+                        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                    </span>
+                    <span class="page-background__wash"></span>
                     <span class="page-background__petals">
                         <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
                     </span>
@@ -230,9 +234,15 @@
                         <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
                     </span>
                     <span class="page-background__fireworks">
-                        <span class="page-background__firework page-background__firework--a"></span>
-                        <span class="page-background__firework page-background__firework--b"></span>
-                        <span class="page-background__firework page-background__firework--c"></span>
+                        <span class="page-background__firework page-background__firework--a">
+                            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                        </span>
+                        <span class="page-background__firework page-background__firework--b">
+                            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                        </span>
+                        <span class="page-background__firework page-background__firework--c">
+                            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                        </span>
                     </span>
                 </span>
             `);
