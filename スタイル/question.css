@@ -217,25 +217,15 @@ body {
 .question-content {
     width: 100%;
     max-width: 680px;
-    min-height: 0;
-    max-height: 60vh;
-    max-height: min(56svh, 560px);
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    scrollbar-color: #bbbbbb transparent;
-    scrollbar-width: thin;
-
-    margin: auto;
+    /* 枠が伸縮して問いが途切れないようにする。長い問いはページごとスクロールする */
+    flex: 1 1 auto;
+    max-height: none;
+    overflow: visible;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-}
-
-.question-content::-webkit-scrollbar {
-    width: 8px;
-}
-
-.question-content::-webkit-scrollbar-thumb {
-    background: #bbbbbb;
-    border-radius: 8px;
 }
 
 #questionText {
