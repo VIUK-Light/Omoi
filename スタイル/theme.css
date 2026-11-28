@@ -710,10 +710,10 @@ body {
 /* 火花: 中心から8方向へ飛び出してフェードアウトする線 */
 .page-background__firework i {
     position: absolute;
-    left: -2px;
-    top: -17px;
-    width: 4px;
-    height: 34px;
+    left: clamp(-2.5px, -0.35vmin, -1.5px);
+    top: calc(clamp(13px, 2.2vmin, 30px) / -2);
+    width: clamp(3px, 0.7vmin, 7px);
+    height: clamp(24px, 4.5vmin, 60px);
     border-radius: 999px;
     background: linear-gradient(to bottom, var(--burst) 0%, rgb(255 255 255 / 50%) 55%, rgb(255 255 255 / 0%) 100%);
     opacity: 0;
@@ -723,8 +723,7 @@ body {
 }
 
 .page-background__firework i:nth-child(even) {
-    height: 26px;
-    top: -13px;
+    height: clamp(18px, 3.4vmin, 46px);
     opacity: 0;
 }
 
@@ -732,10 +731,10 @@ body {
 .page-background__firework::before {
     content: "";
     position: absolute;
-    left: -7px;
-    top: -7px;
-    width: 14px;
-    height: 14px;
+    left: calc(clamp(16px, 2.8vmin, 38px) / -2);
+    top: calc(clamp(16px, 2.8vmin, 38px) / -2);
+    width: clamp(16px, 2.8vmin, 38px);
+    height: clamp(16px, 2.8vmin, 38px);
     border-radius: 50%;
     background: radial-gradient(circle, rgb(255 255 255 / 95%) 0 36%, var(--burst) 58%, rgb(255 255 255 / 0%) 76%);
     opacity: 0;
@@ -744,8 +743,8 @@ body {
 }
 
 @keyframes omoi-hanabi-ray {
-    0% { opacity: 0; transform: rotate(var(--r)) translateY(-10px); }
-    2% { opacity: 1; animation-timing-function: cubic-bezier(0.12, 0.72, 0.36, 1); transform: rotate(var(--r)) translateY(-20px); }
+    0% { opacity: 0; transform: rotate(var(--r)) translateY(calc(clamp(24px, 4vmin, 56px) / -4)); }
+    2% { opacity: 1; animation-timing-function: cubic-bezier(0.12, 0.72, 0.36, 1); transform: rotate(var(--r)) translateY(calc(clamp(24px, 4vmin, 56px) / -2)); }
     18% { opacity: 0; transform: rotate(var(--r)) translateY(calc(-1 * var(--dist))); }
     100% { opacity: 0; transform: rotate(var(--r)) translateY(calc(-1 * var(--dist))); }
 }
@@ -757,9 +756,9 @@ body {
     100% { opacity: 0; transform: scale(2.1); }
 }
 
-.page-background__firework--a { --x: 26%; --y: 26%; --burst: rgb(255 214 130 / 95%); --cycle: 13s; --delay: 1.5s; }
-.page-background__firework--b { --x: 70%; --y: 20%; --burst: rgb(255 160 190 / 95%); --cycle: 16s; --delay: 6.5s; }
-.page-background__firework--c { --x: 48%; --y: 34%; --burst: rgb(150 220 255 / 95%); --cycle: 19s; --delay: 11.5s; }
+.page-background__firework--a { --x: 28%; --y: 40%; --burst: rgb(255 214 130 / 95%); --cycle: 13s; --delay: 1.5s; }
+.page-background__firework--b { --x: 66%; --y: 34%; --burst: rgb(255 160 190 / 95%); --cycle: 16s; --delay: 6.5s; }
+.page-background__firework--c { --x: 46%; --y: 54%; --burst: rgb(150 220 255 / 95%); --cycle: 19s; --delay: 11.5s; }
 
 /* ガーランド: 上端に弧を描く電球列が交互に瞬く */
 .page-background__garland {
@@ -808,22 +807,19 @@ body {
     to { opacity: 1; }
 }
 
-.page-background__firework i:nth-child(1) { --r: 0deg; }
-.page-background__firework i:nth-child(2) { --r: 30deg; --dist: 100px; }
-.page-background__firework i:nth-child(3) { --r: 60deg; --dist: 135px; }
-.page-background__firework i:nth-child(4) { --r: 90deg; }
-.page-background__firework i:nth-child(5) { --r: 120deg; --dist: 140px; }
-.page-background__firework i:nth-child(6) { --r: 150deg; --dist: 100px; }
-.page-background__firework i:nth-child(7) { --r: 180deg; }
-.page-background__firework i:nth-child(8) { --r: 210deg; }
-.page-background__firework i:nth-child(9) { --r: 240deg; --dist: 138px; }
-.page-background__firework i:nth-child(10) { --r: 270deg; --dist: 102px; }
-.page-background__firework i:nth-child(11) { --r: 300deg; --dist: 132px; }
-.page-background__firework i:nth-child(12) { --r: 330deg; --dist: 108px; }
+.page-background__firework i:nth-child(1) { --r: 0deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.72); }
+.page-background__firework i:nth-child(2) { --r: 30deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.58); }
+.page-background__firework i:nth-child(3) { --r: 60deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.76); }
+.page-background__firework i:nth-child(4) { --r: 90deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.6); }
+.page-background__firework i:nth-child(5) { --r: 120deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.8); }
+.page-background__firework i:nth-child(6) { --r: 150deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.58); }
+.page-background__firework i:nth-child(7) { --r: 180deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.74); }
+.page-background__firework i:nth-child(8) { --r: 210deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.6); }
+.page-background__firework i:nth-child(9) { --r: 240deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.78); }
+.page-background__firework i:nth-child(10) { --r: 270deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.58); }
+.page-background__firework i:nth-child(11) { --r: 300deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.75); }
+.page-background__firework i:nth-child(12) { --r: 330deg; --dist: calc(clamp(96px, 16vmin, 210px) * 0.62); }
 
-.page-background__firework--a { --x: 26%; --y: 24%; --burst: rgb(255 214 130 / 90%); --cycle: 12s; --delay: 1.5s; }
-.page-background__firework--b { --x: 68%; --y: 18%; --burst: rgb(255 160 190 / 90%); --cycle: 15s; --delay: 6s; }
-.page-background__firework--c { --x: 47%; --y: 36%; --burst: rgb(150 220 255 / 90%); --cycle: 18s; --delay: 10.5s; }
 
 /* 元からある星も、ごくゆっくり揺れる。 */
 :root[data-background="star"] .page-background {
