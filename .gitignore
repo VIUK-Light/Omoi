@@ -4,3 +4,6 @@ test-results/
 
 # macOS
 .DS_Store
+
+# wrangler local dev state
+omoi-live/.wrangler/

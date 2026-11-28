@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="robots" content="noindex, follow">
+    <title>Omoi Live</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="app">
+
+        <p class="app-title">Omoi Live <span class="badge" id="roleBadge" hidden></span></p>
+
+        <div class="error-box" id="errorBox" hidden role="alert"></div>
+
+        <!-- コードが無効なとき -->
+        <section id="invalidView" hidden>
+            <div class="card">
+                <h1 class="page-title">ルームを開けませんでした</h1>
+                <p class="muted">URLが正しくないか、ルームがすでに終了しています。ホストにルームコードを確認してください。</p>
+            </div>
+            <a class="back-link" href="/">← トップページへ</a>
+        </section>
+
+        <!-- 入室（ニックネーム入力） -->
+        <section id="joinView" hidden>
+            <h1 class="page-title">ルームに入る</h1>
+            <div class="card">
+                <p class="muted">ルームコード: <strong class="room-code" id="joinCodeLabel"></strong></p>
+                <label class="field-label" for="nameInput">ニックネーム（1〜20文字）</label>
+                <input type="text" id="nameInput" maxlength="20" autocomplete="off" placeholder="ゆき">
+                <div class="actions-row">
+                    <button type="button" class="primary" id="joinButton">入室する</button>
+                </div>
+            </div>
+            <p class="note">
+                書いた意見はルームが終わるときにすべて削除され、保存されません。<br>
+                ルームには重い内容の問いが含まれる場合があります。無理に書く必要はありません。
+            </p>
+        </section>
+
+        <!-- ルーム本体 -->
+        <section id="roomView" hidden>
+            <p class="progress" id="progressLabel"></p>
+
+            <!-- 開始前 -->
+            <div id="lobbyBody" hidden>
+                <div class="card">
+                    <h1 class="page-title">開始前</h1>
+                    <p class="muted" id="lobbyCountLabel"></p>
+                    <ul class="participants" id="lobbyParticipants"></ul>
+                    <p class="muted" id="lobbyWaitingLabel"></p>
+                    <div class="actions-row" id="lobbyHostActions" hidden>
+                        <button type="button" class="primary" id="startButton">はじめる</button>
+                    </div>
+                </div>
+                <div class="card" id="qrCard">
+                    <p class="muted">このQRコードかリンクを、みんなのスマホで開いてください。</p>
+                    <div class="qr-box" id="qrBox"></div>
+                    <p class="tiny">リンク: <a id="joinLink" href="#"></a></p>
+                    <p class="tiny">コードを直接入れてもらうとき: <strong class="room-code" id="codeLabel"></strong></p>
+                </div>
+            </div>
+
+            <!-- 回答中 -->
+            <div id="writingBody" hidden>
+                <div class="card">
+                    <p class="muted" id="qScenario"></p>
+                    <h1 class="page-title question-text" id="qText"></h1>
+                    <div id="answerArea">
+                        <label class="field-label" for="answerInput">あなたの意見</label>
+                        <textarea id="answerInput" maxlength="1000"
+                                  placeholder="思ったことを自由に書いてください。短くて大丈夫です。"></textarea>
+                        <p class="char-count"><span id="charCount">0</span>/1000</p>
+                        <div class="actions-row">
+                            <button type="button" class="primary" id="submitAnswerButton">これで書き終える</button>
+                            <button type="button" class="subtle" id="editAnswerButton" hidden>編集する</button>
+                        </div>
+                    </div>
+                    <p class="status-line" id="writeStatusLabel"></p>
+                </div>
+                <div class="actions-row" id="writingHostActions" hidden>
+                    <button type="button" class="danger" id="forceRevealButton">全員分を公開する</button>
+                    <button type="button" class="subtle" id="endButton1">ここで終える</button>
+                </div>
+            </div>
+
+            <!-- 公開後 -->
+            <div id="revealedBody" hidden>
+                <div class="card">
+                    <p class="prompt">なぜそう思った？　誰の意見が一番予想と違った？</p>
+                    <ul class="answers" id="answersList"></ul>
+                </div>
+                <div class="actions-row" id="revealedHostActions" hidden>
+                    <button type="button" class="primary" id="nextButton">次の問いへ</button>
+                    <button type="button" class="subtle" id="endButton2">ここで終える</button>
+                </div>
+                <p class="status-line" id="revealedWaitingLabel" hidden>ホストが次へ進めるのを待っています。</p>
+            </div>
+
+            <!-- 終了 -->
+            <div id="endedBody" hidden>
+                <div class="card">
+                    <h1 class="page-title">対話を終えました</h1>
+                    <p class="muted">おつかれさまでした。このルームで書かれた意見は、すべて削除されました。どこにも保存されていません。</p>
+                </div>
+                <a class="back-link" href="/">← トップページへ</a>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="/qrcode.js"></script>
+    <script src="/room.js"></script>
+</body>
+</html>

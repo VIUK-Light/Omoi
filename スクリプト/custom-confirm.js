@@ -483,9 +483,33 @@ function load() {
         });
 }
 
+const liveCheckbox = document.getElementById("liveMode");
+
+// 対話モードに渡す問い（カテゴリー＋個別 − 除外）を組み立てる
+function collectLiveCards() {
+    if (!selection) return [];
+    const labels = Array.isArray(selection.labels) ? selection.labels : [];
+    const ids = Array.isArray(selection.ids) ? selection.ids : [];
+    const excluded = new Set(Array.isArray(selection.excludedIds) ? selection.excludedIds : []);
+    const cards = [];
+    for (const [, question] of questionsById) {
+        if (excluded.has(question.id) && !ids.includes(question.id)) continue;
+        const inCategory = labels.some(labelId => Array.isArray(question.labels) && question.labels.includes(labelId));
+        const inIndividual = ids.includes(question.id);
+        if (inCategory || inIndividual) {
+            cards.push({ question: question.question, scenario: question.scenario ?? "" });
+        }
+    }
+    return cards;
+}
+
 if (startButton) {
     startButton.addEventListener("click", function () {
         if (startButton.disabled || !selection) return;
+        if (liveCheckbox && liveCheckbox.checked) {
+            window.OmoiLive.startLiveMode(startButton, collectLiveCards());
+            return;
+        }
         const url = new URL("../対話/question.html", window.location.href);
         url.searchParams.set("mode", "custom");
         url.searchParams.set("session", sessionToken);

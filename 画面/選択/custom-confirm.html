@@ -66,6 +66,14 @@
             </div>
 
             <div class="custom-confirm-status omoi-toast" id="confirmShareStatus" role="status" aria-live="polite"></div>
+            <div class="live-toggle">
+                <input type="checkbox" id="liveMode" name="liveMode">
+                <label for="liveMode">
+                    <strong>対話モード（Omoi Live）</strong>
+                    <small>各自のスマホで意見を書いて、全員の意見を一斉に見るルームを開きます</small>
+                </label>
+            </div>
+
             <div class="custom-confirm-actions">
                 <a href="#" id="confirmEditLink" class="custom-confirm-edit">選択を編集する</a>
                 <button type="button" id="confirmShareButton" class="custom-confirm-share">
@@ -79,6 +87,7 @@
         </div>
     </main>
 
+    <script src="../../スクリプト/live-room.js"></script>
     <script src="../../スクリプト/question-share.js"></script>
     <script src="../../スクリプト/custom-confirm.js"></script>
 </body>

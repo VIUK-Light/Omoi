@@ -1,0 +1,9 @@
+{
+  "name": "omoi-live",
+  "private": true,
+  "description": "Omoi 対話モードのルーム同期サーバー (Cloudflare Workers + Durable Objects)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  }
+}

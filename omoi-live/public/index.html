@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="robots" content="noindex, follow">
+    <title>Omoi Live - 対話モード</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="app">
+        <p class="app-title">Omoi Live</p>
+        <h1 class="page-title">意見を書いて、一斉に見る</h1>
+
+        <div class="card">
+            <p class="muted">
+                対話モードは、Omoiの問いについて各自のスマホで意見を書き、
+                全員の意見を同時に見るためのページです。
+            </p>
+            <p class="muted">
+                ルームの作成は Omoi の「すべてから選ぶ」「自分で選ぶ」から
+                対話モードにチェックを入れて始めます。ここから入れるのは、
+                ホストが配ったコードを持っているときです。
+            </p>
+        </div>
+
+        <div class="card">
+            <label class="field-label" for="joinCode">ルームコード（6文字）</label>
+            <input type="text" id="joinCode" maxlength="6" autocapitalize="characters"
+                   autocomplete="off" spellcheck="false" placeholder="ABC234" inputmode="latin">
+            <div class="actions-row">
+                <button type="button" class="primary" id="joinButton">ルームに入る</button>
+            </div>
+            <p class="tiny" id="joinError" role="alert" hidden></p>
+        </div>
+
+        <p class="note">
+            書いた意見はルームが終わるときにすべて削除され、保存されません。
+            また、ルームには重い内容の問いが含まれる場合があります。書きたくないときは空欄のまま待っても、次へ進めます。
+        </p>
+
+        <a class="back-link" href="https://omoi.viuk-light.org/">← Omoi のトップページへ</a>
+    </main>
+
+    <script src="/index.js"></script>
+</body>
+</html>

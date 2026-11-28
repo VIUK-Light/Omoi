@@ -133,6 +133,37 @@ body {
     outline: 2px solid var(--omoi-on-primary, #fff);
 }
 
+.live-toggle {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 16px;
+    margin-top: 4px;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    background: #fafaf8;
+}
+
+.live-toggle input[type="checkbox"] {
+    flex: none;
+    width: 20px;
+    height: 20px;
+    margin: 3px 0 0;
+    accent-color: #111111;
+}
+
+.live-toggle label strong {
+    display: block;
+    font-size: 15px;
+}
+
+.live-toggle label small {
+    display: block;
+    font-size: 13px;
+    color: #555555;
+    margin-top: 2px;
+}
+
 .select-actions {
     display: flex;
     justify-content: space-between;

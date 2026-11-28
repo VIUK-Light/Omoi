@@ -1,0 +1,22 @@
+// Omoi Live - 対話モードのルーム同期サーバー
+// 静的UIは ./public、API と WebSocket は src/index.js、部屋の状態は RoomDO が保持します。
+// 状態は揮発前提：ルーム終了または無操作3時間で RoomDO の保存領域ごと削除します。
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "omoi-live",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "none"
+  },
+  "durable_objects": {
+    "bindings": [
+      { "name": "ROOM", "class_name": "RoomDO" }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["RoomDO"] }
+  ]
+}

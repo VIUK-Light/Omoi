@@ -104,8 +104,38 @@ levelInputs.forEach(function (input) {
     });
 });
 
+const liveInput = document.getElementById("liveMode");
+
+function startLive() {
+    if (selectedLevel === pickupValue) {
+        const warningUrl = new URL("../対話/warning.html", window.location.href);
+        warningUrl.searchParams.set("pickup", "1");
+        warningUrl.searchParams.set("live", "1");
+        redirect(warningUrl);
+        return;
+    }
+    if (selectedLevel === "4") {
+        const warningUrl = new URL("../対話/warning.html", window.location.href);
+        warningUrl.searchParams.set("live", "1");
+        redirect(warningUrl);
+        return;
+    }
+    if (selectedLevel === "3") {
+        const warningUrl = new URL("../対話/warning3.html", window.location.href);
+        warningUrl.searchParams.set("live", "1");
+        redirect(warningUrl);
+        return;
+    }
+    window.OmoiLive.startLiveMode(nextButton, window.OmoiLive.cardsForLevel("2"));
+}
+
 nextButton.addEventListener("click", function () {
     if (nextButton.disabled) return;
+
+    if (liveInput && liveInput.checked) {
+        startLive();
+        return;
+    }
 
     if (selectedLevel === pickupValue) {
         const warningUrl = new URL("../対話/warning.html", window.location.href);
